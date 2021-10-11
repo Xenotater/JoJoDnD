@@ -14,16 +14,21 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    background-color: mediumpurple;
     padding-bottom: 20px;
     border: 5px solid purple;
     border-radius: 50px;
+}
+
+a:hover {
+    color: rgb(0, 64, 255);
 }
 
 .socialButton {
     padding: 5px;
     border: 2px solid black;
     border-radius: 10px;
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 5px 5px 10px black;
 }
 
 #discord {
@@ -33,9 +38,17 @@
     margin-right: 10px;
 }
 
+#discord:hover {
+    background-color:rgb(42, 45, 48)
+}
+
 #spotify {
     width: 183px;
     height: 55px;
     background-color: white;
     margin-left: 10px;
+}
+
+#spotify:hover {
+    background-color: rgb(240, 236, 236);
 }
