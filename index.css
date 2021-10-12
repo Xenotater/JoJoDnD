@@ -1,27 +1,29 @@
-#header {
-    text-align: center;
-}
-
 #logo {
-    margin-top: 50px;
-    width: 750px;
-    height: 312px;
+    display: block;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #disclaim {
-    width: 50%;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 2.5%;
     text-align: center;
     background-color: mediumpurple;
-    padding-bottom: 20px;
+    padding: 1.5%;
     border: 5px solid purple;
     border-radius: 50px;
 }
 
+#disclaim p {
+    margin-top: 5%;
+}
+
 a:hover {
     color: rgb(0, 64, 255);
+}
+
+.linkClear {
+    text-decoration: none;
 }
 
 .socialButton {
@@ -32,21 +34,23 @@ a:hover {
 }
 
 #discord {
-    width: 200px;
-    height: 55px;
+    min-width: 77px;
+    min-height: 21px;
+    width: 256px;
+    height: 100%;
     background-color: rgb(35, 39, 42);
-    margin-right: 10px;
 }
 
 #discord:hover {
-    background-color:rgb(42, 45, 48)
+    background-color: rgb(42, 45, 48);
 }
 
 #spotify {
-    width: 183px;
-    height: 55px;
+    min-width: 70px;
+    min-height: 21px;
+    width: 233px;
+    height: 100%;
     background-color: white;
-    margin-left: 10px;
 }
 
 #spotify:hover {

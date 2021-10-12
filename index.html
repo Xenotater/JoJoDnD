@@ -5,27 +5,123 @@
     <head>
         <title>Jojo DnD</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        
         <link rel="stylesheet" href="Assets/jojodnd.css">
         <link rel="stylesheet" href="index.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
-        <div id="header">
-        <img src="Assets/logo.png" alt="jojodnd" id="logo">
-        </div>
-        <div id="disclaim">
-            <h1>Construction of Site In-Progress:</h1>
-            <p>Please be patient, we're working on integrating the full module into an online format!</p>
-            <p>In the meantime, you can access the pdf version of the module 
-                <a href="https://drive.google.com/file/d/1QzUUy6WRwj02hON3EpFPy48YIrr9YaP_/view?usp=sharing" target="_blank">here.</a>
-            </p>
-            <p>Additionally, you could join our discord or listen to our podcast where we play using this module:</p>
-            <a href="https:discord.gg/nmgSjPW8xs" target="_blank">
-                <img src="Assets/discord.png" alt="discord" id="discord" class="socialButton">
-            </a>
-            <a href="https://open.spotify.com/show/47EOvQl31q7QOst7SLidep" target="_blank">
-                <img src="Assets/spotify.png" alt="spotify" id="spotify" class="socialButton">
-            </a>
+        <nav class="navbar navbar-expand-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="">JoJo D&D</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsible">
+                    <span class="bi bi-list"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="collapsible">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="NotFound/not_found.html">
+                            <img src="Assets/rules.png" class="img-fluid barImg">
+                            <br>
+                            Rules
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="NotFound/not_found.html">
+                            <img src="Assets/rules.png" class="img-fluid barImg">
+                            <br>
+                            Races
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="NotFound/not_found.html">
+                            <img src="Assets/rules.png" class="img-fluid barImg">
+                            <br>
+                            Passions
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="NotFound/not_found.html">
+                            <img src="Assets/rules.png" class="img-fluid barImg">
+                            <br>
+                            Classes
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="NotFound/not_found.html">
+                            <img src="Assets/rules.png" class="img-fluid barImg">
+                            <br>
+                            Abilities
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="NotFound/not_found.html">
+                            <img src="Assets/rules.png" class="img-fluid barImg">
+                            <br>
+                            Feats
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="NotFound/not_found.html">
+                            <img src="Assets/rules.png" class="img-fluid barImg">
+                            <br>
+                            Weapons
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="NotFound/not_found.html">
+                            <img src="Assets/rules.png" class="img-fluid barImg">
+                            <br>
+                            Artifacts
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <img src="Assets/logo.png" alt="jojodnd" id="logo" class="img-fluid">
+                </div>
+                <div class="col-3"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-2"></div>
+                <div id="disclaim" class="col-8">
+                    <h1>Construction of Site In-Progress</h1>
+                    <small>Please be patient, we're working on integrating the full module into an online format!</small>
+                    <p>In the meantime, you can access the pdf version of the module 
+                        <a href="https://drive.google.com/file/d/1ODSNwvuyLXyuqkV2VnFhZc3l1srSYc5b/view" target="_blank">here.</a>
+                        <br>
+                        Additionally, you could join our discord or listen to our podcast where we play using this module:
+                    </p>
+
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-5">
+                            <a href="https:discord.gg/nmgSjPW8xs" target="_blank" class="linkClear">
+                                <img src="Assets/discord.png" alt="discord" id="discord" class="socialButton img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-5">
+                            <a href="https://open.spotify.com/show/47EOvQl31q7QOst7SLidep" target="_blank" class="linkClear">
+                                <img src="Assets/spotify.png" alt="spotify" id="spotify" class="socialButton img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-1"></div>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
         </div>
     </body>
 </html>
