@@ -1,4 +1,99 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    color: black;
     background-color: mediumslateblue;
+}
+
+.navbar {
+    list-style-type: none;
+    background-color: purple;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    border-bottom: 2px solid white;
+}
+
+li {
+    float: left;
+}
+
+.navbar-brand {
+    color: rgb(170, 155, 255);
+    font-size: 1.5rem;
+    padding: 16px;
+    padding-top: 52px;
+    padding-bottom: 0px;
+    margin: 0;
+}
+
+.navbar-brand:hover {
+    color: rgb(170, 155, 255);
+    background-color: rgb(114, 3, 114);
+}
+
+.nav-item {
+    text-align: center;
+    /* width: 100px; */
+}
+
+.nav-item:hover {
+    background-color: rgb(114, 3, 114);
+}
+
+
+.nav-link {
+    color: rgb(170, 155, 255);
+    padding-bottom: 0;
+    margin: .5rem;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: rgb(170, 155, 255);
+}
+
+.barImg {
+    height: 40px;
+    margin-bottom: .5rem;
+}
+
+.barImg a {
+    height: 80px;
+}
+
+.bi-list {
+    color: white;
+}
+
+#current {
+    background-color: rgb(102, 0, 102);
+}
+
+@media (min-width: 832px){
+    .navbar-expand-custom {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .navbar-expand-custom .navbar-nav {
+        flex-direction: row;
+    }
+    .navbar-expand-custom .dropdown-menu {
+        position: absolute;
+    }
+    .navbar-expand-custom .nav-link {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+    .navbar-expand-custom > .container {
+        flex-wrap: nowrap;
+    }
+    .navbar-expand-custom .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+    }
+    .navbar-expand-custom .navbar-toggler {
+        display: none;
+    }
 }
