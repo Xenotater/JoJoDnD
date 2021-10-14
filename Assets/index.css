@@ -1,0 +1,66 @@
+#logo {
+    display: block;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 250px;
+}
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.content {
+    margin-top: 2.5%;
+    margin-bottom: 5%;
+    padding: 10px;
+    text-align: left;
+    background-color: mediumpurple;
+    border: 5px solid purple;
+    border-radius: 50px;
+}
+
+.content h3, h4 {
+    margin: 2rem;
+    font-weight: bold;
+}
+
+.content p {
+    margin: 2rem;
+}
+
+a:hover {
+    color: rgb(0, 64, 255);
+}
+
+.center {
+    text-align: center;
+}
+
+.linkClear {
+    text-decoration: none;
+}
+
+div.col-6 {
+    padding: 0 10px;
+}
+
+.socialButton {
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    background-color: rgb(35, 39, 42);
+    width: 300px;
+    min-width: 146px;
+}
+
+.socialButton:hover {
+    background-color: rgb(42, 45, 48);
+}
+
+#credit {
+    margin-top: 4rem;
+    font-size: 12px;
+}
