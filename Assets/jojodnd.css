@@ -4,13 +4,17 @@ body {
     background-color: mediumslateblue;
 }
 
+.container-fluid {
+    padding-left: 0;
+}
+
 .navbar {
     list-style-type: none;
     background-color: purple;
     margin: 0;
     padding: 0;
-    top: 0;
     border-bottom: 2px solid white;
+    text-align: center;
 }
 
 li {
@@ -28,12 +32,24 @@ li {
 
 .navbar-brand:hover {
     color: rgb(170, 155, 255);
+}
+
+#home-logo {
+    width: 144px;
+    height: 60px;
+    margin-bottom: 0;
+}
+
+#home-link {
+    padding: 16px;
+}
+
+#home-link:hover {
     background-color: rgb(114, 3, 114);
 }
 
 .nav-item {
     text-align: center;
-    /* width: 100px; */
 }
 
 .nav-item:hover {
@@ -70,7 +86,20 @@ li {
     background-color: rgb(102, 0, 102);
 }
 
-@media (min-width: 832px){
+#disclaim{
+    text-align: center;
+    background-color: palevioletred;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#signed {
+    margin: 0;
+    margin-top: 4rem;
+    font-size: 12px;
+}
+
+@media (min-width: 875px){
     .navbar-expand-custom {
         flex-direction: row;
         flex-wrap: nowrap;
