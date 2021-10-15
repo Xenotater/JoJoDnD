@@ -23,21 +23,18 @@ h1 {
     border-radius: 50px;
 }
 
-.content h3, h4 {
+h3 {
     margin: 1.5rem;
     font-weight: bold;
 }
 
-.content p {
-    margin: 2rem;
+h4 {
+    margin: 1.5rem;
 }
 
-a:hover {
-    color: rgb(0, 64, 255);
-}
-
-.center {
-    text-align: center;
+p {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 .linkClear {
