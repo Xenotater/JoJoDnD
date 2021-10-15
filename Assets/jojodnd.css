@@ -21,19 +21,6 @@ li {
     float: left;
 }
 
-.navbar-brand {
-    color: rgb(170, 155, 255);
-    font-size: 1.5rem;
-    padding: 16px;
-    padding-top: 52px;
-    padding-bottom: 0px;
-    margin: 0;
-}
-
-.navbar-brand:hover {
-    color: rgb(170, 155, 255);
-}
-
 #home-logo {
     width: 144px;
     height: 60px;
@@ -42,6 +29,8 @@ li {
 
 #home-link {
     padding: 16px;
+    padding-top: 14px;
+    padding-bottom: 14px;
 }
 
 #home-link:hover {
@@ -83,7 +72,7 @@ li {
 }
 
 #current {
-    background-color: rgb(102, 0, 102);
+    background-color: rgb(99, 0, 99);
 }
 
 #disclaim{
@@ -91,6 +80,27 @@ li {
     background-color: palevioletred;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
+}
+
+.center {
+    text-align: center;
+}
+
+a {
+    color: rgb(10, 0, 155);
+}
+
+a:hover {
+    color: rgb(17, 0, 255);
+}
+
+code {
+    background-color: rgb(164, 132, 230);
+    border-radius: 5px;
+    padding: 2px;
+    color: black;
+    /* color: rgb(136, 28, 64); */
+    font-weight: bold;
 }
 
 @media (min-width: 875px){
