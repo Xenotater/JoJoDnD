@@ -93,12 +93,6 @@ li {
     border-bottom: 2px solid black;
 }
 
-#signed {
-    margin: 0;
-    margin-top: 4rem;
-    font-size: 12px;
-}
-
 @media (min-width: 875px){
     .navbar-expand-custom {
         flex-direction: row;
