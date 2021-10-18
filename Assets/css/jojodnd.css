@@ -28,6 +28,7 @@ li {
 }
 
 #home-link {
+    cursor: pointer;
     padding: 16px;
     padding-top: 14px;
     padding-bottom: 14px;
@@ -48,10 +49,10 @@ li {
 
 .nav-link {
     color: rgb(170, 155, 255);
+    cursor: pointer;
     padding-bottom: 0;
     margin: .5rem;
     margin-bottom: 0;
-    text-decoration: none;
 }
 
 .nav-link:hover {
@@ -61,10 +62,6 @@ li {
 .barImg {
     height: 40px;
     margin-bottom: .5rem;
-}
-
-.barImg a {
-    height: 80px;
 }
 
 .bi-list {
