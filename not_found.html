@@ -9,14 +9,16 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
         
-        <link rel="stylesheet" href="../Assets/jojodnd.css">
-        <link rel="stylesheet" href="Assets/not_found.css">
+        <link rel="stylesheet" href="Assets/img/jojodnd.css">
+        <link rel="stylesheet" href="Assets/css/not_found.css">
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
         <script>
-            if (window.location.hostname.includes("jojodnd") && !(window.location.pathname.includes("NotFound")))
-                window.location.href = "http://www.jojodnd.com/NotFound/not_found.html"
-            </script>
+            if (window.location.hostname.includes("jojodnd") && (window.location.pathname != "/not_found"))
+                window.location.href = "http://www.jojodnd.com/not_found";
+            if (window.location.hostname.includes("test") && (window.location.pathname != "/not_found"))
+                window.location.href = "https://test.d2rx16du3w8ppl.amplifyapp.com/not_found";
+        </script>
     </head>
     
     <body>
@@ -28,7 +30,7 @@
             <div class="container-fluid">
                 <div id="home-link">
                     <a href="../index.html">
-                        <img src="../Assets/icon.png" id="home-logo">
+                        <img src="Assets/img/icon.png" id="home-logo">
                         <br>
                     </a>
                 </div>
@@ -39,56 +41,56 @@
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="../Rules/rules.html">
-                                <img src="../Assets/list.png" class="img-fluid barImg">
+                                <img src="Assets/img/list.png" class="img-fluid barImg">
                                 <br>
                                 Rules
                             </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="">
-                                <img src="../Assets/person.png" class="img-fluid barImg">
+                                <img src="Assets/img/person.png" class="img-fluid barImg">
                                 <br>
                                 Races
                             </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="">
-                                <img src="../Assets/heart.png" class="img-fluid barImg">
+                                <img src="Assets/img/heart.png" class="img-fluid barImg">
                                 <br>
                                 Passions
                             </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="">
-                                <img src="../Assets/muscle.png" class="img-fluid barImg">
+                                <img src="Assets/img/muscle.png" class="img-fluid barImg">
                                 <br>
                                 Classes
                             </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="">
-                                <img src="../Assets/stars.png" class="img-fluid barImg">
+                                <img src="Assets/img/stars.png" class="img-fluid barImg">
                                 <br>
                                 Abilities
                             </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="">
-                                <img src="../Assets/ribbon.png" class="img-fluid barImg">
+                                <img src="Assets/img/ribbon.png" class="img-fluid barImg">
                                 <br>
                                 Feats
                             </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="">
-                                <img src="../Assets/swords.png" class="img-fluid barImg">
+                                <img src="Assets/img/swords.png" class="img-fluid barImg">
                                 <br>
                                 Weapons
                             </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="">
-                                <img src="../Assets/exclamation.png" class="img-fluid barImg">
+                                <img src="Assets/img/exclamation.png" class="img-fluid barImg">
                                 <br>
                                 Artifacts
                             </a>

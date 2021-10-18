@@ -10,10 +10,16 @@
             integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-        <link rel="stylesheet" href="../Assets/jojodnd.css">
-        <link rel="stylesheet" href="Assets/rules.css">
+        <link rel="stylesheet" href="Assets/css/jojodnd.css">
+        <link rel="stylesheet" href="Assets/css/rules.css">
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            if (window.location.hostname.includes("jojodnd") && (window.location.pathname != "/rules"))
+                window.location.href = "http://www.jojodnd.com/rules";
+            if (window.location.hostname.includes("test") && (window.location.pathname != "/rules"))
+                window.location.href = "https://test.d2rx16du3w8ppl.amplifyapp.com/rules";
+        </script>
     </head>
 
     <body>
@@ -24,8 +30,8 @@
         <nav class="navbar navbar-expand-custom sticky-top">
             <div class="container-fluid">
                 <div id="home-link">
-                    <a href="../index.html">
-                        <img src="../Assets/icon.png" id="home-logo">
+                    <a href="index.html">
+                        <img src="Assets/img/icon.png" id="home-logo">
                         <br>
                     </a>
                 </div>
@@ -36,56 +42,56 @@
                     <ul class="navbar-nav">
                         <li class="nav-item" id="current">
                             <a class="nav-link" href="">
-                                <img src="../Assets/list.png" class="img-fluid barImg">
+                                <img src="Assets/img/list.png" class="img-fluid barImg">
                                 <br>
                                 Rules
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../NotFound/not_found.html">
-                                <img src="../Assets/person.png" class="img-fluid barImg">
+                            <a class="nav-link" href="not_found.html">
+                                <img src="Assets/img/person.png" class="img-fluid barImg">
                                 <br>
                                 Races
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../NotFound/not_found.html">
-                                <img src="../Assets/heart.png" class="img-fluid barImg">
+                            <a class="nav-link" href="not_found.html">
+                                <img src="Assets/img/heart.png" class="img-fluid barImg">
                                 <br>
                                 Passions
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../NotFound/not_found.html">
-                                <img src="../Assets/muscle.png" class="img-fluid barImg">
+                            <a class="nav-link" href="not_found.html">
+                                <img src="Assets/img/muscle.png" class="img-fluid barImg">
                                 <br>
                                 Classes
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../NotFound/not_found.html">
-                                <img src="../Assets/stars.png" class="img-fluid barImg">
+                            <a class="nav-link" href="not_found.html">
+                                <img src="Assets/img/stars.png" class="img-fluid barImg">
                                 <br>
                                 Abilities
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../NotFound/not_found.html">
-                                <img src="../Assets/ribbon.png" class="img-fluid barImg">
+                            <a class="nav-link" href="not_found.html">
+                                <img src="Assets/img/ribbon.png" class="img-fluid barImg">
                                 <br>
                                 Feats
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../NotFound/not_found.html">
-                                <img src="../Assets/swords.png" class="img-fluid barImg">
+                            <a class="nav-link" href="not_found.html">
+                                <img src="Assets/img/swords.png" class="img-fluid barImg">
                                 <br>
                                 Weapons
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../NotFound/not_found.html">
-                                <img src="../Assets/exclamation.png" class="img-fluid barImg">
+                            <a class="nav-link" href="not_found.html">
+                                <img src="Assets/img/exclamation.png" class="img-fluid barImg">
                                 <br>
                                 Artifacts
                             </a>
@@ -106,13 +112,13 @@
                             Dungeons and Dragons 5th edition as a template. The combat systems, dice mechanics, and character building are
                             all taken from D&D 5th edition. There are some key differences however. Races, Classes, and
                             Backgrounds have been replaced with custom
-                            <a href="../Passions/passions.html">Passions</a>,
-                            <a href="../Races/races.html">Races</a>, and
-                            <a href="../Classes/classes.html">Classes</a>.
+                            <a href="passions.html">Passions</a>,
+                            <a href="races.html">Races</a>, and
+                            <a href="classes.html">Classes</a>.
                             Each character may have only one
                             Passion, but some may choose to have more than one Class. Each character may only have one Stand, however,
                             and therefore, each character may only have one Stand Type (Hybrid Stands are a thing, and the rules for them are
-                            noted on the <a href="../Classes/classes.html">Classes</a> page). 
+                            noted on the <a href="classes.html">Classes</a> page). 
                             You can still multiclass into non-stand classes though,  
                             for example a Stand User with a Power Type Stand might also choose to use The Ripple.
                         </p>
@@ -144,7 +150,7 @@
                             You may pick that number of Skills (minimum of one) and gain Proficiency in them.
                             You may also swap some or all of these Bonus Proficiencies for Human Languages, Instruments, or Tool Proficiencies.
                             These Proficiencies do not count against any Proficiencies gained by any
-                            <a href="../Feats/feats.html">Feats</a> or from your <a href="../Passions/passions.html">Passion</a>.
+                            <a href="feats.html">Feats</a> or from your <a href="passions.html">Passion</a>.
                         </p>
                         <p>
                             - <span class="bold">Armor Class</span> (AC) is calculated as either 10 + Dex + Con, 10 + Dex + Wis,
