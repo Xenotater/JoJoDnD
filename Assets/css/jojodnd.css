@@ -5,7 +5,7 @@ body {
 }
 
 .container-fluid {
-    padding-left: 0;
+    padding: 0;
 }
 
 .navbar {
@@ -69,6 +69,10 @@ li {
 
 .bi-list {
     color: white;
+}
+
+.navbar-toggler {
+    margin-right: 12px;
 }
 
 #current {
