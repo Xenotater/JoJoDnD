@@ -4,12 +4,7 @@ h1 {
 
 .content {
     margin-top: 0;
-    margin-bottom: 5%;
     padding: 1rem;
-    text-align: left;
-    background-color: mediumpurple;
-    border: 5px solid purple;
-    border-radius: 50px;
 }
 
 section {
@@ -19,14 +14,6 @@ section {
 
 section#last {
     border-bottom: none;
-}
- 
-.bold {
-    font-weight: bold;
-}
-
-.underline {
-    text-decoration: underline;
 }
 
 ol li {
