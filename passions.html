@@ -48,17 +48,17 @@
                         </p>
                     </li>
                     <li class="nav-item">
-                        <p class="nav-link" href="not_found.html">
-                            <img src="Assets/img/person.png" class="img-fluid barImg">
-                            <br>
-                            Races
-                        </p>
-                    </li>
-                    <li class="nav-item">
                         <p class="nav-link" id="passions">
                             <img src="Assets/img/heart.png" class="img-fluid barImg">
                             <br>
                             Passions
+                        </p>
+                      </li>
+                    <li class="nav-item">
+                        <p class="nav-link" href="not_found.html">
+                            <img src="Assets/img/person.png" class="img-fluid barImg">
+                            <br>
+                            Races
                         </p>
                     </li>
                     <li class="nav-item">
@@ -145,7 +145,7 @@
                                         <span class="bold">Important For:</span><br><span class="italics">Ranged Weapons, Agility, AC, Stand Precision</span>
                                     </p>
                                     <p>
-                                        <span class="bold">Passion Increases:</span><br><span class="italics"><span class="passion-link"> Thief</span> (+2), 
+                                        <span class="bold">Passion Increases:</span><br><span class="italics"><span class="passion-link">Thief</span> (+2), 
                                         <span class="passion-link">Artist</span> (+2), <span class="passion-link">Athlete</span> (+1)</span>
                                     </p>
                             </td>
@@ -173,7 +173,7 @@
                                         <span class="bold">Important For:</span><br><span class="italics">Arcana Checks, Bonus Proficiencies, Stand Range</span>
                                     </p>
                                     <p>
-                                        <span class="bold">Passion Increases:</span><br><span class="italics"><span class="passion-link"> Academic</span> (+2),
+                                        <span class="bold">Passion Increases:</span><br><span class="italics"><span class="passion-link">Academic</span> (+2),
                                         <span class="passion-link">Physician</span> (+2), <span class="passion-link">Trained Laborer</span> (+1), <span class="passion-link">Artist</span> (+1)</span>
                                     </p>
                             </td>
@@ -215,8 +215,137 @@
 
         <div class="row">
             <div class="col-lg-5">
+                <!-- Not necessary, but keep for future pages -->
+                <!-- <div class="content" id="list-head">
+                    <form>
+                        <input type="button" id="filter" value="Filter">
+                        <input type="reset" id="reset" value="Clear">
+                        <input type="text" id="search" placeholder="Search">
+                    </form>
+                </div>
+                <div class="content" id="filters"></div> -->
                 <div class="content" id="list">
-
+                    <h2 class="center">Passions</h2>
+                    <div class="scrollable">
+                        <table id="passion-table">
+                            <thead>
+                                <tr class="center">
+                                    <td id="name">
+                                        Passion
+                                    </td>
+                                    <td id="stat">
+                                        Ability
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="passion-list-link" id="Academic">
+                                    <td>
+                                        Academic
+                                    </td>
+                                    <td>
+                                        Int +2
+                                    </td>
+                                </tr>
+                                <tr class="passion-list-link" id="Artist">
+                                    <td>
+                                        Artist
+                                    </td>
+                                    <td>
+                                        Dex +2, Int +1
+                                    </td>
+                                </tr>
+                                <tr class="passion-list-link" id="Athlete">
+                                    <td>
+                                        Athlete
+                                    </td>
+                                    <td>
+                                        Str +2, Dex +1
+                                    </td>
+                                </tr>
+                                <tr class="passion-list-link" id="Con Artist">
+                                    <td>
+                                        Con Artist
+                                    </td>
+                                    <td>
+                                        Cha +2
+                                    </td>
+                                </tr>
+                                <tr class="passion-list-link" id="Hard Laborer">
+                                    <td>
+                                        Hard Laborer
+                                    </td>
+                                    <td>
+                                        Con +2, Dex +1, Str +1
+                                    </td>
+                                </tr>
+                                <tr class="passion-list-link" id="Performer">
+                                    <td>
+                                        Performer
+                                    </td>
+                                    <td>
+                                        Cha +2, Con +1
+                                    </td>
+                                </tr>
+                                <tr class="passion-list-link" id="Physician">
+                                    <td>
+                                        Physician
+                                    </td>
+                                    <td>
+                                        Int +2, Wis +1
+                                    </td>
+                                </tr>
+                                <tr class="passion-list-link" id="Service Worker">
+                                    <td>
+                                        Service Worker
+                                    </td>
+                                    <td>
+                                        Wis +1, Cha +1
+                                    </td>
+                                </tr>
+                                <tr class="passion-list-link" id="Student">
+                                    <td>
+                                        Student
+                                    </td>
+                                    <td>
+                                        Varies
+                                    </td>
+                                </tr>
+                                <tr class="passion-list-link" id="Survivalist">
+                                    <td>
+                                        Survivalist
+                                    </td>
+                                    <td>
+                                        Wis +2, Con +1
+                                    </td>
+                                </tr>
+                                <tr class="passion-list-link" id="Thief">
+                                    <td>
+                                        Thief
+                                    </td>
+                                    <td>
+                                        Dex +2, Cha +1
+                                    </td>
+                                </tr>
+                                <tr class="passion-list-link" id="Trained Laborer">
+                                    <td>
+                                        Trained Laborer
+                                    </td>
+                                    <td>
+                                        Str +2, Int +1
+                                    </td>
+                                </tr>
+                                <tr class="passion-list-link" id="Traveler">
+                                    <td>
+                                        Traveler
+                                    </td>
+                                    <td>
+                                        Con +3, Wis +1
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-7">

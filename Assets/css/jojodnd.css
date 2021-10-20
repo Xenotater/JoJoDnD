@@ -7,6 +7,7 @@ body {
 .content {
     margin-top: 2rem;
     margin-bottom: 2rem;
+    padding: 1rem;
     text-align: left;
     border: 5px solid purple;
     border-radius: 50px;
@@ -134,6 +135,11 @@ h1, h2, h3, th {
     margin-bottom: 1rem;
     width: 100%;
     border-bottom: 2px dashed purple;
+}
+
+.scrollable {
+    height: 100%;
+    overflow-y: auto;
 }
 
 @media (min-width: 875px){
