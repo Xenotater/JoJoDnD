@@ -4,19 +4,18 @@ $(document).ready(function() {
     // var filterOpen = false;
 
     if (p != null) {
-        console.log(p);
         updateDisplay(p);
     }
 
     $(".passion-link").click(function() {
         var p = $(this).html();
-        window.history.replaceState(null, "", '/passions.html?focus=' + p);
+        window.history.replaceState(null, "", '?focus=' + p);
         updateDisplay(p);
     })
 
     $(".passion-list-link").click(function() {
         var p = $(this).attr("id");
-        window.history.replaceState(null, "", '/passions.html?focus=' + p);
+        window.history.replaceState(null, "", '?focus=' + p);
         updateDisplay(p);
     })
 
