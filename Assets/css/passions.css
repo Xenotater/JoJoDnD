@@ -28,6 +28,7 @@
     border-right: 2px solid purple;
     padding: .5rem;
     border-spacing: 0;
+    vertical-align: top;
 }
 
 #statSum tr td:last-child {
@@ -77,7 +78,7 @@ span.passion-link:hover {
     border-bottom: none;
 }
 
-#filter {
+/*#filter {
     height: 100%;
     width: 20%;
     border-radius: 15px 0 0 0;
@@ -132,18 +133,18 @@ span.passion-link:hover {
 .filter-item {
     margin-left: 10px;
     background-color: lightgrey;
-}
+}*/
 
 #list {
     padding: 0;
-    height: 500px;
+    height: 550px;
     border-radius: 20px;
     overflow-y: hidden;
 }
 
 #passion-table {
     width: 100%;
-    height: 100%;
+    height: 500px;
 }
 
 #name {
@@ -165,6 +166,7 @@ span.passion-link:hover {
 
 #passion-table tbody td {
     padding: 2px;
+    padding-left: 1rem;
 }
 
 #passion-table tr:last-child {
@@ -176,7 +178,55 @@ span.passion-link:hover {
     background-color: rgb(132, 97, 202);
 }
 
+.listCurrent {
+    background-color: rgb(115, 80, 185);
+}
+
+.listCurrent:hover {
+    background-color: rgb(99, 67, 161);
+}
+
 #display {
     border-radius: 20px;
-    height: 500px;
+    height: 550px;
+}
+
+#box1, #box2 {
+    height: 100%;
+    float: left;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+#box1 {
+    width: 45%;
+    padding-right: 2rem;
+    border-right: 2px dashed purple;
+}
+
+#box2 {
+    padding-left: 2rem;
+    width: 55%;
+}
+
+.passion-title {
+    text-decoration: underline;
+    color: rgb(218, 173, 26);
+    margin-bottom: 1.5rem;
+}
+
+.passion-heading {
+    color: rgb(206, 163, 23);
+    margin-top: 3rem;
+    margin-bottom: .5rem;
+}
+
+li {
+    float: none;
+}
+
+@media (max-width: 450px){
+    .text-fluid {
+        font-size: 18px;
+    }
 }
