@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<!-- passions page -->
+<html lang="en">
+    <head>
+        <title>JoJo D&D</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-rfs/bootstrap-rfs.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="../jojodnd.css">
+        <link rel="stylesheet" href="passions.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script src="../nav.js"></script>
+        <script src="passions.js"></script>
+    </head>
+
+    <body>
+        <div class="container-fluid" id="disclaim">
+            <small>This site's construction is in progress! Expect missing pages/information.</small>
+        </div>
+
+        <nav class="navbar navbar-expand-custom sticky-top">
+            <div class="container-fluid">
+                <div id="home-link">
+                    <img src="../Assets/icon.png" id="home-logo">
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsible">
+                    <span class="bi bi-list"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsible">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <p class="nav-link" id="rules">
+                                <img src="../Assets/list.png" class="img-fluid barImg">
+                                <br>
+                                Rules
+                            </p>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link" id="passions">
+                                <img src="../Assets/pencil.png" class="img-fluid barImg">
+                                <br>
+                                Passions
+                            </p>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link" id="races">
+                                <img src="../Assets/person.png" class="img-fluid barImg">
+                                <br>
+                                Races
+                            </p>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link" id="classes">
+                                <img src="../Assets/muscle.png" class="img-fluid barImg">
+                                <br>
+                                Classes
+                            </p>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link" id="abilities">
+                                <img src="../Assets/stars.png" class="img-fluid barImg">
+                                <br>
+                                Abilities
+                            </p>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link" id="feats">
+                                <img src="../Assets/ribbon.png" class="img-fluid barImg">
+                                <br>
+                                Feats
+                            </p>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link" id="weapons">
+                                <img src="../Assets/swords.png" class="img-fluid barImg">
+                                <br>
+                                Weapons
+                            </p>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link" id="artifacts">
+                                <img src="../Assets/exclamation.png" class="img-fluid barImg">
+                                <br>
+                                Artifacts
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 center my-auto">
+                    <div class="content" id="intro">
+                        <h2>The World of JoJo</h2>
+                        <p>
+                            JoJo’s Bizarre Adventure typically takes place in a modern world filled almost completely with
+                            humans.
+                            While this is all fine and dandy, many people want some variety when building a character. This
+                            is where passions come into play.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <table class="content" id="statSum">
+                        <thead>
+                            <tr class="center">
+                                <th colspan="3">Ability Score Summary</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h3 class="underline">Strength</h3>
+                                        <p>
+                                            <span class="bold">Measures:</span><br><span class="italic">Natural Athleticism, Bodily Power</span>
+                                        </p>
+                                        <p>
+                                            <span class="bold">Important For:</span><br><span class="italic">Melee Combat, Grappling, Brute Force, Stand Power</span>
+                                        </p>
+                                        <p>
+                                            <span class="bold">Passion Increases:</span><br><span class="italic"><span class="passion-link">Trained Laborer</span> (+2), 
+                                            <span class="passion-link">Athlete</span> (+2) <span class="passion-link">Hard Laborer</span> (+1)</span>
+                                        </p>
+                                </td>
+                                <td>
+                                    <h3 class="underline">Dexterity</h3>
+                                        <p>
+                                            <span class="bold">Measures:</span><br><span class="italic">Physical Agility, Reflexes, Balance, Poise</span>
+                                        </p>
+                                        <p>
+                                            <span class="bold">Important For:</span><br><span class="italic">Ranged Weapons, Agility, AC, Stand Precision</span>
+                                        </p>
+                                        <p>
+                                            <span class="bold">Passion Increases:</span><br><span class="italic"><span class="passion-link">Thief</span> (+2), 
+                                            <span class="passion-link">Artist</span> (+2), <span class="passion-link">Athlete</span> (+1) <span class="passion-link">Hard Laborer</span> (+1)</span>
+                                        </p>
+                                </td>
+                                <td>
+                                    <h3 class="underline">Constitution</h3>
+                                        <p>
+                                            <span class="bold">Measures:</span><br><span class="italic">Health, Stamina, Vital Force</span>
+                                        </p>
+                                        <p>
+                                            <span class="bold">Important For:</span><br><span class="italic">Maximum HP, AC, Stand Durability</span>
+                                        </p>
+                                        <p>
+                                            <span class="bold">Passion Increases:</span><br><span class="italic"><span class="passion-link">Traveler</span> (+3), 
+                                            <span class="passion-link">Hard Laborer</span> (+2), 
+                                            <span class="passion-link">Survivalist</span> (+1), <span class="passion-link">Performer</span> (+1)</span>
+                                        </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3 class="underline">Intelligence</h3>
+                                        <p>
+                                            <span class="bold">Measures:</span><br><span class="italic">Mental Acuity, Information Recall, Analytical Skill</span>
+                                        </p>
+                                        <p>
+                                            <span class="bold">Important For:</span><br><span class="italic">Arcana Checks, Bonus Proficiencies, Stand Range</span>
+                                        </p>
+                                        <p>
+                                            <span class="bold">Passion Increases:</span><br><span class="italic"><span class="passion-link">Academic</span> (+2),
+                                            <span class="passion-link">Physician</span> (+2), <span class="passion-link">Trained Laborer</span> (+1), <span class="passion-link">Artist</span> (+1)</span>
+                                        </p>
+                                </td>
+                                <td>
+                                    <h3 class="underline">Wisdom</h3>
+                                        <p>
+                                            <span class="bold">Measures:</span><br><span class="italic">Awareness,
+                                                Intuition, Insight</span>
+                                        </p>
+                                        <p>
+                                            <span class="bold">Important For:</span><br><span class="italic">Perception, AC, Stand Speed</span>
+                                        </p>
+                                        <p>
+                                            <span class="bold">Passion Increases:</span><br><span class="italic"><span class="passion-link">Survivalist</span> (+2),
+                                            <span class="passion-link">Traveler</span> (+1), <span class="passion-link">Service Worker</span> (+1),
+                                            <span class="passion-link">Physician</span> (+1)</span>
+                                        </p>
+                                </td>
+                                <td>
+                                    <h3 class="underline">Charisma</h3>
+                                        <p>
+                                            <span class="bold">Measures:</span><br><span class="italic">Confidence, Eloquence, Leadership</span>
+                                        </p>
+                                        <p>
+                                            <span class="bold">Important For:</span><br><span class="italic">Social Skills, Stand Energy</span>
+                                        </p>
+                                        <p>
+                                            <span class="bold">Passion Increases:</span><br><span class="italic"><span class="passion-link">Con Artist</span> (+2),
+                                            <span class="passion-link">Performer</span> (+2), <span class="passion-link">Service Worker</span> (+1), <span class="passion-link">Thief</span> (+1)</span>
+                                        </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="row">
+                <div class="col-lg-5">
+                    <!-- Not necessary, but keep for future pages -->
+                    <!-- <div class="content" id="list-head">
+                        <form>
+                            <input type="button" id="filter" value="Filter">
+                            <input type="reset" id="reset" value="Clear">
+                            <input type="text" id="search" placeholder="Search">
+                        </form>
+                    </div>
+                    <div class="content" id="filters"></div> -->
+                    <div class="content" id="list">
+                        <h2 class="center">Passions</h2>
+                        <div>
+                            <table id="passion-table">
+                                <thead>
+                                    <tr class="center">
+                                        <td id="name">
+                                            Passion
+                                        </td>
+                                        <td id="stat">
+                                            Ability
+                                        </td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="passion-list-link listCurrent" id="Academic">
+                                        <td>
+                                            Academic
+                                        </td>
+                                        <td>
+                                            Int +2
+                                        </td>
+                                    </tr>
+                                    <tr class="passion-list-link" id="Artist">
+                                        <td>
+                                            Artist
+                                        </td>
+                                        <td>
+                                            Dex +2, Int +1
+                                        </td>
+                                    </tr>
+                                    <tr class="passion-list-link" id="Athlete">
+                                        <td>
+                                            Athlete
+                                        </td>
+                                        <td>
+                                            Str +2, Dex +1
+                                        </td>
+                                    </tr>
+                                    <tr class="passion-list-link" id="Con_Artist">
+                                        <td>
+                                            Con Artist
+                                        </td>
+                                        <td>
+                                            Cha +2
+                                        </td>
+                                    </tr>
+                                    <tr class="passion-list-link" id="Hard_Laborer">
+                                        <td>
+                                            Hard Laborer
+                                        </td>
+                                        <td>
+                                            Con +2, Dex +1, Str +1
+                                        </td>
+                                    </tr>
+                                    <tr class="passion-list-link" id="Performer">
+                                        <td>
+                                            Performer
+                                        </td>
+                                        <td>
+                                            Cha +2, Con +1
+                                        </td>
+                                    </tr>
+                                    <tr class="passion-list-link" id="Physician">
+                                        <td>
+                                            Physician
+                                        </td>
+                                        <td>
+                                            Int +2, Wis +1
+                                        </td>
+                                    </tr>
+                                    <tr class="passion-list-link" id="Service_Worker">
+                                        <td>
+                                            Service Worker
+                                        </td>
+                                        <td>
+                                            Wis +1, Cha +1
+                                        </td>
+                                    </tr>
+                                    <tr class="passion-list-link" id="Student">
+                                        <td>
+                                            Student
+                                        </td>
+                                        <td>
+                                            Varies
+                                        </td>
+                                    </tr>
+                                    <tr class="passion-list-link" id="Survivalist">
+                                        <td>
+                                            Survivalist
+                                        </td>
+                                        <td>
+                                            Wis +2, Con +1
+                                        </td>
+                                    </tr>
+                                    <tr class="passion-list-link" id="Thief">
+                                        <td>
+                                            Thief
+                                        </td>
+                                        <td>
+                                            Dex +2, Cha +1
+                                        </td>
+                                    </tr>
+                                    <tr class="passion-list-link" id="Trained_Laborer">
+                                        <td>
+                                            Trained Laborer
+                                        </td>
+                                        <td>
+                                            Str +2, Int +1
+                                        </td>
+                                    </tr>
+                                    <tr class="passion-list-link" id="Traveler">
+                                        <td>
+                                            Traveler
+                                        </td>
+                                        <td>
+                                            Con +3, Wis +1
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="content row" id="display">
+                        <div class="col-5" id="box1">
+
+                        </div>
+                        <div class="col-7" id="box2">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

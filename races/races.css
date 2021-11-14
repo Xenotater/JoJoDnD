@@ -1,0 +1,82 @@
+#wrapper {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#warning, #warning p {
+    margin-bottom: 0;
+}
+
+#list {
+    position: sticky;
+    top: calc(90px + 2rem);
+    padding: 0;
+    overflow-y: hidden;
+}
+
+#race-table {
+    width: 100%;
+}
+
+#race-table thead tr {
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 2px solid purple;
+}
+
+#race-table tbody tr {
+    border-bottom: 2px solid black ;
+}
+
+#race-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+#race-table td {
+    padding: .5rem;
+}
+
+.race-link:hover {
+    cursor: pointer;
+    background-color: rgb(132, 97, 202);
+}
+
+.listCurrent {
+    background-color: rgb(115, 80, 185);
+}
+
+.listCurrent:hover {
+    background-color: rgb(99, 67, 161);
+}
+
+.race-title {
+    text-decoration: underline;
+    text-decoration: underline;
+    color: rgb(218, 173, 26);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-underline-offset: 2px;
+    margin-bottom: 1.5rem;
+}
+
+.race-img {
+    max-height: 400px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.race-img img {
+    max-height: inherit;
+    border: 3px solid purple;
+    border-radius: 30px;
+}
+
+.race-text {
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 875px){ 
+    #list {
+        position: unset;
+    }
+}

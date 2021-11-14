@@ -2,6 +2,17 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     background-color: mediumslateblue;
+    min-width: 400px;
+}
+
+.content {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    text-align: left;
+    border: 5px solid purple;
+    border-radius: 20px;
+    background-color: mediumpurple;
 }
 
 .container-fluid {
@@ -95,13 +106,32 @@ a:hover {
     color: rgb(17, 0, 255);
 }
 
-code {
-    background-color: rgb(164, 132, 230);
-    border-radius: 5px;
-    padding: 2px;
-    color: black;
-    /* color: rgb(136, 28, 64); */
+.bold {
     font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.italic {
+    font-style: italic;
+}
+
+h1, h2, h3, th {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.divider {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    border-bottom: 2px dashed purple;
+}
+
+.scrollable {
+    height: 100%;
+    overflow-y: auto;
 }
 
 @media (min-width: 875px){
