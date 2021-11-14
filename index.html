@@ -9,19 +9,14 @@
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-rfs/bootstrap-rfs.css" rel="stylesheet">
         
-        <link rel="stylesheet" href="Assets/css/jojodnd.css">
-        <link rel="stylesheet" href="Assets/css/index.css">
+        <link rel="stylesheet" href="jojodnd.css">
+        <link rel="stylesheet" href="main.css">
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
-        <script>
-            if (window.location.hostname.includes("jojodnd") && (window.location.pathname != "/"))
-                window.location.href = "http://www.jojodnd.com";
-            if (window.location.hostname.includes("test") && (window.location.pathname != "/"))
-                window.location.href = "https://test.d2rx16du3w8ppl.amplifyapp.com";
-        </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="Assets/js/nav.js"></script>
+        <script src="nav.js"></script>
     </head>
     
     <body>
@@ -29,72 +24,73 @@
             <small>This site's construction is in progress! Expect missing pages/information.</small>
         </div>
 
+        <!-- navbar icons modified from https://freeicons.io/ -->
         <nav class="navbar navbar-expand-custom sticky-top">
             <div class="container-fluid">
                 <div id="home-link">
-                    <img src="Assets/img/icon.png" id="home-logo">
+                    <img src="Assets/icon.png" id="home-logo">
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsible">
                     <span class="bi bi-list"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="collapsible">
                     <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <p class="nav-link" id="rules">
-                            <img src="Assets/img/list.png" class="img-fluid barImg">
-                            <br>
-                            Rules
-                        </p>
-                      </li>
-                      <li class="nav-item">
-                        <p class="nav-link" href="not_found.html">
-                            <img src="Assets/img/person.png" class="img-fluid barImg">
-                            <br>
-                            Races
-                        </p>
-                      </li>
-                      <li class="nav-item">
-                        <p class="nav-link" id="passions">
-                            <img src="Assets/img/heart.png" class="img-fluid barImg">
-                            <br>
-                            Passions
-                        </p>
-                      </li>
-                      <li class="nav-item">
-                        <p class="nav-link" id="classes">
-                            <img src="Assets/img/muscle.png" class="img-fluid barImg">
-                            <br>
-                            Classes
-                        </p>
-                      </li>
-                      <li class="nav-item">
-                        <p class="nav-link" id="abilities">
-                            <img src="Assets/img/stars.png" class="img-fluid barImg">
-                            <br>
-                            Abilities
-                        </p>
-                      </li>
-                      <li class="nav-item">
-                        <p class="nav-link" id="feats">
-                            <img src="Assets/img/ribbon.png" class="img-fluid barImg">
-                            <br>
-                            Feats
-                        </p>
-                      </li>
-                      <li class="nav-item">
-                        <p class="nav-link" id="weapons">
-                            <img src="Assets/img/swords.png" class="img-fluid barImg">
-                            <br>
-                            Weapons
-                        </p>
-                      </li>
-                      <li class="nav-item">
-                        <p class="nav-link" id="artifacts">
-                            <img src="Assets/img/exclamation.png" class="img-fluid barImg">
-                            <br>
-                            Artifacts
-                        </p>
-                      </li>
+                        <li class="nav-item">
+                            <p class="nav-link" id="rules">
+                                <img src="Assets/list.png" class="img-fluid barImg">
+                                <br>
+                                Rules
+                            </p>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link" id="passions">
+                                <img src="Assets/pencil.png" class="img-fluid barImg">
+                                <br>
+                                Passions
+                            </p>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link" id="races">
+                                <img src="Assets/person.png" class="img-fluid barImg">
+                                <br>
+                                Races
+                            </p>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link" id="classes">
+                                <img src="Assets/muscle.png" class="img-fluid barImg">
+                                <br>
+                                Classes
+                            </p>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link" id="abilities">
+                                <img src="Assets/stars.png" class="img-fluid barImg">
+                                <br>
+                                Abilities
+                            </p>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link" id="feats">
+                                <img src="Assets/ribbon.png" class="img-fluid barImg">
+                                <br>
+                                Feats
+                            </p>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link" id="weapons">
+                                <img src="Assets/swords.png" class="img-fluid barImg">
+                                <br>
+                                Weapons
+                            </p>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link" id="artifacts">
+                                <img src="Assets/exclamation.png" class="img-fluid barImg">
+                                <br>
+                                Artifacts
+                            </p>
+                        </li>
                     </ul>
                   </div>
             </div>
@@ -102,13 +98,15 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-2"></div>
-                <div class="col-8 center">
-                    <img src="Assets/img/logo.png" alt="jojodnd" id="logo" class="img-fluid">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-8 center">
+                    <img src="Assets/logo.png" alt="jojodnd" id="logo" class="img-fluid">
                 </div>
-                <div class="col-2"></div>
+                <div class="col-xs-2"></div>
             </div>
             <h1>A Module for Dungeons & Dragons 5th Edition based upon JoJo’s Bizarre Adventure</h1>
+
+            <div class="divider"></div>
 
             <div class="row">
                 <div class="col-12 content">
@@ -130,33 +128,37 @@
                         If you have any questions, comments, or want to join our community, check out our discord or subreddit:
                     </p>
 
+                    <!-- external media icons from respective sources and used within each entity's branding guidelines -->
                     <div class="row center">
-                        <div class="col-6">
+                        <div class="col-sm-6">
                             <a href="https://discord.gg/nmgSjPW8xs" target="_blank" class="linkClear">
-                                <img src="Assets/img/discord.png" alt="discord" class="socialButton img-fluid">
+                                <img src="Assets/discord.png" alt="discord" class="socialButton img-fluid">
                             </a>
                         </div>
-                        <div class="col-6">
+                        <div class="col-sm-6">
                             <a href="https://www.reddit.com/r/jojodnd/" target="_blank" class="linkClear">
-                                <img src="Assets/img/reddit.png" alt="reddit" class="socialButton img-fluid">
+                                <img src="Assets/reddit.png" alt="reddit" class="socialButton img-fluid">
                             </a>
                         </div>
                     </div>
                     <p><br>We also have a tabletop podcast named Tabletop Travesty where we've played a campaign using this module:</p>
                     <div class="row center">
-                        <div class="col-3"></div>
-                        <div class="col-6">
+                        <div class="col-sm-3"></div>
+                        <div class="col-sm-6">
                             <a href="https://open.spotify.com/show/47EOvQl31q7QOst7SLidep" target="_blank" class="linkClear">
-                                <img src="Assets/img/spotify.png" alt="spotify" class="socialButton img-fluid">
+                                <img src="Assets/spotify.png" alt="spotify" class="socialButton img-fluid">
                             </a>
                         </div>
-                        <div class="col-3"></div>
+                        <div class="col-sm-3"></div>
                     </div>
                     <p id="credit">JoJo's Bizarre Adventure was created by Hirohiko Araki and Dungeons & Dragons was created by Wizards of the Coast</small>
                 </div>
             </div>
+
+            <div class="divider"></div> 
+
             <div id="footer">
-                <p>Site last updated 10/18/21 by Kyler Froman</p>
+                <p>Site last updated 11/13/21 by Kyler Froman</p>
                 <address href="mailto:xenotater@gmail.com">xenotater@gmail.com</address>
             </div>
         </div>
