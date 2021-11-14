@@ -168,7 +168,7 @@ span.passion-link:hover {
 }
 
 #passion-table tbody td {
-    padding: 8px;
+    padding: 5px;
     padding-left: 1rem;
 }
 
@@ -187,6 +187,7 @@ span.passion-link:hover {
 
 #display {
     border-radius: 20px;
+    height: calc(100% - 4rem);
 }
 
 #box1, #box2 {
@@ -194,7 +195,6 @@ span.passion-link:hover {
     padding: 0;
     padding-right: 1.5rem;
     padding-left: 1rem;
-    min-height: 492px;
 }
 
 #box1 {
@@ -218,10 +218,4 @@ span.passion-link:hover {
 
 li {
     float: none;
-}
-
-@media (max-width: 450px){
-    .text-fluid {
-        font-size: 18px;
-    }
 }

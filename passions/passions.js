@@ -1,31 +1,24 @@
 $(document).ready(function () {
-    // getPassion();
-    // updateDisplay();
-
-    // $(window).on("hashchange", function(e) {
-    //     getPassion();
-    //     updateDisplay();
-    // })
-
     var url = new URL(window.location.href);
     var p = url.searchParams.get("focus");
     // var filterOpen = false;
 
     if (p == null) {
         p = "Academic";
-        window.history.replaceState(null, "", '?focus=' + p);
+        updateURL(p);
     }
     updateDisplay(p);
 
     $(".passion-link").click(function () {
         var p = $(this).html();
-        window.history.replaceState(null, "", '?focus=' + p);
-        updateDisplay(p.replace(' ', '_'));
+        p = p.replace(' ', '_');
+        updateURL(p);
+        updateDisplay(p);
     })
 
     $(".passion-list-link").click(function () {
         var p = $(this).attr("id");
-        window.history.replaceState(null, "", '?focus=' + p);
+        updateURL(p);
         updateDisplay(p);
     })
 
@@ -85,31 +78,18 @@ $(document).ready(function () {
     // })
 })
 
-// function getPassion() {
-//     var request = new XMLHttpRequest;
-//     var post = "ajax=1";
-
-//     request.onload = function() {
-//         if (request.status == 200) {
-//             passion = request.responseText;
-//             console.log("request returned!");
-//             console.log(passion);
-//         }
-//     }
-
-//     request.open("GET", "", true);
-//     request.send(post);
-//     console.log("request sent!");
-// }
+function updateURL(p) {
+    window.history.replaceState(null, "", '?focus=' + p);
+}
 
 function updateDisplay(passion) {
-var name = passion, desc = "", examples = [], saves = "", saves = "", ability = "", custom = "", other = "";
+    var name = passion.replace('_', ' '), desc = "", examples = [], saves = "", saves = "", ability = "", custom = "", other = "";
 
     switch (passion) {
         default:
             passion = "Academic";
-            name = "Academic";
-            window.history.replaceState(null, "", '?focus=Academic');
+            name = passion;
+            updateURL(passion);
         case "Academic":
             desc = "Academics do exactly as the name suggests. They study hard, or teach hard, using their intelligence and experience to do their jobs.";
             examples = ["Professors", "Accountants", "Teachers", "Programmers", "Scientists / Researchers"];
@@ -133,7 +113,6 @@ var name = passion, desc = "", examples = [], saves = "", saves = "", ability = 
             custom = ["Athletic Experience", "You have proficiency in Athletics and Acrobatics."];
             break;
         case "Con_Artist":
-            name = "Con Artist";
             desc = "Those who steal, not for survival, but for wealth. To attain power, money, or influence, these people take advantage of the human brain in order to push people to achieve their own goals.";
             examples = ["Lawyers", "Fake Fortune Tellers", "Politicians", "Scammers", "Cult Leaders"];
             saves = "You are proficient in Charisma and Intelligence saving throws.";
@@ -142,7 +121,6 @@ var name = passion, desc = "", examples = [], saves = "", saves = "", ability = 
             other = ["Languages", "You can speak, read, and write up to three human languages."];
             break;
         case "Hard_Laborer":
-            name = "Hard Laborer";
             desc = "Some make a living performing unpleasant jobs that are physically demanding. Without them, society would not function.";
             examples = ["Construction Workers", "Garbage Collectors", "Coal Miners"];
             saves = "You are proficient in Constitution and Dexterity saving throws.";
@@ -164,7 +142,6 @@ var name = passion, desc = "", examples = [], saves = "", saves = "", ability = 
             custom = ["Medical Experience", "You have proficiency in Animal Handling, and expertise in Medicine."];
             break;
         case "Service_Worker":
-            name = "Service Worker";
             desc = "A person who makes their living serving people, using their training and wit to help them.";
             examples = ["Waitstaff", "Receptionists", "Secretaries", "Salespeople"];
             saves = "You are proficient in Wisdom and Charisma saving throws.";
@@ -195,7 +172,6 @@ var name = passion, desc = "", examples = [], saves = "", saves = "", ability = 
             custom = ["Street Smarts", "You have proficiency in Sleight of Hand, Stealth, and Intimidation. You also gain proficiency in Thieves' Tools."];
             break;
         case "Trained_Laborer":
-            name = "Trained Laborer";
             desc = "Someone who has studied for years in order to hone their craft. They use their Strength along with their experience in order to accomplish their tasks.";
             examples = ["Mechanics", "Blacksmiths / Metal Workers"];
             saves = "You are proficient in Strength and Intelligence saving throws.";
@@ -210,24 +186,24 @@ var name = passion, desc = "", examples = [], saves = "", saves = "", ability = 
             custom = ["Trial and Error", "You have proficiency in Survival and Religion."];
             break;
     }
+
     $(".listCurrent").removeClass("listCurrent");
     $("#" + passion).addClass("listCurrent");
     display(name, desc, examples, saves, ability, custom, other);
 }
 
 function display(name, desc, examples, saves, ability, custom, other) {
-    box1 = $("#box1");
-    box2 = $("#box2");
-    box1.html("<h2 class='passion-title'>" + name + "</h2>");
-    box1.append("<p>" + desc + "</p>");
-    box1.append("<h5 class='passion-heading'>Examples</h4>")
-    box1.append("<ul id='example-list'>");
+    var box1Text = "", box2Text = "";
+
+    box1Text += "<h2 class='passion-title'>" + name + "</h2><p>" + desc + "</p><h5 class='passion-heading'>Examples</h4><ul id='example-list'>";
     for (let i = 0; i < examples.length; i++) {
-        $("#example-list").append("<li>" + examples[i] + "</li>");
+        box1Text += "<li>" + examples[i] + "</li>";
     }
-    box2.html("<h3 class='passion-title'>" + name + " Traits</h3>");
-    box2.append("<p><span class='bold italic'>Saving Throws:</span> " + saves);
-    box2.append("<p><span class='bold italic'>Ability Score Increase:</span> " + ability);
-    box2.append("<p><span class='bold italic'>" + custom[0] + ":</span> " + custom[1]);
-    if (other != "") box2.append("<p><span class='bold italic'>" + other[0] + ":</span> " + other[1])
+    box1Text += "</ul>";
+    box2Text += "<h3 class='passion-title'>" + name + " Traits</h3><p><span class='bold italic'>Saving Throws:</span> " + saves + "<p><span class='bold italic'>\
+    Ability Score Increase:</span> " + ability + "<p><span class='bold italic'>" + custom[0] + ":</span> " + custom[1];
+    if (other != "") box2Text += "<p><span class='bold italic'>" + other[0] + ":</span> " + other[1];
+    
+    $("#box1").html(box1Text);
+    $("#box2").html(box2Text);
 }

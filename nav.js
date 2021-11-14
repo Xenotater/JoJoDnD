@@ -14,6 +14,7 @@ $(document).ready(function() {
                 window.location.pathname = "passions/";
                 break;
             default:
+                console.log(id);
                 window.location.pathname= "not_found/";
                 break;
         }
