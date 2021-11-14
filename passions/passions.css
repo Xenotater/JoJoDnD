@@ -219,3 +219,9 @@ span.passion-link:hover {
 li {
     float: none;
 }
+
+@media (max-width: 450px) {
+    h3 {
+        font-size: 20px;
+    }
+}
