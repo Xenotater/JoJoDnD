@@ -5,6 +5,7 @@ h1 {
 .content {
     margin-top: 0;
     padding: 1rem;
+    border-radius: 50px;
 }
 
 section {
