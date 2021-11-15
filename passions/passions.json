@@ -1,0 +1,149 @@
+{
+    "Academic": {
+        "name": "Academic",
+        "desc": "Academics do exactly as the name suggests. They study hard, or teach hard, using their intelligence and experience to do their jobs.",
+        "examples": ["Professors", "Accountants", "Teachers", "Programmers", "Scientists / Researchers"],
+        "saves": "You are proficient in Intelligence and Constitution saving throws.",
+        "ability": "Your Intelligence score increases by 2.",
+        "custom": {
+            "name": "Academic Studies",
+            "desc": "You have proficiency with Arcana, History, and Investigation."
+        },
+        "languages": "You can speak, read, and write up to two additional human languages."
+    },
+    "Artist": {
+        "name": "Artist",
+        "desc": "Using some sort of medium, Artists create beautiful things, made to invoke feelings in people. Whether it be a comic, a painting, or a sculpture, Artists spend hours in seclusion or with other artists, with the sole goal of improving their craft.",
+        "examples": ["Writers", "Painters", "Sculptors", "Mangakas", "Acrobats", "Dancers", "Chefs"],
+        "saves": "You are proficient in Dexterity and Intelligence saving throws.",
+        "ability": "Your Dexterity score increases by 2 and your Intelligence score increases by 1.",
+        "custom": {
+            "name": "Artist's Soul",
+            "desc": "You have proficiency in Sleight of Hand and Performance. You also gain Proficiency in a set of Artisan’s Tools or an instrument of your choice."
+            }
+        },
+    "Athlete": {
+        "name": "Athlete",
+        "desc": "People who push their bodies to the limits, in order to see the true limit of humanity’s potential, and to push past those limits.",
+        "examples": ["Olympians", "Professional Sports Players", "Warriors / Soldiers"],
+        "saves": "You are proficient in two of the following saving throws of your choice: Strength, Dexterity, or Constitution.",
+        "ability": "Your Strength score increases by 2 and your Dexterity score increases by 1.",
+        "custom": {
+            "name": "Athletic Experience",
+            "desc": "You have proficiency in Athletics and Acrobatics."
+            }
+        },
+    "Con_Artist": {
+        "name": "Con Artist",
+        "desc": "Those who steal, not for survival, but for wealth. To attain power, money, or influence, these people take advantage of the human brain in order to push people to achieve their own goals.",
+        "examples": ["Lawyers", "Fake Fortune Tellers", "Politicians", "Scammers", "Cult Leaders"],
+        "saves": "You are proficient in Charisma and Intelligence saving throws.",
+        "ability": "Your Charisma score increases by 2.",
+        "custom": {
+            "name": "Award-Winning Smile",
+            "desc": "You have proficiency in Deception, Persuasion, Intimidation, and Religion."
+            },
+        "languages": "You can speak, read, and write up to three additional human languages."
+        },
+    "Hard_Laborer": {
+        "name": "Hard Laborer",
+        "desc": "Some make a living performing unpleasant jobs that are physically demanding. Without them, society would not function.",
+        "examples": ["Construction Workers", "Garbage Collectors", "Coal Miners"],
+        "saves": "You are proficient in Constitution and Dexterity saving throws.",
+        "ability": "Your Constitution score increases by 2 and your Dexterity and Strength scores increase by 1.",
+        "custom": {
+            "name": "Grit",
+            "desc": "You may choose to be proficient in two of the following: Athletics, Acrobatics, Animal Handling, or Intimidation."
+            }
+        },
+    "Performer": {
+        "name": "Performer",
+        "desc": "Those who perfect a craft in order to inspire, but also to hear the roar of the crowd.",
+        "examples": ["Stand Up Comedians", "Actors", "Musicians", "DJs"],
+        "saves": "You are proficient in Charisma and Constitution saving throws.",
+        "ability": "Your Charisma score increases by 2 and your Constitution score increases by 1.",
+        "custom": {
+            "name": "Crowd Pleaser",
+            "desc": "You have proficiency in Deception, Persuasion, and of course, Performance. You are also proficient in up to two instruments of your choice."
+            }
+        },
+    "Physician": {
+        "name": "Physician",
+        "desc": "Physicians use their superior intellect, reasoning, and patience to assist the injured. Physicians have immense knowledge of the Human Body, knowing how it works in almost every way.",
+        "examples": ["Doctors", "Nurses", "Surgeons", "EMT Operators", "Veterinarians"],
+        "saves": "You are proficient in Intelligence and Wisdom saving throws.",
+        "ability": "Your Intelligence score increases by 2 and your Wisdom score increases by 1.",
+        "custom": {
+            "name": "Medical Experience",
+            "desc": "You have proficiency in Animal Handling, and expertise in Medicine."
+            }
+        },
+    "Service_Worker": {
+        "name": "Service Worker",
+        "desc": "A person who makes their living serving people, using their training and wit to help them.",
+        "examples": ["Waitstaff", "Receptionists", "Secretaries", "Salespeople"],
+        "saves": "You are proficient in Wisdom and Charisma saving throws.",
+        "ability": "Your Wisdom score increases by 1 and your Charisma score increases by 1.",
+        "custom": {
+            "name": "People Person",
+            "desc": "You have proficiency in Insight, Perception, and Persuasion."
+            },
+        "languages": "You can speak, read, and write up to two additional human languages."
+        },
+    "Student": {
+        "name": "Student",
+        "desc": "Many people have no clue what they would like, and simply want to reach their feelers as wide as they can.",
+        "examples": ["High School Students", "College Students"],
+        "saves": "You are proficient in any two saving throws of your choice.",
+        "ability": "You get +2 to one stat of your choice, +1 to three stats of your choice, and -1 to two stats of your choice.",
+        "custom": {
+            "name": "Constant Improvement",
+            "desc": "You have proficiency in any three skills of your choice."
+            },
+        "languages": "You can speak, read, and write up to two additional human languages."
+        },
+    "Survivalist": {
+        "name": "Survivalist",
+        "desc": "A person who has chosen to forgo most parts of Modern Society, instead cultivating their own land, and living a simple, more reclusive life. Survivalists might also be those attempting to make their way in a harsh Urban Climate.",
+        "examples": ["Wilderness Survivors", "Rural Subsistence Farmers", "Hunters", "Gangsters", "Monks"],
+        "saves": "You are proficient in Constitution and Wisdom saving throws.",
+        "ability": "Your Wisdom score increases by 2 and your Constitution score increases by 1.",
+        "custom": {
+            "name": "Will to Thrive",
+            "desc": "You have proficiency in Insight, Perception, Animal Handling, and Survival. You also gain proficiency in the use of the Herbalism Kit."
+            }
+        },
+    "Thief": {
+        "name": "Thief",
+        "desc": "Those who must make a living taking from the more fortunate. Through Stealth, Intimidation, or Speed, Thieves take to sustain the needs of themselves or those they hold close.",
+        "examples": ["Robbers", "Muggers"],
+        "saves": "You are proficient in Dexterity and Charisma saving throws.",
+        "ability": "Your Dexterity score increases by 2 and your Charisma score increases by 1.",
+        "custom": {
+            "name": "Street Smarts",
+            "desc": "You have proficiency in Sleight of Hand, Stealth, and Intimidation. You also gain proficiency in Thieves' Tools."
+            }
+        },
+    "Trained_Laborer": {
+        "name": "Trained Laborer",
+        "desc": "Someone who has studied for years in order to hone their craft. They use their Strength along with their experience in order to accomplish their tasks.",
+        "examples": ["Mechanics", "Blacksmiths / Metal Workers"],
+        "saves": "You are proficient in Strength and Intelligence saving throws.",
+        "ability": "Your Strength score increases by 2 and your Intelligence score increases by 1.",
+        "custom": {
+            "name": "Labor Experience",
+            "desc": "You have proficiency in Athletics, Arcana and Investigation. You also gain proficiency in a set of Artisan’s Tools of your choice."
+            }
+        },
+    "Traveler": {
+        "name": "Traveler",
+        "desc": "Those who travel immense distances, using their superior willpower and trained body to withstand immense pressure over long periods of time.",
+        "examples": ["Triathletes", "(Most) Ripple Users"],
+        "saves": "You are proficient in Wisdom and Constitution saving throws.",
+        "ability": "Your Constitution score increases by 3 and your Wisdom score increases by 1.",
+        "custom": {
+            "name": "Trial and Error",
+            "desc": "You have proficiency in Survival and Religion."
+            }
+        }
+}
