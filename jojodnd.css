@@ -38,29 +38,19 @@ li {
     margin-bottom: 0;
 }
 
-#home-link {
+#home {
     cursor: pointer;
     padding: 16px;
     padding-top: 14px;
     padding-bottom: 14px;
 }
 
-#home-link:hover {
-    background-color: rgb(114, 3, 114);
-}
-
 .nav-item {
     text-align: center;
 }
 
-.nav-item:hover {
-    background-color: rgb(114, 3, 114);
-}
-
-
 .nav-link {
     color: rgb(170, 155, 255);
-    cursor: pointer;
     padding-bottom: 0;
     margin: .5rem;
     margin-bottom: 0;
@@ -68,6 +58,22 @@ li {
 
 .nav-link:hover {
     color: rgb(170, 155, 255);
+}
+
+.navigator {
+    cursor: pointer;
+}
+
+nav .navigator:hover {
+    background-color: rgb(115, 3, 115);
+}
+
+.current-nav {
+    background-color: rgb(100, 0, 100);
+}
+
+nav .current-nav:hover {
+    background-color: rgb(90, 0, 90);
 }
 
 .barImg {
@@ -81,10 +87,6 @@ li {
 
 .navbar-toggler {
     margin-right: 12px;
-}
-
-#current {
-    background-color: rgb(99, 0, 99);
 }
 
 #disclaim{

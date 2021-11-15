@@ -1,25 +1,17 @@
 $(document).ready(function() {
     getNav();
 
-    $("body").on("click", "#home-link", function () {
-        clearParam();
-    })
-
-    $("body").on("click", ".nav-link", function () {
+    $("body").on("click", ".navigator", function () {
         clearParam();
         var id = $(this).attr("id");
-        console.log(id);
-        switch(id) {
-            case "rules":
-                window.location.pathname = "rules/";
-                break;
-            case "passions":
-                window.location.pathname = "passions/";
-                break;
-            default:
-                window.location.pathname= "not_found/";
-                break;
-        }
+        // var valid = ["home", "rules", "passions", "races", "classes", "abilities", "feats", "weapons", "artifacts"];
+
+        // if($.inArray(id, valid) == -1)
+        //     id = "not_found";
+        if(id == "home")
+            window.location.pathname = "/";
+        else
+            window.location.pathname = id + "/";
     })
 })
 
@@ -27,7 +19,7 @@ function getNav() {
     var nav = new XMLHttpRequest();
     var path = "";
     
-    if (location.pathname != "/")
+    if (window.location.pathname != "/")
         path = "../"
 
     nav.onload = function() {
@@ -37,6 +29,10 @@ function getNav() {
             $(".barImg").each(function () {
                 $(this).attr("src", path + $(this).attr("src"));
             })
+            var id = "#" + window.location.pathname.replace(/\//g, "");
+            if (id == "#")
+                id += "home";
+            $(id).addClass("current-nav");
         }
     }
     
@@ -47,7 +43,7 @@ function getNav() {
 //searchParam deletion from https://gist.github.com/simonw/9445b8c24ddfcbb856ec
 function clearParam() {
     history.replaceState && history.replaceState(
-        null, '', location.pathname + location.search.replace(/[\?&]focus=[^&]+/, '').replace(/^&/, '?')
+        null, '', window.location.pathname + window.location.search.replace(/[\?&]focus=[^&]+/, '').replace(/^&/, '?')
       );
     window.location.pathname = "/";
 }
