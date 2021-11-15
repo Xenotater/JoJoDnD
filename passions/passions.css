@@ -188,6 +188,8 @@ span.passion-link:hover {
 #display {
     border-radius: 20px;
     height: calc(100% - 4rem);
+    padding-bottom: 5px;
+    min-height: 540px;
 }
 
 #box1, #box2 {
@@ -206,14 +208,18 @@ span.passion-link:hover {
     color: rgb(218, 173, 26);
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     text-underline-offset: 2px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .passion-heading {
     color: rgb(206, 163, 23);
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    margin-top: 2.5rem;
+    margin-top: 1rem;
     margin-bottom: .5rem;
+}
+
+#example-list {
+    margin-bottom: 0;
 }
 
 li {
