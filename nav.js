@@ -4,10 +4,6 @@ $(document).ready(function() {
     $("body").on("click", ".navigator", function () {
         clearParam();
         var id = $(this).attr("id");
-        // var valid = ["home", "rules", "passions", "races", "classes", "abilities", "feats", "weapons", "artifacts"];
-
-        // if($.inArray(id, valid) == -1)
-        //     id = "not_found";
         if(id == "home")
             window.location.pathname = "/";
         else

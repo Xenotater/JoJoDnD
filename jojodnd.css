@@ -28,7 +28,11 @@ body {
     text-align: center;
 }
 
-li {
+.navbar-collapse {
+    max-height: 50vh;
+}
+
+nav li {
     float: left;
 }
 
@@ -132,8 +136,7 @@ h1, h2, h3, th {
 }
 
 .scrollable {
-    height: 100%;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 
 .loading {
@@ -154,7 +157,7 @@ h1, h2, h3, th {
     }
 }
 
-@media (min-width: 875px){
+@media (min-width: 970px){
     .navbar-expand-custom {
         flex-direction: row;
         flex-wrap: nowrap;
@@ -179,5 +182,33 @@ h1, h2, h3, th {
     }
     .navbar-expand-custom .navbar-toggler {
         display: none;
+    }
+}
+
+@media (max-width: 970px){
+    #home.current-nav, #home.current-nav:hover {
+        background-color: unset;
+    }
+
+    .navbar-collapse {
+        border-top: 2px solid white;
+    }
+
+    .nav-item {
+        border-bottom: 2px dashed black;
+        text-align: left;
+        padding-left: 1rem;
+    }
+
+    .nav-link {
+        padding: 5px;
+    }
+
+    .nav-text-break {
+        display: none;
+    }
+
+    .nav-item:last-child {
+        border-bottom: none;
     }
 }
