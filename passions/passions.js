@@ -89,7 +89,6 @@ function getData() {
     data.onload = function() {
         if (data.status == 200) {
             pData = JSON.parse(data.responseText);
-            console.log(pData);
             if (pData[p] != null)
                 updateDisplay();
             else {
