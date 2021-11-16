@@ -52,16 +52,22 @@
                     </div>
                     <div class="divider"></div>
                     <h4>Contact Us:</h4>
-                    <form id="contact">
+                    <form id="contact" action="contact.php" method="GET" target="response-frame">
                         <label for="name">Name: </label>
                         <br class="form-break">
-                        <input type="text" id="name" name="name" placeholder="John Doe">
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
                         <br class="form-break">
                         <label for="subject">Subject:</label>
                         <br class="form-break">
-                        <input type="text" id="subject" name="subject" placeholder="Title">
-                        <textarea id="comment" name="comment" rows="10" cols="100" placeholder="Comment/Suggestion/Issue"></textarea>
+                        <input type="text" id="subject" name="subject" placeholder="Title" required>
+                        <br>
+                        <label for="email">Email (optional):</label>
+                        <input type="email" id="email" name="email" placeholder="johndoe@example.com">
+                        <textarea id="comment" name="comment" rows="10" cols="100" placeholder="Comment/Suggestion/Issue" required></textarea>
+                        <br>
+                        <input type="submit" id="submit">
                     </form>
+                    <iframe id="response-frame" name="response-frame"></iframe>
                     <div class="divider"></div>
                     <h5>Admin Login: <i class="bi bi-box-arrow-right" id="login-btn"></i></h5>
                 </div>
