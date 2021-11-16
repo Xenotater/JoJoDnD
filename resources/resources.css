@@ -1,0 +1,140 @@
+h4 {
+    margin-bottom: 1.5rem;
+}
+
+.links {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    height: 50px;
+}
+
+#file-label {
+    float: left;
+    padding: 8px;
+    background-color: lightgray;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid black;
+}
+
+.file-btn {
+    float: left;
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    background-color: lightgray;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.file-btn:last-child {
+    border-radius: 0 5px 5px 0;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.file-btn:hover {
+    color: black;
+    background-color: rgb(180, 180, 180);
+}
+
+#spotify, #youtube {
+    display: flex;
+    align-items: center;
+}
+
+#spotify iframe, #youtube iframe {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 991px) {
+    #spotify {
+        margin-bottom: 2rem;
+    }
+
+    #youtube {
+        margin-bottom: .5rem;
+    }
+}
+
+#name, #subject {
+    margin-bottom: 1rem;
+}
+
+#comment {
+    width: 80%;
+}
+
+.form-break {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .form-break {
+        display: unset;
+    }
+
+    #contact {
+        text-align: left;
+    }
+
+    #comment {
+        width: 100%;
+    }
+}
+
+#login-btn {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: lightgray;
+}
+
+#login-btn:hover {
+    cursor: pointer;
+    background-color: rgb(180, 180, 180);
+}
+
+#popUp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(231, 231, 231, 0.80);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+}
+
+#close {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    color: darkred;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#close:hover {
+    font-size: 1.55rem;
+}
+
+#login {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 400px;
+}
+
+#login h2 {
+    margin-bottom: 1rem;
+}
+
+#user, #pass {
+    margin-bottom: 1rem;
+    margin-left: .5rem;
+}
