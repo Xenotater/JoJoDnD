@@ -115,12 +115,12 @@ h4 {
     right: 0;
     margin: 1rem;
     color: darkred;
-    font-size: 1.5rem;
+    font-size: 2rem;
     cursor: pointer;
 }
 
 #close:hover {
-    font-size: 1.55rem;
+    font-size: 2.05rem;
 }
 
 #login {
@@ -134,7 +134,32 @@ h4 {
     margin-bottom: 1rem;
 }
 
-#user, #pass {
+#user, #pass, #email {
     margin-bottom: 1rem;
     margin-left: .5rem;
+}
+
+#email {
+    width: 300px;
+}
+
+#submit {
+    height: 50px;
+    width: 115px;
+    font-size: 1.5rem;
+}
+
+#response-frame {
+    display: none;
+    width: 300px;
+    height: 50px;
+    border: 2px solid purple;
+    margin-top: 1rem;
+    text-align: center;
+    overflow: scroll;
+}
+
+#response-text {
+    text-align: center;
+    margin: 0;
 }
