@@ -13,9 +13,9 @@
         use PHPMailer\PHPMailer\Exception;
         require 'Assets/vendor/autoload.php';
 
-        $sender = 'kgamer5000@gmail.com';
-        $senderName = 'Xenotater';
-        $recipient = 'xenotater@gmail.com';
+        $sender = 'jojosdnd@gmail.com';
+        $senderName = 'JoJoD&D.com';
+        $recipient = 'jojosdnd@gmail.com';
         $usernameSmtp = 'AKIA3EDAMVZZ5AC4OHTG';
         $passwordSmtp = 'BE4DRvVPrTkOEEsQCXyfuo+7zO0a0D2UpXsWB/j89Nf9';
         $host = 'email-smtp.us-east-1.amazonaws.com';
