@@ -3,19 +3,37 @@ $(document).ready(function() {
         popUp();
     })
 
-    $("body").on("click", "#close", function() {
-        close();
+    $("body").on("click", "#closeLogin", function() {
+        closePopUp();
     })
 
-    $("#submit").click(function() {
-        if ($("#name").val() != "" && $("#subject").val() != "" && $("#comment").val() != "") {
-            $("#response-frame").css("display", "unset");
+    $("body").on("click", "#closeResponse", function() {
+        closeResponse();
+    })
+
+    $("form").submit(function(e) {
+        e.preventDefault(); //don't submit normally
+    })
+
+    $("#send").click(function() {
+        var name = $("#name").val(), subject = $("#subject").val(), comment = $("#comment").val(), email = $("#email").val();
+        if (name != "" && subject != "" && comment != "" && $('#email').is(':valid')) {
+            var response = new XMLHttpRequest();
+
+            response.onload = function() {
+                if(response.status == 200) {
+                    respond(response.responseText);
+                }
+            }
+
+            response.open("GET", "contact.php/?name=" + name + "&subject=" + subject + "&email=" + email + "&comment=" + comment, true);
+            response.send();
         }
     })
 })
 
 function popUp() {
-    var newText = "<div id='popUp' class='center'><span id='close'><i class='bi bi-x-lg'></i></span>";
+    var newText = "<div id='popUp' class='center'><i id='closeLogin' class='bi bi-x-lg'></i>";
     newText += "<div class='content' id='login'>";
     newText += "<h2>Admin Login</h2>";
     newText += "<form id='login-form' action='admin.php' method='post'>";
@@ -27,6 +45,21 @@ function popUp() {
     $("body").append(newText);
 }
 
-function close() {
+function closePopUp() {
     $("#popUp").remove();
+}
+
+function respond(text) {
+    closeResponse();
+    $("body").append("<div id='response'><i id='closeResponse' class='bi bi-x-lg'></i>" + text + "</div>");
+    if ($("#responseText").html("Your response was submitted!")) {
+        $("#response").addClass("success");
+        $("#contact").trigger("reset");
+    }
+    else
+        $("#response").addClass("failure");
+};
+
+function closeResponse() {
+    $("#response").remove();
 }
