@@ -102,6 +102,7 @@ nav .current-nav:hover {
 
 .center {
     text-align: center;
+    align-items: center;
 }
 
 a {
@@ -192,6 +193,7 @@ h1, h2, h3, th {
 
     .navbar-collapse {
         border-top: 2px solid white;
+        overflow-y: scroll;
     }
 
     .nav-item {

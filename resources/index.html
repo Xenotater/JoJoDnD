@@ -11,27 +11,60 @@
         <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-rfs/bootstrap-rfs.css" rel="stylesheet">
         
         <link rel="stylesheet" href="../jojodnd.css">
-        <link rel="stylesheet" href="../not_found/not_found.css">
+        <link rel="stylesheet" href="resources.css">
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="../nav.js"></script>
+        <script src="login.js"></script>
     </head>
     
     <body>
         <div class="container">
             <div class="row">
-                <div class="col-1"></div>
-                <div class="col-10">
-                    <div id="err">
-                        <img src="../not_found/meme.jpg" class="img-fluid" id="dio">
-                        <p>Sorry, looks like there's nothing here. Either this page doesn't exist yet or you've typed entered the wrong URL.
-                            <br>
-                            If you think this is an error, contact an administrator.
-                        </p>
+                <div class="col-12 content center">
+                    <h1>Resources</h1>
+                    <div class="divider"></div>
+                    <h4>PDF Version:</h4>
+                    <div class="links">
+                        <span id="file-label">JoJo_D&D_v0.51.pdf</span>
+                        <a href="Assets/JoJo_D&D_v0.51.pdf" class="file-btn" target="_blank">View <i class="bi bi-eye"></i></a>
+                        <a href="Assets/JoJo_D&D_v0.51.pdf" class="file-btn" download>Download <i class="bi bi-download"></i></a>
                     </div>
+                    <div class="divider"></div>
+                    <h4>Character Sheets:</h4>
+                    <div class="links">
+                        <span id="file-label">JoJo_Char_Sheet.pdf</span>
+                        <a href="Assets/JoJo_Char_Sheet.pdf" class="file-btn" target="_blank">View <i class="bi bi-eye"></i></a>
+                        <a href="Assets/JoJo_Char_Sheet.pdf" class="file-btn" download>Download <i class="bi bi-download"></i></a>
+                    </div>
+                    <div class="divider"></div>
+                    <h4>Campaign Example:</h4>
+                    <p>Check out our podcast "Tabletop Travesty" where we've played a campaign using this module named "The Bystanders":</p>
+                    <div class="row center">
+                        <!-- Embed code from Spotify and Youtube  -->
+                        <div class="col-lg-6" id="spotify">
+                            <iframe src="https://open.spotify.com/embed/show/47EOvQl31q7QOst7SLidep?utm_source=generator&amp;t=0" width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        </div>
+                        <div class="col-lg-6" id="youtube">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLrz-flq9JuPTvD6HEgGmK1LmlAV9IkEsR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <h4>Contact Us:</h4>
+                    <form id="contact">
+                        <label for="name">Name: </label>
+                        <br class="form-break">
+                        <input type="text" id="name" name="name" placeholder="John Doe">
+                        <br class="form-break">
+                        <label for="subject">Subject:</label>
+                        <br class="form-break">
+                        <input type="text" id="subject" name="subject" placeholder="Title">
+                        <textarea id="comment" name="comment" rows="10" cols="100" placeholder="Comment/Suggestion/Issue"></textarea>
+                    </form>
+                    <div class="divider"></div>
+                    <h5>Admin Login: <i class="bi bi-box-arrow-right" id="login-btn"></i></h5>
                 </div>
-                <div class="col-1"></div>
             </div>
         </div>
     </body>

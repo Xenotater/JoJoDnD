@@ -18,7 +18,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsible">
                     <span class="bi bi-list"></span>
                   </button>
-                  <div class="collapse navbar-collapse scrollable" id="collapsible">
+                  <div class="collapse navbar-collapse" id="collapsible">
                     <ul class="navbar-nav">
                         <li class="nav-item navigator" id="rules">
                             <p class="nav-link">
