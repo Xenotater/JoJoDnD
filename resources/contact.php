@@ -13,7 +13,7 @@
         use PHPMailer\PHPMailer\Exception;
         require 'Assets/vendor/autoload.php';
 
-        $sender = 'jojosdnd@gmail.com';
+        $sender = 'no-reply@contact.jojodnd.com';
         $senderName = 'JoJoD&D.com';
         $recipient = 'jojosdnd@gmail.com';
         $usernameSmtp = 'AKIA3EDAMVZZ5AC4OHTG';
