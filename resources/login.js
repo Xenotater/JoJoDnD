@@ -52,7 +52,7 @@ function closePopUp() {
 function respond(text) {
     closeResponse();
     $("body").append("<div id='response'><i id='closeResponse' class='bi bi-x-lg'></i>" + text + "</div>");
-    if ($("#responseText").html("Your response was submitted!")) {
+    if ($("#response-text").html() == "Your response was submitted!") {
         $("#response").addClass("success");
         $("#contact").trigger("reset");
     }

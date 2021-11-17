@@ -19,7 +19,7 @@
         $usernameSmtp = 'AKIA3EDAMVZZ5AC4OHTG';
         $passwordSmtp = 'BE4DRvVPrTkOEEsQCXyfuo+7zO0a0D2UpXsWB/j89Nf9';
         $host = 'email-smtp.us-east-1.amazonaws.com';
-        $port = 25;
+        $port = 587;
 
         $subject = $_GET["subject"];
 
