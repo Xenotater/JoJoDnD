@@ -8,15 +8,15 @@ $(document).ready(function() {
             window.location.pathname = "/";
         else
             window.location.pathname = id + "/";
-    })
-})
+    });
+});
 
 function getNav() {
     var path = "";
     if (window.location.pathname != "/")
     path = "../"
 
-    $.get("nav.php", function(data) {
+    $.get(path + "nav.php", function(data) {
         $("body").prepend(data);
         $("#home-logo").attr("src", path + $("#home-logo").attr("src"));
         $(".barImg").each(function () {

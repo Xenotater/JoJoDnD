@@ -12,8 +12,8 @@ $(document).ready(function () {
         var r = $(this).attr("id");
         updateURL(r);
         updateDisplay(r);
-    })
-})
+    });
+});
 
 function updateURL(r) {
     window.history.replaceState(null, "", '?focus=' + r);
@@ -27,7 +27,7 @@ function updateDisplay(r) {
             name = "Zombie";
             updateURL(name);
         case "Zombie":
-            break; 
+            break;
         case "Ghoul":
             break;
         case "Vampire":
@@ -35,13 +35,13 @@ function updateDisplay(r) {
         case "Pillar_Man":
             break;
         case "Enhanced_Pillar_Man":
-            break;   
+            break;
         case "Ultimate_Being":
             break;
         case "Abomination":
             break;
         case "Rock_Human":
-            break;    
+            break;
     }
 
     $(".listCurrent").removeClass("listCurrent");
