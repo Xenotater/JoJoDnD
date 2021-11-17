@@ -101,8 +101,8 @@ h4 {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: rgba(231, 231, 231, 0.80);
     z-index: 9999;
     display: flex;
@@ -125,7 +125,7 @@ h4 {
     right: -4px;
 }
 
-#login {
+#login-window {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -199,4 +199,20 @@ h4 {
 
 .failure {
     background-color: palevioletred;
+}
+
+#login-failure {
+    margin-top: 1rem;
+    color: darkred;
+    animation: flash 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes flash {
+    0%{color:rgb(204, 0, 0)}
+    100%{color:darkred}
+}
+
+#login-success {
+    margin-top: 1rem;
+    color: green;
 }

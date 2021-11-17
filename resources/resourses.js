@@ -11,7 +11,7 @@ $(document).ready(function() {
         closeResponse();
     });
 
-    $("form").submit(function(e) {
+    $("body").on("submit", "form", function(e) {
         e.preventDefault(); //don't submit normally
     });
 
@@ -23,24 +23,34 @@ $(document).ready(function() {
             });
         }
     });
+
+    $("body").on("click", "#login", function() {
+        var user = $("#user").val(), pass = $("#pass").val();
+        if (user != "" && pass != "")
+            $.post("admin/login.php", {action: "login", user: user, pass: pass}, function(data) {
+                if(data == "<h5 id='login-success'>Login Successful.</h5>")
+                    window.location.href = "admin/";
+                $("#login-failure").remove();
+                $("#login-window").append(data);
+            });
+    });
 });
 
 function popUp() {
     var newText = "<div id='popUp' class='center'><i id='closeLogin' class='bi bi-x-lg'></i>";
-    newText += "<div class='content' id='login'>";
+    newText += "<div class='content' id='login-window'>";
     newText += "<h2>Admin Login</h2>";
-    newText += "<form id='login-form' action='admin.php' method='post'>";
-    newText += "<label for='user'>Username: </label><input type='text' id='user' name='user'><br>";
-    newText += "<label for='pass'>Password: </label><input type='password' id='pass' name='pass'><br>";
-    newText += "<input type='submit' value='Login'>"
-
+    newText += "<form id='login-form'>";
+    newText += "<label for='user'>Username: </label><input type='text' id='user' name='user' required><br>";
+    newText += "<label for='pass'>Password: </label><input type='password' id='pass' name='pass' required><br>";
+    newText += "<input type='submit' value='Login' id='login'>"
     newText += "</form></div></div>";
     $("body").append(newText);
-};
+}
 
 function closePopUp() {
     $("#popUp").remove();
-};
+}
 
 function respond(text) {
     closeResponse();
@@ -51,8 +61,8 @@ function respond(text) {
     }
     else
         $("#response").addClass("failure");
-};
+}
 
 function closeResponse() {
     $("#response").remove();
-};
+}

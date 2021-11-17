@@ -17,13 +17,13 @@ $(document).ready(function () {
         p = p.replace(' ', '_');
         updateURL();
         updateDisplay();
-    })
+    });
 
     $(".passion-list-link").click(function () {
         p = $(this).attr("id");
         updateURL();
         updateDisplay();
-    })
+    });
 
     //all below wasn't needed for few number of passions, but may be for other pages
     // $("#search").focusin(function () {
@@ -77,7 +77,7 @@ $(document).ready(function () {
     //         $("#reset").css("box-shadow", "none");
     //     }, 1000);
     // })
-})
+});
 
 function updateURL() {
     window.history.replaceState(null, "", '?focus=' + p);
