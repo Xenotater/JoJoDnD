@@ -1,36 +1,29 @@
 $(document).ready(function() {
     $("#login-btn").click(function() {
         popUp();
-    })
+    });
 
     $("body").on("click", "#closeLogin", function() {
         closePopUp();
-    })
+    });
 
     $("body").on("click", "#closeResponse", function() {
         closeResponse();
-    })
+    });
 
     $("form").submit(function(e) {
         e.preventDefault(); //don't submit normally
-    })
+    });
 
     $("#send").click(function() {
         var name = $("#name").val(), subject = $("#subject").val(), comment = $("#comment").val(), email = $("#email").val();
         if (name != "" && subject != "" && comment != "" && $('#email').is(':valid')) {
-            var response = new XMLHttpRequest();
-
-            response.onload = function() {
-                if(response.status == 200) {
-                    respond(response.responseText);
-                }
-            }
-
-            response.open("GET", "contact.php/?name=" + name + "&subject=" + subject + "&email=" + email + "&comment=" + comment, true);
-            response.send();
+            $.get("contact.php/?name=" + name + "&subject=" + subject + "&email=" + email + "&comment=" + comment, function(data) {
+                respond(data);
+            });
         }
-    })
-})
+    });
+});
 
 function popUp() {
     var newText = "<div id='popUp' class='center'><i id='closeLogin' class='bi bi-x-lg'></i>";
@@ -43,11 +36,11 @@ function popUp() {
 
     newText += "</form></div></div>";
     $("body").append(newText);
-}
+};
 
 function closePopUp() {
     $("#popUp").remove();
-}
+};
 
 function respond(text) {
     closeResponse();
@@ -62,4 +55,4 @@ function respond(text) {
 
 function closeResponse() {
     $("#response").remove();
-}
+};
