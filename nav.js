@@ -12,28 +12,21 @@ $(document).ready(function() {
 })
 
 function getNav() {
-    var nav = new XMLHttpRequest();
     var path = "";
-    
     if (window.location.pathname != "/")
-        path = "../"
+    path = "../"
 
-    nav.onload = function() {
-        if (nav.status == 200) {
-            $("body").prepend(nav.responseText);
-            $("#home-logo").attr("src", path + $("#home-logo").attr("src"));
-            $(".barImg").each(function () {
-                $(this).attr("src", path + $(this).attr("src"));
-            })
-            var id = "#" + window.location.pathname.replace(/\//g, "");
-            if (id == "#")
-                id += "home";
-            $(id).addClass("current-nav");
-        }
-    }
-    
-    nav.open("GET", path + "nav.php", true);
-    nav.send();
+    $.get("nav.php", function(data) {
+        $("body").prepend(data);
+        $("#home-logo").attr("src", path + $("#home-logo").attr("src"));
+        $(".barImg").each(function () {
+            $(this).attr("src", path + $(this).attr("src"));
+        })
+        var id = "#" + window.location.pathname.replace(/\//g, "");
+        if (id == "#")
+            id += "home";
+        $(id).addClass("current-nav");
+    });
 }
 
 //searchParam deletion from https://gist.github.com/simonw/9445b8c24ddfcbb856ec

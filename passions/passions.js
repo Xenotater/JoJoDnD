@@ -84,22 +84,16 @@ function updateURL() {
 }
 
 function getData() {
-    var data = new XMLHttpRequest();
-
-    data.onload = function() {
-        if (data.status == 200) {
-            pData = JSON.parse(data.responseText);
-            if (pData[p] != null)
-                updateDisplay();
-            else {
-                p = "Academic";
-                updateDisplay();
-            }
+    $.get("passions.json", function(data) {
+        pData = data;
+        if (pData[p] != null)
+            updateDisplay();
+        else {
+            p = "Academic";
+            updateDisplay();
         }
-    };
+    });
 
-    data.open("GET", "passions.json", true);
-    data.send();
     $("#display").html("<div class='loading'></div>");
 }
 
