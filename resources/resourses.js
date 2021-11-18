@@ -29,7 +29,7 @@ $(document).ready(function() {
         if (user != "" && pass != "")
             $.post("admin/login.php", {action: "login", user: user, pass: pass}, function(data) {
                 if(data == "<h5 id='login-success'>Login Successful.</h5>")
-                    window.location.href = "admin/";
+                    window.location.href = "admin";
                 $("#login-failure").remove();
                 $("#login-window").append(data);
             });
