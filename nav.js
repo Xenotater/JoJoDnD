@@ -7,7 +7,7 @@ $(document).ready(function() {
         if(id == "home")
             window.location.pathname = "/";
         else
-            window.location.pathname = id + "/";
+            window.location.pathname = id;
     });
 });
 

@@ -1,6 +1,6 @@
 <?php
 	if(!session_start()) {
-		header("Location: index.php?err='true'");
+		header("Location: ../admin/?err='true'");
 		exit;
 	}
 	
@@ -17,6 +17,6 @@
 	
 	session_destroy();
 	
-	header("Location: ../index.html");
+	header("Location: ../");
 	exit;
 ?>

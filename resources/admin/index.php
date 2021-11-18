@@ -22,7 +22,7 @@
                 echo "<h1 id='err'>Couldn't Verify Session, Please Contact the Site Admin.</h1>";
             }
             if (empty($_SESSION["loggedin"])) {
-                header("Location: ../index.html");
+                header("Location: logout.php");
                 exit;
             }
         ?>
