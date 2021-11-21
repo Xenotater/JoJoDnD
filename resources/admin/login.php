@@ -1,15 +1,36 @@
 <?php
     if ($_POST["action"] == "login")  {
-        if (($_POST["user"] == "test" && $_POST["pass"] == "pass") || ($_POST["user"] == "dio" && $_POST["pass"] == "oiltanker4u"))
-            {
-                if (!session_start()) {
-                    echo "<h5 id='login-failure'>Couldn't Verify Session, Please Contact the Site Admin.</h5>";
-                }
-                $_SESSION["loggedin"] = $_POST["user"];
-                echo "<h5 id='login-success'>Login Successful.</h5>";
+        $mysqli = new mysqli("localhost", "kyler", "dbadmin", "JoJoDnD");
+
+        if($mysqli->connect_error) {
+            echo "<h5 id='login-failure'>Couldn't connect to database, please contact the site administrator.</h5>";
+        }
+        else {
+            $user = $mysqli->real_escape_string($_POST["user"]);
+            $pass = md5($mysqli->real_escape_string($_POST["pass"]));
+
+            $result = $mysqli->query("SELECT id FROM users WHERE username = '$user' AND password = '$pass'");
+            
+            if ($result) {
+                $match = $result->num_rows;
+
+                $result->close();
+			    $mysqli->close();
+
+                if ($match == 1)
+                    {
+                        if (!session_start()) {
+                            echo "<h5 id='login-failure'>Couldn't verify session, please contact the site administrator.</h5>";
+                        }
+                        $_SESSION["loggedin"] = $user;
+                        echo "<h5 id='login-success'>Login Successful.</h5>";
+                    }
+                else
+                    echo "<h5 id='login-failure'>Invalid Credentials.";
             }
-        else
-            echo "<h5 id='login-failure'>Invalid Credentials.</h5>";
+            else
+                echo "<h5 id='login-failure'>Something went wrong, please contact the site administrator.</h5>";
+        }
     }
     else
         header("Location: ../");

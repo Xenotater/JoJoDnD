@@ -21,9 +21,27 @@
             if (!session_start() || $_GET["err"] == true) {
                 echo "<h1 id='err'>Couldn't Verify Session, Please Contact the Site Admin.</h1>";
             }
-            if (empty($_SESSION["loggedin"])) {
-                header("Location: logout.php");
-                exit;
+            else {
+                if (empty($_SESSION["loggedin"])) {
+                    header("Location: logout.php");
+                    exit;
+                }
+                $mysqli = new mysqli("localhost", "kyler", "dbadmin", "JoJoDnD");
+
+                if($mysqli->connect_error) {
+                    echo "<h5 id='err'>Couldn't connect to database, please contact the site administrator.</h5>";
+                }
+                else {
+                    $result = $mysqli->query("SELECT * FROM contactData");
+                    $contacts = array();
+                    while ($row = $result->fetch_assoc()) {
+                        array_push($contacts, "Name: " . $row["name"] . ", Email: " . $row["email"] . ", Subject: " . $row["subject"] . ", Comment: " . $row["comment"]);
+                    }
+
+                    for ($i = 0; $i < count($contacts); $i++) {
+                        echo "<p>" . $contacts[$i] . "</p>";
+                    }
+                }
             }
         ?>
     </body>
