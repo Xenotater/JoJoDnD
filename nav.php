@@ -1,3 +1,11 @@
+<?php
+    if ($_POST["action"] != "nav") 
+    {
+        header("Location: /");
+        exit;
+    }
+?>
+<!-- common navbar file -->
 <!DOCTYPE html>
 <html lang="en">
     <head>

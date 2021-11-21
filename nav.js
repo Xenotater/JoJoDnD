@@ -16,7 +16,7 @@ function getNav() {
     if (window.location.pathname != "/")
     path = "../"
 
-    $.get(path + "nav.php", function(data) {
+    $.post(path + "nav.php", {action: "nav"}, function(data) {
         $("body").prepend(data);
         $("#home-logo").attr("src", path + $("#home-logo").attr("src"));
         $(".barImg").each(function () {
