@@ -28,7 +28,11 @@ body {
     text-align: center;
 }
 
-li {
+.navbar-collapse {
+    max-height: 50vh;
+}
+
+nav li {
     float: left;
 }
 
@@ -38,29 +42,19 @@ li {
     margin-bottom: 0;
 }
 
-#home-link {
+#home {
     cursor: pointer;
     padding: 16px;
     padding-top: 14px;
     padding-bottom: 14px;
 }
 
-#home-link:hover {
-    background-color: rgb(114, 3, 114);
-}
-
 .nav-item {
     text-align: center;
 }
 
-.nav-item:hover {
-    background-color: rgb(114, 3, 114);
-}
-
-
 .nav-link {
     color: rgb(170, 155, 255);
-    cursor: pointer;
     padding-bottom: 0;
     margin: .5rem;
     margin-bottom: 0;
@@ -68,6 +62,22 @@ li {
 
 .nav-link:hover {
     color: rgb(170, 155, 255);
+}
+
+.navigator {
+    cursor: pointer;
+}
+
+nav .navigator:hover {
+    background-color: rgb(115, 3, 115);
+}
+
+.current-nav {
+    background-color: rgb(100, 0, 100);
+}
+
+nav .current-nav:hover {
+    background-color: rgb(90, 0, 90);
 }
 
 .barImg {
@@ -83,10 +93,6 @@ li {
     margin-right: 12px;
 }
 
-#current {
-    background-color: rgb(99, 0, 99);
-}
-
 #disclaim{
     text-align: center;
     background-color: palevioletred;
@@ -96,6 +102,7 @@ li {
 
 .center {
     text-align: center;
+    align-items: center;
 }
 
 a {
@@ -130,11 +137,28 @@ h1, h2, h3, th {
 }
 
 .scrollable {
-    height: 100%;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 
-@media (min-width: 875px){
+.loading {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    width: 300px;
+    height: 300px;
+    border: 20px solid lightgray;
+    border-radius: 50%;
+    border-top-color: magenta;
+    animation: spin 1s ease-in-out infinite;
+}
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (min-width: 970px){
     .navbar-expand-custom {
         flex-direction: row;
         flex-wrap: nowrap;
@@ -159,5 +183,34 @@ h1, h2, h3, th {
     }
     .navbar-expand-custom .navbar-toggler {
         display: none;
+    }
+}
+
+@media (max-width: 970px){
+    #home.current-nav, #home.current-nav:hover {
+        background-color: unset;
+    }
+
+    .navbar-collapse {
+        border-top: 2px solid white;
+        overflow-y: scroll;
+    }
+
+    .nav-item {
+        border-bottom: 2px dashed black;
+        text-align: left;
+        padding-left: 1rem;
+    }
+
+    .nav-link {
+        padding: 5px;
+    }
+
+    .nav-text-break {
+        display: none;
+    }
+
+    .nav-item:last-child {
+        border-bottom: none;
     }
 }

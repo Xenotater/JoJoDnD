@@ -1,0 +1,107 @@
+#back {
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+#back:hover {
+    background-color: rgb(214, 214, 214)
+}
+
+#err {
+    text-align: center;
+    color: darkred;
+}
+
+#logout {
+    text-align: center;
+}
+
+#contacts {
+    width: 90%;
+    border: 5px solid purple;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#welcome {
+    text-align: center;
+    font-size: 2rem;
+}
+
+td, th {
+    vertical-align: middle;
+    border-right: 1px solid purple;
+}
+
+td:last-child {
+    border-right: unset;
+}
+
+.delete {
+    width: 40px;
+    text-align: center;
+}
+
+.delete:hover {
+    cursor: pointer;
+    background-color: palevioletred;
+    box-shadow: none;
+}
+
+#popUp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(231, 231, 231, 0.80);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+}
+
+#closeX {
+    position: fixed;
+    top: -8px;
+    right: 0;
+    margin: 1rem;
+    color: darkred;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+#closeX:hover {
+    font-size: 40px;
+    top: -12px;
+    right: -4px;
+}
+
+#warning {
+    margin-left: auto;
+    margin-right: auto;
+    color: darkred;
+    text-align: center;
+    width: 60%;
+}
+
+#cancel {
+    margin-top: 1rem;
+    margin-right: .5rem;
+    font-size: 1.5rem;
+}
+
+#cancel:hover {
+    background-color: rgb(214, 214, 214)
+}
+
+.del {
+    margin-top: 1rem;
+    margin-left: .5rem;
+    font-size: 1.5rem;
+    background-color: darkred;
+    color: white;
+}
+
+.del:hover {
+    background-color: rgb(105, 0, 0);
+}

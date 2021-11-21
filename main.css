@@ -28,26 +28,20 @@ h4 {
 }
 
 p {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin: 1.5rem;
 }
 
-.linkClear {
-    text-decoration: none;
-}
-
-div.col-6 {
+/* div.col-6 {
     padding: 0 10px;
-}
+} */
 
 .socialButton {
-    padding: 5px;
+    padding: .5rem;
     border: 2px solid black;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 5px 5px 10px black;
     background-color: rgb(35, 39, 42);
     width: 300px;
-    /* min-width: 146px; */
     margin-bottom: 1rem;
 }
 
