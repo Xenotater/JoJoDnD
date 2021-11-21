@@ -10,10 +10,14 @@
             echo "<h5 id='response-text'>Couldn't connect to database, please contact the site administrator.</h5>";
         }
         else {
-            $name = $mysqli->real_escape_string($_GET["name"]);
-            $subject = $mysqli->real_escape_string($_GET["subject"]);
-            $email = $mysqli->real_escape_string($_GET["email"]);
-            $comment = $mysqli->real_escape_string($_GET["comment"]);
+            $name = $mysqli->real_escape_string($_POST["name"]);
+            $subject = $mysqli->real_escape_string($_POST["subject"]);
+            $email = $mysqli->real_escape_string($_POST["email"]);
+            $comment = $mysqli->real_escape_string($_POST["comment"]);
+            // $name = "test";
+            // $subject = "test";
+            // $email = "";
+            // $comment = "CLI test";
 
             //email code from https://docs.aws.amazon.com/ses/latest/DeveloperGuide/send-using-smtp-php.html
             $sender = 'no-reply@contact.jojodnd.com';
@@ -60,15 +64,13 @@
             }
         }
 
-        $result = $mysqli->query("INSERT INTO contactData (name, email, subject, comment) VALUES ('$name', '$email', '$subject', '$comment')");
+        $mysqli->query("INSERT INTO contactData (name, email, subject, comment) VALUES ('$name', '$email', '$subject', '$comment')");
 
         if ($mysqli->error)
             echo "<h5 id='response-text'>An error occurred, please contact the site administrator.</h5><p>{$mysqli->error}</p>";
-        else {
+        else 
             echo "<h5 id='response-text'>Your response was submitted!</h5>"; 
-            $result->close();
-			$mysqli->close();
-        }
+        $mysqli->close();
     }
     else
         header("Location: ../");
