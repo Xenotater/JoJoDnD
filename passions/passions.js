@@ -84,7 +84,7 @@ function updateURL() {
 }
 
 function getData() {
-    $.get("passions.json", function(data) {
+    $.getJSON("passions.json", function(data) {
         pData = data;
         if (pData[p] != null)
             updateDisplay();

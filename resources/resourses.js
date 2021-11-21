@@ -18,7 +18,7 @@ $(document).ready(function() {
     $("#send").click(function() {
         var name = $("#name").val(), subject = $("#subject").val(), comment = $("#comment").val(), email = $("#email").val();
         if (name != "" && subject != "" && comment != "" && $('#email').is(':valid')) {
-            $.get("contact.php/?name=" + name + "&subject=" + subject + "&email=" + email + "&comment=" + comment, function(data) {
+            $.post("contact.php/?name=" + name + "&subject=" + subject + "&email=" + email + "&comment=" + comment, {action: "send"}, function(data) {
                 respond(data);
             });
         }
