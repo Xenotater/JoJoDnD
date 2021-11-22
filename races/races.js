@@ -39,9 +39,9 @@ function updateDisplay() {
     var newContent = "";
 
     newContent += "<h2 class='race-title'>" + race.name + "</h2><div class='race-img'><img class='img-fluid' src='Assets/" + r + ".png' alt='" + r + "'></div>";
-    newContent += "<p class='center'><small><b>Examples</b>:";
+    newContent += "<p class='center'><small><b>Examples</b>: ";
     for (let i = 0; i < race.examples.length; i++) {
-        newContent += race.examples[i];
+        newContent += "<a href='https://jojo.fandom.com/wiki/" + race.links[i] + "' target='_blank'>"  + race.examples[i] + "</a>";
         if (i != race.examples.length-1)
             newContent += ", ";
         else
@@ -50,12 +50,19 @@ function updateDisplay() {
     newContent += "<h4 class='race-heading'>Description</h4><p>" + race.desc + "</p>";
     if (race.playing != null)
         newContent += "<h4 class='race-heading'>Playing a " + race.name + "</h4><p>" + race.playing + "</p>";
+    if (race.note != null)
+        newContent += "<p><small><b>Note</b>: <i>" + race.note + "</i></small></p>";
     if (race.changes != null)
         newContent += "<h4 class='race-heading'>Changes</h4><p>" + race.changes + "</p>";
     if (race.feats != null) {
         newContent += "<h4 class='race-heading'>Racial Features</h4><ul>";
         for (let i = 0; i < race.feats.length; i++) {
-            newContent += "<li><a href='/abilities/?focus=" + race.feats[i].replace(/ /g, "_") + "'>" + race.feats[i] + "</a></li>";
+            if (race.feats[i+1] == "OR") {
+                newContent += "<li><a href='/abilities/?focus=" + race.feats[i].replace(/ /g, "_") + "'>" + race.feats[i] + "</a> OR <a href='/abilities/?focus=" + race.feats[i+2].replace(/ /g, "_") + "'>" + race.feats[i+2] + "</a></li>";
+                i += 2;
+            }
+            else
+                newContent += "<li><a href='/abilities/?focus=" + race.feats[i].replace(/ /g, "_") + "'>" + race.feats[i] + "</a></li>";
         }
         newContent += "</ul>";
     }
