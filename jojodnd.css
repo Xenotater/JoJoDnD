@@ -113,18 +113,6 @@ a:hover {
     color: rgb(17, 0, 255);
 }
 
-.bold {
-    font-weight: bold;
-}
-
-.underline {
-    text-decoration: underline;
-}
-
-.italic {
-    font-style: italic;
-}
-
 h1, h2, h3, th {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }

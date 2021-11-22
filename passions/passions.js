@@ -86,12 +86,9 @@ function updateURL() {
 function getData() {
     $.getJSON("passions.json", function(data) {
         pData = data;
-        if (pData[p] != null)
-            updateDisplay();
-        else {
+        if (pData[p] == null)
             p = "Academic";
-            updateDisplay();
-        }
+        updateDisplay();
     });
 
     $("#display").html("<div class='loading'></div>");
@@ -107,9 +104,9 @@ function updateDisplay() {
         box1Text += "<li>" + passion.examples[i] + "</li>";
     }
     box1Text += "</ul>";
-    box2Text += "<h3 class='passion-title'>" + passion.name + " Traits</h3><p><span class='bold italic'>Saving Throws:</span> " + passion.saves + "<p><span class='bold italic'>\
-    Ability Score Increase:</span> " + passion.ability + "<p><span class='bold italic'>" + passion.custom.name + ":</span> " + passion.custom.desc;
-    if (passion.languages != null) box2Text += "<p><span class='bold italic'>Languages:</span> " + passion.languages;
+    box2Text += "<h3 class='passion-title'>" + passion.name + " Traits</h3><p><i>Saving Throws:</i> " + passion.saves + "<p><b><u>\
+    Ability Score Increase:</u></b> " + passion.ability + "<p><b><u>" + passion.custom.name + ":</u></b> " + passion.custom.desc;
+    if (passion.languages != null) box2Text += "<p><b><u>Languages:</u></b> " + passion.languages;
     
     $("#box1").html(box1Text);
     $("#box2").html(box2Text);
