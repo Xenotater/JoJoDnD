@@ -19,9 +19,95 @@
     },
     "Vampire": {
         "name": "Vampire",
-        "examples": [""],
-        "links": [""],
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis imperdiet proin fermentum leo. Viverra orci sagittis eu volutpat odio facilisis mauris sit amet. Facilisi morbi tempus iaculis urna id volutpat lacus laoreet non. Proin libero nunc consequat interdum varius sit amet mattis. Nibh sit amet commodo nulla facilisi nullam vehicula. Etiam non quam lacus suspendisse faucibus interdum. Aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Rutrum quisque non tellus orci. Hac habitasse platea dictumst quisque sagittis. Amet commodo nulla facilisi nullam vehicula. Tincidunt nunc pulvinar sapien et ligula. Proin fermentum leo vel orci porta. Iaculis at erat pellentesque adipiscing commodo elit at imperdiet. Dolor magna eget est lorem ipsum dolor. Sed egestas egestas fringilla phasellus faucibus. Egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices. Cursus mattis molestie a iaculis at. Faucibus interdum posuere lorem ipsum dolor sit amet.</p><p>Odio eu feugiat pretium nibh ipsum. In ante metus dictum at tempor commodo ullamcorper a lacus. Pulvinar pellentesque habitant morbi tristique senectus et netus et. Senectus et netus et malesuada. Vel pretium lectus quam id leo in vitae. Netus et malesuada fames ac turpis. Amet consectetur adipiscing elit duis tristique. Sem et tortor consequat id porta. Ornare suspendisse sed nisi lacus sed viverra tellus in hac. Diam volutpat commodo sed egestas. Vel elit scelerisque mauris pellentesque."
+        "examples": ["Dio Brando", "Straights", "Nukesaku", "Vanilla Ice"],
+        "links": ["Dio Brando", "Straizo#Part_2_", "Nukesaku", "Vanilla_Ice"],
+        "desc": "Vampires are Humans that were able to find a <a href='/artifacts/?focus=Stone_Mask'>Stone Mask</a>, and awaken the true potential of the Human mind. In order to become a Vampire, a Human must put on and activate the Stone Mask. Vampires are a lot stronger than Humans, Zombies, or even Ghouls. Vampires have a wide array of powerful <a href='/abilities/?sort=Vampire'>Abilities</a>, but this power comes at a cost, as all things do. Vampires must consume the blood of the living in order to survive, as well as become stronger. A Vampire may also be created when a living human or a corpse receives a large amount of blood from another, very powerful Vampire.",
+        "playing": "Vampires are extremely powerful, but they have a massive flaw, and a huge weakness. Because Vampires are Undead, any exposure to sunlight or <a href='/classes/?focus=Ripple'>Hamon</a> disintegrates the flesh itself. <b>Important: In order to level up, a Vampire must intake a certain amount of energy, as well as get the needed experience points.</b> 1 human equal to the mass of the Vampire equals 10 Energy. An animal equal to the mass of the Vampire equals 2 Energy. <b>Levels of Vampire DO NOT CLASSIFY AS MULTICLASSING.</b> In order to level up in a <a href='/classes/?focus=Ripple'>Class</a> you must be the same level of Vampire, but your Vampire level can never be higher than your Class level.",
+        "note": "Vampires are not weakened by <a href='/artifacts'>Artifacts</a> like holy symbols, Holy Water, or a stake to the heart. They are, however, still weak to sunlight. Vampires must feed, gaining at least 10 energy when doing so, every week. An average living Human gives 10 Energy, but up to three energy may be taken without killing them. Animal blood does work, but at 1/5th of the efficiency of human blood. You may also drain other Undead (Zombies and Ghouls both have 10 Energy by default), but when you do so you only get half of the Energy that they have.",
+        "note2": "Your Vampiric DC is 8 + Proficiency Bonus + Charisma Modifier",
+        "theme": "dio",
+        "level": {
+            "1": {
+                "energy": 0,
+                "feats": ["Vampire Double Health", "Vampiric Regeneration", "Undead Nature", "Vampiric Feeding"]
+            },
+            "2": {
+                "energy": 10,
+                "feats": ["Meanacing Aura"]
+            },
+            "3": {
+                "energy": 15,
+                "feats": ["Vampiric Musculature"]
+            },
+            "4": {
+                "energy": 20,
+                "feats": ["Zombie Creation"]
+            },
+            "5": {
+                "energy": 30,
+                "feats": ["Primal Charm"]
+            },
+            "6": {
+                "energy": 45,
+                "feats": ["Vampiric Senses"]
+            },
+            "7": {
+                "energy": 75,
+                "feats": ["Ghoul Creation"]
+            },
+            "8": {
+                "energy": 100,
+                "feats": ["Hypnosis"]
+            },
+            "9": {
+                "energy": 150,
+                "feats": ["Flight"]
+            },
+            "10": {
+                "energy": 225,
+                "feats": ["Space Ripper Stingy Eyes"]
+            },
+            "11": {
+                "energy": 335,
+                "feats": ["Flesh Grafting"]
+            },
+            "12": {
+                "energy": 500,
+                "feats": ["Freezing Touch"]
+            },
+            "13": {
+                "energy": 750,
+                "feats": ["Vampiric Body Control"]
+            },
+            "14": {
+                "energy": 1125,
+                "feats": ["Controlled Veins"]
+            },
+            "15": {
+                "energy": 1685,
+                "feats": ["Body Evacuation"]
+            },
+            "16": {
+                "energy": 2525,
+                "feats": ["Vampiric Dormancy"]
+            },
+            "17": {
+                "energy": 3790,
+                "feats": ["Embryo Implantation"]
+            },
+            "18": {
+                "energy": 5685,
+                "feats": ["Flesh Bud"]
+            },
+            "19": {
+                "energy": 8530,
+                "feats": ["Vampire Creation"]
+            },
+            "20": {
+                "energy": 12500,
+                "feats": ["Vampiric Peak"]
+            }
+        }
     },
     "Pillar_Man": {
         "name": "Pillar Man",
@@ -34,9 +120,95 @@
     },
     "Enhanced_Pillar_Man": {
         "name": "Enhanced Pillar Man",
-        "examples": [""],
-        "links": [""],
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis imperdiet proin fermentum leo. Viverra orci sagittis eu volutpat odio facilisis mauris sit amet. Facilisi morbi tempus iaculis urna id volutpat lacus laoreet non. Proin libero nunc consequat interdum varius sit amet mattis. Nibh sit amet commodo nulla facilisi nullam vehicula. Etiam non quam lacus suspendisse faucibus interdum. Aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Rutrum quisque non tellus orci. Hac habitasse platea dictumst quisque sagittis. Amet commodo nulla facilisi nullam vehicula. Tincidunt nunc pulvinar sapien et ligula. Proin fermentum leo vel orci porta. Iaculis at erat pellentesque adipiscing commodo elit at imperdiet. Dolor magna eget est lorem ipsum dolor. Sed egestas egestas fringilla phasellus faucibus. Egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices. Cursus mattis molestie a iaculis at. Faucibus interdum posuere lorem ipsum dolor sit amet.</p><p>Odio eu feugiat pretium nibh ipsum. In ante metus dictum at tempor commodo ullamcorper a lacus. Pulvinar pellentesque habitant morbi tristique senectus et netus et. Senectus et netus et malesuada. Vel pretium lectus quam id leo in vitae. Netus et malesuada fames ac turpis. Amet consectetur adipiscing elit duis tristique. Sem et tortor consequat id porta. Ornare suspendisse sed nisi lacus sed viverra tellus in hac. Diam volutpat commodo sed egestas. Vel elit scelerisque mauris pellentesque."
+        "examples": ["Santana", "Wham", "ACDC", "Cars"],
+        "links": ["Santana", "Wammu", "Esidisi", "Kars"],
+        "desc": "Thousands of years ago, a genius named Cars created the Stone Mask and tested it on himself, with the eventual goal of conquering the Sun, and being able to bask in its glow. The Stone Mask was an important step into this process. While it did not give him, nor his Pillar Men brethren any resistance to The Sun, it made them much, much stronger. The only drawback was that in order to sustain this new power, they had to consume massive amounts of energy.",
+        "playing": "Enhanced Pillar Men are some of the strongest creatures ever to walk The Earth, with strength, speed, and intelligence that rivals every other animal. However, in order to sustain this power, you must absorb immense amounts of energy from animals. Not only that, but when you become an Enhanced Pillar Man, your weakness to UV Light/<a href='/classes/?focus=Ripple'>Hamon</a> actually becomes more acute. <b>Important: In order to level up, an Enhanced Pillar Man must intake a certain amount of energy, as well as get the needed experience points.</b> 1 Hhuman equal to the mass of the Enhanced Pillar Man equals 10 Energy. An animal equal to the mass of the Enhanced Pillar Man equals 2 Energy. The following list shows how much total energy is needed for each level up. <b>Levels of Enhanced Pillar Man DO NOT CLASSIFY AS MULTICLASSING.</b> In order to level up in a <a href='/class'>Class</a> you must be the same level of Enhanced Pillar Man, but your Enhanced Pillar Man level can never be higher than your Class level.",
+        "note": "Enhanced Pillar Men must feed, obtaining roughly 100 Energy every week in order to survive. A Human only provides 10 Energy, and most Zombies and Ghouls only have 10 Energy which you only get half of. As such, it’s best for an Enhanced Pillar Man to create or hunt down and consume Vampires, gaining all of their Energy.",
+        "note2": "Enhanced Pillar Men are an enhanced version of the Pillar Men, and as such get the same stat increases and racial features as Pillar Men.",
+        "theme": "ACDC",
+        "level": {
+            "1": {
+                "energy": 0,
+                "feats": ["EPM Double Health", "EPM Regeneration", "Undead Nature", "Superior Feeding"]
+            },
+            "2": {
+                "energy": 100,
+                "feats": ["Meanacing Aura"]
+            },
+            "3": {
+                "energy": 150,
+                "feats": ["Ancient Charm"]
+            },
+            "4": {
+                "energy": 200,
+                "feats": ["EPM Brain Stimulation"]
+            },
+            "5": {
+                "energy": 300,
+                "feats": ["EPM Enhanced Musculature"]
+            },
+            "6": {
+                "energy": 450,
+                "feats": ["EPM Flexibility"]
+            },
+            "7": {
+                "energy": 750,
+                "feats": ["EPM Senses"]
+            },
+            "8": {
+                "energy": 1000,
+                "feats": ["EPM Durability"]
+            },
+            "9": {
+                "energy": 1500,
+                "feats": ["Controlled Veins"]
+            },
+            "10": {
+                "energy": 2250,
+                "feats": ["Body Evacuation"]
+            },
+            "11": {
+                "energy": 3350,
+                "feats": ["Flesh Grafting"]
+            },
+            "12": {
+                "energy": 5000,
+                "feats": ["Total Body Control"]
+            },
+            "13": {
+                "energy": 7500,
+                "feats": ["Cellular Phasing"]
+            },
+            "14": {
+                "energy": 11250,
+                "feats": ["Cellular Drive"]
+            },
+            "15": {
+                "energy": 16850,
+                "feats": ["Elemental Battle Mode"]
+            },
+            "16": {
+                "energy": 25250,
+                "feats": ["EPM Dormancy"]
+            },
+            "17": {
+                "energy": 37900,
+                "special": "Gain an extra <a href='/feats'>Feat</a>"
+            },
+            "18": {
+                "energy": 56850,
+                "feats": ["EPM Muscular Proficiency"]
+            },
+            "19": {
+                "energy": 85300,
+                "special": "Gain an extra <a href='/feats'>Feat</a>"
+            },
+            "20": {
+                "energy": 125000,
+                "feats": ["EPM Peak"]
+            }
+        }
     },
     "Ultimate_Being": {
         "name": "Ultimate Being",
@@ -55,8 +227,8 @@
     },
     "Rock_Human": {
         "name": "Rock Human",
-        "examples": [""],
-        "links": [""],
+        "examples": ["Yotsuyu Yagiyama", "Tamaki Damo", "Aisho Dainenjiyama"],
+        "links": ["Yotsuyu_Yagiyama", "Tamaki_Damo", "Aisho_Dainenjiyama"],
         "desc": "Rock Humans are an elusive evolutionary cousin of humans, but with a few key differences. For starters, Rock Humans usually live for around 240 years, and are silicone, rather than carbon based. Rock Humans must hibernate relatively often in periods of 1-3 months, but after hibernating they don't need to sleep for two months. While hibernating, a layer of stone covers their flesh and all processes except for breathing and some brain function cease. While in hibernation, they can survive high temperatures up to 950 C and low temperatures bottoming at around -240 C. The only way to kill a hibernating Rock Human is to either break through their rocky shell, or to suffocate them. Every 6 years, during hibernation, they will molt their old bodies and change themselves into a slightly different form. Rock Humans can eat any organic matter without issue, either raw or cooked. However, if the organic matter has little nutritional value, more of it must be consumed. For some unknown reason, all Rock Humans are deathly allergic to mangos. Rocks Humans tend to live on the outside of human towns or countries, preferring to live in the wild.",
         "note": "While extremely rare, some animals share the same traits as Rock Humans, including possessing a <a href='/classes/?focus=Stand'>Stand</a>.",
         "feats": ["Stoneflesh", "Stone Cold Willpower", "Mysterious Disappearance"]
