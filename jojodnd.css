@@ -5,6 +5,11 @@ body {
     min-width: 400px;
 }
 
+#page-title {
+    margin: 1rem;
+    text-align: center;
+}
+
 .content {
     margin-top: 2rem;
     margin-bottom: 2rem;
