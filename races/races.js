@@ -66,6 +66,30 @@ function updateDisplay() {
         }
         newContent += "</ul>";
     }
+    if (race.note2 != null) {
+        newContent += "<p><small><b>Note</b>: <i>" + race.note2 + "</i></small></p>";
+    }
+    if (race.theme != null) {
+        newContent += "<h4 class='race-heading'>Leveling Up</h4>";
+        newContent += "<table class='table table-striped levels' id='" + race.theme + "'><thead><tr><th>Level</th><th>Energy Required</th><th>Features</th></tr></thead><tbody>";
+        for (let i = 1; i <= 20; i++) {
+            newContent += "<tr><td>" + i + "</td><td>" + race.level[i].energy + "</td><td>";
+            if (race.level[i].special != null)
+                newContent += race.level[i].special;
+            else
+                for (let j = 0; j < race.level[i].feats.length; j++) {
+                    if (j == race.level[i].feats.length-2)
+                        newContent += "and ";
+                    newContent += "<a href='/abilities/?focus=" + race.level[i].feats[j].replace(/ /g, "_") + "'>" + race.level[i].feats[j] + "</a>";
+                    if (j != race.level[i].feats.length-1)
+                        newContent += ", ";
+                    else
+                        newContent += "</td>";
+                }
+            newContent += "</tr>";
+        }
+        newContent += "</tbody></table>";
+    }
     $("#display").html(newContent);
     $(".listCurrent").removeClass("listCurrent");
     $("#" + race.name).addClass("listCurrent");
