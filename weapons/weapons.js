@@ -31,6 +31,7 @@ $(document).ready(function() {
                 btn.addClass("bi-caret-down-fill");
                 sortType = id.replace("Down", "");
                 reverse = true;
+                updateTable();
             }
         }
         else {
@@ -46,10 +47,9 @@ $(document).ready(function() {
                 btn.addClass("bi-caret-up-fill");
                 sortType = id.replace("Up", "");
                 reverse = false;
+                updateTable();
             }
         }
-        
-        updateTable();
     });
 
     $("#search").on("input", function () {
@@ -86,7 +86,7 @@ function createTable() {
 
 function updateTable() {
     var newText = "";
-
+    
     sort();
     if (reverse)
         weapons.reverse();
@@ -136,9 +136,9 @@ function hint(attr) {
         case "Firearm":
             return("This weapon does NOT impose Disadvantage when fired in melee range.<br>Often makes a loud sound which can be heard up to 0.5km away.");
         case "Reload":
-            return("This weapon can fire " + ammo + " times before needing to be reloaded.<br>Reloading takes a full Attack.");
-        case "Assembled":
-            return("Easily concealed by disassembling into smaller parts.<br>Assembly takes 2 turns, and can only be done if proficient.");
+            return("This weapon can be used " + ammo + " times before needing to be reloaded.<br>Reloading takes a full Attack.");
+        case "Shield":
+            return("This item grants a bonus to AC but lowers your movement speed.<br>You may not equip more than one shield at once.")
         default:
             return("Error: This attribute doesn't have a definition. Please alert the site administrator.");     
     }
@@ -162,8 +162,28 @@ function popUp(text, posX, posY) {
 function sort() {
     weapons.sort(function (a, b) {
         var x = a[sortType]; var y = b[sortType];
-        return (((x < y)) ? -1 : ((x > y) ? 1 : 0));
+        if (x == "None")
+            x = "A";
+        if (y == "None")
+            y = "A";
+        if (sortType == "effect") {
+            x = diceParse(x);
+            y = diceParse(y);
+        }
+        return ((x < y) ? -1 : ((x > y) ? 1 : 0));
     });
+}
+
+function diceParse(s) {
+    var val = s.match(/^.d.* /);
+    if (val != null) {
+        num = val[0].substring(0, val[0].indexOf('d'));
+        die = val[0].substring(val[0].indexOf('d') + 1, val[0].indexOf(' '));
+        var avg = num * ((die/2) + 0.5);
+        return avg;
+    }
+    else
+        return 0;
 }
 
 function search(query) {
