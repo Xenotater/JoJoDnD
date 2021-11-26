@@ -5,7 +5,7 @@
             "attr": ["Melee", "One-Handed"],
             "type": "Simple",
             "stat": "Str/Dex",
-            "prereq": "None",
+            "prereq": "\u0000None",
             "effect": "1d6 Piercing/Slashing"
         },
         {
@@ -13,7 +13,7 @@
             "attr": ["Melee", "Two-Handed"],
             "type": "Simple",
             "stat": "Str",
-            "prereq": "None",
+            "prereq": "\u0000None",
             "effect": "2d6 Slashing"
         },
         {
@@ -21,7 +21,7 @@
             "attr": ["Melee", "One-Handed"],
             "type": "Martial",
             "stat": "Str/Dex",
-            "prereq": "13+ Dex",
+            "prereq": "Dex (13+)",
             "effect": "1d8 Piercing"
         },
         {
@@ -29,7 +29,7 @@
             "attr": ["Reach (2m)", "Two-Handed"],
             "type": "Martial",
             "stat": "Str",
-            "prereq": "None",
+            "prereq": "\u0000None",
             "effect": "1d8 Slashing"
         },
         {
@@ -37,16 +37,224 @@
             "attr": ["Reach (2m)", "Two-Handed"],
             "type": "Simple",
             "stat": "Str",
-            "prereq": "15+ Dex",
-            "effect": "1d10 Piercing/Slashing"
+            "prereq": "Dex (15+)",
+            "effect": "1d\u206510 Piercing/Slashing"
         },
         {
             "name": "Spear",
             "attr": ["Reach (3m)", "Two-Handed"],
             "type": "Simple",
             "stat": "Str/Dex",
-            "prereq": "None",
+            "prereq": "\u0000None",
             "effect": "1d6 Piercing"
+        },
+        {
+            "name": "Whip",
+            "attr": ["Reach (3m)", "One-Handed"],
+            "type": "Martial",
+            "stat": "Str/Dex",
+            "prereq": "\u0000None",
+            "effect": "1d4 Slashing"
+        },
+        {
+            "name": "Combat Knife",
+            "attr": ["Melee", "One-Handed"],
+            "type": "Simple",
+            "stat": "Str",
+            "prereq": "\u0000None",
+            "effect": "1d4 Piercing/Slashing<br>The enemy makes a Con Save on hit with a DC of 8 + Str + Proficiency (if proficient), taking another 1d12 Piercing if they fail."
+        },
+        {
+            "name": "Dagger",
+            "attr": ["Melee", "One-Handed"],
+            "type": "Martial",
+            "stat": "Dex",
+            "prereq": "\u0000None",
+            "effect": "1d4 Piercing<br>If you have Advantage on the attack roll, add a number of d6s of Piercing damage equal to your Proficiency Bonus."
+        },
+        {
+            "name": "Throwing Axe",
+            "attr": ["Thrown (5/15)", "One-Handed"],
+            "type": "Martial",
+            "stat": "Str/Dex",
+            "prereq": "\u0000None",
+            "effect": "1d6 Slashing"
+        },
+        {
+            "name": "Throwing Knife",
+            "attr": ["Thrown (5/15)", "One-Handed"],
+            "type": "Martial",
+            "stat": "Str/Dex",
+            "prereq": "\u0000None",
+            "effect": "1d6 Piercing"
+        },
+        {
+            "name": "Throwing Hammer",
+            "attr": ["Thrown (5/15)", "One-Handed"],
+            "type": "Martial",
+            "stat": "Str/Dex",
+            "prereq": "\u0000None",
+            "effect": "1d6 Bludgeoning"
+        },
+        {
+            "name": "Wooden Baseball Bat",
+            "attr": ["Melee", "Two-Handed"],
+            "type": "Simple",
+            "stat": "Str",
+            "prereq": "\u0000None",
+            "effect": "1d8 Bludgeoning<br>If you deal more than 12 damage in one blow with this weapon it breaks and becomes unusable.<br>However, it deals an additional 2d6 Piercing thanks to the splinters and fragments."
+        },
+        {
+            "name": "Metal Baseball Bat",
+            "attr": ["Melee", "Two-Handed"],
+            "type": "Simple",
+            "stat": "Str",
+            "prereq": "\u0000None",
+            "effect": "1d\u206510 Bludgeoning"
+        },
+        {
+            "name": "Greataxe",
+            "attr": ["Melee", "Two-Handed"],
+            "type": "Simple",
+            "stat": "Str",
+            "prereq": "\u0000None",
+            "effect": "1d\u206512 Slashing"
+        },
+        {
+            "name": "Warhammer",
+            "attr": ["Melee", "Two-Handed"],
+            "type": "Simple",
+            "stat": "Str",
+            "prereq": "Str (13+)",
+            "effect": "2d4 Bludgeoning<br>The enemy makes a Con Save on hit with a DC of 8 + Str + Proficiency (if proficient), having their bones break in the location of the hit on failure.<br>With their bones broken, the enemy must make the save at the start of each of their turns or they will be unable to take a Movement Action."
+        },
+        {
+            "name": "Quarterstaff",
+            "attr": ["Reach (2m)", "Two-Handed"],
+            "type": "Martial",
+            "stat": "Str/Dex",
+            "prereq": "\u0000None",
+            "effect": "1d8 Bludgeoning"
+        },
+        {
+            "name": "Shovel/Spade",
+            "attr": ["Reach (2m)", "Two-Handed"],
+            "type": "Simple",
+            "stat": "Str",
+            "prereq": "\u0000None",
+            "effect": "1d8 Slashing/Bludgeoning<br>You may tunnel/dig underground at a speed of Str/20m. You may not dig through anything more dense than Gravel using this tool."
+        },
+        {
+            "name": "Nunchucks",
+            "attr": ["Melee", "One-Handed"],
+            "type": "Martial",
+            "stat": "Str",
+            "prereq": "Dex (17+)",
+            "effect": "1d\u206512 Bludgeoning"
+        },
+        {
+            "name": "Pistol",
+            "attr": ["Ranged (20/60)", "Firearm", "Reload (x9)", "One-Handed"],
+            "type": "Pistol",
+            "stat": "Dex",
+            "prereq": "\u0000None",
+            "effect": "1d6 Piercing"
+        },
+        {
+            "name": "Revolver",
+            "attr": ["Ranged (20/60)", "Firearm", "Reload (x6)", "One-Handed"],
+            "type": "Pistol",
+            "stat": "Dex",
+            "prereq": "Con (13+)",
+            "effect": "1d8 Piercing"
+        },
+        {
+            "name": "Handcannon",
+            "attr": ["Ranged (20/60)", "Firearm", "Reload (x6)", "One-Handed"],
+            "type": "Pistol",
+            "stat": "Dex",
+            "prereq": "Con (17+)",
+            "effect": "3d4 Piercing"
+        },
+        {
+            "name": "Pump-Action 20-Gauge Shotgun",
+            "attr": ["Ranged (5/15)", "Firearm", "Reload (x5)", "Two-Handed"],
+            "type": "Rifle",
+            "stat": "Con",
+            "prereq": "Str (15+)",
+            "effect": "1d\u206510 Piercing"
+        },
+        {
+            "name": "Double-Barrelled 12-Gauge Shotgun",
+            "attr": ["Ranged (5/15)", "Firearm", "Reload (x2)", "Two-Handed"],
+            "type": "Rifle",
+            "stat": "Con",
+            "prereq": "Str (17+)",
+            "effect": "1d\u206512 Piercing"
+        },
+        {
+            "name": "Sawed-Off Shotgun",
+            "attr": ["Ranged (5/15)", "Firearm", "Reload (x2)", "One-Handed"],
+            "type": "Pistol",
+            "stat": "Con",
+            "prereq": "Str (13+)",
+            "effect": "1d8 Piercing"
+        },
+        {
+            "name": "The Hand of God",
+            "attr": ["Ranged (5/15)", "Firearm", "Reload (x1)", "Two-Handed"],
+            "type": "Pistol",
+            "stat": "Con",
+            "prereq": "Con (17+), Str (17+)",
+            "effect": "1d\u206520 Piercing"
+        },
+        {
+            "name": "Light Crossbow",
+            "attr": ["Ranged (20/60)", "Reload (x1)", "Two-Handed"],
+            "type": "Rifle",
+            "stat": "Dex",
+            "prereq": "\u0000None",
+            "effect": "1d8 Piercing<br>Firing within melee range does not impose Disadvantage."
+        },
+        {
+            "name": "Heavy Crossbow",
+            "attr": ["Ranged (50/200)", "Reload (x1)", "Two-Handed"],
+            "type": "Rifle",
+            "stat": "Dex",
+            "prereq": "Str (13+)",
+            "effect": "1d\u206510 Piercing"
+        },
+        {
+            "name": "Shortbow",
+            "attr": ["Ranged (20/60)", "Two-Handed"],
+            "type": "Martial",
+            "stat": "Dex",
+            "prereq": "\u0000None",
+            "effect": "1d6 Piercing"
+        },
+        {
+            "name": "Longbow",
+            "attr": ["Ranged (50/200)", "Two-Handed"],
+            "type": "Martial",
+            "stat": "Dex",
+            "prereq": "Str (13+)",
+            "effect": "1d8 Piercing"
+        },
+        {
+            "name": "Bolt-Action Rifle",
+            "attr": ["Ranged (200/600)", "Firearm", "Reload (x5)", "Two-Handed"],
+            "type": "Rifle",
+            "stat": "Dex",
+            "prereq": "\u0000None",
+            "effect": "1d10 Piercing"
+        },
+        {
+            "name": "Sniper Rifle",
+            "attr": ["Ranged (600/1,200)", "Firearm", "Reload (x1)", "Assembled", "Two-Handed"],
+            "type": "Rifle",
+            "stat": "Dex",
+            "prereq": "Int (15+)",
+            "effect": "1d\u206512 Piercing<br>If you don't use your Movement Action you may fire with Advantage.<br>If you spend an Action to set up your shot add an additional d12.<br>Firing within 10m imposes Disadvantage."
         }
     ]
 }

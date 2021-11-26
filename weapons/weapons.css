@@ -16,6 +16,7 @@
 #weapon-list thead th {
     border-bottom: 1px solid black;
     padding: 0;
+    white-space: nowrap;
 }
 
 #weapon-list th, #weapon-list td {
@@ -62,7 +63,6 @@
 .label {
     float: left;
     margin: 8px;
-    margin-right: 0;
 }
 
 .sortBtns {
@@ -84,6 +84,26 @@
 #search {
     outline: none;
     border: 1px solid black;
+}
+
+#weapon-list th:nth-child(1) {
+    width: 95px;
+}
+
+#weapon-list th:nth-child(2) {
+    width: 150px;
+}
+
+#weapon-list th:nth-child(3) {
+    width: 85px;
+}
+
+#weapon-list th:nth-child(4) {
+    width: 80px;
+}
+
+#weapon-list th:nth-child(5) {
+    width: 150px;
 }
 
 @media (max-width: 970px){
