@@ -30,7 +30,7 @@ $(document).ready(function() {
                 btn.removeClass("bi-caret-down");
                 btn.addClass("bi-caret-down-fill");
                 sortType = id.replace("Down", "");
-                reverse = false;
+                reverse = true;
             }
         }
         else {
@@ -45,7 +45,7 @@ $(document).ready(function() {
                 btn.removeClass("bi-caret-up");
                 btn.addClass("bi-caret-up-fill");
                 sortType = id.replace("Up", "");
-                reverse = true;
+                reverse = false;
             }
         }
         
@@ -58,13 +58,13 @@ $(document).ready(function() {
 });
 
 function getData() {
-    $.getJSON("weapons.json", function(data) {
+    $.getJSON("weapons.json", function(data) { /* This file contains escape characters to manipulate the sorting, very jank but shouldn't affect the HTML */
         wData = data.weapons;
         weapons = wData;
         sort("name");
         createTable();
-        $("#nameDown").removeClass("bi-caret-down");
-        $("#nameDown").addClass("bi-caret-down-fill");
+        $("#nameUp").removeClass("bi-caret-up");
+        $("#nameUp").addClass("bi-caret-up-fill");
     });
 
     $("#weapon-list").html("<div class='loading'></div>");
@@ -115,18 +115,30 @@ function hint(attr) {
         var dist = attr.substring(attr.indexOf('(') + 1, attr.indexOf(')')).split('/');
         attr = attr.substring(0, attr.indexOf(' '));
     }
+    if (attr.includes("Reload")) {
+        var ammo = attr.substring(attr.indexOf('x') + 1, attr.indexOf(')'));
+        attr = "Reload";
+    }
 
     switch(attr) {
         case "Melee":
             return("This weapon has a range of 1m from the person/stand wielding it.");
         case "Reach":
-            return("This weapon has a range of " + reach + "m from the person/stand wielding it.")
+            return("This weapon has a range of " + reach + "m from the person/stand wielding it.");
         case "One-Handed":
-            return("This weapon can be wielded with one hand. When making an attack using a One-Handed weapon with another in your other hand, you may make an additional Attack with the other weapon as a Bonus Action. May be hostered or concealed easily.");
+            return("This weapon can be wielded with one hand. When making an attack using a One-Handed weapon with another in your other hand, you may make an additional Attack with the other weapon as a Bonus Action.<br>May be hostered or concealed easily.");
         case "Two-Handed":
-            return("This weapon requires two hands to wield. Using this weapon to make an Attack with only 1 hand inflicts Disadvantage. Difficult to holster or conceal.")
+            return("This weapon requires two hands to wield. Using this weapon to make an Attack with only 1 hand inflicts Disadvantage.<br>Difficult to holster or conceal.");
         case "Thrown":
-            return("This weapon can be used as both a ranged and a melee weapon. It can be thrown up to " + dist[0] + "m, or as far as " + dist[1] + "m with Disadvantage. Once thrown, this weapon must be picked up in order to be used again.");
+            return("This weapon can be used as both a ranged and a melee weapon. It can be thrown up to " + dist[0] + "m, or as far as " + dist[1] + "m with Disadvantage.<br>Once thrown, this weapon must be picked up in order to be used again.");
+        case "Ranged":
+            return("This weapon can fire up to " + dist[0] + "m, or as far as " + dist[1] + "m with Disadvantage.<br>Firing within melee range imposes Disadvantage.");
+        case "Firearm":
+            return("This weapon does NOT impose Disadvantage when fired in melee range.<br>Often makes a loud sound which can be heard up to 0.5km away.");
+        case "Reload":
+            return("This weapon can fire " + ammo + " times before needing to be reloaded.<br>Reloading takes a full Attack.");
+        case "Assembled":
+            return("Easily concealed by disassembling into smaller parts.<br>Assembly takes 2 turns, and can only be done if proficient.");
         default:
             return("Error: This attribute doesn't have a definition. Please alert the site administrator.");     
     }
@@ -150,7 +162,7 @@ function popUp(text, posX, posY) {
 function sort() {
     weapons.sort(function (a, b) {
         var x = a[sortType]; var y = b[sortType];
-        return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+        return (((x < y)) ? -1 : ((x > y) ? 1 : 0));
     });
 }
 
