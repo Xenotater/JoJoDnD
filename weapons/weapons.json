@@ -1,0 +1,52 @@
+{
+    "weapons": [
+        {
+            "name": "Shortsword",
+            "attr": ["Melee", "One-Handed"],
+            "type": "Simple",
+            "stat": "Str/Dex",
+            "prereq": "None",
+            "effect": "1d6 Piercing/Slashing"
+        },
+        {
+            "name": "Greatsword",
+            "attr": ["Melee", "Two-Handed"],
+            "type": "Simple",
+            "stat": "Str",
+            "prereq": "None",
+            "effect": "2d6 Slashing"
+        },
+        {
+            "name": "Rapier",
+            "attr": ["Melee", "One-Handed"],
+            "type": "Martial",
+            "stat": "Str/Dex",
+            "prereq": "13+ Dex",
+            "effect": "1d8 Piercing"
+        },
+        {
+            "name": "Scythe",
+            "attr": ["Reach (2m)", "Two-Handed"],
+            "type": "Martial",
+            "stat": "Str",
+            "prereq": "None",
+            "effect": "1d8 Slashing"
+        },
+        {
+            "name": "Halberd",
+            "attr": ["Reach (2m)", "Two-Handed"],
+            "type": "Simple",
+            "stat": "Str",
+            "prereq": "15+ Dex",
+            "effect": "1d10 Piercing/Slashing"
+        },
+        {
+            "name": "Spear",
+            "attr": ["Reach (3m)", "Two-Handed"],
+            "type": "Simple",
+            "stat": "Str/Dex",
+            "prereq": "None",
+            "effect": "1d6 Piercing"
+        }
+    ]
+}
