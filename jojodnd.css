@@ -5,6 +5,11 @@ body {
     min-width: 400px;
 }
 
+#page-title {
+    margin: 1rem;
+    text-align: center;
+}
+
 .content {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -111,18 +116,6 @@ a {
 
 a:hover {
     color: rgb(17, 0, 255);
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.underline {
-    text-decoration: underline;
-}
-
-.italic {
-    font-style: italic;
 }
 
 h1, h2, h3, th {

@@ -1,10 +1,5 @@
-#wrapper {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
 #warning, #warning p {
-    margin-bottom: 0;
+    margin: 0;
 }
 
 #list {
@@ -49,8 +44,11 @@
     background-color: rgb(99, 67, 161);
 }
 
+#display {
+    padding: 1.5rem;
+}
+
 .race-title {
-    text-decoration: underline;
     text-decoration: underline;
     color: rgb(218, 173, 26);
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -62,7 +60,7 @@
     max-height: 400px;
     overflow: hidden;
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: .5rem;
 }
 
 .race-img img {
@@ -71,8 +69,46 @@
     border-radius: 30px;
 }
 
-.race-text {
-    margin-bottom: 1.5rem;
+.race-heading {
+    color: rgb(206, 163, 23);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin-top: 2rem;
+}
+
+.levels {
+    border: 3px solid purple;
+}
+
+.levels th, #dio tbody td {
+    border-right: 1px solid purple;
+}
+
+.levels th:last-child, .levels tbody td:last-child {
+    border-right: unset;
+}
+
+.levels th:nth-child(2) {
+    width: 0; /* Forces Energy column to fit content so Features can have the most space */
+}
+
+.levels a {
+    text-decoration: none;
+}
+
+#dio thead tr {
+    background-color: rgb(160, 241, 160);
+}
+
+#dio tbody tr {
+    background-color: rgb(255, 240, 174);
+}
+
+#ACDC thead tr {
+    background-color: rgb(255, 240, 174);
+}
+
+#ACDC tbody tr {
+    background: rgb(179, 212, 255);
 }
 
 @media (max-width: 875px){ 
