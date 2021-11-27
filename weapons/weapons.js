@@ -58,7 +58,7 @@ $(document).ready(function() {
 });
 
 function getData() {
-    $.getJSON("weapons.json", function(data) { /* This file contains escape characters to manipulate the sorting, very jank but shouldn't affect the HTML */
+    $.getJSON("weapons.json", function(data) {
         wData = data.weapons;
         weapons = wData;
         sort("name");
@@ -72,12 +72,12 @@ function getData() {
 
 function createTable() {
     var newText = "<table class='table table-striped'><thead><tr>";
-    newText += "<th><div class='label'>Name</div><div class='sortBtns'><i id='nameUp' class='bi bi-caret-up sorter'></i><br><i id='nameDown' class='bi bi-caret-down sorter'></i></div></th>";
-    newText += "<th><div class='label'>Attributes</div><div class='sortBtns'><i id='attrUp' class='bi bi-caret-up sorter'></i><br><i id='attrDown' class='bi bi-caret-down sorter'></i></div></th>";
-    newText += "<th><div class='label'>Type</div><div class='sortBtns'><i id='typeUp' class='bi bi-caret-up sorter'></i><br><i id='typeDown' class='bi bi-caret-down sorter'></i></div></th>";
-    newText += "<th><div class='label'>Stat</div><div class='sortBtns'><i id='statUp' class='bi bi-caret-up sorter'></i><br><i id='statDown' class='bi bi-caret-down sorter'></i></div></th>";
-    newText += "<th><div class='label'>Prerequisite</div><div class='sortBtns'><i id='prereqUp' class='bi bi-caret-up sorter'></i><br><i id='prereqDown' class='bi bi-caret-down sorter'></i></div></th>";
-    newText += "<th><div class='label'>Effect</div><div class='sortBtns'><i id='effectUp' class='bi bi-caret-up sorter'></i><br><i id='effectDown' class='bi bi-caret-down sorter'></i></div></th>";
+    newText += "<th><div class='label attr'>Name</div><div class='sortBtns'><i id='nameUp' class='bi bi-caret-up sorter'></i><br><i id='nameDown' class='bi bi-caret-down sorter'></i></div></th>";
+    newText += "<th><div class='label attr'>Attributes</div><div class='sortBtns'><i id='attrUp' class='bi bi-caret-up sorter'></i><br><i id='attrDown' class='bi bi-caret-down sorter'></i></div></th>";
+    newText += "<th><div class='label attr'>Type</div><div class='sortBtns'><i id='typeUp' class='bi bi-caret-up sorter'></i><br><i id='typeDown' class='bi bi-caret-down sorter'></i></div></th>";
+    newText += "<th><div class='label attr'>Stat</div><div class='sortBtns'><i id='statUp' class='bi bi-caret-up sorter'></i><br><i id='statDown' class='bi bi-caret-down sorter'></i></div></th>";
+    newText += "<th><div class='label attr'>Prerequisite</div><div class='sortBtns'><i id='prereqUp' class='bi bi-caret-up sorter'></i><br><i id='prereqDown' class='bi bi-caret-down sorter'></i></div></th>";
+    newText += "<th><div class='label attr'>Effect</div><div class='sortBtns'><i id='effectUp' class='bi bi-caret-up sorter'></i><br><i id='effectDown' class='bi bi-caret-down sorter'></i></div></th>";
     newText += "</tr></thead><tbody></tbody></table>";
 
     $("#weapon-list").html(newText);
@@ -121,6 +121,18 @@ function hint(attr) {
     }
 
     switch(attr) {
+        case "Name": 
+            return("The name of the weapon.");
+        case "Attributes":
+            return("The qualities that the weapon has.");
+        case "Type":
+            return("The type of weapon for the purpose of Proficiencies.");
+        case "Stat":
+            return("The Attack Stat of the weapon. Added to both to-hit AND damage rolls.");
+        case "Prerequisite":
+            return("The requirement that must be met in order to use the weapon.");
+        case "Effect":
+            return("The damage and/or additional effect of the weapon.");
         case "Melee":
             return("This weapon has a range of 1m from the person/stand wielding it.");
         case "Reach":
