@@ -1,0 +1,113 @@
+#prereqs, #stands {
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+#weapon-list {
+    padding: 0;
+    margin-top: 0;
+}
+
+#weapon-list table {
+    width: 100%;
+    margin: 0;
+}
+
+#weapon-list thead th {
+    border-bottom: 1px solid black;
+    padding: 0;
+    white-space: nowrap;
+}
+
+#weapon-list th, #weapon-list td {
+    padding: .5rem;
+    border-bottom: none;
+    border-right: 1px solid purple;
+    color: black;
+}
+
+#weapon-list th:last-child, #weapon-list td:last-child {
+    border-right: unset;
+}
+
+#weapon-list tr {
+    border-bottom: 1px solid purple;
+}
+
+#weapon-list tbody tr:last-child {
+    border-bottom: none;
+}
+
+.attr {
+    text-decoration: underline dotted;
+    text-underline-offset: 2px;
+}
+
+.attr:hover {
+    cursor: help;
+}
+
+#popUp {
+    position: absolute;
+    max-width: 45vw;
+    min-width: 170px;
+    border: 2px solid black;
+    border-radius: unset;
+    background-color: rgb(255, 218, 116);
+}
+
+#popUp p {
+    margin: 0;
+}
+
+.label {
+    float: left;
+    margin: 8px;
+}
+
+.sortBtns {
+    float: right;
+    margin-right: 8px;
+    line-height: 1rem;
+    font-size: 20px;
+}
+
+.sortBtns i {
+    cursor: pointer;
+}
+
+#search-box {
+    text-align: right;
+    margin-right: 15px;
+}
+
+#search {
+    outline: none;
+    border: 1px solid black;
+}
+
+#weapon-list th:nth-child(1) {
+    width: 95px;
+}
+
+#weapon-list th:nth-child(2) {
+    width: 150px;
+}
+
+#weapon-list th:nth-child(3) {
+    width: 85px;
+}
+
+#weapon-list th:nth-child(4) {
+    width: 80px;
+}
+
+#weapon-list th:nth-child(5) {
+    width: 150px;
+}
+
+@media (max-width: 970px){
+    #weapon-list {
+        overflow-x: scroll;
+    }
+}
