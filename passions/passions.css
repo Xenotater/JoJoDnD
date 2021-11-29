@@ -1,27 +1,17 @@
 #intro {
-    padding: 0;
     text-align: center;
-}
-
-#intro h2 {
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    border-bottom: 2px solid purple;
-}
-
-#intro p {
-    padding: 1.5rem;
+    margin: 0;
 }
 
 #statSum {
-    margin-top: 0;
+    margin-top: 2.5rem;
     margin-left: auto;
     margin-right: auto;
     border-collapse: separate;
     border-spacing: 0;
     padding: 0;
     table-layout: fixed;
-    width: 100%;
+    max-width: 1000px;
 }
 
 #statSum tr, #statSum td {
@@ -125,17 +115,20 @@ span.passion-link:hover {
     height: calc(100% - 4rem);
     padding-bottom: 5px;
     min-height: 540px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #box1, #box2 {
     float: left;
     padding: 0;
-    padding-right: 1.5rem;
-    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-#box1 {
-    border-right: 2px dashed purple;
+#box2 {
+    border-left: 2px dashed purple;
+    padding-left: 1rem;
 }
 
 .passion-title {
@@ -159,10 +152,4 @@ span.passion-link:hover {
 
 li {
     float: none;
-}
-
-@media (max-width: 450px) {
-    h3 {
-        font-size: 20px;
-    }
 }
