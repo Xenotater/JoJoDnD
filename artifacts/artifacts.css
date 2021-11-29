@@ -1,0 +1,136 @@
+.content {
+    margin-top: 0;
+}
+
+#list {
+    position: sticky;
+    top: calc(90px + 2rem);
+    padding: 0;
+    overflow-y: hidden;
+}
+
+#art-table {
+    width: 100%;
+}
+
+#art-table thead tr {
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 2px solid purple;
+}
+
+#art-table tbody tr {
+    border-bottom: 2px solid black ;
+}
+
+#art-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+#art-table td {
+    padding: .5rem;
+}
+
+.art-link:hover {
+    cursor: pointer;
+    background-color: rgb(132, 97, 202);
+}
+
+.listCurrent {
+    background-color: rgb(115, 80, 185);
+}
+
+.listCurrent:hover {
+    background-color: rgb(99, 67, 161);
+}
+
+#display {
+    padding: 1.5rem;
+}
+
+.art-title {
+    text-decoration: underline;
+    color: rgb(218, 173, 26);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-underline-offset: 2px;
+    margin-bottom: 1.5rem;
+}
+
+.art-img {
+    max-height: 400px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.art-img img {
+    max-height: inherit;
+    border: 3px solid purple;
+    border-radius: 30px;
+}
+
+.art-heading {
+    color: rgb(206, 163, 23);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin-top: 2rem;
+}
+
+.note {
+    margin-bottom: 0;
+}
+
+#stone {
+    border: 3px solid purple;
+}
+
+#stone th, #stone td {
+    border-right: 1px solid purple;
+}
+
+#stone th:last-child, #stone td:last-child {
+    border-right: unset;
+}
+
+#stone th:nth-child(1) {
+    width: 87px;
+}
+
+#stone th:nth-child(2) {
+    width: 200px;
+}
+
+#stone thead {
+    background-color: rgb(196, 111, 218);
+}
+
+#stone tbody {
+    background-color: rgb(178, 166, 182);
+}
+
+#corpse {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid purple;
+    background-color: rgb(128, 93, 54);
+    text-align: center;
+}
+
+#corpse td {
+    border-right: 1px solid purple;
+    color: white;
+}
+
+#heaven li {
+    margin-bottom: 1rem;
+}
+
+#phrases {
+    columns: 4;
+    margin-top: 1rem;
+    border: 2px solid purple;
+}
+
+#phrases li {
+    margin-bottom: 0;
+}
