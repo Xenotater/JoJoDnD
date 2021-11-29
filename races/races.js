@@ -92,5 +92,5 @@ function updateDisplay() {
     }
     $("#display").html(newContent);
     $(".listCurrent").removeClass("listCurrent");
-    $("#" + race.name).addClass("listCurrent");
+    $("#" + r).addClass("listCurrent");
 }
