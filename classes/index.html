@@ -11,27 +11,121 @@
         <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-rfs/bootstrap-rfs.css" rel="stylesheet">
         
         <link rel="stylesheet" href="../jojodnd.css">
-        <link rel="stylesheet" href="../not_found/not_found.css">
+        <link rel="stylesheet" href="classes.css">
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
         <script src="../nav.js"></script>
+        <script src="classes.js"></script>
     </head>
     
     <body>
         <div class="container">
+            <h2 id="page-title">Classes</h2>
             <div class="row">
-                <div class="col-1"></div>
-                <div class="col-10">
-                    <div id="err">
-                        <img src="../not_found/meme.jpg" class="img-fluid" id="dio">
-                        <p>Sorry, looks like there's nothing here. Either this page doesn't exist yet or you've typed entered the wrong URL.
-                            <br>
-                            If you think this is an error, contact an administrator.
-                        </p>
+                <div class="col-md-3">
+                    <div class="content" id="list">
+                        <table id="class-table">
+                            <thead>
+                                <tr>
+                                    <th>Classes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="class-link listCurrent" id="Ripple">
+                                    <td>
+                                        The Ripple
+                                    </td>
+                                </tr>
+                                <tr class="class-link" id="Stands">
+                                    <td>
+                                        Stands
+                                    </td>
+                                </tr>
+                                <tr class="class-link stand-type" id="Power">
+                                    <td>
+                                        Power-Type
+                                    </td>
+                                </tr>
+                                <tr class="class-link stand-type" id="Ranged">
+                                    <td>
+                                        Ranged-Type
+                                    </td>
+                                </tr>
+                                <tr class="class-link stand-type" id="Remote">
+                                    <td>
+                                        Remote-Type
+                                    </td>
+                                </tr>
+                                <tr class="class-link stand-type" id="Ability">
+                                    <td>
+                                        Ability-Type
+                                    </td>
+                                </tr>
+                                <tr class="class-link stand-type" id="Enhancement">
+                                    <td>
+                                        Enhancement-Type
+                                    </td>
+                                </tr>
+                                <tr class="class-link stand-type" id="Revenge">
+                                    <td>
+                                        Revenge-Type
+                                    </td>
+                                </tr>
+                                <tr class="class-link stand-type" id="Independent">
+                                    <td>
+                                        Independent-Type
+                                    </td>
+                                </tr>
+                                <tr class="class-link stand-type" id="Hive">
+                                    <td>
+                                        Hive-Type
+                                    </td>
+                                </tr>
+                                <tr class="class-link stand-type" id="Act">
+                                    <td>
+                                        Act-Type
+                                    </td>
+                                </tr>
+                                <tr class="class-link" id="Spin">
+                                    <td>
+                                        The Spin
+                                    </td>
+                                </tr>
+                                <tr class="class-link" id="Non-Supernatural">
+                                    <td>
+                                        Non-Supernatural Classes
+                                    </td>
+                                </tr>
+                                <tr class="class-link non-super" id="Brawler">
+                                    <td>
+                                        Brawler
+                                    </td>
+                                </tr>
+                                <tr class="class-link non-super" id="Knight">
+                                    <td>
+                                        Knight
+                                    </td>
+                                </tr>
+                                <tr class="class-link non-super" id="Soldier">
+                                    <td>
+                                        Soldier
+                                    </td>
+                                </tr>
+                                <tr class="class-link non-super" id="Sniper">
+                                    <td>
+                                        Sniper
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-                <div class="col-1"></div>
+                <div class="col-md-9">
+                    <!-- all images taken from JoJo's Bizarre Adventure -->
+                    <div class="content" id="display"></div>
+                </div>
             </div>
         </div>
     </body>
