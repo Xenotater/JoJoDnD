@@ -39,13 +39,13 @@ function updateDisplay() {
     var newContent = "";
 
     newContent += "<h2 class='race-title'>" + race.name + "</h2><div class='race-img'><img class='img-fluid' src='Assets/" + r + ".png' alt='" + r + "'></div>";
-    newContent += "<p class='center'><small><b>Examples</b>: ";
+    newContent += "<p class='center'><small><b>Examples</b>: <i>";
     for (let i = 0; i < race.examples.length; i++) {
         newContent += "<a href='https://jojo.fandom.com/wiki/" + race.links[i] + "' target='_blank'>"  + race.examples[i] + "</a>";
         if (i != race.examples.length-1)
             newContent += ", ";
         else
-            newContent += "</small></p>";
+            newContent += "</i></small></p>";
     }
     newContent += "<h4 class='race-heading'>Description</h4><p>" + race.desc + "</p>";
     if (race.playing != null)
