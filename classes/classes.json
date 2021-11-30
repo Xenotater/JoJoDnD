@@ -1,0 +1,90 @@
+{
+    "Ripple": {
+        "name": "The Ripple (Hamon)",
+        "exampleOf": "Ripple Users",
+        "examples": ["Baron Zeppeli", "Jonathan Joestar", "Joseph Joestar", "Lisa Lisa"],
+        "links": ["Will_Anthonio_Zeppeli", "Jonathan_Joestar", "Joseph_Joestar", "Lisa_Lisa"]
+    },
+    "Stands": {
+        "name": "Stands",
+        "types": {
+            "Power": {
+                "name": "Power-Type Stand",
+                "exampleOf": "Power Stands",
+                "examples": ["Star Platinum", "Crazy Diamond", "Gold Experience"],
+                "links": ["Star_Platinum", "Crazy_Diamond", "Gold_Experience"]
+            },
+            "Ranged": {
+                "name": "Ranged-Type Stand",
+                "exampleOf": "Ranged Stands",
+                "examples": ["Hierophant Green", "Aerosmith", "Whitesnake"],
+                "links": ["Hierophant_Green", "Aerosmith", "Whitesnake"]
+            },
+            "Remote": {
+                "name": "Remote-Type Stand",
+                "exampleOf": "Remote Stands",
+                "examples": ["Highway Star", "Black Sabbath", "Goo Goo Dolls", "Manhattan Transfer"],
+                "links": ["Highway_Star", "Black_Sabbath", "Goo_Goo_Dolls", "Manhattan_Transfer"]
+            },
+            "Ability": {
+                "name": "Ability-Type Stand",
+                "exampleOf": "Ability Stands",
+                "examples": ["Hermit Purple", "Earth Wind and Fire (?)", "Moody Blues", "White Album", "Oasis"],
+                "links": ["Hermit_Purple", "Earth_Wind_and_Fire", "Moody_Blues", "White_Album", "Oasis"]
+            },
+            "Enhancement": {
+                "name": "Enhancement-Type Stand",
+                "exampleOf": "Enhancement Stands",
+                "examples": ["High Priestess", "Strength", "Wheel of Fortune", "The Fool", "Love Deluxe"],
+                "links": ["High_Priestess", "Strength", "Wheel_of_Fortune", "The_Fool", "Love_Deluxe"]
+            },
+            "Revenge": {
+                "name": "Revenge-Type Stand",
+                "exampleOf": "Revenge Stands",
+                "examples": ["Ebony Devil", "Stray Cat", "Notorious B.I.G.", "Civil War"],
+                "links": ["Ebony_Devil", "Stray_Cat", "Notorious_B.I.G", "Civil_War"]
+            },
+            "Independent": {
+                "name": "Independent-Type Stand",
+                "exampleOf": "Independent Stands",
+                "examples": ["Anubis", "Superfly", "Foo Fighters"],
+                "links": ["Anubis", "Superfly", "Foo_Fighters"]
+            },
+            "Hive": {
+                "name": "Hive-Type Stand",
+                "exampleOf": "Hive Stands",
+                "examples": ["Bad Company", "Harvest", "Sex Pistols"],
+                "links": ["Bad_Company", "Harvest", "Sex_Pistols"]
+            },
+            "Act": {
+                "name": "Act-Type Stand",
+                "exampleOf": "Act Stands",
+                "examples": ["Echoes", "Tusk"],
+                "links": ["Echoes", "Tusk"]
+            }
+        }
+    },
+    "Spin": {
+        "name": "The Spin",
+        "exampleOf": "Spin Users",
+        "examples": ["Gyro Zeppeli", "Johnny Joestar"],
+        "links": ["Gyro_Zeppeli", "Johnny_Joestar"]
+    },
+    "Non-Supernatural": {
+        "name": "Non-Supernatural Classes",
+        "types": {
+            "Brawler": {
+                "name": "Brawler"
+            },
+            "Knight": {
+                "name": "Knight"
+            },
+            "Soldier": {
+                "name": "Soldier"
+            },
+            "Sniper": {
+                "name": "Sniper"
+            }
+        }
+    }
+}

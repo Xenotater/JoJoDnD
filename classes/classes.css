@@ -1,0 +1,83 @@
+#list {
+    position: sticky;
+    top: calc(90px + 2rem);
+    padding: 0;
+    overflow-y: hidden;
+    margin-top: 0;
+}
+
+#class-table {
+    width: 100%;
+}
+
+#class-table thead tr {
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 2px solid purple;
+}
+
+#class-table tbody tr {
+    border-top: 2px solid black ;
+}
+
+#class-table td {
+    padding: .5rem;
+}
+
+.class-link:hover {
+    cursor: pointer;
+    background-color: rgb(132, 97, 202);
+}
+
+.stand-type, .non-super {
+    display: none;
+    padding-left: 1rem;
+    background-color: rgb(127, 99, 184);
+    font-size: .9rem;
+    color: black;
+    border-top: 1px dashed black;
+}
+
+.stand-type:hover, .non-super:hover {
+    background-color: rgb(113, 87, 163);
+}
+
+.listCurrent {
+    background-color: rgb(115, 80, 185);
+}
+
+.listCurrent:hover {
+    background-color: rgb(99, 67, 161);
+}
+
+#display {
+    margin-top: 0;
+    padding: 1.5rem;
+}
+
+.class-title {
+    text-decoration: underline;
+    color: rgb(218, 173, 26);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-underline-offset: 2px;
+    margin-bottom: 1.5rem;
+}
+
+.class-img {
+    max-height: 400px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.class-img img {
+    max-height: inherit;
+    border: 3px solid purple;
+    border-radius: 30px;
+}
+
+.class-heading {
+    color: rgb(206, 163, 23);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin-top: 2rem;
+}
