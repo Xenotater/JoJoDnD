@@ -52,13 +52,65 @@ function updateDisplay() {
 
     newContent += "<h2 class='class-title'>" + clss.name + "</h2><div class='class-img'><img src='Assets/" + src + ".png' alt='" + src + "'></div>";
     if (clss.exampleOf != null) {
-        newContent += "<p class='center'><small><b>Examples of " + clss.exampleOf + "</b>: <i>";
+        newContent += "<p class='center'><small><b>Examples of " + clss.exampleOf + ": </b><i>";
         for (let i = 0; i < clss.examples.length; i++) {
             newContent += "<a href='https://jojo.fandom.com/wiki/" + clss.links[i] + "' target='_blank'>" + clss.examples[i] + "</a>";
             if (i != clss.examples.length - 1)
                 newContent += ", ";
         }
         newContent += "</i></small></p>";
+    }
+    if (clss.dc != null)
+        newContent += "<div class='row center' id='stat'><div class='col-sm-4'><span><b>Hit Dice: </b>" + clss.hDice + "</span></div><div class='col-sm-8'><span><b>" + clss.dcName + "</b>: " + clss.dc + "</span></div></div>";
+    else if (clss.hDice != null)
+        newContent += "<span class='center'><b>Hit Dice: </b>" + clss.hDice + "</span>";
+    newContent += "<h4 class='class-heading'>Description</h4><p>" + clss.desc + "</p>";
+    if (clss.extra != null)
+        for (let i = 0; i < clss.extra.length; i++)
+            newContent += "<p><b>" + clss.extra[i].name + ": </b>" + clss.extra[i].desc + "</p>";
+    if (clss.notes != null)
+        for (let i = 0; i < clss.notes.length; i++)
+            newContent += "<p><small><b>Note: </b><i>" + clss.notes[i] + "</i></small></p>";
+
+    if (clss.level != null) {
+        newContent += "<h4 class='class-heading'>Leveling Up</h4>";
+        newContent += "<table class='table table-striped levels' id='" + clss.theme + "'><thead><tr><th>Level</th><th>Pro. Bonus</th><th>Feats</th><th>Features</th>";
+        if(clss.otherCols != null)
+            for (let i = 0; i < clss.otherCols.length; i++)
+                newContent += "<th>" + clss.otherCols[i].name + "</th>"
+        newContent += "</tr></thead><tbody>";
+        for (let i = 1; i <= 20; i++) {
+            l = clss.level[i];
+            newContent += "<tr><td>" + i + "</td><td>" + l.pro + "</td><td>" + l.feats + "</td><td>";
+            if (l.otherFeatures != null)
+                for (let j = 0; j < l.otherFeatures.length; j++) {
+                    newContent += l.otherFeatures[j];
+                    if (j != l.otherFeatures.length-1 || l.linkFeatures != null || l.ability != null)
+                        newContent += ", ";
+                }
+            if (l.linkFeatures != null)
+                for (let j = 0; j < l.linkFeatures.length; j++) {
+                    if (l.linkFeatures[j] != "OR") {
+                        newContent += "<a href='/abilities/?focus=" + l.linkFeatures[j].replace(/ /g, "_") + "'>" + l.linkFeatures[j] + "</a>";
+                        if ((j != l.linkFeatures.length-1 || l.ability != null) && l.linkFeatures[j+1] != "OR")
+                            newContent += ", ";
+                    }
+                    else
+                        newContent += " OR ";
+                }
+            if (l.ability != null)
+                for (let j = 0; j < l.ability.length; j++) {
+                    newContent += l.ability[j];
+                    if (j != l.ability.length-1)
+                        newContent += ", ";
+                }
+            newContent += "</td>";
+            if (clss.otherCols != null)
+                for (let j = 0; j < clss.otherCols.length; j++)
+                    newContent += "<td>" + clss.otherCols[j].level[i] + "</td>";
+            newContent += "</tr>";
+        }
+        newContent += "</tbody></table>";
     }
     
     $("#display").html(newContent);
