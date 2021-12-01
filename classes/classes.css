@@ -1,3 +1,9 @@
+#multi {
+    text-align: center;
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
 #list {
     position: sticky;
     top: calc(90px + 2rem);
@@ -80,4 +86,33 @@
     color: rgb(206, 163, 23);
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     margin-top: 2rem;
+}
+
+#stat {
+    width: 75%;
+    margin: auto;
+}
+
+.levels {
+    border: 3px solid purple;
+}
+
+.levels th, .levels tbody td {
+    border-right: 1px solid purple;
+}
+
+.levels th:last-child, .levels tbody td:last-child {
+    border-right: unset;
+}
+
+.levels a {
+    text-decoration: none;
+}
+
+#sun thead tr {
+    background-color: rgb(255, 179, 117);
+}
+
+#sun tbody tr {
+    background-color: rgb(255, 245, 157);
 }
