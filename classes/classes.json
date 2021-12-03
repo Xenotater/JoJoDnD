@@ -167,7 +167,60 @@
     },
     "Stands": {
         "name": "Stands",
-        "desc": "",
+        "desc": "Stands are one of, if not, the most iconic part of JoJo’s Bizarre Adventure. Most PC’s, NPCs, and enemies that you meet or create will most likely be Stand Users. A Stand is the physical manifestation of the soul’s fighting spirit. If a person has a strong will to fight, and they are exposed to the right catalyst, they may manifest their Stand Ability in some form.",
+        "other": [{
+            "name": "Obtaining a Stand",
+        "content": ["<p>There are many ways to obtain a Stand. Very few people are lucky enough to be born with this power, passed down genetically. Some gain power when a relative gains a Stand as well, but this is a rare occurrence. In some cases, a relative that suddenly gains a Stand may also give their relatives a fever, putting them on the track to obtaining a Stand. One of the most common methods of obtaining a Stand comes from getting pierced by a <a href='/artifacts/Stand_Arrow'>Stand Arrow</a>.</p>"]
+        },
+        {
+            "name": "Rules of Stands",
+            "content": [
+                "<ul><li>A single person can only have one stand (Hive Stands are the same Stand, just split up into much smaller parts)</li><li>Whatever Damage is inflicted upon the Stand or the User is also dealt to the other</li><li>Only Stand Users can sense Stands</li><li>Stand Users can interact and speak with spirits or ghosts</li><li>Only Stands can defeat Stands, physical objects simply pass through or bounce off of all Stands except Enhancement or Independent types</li><li>If the User is knocked unconscious and the Stand is not a Revenge-Type, the Stand and it's Ability will disappear until resummoned by the User when conscious</li><li>Stand Energy is only consumed if the Ability actually affects something</li><li>If a Stand User fights a Non-Stand User, the Stand User gets Advantage on all Attacks using their Stand</li></ul>"
+            ]
+        },
+        {
+            "name": "Stand Stats",
+            "content": [
+                "<p><b>Ability Conversion Chart:</b></p><table class='table table-striped minor'><thead><tr><th>Ability</th><th>Stand Ability</th></tr></thead><tbody><tr><td>Strength</td><td>Power</td></tr><tr><td>Dexterity</td><td>Precision</td></tr><tr><td>Constitution</td><td>Durability</td></tr><tr><td>Wisdom</td><td>Speed</td></tr><tr><td>Intelligence</td><td>Range</td></tr><tr><td>Charisma</td><td>Stand Energy</td></tr></tbody></table>",
+                "<p><b>Stand Stat Modifiers: </b>Stand Stats are based on the User's Stats. To get the Modifiers for these Stats, simply divide their score by 10.</p>",
+                "<p><b>Damage Reduction: </b>Stands have natural resistance against damage, determined by their Durability Mod. Your Stand can resist that many points of damage per round. For example, a Stand with a 100 Durability would be able to resist 10 points of damage per round, and a Stand with 40 would only be able to resist 4. Physical Attacks that hit Stands deal no damage, unless specifically stated otherwise. The only types of damage that may deal damage to Stands is damage dealt by Stands, or the Abilities of Stands. Your Stand's Damage Reduction resets at the top of each round of Initiative.</p>",
+                "<p><b>Stand Movement: </b>Stands have a Movement Speed equal to twice their Stand’s Speed Mod in meters, or a Movement Speed equal to their User, whichever is higher. Stands and Users each have a separate Movement Action. Independant-Type Stands can only move the base 10 Meters that a regular human can, unless they have a specific ability that allows them to increase it.</p>",
+                "<p><b>Stand Range: </b>Your Stand may move a number of meters away from you equal to it's Range Mod, with a minimum of 1m.</p>",
+                "<p><b>Abilities and Stand Energy: </b>The amount of Energy your stand has is based on their Stand Energy Mod. Normal Abilities cost 1 point, Special Abilities cost more depending on the Stand type, and Abilities that manipulate Space or Time cost double the Energy they normally would. Stand Energy always fully replenishes when outside of combat.</p>"
+            ]
+        },
+        {
+            "name": "Attacking",
+            "content": [
+                "Your Stand’s normal Attacks (typically punches) are determined similarly to regular Attacks. Roll a d20 and add the Power or Precision Mod of your Stand and your Proficiency Bonus to determine if the attack hits. The amount of damage dealt is based off of your Stand’s Attack Dice plus your Power (NOT Precision) Mod.</p>",
+                "<p>For User Attacks, roll a d20 and add your Strength or Dexterity Mod, whichever is higher. Every Unarmed Attack deals 1d4 + Str damage. <b>Regular physical attacks DO NOT AFFECT STANDS</b> (except for Enhancement or Independent Types).</p>",
+                "<p>Speed is also very important. The total Speed score of your Stand divided by 50 is one more Attack that the Stand or the User may perform each round, with a minimum of one. If Non-Stand Users want to have multiple Attacks per round, they may take the <a href='/feats/?focus=Trained_Combatant'>Trained Combatant</a> Feat."
+            ]
+        },
+        {
+            "name": "Stand AC",
+            "content": [
+                "<p>Stand AC works the same way as regular AC, but using the Stand's Stats. Keep in mind the 3 ways to calculate AC mentioned on the <a href='/rules'>Rules</a> page. When your Stand is within 2 Meters of you your Stand can protect you from attacks using it's AC. Like normal, if an Attack roll is less than your AC it misses. However, if the Attack roll is between your Stand AC and your own AC it hits your Stand instead, allowing you to apply your Stand's Damage Reduction. Additionally, if the damage type is Non-Stand, it simply bounces off of your Stand or phases through it. An Attack roll higher than your Stand AC is a direct hit to the User.</p>",
+                "<p><small><b>Note: </b><i>Enhancement/Independant Stands resist all types of damage but can aslo be hit by all types. Independent-Types also have both a regular AND Stand AC, despite not technically having a user.</i></small></p>"
+            ]
+        },
+        {
+            "name": "Choosing a Stand Type",
+            "content": [
+                "<p>There are 9 different Stand Types which each function very differently from eachother. You may either choose one of these 9, or roll a d100 and choose from the table below:</p>",
+                "<table class='table table-striped minor'><thead><tr><th>Result</th><th>Stand Type</th></tr></thead><tbody><tr><td>1-35</td><td>Power</td></tr><tr><td>36-49</td><td>Ranged</td></tr><tr><td>50-69</td><td>Enhancement</td></tr><tr><td>70-79</td><td>Remote</td></tr><tr><td>80-89</td><td>Ability</td></tr><tr><td>90-93</td><td>Independent</td></tr><tr><td>94-97</td><td>Hive</td></tr><tr><td>98-99</td><td>Revenge</td></tr><tr><td>100</td><td>Act</td></tr></tbody></table>",
+                "<p><b>Multi-Type Stands: </b>Some Stands have attributes of several different types of Stand. For these Stand's Stats, take the average of each Stat multiplier for the two respective types and use those multipliers, rounded down, when figuring out your initial Stand Stats. Furthermore, if there are any limitations on a Stand type's Stat increases still apply. For example, if a Stand is both a Power/Enhancement-Type you cannot have a Range Stat above 20, even if the initial average would be higher. If you have a Power/Ability-Type you cannot increase the Stand’s Power or Durability above what it would be initially, and the Range stat still cannot get above 20. If you use Hive Type as one of your Stand types, you only get to take 1d4 + Level to increase your Stand’s Stats. You also take the lower of the Hit Dice and Attack Dice if you are using two types of stands.</p>"
+            ]
+        },
+        {
+           "name": "Creating a Stand Ability",
+           "content": [
+               "<p><b>Get Creative: </b>Stand Abilities have endless possibilities, able to do anything from cooking supernaturally good food to being able to stop time itself. The rules below should generally apply to most Stand Abilities, but you should work with your DM to create the perfect custom Ability for your Stand.",
+               "<p><b>General Rules: </b>Abilities that heal or deal damage should follow the dice guidelines below, and these dice should increase every other level (for example, at level 3 1dx becomes 2dx). Abilities that require a Saving Throw should use the following Stand DC: 8 + Cha + Proficiency Bonus.</p>",
+               "<ul><li><b>No Dice: </b> Should be an ability that buffs/debuffs someone very little, or some sort of utility. Not combat-viable directly, but should be able to be used creatively in combat.</li><li><b>d4: </b>Group effects, healing/damage that affects a group of people. Can have a secondary effect if it is just a single target ability.</li><li><b>d6: </b>An ability that affects multiple targets and requires a Saving Throw, dealing no damage on  success, or ranged healing for a single target. Can also be touch healing that gives an additional effect.</li><li><b>d8: </b>Damage that may be added to a Stand’s punch or touch on a hit and does not require a Saving Throw. Can also be a ranged Attack that requires a Saving Throw with half damage on success. Can be touch healing that takes a single Attack or Bonus Action to perform.</li><li><b>d10: </b>Damage that may be added to a Stand’s punch or touch and requires a Saving Throw, dealing no damage on success. Can be touch healing that takes an Action to perform. Can be a ranged Attack that requires a Saving Throw, dealing no damage on success. Can be a single-target melee Attack that requires a Saving Throw, dealing half damage on success.</li><li><b>d12: </b>Can be a touch healing Ability that takes an Action as well as another type of Action (Reaction, Bonus Action, Movement Action). Can be a single-target melee Attack that requires a Saving Throw, dealing no damage on success.</li></ul>",
+               "<p><small><b>Note: </b><i>The damage cap for these scaling dice is normally 10dx, but this does not have to be the case. Characters or enemies may be able to go far past Level 20, and therefore, would be able to deal massive amounts of Damage using them. Your DM may decide that Abilities past that may increase in the same fashion as before (an additional dice for every odd level), or that 10dx should be the limit for balance.</i></small></p>"
+           ] 
+        }],
         "types": {
             "Power": {
                 "name": "Power-Type Stand",
@@ -1007,7 +1060,7 @@
             "name": "Materials",
             "desc": "The following materials may be used to form spheres to use the Spin with. Objects that are not perfectly spherical may be Spun and thrown, but your Attack and Damage rolls, as well as Range are all cut in half.",
             "table": {
-                "id": "mats",
+                "class": "minor",
                 "head": ["Material", "Range", "Damage", "Effect"],
                 "body": [
                     ["Wood", "10/30m", "1d4 + Dex", "The Wooden Sphere will splinter and shatter upon contact, causing splinters to fly off in all directions up to 2 meters from the point of the Sphere’s impact. Those within 2 meters must make a Dex Save against your Spin DC, taking an additional 1d8 points of Piercing damage on failure. This Damage increases to 2d8 starting at level 7, and 3d8 at level 14."],
