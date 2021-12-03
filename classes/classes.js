@@ -5,7 +5,7 @@ $(document).ready(function () {
     c = url.searchParams.get("focus");
 
     if (c == null) {
-        c = "Ripple";
+        c = "Stands";
         updateURL();
     }
 
@@ -26,7 +26,7 @@ function getData() {
     $.getJSON("classes.json", function(data) {
         cData = data;
         if (cData[c] == null && cData["Stands"].types[c] == null && cData["Non-Supernatural"].types[c] == null)
-            c = "Ripple";
+            c = "Stands";
         updateDisplay();
     });
 
@@ -67,7 +67,7 @@ function updateDisplay() {
             newContent += "<p><b>" + clss.extra[i].name + ": </b>" + clss.extra[i].desc + "</p>";
             var table = clss.extra[i].table;
             if (table != null) {
-                newContent += "<table class='table table-striped' id='" + table.id + "'><thead><tr>";
+                newContent += "<table class='table table-striped " + table.class + "'><thead><tr>";
                 for (let j = 0; j < table.head.length; j++)
                     newContent += "<th>" + table.head[j] + "</th>";
                 newContent += "</tr></thead><tbody>";
@@ -79,6 +79,12 @@ function updateDisplay() {
                 }
                 newContent += "</tbody></table>";
             }
+        }
+    if (clss.other != null)
+        for (let i = 0; i < clss.other.length; i++) {
+            newContent += "<h4 class='class-heading'>" + clss.other[i].name + "</h4>";
+            for (let j = 0; j < clss.other[i].content.length; j++)
+            newContent += clss.other[i].content[j];
         }
     if (clss.notes != null)
         for (let i = 0; i < clss.notes.length; i++)
