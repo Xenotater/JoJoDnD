@@ -40,17 +40,14 @@ function showTypes() {
 function updateDisplay() {
     var clss = cData[c];
     var newContent = "";
-    var src = c;
 
     if ($("#" + c).hasClass("stand-type"))
         clss = cData["Stands"].types[c];
 
-    if ($("#" + c).hasClass("non-super")) {
+    if ($("#" + c).hasClass("non-super"))
         clss = cData["Non-Supernatural"].types[c];
-        src = "Non-Supernatural"
-    }
 
-    newContent += "<h2 class='class-title'>" + clss.name + "</h2><div class='class-img'><img src='Assets/" + src + ".png' alt='" + src + "'></div>";
+    newContent += "<h2 class='class-title'>" + clss.name + "</h2><div class='class-img'><img src='Assets/" + c + ".png' alt='" + c + "'></div>";
     if (clss.exampleOf != null) {
         newContent += "<p class='center'><small><b>Examples of " + clss.exampleOf + ": </b><i>";
         for (let i = 0; i < clss.examples.length; i++) {
@@ -61,13 +58,28 @@ function updateDisplay() {
         newContent += "</i></small></p>";
     }
     if (clss.dc != null)
-        newContent += "<div class='row center' id='stat'><div class='col-sm-4'><span><b>Hit Dice: </b>" + clss.hDice + "</span></div><div class='col-sm-8'><span><b>" + clss.dcName + "</b>: " + clss.dc + "</span></div></div>";
+        newContent += "<div class='row center' id='stat'><div class='col-sm-4'><p><b>Hit Dice: </b>" + clss.hDice + "</p></div><div class='col-sm-8'><p><b>" + clss.dcName + "</b>: " + clss.dc + "</p></div></div>";
     else if (clss.hDice != null)
-        newContent += "<span class='center'><b>Hit Dice: </b>" + clss.hDice + "</span>";
+        newContent += "<p class='center'><b>Hit Dice: </b>" + clss.hDice + "</p>";
     newContent += "<h4 class='class-heading'>Description</h4><p>" + clss.desc + "</p>";
     if (clss.extra != null)
-        for (let i = 0; i < clss.extra.length; i++)
+        for (let i = 0; i < clss.extra.length; i++) {
             newContent += "<p><b>" + clss.extra[i].name + ": </b>" + clss.extra[i].desc + "</p>";
+            var table = clss.extra[i].table;
+            if (table != null) {
+                newContent += "<table class='table table-striped' id='" + table.id + "'><thead><tr>";
+                for (let j = 0; j < table.head.length; j++)
+                    newContent += "<th>" + table.head[j] + "</th>";
+                newContent += "</tr></thead><tbody>";
+                for (let j = 0; j < table.body.length; j++) {
+                    newContent += "<tr>";
+                    for (let k = 0; k < table.body[j].length; k++)
+                        newContent += "<td>" + table.body[j][k] + "</td>";
+                    newContent += "</tr>";
+                }
+                newContent += "</tbody></table>";
+            }
+        }
     if (clss.notes != null)
         for (let i = 0; i < clss.notes.length; i++)
             newContent += "<p><small><b>Note: </b><i>" + clss.notes[i] + "</i></small></p>";
@@ -81,18 +93,28 @@ function updateDisplay() {
         newContent += "</tr></thead><tbody>";
         for (let i = 1; i <= 20; i++) {
             l = clss.level[i];
-            newContent += "<tr><td>" + i + "</td><td>" + l.pro + "</td><td>" + l.feats + "</td><td>";
+            newContent += "<tr><td>" + i + "</td><td>+" + l.pro + "</td><td>" + l.feats + "</td><td>";
             if (l.otherFeatures != null)
                 for (let j = 0; j < l.otherFeatures.length; j++) {
                     newContent += l.otherFeatures[j];
-                    if (j != l.otherFeatures.length-1 || l.linkFeatures != null || l.ability != null)
+                    if (j != l.otherFeatures.length-1 || l.linkFeatures != null || l.featFeatures != null || l.ability != null)
                         newContent += ", ";
                 }
             if (l.linkFeatures != null)
                 for (let j = 0; j < l.linkFeatures.length; j++) {
                     if (l.linkFeatures[j] != "OR") {
                         newContent += "<a href='/abilities/?focus=" + l.linkFeatures[j].replace(/ /g, "_") + "'>" + l.linkFeatures[j] + "</a>";
-                        if ((j != l.linkFeatures.length-1 || l.ability != null) && l.linkFeatures[j+1] != "OR")
+                        if ((j != l.linkFeatures.length-1 || l.featFeatures != null ||l.ability != null) && l.linkFeatures[j+1] != "OR")
+                            newContent += ", ";
+                    }
+                    else
+                        newContent += " OR ";
+                }
+            if (l.featFeatures != null)
+                for (let j = 0; j < l.featFeatures.length; j++) {
+                    if (l.featFeatures[j] != "OR") {
+                        newContent += "<a href='/feats/?focus=" + l.featFeatures[j].replace(/ /g, "_") + "'>" + l.featFeatures[j] + "</a>";
+                        if (j != l.featFeatures.length-1 || l.ability != null)
                             newContent += ", ";
                     }
                     else

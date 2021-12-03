@@ -43,7 +43,7 @@
                 "pro": "2",
                 "feats": "2",
                 "linkFeatures": ["Ionic Rippling"],
-                "feat-features": ["Headhunter"], 
+                "featFeatures": ["Headhunter"], 
                 "ability": ["Ability Score Improvement"]
             },
             "4": {
@@ -55,7 +55,7 @@
             "5": {
                 "pro": "3",
                 "feats": "2",
-                "otherFeatures": ["Choose another Class Feature from the Level 4 list"]
+                "otherFeatures": ["Choose another Class Feature from the Level 4 options"]
             },
             "6": {
                 "pro": "3",
@@ -71,7 +71,7 @@
             "8": {
                 "pro": "3",
                 "feats": "3",
-                "otherFeatures": ["Choose another Class Feature from the Level 4 or Level 7 lists"],
+                "otherFeatures": ["Choose another Class Feature from the Level 4 or Level 7 optionss"],
                 "ability": ["Ability Score Improvement", "Increase Str, Dex, or Con Score by 1"]
             },
             "9": {
@@ -105,7 +105,7 @@
             "14": {
                 "pro": "5",
                 "feats": "4",
-                "otherFeatures": ["Choose another Class Feature from the Level 4, Level 10, or Level 12 lists"],
+                "otherFeatures": ["Choose another Class Feature from the Level 4, Level 10, or Level 12 optionss"],
                 "ability": ["Increase Str, Dex, or Con Score by 1"]
             },
             "15": {
@@ -995,445 +995,541 @@
         "exampleOf": "Spin Users",
         "examples": ["Gyro Zeppeli", "Johnny Joestar"],
         "links": ["Gyro_Zeppeli", "Johnny_Joestar"],
-        "desc": "",
-        "hDice": "",
-        "theme": "",
+        "desc": "Some objects, when rotated in comparison to the 9:16 ratio, may produce more energy than it takes to keep the object spinning. Some people have figured out how to properly harness this energy, using the vibrations produced for a variety of tasks. In theory, perfection of this ability could result in the power of Infinity.",
+        "hDice": "1d8",
+        "dcName": "Spin DC",
+        "dc": "8 + Dex + Proficiency Bonus",
+        "extra": [{
+            "name": "The Golden Ratio",
+            "desc": "A Spin User must have a reference of a 9:16 ratio in order to use the Spin. A 9:16 ratio is found somewhere in almost every uninjured creature, except humans. The ratio may also be found in something artificial, such as a piece of paper or a tattoo, so long as it is made to be a 9:16 ratio."
+        },
+        {
+            "name": "Materials",
+            "desc": "The following materials may be used to form spheres to use the Spin with. Objects that are not perfectly spherical may be Spun and thrown, but your Attack and Damage rolls, as well as Range are all cut in half.",
+            "table": {
+                "id": "mats",
+                "head": ["Material", "Range", "Damage", "Effect"],
+                "body": [
+                    ["Wood", "10/30m", "1d4 + Dex", "The Wooden Sphere will splinter and shatter upon contact, causing splinters to fly off in all directions up to 2 meters from the point of the Sphere’s impact. Those within 2 meters must make a Dex Save against your Spin DC, taking an additional 1d8 points of Piercing damage on failure. This Damage increases to 2d8 starting at level 7, and 3d8 at level 14."],
+                    ["Rubber", "40/240m", "1d6 + Dex", "None"],
+                    ["Stone", "20/60m", "1d8 + Dex", "None"],
+                    ["Metal", "10/30m", "1d10 + Dex", "None"]
+                ]
+            }
+        }],
+        "theme": "gyro",
         "level": {
             "1": {
-                "pro": "",
-                "feats": ""
+                "pro": "2",
+                "feats": "2",
+                "linkFeatures": ["Spherical Spin"]
             },
             "2": {
-                "pro": "",
-                "feats": ""
+                "pro": "2",
+                "feats": "2",
+                "linkFeatures": ["Sculpt Sphere"]
             },
             "3": {
-                "pro": "",
-                "feats": ""
+                "pro": "2",
+                "feats": "2",
+                "linkFeatures": ["Return to Sender"],
+                "ability": ["Ability Score Improvement"]
             },
             "4": {
-                "pro": "",
-                "feats": ""
+                "pro": "2",
+                "feats": "2",
+                "linkFeatures": ["Harden Flesh"]
             },
             "5": {
-                "pro": "",
-                "feats": ""
+                "pro": "3",
+                "feats": "2",
+                "linkFeatures": ["Muscle Contraction", "OR", "Sendo Spin"]
             },
             "6": {
-                "pro": "",
-                "feats": ""
+                "pro": "3",
+                "feats": "3",
+                "linkFeatures": ["Wrist Memory"],
+                "ability": ["Ability Score Improvement"]
             },
             "7": {
-                "pro": "",
-                "feats": ""
+                "pro": "3",
+                "feats": "3",
+                "otherFeatures": ["All Sphere Attacks deal an additional die of damage. For example, 1d6 becomes 2d6."]
             },
             "8": {
-                "pro": "",
-                "feats": ""
+                "pro": "3",
+                "feats": "3",
+                "linkFeatures": ["Restraining Sphere", "OR", "Twisting Spin"],
+                "ability": ["Ability Score Improvement"]
             },
             "9": {
-                "pro": "",
-                "feats": ""
+                "pro": "4",
+                "feats": "3",
+                "otherFeatures": ["Choose another Class Feature from the Level 5 or Level 8 optionss"],
+                "linkFeatures": ["Supernatural Force"]
             },
             "10": {
-                "pro": "",
-                "feats": ""
+                "pro": "4",
+                "feats": "3",
+                "linkFeatures": ["Tendon Twister", "OR", "Medicinal Spin"],
+                "ability": ["Ability Score Improvement"]
             },
             "11": {
-                "pro": "",
-                "feats": ""
+                "pro": "4",
+                "feats": "4",
+                "linkFeatures": ["Defensive Spin", "OR", "Satellite"]
             },
             "12": {
-                "pro": "",
-                "feats": ""
+                "pro": "4",
+                "feats": "4"
             },
             "13": {
-                "pro": "",
-                "feats": ""
+                "pro": "5",
+                "feats": "4",
+                "ability": ["Ability Score Improvement"]
             },
             "14": {
-                "pro": "",
-                "feats": ""
+                "pro": "5",
+                "feats": "4",
+                "otherFeatures": ["All Sphere Attacks deal an additional die of damage. For example, 2d6 becomes 3d6.", "Choose another Class Feature from the Level 5, Level 8, or Level 11 options"]
             },
             "15": {
-                "pro": "",
-                "feats": ""
+                "pro": "5",
+                "feats": "4",
+                "linkFeatures": ["Special Technique"]
             },
             "16": {
-                "pro": "",
-                "feats": ""
+                "pro": "5",
+                "feats": "5"
             },
             "17": {
-                "pro": "",
-                "feats": ""
+                "pro": "6",
+                "feats": "5",
+                "ability": ["Ability Score Improvement"]
             },
             "18": {
-                "pro": "",
-                "feats": ""
+                "pro": "6",
+                "feats": "5"
             },
             "19": {
-                "pro": "",
-                "feats": ""
+                "pro": "6",
+                "feats": "5"
             },
             "20": {
-                "pro": "",
-                "feats": ""
+                "pro": "6",
+                "feats": "6",
+                "linkFeatures": ["Perfect Spin"]
             }
         }
     },
     "Non-Supernatural": {
         "name": "Non-Supernatural Classes",
-        "desc": "",
+        "desc": "Despite all of the odd happenings and abilities in the world of JoJo’s Bizarre Adventure, most people don't even know about them. However, the world always needs those who fight for what they believe in. As such, these Classes also exist.",
+        "extra": [{
+            "name": "Gaining a Stand",
+            "desc": "If a person in a Non-Supernatural Class gains a Stand, they may erase all of their <a href='/abilities'>Abilities</a>, <a href='/feats'>Feats</a>, and Proficiencies, and then convert them into the respective Stand Type that they obtain. For example, if a Level 5 Brawler gains a Power Stand, they may opt to simply become a Level 5 Power Type Stand User instead of multiclassing. When you become a Stand User your Max HP reverts to what it was originally, then you re-roll for every level suddenly gained. You may only convert Non-Supernatural Levels into Stand Levels, you may not convert them back."
+        }],
         "types": {
             "Brawler": {
                 "name": "Brawler",
-                "desc": "",
-                "hDice": "",
-                "theme": "",
+                "desc": "Brawlers tend to face their opponents head on using their fists, as well as their surroundings, in order to come out on top in fights.",
+                "hDice": "1d8",
+                "theme": "basic",
                 "level": {
                     "1": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2",
+                        "featFeatures": ["Tavern Brawler", "OR", "Unarmed Proficiency"]
                     },
                     "2": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "3": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2",
+                        "featFeatures": ["Trained Combatant"],
+                        "ability": ["Ability Score Improvement"]
                     },
                     "4": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "5": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "2"
                     },
                     "6": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3",
+                        "featFeatures": ["Close Combat Speciaoptions"],
+                        "ability": ["Ability Score Improvement"]
                     },
                     "7": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3"
                     },
                     "8": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "9": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "10": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "11": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "4"
                     },
                     "12": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "4",
+                        "featFeatures": ["Cleave", "OR", "Adrenaline Rush"]
                     },
                     "13": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "14": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4"
                     },
                     "15": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4",
+                        "featFeatures": ["Trained Combatant"]
                     },
                     "16": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "5"
                     },
                     "17": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "18": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "19": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "20": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "6",
+                        "featFeatures": ["Unstoppable Willpower"]
                     }
                 }
             },
             "Knight": {
                 "name": "Knight",
-                "desc": "",
-                "hDice": "",
-                "theme": "",
+                "desc": "Knights are those who train to use heavy weapons and traverse long distances tirelessly.  ",
+                "hDice": "1d8",
+                "theme": "basic",
                 "level": {
                     "1": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2",
+                        "featFeatures": ["Simple Weapon Proficiency", "Martial Weapon Proficiency"]
                     },
                     "2": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "3": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2",
+                        "featFeatures": ["Cleave", "OR", "Scarflesh"]
                     },
                     "4": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "5": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "2"
                     },
                     "6": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3",
+                        "featFeatures": ["Heavy Weapon Speciaoptions", "OR", "Shield Master"],
+                        "ability": ["Ability Score Improvement"]
                     },
                     "7": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3"
                     },
                     "8": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "9": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "10": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "11": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "4"
                     },
                     "12": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "4",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "13": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "14": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4"
                     },
                     "15": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4",
+                        "featFeatures": ["Trained Combatant"]
                     },
                     "16": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "5"
                     },
                     "17": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "18": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "19": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "20": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "6",
+                        "featFeatures": ["Tanky"]
                     }
                 }
             },
             "Soldier": {
                 "name": "Soldier",
-                "desc": "",
-                "hDice": "",
-                "theme": "",
+                "desc": "Soldiers are modern-day Warriors, often trained in the use of firearms as well as close combat. They are a more modern-day version of the Knight.",
+                "hDice": "1d6",
+                "theme": "basic",
                 "level": {
                     "1": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2",
+                        "featFeatures": ["Simple Weapon Proficiency", "Pistol Proficiency"]
                     },
                     "2": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "3": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2",
+                        "featFeatures": ["Tavern Brawler"],
+                        "ability": ["Ability Score Improvement"]
                     },
                     "4": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "5": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "2"
                     },
                     "6": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3",
+                        "featFeatures": ["Heavy Weapon Speciaoptions", "OR", "Rifle Proficiency"],
+                        "ability": ["Ability Score Improvement"]
                     },
                     "7": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3"
                     },
                     "8": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "9": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "10": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "11": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "4"
                     },
                     "12": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "4",
+                        "featFeatures": ["Headhunter", "OR", "Automatic Weapon Proficiency"]
                     },
                     "13": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "14": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4"
                     },
                     "15": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4",
+                        "otherFeatures": ["Choose another Class Feature from the Level 1, Level 6, or Level 12 options"]
                     },
                     "16": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "5"
                     },
                     "17": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "18": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "19": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "20": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "6",
+                        "featFeatures": ["Trap Detection"]
                     }
                 }
             },
             "Sniper": {
                 "name": "Sniper",
-                "desc": "",
-                "hDice": "",
-                "theme": "",
+                "desc": "Snipers prefer to take out their enemies from a good distance away, attacking from behind cover rather than facing their enemies directly.",
+                "hDice": "1d4",
+                "theme": "basic",
                 "level": {
                     "1": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2",
+                        "featFeatures": ["Rifle Proficiency"]
                     },
                     "2": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "3": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2",
+                        "featFeatures": ["Pistol Proficiency"],
+                        "ability": ["Ability Score Improvement"]
                     },
                     "4": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "5": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "2"
                     },
                     "6": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3",
+                        "featFeatures": ["Level Headed", "OR", "Rifle Proficiency"],
+                        "ability": ["Ability Score Improvement"]
                     },
                     "7": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3"
                     },
                     "8": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "9": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "10": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "11": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "4"
                     },
                     "12": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "4",
+                        "featFeatures": ["Headhunter"]
                     },
                     "13": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "14": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4"
                     },
                     "15": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4",
+                        "featFeatures": ["Hidden Assassin"]
                     },
                     "16": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "5"
                     },
                     "17": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "18": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "19": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "20": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "6",
+                        "featFeatures": ["Deadly Accuracy"]
                     }
                 }
             }
