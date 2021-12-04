@@ -181,7 +181,7 @@
         {
             "name": "Stand Stats",
             "content": [
-                "<p><b>Ability Conversion Chart:</b></p><table class='table table-striped minor'><thead><tr><th>Ability</th><th>Stand Ability</th></tr></thead><tbody><tr><td>Strength</td><td>Power</td></tr><tr><td>Dexterity</td><td>Precision</td></tr><tr><td>Constitution</td><td>Durability</td></tr><tr><td>Wisdom</td><td>Speed</td></tr><tr><td>Intelligence</td><td>Range</td></tr><tr><td>Charisma</td><td>Stand Energy</td></tr></tbody></table>",
+                "<p class='center label'><b>Ability Conversion Chart:</b></p><table class='table table-striped minor'><thead><tr><th>Ability</th><th>Stand Ability</th></tr></thead><tbody><tr><td>Strength</td><td>Power</td></tr><tr><td>Dexterity</td><td>Precision</td></tr><tr><td>Constitution</td><td>Durability</td></tr><tr><td>Wisdom</td><td>Speed</td></tr><tr><td>Intelligence</td><td>Range</td></tr><tr><td>Charisma</td><td>Stand Energy</td></tr></tbody></table>",
                 "<p><b>Stand Stat Modifiers: </b>Stand Stats are based on the User's Stats. To get the Modifiers for these Stats, simply divide their score by 10.</p>",
                 "<p><b>Damage Reduction: </b>Stands have natural resistance against damage, determined by their Durability Mod. Your Stand can resist that many points of damage per round. For example, a Stand with a 100 Durability would be able to resist 10 points of damage per round, and a Stand with 40 would only be able to resist 4. Physical Attacks that hit Stands deal no damage, unless specifically stated otherwise. The only types of damage that may deal damage to Stands is damage dealt by Stands, or the Abilities of Stands. Your Stand's Damage Reduction resets at the top of each round of Initiative.</p>",
                 "<p><b>Stand Movement: </b>Stands have a Movement Speed equal to twice their Stand’s Speed Mod in meters, or a Movement Speed equal to their User, whichever is higher. Stands and Users each have a separate Movement Action. Independant-Type Stands can only move the base 10 Meters that a regular human can, unless they have a specific ability that allows them to increase it.</p>",
@@ -227,91 +227,140 @@
                 "exampleOf": "Power Stands",
                 "examples": ["Star Platinum", "Crazy Diamond", "Gold Experience"],
                 "links": ["Star_Platinum", "Crazy_Diamond", "Gold_Experience"],
-                "desc": "",
-                "hDice": "",
-                "theme": "",
+                "desc": "Power-Type Stands are considered to be some of the most dangerous and powerful due to their all around physical ability. They're also the most common. Most opponents have no chance facing off against a Power-Type Stand user when within their range, but they do have a weakness in their extremely short range.",
+                "hDice": "1d12",
+                "dcName": "Stand DC",
+                "dc": "8 + Cha + Proficiency Bonus",
+                "aDice": ["1d12", "2d10"],
+                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand’s Stats. Your Stand’s Range has a maximum score of 20 (2 meters), and cannot go any higher than that.",
+                "mults": [4, 3, 3, 1, 4, 2],
+                "theme": "world",
                 "level": {
                     "1": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2",
+                        "linkFeatures": ["Feat of Power"]
                     },
                     "2": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2",
+                        "linkFeatures": ["Custom Ability"]
                     },
                     "3": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "4": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2",
+                        "linkFeatures": ["Armored Stand", "OR", "Melee Barrage", "OR", "Detached Senses"]
                     },
                     "5": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "2",
+                        "linkFeatures": ["Stand Rush"]
                     },
                     "6": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3",
+                        "otherFeatures": ["Choose another Class Feature from the Level 4 options"],
+                        "ability": ["Ability Score Improvement"]
                     },
                     "7": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3",
+                        "linkFeatures": ["Counterattacking Blow", "OR", "Offensive Blow"]
                     },
                     "8": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "9": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "3",
+                        "linkFeatures": ["Block Physical Projectile", "OR", "Block Stand Projectile"]
                     },
                     "10": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "11": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "4",
+                        "otherFeatures": ["Attack Dice increase to 2d10"]
                     },
                     "12": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "4",
+                        "linkFeatures": ["Stand Leap"]
                     },
                     "13": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "14": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4",
+                        "otherFeatures": ["Choose another Class Feature from the Level 4, Level 7, or Level 9 options"],
+                        "featFeatures": ["Menacing Aura"]
                     },
                     "15": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4",
+                        "otherFeatures": ["<a href='/artifacts/?focus=Stand_Arrow'>The Requiem Quietly Plays</a>"],
+                        "linkFeatures": ["Special Ability (2 SE)"]
                     },
                     "16": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "5"
                     },
                     "17": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "18": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "19": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "20": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "6",
+                        "otherFeatures": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
                     }
-                }
+                },
+                "otherCols": [{
+                    "name": "Ability Dice",
+                    "level": {
+                        "1": "1dx",
+                        "2": "1dx",
+                        "3": "2dx",
+                        "4": "2dx",
+                        "5": "3dx",
+                        "6": "3dx",
+                        "7": "4dx",
+                        "8": "4dx",
+                        "9": "5dx",
+                        "10": "5dx",
+                        "11": "6dx",
+                        "12": "6dx",
+                        "13": "7dx",
+                        "14": "7dx",
+                        "15": "8dx",
+                        "16": "8dx",
+                        "17": "9dx",
+                        "18": "9dx",
+                        "19": "10dx",
+                        "20": "10dx"
+                    }
+                }]
             },
             "Ranged": {
                 "name": "Ranged-Type Stand",
@@ -323,84 +372,84 @@
                 "theme": "",
                 "level": {
                     "1": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "2": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "3": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "4": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "5": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "2"
                     },
                     "6": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3"
                     },
                     "7": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3"
                     },
                     "8": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3"
                     },
                     "9": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "3"
                     },
                     "10": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "3"
                     },
                     "11": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "4"
                     },
                     "12": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "4"
                     },
                     "13": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4"
                     },
                     "14": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4"
                     },
                     "15": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4"
                     },
                     "16": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "5"
                     },
                     "17": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "18": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "19": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "20": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "6"
                     }
                 }
             },
@@ -414,84 +463,84 @@
                 "theme": "",
                 "level": {
                     "1": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "2": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "3": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "4": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "5": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "2"
                     },
                     "6": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3"
                     },
                     "7": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3"
                     },
                     "8": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3"
                     },
                     "9": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "3"
                     },
                     "10": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "3"
                     },
                     "11": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "4"
                     },
                     "12": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "4"
                     },
                     "13": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4"
                     },
                     "14": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4"
                     },
                     "15": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4"
                     },
                     "16": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "5"
                     },
                     "17": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "18": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "19": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "20": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "6"
                     }
                 }
             },
@@ -505,84 +554,84 @@
                 "theme": "",
                 "level": {
                     "1": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "2": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "3": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "4": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "5": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "2"
                     },
                     "6": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3"
                     },
                     "7": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3"
                     },
                     "8": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3"
                     },
                     "9": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "3"
                     },
                     "10": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "3"
                     },
                     "11": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "4"
                     },
                     "12": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "4"
                     },
                     "13": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4"
                     },
                     "14": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4"
                     },
                     "15": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4"
                     },
                     "16": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "5"
                     },
                     "17": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "18": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "19": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "20": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "6"
                     }
                 }
             },
@@ -596,84 +645,84 @@
                 "theme": "",
                 "level": {
                     "1": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "2": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "3": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "4": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "5": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "2"
                     },
                     "6": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3"
                     },
                     "7": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3"
                     },
                     "8": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3"
                     },
                     "9": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "3"
                     },
                     "10": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "3"
                     },
                     "11": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "4"
                     },
                     "12": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "4"
                     },
                     "13": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4"
                     },
                     "14": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4"
                     },
                     "15": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4"
                     },
                     "16": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "5"
                     },
                     "17": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "18": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "19": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "20": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "6"
                     }
                 }
             },
@@ -687,84 +736,84 @@
                 "theme": "",
                 "level": {
                     "1": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "2": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "3": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "4": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "5": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "2"
                     },
                     "6": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3"
                     },
                     "7": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3"
                     },
                     "8": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3"
                     },
                     "9": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "3"
                     },
                     "10": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "3"
                     },
                     "11": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "4"
                     },
                     "12": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "4"
                     },
                     "13": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4"
                     },
                     "14": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4"
                     },
                     "15": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4"
                     },
                     "16": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "5"
                     },
                     "17": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "18": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "19": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "20": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "6"
                     }
                 }
             },
@@ -778,84 +827,84 @@
                 "theme": "",
                 "level": {
                     "1": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "2": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "3": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "4": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "5": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "2"
                     },
                     "6": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3"
                     },
                     "7": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3"
                     },
                     "8": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3"
                     },
                     "9": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "3"
                     },
                     "10": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "3"
                     },
                     "11": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "4"
                     },
                     "12": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "4"
                     },
                     "13": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4"
                     },
                     "14": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4"
                     },
                     "15": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4"
                     },
                     "16": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "5"
                     },
                     "17": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "18": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "19": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "20": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "6"
                     }
                 }
             },
@@ -869,84 +918,84 @@
                 "theme": "",
                 "level": {
                     "1": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "2": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "3": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "4": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "5": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "2"
                     },
                     "6": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3"
                     },
                     "7": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3"
                     },
                     "8": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3"
                     },
                     "9": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "3"
                     },
                     "10": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "3"
                     },
                     "11": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "4"
                     },
                     "12": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "4"
                     },
                     "13": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4"
                     },
                     "14": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4"
                     },
                     "15": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4"
                     },
                     "16": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "5"
                     },
                     "17": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "18": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "19": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "20": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "6"
                     }
                 }
             },
@@ -960,84 +1009,84 @@
                 "theme": "",
                 "level": {
                     "1": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "2": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "3": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "4": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "2",
+                        "feats": "2"
                     },
                     "5": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "2"
                     },
                     "6": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3"
                     },
                     "7": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3"
                     },
                     "8": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "3",
+                        "feats": "3"
                     },
                     "9": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "3"
                     },
                     "10": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "3"
                     },
                     "11": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "4"
                     },
                     "12": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "4",
+                        "feats": "4"
                     },
                     "13": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4"
                     },
                     "14": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4"
                     },
                     "15": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "4"
                     },
                     "16": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "5",
+                        "feats": "5"
                     },
                     "17": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "18": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "19": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "5"
                     },
                     "20": {
-                        "pro": "",
-                        "feats": ""
+                        "pro": "6",
+                        "feats": "6"
                     }
                 }
             }
