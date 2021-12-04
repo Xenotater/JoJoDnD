@@ -220,6 +220,10 @@
                "<ul><li><b>No Dice: </b> Should be an ability that buffs/debuffs someone very little, or some sort of utility. Not combat-viable directly, but should be able to be used creatively in combat.</li><li><b>d4: </b>Group effects, healing/damage that affects a group of people. Can have a secondary effect if it is just a single target ability.</li><li><b>d6: </b>An ability that affects multiple targets and requires a Saving Throw, dealing no damage on  success, or ranged healing for a single target. Can also be touch healing that gives an additional effect.</li><li><b>d8: </b>Damage that may be added to a Stand’s punch or touch on a hit and does not require a Saving Throw. Can also be a ranged Attack that requires a Saving Throw with half damage on success. Can be touch healing that takes a single Attack or Bonus Action to perform.</li><li><b>d10: </b>Damage that may be added to a Stand’s punch or touch and requires a Saving Throw, dealing no damage on success. Can be touch healing that takes an Action to perform. Can be a ranged Attack that requires a Saving Throw, dealing no damage on success. Can be a single-target melee Attack that requires a Saving Throw, dealing half damage on success.</li><li><b>d12: </b>Can be a touch healing Ability that takes an Action as well as another type of Action (Reaction, Bonus Action, Movement Action). Can be a single-target melee Attack that requires a Saving Throw, dealing no damage on success.</li></ul>",
                "<p><small><b>Note: </b><i>The damage cap for these scaling dice is normally 10dx, but this does not have to be the case. Characters or enemies may be able to go far past Level 20, and therefore, would be able to deal massive amounts of Damage using them. Your DM may decide that Abilities past that may increase in the same fashion as before (an additional dice for every odd level), or that 10dx should be the limit for balance.</i></small></p>"
            ] 
+        },
+        {
+            "name": "Stand Whispers",
+            "content": ["<p>Those who have the potential to gain a Stand and are destined to in the future may have what is known as a Stand Whisper. This is an Ability that manifests itself before the User actually has controll over their Stand, which may not necessarily be the same as their Stand Ability would be. We see examples of this in <a href='https://jojo.fandom.com/wiki/Joseph_Joestar'>Joseph</a>'s \"Your Next Line is\" being a form of future prediction, young <a href='https://jojo.fandom.com/wiki/Giorno_Giovanna'>Giorno</a> growing grass to cover the injured gangster, and <a href='https://jojo.fandom.com/wiki/Guido_Mista'>Mista</a>'s ability to dodge bullets at point-blank range. Stand Whispers are often subconscious, but the User can utilize them to their full potential if they take notice of how the Ability functions. The Whispers disappear once the User obtains their Stand.</p>"]
         }],
         "types": {
             "Power": {
@@ -232,7 +236,7 @@
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
                 "aDice": ["1d12", "2d10"],
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand’s Stats. Your Stand’s Range has a maximum score of 20 (2 meters), and cannot go any higher than that.",
+                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand’s Stats. Your Stand’s Range may not be increased past 20 (2 meters).",
                 "mults": [4, 3, 3, 1, 4, 2],
                 "theme": "world",
                 "level": {
@@ -290,7 +294,7 @@
                     "11": {
                         "pro": "4",
                         "feats": "4",
-                        "otherFeatures": ["Attack Dice increase to 2d10"]
+                        "otherFeatures": ["Attack Dice increases to 2d10"]
                     },
                     "12": {
                         "pro": "4",
@@ -367,69 +371,93 @@
                 "exampleOf": "Ranged Stands",
                 "examples": ["Hierophant Green", "Aerosmith", "Whitesnake"],
                 "links": ["Hierophant_Green", "Aerosmith", "Whitesnake"],
-                "desc": "",
-                "hDice": "",
-                "theme": "",
+                "desc": "Ranged-Type Stands are fantastic all around. While not as strong or tough as Power types, Ranged Stands are able to use their versatility and flexibility to their advantage, often being able to effectively fight in almost any situation. A Stand type with no great strengths, but no great weaknesses either.",
+                "hDice": "1d8",
+                "dcName": "Stand DC",
+                "dc": "8 + Cha + Proficiency Bonus",
+                "aDice": ["1d6", "1d10"],
+                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand’s Stats except for Power or Durability. Your Power and Durability may not be increased past their initial values.",
+                "mults": [3, 3, 3, 6, 3, 3],
+                "theme": "hiero",
                 "level": {
                     "1": {
                         "pro": "2",
-                        "feats": "2"
+                        "feats": "2",
+                        "linkFeatures": ["Slippery", "Detached Senses", "OR", "Armored Stand"]
                     },
                     "2": {
                         "pro": "2",
-                        "feats": "2"
+                        "feats": "2",
+                        "linkFeatures": ["Custom Ability"]
                     },
                     "3": {
                         "pro": "2",
-                        "feats": "2"
+                        "feats": "2",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "4": {
                         "pro": "2",
-                        "feats": "2"
+                        "feats": "2",
+                        "linkFeatures": ["Melee Barrage", "OR", "Ranged Attack"]
                     },
                     "5": {
                         "pro": "3",
-                        "feats": "2"
+                        "feats": "2",
+                        "linkFeatures": ["Oblivious Facade", "OR"],
+                        "featFeatures": ["Clever Disguise"]
                     },
                     "6": {
                         "pro": "3",
-                        "feats": "3"
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "7": {
                         "pro": "3",
-                        "feats": "3"
+                        "feats": "3",
+                        "linkFeatures": ["Silent Movement", "OR", "Speedy Movement"]
                     },
                     "8": {
                         "pro": "3",
-                        "feats": "3"
+                        "feats": "3",
+                        "otherFeatures": ["Choose another Class Feature from the Level 4, Level 5, or Level 7 options"],
+                        "ability": ["Ability Score Improvement"]
                     },
                     "9": {
                         "pro": "4",
-                        "feats": "3"
+                        "feats": "3",
+                        "linkFeatures": ["Pincer Attack", "OR", "Hot Pursuit"]
                     },
                     "10": {
                         "pro": "4",
-                        "feats": "3"
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "11": {
                         "pro": "4",
-                        "feats": "4"
+                        "feats": "4",
+                        "otherFeatures": ["Attack Dice increases to 1d10"]
                     },
                     "12": {
                         "pro": "4",
-                        "feats": "4"
+                        "feats": "4",
+                        "otherFeatures": ["Choose another Class Feature from the Level 4, Level 5, Level 7, or Level 9 options"]
                     },
                     "13": {
                         "pro": "5",
-                        "feats": "4"
+                        "feats": "4",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "14": {
                         "pro": "5",
-                        "feats": "4"
+                        "feats": "4",
+                        "linkFeatures": ["Stand Pickpocketing", "OR"],
+                        "featFeatures": ["Menacing Aura"]
                     },
                     "15": {
                         "pro": "5",
-                        "feats": "4"
+                        "feats": "4",
+                        "otherFeatures": ["<a href='/artifacts/?focus=Stand_Arrow'>The Requiem Quietly Plays</a>"],
+                        "linkFeatures": ["Special Ability (2 SE)"]
                     },
                     "16": {
                         "pro": "5",
@@ -449,78 +477,128 @@
                     },
                     "20": {
                         "pro": "6",
-                        "feats": "6"
+                        "feats": "6",
+                        "otherFeatures": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
                     }
-                }
+                },
+                "otherCols": [{
+                    "name": "Ability Dice",
+                    "level": {
+                        "1": "1dx",
+                        "2": "1dx",
+                        "3": "2dx",
+                        "4": "2dx",
+                        "5": "3dx",
+                        "6": "3dx",
+                        "7": "4dx",
+                        "8": "4dx",
+                        "9": "5dx",
+                        "10": "5dx",
+                        "11": "6dx",
+                        "12": "6dx",
+                        "13": "7dx",
+                        "14": "7dx",
+                        "15": "8dx",
+                        "16": "8dx",
+                        "17": "9dx",
+                        "18": "9dx",
+                        "19": "10dx",
+                        "20": "10dx"
+                    }
+                }]
             },
             "Remote": {
                 "name": "Remote-Type Stand",
                 "exampleOf": "Remote Stands",
                 "examples": ["Highway Star", "Black Sabbath", "Goo Goo Dolls", "Manhattan Transfer"],
                 "links": ["Highway_Star", "Black_Sabbath", "Goo_Goo_Dolls", "Manhattan_Transfer"],
-                "desc": "",
-                "hDice": "",
-                "theme": "",
+                "desc": "Remote-Type Stands are immensely powerful. Their Abilities and strength can often not be ignored. However, the users of these Stands often cannot control them, with their Stands instead automatically following a simple task. For example, attack the closest human until its breathing stops for 5 seconds, prevent anybody from entering a building, use your ability on anyone who opens a door, attack anyone who steps into a shadow, etc. These Stands, while often powerful indeed, have very easily exploitable weaknesses due to the simple nature of how they function.",
+                "hDice": "1d10",
+                "dcName": "Stand DC",
+                "dc": "8 + Cha + Proficiency Bonus",
+                "aDice": ["1d8", "2d8"],
+                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats except Precision. Your Precision may not be increased past it's initial value.",
+                "mults": [3, 2, 4, 5, 3, 2],
+                "notes": ["These Stands cannot be controlled by their Users, the only power their User has over them is to send them out or recall them. These Stands can only perform one predetermined action."],
+                "theme": "hStar",
                 "level": {
                     "1": {
                         "pro": "2",
-                        "feats": "2"
+                        "feats": "2",
+                        "linkFeatures": ["Programmed Stand", "Stand Marking"]
                     },
                     "2": {
                         "pro": "2",
-                        "feats": "2"
+                        "feats": "2",
+                        "linkFeatures": ["Custom Ability", "Immense Range", "OR", "Immense Power"]
                     },
                     "3": {
                         "pro": "2",
-                        "feats": "2"
+                        "feats": "2",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "4": {
                         "pro": "2",
-                        "feats": "2"
+                        "feats": "2",
+                        "linkFeatures": ["Detached Stand", "OR", "Detached Senses"]
                     },
                     "5": {
                         "pro": "3",
-                        "feats": "2"
+                        "feats": "2",
+                        "featFeatures": ["Simple Weapon Proficiency", "OR", "Martial Weapon Proficiency", "OR", "Pistol Proficiency", "OR", "Rifle Proficiency", "OR", "Tavern Brawler"]
                     },
                     "6": {
                         "pro": "3",
-                        "feats": "3"
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "7": {
                         "pro": "3",
-                        "feats": "3"
+                        "feats": "3",
+                        "linkFeatures": ["Remote Grappler", "OR", "Remove Self-Preservation"]
                     },
                     "8": {
                         "pro": "3",
-                        "feats": "3"
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "9": {
                         "pro": "4",
-                        "feats": "3"
+                        "feats": "3",
+                        "linkFeatures": ["Two Modes", "OR"],
+                        "featFeatures": ["Tanky", "OR", "Scarflesh"]
                     },
                     "10": {
                         "pro": "4",
-                        "feats": "3"
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "11": {
                         "pro": "4",
-                        "feats": "4"
+                        "feats": "4",
+                        "otherFeatures": ["Attack Dice increases to 2d8"]
                     },
                     "12": {
                         "pro": "4",
-                        "feats": "4"
+                        "feats": "4",
+                        "linkFeatures": ["Oblivious Facade", "OR"],
+                        "featFeatures": ["Close Combat Specialist"]
                     },
                     "13": {
                         "pro": "5",
-                        "feats": "4"
+                        "feats": "4",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "14": {
                         "pro": "5",
-                        "feats": "4"
+                        "feats": "4",
+                        "otherFeatures": ["Choose another Class Feature from the Level 1, Level 4, Level 5, Level 7, or Level 12 options"]
                     },
                     "15": {
                         "pro": "5",
-                        "feats": "4"
+                        "feats": "4",
+                        "otherFeatures": ["<a href='/artifacts/?focus=Stand_Arrow'>The Requiem Quietly Plays</a>"],
+                        "linkFeatures": ["Special Ability (2 SE)"]
                     },
                     "16": {
                         "pro": "5",
@@ -540,70 +618,115 @@
                     },
                     "20": {
                         "pro": "6",
-                        "feats": "6"
+                        "feats": "6",
+                        "otherFeatures": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
                     }
-                }
+                },
+                "otherCols": [{
+                    "name": "Ability Dice",
+                    "level": {
+                        "1": "1dx",
+                        "2": "1dx",
+                        "3": "2dx",
+                        "4": "2dx",
+                        "5": "3dx",
+                        "6": "3dx",
+                        "7": "4dx",
+                        "8": "4dx",
+                        "9": "5dx",
+                        "10": "5dx",
+                        "11": "6dx",
+                        "12": "6dx",
+                        "13": "7dx",
+                        "14": "7dx",
+                        "15": "8dx",
+                        "16": "8dx",
+                        "17": "9dx",
+                        "18": "9dx",
+                        "19": "10dx",
+                        "20": "10dx"
+                    }
+                }]
             },
             "Ability": {
                 "name": "Ability-Type Stand",
                 "exampleOf": "Ability Stands",
                 "examples": ["Hermit Purple", "Earth Wind and Fire (?)", "Moody Blues", "White Album", "Oasis"],
                 "links": ["Hermit_Purple", "Earth_Wind_and_Fire", "Moody_Blues", "White_Album", "Oasis"],
-                "desc": "",
-                "hDice": "",
-                "theme": "",
+                "desc": "Many Stands are able to physically manifest themselves clearly and powerfully, but most Ability-Type Stands do not function in the same way. Some Ability Stands are not visible or tangible unless specifically made so by their user. While these Stands have very little in the way of physical power, their masterful use of their Abilities are able to make them more than handy in the fight. ",
+                "hDice": "1d6",
+                "dcName": "Stand DC",
+                "dc": "8 + Cha + Proficiency Bonus",
+                "aDice": ["1d4", "1d6"],
+                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats except Power or Durability. Your Stand's Power and Durability may not be increased past their initial values.",
+                "mults": [1, 3, 1, 4, 3, 5],
+                "theme": "album",
                 "level": {
                     "1": {
                         "pro": "2",
-                        "feats": "2"
+                        "feats": "2",
+                        "linkFeatures": ["Custom Ability", "Slippery"]
                     },
                     "2": {
                         "pro": "2",
-                        "feats": "2"
+                        "feats": "2",
+                        "linkFeatures": ["Self-Acclimation"]
                     },
                     "3": {
                         "pro": "2",
-                        "feats": "2"
+                        "feats": "2",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "4": {
                         "pro": "2",
-                        "feats": "2"
+                        "feats": "2",
+                        "featFeatures": ["Simple Weapon Proficiency", "OR", "Martial Weapon Proficiency", "OR", "Unarmed Proficiency", "OR", "Close Combat Specialist", "OR", "Pistol Proficiency", "OR", "Rifle Proficiency"]
                     },
                     "5": {
                         "pro": "3",
-                        "feats": "2"
+                        "feats": "2",
+                        "linkFeatures": ["Ranged Attack", "OR", "Stand Energy Recharge", "OR", "Detached Senses", "OR"],
+                        "featFeatures": ["Energy Imbument"]
                     },
                     "6": {
                         "pro": "3",
-                        "feats": "3"
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "7": {
                         "pro": "3",
-                        "feats": "3"
+                        "feats": "3",
+                        "linkFeatures": ["Powerful Flex", "Defensive Ability", "OR", "Mobile Ability"]
                     },
                     "8": {
                         "pro": "3",
-                        "feats": "3"
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "9": {
                         "pro": "4",
-                        "feats": "3"
+                        "feats": "3",
+                        "linkFeatures": ["Special Ability (2 SE)"]
                     },
                     "10": {
                         "pro": "4",
-                        "feats": "3"
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "11": {
                         "pro": "4",
-                        "feats": "4"
+                        "feats": "4",
+                        "otherFeatures": ["Choose another Class Feature from the Level 4, Level 5, or Level 7 options", "Attack Dice increases to 1d6"]
                     },
                     "12": {
                         "pro": "4",
-                        "feats": "4"
+                        "feats": "4",
+                        "linkFeatures": ["Energy Conservation"]
                     },
                     "13": {
                         "pro": "5",
-                        "feats": "4"
+                        "feats": "4",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "14": {
                         "pro": "5",
@@ -611,7 +734,9 @@
                     },
                     "15": {
                         "pro": "5",
-                        "feats": "4"
+                        "feats": "4",
+                        "otherFeatures": ["<a href='/artifacts/?focus=Stand_Arrow'>The Requiem Quietly Plays</a>"],
+                        "linkFeatures": ["Ultimate Stand Ability"]
                     },
                     "16": {
                         "pro": "5",
@@ -631,74 +756,120 @@
                     },
                     "20": {
                         "pro": "6",
-                        "feats": "6"
+                        "feats": "6",
+                        "otherFeatures": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
                     }
-                }
+                },
+                "otherCols": [{
+                    "name": "Ability Dice",
+                    "level": {
+                        "1": "1dx",
+                        "2": "1dx",
+                        "3": "2dx",
+                        "4": "2dx",
+                        "5": "3dx",
+                        "6": "3dx",
+                        "7": "4dx",
+                        "8": "4dx",
+                        "9": "5dx",
+                        "10": "5dx",
+                        "11": "6dx",
+                        "12": "6dx",
+                        "13": "7dx",
+                        "14": "7dx",
+                        "15": "8dx",
+                        "16": "8dx",
+                        "17": "9dx",
+                        "18": "9dx",
+                        "19": "10dx",
+                        "20": "10dx"
+                    }
+                }]
             },
             "Enhancement": {
                 "name": "Enhancement-Type Stand",
                 "exampleOf": "Enhancement Stands",
                 "examples": ["High Priestess", "Strength", "Wheel of Fortune", "The Fool", "Love Deluxe"],
                 "links": ["High_Priestess", "Strength", "Wheel_of_Fortune", "The_Fool", "Love_Deluxe"],
-                "desc": "",
-                "hDice": "",
-                "theme": "",
+                "desc": "Many Stands are able to physically manifest themselves or their abilities in a vacuum. However, there are some Stands that are able to forgo many of the normal Stand rules and make a normal, everyday object into something much more terrifying. While these Stands have incredible power, they also possess properties and limitations unique to them, and them alone. ",
+                "notes": ["Enhancement-Type Stands are powerful, but all damage types are able to harm them, not just Stand damage types."],
+                "hDice": "1d10",
+                "dcName": "Stand DC",
+                "dc": "8 + Cha + Proficiency Bonus",
+                "aDice": ["1d10", "2d8"],
+                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand’s Stats.",
+                "mults": [3, 3, 5, 5, 3, 3],
+                "theme": "love",
                 "level": {
                     "1": {
                         "pro": "2",
-                        "feats": "2"
+                        "feats": "2",
+                        "linkFeatures": ["Anchored Stand", "Immense Resistance"]
                     },
                     "2": {
                         "pro": "2",
-                        "feats": "2"
+                        "feats": "2",
+                        "linkFeatures": ["Custom Ability"]
                     },
                     "3": {
                         "pro": "2",
-                        "feats": "2"
+                        "feats": "2",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "4": {
                         "pro": "2",
-                        "feats": "2"
+                        "feats": "2",
+                        "linkFeatures": ["Detached Senses"]
                     },
                     "5": {
                         "pro": "3",
-                        "feats": "2"
+                        "feats": "2",
+                        "linkFeatures": ["Complete Control", "OR", "Armored Stand", "OR", "Immense Range"]
                     },
                     "6": {
                         "pro": "3",
-                        "feats": "3"
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "7": {
                         "pro": "3",
-                        "feats": "3"
+                        "feats": "3",
+                        "linkFeatures": ["Oblivious Facade", "OR", "Stand Marking"]
                     },
                     "8": {
                         "pro": "3",
-                        "feats": "3"
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "9": {
                         "pro": "4",
-                        "feats": "3"
+                        "feats": "3",
+                        "linkFeatures": ["Camouflage"]
                     },
                     "10": {
                         "pro": "4",
-                        "feats": "3"
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "11": {
                         "pro": "4",
-                        "feats": "4"
+                        "feats": "4",
+                        "otherFeatures": ["Attack Dice increases to 2d8"]
                     },
                     "12": {
                         "pro": "4",
-                        "feats": "4"
+                        "feats": "4",
+                        "linkFeatures": ["General Anchors", "OR", "Speedy Switch"]
                     },
                     "13": {
                         "pro": "5",
-                        "feats": "4"
+                        "feats": "4",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "14": {
                         "pro": "5",
-                        "feats": "4"
+                        "feats": "4",
+                        "otherFeatures": ["Choose another Class Feature from the Level 5, Level 7, or Level 12 options"]
                     },
                     "15": {
                         "pro": "5",
@@ -722,78 +893,127 @@
                     },
                     "20": {
                         "pro": "6",
-                        "feats": "6"
+                        "feats": "6",
+                        "otherFeatures": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
                     }
-                }
+                },
+                "otherCols": [{
+                    "name": "Ability Dice",
+                    "level": {
+                        "1": "1dx",
+                        "2": "1dx",
+                        "3": "2dx",
+                        "4": "2dx",
+                        "5": "3dx",
+                        "6": "3dx",
+                        "7": "4dx",
+                        "8": "4dx",
+                        "9": "5dx",
+                        "10": "5dx",
+                        "11": "6dx",
+                        "12": "6dx",
+                        "13": "7dx",
+                        "14": "7dx",
+                        "15": "8dx",
+                        "16": "8dx",
+                        "17": "9dx",
+                        "18": "9dx",
+                        "19": "10dx",
+                        "20": "10dx"
+                    }
+                }]
             },
             "Revenge": {
                 "name": "Revenge-Type Stand",
                 "exampleOf": "Revenge Stands",
                 "examples": ["Ebony Devil", "Stray Cat", "Notorious B.I.G.", "Civil War"],
                 "links": ["Ebony_Devil", "Stray_Cat", "Notorious_B.I.G", "Civil_War"],
-                "desc": "",
-                "hDice": "",
-                "theme": "",
+                "desc": "Some Stands have immense power but are unable to properly function unless their user feels a certain way. Through feelings of hatred, pain, or loss, certain Stands may manifest properly, showing their true form and relentlessly attacking those who wronged their users.",
+                "notes": ["You cannot activate a Revenge-Type Stand by yourself. Instead, you must take an amount of damage greater than or equal to your Level in order to summon your Stand. This damage may be dealt over time, or in one hit. After you take that initial damage, you can summon it or dispell it at will for an amount of minutes equal to your Level. The damage can be inflicted by yourself or something that another person/thing does to you."],
+                "hDice": "1d12",
+                "dcName": "Stand DC",
+                "dc": "8 + Cha + Proficiency Bonus",
+                "aDice": ["1d12", "2d10"],
+                "levelUp": "Every Level-Up, You may roll 3d4 + Level (the one you're becoming) and put that number of points into any of your Stand’s Stats.",
+                "mults": [3, 4, 4, 7, 3, 2],
+                "theme": "cat",
                 "level": {
                     "1": {
                         "pro": "2",
-                        "feats": "2"
+                        "feats": "2",
+                        "linkFeatures": ["Detached Senses", "Feat of Power"]
                     },
                     "2": {
                         "pro": "2",
-                        "feats": "2"
+                        "feats": "2",
+                        "linkFeatures": ["Custom Ability", "Stand Marking"]
                     },
                     "3": {
                         "pro": "2",
-                        "feats": "2"
+                        "feats": "2",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "4": {
                         "pro": "2",
-                        "feats": "2"
+                        "feats": "2",
+                        "featFeatures": ["Scarflesh"]
                     },
                     "5": {
                         "pro": "3",
-                        "feats": "2"
+                        "feats": "2",
+                        "linkFeatures": ["Oblivious Facade", "OR", "Menacing Aura"]
                     },
                     "6": {
                         "pro": "3",
-                        "feats": "3"
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "7": {
                         "pro": "3",
-                        "feats": "3"
+                        "feats": "3",
+                        "linkFeatures": ["Armored Stand", "OR"],
+                        "featFeatures": ["Catlike Agility"]
                     },
                     "8": {
                         "pro": "3",
-                        "feats": "3"
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "9": {
                         "pro": "4",
-                        "feats": "3"
+                        "feats": "3",
+                        "linkFeatures": ["Near-Death Escape"]
                     },
                     "10": {
                         "pro": "4",
-                        "feats": "3"
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "11": {
                         "pro": "4",
-                        "feats": "4"
+                        "feats": "4",
+                        "otherFeatures": ["Attack Dice increases to 2d10"]
                     },
                     "12": {
                         "pro": "4",
-                        "feats": "4"
+                        "feats": "4",
+                        "linkFeatures": ["Second Life", "OR", "Unconscious Control", "OR", "Immense Range"]
                     },
                     "13": {
                         "pro": "5",
-                        "feats": "4"
+                        "feats": "4",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "14": {
                         "pro": "5",
-                        "feats": "4"
+                        "feats": "4",
+                        "otherFeatures": ["choose another Class Feature from the Level 5, Level 7, or Level 12 options"]
                     },
                     "15": {
                         "pro": "5",
-                        "feats": "4"
+                        "feats": "4",
+                        "otherFeatures": ["<a href='/artifacts/?focus=Stand_Arrow'>The Requiem Quietly Plays</a>"],
+                        "linkFeatures": ["Special Ability (3 SE)"]
                     },
                     "16": {
                         "pro": "5",
@@ -813,78 +1033,126 @@
                     },
                     "20": {
                         "pro": "6",
-                        "feats": "6"
+                        "feats": "6",
+                        "otherFeatures": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
                     }
-                }
+                },
+                "otherCols": [{
+                    "name": "Ability Dice",
+                    "level": {
+                        "1": "1dx",
+                        "2": "1dx",
+                        "3": "2dx",
+                        "4": "2dx",
+                        "5": "3dx",
+                        "6": "3dx",
+                        "7": "4dx",
+                        "8": "4dx",
+                        "9": "5dx",
+                        "10": "5dx",
+                        "11": "6dx",
+                        "12": "6dx",
+                        "13": "7dx",
+                        "14": "7dx",
+                        "15": "8dx",
+                        "16": "8dx",
+                        "17": "9dx",
+                        "18": "9dx",
+                        "19": "10dx",
+                        "20": "10dx"
+                    }
+                }]
             },
             "Independent": {
                 "name": "Independent-Type Stand",
                 "exampleOf": "Independent Stands",
                 "examples": ["Anubis", "Superfly", "Foo Fighters"],
                 "links": ["Anubis", "Superfly", "Foo_Fighters"],
-                "desc": "",
-                "hDice": "",
-                "theme": "",
+                "desc": "Independent-Type Stands are quite interesting, and are one of the more rare Stand Types in JoJo’s Bizarre Adventure. These Stands are odd because they do not actually have a User, instead in control of themselves. They have the same sort of Attributes that regular Stands do and must follow most of the same rules. However, the Stand is still made up of physical matter, and thus is similar to an Enhancement type Stand in that they can be damaged physically by Non-Stand damage types.",
+                "notes": ["Some Independent Stands did in fact have a user at some point, or might even still have a user. Tthey are not linked together though, as damaging the Stand does no harm to the User and vice versa. However, if a person does or did have an Independent-Type Stand they are still able to sense Stands and Ghosts, just like a normal Stand User would."],
+                "hDice": "1d10",
+                "dcName": "Stand DC",
+                "dc": "8 + Cha + Proficiency Bonus",
+                "aDice": ["1d8", "2d6"],
+                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand’s Stats except Range. Your Stand’s Range may not be increased past 0.",
+                "mults": [3, 3, 4, 0,  3, 3],
+                "theme": "anubis",
                 "level": {
                     "1": {
                         "pro": "2",
-                        "feats": "2"
+                        "feats": "2",
+                        "linkFeatures": ["Immense Resistance", "Anchored Stand"]
                     },
                     "2": {
                         "pro": "2",
-                        "feats": "2"
+                        "feats": "2",
+                        "linkFeatures": ["Custom Ability"]
                     },
                     "3": {
                         "pro": "2",
-                        "feats": "2"
+                        "feats": "2",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "4": {
                         "pro": "2",
-                        "feats": "2"
+                        "feats": "2",
+                        "linkFeatures": ["Ranged Attack", "OR", "Self-Repair"]
                     },
                     "5": {
                         "pro": "3",
-                        "feats": "2"
+                        "feats": "2",
+                        "linkFeatures": ["Melee Barrage", "OR", "Armored Stand"]
                     },
                     "6": {
                         "pro": "3",
-                        "feats": "3"
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "7": {
                         "pro": "3",
-                        "feats": "3"
+                        "feats": "3",
+                        "otherFeatures": ["Choose another Class Feature from the Level 4 or Level 5 options"]
                     },
                     "8": {
                         "pro": "3",
-                        "feats": "3"
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "9": {
                         "pro": "4",
-                        "feats": "3"
+                        "feats": "3",
+                        "linkFeatures": ["Oblivious Facade"]
                     },
                     "10": {
                         "pro": "4",
-                        "feats": "3"
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "11": {
                         "pro": "4",
-                        "feats": "4"
+                        "feats": "4",
+                        "otherFeatures": ["Attack Dice increases to 2d6"]
                     },
                     "12": {
                         "pro": "4",
-                        "feats": "4"
+                        "feats": "4",
+                        "linkFeatures": ["Defensive Ability", "OR", "Mobile Ability"]
                     },
                     "13": {
                         "pro": "5",
-                        "feats": "4"
+                        "feats": "4",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "14": {
                         "pro": "5",
-                        "feats": "4"
+                        "feats": "4",
+                        "linkFeatures": ["Stand Rush"]
                     },
                     "15": {
                         "pro": "5",
-                        "feats": "4"
+                        "feats": "4",
+                        "otherFeatures": ["<a href='/artifacts/?focus=Stand_Arrow'>The Requiem Quietly Plays</a>"],
+                        "linkFeatures": ["Special Ability (2 SE)"]
                     },
                     "16": {
                         "pro": "5",
@@ -904,9 +1172,35 @@
                     },
                     "20": {
                         "pro": "6",
-                        "feats": "6"
+                        "feats": "6",
+                        "otherFeatures": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
                     }
-                }
+                },
+                "otherCols": [{
+                    "name": "Ability Dice",
+                    "level": {
+                        "1": "1dx",
+                        "2": "1dx",
+                        "3": "2dx",
+                        "4": "2dx",
+                        "5": "3dx",
+                        "6": "3dx",
+                        "7": "4dx",
+                        "8": "4dx",
+                        "9": "5dx",
+                        "10": "5dx",
+                        "11": "6dx",
+                        "12": "6dx",
+                        "13": "7dx",
+                        "14": "7dx",
+                        "15": "8dx",
+                        "16": "8dx",
+                        "17": "9dx",
+                        "18": "9dx",
+                        "19": "10dx",
+                        "20": "10dx"
+                    }
+                }]
             },
             "Hive": {
                 "name": "Hive-Type Stand",
@@ -915,6 +1209,11 @@
                 "links": ["Bad_Company", "Harvest", "Sex_Pistols"],
                 "desc": "",
                 "hDice": "",
+                "dcName": "Stand DC",
+                "dc": "8 + Cha + Proficiency Bonus",
+                "aDice": ["1d12", "2d10"],
+                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand’s Stats. Your Stand’s Range has a maximum score of 20 (2 meters), and cannot go any higher than that.",
+                "mults": [4, 3, 3, 1, 4, 2],
                 "theme": "",
                 "level": {
                     "1": {
@@ -997,7 +1296,32 @@
                         "pro": "6",
                         "feats": "6"
                     }
-                }
+                },
+                "otherCols": [{
+                    "name": "Ability Dice",
+                    "level": {
+                        "1": "1dx",
+                        "2": "1dx",
+                        "3": "2dx",
+                        "4": "2dx",
+                        "5": "3dx",
+                        "6": "3dx",
+                        "7": "4dx",
+                        "8": "4dx",
+                        "9": "5dx",
+                        "10": "5dx",
+                        "11": "6dx",
+                        "12": "6dx",
+                        "13": "7dx",
+                        "14": "7dx",
+                        "15": "8dx",
+                        "16": "8dx",
+                        "17": "9dx",
+                        "18": "9dx",
+                        "19": "10dx",
+                        "20": "10dx"
+                    }
+                }]
             },
             "Act": {
                 "name": "Act-Type Stand",
@@ -1006,6 +1330,11 @@
                 "links": ["Echoes", "Tusk"],
                 "desc": "",
                 "hDice": "",
+                "dcName": "Stand DC",
+                "dc": "8 + Cha + Proficiency Bonus",
+                "aDice": ["1d12", "2d10"],
+                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand’s Stats. Your Stand’s Range has a maximum score of 20 (2 meters), and cannot go any higher than that.",
+                "mults": [4, 3, 3, 1, 4, 2],
                 "theme": "",
                 "level": {
                     "1": {
@@ -1088,7 +1417,32 @@
                         "pro": "6",
                         "feats": "6"
                     }
-                }
+                },
+                "otherCols": [{
+                    "name": "Ability Dice",
+                    "level": {
+                        "1": "1dx",
+                        "2": "1dx",
+                        "3": "2dx",
+                        "4": "2dx",
+                        "5": "3dx",
+                        "6": "3dx",
+                        "7": "4dx",
+                        "8": "4dx",
+                        "9": "5dx",
+                        "10": "5dx",
+                        "11": "6dx",
+                        "12": "6dx",
+                        "13": "7dx",
+                        "14": "7dx",
+                        "15": "8dx",
+                        "16": "8dx",
+                        "17": "9dx",
+                        "18": "9dx",
+                        "19": "10dx",
+                        "20": "10dx"
+                    }
+                }]
             }
         }
     },
@@ -1566,7 +1920,7 @@
                     "6": {
                         "pro": "3",
                         "feats": "3",
-                        "featFeatures": ["Level Headed", "OR", "Rifle Proficiency"],
+                        "featFeatures": ["Level Headed"],
                         "ability": ["Ability Score Improvement"]
                     },
                     "7": {
