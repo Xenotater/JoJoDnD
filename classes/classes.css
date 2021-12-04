@@ -82,6 +82,7 @@
 
 .class-img img {
     max-height: inherit;
+    max-width: 100%;
     border: 3px solid purple;
     border-radius: 30px;
     background-color: rgb(223, 223, 223);
@@ -93,7 +94,7 @@
     margin-top: 2rem;
 }
 
-#stat {
+.stats {
     width: 75%;
     margin: auto;
 }
@@ -114,6 +115,10 @@
     text-decoration: none;
 }
 
+.label {
+    margin-bottom: 0;
+}
+
 .minor {
     width: 60%;
     margin: auto;
@@ -127,6 +132,7 @@
 
 .minor th, .minor td {
     padding: 2px;
+    padding-left: 5px;
 }
 
 .minor thead tr {
@@ -139,6 +145,16 @@
     color: black;
 }
 
+#world thead tr {
+    background-color: rgb(100, 187, 100);
+    color: black;
+}
+
+#world tbody tr {
+    background-color: rgb(240, 207, 99);
+    color: black;
+}
+
 #sun thead tr {
     background-color: rgb(255, 179, 117);
     color: black;
@@ -146,20 +162,6 @@
 
 #sun tbody tr {
     background-color: rgb(255, 245, 157);
-    color: black;
-}
-
-#mats th:nth-child(3) {
-    width: 80px;
-}
-
-#mats thead tr {
-    background-color: rgb(165, 165, 165);
-    color: black;
-}
-
-#mats tbody tr {
-    background-color: rgb(172, 142, 98);
     color: black;
 }
 

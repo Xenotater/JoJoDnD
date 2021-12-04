@@ -58,10 +58,25 @@ function updateDisplay() {
         newContent += "</i></small></p>";
     }
     if (clss.dc != null)
-        newContent += "<div class='row center' id='stat'><div class='col-sm-4'><p><b>Hit Dice: </b>" + clss.hDice + "</p></div><div class='col-sm-8'><p><b>" + clss.dcName + "</b>: " + clss.dc + "</p></div></div>";
+        newContent += "<div class='row center stats'><div class='col-sm-4'><p><b>Hit Dice: </b>" + clss.hDice + "</p></div><div class='col-sm-8'><p><b>" + clss.dcName + "</b>: " + clss.dc + "</p></div></div>";
     else if (clss.hDice != null)
-        newContent += "<p class='center'><b>Hit Dice: </b>" + clss.hDice + "</p>";
+        newContent += "<p class=''><b>Hit Dice: </b>" + clss.hDice + "</p>";
+    if (clss.aDice != null)
+        newContent += "<div class='row center stats'><div class='col-sm-4'><p><b>Attack Dice: </b>" + clss.aDice[0] + "</p></div><div class='col-sm-8'><p><b>Attack Dice past Level 11: </b>" + clss.aDice[1] + "</p></div></div>";
     newContent += "<h4 class='class-heading'>Description</h4><p>" + clss.desc + "</p>";
+    if (clss.mults != null) {
+        newContent += "<h4 class='class-heading'>Stat Conversion</h4><p class='center label'><b>Ability Score Multipliers:</b></p>";
+        newContent += "<table class='table table-striped minor'><thead><tr><th>Stat</th><th>Multiplier</tr></thead><tbody>";
+        newContent += "<tr><td>Power</td><td>Str x" + clss.mults[0] + "</td></tr>";
+        newContent += "<tr><td>Precision</td><td>Dex x" + clss.mults[1] + "</td></tr>";
+        newContent += "<tr><td>Durability</td><td>Con x" + clss.mults[2] + "</td></tr>";
+        newContent += "<tr><td>Range</td><td>Int x" + clss.mults[3] + "</td></tr>";
+        newContent += "<tr><td>Speed</td><td>Wis x" + clss.mults[4] + "</td></tr>";
+        newContent += "<tr><td>Stand Energy</td><td>Cha x" + clss.mults[5] + "</td></tr>";
+        newContent += "</tbody></table>";
+    }
+    if (clss.levelUp != null)
+        newContent += "<h4 class='class-heading'>Increasing Stand Stats</h4><p>" + clss.levelUp + "</p>";
     if (clss.extra != null)
         for (let i = 0; i < clss.extra.length; i++) {
             newContent += "<p><b>" + clss.extra[i].name + ": </b>" + clss.extra[i].desc + "</p>";
