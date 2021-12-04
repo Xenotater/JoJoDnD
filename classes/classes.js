@@ -64,6 +64,10 @@ function updateDisplay() {
     if (clss.aDice != null)
         newContent += "<div class='row center stats'><div class='col-sm-4'><p><b>Attack Dice: </b>" + clss.aDice[0] + "</p></div><div class='col-sm-8'><p><b>Attack Dice past Level 11: </b>" + clss.aDice[1] + "</p></div></div>";
     newContent += "<h4 class='class-heading'>Description</h4><p>" + clss.desc + "</p>";
+    if (clss.notes != null)
+        for (let i = 0; i < clss.notes.length; i++)
+            newContent += "<p><small><b>Note: </b><i>" + clss.notes[i] + "</i></small></p>";
+    
     if (clss.mults != null) {
         newContent += "<h4 class='class-heading'>Stat Conversion</h4><p class='center label'><b>Ability Score Multipliers:</b></p>";
         newContent += "<table class='table table-striped minor'><thead><tr><th>Stat</th><th>Multiplier</tr></thead><tbody>";
@@ -77,7 +81,8 @@ function updateDisplay() {
     }
     if (clss.levelUp != null)
         newContent += "<h4 class='class-heading'>Increasing Stand Stats</h4><p>" + clss.levelUp + "</p>";
-    if (clss.extra != null)
+    
+        if (clss.extra != null)
         for (let i = 0; i < clss.extra.length; i++) {
             newContent += "<p><b>" + clss.extra[i].name + ": </b>" + clss.extra[i].desc + "</p>";
             var table = clss.extra[i].table;
@@ -101,9 +106,7 @@ function updateDisplay() {
             for (let j = 0; j < clss.other[i].content.length; j++)
             newContent += clss.other[i].content[j];
         }
-    if (clss.notes != null)
-        for (let i = 0; i < clss.notes.length; i++)
-            newContent += "<p><small><b>Note: </b><i>" + clss.notes[i] + "</i></small></p>";
+    
 
     if (clss.level != null) {
         newContent += "<h4 class='class-heading'>Leveling Up</h4>";

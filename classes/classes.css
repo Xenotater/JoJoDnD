@@ -67,7 +67,7 @@
 
 .class-title {
     text-decoration: underline;
-    color: rgb(218, 173, 26);
+    color: rgb(231, 188, 44);
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     text-underline-offset: 2px;
     margin-bottom: 1.5rem;
@@ -89,7 +89,7 @@
 }
 
 .class-heading {
-    color: rgb(206, 163, 23);
+    color: rgb(231, 188, 44);
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     margin-top: 2rem;
 }
@@ -152,6 +152,66 @@
 
 #world tbody tr {
     background-color: rgb(240, 207, 99);
+    color: black;
+}
+
+#hiero thead tr {
+    background-color: rgb(209, 209, 209);
+    color: black;
+}
+
+#hiero tbody tr {
+    background-color: rgb(108, 180, 93);
+    color: black;
+}
+
+#hStar thead tr {
+    background-color: rgb(99, 99, 99);
+    color: black;
+}
+
+#hStar tbody tr {
+    background-color: rgb(132, 130, 231);
+    color: black;
+}
+
+#album thead tr {
+    background-color: rgb(216, 216, 216);
+    color: black;
+}
+
+#album tbody tr {
+    background-color: rgb(159, 225, 255);
+    color: black;
+}
+
+#love thead tr {
+    background-color: rgb(226, 109, 255);
+    color: black;
+}
+
+#love tbody tr {
+    background-color: rgb(106, 113, 212);
+    color: black;
+}
+
+#cat thead tr {
+    background-color: rgb(88, 194, 102);
+    color: black;
+}
+
+#cat tbody tr {
+    background-color: rgb(219, 128, 207);
+    color: black;
+}
+
+#anubis thead tr {
+    background-color: rgb(255, 217, 92);
+    color: black;
+}
+
+#anubis tbody tr {
+    background-color: rgb(211, 211, 211);
     color: black;
 }
 
