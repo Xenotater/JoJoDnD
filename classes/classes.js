@@ -1,6 +1,7 @@
 var c, cData;
 
-$(document).ready(function () {
+$(document).ready(function() {
+    var sdropped = true, ndropped = true;
     var url = new URL(window.location.href);
     c = url.searchParams.get("focus");
 
@@ -8,10 +9,52 @@ $(document).ready(function () {
         c = "Stands";
         updateURL();
     }
+    if (c == "Stands" || $("#" + c).hasClass("stand-type")) {
+        console.log('hit');
+        $("#Stands").find(".dropdown").removeClass("bi-caret-down-fill");
+        $("#Stands").find(".dropdown").addClass("bi-caret-up-fill");
+        $(".stand-type").css("display", "block");
+    }
+    if (c == "Non-Supernatural" || $("#" + c).hasClass("non-super")) {
+        console.log('hit');
+        $("#Non-Supernatural").find(".dropdown").removeClass("bi-caret-down-fill");
+        $("#Non-Supernatural").find(".dropdown").addClass("bi-caret-up-fill");
+        $(".non-super").css("display", "block");
+    }
 
     getData();
 
-    $(".class-link").click(function () {
+    $("#Stands").click(function() {
+        if (c == "Stands" || $(".listCurrent").hasClass("stand-type")) {
+            if ($(this).find(".dropdown").hasClass("bi-caret-up-fill")) {
+                $(this).find(".dropdown").removeClass("bi-caret-up-fill");
+                $(this).find(".dropdown").addClass("bi-caret-down-fill");
+                $(".stand-type").css("display", "none");
+            }
+            else if ($(this).find(".dropdown").hasClass("bi-caret-down-fill")) {
+                $(this).find(".dropdown").removeClass("bi-caret-down-fill");
+                $(this).find(".dropdown").addClass("bi-caret-up-fill");
+                $(".stand-type").css("display", "block");
+            }
+        }
+    });
+
+    $("#Non-Supernatural").click(function() {
+        if (c == "Non-Supernatural" || $(".listCurrent").hasClass("non-super")) {
+            if ($(this).find(".dropdown").hasClass("bi-caret-up-fill")) {
+                $(this).find(".dropdown").removeClass("bi-caret-up-fill");
+                $(this).find(".dropdown").addClass("bi-caret-down-fill");
+                $(".non-super").css("display", "none");
+            }
+            else if ($(this).find(".dropdown").hasClass("bi-caret-down-fill")) {
+                $(this).find(".dropdown").removeClass("bi-caret-down-fill");
+                $(this).find(".dropdown").addClass("bi-caret-up-fill");
+                $(".non-super").css("display", "block");
+            }
+        }
+    });
+
+    $(".class-link").click(function() {
         c = $(this).attr("id");
         updateURL();
         updateDisplay();
@@ -60,7 +103,7 @@ function updateDisplay() {
     if (clss.dc != null)
         newContent += "<div class='row center stats'><div class='col-sm-4'><p><b>Hit Dice: </b>" + clss.hDice + "</p></div><div class='col-sm-8'><p><b>" + clss.dcName + "</b>: " + clss.dc + "</p></div></div>";
     else if (clss.hDice != null)
-        newContent += "<p class=''><b>Hit Dice: </b>" + clss.hDice + "</p>";
+        newContent += "<p class='center'><b>Hit Dice: </b>" + clss.hDice + "</p>";
     if (clss.aDice != null)
         newContent += "<div class='row center stats'><div class='col-sm-4'><p><b>Attack Dice: </b>" + clss.aDice[0] + "</p></div><div class='col-sm-8'><p><b>Attack Dice past Level 11: </b>" + clss.aDice[1] + "</p></div></div>";
     newContent += "<h4 class='class-heading'>Description</h4><p>" + clss.desc + "</p>";
@@ -157,6 +200,8 @@ function updateDisplay() {
                     if (j != l.ability.length-1)
                         newContent += ", ";
                 }
+            if (l.otherFeatures == null && l.linkFeatures == null && l.featFeatures == null && l.ability == null)
+                newContent += "-";
             newContent += "</td>";
             if (clss.otherCols != null)
                 for (let j = 0; j < clss.otherCols.length; j++)
@@ -184,7 +229,7 @@ function updateDisplay() {
             newContent += "<table class='table table-striped levels echoes'><thead><tr><th>Level</th><th>Pro. Bonus</th><th>Feats</th><th>Features</th><th>Ability Dice</th></tr></thead><tbody>";
             for (let j = 0; j < a.level.length; j++) {
                 l = a.level[j];
-                newContent += "<tr><td>" + a.level[i].lvl + "</td><td>+" + l.pro + "</td><td>" + l.feats + "</td><td>";
+                newContent += "<tr><td>" + l.lvl + "</td><td>+" + l.pro + "</td><td>" + l.feats + "</td><td>";
                 if (l.otherFeatures != null)
                     for (let j = 0; j < l.otherFeatures.length; j++) {
                         newContent += l.otherFeatures[j];
@@ -224,6 +269,8 @@ function updateDisplay() {
                         if (j != l.ability.length-1)
                             newContent += ", ";
                     }
+                if (l.otherFeatures == null && l.linkFeatures == null && l.featFeatures == null && l.ability == null)
+                    newContent += "-";
                 newContent += "</td><td>" + l.abilDice + "</td></tr>";
             }
             newContent += "</tbody></table>";
@@ -233,14 +280,4 @@ function updateDisplay() {
     $("#display").html(newContent);
     $(".listCurrent").removeClass("listCurrent");
     $("#" + c).addClass("listCurrent");
-
-    if (c == "Stands" || $(".listCurrent").hasClass("stand-type"))
-        $(".stand-type").css("display", "block");
-    else
-        $(".stand-type").css("display", "none");
-
-    if (c == "Non-Supernatural" || $(".listCurrent").hasClass("non-super"))
-        $(".non-super").css("display", "block");
-    else
-        $(".non-super").css("display", "none");
 }
