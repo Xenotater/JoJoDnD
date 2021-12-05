@@ -90,7 +90,7 @@ function updateDisplay() {
     if ($("#" + c).hasClass("non-super"))
         clss = cData["Non-Supernatural"].types[c];
 
-    newContent += "<h2 class='class-title'>" + clss.name + "</h2><div class='class-img'><img src='Assets/" + c + ".png' alt='" + c + "'></div>";
+    newContent += "<h2 class='display-title'>" + clss.name + "</h2><div class='class-img'><img src='Assets/" + c + ".png' alt='" + c + "'></div>";
     if (clss.exampleOf != null) {
         newContent += "<p class='center'><small><b>Examples of " + clss.exampleOf + ": </b><i>";
         for (let i = 0; i < clss.examples.length; i++) {
@@ -106,20 +106,20 @@ function updateDisplay() {
         newContent += "<p class='center'><b>Hit Dice: </b>" + clss.hDice + "</p>";
     if (clss.aDice != null)
         newContent += "<div class='row center stats'><div class='col-sm-4'><p><b>Attack Dice: </b>" + clss.aDice[0] + "</p></div><div class='col-sm-8'><p><b>Attack Dice past Level 11: </b>" + clss.aDice[1] + "</p></div></div>";
-    newContent += "<h4 class='class-heading'>Description</h4><p>" + clss.desc + "</p>";
+    newContent += "<h4 class='display-heading'>Description</h4><p>" + clss.desc + "</p>";
     if (clss.notes != null)
         for (let i = 0; i < clss.notes.length; i++)
             newContent += "<p><small><b>Note: </b><i>" + clss.notes[i] + "</i></small></p>";
 
     if (clss.other != null)
         for (let i = 0; i < clss.other.length; i++) {
-            newContent += "<h4 class='class-heading'>" + clss.other[i].name + "</h4>";
+            newContent += "<h4 class='display-heading'>" + clss.other[i].name + "</h4>";
             for (let j = 0; j < clss.other[i].content.length; j++)
             newContent += clss.other[i].content[j];
         }
 
     if (clss.mults != null) {
-        newContent += "<h4 class='class-heading'>Stat Conversion</h4><p class='center label'><b>Ability Score Multipliers:</b></p>";
+        newContent += "<h4 class='display-heading'>Stat Conversion</h4><p class='center label'><b>Ability Score Multipliers:</b></p>";
         newContent += "<table class='table table-striped minor'><thead><tr><th>Stat</th><th>Multiplier</tr></thead><tbody>";
         newContent += "<tr><td>Power</td><td>Str x" + clss.mults[0] + "</td></tr>";
         newContent += "<tr><td>Precision</td><td>Dex x" + clss.mults[1] + "</td></tr>";
@@ -130,7 +130,7 @@ function updateDisplay() {
         newContent += "</tbody></table>";
     }
     if (clss.levelUp != null)
-        newContent += "<h4 class='class-heading'>Increasing Stand Stats</h4><p>" + clss.levelUp + "</p>";
+        newContent += "<h4 class='display-heading'>Increasing Stand Stats</h4><p>" + clss.levelUp + "</p>";
     
         if (clss.extra != null)
         for (let i = 0; i < clss.extra.length; i++) {
@@ -152,7 +152,7 @@ function updateDisplay() {
         }
 
     if (clss.level != null) {
-        newContent += "<h4 class='class-heading'>Leveling Up</h4>";
+        newContent += "<h4 class='display-heading'>Leveling Up</h4>";
         newContent += "<table class='table table-striped levels' id='" + clss.theme + "'><thead><tr><th>Level</th><th>Pro. Bonus</th><th>Feats</th><th>Features</th>";
         if(clss.otherCols != null)
             for (let i = 0; i < clss.otherCols.length; i++)
@@ -214,7 +214,7 @@ function updateDisplay() {
     if (c == "Act") {
         for (let i = 0; i < 4; i++) {
             var a = clss.acts[i];
-            newContent += "<h4 class='class-heading'>Act " + i + "</h4>";
+            newContent += "<h4 class='display-heading'>Act " + i + "</h4>";
             newContent += "<p><b>Note: </b><i>" + a.note + "</i></p>";
             newContent += "<b>Ability Score Multipliers:</b>";
             newContent += "<table class='table table-striped minor'><thead><tr><th>Stat</th><th>Multiplier</tr></thead><tbody>";

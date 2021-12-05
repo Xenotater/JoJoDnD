@@ -38,8 +38,8 @@ function updateDisplay() {
     var race = rData[r];
     var newContent = "";
 
-    newContent += "<h2 class='race-title'>" + race.name + "</h2><div class='race-img'><img class='img-fluid' src='Assets/" + r + ".png' alt='" + r + "'></div>";
-    newContent += "<p class='center'><small><b>Examples</b>: <i>";
+    newContent += "<h2 class='display-title'>" + race.name + "</h2><div class='race-img'><img class='img-fluid' src='Assets/" + r + ".png' alt='" + r + "'></div>";
+    newContent += "<p class='center'><small><b>Examples of " + (race.name + 's').replace(/Mans$/g, "Men") + ": </b><i>";
     for (let i = 0; i < race.examples.length; i++) {
         newContent += "<a href='https://jojo.fandom.com/wiki/" + race.links[i] + "' target='_blank'>"  + race.examples[i] + "</a>";
         if (i != race.examples.length-1)
@@ -47,15 +47,15 @@ function updateDisplay() {
         else
             newContent += "</i></small></p>";
     }
-    newContent += "<h4 class='race-heading'>Description</h4><p>" + race.desc + "</p>";
+    newContent += "<h4 class='display-heading'>Description</h4><p>" + race.desc + "</p>";
     if (race.playing != null)
-        newContent += "<h4 class='race-heading'>Playing a " + race.name + "</h4><p>" + race.playing + "</p>";
+        newContent += "<h4 class='display-heading'>Playing a " + race.name + "</h4><p>" + race.playing + "</p>";
     if (race.note != null)
-        newContent += "<p><small><b>Note</b>: <i>" + race.note + "</i></small></p>";
+        newContent += "<p><small><b>Note: </b><i>" + race.note + "</i></small></p>";
     if (race.changes != null)
-        newContent += "<h4 class='race-heading'>Changes</h4><p>" + race.changes + "</p>";
+        newContent += "<h4 class='display-heading'>Changes</h4><p>" + race.changes + "</p>";
     if (race.feats != null) {
-        newContent += "<h4 class='race-heading'>Racial Features</h4><ul>";
+        newContent += "<h4 class='display-heading'>Racial Features</h4><ul>";
         for (let i = 0; i < race.feats.length; i++) {
             if (race.feats[i+1] == "OR") {
                 newContent += "<li><a href='/abilities/?focus=" + race.feats[i].replace(/ /g, "_") + "'>" + race.feats[i] + "</a> OR <a href='/abilities/?focus=" + race.feats[i+2].replace(/ /g, "_") + "'>" + race.feats[i+2] + "</a></li>";
@@ -67,10 +67,10 @@ function updateDisplay() {
         newContent += "</ul>";
     }
     if (race.note2 != null) {
-        newContent += "<p><small><b>Note</b>: <i>" + race.note2 + "</i></small></p>";
+        newContent += "<p><small><b>Note: </b><i>" + race.note2 + "</i></small></p>";
     }
     if (race.theme != null) {
-        newContent += "<h4 class='race-heading'>Leveling Up</h4>";
+        newContent += "<h4 class='display-heading'>Leveling Up</h4>";
         newContent += "<table class='table table-striped levels' id='" + race.theme + "'><thead><tr><th>Level</th><th>Energy Required</th><th>Features</th></tr></thead><tbody>";
         for (let i = 1; i <= 20; i++) {
             newContent += "<tr><td>" + i + "</td><td>" + race.level[i].energy + "</td><td>";

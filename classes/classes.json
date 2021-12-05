@@ -1573,7 +1573,7 @@
             "name": "Materials",
             "desc": "The following materials may be used to form spheres to use the Spin with. Objects that are not perfectly spherical may be Spun and thrown, but your Attack and Damage rolls, as well as Range are all cut in half.",
             "table": {
-                "class": "minor",
+                "class": "minor widen",
                 "head": ["Material", "Range", "Damage", "Effect"],
                 "body": [
                     ["Wood", "10/30m", "1d4 + Dex", "The Wooden Sphere will splinter and shatter upon contact, causing splinters to fly off in all directions up to 2 meters from the point of the Sphere’s impact. Those within 2 meters must make a Dex Save against your Spin DC, taking an additional 1d8 points of Piercing damage on failure. This Damage increases to 2d8 starting at level 7, and 3d8 at level 14."],

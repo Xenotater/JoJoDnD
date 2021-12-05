@@ -264,3 +264,9 @@
     background-color: rgb(223, 223, 223);
     color: black;
 }
+
+@media (max-width: 991px) {
+    .widen {
+        width: 90%;
+    }
+}

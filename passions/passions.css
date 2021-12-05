@@ -131,18 +131,11 @@ span.passion-link:hover {
     padding-left: 1rem;
 }
 
-.passion-title {
-    text-decoration: underline;
-    color: rgb(218, 173, 26);
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    text-underline-offset: 2px;
+.display-title {
     margin-bottom: 1rem;
 }
 
-.passion-heading {
-    color: rgb(206, 163, 23);
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    margin-top: 1rem;
+.display-heading {
     margin-bottom: .5rem;
 }
 
