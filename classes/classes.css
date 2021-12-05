@@ -215,6 +215,26 @@
     color: black;
 }
 
+#bad thead tr {
+    background-color: rgb(60, 168, 69);
+    color: black;
+}
+
+#bad tbody tr {
+    background-color: rgb(118, 214, 134);
+    color: black;
+}
+
+.echoes thead tr {
+    background-color: rgb(108, 180, 93);
+    color: black;
+}
+
+.echoes tbody tr {
+    background-color: rgb(209, 209, 209);
+    color: black;
+}
+
 #sun thead tr {
     background-color: rgb(255, 179, 117);
     color: black;
