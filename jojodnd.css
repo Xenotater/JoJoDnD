@@ -133,6 +133,20 @@ h1, h2, h3, th {
     overflow-y: scroll;
 }
 
+.display-heading {
+    color: rgb(231, 188, 44);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin-top: 2rem;
+}
+
+.display-title {
+    text-decoration: underline;
+    color: rgb(231, 188, 44);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-underline-offset: 2px;
+    margin-bottom: 1.5rem;
+}
+
 .loading {
     display: block;
     margin-left: auto;
