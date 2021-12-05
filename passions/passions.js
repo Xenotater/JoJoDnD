@@ -45,12 +45,12 @@ function updateDisplay() {
 
     $("#display").html("<div class='col-5' id='box1'></div><div class='col-7' id='box2'></div>");
 
-    box1Text += "<h2 class='passion-title'>" + passion.name + "</h2><p>" + passion.desc + "</p><h5 class='passion-heading'>Examples</h4><ul id='example-list'>";
+    box1Text += "<h2 class='display-title'>" + passion.name + "</h2><p>" + passion.desc + "</p><h5 class='display-heading'>Examples</h4><ul id='example-list'>";
     for (let i = 0; i < passion.examples.length; i++) {
         box1Text += "<li>" + passion.examples[i] + "</li>";
     }
     box1Text += "</ul>";
-    box2Text += "<h3 class='passion-title'>" + passion.name + " Traits</h3><p><i>Saving Throws:</i> " + passion.saves + "<p><b><u>\
+    box2Text += "<h3 class='display-title'>" + passion.name + " Traits</h3><p><i>Saving Throws:</i> " + passion.saves + "<p><b><u>\
     Ability Score Increase:</u></b> " + passion.ability + "<p><b><u>" + passion.custom.name + ":</u></b> " + passion.custom.desc;
     if (passion.languages != null) box2Text += "<p><b><u>Languages:</u></b> " + passion.languages;
     
