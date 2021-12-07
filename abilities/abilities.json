@@ -1,0 +1,32 @@
+{
+    "Anchored_Stand": {
+        "name": "Anchored Stand",
+        "classes": ["Enhancement Stands", "Independent Stands"],
+        "cls": ["Enh", "Ind"],
+        "desc": "Your Stand is physically attached and anchored to a physical object. As such, your Stand may be damaged by physical means, as well as Stands. However, regardless of if your Stand takes physical or Stand damage, you still apply the same Damage Reduction to it. Also, both you and your Stand gain Vulnerability (double damage) to one damage type of your choice, as well as the Stand counterpart to that damage type. If you are an Enhancement-Type Stand User, you must find an amount of material (or a specific object) that fits your specific anchor. This material must be within your Stand’s Range in order for you to use it to Activate your Stand."
+    },
+    "Armored_Stand": {
+        "name": "Armored Stand",
+        "classes": ["Power Stands", "Ranged Stands", "Enhancement Stands", "Revenge Stands", "Independent Stands"],
+        "cls": ["Pwr", "Rng", "Enh", "Rev", "Ind"],
+        "desc": "The amount of damage that your Stand can reduce per round is doubled."
+    },
+    "Complete_Control": {
+        "name": "Complete Control",
+        "classes": ["Enhancement Stands"],
+        "cls": ["Enh"],
+        "desc": "Your Stand is a fusion of Stand Energy and a physical object. You’ve gained enough control over your Stand that you can completely influence how the object or material your Stand is fused with functions. For example, <a href='https://jojo.fandom.com/wiki/Wheel_of_Fortune' target='_blank'>Wheel Of Fortune</a>’s squeezing and <a href='https://jojo.fandom.com/wiki/Strength' target='_blank'>Strength</a>’s control of the Ship itself."
+    },
+    "Custom_Ability": {
+        "name": "Custom Ability",
+        "classes": ["All Stand Types"],
+        "cls": ["Stands"],
+        "desc": "This is something that must be discussed with the DM of your Campaign. Further details can be found on the <a href='/classes/?focus=Stands'>Stands</a> page. Stand Abilities are something integral to the existence of Stands, and it’s a huge part of what makes JoJo’s Bizarre Adventure such a fun, varied, and unique experience. A general rule of thumb is that the more specific your Stand Ability is, the more powerful it is. However, the more general it is, the more versatile it can be. Examples of Abilities are <a href='https://jojo.fandom.com/wiki/Anubis' target='_blank'>Anubis</a>’s Possession, <a href='https://jojo.fandom.com/wiki/Hermit_Purple' target='_blank'>Hermit Purple</a>’s Spirit Photos, or <a href='https://jojo.fandom.com/wiki/White_Album' target='_blank'>White Album</a>’s ability to freeze. A Custom Ability might also be a passive ability that may be activated or deactivated at will. Passive Abilities consume 1 Stand Energy at the Start of the Stand User’s Turn and also consume their Bonus Action to perform. If you are unable to use your Bonus Action, or you do not have enough Stand Energy remaining, the ability simply stops functioning. "
+    },
+    "Ultimate_Nature": {
+        "name": "Ultimate Nature",
+        "races": ["Ultimate Being"],
+        "cls": ["Ult"],
+        "desc": ""
+    }
+}
