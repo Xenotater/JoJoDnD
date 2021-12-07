@@ -52,7 +52,7 @@ span.passion-link:hover {
 } */
 
 #list-table tbody {
-    height: 400px;
+    max-height: 400px;
 }
 
 #list-table tr {
