@@ -169,11 +169,11 @@ h1, h2, h3, th {
     background-color: rgb(132, 97, 202);
 }
 
-.listCurrent {
+#list-table .listCurrent {
     background-color: rgb(115, 80, 185);
 }
 
-.listCurrent:hover {
+#list-table .listCurrent:hover {
     background-color: rgb(99, 67, 161);
 }
 
