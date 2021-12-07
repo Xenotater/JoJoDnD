@@ -10,27 +10,27 @@ $(document).ready(function() {
         updateURL();
     }
     if (c == "Stands" || $("#" + c).hasClass("stand-type"))
-        drop("#" + c);
+        drop("#Stands");
     if (c == "Non-Supernatural" || $("#" + c).hasClass("non-super"))
-        drop("#" + c);
+        drop("#Non-Supernatural");
 
     getData();
 
     $("#Stands").click(function() {
-        if (c == "Stands" || $(".listCurrent").hasClass("stand-type")) {
+        if (c == "Stands") {
             if ($(this).hasClass("dropped"))
-                hide("#" + c);
+                hide("#Stands");
             else
-                drop("#" + c);
+                drop("#Stands");
         }
     });
 
     $("#Non-Supernatural").click(function() {
-        if (c == "Non-Supernatural" || $(".listCurrent").hasClass("non-super")) {
+        if (c == "Non-Supernatural") {
             if ($(this).hasClass("dropped"))
-                hide("#" + c);
+                hide("#Non-Supernatural");
             else
-                drop("#" + c);
+                drop("#Non-Supernatural");
         }
     });
 

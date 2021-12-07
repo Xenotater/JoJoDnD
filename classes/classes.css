@@ -1,22 +1,24 @@
 #list-table tbody tr {
     border-bottom: none;
-    border-top: 2px solid black ;
+    border-top: 2px solid black;
 }
 
-#list-table tbody tr.stand-type, #list-table tbody tr.non-super {
+#list-table .stand-type, #list-table .non-super {
     display: none;
     padding-left: 1rem;
-    background-color: rgb(127, 99, 184);
     font-size: .9rem;
-    color: black;
     border-top: 1px dashed black;
 }
 
-#list-table tbody tr#Stands, #list-table tbody tr#Non-Supernatural{
+.stand-type, .non-super {
+    background-color: rgb(127, 99, 184);
+}
+
+#list-table tr#Stands, #list-table tr#Non-Supernatural{
     border-bottom: 2px solid black;
 }
 
-#list-table tbody tr#Power, #list-table tbody tr#Brawler {
+#list-table tr#Power, #list-table tr#Brawler {
     border-top: none;
 }
 
@@ -24,11 +26,11 @@
     background-color: rgb(113, 87, 163);
 }
 
-#list-table tbody tr#Non-Supernatural {
+#list-table tr#Non-Supernatural {
     border-bottom: none;
 }
 
-#list-table tbody tr#Non-Supernatural.dropped {
+#list-table tr#Non-Supernatural.dropped {
     border-bottom: 2px solid black;
 }
 
