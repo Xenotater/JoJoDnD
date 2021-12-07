@@ -4,38 +4,12 @@
     padding-bottom: 0;
 }
 
-#list {
-    position: sticky;
-    top: calc(90px + 2rem);
-    padding: 0;
-    overflow-y: hidden;
-    margin-top: 0;
-}
-
-#class-table {
-    width: 100%;
-}
-
-#class-table thead tr {
-    font-size: 2rem;
-    text-align: center;
-    border-bottom: 2px solid purple;
-}
-
-#class-table tbody tr {
+#list-table tbody tr {
+    border-bottom: none;
     border-top: 2px solid black ;
 }
 
-#class-table td {
-    padding: .5rem;
-}
-
-.class-link:hover {
-    cursor: pointer;
-    background-color: rgb(132, 97, 202);
-}
-
-.stand-type, .non-super {
+#list-table tbody tr.stand-type, #list-table tbody tr.non-super {
     display: none;
     padding-left: 1rem;
     background-color: rgb(127, 99, 184);
@@ -44,54 +18,32 @@
     border-top: 1px dashed black;
 }
 
+#list-table tbody tr#Stands, #list-table tbody tr#Non-Supernatural{
+    border-bottom: 2px solid black;
+}
+
+#list-table tbody tr#Power, #list-table tbody tr#Brawler {
+    border-top: none;
+}
+
 .stand-type:hover, .non-super:hover {
     background-color: rgb(113, 87, 163);
 }
 
-.listCurrent {
-    background-color: rgb(115, 80, 185);
+#list-table tbody tr#Non-Supernatural {
+    border-bottom: none;
 }
 
-.listCurrent:hover {
-    background-color: rgb(99, 67, 161);
+#list-table tbody tr#Non-Supernatural.dropped {
+    border-bottom: 2px solid black;
 }
 
 .dropdown {
     float: right;
 }
 
-#display {
-    margin-top: 0;
-    padding: 1.5rem;
-}
-
-.class-title {
-    text-decoration: underline;
-    color: rgb(231, 188, 44);
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    text-underline-offset: 2px;
-    margin-bottom: 1.5rem;
-}
-
-.class-img {
-    max-height: 400px;
-    overflow: hidden;
-    text-align: center;
-    margin-bottom: .5rem;
-}
-
-.class-img img {
-    max-height: inherit;
+.display-img img {
     max-width: 100%;
-    border: 3px solid purple;
-    border-radius: 30px;
-    background-color: rgb(223, 223, 223);
-}
-
-.class-heading {
-    color: rgb(231, 188, 44);
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    margin-top: 2rem;
 }
 
 .stats {

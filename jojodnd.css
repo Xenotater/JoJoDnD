@@ -133,6 +133,52 @@ h1, h2, h3, th {
     overflow-y: scroll;
 }
 
+#list {
+    position: sticky;
+    top: calc(90px + 2rem);
+    padding: 0;
+    overflow-y: hidden;
+}
+
+#list-table {
+    width: 100%;
+}
+
+#list-table thead tr {
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 2px solid purple;
+}
+
+#list-table tbody tr {
+    border-bottom: 2px solid black ;
+}
+
+#list-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+#list-table td {
+    padding: .5rem;
+}
+
+.list-link:hover {
+    cursor: pointer;
+    background-color: rgb(132, 97, 202);
+}
+
+.listCurrent {
+    background-color: rgb(115, 80, 185);
+}
+
+.listCurrent:hover {
+    background-color: rgb(99, 67, 161);
+}
+
+#display {
+    padding: 1.5rem;
+}
+
 .display-heading {
     color: rgb(231, 188, 44);
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -145,6 +191,19 @@ h1, h2, h3, th {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     text-underline-offset: 2px;
     margin-bottom: 1.5rem;
+}
+
+.display-img {
+    max-height: 400px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.display-img img {
+    max-height: inherit;
+    border: 3px solid purple;
+    border-radius: 30px;
 }
 
 .loading {

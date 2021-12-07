@@ -11,7 +11,7 @@ $(document).ready(function () {
 
     getData();
 
-    $(".art-link").click(function () {
+    $(".list-link").click(function () {
         a = $(this).attr("id");
         updateURL();
         updateDisplay();
@@ -37,7 +37,7 @@ function updateDisplay() {
     var art = aData[a];
     var newContent = "";
 
-    newContent += "<h2 class='display-title'>" + art.name + "</h2><div class='art-img'><img class='img-fluid' src='Assets/" + a + ".png' alt='" + a + "'></div>";
+    newContent += "<h2 class='display-title'>" + art.name + "</h2><div class='display-img'><img class='img-fluid' src='Assets/" + a + ".png' alt='" + a + "'></div>";
     if (art.lore != null)
         newContent += "<p class='center note'><small><i>" + art.lore + "</i></small></p>";
     newContent += "<h4 class='display-heading'>Description</h4><p>" + art.desc + "</p>";
