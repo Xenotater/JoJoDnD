@@ -74,12 +74,14 @@ function getData(q) {
 }
 
 function updateList() {
+    var currentID = $(".listCurrent").attr("id");
     $("#list-table tbody").html("");
     feats.sort();
     if (reverse)
         feats.reverse();
     for (let i = 0; i < feats.length; i++)
         $("#list-table tbody").append("<tr class='list-link' id='" + fData[feats[i]].name.replace(/ /g, "_") + "'><td>" + fData[feats[i]].name + "</td></tr>");
+    $("#" + currentID).addClass("listCurrent");
 }
 
 function updateDisplay() {
@@ -89,8 +91,8 @@ function updateDisplay() {
     newContent += "<h2 class='display-title'>" + feat.name + "</h2>";
     if (feat.prereq != null)
         newContent += "<p><b><u>Prerequisite:</u> " + feat.prereq + "</b></p>";
-    newContent += "<p class='label'><b>Description: </b></p><p>" + feat.desc + "</p>";
-    newContent += "<p class='label'><b>Effects: </b></p><ul>"
+    newContent += "<p class='section'><b>Description: </b></p><p>" + feat.desc + "</p>";
+    newContent += "<p class='section'><b>Effects: </b></p><ul>"
     for (let i = 0; i <feat.effects.length; i++)
         newContent += "<li>" + feat.effects[i] + "</li>";
     newContent += "</ul>";
