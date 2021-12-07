@@ -1,0 +1,36 @@
+{
+    "Adrenaline_Rush": {
+        "name": "Adrenaline Rush",
+        "desc": "The body has a remarkable tendency to keep itself alive in tough situations, and your body is even better at doing so.",
+        "effects": [
+            "As a Bonus Action you may activate this ability, giving you Advantage on all Strength, Constitution, and Dexterity Saving Throws, and an amount of Temporary Hit Points equal to your Level. These benefits last for up to 10 Rounds (1 Minute).",
+            "You can use this Feat an amount of times equal to your Strength Modifier per Long Rest."
+        ],
+        "prereq": "Str 13+ or <a href='/passions/?focus=Hard_Laborer'>Hard Laborer</a>"
+    },
+    "Art_of_Distraction": {
+        "name": "Art of Distraction",
+        "desc": "People are easy to fool, this is something that you’ve learned over years of experience.",
+        "effects": [
+            "You gain Advantage on all Performance and Sleight of Hand Checks.",
+            "You may now make Sleight of Hand Checks as a Bonus Action."
+        ],
+        "prereq": "Cha and Dex 13+"
+    },
+    "Automatic_Weapon_Proficiency": {
+        "name": "Automatic Weapon Proficiency",
+        "desc": "You’ve put in hours on the shooting range, and now you can use Automatic Weapons properly.",
+        "effects": [
+            "Add your Proficiency Bonus to your To Hit when using Automatic Weapons.",
+            "Instead of the weapon jamming on a roll of 5 or lower, the weapon only jams on a Critical Failure.",
+            "When the weapon jams, you may fix it as a Bonus Action."
+        ]
+    },
+    "Weapon_Master": {
+        "name": "Weapon Master",
+        "desc": "",
+        "effects": [
+            ""
+        ]
+    }
+}

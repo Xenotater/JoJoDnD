@@ -1,0 +1,27 @@
+#head-text {
+    margin: auto;
+}
+
+#head-table {
+    margin: auto;
+    margin-bottom: 1rem;
+    border: 2px solid black;
+    background-color: rgb(194, 150, 238);
+    font-size: 12px;
+}
+
+#head-table th {
+    border-bottom: 1px solid black;
+}
+
+#head-table td:first-child, #head-table th:first-child {
+    border-right: 1px solid black;
+}
+
+.label {
+    margin-bottom: 0;
+}
+
+ul {
+    margin-left: 1rem;
+}
