@@ -2,19 +2,54 @@
     max-height: 400px;
 }
 
+#search-box {
+    text-align: right;
+    margin-right: 15px;
+}
+
+#search {
+    outline: none;
+    border: 1px solid black;
+}
+
+#list {
+    margin-top: 0;
+}
+
 #name {
     width: 55%;
-    padding: 5px;
     border-bottom: 2px solid black;
     font-size: 1rem;
 }
 
 #class {
     width: 45%;
-    padding: 5px;
     border-left: 1px solid black;
     border-bottom: 2px solid black;
     font-size: 1rem;
+}
+
+.label {
+    float: left;
+    margin: 8px;
+    width: calc(100% - 64px);
+    text-align: center;
+    padding-left: 26px;
+}
+
+.sortBtns {
+    float: right;
+    margin-right: 8px;
+    line-height: 1rem;
+    font-size: 20px;
+}
+
+.sortBtns i {
+    cursor: pointer;
+}
+
+#display {
+    margin-top: 28px;
 }
 
 #given {

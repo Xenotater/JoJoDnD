@@ -25,3 +25,42 @@
 ul {
     margin-left: 1rem;
 }
+
+#search-box {
+    text-align: right;
+    margin-right: 15px;
+}
+
+#search {
+    outline: none;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+#list {
+    margin-top: 0;
+}
+
+.label {
+    float: left;
+    margin: 8px;
+    width: calc(100% - 64px);
+    text-align: center;
+    padding-left: 32px;
+}
+
+.sortBtns {
+    float: right;
+    margin-right: 8px;
+    line-height: 1rem;
+    font-size: 32px;
+}
+
+.sortBtns i {
+    cursor: pointer;
+}
+
+
+#display {
+    margin-top: 48px;
+}

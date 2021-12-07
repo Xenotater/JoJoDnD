@@ -27,6 +27,9 @@
             <h1 id="page-title">Abilities</h1>
             <div class="row">
                 <div class="col-md-5">
+                    <div id="search-box">
+                        <input type="search" id="search" placeholder="Search">
+                    </div>
                     <div class="content" id="list">
                         <table id="list-table">
                             <thead>
@@ -34,8 +37,22 @@
                                     <th colspan="2">Abilities</th>
                                 </tr>
                                 <tr>
-                                    <th id="name">Ability</th>
-                                    <th id="class">Class</th>
+                                    <th id="name">
+                                        <div class='label'>Ability</div>
+                                        <div class='sortBtns'>
+                                            <i id='nameUp' class='bi bi-caret-up-fill sorter'></i>
+                                            <br>
+                                            <i id='nameDown' class='bi bi-caret-down sorter'></i>
+                                        </div>
+                                    </th>
+                                    <th id="class">
+                                        <div class='label'>Class</div>
+                                        <div class='sortBtns'>
+                                            <i id='classUp' class='bi bi-caret-up sorter'></i>
+                                            <br>
+                                            <i id='classDown' class='bi bi-caret-down sorter'></i>
+                                        </div>
+                                    </th>
                                 </tr>
                             </thead>
                             <tbody data-simplebar></tbody>
