@@ -88,6 +88,7 @@ function getData(q) {
 }
 
 function updateList() {
+    var currentID = $(".listCurrent").attr("id");
     $("#list-table tbody").html("");
     sort();
     if (reverse)
@@ -109,6 +110,7 @@ function updateList() {
 
         $("#list-table tbody").append(newContent);
     }
+    $("#" + currentID).addClass("listCurrent");
 }
 
 function updateDisplay() {
