@@ -11,14 +11,7 @@ $(document).ready(function () {
 
     getData();
 
-    $(".passion-link").click(function () {
-        p = $(this).html();
-        p = p.replace(' ', '_');
-        updateURL();
-        updateDisplay();
-    });
-
-    $(".passion-list-link").click(function () {
+    $(".list-link").click(function () {
         p = $(this).attr("id");
         updateURL();
         updateDisplay();
@@ -50,7 +43,7 @@ function updateDisplay() {
         box1Text += "<li>" + passion.examples[i] + "</li>";
     }
     box1Text += "</ul>";
-    box2Text += "<h3 class='display-title'>" + passion.name + " Traits</h3><p><i>Saving Throws:</i> " + passion.saves + "<p><b><u>\
+    box2Text += "<h3 class='display-title'>" + passion.name + " Traits</h3><p><b><u>Saving Throws:</u></b> " + passion.saves + "<p><b><u>\
     Ability Score Increase:</u></b> " + passion.ability + "<p><b><u>" + passion.custom.name + ":</u></b> " + passion.custom.desc;
     if (passion.languages != null) box2Text += "<p><b><u>Languages:</u></b> " + passion.languages;
     
