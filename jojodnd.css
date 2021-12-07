@@ -20,6 +20,12 @@ body {
     background-color: mediumpurple;
 }
 
+.header {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 0;
+}
+
 .container-fluid {
     padding: 0;
 }

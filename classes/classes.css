@@ -1,9 +1,3 @@
-#multi {
-    text-align: center;
-    margin-top: 0;
-    padding-bottom: 0;
-}
-
 #list-table tbody tr {
     border-bottom: none;
     border-top: 2px solid black ;
