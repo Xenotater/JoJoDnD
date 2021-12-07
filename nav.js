@@ -29,10 +29,7 @@ function getNav() {
     });
 }
 
-//searchParam deletion from https://gist.github.com/simonw/9445b8c24ddfcbb856ec
 function clearParam() {
-    history.replaceState && history.replaceState(
-        null, '', window.location.pathname + window.location.search.replace(/[\?&]focus=[^&]+/, '').replace(/^&/, '?')
-      );
+    window.history.replaceState(null, "", window.location.pathname);
     window.location.pathname = "/";
 }

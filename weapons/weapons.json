@@ -295,6 +295,94 @@
             "stat": "None",
             "prereq": "Str (15+)",
             "effect": "+5 AC, -5 Movement Speed<br>Can be hunkered behind as an Action to gain 3/4 Cover.<br>If you do not have the <a href='/abilities/?focus=Shield_Master'>Shield Master</a> Feat you only get +2 AC and may not use the hunker action."
+        },
+        {
+            "name": "Frag Grenade",
+            "attr": ["Explosive (DC 20)", "Thrown (5/15)", "One-Handed"],
+            "type": "None",
+            "stat": "None",
+            "prereq": "None",
+            "effect": "3d6 + 5 Thunder and 3d4 Piercing from 0-1m away<br>2d6 + 2 Thunder and 2d4 Piercing from 1-3m away<br>1d6 Thunder and 1d4 Piercing from 3-5m away<br>Explodes 5s after the pin is removed and the handle is released."
+        },
+        {
+            "name": "Dynamite Stick",
+            "attr": ["Explosive (DC 16)", "Thrown (5/15)", "One-Handed"],
+            "type": "None",
+            "stat": "None",
+            "prereq": "None",
+            "effect": "4d10 + 10 Thunder from 0-2m away<br>2d10 + 5 Thunder Damage from 2-4m away<br>Explodes after an amount of time determined by the length of the fuse.<br>1s of burn time is roughly equivalent to 10cm of fuse."
+        },
+        {
+            "name": "C-4",
+            "attr": ["Explosive (DC 30)", "Two-Handed"],
+            "type": "None",
+            "stat": "None",
+            "prereq": "None",
+            "effect": "8d10 + 20 Thunder from 0-1m away<br>2d10 + 10 Thunder from 1-3m away<br>2d10 Thunder from 3-6maway<br>1d10 Thunder from 6-10m away<br>Explodes after an amount of time set on a timer, which can be set for between 30s and 1hr."
+        },
+        {
+            "name": "Gasoline Bomb",
+            "attr": ["Explosive (DC 14)", "Thrown (3/15)", "One-Handed"],
+            "type": "None",
+            "stat": "None",
+            "prereq": "None",
+            "effect": "2d10 + 5 Thunder and 3d4 + 10 Fire from 0-1m away<br>1d10 + 5 Thunder and 1d4 + 5 Fire from 3-6m away<br>1d6 Thunder and 1d4 Fire from 6-10m away<br>Explodes 5s after being lit, or upon impact with something.<br>Fire spreads to flammable objects within the radius.<br>If there's nothing flammable in the radius the fire will continue to burn for 1d4 Turns."
+        },
+        {
+            "name": "Moltov Cocktail",
+            "attr": ["Explosive (DC 10)", "Thrown (5/15)", "One-Handed"],
+            "type": "None",
+            "stat": "None",
+            "prereq": "None",
+            "effect": "2d12 + 6 Fire from 0-1m away<br>1d12 Fire from 1-2m<br>Explodes 10s after being lit or upon impact with something.<br>Fire spreads to flammable objects within the radius.<br>If there's nothing flammable in the radius the fire will continue to burn for 1d4 Turns."
+        },
+        {
+            "name": "UV Flashlight",
+            "attr": ["Ranged (3/15)", "Reload (x15)", "One-Handed"],
+            "type": "None",
+            "stat": "None",
+            "prereq": "None",
+            "effect": "2d10 + 10 Radiant to <a href='/abilities/?focus=Undead_Nature'>Undead</a><br>1d8 Radiant to <a href='/races/Pillar_Men'>Pillar Men</a><br>0 damage to other creatures<br>Creatures in a 15m cone make a Con Save with a DC of 20, taking half damage on success.<br>Creatures further than 3m get Advantage on the Save."
+        },
+        {
+            "name": "UV Laser",
+            "attr": ["Ranged (10/50)", "Reload (x1)", "One-Handed"],
+            "type": "Simple",
+            "stat": "Dex",
+            "prereq": "None",
+            "effect": "2d20 + 20 Radiant to <a href='/abilities/?focus=Undead_Nature'>Undead</a><br>2d10 + 10 Radiant to <a href='/races/?focus=Pillar_Men'>Pillar Men</a><br>1d4 Radiant to other creatures."
+        },
+        {
+            "name": "UV Canon",
+            "attr": ["Ranged (10/30)", "Reload (x5)", "Two-Handed"],
+            "type": "None",
+            "stat": "None",
+            "prereq": "None",
+            "effect": "3d20 + 30 Radiant to <a href='/abilities/?focus=Undead_Nature'>Undead</a><br>4d10 +10 Radiant to <a href='/races/Pillar_Men'>Pillar Men</a><br>1d2 Raidant to other creatures<br>Creatures in a 30m cone make a Con Save with a DC of 25, taking half damage on success.<br>Creatures further than 10m get Advantage on the Save."
+        },
+        {
+            "name": "Uzi",
+            "attr": ["Ranged (5/15)", "Firearm", "Reload (x15)", "Burst (x5)", "One-Handed"],
+            "type": "Automatic",
+            "stat": "Con",
+            "prereq": "None",
+            "effect": "3d6 Piercing"
+        },
+        {
+            "name": "Automatic Rifle",
+            "attr": ["Ranged (15/45)", "Firearm", "Reload (x30)", "Burst (x5)", "Two-Handed"],
+            "type": "Automatic",
+            "stat": "Con",
+            "prereq": "None",
+            "effect": "3d6 Piercing"
+        },
+        {
+            "name": "Mounted Minigun",
+            "attr": ["Ranged (20/60)", "Firearm", "Reload (xinfinite)", "Two-Handed"],
+            "type": "Automatic",
+            "stat": "Con",
+            "prereq": "<a href='/feats/?focus=Automatic_Weapon_Proficiency'>Automatic Weapon Proficiency</a>",
+            "effect": "3d10 Piercing<br>Takes a full Action to set up unless already prepared.<br>Typically mounted, but can be carried Two-Handed by someone with 15+ Str.<br>Carrying halves your Movement Speed."
         }
     ]
 }
