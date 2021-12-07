@@ -79,6 +79,7 @@
 #search {
     outline: none;
     border: 1px solid black;
+    margin-top: 1rem;
 }
 
 #weapon-list th:nth-child(1) {
