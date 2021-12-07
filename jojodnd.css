@@ -135,10 +135,6 @@ h1, h2, h3, th {
     border-bottom: 2px dashed purple;
 }
 
-.scrollable {
-    overflow-y: scroll;
-}
-
 #list {
     position: sticky;
     top: calc(90px + 2rem);

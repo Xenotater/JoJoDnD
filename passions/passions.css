@@ -51,6 +51,16 @@ span.passion-link:hover {
     color: rgb(17, 0, 255);
 } */
 
+#list-table tbody {
+    height: 400px;
+}
+
+#list-table tr {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
 #name {
     width: 55%;
     padding: 5px;
