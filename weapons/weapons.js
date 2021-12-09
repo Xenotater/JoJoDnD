@@ -80,14 +80,14 @@ function getData(q) {
 }
 
 function createTable() {
-    var newText = "<table class='table table-striped'><thead><tr>";
+    var newText = "<div data-simplebar><table class='table table-striped'><thead><tr>";
     newText += "<th><div class='label attr'>Name</div><div class='sortBtns'><i id='nameUp' class='bi bi-caret-up sorter'></i><br><i id='nameDown' class='bi bi-caret-down sorter'></i></div></th>";
     newText += "<th><div class='label attr'>Attributes</div><div class='sortBtns'><i id='attrUp' class='bi bi-caret-up sorter'></i><br><i id='attrDown' class='bi bi-caret-down sorter'></i></div></th>";
     newText += "<th><div class='label attr'>Type</div><div class='sortBtns'><i id='typeUp' class='bi bi-caret-up sorter'></i><br><i id='typeDown' class='bi bi-caret-down sorter'></i></div></th>";
     newText += "<th><div class='label attr'>Stat</div><div class='sortBtns'><i id='statUp' class='bi bi-caret-up sorter'></i><br><i id='statDown' class='bi bi-caret-down sorter'></i></div></th>";
     newText += "<th><div class='label attr'>Prerequisite</div><div class='sortBtns'><i id='prereqUp' class='bi bi-caret-up sorter'></i><br><i id='prereqDown' class='bi bi-caret-down sorter'></i></div></th>";
     newText += "<th><div class='label attr'>Effect</div><div class='sortBtns'><i id='effectUp' class='bi bi-caret-up sorter'></i><br><i id='effectDown' class='bi bi-caret-down sorter'></i></div></th>";
-    newText += "</tr></thead><tbody></tbody></table>";
+    newText += "</tr></thead><tbody></tbody></table></div>";
 
     $("#weapon-list").html(newText);
     updateTable();
@@ -210,6 +210,7 @@ function sort() {
 function diceParse(s) {
     var val = s.match(/^.d.+ /);
     var add = s.match(/^.d.+ \+ [0-9]+/);
+
     if (add != null)
         add = parseInt(add[0].substring(add[0].indexOf("+") + 2, add[0].length));
     else add = 0;
@@ -225,7 +226,14 @@ function diceParse(s) {
 }
 
 function search(query) {
+    var not = false;
     weapons = [];
+
+    if (query.match(/^NOT */)) {
+        not = true;
+        query = query.replace(/^NOT */, "");
+    }
+
     for (let i = 0; i < wData.length; i++) {
         var matched = false;
         for (var key in wData[i]) {
@@ -234,7 +242,7 @@ function search(query) {
             if (attr.toLowerCase().includes(query.toLowerCase()))
                 matched = true;
         }
-        if (matched)
+        if ((matched && !not) || (!matched && not))
             weapons.push(wData[i]);
     }
 
