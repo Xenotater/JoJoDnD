@@ -270,7 +270,7 @@
             "type": "Simple OR Martial",
             "stat": "Str",
             "prereq": "None",
-            "effect": "1d6 Bludgeoning<br>Has no effect when used by a Stand."
+            "effect": "1d6 Bludgeoning"
         },
         {
             "name": "Spiked Gauntlets",
@@ -278,7 +278,7 @@
             "type": "Martial",
             "stat": "Str/Dex",
             "prereq": "None",
-            "effect": "2d4 Bludgeoning<br>Has no effect when used by a Stand.<br>Equiping/Unequiping takes a Bonus Action for each gauntlet."
+            "effect": "2d4 Bludgeoning<br>Equiping/Unequiping takes a Bonus Action for each gauntlet."
         },
         {
             "name": "Shield",
