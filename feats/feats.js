@@ -69,19 +69,18 @@ function getData(q) {
         }
     });
 
-    $("#list-table tbody").html("<tr id='temp'><td><div class='loading'></div></td></tr>");
+    $(".simplebar-content").html("<tr id='temp'><td><div class='loading'></div></td></tr>");
     $("#display").html("<div class='loading'></div>");
 }
 
 function updateList() {
-    var currentID = $(".listCurrent").attr("id");
-    $("#list-table tbody").html("");
+    $(".simplebar-content").html("");
     feats.sort();
     if (reverse)
         feats.reverse();
     for (let i = 0; i < feats.length; i++)
-        $("#list-table tbody").append("<tr class='list-link' id='" + fData[feats[i]].name.replace(/ /g, "_") + "'><td>" + fData[feats[i]].name + "</td></tr>");
-    $("#" + currentID).addClass("listCurrent");
+        $(".simplebar-content").append("<tr class='list-link' id='" + fData[feats[i]].name.replace(/ /g, "_") + "'><td>" + fData[feats[i]].name + "</td></tr>");
+    $("#" + f).addClass("listCurrent");
 }
 
 function updateDisplay() {

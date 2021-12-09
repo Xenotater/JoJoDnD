@@ -26,11 +26,314 @@
             "When the weapon jams, you may fix it as a Bonus Action."
         ]
     },
-    "Weapon_Master": {
-        "name": "Weapon Master",
-        "desc": "",
+    "Blended_Fighting": {
+        "name": "Blended Fighting",
+        "desc": "Your Stand is certainly a powerful weapon, but that won’t stop you from fighting as well.",
         "effects": [
-            ""
+            "When you make at least one Attack using your Stand you as the User may also make an Attack as a Bonus Action. This attack may be made with a Weapon, Unarmed Strike, or any other action that counts as a singular attack (such as a Grapple). This attack must use your own Stats, not your Stand’s."
+        ],
+        "prereq": "<a href='/classes/?focus=Stands'>Stand User</a> Level 1+"
+    },
+    "Brutality": {
+        "name": "Brutality",
+        "desc": "You’ve seen a lot of combat and have learned not to hold back.",
+        "effects": [
+            "If you miss your target on a Melee Attack roll you may make the same Melee Attack as a Bonus Action. If this attack lands upon the intended target it is a guaranteed Critical Hit.",
+            "The damage dealt by this Brutality Attack cannot be Non-Lethal Damage.",
+            "You may use this ability once per Short or Long Rest, but it is not consumed if it misses."
+        ]
+    },
+    "Calculating": {
+        "name": "Calculating",
+        "desc": "A lot of Stand Users have their ability’s strength tied to their willpower, but that is not always the case. Some use knowledge or their surroundings to make their abilities terrifying.",
+        "effects": [
+            "You may use Wisdom or Intelligence to determine your Stand DC instead of Charisma.",
+            "If you have other Class Features relating to your Charisma Modifier like <a href='/abilities/?focus=Stand_Energy_Recharge'>Stand Energy Recharge</a>, you may also use Wisdom or Intelligence for it instead."
+        ],
+        "prereq": "<a href='/classes/?focus=Stands'>Stand User</a> Level 1+"
+    },
+    "Catlike_Agility": {
+        "name": "Catlike Agility",
+        "desc": "Your Reflexes are faster than that of the average person.",
+        "effects": [
+            "As a Bonus Action, you may make the Dodge action.",
+            "You may use this Feat an amount of times equal to your Dexterity Modifier per Long Rest."
+        ],
+        "prereq": "Dex 13+ or <a href='/passions/?focus=Artist'>Artist</a>"
+    },
+    "Clever_Disguise": {
+        "name": "Clever Disguise",
+        "desc": "You’re used to getting away from people and fighting from a distance. However, if those coming after you have seen your face or recognize you in any way, you may need a new set of clothes and a haircut to pass yourself off as someone else.",
+        "effects": [
+            "You may spend 1 Minute to create a disguise for yourself.",
+            "While disguised, you gain Advantage on all Deception Checks to pass yourself off as someone else and any attempts to determine your true identity are made with Disadvantage."
+        ]
+    },
+    "Cleave": {
+        "name": "Cleave",
+        "desc": "You know how to create and take advantage of opportunities.",
+        "effects": [
+            "When you drop a creature to 0 Hit Points using a Melee Attack you may perform another Melee Attack.",
+            "A Successful Cleave may trigger other Cleave attacks."
+        ]
+    },
+    "Combat_Medic": {
+        "name": "Combat Medic",
+        "desc": "Your medical knowledge is priceless on the battlefield.",
+        "effects": [
+            "You may make Medicine Checks as a Bonus Actions.",
+            "If you have a first aid kit or something similar you may make a DC 15 Medicine Check as an Action upon a creature that you can touch. On success, the creature may spend a Hit Die to heal."
+        ],
+        "prereq": "Int 13+ or <a href='/passions/?focus=Physician'>Physician</a>"
+    },
+    "Close_Combat_Specialist": {
+        "name": "Close Combat Specialist",
+        "desc": "You’ve become accustomed to defending yourself, and coming out victorious, even in the stickiest of situations.",
+        "effects": [
+            "Your AC is increased by 2.",
+            "You may add your Proficiency Bonus to Attacks when using Improvised Weapons.",
+            "If you are already Proficient in using Improvised Weapons, you may add your Proficiency Bonus again."
+        ]
+    },
+    "Consistent_Accuracy": {
+        "name": "Consistent Accuracy",
+        "desc": "You’re very skilled at judging distance and accurately striking your target.",
+        "effects": [
+            "When making attacks using Thrown or Ranged Weapons (including <a href='/abilities/?focus=Ranged_Attack'>Ranged Attack</a>), you may aim up to the Weapon’s Long Range without Disadvantage."
+        ]
+    },
+    "Consistent_Skills": {
+        "name": "Consistent Skills",
+        "desc": "You’ve practiced your craft over and over again, to the point of perfection.",
+        "effects": [
+            "When making a Skill Check that you have Proficiency or Expertise with, if you roll a 9 or lower on the d20 roll you may treat the roll as a 10."
+        ]
+    },
+    "Deadly_Accuracy": {
+        "name": "Deadly Accuracy",
+        "desc": "Your aim is steady and true, and you know exactly where to fire to maximize damage.",
+        "effects": [
+            "When making a Ranged Attack (including <a href='/abilities/?focus=Ranged_Attack'>Ranged Attack</a>), you may choose to use a full Action to attack. If you choose to do this, you can add your To-Hit Bonus twice.",
+            "Upon a successful Hit, you may roll double the Damage Dice that you would roll normally, and you may roll these dice twice, taking the higher result.",
+            "This Feat may be activated even when you use the ability that gives you Advantage on a Sniper Rifle."
+        ],
+        "prereq": "Dex 13+"
+    },
+    "Demolitionist": {
+        "name": "Demolitionist",
+        "desc": "You’ve handled your fair-share of explosives, and know how to do so safely.",
+        "effects": [
+            "When you roll a Nat 1 while throwing an explosive it becomes a dud instead of exploding in your hand.",
+            "You gain Advantage on checks relating to crafting, modifying, or disarming explosive devices."
+        ]
+    },
+    "Energy_Imbuement": {
+        "name": "Energy Imbuement",
+        "desc": "Some Stand Users are able to extend just a little bit of energy into a physical object, making it a permanent part of their Stand.",
+        "effects": [
+            "You may make an object a permanent part of your Stand by imbuing it with Stand Energy for 8 hours. ",
+            "The object now deals Stand damage and gains the same resistance that the rest of your Stand has.",
+            "If the object is destroyed, it does not damage the User in any way and it regenerates mass at a rate of 1kg/hour.",
+            "If the object is a Ranged Weapon then you may refill its ammo to maximum capacity as a single Attack at the cost of 1 Stand Energy.",
+            "This Feat may not be replaced once the object is permanently imbued.",
+            "You may take this Feat multiple times if desired."
+        ],
+        "prereq": "<a href='/classes/?focus=Stands'>Stand User</a> Level 1+"
+    },
+    "Enhanced_Stand_Senses": {
+        "name": "Enhanced Stand Senses",
+        "desc": "You have spent enough time looking through your Stand that it feels as comfortable as using your own senses.",
+        "effects": [
+            "When looking through your Stand you gain Advantage on Perception Checks and your Passive Perception is doubled."
+        ],
+        "prereq": "<a href='/abilities/?focus=Detached_Senses'>Detached Senses</a>"
+    },
+    "Evasive": {
+        "name": "Evasive",
+        "desc": "You're quick on your feet and know how to navigate a battlefield.",
+        "effects": [
+            "When you succeed a Dexterity Saving Throw you take no damage.",
+            "When you fail a Dexterity Saving Throw you only take half damage."
+        ],
+        "prereq": "Dex 13+"
+    },
+    "Fortune_Teller": {
+        "name": "Fortune Teller",
+        "desc": "Some people have a gift that allows them to see Fate’s inner workings. This allows them to see the future in a very specific way that isn’t very helpful until the time of the divination comes to pass.",
+        "effects": [
+            "At the end of each Long Rest, roll 3d20 and write the result of each of roll down.",
+            "At any point, you may replace a d20 roll for an ally, yourself, or an enemy with one of the d20 rolls written down.",
+            "Once you have used a number, it cannot be used again."
+        ]
+    },
+    "Headhunter": {
+        "name": "Headhunter",
+        "desc": "You’ve fought the Undead many times before, and you know their tricks and how to best defeat them.",
+        "effects": [
+            "You get +5 to all Attack rolls aimed at <a href='/abilities/?focus=Undead_Nature'>Undead Creatures</a>’ heads.",
+            "You gain Advantage on any Saving Throws against effects inflicted by an Undead Creature."
+        ]
+    },
+    "Heart_of_Lies": {
+        "name": "Heart of Lies",
+        "desc": "You’ve defeated countless enemies and overcome all challenges presented to you, dropping every foe in your way.",
+        "effects": [
+            "When one of your attacks kills an enemy, roll a d4. If you roll a 4, you gain 1 point of Inspiration."
+        ],
+        "prereq": "Cannot have Heart of Truth"
+    },
+    "Heart_of_Truth": {
+        "name": "Heart of Truth",
+        "desc": "You’ve gone through a lot in life. You’ve witnessed struggle, pain, and possibly even death itself. You’ve seen the absolute worst of Humanity. and that is why it is of absolute importance that you achieve your goals.",
+        "effects": [
+            "When you use a point of Inspiration, roll a d4. If you roll a 4, you gain back a point of Inspiration."
+        ],
+        "prereq": "Cannot have Heart of Lies"
+    },
+    "Heavy_Weapon_Specialist": {
+        "name": "Heavy Weapon Specialist",
+        "desc": "Through all of the time you’ve spent lugging around and using heavy equipment you’ve realized how to deal the most damage using these powerful, heavy weapons.",
+        "effects": [
+            "When using a Two-Handed Weapon, an Attack roll of either 19 or 20 counts as a Critical Hit.",
+            "When you land a successful Critical Hit, you may roll an additional Damage Die."
+        ],
+        "prereq": "Str 13+ or <a href='/passions/?focus=Trained_Laborer'>Trained Laborer</a>"
+    },
+    "Hidden_Assassin": {
+        "name": "Hidden Assassin",
+        "desc": "You’ve spent a lot of time in the shadows and know how to keep yourself concealed.",
+        "effects": [
+            "When making an attack with a Ranged weapon you do not reveal your position after your first shot, but on your second.",
+            "If you do not perform any other Action outside of this first shot, you may roll for damage twice and use the higher value."
+        ]
+    },
+    "Immediate_Connection": {
+        "name": "Immediate Connection",
+        "desc": "You’ve spent a lot of time around other people, both those that you know very well as well as strangers.",
+        "effects": [
+            "You gain Advantage on all Persuasion and Deception Checks on people that you’ve met within the past 24 hours."
+        ],
+        "prereq": "Cha 13+ or <a href='/passions/?focus=Con_Artist'>Con Artist</a>"
+    },
+    "Interpreter": {
+        "name": "Interpreter",
+        "desc": "Through time spent learning languages you have gotten much better at learning new ones as well as decoding unknown languages.",
+        "effects": [
+            "You learn 3 additional languages and learn another at Levels 5 and 10.",
+            "You gain Advantage on Skill Checks related to attempting to understand the meaning of an unknown language or script."
+        ],
+        "prereq": "Int 13+ or <a href='/passions/?focus=Service_Worker'>Service Worker</a>"
+    },
+    "Improvised_Healing": {
+        "name": "Improvised Healing",
+        "desc": "You’ve spent a lot of time out in the wild, simply trying to survive in an unforgiving environment.",
+        "effects": [
+            "You gain Advantage on all Survival and Medicine Checks."
+        ],
+        "prereq": "Wis 13+ or <a href='/passions/?focus=Survivalist'>Survivalist</a>"
+    },
+    "Jack_of_all_Trades": {
+        "name": "Jack of all Trades",
+        "desc": "You’re decently skilled at just about everything.",
+        "effects": [
+            "You may add half of your Proficiency Bonus (rounded down) to all Skill Checks that you do not have Proficiency or Expertise in."
+        ]
+    },
+    "Level_Headed": {
+        "name": "Level-Headed",
+        "desc": "Your level head allows you to get out of most situations using your experience and clever mind.",
+        "effects": [
+            "When making a Charisma or Wisdom Saving Throw you may instead choose to make an Intelligence Saving Throw."
+        ],
+        "prereq": "Int 13+ or <a href='/passions/?focus=Academic'>Academic</a>"
+    },
+    "Light_Sleeper": {
+        "name": "Light Sleeper",
+        "desc": "You regain consciousness fairly quickly.",
+        "effects": [
+            "You only have to succeed on 2 Death Saving Throws in order to become stabilized. It still takes three failures to kill you."
+        ]
+    },
+    "Martial_Weapon_Proficiency": {
+        "name": "Martial Weapon Proficiency",
+        "desc": "Through knowledge and training you have gained the ability to properly use Martial Weapons of all sorts.",
+        "effects": [
+            "You may add your Proficiency Bonus to your Attack and Damage rolls when using Martial Weapons."
+        ],
+        "prereq": "Str 13+, Dex 13+, or <a href='/passions/?focus=Thief'>Thief</a>"
+    },
+    "Menacing_Aura": {
+        "name": "Menacing Aura",
+        "desc": "You radiate threatening energy.",
+        "effects": [
+            "You get a bonus of +2 to all Intimidation Checks.",
+            "You may take this Feat up to 3 times if desired, for a maximum bonus of +6 to Intimidation."
+        ]
+    },
+    "Motivated": {
+        "name": "Motivated",
+        "desc": "You have an incredible tendency to bounce back, even when the odds are stacked against you.",
+        "effects": [
+            "When you fail a Saving Throw, you may instead choose to succeed.",
+            "You may use this Feat an amount of times equal to half your Proficiency Bonus (rounded down) per Long Rest."
+        ]
+    },
+    "Natural_Talent": {
+        "name": "Natural Talent",
+        "desc": "Through a combination of experience and natural-born talent you have gotten very good at certain tasks.",
+        "effects": [
+            "Choose up to Two Skills that you are Proficient in and gain Expertise in them.",
+            "You may take this Feat multiple times if desired."
+        ]
+    },
+    "Natural_Armor": {
+        "name": "Natural Armor",
+        "desc": "Because of your unique physiology ou may change your body between several different forms.",
+        "effects": [
+            "Humanoid: No changes.",
+            "Hybrid: +5 Temporary Hit Points, +5 AC, -5 meters Movement Speed, Resistance to Slashing damage (as well as Stand Slashing).",
+            "Rock: +20 Temporary Hit Points, +10 AC, No Movement Speed, Resistance to all physical damage (and their Stand counterparts).",
+            "The only Actions you can take in Rock Form are Stand Actions or changing forms.",
+            "Changing forms takes a full Action."
+        ],
+        "prereq": "<a href='/races/?focus=Rock_Human'>Rock Human</a>"
+    },
+    "Natural_Toughness": {
+        "name": "Natural Toughness",
+        "desc": "Your body is accustomed to dealing with intensely stressful conditions.",
+        "effects": [
+            "Each time you level up and roll for additional Hit Points, roll twice and take the higher of the two rolls."
+        ],
+        "prereq": "Con 13+ or <a href='/passions/?focus=Traveller'>Traveller</a>"
+    },
+    "Paranoia": {
+        "name": "Natural Talent",
+        "desc": "You’ve been aware of them for a while now. You don’t know who, but you know that they’ve been after you for so long, and you’ve been evading them for what seems like forever.",
+        "effects": [
+            "You may add your Proficiency Bonus to your Initiative Bonus, and enemies that attempt to surprise you get Disadvantage instead of Advantage on their Surprise Attack."
+        ]
+    },
+    "Pistol_Proficiency": {
+        "name": "Pistol Proficiency",
+        "desc": "Through knowledge and training, you have gained the ability to properly use handguns and revolvers.",
+        "effects": [
+            "You may now add your Proficiency Bonus to your Attack and Damage rolls when using Pistols.",
+            "You may reload a Pistol as a Bonus Action, rather than as a full Attack."
+        ]
+    },
+    "Practical_Experience": {
+        "name": "Practical Experience",
+        "desc": "Experience happens to be a great teacher, and you’ve learned a lot.",
+        "effects": [
+            "You may gain Proficiency in Three Skills of your Choice.",
+            "You may take this Feat multiple times if desired."
+        ]
+    },
+    "Pressure_Point_Manipulator": {
+        "name": "Pressure Point Manipulator",
+        "desc": "Through time spent studying the human body you’ve found the best way to hinder movement, cause immense pain, and defeat foes with little force. ",
+        "effects": [
+            "As an Action, you may make an Attack and choose a limb on your Target. Upon a successful hit, rather than dealing damage, the opponent may not use the limb that you targeted for an amount of turns equal to your Intelligence Modifier."
         ]
     }
 }
