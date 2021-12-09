@@ -63,6 +63,18 @@
     text-decoration: none;
 }
 
+.levels th:nth-child(2) {
+    width: 80px;
+}
+
+.levels tr {
+    color: black;
+}
+
+.levels tbody tr {
+    background-color: rgb(209, 209, 209);
+}
+
 .label {
     margin-bottom: 0;
 }
@@ -84,8 +96,7 @@
 }
 
 .minor thead tr {
-    background-color: rgb(158, 158, 158);
-    color: black;
+    background-color: rgb(139, 139, 139);
 }
 
 .minor tbody tr {
@@ -94,123 +105,51 @@
 }
 
 #world thead tr {
-    background-color: rgb(100, 187, 100);
-    color: black;
-}
-
-#world tbody tr {
     background-color: rgb(240, 207, 99);
-    color: black;
 }
 
 #hiero thead tr {
-    background-color: rgb(209, 209, 209);
-    color: black;
-}
-
-#hiero tbody tr {
     background-color: rgb(108, 180, 93);
-    color: black;
 }
 
 #hStar thead tr {
-    background-color: rgb(99, 99, 99);
-    color: black;
-}
-
-#hStar tbody tr {
     background-color: rgb(132, 130, 231);
-    color: black;
 }
 
 #album thead tr {
-    background-color: rgb(216, 216, 216);
-    color: black;
-}
-
-#album tbody tr {
     background-color: rgb(159, 225, 255);
-    color: black;
 }
 
 #love thead tr {
-    background-color: rgb(226, 109, 255);
-    color: black;
-}
-
-#love tbody tr {
     background-color: rgb(106, 113, 212);
-    color: black;
 }
 
 #cat thead tr {
-    background-color: rgb(88, 194, 102);
-    color: black;
-}
-
-#cat tbody tr {
     background-color: rgb(219, 128, 207);
-    color: black;
 }
 
-#anubis thead tr {
-    background-color: rgb(255, 217, 92);
-    color: black;
-}
-
-#anubis tbody tr {
-    background-color: rgb(211, 211, 211);
-    color: black;
+#ff thead tr {
+    background-color: rgb(77, 224, 84);
 }
 
 #bad thead tr {
     background-color: rgb(60, 168, 69);
-    color: black;
-}
-
-#bad tbody tr {
-    background-color: rgb(118, 214, 134);
-    color: black;
 }
 
 .echoes thead tr {
-    background-color: rgb(108, 180, 93);
-    color: black;
-}
-
-.echoes tbody tr {
-    background-color: rgb(209, 209, 209);
-    color: black;
+    background-color: rgb(77, 168, 107);
 }
 
 #sun thead tr {
-    background-color: rgb(255, 179, 117);
-    color: black;
-}
-
-#sun tbody tr {
-    background-color: rgb(255, 245, 157);
-    color: black;
+    background-color: rgb(253, 255, 108);
 }
 
 #gyro thead tr {
-    background-color: rgb(144, 75, 207);
-    color: black;
-}
-
-#gyro tbody tr {
-    background-color: rgb(149, 228, 149);
-    color: black;
+    background-color: rgb(103, 216, 58);
 }
 
 #basic thead tr {
     background-color: rgb(158, 158, 158);
-    color: black;
-}
-
-#basic tbody tr {
-    background-color: rgb(223, 223, 223);
-    color: black;
 }
 
 @media (max-width: 991px) {
