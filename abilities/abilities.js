@@ -83,13 +83,13 @@ function getData(q) {
         }
     });
 
-    $("#list-table tbody").html("<tr id='temp'><td><div class='loading'></div></td></tr>");
+    $(".simplebar-content").html("<tr id='temp'><td><div class='loading'></div></td></tr>");
     $("#display").html("<div class='loading'></div>");
 }
 
 function updateList() {
     var currentID = $(".listCurrent").attr("id");
-    $("#list-table tbody").html("");
+    $(".simplebar-content").html("");
     sort();
     if (reverse)
         abilities.reverse();
@@ -99,16 +99,16 @@ function updateList() {
         var races = abil.races;
 
         var newContent = "<tr class='list-link' id='" + abil.name.replace(/ /g, "_") + "'><td>" + abil.name + "</td><td>";
-        for (let i = 0; i < abil.cls.length; i++) {
-            newContent += abil.cls[i];
-            if (i != abil.cls.length - 1)
+        for (let i = 0; i < abil.classes.length; i++) {
+            newContent += abil.classes[i];
+            if (i != abil.classes.length - 1)
                 newContent += ", ";
             else
                 newContent += "</td>";
         }
         newContent += "</tr>";
 
-        $("#list-table tbody").append(newContent);
+        $(".simplebar-content").append(newContent);
     }
     $("#" + currentID).addClass("listCurrent");
 }
@@ -118,18 +118,99 @@ function updateDisplay() {
     var newContent = "";
 
     newContent += "<h2 class='display-title'>" + abil.name + "</h2>";
-    newContent += "<p>" + abil.desc + "</p>"
+    for (let i = 0; i < abil.desc.length; i++)
+        newContent += "<p>" + abil.desc[i] + "</p>"
     newContent += "<h4 class='display-heading'>Given To</h4><ul id='given'>";
-    if (abil.classes != null)
-        for (let i = 0; i < abil.classes.length; i++)
-            newContent += "<li><a href='/classes/?focus=" + abil.classes[i].replace(" Stands", "").replace(/ /g, "_") + "'>" + abil.classes[i] + "</a></li>";
-    if (abil.races != null)
-        for (let i = 0; i < abil.races.length; i++)
-            newContent += "<li><a href='/races/?focus=" + abil.races[i].replace(/ /g, "_") + "'>" + abil.races[i] + "</a></li>";
+    newContent += parseTypes(abil.classes);
+    newContent += "</ul>"
 
     $("#display").html(newContent);
     $(".listCurrent").removeClass("listCurrent");
     $("#" + a).addClass("listCurrent");
+}
+
+function parseTypes(classes) {
+    var content = "";
+
+    if (classes != null) {
+        for (let i = 0; i < classes.length; i++) {
+            var cls = "", page = "classes";
+            switch (classes[i]) {
+                case "Pwr":
+                    cls = "Power-Type Stands";
+                    break;
+                case "Rng":
+                    cls = "Ranged-Type Stands";
+                    break;
+                case "Rmt":
+                    cls = "Remote-Type Stands";
+                    break;
+                case "Abl":
+                    cls = "Ability-Type Stands";
+                    break;
+                case "Enh":
+                    cls = "Enhancement-Type Stands";
+                    break;
+                case "Rev":
+                    cls = "Revenge-Type Stands";
+                    break;
+                case "Ind":
+                    cls = "Independent-Type Stands";
+                    break;
+                case "Hive":
+                    cls = "Hive-Type Stands";
+                    break;
+                case "Act":
+                    cls = "Act-Type Stands";
+                    break;
+                case "Stands":
+                    cls = "All Stands";
+                    break;
+                case "Rip":
+                    cls = "Ripple Users";
+                    break;
+                case "Spin":
+                    cls = "Spin Users";
+                    break;
+                case "Zom":
+                    cls = "Zombies";
+                    page = "races";
+                    break;
+                case "Ghl":
+                    cls = "Ghouls";
+                    page = "races";
+                    break;
+                case "Vamp":
+                    cls = "Vampires";
+                    page = "races";
+                    break;
+                case "PM":
+                    cls = "Pillar Men";
+                    page = "races";
+                    break;
+                case "EPM":
+                    cls = "Enhanced Pillar Men";
+                    page = "races";
+                    break;
+                case "Ult":
+                    cls = "Ultimate Beings";
+                    page = "races";
+                    break;
+                case "Rck":
+                    cls = "Rock Humans";
+                    page = "races";
+                    break;
+                default:
+                    cls = "Error";
+                    page = "not_found";
+                    break;
+            }
+            content += "<li><a href='/" + page + "/?focus=" + 
+            cls.replace("-Type Stands", "").replace(" Users", "").replace("All ", "").replace(/s$/, "").replace(/Men$/, "Men").replace(/ /g, "") + "'>" + cls + "</a></li>";
+        }
+    }
+
+    return content;
 }
 
 function reset(target) {
@@ -155,6 +236,7 @@ function sort() {
 function search(query) {
     var not = false;
     abilities = [];
+
     if (query.match(/^NOT /)) {
         not = true;
         query = query.replace("NOT ", "");

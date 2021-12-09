@@ -1,32 +1,109 @@
 {
     "Anchored_Stand": {
         "name": "Anchored Stand",
-        "classes": ["Enhancement Stands", "Independent Stands"],
-        "cls": ["Enh", "Ind"],
-        "desc": "Your Stand is physically attached and anchored to a physical object. As such, your Stand may be damaged by physical means, as well as Stands. However, regardless of if your Stand takes physical or Stand damage, you still apply the same Damage Reduction to it. Also, both you and your Stand gain Vulnerability (double damage) to one damage type of your choice, as well as the Stand counterpart to that damage type. If you are an Enhancement-Type Stand User, you must find an amount of material (or a specific object) that fits your specific anchor. This material must be within your Stand’s Range in order for you to use it to Activate your Stand."
+        "classes": ["Enh", "Ind"],
+        "desc": [
+            "Your Stand is physically attached and anchored to a physical object. As such, your Stand may be damaged by physical means, as well as Stands. However, regardless of if your Stand takes physical or Stand damage, you still apply the same Damage Reduction to it.",
+            "Also, both you and your Stand gain Vulnerability (double damage) to one damage type of your choice, as well as the Stand counterpart to that damage type.",
+            "If you are an Enhancement-Type Stand User, you must find an amount of material (or a specific object) that fits your specific anchor. This material must be within your Stand’s Range in order for you to use it to Activate your Stand."
+        ]
     },
     "Armored_Stand": {
         "name": "Armored Stand",
-        "classes": ["Power Stands", "Ranged Stands", "Enhancement Stands", "Revenge Stands", "Independent Stands"],
-        "cls": ["Pwr", "Rng", "Enh", "Rev", "Ind"],
-        "desc": "The amount of damage that your Stand can reduce per round is doubled."
+        "classes": ["Pwr", "Rng", "Enh", "Rev", "Ind"],
+        "desc": [
+            "The amount of damage that your Stand can reduce per round is doubled.",
+            "This ability replaces Immense Resistance, if you have it."
+        ]
     },
     "Complete_Control": {
         "name": "Complete Control",
-        "classes": ["Enhancement Stands"],
-        "cls": ["Enh"],
-        "desc": "Your Stand is a fusion of Stand Energy and a physical object. You’ve gained enough control over your Stand that you can completely influence how the object or material your Stand is fused with functions. For example, <a href='https://jojo.fandom.com/wiki/Wheel_of_Fortune' target='_blank'>Wheel Of Fortune</a>’s squeezing and <a href='https://jojo.fandom.com/wiki/Strength' target='_blank'>Strength</a>’s control of the Ship itself."
+        "classes": ["Enh"],
+        "desc": [
+            "Your Stand is a fusion of Stand Energy and a physical object. You’ve gained enough control over your Stand that you can completely influence how the object or material your Stand is fused with functions.",
+            "Examples of this include <a href='https://jojo.fandom.com/wiki/Wheel_of_Fortune' target='_blank'>Wheel Of Fortune</a>’s squeezing and <a href='https://jojo.fandom.com/wiki/Strength' target='_blank'>Strength</a>’s control of the Ship itself."
+        ]
     },
     "Custom_Ability": {
         "name": "Custom Ability",
-        "classes": ["All Stand Types"],
-        "cls": ["Stands"],
-        "desc": "This is something that must be discussed with the DM of your Campaign. Further details can be found on the <a href='/classes/?focus=Stands'>Stands</a> page. Stand Abilities are something integral to the existence of Stands, and it’s a huge part of what makes JoJo’s Bizarre Adventure such a fun, varied, and unique experience. A general rule of thumb is that the more specific your Stand Ability is, the more powerful it is. However, the more general it is, the more versatile it can be. Examples of Abilities are <a href='https://jojo.fandom.com/wiki/Anubis' target='_blank'>Anubis</a>’s Possession, <a href='https://jojo.fandom.com/wiki/Hermit_Purple' target='_blank'>Hermit Purple</a>’s Spirit Photos, or <a href='https://jojo.fandom.com/wiki/White_Album' target='_blank'>White Album</a>’s ability to freeze. A Custom Ability might also be a passive ability that may be activated or deactivated at will. Passive Abilities consume 1 Stand Energy at the Start of the Stand User’s Turn and also consume their Bonus Action to perform. If you are unable to use your Bonus Action, or you do not have enough Stand Energy remaining, the ability simply stops functioning. "
+        "classes": ["Stands"],
+        "desc": [
+            "This is something that must be discussed with the DM of your Campaign. Further details can be found on the <a href='/classes/?focus=Stands'>Stands</a> page.",
+            "Stand Abilities are something integral to the existence of Stands, and it’s a huge part of what makes JoJo’s Bizarre Adventure such a fun, varied, and unique experience.",
+            "A general rule of thumb is that the more specific your Stand Ability is, the more powerful it is. However, the more general it is, the more versatile it can be.",
+            "Examples of Abilities are <a href='https://jojo.fandom.com/wiki/Anubis' target='_blank'>Anubis</a>’s Possession, <a href='https://jojo.fandom.com/wiki/Hermit_Purple' target='_blank'>Hermit Purple</a>’s Spirit Photos, or <a href='https://jojo.fandom.com/wiki/White_Album' target='_blank'>White Album</a>’s ability to freeze.",
+            "A Custom Ability might also be a passive ability that may be activated or deactivated at will. Passive Abilities consume 1 Stand Energy at the Start of the Stand User’s Turn and also consume their Bonus Action to perform. If you are unable to use your Bonus Action, or you do not have enough Stand Energy remaining, the ability simply stops functioning."
+        ]
+    },
+    "Detached_Senses": {
+        "name": "Detached Senses",
+        "classes": ["Pwr", "Rng", "Rmt", "Abl", "Enh", "Rev", "Hive", "Act"],
+        "desc": [
+            "You are able to experience and process sensory information using your Stand. Your Stand may See, Hear, Taste, Touch, and Smell the same way that you do. Furthermore, you may sense through your body and your Stand at the same time.",
+            "For Hive-Type Stand Users, you may sense through an amount of Instances equal to your Intelligence Score."
+        ]
+    },
+    "Detached_Stand": {
+        "name": "Detached Stand",
+        "classes": ["Rmt"],
+        "desc": [
+            "Your Stand no longer shares a health pool with you. If your Stand is destroyed or knocked unconscious it will not affect you in any way.",
+            "It takes 1d4 hours for it to fully regenerate and be able to manifest again. However, if you are killed or knocked unconscious your Stand will cease to exist. "
+        ]
+    },
+    "Energy_Conservation": {
+        "name": "Energy Conservation",
+        "classes": ["Abl"],
+        "desc": [
+            "You’ve become an expert at using your Stand’s Ability. As such, you may expend less Stand Energy to perform the same Abilities.",
+            "You consume half as much Stand Energy when using abilities that consume it, except for Ultimate Ability, which consumes the same amount as normal."
+        ]
+    },
+    "General_Anchors": {
+        "name": "General Anchors",
+        "classes": ["Enh"],
+        "desc": [
+            "As an Enhancement-Type Stand User you’ve taken your ability to the next level. Rather than having to anchor onto something very specific, you may now anchor onto anything that's similar to your original anchor.",
+            "For example, <a href='https://jojo.fandom.com/wiki/Wheel_of_Fortune' target='_blank'>Wheel of Fortune</a> would be able to anchor onto anything with wheels instead of a specific car, or <a href='https://jojo.fandom.com/wiki/Strength' target='_blank'>Strength</a> would be able to anchor onto anything that floats in water instead of a specific boat."
+        ]
+    },
+    "Hot_Pursuit": {
+        "name": "Hot Pursuit",
+        "classes": ["Rng"],
+        "desc": [
+            "Whenever you are chasing after somebody, your Stand may keep pace with them regardless of Movement Speed, so long as you can see them and they remain within your Stand’s Range."
+        ]
+    },
+    "Immense_Power": {
+        "name": "Immense Power",
+        "classes": ["Rmt"],
+        "desc": [
+            "Your Stand is versatile, but was limited by its strength before now.",
+            "Multiply your Stand's Power by 2. Any points gained to your Stand’s Power from now on are also multiplied by 2."
+        ]
+    },
+    "Immense_Range": {
+        "name": "Immense Range",
+        "classes": ["Rmt", "Enh", "Rev"],
+        "desc": [
+            "Your Stand is powerful, but was limited by how far it could be away from you before now.",
+            "Multiply your Stand's Range by 10. Any points gained to your Stand's Range from now on are alos multipled by 10."
+        ]
+    },
+    "Immense_Resistance": {
+        "name": "Immense Resistance",
+        "classes": ["Ult"],
+        "desc": [
+            "Your Stand is incredibly resilient, a reflection of your willpower and experience.",
+            "Rather than using the normal Damage Resistance formula, you may instead simply resist an amount of damage equal to your Durability Modifier + your Constitution Modifier (even if you are an Independent-Type Stand).",
+            "If you obtain the Armored Stand ability, it replaces this one."
+        ]
     },
     "Ultimate_Nature": {
         "name": "Ultimate Nature",
-        "races": ["Ultimate Being"],
-        "cls": ["Ult"],
-        "desc": ""
+        "classes": ["Ult"],
+        "desc": [
+            ""
+        ]
     }
 }
