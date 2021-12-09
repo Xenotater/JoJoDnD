@@ -104,10 +104,12 @@ function updateDisplay() {
 function search(query) {
     var not = false;
     feats = [];
-    if (query.match(/^NOT /)) {
+    
+    if (query.match(/^NOT */)) {
         not = true;
-        query = query.replace("NOT ", "");
+        query = query.replace(/^NOT */, "");
     }
+
     for (var key in fData) {
         var matched = false;
         for (var key2 in fData[key]) {
