@@ -88,7 +88,6 @@ function getData(q) {
 }
 
 function updateList() {
-    var currentID = $(".listCurrent").attr("id");
     $(".simplebar-content").html("");
     sort();
     if (reverse)
@@ -110,7 +109,7 @@ function updateList() {
 
         $(".simplebar-content").append(newContent);
     }
-    $("#" + currentID).addClass("listCurrent");
+    $("#" + a).addClass("listCurrent");
 }
 
 function updateDisplay() {
@@ -237,9 +236,9 @@ function search(query) {
     var not = false;
     abilities = [];
 
-    if (query.match(/^NOT /)) {
+    if (query.match(/^NOT */)) {
         not = true;
-        query = query.replace("NOT ", "");
+        query = query.replace(/^NOT */, "");
     }
     for (var key in aData) {
         var matched = false;

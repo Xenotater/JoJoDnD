@@ -1,6 +1,6 @@
 <?php
     if ($_POST["action"] == "login")  {
-        $mysqli = new mysqli("localhost", "kyler", "dbadmin", "JoJoDnD");
+        @$mysqli = new mysqli("localhost", "kyler", "dbadmin", "JoJoDnD"); /* @ prevents error from sending, custom error handle below */
 
         if($mysqli->connect_error) {
             echo "<h5 id='login-failure'>Couldn't connect to database, please contact the site administrator.</h5>";

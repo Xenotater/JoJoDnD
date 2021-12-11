@@ -14,10 +14,7 @@
             $subject = $mysqli->real_escape_string($_POST["subject"]);
             $email = $mysqli->real_escape_string($_POST["email"]);
             $comment = $mysqli->real_escape_string($_POST["comment"]);
-            // $name = "test";
-            // $subject = "test";
-            // $email = "";
-            // $comment = "CLI test";
+            $comment = str_replace("\\n", "<br>", $comment);
 
             //email code from https://docs.aws.amazon.com/ses/latest/DeveloperGuide/send-using-smtp-php.html
             $sender = 'no-reply@contact.jojodnd.com';

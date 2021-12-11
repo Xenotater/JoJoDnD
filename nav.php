@@ -5,11 +5,12 @@
         <meta charset="utf-8">
     </head>
     <body>
-    <div class="container-fluid" id="disclaim">
+    <!-- <div class="container-fluid" id="disclaim">
             <small>This site's construction is in progress! Expect missing pages/information.</small>
-        </div>
+        </div> -->
 
         <!-- navbar icons modified from https://freeicons.io/ -->
+        <!-- expandable navbar code modified from https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp -->
         <nav class="navbar navbar-expand-custom sticky-top">
             <div class="container-fluid">
                 <div class="navigator" id="home">
