@@ -1,66 +1,3 @@
-#warning, #warning p {
-    margin: 0;
-}
-
-#list {
-    position: sticky;
-    top: calc(90px + 2rem);
-    padding: 0;
-    overflow-y: hidden;
-}
-
-#race-table {
-    width: 100%;
-}
-
-#race-table thead tr {
-    font-size: 2rem;
-    text-align: center;
-    border-bottom: 2px solid purple;
-}
-
-#race-table tbody tr {
-    border-bottom: 2px solid black ;
-}
-
-#race-table tbody tr:last-child {
-    border-bottom: none;
-}
-
-#race-table td {
-    padding: .5rem;
-}
-
-.race-link:hover {
-    cursor: pointer;
-    background-color: rgb(132, 97, 202);
-}
-
-.listCurrent {
-    background-color: rgb(115, 80, 185);
-}
-
-.listCurrent:hover {
-    background-color: rgb(99, 67, 161);
-}
-
-#display {
-    padding: 1.5rem;
-}
-
-.race-img {
-    max-height: 400px;
-    overflow: hidden;
-    text-align: center;
-    margin-bottom: .5rem;
-}
-
-.race-img img {
-    max-height: inherit;
-    border: 3px solid purple;
-    border-radius: 30px;
-}
-
 .levels {
     border: 3px solid purple;
 }
@@ -81,20 +18,20 @@
     text-decoration: none;
 }
 
+.levels tr {
+    color: black;
+}
+
+.levels tbody tr {
+    background-color: rgb(209, 209, 209);
+}
+
 #dio thead tr {
-    background-color: rgb(160, 241, 160);
+    background-color: rgb(240, 207, 99);
 }
 
-#dio tbody tr {
-    background-color: rgb(255, 240, 174);
-}
-
-#ACDC thead tr {
-    background-color: rgb(255, 240, 174);
-}
-
-#ACDC tbody tr {
-    background: rgb(179, 212, 255);
+#santana thead tr {
+    background-color: rgb(173, 50, 50);
 }
 
 @media (max-width: 875px){ 

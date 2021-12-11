@@ -1,0 +1,69 @@
+#search-box {
+    text-align: right;
+    margin-right: 15px;
+}
+
+#search {
+    outline: none;
+    border: 1px solid black;
+}
+
+#list {
+    margin-top: 0;
+}
+
+#name {
+    width: 55%;
+    border-bottom: 2px solid black;
+    font-size: 1rem;
+}
+
+#class {
+    width: 45%;
+    border-left: 1px solid black;
+    border-bottom: 2px solid black;
+    font-size: 1rem;
+}
+
+.label {
+    float: left;
+    margin: 8px;
+    width: calc(100% - 64px);
+    text-align: center;
+    padding-left: 26px;
+}
+
+.sortBtns {
+    float: right;
+    margin-right: 8px;
+    line-height: 1rem;
+    font-size: 20px;
+}
+
+.sortBtns i {
+    cursor: pointer;
+}
+
+#list-table tbody {
+    height: 400px;
+}
+
+#list-table tr {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+#list-table td:nth-child(1) {
+    width: 55%;
+}
+
+#display {
+    margin-top: 28px;
+}
+
+#given {
+    columns: 2;
+    margin-left: 2rem;
+    width: calc(100% - 2rem);
+}

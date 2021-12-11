@@ -10,12 +10,14 @@
             integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
         <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-rfs/bootstrap-rfs.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
 
         <link rel="stylesheet" href="../jojodnd.css">
         <link rel="stylesheet" href="passions.css">
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
 
         <script src="../nav.js"></script>
         <script src="passions.js"></script>
@@ -24,8 +26,8 @@
     <body>
         <div class="container">
             <h1 id="page-title">Passions</h1>
-            <div class="content" id="intro">
-                <h4><b>The World of JoJo</b></h4>
+            <div class="content header">
+                <u><b>The World of JoJo</b></u>
                 <p>
                     JoJo’s Bizarre Adventure typically takes place in a modern world filled almost completely with
                     humans.
@@ -35,23 +37,25 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-md-5">
                     <div class="content" id="list">
-                        <h2 class="center">Passions</h2>
                         <div>
-                            <table id="passion-table">
+                            <table id="list-table">
                                 <thead>
-                                    <tr class="center">
-                                        <td id="name">
+                                    <tr>
+                                        <th colspan="2">Passions</th>
+                                    </tr>
+                                    <tr>
+                                        <th id="name">
                                             Passion
-                                        </td>
-                                        <td id="stat">
+                                        </th>
+                                        <th id="stat">
                                             Ability
-                                        </td>
+                                        </th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr class="passion-list-link listCurrent" id="Academic">
+                                <tbody data-simplebar>
+                                    <tr class="list-link listCurrent" id="Academic">
                                         <td>
                                             Academic
                                         </td>
@@ -59,7 +63,7 @@
                                             Int +2
                                         </td>
                                     </tr>
-                                    <tr class="passion-list-link" id="Artist">
+                                    <tr class="list-link" id="Artist">
                                         <td>
                                             Artist
                                         </td>
@@ -67,7 +71,7 @@
                                             Dex +2, Int +1
                                         </td>
                                     </tr>
-                                    <tr class="passion-list-link" id="Athlete">
+                                    <tr class="list-link" id="Athlete">
                                         <td>
                                             Athlete
                                         </td>
@@ -75,7 +79,7 @@
                                             Str +2, Dex +1
                                         </td>
                                     </tr>
-                                    <tr class="passion-list-link" id="Con_Artist">
+                                    <tr class="list-link" id="Con_Artist">
                                         <td>
                                             Con Artist
                                         </td>
@@ -83,7 +87,7 @@
                                             Cha +2
                                         </td>
                                     </tr>
-                                    <tr class="passion-list-link" id="Hard_Laborer">
+                                    <tr class="list-link" id="Hard_Laborer">
                                         <td>
                                             Hard Laborer
                                         </td>
@@ -91,7 +95,7 @@
                                             Con +2, Dex +1, Str +1
                                         </td>
                                     </tr>
-                                    <tr class="passion-list-link" id="Performer">
+                                    <tr class="list-link" id="Performer">
                                         <td>
                                             Performer
                                         </td>
@@ -99,7 +103,7 @@
                                             Cha +2, Con +1
                                         </td>
                                     </tr>
-                                    <tr class="passion-list-link" id="Physician">
+                                    <tr class="list-link" id="Physician">
                                         <td>
                                             Physician
                                         </td>
@@ -107,7 +111,7 @@
                                             Int +2, Wis +1
                                         </td>
                                     </tr>
-                                    <tr class="passion-list-link" id="Service_Worker">
+                                    <tr class="list-link" id="Service_Worker">
                                         <td>
                                             Service Worker
                                         </td>
@@ -115,7 +119,7 @@
                                             Wis +1, Cha +1
                                         </td>
                                     </tr>
-                                    <tr class="passion-list-link" id="Student">
+                                    <tr class="list-link" id="Student">
                                         <td>
                                             Student
                                         </td>
@@ -123,7 +127,7 @@
                                             Varies
                                         </td>
                                     </tr>
-                                    <tr class="passion-list-link" id="Survivalist">
+                                    <tr class="list-link" id="Survivalist">
                                         <td>
                                             Survivalist
                                         </td>
@@ -131,7 +135,7 @@
                                             Wis +2, Con +1
                                         </td>
                                     </tr>
-                                    <tr class="passion-list-link" id="Thief">
+                                    <tr class="list-link" id="Thief">
                                         <td>
                                             Thief
                                         </td>
@@ -139,7 +143,7 @@
                                             Dex +2, Cha +1
                                         </td>
                                     </tr>
-                                    <tr class="passion-list-link" id="Trained_Laborer">
+                                    <tr class="list-link" id="Trained_Laborer">
                                         <td>
                                             Trained Laborer
                                         </td>
@@ -147,7 +151,7 @@
                                             Str +2, Int +1
                                         </td>
                                     </tr>
-                                    <tr class="passion-list-link" id="Traveler">
+                                    <tr class="list-link" id="Traveler">
                                         <td>
                                             Traveler
                                         </td>
@@ -160,13 +164,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-7">
-                    <div class="content row" id="display">
-                    </div>
+                <div class="col-md-7">
+                    <div class="content row" id="display"></div>
                 </div>
             </div>
 
-            <div class="divider"></div>
+            <!-- <div class="divider"></div>
 
             <table class="content" id="statSum">
                 <thead>
@@ -185,8 +188,8 @@
                                     <b>Important For:</b><br><u>Melee Combat, Grappling, Brute Force, Stand Power</u>
                                 </p>
                                 <p>
-                                    <b>Passion Increases:</b><br><u><span class="passion-link">Trained Laborer</span> (+2), 
-                                    <span class="passion-link">Athlete</span> (+2) <span class="passion-link">Hard Laborer</span> (+1)</u>
+                                    <b>Passion Increases:</b><br><u><span class="list-link">Trained Laborer</span> (+2), 
+                                    <span class="list-link">Athlete</span> (+2) <span class="list-link">Hard Laborer</span> (+1)</u>
                                 </p>
                         </td>
                         <td>
@@ -198,8 +201,8 @@
                                     <b>Important For:</b><br><u>Ranged Weapons, Agility, AC, Stand Precision</u>
                                 </p>
                                 <p>
-                                    <b>Passion Increases:</b><br><u><span class="passion-link">Thief</span> (+2), 
-                                    <span class="passion-link">Artist</span> (+2), <span class="passion-link">Athlete</span> (+1) <span class="passion-link">Hard Laborer</span> (+1)</u>
+                                    <b>Passion Increases:</b><br><u><span class="list-link">Thief</span> (+2), 
+                                    <span class="list-link">Artist</span> (+2), <span class="list-link">Athlete</span> (+1) <span class="list-link">Hard Laborer</span> (+1)</u>
                                 </p>
                         </td>
                         <td>
@@ -211,9 +214,9 @@
                                     <b>Important For:</b><br><u>Maximum HP, AC, Stand Durability</u>
                                 </p>
                                 <p>
-                                    <b>Passion Increases:</b><br><u><span class="passion-link">Traveler</span> (+3), 
-                                    <span class="passion-link">Hard Laborer</span> (+2), 
-                                    <span class="passion-link">Survivalist</span> (+1), <span class="passion-link">Performer</span> (+1)</u>
+                                    <b>Passion Increases:</b><br><u><span class="list-link">Traveler</span> (+3), 
+                                    <span class="list-link">Hard Laborer</span> (+2), 
+                                    <span class="list-link">Survivalist</span> (+1), <span class="list-link">Performer</span> (+1)</u>
                                 </p>
                         </td>
                     </tr>
@@ -227,8 +230,8 @@
                                     <b>Important For:</b><br><u>Arcana Checks, Bonus Proficiencies, Stand Range</u>
                                 </p>
                                 <p>
-                                    <b>Passion Increases:</b><br><u><span class="passion-link">Academic</span> (+2),
-                                    <span class="passion-link">Physician</span> (+2), <span class="passion-link">Trained Laborer</span> (+1), <span class="passion-link">Artist</span> (+1)</u>
+                                    <b>Passion Increases:</b><br><u><span class="list-link">Academic</span> (+2),
+                                    <span class="list-link">Physician</span> (+2), <span class="list-link">Trained Laborer</span> (+1), <span class="list-link">Artist</span> (+1)</u>
                                 </p>
                         </td>
                         <td>
@@ -241,9 +244,9 @@
                                     <b>Important For:</b><br><u>Perception, AC, Stand Speed</u>
                                 </p>
                                 <p>
-                                    <b>Passion Increases:</b><br><u><span class="passion-link">Survivalist</span> (+2),
-                                    <span class="passion-link">Traveler</span> (+1), <span class="passion-link">Service Worker</span> (+1),
-                                    <span class="passion-link">Physician</span> (+1)</u>
+                                    <b>Passion Increases:</b><br><u><span class="list-link">Survivalist</span> (+2),
+                                    <span class="list-link">Traveler</span> (+1), <span class="list-link">Service Worker</span> (+1),
+                                    <span class="list-link">Physician</span> (+1)</u>
                                 </p>
                         </td>
                         <td>
@@ -255,13 +258,13 @@
                                     <b>Important For:</b><br><u>Social Skills, Stand Energy</u>
                                 </p>
                                 <p>
-                                    <b>Passion Increases:</b><br><u><span class="passion-link">Con Artist</span> (+2),
-                                    <span class="passion-link">Performer</span> (+2), <span class="passion-link">Service Worker</span> (+1), <span class="passion-link">Thief</span> (+1)</u>
+                                    <b>Passion Increases:</b><br><u><span class="list-link">Con Artist</span> (+2),
+                                    <span class="list-link">Performer</span> (+2), <span class="list-link">Service Worker</span> (+1), <span class="list-link">Thief</span> (+1)</u>
                                 </p>
                         </td>
                     </tr>
                 </tbody>
-            </table>
+            </table> -->
         </div>
     </body>
 

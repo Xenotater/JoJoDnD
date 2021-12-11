@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- admin page to view contacts -->
+<!-- admin page to view contacts through mysql -->
 <html lang="en">
     <head>
         <title>Admin | JoJo D&D</title>
