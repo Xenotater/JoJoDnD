@@ -92,7 +92,7 @@
     },
     "Immense_Resistance": {
         "name": "Immense Resistance",
-        "classes": ["Ult"],
+        "classes": ["Enh", "Ind"],
         "desc": [
             "Your Stand is incredibly resilient, a reflection of your willpower and experience.",
             "Rather than using the normal Damage Resistance formula, you may instead simply resist an amount of damage equal to your Durability Modifier + your Constitution Modifier (even if you are an Independent-Type Stand).",
