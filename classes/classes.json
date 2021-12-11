@@ -1076,7 +1076,7 @@
                 "aDice": ["1d8", "2d6"],
                 "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand’s Stats except Range. Your Stand’s Range may not be increased past 0.",
                 "mults": [3, 3, 4, 0,  3, 3],
-                "theme": "anubis",
+                "theme": "ff",
                 "level": {
                     "1": {
                         "pro": "2",
@@ -1398,7 +1398,7 @@
                             "pro": "2",
                             "feats": "2",
                             "abilDice": "1dx",
-                            "linkFeatures": ["First Ability", "Detached Senses (Acts 1 & 2)", "OR", "Slippery (Acts 1 & 2)"]
+                            "linkFeatures": ["Custom Ability", "Detached Senses (Acts 1 & 2)", "OR", "Slippery (Acts 1 & 2)"]
                         },
                         {
                             "lvl": "3",

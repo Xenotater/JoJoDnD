@@ -1,9 +1,4 @@
-#intro {
-    text-align: center;
-    margin: 0;
-}
-
-#statSum {
+/* #statSum {
     margin-top: 2.5rem;
     margin-left: auto;
     margin-right: auto;
@@ -54,70 +49,31 @@ span.passion-link {
 
 span.passion-link:hover {
     color: rgb(17, 0, 255);
+} */
+
+#list-table tbody {
+    max-height: 400px;
 }
 
-#list h2 {
-    border-bottom: 2px solid purple;
-    margin-bottom: 0;
-}
-
-#list {
-    padding: 0;
-    border-radius: 20px;
-    overflow-y: hidden;
-}
-
-#passion-table {
+#list-table tr {
+    display: table;
+    table-layout: fixed;
     width: 100%;
 }
 
 #name {
-    width: 60%;
+    width: 50%;
     padding: 5px;
     border-bottom: 2px solid black;
+    font-size: 1rem;
 }
 
 #stat {
-    width: 40%;
+    width: 50%;
     padding: 5px;
     border-left: 1px solid black;
     border-bottom: 2px solid black;
-}
-
-#passion-table tbody tr {
-    border-bottom: 1px solid black;
-}
-
-#passion-table tbody tr:last-child {
-    border-bottom: none;
-}
-
-#passion-table tbody td {
-    padding: 5px;
-    padding-left: 1rem;
-}
-
-.passion-list-link:hover {
-    cursor: pointer;
-    background-color: rgb(132, 97, 202);
-}
-
-.listCurrent {
-    background-color: rgb(115, 80, 185);
-}
-
-.listCurrent:hover {
-    background-color: rgb(99, 67, 161);
-}
-
-#display {
-    border-radius: 20px;
-    height: calc(100% - 4rem);
-    padding-bottom: 5px;
-    min-height: 540px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 1rem;
 }
 
 #box1, #box2 {
@@ -131,12 +87,8 @@ span.passion-link:hover {
     padding-left: 1rem;
 }
 
-.display-title {
-    margin-bottom: 1rem;
-}
-
-.display-heading {
-    margin-bottom: .5rem;
+#display.row {
+    --bs-gutter-x: 0; /* fixes width on mobile? */
 }
 
 #example-list {

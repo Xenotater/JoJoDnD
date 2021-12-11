@@ -9,52 +9,32 @@ $(document).ready(function() {
         c = "Stands";
         updateURL();
     }
-    if (c == "Stands" || $("#" + c).hasClass("stand-type")) {
-        console.log('hit');
-        $("#Stands").find(".dropdown").removeClass("bi-caret-down-fill");
-        $("#Stands").find(".dropdown").addClass("bi-caret-up-fill");
-        $(".stand-type").css("display", "block");
-    }
-    if (c == "Non-Supernatural" || $("#" + c).hasClass("non-super")) {
-        console.log('hit');
-        $("#Non-Supernatural").find(".dropdown").removeClass("bi-caret-down-fill");
-        $("#Non-Supernatural").find(".dropdown").addClass("bi-caret-up-fill");
-        $(".non-super").css("display", "block");
-    }
+    if (c == "Stands" || $("#" + c).hasClass("stand-type"))
+        drop("#Stands");
+    if (c == "Non-Supernatural" || $("#" + c).hasClass("non-super"))
+        drop("#Non-Supernatural");
 
     getData();
 
     $("#Stands").click(function() {
-        if (c == "Stands" || $(".listCurrent").hasClass("stand-type")) {
-            if ($(this).find(".dropdown").hasClass("bi-caret-up-fill")) {
-                $(this).find(".dropdown").removeClass("bi-caret-up-fill");
-                $(this).find(".dropdown").addClass("bi-caret-down-fill");
-                $(".stand-type").css("display", "none");
-            }
-            else if ($(this).find(".dropdown").hasClass("bi-caret-down-fill")) {
-                $(this).find(".dropdown").removeClass("bi-caret-down-fill");
-                $(this).find(".dropdown").addClass("bi-caret-up-fill");
-                $(".stand-type").css("display", "block");
-            }
+        if (c == "Stands") {
+            if ($(this).hasClass("dropped"))
+                hide("#Stands");
+            else
+                drop("#Stands");
         }
     });
 
     $("#Non-Supernatural").click(function() {
-        if (c == "Non-Supernatural" || $(".listCurrent").hasClass("non-super")) {
-            if ($(this).find(".dropdown").hasClass("bi-caret-up-fill")) {
-                $(this).find(".dropdown").removeClass("bi-caret-up-fill");
-                $(this).find(".dropdown").addClass("bi-caret-down-fill");
-                $(".non-super").css("display", "none");
-            }
-            else if ($(this).find(".dropdown").hasClass("bi-caret-down-fill")) {
-                $(this).find(".dropdown").removeClass("bi-caret-down-fill");
-                $(this).find(".dropdown").addClass("bi-caret-up-fill");
-                $(".non-super").css("display", "block");
-            }
+        if (c == "Non-Supernatural") {
+            if ($(this).hasClass("dropped"))
+                hide("#Non-Supernatural");
+            else
+                drop("#Non-Supernatural");
         }
     });
 
-    $(".class-link").click(function() {
+    $(".list-link").click(function() {
         c = $(this).attr("id");
         updateURL();
         updateDisplay();
@@ -76,8 +56,24 @@ function getData() {
     $("#display").html("<div class='loading'></div>");
 }
 
-function showTypes() {
-    $(".stand-type").css("display", "block");
+function drop(id) {
+    $(id).find(".dropdown").removeClass("bi-caret-down-fill");
+    $(id).find(".dropdown").addClass("bi-caret-up-fill");
+    if (id == "#Stands")
+        $(".stand-type").css("display", "block");
+    else
+        $(".non-super").css("display", "block");
+    $(id).addClass("dropped");
+}
+
+function hide(id) {
+    $(id).find(".dropdown").removeClass("bi-caret-up-fill");
+    $(id).find(".dropdown").addClass("bi-caret-down-fill");
+    if (id == "#Stands")
+        $(".stand-type").css("display", "none");
+    else
+        $(".non-super").css("display", "none");
+    $(id).removeClass("dropped");
 }
 
 function updateDisplay() {
@@ -90,7 +86,7 @@ function updateDisplay() {
     if ($("#" + c).hasClass("non-super"))
         clss = cData["Non-Supernatural"].types[c];
 
-    newContent += "<h2 class='display-title'>" + clss.name + "</h2><div class='class-img'><img src='Assets/" + c + ".png' alt='" + c + "'></div>";
+    newContent += "<h2 class='display-title'>" + clss.name + "</h2><div class='display-img'><img src='Assets/" + c + ".png' alt='" + c + "'></div>";
     if (clss.exampleOf != null) {
         newContent += "<p class='center'><small><b>Examples of " + clss.exampleOf + ": </b><i>";
         for (let i = 0; i < clss.examples.length; i++) {

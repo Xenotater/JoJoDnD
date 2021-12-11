@@ -11,7 +11,7 @@ $(document).ready(function () {
 
     getData();
 
-    $(".race-link").click(function () {
+    $(".list-link").click(function () {
         r = $(this).attr("id");
         updateURL();
         updateDisplay();
@@ -38,7 +38,7 @@ function updateDisplay() {
     var race = rData[r];
     var newContent = "";
 
-    newContent += "<h2 class='display-title'>" + race.name + "</h2><div class='race-img'><img class='img-fluid' src='Assets/" + r + ".png' alt='" + r + "'></div>";
+    newContent += "<h2 class='display-title'>" + race.name + "</h2><div class='display-img'><img class='img-fluid' src='Assets/" + r + ".png' alt='" + r + "'></div>";
     newContent += "<p class='center'><small><b>Examples of " + (race.name + 's').replace(/Mans$/g, "Men") + ": </b><i>";
     for (let i = 0; i < race.examples.length; i++) {
         newContent += "<a href='https://jojo.fandom.com/wiki/" + race.links[i] + "' target='_blank'>"  + race.examples[i] + "</a>";

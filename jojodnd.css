@@ -20,6 +20,12 @@ body {
     background-color: mediumpurple;
 }
 
+.header {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 0;
+}
+
 .container-fluid {
     padding: 0;
 }
@@ -129,8 +135,50 @@ h1, h2, h3, th {
     border-bottom: 2px dashed purple;
 }
 
-.scrollable {
-    overflow-y: scroll;
+#list {
+    position: sticky;
+    top: calc(90px + 2rem);
+    padding: 0;
+    overflow-y: hidden;
+}
+
+#list-table {
+    width: 100%;
+}
+
+#list-table thead tr {
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 2px solid purple;
+}
+
+#list-table tbody tr {
+    border-bottom: 2px solid black ;
+}
+
+#list-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+#list-table td {
+    padding: .5rem;
+}
+
+.list-link:hover {
+    cursor: pointer;
+    background-color: rgb(132, 97, 202);
+}
+
+#list-table .listCurrent {
+    background-color: rgb(115, 80, 185);
+}
+
+#list-table .listCurrent:hover {
+    background-color: rgb(99, 67, 161);
+}
+
+#display {
+    padding: 1.5rem;
 }
 
 .display-heading {
@@ -147,11 +195,25 @@ h1, h2, h3, th {
     margin-bottom: 1.5rem;
 }
 
+.display-img {
+    max-height: 400px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.display-img img {
+    max-height: inherit;
+    border: 3px solid purple;
+    border-radius: 30px;
+}
+
 .loading {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     width: 300px;
     height: 300px;
     border: 20px solid lightgray;
