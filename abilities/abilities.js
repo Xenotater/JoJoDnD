@@ -97,7 +97,7 @@ function updateList() {
         var classes = abil.classes;
         var races = abil.races;
 
-        var newContent = "<tr class='list-link' id='" + abil.name.replace(/ /g, "_") + "'><td>" + abil.name + "</td><td>";
+        var newContent = "<tr class='list-link' id='" + abil.name.replace(/[ -]/g, "_") + "'><td>" + abil.name + "</td><td>";
         for (let i = 0; i < abil.classes.length; i++) {
             newContent += abil.classes[i];
             if (i != abil.classes.length - 1)
