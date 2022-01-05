@@ -99,11 +99,145 @@
             "If you obtain the Armored Stand ability, it replaces this one."
         ]
     },
-    "Ultimate_Nature": {
-        "name": "Ultimate Nature",
-        "classes": ["Ult"],
+    "Oblivious_Facade": {
+        "name": "Oblivious Facade",
+        "classes": ["Rng", "Rmt", "Enh", "Ind", "Rev"],
         "desc": [
-            ""
+            "You’ve attempted to hide the fact that you’re a Stand User numerous times before. You know what works, and what doesn’t.",
+            "You get Advantage on Deception Checks to pass yourself off as a Non-Stand User."
+        ]
+    },
+    "Programmed_Stand": {
+        "name": "Programmed Stand",
+        "classes": ["Rmt"],
+        "desc": [
+            "Your Stand does not follow your command. Rather, you may set a simple program that your Stand must follow.",
+            "Examples include: preventing anybody from entering a specific building, using your ability on anyone who opens a door, attacking anyone who steps into a shadow, etc."
+        ]
+    },
+    "Remote_Grappler": {
+        "name": "Remote Grappler",
+        "classes": ["Rmt"],
+        "desc": [
+            "Your Stand is practiced in Grappling in order to engage in combat with somebody.",
+            "Your Stand now gets Advantage when attempting to grapple a Stand, Object, or Stand User. "
+        ]
+    },
+    "Second_Life": {
+        "name": "Second Life",
+        "classes": ["Rev"],
+        "desc": [
+            "This Ability Activates when you and your Stand die. Your body remains lifeless for between 1 minute and 24 hours. At some point within this timeframe, your Stand reawakens as an Independent-Type Stand, complete with your mental capacity and memories.",
+            "You retain all of your Experience Points, but all of your Health, <a href='/feats'>Feats</a>, Proficiencies and Abilities are reset. This effectively means you may make a higher level character, so long as it retains the same memories you had in your first life."
+        ]
+    },
+    "Self_Repair": {
+        "name": "Self-Repair",
+        "classes": ["Ind"],
+        "desc": [
+            "Your Stand (which may be yourself) acts independently of everything else. It does not have a physical form outside of the form that it has taken. As such, you must find a way to protect yourself and survive.",
+            "As an Action, you may roll a Hit Die to heal, but you must spend 2 Hit Dice in order to roll one Hit Die. If you do not have enough Hit Dice for that roll, you may not heal.",
+            "Outside of Combat, every minute that you stand perfectly still, you may heal an amount of HP equal to your Durability Modifier."
+        ]
+    },
+    "Self_Acclimation": {
+        "name": "Self-Acclimation",
+        "classes": ["Abl"],
+        "desc": [
+            "You’ve spent so much time manipulating certain elements that you've gained Immunity to one damage type. This Immunity should relate to your Stand Ability in some way. For example, <a href='https://jojo.fandom.com/wiki/Ghiaccio' target='_blank'>Ghiaccio</a>’s Cold Immunity. You also gain Immunity to that type's Stand counterpart.",
+            "<a href='/races/?focus=Pillar_Man'>Pillar Men</a>, and <a href='/abilities/?focus=Undead_Nature'>Undead</a> of all kinds cannot choose Radiant as the damage type for which they are immune."
+        ]
+    },
+    "Silent_Movement": {
+        "name": "Silent Movement",
+        "classes": ["Rng", "Act"],
+        "desc": [
+            "Through experience you've gained better control of your Stand, allowing you to move your Stand extremely carefully to ensure that the only way that your Stand may be detected is when it is seen.",
+            "Your Stand's movement is silent. When it moves in an attempt to evade detection, they may roll Stealth with Advantage."
+        ]
+    },
+    "Slippery": {
+        "name": "Slippery",
+        "classes": ["Rng", "Abl", "Act"],
+        "desc": [
+            "Your Stand has the ability to defend you and let you escape from very dangerous situations with relative ease.",
+            "When your Stand is within 2 Meters of you, you may Disengage or Hide as a Bonus Action."
+        ]
+    },
+    "Special_Ability": {
+        "name": "Special Ability",
+        "classes": ["Pwr", "Rng", "Rmt", "Abl", "Enh", "Ind", "Rev", "Hive"],
+        "desc": [
+            "These are powers that use the same concept of the regular <a href='/abilities/?focus=Custom_Ability'>Custom Ability</a>, but taken to a whole new level. These abilities have immense strength, but at a higher cost (usually twice the Stand Energy).",
+            "Special Abilities are usually 1 bracket of Die stronger than the ability would be normally (d4 would become d6, d6 would become d8, etc.). They also take more time to perform. Usually, but not always, taking a Full Action to perform.",
+            "Examples of Special Abilities are <a href='https://jojo.fandom.com/wiki/The_World' target='_blank'>The World</a>’s The World, <a href='https://jojo.fandom.com/wiki/King_Crimson' target='_blank'>King Crimson</a>’s Time Deletion, or <a href='https://jojo.fandom.com/wiki/Weather_Report_(Stand)' target='_blank'>Weather Report</a>’s Heavy Weather.",
+            "A Special Ability might also be a passive ability that functions independently of activation, or one that may be activated or deactivated at will. Passive Abilities consume 2 Stand Energy at the Start of the Stand User’s Turn, and also take their Bonus Action to perform. If you are unable to use your Bonus Action, or you do not have enough Stand Energy remaining, the ability simply stops functioning. "
+        ]
+    },
+    "Second_Ability": {
+        "name": "Second Ability",
+        "classes": ["Act"],
+        "desc": [
+            "Your Stand has undergone an evolution, and has gained a new Ability alongside its new form.",
+            "This Ability should be an evelotion of your first Ability. Similar, but stronger or more versatile.",
+            "This Ability follows the same guidelines as any other <a href='/abilities/?focus=Custom_Ability'>Custom Ability</a>."
+        ]
+    },
+    "Third Ability": {
+        "name": "Third Ability",
+        "classes": ["Act"],
+        "desc": [
+            "Your Stand has undergone another evolution, and has gained a new Ability alongside its new form.",
+            "This Ability should be an evelotion of your second Ability. Similar, but stronger or more versatile.",
+            "This Ability follows the same guidelines as any other <a href='/abilities/?focus=Custom_Ability'>Custom Ability</a>."
+        ]
+    },
+    "Speedy_Movement": {
+        "name": "Speedy Movement",
+        "classes": ["Rng", "Act"],
+        "desc": [
+            "Through experience you've built up the movement speed of your Stand. At any time, as a Reaction, you may call your Stand back to you, allowing it to come back and defend you or perform any action requiring your Stand to be near you, up to its Movement Speed.",
+            "This also means that your AC may be increased to your Stand’s AC if it is able to return to you. However, if it passes through the Melee Range of a Stand or Creature that can sense it while returning to you, the Stand or Creature may make an Opportunity Attack against your Stand."
+        ]
+    },
+    "Split_Stand": {
+        "name": "Split Stand",
+        "classes": ["Hive"],
+        "desc": [
+            "As a Hive Type Stand User, your Stand functions very differently than a typical Stand. Rather than a Stand being an extension of your will to fight, each Instance of your Stand is like a separate organism that simply must follow your orders.",
+            "Each Instance of your Stand only has a fraction of the Power of a regular Stand, but each Instance may act independently of the others or the Stand User. If one Instance is totally destroyed, that fraction of the User’s Health is taken away. For example, if you have 12 Instances of your Stand and one gets destroyed you'll take damage equal to your maximum health divided by 12.",
+            "If every Instance of your Stand is destroyed, you die instantly. If your health is restored, so are your Stand Instances. Even when you fall unconscious, one instance will remain. Only when you die is that Instance destroyed."
+        ]
+    },
+    "Stand_Pickpocketing": {
+        "name": "Stand Pickpocketing",
+        "classes": ["Rng", "Act"],
+        "desc": [
+            "Through trial and error you’ve gained the ability to slip objects from the grasp of other people using your Stand. From now on, you have Advantage when making Sleight of Hand checks using your Stand."
+        ]
+    },
+    "Two_Modes": {
+        "name": "Two Modes",
+        "classes": ["Rmt"],
+        "desc": [
+            "Interestingly, you have somehow gained power over your Stand, despite how incredibly volatile Remote Stands can be. At any time, as an Attack, you may switch to or from Ranged Mode.",
+            "In Ranged Mode, Remote Stands may function as any other Stand does, in that they may be controlled by the user’s will, and can follow specific commands. However, while in Ranged Mode, you may not use your Stand Ability. If your Stand has Stand Marking active, that also deactivates upon changing to Ranged Mode. Your Stand's stats do not change upon switching modes."
+        ]
+    },
+    "Ultimate_Stand_Ability": {
+        "name": "Ultimate Stand Ability",
+        "classes": ["Abl"],
+        "desc": [
+            "This ability is something that very few Stands or Stand users are able to get to. It’s an incredibly powerful ability that uses a lot of your Stand’s Energy. This Ability costs 5 Stand Energy, and this SE cost cannot be reduced.",
+            "An example of an Ultimate Stand Ability is <a href='https://jojo.fandom.com/wiki/White_Album' target='_blank'>White Album</a>’s Gently Weeps."
+        ]
+    },
+    "Unconscious_Control": {
+        "name": "Unconscious Control",
+        "classes": ["Rev"],
+        "desc": [
+            "You and your Stand have different health pools. When your HP reaches 0, your Stand may continue to function, but NOT vice versa.",
+            "However, if either of them are killed, the other is killed as well."
         ]
     }
 }
