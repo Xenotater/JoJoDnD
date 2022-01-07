@@ -428,8 +428,8 @@
         "name": "Toxin Resistance",
         "desc": "Through training and patience alongside incremental exposure, you have made your body resistant to almost all toxins.",
         "effects": [
-            "You gain complete Immunity to poisons or toxins ingested (up to 1/4 Liter every 24 hours), and the Poisoned Condition.",
-            "You gain advantage on all Constitution saving throws made against venoms, breathable toxins, and acids.",
+            "You gain complete Immunity to poisons or toxins ingested (up to 1/4 Liter every 24 hours), and the Poisoned condition.",
+            "You gain Advantage on all Constitution Saving Throws made against venoms, breathable toxins, and acids.",
             "You gain Resistance to Poison and Acid damage."
         ]
     },
