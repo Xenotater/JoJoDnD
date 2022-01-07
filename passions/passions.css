@@ -87,10 +87,6 @@ span.passion-link:hover {
     padding-left: 1rem;
 }
 
-#display.row {
-    --bs-gutter-x: 0; /* fixes width on mobile? */
-}
-
 #example-list {
     margin-bottom: 0;
 }
