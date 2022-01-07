@@ -183,7 +183,7 @@
             "This Ability follows the same guidelines as any other <a href='/abilities/?focus=Custom_Ability'>Custom Ability</a>."
         ]
     },
-    "Third Ability": {
+    "Third_Ability": {
         "name": "Third Ability",
         "classes": ["Act"],
         "desc": [
