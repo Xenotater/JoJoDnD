@@ -35,12 +35,7 @@ $(document).ready(function () {
                 btn.removeClass("bi-caret-down");
                 btn.addClass("bi-caret-down-fill");
 
-                if (id.includes("class"))
-                    sortType = "cls";
-                else
-                    sortType = "name";
                 reverse = true;
-                updateList();
             }
         }
         else {
@@ -51,14 +46,15 @@ $(document).ready(function () {
                 btn.removeClass("bi-caret-up");
                 btn.addClass("bi-caret-up-fill");
 
-                if (id.includes("class"))
-                    sortType = "cls";
-                else
-                    sortType = "name";
                 reverse = false;
-                updateList();
             }
         }
+
+        if (id.includes("class"))
+            sortType = "classes";
+        else
+            sortType = "name";
+        updateList();
     });
 });
 
@@ -73,7 +69,6 @@ function getData(q) {
             a = "Anchored_Stand";
         for (var key of Object.keys(aData))
             abilities.push([key, aData[key]]);
-        // abilities = Object.keys(aData);
         updateList();
         updateDisplay();
 
@@ -89,9 +84,11 @@ function getData(q) {
 
 function updateList() {
     $(".simplebar-content").html("");
+    
     sort();
     if (reverse)
         abilities.reverse();
+
     for (let i = 0; i < abilities.length; i++) {
         var abil = aData[abilities[i][0]];
         var classes = abil.classes;
