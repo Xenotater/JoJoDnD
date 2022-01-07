@@ -161,7 +161,7 @@
         "classes": ["Rng", "Abl", "Act"],
         "desc": [
             "Your Stand has the ability to defend you and let you escape from very dangerous situations with relative ease.",
-            "When your Stand is within 2 Meters of you, you may Disengage or Hide as a Bonus Action."
+            "When your Stand is within 2 meters of you, you may Disengage or Hide as a Bonus Action."
         ]
     },
     "Special_Ability": {
@@ -297,7 +297,7 @@
         "name": "Melee Barrage",
         "classes": ["Pwr", "Rng", "Ind", "Act"],
         "desc": [
-            "As an entire turn (meaning that your Action, Bonus Action, Movement Action, and Reaction are all used, and if you have used any part of your turn, you may not use Melee Barrage), you may perform a number of melee attacks equal to your Stand’s Speed Modifier (+6 Speed would mean 6 attacks in one Melee Barrage), with a maximum of 10 Attacks.",
+            "As an entire turn (meaning that your Action, Bonus Action, Movement Action, and Reaction are all used, and if you have used any part of your turn you may not use Melee Barrage), you may perform a number of melee attacks equal to your Stand’s Speed Modifier (+6 Speed would mean 6 attacks in one Melee Barrage), with a maximum of 10 Attacks.",
             "Each hit functions as normal in terms of the Attack rolls, but when you deal damage, you do not add your Stand’s Power Modifier to the Damage Rolls. The Damage Dice for these attacks does NOT increase at level 11 (A Power Type's Damage Dice changes from 1d12 to 2d10 at level 11, but the maximum for this ability would still be 10d12).",
             "Furthermore, you may not Activate a Stand Ability with any of these Attacks, and if you roll a 1 on any of these attack rolls, the Melee Barrage ends."
         ]
@@ -352,8 +352,8 @@
         "desc": [
             "Destructive energy is summoned from deep within your Stand and somehow released in a direction with the intent to harm or deal damage. As an Attack, your stand fires one or more projectiles, using your Stand’s Precision + Proficiency Bonus for the Attack rolls and adding your Speed Modifier to the damage dealt on a hit.",
             "You may choose between three Damage Dice regarding your Ranged Attack, but the higher the damage, the less accurate it will be. Once you have chosen an option it remains the same every time you use it, unless you choose to change it when leveling up.<ul class='sublist'><li>Your Damage Dice is a d6, and you may add your Proficieincy Bonus twice to the Attack roll</li><li>Your Damage Dice is a d8, and you may add your Proficiency Bonus to the Attack roll</li><li>Your Damage Dice is a d10, but you may not add anything to the Attack roll</li></ul>",
-            "This Attack has a Short-Range of 10 Meters from the Stand, with a Long-Range of 20 Meters from the Stand. It can deal Stand Piercing, Stand Slashing, Stand Bludgeoning, or a different kind of damage, if it relates to your Stand or your Stand’s Abilities.",
-            "Whenever your Attack Dice improves at level 11, this Attack’s Short-Range increases to 20 Meters and the Long-Range increases to 40 Meters, and you get an additional Damage Dice equal to the one you chose for your Damage previously (Example: 1d8 becomes 2d8)."
+            "This Attack has a Short-Range of 10 meters from the Stand, with a Long-Range of 20 meters from the Stand. It can deal Stand Piercing, Stand Slashing, Stand Bludgeoning, or a different kind of damage, if it relates to your Stand or your Stand’s Abilities.",
+            "Whenever your Attack Dice improves at level 11, this Attack’s Short-Range increases to 20 meters and the Long-Range increases to 40 meters, and you get an additional Damage Dice equal to the one you chose for your Damage previously (Example: 1d8 becomes 2d8)."
         ]
     },
     "Self_Preservation": {
@@ -381,7 +381,7 @@
         "name": "Stand Leap",
         "classes": ["Pwr", "Act"],
         "desc": [
-            "At the cost of 5 Meters of your Movement Action your Stand may punch or kick against a strong, rigid surface in order to propel both the Stand and User into the air. This can be done straight up, horizontally, or at an angle somewhere in between.",
+            "At the cost of 5 meters of your Movement Action your Stand may punch or kick against a strong, rigid surface in order to propel both the Stand and User into the air. This can be done straight up, horizontally, or at an angle somewhere in between.",
             "The Stand User can move an amount of meters equal to their Stand’s Power Modifier in any direction midair. Also, as a Reaction, you can negate all Fall Damage."
         ]
     },
@@ -391,7 +391,7 @@
         "desc": [
             "As an Action, you may \"Mark\" a specific object or person with your Stand, so long as the target is within your Stand’s Range and activates a specific, predetermined trigger at some point.",
             "When a person or object is \"Marked\" your Stand automatically follows them, affecting them with their ability. This effect continues until you recall your Stand back to you, you are killed, or the object/person that is Marked is destroyed/killed.",
-            "When something is Marked by your Stand, the amount of Meters that your Stand is active within is equal to your Stand’s Range Score (not Modifier). If the object or person leaves your Range your Stand returns to you, but may instantly jump back to the object if the object/person reenters the range of your Stand Marking."
+            "When something is Marked by your Stand, the amount of meters that your Stand is active within is equal to your Stand’s Range Score (not Modifier). If the object or person leaves your Range your Stand returns to you, but may instantly jump back to the object if the object/person reenters the range of your Stand Marking."
         ]
     },
     "Stand_Rush": {
@@ -400,6 +400,145 @@
         "desc": [
             "When your enemy or your enemy’s Stand has been incapacitated, restrained, or unwilling to fight for a full turn or more while in your Stand’s Melee Range, you may perform this action. You may also start this action for free when you drop someone to 0 Hit Points using some sort of Melee Attack with your Stand.",
             "A Stand Rush takes an entire turn, but if desired, may go on for a maximum of 10 turns. Through this action, your Stand may punch an amount of times equal to your Stand’s Speed Modifier. You may choose whether or not to make this attack lethal. When trapped within a Stand Rush, no actions can be taken."
+        ]
+    },
+    "Healing_Hands": {
+        "name": "Healing Hands",
+        "classes": ["Rip"],
+        "desc": [
+            "As an Action, you may touch an Unconcious (but still living) creature, and restore them to 1 Hit Point."
+        ]
+    },
+    "Healing_Ripple": {
+        "name": "Healing Ripple",
+        "classes": ["Rip"],
+        "desc": [
+            "As an Action, you may spend 1 Ripple Point and touch somebody else or yourself to heal 1d4 + your Constitution Modifier points of damage. You may spend additional Ripple Points to add additional d4s, but you may only add the Modifier once."
+        ]
+    },
+    "Ripple_Shield": {
+        "name": "Ripple Shield",
+        "classes": ["Rip"],
+        "desc": [
+            "As an Action, if there are enough materials nearby to use it. This action costs 5 ripple points. You are able to take any Ripple conductor and hold it together using the Ripple.",
+            "This Shield gives you and anyone within 1 meter of you an amount of  additional AC equal to your Constitution Modifier. It lasts until the start of your next turn, and may be sustained for as long as you would prefer, with a Ripple Point cost of 1 per turn. However, if you do this, you may not perform any kind of Action outside of Free Actions."
+        ]
+    },
+    "Life_Magnet": {
+        "name": "Life Magnet",
+        "classes": ["Rip"],
+        "desc": [
+            "When finding a collection of significant biomass, as an Action, you may spend 5 Ripple Points to collect up to 1 Metric ton of it together and manipulate it in any way you’d like.",
+            "Examples of biomass manipulation include creating a leaf glider, creating a hole in a tree to hide in, or using blades of grass to create skin tight armor.",
+            "Each additional turn of manipulation costs 1 Ripple Point. You may move while Life Magnet is being used, but if you stop touching the biomass the structure falls apart. The Structure has an amount of Hit Points equal three times your Level in The Ripple and has an AC equal to your Ripple DC."
+        ]
+    },
+    "Extreme_Healing_Ripple": {
+        "name": "Extreme Healing Ripple",
+        "classes": ["Rip"],
+        "desc": [
+            "As an Action, you may use as many Ripple Points as you would like and touch somebody, healing 1d8 + your Constitution Modifier Hit Points for every 2 Ripple Points consumed."
+        ]
+    },
+    "Deep_Pass_Overdrive": {
+        "name": "Deep Pass Overdrive",
+        "classes": ["Rip"],
+        "desc": [
+            "As an Action, you may spend 15 Ripple Points and touch a creature nearby. After performing this action, your Ripple level drops to 0, you lose 1d10 Maximum Health every turn from now on, and your Strength, Dexterity, and Constitution Scores all drop to 3.",
+            "Your target, however, gets a permanent boost of +2 in their Strength, Dexterity, and Constitution scores, as well as another +3 in either Strength, Constitution, or Dexterity. They also gain 3 points of Inspiration, as well as all of the Inspiration that you had, and they get Advantage on all rolls involving a d20 for the next 10 minutes."
+        ]
+    },
+    "Ripple_Regeneration": {
+        "name": "Ripple Regeneration",
+        "classes": ["Rip"],
+        "desc": [
+            "You gain an amount of Hit Points equal to your Constitution Modifier back at the start of every turn, when you are conscious."
+        ]
+    },
+    "Toxin_Expulsion": {
+        "name": "Toxin Expulsion",
+        "classes": ["Rip"],
+        "desc": [
+            "Your blood moves and sends energy through your body. Foreign, harmful substances are detected and removed from the body automatically through the point of entry (venom exists through the injection site, poison is immediately spit up completely, etc.).",
+            "You are now immune to toxins of all sorts, including diseases. You gain Immunity to Poison and Acid damage."
+        ]
+    },
+    "Liquid_Solidification": {
+        "name": "Liquid Solidification",
+        "classes": ["Rip"],
+        "desc": [
+            "Ripple is an art made to fight against the Undead. However, as time continued, many other uses were discovered for it, such as regenerative and defensive abilities as well as changing the properties of physical objects.",
+            "The waves of energy produced by the Ripple may force the surface tension of the water to form a tangible, solid \"skin\" over it. This \"skin\" may be used for a variety of purposes, such as holding water without using a container, blocking water from moving, or even walking on water. Activating such an ability takes a Bonus Action, and it costs 2 Ripple Points each round."
+        ]
+    },
+    "Rippling_Weapon": {
+        "name": "Rippling Weapon",
+        "classes": ["Rip"],
+        "desc": [
+            "As a Bonus Action, you may spend 2 Ripple Points to imbue a melee weapon (or an Unarmed Strike) with The Ripple. When you make a Rippling Weapon, it deals additional Radiant damage equal to twice your Unarmed Attack Dice (if you had 1d6 as your Unarmed Attack damage, you may deal an additional 2d6 Radiant Damage on your next successful strike with the Weapon). The extra damage goes away if you hit something with the weapon, or if your turn ends."
+        ]
+    },
+    "Ripple_Pressure": {
+        "name": "Ripple Pressure",
+        "classes": ["Rip"],
+        "desc": [
+            "This action takes one turn to perform, but may be charged for longer than that, with a cost of 1 Ripple Point per turn. Ripple Pressure is a technique that continuously channels Ripple Energy into an airtight container, which builds up pressure. When the container cannot take it anymore, something gives, and the contents of this container burst out.",
+            "For every turn that the container has Ripple put into it, it deals 1d6 more Radiant damage, with a maximum of 8d6 in any one container. You may release it as a Reaction, creating a 5 meter cone of damage. Those caught inside of the cone must make a Dexterity Saving Throw, taking half damage on a Successful Save."
+        ]
+    },
+    "Zoom_Punch": {
+        "name": "Zoom Punch",
+        "classes": ["Rip"],
+        "desc": [
+            "As an Attack, you may spend 2 Ripple Points and make an Unarmed Strike. This punch deals additional Radiant damage equal to your Unarmed Damage Dice and gives you an Additional meter of Range for that attack."
+        ]
+    },
+    "Sunlight_Yellow_Overdrive": {
+        "name": "Sunlight Yellow Overdrive",
+        "classes": ["Rip"],
+        "desc": [
+            "As an entire turn (meaning that your Action, Bonus Action, Movement Action, and Reaction are all used, and if you have used any part of your turn you may not use this ability), you may spend 4 Ripple Points and make a number of Unarmed Attacks equal to your Constitution Modifier. You may choose whether or not to make this attack lethal."
+        ]
+    },
+    "Sendo_Overdrive": {
+        "name": "Sendo Overdrive",
+        "classes": ["Rip"],
+        "desc": [
+            "As an Attack, and at the cost of 3 Ripple Points, your mastery of The Ripple allows you to affect objects from a distance. By carefully aiming, you can influence matter at a distance so long as there is a proper conduit.",
+            "Proper conduits include liquids, metals, or organisms, and these have a range of roughly 10 meters. Sendo may also be sent through an improper conduit, but doing this reduces the effective range down to 2 meters. Sendo Overdrive, if aimed at a target, deals an additional amount of Radiant damage equal to what your Unarmed Attacks deal."
+        ]
+    },
+    "Scarlet_Overdrive": {
+        "name": "Scarlet_Overdrive",
+        "classes": ["Rip"],
+        "desc": [
+            "As an Attack that costs 4 Ripple Points, you may harness the power of the sun within the beat of your own blood and form a new kind of Ripple: a Ripple of flame.",
+            "You may make an Unarmed Strike as normal, dealing an additional amount of Fire damage equal to twice the damage dealt by an Unarmed Strike if it lands. For example, an Unarmed Strike that would deal 1d10 + 3 Damage would add 2d10 + 6 Fire damage."
+        ]
+    },
+    "Ripple_Cutter": {
+        "name": "Ripple Cutter",
+        "classes": ["Rip"],
+        "desc": [
+            "As an Attack, at the cost of 4 Ripple Points, you are able to take any Ripple conductor (liquids, metals, organic material) and split it apart, propelling it through the air and imbuing it with Ripple energy.",
+            "The range on the Attack is a 5 meter cone in any one direction. Targets must make a Dexterity saving throw, taking 4d10 Slashing damage or half as much on a successful save."
+        ]
+    },
+    "Ionic_Rippling": {
+        "name": "Ionic Rippling",
+        "classes": ["Rip"],
+        "desc": [
+            "Your Ripple has progressed, and become more powerful. It is now able to affect energy-based abilities and interact with any form of energy, including warping light itself.",
+            "You may use this to create illusions, warping the path of light and making objects look like they are in different locations than where they actually are. You cannot, however, attack or affect Stands using this ability."
+        ]
+    },
+    "Custom_Ripple_Technique": {
+        "name": "Custom Ripple Technique",
+        "classes": ["Rip"],
+        "desc": [
+            "Through countless hours spent training in the ancient art of The Ripple, you’ve created a fighting style or ability that is unique to you, and you alone.",
+            "Examples of this are <a href='https://jojo.fandom.com/wiki/Tonpetty'>Tompetty</a>’s Future Sight, <a href='https://jojo.fandom.com/wiki/Dire'>Dire</a>'s Thunder Cross Split Attack, and <a href='https://jojo.fandom.com/wiki/Caesar_Anthonio_Zeppeli'>Caesar</a>’s Bubble Launcher.",
+            "Talk to your DM to determine the function and details of this Technique."
         ]
     }
 }
