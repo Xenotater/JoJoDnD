@@ -36,7 +36,7 @@
             "2": {
                 "pro": "2",
                 "feats": "2",
-                "linkFeatures": ["Healing Ripple", "Rippling Weapons"],
+                "linkFeatures": ["Healing Ripple", "Rippling Weapon"],
                 "ability": ["Increase Str, Dex, or Con Score by 1"]
             },
             "3": {
@@ -93,7 +93,7 @@
             "12": {
                 "pro": "4",
                 "feats": "4",
-                "linkFeatures": ["Thunder Cross Split Attack", "OR", "Life Magnet", "OR", "Extreme Healing Ripple"],
+                "linkFeatures": ["Life Magnet", "OR", "Extreme Healing Ripple"],
                 "ability": ["Increase Str, Dex, or Con Score by 1"]
             },
             "13": {
