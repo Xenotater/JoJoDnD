@@ -13,7 +13,7 @@
         "classes": ["Pwr", "Rng", "Enh", "Rev", "Ind"],
         "desc": [
             "The amount of damage that your Stand can reduce per round is doubled.",
-            "This ability replaces Immense Resistance, if you have it."
+            "This ability replaces <a href='/abilities/?focus=Immense_Resistance'>Immense Resistance</a>, if you have it."
         ]
     },
     "Complete_Control": {
@@ -96,7 +96,7 @@
         "desc": [
             "Your Stand is incredibly resilient, a reflection of your willpower and experience.",
             "Rather than using the normal Damage Resistance formula, you may instead simply resist an amount of damage equal to your Durability Modifier + your Constitution Modifier (even if you are an Independent-Type Stand).",
-            "If you obtain the Armored Stand ability, it replaces this one."
+            "If you obtain the <a href='/abilities/?focus=Armored_Stand'>Armored Stand</a> ability, it replaces this one."
         ]
     },
     "Oblivious_Facade": {
@@ -221,7 +221,7 @@
         "classes": ["Rmt"],
         "desc": [
             "Interestingly, you have somehow gained power over your Stand, despite how incredibly volatile Remote Stands can be. At any time, as an Attack, you may switch to or from Ranged Mode.",
-            "In Ranged Mode, Remote Stands may function as any other Stand does, in that they may be controlled by the user’s will, and can follow specific commands. However, while in Ranged Mode, you may not use your Stand Ability. If your Stand has Stand Marking active, that also deactivates upon changing to Ranged Mode. Your Stand's stats do not change upon switching modes."
+            "In Ranged Mode, Remote Stands may function as any other Stand does, in that they may be controlled by the user’s will, and can follow specific commands. However, while in Ranged Mode, you may not use your Stand Ability. If your Stand has <a href='/abilities/?focus=Stand_Marking'>Stand Marking</a> active, that also deactivates upon changing to Ranged Mode. Your Stand's stats do not change upon switching modes."
         ]
     },
     "Ultimate_Stand_Ability": {
@@ -238,6 +238,168 @@
         "desc": [
             "You and your Stand have different health pools. When your HP reaches 0, your Stand may continue to function, but NOT vice versa.",
             "However, if either of them are killed, the other is killed as well."
+        ]
+    },
+    "Block_Physical_Projectile": {
+        "name": "Block Physical Projectile",
+        "classes": ["Pwr", "Act"],
+        "desc": [
+            "When a physical projectile (bullet, arrow, thrown object, etc.) lands a Direct Hit, you may roll 1d6 as a Reaction and add your Stand’s Precision Modifier. If the result is higher than the damage that the projectile would deal, you may instead catch or block the projectile and take no damage."
+        ]
+    },
+    "Block_Stand_Projectile": {
+        "name": "Block Stand Projectile",
+        "classes": ["Pwr", "Act"],
+        "desc": [
+            "When a Stand-based projectile or group of projectiles such as a <a href='/abilities/?focus=Ranged_Attack'>Ranged Attack</a> (<a href='https://jojo.fandom.com/wiki/Heirophant_Green' target='_blank'>Heirophant Green</a>'s Emerald Splash, <a href='https://jojo.fandom.com/wiki/Foo_Fighters' target='_blank'>Foo Fighters</a>’ bullets, <a href='https://jojo.fandom.com/wiki/Tusk' target='_blank'>Tusk</a>’s Nails) lands a Stand Hit or Direct Hit, you may roll 1d6 as a Reaction and add your Stand’s Precision Modifier. If the result is higher than the damage that the projectile would deal you may instead catch or block the projectile and take no damage."
+        ]
+    },
+    "Counterattacking_Blow": {
+        "name": "Counterattacking Blow",
+        "classes": ["Pwr"],
+        "desc": [
+            "As an Action you may set up a Counterattacking Blow. When somebody enters your Stand’s Range (if your Stand is within its movement speed), or at any time when your Target is within your Melee Range, you may make an Attack with Advantage as a Reaction. If the attack hits you may roll twice as many Damage Dice."
+        ]
+    },
+    "Camouflage": {
+        "name": "Camouflage",
+        "classes": ["Enh"],
+        "desc": [
+            "As an Action you may perfectly disguise your Stand, making it difficult for others to tell where or what your Stand is (for example, <a href='https://jojo.fandom.com/wiki/High_Priestess' target='_blank'>High Priestess</a> disguising as a metal object, or <a href='https://jojo.fandom.com/wiki/Wheel_of_Fortune' target='_blank'>Wheel of Fortune</a> shifting to look like a normal car).",
+            "This disguise allows your Stand to perform surprise attacks if opponents do not take note. Anyone attempting to determine what your Stand is disguised as has Disadvantage on the roll, as long as your Stand does not move."
+        ]
+    },
+    "Defensive_Ability": {
+        "name": "Defensive Ability",
+        "classes": ["Abl", "Ind"],
+        "desc": [
+            "Through clever use of your Stand's Ability you’ve found a way to properly defend yourself. As an Action, you may spend 2 Stand Energy and gain one of the following benefits for 3 turns (not including the one that you activate it on). You may only have one of the following buffs active at a time.<ul class='sublist'><li>+2d4 AC (Both for Stand and User)</li><li>Advantage on all Saving Throws</li><li>An amount of Temporary Hit Points equal to twice your Level</li></ul>"
+        ]
+    },
+    "Defensive_Wave": {
+        "name": "Defensive Wave",
+        "classes": ["Hive"],
+        "desc": [
+            "As an Action, you may give yourself a buff that remains active until the start of your next turn. Your Stand is a bunch of little instances that can hold themselves together in order to form a shield in order to protect their User.",
+            "When this Shield is active, any Stand Hits count as a Miss. You or your Stand may not use your Movement Actions until your next turn. If you had already moved this turn, you may not activate this Action."
+        ]
+    },
+    "Feat_of_Power": {
+        "name": "Feat of Power",
+        "classes": ["Pwr", "Rev", "Act"],
+        "desc": [
+            "As an Action, you may use your Stand to perform a great act of physical strength. You may lift an object as heavy as your Power Score multiplied by 50 in Kilograms. You may also use this ability to crush objects, break down walls, throw something, or perform any other act of great strength upon an object.",
+            "You may also use this ability to jump an amount of meters equal to your Stand’s Power Score. You take 1 Bludgeoning Damage for every meter propelled when you stop moving and hit something. If you have something to cushion your fall or use Stand Leap,  then you do not take damage.",
+            "This ability may not be used as an attack against a Creature, Undead, or Construct that does not wish to be manipulated by your Stand, unless they are Unconscious."
+        ]
+    },
+    "Melee_Barrage": {
+        "name": "Melee Barrage",
+        "classes": ["Pwr", "Rng", "Ind", "Act"],
+        "desc": [
+            "As an entire turn (meaning that your Action, Bonus Action, Movement Action, and Reaction are all used, and if you have used any part of your turn, you may not use Melee Barrage), you may perform a number of melee attacks equal to your Stand’s Speed Modifier (+6 Speed would mean 6 attacks in one Melee Barrage), with a maximum of 10 Attacks.",
+            "Each hit functions as normal in terms of the Attack rolls, but when you deal damage, you do not add your Stand’s Power Modifier to the Damage Rolls. The Damage Dice for these attacks does NOT increase at level 11 (A Power Type's Damage Dice changes from 1d12 to 2d10 at level 11, but the maximum for this ability would still be 10d12).",
+            "Furthermore, you may not Activate a Stand Ability with any of these Attacks, and if you roll a 1 on any of these attack rolls, the Melee Barrage ends."
+        ]
+    },
+    "Mobile_Ability": {
+        "name": "Mobile Ability",
+        "classes": ["Abl", "Ind"],
+        "desc": [
+            "Through clever use of your Stand's Ability you’ve found a way to use your ability to propel yourself, or boost your movement in some way. As an Action, you may spend 2 Stand Energy and gain one of the following benefits for 3 turns (not including the one that you activate it on). You may only have one of the following buffs active at a time.<ul class='sublist'><li>Gain 5 meters of movement speed per turn</li><li>You may make an additional Attack per Attack Action</li><li>You may use your Bonus Action twice per turn</li></ul>"
+        ]
+    },
+    "Mobile_Wave": {
+        "name": "Mobile Wave",
+        "classes": ["Hive"],
+        "desc": [
+            "The individual instances of your Stand may work as a collective, with the purpose of moving you to one place extremely quickly. As an Action, you and your Stand may be transported to the same place, up to an amount of meters equal to twice your Stand’s Movement Speed, without consuming your Movement Action. You may also climb, move through water, or across Difficult Terrain without penalty to your movement."
+        ]
+    },
+    "Near_Death_Escape": {
+        "name": "Near-Death Escape",
+        "classes": ["Rev"],
+        "desc": [
+            "When your HP is half of your maximum or less, you may trigger this Ability as a Bonus Action. Until you either stop moving or attack something you may move at twice the speed you would be able to normally, and you gain Advantage on all Acrobatics, Athletics, and Stealth Checks. You may use this Ability a number of times equal to your Constitution Modifier, and you regain all expended uses when you finish a Short Rest. "
+        ]
+    },
+    "Offensive_Blow": {
+        "name": "Offensive Blow",
+        "classes": ["Pwr"],
+        "desc": [
+            "If you have not used your Movement Action for this turn, you may hold your ground and perform an Offensive Blow as a Bonus Action. This gives you Advantage on the next attack that you take this turn, and you may use it at any point while attacking, as long as you have at least one attack remaining for your turn.",
+            "If the attack with Advantage hits, you may roll double your Stand’s Attack Dice for Damage. You may not use your Movement Action after using this ability."
+        ]
+    },
+    "Pincer_Attack": {
+        "name": "Pincer Attack",
+        "classes": ["Rng"],
+        "desc": [
+            "In order to prepare this Attack, you must successfully hide your Stand in a specific place within your Range. Preparing your Stand in a hiding place also counts as an Action.",
+            "Once it has been prepared, you may activate this ability when you perform the Attack Action. You may spend just one Attack, but both you and your Stand may both make an Attack. Both of these Attacks also gain Advantage."
+        ]
+    },
+    "Powerful_Flex": {
+        "name": "Powerful Flex",
+        "classes": ["Abl", "Hive"],
+        "desc": [
+            "As an Action, and at the cost of 1 Stand Energy, you may use your Ability in a threatening way in order to make an Intimidation roll with Advantage."
+        ]
+    },
+    "Ranged_Attack": {
+        "name": "Ranged Attack",
+        "classes": ["Rng", "Abl", "Ind"],
+        "desc": [
+            "Destructive energy is summoned from deep within your Stand and somehow released in a direction with the intent to harm or deal damage. As an Attack, your stand fires one or more projectiles, using your Stand’s Precision + Proficiency Bonus for the Attack rolls and adding your Speed Modifier to the damage dealt on a hit.",
+            "You may choose between three Damage Dice regarding your Ranged Attack, but the higher the damage, the less accurate it will be. Once you have chosen an option it remains the same every time you use it, unless you choose to change it when leveling up.<ul class='sublist'><li>Your Damage Dice is a d6, and you may add your Proficieincy Bonus twice to the Attack roll</li><li>Your Damage Dice is a d8, and you may add your Proficiency Bonus to the Attack roll</li><li>Your Damage Dice is a d10, but you may not add anything to the Attack roll</li></ul>",
+            "This Attack has a Short-Range of 10 Meters from the Stand, with a Long-Range of 20 Meters from the Stand. It can deal Stand Piercing, Stand Slashing, Stand Bludgeoning, or a different kind of damage, if it relates to your Stand or your Stand’s Abilities.",
+            "Whenever your Attack Dice improves at level 11, this Attack’s Short-Range increases to 20 Meters and the Long-Range increases to 40 Meters, and you get an additional Damage Dice equal to the one you chose for your Damage previously (Example: 1d8 becomes 2d8)."
+        ]
+    },
+    "Self_Preservation": {
+        "name": "Self-Preservation",
+        "classes": ["Rmt"],
+        "desc": [
+            "Your Stand may assess situations and make a basic judgement on them. If your Stand believes that the task at hand is too great, it may, instead of carrying out its programming, Hide, Defend, or Retreat. "
+        ]
+    },
+    "Speedy_Switch": {
+        "name": "Speedy Switch",
+        "classes": ["Enh"],
+        "desc": [
+            "As a Reaction, you may switch between anchors for your Enhancement Stand very quickly, meaning that if someone attempts to hit you and you activate this ability, the first hit misses automatically. However, if your Stand moves outside of someone’s Melee Range, they can still take an Attack of Opportunity."
+        ]
+    },
+    "Stand_Energy_Recharge": {
+        "name": "Stand Energy Recharge",
+        "classes": ["Abl"],
+        "desc": [
+            "You have very strong abilities, but it’s very tiring to try to use them repeatedly. Luckily, you've learned through practice how to pace yourself and replenish your energy. As an Action, you may regain an amount of Stand Energy equal to your Charisma Modifier."
+        ]
+    },
+    "Stand_Leap": {
+        "name": "Stand Leap",
+        "classes": ["Pwr", "Act"],
+        "desc": [
+            "At the cost of 5 Meters of your Movement Action your Stand may punch or kick against a strong, rigid surface in order to propel both the Stand and User into the air. This can be done straight up, horizontally, or at an angle somewhere in between.",
+            "The Stand User can move an amount of meters equal to their Stand’s Power Modifier in any direction midair. Also, as a Reaction, you can negate all Fall Damage."
+        ]
+    },
+    "Stand_Marking": {
+        "name": "Stand Marking",
+        "classes": ["Rmt", "Enh", "Rev"],
+        "desc": [
+            "As an Action, you may \"Mark\" a specific object or person with your Stand, so long as the target is within your Stand’s Range and activates a specific, predetermined trigger at some point.",
+            "When a person or object is \"Marked\" your Stand automatically follows them, affecting them with their ability. This effect continues until you recall your Stand back to you, you are killed, or the object/person that is Marked is destroyed/killed.",
+            "When something is Marked by your Stand, the amount of Meters that your Stand is active within is equal to your Stand’s Range Score (not Modifier). If the object or person leaves your Range your Stand returns to you, but may instantly jump back to the object if the object/person reenters the range of your Stand Marking."
+        ]
+    },
+    "Stand_Rush": {
+        "name": "Stand Rush",
+        "classes": ["Pwr", "Ind", "Act"],
+        "desc": [
+            "When your enemy or your enemy’s Stand has been incapacitated, restrained, or unwilling to fight for a full turn or more while in your Stand’s Melee Range, you may perform this action. You may also start this action for free when you drop someone to 0 Hit Points using some sort of Melee Attack with your Stand.",
+            "A Stand Rush takes an entire turn, but if desired, may go on for a maximum of 10 turns. Through this action, your Stand may punch an amount of times equal to your Stand’s Speed Modifier. You may choose whether or not to make this attack lethal. When trapped within a Stand Rush, no actions can be taken."
         ]
     }
 }
