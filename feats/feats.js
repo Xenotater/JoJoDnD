@@ -20,7 +20,7 @@ $(document).ready(function () {
 
     $("#search").on("input", function () {
         search($(this).val());
-        updateSearch($(this).val()); 
+        updateURL(); 
     });
 
     $(".sorter").click(function() {
@@ -51,7 +51,11 @@ $(document).ready(function () {
 });
 
 function updateURL() {
-    window.history.replaceState(null, "", '?focus=' + f);
+    var query = $("#search").val();
+    if (query != "")
+        window.history.replaceState(null, "", '?focus=' + f + '&search=' + query);
+    else
+        window.history.replaceState(null, "", '?focus=' + f);
 }
 
 function getData(q) {
@@ -125,10 +129,4 @@ function search(query) {
     }
 
     updateList();
-}
-
-function updateSearch(query) {
-    updateURL();
-    if (query != "")
-        window.history.replaceState(null, "", window.location.search + '&search=' + query);
 }
