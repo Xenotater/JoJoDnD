@@ -10,7 +10,7 @@
         "desc": "The Ripple is an energy that travels through the blood and is powered by breathing. A sacred art, it can be used for both healing and destruction. It is extremely effective against Undead, and it can be used against corporeal objects to manipulate them. The Ripple works similarly to electricity, in that it is able to travel through liquids, metals, and most biomass incredibly well.",
         "extra": [{
             "name": "Honed Body",
-            "desc": "Ripple Users' bodies are much better honed than the bodies of most humans. Normally, Humans are limited to having a maximum of 20 of any Ability Score. However, if you have any levels in Ripple, your maximum Strength, Dexterity, and Constitution may be 24."
+            "desc": "Ripple Users' bodies are much better honed than the bodies of most humans. Normally, Humans are limited to having a maximum of 20 of any Ability Score. However, if you have any Levels in Ripple, your maximum Strength, Dexterity, and Constitution may be 24."
         },
         {
             "name": "Ripple Conductors",
@@ -18,7 +18,7 @@
         },
         {
             "name": "Ripple Points",
-            "desc": "A Ripple User has an amount of Ripple Points equal to their level. If they can comfortably breathe, they regain 1 Ripple Point at the start of each turn."
+            "desc": "A Ripple User has an amount of Ripple Points equal to their Level. If they can comfortably breathe, they regain 1 Ripple Point at the start of each turn."
         },
         {
             "name": "Undead's Bane",
@@ -216,9 +216,9 @@
            "name": "Creating a Stand Ability",
            "content": [
                "<p><b>Get Creative: </b>Stand Abilities have endless possibilities, able to do anything from cooking supernaturally good food to being able to stop time itself. The rules below should generally apply to most Stand Abilities, but you should work with your DM to create the perfect custom Ability for your Stand.",
-               "<p><b>General Rules: </b>Abilities that heal or deal damage should follow the dice guidelines below, and these dice should increase every other level (for example, at level 3 1dx becomes 2dx). Abilities that require a Saving Throw should use the following Stand DC: 8 + Cha + Proficiency Bonus.</p>",
+               "<p><b>General Rules: </b>Abilities that heal or deal damage should follow the dice guidelines below, and these dice should increase every other Level (for example, at Level 3 1dx becomes 2dx). Abilities that require a Saving Throw should use the following Stand DC: 8 + Cha + Proficiency Bonus.</p>",
                "<ul><li><b>No Dice: </b> Should be an ability that buffs/debuffs someone very little, or some sort of utility. Not combat-viable directly, but should be able to be used creatively in combat.</li><li><b>d4: </b>Group effects, healing/damage that affects a group of people. Can have a secondary effect if it is just a single target ability.</li><li><b>d6: </b>An ability that affects multiple targets and requires a Saving Throw, dealing no damage on  success, or ranged healing for a single target. Can also be touch healing that gives an additional effect.</li><li><b>d8: </b>Damage that may be added to a Stand’s punch or touch on a hit and does not require a Saving Throw. Can also be a ranged Attack that requires a Saving Throw with half damage on success. Can be touch healing that takes a single Attack or Bonus Action to perform.</li><li><b>d10: </b>Damage that may be added to a Stand’s punch or touch and requires a Saving Throw, dealing no damage on success. Can be touch healing that takes an Action to perform. Can be a ranged Attack that requires a Saving Throw, dealing no damage on success. Can be a single-target melee Attack that requires a Saving Throw, dealing half damage on success.</li><li><b>d12: </b>Can be a touch healing Ability that takes an Action as well as another type of Action (Reaction, Bonus Action, Movement Action). Can be a single-target melee Attack that requires a Saving Throw, dealing no damage on success.</li></ul>",
-               "<p><small><b>Note: </b><i>The damage cap for these scaling dice is normally 10dx, but this does not have to be the case. Characters or enemies may be able to go far past Level 20, and therefore, would be able to deal massive amounts of Damage using them. Your DM may decide that Abilities past that may increase in the same fashion as before (an additional dice for every odd level), or that 10dx should be the limit for balance.</i></small></p>"
+               "<p><small><b>Note: </b><i>The damage cap for these scaling dice is normally 10dx, but this does not have to be the case. Characters or enemies may be able to go far past Level 20, and therefore, would be able to deal massive amounts of Damage using them. Your DM may decide that Abilities past that may increase in the same fashion as before (an additional dice for every odd Level), or that 10dx should be the limit for balance.</i></small></p>"
            ] 
         },
         {
@@ -1217,7 +1217,7 @@
                     "name": "Swarm Attacks",
                     "content": [
                         "<p>When attacking using a Swarm of Stands, there is a way to attack with all of them without rolling dozens of attacks. Firstly, if more than half of the Instances are attacking at once you can treat it like a regular Stand Attack, using 1d6 + Power/N where N is the number of Instances attacking.</p>",
-                        "<p>If less than half of your instances are attacking, assume a certain percentage of them land a Stand Hit (unless the target does not have a Stand, in which case it is direct), but they may only deal 1 damage per hit. At level 1 this percentage is 5%, meaning Swarm damage is equal to N/20 with a minimum of 1 damage, where N is the number of Instances attacking. At level 11 this increases to 10%, or N/10, with a minimum of 1 damage. You may not add Power to this damage.</p>"
+                        "<p>If less than half of your instances are attacking, assume a certain percentage of them land a Stand Hit (unless the target does not have a Stand, in which case it is direct), but they may only deal 1 damage per hit. At Level 1 this percentage is 5%, meaning Swarm damage is equal to N/20 with a minimum of 1 damage, where N is the number of Instances attacking. At Level 11 this increases to 10%, or N/10, with a minimum of 1 damage. You may not add Power to this damage.</p>"
                     ]
                 },
                 {
@@ -1576,7 +1576,7 @@
                 "class": "minor widen",
                 "head": ["Material", "Range", "Damage", "Effect"],
                 "body": [
-                    ["Wood", "10/30m", "1d4 + Dex", "The Wooden Sphere will splinter and shatter upon contact, causing splinters to fly off in all directions up to 2 meters from the point of the Sphere’s impact. Those within 2 meters must make a Dex Save against your Spin DC, taking an additional 1d8 points of Piercing damage on failure. This Damage increases to 2d8 starting at level 7, and 3d8 at level 14."],
+                    ["Wood", "10/30m", "1d4 + Dex", "The Wooden Sphere will splinter and shatter upon contact, causing splinters to fly off in all directions up to 2 meters from the point of the Sphere’s impact. Those within 2 meters must make a Dex Save against your Spin DC, taking an additional 1d8 points of Piercing damage on failure. This Damage increases to 2d8 starting at Level 7, and 3d8 at Level 14."],
                     ["Rubber", "40/240m", "1d6 + Dex", "None"],
                     ["Stone", "20/60m", "1d8 + Dex", "None"],
                     ["Metal", "10/30m", "1d10 + Dex", "None"]
@@ -1693,7 +1693,7 @@
         "desc": "Despite all of the odd happenings and abilities in the world of JoJo’s Bizarre Adventure, most people don't even know about them. However, the world always needs those who fight for what they believe in. As such, these Classes also exist.",
         "extra": [{
             "name": "Gaining a Stand",
-            "desc": "If a person in a Non-Supernatural Class gains a Stand, they may erase all of their <a href='/abilities'>Abilities</a>, <a href='/feats'>Feats</a>, and Proficiencies, and then convert them into the respective Stand Type that they obtain. For example, if a Level 5 Brawler gains a Power Stand, they may opt to simply become a Level 5 Power Type Stand User instead of multiclassing. When you become a Stand User your Max HP reverts to what it was originally, then you re-roll for every level suddenly gained. You may only convert Non-Supernatural Levels into Stand Levels, you may not convert them back."
+            "desc": "If a person in a Non-Supernatural Class gains a Stand, they may erase all of their <a href='/abilities'>Abilities</a>, <a href='/feats'>Feats</a>, and Proficiencies, and then convert them into the respective Stand Type that they obtain. For example, if a Level 5 Brawler gains a Power Stand, they may opt to simply become a Level 5 Power Type Stand User instead of multiclassing. When you become a Stand User your Max HP reverts to what it was originally, then you re-roll for every Level suddenly gained. You may only convert Non-Supernatural Levels into Stand Levels, you may not convert them back."
         }],
         "types": {
             "Brawler": {

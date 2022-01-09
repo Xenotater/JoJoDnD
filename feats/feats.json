@@ -419,8 +419,8 @@
         "name": "Tanky",
         "desc": "Due to your abnormally stocky build, or just sheer commitment, you don’t go down very easily in a fight.",
         "effects": [
-            "Each level you gain an additional 2 Hit Points.",
-            "This also applies retroactively, giving you twice your current level additional HP.",
+            "Each Level, you gain an additional 2 Hit Points.",
+            "This also applies retroactively, giving you twice your current Level additional HP.",
             "You may take this Feat multiple times if desired."
         ]
     },
