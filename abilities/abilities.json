@@ -298,7 +298,7 @@
         "classes": ["Pwr", "Rng", "Ind", "Act"],
         "desc": [
             "As an entire turn (meaning that your Action, Bonus Action, Movement Action, and Reaction are all used, and if you have used any part of your turn you may not use Melee Barrage), you may perform a number of melee attacks equal to your Stand’s Speed Modifier (+6 Speed would mean 6 attacks in one Melee Barrage), with a maximum of 10 Attacks.",
-            "Each hit functions as normal in terms of the Attack rolls, but when you deal damage, you do not add your Stand’s Power Modifier to the Damage Rolls. The Damage Dice for these attacks does NOT increase at level 11 (A Power Type's Damage Dice changes from 1d12 to 2d10 at level 11, but the maximum for this ability would still be 10d12).",
+            "Each hit functions as normal in terms of the Attack rolls, but when you deal damage, you do not add your Stand’s Power Modifier to the Damage Rolls. The Damage Dice for these attacks does NOT increase at Level 11 (A Power Type's Damage Dice changes from 1d12 to 2d10 at Level 11, but the maximum for this ability would still be 10d12).",
             "Furthermore, you may not Activate a Stand Ability with any of these Attacks, and if you roll a 1 on any of these attack rolls, the Melee Barrage ends."
         ]
     },
@@ -353,7 +353,7 @@
             "Destructive energy is summoned from deep within your Stand and somehow released in a direction with the intent to harm or deal damage. As an Attack, your stand fires one or more projectiles, using your Stand’s Precision + Proficiency Bonus for the Attack rolls and adding your Speed Modifier to the damage dealt on a hit.",
             "You may choose between three Damage Dice regarding your Ranged Attack, but the higher the damage, the less accurate it will be. Once you have chosen an option it remains the same every time you use it, unless you choose to change it when leveling up.<ul class='sublist'><li>Your Damage Dice is a d6, and you may add your Proficieincy Bonus twice to the Attack roll</li><li>Your Damage Dice is a d8, and you may add your Proficiency Bonus to the Attack roll</li><li>Your Damage Dice is a d10, but you may not add anything to the Attack roll</li></ul>",
             "This Attack has a Short-Range of 10 meters from the Stand, with a Long-Range of 20 meters from the Stand. It can deal Stand Piercing, Stand Slashing, Stand Bludgeoning, or a different kind of damage, if it relates to your Stand or your Stand’s Abilities.",
-            "Whenever your Attack Dice improves at level 11, this Attack’s Short-Range increases to 20 meters and the Long-Range increases to 40 meters, and you get an additional Damage Dice equal to the one you chose for your Damage previously (Example: 1d8 becomes 2d8)."
+            "Whenever your Attack Dice improves at Level 11, this Attack’s Short-Range increases to 20 meters and the Long-Range increases to 40 meters, and you get an additional Damage Dice equal to the one you chose for your Damage previously (Example: 1d8 becomes 2d8)."
         ]
     },
     "Self_Preservation": {
@@ -444,7 +444,7 @@
         "name": "Deep Pass Overdrive",
         "classes": ["Rip"],
         "desc": [
-            "As an Action, you may spend 15 Ripple Points and touch a creature nearby. After performing this action, your Ripple level drops to 0, you lose 1d10 Maximum Health every turn from now on, and your Strength, Dexterity, and Constitution Scores all drop to 3.",
+            "As an Action, you may spend 15 Ripple Points and touch a creature nearby. After performing this action, your Ripple Level drops to 0, you lose 1d10 Maximum Health every turn from now on, and your Strength, Dexterity, and Constitution Scores all drop to 3.",
             "Your target, however, gets a permanent boost of +2 in their Strength, Dexterity, and Constitution scores, as well as another +3 in either Strength, Constitution, or Dexterity. They also gain 3 points of Inspiration, as well as all of the Inspiration that you had, and they get Advantage on all rolls involving a d20 for the next 10 minutes."
         ]
     },
@@ -539,6 +539,130 @@
             "Through countless hours spent training in the ancient art of The Ripple, you’ve created a fighting style or ability that is unique to you, and you alone.",
             "Examples of this are <a href='https://jojo.fandom.com/wiki/Tonpetty'>Tompetty</a>’s Future Sight, <a href='https://jojo.fandom.com/wiki/Dire'>Dire</a>'s Thunder Cross Split Attack, and <a href='https://jojo.fandom.com/wiki/Caesar_Anthonio_Zeppeli'>Caesar</a>’s Bubble Launcher.",
             "Talk to your DM to determine the function and details of this Technique."
+        ]
+    },
+    "Spherical_Spin": {
+        "name": "Spherical Spin",
+        "classes": ["Spin"],
+        "desc": [
+            "You may throw an object similar in shape to a sphere and imbue it with the energy of The Spin. A regular Spherical Spin attack deals damage based vibrations produced by the rotation, as well as the damage the actual object deals. Different Materials deal more damage based upon density, with more dense objects being more powerful.",
+            "To calculate your Attack Bonus with Spherical Spin attacks, treat them as Finesse Thrown Weapons (meaning you can add either Str or Dex), but remember that different materials deal different amounts of damage and have different ranges. You can find these values in a table on the main page for <a href='/classes/?focus=Spin'>The Spin</a>."
+        ]
+    },
+    "Sculpt_Sphere": {
+        "name": "Sculpt Sphere",
+        "classes": ["Spin"],
+        "desc": [
+            "Through use of the Spin, you’ve found that you can create Spheres out of everyday materials by grabbing a clump of something in one hand and spinning it.",
+            "In order to create a Sphere you must have a decently sized chunk of material in your hand, roughly the amount needed to form a baseball. As an Action, you may spin the material in your hand, shaving off the excess material and creating a Sphere suitable for use with the Spin."
+        ]
+    },
+    "Harden_Flesh": {
+        "name": "Harden Flesh",
+        "classes": ["Spin"],
+        "desc": [
+            "As an Attack, you may hit yourself or an ally with a Sphere, dealing no damage and instead giving them 2d6 + Your Dexterity Modifier Temporary Hit Points. This benefit lasts for a maximum of one minute."
+        ]
+    },
+    "Sendo_Spin": {
+        "name": "Sendo Spin",
+        "classes": ["Spin"],
+        "desc": [
+            "As an Attack, you may take a Sphere and throw it into an object. The energy produced by the Sphere will send vibrations up to one meter away from the point of impact. These vibrations are violent, and if placed correctly, could cause tunnels to collapse, sand to fall, rocks to shift, or the ground underneath somebody's feet to become unsteady.",
+            "You may throw beneath someone’s feet (if they are standing on solid ground), and they must make a Dexterity Saving Throw, becoming Prone on failure. You may also change on square meter of a surface into Difficult Terrain."
+        ]
+    },
+    "Muscle_Contraction": {
+        "name": "Muscle Contraction",
+        "classes": ["Spin"],
+        "desc": [
+            "As an Attack, you may throw a Sphere into your own or another creature’s muscles. The affected muscles move as normal for the most part, and the target gains additional Strength equal to your Dexterity Modifier. This effect lasts for an amount of turns equal to your Level in The Spin."
+        ]
+    },
+    "Return_to_Sender": {
+        "name": "Return to Sender",
+        "classes": ["Spin"],
+        "desc": [
+            "When you throw a Sphere, you may choose to have it return to you after damaging/hitting/missing its target. "
+        ]
+    },
+    "Tendon_Twister": {
+        "name": "Tendon Twister",
+        "classes": ["Spin"],
+        "desc": [
+            "As an Attack, you may throw a Sphere into a creature within the Short Range of the Sphere used. Pick a limb and make a standard Attack. If the Sphere hits your Opponent, they may not use the targeted limb for an amount of turns equal to your Dexterity Modifier."
+        ]
+    },
+    "Wrist_Memory": {
+        "name": "Wrist Memory",
+        "classes": ["Spin"],
+        "desc": [
+            "You’ve become so accustomed to taking out and putting away Spheres that you no longer need to look down to do it. You may now draw and put away Spheres as Free Actions."
+        ]
+    },
+    "Restraining_Spin": {
+        "name": "Restraining Spin",
+        "classes": ["Spin"],
+        "desc": [
+            "As an Attack, you may throw a Sphere into the flesh of a creature within your Sphere’s Range. If you hit them, roll normal damage and your Target must make a Constitution Saving Throw, becoming Restrained until the end of your next turn on failure. If your Target is already Restrained, you may not use Restraining Spin on them."
+        ]
+    },
+    "Medicinal_Spin": {
+        "name": "Medicinal Spin",
+        "classes": ["Spin"],
+        "desc": [
+            "As an Attack, you may throw a Sphere into the flesh of a creature within the Short Range of the Sphere you are using. If you hit them you do not deal damage, instead performing one of the following medicinal abilities:<ul class='sublist'><li>Restore the target to 1 Hit Point if they are at 0</li><li>Remove one of the following conditions from the target: Poisoned, Paralyzed,  or Stunned</li><li>Ensure that any healing the target receives until the end of their next turn is doubled</li></ul>",
+            "Regardless of the action chosen, pain is dulled from all wounds around the area of impact."
+        ]
+    },
+    "Twisting_Spin": {
+        "name": "Twisting Spin",
+        "classes": ["Spin"],
+        "desc": [
+            "As an Attack, you may throw a Sphere against a creature, surface, or even yourself. Anything that is a soft solid, a liquid, or skin may be affected by this. This action twists surfaces in a spiral shape, causing any liquid hiding under the skin or within the semisolid to be forced out.",
+            "This action may be used to reduce water weight, to dehydrate people, or to collect liquid that has soaked into a semisolid, such as dirt, mud, or even sand."
+        ]
+    },
+    "Supernatural_Force": {
+        "name": "Supernatural Force",
+        "classes": ["Spin"],
+        "desc": [
+            "Through the power of The Spin, the Force damage that you deal using The Spin is now able to damage Stands as well. The damage you deal becomes Stand Force damage, and affects Stands in a similar way to other Stand damage. Furthermore, you are now able to see and sense Stands."
+        ]
+    },
+    "Special_Technique": {
+        "name": "Special Technique",
+        "classes": ["Spin"],
+        "desc": [
+            "As a competent user of The Spin, you’ve figured out how to properly use the excess energy produced in a creative way. Talk to your DM about making this Special Technique functional."
+        ]
+    },
+    "Perfect_Spiral": {
+        "name": "Perfect Spiral",
+        "classes": ["Spin"],
+        "desc": [
+            "As an Action, you may throw a Sphere through the air. This Sphere deals 10 times the damage that your normal throw does. However, in order to perform this action, you must either be flying through the air in the shape of The Golden Spiral (DC 25 Acrobatics Check), or be riding a horse at a perfect speed (DC 25 Animal Handling Check).",
+            "If you are able to perform this feat, your <a href='/classes/?focus=Stands'>Stand</a> either manifests or evolves. Stands are a manifestation of the User’s fighting spirit. However, through use of the Golden Spin, you may artificially trigger one of two events relating to a Stand.",
+            "If a Non-Stand User uses this ability, use of The Golden Evolution will trigger their Stand to Manifest. This Stand temporarily manifests as any kind of Stand, at Level 15 in their Stand Type.",
+            "If the Spin User is already also a Stand User and they activate this ability, it triggers a Stand Evolution.",
+            "The Stand granted through this Golden Evolution doubles all of the Stand’s normal Stats, greatly enhances the potency of the Stand’s Abilities, and even gives it one more new ability. A good rule of thumb is that after using the Golden Ability once, one’s influence could affect an entire city. You and your Stand can also choose to be immune to any Abilities relating to the manipulation of time or space.",
+            "The Golden Evolution lasts for 1 hour, after which your Stand Evolution reverts or you lose your Stand if you didn't previously have one."
+        ]
+    },
+    "Defensive_Spin": {
+        "name": "Defensive Spin",
+        "classes": ["Spin"],
+        "desc": [
+            "You may use a Sphere, or something nearby that can be spun like a Sphere, to block an attack as a Reaction. Different materials absorb different amounts of damage, and the sphere is destroyed after the attack's damage is reduced.",
+            "Water reduced 1d4 damage, ice and wood reduce 1d6, stone reduces 1d8, and metal reduces 1d10. Your Dexterity Modifier is also added to the damage reduction."
+        ]
+    },
+    "Satellite_Spin": {
+        "name": "Satellite Spin",
+        "classes": ["Spin"],
+        "desc": [
+            "This ability requires a custom-made Sphere, with several marble-sized balls embedded on the outside of the Sphere. When this Sphere is thrown, all creatures within 3m of the target must make a Dex Save against your Spin DC, rolling a d6 on failure and losing the corresponding sense for 1d6 turns.<ol class='sublist'><li>Taste</li><li>Smell</li><li>Touch</li><li>Hearing</li><li>Sight</li><li>Instead of losing a sense, take 1d12 Bludgeoning damage. This increases to 2d12 at Level 7, and 3d12 at Level 14.</li></ol>",
+            "The Satellite Sphere is destroyed after being thrown, and cannot be used again."
         ]
     }
 }
