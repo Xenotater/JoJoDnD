@@ -1625,7 +1625,7 @@
             "8": {
                 "pro": "3",
                 "feats": "3",
-                "linkFeatures": ["Restraining Sphere", "OR", "Twisting Spin"],
+                "linkFeatures": ["Restraining Spin", "OR", "Twisting Spin"],
                 "ability": ["Ability Score Improvement"]
             },
             "9": {
@@ -1643,7 +1643,7 @@
             "11": {
                 "pro": "4",
                 "feats": "4",
-                "linkFeatures": ["Defensive Spin", "OR", "Satellite"]
+                "linkFeatures": ["Defensive Spin", "OR", "Satellite Spin"]
             },
             "12": {
                 "pro": "4",
