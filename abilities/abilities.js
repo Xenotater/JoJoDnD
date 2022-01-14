@@ -119,10 +119,12 @@ function updateDisplay() {
 
     newContent += "<h2 class='display-title'>" + abil.name + "</h2>";
     for (let i = 0; i < abil.desc.length; i++)
-        newContent += "<p>" + abil.desc[i] + "</p>"
+        newContent += "<p>" + abil.desc[i] + "</p>";
     newContent += "<h4 class='display-heading'>Given To</h4><ul id='given'>";
     newContent += parseTypes(abil.classes);
-    newContent += "</ul>"
+    if (abil.name == "Primal Charm")
+        newContent += "<li><a href='/abilities/?focus=Embryo_Implantation'>Vampire Children</a></li>";
+    newContent += "</ul>";
 
     $("#display").html(newContent);
     $(".listCurrent").removeClass("listCurrent");
@@ -196,7 +198,7 @@ function parseTypes(classes) {
                     cls = "Ultimate Beings";
                     page = "races";
                     break;
-                case "Rck":
+                case "Rock":
                     cls = "Rock Humans";
                     page = "races";
                     break;
@@ -206,7 +208,7 @@ function parseTypes(classes) {
                     break;
             }
             content += "<li><a href='/" + page + "/?focus=" + 
-            cls.replace("-Type Stands", "").replace(" Users", "").replace("All ", "").replace(/s$/, "").replace(/Men$/, "Men").replace(/ /g, "") + "'>" + cls + "</a></li>";
+            cls.replace("-Type Stands", "").replace(" Users", "").replace("All ", "").replace(/s$/, "").replace(/Men$/, "Man").replace(/ /g, "_") + "'>" + cls + "</a></li>";
         }
     }
 
