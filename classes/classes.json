@@ -961,7 +961,8 @@
                     "5": {
                         "pro": "3",
                         "feats": "2",
-                        "linkFeatures": ["Oblivious Facade", "OR", "Menacing Aura"]
+                        "linkFeatures": ["Oblivious Facade", "OR"],
+                        "featFeatures": ["Menacing Aura"]
                     },
                     "6": {
                         "pro": "3",
