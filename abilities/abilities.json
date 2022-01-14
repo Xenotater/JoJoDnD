@@ -604,7 +604,7 @@
         "name": "Restraining Spin",
         "classes": ["Spin"],
         "desc": [
-            "As an Attack, you may throw a Sphere into the flesh of a creature within your Sphere’s Range. If you hit them, roll normal damage and your Target must make a Constitution Saving Throw, becoming Restrained until the end of your next turn on failure. If your Target is already Restrained, you may not use Restraining Spin on them."
+            "As an Attack, you may throw a Sphere into the flesh of a creature within your Sphere’s Range. If you hit them, roll normal damage and your target must make a Constitution Saving Throw, becoming Restrained until the end of your next turn on failure. If your target is already Restrained, you may not use Restraining Spin on them."
         ]
     },
     "Medicinal_Spin": {
@@ -663,6 +663,190 @@
         "desc": [
             "This ability requires a custom-made Sphere, with several marble-sized balls embedded on the outside of the Sphere. When this Sphere is thrown, all creatures within 3m of the target must make a Dex Save against your Spin DC, rolling a d6 on failure and losing the corresponding sense for 1d6 turns.<ol class='sublist'><li>Taste</li><li>Smell</li><li>Touch</li><li>Hearing</li><li>Sight</li><li>Instead of losing a sense, take 1d12 Bludgeoning damage. This increases to 2d12 at Level 7, and 3d12 at Level 14.</li></ol>",
             "The Satellite Sphere is destroyed after being thrown, and cannot be used again."
+        ]
+    },
+    "Vampire_Double_Health": {
+        "name": "Vampire Double Health",
+        "classes": ["Vamp"],
+        "desc": [
+            "As a Vampire you get the same amount of Hit Points that you did when you were alive. However, your Hit Dice becomes 1d10, unless it was already the same or higher. Your Head Hit Dice is 1d4, and it has an additional +5 added to its AC."
+        ]
+    },
+    "Vampiric_Regeneration": {
+        "name": "Vampiric Regeneration",
+        "classes": ["Vamp"],
+        "desc": [
+            "You gain an amount of Hit Points back in either your Head or Body for an amount equal to your Constitution Modifier, every time Initiative is rolled (each round).",
+            "Furthermore, as an Action, you may restore Hit Dice to yourself. You may only restore 1 Hit Die per Action. Hit Points restored by this feature can either restore Hit Points to your Head or Body, and you may split Hit Points restored between the two if desired. "
+        ]
+    },
+    "Vampiric_Feeding": {
+        "name": "Vampiric Feeding",
+        "classes": ["Vamp"],
+        "desc": [
+            "As an Attack, you may make a Grapple Check upon a living creature. If you are successful, you place the blood vessels of your hand upon the creature and connect them to the body you have grappled.",
+            "The damage dealt by this is 1d6 + your Level of Vampire Piercing Damage. This damage is dealt at the start of each of their turns until they escape your Grapple, and you heal half of the damage dealt.",
+            "Alternatively, if your target is willing, Incapacitated, or Unconcious, you may use this Ability to remove Energy from them, up to an amount equal to your Proficiency Bonus."
+        ]
+    },
+    "Vampiric_Musculature": {
+        "name": "Vampiric Musculature",
+        "classes": ["Vamp"],
+        "desc": [
+            "Every time you level up from now on, including now, you may permanently add 1 to your Constitution, Dexterity, or Strength Score."
+        ]
+    },
+    "Zombie_Creation": {
+        "name": "Zombie Creation",
+        "classes": ["Vamp"],
+        "desc": [
+            "When you kill someone using Vampiric Feeding or touch a corpse, you may activate this as a Bonus Action. You take an almost immeasurably small amount of Vampiric Essence and use it to replace the blood you have consumed.",
+            "This ability costs 5 Energy, and can be used an amount of times equal to your Level in Vampire per Long Rest. Upon using this Ability, the affected body revives at the start of their next turn as a <a href='/races/?focus=Zombie>Zombie</a>."
+        ]
+    },
+    "Primal_Charm": {
+        "name": "Primal Charm",
+        "classes": ["Vamp", "PM", "EPM"],
+        "desc": [
+            "You’ve noticed that your body has changed in the time following your transformation. Your canines have become fangs, your hair has become long and now grows extremely quickly, and the irises of your eyes glow a soft, threatening red.",
+            "Your Charisma Score increases by 2, and you are now Proficient in Persuasion, Performance, and Intimidation Rolls. If you were already Proficient in any of these Skills, you may gain Expertise in them instead."
+        ]
+    },
+    "Vampiric_Senses": {
+        "name": "Vampiric Senses",
+        "classes": ["Vamp"],
+        "desc": [
+            "The Stone Mask, or a Master of some sort, has unlocked the true potential of your Human Mind. Your body can perceive much more accurately, and your mind can quickly and efficiently process this information.",
+            "You are now Proficient in Perception Rolls, and you may add your Proficiency Bonus to your Perception Rolls and Passive Perception, even if you already had Proficiency or Expertise in them."
+        ]
+    },
+    "Ghoul_Creation": {
+        "name": "Ghoul Creation",
+        "classes": ["Vamp"],
+        "desc": [
+            "When you kill someone using Vampiric Feeding or touch a corpse, you may activate this as a Bonus Action. You take an almost immeasurably small amount of Vampiric Essence, and use it replace the blood you have consumed.",
+            "This ability costs 50 Energy, and can be used once per Short Rest. Upon using this Ability, the affected body revives at the start of their next turn as a <a href='/races/?focus=Ghoul'>Ghoul</a>."
+        ]
+    },
+    "Flight": {
+        "name": "Flight",
+        "classes": ["Vamp"],
+        "desc": [
+            "The amount of energy in your body is immense, and you may now convert some of your body’s mass into hydrogen and keep it within your body causing you to float in the air.",
+            "You now have a flying speed of 2 meters per round, and if you do not move you may levitate for indefinite periods of time and make your effective weight less than zero, with a minimum weight of inverse your normal weight. You may also use this ability to walk on vertical surfaces or on a ceiling. "
+        ]
+    },
+    "Hypnosis": {
+        "name": "Hypnosis",
+        "classes": ["Vamp"],
+        "desc": [
+            "By reflecting light within your eyes for an entire turn, you may send your brain waves through the air and take control of another living creature. The Range of this Feature is 3 Meters, and you must make direct eye contact with the target in order to use this ability.",
+            "The opposing creature must make a Wisdom Saving Throw against your Vampiric DC. If the save is successful nothing happens, but if the throw is failed the creature becomes Hypnotized.",
+            "This effect lasts up to an hour. While a creature is Hypnotized, they must follow any and all commands given to them by their Vampiric Controller, even if it would put them in the way of harm or be completely opposed to the creature’s normal goals. If they are not given commands by you, they simply remain in the general position they were in when they were Hynotized, and they count as Incapacitated.",
+            "You may end this Hypnosis before the hour is up, if you so wish. They may remake the Saving Throw every time they take damage, or if an ally uses their Action to try to shake them out of it,  with the effect ending on success. The effect also ends if the target falls Unconscious. You may use this Feature once per Long Rest."
+        ]
+    },
+    "Space_Ripper_Stingy_Eyes": {
+        "name": "Space Ripper Stingy Eyes",
+        "classes": ["Vamp"],
+        "desc": [
+            "As an Attack, you are able to highly pressurize liquid within your eyeballs, convert it all into light, and fire it in the form of lasers. You may fire either one or two lasers at once, one for each eye.",
+            "Any Creature caught within the laser’s Range must make a Dexterity Saving Throw against your Vampire DC, taking 2d8 Piercing damage on a failed save, and no damage on a successful one. This damage cannot be reduced or circumvented in any way.",
+            "There is no effective Range for this attack. The Laser will simply travel in a straight line wherever you aim, and it will continue to travel, despite any physical objects in the way. If there are several targets in the straight line that you fire at, they are all potentially hit by the laser.",
+            "Reflective objects may reflect the laser, but no matter can really stop it completely. You may perform this action an amount of times equal to your Proficiency Bonus, per Short or Long Rest. "
+        ]
+    },
+    "Flesh_Grafting": {
+        "name": "Flesh Grafting",
+        "classes": ["Vamp"],
+        "desc": [
+            "You’ve gained the ability to start controlling individual cells and their function within your body. You may now replace things such as removed limbs, removed organs, removed bones, and even entire bodies, with the flesh of other humanoid creatures.",
+            "This taken flesh will assimilate to your body much faster than if you were to attempt to grow back your own body through Regeneration. You may also use this ability to connect living or undead creatures together in order to create Chimeras. Talk to your DM to determine the stats and abilities of the Chimeras that you create. You may perform this Ability at any time, without limit.",
+            "Attaching your head to a new body, and making it perfectly attuned to yours, takes 1d6 days. While the new body is assimilating, it may regenerate a maximum of 1 HP per round, as opposed to the normal amount. Grafting the full body or a body part of a Hamon User takes 5d100 Days instead, for a perfect graft.",
+            "In theory, you could also use this ability to fix injuries of living creatures, and as an Action, you could give an amount of Hit Points equal to your Level in Vampire to someone."
+        ]
+    },
+    "Freezing_Touch": {
+        "name": "Freezing Touch",
+        "classes": ["Vamp"],
+        "desc": [
+            "As an Unarmed Strike, you may take almost all of the liquid and a lot of heat from any of your limbs, lowering the effective temperature of each limb to around -40 degrees Celsius.",
+            "If you successfully land this Attack, the target must make a Constitution Saving Throw, taking 6d8 Cold damage and becoming unable to move the affected limb on failure. The target takes half damage, and is not affected, on a successful Save.",
+            "The Saving Throw may be repeated at the end of every one of the affected target’s turns, and if succeeded, the effect ends on their limb. You may use this Feature an amount of times equal to your Proficiency Bonus per Long Rest."
+        ]
+    },
+    "Vampiric_Body_Control": {
+        "name": "Vampiric Body Control",
+        "classes": ["Vamp"],
+        "desc": [
+            "You’ve become accustomed to the idea that the individual cells within your body are, in fact, under your conscious control. You may now perform tasks that would normally be impossible for a human. You can fit yourself through small spaces, reknit bones, and fractures in them almost instantly, and even fully heal from Sunlight/Ripple inflicted wounds, without having to pick away the scar first (although this takes a decent amount of time).",
+            "You may also choose to override standard Human self-preservation instincts, such as breathing, the inability to severely harm yourself, and even the ability to simply shut down specific parts of your body, and reboot them at will. Shutting down parts is instant, but rebooting them is a Bonus Action. You may also put muscular cells and bones in places where they should not be normally."
+        ]
+    },
+    "Controlled_Veins": {
+        "name": "Controlled Veins",
+        "classes": ["Vamp"],
+        "desc": [
+            "You may put an entire miniature muscular system within the veins in your body. Not only that, but you may also turn energy or matter within your body into more veins, in order to have a Secondary Muscular System.",
+            "Your Veins may be used to pierce through your skin without damaging you. Your Veins may deal Slashing, Bludgeoning, or Piercing damage, and they count as Unarmed Strikes when you attack using them. You may Attack using a Vein even if the health of the rest of your body is zero or lower. If the health of your head is zero or lower, you may not do this.",
+            "You may have up to 5 Veins going outside of your body at a time. Your hair also operates in the same way, with a maximum of 5 “Veins” on the top of your head. When using Veins to move, you may move at up to half of your normal movement speed. You may also use Veins to Grapple. For every additional Vein used, add +1 to the Bonus for your Grapple Check. The Veins may stretch up to 5 meters."
+        ]
+    },
+    "Body_Evacuation": {
+        "name": "Body Evacuation",
+        "classes": ["Vamp"],
+        "desc": [
+            "The only part of the Undead body needed for Vampiric survival is the brain. If you find yourself in an incredibly desperate situation, you may perform this Ability to save yourself.",
+            "As an Attack, you use your Secondary Muscular System (from <a href='/abilities/?focus=Controlled_Veins'>Controlled Veins</a>) to remove your Head and Secondary Muscular System from the rest of you.",
+            "Your Head and Secondary Muscular System are now all you are. You may slowly regenerate your own body, but it takes 3d4 days to do so, as well as 50 Energy for each Kilogram of flesh regenerated.",
+            "You still have to Feed at the standard rate, but you may now do this with your Secondary Muscular System as opposed to your standard <a href='/abilities/?focus=Vampiric_Feeding'>Feed</a> Action. The Action is the same, it is simply no longer carried out using your hand."
+        ]
+    },
+    "Vampiric_Dormancy": {
+        "name": "Vampiric Dormancy",
+        "classes": ["Vamp"],
+        "desc": [
+            "Normally, as a Vampire, you have to Feed for at least 10 energy once per week. However, you may, if you so choose, enter a state of extended Dormancy, in which every part of your body ceases to function, and it is effectively preserved.",
+            "This preservative runs throughout your entire body and brain, allowing your body to stay virtually the same for extended periods of time. Your brain almost completely stops functioning, and you must set a trigger to awaken you, such as a loud noise, or movement within a certain radius. When this trigger is activated, it takes an entire turn for you to return to your full self, with full control over your body.",
+            "Entering a state of Vampiric Dormancy takes one full minute (or 10 turns). You may survive in the state of Vampiric Dormancy for up to 500 years. Past around 500 years, every year you spend in Dormancy consumes 10 Energy from you. If you run out of Energy, your brain shuts off fully, and you die. Losing Energy does not cause you to lose Levels in Vampire."
+        ]
+    },
+    "Embryo_Implantation": {
+        "name": "Embryo Implantation",
+        "classes": ["Vamp"],
+        "desc": [
+            "You may create a fully functioning Embryo, and implant it into a Humanoid’s womb. This Implantation process may be done through sexual transmission, or through simply forcing it though the flesh, then fixing the flesh that was damaged.",
+            "This Embryo may be an effective clone of your DNA, or an Embryo that combines the DNA of you, as well as the DNA of up to one person whose flesh you have grafted into yourself. You may also take some of the Surrogate Woman’s DNA and implant it into the Embryo, meaning the child produced could effectively have three genetic parents.",
+            "The child grows and lives as normal, with the only distinguishable differences to a normal human being small, appearing as minor traits, such as accelerated hair growth, sensitive or pale skin, or even teeth that look similar to fangs, which ultimately manifests in them gaining the trait: <a href='/abilities/?focus=Primal_Charm'>Primal Charm</a>. All of the aforementioned traits may manifest, or none of them might, or perhaps only some of them."
+        ]
+    },
+    "Flesh_Bud": {
+        "name": "Flesh Bud",
+        "classes": ["Vamp"],
+        "desc": [
+            "Using some of your Secondary Muscular System, as well as 50 Energy, you may create a Flesh Bud. Flesh Buds are small collections of flesh that are placed upon the forehead. A Flesh Bud forces the one who it is implanted into to do the Vampire’s bidding, despite the interests of the individual. However, this form of mind control does not completely change the personality of the victim in most cases. The only real change is in a person’s goals and motives.",
+            "In order to implant a Flesh Bud into someone, you must place the Bud into their forehead as an Action. The target must be Grappled by you, and you must succeed on another Grapple Check in order to place the Flesh Bud into them.",
+            "Flesh Buds have an amount of Health equal to your Level in Vampire. If the Flesh Bud’s health drops below zero, the Flesh Bud begins to die. However, if the Flesh Bud is still implanted within a Human’s brain when this happens, the Flesh Bud lashes out, dealing 10d10 Slashing damage directly to the brain.",
+            "However, these Flesh Buds may be safely removed via a successful Medicine or Sleight of Hand Check (DC of 20), or through a direct hit using an attack from The Ripple. If the attack dealt by The Ripple deals an amount of damage equal or greater to the HP of the Flesh Bud, it is vaporized instantly in its entirety, without any chance to respond. The Flesh Bud is Undead flesh, and as such, it will immediately die when exposed to Sunlight.",
+            "The Flesh Bud will function normally for up to 3 years. After around 3.5 years have passed, the Flesh Bud will feed off of the blood of the brain directly, resulting in a loss of 1d4 Maximum HP per day. When the target’s Maximum HP reaches zero, they are killed instantly. If the Vampire that implanted the Flesh Bud is killed, the Flesh Bud goes haywire, and the target becomes an <a href='/races/?focus=Abomination'>Abomination</a>."
+        ]
+    },
+    "Vampire_Creation": {
+        "name": "Vampire Creation",
+        "classes": ["Vamp"],
+        "desc": [
+            "You’ve gained enough knowledge of the function of your own body that you’ve found out how exactly the Stone Mask or your Master changed your anatomy. Rather than taking blood away from your target, you may take a corpse or living creature, and simply infuse a large amount of your own blood, mixed with a decent amount of Vampiric Essence. This takes an entire turn to accomplish.",
+            "If the creature that you’ve attempted to convert is living, they must make a Constitution Saving Throw against your Vampire DC. Every time they fail the saving throw, they take 2d12 Piercing damage, which cannot be blocked or reduced in any way. If the target succeeds, they no longer take damage and the effect ends. When the target drops to below 0 hit points, they go unconscious.",
+            "After a full turn, the affected individual/corpse becomes a Level 1 <a href='/races/?focus=Vampire'>Vampire</a>, and they keep whatever Levels they had previously, or if they were a lower level Undead, they regain the Levels that they once had in life.",
+            "Upon becoming a Vampire, it is important to note that you do not lose your Experience Points. However, in order to level up further, you must meet the stated Energy requirement.",
+            "The Vampire created has total free will, and is not obligated to serve or obey you in any way. Their mind is as it was in life, the only difference being that they are now a Vampire as well."
+        ]
+    },
+    "Vampiric_Peak": {
+        "name": "Vampiric Peak",
+        "classes": ["Vamp"],
+        "desc": [
+            "You have perfectly honed your Vampiric Abilities, and your brain has been brought to its fullest potential, meaning that the only way to improve from here would be an option other than simply consuming blood. If you obtain a <a href='/artifacts/?focus=Completed_Stone_Mask'>Completed Stone Mask</a>, you may don it, put UV light into the Mask, and become an <a href='/races/?focus=Ultimate_Being'>Ultimate Being</a>."
         ]
     }
 }
