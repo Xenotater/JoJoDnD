@@ -87,7 +87,7 @@
         "classes": ["Rmt", "Enh", "Rev"],
         "desc": [
             "Your Stand is powerful, but was limited by how far it could be away from you before now.",
-            "Multiply your Stand's Range by 10. Any points gained to your Stand's Range from now on are alos multipled by 10."
+            "Multiply your Stand's Range by 10. Any points gained to your Stand's Range from now on are also multipled by 10."
         ]
     },
     "Immense_Resistance": {
@@ -762,7 +762,7 @@
         "desc": [
             "You’ve gained the ability to start controlling individual cells and their function within your body. You may now replace things such as removed limbs, removed organs, removed bones, and even entire bodies, with the flesh of other humanoid creatures.",
             "This taken flesh will assimilate to your body much faster than if you were to attempt to grow back your own body through Regeneration. You may also use this ability to connect living or undead creatures together in order to create Chimeras. Talk to your DM to determine the stats and abilities of the Chimeras that you create. You may perform this Ability at any time, without limit.",
-            "Attaching your head to a new body, and making it perfectly attuned to yours, takes 1d6 days. While the new body is assimilating, it may regenerate a maximum of 1 HP per round, as opposed to the normal amount. Grafting the full body or a body part of a Hamon User takes 5d100 Days instead, for a perfect graft.",
+            "Attaching your Head to a new body, and making it perfectly attuned to yours, takes 1d6 days. While the new body is assimilating, it may regenerate a maximum of 1 HP per round, as opposed to the normal amount. Grafting the full body or a body part of a Hamon User takes 5d100 Days instead, for a perfect graft.",
             "In theory, you could also use this ability to fix injuries of living creatures, and as an Action, you could give an amount of Hit Points equal to your Level in Vampire to someone."
         ]
     },
@@ -788,7 +788,7 @@
         "classes": ["Vamp"],
         "desc": [
             "You may put an entire miniature muscular system within the veins in your body. Not only that, but you may also turn energy or matter within your body into more veins, in order to have a Secondary Muscular System.",
-            "Your Veins may be used to pierce through your skin without damaging you. Your Veins may deal Slashing, Bludgeoning, or Piercing damage, and they count as Unarmed Strikes when you attack using them. You may Attack using a Vein even if the health of the rest of your body is zero or lower. If the health of your head is zero or lower, you may not do this.",
+            "Your Veins may be used to pierce through your skin without damaging you. Your Veins may deal Slashing, Bludgeoning, or Piercing damage, and they count as Unarmed Strikes when you attack using them. You may Attack using a Vein even if the health of the rest of your Body is zero or lower. If the health of your Head is zero or lower, you may not do this.",
             "You may have up to 5 Veins going outside of your body at a time. Your hair also operates in the same way, with a maximum of 5 “Veins” on the top of your head. When using Veins to move, you may move at up to half of your normal movement speed. You may also use Veins to Grapple. For every additional Vein used, add +1 to the Bonus for your Grapple Check. The Veins may stretch up to 5 meters."
         ]
     },
