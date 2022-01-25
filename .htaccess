@@ -1,2 +1,4 @@
 ErrorDocument 404 /not_found/
+<IfModule mod_headers.c>
 Header set Cache-Control "max-age=86400, public"
+</IfModule>
