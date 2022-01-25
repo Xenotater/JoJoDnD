@@ -1,1 +1,2 @@
 ErrorDocument 404 /not_found/
+Header set Cache-Control "max-age=86400, public"
