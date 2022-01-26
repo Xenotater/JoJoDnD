@@ -134,7 +134,7 @@
             },
             "2": {
                 "energy": 100,
-                "feats": ["Meanacing Aura"]
+                "special": ["<a href='/feats/?focus=Menacing_Aura'>Menacing Aura</a>"]
             },
             "3": {
                 "energy": 150,

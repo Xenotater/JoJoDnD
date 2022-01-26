@@ -677,7 +677,7 @@
         "classes": ["Vamp"],
         "desc": [
             "You gain an amount of Hit Points back in either your Head or Body for an amount equal to your Constitution Modifier, every time Initiative is rolled (each round).",
-            "Furthermore, as an Action, you may restore Hit Dice to yourself. You may only restore 1 Hit Die per Action. Hit Points restored by this feature can either restore Hit Points to your Head or Body, and you may split Hit Points restored between the two if desired. "
+            "Furthermore, as an Action, you may restore Hit Dice to yourself. You may only restore 1 Hit Die per Action. Hit Points restored by this feature can either restore Hit Points to your Head or Body, and you may split Hit Points restored between the two if desired."
         ]
     },
     "Vampiric_Feeding": {
@@ -758,7 +758,7 @@
     },
     "Flesh_Grafting": {
         "name": "Flesh Grafting",
-        "classes": ["Vamp"],
+        "classes": ["Vamp", "EPM"],
         "desc": [
             "You’ve gained the ability to start controlling individual cells and their function within your body. You may now replace things such as removed limbs, removed organs, removed bones, and even entire bodies, with the flesh of other humanoid creatures.",
             "This taken flesh will assimilate to your body much faster than if you were to attempt to grow back your own body through Regeneration. You may also use this ability to connect living or undead creatures together in order to create Chimeras. Talk to your DM to determine the stats and abilities of the Chimeras that you create. You may perform this Ability at any time, without limit.",
@@ -785,7 +785,7 @@
     },
     "Controlled_Veins": {
         "name": "Controlled Veins",
-        "classes": ["Vamp"],
+        "classes": ["Vamp", "EPM"],
         "desc": [
             "You may put an entire miniature muscular system within the veins in your body. Not only that, but you may also turn energy or matter within your body into more veins, in order to have a Secondary Muscular System.",
             "Your Veins may be used to pierce through your skin without damaging you. Your Veins may deal Slashing, Bludgeoning, or Piercing damage, and they count as Unarmed Strikes when you attack using them. You may Attack using a Vein even if the health of the rest of your Body is zero or lower. If the health of your Head is zero or lower, you may not do this.",
@@ -794,7 +794,7 @@
     },
     "Body_Evacuation": {
         "name": "Body Evacuation",
-        "classes": ["Vamp"],
+        "classes": ["Vamp", "EPM"],
         "desc": [
             "The only part of the Undead body needed for Vampiric survival is the brain. If you find yourself in an incredibly desperate situation, you may perform this Ability to save yourself.",
             "As an Attack, you use your Secondary Muscular System (from <a href='/abilities/?focus=Controlled_Veins'>Controlled Veins</a>) to remove your Head and Secondary Muscular System from the rest of you.",
@@ -847,6 +847,136 @@
         "classes": ["Vamp"],
         "desc": [
             "You have perfectly honed your Vampiric Abilities, and your brain has been brought to its fullest potential, meaning that the only way to improve from here would be an option other than simply consuming blood. If you obtain a <a href='/artifacts/?focus=Completed_Stone_Mask'>Completed Stone Mask</a>, you may don it, put UV light into the Mask, and become an <a href='/races/?focus=Ultimate_Being'>Ultimate Being</a>."
+        ]
+    },
+    "EPM_Double_Health": {
+        "name": "EPM Double Health",
+        "classes": ["EPM"],
+        "desc": [
+            "As an Enhanced Pillar Man you get the same amount of Hit Points that you did when you were alive. However, your Hit Dice, regardless of your class, becomes 1d12. Your Head Hit Dice is 1d6, and it has an additional +5 to its AC."
+        ]
+    },
+    "EPM_Regeneration": {
+        "name": "EPM Regeneration",
+        "classes": ["EPM"],
+        "desc": [
+            "You gain an amount of Hit Points back in either your Head or Body equal to your Constitution Modifier, every time Initiative is rolled (each round).",
+            "Furthermore, as an Action, you may restore Hit Dice to yourself. You may only restore an amount of Hit Dice equal to your Proficiency Bonus per Action. Hit Points restored by this feature can either restore Hit Points to your Head or Body, but you may split Hit Points restored between the two if desired."
+        ]
+    },
+    "Superior_Feeding": {
+        "name": "Superior Feeding",
+        "classes": ["EPM"],
+        "desc": [
+            "Your Body has changed on a cellular level. As a Pillar Man, your body was already fully accustomed to consuming living beings. However, now every cell in your body may break down living tissue and make it into energy extremely quickly. By simply touching living flesh, you may absorb the matter present and convert it into energy in a matter of seconds.",
+            "You may also use this as an attack. You may make contact with living flesh using your body and begin to absorb it. Upon making sustained contact, or as part of an Unarmed Strike, your flesh deals 1d6 Acid damage per turn.",
+            "This process becomes faster as you level up, dealing 2d6 at Level 5, 3d6 at Level 10, 4d6 at Level 15, and 5d6 at Level 20."
+        ]
+    },
+    "Ancient_Charm": {
+        "name": "Ancient Charm",
+        "classes": ["EPM"],
+        "desc": [
+            "The power coming from you is mysterious, and that of ridiculous strength. All living creatures recognize this power subconsciously.",
+            "Your Charisma score increases by 3, and you gain Proficiency in Intimidation (If you were already Proficient in Intimidation, you may gain Expertise and add the Proficiency Bonus again)."
+        ]
+    },
+    "EPM_Brain_Stimulation": {
+        "name": "EPM Brain Stimulation",
+        "classes": ["EPM"],
+        "desc": [
+            "The Stone Mask is made to be used by Pillar Men. It not only awakens the true potential of the mind, but also increases the efficiency of it. At Levels 4, 7, 10, 14, 17, and 20, add 1 point of Intelligence to your Intelligence Score."
+        ]
+    },
+    "EPM_Enhanced_Musculature": {
+        "name": "EPM Enhanced Musculature",
+        "classes": ["EPM"],
+        "desc": [
+            "Your muscles ripple with stolen life energy. At Levels 5, 8, 11, 15, 18 and 20, add 1 point of Strength to your Strength score."
+        ]
+    },
+    "EPM_Flexibility": {
+        "name": "EPM Flexibility",
+        "classes": ["EPM"],
+        "desc": [
+            "Your reflexes are just as strong as your muscles. At Levels 6, 9, 12, 19, and 20, add 1 point of Dexterity to your Dexterity score."
+        ]
+    },
+    "EPM_Senses": {
+        "name": "EPM Senses",
+        "classes": ["EPM"],
+        "desc": [
+            "You’ve had lots of experience, and can tell when something feels off. At Levels 7, 10, 13, 16, 19, and 20, add 1 point of Dexterity to your Dexterity score."
+        ]
+    },
+    "EPM_Durability": {
+        "name": "EPM Durability",
+        "classes": ["EPM"],
+        "desc": [
+            "Your body is becoming used to absorbing these massive amounts of energy, allowing you to convert some into tissue to make it much denser over time. At Levels 8, 11, 13, 15, and 20, add 1 point of Constitution to your Constitution score."
+        ]
+    },
+    "Total_Body_Control": {
+        "name": "Total Body Control",
+        "classes": ["EPM"],
+        "desc": [
+            "Every part of your body has tiny muscles inside of it, allowing every single part of your body to move around freely.",
+            "As an Action or Bonus Action, you may split, reassemble, flatten, inflate, or otherwise modify your body in almost any way imaginable, so long as it remains in one piece."
+        ]
+    },
+    "Cellular_Phasing": {
+        "name": "Cellular Phasing",
+        "classes": ["EPM"],
+        "desc": [
+            "Your cells all can move with incredible flexibility and speed. You may move your body, or parts of your body, through flesh without absorbing or affecting it in any negative way, if desired."
+        ]
+    },
+    "Cellular_Drive": {
+        "name": "Cellular Drive",
+        "classes": ["EPM"],
+        "desc": [
+            "Even when below 0 HP, in order for you to stop moving your Hit Points must drop below the inverse of your Maximum Health, in which case your Head/Body are destroyed."
+        ]
+    },
+    "Elemental_Battle_Mode": {
+        "name": "Elemental Battle Mode",
+        "classes": ["EPM"],
+        "desc": [
+            "You realize that your body may be used in a creative way in order to harness a primal force of Earth, such as Heat, Cold, Light, Rock, Water, Air, Electricity, etc.",
+            "You gain a body modification that allows your body to perform actions related to this force, and resistance to damage from your Ability. Talk to your DM about making and balancing this Ability."
+        ]
+    },
+    "EPM_Muscular_Proficiency": {
+        "name": "EPM Muscular Proficiency",
+        "classes": ["EPM"],
+        "desc": [
+            "Gain advantage on Strength, Constitution, and Dexterity Saving Throws."
+        ]
+    },
+    "EPM_Dormancy": {
+        "name": "EPM Dormancy",
+        "classes": ["EPM"],
+        "desc": [
+            "As an Action, you may seal yourself within a thin shell of rock at any point. While in this state you may not move in any way, but you also have total Immunity to UV light. At this point, you may either set an automatic timer or trigger (a bird lands on your casing, you hear a gunshot, etc.) that allows you to awaken as an Action.",
+            "Entering this state costs 100 Energy, and you may stay in it for up to ten thousand years. You may remain dormant for longer than that, but for every year that you are dormant past ten thousand, 5 Energy is consumed. If you run out of energy while in this state, your brain stops functioning completely."
+        ]
+    },
+    "EPM_Peak": {
+        "name": "EPM Peak",
+        "classes": ["EPM"],
+        "desc": [
+            "You have perfectly honed your Abilities, and your brain has been brought to its fullest potential, meaning that the only way to improve from here would be an option other than simply absorbing living things. If you obtain a <a href='/artifacts/?focus=Completed_Stone_Mask'>Completed Stone Mask</a>, you may don it, put UV light into the Mask, and become an <a href='/races/?focus=Ultimate_Being'>Ultimate Being</a>."
+        ]
+    },
+    "Undead_Nature": {
+        "name": "Undead Nature",
+        "classes": ["Zom", "Ghl", "Vamp", "EPM"],
+        "desc": [
+            "As a creature that has been changed and twisted, you have been removed from the traditional life cycle. Part of life is decay and death, but you have ascended beyond decay itself.",
+            "As an Undead Creature you do not age in any capacity, and are physically incapable of doing so. When converted into an Undead Creature, your body regains the youth that you may have lost, bringing your physical age to roughly 25, at the peak of your physical performance. If you are exposed to the Stone Mask when you are younger your mind fully develops and matures, and you continue to mature normally until you reach 25, and at that time you stop aging. You also do not need to sleep.",
+            "You are unable to be affected by any poison, toxin, or venom, so you gain Immunity to Poison damage and the Poisoned Condition, but acids still affect you normally.",
+            "You are unable to feel pain, except Radiant damage. Your body takes 1d100 Radiant damage every turn when any part of your body is exposed to direct sunlight. Your Head also takes 1d100 Radiant damage every turn when exposed to direct sunlight. This sunlight damage cannot be reduced in any way.",
+            "If your Body Hit Points reach 0 you become unable to move until you regenerate or are healed in some other fashion. When your Head's Hit Points reach 0 you become paralyzed, but stay conscious. When your Head's HP becomes less than the inverse of your total Head Health, your Head is destroyed and you die."
         ]
     }
 }
