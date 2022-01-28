@@ -978,5 +978,117 @@
             "You are unable to feel pain, except Radiant damage. Your body takes 1d100 Radiant damage every turn when any part of your body is exposed to direct sunlight. Your Head also takes 1d100 Radiant damage every turn when exposed to direct sunlight. This sunlight damage cannot be reduced in any way.",
             "If your Body Hit Points reach 0 you become unable to move until you regenerate or are healed in some other fashion. When your Head's Hit Points reach 0 you become paralyzed, but stay conscious. When your Head's HP becomes less than the inverse of your total Head Health, your Head is destroyed and you die."
         ]
+    },
+    "Zombie_Infection": {
+        "name": "Zombie Infection",
+        "classes": ["Zom", "Ghl"],
+        "desc": [
+            "As an Action, you may infect living humans using your Ability and convert them into Zombies. When some of your blood or saliva comes into contact with a living being’s blood they must make a Constitution Saving Throw (DC 10), taking 2d6 Necrotic damage on a failed save. If the target succeeds on the save, they take no damage.",
+            "If the Necrotic damage dealt to the target kills them, they revive at the start of their next turn as a Zombie. You may also use this ability to revive a freshly deceased body, so long as they died within 24 hours of exposure or if they have been preserved through other means such as freezing."
+        ]
+    },
+    "Zombie_Double_Health": {
+        "name": "Zombie Double Health",
+        "classes": ["Zom"],
+        "desc": [
+            "As the weakest kind of Undead, Zombies have the same kind of power that other Undead have, just in a much weaker form. Zombies have 1d6 + their Constitution Modifier HP in their Head for each level they had, whereas the Body of a Zombie has 3 times the health they had in life. The Head also has +5 to its AC."
+        ]
+    },
+    "Rotting_Flesh": {
+        "name": "Rotting Flesh",
+        "classes": ["Zom"],
+        "desc": [
+            "Your flesh dries out, and you smell like rotting meat. You have disadvantage on all rolls where you attempt to pass off as a living human."
+        ]
+    },
+    "Zombie_Strength": {
+        "name": "Zombie Strength",
+        "classes": ["Zom"],
+        "desc": [
+            "Zombies have an Advantage on all Strength Saving Throws, and as an Action, Zombies may lift or throw an object weighing up to 5 times their Strength score in kilograms."
+        ]
+    },
+    "Ghoulish_Agility": {
+        "name": "Ghoulish Agility",
+        "classes": ["Ghl"],
+        "desc": [
+            "You get Advantage on all Dexterity Saving Throws. You also get an additional 2 meters of movement speed and a +1 Bonus to your Body’s AC."
+        ]
+    },
+    "Ghoulish_Double_Health": {
+        "name": "Ghoulish Double Health",
+        "classes": ["Ghl"],
+        "desc": [
+            "Ghouls get 1d4 + their Constitution Modifier Head HP for each level they had, whereas the Body of a Ghoul has 3 times the health they had in life. The Head also has +5 to its AC."
+        ]
+    },
+    "Ghoulish_Strength": {
+        "name": "Ghoulish Strength",
+        "classes": ["Ghl"],
+        "desc": [
+            "You get Advantage on all Strength Saving Throws, and as an Action, you may lift or throw an object up to 20 times your Strength score in kilograms."
+        ]
+    },
+    "Perfect_Form": {
+        "name": "Perfect Form",
+        "classes": ["Ult"],
+        "desc": [
+            "All of your Ability Scores increase by 5. You also have advantage to all Skill Checks and Saving Throws. You gain Proficiency in any Skill/Weapon/Tactic you have ever seen used before or used yourself."
+        ]
+    },
+    "Ultimate_Nature": {
+        "name": "Ultimate Nature",
+        "classes": ["Ult"],
+        "desc": [
+            "You are now resistant to UV light, as well as all other forms of damage, including Radiant. You do not need to sleep, and you must only intake organic matter equal to your body mass once every month. You gain 5 energy for every turn when you are in direct UV light, through passive photosynthesis.",
+            "You may also enter a dormant state, in which you do not move or think, and stay in this state for up to one million years.",
+            "You also sense at the maximum possible level, being able to detect the change in nearby air currents, see better than any ground-based telescope, and hear any and every noise that has any wave that reaches your ears."
+        ]
+    },
+    "Immortality": {
+        "name": "Immortality",
+        "classes": ["Ult"],
+        "desc": [
+            "You gain new Hit Dice, being d20s, and lose your <a href='/abilities/?focus=Vampire_Double_Health'>Vampire</a> or <a href='/abilities/?focus=EPM_Double_Health'>EPM</a> Double Health.",
+            "You may reroll the Hit Points gained in all previous levels using these new Hit Dice upon transforming. You also regenerate an amount of Hit Points equal to your Constitution Modifier every round, and may choose to spend as many Hit Dice as you would like as an Action."
+        ]
+    },
+    "Improved_Imitation": {
+        "name": "Improved Imitation",
+        "classes": ["Ult"],
+        "desc": [
+            "You can perform any Action that any creature can, but better. When viewing any Action performed by a living creature, you may Imitate it instantly without having to roll for it.",
+            "You may also Imitate Actions viewed in the past. This means that you may gain up to 5 Class Features from other Classes. You may change the Class Features that you know as a Bonus Action."
+        ]
+    },
+    "Living_Drones": {
+        "name": "Living Drones",
+        "classes": ["Ult"],
+        "desc": [
+            "You may take a portion of your body’s matter, or up to 100 Energy, and convert it into any Small (or smaller) living creature, a physical characteristic of a creature, or any organic matter.",
+            "This may be separated or attached to your body, and reattached or separated at will. If the Drone created has a brain, it will act as a normal animal of its species would in any given situation. However, you may also send commands that override the creature’s standard brain function, effectively controlling it."
+        ]
+    },
+    "Stoneflesh": {
+        "name": "Stoneflesh",
+        "classes": ["Rock"],
+        "desc": [
+            "When entering full hibernation, you gain a thick layer of stone over your skin and enter a dormant state. You may not move while in this state, nor take any actions whatsoever. Your scent disappears, and you become practically indistinguishable from a regular boulder.",
+            "In this state, your AC increases by 5, your Con score increases by 20, and you resist all damage types. You can only be damaged by a great amount of physical damage, submersion in water, or temperatures either above 950 C or below -240 C."
+        ]
+    },
+    "Stone_Cold_Willpower": {
+        "name": "Stone Cold Willpower",
+        "classes": ["Rock"],
+        "desc": [
+            "Over 95% of Rock Humans are born with a Stand Ability. Roll a d20. If your number rolled is anything other than 1, you are a natural-born Stand User (if you rolled a 1, you may still have the potential to gain a Stand, you are just not born with one)."
+        ]
+    },
+    "Mysterious_Disappearance": {
+        "name": "Mysterious Disappearance",
+        "classes": ["Rock"],
+        "desc": [
+            "When you are killed, your body rapidly crumbles in dust that easily dissipates. One turn after you die, your remains are completely gone."
+        ]
     }
 }

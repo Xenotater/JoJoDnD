@@ -6,7 +6,7 @@
         "desc": "A Zombie is created whenever a Vampire takes blood out of a living human, or brings a shriveled corpse back from the dead. Zombies are creatures with great strength and durability, but almost total weakness to UV light. Most Zombies are slaves to their masters, but some Zombies may survive and live after their Master has left them in some way, mostly of their own free will but still slaves to their hunger for living flesh.",
         "playing": "Zombies are powerful undead creatures, but they have several weaknesses and shortcomings, and they are the weakest type of Undead. Once a creature becomes a Zombie, they have reached their full potential, and may no longer grow or develop. A person turned Zombie keeps all of their stats and proficiencies, but they lose the ability to use their <a href='/classes/?focus=Stands'>Stand</a>. A Zombie must obey their master, as they are bound to them. If they have no orders, or no master, Zombies usually seek out flesh to satiate their immense hunger. Zombies are grotesque abominations, taking on some of the parts of Vampires, and immediately gaining immense strength. However, they, in their current state, may not become stronger. Regardless of the experience points gained by a Zombie, they cannot gain Levels. A Zombie can become a Vampire or an Ultimate Being, but they need the necessary equipment (<a href='/artifacts/?focus=Stone_Mask'>Stone Mask</a> or <a href='/artifacts/?focus=Completed_Stone_Mask'>Completed Stone Mask</a>, respectively).",
         "changes": "When you become a Zombie, you retain all abilities, skills, and powers you had when you were a human. However, several things have changed. Any experience points gained are destroyed, and your class goes away. You then become a Level 1 Zombie. As Level 1 Zombie, your Strength increases by 2, your Constitution increases by 2, and your Dexterity Increases by 1. However, your Wisdom decreases by 3, your intelligence decreases by 4, and your Charisma score becomes 3 (unless it is lower, in which case, it remains the same). Zombies heal at roughly the same rate that they would heal before they became a Zombie. Any damage dealt by <a href='/classes/?focus=Ripple'>The Ripple</a> or UV Radiation leaves a wicked scar, similar to a severe burn on a normal human. Zombies do not need to eat or drink normally, instead needing to eat raw flesh or living creatures, usually humanoids. Zombies need to eat either their entire body weight in human parts, or five times their body weight in animals, per month, in order to continue surviving. A Zombie may be turned into a higher form of Undead (Ghoul or Vampire), and they count as a fresh corpse for the purpose of any effects that would do so.",
-        "feats": ["Zombie Infection", "Zombie Double Health", "Undead Nature", "Zombie Strength"]
+        "feats": ["Undead Nature", "Rotting Flesh", "Zombie Double Health", "Zombie Infection", "Zombie Strength"]
     },
     "Ghoul": {
         "name": "Ghoul",
@@ -15,7 +15,7 @@
         "desc": "A Ghoul is very similar to a Zombie, in that it is created when a Vampire steals the blood out of a living human. However, rather than simply leaving a shriveled corpse, the Vampire replaces some of the taken blood with a small amount of Vampiric Essence (Ghouls may also be created from corpses, even if there are very little remains left of the corpse).  This causes the Ghoul to undergo only minor changes as opposed to its Zombie counterpart. Ghouls are slaves to their Vampiric Masters, but not to the same level that Zombies are. Ghouls retain many skills and abilities that they once had, as well as their sense of pride and moral code. Their psyche is only changed to the point where they still may act independently of their Vampiric Masters, they simply respect and revere their Vampiric Masters. If someone more powerful were to come along, a Ghoul could potentially change their allegiance. Ghouls look very similar to their human counterparts, and are able to pass as Human with little to no trouble at all.",
         "playing": "Ghouls are much stronger than Zombies for several reasons. For starters, a Ghoul retains all power, abilities, and skills that they had in life, including, if applicable, their <a href='/classes/?focus=Stands'>Stand</a>. Level 1 Ghoul is added to their character sheet, and they get to keep any Levels or Abilities that they had previously. However, once a character has become a Ghoul, they may not gain Levels in any class, regardless of experience points gained. A Ghoul may also become a Vampire or an Ultimate Being, but they need the necessary equipment in order to do so (<a href='/artifacts/?focus=Stone_Mask'>Stone Mask</a> or <a href='/artifacts/?focus=Completed_Stone_Mask'>Completed Stone Mask</a>, respectively).",
         "changes": "Your Levels all stay the same, but you also become a Level 1 Ghoul on top of your already gathered abilities. You may not gain any more Levels, regardless of experience points gained. Your Strength and Constitution increase by 4, your Dexterity increases by 2, and your Intelligence, Wisdom, and Charisma all stay the same. Ghouls heal at roughly twice the rate that they would normally in life. Ghouls need to eat either their entire body weight in human parts, or five times their body weight from animals, per week in order to continue surviving.",
-        "feats": ["Zombie Infection", "Ghoulish Double Health", "Undead Nature", "Ghoulish Strength", "OR", "Ghoulish Agility"]
+        "feats": ["Undead Nature", "Ghoulish Double Health", "Zombie Infection", "Ghoulish Strength", "OR", "Ghoulish Agility"]
     },
     "Vampire": {
         "name": "Vampire",
@@ -29,7 +29,7 @@
         "level": {
             "1": {
                 "energy": 0,
-                "feats": ["Vampire Double Health", "Vampiric Regeneration", "Undead Nature", "Vampiric Feeding"]
+                "feats": ["Undead Nature", "Vampire Double Health", "Vampiric Regeneration", "Vampiric Feeding"]
             },
             "2": {
                 "energy": 10,
@@ -130,7 +130,7 @@
         "level": {
             "1": {
                 "energy": 0,
-                "feats": ["EPM Double Health", "EPM Regeneration", "Undead Nature", "Superior Feeding"]
+                "feats": ["Undead Nature", "EPM Double Health", "EPM Regeneration", "Superior Feeding"]
             },
             "2": {
                 "energy": 100,
