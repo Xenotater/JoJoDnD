@@ -236,23 +236,40 @@ function sort() {
 }
 
 function search(query) {
-    var not = false;
+    var not = false, cls = false;
     abilities = [];
 
     if (query.match(/^NOT */)) {
         not = true;
         query = query.replace(/^NOT */, "");
     }
+    else if (query.match(/^c: */)) {
+        cls = true;
+        query = query.replace(/^c: */, "");
+    }
+
     for (var key in aData) {
         var matched = false;
-        for (var key2 in aData[key]) {
-            var attr= "";
-            attr += aData[key][key2];
+
+        if (!cls) {
+            for (var key2 in aData[key]) {
+                var attr = "";
+                attr += aData[key][key2];
+                if (attr.toLowerCase().includes(query.toLowerCase()))
+                    matched = true;
+                if ("prerequisite".includes(query.toLowerCase()) && aData[key].prereq != null) //make sure prereqs can be searched for
+                    matched = true;
+            }
+        }
+        else {
+            var attr = "";
+            attr += aData[key].classes;
             if (attr.toLowerCase().includes(query.toLowerCase()))
                 matched = true;
             if ("prerequisite".includes(query.toLowerCase()) && aData[key].prereq != null) //make sure prereqs can be searched for
                 matched = true;
         }
+
         if ((matched && !not) || (!matched && not))
             abilities.push([key, aData[key]]);
     }
