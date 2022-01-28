@@ -211,6 +211,11 @@ h1, h2, h3, th {
     --bs-gutter-x: 0; /* fixes width on mobile? */
 }
 
+.simplebar-track {
+    cursor: default;
+    pointer-events: auto;
+}
+
 .loading {
     display: block;
     margin-left: auto;
