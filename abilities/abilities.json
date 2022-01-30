@@ -1073,8 +1073,7 @@
         "name": "Stoneflesh",
         "classes": ["Rock"],
         "desc": [
-            "When entering full hibernation, you gain a thick layer of stone over your skin and enter a dormant state. You may not move while in this state, nor take any actions whatsoever. Your scent disappears, and you become practically indistinguishable from a regular boulder.",
-            "In this state, your AC increases by 5, your Con score increases by 20, and you resist all damage types. You can only be damaged by a great amount of physical damage, submersion in water, or temperatures either above 950 C or below -240 C."
+            "When entering full hibernation, you gain a thick layer of stone over your skin and enter a dormant state. You may not move while in this state, nor take any actions whatsoever. Your scent disappears, and you become practically indistinguishable from a regular boulder. In this state, your AC increases by 5, your Con score increases by 20, and you resist all damage types."
         ]
     },
     "Stone_Cold_Willpower": {
