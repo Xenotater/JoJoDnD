@@ -21,7 +21,7 @@
         "name": "Automatic Weapon Proficiency",
         "desc": "You’ve put in hours on the shooting range, and now you can use Automatic Weapons properly.",
         "effects": [
-            "Add your Proficiency Bonus to your To Hit when using Automatic Weapons.",
+            "You may add your Proficiency Bonus to your Attack rolls when using Automatic Weapons.",
             "Instead of the weapon jamming on a roll of 5 or lower, the weapon only jams on a Critical Failure.",
             "When the weapon jams, you may fix it as a Bonus Action."
         ]
@@ -90,8 +90,8 @@
         "name": "Close Combat Specialist",
         "desc": "You’ve become accustomed to defending yourself, and coming out victorious, even in the stickiest of situations.",
         "effects": [
-            "Your AC is increased by 2.",
-            "You may add your Proficiency Bonus to Attacks when using Improvised Weapons.",
+            "Your AC increases by 2.",
+            "You may add your Proficiency Bonus to Attack rolls when using Improvised Weapons.",
             "If you are already Proficient in using Improvised Weapons, you may add your Proficiency Bonus again."
         ]
     },
@@ -258,7 +258,8 @@
         "name": "Martial Weapon Proficiency",
         "desc": "Through knowledge and training you have gained the ability to properly use Martial Weapons of all sorts.",
         "effects": [
-            "You may add your Proficiency Bonus to your Attack and Damage rolls when using Martial Weapons."
+            "You may add your Proficiency Bonus to your Attack rolls when using Martial Weapons.",
+            "You may also add your Proficiency Bonus to Damage when using these weapons."
         ],
         "prereq": "Str 13+, Dex 13+, or <a href='/passions/?focus=Thief'>Thief</a>"
     },
@@ -307,7 +308,7 @@
         "prereq": "Con 13+ or <a href='/passions/?focus=Traveller'>Traveller</a>"
     },
     "Paranoia": {
-        "name": "Natural Talent",
+        "name": "Paranoia",
         "desc": "You’ve been aware of them for a while now. You don’t know who, but you know that they’ve been after you for so long, and you’ve been evading them for what seems like forever.",
         "effects": [
             "You may add your Proficiency Bonus to your Initiative Bonus, and enemies that attempt to surprise you get Disadvantage instead of Advantage on their Surprise Attack."
@@ -317,7 +318,7 @@
         "name": "Pistol Proficiency",
         "desc": "Through knowledge and training, you have gained the ability to properly use handguns and revolvers.",
         "effects": [
-            "You may now add your Proficiency Bonus to your Attack and Damage rolls when using Pistols.",
+            "You may add your Proficiency Bonus to your Attack rolls when using Pistols.",
             "You may reload a Pistol as a Bonus Action, rather than as a full Attack."
         ]
     },
@@ -334,6 +335,174 @@
         "desc": "Through time spent studying the human body you’ve found the best way to hinder movement, cause immense pain, and defeat foes with little force. ",
         "effects": [
             "As an Action, you may make an Attack and choose a limb on your Target. Upon a successful hit, rather than dealing damage, the opponent may not use the limb that you targeted for an amount of turns equal to your Intelligence Modifier."
+        ]
+    },
+    "Quick_on_your_Feet": {
+        "name": "Quick on your Feet",
+        "desc": "You’re used to getting out of difficult situations using your wit.",
+        "effects": [
+            "You may gain Proficiency in a Saving Throw of your choice."
+        ]
+    },
+    "Rifle_Proficiency": {
+        "name": "Rifle Proficiency",
+        "desc": "Through training and patience, you have gained the ability to accurately use rifles. ",
+        "effects": [
+            "You may add your Proficiency Bonus to your Attack rolls when using Rifles.",
+            "If you choose not to move during your turn, you may add your Proficiency Bonus again to Attack rolls made with a Rifle on that turn."
+        ]
+    },
+    "Resilient": {
+        "name": "Resilient",
+        "desc": "Through luck or some sort of early exposure, you’ve become resistant to specific types of damage.",
+        "effects": [
+            "You and your Stand may choose to either become resistant to Piercing, Slashing, or Bludgeoning damage, or become resistant to any other three damage types of your choice.",
+            "You also become resistant to the Stand counterpart of the chosen type(s).",
+            "If you have a Damage Vulnerability, you may not use a Resistance to cancel it out.",
+            "You may take this Feat multiple times if desired."
+        ]
+    },
+    "Scarflesh": {
+        "name": "Scarflesh",
+        "desc": "You’ve gone through a lot of physical trauma, and your body is beginning to show the signs of it. Scar tissue is beginning to build up on your skin, as well as internally.",
+        "effects": [
+            "You gain a Damage Resistance equal to your Constitution Modifier every turn."
+        ]
+    },
+    "Shield_Master": {
+        "name": "Shield Master",
+        "desc": "You’re pretty accustomed to using a shield in combat, and have learned how to move swiftly while carrying one.",
+        "effects": [
+            "You no longer take a penalty to your Movement Speed while carrying a shield.",
+            "You may perform a shield bash attack, which uses the same Attack Bonus and Damage Dice as either an Unarmed Strike or an Improvised Weapon."
+        ]
+    },
+    "Simple_Weapon_Proficiency": {
+        "name": "Simple Weapon Proficiency",
+        "desc": "Through knowledge and training, you have gained the ability to properly use simple weapons.",
+        "effects": [
+            "You may add your Proficiency Bonus to your Attack rolls when using Simple Weapons.",
+            "You may throw a Simple Weapon with the Range of an Improvised Weapon (5/15), and use the same Attack Bonus and Damage Dice that you would when using it as a Melee Weapon."
+        ]
+    },
+    "Stroke_of_Luck": {
+        "name": "Stroke of Luck",
+        "desc": "You seem to have some sort of unknown force that protects you and watches over you, kicking in at the most crucial moments.",
+        "effects": [
+            "When you roll a 1 on any roll, you may instead choose to make it a 20.",
+            "You may use this Feat an amount of times equal to half of your Proficiency Bonus (rounded down), per Long Rest."
+        ]
+    },
+    "Stand_Specialization": {
+        "name": "Stand Specialization",
+        "desc": "Due to the Nature of your Stand, there are some things that simply cannot harm you.",
+        "effects": [
+            "You and your Stand may gain Immunity to two damage types of your choice, but you gain Vulnerability to a damage type of your choice as well.",
+            "These Imunnities and Vulnerabilities should tie in to your Stand’s Anchor or Ability. For example, a Stand made out of Fire could be immune to Fire and Radiant Damage, but be vulnerable to Cold damage.",
+            "If you gain Immunity to Bludgeoning, Slashing, or Piercing, you only gain one Immunity instead of two.",
+            "You also become immune to the Stand counterpart of the chosen type(s).",
+            "You may gain Immunities at the cost of Vulnerabilities as many times as you wish.",
+            "Vulnerabilities gained through this Feat cannot be cancelled out by Resistance or Immunity gained through any means."
+        ],
+        "prereq": "<a href='/abilities/?focus=Anchored_Stand'>Anchored Stand</a>"
+    },
+    "Superhuman": {
+        "name": "Superhuman",
+        "desc": "People usually have limits on how strong or smart they can get, but this is not always the case. You’ve found a way to push yourself past human limits.",
+        "effects": [
+            "Pick one of your six Ability Scores to increase the maximum score for that stat by two.",
+            "The Ability Score does not increase when you take this feat, only the maximum for it does.",
+            "You may take this Feat multiple times if desired."
+        ]
+    },
+    "Tanky": {
+        "name": "Tanky",
+        "desc": "Due to your abnormally stocky build, or just sheer commitment, you don’t go down very easily in a fight.",
+        "effects": [
+            "Each Level, you gain an additional 2 Hit Points.",
+            "This also applies retroactively, giving you twice your current Level additional HP.",
+            "You may take this Feat multiple times if desired."
+        ]
+    },
+    "Toxin_Resistance": {
+        "name": "Toxin Resistance",
+        "desc": "Through training and patience alongside incremental exposure, you have made your body resistant to almost all toxins.",
+        "effects": [
+            "You gain complete Immunity to poisons or toxins ingested (up to 1/4 Liter every 24 hours), and the Poisoned condition.",
+            "You gain Advantage on all Constitution Saving Throws made against venoms, breathable toxins, and acids.",
+            "You gain Resistance to Poison and Acid damage."
+        ]
+    },
+    "Tavern_Brawler": {
+        "name": "Tavern Brawler",
+        "desc": "Through experience and tussles, you’ve gained the ability to make objects from your environment into effective weaponry.",
+        "effects": [
+            "You may add your Proficiency Bonus to Attack rolls when using any (non-weapon) object to attack somebody.",
+            "If you already have Proficiency in Improvised Weapons, simply add the Proficiency Bonus again.",
+            "You may pick up objects less than 20 kg as a free action, and can pick up or hide behind an object around 1 meter in area to use it as a makeshift <a href='/weapons/?search=shield'>shield</a>. Depending on the size, and the DM’s discretion, it becomes a Shield, a Tower Shield, or a form of Cover."
+        ]
+    },
+    "Trained_Combatant": {
+        "name": "Trained Combatant",
+        "desc": "You’re well-trained in combat, and really know how to overwhelm an opponent.",
+        "effects": [
+            "When you take the Attack Action, you may perform an additional Attack.",
+            "You may take this Feat up to 3 times, granting a maximum of four Attacks per Action."
+        ],
+        "prereq": "Cannot be a <a href='/classes/?focus=Stands'>Stand User</a>"
+    },
+    "Trap_Detection": {
+        "name": "Trap Detection",
+        "desc": "You’ve gone through your fair share of dangerous situations. Over time, you’ve built up an awareness of Traps and the ability to better sense danger.",
+        "effects": [
+            "You gain Advantage on Perception and Investigation Checks."
+        ]
+    },
+    "Thrown_Weapon_Proficiency": {
+        "name": "Thrown Weapon Proficiency",
+        "desc": "You’ve spent a lot of time throwing all sorts of objects from darts to tomahawks and more.",
+        "effects": [
+            "You may add your Proficiency Bonus to Attack rolls when using any weapon with the Thrown property.",
+            "You may draw Thrown Weapons as a Free Action.",
+            "You may throw two of the same Thrown Weapons or objects as a single Attack, without penalty to either object’s accuracy or damage. You cannot do this with Spheres imbued with <a href='/classes/?focus=Spin'>The Spin</a>. "
+        ]
+    },
+    "Unarmed_Proficiency": {
+        "name": "Unarmed Proficiency",
+        "desc": "Through training and patience, you have spent time figuring out how to fight utilizing every muscle in your body effectively.",
+        "effects": [
+            "Your AC increases by 1.",
+            "You may add your Proficiency Bonus to Attack rolls when using <a href='/weapons/?search=brass%20knuckles'>Brass Knuckles</a> or <a href='/weapons/?search=spiked%20gauntlets'>Spiked Gauntlets</a>.",
+            "Instead of rolling d4s for Unarmed damage, you may use d6s."
+        ]
+    },
+    "Unstoppable_Willpower": {
+        "name": "Unstoppable Willpower",
+        "desc": "Some have an inner strength that simply cannot be stopped. Some are born with it, and others earn it through struggle and perseverance.",
+        "effects": [
+            "Any time you take damage that would put you at 0 Hit Points or below, you may make a Constitution (Not Durability), or Charisma Saving Throw.",
+            "The DC of this throw is equal to the half of the damage dealt to you, or 15, whichever is higher.",
+            "Upon Failure you simply drop to 0 HP. Upon Success you instead drop to, or remain at, 1 HP."
+        ]
+    },
+    "Veteran_Sprinter": {
+        "name": "Veteran Sprinter",
+        "desc": "You’ve done a lot of running in your time, so running is kind of second nature to you at this point.",
+        "effects": [
+            "Your movement speed increases by 5 meters.",
+            "You may Dash as a Bonus Action.",
+            "You may perform a Reckless Dash, where, as an Action, you may move up to three times your Movement Speed.",
+            "You may perform a Reckless Dash an amount of times equal to your Strength Modifier per Short or Long Rest."
+        ],
+        "prereq": "Str 13+ or <a href='/passions/?focus=Athlete'>Athlete</a>"
+    },
+    "Weapon_Master": {
+        "name": "Weapon Master",
+        "desc": "You're well-practiced and can be deadly with just about any weapon you pick up.",
+        "effects": [
+            "You may add your Proficiency Bonus to Attack rolls when using any weapon of any type.",
+            "This does not apply to Improvised Weapons.",
+            "You do not gain the other benefits granted by specific Weapon Proficiency Feats."
         ]
     }
 }

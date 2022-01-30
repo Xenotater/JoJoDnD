@@ -135,6 +135,14 @@ h1, h2, h3, th {
     border-bottom: 2px dashed purple;
 }
 
+.table {
+    color: black;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    color: black;
+}
+
 #list {
     position: sticky;
     top: calc(90px + 2rem);
@@ -208,6 +216,15 @@ h1, h2, h3, th {
     border-radius: 30px;
 }
 
+#display.row {
+    --bs-gutter-x: 0; /* fixes width on mobile? */
+}
+
+.simplebar-track {
+    cursor: default;
+    pointer-events: auto;
+}
+
 .loading {
     display: block;
     margin-left: auto;
@@ -268,11 +285,18 @@ h1, h2, h3, th {
     .nav-item {
         border-bottom: 2px dashed black;
         text-align: left;
-        padding-left: 1rem;
     }
 
     .nav-link {
         padding: 5px;
+        font-size: 32px;
+        /* text-align: center; */
+    }
+
+    .barImg {
+        float: left;
+        margin-right: 2rem;
+        margin-bottom: 0;
     }
 
     .nav-text-break {

@@ -20,7 +20,7 @@ $(document).ready(function () {
 
     $("#search").on("input", function () {
         search($(this).val());
-        updateSearch($(this).val()); 
+        updateURL(); 
     });
 
     $(".sorter").click(function() {
@@ -35,12 +35,7 @@ $(document).ready(function () {
                 btn.removeClass("bi-caret-down");
                 btn.addClass("bi-caret-down-fill");
 
-                if (id.includes("class"))
-                    sortType = "cls";
-                else
-                    sortType = "name";
                 reverse = true;
-                updateList();
             }
         }
         else {
@@ -51,19 +46,24 @@ $(document).ready(function () {
                 btn.removeClass("bi-caret-up");
                 btn.addClass("bi-caret-up-fill");
 
-                if (id.includes("class"))
-                    sortType = "cls";
-                else
-                    sortType = "name";
                 reverse = false;
-                updateList();
             }
         }
+
+        if (id.includes("class"))
+            sortType = "classes";
+        else
+            sortType = "name";
+        updateList();
     });
 });
 
 function updateURL() {
-    window.history.replaceState(null, "", '?focus=' + a);
+    var query = $("#search").val();
+    if (query != "")
+        window.history.replaceState(null, "", '?focus=' + a + '&search=' + query);
+    else
+        window.history.replaceState(null, "", '?focus=' + a);
 }
 
 function getData(q) {
@@ -73,7 +73,6 @@ function getData(q) {
             a = "Anchored_Stand";
         for (var key of Object.keys(aData))
             abilities.push([key, aData[key]]);
-        // abilities = Object.keys(aData);
         updateList();
         updateDisplay();
 
@@ -89,15 +88,17 @@ function getData(q) {
 
 function updateList() {
     $(".simplebar-content").html("");
+
     sort();
     if (reverse)
         abilities.reverse();
+
     for (let i = 0; i < abilities.length; i++) {
         var abil = aData[abilities[i][0]];
         var classes = abil.classes;
         var races = abil.races;
 
-        var newContent = "<tr class='list-link' id='" + abil.name.replace(/ /g, "_") + "'><td>" + abil.name + "</td><td>";
+        var newContent = "<tr class='list-link' id='" + abil.name.replace(/[ -]/g, "_") + "'><td>" + abil.name + "</td><td>";
         for (let i = 0; i < abil.classes.length; i++) {
             newContent += abil.classes[i];
             if (i != abil.classes.length - 1)
@@ -118,10 +119,12 @@ function updateDisplay() {
 
     newContent += "<h2 class='display-title'>" + abil.name + "</h2>";
     for (let i = 0; i < abil.desc.length; i++)
-        newContent += "<p>" + abil.desc[i] + "</p>"
+        newContent += "<p>" + abil.desc[i] + "</p>";
     newContent += "<h4 class='display-heading'>Given To</h4><ul id='given'>";
     newContent += parseTypes(abil.classes);
-    newContent += "</ul>"
+    if (abil.name == "Primal Charm")
+        newContent += "<li><a href='/abilities/?focus=Embryo_Implantation'>Vampire Children</a></li>";
+    newContent += "</ul>";
 
     $("#display").html(newContent);
     $(".listCurrent").removeClass("listCurrent");
@@ -195,7 +198,7 @@ function parseTypes(classes) {
                     cls = "Ultimate Beings";
                     page = "races";
                     break;
-                case "Rck":
+                case "Rock":
                     cls = "Rock Humans";
                     page = "races";
                     break;
@@ -205,7 +208,7 @@ function parseTypes(classes) {
                     break;
             }
             content += "<li><a href='/" + page + "/?focus=" + 
-            cls.replace("-Type Stands", "").replace(" Users", "").replace("All ", "").replace(/s$/, "").replace(/Men$/, "Men").replace(/ /g, "") + "'>" + cls + "</a></li>";
+            cls.replace("-Type Stands", "").replace(" Users", "").replace("All ", "").replace(/s$/, "").replace(/Men$/, "Man").replace(/ /g, "_") + "'>" + cls + "</a></li>";
         }
     }
 
@@ -233,32 +236,43 @@ function sort() {
 }
 
 function search(query) {
-    var not = false;
+    var not = false, cls = false;
     abilities = [];
 
     if (query.match(/^NOT */)) {
         not = true;
         query = query.replace(/^NOT */, "");
     }
+    else if (query.match(/^c: */)) {
+        cls = true;
+        query = query.replace(/^c: */, "");
+    }
+
     for (var key in aData) {
         var matched = false;
-        for (var key2 in aData[key]) {
-            var attr= "";
-            attr += aData[key][key2];
+
+        if (!cls) {
+            for (var key2 in aData[key]) {
+                var attr = "";
+                attr += aData[key][key2];
+                if (attr.toLowerCase().includes(query.toLowerCase()))
+                    matched = true;
+                if ("prerequisite".includes(query.toLowerCase()) && aData[key].prereq != null) //make sure prereqs can be searched for
+                    matched = true;
+            }
+        }
+        else {
+            var attr = "";
+            attr += aData[key].classes;
             if (attr.toLowerCase().includes(query.toLowerCase()))
                 matched = true;
             if ("prerequisite".includes(query.toLowerCase()) && aData[key].prereq != null) //make sure prereqs can be searched for
                 matched = true;
         }
+
         if ((matched && !not) || (!matched && not))
             abilities.push([key, aData[key]]);
     }
 
     updateList();
-}
-
-function updateSearch(query) {
-    updateURL();
-    if (query != "")
-        window.history.replaceState(null, "", window.location.search + '&search=' + query);
 }

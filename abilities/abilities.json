@@ -13,7 +13,7 @@
         "classes": ["Pwr", "Rng", "Enh", "Rev", "Ind"],
         "desc": [
             "The amount of damage that your Stand can reduce per round is doubled.",
-            "This ability replaces Immense Resistance, if you have it."
+            "This ability replaces <a href='/abilities/?focus=Immense_Resistance'>Immense Resistance</a>, if you have it."
         ]
     },
     "Complete_Control": {
@@ -87,7 +87,7 @@
         "classes": ["Rmt", "Enh", "Rev"],
         "desc": [
             "Your Stand is powerful, but was limited by how far it could be away from you before now.",
-            "Multiply your Stand's Range by 10. Any points gained to your Stand's Range from now on are alos multipled by 10."
+            "Multiply your Stand's Range by 10. Any points gained to your Stand's Range from now on are also multipled by 10."
         ]
     },
     "Immense_Resistance": {
@@ -96,14 +96,998 @@
         "desc": [
             "Your Stand is incredibly resilient, a reflection of your willpower and experience.",
             "Rather than using the normal Damage Resistance formula, you may instead simply resist an amount of damage equal to your Durability Modifier + your Constitution Modifier (even if you are an Independent-Type Stand).",
-            "If you obtain the Armored Stand ability, it replaces this one."
+            "If you obtain the <a href='/abilities/?focus=Armored_Stand'>Armored Stand</a> ability, it replaces this one."
+        ]
+    },
+    "Oblivious_Facade": {
+        "name": "Oblivious Facade",
+        "classes": ["Rng", "Rmt", "Enh", "Ind", "Rev"],
+        "desc": [
+            "You’ve attempted to hide the fact that you’re a Stand User numerous times before. You know what works, and what doesn’t.",
+            "You get Advantage on Deception Checks to pass yourself off as a Non-Stand User."
+        ]
+    },
+    "Programmed_Stand": {
+        "name": "Programmed Stand",
+        "classes": ["Rmt"],
+        "desc": [
+            "Your Stand does not follow your command. Rather, you may set a simple program that your Stand must follow.",
+            "Examples include: preventing anybody from entering a specific building, using your ability on anyone who opens a door, attacking anyone who steps into a shadow, etc."
+        ]
+    },
+    "Remote_Grappler": {
+        "name": "Remote Grappler",
+        "classes": ["Rmt"],
+        "desc": [
+            "Your Stand is practiced in Grappling in order to engage in combat with somebody.",
+            "Your Stand now gets Advantage when attempting to grapple a Stand, Object, or Stand User. "
+        ]
+    },
+    "Second_Life": {
+        "name": "Second Life",
+        "classes": ["Rev"],
+        "desc": [
+            "This Ability Activates when you and your Stand die. Your body remains lifeless for between 1 minute and 24 hours. At some point within this timeframe, your Stand reawakens as an Independent-Type Stand, complete with your mental capacity and memories.",
+            "You retain all of your Experience Points, but all of your Health, <a href='/feats'>Feats</a>, Proficiencies and Abilities are reset. This effectively means you may make a higher level character, so long as it retains the same memories you had in your first life."
+        ]
+    },
+    "Self_Repair": {
+        "name": "Self-Repair",
+        "classes": ["Ind"],
+        "desc": [
+            "Your Stand (which may be yourself) acts independently of everything else. It does not have a physical form outside of the form that it has taken. As such, you must find a way to protect yourself and survive.",
+            "As an Action, you may roll a Hit Die to heal, but you must spend 2 Hit Dice in order to roll one Hit Die. If you do not have enough Hit Dice for that roll, you may not heal.",
+            "Outside of Combat, every minute that you stand perfectly still, you may heal an amount of HP equal to your Durability Modifier."
+        ]
+    },
+    "Self_Acclimation": {
+        "name": "Self-Acclimation",
+        "classes": ["Abl"],
+        "desc": [
+            "You’ve spent so much time manipulating certain elements that you've gained Immunity to one damage type. This Immunity should relate to your Stand Ability in some way. For example, <a href='https://jojo.fandom.com/wiki/Ghiaccio' target='_blank'>Ghiaccio</a>’s Cold Immunity. You also gain Immunity to that type's Stand counterpart.",
+            "<a href='/races/?focus=Pillar_Man'>Pillar Men</a>, and <a href='/abilities/?focus=Undead_Nature'>Undead</a> of all kinds cannot choose Radiant as the damage type for which they are immune."
+        ]
+    },
+    "Silent_Movement": {
+        "name": "Silent Movement",
+        "classes": ["Rng", "Act"],
+        "desc": [
+            "Through experience you've gained better control of your Stand, allowing you to move your Stand extremely carefully to ensure that the only way that your Stand may be detected is when it is seen.",
+            "Your Stand's movement is silent. When it moves in an attempt to evade detection, they may roll Stealth with Advantage."
+        ]
+    },
+    "Slippery": {
+        "name": "Slippery",
+        "classes": ["Rng", "Abl", "Act"],
+        "desc": [
+            "Your Stand has the ability to defend you and let you escape from very dangerous situations with relative ease.",
+            "When your Stand is within 2 meters of you, you may Disengage or Hide as a Bonus Action."
+        ]
+    },
+    "Special_Ability": {
+        "name": "Special Ability",
+        "classes": ["Pwr", "Rng", "Rmt", "Abl", "Enh", "Ind", "Rev", "Hive"],
+        "desc": [
+            "These are powers that use the same concept of the regular <a href='/abilities/?focus=Custom_Ability'>Custom Ability</a>, but taken to a whole new level. These abilities have immense strength, but at a higher cost (usually twice the Stand Energy).",
+            "Special Abilities are usually 1 bracket of Die stronger than the ability would be normally (d4 would become d6, d6 would become d8, etc.). They also take more time to perform. Usually, but not always, taking a Full Action to perform.",
+            "Examples of Special Abilities are <a href='https://jojo.fandom.com/wiki/The_World' target='_blank'>The World</a>’s The World, <a href='https://jojo.fandom.com/wiki/King_Crimson' target='_blank'>King Crimson</a>’s Time Deletion, or <a href='https://jojo.fandom.com/wiki/Weather_Report_(Stand)' target='_blank'>Weather Report</a>’s Heavy Weather.",
+            "A Special Ability might also be a passive ability that functions independently of activation, or one that may be activated or deactivated at will. Passive Abilities consume 2 Stand Energy at the Start of the Stand User’s Turn, and also take their Bonus Action to perform. If you are unable to use your Bonus Action, or you do not have enough Stand Energy remaining, the ability simply stops functioning. "
+        ]
+    },
+    "Second_Ability": {
+        "name": "Second Ability",
+        "classes": ["Act"],
+        "desc": [
+            "Your Stand has undergone an evolution, and has gained a new Ability alongside its new form.",
+            "This Ability should be an evelotion of your first Ability. Similar, but stronger or more versatile.",
+            "This Ability follows the same guidelines as any other <a href='/abilities/?focus=Custom_Ability'>Custom Ability</a>."
+        ]
+    },
+    "Third_Ability": {
+        "name": "Third Ability",
+        "classes": ["Act"],
+        "desc": [
+            "Your Stand has undergone another evolution, and has gained a new Ability alongside its new form.",
+            "This Ability should be an evelotion of your second Ability. Similar, but stronger or more versatile.",
+            "This Ability follows the same guidelines as any other <a href='/abilities/?focus=Custom_Ability'>Custom Ability</a>."
+        ]
+    },
+    "Speedy_Movement": {
+        "name": "Speedy Movement",
+        "classes": ["Rng", "Act"],
+        "desc": [
+            "Through experience you've built up the movement speed of your Stand. At any time, as a Reaction, you may call your Stand back to you, allowing it to come back and defend you or perform any action requiring your Stand to be near you, up to its Movement Speed.",
+            "This also means that your AC may be increased to your Stand’s AC if it is able to return to you. However, if it passes through the Melee Range of a Stand or Creature that can sense it while returning to you, the Stand or Creature may make an Opportunity Attack against your Stand."
+        ]
+    },
+    "Split_Stand": {
+        "name": "Split Stand",
+        "classes": ["Hive"],
+        "desc": [
+            "As a Hive Type Stand User, your Stand functions very differently than a typical Stand. Rather than a Stand being an extension of your will to fight, each Instance of your Stand is like a separate organism that simply must follow your orders.",
+            "Each Instance of your Stand only has a fraction of the Power of a regular Stand, but each Instance may act independently of the others or the Stand User. If one Instance is totally destroyed, that fraction of the User’s Health is taken away. For example, if you have 12 Instances of your Stand and one gets destroyed you'll take damage equal to your maximum health divided by 12.",
+            "If every Instance of your Stand is destroyed, you die instantly. If your health is restored, so are your Stand Instances. Even when you fall unconscious, one instance will remain. Only when you die is that Instance destroyed."
+        ]
+    },
+    "Stand_Pickpocketing": {
+        "name": "Stand Pickpocketing",
+        "classes": ["Rng", "Act"],
+        "desc": [
+            "Through trial and error you’ve gained the ability to slip objects from the grasp of other people using your Stand. From now on, you have Advantage when making Sleight of Hand checks using your Stand."
+        ]
+    },
+    "Two_Modes": {
+        "name": "Two Modes",
+        "classes": ["Rmt"],
+        "desc": [
+            "Interestingly, you have somehow gained power over your Stand, despite how incredibly volatile Remote Stands can be. At any time, as an Attack, you may switch to or from Ranged Mode.",
+            "In Ranged Mode, Remote Stands may function as any other Stand does, in that they may be controlled by the user’s will, and can follow specific commands. However, while in Ranged Mode, you may not use your Stand Ability. If your Stand has <a href='/abilities/?focus=Stand_Marking'>Stand Marking</a> active, that also deactivates upon changing to Ranged Mode. Your Stand's stats do not change upon switching modes."
+        ]
+    },
+    "Ultimate_Stand_Ability": {
+        "name": "Ultimate Stand Ability",
+        "classes": ["Abl"],
+        "desc": [
+            "This ability is something that very few Stands or Stand users are able to get to. It’s an incredibly powerful ability that uses a lot of your Stand’s Energy. This Ability costs 5 Stand Energy, and this SE cost cannot be reduced.",
+            "An example of an Ultimate Stand Ability is <a href='https://jojo.fandom.com/wiki/White_Album' target='_blank'>White Album</a>’s Gently Weeps."
+        ]
+    },
+    "Unconscious_Control": {
+        "name": "Unconscious Control",
+        "classes": ["Rev"],
+        "desc": [
+            "You and your Stand have different health pools. When your HP reaches 0, your Stand may continue to function, but NOT vice versa.",
+            "However, if either of them are killed, the other is killed as well."
+        ]
+    },
+    "Block_Physical_Projectile": {
+        "name": "Block Physical Projectile",
+        "classes": ["Pwr", "Act"],
+        "desc": [
+            "When a physical projectile (bullet, arrow, thrown object, etc.) lands a Direct Hit, you may roll 1d6 as a Reaction and add your Stand’s Precision Modifier. If the result is higher than the damage that the projectile would deal, you may instead catch or block the projectile and take no damage."
+        ]
+    },
+    "Block_Stand_Projectile": {
+        "name": "Block Stand Projectile",
+        "classes": ["Pwr", "Act"],
+        "desc": [
+            "When a Stand-based projectile or group of projectiles such as a <a href='/abilities/?focus=Ranged_Attack'>Ranged Attack</a> (<a href='https://jojo.fandom.com/wiki/Heirophant_Green' target='_blank'>Heirophant Green</a>'s Emerald Splash, <a href='https://jojo.fandom.com/wiki/Foo_Fighters' target='_blank'>Foo Fighters</a>’ bullets, <a href='https://jojo.fandom.com/wiki/Tusk' target='_blank'>Tusk</a>’s Nails) lands a Stand Hit or Direct Hit, you may roll 1d6 as a Reaction and add your Stand’s Precision Modifier. If the result is higher than the damage that the projectile would deal you may instead catch or block the projectile and take no damage."
+        ]
+    },
+    "Counterattacking_Blow": {
+        "name": "Counterattacking Blow",
+        "classes": ["Pwr"],
+        "desc": [
+            "As an Action you may set up a Counterattacking Blow. When somebody enters your Stand’s Range (if your Stand is within its movement speed), or at any time when your Target is within your Melee Range, you may make an Attack with Advantage as a Reaction. If the attack hits you may roll twice as many Damage Dice."
+        ]
+    },
+    "Camouflage": {
+        "name": "Camouflage",
+        "classes": ["Enh"],
+        "desc": [
+            "As an Action you may perfectly disguise your Stand, making it difficult for others to tell where or what your Stand is (for example, <a href='https://jojo.fandom.com/wiki/High_Priestess' target='_blank'>High Priestess</a> disguising as a metal object, or <a href='https://jojo.fandom.com/wiki/Wheel_of_Fortune' target='_blank'>Wheel of Fortune</a> shifting to look like a normal car).",
+            "This disguise allows your Stand to perform surprise attacks if opponents do not take note. Anyone attempting to determine what your Stand is disguised as has Disadvantage on the roll, as long as your Stand does not move."
+        ]
+    },
+    "Defensive_Ability": {
+        "name": "Defensive Ability",
+        "classes": ["Abl", "Ind"],
+        "desc": [
+            "Through clever use of your Stand's Ability you’ve found a way to properly defend yourself. As an Action, you may spend 2 Stand Energy and gain one of the following benefits for 3 turns (not including the one that you activate it on). You may only have one of the following buffs active at a time.<ul class='sublist'><li>+2d4 AC (Both for Stand and User)</li><li>Advantage on all Saving Throws</li><li>An amount of Temporary Hit Points equal to twice your Level</li></ul>"
+        ]
+    },
+    "Defensive_Wave": {
+        "name": "Defensive Wave",
+        "classes": ["Hive"],
+        "desc": [
+            "As an Action, you may give yourself a buff that remains active until the start of your next turn. Your Stand is a bunch of little instances that can hold themselves together in order to form a shield in order to protect their User.",
+            "When this Shield is active, any Stand Hits count as a Miss. You or your Stand may not use your Movement Actions until your next turn. If you had already moved this turn, you may not activate this Action."
+        ]
+    },
+    "Feat_of_Power": {
+        "name": "Feat of Power",
+        "classes": ["Pwr", "Rev", "Act"],
+        "desc": [
+            "As an Action, you may use your Stand to perform a great act of physical strength. You may lift an object as heavy as your Power Score multiplied by 50 in Kilograms. You may also use this ability to crush objects, break down walls, throw something, or perform any other act of great strength upon an object.",
+            "You may also use this ability to jump an amount of meters equal to your Stand’s Power Score. You take 1 Bludgeoning Damage for every meter propelled when you stop moving and hit something. If you have something to cushion your fall or use Stand Leap,  then you do not take damage.",
+            "This ability may not be used as an attack against a Creature, Undead, or Construct that does not wish to be manipulated by your Stand, unless they are Unconscious."
+        ]
+    },
+    "Melee_Barrage": {
+        "name": "Melee Barrage",
+        "classes": ["Pwr", "Rng", "Ind", "Act"],
+        "desc": [
+            "As an entire turn (meaning that your Action, Bonus Action, Movement Action, and Reaction are all used, and if you have used any part of your turn you may not use Melee Barrage), you may perform a number of melee attacks equal to your Stand’s Speed Modifier (+6 Speed would mean 6 attacks in one Melee Barrage), with a maximum of 10 Attacks.",
+            "Each hit functions as normal in terms of the Attack rolls, but when you deal damage, you do not add your Stand’s Power Modifier to the Damage Rolls. The Damage Dice for these attacks does NOT increase at Level 11 (A Power Type's Damage Dice changes from 1d12 to 2d10 at Level 11, but the maximum for this ability would still be 10d12).",
+            "Furthermore, you may not Activate a Stand Ability with any of these Attacks, and if you roll a 1 on any of these attack rolls, the Melee Barrage ends."
+        ]
+    },
+    "Mobile_Ability": {
+        "name": "Mobile Ability",
+        "classes": ["Abl", "Ind"],
+        "desc": [
+            "Through clever use of your Stand's Ability you’ve found a way to use your ability to propel yourself, or boost your movement in some way. As an Action, you may spend 2 Stand Energy and gain one of the following benefits for 3 turns (not including the one that you activate it on). You may only have one of the following buffs active at a time.<ul class='sublist'><li>Gain 5 meters of movement speed per turn</li><li>You may make an additional Attack per Attack Action</li><li>You may use your Bonus Action twice per turn</li></ul>"
+        ]
+    },
+    "Mobile_Wave": {
+        "name": "Mobile Wave",
+        "classes": ["Hive"],
+        "desc": [
+            "The individual instances of your Stand may work as a collective, with the purpose of moving you to one place extremely quickly. As an Action, you and your Stand may be transported to the same place, up to an amount of meters equal to twice your Stand’s Movement Speed, without consuming your Movement Action. You may also climb, move through water, or across Difficult Terrain without penalty to your movement."
+        ]
+    },
+    "Near_Death_Escape": {
+        "name": "Near-Death Escape",
+        "classes": ["Rev"],
+        "desc": [
+            "When your HP is half of your maximum or less, you may trigger this Ability as a Bonus Action. Until you either stop moving or attack something you may move at twice the speed you would be able to normally, and you gain Advantage on all Acrobatics, Athletics, and Stealth Checks. You may use this Ability a number of times equal to your Constitution Modifier, and you regain all expended uses when you finish a Short Rest. "
+        ]
+    },
+    "Offensive_Blow": {
+        "name": "Offensive Blow",
+        "classes": ["Pwr"],
+        "desc": [
+            "If you have not used your Movement Action for this turn, you may hold your ground and perform an Offensive Blow as a Bonus Action. This gives you Advantage on the next attack that you take this turn, and you may use it at any point while attacking, as long as you have at least one attack remaining for your turn.",
+            "If the attack with Advantage hits, you may roll double your Stand’s Attack Dice for Damage. You may not use your Movement Action after using this ability."
+        ]
+    },
+    "Pincer_Attack": {
+        "name": "Pincer Attack",
+        "classes": ["Rng"],
+        "desc": [
+            "In order to prepare this Attack, you must successfully hide your Stand in a specific place within your Range. Preparing your Stand in a hiding place also counts as an Action.",
+            "Once it has been prepared, you may activate this ability when you perform the Attack Action. You may spend just one Attack, but both you and your Stand may both make an Attack. Both of these Attacks also gain Advantage."
+        ]
+    },
+    "Powerful_Flex": {
+        "name": "Powerful Flex",
+        "classes": ["Abl", "Hive"],
+        "desc": [
+            "As an Action, and at the cost of 1 Stand Energy, you may use your Ability in a threatening way in order to make an Intimidation roll with Advantage."
+        ]
+    },
+    "Ranged_Attack": {
+        "name": "Ranged Attack",
+        "classes": ["Rng", "Abl", "Ind"],
+        "desc": [
+            "Destructive energy is summoned from deep within your Stand and somehow released in a direction with the intent to harm or deal damage. As an Attack, your stand fires one or more projectiles, using your Stand’s Precision + Proficiency Bonus for the Attack rolls and adding your Speed Modifier to the damage dealt on a hit.",
+            "You may choose between three Damage Dice regarding your Ranged Attack, but the higher the damage, the less accurate it will be. Once you have chosen an option it remains the same every time you use it, unless you choose to change it when leveling up.<ul class='sublist'><li>Your Damage Dice is a d6, and you may add your Proficieincy Bonus twice to the Attack roll</li><li>Your Damage Dice is a d8, and you may add your Proficiency Bonus to the Attack roll</li><li>Your Damage Dice is a d10, but you may not add anything to the Attack roll</li></ul>",
+            "This Attack has a Short-Range of 10 meters from the Stand, with a Long-Range of 20 meters from the Stand. It can deal Stand Piercing, Stand Slashing, Stand Bludgeoning, or a different kind of damage, if it relates to your Stand or your Stand’s Abilities.",
+            "Whenever your Attack Dice improves at Level 11, this Attack’s Short-Range increases to 20 meters and the Long-Range increases to 40 meters, and you get an additional Damage Dice equal to the one you chose for your Damage previously (Example: 1d8 becomes 2d8)."
+        ]
+    },
+    "Self_Preservation": {
+        "name": "Self-Preservation",
+        "classes": ["Rmt"],
+        "desc": [
+            "Your Stand may assess situations and make a basic judgement on them. If your Stand believes that the task at hand is too great, it may, instead of carrying out its programming, Hide, Defend, or Retreat. "
+        ]
+    },
+    "Speedy_Switch": {
+        "name": "Speedy Switch",
+        "classes": ["Enh"],
+        "desc": [
+            "As a Reaction, you may switch between anchors for your Enhancement Stand very quickly, meaning that if someone attempts to hit you and you activate this ability, the first hit misses automatically. However, if your Stand moves outside of someone’s Melee Range, they can still take an Attack of Opportunity."
+        ]
+    },
+    "Stand_Energy_Recharge": {
+        "name": "Stand Energy Recharge",
+        "classes": ["Abl"],
+        "desc": [
+            "You have very strong abilities, but it’s very tiring to try to use them repeatedly. Luckily, you've learned through practice how to pace yourself and replenish your energy. As an Action, you may regain an amount of Stand Energy equal to your Charisma Modifier."
+        ]
+    },
+    "Stand_Leap": {
+        "name": "Stand Leap",
+        "classes": ["Pwr", "Act"],
+        "desc": [
+            "At the cost of 5 meters of your Movement Action your Stand may punch or kick against a strong, rigid surface in order to propel both the Stand and User into the air. This can be done straight up, horizontally, or at an angle somewhere in between.",
+            "The Stand User can move an amount of meters equal to their Stand’s Power Modifier in any direction midair. Also, as a Reaction, you can negate all Fall Damage."
+        ]
+    },
+    "Stand_Marking": {
+        "name": "Stand Marking",
+        "classes": ["Rmt", "Enh", "Rev"],
+        "desc": [
+            "As an Action, you may \"Mark\" a specific object or person with your Stand, so long as the target is within your Stand’s Range and activates a specific, predetermined trigger at some point.",
+            "When a person or object is \"Marked\" your Stand automatically follows them, affecting them with their ability. This effect continues until you recall your Stand back to you, you are killed, or the object/person that is Marked is destroyed/killed.",
+            "When something is Marked by your Stand, the amount of meters that your Stand is active within is equal to your Stand’s Range Score (not Modifier). If the object or person leaves your Range your Stand returns to you, but may instantly jump back to the object if the object/person reenters the range of your Stand Marking."
+        ]
+    },
+    "Stand_Rush": {
+        "name": "Stand Rush",
+        "classes": ["Pwr", "Ind", "Act"],
+        "desc": [
+            "When your enemy or your enemy’s Stand has been incapacitated, restrained, or unwilling to fight for a full turn or more while in your Stand’s Melee Range, you may perform this action. You may also start this action for free when you drop someone to 0 Hit Points using some sort of Melee Attack with your Stand.",
+            "A Stand Rush takes an entire turn, but if desired, may go on for a maximum of 10 turns. Through this action, your Stand may punch an amount of times equal to your Stand’s Speed Modifier. You may choose whether or not to make this attack lethal. When trapped within a Stand Rush, no actions can be taken."
+        ]
+    },
+    "Healing_Hands": {
+        "name": "Healing Hands",
+        "classes": ["Rip"],
+        "desc": [
+            "As an Action, you may touch an Unconcious (but still living) creature, and restore them to 1 Hit Point."
+        ]
+    },
+    "Healing_Ripple": {
+        "name": "Healing Ripple",
+        "classes": ["Rip"],
+        "desc": [
+            "As an Action, you may spend 1 Ripple Point and touch somebody else or yourself to heal 1d4 + your Constitution Modifier points of damage. You may spend additional Ripple Points to add additional d4s, but you may only add the Modifier once."
+        ]
+    },
+    "Ripple_Shield": {
+        "name": "Ripple Shield",
+        "classes": ["Rip"],
+        "desc": [
+            "As an Action, if there are enough materials nearby to use it. This action costs 5 ripple points. You are able to take any Ripple conductor and hold it together using the Ripple.",
+            "This Shield gives you and anyone within 1 meter of you an amount of  additional AC equal to your Constitution Modifier. It lasts until the start of your next turn, and may be sustained for as long as you would prefer, with a Ripple Point cost of 1 per turn. However, if you do this, you may not perform any kind of Action outside of Free Actions."
+        ]
+    },
+    "Life_Magnet": {
+        "name": "Life Magnet",
+        "classes": ["Rip"],
+        "desc": [
+            "When finding a collection of significant biomass, as an Action, you may spend 5 Ripple Points to collect up to 1 Metric ton of it together and manipulate it in any way you’d like.",
+            "Examples of biomass manipulation include creating a leaf glider, creating a hole in a tree to hide in, or using blades of grass to create skin tight armor.",
+            "Each additional turn of manipulation costs 1 Ripple Point. You may move while Life Magnet is being used, but if you stop touching the biomass the structure falls apart. The Structure has an amount of Hit Points equal three times your Level in The Ripple and has an AC equal to your Ripple DC."
+        ]
+    },
+    "Extreme_Healing_Ripple": {
+        "name": "Extreme Healing Ripple",
+        "classes": ["Rip"],
+        "desc": [
+            "As an Action, you may use as many Ripple Points as you would like and touch somebody, healing 1d8 + your Constitution Modifier Hit Points for every 2 Ripple Points consumed."
+        ]
+    },
+    "Deep_Pass_Overdrive": {
+        "name": "Deep Pass Overdrive",
+        "classes": ["Rip"],
+        "desc": [
+            "As an Action, you may spend 15 Ripple Points and touch a creature nearby. After performing this action, your Ripple Level drops to 0, you lose 1d10 Maximum Health every turn from now on, and your Strength, Dexterity, and Constitution Scores all drop to 3.",
+            "Your target, however, gets a permanent boost of +2 in their Strength, Dexterity, and Constitution scores, as well as another +3 in either Strength, Constitution, or Dexterity. They also gain 3 points of Inspiration, as well as all of the Inspiration that you had, and they get Advantage on all rolls involving a d20 for the next 10 minutes."
+        ]
+    },
+    "Ripple_Regeneration": {
+        "name": "Ripple Regeneration",
+        "classes": ["Rip"],
+        "desc": [
+            "You gain an amount of Hit Points equal to your Constitution Modifier back at the start of every turn, when you are conscious."
+        ]
+    },
+    "Toxin_Expulsion": {
+        "name": "Toxin Expulsion",
+        "classes": ["Rip"],
+        "desc": [
+            "Your blood moves and sends energy through your body. Foreign, harmful substances are detected and removed from the body automatically through the point of entry (venom exists through the injection site, poison is immediately spit up completely, etc.).",
+            "You are now immune to toxins of all sorts, including diseases. You gain Immunity to Poison and Acid damage."
+        ]
+    },
+    "Liquid_Solidification": {
+        "name": "Liquid Solidification",
+        "classes": ["Rip"],
+        "desc": [
+            "Ripple is an art made to fight against the Undead. However, as time continued, many other uses were discovered for it, such as regenerative and defensive abilities as well as changing the properties of physical objects.",
+            "The waves of energy produced by the Ripple may force the surface tension of the water to form a tangible, solid \"skin\" over it. This \"skin\" may be used for a variety of purposes, such as holding water without using a container, blocking water from moving, or even walking on water. Activating such an ability takes a Bonus Action, and it costs 2 Ripple Points each round."
+        ]
+    },
+    "Rippling_Weapon": {
+        "name": "Rippling Weapon",
+        "classes": ["Rip"],
+        "desc": [
+            "As a Bonus Action, you may spend 2 Ripple Points to imbue a melee weapon (or an Unarmed Strike) with The Ripple. When you make a Rippling Weapon, it deals additional Radiant damage equal to twice your Unarmed Attack Dice (if you had 1d6 as your Unarmed Attack damage, you may deal an additional 2d6 Radiant Damage on your next successful strike with the Weapon). The extra damage goes away if you hit something with the weapon, or if your turn ends."
+        ]
+    },
+    "Ripple_Pressure": {
+        "name": "Ripple Pressure",
+        "classes": ["Rip"],
+        "desc": [
+            "This action takes one turn to perform, but may be charged for longer than that, with a cost of 1 Ripple Point per turn. Ripple Pressure is a technique that continuously channels Ripple Energy into an airtight container, which builds up pressure. When the container cannot take it anymore, something gives, and the contents of this container burst out.",
+            "For every turn that the container has Ripple put into it, it deals 1d6 more Radiant damage, with a maximum of 8d6 in any one container. You may release it as a Reaction, creating a 5 meter cone of damage. Those caught inside of the cone must make a Dexterity Saving Throw, taking half damage on a Successful Save."
+        ]
+    },
+    "Zoom_Punch": {
+        "name": "Zoom Punch",
+        "classes": ["Rip"],
+        "desc": [
+            "As an Attack, you may spend 2 Ripple Points and make an Unarmed Strike. This punch deals additional Radiant damage equal to your Unarmed Damage Dice and gives you an Additional meter of Range for that attack."
+        ]
+    },
+    "Sunlight_Yellow_Overdrive": {
+        "name": "Sunlight Yellow Overdrive",
+        "classes": ["Rip"],
+        "desc": [
+            "As an entire turn (meaning that your Action, Bonus Action, Movement Action, and Reaction are all used, and if you have used any part of your turn you may not use this ability), you may spend 4 Ripple Points and make a number of Unarmed Attacks equal to your Constitution Modifier. You may choose whether or not to make this attack lethal."
+        ]
+    },
+    "Sendo_Overdrive": {
+        "name": "Sendo Overdrive",
+        "classes": ["Rip"],
+        "desc": [
+            "As an Attack, and at the cost of 3 Ripple Points, your mastery of The Ripple allows you to affect objects from a distance. By carefully aiming, you can influence matter at a distance so long as there is a proper conduit.",
+            "Proper conduits include liquids, metals, or organisms, and these have a range of roughly 10 meters. Sendo may also be sent through an improper conduit, but doing this reduces the effective range down to 2 meters. Sendo Overdrive, if aimed at a target, deals an additional amount of Radiant damage equal to what your Unarmed Attacks deal."
+        ]
+    },
+    "Scarlet_Overdrive": {
+        "name": "Scarlet_Overdrive",
+        "classes": ["Rip"],
+        "desc": [
+            "As an Attack that costs 4 Ripple Points, you may harness the power of the sun within the beat of your own blood and form a new kind of Ripple: a Ripple of flame.",
+            "You may make an Unarmed Strike as normal, dealing an additional amount of Fire damage equal to twice the damage dealt by an Unarmed Strike if it lands. For example, an Unarmed Strike that would deal 1d10 + 3 Damage would add 2d10 + 6 Fire damage."
+        ]
+    },
+    "Ripple_Cutter": {
+        "name": "Ripple Cutter",
+        "classes": ["Rip"],
+        "desc": [
+            "As an Attack, at the cost of 4 Ripple Points, you are able to take any Ripple conductor (liquids, metals, organic material) and split it apart, propelling it through the air and imbuing it with Ripple energy.",
+            "The range on the Attack is a 5 meter cone in any one direction. Targets must make a Dexterity saving throw, taking 4d10 Slashing damage or half as much on a successful save."
+        ]
+    },
+    "Ionic_Rippling": {
+        "name": "Ionic Rippling",
+        "classes": ["Rip"],
+        "desc": [
+            "Your Ripple has progressed, and become more powerful. It is now able to affect energy-based abilities and interact with any form of energy, including warping light itself.",
+            "You may use this to create illusions, warping the path of light and making objects look like they are in different locations than where they actually are. You cannot, however, attack or affect Stands using this ability."
+        ]
+    },
+    "Custom_Ripple_Technique": {
+        "name": "Custom Ripple Technique",
+        "classes": ["Rip"],
+        "desc": [
+            "Through countless hours spent training in the ancient art of The Ripple, you’ve created a fighting style or ability that is unique to you, and you alone.",
+            "Examples of this are <a href='https://jojo.fandom.com/wiki/Tonpetty'>Tompetty</a>’s Future Sight, <a href='https://jojo.fandom.com/wiki/Dire'>Dire</a>'s Thunder Cross Split Attack, and <a href='https://jojo.fandom.com/wiki/Caesar_Anthonio_Zeppeli'>Caesar</a>’s Bubble Launcher.",
+            "Talk to your DM to determine the function and details of this Technique."
+        ]
+    },
+    "Spherical_Spin": {
+        "name": "Spherical Spin",
+        "classes": ["Spin"],
+        "desc": [
+            "You may throw an object similar in shape to a sphere and imbue it with the energy of The Spin. A regular Spherical Spin attack deals damage based vibrations produced by the rotation, as well as the damage the actual object deals. Different Materials deal more damage based upon density, with more dense objects being more powerful.",
+            "To calculate your Attack Bonus with Spherical Spin attacks, treat them as Finesse Thrown Weapons (meaning you can add either Str or Dex), but remember that different materials deal different amounts of damage and have different ranges. You can find these values in a table on the main page for <a href='/classes/?focus=Spin'>The Spin</a>."
+        ]
+    },
+    "Sculpt_Sphere": {
+        "name": "Sculpt Sphere",
+        "classes": ["Spin"],
+        "desc": [
+            "Through use of the Spin, you’ve found that you can create Spheres out of everyday materials by grabbing a clump of something in one hand and spinning it.",
+            "In order to create a Sphere you must have a decently sized chunk of material in your hand, roughly the amount needed to form a baseball. As an Action, you may spin the material in your hand, shaving off the excess material and creating a Sphere suitable for use with the Spin."
+        ]
+    },
+    "Harden_Flesh": {
+        "name": "Harden Flesh",
+        "classes": ["Spin"],
+        "desc": [
+            "As an Attack, you may hit yourself or an ally with a Sphere, dealing no damage and instead giving them 2d6 + Your Dexterity Modifier Temporary Hit Points. This benefit lasts for a maximum of one minute."
+        ]
+    },
+    "Sendo_Spin": {
+        "name": "Sendo Spin",
+        "classes": ["Spin"],
+        "desc": [
+            "As an Attack, you may take a Sphere and throw it into an object. The energy produced by the Sphere will send vibrations up to one meter away from the point of impact. These vibrations are violent, and if placed correctly, could cause tunnels to collapse, sand to fall, rocks to shift, or the ground underneath somebody's feet to become unsteady.",
+            "You may throw beneath someone’s feet (if they are standing on solid ground), and they must make a Dexterity Saving Throw, becoming Prone on failure. You may also change on square meter of a surface into Difficult Terrain."
+        ]
+    },
+    "Muscle_Contraction": {
+        "name": "Muscle Contraction",
+        "classes": ["Spin"],
+        "desc": [
+            "As an Attack, you may throw a Sphere into your own or another creature’s muscles. The affected muscles move as normal for the most part, and the target gains additional Strength equal to your Dexterity Modifier. This effect lasts for an amount of turns equal to your Level in The Spin."
+        ]
+    },
+    "Return_to_Sender": {
+        "name": "Return to Sender",
+        "classes": ["Spin"],
+        "desc": [
+            "When you throw a Sphere, you may choose to have it return to you after damaging/hitting/missing its target. "
+        ]
+    },
+    "Tendon_Twister": {
+        "name": "Tendon Twister",
+        "classes": ["Spin"],
+        "desc": [
+            "As an Attack, you may throw a Sphere into a creature within the Short Range of the Sphere used. Pick a limb and make a standard Attack. If the Sphere hits your Opponent, they may not use the targeted limb for an amount of turns equal to your Dexterity Modifier."
+        ]
+    },
+    "Wrist_Memory": {
+        "name": "Wrist Memory",
+        "classes": ["Spin"],
+        "desc": [
+            "You’ve become so accustomed to taking out and putting away Spheres that you no longer need to look down to do it. You may now draw and put away Spheres as Free Actions."
+        ]
+    },
+    "Restraining_Spin": {
+        "name": "Restraining Spin",
+        "classes": ["Spin"],
+        "desc": [
+            "As an Attack, you may throw a Sphere into the flesh of a creature within your Sphere’s Range. If you hit them, roll normal damage and your target must make a Constitution Saving Throw, becoming Restrained until the end of your next turn on failure. If your target is already Restrained, you may not use Restraining Spin on them."
+        ]
+    },
+    "Medicinal_Spin": {
+        "name": "Medicinal Spin",
+        "classes": ["Spin"],
+        "desc": [
+            "As an Attack, you may throw a Sphere into the flesh of a creature within the Short Range of the Sphere you are using. If you hit them you do not deal damage, instead performing one of the following medicinal abilities:<ul class='sublist'><li>Restore the target to 1 Hit Point if they are at 0</li><li>Remove one of the following conditions from the target: Poisoned, Paralyzed,  or Stunned</li><li>Ensure that any healing the target receives until the end of their next turn is doubled</li></ul>",
+            "Regardless of the action chosen, pain is dulled from all wounds around the area of impact."
+        ]
+    },
+    "Twisting_Spin": {
+        "name": "Twisting Spin",
+        "classes": ["Spin"],
+        "desc": [
+            "As an Attack, you may throw a Sphere against a creature, surface, or even yourself. Anything that is a soft solid, a liquid, or skin may be affected by this. This action twists surfaces in a spiral shape, causing any liquid hiding under the skin or within the semisolid to be forced out.",
+            "This action may be used to reduce water weight, to dehydrate people, or to collect liquid that has soaked into a semisolid, such as dirt, mud, or even sand."
+        ]
+    },
+    "Supernatural_Force": {
+        "name": "Supernatural Force",
+        "classes": ["Spin"],
+        "desc": [
+            "Through the power of The Spin, the Force damage that you deal using The Spin is now able to damage Stands as well. The damage you deal becomes Stand Force damage, and affects Stands in a similar way to other Stand damage. Furthermore, you are now able to see and sense Stands."
+        ]
+    },
+    "Special_Technique": {
+        "name": "Special Technique",
+        "classes": ["Spin"],
+        "desc": [
+            "As a competent user of The Spin, you’ve figured out how to properly use the excess energy produced in a creative way. Talk to your DM about making this Special Technique functional."
+        ]
+    },
+    "Perfect_Spiral": {
+        "name": "Perfect Spiral",
+        "classes": ["Spin"],
+        "desc": [
+            "As an Action, you may throw a Sphere through the air. This Sphere deals 10 times the damage that your normal throw does. However, in order to perform this action, you must either be flying through the air in the shape of The Golden Spiral (DC 25 Acrobatics Check), or be riding a horse at a perfect speed (DC 25 Animal Handling Check).",
+            "If you are able to perform this feat, your <a href='/classes/?focus=Stands'>Stand</a> either manifests or evolves. Stands are a manifestation of the User’s fighting spirit. However, through use of the Golden Spin, you may artificially trigger one of two events relating to a Stand.",
+            "If a Non-Stand User uses this ability, use of The Golden Evolution will trigger their Stand to Manifest. This Stand temporarily manifests as any kind of Stand, at Level 15 in their Stand Type.",
+            "If the Spin User is already also a Stand User and they activate this ability, it triggers a Stand Evolution.",
+            "The Stand granted through this Golden Evolution doubles all of the Stand’s normal Stats, greatly enhances the potency of the Stand’s Abilities, and even gives it one more new ability. A good rule of thumb is that after using the Golden Ability once, one’s influence could affect an entire city. You and your Stand can also choose to be immune to any Abilities relating to the manipulation of time or space.",
+            "The Golden Evolution lasts for 1 hour, after which your Stand Evolution reverts or you lose your Stand if you didn't previously have one."
+        ]
+    },
+    "Defensive_Spin": {
+        "name": "Defensive Spin",
+        "classes": ["Spin"],
+        "desc": [
+            "You may use a Sphere, or something nearby that can be spun like a Sphere, to block an attack as a Reaction. Different materials absorb different amounts of damage, and the sphere is destroyed after the attack's damage is reduced.",
+            "Water reduced 1d4 damage, ice and wood reduce 1d6, stone reduces 1d8, and metal reduces 1d10. Your Dexterity Modifier is also added to the damage reduction."
+        ]
+    },
+    "Satellite_Spin": {
+        "name": "Satellite Spin",
+        "classes": ["Spin"],
+        "desc": [
+            "This ability requires a custom-made Sphere, with several marble-sized balls embedded on the outside of the Sphere. When this Sphere is thrown, all creatures within 3m of the target must make a Dex Save against your Spin DC, rolling a d6 on failure and losing the corresponding sense for 1d6 turns.<ol class='sublist'><li>Taste</li><li>Smell</li><li>Touch</li><li>Hearing</li><li>Sight</li><li>Instead of losing a sense, take 1d12 Bludgeoning damage. This increases to 2d12 at Level 7, and 3d12 at Level 14.</li></ol>",
+            "The Satellite Sphere is destroyed after being thrown, and cannot be used again."
+        ]
+    },
+    "Vampire_Double_Health": {
+        "name": "Vampire Double Health",
+        "classes": ["Vamp"],
+        "desc": [
+            "As a Vampire you get the same amount of Hit Points that you did when you were alive. However, your Hit Dice becomes 1d10, unless it was already the same or higher. Your Head Hit Dice is 1d4, and it has an additional +5 added to its AC."
+        ]
+    },
+    "Vampiric_Regeneration": {
+        "name": "Vampiric Regeneration",
+        "classes": ["Vamp"],
+        "desc": [
+            "You gain an amount of Hit Points back in either your Head or Body for an amount equal to your Constitution Modifier, every time Initiative is rolled (each round).",
+            "Furthermore, as an Action, you may restore Hit Dice to yourself. You may only restore 1 Hit Die per Action. Hit Points restored by this feature can either restore Hit Points to your Head or Body, and you may split Hit Points restored between the two if desired."
+        ]
+    },
+    "Vampiric_Feeding": {
+        "name": "Vampiric Feeding",
+        "classes": ["Vamp"],
+        "desc": [
+            "As an Attack, you may make a Grapple Check upon a living creature. If you are successful, you place the blood vessels of your hand upon the creature and connect them to the body you have grappled.",
+            "The damage dealt by this is 1d6 + your Level of Vampire Piercing Damage. This damage is dealt at the start of each of their turns until they escape your Grapple, and you heal half of the damage dealt.",
+            "Alternatively, if your target is willing, Incapacitated, or Unconcious, you may use this Ability to remove Energy from them, up to an amount equal to your Proficiency Bonus."
+        ]
+    },
+    "Vampiric_Musculature": {
+        "name": "Vampiric Musculature",
+        "classes": ["Vamp"],
+        "desc": [
+            "Every time you level up from now on, including now, you may permanently add 1 to your Constitution, Dexterity, or Strength Score."
+        ]
+    },
+    "Zombie_Creation": {
+        "name": "Zombie Creation",
+        "classes": ["Vamp"],
+        "desc": [
+            "When you kill someone using Vampiric Feeding or touch a corpse, you may activate this as a Bonus Action. You take an almost immeasurably small amount of Vampiric Essence and use it to replace the blood you have consumed.",
+            "This ability costs 5 Energy, and can be used an amount of times equal to your Level in Vampire per Long Rest. Upon using this Ability, the affected body revives at the start of their next turn as a <a href='/races/?focus=Zombie>Zombie</a>."
+        ]
+    },
+    "Primal_Charm": {
+        "name": "Primal Charm",
+        "classes": ["Vamp", "PM", "EPM"],
+        "desc": [
+            "You’ve noticed that your body has changed in the time following your transformation. Your canines have become fangs, your hair has become long and now grows extremely quickly, and the irises of your eyes glow a soft, threatening red.",
+            "Your Charisma Score increases by 2, and you are now Proficient in Persuasion, Performance, and Intimidation Rolls. If you were already Proficient in any of these Skills, you may gain Expertise in them instead."
+        ]
+    },
+    "Vampiric_Senses": {
+        "name": "Vampiric Senses",
+        "classes": ["Vamp"],
+        "desc": [
+            "The Stone Mask, or a Master of some sort, has unlocked the true potential of your Human Mind. Your body can perceive much more accurately, and your mind can quickly and efficiently process this information.",
+            "You are now Proficient in Perception Rolls, and you may add your Proficiency Bonus to your Perception Rolls and Passive Perception, even if you already had Proficiency or Expertise in them."
+        ]
+    },
+    "Ghoul_Creation": {
+        "name": "Ghoul Creation",
+        "classes": ["Vamp"],
+        "desc": [
+            "When you kill someone using Vampiric Feeding or touch a corpse, you may activate this as a Bonus Action. You take an almost immeasurably small amount of Vampiric Essence, and use it replace the blood you have consumed.",
+            "This ability costs 50 Energy, and can be used once per Short Rest. Upon using this Ability, the affected body revives at the start of their next turn as a <a href='/races/?focus=Ghoul'>Ghoul</a>."
+        ]
+    },
+    "Flight": {
+        "name": "Flight",
+        "classes": ["Vamp"],
+        "desc": [
+            "The amount of energy in your body is immense, and you may now convert some of your body’s mass into hydrogen and keep it within your body causing you to float in the air.",
+            "You now have a flying speed of 2 meters per round, and if you do not move you may levitate for indefinite periods of time and make your effective weight less than zero, with a minimum weight of inverse your normal weight. You may also use this ability to walk on vertical surfaces or on a ceiling. "
+        ]
+    },
+    "Hypnosis": {
+        "name": "Hypnosis",
+        "classes": ["Vamp"],
+        "desc": [
+            "By reflecting light within your eyes for an entire turn, you may send your brain waves through the air and take control of another living creature. The Range of this Feature is 3 Meters, and you must make direct eye contact with the target in order to use this ability.",
+            "The opposing creature must make a Wisdom Saving Throw against your Vampiric DC. If the save is successful nothing happens, but if the throw is failed the creature becomes Hypnotized.",
+            "This effect lasts up to an hour. While a creature is Hypnotized, they must follow any and all commands given to them by their Vampiric Controller, even if it would put them in the way of harm or be completely opposed to the creature’s normal goals. If they are not given commands by you, they simply remain in the general position they were in when they were Hynotized, and they count as Incapacitated.",
+            "You may end this Hypnosis before the hour is up, if you so wish. They may remake the Saving Throw every time they take damage, or if an ally uses their Action to try to shake them out of it,  with the effect ending on success. The effect also ends if the target falls Unconscious. You may use this Feature once per Long Rest."
+        ]
+    },
+    "Space_Ripper_Stingy_Eyes": {
+        "name": "Space Ripper Stingy Eyes",
+        "classes": ["Vamp"],
+        "desc": [
+            "As an Attack, you are able to highly pressurize liquid within your eyeballs, convert it all into light, and fire it in the form of lasers. You may fire either one or two lasers at once, one for each eye.",
+            "Any Creature caught within the laser’s Range must make a Dexterity Saving Throw against your Vampire DC, taking 2d8 Piercing damage on a failed save, and no damage on a successful one. This damage cannot be reduced or circumvented in any way.",
+            "There is no effective Range for this attack. The Laser will simply travel in a straight line wherever you aim, and it will continue to travel, despite any physical objects in the way. If there are several targets in the straight line that you fire at, they are all potentially hit by the laser.",
+            "Reflective objects may reflect the laser, but no matter can really stop it completely. You may perform this action an amount of times equal to your Proficiency Bonus, per Short or Long Rest. "
+        ]
+    },
+    "Flesh_Grafting": {
+        "name": "Flesh Grafting",
+        "classes": ["Vamp", "EPM"],
+        "desc": [
+            "You’ve gained the ability to start controlling individual cells and their function within your body. You may now replace things such as removed limbs, removed organs, removed bones, and even entire bodies, with the flesh of other humanoid creatures.",
+            "This taken flesh will assimilate to your body much faster than if you were to attempt to grow back your own body through Regeneration. You may also use this ability to connect living or undead creatures together in order to create Chimeras. Talk to your DM to determine the stats and abilities of the Chimeras that you create. You may perform this Ability at any time, without limit.",
+            "Attaching your Head to a new body, and making it perfectly attuned to yours, takes 1d6 days. While the new body is assimilating, it may regenerate a maximum of 1 HP per round, as opposed to the normal amount. Grafting the full body or a body part of a Hamon User takes 5d100 Days instead, for a perfect graft.",
+            "In theory, you could also use this ability to fix injuries of living creatures, and as an Action, you could give an amount of Hit Points equal to your Level in Vampire to someone."
+        ]
+    },
+    "Freezing_Touch": {
+        "name": "Freezing Touch",
+        "classes": ["Vamp"],
+        "desc": [
+            "As an Unarmed Strike, you may take almost all of the liquid and a lot of heat from any of your limbs, lowering the effective temperature of each limb to around -40 degrees Celsius.",
+            "If you successfully land this Attack, the target must make a Constitution Saving Throw, taking 6d8 Cold damage and becoming unable to move the affected limb on failure. The target takes half damage, and is not affected, on a successful Save.",
+            "The Saving Throw may be repeated at the end of every one of the affected target’s turns, and if succeeded, the effect ends on their limb. You may use this Feature an amount of times equal to your Proficiency Bonus per Long Rest."
+        ]
+    },
+    "Vampiric_Body_Control": {
+        "name": "Vampiric Body Control",
+        "classes": ["Vamp"],
+        "desc": [
+            "You’ve become accustomed to the idea that the individual cells within your body are, in fact, under your conscious control. You may now perform tasks that would normally be impossible for a human. You can fit yourself through small spaces, reknit bones, and fractures in them almost instantly, and even fully heal from Sunlight/Ripple inflicted wounds, without having to pick away the scar first (although this takes a decent amount of time).",
+            "You may also choose to override standard Human self-preservation instincts, such as breathing, the inability to severely harm yourself, and even the ability to simply shut down specific parts of your body, and reboot them at will. Shutting down parts is instant, but rebooting them is a Bonus Action. You may also put muscular cells and bones in places where they should not be normally."
+        ]
+    },
+    "Controlled_Veins": {
+        "name": "Controlled Veins",
+        "classes": ["Vamp", "EPM"],
+        "desc": [
+            "You may put an entire miniature muscular system within the veins in your body. Not only that, but you may also turn energy or matter within your body into more veins, in order to have a Secondary Muscular System.",
+            "Your Veins may be used to pierce through your skin without damaging you. Your Veins may deal Slashing, Bludgeoning, or Piercing damage, and they count as Unarmed Strikes when you attack using them. You may Attack using a Vein even if the health of the rest of your Body is zero or lower. If the health of your Head is zero or lower, you may not do this.",
+            "You may have up to 5 Veins going outside of your body at a time. Your hair also operates in the same way, with a maximum of 5 “Veins” on the top of your head. When using Veins to move, you may move at up to half of your normal movement speed. You may also use Veins to Grapple. For every additional Vein used, add +1 to the Bonus for your Grapple Check. The Veins may stretch up to 5 meters."
+        ]
+    },
+    "Body_Evacuation": {
+        "name": "Body Evacuation",
+        "classes": ["Vamp", "EPM"],
+        "desc": [
+            "The only part of the Undead body needed for Vampiric survival is the brain. If you find yourself in an incredibly desperate situation, you may perform this Ability to save yourself.",
+            "As an Attack, you use your Secondary Muscular System (from <a href='/abilities/?focus=Controlled_Veins'>Controlled Veins</a>) to remove your Head and Secondary Muscular System from the rest of you.",
+            "Your Head and Secondary Muscular System are now all you are. You may slowly regenerate your own body, but it takes 3d4 days to do so, as well as 50 Energy for each Kilogram of flesh regenerated.",
+            "You still have to Feed at the standard rate, but you may now do this with your Secondary Muscular System as opposed to your standard <a href='/abilities/?focus=Vampiric_Feeding'>Feed</a> Action. The Action is the same, it is simply no longer carried out using your hand."
+        ]
+    },
+    "Vampiric_Dormancy": {
+        "name": "Vampiric Dormancy",
+        "classes": ["Vamp"],
+        "desc": [
+            "Normally, as a Vampire, you have to Feed for at least 10 energy once per week. However, you may, if you so choose, enter a state of extended Dormancy, in which every part of your body ceases to function, and it is effectively preserved.",
+            "This preservative runs throughout your entire body and brain, allowing your body to stay virtually the same for extended periods of time. Your brain almost completely stops functioning, and you must set a trigger to awaken you, such as a loud noise, or movement within a certain radius. When this trigger is activated, it takes an entire turn for you to return to your full self, with full control over your body.",
+            "Entering a state of Vampiric Dormancy takes one full minute (or 10 turns). You may survive in the state of Vampiric Dormancy for up to 500 years. Past around 500 years, every year you spend in Dormancy consumes 10 Energy from you. If you run out of Energy, your brain shuts off fully, and you die. Losing Energy does not cause you to lose Levels in Vampire."
+        ]
+    },
+    "Embryo_Implantation": {
+        "name": "Embryo Implantation",
+        "classes": ["Vamp"],
+        "desc": [
+            "You may create a fully functioning Embryo, and implant it into a Humanoid’s womb. This Implantation process may be done through sexual transmission, or through simply forcing it though the flesh, then fixing the flesh that was damaged.",
+            "This Embryo may be an effective clone of your DNA, or an Embryo that combines the DNA of you, as well as the DNA of up to one person whose flesh you have grafted into yourself. You may also take some of the Surrogate Woman’s DNA and implant it into the Embryo, meaning the child produced could effectively have three genetic parents.",
+            "The child grows and lives as normal, with the only distinguishable differences to a normal human being small, appearing as minor traits, such as accelerated hair growth, sensitive or pale skin, or even teeth that look similar to fangs, which ultimately manifests in them gaining the trait: <a href='/abilities/?focus=Primal_Charm'>Primal Charm</a>. All of the aforementioned traits may manifest, or none of them might, or perhaps only some of them."
+        ]
+    },
+    "Flesh_Bud": {
+        "name": "Flesh Bud",
+        "classes": ["Vamp"],
+        "desc": [
+            "Using some of your Secondary Muscular System, as well as 50 Energy, you may create a Flesh Bud. Flesh Buds are small collections of flesh that are placed upon the forehead. A Flesh Bud forces the one who it is implanted into to do the Vampire’s bidding, despite the interests of the individual. However, this form of mind control does not completely change the personality of the victim in most cases. The only real change is in a person’s goals and motives.",
+            "In order to implant a Flesh Bud into someone, you must place the Bud into their forehead as an Action. The target must be Grappled by you, and you must succeed on another Grapple Check in order to place the Flesh Bud into them.",
+            "Flesh Buds have an amount of Health equal to your Level in Vampire. If the Flesh Bud’s health drops below zero, the Flesh Bud begins to die. However, if the Flesh Bud is still implanted within a Human’s brain when this happens, the Flesh Bud lashes out, dealing 10d10 Slashing damage directly to the brain.",
+            "However, these Flesh Buds may be safely removed via a successful Medicine or Sleight of Hand Check (DC of 20), or through a direct hit using an attack from The Ripple. If the attack dealt by The Ripple deals an amount of damage equal or greater to the HP of the Flesh Bud, it is vaporized instantly in its entirety, without any chance to respond. The Flesh Bud is Undead flesh, and as such, it will immediately die when exposed to Sunlight.",
+            "The Flesh Bud will function normally for up to 3 years. After around 3.5 years have passed, the Flesh Bud will feed off of the blood of the brain directly, resulting in a loss of 1d4 Maximum HP per day. When the target’s Maximum HP reaches zero, they are killed instantly. If the Vampire that implanted the Flesh Bud is killed, the Flesh Bud goes haywire, and the target becomes an <a href='/races/?focus=Abomination'>Abomination</a>."
+        ]
+    },
+    "Vampire_Creation": {
+        "name": "Vampire Creation",
+        "classes": ["Vamp"],
+        "desc": [
+            "You’ve gained enough knowledge of the function of your own body that you’ve found out how exactly the Stone Mask or your Master changed your anatomy. Rather than taking blood away from your target, you may take a corpse or living creature, and simply infuse a large amount of your own blood, mixed with a decent amount of Vampiric Essence. This takes an entire turn to accomplish.",
+            "If the creature that you’ve attempted to convert is living, they must make a Constitution Saving Throw against your Vampire DC. Every time they fail the saving throw, they take 2d12 Piercing damage, which cannot be blocked or reduced in any way. If the target succeeds, they no longer take damage and the effect ends. When the target drops to below 0 hit points, they go unconscious.",
+            "After a full turn, the affected individual/corpse becomes a Level 1 <a href='/races/?focus=Vampire'>Vampire</a>, and they keep whatever Levels they had previously, or if they were a lower level Undead, they regain the Levels that they once had in life.",
+            "Upon becoming a Vampire, it is important to note that you do not lose your Experience Points. However, in order to level up further, you must meet the stated Energy requirement.",
+            "The Vampire created has total free will, and is not obligated to serve or obey you in any way. Their mind is as it was in life, the only difference being that they are now a Vampire as well."
+        ]
+    },
+    "Vampiric_Peak": {
+        "name": "Vampiric Peak",
+        "classes": ["Vamp"],
+        "desc": [
+            "You have perfectly honed your Vampiric Abilities, and your brain has been brought to its fullest potential, meaning that the only way to improve from here would be an option other than simply consuming blood. If you obtain a <a href='/artifacts/?focus=Completed_Stone_Mask'>Completed Stone Mask</a>, you may don it, put UV light into the Mask, and become an <a href='/races/?focus=Ultimate_Being'>Ultimate Being</a>."
+        ]
+    },
+    "EPM_Double_Health": {
+        "name": "EPM Double Health",
+        "classes": ["EPM"],
+        "desc": [
+            "As an Enhanced Pillar Man you get the same amount of Hit Points that you did when you were alive. However, your Hit Dice, regardless of your class, becomes 1d12. Your Head Hit Dice is 1d6, and it has an additional +5 to its AC."
+        ]
+    },
+    "EPM_Regeneration": {
+        "name": "EPM Regeneration",
+        "classes": ["EPM"],
+        "desc": [
+            "You gain an amount of Hit Points back in either your Head or Body equal to your Constitution Modifier, every time Initiative is rolled (each round).",
+            "Furthermore, as an Action, you may restore Hit Dice to yourself. You may only restore an amount of Hit Dice equal to your Proficiency Bonus per Action. Hit Points restored by this feature can either restore Hit Points to your Head or Body, but you may split Hit Points restored between the two if desired."
+        ]
+    },
+    "Superior_Feeding": {
+        "name": "Superior Feeding",
+        "classes": ["EPM"],
+        "desc": [
+            "Your Body has changed on a cellular level. As a Pillar Man, your body was already fully accustomed to consuming living beings. However, now every cell in your body may break down living tissue and make it into energy extremely quickly. By simply touching living flesh, you may absorb the matter present and convert it into energy in a matter of seconds.",
+            "You may also use this as an attack. You may make contact with living flesh using your body and begin to absorb it. Upon making sustained contact, or as part of an Unarmed Strike, your flesh deals 1d6 Acid damage per turn.",
+            "This process becomes faster as you level up, dealing 2d6 at Level 5, 3d6 at Level 10, 4d6 at Level 15, and 5d6 at Level 20."
+        ]
+    },
+    "Ancient_Charm": {
+        "name": "Ancient Charm",
+        "classes": ["EPM"],
+        "desc": [
+            "The power coming from you is mysterious, and that of ridiculous strength. All living creatures recognize this power subconsciously.",
+            "Your Charisma score increases by 3, and you gain Proficiency in Intimidation (If you were already Proficient in Intimidation, you may gain Expertise and add the Proficiency Bonus again)."
+        ]
+    },
+    "EPM_Brain_Stimulation": {
+        "name": "EPM Brain Stimulation",
+        "classes": ["EPM"],
+        "desc": [
+            "The Stone Mask is made to be used by Pillar Men. It not only awakens the true potential of the mind, but also increases the efficiency of it. At Levels 4, 7, 10, 14, 17, and 20, add 1 point of Intelligence to your Intelligence Score."
+        ]
+    },
+    "EPM_Enhanced_Musculature": {
+        "name": "EPM Enhanced Musculature",
+        "classes": ["EPM"],
+        "desc": [
+            "Your muscles ripple with stolen life energy. At Levels 5, 8, 11, 15, 18 and 20, add 1 point of Strength to your Strength score."
+        ]
+    },
+    "EPM_Flexibility": {
+        "name": "EPM Flexibility",
+        "classes": ["EPM"],
+        "desc": [
+            "Your reflexes are just as strong as your muscles. At Levels 6, 9, 12, 19, and 20, add 1 point of Dexterity to your Dexterity score."
+        ]
+    },
+    "EPM_Senses": {
+        "name": "EPM Senses",
+        "classes": ["EPM"],
+        "desc": [
+            "You’ve had lots of experience, and can tell when something feels off. At Levels 7, 10, 13, 16, 19, and 20, add 1 point of Dexterity to your Dexterity score."
+        ]
+    },
+    "EPM_Durability": {
+        "name": "EPM Durability",
+        "classes": ["EPM"],
+        "desc": [
+            "Your body is becoming used to absorbing these massive amounts of energy, allowing you to convert some into tissue to make it much denser over time. At Levels 8, 11, 13, 15, and 20, add 1 point of Constitution to your Constitution score."
+        ]
+    },
+    "Total_Body_Control": {
+        "name": "Total Body Control",
+        "classes": ["EPM"],
+        "desc": [
+            "Every part of your body has tiny muscles inside of it, allowing every single part of your body to move around freely.",
+            "As an Action or Bonus Action, you may split, reassemble, flatten, inflate, or otherwise modify your body in almost any way imaginable, so long as it remains in one piece."
+        ]
+    },
+    "Cellular_Phasing": {
+        "name": "Cellular Phasing",
+        "classes": ["EPM"],
+        "desc": [
+            "Your cells all can move with incredible flexibility and speed. You may move your body, or parts of your body, through flesh without absorbing or affecting it in any negative way, if desired."
+        ]
+    },
+    "Cellular_Drive": {
+        "name": "Cellular Drive",
+        "classes": ["EPM"],
+        "desc": [
+            "Even when below 0 HP, in order for you to stop moving your Hit Points must drop below the inverse of your Maximum Health, in which case your Head/Body are destroyed."
+        ]
+    },
+    "Elemental_Battle_Mode": {
+        "name": "Elemental Battle Mode",
+        "classes": ["EPM"],
+        "desc": [
+            "You realize that your body may be used in a creative way in order to harness a primal force of Earth, such as Heat, Cold, Light, Rock, Water, Air, Electricity, etc.",
+            "You gain a body modification that allows your body to perform actions related to this force, and resistance to damage from your Ability. Talk to your DM about making and balancing this Ability."
+        ]
+    },
+    "EPM_Muscular_Proficiency": {
+        "name": "EPM Muscular Proficiency",
+        "classes": ["EPM"],
+        "desc": [
+            "Gain advantage on Strength, Constitution, and Dexterity Saving Throws."
+        ]
+    },
+    "EPM_Dormancy": {
+        "name": "EPM Dormancy",
+        "classes": ["EPM"],
+        "desc": [
+            "As an Action, you may seal yourself within a thin shell of rock at any point. While in this state you may not move in any way, but you also have total Immunity to UV light. At this point, you may either set an automatic timer or trigger (a bird lands on your casing, you hear a gunshot, etc.) that allows you to awaken as an Action.",
+            "Entering this state costs 100 Energy, and you may stay in it for up to ten thousand years. You may remain dormant for longer than that, but for every year that you are dormant past ten thousand, 5 Energy is consumed. If you run out of energy while in this state, your brain stops functioning completely."
+        ]
+    },
+    "EPM_Peak": {
+        "name": "EPM Peak",
+        "classes": ["EPM"],
+        "desc": [
+            "You have perfectly honed your Abilities, and your brain has been brought to its fullest potential, meaning that the only way to improve from here would be an option other than simply absorbing living things. If you obtain a <a href='/artifacts/?focus=Completed_Stone_Mask'>Completed Stone Mask</a>, you may don it, put UV light into the Mask, and become an <a href='/races/?focus=Ultimate_Being'>Ultimate Being</a>."
+        ]
+    },
+    "Undead_Nature": {
+        "name": "Undead Nature",
+        "classes": ["Zom", "Ghl", "Vamp", "EPM"],
+        "desc": [
+            "As a creature that has been changed and twisted, you have been removed from the traditional life cycle. Part of life is decay and death, but you have ascended beyond decay itself.",
+            "As an Undead Creature you do not age in any capacity, and are physically incapable of doing so. When converted into an Undead Creature, your body regains the youth that you may have lost, bringing your physical age to roughly 25, at the peak of your physical performance. If you are exposed to the Stone Mask when you are younger your mind fully develops and matures, and you continue to mature normally until you reach 25, and at that time you stop aging. You also do not need to sleep.",
+            "You are unable to be affected by any poison, toxin, or venom, so you gain Immunity to Poison damage and the Poisoned Condition, but acids still affect you normally.",
+            "You are unable to feel pain, except Radiant damage. Your body takes 1d100 Radiant damage every turn when any part of your body is exposed to direct sunlight. Your Head also takes 1d100 Radiant damage every turn when exposed to direct sunlight. This sunlight damage cannot be reduced in any way.",
+            "If your Body Hit Points reach 0 you become unable to move until you regenerate or are healed in some other fashion. When your Head’s Hit Points reach 0 you become incapacitated like normal."
+        ]
+    },
+    "Zombie_Infection": {
+        "name": "Zombie Infection",
+        "classes": ["Zom", "Ghl"],
+        "desc": [
+            "As an Action, you may infect living humans using your Ability and convert them into Zombies. When some of your blood or saliva comes into contact with a living being’s blood they must make a Constitution Saving Throw (DC 10), taking 2d6 Necrotic damage on a failed save. If the target succeeds on the save, they take no damage.",
+            "If the Necrotic damage dealt to the target kills them, they revive at the start of their next turn as a Zombie. You may also use this ability to revive a freshly deceased body, so long as they died within 24 hours of exposure or if they have been preserved through other means such as freezing."
+        ]
+    },
+    "Zombie_Double_Health": {
+        "name": "Zombie Double Health",
+        "classes": ["Zom"],
+        "desc": [
+            "As the weakest kind of Undead, Zombies have the same kind of power that other Undead have, just in a much weaker form. Zombies have 1d4 + their Constitution Modifier HP in their Head for each level they had, whereas the Body of a Zombie has 3 times the health they had in life at Level 1. The Head also has +5 to its AC."
+        ]
+    },
+    "Rotting_Flesh": {
+        "name": "Rotting Flesh",
+        "classes": ["Zom"],
+        "desc": [
+            "Your flesh dries out, and you smell like rotting meat. You have disadvantage on all rolls where you attempt to pass off as a living human."
+        ]
+    },
+    "Zombie_Strength": {
+        "name": "Zombie Strength",
+        "classes": ["Zom"],
+        "desc": [
+            "Zombies have an Advantage on all Strength Saving Throws, and as an Action, Zombies may lift or throw an object weighing up to 5 times their Strength score in kilograms."
+        ]
+    },
+    "Ghoulish_Agility": {
+        "name": "Ghoulish Agility",
+        "classes": ["Ghl"],
+        "desc": [
+            "You get Advantage on all Dexterity Saving Throws. You also get an additional 2 meters of movement speed and a +1 Bonus to your Body’s AC."
+        ]
+    },
+    "Ghoulish_Double_Health": {
+        "name": "Ghoulish Double Health",
+        "classes": ["Ghl"],
+        "desc": [
+            "Ghouls get 1d6 + their Constitution Modifier Head HP for each level they had, whereas the Body of a Ghoul has twice the health they had in life. The Head also has +5 to its AC."
+        ]
+    },
+    "Ghoulish_Strength": {
+        "name": "Ghoulish Strength",
+        "classes": ["Ghl"],
+        "desc": [
+            "You get Advantage on all Strength Saving Throws, and as an Action, you may lift or throw an object up to 20 times your Strength score in kilograms."
+        ]
+    },
+    "Perfect_Form": {
+        "name": "Perfect Form",
+        "classes": ["Ult"],
+        "desc": [
+            "All of your Ability Scores increase by 5. You also have advantage to all Skill Checks and Saving Throws. You gain Proficiency in any Skill/Weapon/Tactic you have ever seen used before or used yourself."
         ]
     },
     "Ultimate_Nature": {
         "name": "Ultimate Nature",
         "classes": ["Ult"],
         "desc": [
-            ""
+            "You are now resistant to UV light, as well as all other forms of damage, including Radiant. You do not need to sleep, and you must only intake organic matter equal to your body mass once every month. You gain 5 energy for every turn when you are in direct UV light, through passive photosynthesis.",
+            "You may also enter a dormant state, in which you do not move or think, and stay in this state for up to one million years.",
+            "You also sense at the maximum possible level, being able to detect the change in nearby air currents, see better than any ground-based telescope, and hear any and every noise that has any wave that reaches your ears."
+        ]
+    },
+    "Immortality": {
+        "name": "Immortality",
+        "classes": ["Ult"],
+        "desc": [
+            "You gain new Hit Dice, being d20s, and lose your <a href='/abilities/?focus=Vampire_Double_Health'>Vampire</a> or <a href='/abilities/?focus=EPM_Double_Health'>EPM</a> Double Health.",
+            "You may reroll the Hit Points gained in all previous levels using these new Hit Dice upon transforming. You also regenerate an amount of Hit Points equal to your Constitution Modifier every round, and may choose to spend as many Hit Dice as you would like as an Action."
+        ]
+    },
+    "Improved_Imitation": {
+        "name": "Improved Imitation",
+        "classes": ["Ult"],
+        "desc": [
+            "You can perform any Action that any creature can, but better. When viewing any Action performed by a living creature, you may Imitate it instantly without having to roll for it.",
+            "You may also Imitate Actions viewed in the past. This means that you may gain up to 5 Class Features from other Classes. You may change the Class Features that you know as a Bonus Action."
+        ]
+    },
+    "Living_Drones": {
+        "name": "Living Drones",
+        "classes": ["Ult"],
+        "desc": [
+            "You may take a portion of your body’s matter, or up to 100 Energy, and convert it into any Small (or smaller) living creature, a physical characteristic of a creature, or any organic matter.",
+            "This may be separated or attached to your body, and reattached or separated at will. If the Drone created has a brain, it will act as a normal animal of its species would in any given situation. However, you may also send commands that override the creature’s standard brain function, effectively controlling it."
+        ]
+    },
+    "Stoneflesh": {
+        "name": "Stoneflesh",
+        "classes": ["Rock"],
+        "desc": [
+            "When entering full hibernation, you gain a thick layer of stone over your skin and enter a dormant state. You may not move while in this state, nor take any actions whatsoever. Your scent disappears, and you become practically indistinguishable from a regular boulder. In this state, your AC increases by 5, your Con score increases by 20, and you resist all damage types."
+        ]
+    },
+    "Stone_Cold_Willpower": {
+        "name": "Stone Cold Willpower",
+        "classes": ["Rock"],
+        "desc": [
+            "Over 95% of Rock Humans are born with a Stand Ability. Roll a d20. If your number rolled is anything other than 1, you are a natural-born Stand User (if you rolled a 1, you may still have the potential to gain a Stand, you are just not born with one)."
+        ]
+    },
+    "Mysterious_Disappearance": {
+        "name": "Mysterious Disappearance",
+        "classes": ["Rock"],
+        "desc": [
+            "When you are killed, your body rapidly crumbles in dust that easily dissipates. One turn after you die, your remains are completely gone."
         ]
     }
 }
