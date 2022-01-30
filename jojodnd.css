@@ -2,6 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     background-color: mediumslateblue;
+    min-width: 500px;
 }
 
 #page-title {
@@ -132,6 +133,14 @@ h1, h2, h3, th {
     margin-bottom: 1rem;
     width: 100%;
     border-bottom: 2px dashed purple;
+}
+
+.table {
+    color: black;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    color: black;
 }
 
 #list {

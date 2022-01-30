@@ -976,7 +976,7 @@
             "As an Undead Creature you do not age in any capacity, and are physically incapable of doing so. When converted into an Undead Creature, your body regains the youth that you may have lost, bringing your physical age to roughly 25, at the peak of your physical performance. If you are exposed to the Stone Mask when you are younger your mind fully develops and matures, and you continue to mature normally until you reach 25, and at that time you stop aging. You also do not need to sleep.",
             "You are unable to be affected by any poison, toxin, or venom, so you gain Immunity to Poison damage and the Poisoned Condition, but acids still affect you normally.",
             "You are unable to feel pain, except Radiant damage. Your body takes 1d100 Radiant damage every turn when any part of your body is exposed to direct sunlight. Your Head also takes 1d100 Radiant damage every turn when exposed to direct sunlight. This sunlight damage cannot be reduced in any way.",
-            "If your Body Hit Points reach 0 you become unable to move until you regenerate or are healed in some other fashion. When your Head's Hit Points reach 0 you become paralyzed, but stay conscious. When your Head's HP becomes less than the inverse of your total Head Health, your Head is destroyed and you die."
+            "If your Body Hit Points reach 0 you become unable to move until you regenerate or are healed in some other fashion. When your Head’s Hit Points reach 0 you become incapacitated like normal."
         ]
     },
     "Zombie_Infection": {
@@ -991,7 +991,7 @@
         "name": "Zombie Double Health",
         "classes": ["Zom"],
         "desc": [
-            "As the weakest kind of Undead, Zombies have the same kind of power that other Undead have, just in a much weaker form. Zombies have 1d6 + their Constitution Modifier HP in their Head for each level they had, whereas the Body of a Zombie has 3 times the health they had in life. The Head also has +5 to its AC."
+            "As the weakest kind of Undead, Zombies have the same kind of power that other Undead have, just in a much weaker form. Zombies have 1d4 + their Constitution Modifier HP in their Head for each level they had, whereas the Body of a Zombie has 3 times the health they had in life at Level 1. The Head also has +5 to its AC."
         ]
     },
     "Rotting_Flesh": {
@@ -1019,7 +1019,7 @@
         "name": "Ghoulish Double Health",
         "classes": ["Ghl"],
         "desc": [
-            "Ghouls get 1d4 + their Constitution Modifier Head HP for each level they had, whereas the Body of a Ghoul has 3 times the health they had in life. The Head also has +5 to its AC."
+            "Ghouls get 1d6 + their Constitution Modifier Head HP for each level they had, whereas the Body of a Ghoul has twice the health they had in life. The Head also has +5 to its AC."
         ]
     },
     "Ghoulish_Strength": {

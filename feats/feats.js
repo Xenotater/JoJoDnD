@@ -95,7 +95,7 @@ function updateDisplay() {
     if (feat.prereq != null)
         newContent += "<p><b><u>Prerequisite:</u> " + feat.prereq + "</b></p>";
     newContent += "<p class='section'><b>Description: </b></p><p>" + feat.desc + "</p>";
-    newContent += "<p class='section'><b>Effects: </b></p><ul>"
+    newContent += "<p class='section'><b>Effects: </b></p><ul class='effects'>"
     for (let i = 0; i <feat.effects.length; i++)
         newContent += "<li>" + feat.effects[i] + "</li>";
     newContent += "</ul>";
