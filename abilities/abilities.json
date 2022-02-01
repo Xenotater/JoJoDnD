@@ -1089,5 +1089,82 @@
         "desc": [
             "When you are killed, your body rapidly crumbles in dust that easily dissipates. One turn after you die, your remains are completely gone."
         ]
+    },
+    "Incalculable_Fortune": {
+        "name": "Incalculable Fortune",
+        "classes": ["Corpse"],
+        "desc": [
+            "If the User is not currently using another aspect of <a href='/artifacts/?focus=Holy_Corpse_Parts'>Love Train</a>, they may instead activate this Ability. This Ability causes protection and good fortune to befall a group of people, an organization, or anything in general, determined by The Corpse’s User.",
+            "This luck protects and helps the chosen entity, at the cost of other people. If one person is obtaining a lot of luck, another randomly chosen person is extremely unlucky. If land is blessed, there is an equal amount of land somewhere in the world that is seemingly cursed. The same applies for anything made. The limit of this ability is half of the land/people/entities in the world, as the net fortune has to equal zero."
+        ]
+    },
+    "Vicious_Misfortune": {
+        "name": "Vicious Misfortune",
+        "classes": ["Corpse"],
+        "desc": [
+            "While in possession of The Holy Corpse, if either you injure someone and are aware of the injury, you may choose how exactly the injury affects the person. You can reduce all damage, increase the damage caused, or even move the wound to a different part of the body. For example, a prick on the finger could be amplified and moved to the internal heart valve, causing an almost certain mortal wound.",
+            "It takes 2 full turns for one of theses wounds to become fatal. If healed at least 50 HP by a <a href='/classes/?focus=Stands'>Stand</a>’s power, the <a href='/classes/?focus=Ripple'>Ripple</a>, or a different supernatural technique within that window of time, the harm caused may instead only be applied to the original location of the wound, affecting the body as a wound of that type would normally. If the damage is restored, the receiver of the wound simply drops to 0 HP and becomes stable, rather than dying."
+        ]
+    },
+    "Gravitational_Pull": {
+        "name": "Gravitational Pull",
+        "classes": ["Corpse"],
+        "desc": [
+            "The Corpse has the ability to bring non-living objects and terrain towards its user. Any terrain within sight can be brought to the user’s feet within a matter of 5 seconds (or one turn). The surrounding terrain will shift around it to accommodate for the moving earth."
+        ]
+    },
+    "The_Wall": {
+        "name": "The Wall",
+        "classes": ["Corpse"],
+        "desc": [
+            "In a line between The Corpse and slightly past the User, a two-dimensional grid is created with a small dimensional pocket dimension inside that only the current user of The Corpse can access. While within this wall, all damage directed at the person in the pocket dimension is redirected to somebody else random in the world. However, while in this dimension, you may also not make attacks unless you reach outside of the pocket dimension to attack. This effect is clearly visible to everybody, including non-stand users.",
+            "This dimensional barrier is immune to all attacks, with exception to things that are on the same power level as The Holy Corpse. Things that break through the dimensional wall include Attacks and Abilities from <a href='/artifacts/?focus=Stand_Arrow'>Requiem Stands</a>, Abilities of <a href='/artifacts/?focus=Heaven'>Heaven Ascended Stands</a>, a physical melee Attack from an <a href='/races/?focus=Ultimate_Being'>Ultimate Being</a>, or from an object with the <a href='/abilities/?focus=Perfect_Spiral'>Perfect Spiral</a>. These Attacks/Abilities may affect you, but even if they do, any damage that you take is halved."
+        ]
+    },
+    "Design_Change": {
+        "name": "Design Change",
+        "classes": ["Req"],
+        "desc": [
+            "Your Stand undergoes an immediate and noticeable visual change, still maintaining elements of your original Stand, but changing up and adding some things as well."
+        ]
+    },
+    "Physical_Change": {
+        "name": "Physical Change",
+        "classes": ["Req"],
+        "desc": [
+            "Requiem Stands have immense power. Take all of your Stand’s Stats and double them."
+        ]
+    },
+    "Surging_Energy": {
+        "name": "Surging Energy",
+        "classes": ["Req"],
+        "desc": [
+            "You gain 1 Stand Energy back at the start of each of your turns."
+        ]
+    },
+    "Enhanced_Ability": {
+        "name": "Enhanced Ability",
+        "classes": ["Req"],
+        "desc": [
+            "Your normal Stand Abilities greatly increase in power and potency. They cost the same amount, but you may use your Ability as a Free Action once per turn."
+        ]
+    },
+    "Requiem_Ability": {
+        "name": "Requiem Ability",
+        "classes": ["Req"],
+        "desc": [
+            "This is one of the most powerful abilities a Stand can possess. When used, at the cost of 3 SE, this kind of Ability has ridiculous power. Work with your DM to determine how this power works. However, there are some general guidelines that should be followed.",
+            "First, your Requiem Ability is based upon what your greatest desire or goal was when you pierced yourself. This Ability manifests so that you may more easily achieve that goal or desire. As a general rule of thumb, a Requiem Ability should have enough power that, when used, the entirety of a town/city would notice all at once (if you wanted to show your full power).",
+            "Another general rule is that most Requiem Abilities are defensive, and cannot be activated by the user. Requiem Abilities also typically manifest in the form of a power that affects time, space, or living souls."
+        ]
+    },
+    "Heavenly_Ability": {
+        "name": "Heavenly Ability",
+        "classes": ["Heav"],
+        "desc": [
+            "This ability costs 50 SE when activated and costs 1 SE per turn if passive. Heavenly Abilities set Heaven Ascended Stands above all other Abilities of mortal beings. Heavenly Abilities are typically based on a particular word or phrase of great personal importance to the User, usually relating to their beliefs.",
+            "As a general rule of thumb, when a Heavenly Ability is activated, if the Heaven Ascended Stand is intentionally using its full power, the entire universe could be affected. However, as powerful as this may seem, these abilities are usually broad, and affect a large area indiscriminately. The less broad an Ability, the stronger it is.",
+            "For example, <a href='https://jojo.fandom.com/wiki/Made_in_Heaven'>Made In Heaven</a> can speed up time exponentially without end, but it affects everybody indiscriminately, with no ability to stop it once time begins to speed up. <a href='https://jojo.fandom.com/wiki/The_World_Over_Heaven'>The World Over Heaven</a>, on the other hand, can rewrite reality itself (sometimes even changing the laws of physics in a small region), with the trade off being that it has to hit something with its fists in order to change it."
+        ]
     }
 }

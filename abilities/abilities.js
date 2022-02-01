@@ -136,79 +136,112 @@ function parseTypes(classes) {
 
     if (classes != null) {
         for (let i = 0; i < classes.length; i++) {
-            var cls = "", page = "classes";
+            var cls = "", lnk = "", page = "classes";
             switch (classes[i]) {
                 case "Pwr":
                     cls = "Power-Type Stands";
+                    lnk = "Power";
                     break;
                 case "Rng":
                     cls = "Ranged-Type Stands";
+                    lnk = "Ranged";
                     break;
                 case "Rmt":
                     cls = "Remote-Type Stands";
+                    lnk = "Remote";
                     break;
                 case "Abl":
                     cls = "Ability-Type Stands";
+                    lnk = "Ability";
                     break;
                 case "Enh":
                     cls = "Enhancement-Type Stands";
+                    lnk = "Enhancement";
                     break;
                 case "Rev":
                     cls = "Revenge-Type Stands";
+                    lnk = "Revenge";
                     break;
                 case "Ind":
                     cls = "Independent-Type Stands";
+                    lnk = "Independent";
                     break;
                 case "Hive":
                     cls = "Hive-Type Stands";
+                    lnk = "Hive";
                     break;
                 case "Act":
                     cls = "Act-Type Stands";
+                    lnk = "Act";
                     break;
                 case "Stands":
                     cls = "All Stands";
+                    lnk = "Stands";
                     break;
                 case "Rip":
                     cls = "Ripple Users";
+                    lnk = "Ripple";
                     break;
                 case "Spin":
                     cls = "Spin Users";
+                    lnk = "Spin";
                     break;
                 case "Zom":
                     cls = "Zombies";
                     page = "races";
+                    lnk = "Zombie";
                     break;
                 case "Ghl":
                     cls = "Ghouls";
                     page = "races";
+                    lnk = "Ghoul";
                     break;
                 case "Vamp":
                     cls = "Vampires";
                     page = "races";
+                    lnk = "Vampire";
                     break;
                 case "PM":
                     cls = "Pillar Men";
                     page = "races";
+                    lnk = "Pillar Man";
                     break;
                 case "EPM":
                     cls = "Enhanced Pillar Men";
                     page = "races";
+                    lnk = "Enhanced_Pillar_Man";
                     break;
                 case "Ult":
                     cls = "Ultimate Beings";
                     page = "races";
+                    lnk = "Ultimate_Being";
                     break;
                 case "Rock":
                     cls = "Rock Humans";
                     page = "races";
+                    lnk = "Rock_Human";
+                    break;
+                case "Corpse":
+                    cls = "Holy Corpse Holder";
+                    page = "artifacts";
+                    lnk = "Holy_Corpse_Parts";
+                    break;
+                case "Heav":
+                    cls = "Heaven Stand";
+                    page = "artifacts";
+                    lnk = "Heaven";
+                    break;
+                case "Req":
+                    cls = "Requiem Stand";
+                    page = "artifacts";
+                    lnk = "Stand_Arrow";
                     break;
                 default:
                     cls = "Error";
                     page = "not_found";
                     break;
             }
-            content += "<li><a href='/" + page + "/?focus=" + 
-            cls.replace("-Type Stands", "").replace(" Users", "").replace("All ", "").replace(/s$/, "").replace(/Men$/, "Man").replace(/ /g, "_") + "'>" + cls + "</a></li>";
+            content += "<li><a href='/" + page + "/?focus=" + lnk + "'>" + cls + "</a></li>";
         }
     }
 
