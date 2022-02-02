@@ -9,6 +9,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
         <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-rfs/bootstrap-rfs.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
         
         <link rel="stylesheet" href="/jojodnd.css">
         <link rel="stylesheet" href="editor.css">
@@ -37,62 +38,138 @@
         <div class="container">
             <h1 id="page-title">Character Sheet Editor</h1>
             <div class="content">
-                <div id="pages" data-simplebar>
-                    <div class="page" id="page1">
-                        <div class="heading">
-                            <img src="/Assets/icon.png" alt="JoJo D&D" id="logo">
-                            <span id="title"><b>JoJo's Bizarre Tabletop Game</b></span>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">
-                                <label for="name">Character Name</label>
-                                <input type="text" id="name" name="name">
+                <div data-simplebar>
+                    <div id="pages">
+                        <div class="page" id="page1">
+                            <div class="heading">
+                                <img src="/Assets/icon.png" alt="JoJo D&D" id="logo">
+                                <span id="title"><b>JoJo's Bizarre Tabletop Game</b></span>
                             </div>
-                            <div class="col-2">
-                                <label for="maxHP">Hit Point Max</label>
-                                <input type="number" id="maxHP" name="maxHP" min=0>
-                            </div>
-                            <div class="col-4">
-                                <span class="label">Current Hit Points</label>
-                                <div class="box" id="hp"></div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-3">
-                                <label for="race">Race & Passion</label>
-                                <input type="text" id="race" name="race">
-                            </div>
-                            <div class="col-3">
-                                <label for="class">Class & Level</label>
-                                <input type="text" id="class" name="class">
-                                <input type="number" id="level" name="level" min=1>
-                            </div>
-                            <div class="col-2">
-                                <label for="reduction">Damage Reduction</label>
-                                <input type="number" id="reduction" name="reduction" min=0>
-                            </div>
-                            <div class="col-2">
-                                <label for="dc">Stand DC</label>
-                                <input type="text" id="dc" name="dc">
-                            </div>
-                            <div class="col-2">
-                                <span class="label">Death Saves</label>
-                                <div class="box" id="win">
-                                    <span class="label">Won</span>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="name">Character Name</label>
+                                    <input type="text" id="name" name="name">
                                 </div>
-                                <div class="box" id="lose">
-                                    <span class="label">Lost</span>
+                                <div class="col-2">
+                                    <label for="maxHP">Hit Point Max</label>
+                                    <input type="number" id="maxHP" name="maxHP" min=0>
+                                </div>
+                                <div class="col-4">
+                                    <span class="label">Current Hit Points</label>
+                                    <div class="box" id="hp"></div>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="race">Race & Passion</label>
+                                    <input type="text" id="race" name="race">
+                                </div>
+                                <div class="col-3">
+                                    <label for="class">Class & Level</label>
+                                    <input type="text" id="class" name="class">
+                                    <input type="number" id="level" name="level" min=1>
+                                </div>
+                                <div class="col-2">
+                                    <label for="reduction">Damage Reduction</label>
+                                    <input type="number" id="reduction" name="reduction" min=0>
+                                </div>
+                                <div class="col-2">
+                                    <label for="dc">Stand DC</label>
+                                    <input type="text" id="dc" name="dc">
+                                </div>
+                                <div class="col-2">
+                                    <span class="label">Death Saves</label>
+                                    <div class="box" id="win">
+                                        <span class="label">Won</span>
+                                    </div>
+                                    <div class="box" id="lose">
+                                        <span class="label">Lost</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div id="savebox">
+                                        <span class="label">Saving Throws</span>
+                                        <div class="box" id="saves">
+                                            <div id="not-prof">
+                                                <div id="stats">
+                                                    <span class="label">Strength</span>
+                                                    <span class="label">Dexterity</span>
+                                                    <span class="label">Constitution</span>
+                                                    <span class="label">Intelligence</span>
+                                                    <span class="label">Wisdom</span>
+                                                    <span class="label">Charisma</span>
+                                                </div>
+                                                <div id="checks">
+                                                    <input type="checkbox" id="str" name="str">
+                                                    <input type="number" class="bonus" id="str-bonus" name="str-bonus"><br>
+                                                    <input type="checkbox" id="dex" name="dex">
+                                                    <input type="number" class="bonus" id="dex-bonus" name="dex-bonus"><br>
+                                                    <input type="checkbox" id="con" name="con">
+                                                    <input type="number" class="bonus" id="con-bonus" name="con-bonus"><br>
+                                                    <input type="checkbox" id="int" name="int">
+                                                    <input type="number" class="bonus" id="int-bonus" name="int-bonus"><br>
+                                                    <input type="checkbox" id="wis" name="wis">
+                                                    <input type="number" class="bonus" id="wis-bonus" name="wis-bonus"><br>
+                                                    <input type="checkbox" id="cha" name="cha">
+                                                    <input type="number" class="bonus" id="cha-bonus" name="cha-bonus"><br>
+                                                </div>
+                                            </div>
+                                            <div id="prof-bonus">
+                                                <label for="bonus" id="proflbl">Proficiency Bonus:</label>
+                                                <input type="number" id="bonus" name="bonus">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="skillbox">
+                                        <span class="label">Skill Proficiencies</span>
+                                        <div class="box" id="skills">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <label for="ac">Armor Class</label>
+                                            <input type="number" id="ac" name="ac" min=0>
+                                        </div>
+                                        <div class="col-4">
+                                            <label for="hdice">Hit Dice</label>
+                                            <input type="text" id="hdice" name="hdice">
+                                        </div>
+                                        <div class="col-4">
+                                            <label for="pspeed">Movement Speed</label>
+                                            <input type="number" id="pspeed" name="pspeed" min=0>
+                                            <input type="number" id="sspeed" name="sspeed" min=0>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <label for="sac">Stand AC</label>
+                                            <input type="number" id="sac" name="sac" min=0>
+                                        </div>
+                                        <div class="col-4">
+                                            <label for="init">Initiative</label>
+                                            <input type="number" id="init" name="init" min=0>
+                                        </div>
+                                        <div class = "col-4">
+                                            <label for="percep">Passive Perception</label>
+                                            <input type="number" id="percep" name="percep" min=0>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="page" id="page2">
-                        <p>page 2</p>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="page" id="page3">
-                        <p>page 3</p>
+                        <div class="divider"></div>
+                        <div class="page" id="page2">
+                            <p>page 2</p>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="page" id="page3">
+                            <p>page 3</p>
+                        </div>
                     </div>
                 </div>
                 <div id="download">

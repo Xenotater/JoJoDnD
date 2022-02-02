@@ -83,15 +83,86 @@ input {
     border-left: none;
 }
 
-#win {
-    float: left;
-    width: 50%;
+#win, #lose {
     padding-top: 28px;
 }
 
-#lose {
+#win, #lose, #pspeed, #sspeed {
     float: left;
     width: 50%;
-    padding-top: 28px;
+}
+
+#lose, #skills, #sspeed {
     border-left: none;
+}
+
+#savebox {
+    float: left;
+    width: 45%;
+}
+
+#skillbox {
+    float: left;
+    width: 55%;
+    border-left: none;
+}
+
+#not-prof {
+    height: 85%;
+    border-bottom: 3px solid black;
+    padding-left: 8px;
+}
+
+#saves, #skills {
+    height: 124px;
+    text-align: left;
+    font-size: 8px;
+    line-height: 14px;
+}
+
+#stats {
+    width: 40%;
+    float: left;
+}
+
+#checks {
+    width: 60%;
+    float: left;
+}
+
+input[type=checkbox] {
+    height: 16px;
+    width: 12px;
+    float: left;
+    margin-left: .5rem;
+}
+
+.bonus {
+    height: 16px;
+    width: 50px;
+    float: left;
+    margin-left: .5rem;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 12px;
+}
+
+#prof-bonus {
+    height: 15%;
+    padding-left: 5px;
+}
+
+#proflbl {
+    width: 67%;
+    float: left;
+    padding-top: 3px;
+}
+
+#bonus {
+    float: left;
+    width: 30%;
+    height: 17px;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 16px;
 }
