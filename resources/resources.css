@@ -242,3 +242,22 @@ h4 {
     margin-top: 1rem;
     color: green;
 }
+
+#editor {
+    margin-top: 1rem;
+}
+
+#edit-btn {
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(65, 65, 255);
+    font-size: 1.5rem;
+}
+
+#edit-btn:hover {
+    color: black;
+    background-color: rgb(45, 45, 252);
+}
