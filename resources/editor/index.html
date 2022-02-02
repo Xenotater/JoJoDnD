@@ -39,20 +39,60 @@
             <div class="content">
                 <div id="pages" data-simplebar>
                     <div class="page" id="page1">
-                        <p>page 1</p>
-                        <div id="name"><h2>Test</h2></div>
-                        <p>No character sheet here, this is currently just a test to make sure I can export PDFs properly.</p>
-                        <div id="box"><p>This is some text in a box with a border. Hopefully it will be properly exported into a PDF format.</p></div>
+                        <div class="heading">
+                            <img src="/Assets/icon.png" alt="JoJo D&D" id="logo">
+                            <span id="title"><b>JoJo's Bizarre Tabletop Game</b></span>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="name">Character Name</label>
+                                <input type="text" id="name" name="name">
+                            </div>
+                            <div class="col-2">
+                                <label for="maxHP">Hit Point Max</label>
+                                <input type="number" id="maxHP" name="maxHP" min=0>
+                            </div>
+                            <div class="col-4">
+                                <span class="label">Current Hit Points</label>
+                                <div class="box" id="hp"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <label for="race">Race & Passion</label>
+                                <input type="text" id="race" name="race">
+                            </div>
+                            <div class="col-3">
+                                <label for="class">Class & Level</label>
+                                <input type="text" id="class" name="class">
+                                <input type="number" id="level" name="level" min=1>
+                            </div>
+                            <div class="col-2">
+                                <label for="reduction">Damage Reduction</label>
+                                <input type="number" id="reduction" name="reduction" min=0>
+                            </div>
+                            <div class="col-2">
+                                <label for="dc">Stand DC</label>
+                                <input type="text" id="dc" name="dc">
+                            </div>
+                            <div class="col-2">
+                                <span class="label">Death Saves</label>
+                                <div class="box" id="win">
+                                    <span class="label">Won</span>
+                                </div>
+                                <div class="box" id="lose">
+                                    <span class="label">Lost</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="divider"></div>
                     <div class="page" id="page2">
                         <p>page 2</p>
-                        <p>This page doesn't have much, but the next page should have an image.</p>
                     </div>
                     <div class="divider"></div>
                     <div class="page" id="page3">
                         <p>page 3</p>
-                        <img src="/Assets/logo.png" id="test-img">
                     </div>
                 </div>
                 <div id="download">

@@ -1,17 +1,32 @@
 window.jsPDF = window.jspdf.jsPDF;
 
 $(document).ready(function () {
-    $("#dl-btn").click(function () {
+    $("input").on("keyup", function() {
+        var val = $(this).width() / $(this).val().length, upper = 12, lower = 8;
+
+        if ($(this).attr("type") == "number") {
+            upper = 16;
+            lower = 12;
+        }
+
+        console.log(val);
+        if (val > upper)
+            $(this).css("font-size", "24px");
+        else if (val < upper && val > lower)
+            $(this).css("font-size", "16px");
+        else
+            $(this).css("font-size", "12px");
+    });
+
+    $("#dl-btn").click(function() {
         generatePDF();
     });
 });
 
-//PDF generation assisted by 
+//PDF generation assisted by https://www.freakyjolly.com/html2canvas-multipage-pdf-tutorial/
 function generatePDF() {
     var pdf;
-    // window.scrollTo(0,0)
     html2canvas(document.querySelector("#page1")).then(function (canvas) {
-        // document.body.appendChild(canvas)
         var imgData = canvas.toDataURL("/image/png", 1.0);
         pdf = new jsPDF('p', 'in', 'letter');
         pdf.addImage(imgData, 'PNG', 0, 0, 8.5, 11);
