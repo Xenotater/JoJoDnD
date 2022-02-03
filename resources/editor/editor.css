@@ -29,12 +29,16 @@
     display: none;
 }
 
+.center {
+    width: 8.5in;
+    margin: auto;
+}
+
 .page {
     background-color: white;
     width: 8.5in;
     height: 11in;
     padding: 2rem;
-    margin: auto;
 }
 
 .heading {
@@ -53,13 +57,39 @@
     vertical-align: middle;
 }
 
+/* arrow removal from https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* arrow removal from https://www.geeksforgeeks.org/how-to-remove-the-default-arrow-icon-from-a-dropdown-list/ */
+select {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Safari, Chrome, Opera */
+    -webkit-appearance: none;
+  }
+
+  /* for IE10 */
+  select::-ms-expand {
+    display: none;
+  }
+
 label, .label {
     font-size: 12px;
 }
 
 input {
     width: 100%;
-    height: 50px;
+    height: 60px;
     font-size: 24px;
     text-align: center;
     border: 3px solid black;
@@ -69,7 +99,7 @@ input {
 .box {
     width: 100%;
     border: 3px solid black;
-    height: 50px;
+    height: 60px;
 }
 
 #class {
@@ -84,7 +114,7 @@ input {
 }
 
 #win, #lose {
-    padding-top: 28px;
+    padding-top: 38px;
 }
 
 #win, #lose, #pspeed, #sspeed {
@@ -110,11 +140,12 @@ input {
 #not-prof {
     height: 85%;
     border-bottom: 3px solid black;
-    padding-left: 8px;
+    padding-left: 5px;
+    padding-top: 2px;
 }
 
 #saves, #skills {
-    height: 124px;
+    height: 144px;
     text-align: left;
     font-size: 8px;
     line-height: 14px;
@@ -123,6 +154,7 @@ input {
 #stats {
     width: 40%;
     float: left;
+    line-height: 17.75px;
 }
 
 #checks {
@@ -130,18 +162,20 @@ input {
     float: left;
 }
 
-input[type=checkbox] {
+.savecheck {
     height: 16px;
     width: 12px;
     float: left;
     margin-left: .5rem;
+    margin-top: 2px;
 }
 
-.bonus {
+.save-bonus {
     height: 16px;
     width: 50px;
     float: left;
     margin-left: .5rem;
+    margin-top: 2px;
     border: none;
     border-bottom: 2px solid black;
     font-size: 12px;
@@ -165,4 +199,41 @@ input[type=checkbox] {
     border: none;
     border-bottom: 2px solid black;
     font-size: 16px;
+}
+
+#skillbox {
+    text-align: left;
+}
+
+#skills-list {
+    list-style-type: none;
+    columns: 2;
+    column-gap: 0;
+    padding: 0;
+    padding-top: 2px;
+}
+
+.skill-bonus {
+    height: 12px;
+    width: 20px;
+    font-size: 12px;
+    border: none;
+    border-bottom: 2px solid black;
+    margin-left: 2px;
+}
+
+.skillcheck {
+    width: 14px;
+    height: 14px;
+    font-size: 8px;
+    margin-left: 2px;
+}
+
+.skilllbl {
+    font-size: 10px;
+}
+
+.skillstat {
+    font-size: 8px;
+    margin-left: 2px;
 }
