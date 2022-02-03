@@ -42,9 +42,12 @@
 }
 
 .heading {
-    padding: .5rem;
     border-bottom: 2px solid black;
     margin-bottom: 1rem;
+}
+
+#logo {
+    margin-bottom: 8px;
 }
 
 #title {
@@ -55,19 +58,6 @@
 
 #logo {
     vertical-align: middle;
-}
-
-/* arrow removal from https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp */
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
 }
 
 /* arrow removal from https://www.geeksforgeeks.org/how-to-remove-the-default-arrow-icon-from-a-dropdown-list/ */
@@ -200,10 +190,6 @@ input {
     border: none;
     border-bottom: 2px solid black;
     font-size: 16px;
-}
-
-#skillbox {
-    text-align: left;
 }
 
 #skills-list {
