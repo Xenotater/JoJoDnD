@@ -85,6 +85,7 @@ select {
 
 label, .label {
     font-size: 12px;
+    white-space: nowrap;
 }
 
 input {
@@ -216,7 +217,7 @@ input {
 .skill-bonus {
     height: 12px;
     width: 20px;
-    font-size: 12px;
+    font-size: 10px;
     border: none;
     border-bottom: 2px solid black;
     margin-left: 2px;
@@ -227,6 +228,7 @@ input {
     height: 14px;
     font-size: 8px;
     margin-left: 2px;
+    text-align: center;
 }
 
 .skilllbl {
@@ -236,4 +238,14 @@ input {
 .skillstat {
     font-size: 8px;
     margin-left: 2px;
+}
+
+.stat-mod, .stand-mod {
+    height: 50px;
+    font-size: 32px;
+}
+
+.stat-score, .stand-score {
+    height: 30px;
+    border-top: none;
 }
