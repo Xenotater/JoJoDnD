@@ -7,9 +7,9 @@
         <meta name="viewport" content="width=device-width">
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-        <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-rfs/bootstrap-rfs.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-rfs/bootstrap-rfs.css" rel="stylesheet" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" crossorigin="anonymous">
         
         <link rel="stylesheet" href="/jojodnd.css">
         <link rel="stylesheet" href="editor.css">
@@ -53,7 +53,7 @@
                                     </div>
                                     <div class="col-2">
                                         <label for="maxHP">Hit Point Max</label>
-                                        <input type="number" id="maxHP" name="maxHP" min=0>
+                                        <input type="text" class="numbers" id="maxHP" name="maxHP" min=0>
                                     </div>
                                     <div class="col-4">
                                         <span class="label">Current Hit Points</label>
@@ -68,15 +68,15 @@
                                     <div class="col-3">
                                         <label for="class">Class & Level</label>
                                         <input type="text" id="class" name="class">
-                                        <input type="number" id="level" name="level" min=1>
+                                        <input type="text" class="numbers" id="level" name="level" min=1>
                                     </div>
                                     <div class="col-2">
                                         <label for="reduction">Damage Reduction</label>
-                                        <input type="number" id="reduction" name="reduction" min=0>
+                                        <input type="text" class="numbers" id="reduction" name="reduction" min=0>
                                     </div>
                                     <div class="col-2">
                                         <label for="dc">Stand DC</label>
-                                        <input type="text" id="dc" name="dc">
+                                        <input type="text" class="numbers" id="dc" name="dc">
                                     </div>
                                     <div class="col-2">
                                         <span class="label">Death Saves</label>
@@ -103,23 +103,23 @@
                                                         <span class="label">Charisma</span>
                                                     </div>
                                                     <div id="checks">
-                                                        <input type="checkbox" class="savecheck" id="str" name="str">
-                                                        <input type="number" class="save-bonus" id="str-bonus" name="str-bonus"><br>
-                                                        <input type="checkbox" class="savecheck" id="dex" name="dex">
-                                                        <input type="number" class="save-bonus" id="dex-bonus" name="dex-bonus"><br>
-                                                        <input type="checkbox" class="savecheck" id="con" name="con">
-                                                        <input type="number" class="save-bonus" id="con-bonus" name="con-bonus"><br>
-                                                        <input type="checkbox" class="savecheck" id="int" name="int">
-                                                        <input type="number" class="save-bonus" id="int-bonus" name="int-bonus"><br>
-                                                        <input type="checkbox" class="savecheck" id="wis" name="wis">
-                                                        <input type="number" class="save-bonus" id="wis-bonus" name="wis-bonus"><br>
-                                                        <input type="checkbox" class="savecheck" id="cha" name="cha">
-                                                        <input type="number" class="save-bonus" id="cha-bonus" name="cha-bonus"><br>
+                                                        <input type="checkbox" class="savecheck" id="str-save" name="str-save">
+                                                        <input type="text" class="numbers save-bonus" id="str-bonus" name="str-bonus"><br>
+                                                        <input type="checkbox" class="savecheck" id="dex-save" name="dex-save">
+                                                        <input type="text" class="numbers save-bonus" id="dex-bonus" name="dex-bonus"><br>
+                                                        <input type="checkbox" class="savecheck" id="con-save" name="con-save">
+                                                        <input type="text" class="numbers save-bonus" id="con-bonus" name="con-bonus"><br>
+                                                        <input type="checkbox" class="savecheck" id="int-save" name="int-save">
+                                                        <input type="text" class="numbers save-bonus" id="int-bonus" name="int-bonus"><br>
+                                                        <input type="checkbox" class="savecheck" id="wis-save" name="wis-save">
+                                                        <input type="text" class="numbers save-bonus" id="wis-bonus" name="wis-bonus"><br>
+                                                        <input type="checkbox" class="savecheck" id="cha-save" name="cha-save">
+                                                        <input type="text" class="numbers save-bonus" id="cha-bonus" name="cha-bonus"><br>
                                                     </div>
                                                 </div>
                                                 <div id="prof-bonus">
                                                     <label for="bonus" id="proflbl">Proficiency Bonus:</label>
-                                                    <input type="number" id="bonus" name="bonus">
+                                                    <input type="text" class="numbers" id="bonus" name="bonus">
                                                 </div>
                                             </div>
                                         </div>
@@ -134,7 +134,7 @@
                                                             <option value="e">E</option>
                                                             <option value="m">M</option>
                                                         </select>
-                                                        <input type="number" class="skill-bonus" id="acro-bonus" name="acro-bonus">
+                                                        <input type="text" class="numbers skill-bonus dex-skill" id="acro-bonus" name="acro-bonus">
                                                         <span class="skilllbl">Acro</span><span class="skillstat">(dex)</span>
                                                     </li>
                                                     <li>
@@ -144,7 +144,7 @@
                                                             <option value="e">E</option>
                                                             <option value="m">M</option>
                                                         </select>
-                                                        <input type="number" class="skill-bonus" id="ani-bonus" name="ani-bonus">
+                                                        <input type="text" class="numbers skill-bonus wis-skill" id="ani-bonus" name="ani-bonus">
                                                         <span class="skilllbl">Animals</span><span class="skillstat">(wis)</span>
                                                     </li>
                                                     <li>
@@ -154,7 +154,7 @@
                                                             <option value="e">E</option>
                                                             <option value="m">M</option>
                                                         </select>
-                                                        <input type="number" class="skill-bonus" id="arc-bonus" name="arc-bonus">
+                                                        <input type="text" class="numbers skill-bonus int-skill" id="arc-bonus" name="arc-bonus">
                                                         <span class="skilllbl">Arcana</span><span class="skillstat">(int)</span>
                                                     </li>
                                                     <li>
@@ -164,7 +164,7 @@
                                                             <option value="e">E</option>
                                                             <option value="m">M</option>
                                                         </select>
-                                                        <input type="number" class="skill-bonus" id="ath-bonus" name="ath-bonus">
+                                                        <input type="text" class="numbers skill-bonus str-skill" id="ath-bonus" name="ath-bonus">
                                                         <span class="skilllbl">Athlete</span><span class="skillstat">(str)</span>
                                                     </li>
                                                     <li>
@@ -174,7 +174,7 @@
                                                             <option value="e">E</option>
                                                             <option value="m">M</option>
                                                         </select>
-                                                        <input type="number" class="skill-bonus" id="dec-bonus" name="dec-bonus">
+                                                        <input type="text" class="numbers skill-bonus cha-skill" id="dec-bonus" name="dec-bonus">
                                                         <span class="skilllbl">Decept</span><span class="skillstat">(cha)</span>
                                                     </li>
                                                     <li>
@@ -184,7 +184,7 @@
                                                             <option value="e">E</option>
                                                             <option value="m">M</option>
                                                         </select>
-                                                        <input type="number" class="skill-bonus" id="his-bonus" name="his-bonus">
+                                                        <input type="text" class="numbers skill-bonus int-skill" id="his-bonus" name="his-bonus">
                                                         <span class="skilllbl">History</span><span class="skillstat">(int)</span>
                                                     </li>
                                                     <li>
@@ -194,7 +194,7 @@
                                                             <option value="e">E</option>
                                                             <option value="m">M</option>
                                                         </select>
-                                                        <input type="number" class="skill-bonus" id="ins-bonus" name="ins-bonus">
+                                                        <input type="text" class="numbers skill-bonus wis-skill" id="ins-bonus" name="ins-bonus">
                                                         <span class="skilllbl">Insight</span><span class="skillstat">(wis)</span>
                                                     </li>
                                                     <li>
@@ -204,7 +204,7 @@
                                                             <option value="e">E</option>
                                                             <option value="m">M</option>
                                                         </select>
-                                                        <input type="number" class="skill-bonus" id="intim-bonus" name="intim-bonus">
+                                                        <input type="text" class="numbers skill-bonus cha-skill" id="intim-bonus" name="intim-bonus">
                                                         <span class="skilllbl">Intimid</span><span class="skillstat">(cha)</span>
                                                     </li>
                                                     <li>
@@ -214,7 +214,7 @@
                                                             <option value="e">E</option>
                                                             <option value="m">M</option>
                                                         </select>
-                                                        <input type="number" class="skill-bonus" id="invest-bonus" name="invest-bonus">
+                                                        <input type="text" class="numbers skill-bonus int-skill" id="invest-bonus" name="invest-bonus">
                                                         <span class="skilllbl">Invest</span><span class="skillstat">(int)</span>
                                                     </li>
                                                     <li>
@@ -224,7 +224,7 @@
                                                             <option value="e">E</option>
                                                             <option value="m">M</option>
                                                         </select>
-                                                        <input type="number" class="skill-bonus" id="medi-bonus" name="medi-bonus">
+                                                        <input type="text" class="numbers skill-bonus wis-skill" id="medi-bonus" name="medi-bonus">
                                                         <span class="skilllbl">Medic</span><span class="skillstat">(wis)</span>
                                                     </li>
                                                     <li>
@@ -234,7 +234,7 @@
                                                             <option value="e">E</option>
                                                             <option value="m">M</option>
                                                         </select>
-                                                        <input type="number" class="skill-bonus" id="nat-bonus" name="nat-bonus">
+                                                        <input type="text" class="numbers skill-bonus int-skill" id="nat-bonus" name="nat-bonus">
                                                         <span class="skilllbl">Nature</span><span class="skillstat">(int)</span>
                                                     </li>
                                                     <li>
@@ -244,7 +244,7 @@
                                                             <option value="e">E</option>
                                                             <option value="m">M</option>
                                                         </select>
-                                                        <input type="number" class="skill-bonus" id="perc-bonus" name="perc-bonus">
+                                                        <input type="text" class="numbers skill-bonus wis-skill" id="perc-bonus" name="perc-bonus">
                                                         <span class="skilllbl">Percept</span><span class="skillstat">(wis)</span>
                                                     </li>
                                                     <li>
@@ -254,7 +254,7 @@
                                                             <option value="e">E</option>
                                                             <option value="m">M</option>
                                                         </select>
-                                                        <input type="number" class="skill-bonus" id="perf-bonus" name="perf-bonus">
+                                                        <input type="text" class="numbers skill-bonus cha-skill" id="perf-bonus" name="perf-bonus">
                                                         <span class="skilllbl">Perform</span><span class="skillstat">(cha)</span>
                                                     </li>
                                                     <li>
@@ -264,7 +264,7 @@
                                                             <option value="e">E</option>
                                                             <option value="m">M</option>
                                                         </select>
-                                                        <input type="number" class="skill-bonus" id="pers-bonus" name="pers-bonus">
+                                                        <input type="text" class="numbers skill-bonus cha-skill" id="pers-bonus" name="pers-bonus">
                                                         <span class="skilllbl">Persua</span><span class="skillstat">(cha)</span>
                                                     </li>
                                                     <li>
@@ -274,7 +274,7 @@
                                                             <option value="e">E</option>
                                                             <option value="m">M</option>
                                                         </select>
-                                                        <input type="number" class="skill-bonus" id="reli-bonus" name="reli-bonus">
+                                                        <input type="text" class="numbers skill-bonus int-skill" id="reli-bonus" name="reli-bonus">
                                                         <span class="skilllbl">Religion</span><span class="skillstat">(int)</span>
                                                     </li>
                                                     <li>
@@ -284,7 +284,7 @@
                                                             <option value="e">E</option>
                                                             <option value="m">M</option>
                                                         </select>
-                                                        <input type="number" class="skill-bonus" id="sli-bonus" name="sli-bonus">
+                                                        <input type="text" class="numbers skill-bonus dex-skill" id="sli-bonus" name="sli-bonus">
                                                         <span class="skilllbl">Slight</span><span class="skillstat">(dex)</span>
                                                     </li>
                                                     <li>
@@ -294,7 +294,7 @@
                                                             <option value="e">E</option>
                                                             <option value="m">M</option>
                                                         </select>
-                                                        <input type="number" class="skill-bonus" id="steal-bonus" name="steal-bonus">
+                                                        <input type="text" class="numbers skill-bonus dex-skill" id="steal-bonus" name="steal-bonus">
                                                         <span class="skilllbl">Stealth</span><span class="skillstat">(dex)</span>
                                                     </li>
                                                     <li>
@@ -304,7 +304,7 @@
                                                             <option value="e">E</option>
                                                             <option value="m">M</option>
                                                         </select>
-                                                        <input type="number" class="skill-bonus" id="surv-bonus" name="surv-bonus">
+                                                        <input type="text" class="numbers skill-bonus wis-skill" id="surv-bonus" name="surv-bonus">
                                                         <span class="skilllbl">Survive</span><span class="skillstat">(wis)</span>
                                                     </li>
                                                 </ul>
@@ -315,7 +315,7 @@
                                         <div class="row">
                                             <div class="col-4">
                                                 <label for="ac">Armor Class</label>
-                                                <input type="number" id="ac" name="ac" min=0>
+                                                <input type="text" class="numbers" id="ac" name="ac" min=0>
                                             </div>
                                             <div class="col-4">
                                                 <label for="hdice">Hit Dice</label>
@@ -323,24 +323,88 @@
                                             </div>
                                             <div class="col-4">
                                                 <label for="pspeed">Movement Speed</label>
-                                                <input type="number" id="pspeed" name="pspeed" min=0>
-                                                <input type="number" id="sspeed" name="sspeed" min=0>
+                                                <input type="text" class="numbers" id="pspeed" name="pspeed" min=0>
+                                                <input type="text" class="numbers" id="sspeed" name="sspeed" min=0>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-4">
                                                 <label for="sac">Stand AC</label>
-                                                <input type="number" id="sac" name="sac" min=0>
+                                                <input type="text" class="numbers" id="sac" name="sac" min=0>
                                             </div>
                                             <div class="col-4">
                                                 <label for="init">Initiative</label>
-                                                <input type="number" id="init" name="init" min=0>
+                                                <input type="text" class="numbers" id="init" name="init" min=0>
                                             </div>
                                             <div class = "col-4">
                                                 <label for="percep">Passive Perception</label>
-                                                <input type="number" id="percep" name="percep" min=0>
+                                                <input type="text" class="numbers" id="percep" name="percep" min=0>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <label for="str-mod">Strength</label>
+                                        <input type="text" class="stat-mod numbers" id="str-mod" name="str-mod">
+                                        <input type="text" class="numbers stat-score" id="str-score" name="str-score">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="dex-mod">Dexterity</label>
+                                        <input type="text" class="stat-mod numbers" id="dex-mod" name="dex-mod">
+                                        <input type="text" class="numbers stat-score" id="dex-score" name="dex-score">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="con-mod">Constitution</label>
+                                        <input type="text" class="stat-mod numbers" id="con-mod" name="con-mod">
+                                        <input type="text" class="numbers stat-score" id="con-score" name="con-score">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="int-mod">Intelligence</label>
+                                        <input type="text" class="stat-mod numbers" id="int-mod" name="int-mod">
+                                        <input type="text" class="numbers stat-score" id="int-score" name="int-score">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="wis-mod">Wisdom</label>
+                                        <input type="text" class="stat-mod numbers" id="wis-mod" name="wis-mod">
+                                        <input type="text" class="numbers stat-score" id="wis-score" name="wis-score">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="cha-mod">Charisma</label>
+                                        <input type="text" class="stat-mod numbers" id="cha-mod" name="cha-mod">
+                                        <input type="text" class="numbers stat-score" id="cha-score" name="cha-score">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <label for="pwr-mod">Power</label>
+                                        <input type="text" class="stand-mod numbers" id="pwr-mod" name="pwr-mod">
+                                        <input type="text" class="numbers stand-score" id="pwr-score" name="pwr-score">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="pre-mod">Precision</label>
+                                        <input type="text" class="stand-mod numbers" id="pre-mod" name="pre-mod">
+                                        <input type="text" class="numbers stand-score" id="pre-score" name="pre-score">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="dur-mod">Durability</label>
+                                        <input type="text" class="stand-mod numbers" id="dur-mod" name="dur-mod">
+                                        <input type="text" class="numbers stand-score" id="dur-score" name="dur-score">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="rng-mod">Range</label>
+                                        <input type="text" class="stand-mod numbers" id="rng-mod" name="rng-mod">
+                                        <input type="text" class="numbers stand-score" id="rng-score" name="rng-score">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="spd-mod">Speed</label>
+                                        <input type="text" class="stand-mod numbers" id="spd-mod" name="spd-mod">
+                                        <input type="text" class="numbers stand-score" id="spd-score" name="spd-score">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="se-mod">Stand Energy</label>
+                                        <input type="text" class="stand-mod numbers" id="se-mod" name="se-mod">
+                                        <input type="text" class="numbers stand-score" id="se-score" name="se-score">
                                     </div>
                                 </div>
                             </div>
