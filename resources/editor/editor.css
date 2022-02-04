@@ -17,7 +17,7 @@
 }
 
 #pages {
-    height: 3300px;
+    height: 3236px;
 }
 
 .divider {
@@ -27,8 +27,8 @@
 }
 
 #download {
+    margin-top: 16px;
     text-align: center;
-    width: 100%;
 }
 
 #options {
