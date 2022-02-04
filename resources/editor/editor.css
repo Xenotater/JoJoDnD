@@ -1,6 +1,23 @@
+.content {
+    text-align: center;
+}
+
+#desc {
+    margin-bottom: 8px;
+}
+
+#autofill {
+    width: 14px;
+    height: 14px;
+    margin-bottom: 8px;
+}
+
+#autolbl {
+    font-size: 14px;
+}
+
 #pages {
     height: 3300px;
-    text-align: center;
 }
 
 .divider {
