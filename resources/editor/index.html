@@ -53,7 +53,7 @@
                                     </div>
                                     <div class="col-2">
                                         <label for="maxHP">Hit Point Max</label>
-                                        <input type="text" class="numbers" id="maxHP" name="maxHP" min=0>
+                                        <input type="text" class="numbers" id="maxHP" name="maxHP">
                                     </div>
                                     <div class="col-4">
                                         <span class="label">Current Hit Points</label>
@@ -68,11 +68,11 @@
                                     <div class="col-3">
                                         <label for="class">Class & Level</label>
                                         <input type="text" id="class" name="class">
-                                        <input type="text" class="numbers" id="level" name="level" min=1>
+                                        <input type="text" class="numbers" id="level" name="level">
                                     </div>
                                     <div class="col-2">
                                         <label for="reduction">Damage Reduction</label>
-                                        <input type="text" class="numbers" id="reduction" name="reduction" min=0>
+                                        <input type="text" class="numbers" id="reduction" name="reduction">
                                     </div>
                                     <div class="col-2">
                                         <label for="dc">Stand DC</label>
@@ -124,7 +124,7 @@
                                             </div>
                                         </div>
                                         <div id="skillbox">
-                                            <span class="label">Skill Proficiencies</span>
+                                            <span class="label">Skill Proficiencies</span><span class="label" id="skillcnt"></span>
                                             <div class="box" id="skills">
                                                 <ul id="skills-list">
                                                     <li>
@@ -315,7 +315,7 @@
                                         <div class="row">
                                             <div class="col-4">
                                                 <label for="ac">Armor Class</label>
-                                                <input type="text" class="numbers" id="ac" name="ac" min=0>
+                                                <input type="text" class="numbers" id="ac" name="ac">
                                             </div>
                                             <div class="col-4">
                                                 <label for="hdice">Hit Dice</label>
@@ -323,22 +323,22 @@
                                             </div>
                                             <div class="col-4">
                                                 <label for="pspeed">Movement Speed</label>
-                                                <input type="text" class="numbers" id="pspeed" name="pspeed" min=0>
-                                                <input type="text" class="numbers" id="sspeed" name="sspeed" min=0>
+                                                <input type="text" class="numbers" id="pspeed" name="pspeed">
+                                                <input type="text" class="numbers" id="sspeed" name="sspeed">
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-4">
                                                 <label for="sac">Stand AC</label>
-                                                <input type="text" class="numbers" id="sac" name="sac" min=0>
+                                                <input type="text" class="numbers" id="sac" name="sac">
                                             </div>
                                             <div class="col-4">
                                                 <label for="init">Initiative</label>
-                                                <input type="text" class="numbers" id="init" name="init" min=0>
+                                                <input type="text" class="numbers" id="init" name="init">
                                             </div>
                                             <div class = "col-4">
                                                 <label for="percep">Passive Perception</label>
-                                                <input type="text" class="numbers" id="percep" name="percep" min=0>
+                                                <input type="text" class="numbers" id="percep" name="percep">
                                             </div>
                                         </div>
                                     </div>
@@ -405,6 +405,52 @@
                                         <label for="se-mod">Stand Energy</label>
                                         <input type="text" class="stand-mod numbers" id="se-mod" name="se-mod">
                                         <input type="text" class="numbers stand-score" id="se-score" name="se-score">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div id="classlbl">
+                                            <span class="label">Class Features</span>
+                                        </div>
+                                        <div id="featlbl">
+                                            <span class="label">Feats</span><span class="label" id="featcnt"></span>
+                                        </div>
+                                        <div class="box" id="classbox">
+                                            <textarea></textarea>
+                                        </div>
+                                        <div class="box" id="featsbox">
+                                            <textarea></textarea>
+                                        </div>
+                                        <br>
+                                        <div id="otherlbl">
+                                            <span class="label">Languages & Other Proficiencies</span>
+                                        </div>
+                                        <div class="box" id="otherbox">
+                                            <textarea></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div id="attacklbl">
+                                            <span class="label">Attacks & Actions</span>
+                                        </div>
+                                        <div id="invlbl">
+                                            <span class="label">Inventory</span>
+                                        </div>
+                                        <div class="box" id="attacks">
+                                            <textarea></textarea>
+                                        </div>
+                                        <div class="box" id="inv">
+                                            <textarea></textarea>
+                                        </div>
+                                        <br>
+                                        <div class="box" id="atks-box">
+                                            <label for="atks" id="atkslbl">Attacks Per Round:</label>
+                                            <input type="text" class="numbers" id="atks" name="atks">
+                                        </div>
+                                        <div class="box" id="insp-box">
+                                            <label for="insp" id="insplbl">Inspiration:</label>
+                                            <input type="text" class="numbers" id="insp" name="insp">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
