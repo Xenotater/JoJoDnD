@@ -12,16 +12,8 @@ $(document).ready(function() {
 });
 
 function getNav() {
-    var path = "";
-    if (window.location.pathname != "/")
-    path = "../"
-
-    $.post(path + "nav.php", {action: "nav"}, function(data) {
+    $.post("/nav.php", {action: "nav"}, function(data) {
         $("body").prepend(data);
-        $("#home-logo").attr("src", path + $("#home-logo").attr("src"));
-        $(".barImg").each(function () {
-            $(this).attr("src", path + $(this).attr("src"));
-        })
         var id = "#" + window.location.pathname.replace(/\//g, "");
         if (id == "#")
             id += "home";

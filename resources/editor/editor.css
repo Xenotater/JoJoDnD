@@ -1,0 +1,395 @@
+.content {
+    text-align: center;
+}
+
+#desc {
+    margin-bottom: 8px;
+}
+
+#autofill {
+    width: 14px;
+    height: 14px;
+    margin-bottom: 8px;
+}
+
+#autolbl {
+    font-size: 14px;
+}
+
+#pages {
+    height: 3236px;
+}
+
+.divider {
+    width: 8.5in;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#download {
+    margin-top: 16px;
+    text-align: center;
+}
+
+#options {
+    width: 200px;
+    margin: auto;
+}
+
+#download input {
+    width: 20px;
+    height: 20px;
+}
+
+#dl-btn {
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    background-color: rgb(214, 214, 214)
+}
+
+#dl-btn:hover {
+    background-color: rgb(187, 187, 187)
+}
+
+#hidden-dl {
+    display: none;
+}
+
+.center {
+    width: 8.5in;
+    margin: auto;
+}
+
+.page {
+    background-color: white;
+    width: 8.5in;
+    height: 11in;
+    padding: 2rem;
+}
+
+.heading {
+    border-bottom: 2px solid black;
+    margin-bottom: 1rem;
+}
+
+#logo {
+    margin-bottom: 8px;
+}
+
+#title {
+    margin-left: 1rem;
+    font-size: 2.5rem;
+    vertical-align: bottom;
+}
+
+#logo {
+    vertical-align: middle;
+}
+
+/* arrow removal from https://www.geeksforgeeks.org/how-to-remove-the-default-arrow-icon-from-a-dropdown-list/ */
+select {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Safari, Chrome, Opera */
+    -webkit-appearance: none;
+  }
+
+  /* for IE10 */
+  select::-ms-expand {
+    display: none;
+  }
+
+label, .label {
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+input {
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 0;
+}
+
+.box {
+    width: 100%;
+    border: 3px solid black;
+    height: 60px;
+}
+
+#class {
+    float: left;
+    width: 70%;
+}
+
+#level {
+    float: left;
+    width: 30%;
+    border-left: none;
+}
+
+#win, #lose {
+    padding-top: 38px;
+}
+
+#win, #lose, #pspeed, #sspeed {
+    float: left;
+    width: 50%;
+}
+
+#lose, #skills, #sspeed {
+    border-left: none;
+}
+
+#savebox {
+    float: left;
+    width: 45%;
+}
+
+#skillbox {
+    float: left;
+    width: 55%;
+    border-left: none;
+}
+
+#not-prof {
+    height: 85%;
+    border-bottom: 3px solid black;
+    padding-left: 5px;
+    padding-top: 2px;
+}
+
+#saves, #skills {
+    height: 144px;
+    text-align: left;
+    font-size: 8px;
+    line-height: 14px;
+}
+
+#stats {
+    width: 40%;
+    float: left;
+    line-height: 17.75px;
+}
+
+#checks {
+    width: 60%;
+    float: left;
+}
+
+.savecheck {
+    height: 16px;
+    width: 12px;
+    float: left;
+    margin-left: .5rem;
+    margin-top: 2px;
+}
+
+.save-bonus {
+    height: 16px;
+    width: 50px;
+    float: left;
+    margin-left: .5rem;
+    margin-top: 2px;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 12px;
+}
+
+#prof-bonus {
+    height: 15%;
+    padding-left: 5px;
+}
+
+#proflbl, #atkslbl, #insplbl {
+    width: 100px;
+    float: left;
+    padding-top: 3px;
+}
+
+#insplbl {
+    width: 60px;
+}
+
+#bonus, #atks, #insp {
+    float: right;
+    width: 45px;
+    height: 17px;
+    border: none;
+    border-bottom: 2px solid black;
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+#skills-list {
+    list-style-type: none;
+    columns: 2;
+    column-gap: 0;
+    padding: 0;
+    padding-top: 2px;
+}
+
+.skill-bonus {
+    height: 12px;
+    width: 20px;
+    font-size: 10px;
+    border: none;
+    border-bottom: 2px solid black;
+    margin-left: 2px;
+}
+
+.skillcheck {
+    width: 14px;
+    height: 14px;
+    font-size: 8px;
+    margin-left: 2px;
+    text-align: center;
+}
+
+.skilllbl {
+    font-size: 10px;
+}
+
+.skillstat {
+    font-size: 8px;
+    margin-left: 2px;
+}
+
+.stat-mod, .stand-mod {
+    height: 50px;
+    font-size: 32px;
+}
+
+.stat-score, .stand-score {
+    height: 30px;
+    border-top: none;
+}
+
+#atks-box, #insp-box {
+    height: 25px;
+    border-top: none;
+    padding-left: 5px;
+}
+
+#attacks, #inv {
+    height: 301px;
+}
+
+#attacks, #attacklbl, #atks-box, #classlbl, #classbox {
+    width: 60%;
+    float: left;
+}
+
+#inv, #invlbl, #insp-box, #featlbl, #featsbox {
+    width: 40%;
+    float: left;
+    border-left: none;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+#classbox, #featsbox, #otherbox {
+    height: 150px;
+}
+
+h2 {
+    font-family: sans-serif;
+}
+
+#type {
+    float: left;
+    width: 80%;
+}
+
+#Ulevel {
+    float: left;
+    width: 20%;
+    border-left: none;
+}
+
+#minions {
+    height: 225px;
+}
+
+#image {
+    height: 336px;
+}
+
+#Ufeats, #Uatks {
+    height: 475px;
+}
+
+#back {
+    height: 124px;
+}
+
+#idealbox, #flawbox {
+    width: 50%;
+    float: left;
+}
+
+#ideals, #flaws {
+    height: 104px;
+}
+
+#flaws {
+    border-left: none;
+}
+
+#person, #relate {
+    height: 102px;
+}
+
+#info {
+    height: 274px;
+}
+
+#image {
+    position: relative;
+}
+
+#char-img {
+    display: none;
+    height: 330px;
+    width: auto;
+}
+
+#img-input {
+    display: none;
+}
+
+#blur {
+    display: none;
+    position: absolute;
+    width: 358px;
+    height: 330px;
+    top: 0;
+    left: 0;
+    background-color: rgba(240, 240, 240, 0.5);
+}
+
+#upload, #edit {
+    display: none;
+    position: absolute;
+    top: calc(50% - 16px);
+    left: calc(50% - 16px);
+    cursor: pointer;
+}
+
+#reset {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}

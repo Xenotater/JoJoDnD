@@ -212,6 +212,7 @@ function updateDisplay() {
             var a = clss.acts[i];
             newContent += "<h4 class='display-heading'>Act " + i + "</h4>";
             newContent += "<p><b>Note: </b><i>" + a.note + "</i></p>";
+            newContent += "<p><b>Attack Dice:</b> " + a.aDice + "</p>";
             newContent += "<b>Ability Score Multipliers:</b>";
             newContent += "<table class='table table-striped minor'><thead><tr><th>Stat</th><th>Multiplier</tr></thead><tbody>";
             newContent += "<tr><td>Power</td><td>Str x" + a.mults[0] + "</td></tr>";
