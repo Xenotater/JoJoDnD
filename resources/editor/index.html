@@ -38,6 +38,9 @@
         <div class="container">
             <h1 id="page-title">Character Sheet Editor</h1>
             <div class="content">
+                <p id="desc">Fill out desired values or leave them blank, then select which pages you'd like to keep and press the download button below.</p>
+                <label for="autofill" id="autolbl">Autofill:</label>
+                <input type="checkbox" id="autofill" value="autofill" checked>
                 <div data-simplebar>
                     <div id="pages">
                         <div class="center">
@@ -448,8 +451,8 @@
                                             <input type="text" class="numbers" id="atks" name="atks">
                                         </div>
                                         <div class="box" id="insp-box">
-                                            <label for="insp" id="insplbl">Inspiration:</label>
-                                            <input type="text" class="numbers" id="insp" name="insp">
+                                            <span class="label" id="insplbl">Inspiration:</span>
+                                            <div class="box" id="insp">
                                         </div>
                                     </div>
                                 </div>

@@ -2,104 +2,110 @@ window.jsPDF = window.jspdf.jsPDF;
 
 $(document).ready(function () {
     $("input").on("keyup", function() {
-        var id = $(this).attr("id");
-        if ($(this).hasClass("scales")) {
-            var val = $(this).width() / $(this).val().length, upper = 12, lower = 8;
-            if ($(this).attr("type") == "text") {
-                upper = 16;
-                lower = 12;
+        if ($("#autofill").is(":checked")) {
+            var id = $(this).attr("id");
+            if ($(this).hasClass("scales")) {
+                var val = $(this).width() / $(this).val().length, upper = 12, lower = 8;
+                if ($(this).attr("type") == "text") {
+                    upper = 16;
+                    lower = 12;
+                }
+
+                if (val > upper)
+                    $(this).css("font-size", "24px");
+                else if (val < upper && val > lower)
+                    $(this).css("font-size", "16px");
+                else
+                    $(this).css("font-size", "12px");
             }
 
-            if (val > upper)
-                $(this).css("font-size", "24px");
-            else if (val < upper && val > lower)
-                $(this).css("font-size", "16px");
-            else
-                $(this).css("font-size", "12px");
-        }
+            if ($(this).hasClass("numbers")) {
+                $(this).val($(this).val().replace(/[^0-9\-]/g, ""));
+            }
 
-        if ($(this).hasClass("numbers")) {
-            $(this).val($(this).val().replace(/[^0-9\-]/g, ""));
-        }
+            if ($(this).hasClass("stat-score")) {
+                var stat = id.replace("-score", "");
+                updateMod(stat);  
+                updateSave(stat);
+                updateSkills(stat);
+            }
 
-        if ($(this).hasClass("stat-score")) {
-            var stat = id.replace("-score", "");
-            updateMod(stat);  
-            updateSave(stat);
-            updateSkills(stat);
-        }
+            if ($(this).hasClass("stat-mod")) {
+                var stat = id.replace("-mod", "");
+                updateSave(stat);
+                updateSkills(stat);
+            }
 
-        if ($(this).hasClass("stat-mod")) {
-            var stat = id.replace("-mod", "");
-            updateSave(stat);
-            updateSkills(stat);
-        }
+            if ($(this).hasClass("stand-score")) {
+                updateStandMod(id.replace("-score", ""));
+            }
 
-        if ($(this).hasClass("stand-score")) {
-            updateStandMod(id.replace("-score", ""));
-        }
+            if (id == "name" || id == "Uname" || id == "Fname") {
+                updateName(id);
+            }
 
-        if (id == "name" || id == "Uname" || id == "Fname") {
-            updateName(id);
-        }
-
-        switch(id.replace("-score", "").replace("-mod", "")) {
-            case "str":
-                break;
-            case "dex":
-                updateInitiative();
-                updateAC();
-                break;
-            case "con":
-                updateAC();
-                break;
-            case "int":
-                updateProfs();
-                break;
-            case "wis":
-                updateInitiative();
-                updateAC();
-                break;
-            case "cha":
-                updateDC();
-                break;
-            case "pre":
-                updateSAC();
-                break;
-            case "dur":
-                updateSAC();
-                break
-            case "spd":
-                updateSpeed();
-                updateSAC();
-                updateAtks();
-                break;
-            case "bonus":
-                updateAllSkills();
-                updateDC();
-                break;
-            case "level":
-                updateBonus();
-                updateFeats();
-                break;
-            case "ac":
-                updateHAC();
-                break;
-            default:
-                break;
+            switch(id.replace("-score", "").replace("-mod", "")) {
+                case "str":
+                    break;
+                case "dex":
+                    updateInitiative();
+                    updateAC();
+                    break;
+                case "con":
+                    updateAC();
+                    break;
+                case "int":
+                    updateProfs();
+                    break;
+                case "wis":
+                    updateInitiative();
+                    updateAC();
+                    break;
+                case "cha":
+                    updateDC();
+                    break;
+                case "pre":
+                    updateSAC();
+                    break;
+                case "dur":
+                    updateSAC();
+                    break
+                case "spd":
+                    updateSpeed();
+                    updateSAC();
+                    updateAtks();
+                    break;
+                case "bonus":
+                    updateAllSkills();
+                    updateDC();
+                    break;
+                case "level":
+                    updateBonus();
+                    updateFeats();
+                    break;
+                case "ac":
+                    updateHAC();
+                    break;
+                default:
+                    break;
+            }
         }
     });
 
     $(".savecheck").change(function () {
-        var stat = $(this).attr("id").replace("-save", "");
-        updateSave(stat);
+        if ($("#autofill").is(":checked")) {
+            var stat = $(this).attr("id").replace("-save", "");
+            updateSave(stat);
+        }
     });
 
     $(".skillcheck").change(function() {
-        var skill = $(this).attr("id");
-        var classes = $("#" + skill + "-bonus").attr('class').split(/\s+/);
-        var stat = classes[2].replace("-skill", "");
-        updateSkills(stat);
+        if ($("#autofill").is(":checked")) {
+            var skill = $(this).attr("id");
+            var classes = $("#" + skill + "-bonus").attr('class').split(/\s+/);
+            var stat = classes[2].replace("-skill", "");
+            updateSkills(stat);
+        }
     });
 
     $("#image").hover(imgOn, imgOff);
@@ -199,8 +205,10 @@ function updateSAC() {
 }
 
 function updateHAC() {
-    var ac = parseInt($("#ac").val()) + 5;
-    $("#hac").val(ac);
+    var hac = parseInt($("#ac").val()) + 5;
+    if (isNaN(hac))
+        hac = "";
+    $("#hac").val(hac);
 }
 
 function updateSave(stat) {
