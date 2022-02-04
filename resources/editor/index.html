@@ -49,7 +49,7 @@
                                 <div class="row">
                                     <div class="col-6">
                                         <label for="name">Character Name</label>
-                                        <input type="text" id="name" name="name">
+                                        <input type="text" class="scales" id="name" name="name">
                                     </div>
                                     <div class="col-2">
                                         <label for="maxHP">Hit Point Max</label>
@@ -63,11 +63,11 @@
                                 <div class="row">
                                     <div class="col-3">
                                         <label for="race">Race & Passion</label>
-                                        <input type="text" id="race" name="race">
+                                        <input type="text" class="scales" id="race" name="race">
                                     </div>
                                     <div class="col-3">
                                         <label for="class">Class & Level</label>
-                                        <input type="text" id="class" name="class">
+                                        <input type="text" class="scales" id="class" name="class">
                                         <input type="text" class="numbers" id="level" name="level">
                                     </div>
                                     <div class="col-2">
@@ -458,18 +458,164 @@
                         <div class="divider"></div>
                         <div class="center">
                             <div class="page" id="page2">
-                                <p>page 2</p>
+                                <div class="heading">
+                                    <h2><b>JoJo D&D Undead Character Sheet</b></h2>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="Uname">Character Name</label>
+                                        <input type="text" class="scales" id="Uname" name="Uname">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="headHP">Head Hit Points</label>
+                                        <input type="text" class="numbers" id="headHP" name="headHP">
+                                    </div>
+                                    <div class="col-4">
+                                        <span class="label">Current Head Hit Points</label>
+                                        <div class="box" id="curHeadHP"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div><label for="type">Type & Level</label></div>
+                                        <input type="text" class="scales" id="type" name="type">
+                                        <input type="text" class="numbers" id="Ulevel" name="Ulevel">
+                                    </div>
+                                    <div class="col-3">
+                                        <label for="hac">Head AC</label>
+                                        <input type="text" class="numbers" id="hac" name="hac">
+                                    </div>
+                                    <div class="col-3">
+                                        <label for="energy">Energy</label>
+                                        <input type="text" class="numbers" id="energy" name="energy">
+                                    </div>
+                                </div>
+                                <span class="label">Minions</span>
+                                <div class="box" id="minions">
+                                    <textarea></textarea>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <span class="label">Class Features</span>
+                                        <div class="box" id="Ufeats">
+                                            <textarea></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <span class="label">Attacks & Actions</span>
+                                        <div class="box" id="Uatks">
+                                            <textarea></textarea>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="divider"></div>
                         <div class="center">
                             <div class="page" id="page3">
-                                <p>page 3</p>
+                                <div class="heading">
+                                    <h2><b>JoJo D&D Flavor Sheet</b></h2>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <span class="label">Character Image</span>
+                                        <div class="box" id="image">
+                                            <img src="" alt="char-img" id="char-img">
+                                            <div id="blur"></div>
+                                            <h2><b><i class="bi bi-plus-square img-icon" id="upload"></i></b></h2>
+                                            <h2><b><i class="bi bi-pencil-square img-icon" id="edit"></i></b></h2>
+                                            <h2><b><i class="bi bi-x-square img-icon" id="reset"></i></b></h2>
+                                            <input type="file" id="img-input" accept="image/png, image/jpg">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="Fname">Character Name</label>
+                                        <input type="text" class="scales" id="Fname" name="Fname">
+                                        <span class="label">Backstory</span>
+                                        <div class="box" id="back">
+                                            <textarea></textarea>
+                                        </div>
+                                        <div id="idealbox">
+                                            <span class="label">Ideals</span>
+                                            <div class="box" id="ideals">
+                                                <textarea></textarea>
+                                            </div>
+                                        </div>
+                                        <div id="flawbox">
+                                            <span class="label">Flaws</span>
+                                            <div class="box" id="flaws">
+                                                <textarea></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <label for="weight">Weight</label>
+                                                <input type="text" class="scales" id="weight" name="weight">
+                                            </div>
+                                            <div class="col-4">
+                                                <label for="height">Height</label>
+                                                <input type="text" class="scales" id="height" name="height">
+                                            </div>
+                                            <div class="col-4">
+                                                <label for="age">Age</label>
+                                                <input type="text" class="scales" id="age" name="age">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <label for="hair">Hair Color</label>
+                                                <input type="text" class="scales" id="hair" name="hair">
+                                            </div>
+                                            <div class="col-4">
+                                                <label for="skin">Skin Tone</label>
+                                                <input type="text" class="scales" id="skin" name="skin">
+                                            </div>
+                                            <div class="col-4">
+                                                <label for="eye">Eye Color</label>
+                                                <input type="text" class="scales" id="eye" name="eye">
+                                            </div>
+                                        </div>
+                                        <label for="voice">Voice</label>
+                                        <input type="text" class="scales" id="voice" name="voice">
+                                    </div>
+                                    <div class="col-6">
+                                        <span class="label">Personality</span>
+                                        <div class="box" id="person">
+                                            <textarea></textarea>
+                                        </div>
+                                        <span class="label">Relationships</span>
+                                        <div class="box" id="relate">
+                                            <textarea></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="label">Other Information</span>
+                                <div class="box" id="info">
+                                    <textarea></textarea>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id="download">
+                    <div class="row" id="options">
+                        <div class="col-4">
+                            <label for="p1">Page 1</label><br>
+                            <input type="checkbox" id="p1" value="p1" checked>
+                        </div>
+                        <div class="col-4">
+                            <label for="p2">Page 2</label><br>
+                            <input type="checkbox" id="p2" value="p2" checked>
+                        </div>
+                        <div class="col-4">
+                            <label for="p3">Page 3</label><br>
+                            <input type="checkbox" id="p3" value="p3" checked>
+                        </div>
+                    </div>
                     <button id="dl-btn">Download as PDF <i class="bi bi-download"></i></button>
                 </div>
             </div>
