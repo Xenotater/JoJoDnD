@@ -3,7 +3,7 @@ window.jsPDF = window.jspdf.jsPDF;
 $(document).ready(function () {
     $("input").on("keyup", function() {
         var id = $(this).attr("id");
-        if (!$(this).hasClass("skill-bonus") && !$(this).hasClass("stat-mod") && id != "bonus") {
+        if (!$(this).hasClass("skill-bonus") && !$(this).hasClass("stat-mod") && id != "bonus" && id != "atks" && id != "insp") {
             var val = $(this).width() / $(this).val().length, upper = 12, lower = 8;
             if ($(this).attr("type") == "text") {
                 upper = 16;
@@ -44,6 +44,7 @@ $(document).ready(function () {
                 updateAC();
                 break;
             case "int-score":
+                updateProfs();
                 break;
             case "wis-score":
                 updateInitiative();
@@ -62,6 +63,7 @@ $(document).ready(function () {
             case "spd-score":
                 updateSpeed();
                 updateSAC();
+                updateAtks();
                 break;
             case "bonus":
                 updateAllSkills();
@@ -69,6 +71,7 @@ $(document).ready(function () {
                 break;
             case "level":
                 updateBonus();
+                updateFeats();
             default:
                 break;
         }
@@ -229,6 +232,43 @@ function updatePassive() {
         val = 10 + mod + bonus;
     
     $("#percep").val(val);
+}
+
+function updateProfs() {
+    var mod = parseInt($("#int-mod").val());
+    if (isNaN(mod))
+        mod = 1;
+    if (mod < 1)
+        mod = 1;
+    if ($("#int-score").val() != "")
+        $("#skillcnt").html(" (+" + mod + ")");
+    else
+        $("#skillcnt").html("");
+}
+
+function updateAtks() {
+    var score = Math.floor($("#spd-score").val() / 50) + 1;
+    if (isNaN(score))
+        score = 1;
+    $("#atks").val(score);
+}
+
+function updateFeats() {
+    var level = $("#level").val();
+    console.log(level);
+    if (!isNaN(level)) {
+        var feats = "";
+        if (level > 19)
+            feats = 6;
+        else if (level < 1)
+            feats = 2;
+        else
+            feats = Math.floor((level-1)/5) + 2;
+        console.log(feats);
+        $("#featcnt").html(" (+" + feats + ")");
+    }
+    else
+        $("#featcnt").html("");
 }
 
 //PDF generation assisted by https://www.freakyjolly.com/html2canvas-multipage-pdf-tutorial/

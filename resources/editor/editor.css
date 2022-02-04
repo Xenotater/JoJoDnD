@@ -177,18 +177,23 @@ input {
     padding-left: 5px;
 }
 
-#proflbl {
-    width: 67%;
+#proflbl, #atkslbl, #insplbl {
+    width: 100px;
     float: left;
     padding-top: 3px;
 }
 
-#bonus {
-    float: left;
-    width: 30%;
+#insplbl {
+    width: 60px;
+}
+
+#bonus, #atks, #insp {
+    float: right;
+    width: 45px;
     height: 17px;
     border: none;
     border-bottom: 2px solid black;
+    margin-right: 5px;
     font-size: 16px;
 }
 
@@ -234,4 +239,36 @@ input {
 .stat-score, .stand-score {
     height: 30px;
     border-top: none;
+}
+
+#atks-box, #insp-box {
+    height: 25px;
+    border-top: none;
+    padding-left: 5px;
+}
+
+#attacks, #inv {
+    height: 301px;
+}
+
+#attacks, #attacklbl, #atks-box, #classlbl, #classbox {
+    width: 60%;
+    float: left;
+}
+
+#inv, #invlbl, #insp-box, #featlbl, #featsbox {
+    width: 40%;
+    float: left;
+    border-left: none;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+}
+
+#classbox, #featsbox, #otherbox {
+    height: 150px;
 }
