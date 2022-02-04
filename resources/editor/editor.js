@@ -3,7 +3,7 @@ window.jsPDF = window.jspdf.jsPDF;
 $(document).ready(function () {
     $("input").on("keyup", function() {
         var id = $(this).attr("id");
-        if (!$(this).hasClass("skill-bonus") && !$(this).hasClass("stat-mod") && id != "bonus" && id != "atks" && id != "insp") {
+        if ($(this).hasClass("scales")) {
             var val = $(this).width() / $(this).val().length, upper = 12, lower = 8;
             if ($(this).attr("type") == "text") {
                 upper = 16;
@@ -29,38 +29,47 @@ $(document).ready(function () {
             updateSkills(stat);
         }
 
+        if ($(this).hasClass("stat-mod")) {
+            var stat = id.replace("-mod", "");
+            updateSave(stat);
+            updateSkills(stat);
+        }
+
         if ($(this).hasClass("stand-score")) {
             updateStandMod(id.replace("-score", ""));
         }
 
-        switch(id) {
-            case "str-score":
+        if (id == "name" || id == "Uname" || id == "Fname") {
+            updateName(id);
+        }
+
+        switch(id.replace("-score", "").replace("-mod", "")) {
+            case "str":
                 break;
-            case "dex-score":
+            case "dex":
                 updateInitiative();
                 updateAC();
                 break;
-            case "con-score":
+            case "con":
                 updateAC();
                 break;
-            case "int-score":
+            case "int":
                 updateProfs();
                 break;
-            case "wis-score":
+            case "wis":
                 updateInitiative();
                 updateAC();
-                updatePassive();
                 break;
-            case "cha-score":
+            case "cha":
                 updateDC();
                 break;
-            case "pre-score":
+            case "pre":
                 updateSAC();
                 break;
-            case "dur-score":
+            case "dur":
                 updateSAC();
                 break
-            case "spd-score":
+            case "spd":
                 updateSpeed();
                 updateSAC();
                 updateAtks();
@@ -72,6 +81,10 @@ $(document).ready(function () {
             case "level":
                 updateBonus();
                 updateFeats();
+                break;
+            case "ac":
+                updateHAC();
+                break;
             default:
                 break;
         }
@@ -87,6 +100,34 @@ $(document).ready(function () {
         var classes = $("#" + skill + "-bonus").attr('class').split(/\s+/);
         var stat = classes[2].replace("-skill", "");
         updateSkills(stat);
+    });
+
+    $("#image").hover(imgOn, imgOff);
+
+    $("#upload").click(function() {
+        $("#img-input").click();
+    });
+
+    $("#edit").click(function() {
+        $("#img-input").click();
+    });
+
+    $("#reset").click(function() {
+        $("#char-img").attr("src", "");
+        $("#char-img").css("display", "none");
+        $("#image").css("background-color", "white");
+    });
+
+    //img upload render assisted by https://medium.com/@iamcodefoxx/how-to-upload-and-preview-an-image-with-javascript-749b92711b91
+    $("#img-input").change(function () {
+        var reader = new FileReader();
+        reader.addEventListener("load", () => {
+            var upload = reader.result;
+            $("#char-img").attr("src", upload);
+            $("#char-img").css("display", "unset");
+            $("#image").css("background-color", "black");
+        });
+        reader.readAsDataURL(this.files[0]);
     });
 
     $("#dl-btn").click(function() {
@@ -146,6 +187,7 @@ function updateAC() {
     if (isNaN(ac))
         ac = "";
     $("#ac").val(ac);
+    updateHAC();
 }
 
 function updateSAC() {
@@ -154,6 +196,11 @@ function updateSAC() {
     if (isNaN(sac))
         sac = "";
     $("#sac").val(sac);
+}
+
+function updateHAC() {
+    var ac = parseInt($("#ac").val()) + 5;
+    $("#hac").val(ac);
 }
 
 function updateSave(stat) {
@@ -199,6 +246,9 @@ function updateSkills(stat) {
 
         $(this).val(val);
     });
+
+    if (stat == "wis")
+        updatePassive();
 }
 
 function updateAllSkills() {
@@ -224,13 +274,9 @@ function updateDC() {
 }
 
 function updatePassive() {
-    var mod = parseInt($("#wis-mod").val());
-    var bonus = parseInt($("#bonus").val());
-    var val = ""
-
-    if (!isNaN(mod) && !isNaN(bonus))
-        val = 10 + mod + bonus;
-    
+    var val = 10 + parseInt($("#perc-bonus").val());
+    if (isNaN(val))
+        val = "";
     $("#percep").val(val);
 }
 
@@ -271,22 +317,58 @@ function updateFeats() {
         $("#featcnt").html("");
 }
 
+function updateName(id) {
+    if (id == "name") {
+        $("#Uname").val($("#name").val());
+        $("#Fname").val($("#name").val());
+    }
+    else if (id == "Uname") {
+        $("#name").val($("#Uname").val());
+        $("#Fname").val($("#Uname").val());
+    }
+    else {
+        $("#Uname").val($("#Fname").val());
+        $("#name").val($("#Fname").val());
+    }
+}
+
+function imgOn() {
+    if ($("#char-img").attr("src") == "")
+        $("#upload").css("display", "unset");
+    else {
+        $("#edit").css("display", "unset");
+        $("#reset").css("display", "unset");
+    }
+    $("#blur").css("display", "unset");
+}
+
+function imgOff() {
+    $(".img-icon").css("display", "none");
+    $("#blur").css("display", "none");
+}
+
 //PDF generation assisted by https://www.freakyjolly.com/html2canvas-multipage-pdf-tutorial/
 function generatePDF(name) {
     var pdf;
+    var p1 = $("#p1").is(":checked"), p2 = $("#p2").is(":checked"), p3 = $("#p3").is(":checked");
     domtoimage.toPng(document.querySelector("#page1"),{ filter:filter }).then(function (imgData) {
         pdf = new jsPDF('p', 'in', 'letter');
-        pdf.addImage(imgData, 'PNG', 0, 0, 8.5, 11);
+        if (p1)
+            pdf.addImage(imgData, 'PNG', 0, 0, 8.5, 11);
 
         setTimeout(function() {
             domtoimage.toPng(document.querySelector("#page2")).then(function (imgData) {
-                pdf.addPage('letter');
-                pdf.addImage(imgData, 'PNG', 0, 0, 8.5, 11);
+                if (p1 && p2)
+                    pdf.addPage('letter');
+                if (p2)
+                    pdf.addImage(imgData, 'PNG', 0, 0, 8.5, 11);
 
                 setTimeout(function() {
                     domtoimage.toPng(document.querySelector("#page3")).then(function (imgData) {
-                        pdf.addPage('letter');
-                        pdf.addImage(imgData, 'PNG', 0, 0, 8.5, 11);
+                        if ((p1 || p2) && p3)
+                            pdf.addPage('letter');
+                        if (p3)
+                            pdf.addImage(imgData, 'PNG', 0, 0, 8.5, 11);
                 
                         setTimeout(function() {
                             pdf.save(name + ".pdf");
