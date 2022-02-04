@@ -119,7 +119,7 @@ $(document).ready(function () {
     });
 
     $("#reset").click(function() {
-        $("#char-img").attr("src", "");
+        $("#char-img").attr("src", "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=");
         $("#char-img").css("display", "none");
         $("#image").css("background-color", "white");
     });
@@ -341,7 +341,7 @@ function updateName(id) {
 }
 
 function imgOn() {
-    if ($("#char-img").attr("src") == "")
+    if ($("#char-img").attr("src") == "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=")
         $("#upload").css("display", "unset");
     else {
         $("#edit").css("display", "unset");
