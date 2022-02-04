@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<!-- character sheet editor -->
+<html lang="en">
+    <head>
+        <title>Editor | JoJo D&D</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-rfs/bootstrap-rfs.css" rel="stylesheet" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="/jojodnd.css">
+        <link rel="stylesheet" href="editor.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/dom-to-image@2.6.0/src/dom-to-image.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-EQW3R4RE6P"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-EQW3R4RE6P');
+        </script>
+
+        <script src="/nav.js"></script>
+        <script src="editor.js"></script>
+    </head>
+    
+    <body>
+        <div class="container">
+            <h1 id="page-title">Character Sheet Editor</h1>
+            <div class="content">
+                <p id="desc">Fill out desired values or leave them blank, then select which pages you'd like to keep and press the download button below.</p>
+                <label for="autofill" id="autolbl">Autofill:</label>
+                <input type="checkbox" id="autofill" value="autofill" checked>
+                <div data-simplebar>
+                    <div id="pages">
+                        <div class="center">
+                            <div class="page" id="page1">
+                                <div class="heading">
+                                    <img src="/Assets/icon.png" alt="JoJo D&D" id="logo">
+                                    <span id="title"><b>JoJo's Bizarre Tabletop Game</b></span>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="name">Character Name</label>
+                                        <input type="text" class="scales" id="name" name="name">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="maxHP">Hit Point Max</label>
+                                        <input type="text" class="numbers" id="maxHP" name="maxHP">
+                                    </div>
+                                    <div class="col-4">
+                                        <span class="label">Current Hit Points</label>
+                                        <div class="box" id="hp"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3">
+                                        <label for="race">Race & Passion</label>
+                                        <input type="text" class="scales" id="race" name="race">
+                                    </div>
+                                    <div class="col-3">
+                                        <label for="class">Class & Level</label>
+                                        <input type="text" class="scales" id="class" name="class">
+                                        <input type="text" class="numbers" id="level" name="level">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="reduction">Damage Reduction</label>
+                                        <input type="text" class="numbers" id="reduction" name="reduction">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="dc">Stand DC</label>
+                                        <input type="text" class="numbers" id="dc" name="dc">
+                                    </div>
+                                    <div class="col-2">
+                                        <span class="label">Death Saves</label>
+                                        <div class="box" id="win">
+                                            <span class="label">Won</span>
+                                        </div>
+                                        <div class="box" id="lose">
+                                            <span class="label">Lost</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div id="savebox">
+                                            <span class="label">Saving Throws</span>
+                                            <div class="box" id="saves">
+                                                <div id="not-prof">
+                                                    <div id="stats">
+                                                        <span class="label">Strength</span>
+                                                        <span class="label">Dexterity</span>
+                                                        <span class="label">Constitution</span>
+                                                        <span class="label">Intelligence</span>
+                                                        <span class="label">Wisdom</span>
+                                                        <span class="label">Charisma</span>
+                                                    </div>
+                                                    <div id="checks">
+                                                        <input type="checkbox" class="savecheck" id="str-save" name="str-save">
+                                                        <input type="text" class="numbers save-bonus" id="str-bonus" name="str-bonus"><br>
+                                                        <input type="checkbox" class="savecheck" id="dex-save" name="dex-save">
+                                                        <input type="text" class="numbers save-bonus" id="dex-bonus" name="dex-bonus"><br>
+                                                        <input type="checkbox" class="savecheck" id="con-save" name="con-save">
+                                                        <input type="text" class="numbers save-bonus" id="con-bonus" name="con-bonus"><br>
+                                                        <input type="checkbox" class="savecheck" id="int-save" name="int-save">
+                                                        <input type="text" class="numbers save-bonus" id="int-bonus" name="int-bonus"><br>
+                                                        <input type="checkbox" class="savecheck" id="wis-save" name="wis-save">
+                                                        <input type="text" class="numbers save-bonus" id="wis-bonus" name="wis-bonus"><br>
+                                                        <input type="checkbox" class="savecheck" id="cha-save" name="cha-save">
+                                                        <input type="text" class="numbers save-bonus" id="cha-bonus" name="cha-bonus"><br>
+                                                    </div>
+                                                </div>
+                                                <div id="prof-bonus">
+                                                    <label for="bonus" id="proflbl">Proficiency Bonus:</label>
+                                                    <input type="text" class="numbers" id="bonus" name="bonus">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="skillbox">
+                                            <span class="label">Skill Proficiencies</span><span class="label" id="skillcnt"></span>
+                                            <div class="box" id="skills">
+                                                <ul id="skills-list">
+                                                    <li>
+                                                        <select class="skillcheck" id="acro" name="acro">
+                                                            <option value=""></option>
+                                                            <option value="p">P</option>
+                                                            <option value="e">E</option>
+                                                            <option value="m">M</option>
+                                                        </select>
+                                                        <input type="text" class="numbers skill-bonus dex-skill" id="acro-bonus" name="acro-bonus">
+                                                        <span class="skilllbl">Acro</span><span class="skillstat">(dex)</span>
+                                                    </li>
+                                                    <li>
+                                                        <select class="skillcheck" id="ani" name="ani">
+                                                            <option value=""></option>
+                                                            <option value="p">P</option>
+                                                            <option value="e">E</option>
+                                                            <option value="m">M</option>
+                                                        </select>
+                                                        <input type="text" class="numbers skill-bonus wis-skill" id="ani-bonus" name="ani-bonus">
+                                                        <span class="skilllbl">Animals</span><span class="skillstat">(wis)</span>
+                                                    </li>
+                                                    <li>
+                                                        <select class="skillcheck" id="arc" name="arc">
+                                                            <option value=""></option>
+                                                            <option value="p">P</option>
+                                                            <option value="e">E</option>
+                                                            <option value="m">M</option>
+                                                        </select>
+                                                        <input type="text" class="numbers skill-bonus int-skill" id="arc-bonus" name="arc-bonus">
+                                                        <span class="skilllbl">Arcana</span><span class="skillstat">(int)</span>
+                                                    </li>
+                                                    <li>
+                                                        <select class="skillcheck" id="ath" name="ath">
+                                                            <option value=""></option>
+                                                            <option value="p">P</option>
+                                                            <option value="e">E</option>
+                                                            <option value="m">M</option>
+                                                        </select>
+                                                        <input type="text" class="numbers skill-bonus str-skill" id="ath-bonus" name="ath-bonus">
+                                                        <span class="skilllbl">Athlete</span><span class="skillstat">(str)</span>
+                                                    </li>
+                                                    <li>
+                                                        <select class="skillcheck" id="dec" name="dec">
+                                                            <option value=""></option>
+                                                            <option value="p">P</option>
+                                                            <option value="e">E</option>
+                                                            <option value="m">M</option>
+                                                        </select>
+                                                        <input type="text" class="numbers skill-bonus cha-skill" id="dec-bonus" name="dec-bonus">
+                                                        <span class="skilllbl">Decept</span><span class="skillstat">(cha)</span>
+                                                    </li>
+                                                    <li>
+                                                        <select class="skillcheck" id="his" name="his">
+                                                            <option value=""></option>
+                                                            <option value="p">P</option>
+                                                            <option value="e">E</option>
+                                                            <option value="m">M</option>
+                                                        </select>
+                                                        <input type="text" class="numbers skill-bonus int-skill" id="his-bonus" name="his-bonus">
+                                                        <span class="skilllbl">History</span><span class="skillstat">(int)</span>
+                                                    </li>
+                                                    <li>
+                                                        <select class="skillcheck" id="ins" name="ins">
+                                                            <option value=""></option>
+                                                            <option value="p">P</option>
+                                                            <option value="e">E</option>
+                                                            <option value="m">M</option>
+                                                        </select>
+                                                        <input type="text" class="numbers skill-bonus wis-skill" id="ins-bonus" name="ins-bonus">
+                                                        <span class="skilllbl">Insight</span><span class="skillstat">(wis)</span>
+                                                    </li>
+                                                    <li>
+                                                        <select class="skillcheck" id="intim" name="intim">
+                                                            <option value=""></option>
+                                                            <option value="p">P</option>
+                                                            <option value="e">E</option>
+                                                            <option value="m">M</option>
+                                                        </select>
+                                                        <input type="text" class="numbers skill-bonus cha-skill" id="intim-bonus" name="intim-bonus">
+                                                        <span class="skilllbl">Intimid</span><span class="skillstat">(cha)</span>
+                                                    </li>
+                                                    <li>
+                                                        <select class="skillcheck" id="invest" name="invest">
+                                                            <option value=""></option>
+                                                            <option value="p">P</option>
+                                                            <option value="e">E</option>
+                                                            <option value="m">M</option>
+                                                        </select>
+                                                        <input type="text" class="numbers skill-bonus int-skill" id="invest-bonus" name="invest-bonus">
+                                                        <span class="skilllbl">Invest</span><span class="skillstat">(int)</span>
+                                                    </li>
+                                                    <li>
+                                                        <select class="skillcheck" id="medi" name="medi">
+                                                            <option value=""></option>
+                                                            <option value="p">P</option>
+                                                            <option value="e">E</option>
+                                                            <option value="m">M</option>
+                                                        </select>
+                                                        <input type="text" class="numbers skill-bonus wis-skill" id="medi-bonus" name="medi-bonus">
+                                                        <span class="skilllbl">Medic</span><span class="skillstat">(wis)</span>
+                                                    </li>
+                                                    <li>
+                                                        <select class="skillcheck" id="nat" name="nat">
+                                                            <option value=""></option>
+                                                            <option value="p">P</option>
+                                                            <option value="e">E</option>
+                                                            <option value="m">M</option>
+                                                        </select>
+                                                        <input type="text" class="numbers skill-bonus int-skill" id="nat-bonus" name="nat-bonus">
+                                                        <span class="skilllbl">Nature</span><span class="skillstat">(int)</span>
+                                                    </li>
+                                                    <li>
+                                                        <select class="skillcheck" id="perc" name="perc">
+                                                            <option value=""></option>
+                                                            <option value="p">P</option>
+                                                            <option value="e">E</option>
+                                                            <option value="m">M</option>
+                                                        </select>
+                                                        <input type="text" class="numbers skill-bonus wis-skill" id="perc-bonus" name="perc-bonus">
+                                                        <span class="skilllbl">Percept</span><span class="skillstat">(wis)</span>
+                                                    </li>
+                                                    <li>
+                                                        <select class="skillcheck" id="perf" name="perf">
+                                                            <option value=""></option>
+                                                            <option value="p">P</option>
+                                                            <option value="e">E</option>
+                                                            <option value="m">M</option>
+                                                        </select>
+                                                        <input type="text" class="numbers skill-bonus cha-skill" id="perf-bonus" name="perf-bonus">
+                                                        <span class="skilllbl">Perform</span><span class="skillstat">(cha)</span>
+                                                    </li>
+                                                    <li>
+                                                        <select class="skillcheck" id="pers" name="pers">
+                                                            <option value=""></option>
+                                                            <option value="p">P</option>
+                                                            <option value="e">E</option>
+                                                            <option value="m">M</option>
+                                                        </select>
+                                                        <input type="text" class="numbers skill-bonus cha-skill" id="pers-bonus" name="pers-bonus">
+                                                        <span class="skilllbl">Persua</span><span class="skillstat">(cha)</span>
+                                                    </li>
+                                                    <li>
+                                                        <select class="skillcheck" id="reli" name="reli">
+                                                            <option value=""></option>
+                                                            <option value="p">P</option>
+                                                            <option value="e">E</option>
+                                                            <option value="m">M</option>
+                                                        </select>
+                                                        <input type="text" class="numbers skill-bonus int-skill" id="reli-bonus" name="reli-bonus">
+                                                        <span class="skilllbl">Religion</span><span class="skillstat">(int)</span>
+                                                    </li>
+                                                    <li>
+                                                        <select class="skillcheck" id="sli" name="sli">
+                                                            <option value=""></option>
+                                                            <option value="p">P</option>
+                                                            <option value="e">E</option>
+                                                            <option value="m">M</option>
+                                                        </select>
+                                                        <input type="text" class="numbers skill-bonus dex-skill" id="sli-bonus" name="sli-bonus">
+                                                        <span class="skilllbl">Slight</span><span class="skillstat">(dex)</span>
+                                                    </li>
+                                                    <li>
+                                                        <select class="skillcheck" id="steal" name="steal">
+                                                            <option value=""></option>
+                                                            <option value="p">P</option>
+                                                            <option value="e">E</option>
+                                                            <option value="m">M</option>
+                                                        </select>
+                                                        <input type="text" class="numbers skill-bonus dex-skill" id="steal-bonus" name="steal-bonus">
+                                                        <span class="skilllbl">Stealth</span><span class="skillstat">(dex)</span>
+                                                    </li>
+                                                    <li>
+                                                        <select class="skillcheck" id="surv" name="surv">
+                                                            <option value=""></option>
+                                                            <option value="p">P</option>
+                                                            <option value="e">E</option>
+                                                            <option value="m">M</option>
+                                                        </select>
+                                                        <input type="text" class="numbers skill-bonus wis-skill" id="surv-bonus" name="surv-bonus">
+                                                        <span class="skilllbl">Survive</span><span class="skillstat">(wis)</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <label for="ac">Armor Class</label>
+                                                <input type="text" class="numbers" id="ac" name="ac">
+                                            </div>
+                                            <div class="col-4">
+                                                <label for="hdice">Hit Dice</label>
+                                                <input type="text" id="hdice" name="hdice">
+                                            </div>
+                                            <div class="col-4">
+                                                <label for="pspeed">Movement Speed</label>
+                                                <input type="text" class="numbers" id="pspeed" name="pspeed">
+                                                <input type="text" class="numbers" id="sspeed" name="sspeed">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <label for="sac">Stand AC</label>
+                                                <input type="text" class="numbers" id="sac" name="sac">
+                                            </div>
+                                            <div class="col-4">
+                                                <label for="init">Initiative</label>
+                                                <input type="text" class="numbers" id="init" name="init">
+                                            </div>
+                                            <div class = "col-4">
+                                                <label for="percep">Passive Perception</label>
+                                                <input type="text" class="numbers" id="percep" name="percep">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <label for="str-mod">Strength</label>
+                                        <input type="text" class="stat-mod numbers" id="str-mod" name="str-mod">
+                                        <input type="text" class="numbers stat-score" id="str-score" name="str-score">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="dex-mod">Dexterity</label>
+                                        <input type="text" class="stat-mod numbers" id="dex-mod" name="dex-mod">
+                                        <input type="text" class="numbers stat-score" id="dex-score" name="dex-score">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="con-mod">Constitution</label>
+                                        <input type="text" class="stat-mod numbers" id="con-mod" name="con-mod">
+                                        <input type="text" class="numbers stat-score" id="con-score" name="con-score">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="int-mod">Intelligence</label>
+                                        <input type="text" class="stat-mod numbers" id="int-mod" name="int-mod">
+                                        <input type="text" class="numbers stat-score" id="int-score" name="int-score">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="wis-mod">Wisdom</label>
+                                        <input type="text" class="stat-mod numbers" id="wis-mod" name="wis-mod">
+                                        <input type="text" class="numbers stat-score" id="wis-score" name="wis-score">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="cha-mod">Charisma</label>
+                                        <input type="text" class="stat-mod numbers" id="cha-mod" name="cha-mod">
+                                        <input type="text" class="numbers stat-score" id="cha-score" name="cha-score">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <label for="pwr-mod">Power</label>
+                                        <input type="text" class="stand-mod numbers" id="pwr-mod" name="pwr-mod">
+                                        <input type="text" class="numbers stand-score" id="pwr-score" name="pwr-score">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="pre-mod">Precision</label>
+                                        <input type="text" class="stand-mod numbers" id="pre-mod" name="pre-mod">
+                                        <input type="text" class="numbers stand-score" id="pre-score" name="pre-score">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="dur-mod">Durability</label>
+                                        <input type="text" class="stand-mod numbers" id="dur-mod" name="dur-mod">
+                                        <input type="text" class="numbers stand-score" id="dur-score" name="dur-score">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="rng-mod">Range</label>
+                                        <input type="text" class="stand-mod numbers" id="rng-mod" name="rng-mod">
+                                        <input type="text" class="numbers stand-score" id="rng-score" name="rng-score">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="spd-mod">Speed</label>
+                                        <input type="text" class="stand-mod numbers" id="spd-mod" name="spd-mod">
+                                        <input type="text" class="numbers stand-score" id="spd-score" name="spd-score">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="se-mod">Stand Energy</label>
+                                        <input type="text" class="stand-mod numbers" id="se-mod" name="se-mod">
+                                        <input type="text" class="numbers stand-score" id="se-score" name="se-score">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div id="classlbl">
+                                            <span class="label">Class Features</span>
+                                        </div>
+                                        <div id="featlbl">
+                                            <span class="label">Feats</span><span class="label" id="featcnt"></span>
+                                        </div>
+                                        <div class="box" id="classbox">
+                                            <textarea></textarea>
+                                        </div>
+                                        <div class="box" id="featsbox">
+                                            <textarea></textarea>
+                                        </div>
+                                        <br>
+                                        <div id="otherlbl">
+                                            <span class="label">Languages & Other Proficiencies</span>
+                                        </div>
+                                        <div class="box" id="otherbox">
+                                            <textarea></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div id="attacklbl">
+                                            <span class="label">Attacks & Actions</span>
+                                        </div>
+                                        <div id="invlbl">
+                                            <span class="label">Inventory</span>
+                                        </div>
+                                        <div class="box" id="attacks">
+                                            <textarea></textarea>
+                                        </div>
+                                        <div class="box" id="inv">
+                                            <textarea></textarea>
+                                        </div>
+                                        <br>
+                                        <div class="box" id="atks-box">
+                                            <label for="atks" id="atkslbl">Attacks Per Round:</label>
+                                            <input type="text" class="numbers" id="atks" name="atks">
+                                        </div>
+                                        <div class="box" id="insp-box">
+                                            <span class="label" id="insplbl">Inspiration:</span>
+                                            <div class="box" id="insp">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="center">
+                            <div class="page" id="page2">
+                                <div class="heading">
+                                    <h2><b>JoJo D&D Undead Character Sheet</b></h2>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="Uname">Character Name</label>
+                                        <input type="text" class="scales" id="Uname" name="Uname">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="headHP">Head Hit Points</label>
+                                        <input type="text" class="numbers" id="headHP" name="headHP">
+                                    </div>
+                                    <div class="col-4">
+                                        <span class="label">Current Head Hit Points</label>
+                                        <div class="box" id="curHeadHP"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div><label for="type">Type & Level</label></div>
+                                        <input type="text" class="scales" id="type" name="type">
+                                        <input type="text" class="numbers" id="Ulevel" name="Ulevel">
+                                    </div>
+                                    <div class="col-3">
+                                        <label for="hac">Head AC</label>
+                                        <input type="text" class="numbers" id="hac" name="hac">
+                                    </div>
+                                    <div class="col-3">
+                                        <label for="energy">Energy</label>
+                                        <input type="text" class="numbers" id="energy" name="energy">
+                                    </div>
+                                </div>
+                                <span class="label">Minions</span>
+                                <div class="box" id="minions">
+                                    <textarea></textarea>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <span class="label">Class Features</span>
+                                        <div class="box" id="Ufeats">
+                                            <textarea></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <span class="label">Attacks & Actions</span>
+                                        <div class="box" id="Uatks">
+                                            <textarea></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="center">
+                            <div class="page" id="page3">
+                                <div class="heading">
+                                    <h2><b>JoJo D&D Flavor Sheet</b></h2>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <span class="label">Character Image</span>
+                                        <div class="box" id="image">
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" alt="char-img" id="char-img">
+                                            <div id="blur"></div>
+                                            <h2><b><i class="bi bi-plus-square img-icon" id="upload"></i></b></h2>
+                                            <h2><b><i class="bi bi-pencil-square img-icon" id="edit"></i></b></h2>
+                                            <h2><b><i class="bi bi-x-square img-icon" id="reset"></i></b></h2>
+                                            <input type="file" id="img-input" accept="image/png, image/jpg">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="Fname">Character Name</label>
+                                        <input type="text" class="scales" id="Fname" name="Fname">
+                                        <span class="label">Backstory</span>
+                                        <div class="box" id="back">
+                                            <textarea></textarea>
+                                        </div>
+                                        <div id="idealbox">
+                                            <span class="label">Ideals</span>
+                                            <div class="box" id="ideals">
+                                                <textarea></textarea>
+                                            </div>
+                                        </div>
+                                        <div id="flawbox">
+                                            <span class="label">Flaws</span>
+                                            <div class="box" id="flaws">
+                                                <textarea></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <label for="weight">Weight</label>
+                                                <input type="text" class="scales" id="weight" name="weight">
+                                            </div>
+                                            <div class="col-4">
+                                                <label for="height">Height</label>
+                                                <input type="text" class="scales" id="height" name="height">
+                                            </div>
+                                            <div class="col-4">
+                                                <label for="age">Age</label>
+                                                <input type="text" class="scales" id="age" name="age">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <label for="hair">Hair Color</label>
+                                                <input type="text" class="scales" id="hair" name="hair">
+                                            </div>
+                                            <div class="col-4">
+                                                <label for="skin">Skin Tone</label>
+                                                <input type="text" class="scales" id="skin" name="skin">
+                                            </div>
+                                            <div class="col-4">
+                                                <label for="eye">Eye Color</label>
+                                                <input type="text" class="scales" id="eye" name="eye">
+                                            </div>
+                                        </div>
+                                        <label for="voice">Voice</label>
+                                        <input type="text" class="scales" id="voice" name="voice">
+                                    </div>
+                                    <div class="col-6">
+                                        <span class="label">Personality</span>
+                                        <div class="box" id="person">
+                                            <textarea></textarea>
+                                        </div>
+                                        <span class="label">Relationships</span>
+                                        <div class="box" id="relate">
+                                            <textarea></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="label">Other Information</span>
+                                <div class="box" id="info">
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div id="download">
+                    <div class="row" id="options">
+                        <div class="col-4">
+                            <label for="p1">Page 1</label><br>
+                            <input type="checkbox" id="p1" value="p1" checked>
+                        </div>
+                        <div class="col-4">
+                            <label for="p2">Page 2</label><br>
+                            <input type="checkbox" id="p2" value="p2" checked>
+                        </div>
+                        <div class="col-4">
+                            <label for="p3">Page 3</label><br>
+                            <input type="checkbox" id="p3" value="p3" checked>
+                        </div>
+                    </div>
+                    <button id="dl-btn">Download as PDF <i class="bi bi-download"></i></button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
