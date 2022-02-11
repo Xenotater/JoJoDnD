@@ -45,11 +45,11 @@
     border: 2px solid black;
     border-radius: 5px;
     font-size: 1.5rem;
-    background-color: rgb(214, 214, 214)
+    background-color: rgb(214, 214, 214);
 }
 
 #dl-btn:hover {
-    background-color: rgb(187, 187, 187)
+    background-color: rgb(187, 187, 187);
 }
 
 #hidden-dl {
@@ -131,10 +131,6 @@ input {
     border-left: none;
 }
 
-#win, #lose {
-    padding-top: 38px;
-}
-
 #win, #lose, #pspeed, #sspeed {
     float: left;
     width: 50%;
@@ -142,6 +138,12 @@ input {
 
 #lose, #skills, #sspeed {
     border-left: none;
+}
+
+#won, #lost {
+    border: none;
+    width: 100%;
+    height: 36px;
 }
 
 #savebox {
@@ -274,16 +276,16 @@ input {
     padding-left: 5px;
 }
 
-#attacks, #inv {
+#atkbox, #invbox {
     height: 301px;
 }
 
-#attacks, #attacklbl, #atks-box, #classlbl, #classbox {
+#atkbox, #attacklbl, #atks-box, #classlbl, #classbox {
     width: 60%;
     float: left;
 }
 
-#inv, #invlbl, #insp-box, #featlbl, #featsbox {
+#invbox, #invlbl, #insp-box, #featlbl, #featsbox {
     width: 40%;
     float: left;
     border-left: none;
@@ -317,7 +319,7 @@ h2 {
     border-left: none;
 }
 
-#minions {
+#minionbox {
     height: 225px;
 }
 
@@ -325,32 +327,33 @@ h2 {
     height: 336px;
 }
 
-#Ufeats, #Uatks {
+#Ufeatbox, #Uatkbox {
     height: 475px;
 }
 
-#back {
+#backbox {
     height: 124px;
 }
 
 #idealbox, #flawbox {
     width: 50%;
     float: left;
-}
-
-#ideals, #flaws {
     height: 104px;
 }
 
-#flaws {
+#idealbox div, #flawbox div {
+    height: 104px;
+}
+
+#flawbox div {
     border-left: none;
 }
 
-#person, #relate {
+#personbox, #relatebox {
     height: 102px;
 }
 
-#info {
+#infobox {
     height: 274px;
 }
 
@@ -389,7 +392,27 @@ h2 {
 #reset {
     display: none;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 3px;
+    right: 5px;
     cursor: pointer;
+}
+
+code {
+    color: purple;
+}
+
+#import {
+    display: none;
+}
+
+#import-btn, #export-btn {
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 14px;
+    background-color: rgb(214, 214, 214);
+    margin: .5rem;
+}
+
+#import-btn:hover, #export-btn:hover {
+    background-color: rgb(187, 187, 187);
 }
