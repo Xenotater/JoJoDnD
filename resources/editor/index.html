@@ -18,6 +18,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/dom-to-image@2.6.0/src/dom-to-image.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-deserialize@2.0.0/src/jquery.deserialize.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -39,10 +41,12 @@
             <h1 id="page-title">Character Sheet Editor</h1>
             <div class="content">
                 <p id="desc">Fill out desired values or leave them blank, then select which pages you'd like to keep and press the download button below.</p>
+                <input type="file" id="import">
+                <button id="import-btn">Import previous character data file <i class="bi bi-upload"></i></button><br>
                 <label for="autofill" id="autolbl">Autofill:</label>
                 <input type="checkbox" id="autofill" value="autofill" checked>
                 <div data-simplebar>
-                    <div id="pages">
+                    <form id="pages">
                         <div class="center">
                             <div class="page" id="page1">
                                 <div class="heading">
@@ -84,9 +88,11 @@
                                     <div class="col-2">
                                         <span class="label">Death Saves</label>
                                         <div class="box" id="win">
+                                            <input type="text" class="numbers" id="won"><br>
                                             <span class="label">Won</span>
                                         </div>
                                         <div class="box" id="lose">
+                                            <input type="text" class="numbers" id="lost"><br>
                                             <span class="label">Lost</span>
                                         </div>
                                     </div>
@@ -419,17 +425,17 @@
                                             <span class="label">Feats</span><span class="label" id="featcnt"></span>
                                         </div>
                                         <div class="box" id="classbox">
-                                            <textarea></textarea>
+                                            <textarea name="classFeats"></textarea>
                                         </div>
                                         <div class="box" id="featsbox">
-                                            <textarea></textarea>
+                                            <textarea name="otherFeats"></textarea>
                                         </div>
                                         <br>
                                         <div id="otherlbl">
                                             <span class="label">Languages & Other Proficiencies</span>
                                         </div>
                                         <div class="box" id="otherbox">
-                                            <textarea></textarea>
+                                            <textarea name="otherProfs"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-6">
@@ -439,11 +445,11 @@
                                         <div id="invlbl">
                                             <span class="label">Inventory</span>
                                         </div>
-                                        <div class="box" id="attacks">
-                                            <textarea></textarea>
+                                        <div class="box" id="atkbox">
+                                            <textarea name="atks1"></textarea>
                                         </div>
-                                        <div class="box" id="inv">
-                                            <textarea></textarea>
+                                        <div class="box" id="invbox">
+                                            <textarea name="inv"></textarea>
                                         </div>
                                         <br>
                                         <div class="box" id="atks-box">
@@ -494,20 +500,20 @@
                                     </div>
                                 </div>
                                 <span class="label">Minions</span>
-                                <div class="box" id="minions">
-                                    <textarea></textarea>
+                                <div class="box" id="minionbox">
+                                    <textarea name="minions"></textarea>
                                 </div>
                                 <div class="row">
                                     <div class="col-6">
                                         <span class="label">Class Features</span>
-                                        <div class="box" id="Ufeats">
-                                            <textarea></textarea>
+                                        <div class="box" id="Ufeatbox">
+                                            <textarea name="Ufeats"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <span class="label">Attacks & Actions</span>
-                                        <div class="box" id="Uatks">
-                                            <textarea></textarea>
+                                        <div class="box" id="Uatkbox">
+                                            <textarea name="Uatks"></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -535,19 +541,19 @@
                                         <label for="Fname">Character Name</label>
                                         <input type="text" class="scales" id="Fname" name="Fname">
                                         <span class="label">Backstory</span>
-                                        <div class="box" id="back">
-                                            <textarea></textarea>
+                                        <div class="box" id="backbox">
+                                            <textarea name="back"></textarea>
                                         </div>
                                         <div id="idealbox">
                                             <span class="label">Ideals</span>
-                                            <div class="box" id="ideals">
-                                                <textarea></textarea>
+                                            <div class="box">
+                                                <textarea name="ideals"></textarea>
                                             </div>
                                         </div>
                                         <div id="flawbox">
                                             <span class="label">Flaws</span>
-                                            <div class="box" id="flaws">
-                                                <textarea></textarea>
+                                            <div class="box">
+                                                <textarea name="flaws"></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -587,22 +593,22 @@
                                     </div>
                                     <div class="col-6">
                                         <span class="label">Personality</span>
-                                        <div class="box" id="person">
-                                            <textarea></textarea>
+                                        <div class="box" id="personbox">
+                                            <textarea name="person" id="person"></textarea>
                                         </div>
                                         <span class="label">Relationships</span>
-                                        <div class="box" id="relate">
-                                            <textarea></textarea>
+                                        <div class="box" id="relatebox">
+                                            <textarea name="relate" id="relate"></textarea>
                                         </div>
                                     </div>
                                 </div>
                                 <span class="label">Other Information</span>
-                                <div class="box" id="info">
-                                    <textarea></textarea>
+                                <div class="box" id="infobox">
+                                    <textarea name="info" id="info"></textarea>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
                 <div id="download">
                     <div class="row" id="options">
@@ -619,7 +625,8 @@
                             <input type="checkbox" id="p3" value="p3" checked>
                         </div>
                     </div>
-                    <button id="dl-btn">Download as PDF <i class="bi bi-download"></i></button>
+                    <button id="dl-btn">Download as PDF <i class="bi bi-download"></i></button><br>
+                    <button id="export-btn">Download character data file <i class="bi bi-download"></i></button>
                 </div>
             </div>
         </div>

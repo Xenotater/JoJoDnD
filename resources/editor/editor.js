@@ -5,18 +5,7 @@ $(document).ready(function () {
         if ($("#autofill").is(":checked")) {
             var id = $(this).attr("id");
             if ($(this).hasClass("scales")) {
-                var val = $(this).width() / $(this).val().length, upper = 12, lower = 8;
-                if ($(this).attr("type") == "text") {
-                    upper = 16;
-                    lower = 12;
-                }
-
-                if (val > upper)
-                    $(this).css("font-size", "24px");
-                else if (val < upper && val > lower)
-                    $(this).css("font-size", "16px");
-                else
-                    $(this).css("font-size", "12px");
+                scale(this);
             }
 
             if ($(this).hasClass("numbers")) {
@@ -112,16 +101,22 @@ $(document).ready(function () {
 
     $("#upload").click(function() {
         $("#img-input").click();
+        imgOff();
+        imgOn();
     });
 
     $("#edit").click(function() {
         $("#img-input").click();
+        imgOff();
+        imgOn();
     });
 
     $("#reset").click(function() {
         $("#char-img").attr("src", "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=");
         $("#char-img").css("display", "none");
         $("#image").css("background-color", "white");
+        imgOff();
+        imgOn();
     });
 
     //img upload render assisted by https://medium.com/@iamcodefoxx/how-to-upload-and-preview-an-image-with-javascript-749b92711b91
@@ -143,6 +138,23 @@ $(document).ready(function () {
         else
             name = "JoJo_Character_Sheet"
         generatePDF(name);
+    });
+
+    $("#import-btn").click(function() {
+        $("#import").click();
+    });
+
+    $("#import").change(function () {
+        var reader = new FileReader();
+        reader.addEventListener("load", () => {
+            var data = JSON.parse(reader.result);
+            importData(data);
+        });
+        reader.readAsText(this.files[0]);
+    });
+
+    $("#export-btn").click(function() {
+        exportData();
     });
 });
 
@@ -309,7 +321,6 @@ function updateAtks() {
 
 function updateFeats() {
     var level = $("#level").val();
-    console.log(level);
     if (!isNaN(level)) {
         var feats = "";
         if (level > 19)
@@ -318,7 +329,6 @@ function updateFeats() {
             feats = 2;
         else
             feats = Math.floor((level-1)/5) + 2;
-        console.log(feats);
         $("#featcnt").html(" (+" + feats + ")");
     }
     else
@@ -380,10 +390,6 @@ function generatePDF(name) {
                 
                         setTimeout(function() {
                             pdf.save(name + ".pdf");
-                            var dl = "<a id='hidden-dl' href='JoJo-Character-Sheet.pdf' download>";
-                            $("body").append(dl);
-                            $("#hidden-dl").click();
-                            $("#hidden-dl").remove();
                         }, 0);
                     });
                 }, 0);
@@ -423,4 +429,50 @@ function filter(node) {
         }
     }
     return true;
+}
+
+function exportData() {
+    var data = {};
+    data["form"] = JSON.stringify($("#pages").serializeArray());
+    data["img"] = $("#char-img").attr("src");
+    var file = new Blob([JSON.stringify(data)], {type: "text/plain"});
+
+    var name;
+        if ($("#name").val().length > 0)
+            name = $("#name").val().replace(/ /g, "_").toLowerCase();
+        else
+            name = "character"
+    saveAs(file, name + "_data.json");
+}
+
+//thanks to kflorence for creating a deserialize plugin https://stackoverflow.com/a/8918929
+function importData(data) {
+    $("#pages").deserialize(JSON.parse(data["form"]));
+    $("#char-img").attr("src", data["img"]);
+    if ($("#char-img").attr("src") == "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=") {
+        $("#char-img").css("display", "none");
+        $("#image").css("background-color", "white");
+    }
+    else {
+        $("#char-img").css("display", "unset");
+        $("#image").css("background-color", "black");
+    }
+    $(".scales").each(function() {
+        scale(this);
+    });
+}
+
+function scale(object) {
+    var val = $(object).width() / $(object).val().length, upper = 12, lower = 8;
+    if ($(object).attr("type") == "text") {
+        upper = 16;
+        lower = 12;
+    }
+
+    if (val > upper)
+        $(object).css("font-size", "24px");
+    else if (val < upper && val > lower)
+        $(object).css("font-size", "16px");
+    else
+        $(object).css("font-size", "12px");
 }
