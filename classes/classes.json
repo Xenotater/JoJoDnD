@@ -71,7 +71,7 @@
             "8": {
                 "pro": "3",
                 "feats": "3",
-                "otherFeatures": ["Choose another Class Feature from the Level 4 or Level 7 optionss"],
+                "otherFeatures": ["Choose another Class Feature from the Level 4 or Level 7 options"],
                 "ability": ["Ability Score Improvement", "Increase Str, Dex, or Con Score by 1"]
             },
             "9": {
@@ -105,7 +105,7 @@
             "14": {
                 "pro": "5",
                 "feats": "4",
-                "otherFeatures": ["Choose another Class Feature from the Level 4, Level 10, or Level 12 optionss"],
+                "otherFeatures": ["Choose another Class Feature from the Level 4, Level 10, or Level 12 options"],
                 "ability": ["Increase Str, Dex, or Con Score by 1"]
             },
             "15": {
@@ -1621,7 +1621,7 @@
             "7": {
                 "pro": "3",
                 "feats": "3",
-                "otherFeatures": ["All Sphere Attacks deal an additional die of damage. For example, 1d6 becomes 2d6."]
+                "otherFeatures": ["All Sphere Attacks deal an additional die of damage (for example, 1d6 becomes 2d6)"]
             },
             "8": {
                 "pro": "3",
@@ -1632,7 +1632,7 @@
             "9": {
                 "pro": "4",
                 "feats": "3",
-                "otherFeatures": ["Choose another Class Feature from the Level 5 or Level 8 optionss"],
+                "otherFeatures": ["Choose another Class Feature from the Level 5 or Level 8 options"],
                 "linkFeatures": ["Supernatural Force"]
             },
             "10": {
@@ -1658,7 +1658,7 @@
             "14": {
                 "pro": "5",
                 "feats": "4",
-                "otherFeatures": ["All Sphere Attacks deal an additional die of damage. For example, 2d6 becomes 3d6.", "Choose another Class Feature from the Level 5, Level 8, or Level 11 options"]
+                "otherFeatures": ["All Sphere Attacks deal an additional die of damage (for example, 2d6 becomes 3d6)", "Choose another Class Feature from the Level 5, Level 8, or Level 11 options"]
             },
             "15": {
                 "pro": "5",
