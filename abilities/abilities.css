@@ -71,4 +71,5 @@
 .sublist {
     margin-left: 2rem;
     margin-bottom: 0;
+    width: calc(100% - 2rem);
 }

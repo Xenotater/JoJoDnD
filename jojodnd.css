@@ -158,6 +158,7 @@ h1, h2, h3, th {
     font-size: 2rem;
     text-align: center;
     border-bottom: 2px solid purple;
+    background-color: mediumpurple;
 }
 
 #list-table tbody tr {
