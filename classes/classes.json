@@ -873,7 +873,9 @@
                     },
                     "15": {
                         "pro": "5",
-                        "feats": "4"
+                        "feats": "4",
+                        "otherFeatures": ["<a href='/artifacts/?focus=Stand_Arrow'>The Requiem Quietly Plays</a>"],
+                        "linkFeatures": ["Special Ability (2 SE)"]
                     },
                     "16": {
                         "pro": "5",
@@ -1729,7 +1731,7 @@
                     "6": {
                         "pro": "3",
                         "feats": "3",
-                        "featFeatures": ["Close Combat Speciaoptions"],
+                        "featFeatures": ["Close Combat Specialist"],
                         "ability": ["Ability Score Improvement"]
                     },
                     "7": {
