@@ -69,6 +69,12 @@ nav li {
     padding-bottom: 0;
     margin: .5rem;
     margin-bottom: 0;
+    text-decoration: none;
+}
+
+.nomargin {
+    margin: 0!important;
+    padding: 0!important;
 }
 
 .nav-link:hover {
