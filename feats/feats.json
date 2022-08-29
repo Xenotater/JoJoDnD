@@ -215,6 +215,15 @@
         ],
         "prereq": "Cha 13+ or <a href='/passions/?focus=Con_Artist'>Con Artist</a>"
     },
+    "Immense_Impact" : {
+        "name": "Immense Impact",
+        "desc": "You’re used to utilizing momentum to attack your foes with a powerful attack, hitting them immediately and head-on.",
+        "effects": [
+            "In order to activate this attack, you must first move at least 5 meters, then make a Melee Attack as the immediate action following it. This may activate whether you are running, falling, being thrown, etc, as long as you move more than 5 meters in the same turn immediately before your attack.",
+            "This first attack after moving deals extra damage if it hits. If the melee attack hits, it deals damage equal to the amount of meters you have moved before attacking this turn. For example, if you moved 10 meters before this attack, it would deal 10 extra damage to your target.",
+            "You may also perform a Reckless Dash, allowing you to make one free melee attack after moving in a straight line. You may use this ability an amount of times equal to your Strength Modifier per Long Rest."
+        ]
+    },
     "Interpreter": {
         "name": "Interpreter",
         "desc": "Through time spent learning languages you have gotten much better at learning new ones as well as decoding unknown languages.",
@@ -277,6 +286,14 @@
         "effects": [
             "When you fail a Saving Throw, you may instead choose to succeed.",
             "You may use this Feat an amount of times equal to half your Proficiency Bonus (rounded down) per Long Rest."
+        ]
+    },
+    "The_Narrator" : {
+        "name": "The Narrator",
+        "desc": "You're able to follow what's happening in combat and describe it for others.",
+        "effects": [
+            "As a reaction, you may use the Help Action on an ally within 10 meters. However, your character must narrarate what they are doing (Like <a href=\"https://jojo.fandom.com/wiki/Robert_E._O._Speedwagon\" target=\"_blank\">Speedwagon</a>).",
+            "You may do this an amount of times equal to your Charisma Modifier per Long Rest."
         ]
     },
     "Natural_Talent": {

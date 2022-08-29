@@ -1399,7 +1399,7 @@
                             "pro": "2",
                             "feats": "2",
                             "abilDice": "1dx",
-                            "linkFeatures": ["Custom Ability", "Detached Senses (Acts 1 & 2)", "OR", "Slippery (Acts 1 & 2)"]
+                            "linkFeatures": ["Custom Ability", "Detached Senses (Acts 1 & 2)", "Slippery (Acts 1 & 2)"]
                         },
                         {
                             "lvl": "3",
