@@ -19,12 +19,12 @@
         "ability": "Your Dexterity score increases by 2 and your Intelligence score increases by 1.",
         "custom": {
             "name": "Artist's Soul",
-            "desc": "You have proficiency in Sleight of Hand and Performance. You also gain Proficiency in a set of Artisan’s Tools or an instrument of your choice."
+            "desc": "You have proficiency in Sleight of Hand and Performance. You also gain Proficiency in a set of Artisan's Tools or an instrument of your choice."
             }
         },
     "Athlete": {
         "name": "Athlete",
-        "desc": "People who push their bodies to the limits, in order to see the true limit of humanity’s potential, and to push past those limits.",
+        "desc": "People who push their bodies to the limits, in order to see the true limit of humanity's potential, and to push past those limits.",
         "examples": ["Olympians", "Professional Sports Players", "Warriors / Soldiers"],
         "saves": "You are proficient in two of the following saving throws of your choice: Strength, Dexterity, or Constitution.",
         "ability": "Your Strength score increases by 2 and your Dexterity score increases by 1.",
@@ -132,7 +132,7 @@
         "ability": "Your Strength score increases by 2 and your Intelligence score increases by 1.",
         "custom": {
             "name": "Labor Experience",
-            "desc": "You have proficiency in Athletics, Arcana and Investigation. You also gain proficiency in a set of Artisan’s Tools of your choice."
+            "desc": "You have proficiency in Athletics, Arcana and Investigation. You also gain proficiency in a set of Artisan's Tools of your choice."
             }
         },
     "Traveler": {

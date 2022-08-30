@@ -14,7 +14,7 @@
         },
         {
             "name": "Ripple Conductors",
-            "desc": "Ripple energy conducts similarly to electricity, easiest through materials such as liquid, metal, and biomass, typically travelling through something in order to reach the ground. However, if the Ripple is put into an object with immense force, or if it is sustained, the energy will spread through it very easily. A Ripple Punch’s full effect will be felt up to 2m away from the point of impact, or 1m for a non-conductor."
+            "desc": "Ripple energy conducts similarly to electricity, easiest through materials such as liquid, metal, and biomass, typically travelling through something in order to reach the ground. However, if the Ripple is put into an object with immense force, or if it is sustained, the energy will spread through it very easily. A Ripple Punch's full effect will be felt up to 2m away from the point of impact, or 1m for a non-conductor."
         },
         {
             "name": "Ripple Points",
@@ -167,7 +167,7 @@
     },
     "Stands": {
         "name": "Stands",
-        "desc": "Stands are one of, if not, the most iconic part of JoJo’s Bizarre Adventure. Most PC’s, NPCs, and enemies that you meet or create will most likely be Stand Users. A Stand is the physical manifestation of the soul’s fighting spirit. If a person has a strong will to fight, and they are exposed to the right catalyst, they may manifest their Stand Ability in some form.",
+        "desc": "Stands are one of, if not, the most iconic part of JoJo's Bizarre Adventure. Most PC's, NPCs, and enemies that you meet or create will most likely be Stand Users. A Stand is the physical manifestation of the soul's fighting spirit. If a person has a strong will to fight, and they are exposed to the right catalyst, they may manifest their Stand Ability in some form.",
         "other": [{
             "name": "Obtaining a Stand",
         "content": ["<p>There are many ways to obtain a Stand. Very few people are lucky enough to be born with this power, passed down genetically. Some gain power when a relative gains a Stand as well, but this is a rare occurrence. In some cases, a relative that suddenly gains a Stand may also give their relatives a fever, putting them on the track to obtaining a Stand. One of the most common methods of obtaining a Stand comes from getting pierced by a <a href='/artifacts/Stand_Arrow'>Stand Arrow</a>.</p>"]
@@ -184,7 +184,7 @@
                 "<p class='center label'><b>Ability Conversion Chart:</b></p><table class='table table-striped minor'><thead><tr><th>Ability</th><th>Stand Ability</th></tr></thead><tbody><tr><td>Strength</td><td>Power</td></tr><tr><td>Dexterity</td><td>Precision</td></tr><tr><td>Constitution</td><td>Durability</td></tr><tr><td>Intelligence</td><td>Range</td></tr><tr><td>Wisdom</td><td>Speed</td></tr><tr><td>Charisma</td><td>Stand Energy</td></tr></tbody></table>",
                 "<p><b>Stand Stat Modifiers: </b>Stand Stats are based on the User's Stats. To get the Modifiers for these Stats, simply divide their score by 10.</p>",
                 "<p><b>Damage Reduction: </b>Stands have natural resistance against damage, determined by their Durability Mod. Your Stand can resist that many points of damage per round. For example, a Stand with a 100 Durability would be able to resist 10 points of damage per round, and a Stand with 40 would only be able to resist 4. Physical Attacks that hit Stands deal no damage, unless specifically stated otherwise. The only types of damage that may deal damage to Stands is damage dealt by Stands, or the Abilities of Stands. Your Stand's Damage Reduction resets at the top of each round of Initiative.</p>",
-                "<p><b>Stand Movement: </b>Stands have a Movement Speed equal to twice their Stand’s Speed Mod in meters, or a Movement Speed equal to their User, whichever is higher. Stands and Users each have a separate Movement Action. Independant-Type Stands can only move the base 10 Meters that a regular human can, unless they have a specific ability that allows them to increase it.</p>",
+                "<p><b>Stand Movement: </b>Stands have a Movement Speed equal to twice their Stand's Speed Mod in meters, or a Movement Speed equal to their User, whichever is higher. Stands and Users each have a separate Movement Action. Independant-Type Stands can only move the base 10 Meters that a regular human can, unless they have a specific ability that allows them to increase it.</p>",
                 "<p><b>Stand Range: </b>Your Stand may move a number of meters away from you equal to it's Range Mod, with a minimum of 1m.</p>",
                 "<p><b>Abilities and Stand Energy: </b>The amount of Energy your stand has is based on their Stand Energy Mod. Normal Abilities cost 1 point, Special Abilities cost more depending on the Stand type, and Abilities that manipulate Space or Time cost double the Energy they normally would. Stand Energy always fully replenishes when outside of combat.</p>"
             ]
@@ -192,7 +192,7 @@
         {
             "name": "Attacking",
             "content": [
-                "Your Stand’s normal Attacks (typically punches) are determined similarly to regular Attacks. Roll a d20 and add the Power or Precision Mod of your Stand and your Proficiency Bonus to determine if the attack hits. The amount of damage dealt is based off of your Stand’s Attack Dice plus your Power (NOT Precision) Mod.</p>",
+                "Your Stand's normal Attacks (typically punches) are determined similarly to regular Attacks. Roll a d20 and add the Power or Precision Mod of your Stand and your Proficiency Bonus to determine if the attack hits. The amount of damage dealt is based off of your Stand's Attack Dice plus your Power (NOT Precision) Mod.</p>",
                 "<p>For User Attacks, roll a d20 and add your Strength or Dexterity Mod, whichever is higher. Every Unarmed Attack deals 1d4 + Str damage. <b>Regular physical attacks DO NOT AFFECT STANDS</b> (except for Enhancement or Independent Types).</p>",
                 "<p>Speed is also very important. The total Speed score of your Stand divided by 50 is one more Attack that the Stand or the User may perform each round, with a minimum of one. If Non-Stand Users want to have multiple Attacks per round, they may take the <a href='/feats/?focus=Trained_Combatant'>Trained Combatant</a> Feat."
             ]
@@ -209,7 +209,7 @@
             "content": [
                 "<p>There are 9 different Stand Types which each function very differently from eachother. You may either choose one of these 9, or roll a d100 and choose from the table below:</p>",
                 "<table class='table table-striped minor'><thead><tr><th>Result</th><th>Stand Type</th></tr></thead><tbody><tr><td>1-35</td><td>Power</td></tr><tr><td>36-49</td><td>Ranged</td></tr><tr><td>50-69</td><td>Enhancement</td></tr><tr><td>70-79</td><td>Remote</td></tr><tr><td>80-89</td><td>Ability</td></tr><tr><td>90-93</td><td>Independent</td></tr><tr><td>94-97</td><td>Hive</td></tr><tr><td>98-99</td><td>Revenge</td></tr><tr><td>100</td><td>Act</td></tr></tbody></table>",
-                "<p><b>Multi-Type Stands: </b>Some Stands have attributes of several different types of Stand. For these Stand's Stats, take the average of each Stat multiplier for the two respective types and use those multipliers, rounded down, when figuring out your initial Stand Stats. Furthermore, if there are any limitations on a Stand type's Stat increases still apply. For example, if a Stand is both a Power/Enhancement-Type you cannot have a Range Stat above 20, even if the initial average would be higher. If you have a Power/Ability-Type you cannot increase the Stand’s Power or Durability above what it would be initially, and the Range stat still cannot get above 20. If you use Hive Type as one of your Stand types, you only get to take 1d4 + Level to increase your Stand’s Stats. You also take the lower of the Hit Dice and Attack Dice if you are using two types of stands.</p>"
+                "<p><b>Multi-Type Stands: </b>Some Stands have attributes of several different types of Stand. For these Stand's Stats, take the average of each Stat multiplier for the two respective types and use those multipliers, rounded down, when figuring out your initial Stand Stats. Furthermore, if there are any limitations on a Stand type's Stat increases still apply. For example, if a Stand is both a Power/Enhancement-Type you cannot have a Range Stat above 20, even if the initial average would be higher. If you have a Power/Ability-Type you cannot increase the Stand's Power or Durability above what it would be initially, and the Range stat still cannot get above 20. If you use Hive Type as one of your Stand types, you only get to take 1d4 + Level to increase your Stand's Stats. You also take the lower of the Hit Dice and Attack Dice if you are using two types of stands.</p>"
             ]
         },
         {
@@ -217,9 +217,19 @@
            "content": [
                "<p><b>Get Creative: </b>Stand Abilities have endless possibilities, able to do anything from cooking supernaturally good food to being able to stop time itself. The rules below should generally apply to most Stand Abilities, but you should work with your DM to create the perfect custom Ability for your Stand.",
                "<p><b>General Rules: </b>Abilities that heal or deal damage should follow the dice guidelines below, and these dice should increase every other Level (for example, at Level 3 1dx becomes 2dx). Abilities that require a Saving Throw should use the following Stand DC: 8 + Cha + Proficiency Bonus.</p>",
-               "<ul><li><b>No Dice: </b> Should be an ability that buffs/debuffs someone very little, or some sort of utility. Not combat-viable directly, but should be able to be used creatively in combat.</li><li><b>d4: </b>Group effects, healing/damage that affects a group of people. Can have a secondary effect if it is just a single target ability.</li><li><b>d6: </b>An ability that affects multiple targets and requires a Saving Throw, dealing no damage on  success, or ranged healing for a single target. Can also be touch healing that gives an additional effect.</li><li><b>d8: </b>Damage that may be added to a Stand’s punch or touch on a hit and does not require a Saving Throw. Can also be a ranged Attack that requires a Saving Throw with half damage on success. Can be touch healing that takes a single Attack or Bonus Action to perform.</li><li><b>d10: </b>Damage that may be added to a Stand’s punch or touch and requires a Saving Throw, dealing no damage on success. Can be touch healing that takes an Action to perform. Can be a ranged Attack that requires a Saving Throw, dealing no damage on success. Can be a single-target melee Attack that requires a Saving Throw, dealing half damage on success.</li><li><b>d12: </b>Can be a touch healing Ability that takes an Action as well as another type of Action (Reaction, Bonus Action, Movement Action). Can be a single-target melee Attack that requires a Saving Throw, dealing no damage on success.</li></ul>",
+               "<ul><li><b>No Dice: </b> Should be an ability that buffs/debuffs someone very little, or some sort of utility. Not combat-viable directly, but should be able to be used creatively in combat.</li><li><b>d4: </b>Group effects, healing/damage that affects a group of people. Can have a secondary effect if it is just a single target ability.</li><li><b>d6: </b>An ability that affects multiple targets and requires a Saving Throw, dealing no damage on  success, or ranged healing for a single target. Can also be touch healing that gives an additional effect.</li><li><b>d8: </b>Damage that may be added to a Stand's punch or touch on a hit and does not require a Saving Throw. Can also be a ranged Attack that requires a Saving Throw with half damage on success. Can be touch healing that takes a single Attack or Bonus Action to perform.</li><li><b>d10: </b>Damage that may be added to a Stand's punch or touch and requires a Saving Throw, dealing no damage on success. Can be touch healing that takes an Action to perform. Can be a ranged Attack that requires a Saving Throw, dealing no damage on success. Can be a single-target melee Attack that requires a Saving Throw, dealing half damage on success.</li><li><b>d12: </b>Can be a touch healing Ability that takes an Action as well as another type of Action (Reaction, Bonus Action, Movement Action). Can be a single-target melee Attack that requires a Saving Throw, dealing no damage on success.</li></ul>",
                "<p><small><b>Note: </b><i>The damage cap for these scaling dice is normally 10dx, but this does not have to be the case. Characters or enemies may be able to go far past Level 20, and therefore, would be able to deal massive amounts of Damage using them. Your DM may decide that Abilities past that may increase in the same fashion as before (an additional dice for every odd Level), or that 10dx should be the limit for balance.</i></small></p>"
            ] 
+        },
+        {
+            "name": "Substands",
+            "content": [
+                "<p><small><b>Examples of Substands:</b> <a href='https://jojowiki.com/Sheer_Heart_Attack' target='_blank'>Killer Queen's Sheer Heart Attack</a> and <a href='https://jojowiki.com/King_Crimson#Epitaph'>King Crimson's Epitaph</a></small></p>",
+                "<p>Substands are extremely rare types of stands that form under extreme conditions. These sorts of Stands typically occur when there is a great mental divide within the Stand User, or when a Stand User undergoes a massive amount of development very quickly. When you get the trait Special Ability, rather than giving yourself a Special Ability with your current Stand, you may give yourself a Substand. Substands use the same rules as regular stands, and Level-Up and gain points to their stats in the exact same way that your primary Stand does, but it may be a different type of Stand with its own Ability.</p>",
+                "<p>You may switch between your Stand and Substand as a Bonus Action when both your Stand is within 2 meters of you. When you summon your Stand, it defaults to the stand you most recently summoned, though you can switch this with a Bonus Action at any time.</p>",
+                "<p>If one Stand has more Stand Energy than the other and you switch to the one with less, the amount of stand energy available is reduced to that maximum of the other stand and remains at that amount until combat ends. For example a primary stand with 12/12 maximum energy switching to a substand with 7 max energy brings the stand's energy to 7. Even if you switch back to the primary stand without spending any energy, the primary stand now has 7/12 energy remaining. Energy spent in either form takes away from the same Stand Energy pool.</p>",
+                "<p>Aside from what is mentioned here, Substands are completely seperate Stands from their primary Stand, having different stats, a unique Ability, and gaining seperate Class Features upon Level-Up.</p>"
+            ]
         },
         {
             "name": "Stand Whispers",
@@ -236,7 +246,7 @@
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
                 "aDice": ["1d12", "2d10"],
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand’s Stats. Your Stand’s Range may not be increased past 20 (2 meters).",
+                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats. Your Stand's Range may not be increased past 20 (2 meters).",
                 "mults": [4, 3, 3, 1, 4, 2],
                 "theme": "world",
                 "level": {
@@ -376,7 +386,7 @@
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
                 "aDice": ["1d6", "1d10"],
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand’s Stats except for Power or Durability. Your Power and Durability may not be increased past their initial values.",
+                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats except for Power or Durability. Your Power and Durability may not be increased past their initial values.",
                 "mults": [3, 3, 3, 6, 3, 3],
                 "theme": "hiero",
                 "level": {
@@ -797,7 +807,7 @@
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
                 "aDice": ["1d10", "2d8"],
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand’s Stats.",
+                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats.",
                 "mults": [3, 3, 5, 5, 3, 3],
                 "theme": "love",
                 "level": {
@@ -936,7 +946,7 @@
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
                 "aDice": ["1d12", "2d10"],
-                "levelUp": "Every Level-Up, You may roll 3d4 + Level (the one you're becoming) and put that number of points into any of your Stand’s Stats.",
+                "levelUp": "Every Level-Up, You may roll 3d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats.",
                 "mults": [3, 4, 4, 7, 3, 2],
                 "theme": "cat",
                 "level": {
@@ -1071,13 +1081,13 @@
                 "exampleOf": "Independent Stands",
                 "examples": ["Anubis", "Superfly", "Foo Fighters"],
                 "links": ["Anubis", "Superfly", "Foo_Fighters"],
-                "desc": "Independent-Type Stands are quite interesting, and are one of the more rare Stand Types in JoJo’s Bizarre Adventure. These Stands are odd because they do not actually have a User, instead in control of themselves. They have the same sort of Attributes that regular Stands do and must follow most of the same rules. However, the Stand is still made up of physical matter, and thus is similar to an Enhancement type Stand in that they can be damaged physically by Non-Stand damage types.",
+                "desc": "Independent-Type Stands are quite interesting, and are one of the more rare Stand Types in JoJo's Bizarre Adventure. These Stands are odd because they do not actually have a User, instead in control of themselves. They have the same sort of Attributes that regular Stands do and must follow most of the same rules. However, the Stand is still made up of physical matter, and thus is similar to an Enhancement type Stand in that they can be damaged physically by Non-Stand damage types.",
                 "notes": ["Some Independent Stands did in fact have a user at some point, or might even still have a user. Tthey are not linked together though, as damaging the Stand does no harm to the User and vice versa. However, if a person does or did have an Independent-Type Stand they are still able to sense Stands and Ghosts, just like a normal Stand User would."],
                 "hDice": "1d10",
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
                 "aDice": ["1d8", "2d6"],
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand’s Stats except Range. Your Stand’s Range may not be increased past 0.",
+                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats except Range. Your Stand's Range may not be increased past 0.",
                 "mults": [3, 3, 4, 0,  3, 3],
                 "theme": "ff",
                 "level": {
@@ -1227,7 +1237,7 @@
                     "name": "Instance Levels",
                     "content": "<ol><li>Maximum of 10 Instances</li><li>Maximum of 100 Instances</li><li>Maximum of 250 Instances</li><li>Maximum of 500 Instances</li></ol>"
                 }],
-                "levelUp": "Every Level-Up, You may roll 1d4 + Level (the one you're becoming) and put that number of points into any of your Stand’s Stats except Durability. Your Stand’s Durability may not be increase past it's initial value.",
+                "levelUp": "Every Level-Up, You may roll 1d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats except Durability. Your Stand's Durability may not be increase past it's initial value.",
                 "mults": ["3/N", "2/N", 3, 10, "3/N", 2],
                 "theme": "bad",
                 "level": {
@@ -1362,7 +1372,7 @@
                 "exampleOf": "Act Stands",
                 "examples": ["Echoes", "Tusk"],
                 "links": ["Echoes", "Tusk"],
-                "desc": "It is said that Stands are a physical manifestation of one’s fighting spirit. However, there are some that are exposed to a <a href='/artifacts'>Stand-Granting item</a> that do not possess a proper fighting spirit, but develop a Stand regardless due to  some (often benevolent) outside force. These Stand Users will grow and develop alongside their Stand. Despite starting out extremely weak, they eventually become some of the strongest, scariest, and most versatile Stand Users. They are forced to evolve their Stand once they have developed as a person, experienced combat several times, and when they are in a situation that puts them in despair.",
+                "desc": "It is said that Stands are a physical manifestation of one's fighting spirit. However, there are some that are exposed to a <a href='/artifacts'>Stand-Granting item</a> that do not possess a proper fighting spirit, but develop a Stand regardless due to  some (often benevolent) outside force. These Stand Users will grow and develop alongside their Stand. Despite starting out extremely weak, they eventually become some of the strongest, scariest, and most versatile Stand Users. They are forced to evolve their Stand once they have developed as a person, experienced combat several times, and when they are in a situation that puts them in despair.",
                 "notes": [
                     "You may switch between your Acts as a Bonus Action once you have obtained them, all except for the Act 0 Stand. In order to evolve your Stand, you must have either; Ready to Hatch, Ready to Walk, or Ready To Fly, and you must be trapped in an event that your DM considers to be “hopeless.” Only then will your Stand evolve.",
                     "Unless stated otherwise, Class Features can only be used by the Act that gained them."
@@ -1370,7 +1380,7 @@
                 "hDice": "1d8",
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand’s Stats except those mentioned in each Act. You put all of the points into each Act, so if for example you roll to get 15 points, each Act of your Stand get 15 points to increase Stats with. Stand Energy is an exception for this, as it must be the same for each Act. When you gain a new Act, you may roll the dice to retroactively increase the Stats of the new Stand.",
+                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats except those mentioned in each Act. You put all of the points into each Act, so if for example you roll to get 15 points, each Act of your Stand get 15 points to increase Stats with. Stand Energy is an exception for this, as it must be the same for each Act. When you gain a new Act, you may roll the dice to retroactively increase the Stats of the new Stand.",
                 "acts": [{
                     "aDice": "0",
                     "note": "Act 0 Stands do not have an Ability, nor any capacity to move, attack, dodge, or evade. If they can even be summoned, they simply manifest as a large egg.",
@@ -1579,7 +1589,7 @@
                 "class": "minor widen",
                 "head": ["Material", "Range", "Damage", "Effect"],
                 "body": [
-                    ["Wood", "10/30m", "1d4 + Dex", "The Wooden Sphere will splinter and shatter upon contact, causing splinters to fly off in all directions up to 2 meters from the point of the Sphere’s impact. Those within 2 meters must make a Dex Save against your Spin DC, taking an additional 1d8 points of Piercing damage on failure. This Damage increases to 2d8 starting at Level 7, and 3d8 at Level 14."],
+                    ["Wood", "10/30m", "1d4 + Dex", "The Wooden Sphere will splinter and shatter upon contact, causing splinters to fly off in all directions up to 2 meters from the point of the Sphere's impact. Those within 2 meters must make a Dex Save against your Spin DC, taking an additional 1d8 points of Piercing damage on failure. This Damage increases to 2d8 starting at Level 7, and 3d8 at Level 14."],
                     ["Rubber", "40/240m", "1d6 + Dex", "None"],
                     ["Stone", "20/60m", "1d8 + Dex", "None"],
                     ["Metal", "10/30m", "1d10 + Dex", "None"]
@@ -1693,7 +1703,7 @@
     },
     "Non-Supernatural": {
         "name": "Non-Supernatural Classes",
-        "desc": "Despite all of the odd happenings and abilities in the world of JoJo’s Bizarre Adventure, most people don't even know about them. However, the world always needs those who fight for what they believe in. As such, these Classes also exist.",
+        "desc": "Despite all of the odd happenings and abilities in the world of JoJo's Bizarre Adventure, most people don't even know about them. However, the world always needs those who fight for what they believe in. As such, these Classes also exist.",
         "extra": [{
             "name": "Gaining a Stand",
             "desc": "If a person in a Non-Supernatural Class gains a Stand, they may erase all of their <a href='/abilities'>Abilities</a>, <a href='/feats'>Feats</a>, and Proficiencies, and then convert them into the respective Stand Type that they obtain. For example, if a Level 5 Brawler gains a Power Stand, they may opt to simply become a Level 5 Power Type Stand User instead of multiclassing. When you become a Stand User your Max HP reverts to what it was originally, then you re-roll for every Level suddenly gained. You may only convert Non-Supernatural Levels into Stand Levels, you may not convert them back."

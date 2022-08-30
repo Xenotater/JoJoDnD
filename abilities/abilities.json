@@ -297,7 +297,7 @@
         "name": "Melee Barrage",
         "classes": ["Pwr", "Rng", "Ind", "Act"],
         "desc": [
-            "As an entire turn (meaning that your Action, Bonus Action, and Movement Action are all used, and if you have used any part of your turn you may not use Melee Barrage), you may perform a number of melee attacks equal to your Stand’s Speed Modifier (+6 Speed would mean 6 attacks in one Melee Barrage), with a maximum of 10 Attacks.",
+            "Using this attack takes an entire turn (consuming Action, Bonus Action, and Movement Action), you may perform a number of melee attacks equal to your Stand’s Speed Modifier (+6 Speed would mean 6 attacks in one Melee Barrage), with a maximum of 10 Attacks.",
             "Each hit functions as normal in terms of the Attack rolls, but when you deal damage, you do not add your Stand’s Power Modifier to the Damage Rolls. The Damage Dice for these attacks does NOT increase at Level 11 (A Power Type's Damage Dice changes from 1d12 to 2d10 at Level 11, but the maximum for this ability would still be 10d12).",
             "Furthermore, you may not Activate a Stand Ability with any of these Attacks, and if you roll a 1 on any of these attack rolls, the Melee Barrage ends."
         ]
@@ -350,10 +350,9 @@
         "name": "Ranged Attack",
         "classes": ["Rng", "Abl", "Ind"],
         "desc": [
-            "Destructive energy is summoned from deep within your Stand and somehow released in a direction with the intent to harm or deal damage. As an Attack, your stand fires one or more projectiles, using your Stand’s Precision + Proficiency Bonus for the Attack rolls and adding your Speed Modifier to the damage dealt on a hit.",
-            "You may choose between three Damage Dice regarding your Ranged Attack, but the higher the damage, the less accurate it will be. Once you have chosen an option it remains the same every time you use it, unless you choose to change it when leveling up.<ul class='sublist'><li>Your Damage Dice is a d6, and you may add your Proficieincy Bonus twice to the Attack roll</li><li>Your Damage Dice is a d8, and you may add your Proficiency Bonus to the Attack roll</li><li>Your Damage Dice is a d10, but you may not add anything to the Attack roll</li></ul>",
-            "This Attack has a Short-Range of 10 meters from the Stand, with a Long-Range of 20 meters from the Stand. It can deal Stand Piercing, Stand Slashing, Stand Bludgeoning, or a different kind of damage, if it relates to your Stand or your Stand’s Abilities.",
-            "Whenever your Attack Dice improves at Level 11, this Attack’s Short-Range increases to 20 meters and the Long-Range increases to 40 meters, and you get an additional Damage Dice equal to the one you chose for your Damage previously (Example: 1d8 becomes 2d8)."
+            "Destructive energy is summoned from deep within your Stand and somehow released in a direction with the intent to harm or deal damage. Using this attack takes an entire turn (consuming Action, Bonus Action, and Movement Action), allowing you to fire Stand projectiles (flavor as you'd like) in one of two ways:",
+            "<ul class='sublist'><li><b>Focused Attack:</b> Make 1 Attack Roll against a single target in range using your Precision + Porficiency Bonus, dealing Stand damage of a type of your choice on hit. This attack deals an amount of d8s equal to the number of Attacks you have plus your Speed Modifier. For example, a Stand User with 120 Speed (and thus 3 attacks), would deal 3d8+12 damage. The range of this attack is 10 meters, increasing to 20 at Level 11.</li>",
+            "<li><b>Burst Attack:</b> Everyone within a 5 meter cone (10 meters at Level 11) in front of your Stand must make a Dexterity Saving Throw. The DC for this Save is 8 + Precision + Proficiency Bonus. If any creature within the cone fails the save, they take Stand damage of a type of your choice. This deals an amount of d8s equal to the number of Attacks you have. For example, a Stand User with 120 Speed (and thus 3 attacks), would deal 3d8 damage.</li></ul>"
         ]
     },
     "Self_Preservation": {
