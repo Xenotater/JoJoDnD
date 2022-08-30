@@ -10,7 +10,7 @@
     },
     "Art_of_Distraction": {
         "name": "Art of Distraction",
-        "desc": "People are easy to fool, this is something that you’ve learned over years of experience.",
+        "desc": "People are easy to fool, this is something that you've learned over years of experience.",
         "effects": [
             "You gain Advantage on all Performance and Sleight of Hand Checks.",
             "You may now make Sleight of Hand Checks as a Bonus Action."
@@ -19,7 +19,7 @@
     },
     "Automatic_Weapon_Proficiency": {
         "name": "Automatic Weapon Proficiency",
-        "desc": "You’ve put in hours on the shooting range, and now you can use Automatic Weapons properly.",
+        "desc": "You've put in hours on the shooting range, and now you can use Automatic Weapons properly.",
         "effects": [
             "You may add your Proficiency Bonus to your Attack rolls when using Automatic Weapons.",
             "Instead of the weapon jamming on a roll of 5 or lower, the weapon only jams on a Critical Failure.",
@@ -28,15 +28,15 @@
     },
     "Blended_Fighting": {
         "name": "Blended Fighting",
-        "desc": "Your Stand is certainly a powerful weapon, but that won’t stop you from fighting as well.",
+        "desc": "Your Stand is certainly a powerful weapon, but that won't stop you from fighting as well.",
         "effects": [
-            "When you make at least one Attack using your Stand you as the User may also make an Attack as a Bonus Action. This attack may be made with a Weapon, Unarmed Strike, or any other action that counts as a singular attack (such as a Grapple). This attack must use your own Stats, not your Stand’s."
+            "When you make at least one Attack using your Stand you as the User may also make an Attack as a Bonus Action. This attack may be made with a Weapon, Unarmed Strike, or any other action that counts as a singular attack (such as a Grapple). This attack must use your own Stats, not your Stand's."
         ],
         "prereq": "<a href='/classes/?focus=Stands'>Stand User</a> Level 1+"
     },
     "Brutality": {
         "name": "Brutality",
-        "desc": "You’ve seen a lot of combat and have learned not to hold back.",
+        "desc": "You've seen a lot of combat and have learned not to hold back.",
         "effects": [
             "If you miss your target on a Melee Attack roll you may make the same Melee Attack as a Bonus Action. If this attack lands upon the intended target it is a guaranteed Critical Hit.",
             "The damage dealt by this Brutality Attack cannot be Non-Lethal Damage.",
@@ -45,7 +45,7 @@
     },
     "Calculating": {
         "name": "Calculating",
-        "desc": "A lot of Stand Users have their ability’s strength tied to their willpower, but that is not always the case. Some use knowledge or their surroundings to make their abilities terrifying.",
+        "desc": "A lot of Stand Users have their ability's strength tied to their willpower, but that is not always the case. Some use knowledge or their surroundings to make their abilities terrifying.",
         "effects": [
             "You may use Wisdom or Intelligence to determine your Stand DC instead of Charisma.",
             "If you have other Class Features relating to your Charisma Modifier like <a href='/abilities/?focus=Stand_Energy_Recharge'>Stand Energy Recharge</a>, you may also use Wisdom or Intelligence for it instead."
@@ -63,7 +63,7 @@
     },
     "Clever_Disguise": {
         "name": "Clever Disguise",
-        "desc": "You’re used to getting away from people and fighting from a distance. However, if those coming after you have seen your face or recognize you in any way, you may need a new set of clothes and a haircut to pass yourself off as someone else.",
+        "desc": "You're used to getting away from people and fighting from a distance. However, if those coming after you have seen your face or recognize you in any way, you may need a new set of clothes and a haircut to pass yourself off as someone else.",
         "effects": [
             "You may spend 1 Minute to create a disguise for yourself.",
             "While disguised, you gain Advantage on all Deception Checks to pass yourself off as someone else and any attempts to determine your true identity are made with Disadvantage."
@@ -86,9 +86,17 @@
         ],
         "prereq": "Int 13+ or <a href='/passions/?focus=Physician'>Physician</a>"
     },
+    "Commentator" : {
+        "name": "Commentator",
+        "desc": "You're able to follow what's happening in combat and describe it for others.",
+        "effects": [
+            "As a reaction, you may use the Help Action on an ally within 10 meters. However, your character must narrarate what they are doing (Like <a href=\"https://jojo.fandom.com/wiki/Robert_E._O._Speedwagon\" target=\"_blank\">Speedwagon</a>).",
+            "You may do this an amount of times equal to your Charisma Modifier per Long Rest."
+        ]
+    },
     "Close_Combat_Specialist": {
         "name": "Close Combat Specialist",
-        "desc": "You’ve become accustomed to defending yourself, and coming out victorious, even in the stickiest of situations.",
+        "desc": "You've become accustomed to defending yourself, and coming out victorious, even in the stickiest of situations.",
         "effects": [
             "Your AC increases by 2.",
             "You may add your Proficiency Bonus to Attack rolls when using Improvised Weapons.",
@@ -97,14 +105,14 @@
     },
     "Consistent_Accuracy": {
         "name": "Consistent Accuracy",
-        "desc": "You’re very skilled at judging distance and accurately striking your target.",
+        "desc": "You're very skilled at judging distance and accurately striking your target.",
         "effects": [
-            "When making attacks using Thrown or Ranged Weapons (including <a href='/abilities/?focus=Ranged_Attack'>Ranged Attack</a>), you may aim up to the Weapon’s Long Range without Disadvantage."
+            "When making attacks using Thrown or Ranged Weapons (including <a href='/abilities/?focus=Ranged_Attack'>Ranged Attack</a>), you may aim up to the Weapon's Long Range without Disadvantage."
         ]
     },
     "Consistent_Skills": {
         "name": "Consistent Skills",
-        "desc": "You’ve practiced your craft over and over again, to the point of perfection.",
+        "desc": "You've practiced your craft over and over again, to the point of perfection.",
         "effects": [
             "When making a Skill Check that you have Proficiency or Expertise with, if you roll a 9 or lower on the d20 roll you may treat the roll as a 10."
         ]
@@ -121,7 +129,7 @@
     },
     "Demolitionist": {
         "name": "Demolitionist",
-        "desc": "You’ve handled your fair-share of explosives, and know how to do so safely.",
+        "desc": "You've handled your fair-share of explosives, and know how to do so safely.",
         "effects": [
             "When you roll a Nat 1 while throwing an explosive it becomes a dud instead of exploding in your hand.",
             "You gain Advantage on checks relating to crafting, modifying, or disarming explosive devices."
@@ -159,7 +167,7 @@
     },
     "Fortune_Teller": {
         "name": "Fortune Teller",
-        "desc": "Some people have a gift that allows them to see Fate’s inner workings. This allows them to see the future in a very specific way that isn’t very helpful until the time of the divination comes to pass.",
+        "desc": "Some people have a gift that allows them to see Fate's inner workings. This allows them to see the future in a very specific way that isn't very helpful until the time of the divination comes to pass.",
         "effects": [
             "At the end of each Long Rest, roll 3d20 and write the result of each of roll down.",
             "At any point, you may replace a d20 roll for an ally, yourself, or an enemy with one of the d20 rolls written down.",
@@ -168,15 +176,15 @@
     },
     "Headhunter": {
         "name": "Headhunter",
-        "desc": "You’ve fought the Undead many times before, and you know their tricks and how to best defeat them.",
+        "desc": "You've fought the Undead many times before, and you know their tricks and how to best defeat them.",
         "effects": [
-            "You get +5 to all Attack rolls aimed at <a href='/abilities/?focus=Undead_Nature'>Undead Creatures</a>’ heads.",
+            "You get +5 to all Attack rolls aimed at <a href='/abilities/?focus=Undead_Nature'>Undead Creatures</a>' heads.",
             "You gain Advantage on any Saving Throws against effects inflicted by an Undead Creature."
         ]
     },
     "Heart_of_Lies": {
         "name": "Heart of Lies",
-        "desc": "You’ve defeated countless enemies and overcome all challenges presented to you, dropping every foe in your way.",
+        "desc": "You've defeated countless enemies and overcome all challenges presented to you, dropping every foe in your way.",
         "effects": [
             "When one of your attacks kills an enemy, roll a d4. If you roll a 4, you gain 1 point of Inspiration."
         ],
@@ -184,7 +192,7 @@
     },
     "Heart_of_Truth": {
         "name": "Heart of Truth",
-        "desc": "You’ve gone through a lot in life. You’ve witnessed struggle, pain, and possibly even death itself. You’ve seen the absolute worst of Humanity. and that is why it is of absolute importance that you achieve your goals.",
+        "desc": "You've gone through a lot in life. You've witnessed struggle, pain, and possibly even death itself. You've seen the absolute worst of Humanity. and that is why it is of absolute importance that you achieve your goals.",
         "effects": [
             "When you use a point of Inspiration, roll a d4. If you roll a 4, you gain back a point of Inspiration."
         ],
@@ -192,7 +200,7 @@
     },
     "Heavy_Weapon_Specialist": {
         "name": "Heavy Weapon Specialist",
-        "desc": "Through all of the time you’ve spent lugging around and using heavy equipment you’ve realized how to deal the most damage using these powerful, heavy weapons.",
+        "desc": "Through all of the time you've spent lugging around and using heavy equipment you've realized how to deal the most damage using these powerful, heavy weapons.",
         "effects": [
             "When using a Two-Handed Weapon, an Attack roll of either 19 or 20 counts as a Critical Hit.",
             "When you land a successful Critical Hit, you may roll an additional Damage Die."
@@ -201,7 +209,7 @@
     },
     "Hidden_Assassin": {
         "name": "Hidden Assassin",
-        "desc": "You’ve spent a lot of time in the shadows and know how to keep yourself concealed.",
+        "desc": "You've spent a lot of time in the shadows and know how to keep yourself concealed.",
         "effects": [
             "When making an attack with a Ranged weapon you do not reveal your position after your first shot, but on your second.",
             "If you do not perform any other Action outside of this first shot, you may roll for damage twice and use the higher value."
@@ -209,15 +217,15 @@
     },
     "Immediate_Connection": {
         "name": "Immediate Connection",
-        "desc": "You’ve spent a lot of time around other people, both those that you know very well as well as strangers.",
+        "desc": "You've spent a lot of time around other people, both those that you know very well as well as strangers.",
         "effects": [
-            "You gain Advantage on all Persuasion and Deception Checks on people that you’ve met within the past 24 hours."
+            "You gain Advantage on all Persuasion and Deception Checks on people that you've met within the past 24 hours."
         ],
         "prereq": "Cha 13+ or <a href='/passions/?focus=Con_Artist'>Con Artist</a>"
     },
     "Immense_Impact" : {
         "name": "Immense Impact",
-        "desc": "You’re used to utilizing momentum to attack your foes with a powerful attack, hitting them immediately and head-on.",
+        "desc": "You're used to utilizing momentum to attack your foes with a powerful attack, hitting them immediately and head-on.",
         "effects": [
             "In order to activate this attack, you must first move at least 5 meters, then make a Melee Attack as the immediate action following it. This may activate whether you are running, falling, being thrown, etc, as long as you move more than 5 meters in the same turn immediately before your attack.",
             "This first attack after moving deals extra damage if it hits. If the melee attack hits, it deals damage equal to the amount of meters you have moved before attacking this turn. For example, if you moved 10 meters before this attack, it would deal 10 extra damage to your target.",
@@ -235,7 +243,7 @@
     },
     "Improvised_Healing": {
         "name": "Improvised Healing",
-        "desc": "You’ve spent a lot of time out in the wild, simply trying to survive in an unforgiving environment.",
+        "desc": "You've spent a lot of time out in the wild, simply trying to survive in an unforgiving environment.",
         "effects": [
             "You gain Advantage on all Survival and Medicine Checks."
         ],
@@ -243,7 +251,7 @@
     },
     "Jack_of_all_Trades": {
         "name": "Jack of all Trades",
-        "desc": "You’re decently skilled at just about everything.",
+        "desc": "You're decently skilled at just about everything.",
         "effects": [
             "You may add half of your Proficiency Bonus (rounded down) to all Skill Checks that you do not have Proficiency or Expertise in."
         ]
@@ -288,14 +296,6 @@
             "You may use this Feat an amount of times equal to half your Proficiency Bonus (rounded down) per Long Rest."
         ]
     },
-    "The_Narrator" : {
-        "name": "The Narrator",
-        "desc": "You're able to follow what's happening in combat and describe it for others.",
-        "effects": [
-            "As a reaction, you may use the Help Action on an ally within 10 meters. However, your character must narrarate what they are doing (Like <a href=\"https://jojo.fandom.com/wiki/Robert_E._O._Speedwagon\" target=\"_blank\">Speedwagon</a>).",
-            "You may do this an amount of times equal to your Charisma Modifier per Long Rest."
-        ]
-    },
     "Natural_Talent": {
         "name": "Natural Talent",
         "desc": "Through a combination of experience and natural-born talent you have gotten very good at certain tasks.",
@@ -326,7 +326,7 @@
     },
     "Paranoia": {
         "name": "Paranoia",
-        "desc": "You’ve been aware of them for a while now. You don’t know who, but you know that they’ve been after you for so long, and you’ve been evading them for what seems like forever.",
+        "desc": "You've been aware of them for a while now. You don't know who, but you know that they've been after you for so long, and you've been evading them for what seems like forever.",
         "effects": [
             "You may add your Proficiency Bonus to your Initiative Bonus, and enemies that attempt to surprise you get Disadvantage instead of Advantage on their Surprise Attack."
         ]
@@ -341,7 +341,7 @@
     },
     "Practical_Experience": {
         "name": "Practical Experience",
-        "desc": "Experience happens to be a great teacher, and you’ve learned a lot.",
+        "desc": "Experience happens to be a great teacher, and you've learned a lot.",
         "effects": [
             "You may gain Proficiency in Three Skills of your Choice.",
             "You may take this Feat multiple times if desired."
@@ -349,14 +349,14 @@
     },
     "Pressure_Point_Manipulator": {
         "name": "Pressure Point Manipulator",
-        "desc": "Through time spent studying the human body you’ve found the best way to hinder movement, cause immense pain, and defeat foes with little force. ",
+        "desc": "Through time spent studying the human body you've found the best way to hinder movement, cause immense pain, and defeat foes with little force. ",
         "effects": [
             "As an Action, you may make an Attack and choose a limb on your Target. Upon a successful hit, rather than dealing damage, the opponent may not use the limb that you targeted for an amount of turns equal to your Intelligence Modifier."
         ]
     },
     "Quick_on_your_Feet": {
         "name": "Quick on your Feet",
-        "desc": "You’re used to getting out of difficult situations using your wit.",
+        "desc": "You're used to getting out of difficult situations using your wit.",
         "effects": [
             "You may gain Proficiency in a Saving Throw of your choice."
         ]
@@ -371,7 +371,7 @@
     },
     "Resilient": {
         "name": "Resilient",
-        "desc": "Through luck or some sort of early exposure, you’ve become resistant to specific types of damage.",
+        "desc": "Through luck or some sort of early exposure, you've become resistant to specific types of damage.",
         "effects": [
             "You and your Stand may choose to either become resistant to Piercing, Slashing, or Bludgeoning damage, or become resistant to any other three damage types of your choice.",
             "You also become resistant to the Stand counterpart of the chosen type(s).",
@@ -381,14 +381,14 @@
     },
     "Scarflesh": {
         "name": "Scarflesh",
-        "desc": "You’ve gone through a lot of physical trauma, and your body is beginning to show the signs of it. Scar tissue is beginning to build up on your skin, as well as internally.",
+        "desc": "You've gone through a lot of physical trauma, and your body is beginning to show the signs of it. Scar tissue is beginning to build up on your skin, as well as internally.",
         "effects": [
             "You gain a Damage Resistance equal to your Constitution Modifier every turn."
         ]
     },
     "Shield_Master": {
         "name": "Shield Master",
-        "desc": "You’re pretty accustomed to using a shield in combat, and have learned how to move swiftly while carrying one.",
+        "desc": "You're pretty accustomed to using a shield in combat, and have learned how to move swiftly while carrying one.",
         "effects": [
             "You no longer take a penalty to your Movement Speed while carrying a shield.",
             "You may perform a shield bash attack, which uses the same Attack Bonus and Damage Dice as either an Unarmed Strike or an Improvised Weapon."
@@ -415,7 +415,7 @@
         "desc": "Due to the Nature of your Stand, there are some things that simply cannot harm you.",
         "effects": [
             "You and your Stand may gain Immunity to two damage types of your choice, but you gain Vulnerability to a damage type of your choice as well.",
-            "These Imunnities and Vulnerabilities should tie in to your Stand’s Anchor or Ability. For example, a Stand made out of Fire could be immune to Fire and Radiant Damage, but be vulnerable to Cold damage.",
+            "These Imunnities and Vulnerabilities should tie in to your Stand's Anchor or Ability. For example, a Stand made out of Fire could be immune to Fire and Radiant Damage, but be vulnerable to Cold damage.",
             "If you gain Immunity to Bludgeoning, Slashing, or Piercing, you only gain one Immunity instead of two.",
             "You also become immune to the Stand counterpart of the chosen type(s).",
             "You may gain Immunities at the cost of Vulnerabilities as many times as you wish.",
@@ -425,7 +425,7 @@
     },
     "Superhuman": {
         "name": "Superhuman",
-        "desc": "People usually have limits on how strong or smart they can get, but this is not always the case. You’ve found a way to push yourself past human limits.",
+        "desc": "People usually have limits on how strong or smart they can get, but this is not always the case. You've found a way to push yourself past human limits.",
         "effects": [
             "Pick one of your six Ability Scores to increase the maximum score for that stat by two.",
             "The Ability Score does not increase when you take this feat, only the maximum for it does.",
@@ -434,7 +434,7 @@
     },
     "Tanky": {
         "name": "Tanky",
-        "desc": "Due to your abnormally stocky build, or just sheer commitment, you don’t go down very easily in a fight.",
+        "desc": "Due to your abnormally stocky build, or just sheer commitment, you don't go down very easily in a fight.",
         "effects": [
             "Each Level, you gain an additional 2 Hit Points.",
             "This also applies retroactively, giving you twice your current Level additional HP.",
@@ -452,16 +452,16 @@
     },
     "Tavern_Brawler": {
         "name": "Tavern Brawler",
-        "desc": "Through experience and tussles, you’ve gained the ability to make objects from your environment into effective weaponry.",
+        "desc": "Through experience and tussles, you've gained the ability to make objects from your environment into effective weaponry.",
         "effects": [
             "You may add your Proficiency Bonus to Attack rolls when using any (non-weapon) object to attack somebody.",
             "If you already have Proficiency in Improvised Weapons, simply add the Proficiency Bonus again.",
-            "You may pick up objects less than 20 kg as a free action, and can pick up or hide behind an object around 1 meter in area to use it as a makeshift <a href='/weapons/?search=shield'>shield</a>. Depending on the size, and the DM’s discretion, it becomes a Shield, a Tower Shield, or a form of Cover."
+            "You may pick up objects less than 20 kg as a free action, and can pick up or hide behind an object around 1 meter in area to use it as a makeshift <a href='/weapons/?search=shield'>shield</a>. Depending on the size, and the DM's discretion, it becomes a Shield, a Tower Shield, or a form of Cover."
         ]
     },
     "Trained_Combatant": {
         "name": "Trained Combatant",
-        "desc": "You’re well-trained in combat, and really know how to overwhelm an opponent.",
+        "desc": "You're well-trained in combat, and really know how to overwhelm an opponent.",
         "effects": [
             "When you take the Attack Action, you may perform an additional Attack.",
             "You may take this Feat up to 3 times, granting a maximum of four Attacks per Action."
@@ -470,18 +470,18 @@
     },
     "Trap_Detection": {
         "name": "Trap Detection",
-        "desc": "You’ve gone through your fair share of dangerous situations. Over time, you’ve built up an awareness of Traps and the ability to better sense danger.",
+        "desc": "You've gone through your fair share of dangerous situations. Over time, you've built up an awareness of Traps and the ability to better sense danger.",
         "effects": [
             "You gain Advantage on Perception and Investigation Checks."
         ]
     },
     "Thrown_Weapon_Proficiency": {
         "name": "Thrown Weapon Proficiency",
-        "desc": "You’ve spent a lot of time throwing all sorts of objects from darts to tomahawks and more.",
+        "desc": "You've spent a lot of time throwing all sorts of objects from darts to tomahawks and more.",
         "effects": [
             "You may add your Proficiency Bonus to Attack rolls when using any weapon with the Thrown property.",
             "You may draw Thrown Weapons as a Free Action.",
-            "You may throw two of the same Thrown Weapons or objects as a single Attack, without penalty to either object’s accuracy or damage. You cannot do this with Spheres imbued with <a href='/classes/?focus=Spin'>The Spin</a>. "
+            "You may throw two of the same Thrown Weapons or objects as a single Attack, without penalty to either object's accuracy or damage. You cannot do this with Spheres imbued with <a href='/classes/?focus=Spin'>The Spin</a>. "
         ]
     },
     "Unarmed_Proficiency": {
@@ -504,7 +504,7 @@
     },
     "Veteran_Sprinter": {
         "name": "Veteran Sprinter",
-        "desc": "You’ve done a lot of running in your time, so running is kind of second nature to you at this point.",
+        "desc": "You've done a lot of running in your time, so running is kind of second nature to you at this point.",
         "effects": [
             "Your movement speed increases by 5 meters.",
             "You may Dash as a Bonus Action.",
