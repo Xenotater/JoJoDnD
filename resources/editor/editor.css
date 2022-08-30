@@ -123,6 +123,7 @@ input {
 #class {
     float: left;
     width: 70%;
+    text-align: center;
 }
 
 #level {
