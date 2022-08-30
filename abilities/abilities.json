@@ -350,7 +350,7 @@
         "name": "Ranged Attack",
         "classes": ["Rng", "Abl", "Ind"],
         "desc": [
-            "Destructive energy is summoned from deep within your Stand and somehow released in a direction with the intent to harm or deal damage. Using this attack takes an entire turn (consuming Action, Bonus Action, and Movement Action), allowing you to fire Stand projectiles (flavor as you'd like) in one of two ways:",
+            "Destructive energy is summoned from deep within your Stand and somehow released in a direction with the intent to harm or deal damage. Using this attack consumes and entire Action, allowing you to fire Stand projectiles (flavor as you'd like) in one of two ways:",
             "<ul class='sublist'><li><b>Focused Attack:</b> Make 1 Attack Roll against a single target in range using your Precision + Porficiency Bonus, dealing Stand damage of a type of your choice on hit. This attack deals an amount of d8s equal to the number of Attacks you have plus your Speed Modifier. For example, a Stand User with 120 Speed (and thus 3 attacks), would deal 3d8+12 damage. The range of this attack is 10 meters, increasing to 20 at Level 11.</li>",
             "<li><b>Burst Attack:</b> Everyone within a 5 meter cone (10 meters at Level 11) in front of your Stand must make a Dexterity Saving Throw. The DC for this Save is 8 + Precision + Proficiency Bonus. If any creature within the cone fails the save, they take Stand damage of a type of your choice. This deals an amount of d8s equal to the number of Attacks you have. For example, a Stand User with 120 Speed (and thus 3 attacks), would deal 3d8 damage.</li></ul>"
         ]
