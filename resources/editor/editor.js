@@ -1,82 +1,27 @@
 window.jsPDF = window.jspdf.jsPDF;
+var scores = {"str":0,"dex":0,"con":0,"int":0,"wis":0,"cha":0};
 
 $(document).ready(function () {
-    $("input").on("keyup", function() {
+    $("input").on("blur", function() {
+        detectChange(this);
+    });
+
+    $("input").on("keyup", function(e) {
+        if (e.key === "Enter" || e.keyCode === 13) {
+            detectChange(this);
+        }
+    });
+
+    $(".stat-score").on("focus"), function() {
         if ($("#autofill").is(":checked")) {
-            var id = $(this).attr("id");
-            if ($(this).hasClass("scales")) {
-                scale(this);
-            }
+            saveScore(this);
+        }
+    }
 
-            if ($(this).hasClass("numbers")) {
-                $(this).val($(this).val().replace(/[^0-9\-]/g, ""));
-            }
-
-            if ($(this).hasClass("stat-score")) {
-                var stat = id.replace("-score", "");
-                updateMod(stat);  
-                updateSave(stat);
-                updateSkills(stat);
-            }
-
-            if ($(this).hasClass("stat-mod")) {
-                var stat = id.replace("-mod", "");
-                updateSave(stat);
-                updateSkills(stat);
-            }
-
-            if ($(this).hasClass("stand-score")) {
-                updateStandMod(id.replace("-score", ""));
-            }
-
-            if (id == "name" || id == "Uname" || id == "Fname") {
-                updateName(id);
-            }
-
-            switch(id.replace("-score", "").replace("-mod", "")) {
-                case "str":
-                    break;
-                case "dex":
-                    updateInitiative();
-                    updateAC();
-                    break;
-                case "con":
-                    updateAC();
-                    break;
-                case "int":
-                    updateProfs();
-                    break;
-                case "wis":
-                    updateInitiative();
-                    updateAC();
-                    break;
-                case "cha":
-                    updateDC();
-                    break;
-                case "pre":
-                    updateSAC();
-                    break;
-                case "dur":
-                    updateSAC();
-                    break
-                case "spd":
-                    updateSpeed();
-                    updateSAC();
-                    updateAtks();
-                    break;
-                case "bonus":
-                    updateAllSkills();
-                    updateDC();
-                    break;
-                case "level":
-                    updateBonus();
-                    updateFeats();
-                    break;
-                case "ac":
-                    updateHAC();
-                    break;
-                default:
-                    break;
+    $(".stat-score").on("keyup", function(e) {
+        if (e.key === "Enter" || e.keyCode === 13) {
+            if ($("#autofill").is(":checked")) {
+                saveScore(this);
             }
         }
     });
@@ -158,22 +103,159 @@ $(document).ready(function () {
     });
 });
 
+function detectChange(object) {
+    if ($("#autofill").is(":checked")) {
+        var id = $(object).attr("id");
+        if ($(object).hasClass("scales")) {
+            scale(object);
+        }
+
+        if ($(object).hasClass("numbers")) {
+            $(object).val($(object).val().replace(/[^0-9\-]/g, ""));
+        }
+
+        if ($(object).hasClass("stat-score")) {
+            var stat = id.replace("-score", "");
+            updateMod(stat);  
+            updateSave(stat);
+            updateSkills(stat);
+        }
+
+        if ($(object).hasClass("stat-mod")) {
+            var stat = id.replace("-mod", "");
+            updateSave(stat);
+            updateSkills(stat);
+        }
+
+        if ($(object).hasClass("stand-score")) {
+            updateStandMod(id.replace("-score", ""));
+        }
+
+        if (id == "name" || id == "Uname" || id == "Fname") {
+            updateName(id);
+        }
+
+        switch(id.replace("-score", "").replace("-mod", "")) {
+            case "str":
+                break;
+            case "dex":
+                updateInitiative();
+                updateAC();
+                break;
+            case "con":
+                updateAC();
+                break;
+            case "int":
+                updateProfs();
+                break;
+            case "wis":
+                updateInitiative();
+                updateAC();
+                break;
+            case "cha":
+                updateDC();
+                break;
+            case "Sdex":
+                updateSAC();
+                break;
+            case "Scon":
+                updateSAC();
+                break
+            case "Swis":
+                updateSpeed();
+                updateSAC();
+                updateAtks();
+                break;
+            case "bonus":
+                updateAllSkills();
+                updateDC();
+                break;
+            case "level":
+                updateBonus();
+                updateFeats();
+                break;
+            case "ac":
+                updateHAC();
+                break;
+            default:
+                break;
+        }
+    }
+}
+
+function saveScore(object) {
+    var score = $(object).val();
+    if (score == "")
+        score = 0;
+    scores[$(object).attr("id").replace("-score", "")] = parseInt(score);
+}
+
 function updateMod(stat) {
-    var score = $("#" + stat + "-score").val()
-    var mod = Math.floor((score-10)/2);
-    if (mod > 0)
-        $("#" + stat + "-mod").val("+" + mod);
-    else
-        $("#" + stat + "-mod").val(mod);
+    var score = parseInt($("#" + stat + "-score").val());
+    if (!isNaN(score)) {
+        var mod = Math.floor((score-10)/2);
+        if (mod > 0)
+            $("#" + stat + "-mod").val("+" + mod);
+        else
+            $("#" + stat + "-mod").val(mod);
+        updateStandScore(stat, score-scores[stat]);
+    }
+}
+
+function updateStandScore(stat, diff) {
+    var cls = $("#class").val();
+    var multipliers = {"str":0,"dex":0,"con":0,"int":0,"wis":0,"cha":0};
+
+    switch(cls) {
+        case "pow":
+            multipliers = {"str":4,"dex":3,"con":3,"int":1,"wis":4,"cha":2};
+            break;
+        case "rng":
+            multipliers = {"str":3,"dex":3,"con":3,"int":6,"wis":3,"cha":3};
+            break;
+        case "rem":
+            multipliers = {"str":3,"dex":2,"con":4,"int":5,"wis":3,"cha":2};
+            break;
+        case "abl":
+            multipliers = {"str":1,"dex":3,"con":1,"int":4,"wis":3,"cha":5};
+            break;
+        case "enh":
+            multipliers = {"str":3,"dex":3,"con":5,"int":5,"wis":3,"cha":3};
+            break;
+        case "rev":
+            multipliers = {"str":3,"dex":4,"con":4,"int":7,"wis":3,"cha":2};
+            break;
+        case "ind":
+            multipliers = {"str":3,"dex":3,"con":4,"int":0,"wis":3,"cha":3};
+            break;
+        case "hive":
+            multipliers = {"str":3,"dex":2,"con":3,"int":10,"wis":3,"cha":2};
+            break;
+        //can't do act since each act has differnt mults/stats
+        default:
+            break;
+    }
+
+    if (cls != "oth" && cls != "Act") {
+        diff *= multipliers[stat];
+        target = $("#S" + stat + "-score");
+        var val = parseInt(target.val());
+        if (isNaN(val))
+            val = 0;
+        target.val(val + diff);
+        updateStandMod("S" + stat);
+    }
 }
 
 function updateStandMod(stat) {
-    var score = $("#" + stat + "-score").val()
-    var mod = Math.floor((score/10));
-    if (mod > 0)
-        $("#" + stat + "-mod").val("+" + mod);
-    else
-        $("#" + stat + "-mod").val(mod);
+    var score = $("#" + stat + "-score").val();
+    if (score != "") {
+        var mod = Math.floor((score/10));
+        if (mod > 0)
+            $("#" + stat + "-mod").val("+" + mod);
+        else
+            $("#" + stat + "-mod").val(mod);
+    }
 }
 
 function updateInitiative() {
