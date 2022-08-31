@@ -3,17 +3,33 @@
 }
 
 #desc {
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
-#autofill {
-    width: 14px;
-    height: 14px;
-    margin-bottom: 8px;
+#header {
+    height: 120px;
+    border-bottom: 2px dashed purple;
+    margin-bottom: 12px;
 }
 
-#autolbl {
-    font-size: 14px;
+#header div:last-child {
+    border-right: none;
+}
+
+#load, #save {
+    font-size: 1.5rem;
+    margin-top: 12px;
+    width: 130px;
+}
+
+.option {
+    width: 16px;
+    height: 16px;
+}
+
+#options {
+    font-size: 32px;
+    line-height: 20px;
 }
 
 .divider {
@@ -22,14 +38,24 @@
     margin-right: auto;
 }
 
-#download {
-    margin-top: 16px;
-    text-align: center;
+#import {
+    display: none;
 }
 
-#options {
-    width: 200px;
-    margin: auto;
+.header-btn {
+    background-color: rgb(214, 214, 214);
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.header-btn:hover {
+    background-color: rgb(187, 187, 187);
+}
+
+#import-btn, #export-btn {
+    font-size: 24px;
+    margin: 1rem;
+    margin-top: 12px;
 }
 
 #download input {
@@ -38,14 +64,8 @@
 }
 
 #dl-btn {
-    border: 2px solid black;
-    border-radius: 5px;
     font-size: 1.5rem;
-    background-color: rgb(214, 214, 214);
-}
-
-#dl-btn:hover {
-    background-color: rgb(187, 187, 187);
+    margin-top: 12px;
 }
 
 #hidden-dl {
@@ -62,6 +82,7 @@
     width: 8.5in;
     height: 11in;
     padding: 2rem;
+    border: 2px solid black;
 }
 
 .heading {
@@ -402,20 +423,4 @@ h2 {
 
 code {
     color: purple;
-}
-
-#import {
-    display: none;
-}
-
-#import-btn, #export-btn {
-    border: 1px solid black;
-    border-radius: 3px;
-    font-size: 14px;
-    background-color: rgb(214, 214, 214);
-    margin: .5rem;
-}
-
-#import-btn:hover, #export-btn:hover {
-    background-color: rgb(187, 187, 187);
 }
