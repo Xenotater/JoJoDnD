@@ -1,7 +1,30 @@
 window.jsPDF = window.jspdf.jsPDF;
+var pages = [true,true,true];
 var scores = {"str":0,"dex":0,"con":0,"int":0,"wis":0,"cha":0};
 
 $(document).ready(function () {
+    $(".pageSelect").change(function() {
+        var num = parseInt($(this).val().replace("p", ""));
+
+        if (pages[num-1]) {
+            $("#page"+num).hide();
+            pages[num-1] = false;
+        }
+        else {
+            $("#page"+num).show();
+            pages[num-1] = true;
+        }
+
+        if (pages[0] && (pages[1] || pages[2]))
+            $("#div1").show();
+        else
+            $("#div1").hide();
+        if (pages[1] && pages[2])
+            $("#div2").show();
+        else
+            $("#div2").hide();
+    })
+
     $("input").on("blur", function() {
         detectChange(this);
     });
@@ -26,7 +49,7 @@ $(document).ready(function () {
         }
     });
 
-    $(".savecheck").change(function () {
+    $(".savecheck").change(function() {
         if ($("#autofill").is(":checked")) {
             var stat = $(this).attr("id").replace("-save", "");
             updateSave(stat);
