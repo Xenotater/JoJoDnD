@@ -251,7 +251,7 @@ h1, h2, h3, th {
     }
 }
 
-@media (min-width: 970px){
+@media (min-width: 971px){
     .navbar-expand-custom {
         flex-direction: row;
         flex-wrap: nowrap;
