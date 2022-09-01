@@ -155,6 +155,18 @@ $(document).ready(function () {
         $("#popSignIn").remove();
         logIn();
     });
+
+    $("#signUp").on("click", "", function () {
+        alert("This Feature Isn't Ready Yet");
+    });
+
+    $("body").on("click", "#signIn", function () {
+        alert("This Feature Isn't Ready Yet");
+    });
+
+    $("body").on("click", "#save", function () {
+        logIn();
+    });
 });
 
 function popLoad() {
