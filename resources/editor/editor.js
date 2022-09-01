@@ -1,6 +1,7 @@
 window.jsPDF = window.jspdf.jsPDF;
 var pages = [true,true,true];
 var scores = {"str":0,"dex":0,"con":0,"int":0,"wis":0,"cha":0};
+var loggedIn = false;
 
 $(document).ready(function () {
     $(".pageSelect").change(function() {
@@ -124,7 +125,82 @@ $(document).ready(function () {
     $("#export-btn").click(function() {
         exportData();
     });
+
+    $("#load").click(function() {
+        popLoad();
+    });
+
+    $("body").on("click", "#closeLoad", function() {
+        $("#popLoad").remove();
+    });
+
+    $("body").on("click", "#closeSignIn", function() {
+        $("#popSignIn").remove();
+    });
+
+    $("body").on("click", "#login", function () {
+        if (loggedIn) {
+            logOut();
+        }
+        else
+            logIn();
+    });
+
+    $("body").on("click", "#toSignUp", function () {
+        $("#popSignIn").remove();
+        signUp();
+    });
+    
+    $("body").on("click", "#toSignIn", function () {
+        $("#popSignIn").remove();
+        logIn();
+    });
 });
+
+function popLoad() {
+    var newText = "<div id='popLoad' class='center'>";
+    newText += "<div class='content center' id='load-window'>";
+    newText += "<i id='login' class='bi bi-door-open'></i>";
+    newText += "<input type='search' id='search' placeholder='Search' autofocus>";
+    newText += "<i id='closeLoad' class='bi bi-x-lg'></i>";
+    newText += "</div></div>"
+    $("body").append(newText);
+}
+
+function logOut() {
+    // $("#login").removeClass("bi-door-open");
+    // $("#login").addClass("bi-door-closed");
+    // loggedIn = false;
+}
+
+function logIn() {
+    var newText = "<div id='popSignIn' class='center'>";
+    newText += "<div class='content' id='signIn-window'>";
+    newText += "<i id='closeSignIn' class='bi bi-x-lg'></i>";
+    newText += "<div id='form'><h2>Sign In</h2>";
+    newText += "<form id='login-form'>";
+    newText += "<label for='user'>Username:</label><br><input type='text' id='user' name='user' required><br>";
+    newText += "<label for='pass'>Password:</label><br><input type='password' id='pass' name='pass' required><br>";
+    newText += "<input type='submit' value='Login' id='signIn'>"
+    newText += "<br><a id='toSignUp'>Create Account</a>";
+    newText += "</form></div></div></div>";
+    $("body").append(newText);
+}
+
+function signUp() {
+    var newText = "<div id='popSignIn' class='center'>";
+    newText += "<div class='content' id='signIn-window'>";
+    newText += "<i id='closeSignIn' class='bi bi-x-lg'></i>";
+    newText += "<div id='form'><h2>Sign Up</h2>";
+    newText += "<form id='signUp-form'>";
+    newText += "<label for='user'>Username:</label><br><input type='text' id='user' name='user' required><br>";
+    newText += "<label for='pass'>Password:</label><br><input type='password' id='pass' name='pass' required><br>";
+    newText += "<label for='conf'>Confirm Password:</label><br><input type='password' id='conf' name='conf' required><br>";
+    newText += "<input type='submit' value='Submit' id='signUp'>"
+    newText += "<br><a id='toSignIn'>Back</a>";
+    newText += "</form></div></div></div>";
+    $("body").append(newText);
+}
 
 function detectChange(object) {
     if ($("#autofill").is(":checked")) {
