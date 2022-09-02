@@ -616,7 +616,6 @@ code {
     margin-top: 1rem;
     text-align: center;
     width: 250px;
-    height: 64px;
     animation: slide 0.5s ease-out;
     animation-fill-mode: both;
     overflow-y: scroll;
@@ -667,7 +666,44 @@ code {
     margin-bottom: 12px;
 }
 
+#characters, .simplebar-content {
+    width: 100%;
+    height: 100%;
+}
+
+#chars {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.charCard {
+    height: 250px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 5px;
+    overflow-x: hidden;
+    /* float: left; */
+    background-color: blueviolet;
+    margin: 12px;
+    cursor: pointer;
+}
+
+.charCard:hover {
+    box-shadow: -3px 3px 3px 3px black;
+}
+
 .charImg {
-    height: 336px;
-    width: 330px;
+    width: 100%;
+    height: 90%;
+    border-bottom: 2px solid black;
+}
+
+.charName {
+    width: 100%;
+    height: 10%;
 }

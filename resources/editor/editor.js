@@ -177,7 +177,7 @@ $(document).ready(function () {
         }
     });
 
-    $("body").on("click", ".loadChar", function() {
+    $("body").on("click", ".charCard", function() {
         var id = $(this).attr("id").replace("char", "");
         loadCharacter(id);
     });
@@ -756,7 +756,6 @@ function respond(text) {
 
 function saveChar() {
     var result = exportData("save");
-    console.log(result);
     $.post("save.php", {action: "save", name: result[0], form: result[1], img: result[2]}, function(data) {
         respond(data);
         updateCharacters();
@@ -765,7 +764,6 @@ function saveChar() {
 
 function loadCharacter(id) {
     $.post("load.php", {action: "load", id: id}, function(data) {
-        //console.log(data);
         if (data) {
             file = {};
             file["form"] = data.split("-------")[1];
