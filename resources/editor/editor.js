@@ -2,8 +2,11 @@ window.jsPDF = window.jspdf.jsPDF;
 var pages = [true,true,true];
 var scores = {"str":0,"dex":0,"con":0,"int":0,"wis":0,"cha":0};
 var loggedIn = false;
+var charID = -1;
 
 $(document).ready(function () {
+    checkLoggedIn();
+
     $(".pageSelect").change(function() {
         var num = parseInt($(this).val().replace("p", ""));
 
@@ -123,7 +126,7 @@ $(document).ready(function () {
     });
 
     $("#export-btn").click(function() {
-        exportData();
+        exportData("export");
     });
 
     $("#load").click(function() {
@@ -143,49 +146,86 @@ $(document).ready(function () {
             logOut();
         }
         else
-            logIn();
+            popLogIn();
     });
 
     $("body").on("click", "#toSignUp", function () {
         $("#popSignIn").remove();
-        signUp();
+        popSignUp();
     });
     
     $("body").on("click", "#toSignIn", function () {
         $("#popSignIn").remove();
-        logIn();
+        popLogIn();
     });
 
     $("#signUp").on("click", "", function () {
-        alert("This Feature Isn't Ready Yet");
+        alert("This Feature Isn't Ready Yet.");
+        //signUp();
     });
 
     $("body").on("click", "#signIn", function () {
-        alert("This Feature Isn't Ready Yet");
+        alert("This Feature Isn't Ready Yet.");
+        //logIn();
     });
 
     $("body").on("click", "#save", function () {
-        logIn();
+        if (!loggedIn)
+            popLogIn();
+        else {
+            saveChar();
+        }
+    });
+
+    $("body").on("click", "#closeResponse", function() {
+        closeResponse();
+    });
+
+    $("body").on("click", ".loadChar", function() {
+        var id = $(this).attr("id").replace("char", "");
+        loadCharacter(id);
     });
 });
+
+function checkLoggedIn() {
+    $.post("login.php", {action: "check"}, function(data) {
+        loggedIn = data;
+    });
+}
 
 function popLoad() {
     var newText = "<div id='popLoad' class='center'>";
     newText += "<div class='content center' id='load-window'>";
-    newText += "<i id='login' class='bi bi-door-open'></i>";
-    newText += "<input type='search' id='search' placeholder='Search' autofocus>";
+    newText += "<i id='login' class='bi bi-door-"
+    if (loggedIn)
+        newText += "closed";
+    else
+        newText += "open";
+    newText += "'></i>";
+    newText += "<input type='search' id='search' placeholder='Search'>";
     newText += "<i id='closeLoad' class='bi bi-x-lg'></i>";
+    newText += "<div id='characters'></div>";
     newText += "</div></div>"
     $("body").append(newText);
+    updateCharacters();
+}
+
+function updateCharacters() {
+    $("#characters").empty();
+    $.post("characters.php", {action: "chars"}, function(data) {
+        $("#characters").append(data);
+    });
 }
 
 function logOut() {
-    // $("#login").removeClass("bi-door-open");
-    // $("#login").addClass("bi-door-closed");
-    // loggedIn = false;
+    $.post("logout.php", function(data) {
+        loggedIn = false;
+        $("#popLoad").remove();
+        popLoad();
+    });
 }
 
-function logIn() {
+function popLogIn() {
     var newText = "<div id='popSignIn' class='center'>";
     newText += "<div class='content' id='signIn-window'>";
     newText += "<i id='closeSignIn' class='bi bi-x-lg'></i>";
@@ -199,7 +239,7 @@ function logIn() {
     $("body").append(newText);
 }
 
-function signUp() {
+function popSignUp() {
     var newText = "<div id='popSignIn' class='center'>";
     newText += "<div class='content' id='signIn-window'>";
     newText += "<i id='closeSignIn' class='bi bi-x-lg'></i>";
@@ -212,6 +252,34 @@ function signUp() {
     newText += "<br><a id='toSignIn'>Back</a>";
     newText += "</form></div></div></div>";
     $("body").append(newText);
+}
+
+function logIn() {
+    var user = $("#user").val(), pass = $("#pass").val();
+    if (user != "" && pass != "")
+        $.post("login.php", {action: "login", user: user, pass: pass}, function(data) {
+            if(data == "<h5 id='login-success'>Login Successful.</h5>")
+                loggedIn = true;
+            $("#login-failure").remove();
+            $("#signIn-window").append(data);
+            $("#popSignIn").remove();
+            $("#login").removeClass("bi-door-open");
+            $("#login").addClass("bi-door-closed");
+            updateCharacters();
+        });
+}
+
+function signUp() {
+    var user = $("#user").val(), pass = $("#pass").val(), conf = $("#conf").val();
+    if (user != "" && pass != "")
+        $.post("signup.php", {action: "signup", user: user, pass: pass, conf: conf}, function(data) {
+            if(data == "<h5 id='login-success'>Account successfully created.</h5>") {
+                $("#popSignIn").remove();
+                popLogIn();
+            }
+            $("#login-failure").remove();
+            $("#signIn-window").append(data);
+        });
 }
 
 function detectChange(object) {
@@ -624,18 +692,22 @@ function filter(node) {
     return true;
 }
 
-function exportData() {
+function exportData(mode) {
     var data = {};
     data["form"] = JSON.stringify($("#pages").serializeArray());
     data["img"] = $("#char-img").attr("src");
     var file = new Blob([JSON.stringify(data)], {type: "text/plain"});
 
     var name;
-        if ($("#name").val().length > 0)
-            name = $("#name").val().replace(/ /g, "_").toLowerCase();
-        else
-            name = "character"
-    saveAs(file, name + "_data.json");
+    if ($("#name").val().length > 0)
+        name = $("#name").val().replace(/ /g, "_").toLowerCase();
+    else
+        name = "character"
+
+    if (mode == "export")
+        saveAs(file, name + "_data.json");
+    else if (mode == "save")
+        return [name, data["form"], data["img"]];
 }
 
 //thanks to kflorence for creating a deserialize plugin https://stackoverflow.com/a/8918929
@@ -668,4 +740,43 @@ function scale(object) {
         $(object).css("font-size", "16px");
     else
         $(object).css("font-size", "12px");
+}
+
+function respond(text) {
+    closeResponse();
+    $("body").append("<div id='response'><i id='closeResponse' class='bi bi-x-lg'></i>" + text + "</div>");
+    if ($("#response-text").html().indexOf("!") != -1) {
+        $("#response").addClass("success");
+    }
+    else
+        $("#response").addClass("failure");
+}
+
+function closeResponse() {
+    $("#response").remove();
+}
+
+function saveChar() {
+    var result = exportData("save");
+    console.log(result);
+    $.post("save.php", {action: "save", name: result[0], form: result[1], img: result[2]}, function(data) {
+        respond(data);
+        updateCharacters();
+    });
+}
+
+function loadCharacter(id) {
+    $.post("load.php", {action: "load", id: id}, function(data) {
+        //console.log(data);
+        if (data) {
+            file = {};
+            file["form"] = data.split("-------")[1];
+            file["img"] = data.split("-------")[0];
+            console.log(JSON.parse(file["form"]));
+            importData(file);
+            respond("<h5 id='response-text'>Your character was loaded!</h5>");
+        }
+        else
+            respond("<h5 id='response-text'>An error occurred, please contact the site administrator.</h5>");
+    });
 }

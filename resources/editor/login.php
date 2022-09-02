@@ -1,5 +1,11 @@
 <?php
-    if ($_POST["action"] == "login")  {
+    if ($_POST["action"] == "check") {
+        if (session_start() && !empty($_SESSION["loggedin"]))
+            echo true;
+        else
+            echo false;
+    }
+    elseif ($_POST["action"] == "login")  {
         @$mysqli = new mysqli("localhost", "kyler", "dbadmin", "JoJoDnD"); /* @ prevents error from sending, custom error handle below */
 
         if($mysqli->connect_error) {
@@ -9,7 +15,7 @@
             $user = $mysqli->real_escape_string($_POST["user"]);
             $pass = md5($mysqli->real_escape_string($_POST["pass"]));
 
-            $result = $mysqli->query("SELECT id FROM admins WHERE username = '$user' AND password = '$pass'");
+            $result = $mysqli->query("SELECT id FROM users WHERE username = '$user' AND password = '$pass'");
             
             if ($result) {
                 $match = $result->num_rows;

@@ -38,6 +38,8 @@
                     while ($row = $result->fetch_assoc()) {
                         $contacts[] = array("ID"=>$row["id"],"Name"=>$row["name"],"Email"=>$row["email"],"Subject"=>$row["subject"],"Comment"=>$row["comment"]);
                     }
+                    $result->close();
+			        $mysqli->close();
                 }
             }
         ?>

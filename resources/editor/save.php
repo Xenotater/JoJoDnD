@@ -1,0 +1,46 @@
+<?php
+    if ($_POST["action"] == "save")  {
+        if (session_start() && !empty($_SESSION["loggedin"])) {
+            $mysqli = new mysqli("localhost", "kyler", "dbadmin", "JoJoDnD");
+
+            if($mysqli->connect_error) {
+                echo "<h5 id='response-text'>An error occurred, please contact the site administrator.</h5>";
+            }
+            else {
+                $user = $_SESSION["loggedin"];
+                $name = $_POST["name"];
+                $img = $_POST["img"];
+                $form = $_POST["form"];
+
+                if ($name == "" || $img == "" || $form == "") {
+                    echo "<h5 id='response-text'>An error occurred, please contact the site administrator.</h5>";
+                    exit;
+                }
+
+                $result = $mysqli->query("SELECT id FROM characters WHERE username = '$user' AND name = '$name'");
+
+                if ($result) {
+                    if ($result->num_rows == 0) {
+                        $mysqli->query("INSERT INTO characters (username, name, img, data) VALUES ('$user', '$name', '$img', '$form')");
+
+                        if ($mysqli->error)
+                            echo "<h5 id='response-text'>An error occurred, please contact the site administrator.</h5><p>{$mysqli->error}</p>";
+                        else 
+                            echo "<h5 id='response-text'>Your character was saved!</h5>";
+                    }
+                    else {
+                        $mysqli->query("UPDATE characters SET data = '$form', img = '$img' WHERE username = '$user' AND name = '$name'");
+
+                        if ($mysqli->error)
+                            echo "<h5 id='response-text'>An error occurred, please contact the site administrator.</h5><p>{$mysqli->error}</p>";
+                        else 
+                            echo "<h5 id='response-text'>Your character was saved!</h5>";
+                    }                    
+                    $mysqli->close();
+                    $result->close();
+                }
+            }
+        }
+    }
+    exit;
+?>
