@@ -26,7 +26,8 @@
                     exit;
                 }
                 else {
-                    $result = $mysqli->query("SELECT * FROM characters");
+                    $user = $_SESSION["loggedin"];
+                    $result = $mysqli->query("SELECT * FROM characters WHERE username = '$user'");
                     $characters = array();
                     while ($row = $result->fetch_assoc()) {
                         $characters[] = array("ID"=>$row["id"], "Username"=>$row["username"], "Name"=>$row["name"], "Image"=>$row["img"], "Data"=>$row["data"]);
@@ -34,15 +35,16 @@
                     $result->close();
 			        $mysqli->close();
                 }
-                echo "<h1 id='greeting'>Welcome " . $_SESSION["loggedin"] . "</h1>";
+                echo "<h1 id='greeting'>" . $_SESSION["loggedin"] . "'s Saved Characters</h1>";
             }
         ?>
         <div id='chars'>
             <?php
                 for ($i = 0; $i < count($characters); $i++) {
                     $id = $characters[$i]["ID"];
-                    echo "<div class='loadChar' id='char" . $id . "'>";
-                    echo "<p>Name: " . $characters[$i]["Name"] . ", Username: " . $characters[$i]["Username"] . "<p><img class='charImg' src='" . $characters[$i]["Image"] . "' alt='charImg'>";
+                    echo "<div class='charCard' id='char" . $id . "'>";
+                    echo "<img class='charImg' src='" . $characters[$i]["Image"] . "' alt='charImg'>";
+                    echo "<span class='charName'>". $characters[$i]["Name"] . "</span>";
                     echo "</div>";
                 }
             ?>
