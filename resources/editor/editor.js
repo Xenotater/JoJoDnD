@@ -177,10 +177,6 @@ $(document).ready(function () {
         }
     });
 
-    $("body").on("click", "#closeResponse", function() {
-        closeResponse();
-    });
-
     $("body").on("click", ".loadChar", function() {
         var id = $(this).attr("id").replace("char", "");
         loadCharacter(id);
@@ -196,15 +192,16 @@ function checkLoggedIn() {
 function popLoad() {
     var newText = "<div id='popLoad' class='center'>";
     newText += "<div class='content center' id='load-window'>";
-    newText += "<i id='login' class='bi bi-door-"
+    newText += "<div id='charHead'><i id='login' class='bi bi-door-"
     if (loggedIn)
         newText += "closed";
     else
         newText += "open";
     newText += "'></i>";
     newText += "<input type='search' id='search' placeholder='Search'>";
-    newText += "<i id='closeLoad' class='bi bi-x-lg'></i>";
-    newText += "<div id='characters'></div>";
+    newText += "<i id='closeLoad' class='bi bi-x-lg'></i></div>";
+    //newText += "<div class='divider'></div>";
+    newText += "<div data-simplebar id='simple'><div id='characters'></div></div>";
     newText += "</div></div>"
     $("body").append(newText);
     updateCharacters();
@@ -743,17 +740,18 @@ function scale(object) {
 }
 
 function respond(text) {
-    closeResponse();
-    $("body").append("<div id='response'><i id='closeResponse' class='bi bi-x-lg'></i>" + text + "</div>");
+    $("#response").remove();
+    $("body").append("<div id='response'>" + text + "</div>");
     if ($("#response-text").html().indexOf("!") != -1) {
         $("#response").addClass("success");
     }
     else
         $("#response").addClass("failure");
-}
-
-function closeResponse() {
-    $("#response").remove();
+    setTimeout(function() {
+        $("#response").fadeOut(500, function() {
+            $("#response").remove();
+        });
+    }, 3000);
 }
 
 function saveChar() {
@@ -772,8 +770,8 @@ function loadCharacter(id) {
             file = {};
             file["form"] = data.split("-------")[1];
             file["img"] = data.split("-------")[0];
-            console.log(JSON.parse(file["form"]));
             importData(file);
+            $("#popLoad").remove();
             respond("<h5 id='response-text'>Your character was loaded!</h5>");
         }
         else
