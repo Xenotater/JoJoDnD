@@ -27,7 +27,10 @@
                 }
                 else {
                     $user = $_SESSION["loggedin"];
-                    $result = $mysqli->query("SELECT * FROM characters WHERE username = '$user'");
+                    if ($user == "admin")
+                        $result = $mysqli->query("SELECT * FROM characters");
+                    else
+                        $result = $mysqli->query("SELECT * FROM characters WHERE username = '$user'");
                     $characters = array();
                     while ($row = $result->fetch_assoc()) {
                         $characters[] = array("ID"=>$row["id"], "Username"=>$row["username"], "Name"=>$row["name"], "Image"=>$row["img"], "Data"=>$row["data"]);
@@ -35,7 +38,7 @@
                     $result->close();
 			        $mysqli->close();
                 }
-                echo "<h1 id='greeting'>" . $_SESSION["loggedin"] . "'s Saved Characters</h1>";
+                echo "<h1 id='greeting'>" . $user . "'s Saved Characters</h1>";
             }
         ?>
         <div id='chars'>
@@ -43,8 +46,14 @@
                 for ($i = 0; $i < count($characters); $i++) {
                     $id = $characters[$i]["ID"];
                     echo "<div class='charCard' id='char" . $id . "'>";
-                    echo "<img class='charImg' src='" . $characters[$i]["Image"] . "' alt='charImg'>";
-                    echo "<span class='charName'>". $characters[$i]["Name"] . "</span>";
+                    if ($user == "admin") {
+                        echo "<img class='charImgA' src='" . $characters[$i]["Image"] . "' alt='charImg'>";
+                        echo "<p class='charInfo'>" . $characters[$i]["Username"] . "<br>" . $characters[$i]["Name"] . "</p>";
+                    }
+                    else {
+                        echo "<img class='charImg' src='" . $characters[$i]["Image"] . "' alt='charImg'>";
+                        echo "<span class='charName'>". $characters[$i]["Name"] . "</span>";
+                    }
                     echo "</div>";
                 }
             ?>

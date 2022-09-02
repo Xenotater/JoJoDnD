@@ -7,7 +7,10 @@
                 $user = $_SESSION["loggedin"];
                 $id = $_POST["id"];
 
-                $result = $mysqli->query("SELECT * FROM characters WHERE username = '$user' AND id = '$id'");
+                if ($user == "admin")
+                    $result = $mysqli->query("SELECT * FROM characters WHERE id = '$id'");
+                else
+                    $result = $mysqli->query("SELECT * FROM characters WHERE username = '$user' AND id = '$id'");
 
                 if ($result) {
                     if ($result->num_rows == 1) {
