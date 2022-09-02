@@ -159,7 +159,7 @@
     line-height: 20px;
 }
 
-.divider {
+#pages .divider {
     width: 8.5in;
     margin-left: auto;
     margin-right: auto;
@@ -607,10 +607,6 @@ code {
     color: purple;
 }
 
-#characters {
-    margin-top: 2.5rem;
-}
-
 #response {
     position: fixed;
     left: 2rem;
@@ -660,12 +656,18 @@ code {
     background-color: palevioletred;
 }
 
+#simple {
+    height: calc(100% - 3rem - 12px);
+}
+
+#charHead {
+    width: 100%;
+    height: 3rem;
+    border-bottom: 2px dashed purple;
+    margin-bottom: 12px;
+}
+
 .charImg {
     height: 336px;
     width: 330px;
-}
-
-#chars {
-    height: 100%;
-    overflow-y: scroll;
 }
