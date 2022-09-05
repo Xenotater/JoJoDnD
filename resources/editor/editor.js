@@ -181,6 +181,11 @@ $(document).ready(function () {
         var id = $(this).attr("id").replace("char", "");
         loadCharacter(id);
     });
+
+    $("body").on("input", "#search", function() {
+        console.log("hit");
+        updateCharacters();
+    });
 });
 
 function checkLoggedIn() {
@@ -211,6 +216,9 @@ function updateCharacters() {
     $("#characters").empty();
     $.post("characters.php", {action: "chars"}, function(data) {
         $("#characters").append(data);
+        query = $("#search").val();
+        if (query != "")
+            search(query);
     });
 }
 
@@ -775,4 +783,20 @@ function loadCharacter(id) {
         else
             respond("<h5 id='response-text'>An error occurred, please contact the site administrator.</h5>");
     });
+}
+
+function search(query) {
+    var not = false;
+    
+    if (query.match(/^NOT */)) {
+        not = true;
+        query = query.replace(/^NOT */, "");
+    }
+
+    var chars = $("#chars").children();
+
+    for (i=0;i<chars.length;i++) {
+        if ((!chars[i].textContent.toLowerCase().includes(query.toLowerCase()) && !not) || (chars[i].textContent.toLowerCase().includes(query.toLowerCase()) && not))
+            chars[i].remove();
+    }
 }
