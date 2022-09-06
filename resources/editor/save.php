@@ -28,7 +28,10 @@
                     }
                 }
                 else {
-                    $mysqli->query("UPDATE characters SET data = '$form', img = '$img' WHERE username = '$user' AND id = '$id'");
+                    if ($user == "admin")
+                        $mysqli->query("UPDATE characters SET data = '$form', img = '$img' WHERE id = '$id'");
+                    else
+                        $mysqli->query("UPDATE characters SET data = '$form', img = '$img' WHERE username = '$user' AND id = '$id'");
 
                     if ($mysqli->error)
                         echo "<h5 id='response-text'>An error occurred, please contact the site administrator.</h5><p>{$mysqli->error}</p>";
