@@ -22,7 +22,7 @@
     width: 130px;
 }
 
-#popLoad, #popSignIn {
+#popLoad, #popSignIn, #popConf {
     position: fixed;
     top: 0;
     left: 0;
@@ -32,24 +32,25 @@
     align-items: center;
 }
 
-#closeLoad, #closeSignIn {
-    position: relative;
-    top: -8px;
+#closeLoad, #closeSignIn, #closeConf {
+    position: absolute;
+    top: 8px;
+    right: 8px;
     margin: 0;
-    float: right;
     color: darkred;
     font-size: 32px;
     cursor: pointer;
     line-height: 0;
 }
 
-#closeLoad:hover, #closeSignIn:hover {
+#closeLoad:hover, #closeSignIn:hover, #closeConf:hover {
     font-size: 40px;
-    top: -12px;
-    right: -4px;
+    top: 4px;
+    right: 4px;
 }
 
 #load-window {
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -77,6 +78,7 @@
 }
 
 #signIn-window {
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -104,14 +106,14 @@
     display: inline-block;
 }
 
-#signIn, #signUp {
+#signIn, #signUp, .renameBtn, .delBtn {
     width: auto;
     height: 40px;
     border-radius: 2px;
     margin-bottom: 10px;
 }
 
-#signIn:hover, #signUp:hover {
+#signIn:hover, #signUp:hover, .renameBtn:hover, .delBtn {
     background-color: rgb(189, 189, 189);
 }
 
@@ -125,7 +127,7 @@
     color: blue;
 }
 
-#login-failure {
+#login-failure, #del-failure {
     margin-top: 1rem;
     color: darkred;
     animation: flash 0.5s ease-in-out;
@@ -691,10 +693,16 @@ code {
     background-color: blueviolet;
     margin: 12px;
     cursor: pointer;
+    position: relative;
 }
 
 .charCard:hover {
     box-shadow: -3px 3px 3px 3px black;
+}
+
+.loadBox {
+    width: 100%;
+    height: 100%;
 }
 
 .charImg {
@@ -717,4 +725,58 @@ code {
 .charInfo {
     width: 100%;
     height: 20%;
+}
+
+.bi-three-dots-vertical {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 24px;
+    color:rgba(240, 240, 240, 0.5)
+}
+
+.bi-three-dots-vertical:hover {
+    color: rgba(122, 122, 122, 0.75);
+}
+
+.drop {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 8px;
+    text-align: left;
+    border: 2px solid black;
+    border-radius: 3px;
+    background-color: mediumpurple;
+}
+
+.drop a {
+    width: 100%;
+    height: auto;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.drop a:hover {
+    background-color: rgb(118, 87, 180);
+}
+
+.drop a:last-child {
+    color: darkred;
+}
+
+#confirm-window {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 40%;
+    min-width: 250px;
+    box-shadow: -5px 5px 5px 5px black;
+}
+
+#newName, #confDel {
+    height: 45px;
+    margin-bottom: 1rem;
 }

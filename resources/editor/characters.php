@@ -46,6 +46,9 @@
                 for ($i = 0; $i < count($characters); $i++) {
                     $id = $characters[$i]["ID"];
                     echo "<div class='charCard' id='char" . $id . "'>";
+                    echo "<i class='bi bi-three-dots-vertical' id='opt" . $id . "'></i><div class='drop' id='drop" . $id . "'>";
+                    echo "<a href='#'>Rename</a><a href='#'>Duplicate</a><a href='#'>Delete</a></div>";
+                    echo "<div class='loadBox'>";
                     if ($user == "admin") {
                         echo "<img class='charImgA' src='" . $characters[$i]["Image"] . "' alt='charImg'>";
                         echo "<p class='charInfo'>" . $characters[$i]["Username"] . "<br>" . $characters[$i]["Name"] . "</p>";
@@ -54,7 +57,7 @@
                         echo "<img class='charImg' src='" . $characters[$i]["Image"] . "' alt='charImg'>";
                         echo "<span class='charName'>". $characters[$i]["Name"] . "</span>";
                     }
-                    echo "</div>";
+                    echo "</div></div>";
                 }
             ?>
         </div>

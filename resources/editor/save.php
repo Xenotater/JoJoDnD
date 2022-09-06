@@ -8,6 +8,7 @@
             }
             else {
                 $user = $_SESSION["loggedin"];
+                $id = $_POST["id"];
                 $name = $_POST["name"];
                 $img = $_POST["img"];
                 $form = $_POST["form"];
@@ -17,28 +18,25 @@
                     exit;
                 }
 
-                $result = $mysqli->query("SELECT id FROM characters WHERE username = '$user' AND name = '$name'");
+                if ($id == -1) {
+                    $mysqli->query("INSERT INTO characters (username, name, img, data) VALUES ('$user', '$name', '$img', '$form')");
 
-                if ($result) {
-                    if ($result->num_rows == 0) {
-                        $mysqli->query("INSERT INTO characters (username, name, img, data) VALUES ('$user', '$name', '$img', '$form')");
-
-                        if ($mysqli->error)
-                            echo "<h5 id='response-text'>An error occurred, please contact the site administrator.</h5><p>{$mysqli->error}</p>";
-                        else 
-                            echo "<h5 id='response-text'>Your character was saved!</h5>";
-                    }
+                    if ($mysqli->error)
+                        echo "<h5 id='response-text'>An error occurred, please contact the site administrator.</h5><p>{$mysqli->error}</p>";
                     else {
-                        $mysqli->query("UPDATE characters SET data = '$form', img = '$img' WHERE username = '$user' AND name = '$name'");
-
-                        if ($mysqli->error)
-                            echo "<h5 id='response-text'>An error occurred, please contact the site administrator.</h5><p>{$mysqli->error}</p>";
-                        else 
-                            echo "<h5 id='response-text'>Your character was saved!</h5>";
-                    }                    
-                    $mysqli->close();
-                    $result->close();
+                        echo $mysqli->insert_id . "<h5 id='response-text'>Your character was saved!</h5>"; //passing the new id back this way feels wrong
+                    }
                 }
+                else {
+                    $mysqli->query("UPDATE characters SET data = '$form', img = '$img' WHERE username = '$user' AND id = '$id'");
+
+                    if ($mysqli->error)
+                        echo "<h5 id='response-text'>An error occurred, please contact the site administrator.</h5><p>{$mysqli->error}</p>";
+                    else 
+                        echo "<h5 id='response-text'>Your character was saved!</h5>"; 
+                }
+
+                $mysqli->close();
             }
         }
     }

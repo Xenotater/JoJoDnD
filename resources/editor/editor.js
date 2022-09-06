@@ -92,7 +92,7 @@ $(document).ready(function () {
     });
 
     //img upload render assisted by https://medium.com/@iamcodefoxx/how-to-upload-and-preview-an-image-with-javascript-749b92711b91
-    $("#img-input").change(function () {
+    $("#img-input").change(function() {
         var reader = new FileReader();
         reader.addEventListener("load", () => {
             var upload = reader.result;
@@ -116,7 +116,7 @@ $(document).ready(function () {
         $("#import").click();
     });
 
-    $("#import").change(function () {
+    $("#import").change(function() {
         var reader = new FileReader();
         reader.addEventListener("load", () => {
             var data = JSON.parse(reader.result);
@@ -141,7 +141,11 @@ $(document).ready(function () {
         $("#popSignIn").remove();
     });
 
-    $("body").on("click", "#login", function () {
+    $("body").on("click", "#closeConf", function() {
+        $("#popConf").remove();
+    });
+
+    $("body").on("click", "#login", function() {
         if (loggedIn) {
             logOut();
         }
@@ -149,27 +153,27 @@ $(document).ready(function () {
             popLogIn();
     });
 
-    $("body").on("click", "#toSignUp", function () {
+    $("body").on("click", "#toSignUp", function() {
         $("#popSignIn").remove();
         popSignUp();
     });
     
-    $("body").on("click", "#toSignIn", function () {
+    $("body").on("click", "#toSignIn", function() {
         $("#popSignIn").remove();
         popLogIn();
     });
 
-    $("#signUp").on("click", "", function () {
+    $("#signUp").on("click", "", function() {
         alert("This Feature Isn't Ready Yet.");
         //signUp();
     });
 
-    $("body").on("click", "#signIn", function () {
+    $("body").on("click", "#signIn", function() {
         alert("This Feature Isn't Ready Yet.");
         //logIn();
     });
 
-    $("body").on("click", "#save", function () {
+    $("body").on("click", "#save", function() {
         if (!loggedIn)
             popLogIn();
         else {
@@ -177,14 +181,47 @@ $(document).ready(function () {
         }
     });
 
-    $("body").on("click", ".charCard", function() {
-        var id = $(this).attr("id").replace("char", "");
+    $("body").on("click", ".loadBox", function() {
+        var id = $(this).parent().attr("id").replace("char", "");
         loadCharacter(id);
     });
 
     $("body").on("input", "#search", function() {
-        console.log("hit");
         updateCharacters();
+    });
+
+    $("body").on("click", ".bi-three-dots-vertical", function() {
+        $("#drop" + $(this).attr("id").replace("opt", "")).css("display", "unset");
+    });
+
+    $(document).mouseup(function(e) {
+        if (!$(".drop").is(e.target) && $(".drop").has(e.target).length === 0) 
+            $(".drop").css("display", "none");
+    });
+
+    $("body").on("click", ".drop", function(e) {
+        var id = $(this).parent().attr("id").replace("char", "");
+        switch(e.target.textContent) {
+            case "Rename":
+                popRename(id);
+                break;
+            case "Duplicate":
+                dupe(id);
+                break;
+            case "Delete":
+                popDel(id);
+                break;
+            default:
+                break;
+        }
+    });
+
+    $("body").on("click", ".renameBtn", function() {
+        rename($(this).attr("id").replace("rename", ""));
+    });
+    
+    $("body").on("click", ".delBtn", function() {
+        del($(this).attr("id").replace("del", ""));
     });
 });
 
@@ -216,8 +253,9 @@ function updateCharacters() {
     $("#characters").empty();
     $.post("characters.php", {action: "chars"}, function(data) {
         $("#characters").append(data);
+
         query = $("#search").val();
-        if (query != "")
+        if (query)
             search(query);
     });
 }
@@ -234,13 +272,13 @@ function popLogIn() {
     var newText = "<div id='popSignIn' class='center'>";
     newText += "<div class='content' id='signIn-window'>";
     newText += "<i id='closeSignIn' class='bi bi-x-lg'></i>";
-    newText += "<div id='form'><h2>Sign In</h2>";
+    newText += "<h2>Sign In</h2>";
     newText += "<form id='login-form'>";
     newText += "<label for='user'>Username:</label><br><input type='text' id='user' name='user' required><br>";
     newText += "<label for='pass'>Password:</label><br><input type='password' id='pass' name='pass' required><br>";
     newText += "<input type='submit' value='Login' id='signIn'>"
     newText += "<br><a id='toSignUp'>Create Account</a>";
-    newText += "</form></div></div></div>";
+    newText += "</form></div></div>";
     $("body").append(newText);
 }
 
@@ -248,14 +286,14 @@ function popSignUp() {
     var newText = "<div id='popSignIn' class='center'>";
     newText += "<div class='content' id='signIn-window'>";
     newText += "<i id='closeSignIn' class='bi bi-x-lg'></i>";
-    newText += "<div id='form'><h2>Sign Up</h2>";
+    newText += "<h2>Sign Up</h2>";
     newText += "<form id='signUp-form'>";
     newText += "<label for='user'>Username:</label><br><input type='text' id='user' name='user' required><br>";
     newText += "<label for='pass'>Password:</label><br><input type='password' id='pass' name='pass' required><br>";
     newText += "<label for='conf'>Confirm Password:</label><br><input type='password' id='conf' name='conf' required><br>";
     newText += "<input type='submit' value='Submit' id='signUp'>"
     newText += "<br><a id='toSignIn'>Back</a>";
-    newText += "</form></div></div></div>";
+    newText += "</form></div></div>";
     $("body").append(newText);
 }
 
@@ -764,7 +802,9 @@ function respond(text) {
 
 function saveChar() {
     var result = exportData("save");
-    $.post("save.php", {action: "save", name: result[0], form: result[1], img: result[2]}, function(data) {
+    $.post("save.php", {action: "save", id: charID, name: result[0], form: result[1], img: result[2]}, function(data) {
+        if (data.match(/^[0-9]+/))
+            charID = parseInt(data.match(/^[0-9]+/)[0]);
         respond(data);
         updateCharacters();
     });
@@ -778,6 +818,7 @@ function loadCharacter(id) {
             file["img"] = data.split("-------")[0];
             importData(file);
             $("#popLoad").remove();
+            charID = id;
             respond("<h5 id='response-text'>Your character was loaded!</h5>");
         }
         else
@@ -798,5 +839,60 @@ function search(query) {
     for (i=0;i<chars.length;i++) {
         if ((!chars[i].textContent.toLowerCase().includes(query.toLowerCase()) && !not) || (chars[i].textContent.toLowerCase().includes(query.toLowerCase()) && not))
             chars[i].remove();
+    }
+}
+
+function popRename(id) {
+    $(".drop").css("display", "none");
+    var newText = "<div id='popConf' class='center'>";
+    newText += "<div class='content' id='confirm-window'>";
+    newText += "<i id='closeConf' class='bi bi-x-lg'></i>";
+    newText += "<h2>New Name</h2>";
+    newText += "<input type='text' id='newName'>";
+    newText += "<button class='renameBtn' id='rename" + id + "'>Rename</button>"
+    newText += "</div></div></div>";
+    $("body").append(newText);
+    $("#newName").val($("#char" + id).children()[2].textContent);
+}
+
+function popDel(id) {
+    $(".drop").css("display", "none");
+    var newText = "<div id='popConf' class='center'>";
+    newText += "<div class='content' id='confirm-window'>";
+    newText += "<i id='closeConf' class='bi bi-x-lg'></i>";
+    newText += "<h2>Delete this Character?</h2><p>This CANNOT be undone. Type \"Delete\" below to confirm.</p>";
+    newText += "<input type='text' id='confDel'>";
+    newText += "<button class='delBtn' id='del" + id + "'>Confirm</button>"
+    newText += "</div></div></div>"; 
+    $("body").append(newText);
+}
+
+function rename(id) {
+    var newName = $("#newName").val();
+    $.post("rename.php", {action: "rename", id: id, name: newName}, function(data) {
+        $("#popConf").remove();
+        respond(data);
+        updateCharacters();
+    });
+}
+
+function dupe(id) {
+    $.post("duplicate.php", {action: "dupe", id: id}, function(data) {
+        respond(data);
+        updateCharacters();
+    });
+}
+
+function del(id) {
+    if ($("#confDel").val() == "Delete") {
+        $.post("delete.php", {action: "del", id: id}, function(data) {
+            $("#popConf").remove();
+            respond(data);
+            updateCharacters();
+        });
+    }
+    else {
+        $("#del-failure").remove();
+        $("#confirm-window").append("<p id='del-failure'>Type \"Delete\" to confirm.</p>");
     }
 }
