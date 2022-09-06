@@ -55,7 +55,7 @@
     margin-right: auto;
     text-align: center;
     width: 80%;
-    height: 60%;
+    height: 75%;
     box-shadow: -5px 5px 5px 5px black;
 }
 
@@ -113,7 +113,7 @@
     margin-bottom: 10px;
 }
 
-#signIn:hover, #signUp:hover, .renameBtn:hover, .delBtn {
+#signIn:hover, #signUp:hover, .renameBtn:hover, .delBtn:hover {
     background-color: rgb(189, 189, 189);
 }
 
@@ -689,15 +689,18 @@ code {
     border: 2px solid black;
     border-radius: 5px;
     overflow: hidden;
-    /* float: left; */
     background-color: blueviolet;
     margin: 12px;
     cursor: pointer;
     position: relative;
 }
 
-.charCard:hover {
+.charCard:hover, #newChar:hover {
     box-shadow: -3px 3px 3px 3px black;
+}
+
+.curChar {
+    box-shadow: -3px 3px 3px 3px yellow;
 }
 
 .loadBox {
@@ -779,4 +782,20 @@ code {
 #newName, #confDel {
     height: 45px;
     margin-bottom: 1rem;
+}
+
+#newChar {
+    position: relative;
+    height: 250px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 12px;
+}
+
+#newChar i {
+    position: absolute;
+    top: calc(50% - 16px);
+    left: calc(50% - 16px);
 }
