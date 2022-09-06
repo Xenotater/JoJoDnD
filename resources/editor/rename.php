@@ -6,7 +6,7 @@
             if(!$mysqli->connect_error) {
                 $user = $_SESSION["loggedin"];
                 $id = $_POST["id"];
-                $name = $_POST["name"];
+                $name = $mysqli->real_escape_string($_POST["name"]);
 
                 if ($user == "admin")
                     $mysqli->query("UPDATE characters SET name = '$name' WHERE id = '$id'");

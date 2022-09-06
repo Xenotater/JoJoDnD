@@ -84,11 +84,7 @@ $(document).ready(function () {
     });
 
     $("#reset").click(function() {
-        $("#char-img").attr("src", "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=");
-        $("#char-img").css("display", "none");
-        $("#image").css("background-color", "white");
-        imgOff();
-        imgOn();
+        resetImg();
     });
 
     //img upload render assisted by https://medium.com/@iamcodefoxx/how-to-upload-and-preview-an-image-with-javascript-749b92711b91
@@ -163,14 +159,12 @@ $(document).ready(function () {
         popLogIn();
     });
 
-    $("#signUp").on("click", "", function() {
-        alert("This Feature Isn't Ready Yet.");
-        //signUp();
+    $("body").on("click", "#signUp", function() {
+        signUp();
     });
 
     $("body").on("click", "#signIn", function() {
-        alert("This Feature Isn't Ready Yet.");
-        //logIn();
+        logIn();
     });
 
     $("body").on("click", "#save", function() {
@@ -223,6 +217,14 @@ $(document).ready(function () {
     $("body").on("click", ".delBtn", function() {
         del($(this).attr("id").replace("del", ""));
     });
+
+    $("body").on("click", "#newChar", function() {
+        $("#popLoad").remove();
+        $("#pages")[0].reset();
+        resetImg();
+        charID = -1;
+        respond("<h5 id='response-text'>New character created!</h5>");
+    });
 });
 
 function checkLoggedIn() {
@@ -242,7 +244,6 @@ function popLoad() {
     newText += "'></i>";
     newText += "<input type='search' id='search' placeholder='Search'>";
     newText += "<i id='closeLoad' class='bi bi-x-lg'></i></div>";
-    //newText += "<div class='divider'></div>";
     newText += "<div data-simplebar id='simple'><div id='characters'></div></div>";
     newText += "</div></div>"
     $("body").append(newText);
@@ -253,6 +254,8 @@ function updateCharacters() {
     $("#characters").empty();
     $.post("characters.php", {action: "chars"}, function(data) {
         $("#characters").append(data);
+
+        $("#char" + charID).addClass("curChar");
 
         query = $("#search").val();
         if (query)
@@ -273,7 +276,7 @@ function popLogIn() {
     newText += "<div class='content' id='signIn-window'>";
     newText += "<i id='closeSignIn' class='bi bi-x-lg'></i>";
     newText += "<h2>Sign In</h2>";
-    newText += "<form id='login-form'>";
+    newText += "<form id='login-form' onsubmit='return false'>";
     newText += "<label for='user'>Username:</label><br><input type='text' id='user' name='user' required><br>";
     newText += "<label for='pass'>Password:</label><br><input type='password' id='pass' name='pass' required><br>";
     newText += "<input type='submit' value='Login' id='signIn'>"
@@ -287,7 +290,7 @@ function popSignUp() {
     newText += "<div class='content' id='signIn-window'>";
     newText += "<i id='closeSignIn' class='bi bi-x-lg'></i>";
     newText += "<h2>Sign Up</h2>";
-    newText += "<form id='signUp-form'>";
+    newText += "<form id='signUp-form' onsubmit='return false'>";
     newText += "<label for='user'>Username:</label><br><input type='text' id='user' name='user' required><br>";
     newText += "<label for='pass'>Password:</label><br><input type='password' id='pass' name='pass' required><br>";
     newText += "<label for='conf'>Confirm Password:</label><br><input type='password' id='conf' name='conf' required><br>";
@@ -301,13 +304,14 @@ function logIn() {
     var user = $("#user").val(), pass = $("#pass").val();
     if (user != "" && pass != "")
         $.post("login.php", {action: "login", user: user, pass: pass}, function(data) {
-            if(data == "<h5 id='login-success'>Login Successful.</h5>")
+            if(data == "<h5 id='login-success'>Login Successful.</h5>") {
                 loggedIn = true;
+                $("#popSignIn").remove();
+                $("#login").removeClass("bi-door-open");
+                $("#login").addClass("bi-door-closed");
+            }
             $("#login-failure").remove();
             $("#signIn-window").append(data);
-            $("#popSignIn").remove();
-            $("#login").removeClass("bi-door-open");
-            $("#login").addClass("bi-door-closed");
             updateCharacters();
         });
 }
@@ -513,7 +517,7 @@ function updateAC() {
 }
 
 function updateSAC() {
-    var pre = parseInt($("#pre-mod").val()), dur = parseInt($("#dur-mod").val()), spd = parseInt($("#spd-mod").val());
+    var pre = parseInt($("#Sdex-mod").val()), dur = parseInt($("#Scon-mod").val()), spd = parseInt($("#Swis-mod").val());
     var sac = 10 + pre + dur + spd - Math.min(pre, dur, spd);
     if (isNaN(sac))
         sac = "";
@@ -584,9 +588,11 @@ function updateAllSkills() {
 }
 
 function updateSpeed() {
-    var speed  = parseInt($("#spd-mod").val()) * 2;
+    var speed  = parseInt($("#Swis-mod").val()) * 2;
     if (isNaN(speed))
         speed = "";
+    if (speed < 10)
+        speed = 10;
     $("#sspeed").val(speed);
 }
 
@@ -617,7 +623,7 @@ function updateProfs() {
 }
 
 function updateAtks() {
-    var score = Math.floor($("#spd-score").val() / 50) + 1;
+    var score = Math.floor($("#Swis-score").val() / 50) + 1;
     if (isNaN(score))
         score = 1;
     $("#atks").val(score);
@@ -667,6 +673,14 @@ function imgOn() {
 function imgOff() {
     $(".img-icon").css("display", "none");
     $("#blur").css("display", "none");
+}
+
+function resetImg() {
+    $("#char-img").attr("src", "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=");
+    $("#char-img").css("display", "none");
+    $("#image").css("background-color", "white");
+    imgOff();
+    imgOn();
 }
 
 //PDF generation assisted by https://www.freakyjolly.com/html2canvas-multipage-pdf-tutorial/
@@ -805,7 +819,7 @@ function saveChar() {
     $.post("save.php", {action: "save", id: charID, name: result[0], form: result[1], img: result[2]}, function(data) {
         if (data.match(/^[0-9]+/))
             charID = parseInt(data.match(/^[0-9]+/)[0]);
-        respond(data);
+        respond(data.replace(/^[0-9]+/, ""));
         updateCharacters();
     });
 }

@@ -59,6 +59,7 @@
                     }
                     echo "</div></div>";
                 }
+                echo "<div class='center' id='newChar'><h2><b><i class='bi bi-plus-square'></i></b></h2></div>";
             ?>
         </div>
     </body>

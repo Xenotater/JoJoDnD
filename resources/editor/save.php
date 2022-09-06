@@ -9,9 +9,9 @@
             else {
                 $user = $_SESSION["loggedin"];
                 $id = $_POST["id"];
-                $name = $_POST["name"];
-                $img = $_POST["img"];
-                $form = $_POST["form"];
+                $name = $mysqli->real_escape_string($_POST["name"]);
+                $img = $mysqli->real_escape_string($_POST["img"]);
+                $form = $mysqli->real_escape_string($_POST["form"]);
 
                 if ($name == "" || $img == "" || $form == "") {
                     echo "<h5 id='response-text'>An error occurred, please contact the site administrator.</h5>";
