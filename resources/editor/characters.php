@@ -49,6 +49,8 @@
                     echo "<i class='bi bi-three-dots-vertical' id='opt" . $id . "'></i><div class='drop' id='drop" . $id . "'>";
                     echo "<a href='#'>Rename</a><a href='#'>Duplicate</a><a href='#'>Delete</a></div>";
                     echo "<div class='loadBox'>";
+                    if ($characters[$i]["Image"] == "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=")
+                        $characters[$i]["Image"] = "../Assets/default.png";
                     if ($user == "admin") {
                         echo "<img class='charImgA' src='" . $characters[$i]["Image"] . "' alt='charImg'>";
                         echo "<p class='charInfo'>" . $characters[$i]["Username"] . "<br>" . $characters[$i]["Name"] . "</p>";
