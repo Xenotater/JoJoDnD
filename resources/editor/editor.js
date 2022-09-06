@@ -253,7 +253,7 @@ function popLoad() {
 function updateCharacters() {
     $("#characters").empty();
     $.post("characters.php", {action: "chars"}, function(data) {
-        $(".load").remove();
+        $("#characters").empty();
         $("#characters").append(data);
 
         $("#char" + charID).addClass("curChar");
