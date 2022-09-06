@@ -38,7 +38,6 @@
                     else 
                         echo "<h5 id='response-text'>Your character was saved!</h5>"; 
                 }
-
                 $mysqli->close();
             }
         }

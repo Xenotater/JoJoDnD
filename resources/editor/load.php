@@ -17,9 +17,9 @@
                         $fetch = $result->fetch_assoc();
                         echo $fetch["img"] . "-------" . $fetch["data"];
                     }              
-                    $mysqli->close();
                     $result->close();
                 }
+                $mysqli->close();
             }
         }
     }

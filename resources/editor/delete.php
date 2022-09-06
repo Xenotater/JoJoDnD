@@ -16,6 +16,7 @@
                     echo "<h5 id='response-text'>An error occurred, please contact the site administrator.</h5><p>{$mysqli->error}</p>";
                 else
                     echo "<h5 id='response-text'>Your character was deleted!</h5>"; 
+                $mysqli->close();
             }
             else
                 echo "<h5 id='response-text'>An error occurred, please contact the site administrator.</h5>";
