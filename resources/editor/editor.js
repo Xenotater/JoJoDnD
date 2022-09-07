@@ -177,7 +177,7 @@ $(document).ready(function () {
 
     $("body").on("click", ".loadBox", function() {
         var id = $(this).parent().attr("id").replace("char", "");
-        loadCharacter(id);
+        loadChar(id);
     });
 
     $("body").on("input", "#search", function() {
@@ -826,7 +826,7 @@ function saveChar() {
     });
 }
 
-function loadCharacter(id) {
+function loadChar(id) {
     $.post("load.php", {action: "load", id: id}, function(data) {
         if (data) {
             file = {};
