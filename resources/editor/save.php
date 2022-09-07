@@ -41,6 +41,8 @@
                 $mysqli->close();
             }
         }
+        else
+            echo "<h5 id='response-text'>An error occurred, please contact the site administrator.</h5>";   
     }
     exit;
 ?>
