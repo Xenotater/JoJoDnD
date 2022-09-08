@@ -40,6 +40,6 @@
         }
     }
     else
-        header("Location: .");
+        header("Location: /not_found");
     exit;
 ?>

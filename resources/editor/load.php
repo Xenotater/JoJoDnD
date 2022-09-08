@@ -23,5 +23,7 @@
             }
         }
     }
+    else
+        header("Location: /not_found");
     exit;
 ?>
