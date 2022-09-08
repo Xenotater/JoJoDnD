@@ -1,7 +1,7 @@
 window.jsPDF = window.jspdf.jsPDF;
 var pages = [true,true,true];
 var scores = {"str":0,"dex":0,"con":0,"int":0,"wis":0,"cha":0};
-var loggedIn = false;
+var loggedIn = 0;
 var charID = -1;
 
 $(document).ready(function () {
@@ -229,11 +229,12 @@ $(document).ready(function () {
 
 function checkLoggedIn() {
     $.post("login.php", {action: "check"}, function(data) {
-        loggedIn = data;
+        loggedIn = parseInt(data);
     });
 }
 
 function popLoad() {
+    checkLoggedIn();
     var newText = "<div id='popLoad' class='center'>";
     newText += "<div class='content center' id='load-window'>";
     newText += "<div id='charHead'><i id='login' class='bi bi-door-"
@@ -267,7 +268,7 @@ function updateCharacters() {
 
 function logOut() {
     $.post("logout.php", function(data) {
-        loggedIn = false;
+        loggedIn = 0;
         $("#popLoad").remove();
         popLoad();
     });
@@ -307,7 +308,7 @@ function logIn() {
     if (user != "" && pass != "")
         $.post("login.php", {action: "login", user: user, pass: pass}, function(data) {
             if(data == "<h5 id='login-success'>Login Successful.</h5>") {
-                loggedIn = true;
+                loggedIn = 1;
                 $("#popSignIn").remove();
                 $("#login").removeClass("bi-door-open");
                 $("#login").addClass("bi-door-closed");
