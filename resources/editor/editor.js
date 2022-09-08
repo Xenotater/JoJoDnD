@@ -267,7 +267,7 @@ function updateCharacters() {
 }
 
 function logOut() {
-    $.post("logout.php", function(data) {
+    $.post("logout.php", {action: "logout"}, function(data) {
         loggedIn = 0;
         $("#popLoad").remove();
         popLoad();
