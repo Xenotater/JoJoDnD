@@ -1,9 +1,10 @@
 <?php
     if ($_POST["action"] == "check") {
         if (session_start() && !empty($_SESSION["loggedin"]))
-            echo true;
+            echo 1;
         else
-            echo false;
+            echo 0;
+        exit;
     }
     elseif ($_POST["action"] == "login")  {
         @$mysqli = new mysqli("localhost", "kyler", "dbadmin", "JoJoDnD"); /* @ prevents error from sending, custom error handle below */
