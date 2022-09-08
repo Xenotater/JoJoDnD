@@ -45,6 +45,8 @@ function updateDisplay() {
     box1Text += "</ul>";
     box2Text += "<h3 class='display-title'>" + passion.name + " Traits</h3><p><b><u>Saving Throws:</u></b> " + passion.saves + "<p><b><u>\
     Ability Score Increase:</u></b> " + passion.ability + "<p><b><u>" + passion.custom.name + ":</u></b> " + passion.custom.desc;
+    if (passion.name != "Student")
+        box2Text += "<p><b><u>Additional Proficiencies:</u></b> You gain an additional " + passion.profs + " proficiencies of your choice.";
     if (passion.languages != null) box2Text += "<p><b><u>Languages:</u></b> " + passion.languages;
     
     $("#box1").html(box1Text);
