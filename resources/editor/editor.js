@@ -854,7 +854,8 @@ function search(query) {
     var chars = $("#chars").children();
 
     for (i=0;i<chars.length;i++) {
-        if ((!chars[i].textContent.toLowerCase().includes(query.toLowerCase()) && !not) || (chars[i].textContent.toLowerCase().includes(query.toLowerCase()) && not))
+        var info = chars[i].textContent.toLowerCase().replace("renameduplicatedelete", "");
+        if ((!info.includes(query.toLowerCase()) && !not) || (info.includes(query.toLowerCase()) && not))
             chars[i].remove();
     }
 }
