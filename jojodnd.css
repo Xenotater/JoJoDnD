@@ -314,3 +314,7 @@ h1, h2, h3, th {
         border-bottom: none;
     }
 }
+
+.header-ad {
+    text-align: center;
+}
