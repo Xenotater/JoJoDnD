@@ -384,7 +384,7 @@
         "name": "Scarflesh",
         "desc": "You've gone through a lot of physical trauma, and your body is beginning to show the signs of it. Scar tissue is beginning to build up on your skin, as well as internally.",
         "effects": [
-            "You gain a Damage Resistance equal to your Constitution Modifier every turn."
+            "You gain Damage Reduction equal to your Constitution Modifier every turn."
         ]
     },
     "Shield_Master": {
