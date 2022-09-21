@@ -29,26 +29,26 @@
             $result->close();
             $mysqli->close();
         }
-        echo "<h1 id='greeting'>" . $user . "'s Saved Characters</h1>";
-        echo "<div id='chars'>";
-        for ($i = 0; $i < count($characters); $i++) {
-            $id = $characters[$i]["ID"];
-            echo "<div class='charCard' id='char" . $id . "'>";
-            echo "<i class='bi bi-three-dots-vertical' id='opt" . $id . "'></i><div class='drop' id='drop" . $id . "'>";
-            echo "<a href='#'>Rename</a><a href='#'>Duplicate</a><a href='#'>Delete</a></div>";
-            echo "<div class='loadBox'>";
-            if ($characters[$i]["Image"] == "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=")
-                $characters[$i]["Image"] = "../Assets/default.png";
-            if ($user == "admin") {
-                echo "<img class='charImgA' src='" . $characters[$i]["Image"] . "' alt='charImg'>";
-                echo "<p class='charInfo'>" . $characters[$i]["Username"] . "<br>" . $characters[$i]["Name"] . "</p>";
-            }
-            else {
-                echo "<img class='charImg' src='" . $characters[$i]["Image"] . "' alt='charImg'>";
-                echo "<span class='charName'>". $characters[$i]["Name"] . "</span>";
-            }
-            echo "</div></div>";
-        }
-        echo "<div class='center' id='newChar'><h2><b><i class='bi bi-plus-square'></i></b></h2></div></div>";
     }
-?>
+    ?>
+        <h1 id='greeting'><?php echo $user; ?>'s Saved Characters</h1>
+        <div id='chars'>
+        <?php for ($i = 0; $i < count($characters); $i++) {
+            $id = $characters[$i]["ID"]; ?>
+            <div class='charCard' id='char<?php echo $id; ?>'>
+            <i class='bi bi-three-dots-vertical' id='opt<?php echo $id; ?>'></i><div class='drop' id='drop<?php echo $id; ?>'>
+            <a href='#'>Rename</a><a href='#'>Duplicate</a><a href='#'>Delete</a></div>
+            <div class='loadBox'>
+            <?php if ($characters[$i]["Image"] == "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=")
+                $characters[$i]["Image"] = "../Assets/default.png";
+            if ($user == "admin") { ?>
+                <img class='charImgA' src='<?php echo $characters[$i]["Image"]; ?>' alt='charImg'>
+                <p class='charInfo'><?php echo $characters[$i]["Username"]; ?><br><?php echo $characters[$i]["Name"]; ?></p>
+            <?php }
+            else { ?>
+                <img class='charImg' src='<?php echo $characters[$i]["Image"]; ?>' alt='charImg'>
+                <p class='charName'><?php echo $characters[$i]["Name"]; ?></p>
+            <?php } ?>
+            </div></div>
+        <?php } ?>
+        <div class='center' id='newChar'><h2><b><i class='bi bi-plus-square'></i></b></h2></div></div>

@@ -22,7 +22,7 @@
                 echo "<h5 id='response-text'>An error occurred, please contact the site administrator.</h5>";
         }
         else
-            echo "<h5 id='response-text'>An error occurred, please contact the site administrator.</h5>";
+            echo "<h5 id='response-text'>You are not logged in.</h5>";
     }
     else
         header("Location: /not_found");

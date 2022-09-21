@@ -13,6 +13,11 @@
                 $img = $mysqli->real_escape_string($_POST["img"]);
                 $form = $mysqli->real_escape_string($_POST["form"]);
 
+                if (strlen($img) + strlen($form) >= 536870912) {
+                    echo "<h5 id='response-text'>Character data is too large (0.5GB+). Please contact the site administrator if you beleive this is an error.</h5>";
+                    exit;
+                }
+
                 if ($name == "" || $img == "" || $form == "") {
                     echo "<h5 id='response-text'>An error occurred, please contact the site administrator.</h5>";
                     exit;
@@ -42,7 +47,7 @@
             }
         }
         else
-            echo "<h5 id='response-text'>An error occurred, please contact the site administrator.</h5>";   
+            echo "<h5 id='response-text'>You are not logged in.</h5>";   
     }
     else
         header("Location: /not_found");

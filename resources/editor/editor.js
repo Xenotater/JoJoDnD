@@ -29,6 +29,20 @@ $(document).ready(function () {
             $("#div2").hide();
     })
 
+    $(".stat-score").on("focus", function() {
+        if ($("#autofill").is(":checked")) {
+            saveScore(this);
+        }
+    });
+
+    $(".stat-score").on("keyup", function(e) {
+        if (e.key === "Enter" || e.keyCode === 13) {
+            if ($("#autofill").is(":checked")) {
+                saveScore(this);
+            }
+        }
+    });
+
     $("input").on("blur", function() {
         detectChange(this);
     });
@@ -36,20 +50,6 @@ $(document).ready(function () {
     $("input").on("keyup", function(e) {
         if (e.key === "Enter" || e.keyCode === 13) {
             detectChange(this);
-        }
-    });
-
-    $(".stat-score").on("focus"), function() {
-        if ($("#autofill").is(":checked")) {
-            saveScore(this);
-        }
-    }
-
-    $(".stat-score").on("keyup", function(e) {
-        if (e.key === "Enter" || e.keyCode === 13) {
-            if ($("#autofill").is(":checked")) {
-                saveScore(this);
-            }
         }
     });
 
@@ -263,7 +263,7 @@ function updateCharacters() {
         if (query)
             search(query);
     });
-    $("#characters").append("<div class='load'></div>");
+    $("#characters").append("<div class='loading'></div>");
 }
 
 function logOut() {
@@ -474,6 +474,10 @@ function updateStandScore(stat, diff) {
         target.val(val + diff);
         updateStandMod("S" + stat);
     }
+    updateDC();
+    updateSpeed();
+    updateSAC();
+    updateAtks();
 }
 
 function updateStandMod(stat) {

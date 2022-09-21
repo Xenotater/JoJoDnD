@@ -10,6 +10,15 @@
             $pass = md5($mysqli->real_escape_string($_POST["pass"]));
             $conf = md5($mysqli->real_escape_string($_POST["conf"]));
 
+            if (strlen($user) >= 256) {
+                echo "<h5 id='login-failure'>Username too long (> 255 chars).</h5>";
+                exit;
+            }
+            if (strlen($pass) >= 256) {
+                echo "<h5 id='login-failure'>Password too long (> 255 chars).</h5>";
+                exit;
+            }
+
             if ($pass == $conf) {
                 $result = $mysqli->query("SELECT id FROM users WHERE username = '$user'");
 
@@ -27,7 +36,6 @@
                         echo "<h5 id='login-failure'>Username already taken.</h5>";
 
                     $result->close();
-                    $mysqli->close();
                 }
                 else
                     echo "<h5 id='login-failure'>Something went wrong, please contact the site administrator.</h5>";
