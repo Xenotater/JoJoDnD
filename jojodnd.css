@@ -242,7 +242,7 @@ h1, h2, h3, th {
     height: 300px;
     border: 20px solid lightgray;
     border-radius: 50%;
-    border-top-color: magenta;
+    border-top-color: purple;
     animation: spin 1s ease-in-out infinite;
 }
 @keyframes spin {
