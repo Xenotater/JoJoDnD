@@ -14,7 +14,7 @@
     },
     "Artist": {
         "name": "Artist",
-        "desc": "Using some sort of medium, Artists create beautiful things, made to invoke feelings in people. Whether it be a comic, a painting, or a sculpture, Artists spend hours in seclusion or with other artists, with the sole goal of improving their craft.",
+        "desc": "Using a variety of mediums, Artists create beautiful things to invoke feelings in people. Whether it be a comic, a painting, a sculpture, or a gourmet meal, Artists spend hours honing their craft.",
         "examples": ["Writers", "Painters", "Sculptors", "Mangakas", "Acrobats", "Dancers", "Chefs"],
         "saves": "You are proficient in Dexterity and Intelligence saving throws.",
         "ability": "Your Dexterity score increases by 2 and your Intelligence score increases by 1.",
@@ -26,8 +26,8 @@
         },
     "Athlete": {
         "name": "Athlete",
-        "desc": "People who push their bodies to the limits, in order to see the true limit of humanity's potential, and to push past those limits.",
-        "examples": ["Olympians", "Professional Sports Players", "Warriors / Soldiers"],
+        "desc": "People who push their bodies to and past their physical limits in order to see the true potential of humanity.",
+        "examples": ["Olympians", "Professional Sports Players", "Warriors / Soldiers", "High School Quarterbacks"],
         "saves": "You are proficient in two of the following saving throws of your choice: Strength, Dexterity, or Constitution.",
         "ability": "Your Strength score increases by 2 and your Dexterity score increases by 1.",
         "custom": {
@@ -38,8 +38,8 @@
         },
     "Con_Artist": {
         "name": "Con Artist",
-        "desc": "Those who steal, not for survival, but for wealth. To attain power, money, or influence, these people take advantage of the human brain in order to push people to achieve their own goals.",
-        "examples": ["Lawyers", "Fake Fortune Tellers", "Politicians", "Scammers", "Cult Leaders"],
+        "desc": "Those who steal for their own greed. To attain power, money, or influence, these people take advantage of the human brain in order to push other people to achieve their own goals.",
+        "examples": ["Certain Lawyers", "Fake Fortune Tellers", "Most Politicians", "Scammers", "Cult Leaders"],
         "saves": "You are proficient in Charisma and Intelligence saving throws.",
         "ability": "Your Charisma score increases by 2.",
         "custom": {
@@ -51,7 +51,7 @@
         },
     "Hard_Laborer": {
         "name": "Hard Laborer",
-        "desc": "Some make a living performing unpleasant jobs that are physically demanding. Without them, society would not function.",
+        "desc": "Some people make a living performing physically taxing jobs. Without them, society would not function.",
         "examples": ["Construction Workers", "Garbage Collectors", "Coal Miners"],
         "saves": "You are proficient in Constitution and Dexterity saving throws.",
         "ability": "Your Constitution score increases by 2 and your Dexterity and Strength scores increase by 1.",
@@ -73,9 +73,9 @@
         },
         "profs": 2
         },
-    "Physician": {
-        "name": "Physician",
-        "desc": "Physicians use their superior intellect, reasoning, and patience to assist the injured. Physicians have immense knowledge of the Human Body, knowing how it works in almost every way.",
+    "Medical_Expert": {
+        "name": "Medical Expert",
+        "desc": "Medical Experts use their superior intellect, reasoning, and patience to assist the injured. Medical Experts have immense knowledge of anatomy, knowing how living things function in almost every way.",
         "examples": ["Doctors", "Nurses", "Surgeons", "EMT Operators", "Veterinarians"],
         "saves": "You are proficient in Intelligence and Wisdom saving throws.",
         "ability": "Your Intelligence score increases by 2 and your Wisdom score increases by 1.",
@@ -85,8 +85,8 @@
         },
         "profs": 2
         },
-    "Service_Worker": {
-        "name": "Service Worker",
+    "Hospitality_Worker": {
+        "name": "Hospitality Worker",
         "desc": "A person who makes their living serving people, using their training and wit to help them.",
         "examples": ["Waitstaff", "Receptionists", "Secretaries", "Salespeople"],
         "saves": "You are proficient in Wisdom and Charisma saving throws.",
@@ -100,7 +100,7 @@
         },
     "Student": {
         "name": "Student",
-        "desc": "Many people have no clue what they would like, and simply want to reach their feelers as wide as they can.",
+        "desc": "Students aim to learn about and gain experience in a wide variety of things, exploring what they’d like to do with their future.",
         "examples": ["High School Students", "College Students"],
         "saves": "You are proficient in any two saving throws of your choice.",
         "ability": "You get +2 to one stat of your choice, +1 to three stats of your choice, and -1 to two stats of your choice.",
@@ -112,7 +112,7 @@
         },
     "Survivalist": {
         "name": "Survivalist",
-        "desc": "A person who has chosen to forgo most parts of Modern Society, instead cultivating their own land, and living a simple, more reclusive life. Survivalists might also be those attempting to make their way in a harsh Urban Climate.",
+        "desc": "Someone who has chosen to forgo most parts of modern society, instead choosing to live a simpler, more reclusive life.",
         "examples": ["Wilderness Survivors", "Rural Subsistence Farmers", "Hunters", "Gangsters", "Monks"],
         "saves": "You are proficient in Constitution and Wisdom saving throws.",
         "ability": "Your Wisdom score increases by 2 and your Constitution score increases by 1.",
@@ -149,7 +149,7 @@
     "Traveler": {
         "name": "Traveler",
         "desc": "Those who travel immense distances, using their superior willpower and trained body to withstand immense pressure over long periods of time.",
-        "examples": ["Triathletes", "(Most) Ripple Users"],
+        "examples": ["Explorers", "Triathletes", "(Most) Ripple Users"],
         "saves": "You are proficient in Wisdom and Constitution saving throws.",
         "ability": "Your Constitution score increases by 3 and your Wisdom score increases by 1.",
         "custom": {
