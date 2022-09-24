@@ -320,7 +320,7 @@ input {
     height: 60px;
 }
 
-#class {
+#class, #multi {
     float: left;
     width: 70%;
     text-align: center;
@@ -795,4 +795,8 @@ code {
     position: absolute;
     top: calc(50% - 16px);
     left: calc(50% - 16px);
+}
+
+#multi {
+    display: none;
 }
