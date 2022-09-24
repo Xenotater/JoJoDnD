@@ -53,6 +53,36 @@ $(document).ready(function () {
         }
     });
 
+    $("#class").change(function() {
+        if ($(this).val() == "multi") {
+            $(this).css("display", "none");
+            $("#multi").css("display", "inline-block");
+            $("#multi").focus();
+        }
+    });
+
+    $("#multi").on("keyup", function(e) { //numerous ways to get back to the dropdown
+        if ((e.key === "Backspace" || e.keyCode === 8 || e.key === "Enter" || e.keyCode === 13) && $(this).val() == "") {
+            $(this).css("display", "none");
+            $("#class").css("display", "inline-block");
+            $("#class").val("oth");
+        }
+        else if (e.key === "Escape" || e.keyCode === 27) {
+            $(this).val("");
+            $(this).css("display", "none");
+            $("#class").css("display", "inline-block");
+            $("#class").val("oth");
+        }
+    });
+
+    $("#multi").blur(function() { //numerous ways to get back to the dropdown
+        if ($(this).val() == "") {
+            $(this).css("display", "none");
+            $("#class").css("display", "inline-block");
+            $("#class").val("oth");
+        }
+    });
+
     $(".savecheck").change(function() {
         if ($("#autofill").is(":checked")) {
             var stat = $(this).attr("id").replace("-save", "");
@@ -776,6 +806,7 @@ function exportData(mode) {
 
 //thanks to kflorence for creating a deserialize plugin https://stackoverflow.com/a/8918929
 function importData(data) {
+    $("#multi").val(""); //ensure older data w/o this field still load properly
     $("#pages").deserialize(JSON.parse(data["form"]));
     $("#char-img").attr("src", data["img"]);
     if ($("#char-img").attr("src") == "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=") {
@@ -789,6 +820,14 @@ function importData(data) {
     $(".scales").each(function() {
         scale(this);
     });
+    if ($("#multi").val() != "") {
+        $("#class").css("display", "none");
+        $("#multi").css("display", "inline-block");
+    }
+    else {
+        $("#multi").css("display", "none");
+        $("#class").css("display", "inline-block");
+    }
 }
 
 function scale(object) {
