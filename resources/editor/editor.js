@@ -210,8 +210,15 @@ $(document).ready(function () {
         loadChar(id);
     });
 
-    $("body").on("input", "#search", function() {
+    $("body").on("blur", "#search", function() {
         updateCharacters();
+    });
+
+    $("body").on("keyup", "#search", function(e) {
+        if (e.key === "Enter" || e.keyCode === 13) {
+            updateCharacters();
+            $("#search").blur();
+        }
     });
 
     $("body").on("click", ".bi-three-dots-vertical", function() {
