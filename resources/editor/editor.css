@@ -532,6 +532,7 @@ textarea {
 
 #image {
     height: 336px;
+    overflow: hidden;
 }
 
 #Ufeatbox, #Uatkbox {
