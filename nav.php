@@ -85,7 +85,7 @@
                         </li>
                         <li class="nav-item navigator" id="resources">
                             <a class="nav-link" href="/resources">
-                                <img src="/Assets/gear.png" class="img-fluid barImg">
+                                <img src="/Assets/pages.png" class="img-fluid barImg">
                                 <br class="nav-text-break">
                                 Resources
                             </a>
