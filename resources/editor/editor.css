@@ -6,22 +6,6 @@
     margin-bottom: 12px;
 }
 
-#header {
-    height: 120px;
-    border-bottom: 2px dashed purple;
-    margin-bottom: 12px;
-}
-
-#header div:last-child {
-    border-right: none;
-}
-
-#load, #save {
-    font-size: 1.5rem;
-    margin-top: 12px;
-    width: 130px;
-}
-
 #popLoad, #popSignIn, #popConf {
     position: fixed;
     top: 0;
@@ -57,23 +41,6 @@
     width: 80%;
     height: 75%;
     box-shadow: -5px 5px 5px 5px black;
-}
-
-#login {
-    position: relative;
-    top: -8px;
-    margin: 0;
-    float: left;
-    color: green;
-    font-size: 32px;
-    cursor: pointer;
-    margin-right: 20px;
-}
-
-#login:hover {
-    font-size: 36px;
-    top: -12px;
-    margin-right: 16px;
 }
 
 #signIn-window {
@@ -156,7 +123,6 @@
 }
 
 #options {
-    font-size: 32px;
     line-height: 20px;
 }
 
@@ -170,21 +136,37 @@
     display: none;
 }
 
+#header {
+    border-bottom: 2px dashed purple;
+    margin-bottom: 12px;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+#header div:last-child {
+    border-right: none;
+}
+
 .header-btn {
     background-color: rgb(214, 214, 214);
     border: 2px solid black;
     border-radius: 5px;
+    font-size: 1.35rem;
+    width: 75%;
+    margin: 12px;
 }
 
 .header-btn:hover {
     background-color: rgb(187, 187, 187);
 }
 
+#header .col-3, #header .col-2 {
+    display: flex;
+    justify-content: space-around;
+}
 
-#import-btn, #export-btn {
-    font-size: 24px;
-    margin: 1rem;
-    margin-top: 12px;
+#header div {
+    padding: 0;
 }
 
 #download input {
@@ -192,66 +174,58 @@
     height: 20px;
 }
 
-#dl-btn {
-    font-size: 1.5rem;
-    margin-top: 12px;
-}
-
 #hidden-dl {
     display: none;
 }
 
-@media (max-width: 1200px) {
-    #import-btn, #export-btn {
-        margin: 0;
-        margin-top: 12px;
-    }
-}
-
 @media (max-width: 991px) {
     .header-btn {
-        font-size: 18px!important;
-        margin-top: 20px!important;
+        font-size: 1rem;
+        padding-left: 12px;
+        padding-right: 12px;
+        width: auto;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
-    #load, #save {
-        width: 100%;
+    #options {
+        line-height: 16px;
+    }
+    .option {
+        width: 12px;
+        height: 12px;
     }
 }
 
 @media (max-width: 767px) {
-    .header-btn {
-        font-size: 12px!important;
-        margin-top: 30px!important;
+    #header {
+        padding-left: 8px;
+        padding-right: 8px;
     }
-    #import-btn, #export-btn {
-        margin-top: 7px!important;
-        display: block;
-        margin: auto;
+    .header-btn {
+        font-size: 0.6rem;
+        border-width: 1px;
+        border-radius: 3px;
     }
     #options {
-        font-size: 16px;
-        line-height: 1  px;
-        padding-top: 16px;
+        line-height: 0px;
+    }
+    #options label {
+        font-size: 8px;
+    }
+    .option {
+        width: 10px;
+        height: 10px;
     }
 }
 
 @media (max-width: 536px) {
-    #options {
-        font-size:  8px;
-        line-height: 8px;
-    }
-}
-
-@media (max-width: 523px) {
-    #options {
-        padding-top: 0;
-    }
     #options label {
-        display: block;
-        margin-bottom: 2px;
+        font-size: 6px;
     }
-    #dl-btn {
-        margin-top: 22px!important;
+    .option {
+        width: 8px;
+        height: 8px;
     }
 }
 

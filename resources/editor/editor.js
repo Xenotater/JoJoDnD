@@ -274,12 +274,7 @@ function popLoad() {
     checkLoggedIn();
     var newText = "<div id='popLoad' class='center'>";
     newText += "<div class='content center' id='load-window'>";
-    newText += "<div id='charHead'><i id='login' class='bi bi-door-"
-    if (loggedIn)
-        newText += "closed";
-    else
-        newText += "open";
-    newText += "'></i>";
+    newText += "<div id='charHead'>"
     newText += "<input type='search' id='search' placeholder='Search'>";
     newText += "<i id='closeLoad' class='bi bi-x-lg'></i></div>";
     newText += "<div data-simplebar id='simple'><div id='characters'></div></div>";
@@ -306,8 +301,7 @@ function updateCharacters() {
 function logOut() {
     $.post("logout.php", {action: "logout"}, function(data) {
         loggedIn = 0;
-        $("#popLoad").remove();
-        popLoad();
+        $("#login").html('<i class="bi bi-door-open"></i><br>Login');
     });
 }
 
@@ -347,8 +341,7 @@ function logIn() {
             if(data == "<h5 id='login-success'>Login Successful.</h5>") {
                 loggedIn = 1;
                 $("#popSignIn").remove();
-                $("#login").removeClass("bi-door-open");
-                $("#login").addClass("bi-door-closed");
+                $("#login").html('<i class="bi bi-door-closed"></i><br>Logout');
             }
             $("#login-failure").remove();
             $("#signIn-window").append(data);
