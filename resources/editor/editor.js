@@ -267,6 +267,10 @@ $(document).ready(function () {
 function checkLoggedIn() {
     $.post("login.php", {action: "check"}, function(data) {
         loggedIn = parseInt(data);
+        if (!loggedIn)
+            $("#login").html('<i class="bi bi-door-open"></i><br>Login');
+        else
+            $("#login").html('<i class="bi bi-door-closed"></i><br>Logout');
     });
 }
 
@@ -288,9 +292,7 @@ function updateCharacters() {
     $.post("characters.php", {action: "chars"}, function(data) {
         $("#characters").empty();
         $("#characters").append(data);
-
         $("#char" + charID).addClass("curChar");
-
         query = $("#search").val();
         if (query)
             search(query);
