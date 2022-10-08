@@ -1,4 +1,6 @@
 <?php
+    ini_set('display_errors', 'on');      //for debugging
+    error_reporting(E_ALL);
     if ($_POST["action"] != "chars") 
     {
         header("Location: /not_found");
@@ -18,13 +20,24 @@
         }
         else {
             $user = $_SESSION["loggedin"];
-            if ($user == "admin")
-                $result = $mysqli->query("SELECT * FROM characters");
-            else
-                $result = $mysqli->query("SELECT * FROM characters WHERE username = '$user'");
             $characters = array();
-            while ($row = $result->fetch_assoc()) {
-                $characters[] = array("ID"=>$row["id"], "Username"=>$row["username"], "Name"=>$row["name"], "Image"=>$row["img"], "Data"=>$row["data"]);
+            if ($user == "admin") {
+                $result = $mysqli->query("SELECT COUNT(id) AS numChars FROM characters");
+                $num = $result->fetch_assoc()["numChars"];
+
+                for ($i = 0; $i < $num; $i++) {
+                    if($result){
+                        $result = $mysqli->query("SELECT id, username, name, img FROM characters LIMIT $i,1");
+                        $row = $result->fetch_assoc();
+                        $characters[] = array("ID"=>$row["id"], "Username"=>$row["username"], "Name"=>$row["name"], "Image"=>$row["img"]);
+                    }
+                }
+            }
+            else {
+                $result = $mysqli->query("SELECT id, username, name, img FROM characters WHERE username = '$user'");
+                while ($row = $result->fetch_assoc()) {
+                    $characters[] = array("ID"=>$row["id"], "Username"=>$row["username"], "Name"=>$row["name"], "Image"=>$row["img"]);
+                }
             }
             $result->close();
             $mysqli->close();
