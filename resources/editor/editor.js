@@ -210,15 +210,9 @@ $(document).ready(function () {
         loadChar(id);
     });
 
-    $("body").on("blur", "#search", function() {
-        updateCharacters();
-    });
-
-    $("body").on("keyup", "#search", function(e) {
-        if (e.key === "Enter" || e.keyCode === 13) {
-            updateCharacters();
-            $("#search").blur();
-        }
+    $("body").on("keyup", "#search", function() {
+        query = $("#search").val();
+        search(query);
     });
 
     $("body").on("click", ".bi-three-dots-vertical", function() {
@@ -293,9 +287,6 @@ function updateCharacters() {
         $("#characters").empty();
         $("#characters").append(data);
         $("#char" + charID).addClass("curChar");
-        query = $("#search").val();
-        if (query)
-            search(query);
     });
     $("#characters").append("<div class='loading'></div>");
 }
@@ -898,10 +889,15 @@ function search(query) {
 
     var chars = $("#chars").children();
 
-    for (i=0;i<chars.length;i++) {
+    for (i=0;i<chars.length;i++) { //reset search
+        var info = chars[i].textContent.toLowerCase().replace("renameduplicatedelete", "");
+        $(chars[i]).css("display", "block");
+    }
+
+    for (i=0;i<chars.length;i++) { //new search
         var info = chars[i].textContent.toLowerCase().replace("renameduplicatedelete", "");
         if ((!info.includes(query.toLowerCase()) && !not) || (info.includes(query.toLowerCase()) && not))
-            chars[i].remove();
+            $(chars[i]).css("display", "none");
     }
 }
 
