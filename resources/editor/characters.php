@@ -1,6 +1,6 @@
 <?php
-    ini_set('display_errors', 'on');      //for debugging
-    error_reporting(E_ALL);
+    //ini_set('display_errors', 'on');      //for debugging
+    //error_reporting(E_ALL);
     if ($_POST["action"] != "chars") 
     {
         header("Location: /not_found");
