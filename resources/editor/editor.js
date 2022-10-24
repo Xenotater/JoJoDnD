@@ -800,6 +800,7 @@ function exportData(mode) {
 //thanks to kflorence for creating a deserialize plugin https://stackoverflow.com/a/8918929
 function importData(data) {
     $("#multi").val(""); //ensure older data w/o this field still load properly
+    $("#pages")[0].reset();
     $("#pages").deserialize(JSON.parse(data["form"]));
     $("#char-img").attr("src", data["img"]);
     if ($("#char-img").attr("src") == "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=") {
