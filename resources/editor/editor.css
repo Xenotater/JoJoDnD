@@ -124,6 +124,7 @@
 
 #options {
     line-height: 20px;
+    white-space: nowrap;
 }
 
 #pages .divider {
