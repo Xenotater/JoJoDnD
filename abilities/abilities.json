@@ -69,7 +69,7 @@
     },
     "Hot_Pursuit": {
         "name": "Hot Pursuit",
-        "classes": ["Rng"],
+        "classes": ["Rng", "Hive"],
         "desc": [
             "Whenever you are chasing after somebody, your Stand may keep pace with them regardless of Movement Speed, so long as you can see them and they remain within your Stand's Range."
         ]
@@ -92,7 +92,7 @@
     },
     "Immense_Resistance": {
         "name": "Immense Resistance",
-        "classes": ["Enh", "Ind"],
+        "classes": ["Enh", "Ind", "Hive"],
         "desc": [
             "Your Stand is incredibly resilient, a reflection of your willpower and experience.",
             "Rather than using the normal Damage Reduction formula, you may instead simply reduce an amount of damage equal to your Durability Modifier + your Constitution Modifier (even if you are an Independent-Type Stand).",
@@ -101,7 +101,7 @@
     },
     "Oblivious_Facade": {
         "name": "Oblivious Facade",
-        "classes": ["Rng", "Rmt", "Enh", "Ind", "Rev"],
+        "classes": ["Rng", "Rmt", "Enh", "Ind", "Rev", "Hive"],
         "desc": [
             "You've attempted to hide the fact that you're a Stand User numerous times before. You know what works, and what doesn't.",
             "You get Advantage on Deception Checks to pass yourself off as a Non-Stand User."
@@ -150,7 +150,7 @@
     },
     "Silent_Movement": {
         "name": "Silent Movement",
-        "classes": ["Rng", "Act"],
+        "classes": ["Rng", "Hive", "Act"],
         "desc": [
             "Through experience you've gained better control of your Stand, allowing you to move your Stand extremely carefully to ensure that the only way that your Stand may be detected is when it is seen.",
             "Your Stand's movement is silent. When it moves in an attempt to evade detection, they may roll Stealth with Advantage."
@@ -204,14 +204,14 @@
         "name": "Split Stand",
         "classes": ["Hive"],
         "desc": [
-            "As a Hive Type Stand User, your Stand functions very differently than a typical Stand. Rather than a Stand being an extension of your will to fight, each Instance of your Stand is like a separate organism that simply must follow your orders.",
+            "As a Hive Type Stand User, your Stand functions very differently than a typical Stand. Rather than a Stand being an extension of your will to fight, each Instance of your Stand is like a separate organism that simply must follow your orders. You may have anywhere between 2 and 500 Instances, though once choosen this number must remain constant.",
             "Each Instance of your Stand only has a fraction of the Power of a regular Stand, but each Instance may act independently of the others or the Stand User. If one Instance is totally destroyed, that fraction of the User's Health is taken away. For example, if you have 12 Instances of your Stand and one gets destroyed you'll take damage equal to your maximum health divided by 12.",
-            "If every Instance of your Stand is destroyed, you die instantly. If your health is restored, so are your Stand Instances. Even when you fall unconscious, one instance will remain. Only when you die is that Instance destroyed."
+            "If every Instance of your Stand is destroyed, you fall unconsious. If your health is restored, so are your Stand Instances. Even when you fall unconscious, one instance will remain. Only when you die is that Instance destroyed."
         ]
     },
     "Stand_Pickpocketing": {
         "name": "Stand Pickpocketing",
-        "classes": ["Rng", "Act"],
+        "classes": ["Rng", "Hive", "Act"],
         "desc": [
             "Through trial and error you've gained the ability to slip objects from the grasp of other people using your Stand. From now on, you have Advantage when making Sleight of Hand checks using your Stand."
         ]
@@ -386,7 +386,7 @@
     },
     "Stand_Marking": {
         "name": "Stand Marking",
-        "classes": ["Rmt", "Enh", "Rev"],
+        "classes": ["Rmt", "Enh", "Rev", "Hive"],
         "desc": [
             "As an Action, you may \"Mark\" a specific object or person with your Stand, so long as the target is within your Stand's Range and activates a specific, predetermined trigger at some point.",
             "When a person or object is \"Marked\" your Stand automatically follows them, affecting them with their ability. This effect continues until you recall your Stand back to you, you are killed, or the object/person that is Marked is destroyed/killed.",
