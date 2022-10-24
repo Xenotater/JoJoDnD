@@ -1225,27 +1225,24 @@
                 "hDice": "1d8",
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
-                "aDice": ["1d6", "2d6"],
+                "aDice": ["1d6/1d10", "2d6/2d10"],
                 "other": [{
                     "name": "Swarm Attacks",
                     "content": [
-                        "<p>When attacking using a Swarm of Stands, there is a way to attack with all of them without rolling dozens of attacks. Firstly, if more than half of the Instances are attacking at once you can treat it like a regular Stand Attack, using 1d6 + Power/N where N is the number of Instances attacking.</p>",
-                        "<p>If less than half of your instances are attacking, assume a certain percentage of them land a Stand Hit (unless the target does not have a Stand, in which case it is direct), but they may only deal 1 damage per hit. At Level 1 this percentage is 5%, meaning Swarm damage is equal to N/20 with a minimum of 1 damage, where N is the number of Instances attacking. At Level 11 this increases to 10%, or N/10, with a minimum of 1 damage. You may not add Power to this damage.</p>"
+                        "<p>Choose one of the three following saving throws: Strength, Dexterity, or Constitution. When you make a Melee Attack using your Stand, rather than making an Attack Roll, your target must make a Saving Throw of the type you chose. Your Stand must be within Melee Range of the target in order to make a Swarm Attack. When you make a Swarm Attack, you may choose between the following options:</p>",
+                        "<p><ul><li>Precise Swarm: 1d6 + Power Modifier damage (this damage increases to 2d6 at Level 11). Your opponent takes full damage if they fail the Saving Throw, or half if they succeed.</li>",
+                        "<li>Violent Swarm: 1d10 + Power Modifier damage (this damage increases to 2d10 at Level 11). Your opponent takes full damage if they fail the Saving Throw, or none if they succeed.</li></ul></p>",
+                        "<p>This Attack's damage can be a type that you and your DM agree fits for your stand. When you attack using less than half of the total instances of your stand, your target has Advantage on the Saving Throw.</p>" 
                     ]
-                },
-                {
-                    "name": "Instance Levels",
-                    "content": "<ol><li>Maximum of 10 Instances</li><li>Maximum of 100 Instances</li><li>Maximum of 250 Instances</li><li>Maximum of 500 Instances</li></ol>"
                 }],
-                "levelUp": "Every Level-Up, You may roll 1d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats except Durability. Your Stand's Durability may not be increase past it's initial value.",
+                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats.",
                 "mults": ["3/N", "2/N", 3, 10, "3/N", 2],
                 "theme": "bad",
                 "level": {
                     "1": {
                         "pro": "2",
                         "feats": "2",
-                        "otherFeatures": ["Instance Level 1"],
-                        "linkFeatures": ["Split Stand"]
+                        "linkFeatures": ["Split Stand", "Immense Resistance", "OR", "Detached Senses"]
                     },
                     "2": {
                         "pro": "2",
@@ -1260,12 +1257,12 @@
                     "4": {
                         "pro": "2",
                         "feats": "2",
-                        "otherFeatures": ["Increase Instance Level OR Double the Stat points you gained this Level"]
+                        "linkFeatures": ["Stand Marking", "OR", "Hot Pursuit"]
                     },
                     "5": {
                         "pro": "3",
                         "feats": "2",
-                        "linkFeatures": ["Powerful Flex", "OR", "Detached Senses", "OR"],
+                        "linkFeatures": ["Powerful Flex", "OR"],
                         "featFeatures": ["Menacing Aura"]
                     },
                     "6": {
@@ -1276,7 +1273,8 @@
                     "7": {
                         "pro": "3",
                         "feats": "3",
-                        "otherFeatures": ["Increase Instance Level OR Double the Stat points you gained this Level"]
+                        "linkFeatures": ["Oblivious Facade", "OR"],
+                        "featFeatures": ["Clever Disguise"]
                     },
                     "8": {
                         "pro": "3",
@@ -1296,12 +1294,12 @@
                     "11": {
                         "pro": "4",
                         "feats": "4",
-                        "otherFeatures": ["Attack Dice increases to 2d6", "Hit Rate increases to 10%"]
+                        "otherFeatures": ["Swarm Attack Dice increases to 2dx"]
                     },
                     "12": {
                         "pro": "4",
                         "feats": "4",
-                        "otherFeatures": ["Increase Instance Level OR Double the Stat points you gained this Level"]
+                        "otherFeatures": ["Choose another Class Feature from the Level 1, Level 4, Level 7, or Level 9 options"]
                     },
                     "13": {
                         "pro": "5",
@@ -1311,13 +1309,13 @@
                     "14": {
                         "pro": "5",
                         "feats": "4",
-                        "otherFeatures": ["Use 2d6 more points to increase your stats (can include Durability)"]
+                        "linkFeatures": ["Stand Pickpocketing", "OR", "Silent Movement"]
                     },
                     "15": {
                         "pro": "5",
                         "feats": "4",
                         "otherFeatures": ["<a href='/artifacts/?focus=Stand_Arrow'>The Requiem Quietly Plays</a>"],
-                        "linkFeatures": ["Special Ability (3 SE)"]
+                        "linkFeatures": ["Special Ability (2 SE)"]
                     },
                     "16": {
                         "pro": "5",
