@@ -7,8 +7,8 @@
         }
         else {
             $user = $mysqli->real_escape_string($_POST["user"]);
-            $pass = md5($mysqli->real_escape_string($_POST["pass"]));
-            $conf = md5($mysqli->real_escape_string($_POST["conf"]));
+            $pass = $mysqli->real_escape_string($_POST["pass"]);
+            $conf = $mysqli->real_escape_string($_POST["conf"]);
 
             if (strlen($user) >= 256) {
                 echo "<h5 id='login-failure'>Username too long (> 255 chars).</h5>";
@@ -24,7 +24,9 @@
 
                 if ($result) {
                     if ($result->num_rows == 0) {
-                        $mysqli->query("INSERT INTO users (username, password) VALUES ('$user', '$pass')");
+                        $salt = str_pad((string) rand(1, 1000), 4, '0', STR_PAD_LEFT);
+                        $hash = hash("sha512", $pass . $salt) . $salt;
+                        $mysqli->query("INSERT INTO users (username, password, oldpass) VALUES ('$user', '$hash', '0')");
 
                         if ($mysqli->error)
                             echo "<h5 id='login-failure'>An error occurred, please contact the site administrator.</h5><p>{$mysqli->error}</p>";
