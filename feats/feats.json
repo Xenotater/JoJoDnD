@@ -84,7 +84,7 @@
             "You may make Medicine Checks as a Bonus Actions.",
             "If you have a first aid kit or something similar you may make a DC 15 Medicine Check as an Action upon a creature that you can touch. On success, the creature may spend a Hit Die to heal."
         ],
-        "prereq": "Int 13+ or <a href='/passions/?focus=Physician'>Physician</a>"
+        "prereq": "Int 13+ or <a href='/passions/?focus=Medical_Expert'>Medical Expert</a>"
     },
     "Commentator" : {
         "name": "Commentator",
@@ -240,7 +240,7 @@
             "You learn 3 additional languages and learn another at Levels 5 and 10.",
             "You gain Advantage on Skill Checks related to attempting to understand the meaning of an unknown language or script."
         ],
-        "prereq": "Int 13+ or <a href='/passions/?focus=Service_Worker'>Service Worker</a>"
+        "prereq": "Int 13+ or <a href='/passions/?focus=Hospitality_Worker'>Hospitality Worker</a>"
     },
     "Improvised_Healing": {
         "name": "Improvised Healing",
