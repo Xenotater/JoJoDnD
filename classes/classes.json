@@ -565,7 +565,7 @@
                     "7": {
                         "pro": "3",
                         "feats": "3",
-                        "linkFeatures": ["Remote Grappler", "OR", "Remove Self-Preservation"]
+                        "linkFeatures": ["Remote Grappler", "OR", "Self-Preservation"]
                     },
                     "8": {
                         "pro": "3",
