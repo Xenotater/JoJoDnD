@@ -277,7 +277,7 @@ function popRename(id) {
     newText += "<button class='renameBtn' id='rename" + id + "'>Rename</button>"
     newText += "</div></div></div>";
     $("body").append(newText);
-    $("#newName").val($("#char" + id).children()[2].textContent);
+    $("#newName").val($($("#char" + id).children()[2]).children()[1].textContent);
 }
 
 function popDel(id) {
