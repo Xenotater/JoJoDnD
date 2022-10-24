@@ -810,13 +810,12 @@
             "Entering a state of Vampiric Dormancy takes one full minute (or 10 turns). You may survive in the state of Vampiric Dormancy for up to 500 years. Past around 500 years, every year you spend in Dormancy consumes 10 Energy from you. If you run out of Energy, your brain shuts off fully, and you die. Losing Energy does not cause you to lose Levels in Vampire."
         ]
     },
-    "Embryo_Implantation": {
-        "name": "Embryo Implantation",
+    "Primal_Offspring": {
+        "name": "Primal Offspring",
         "classes": ["Vamp"],
         "desc": [
-            "You may create a fully functioning Embryo, and implant it into a Humanoid's womb. This Implantation process may be done through sexual transmission, or through simply forcing it though the flesh, then fixing the flesh that was damaged.",
-            "This Embryo may be an effective clone of your DNA, or an Embryo that combines the DNA of you, as well as the DNA of up to one person whose flesh you have grafted into yourself. You may also take some of the Surrogate Woman's DNA and implant it into the Embryo, meaning the child produced could effectively have three genetic parents.",
-            "The child grows and lives as normal, with the only distinguishable differences to a normal human being small, appearing as minor traits, such as accelerated hair growth, sensitive or pale skin, or even teeth that look similar to fangs, which ultimately manifests in them gaining the trait: <a href='/abilities/?focus=Primal_Charm'>Primal Charm</a>. All of the aforementioned traits may manifest, or none of them might, or perhaps only some of them."
+            "You gain the ability to influence the genetics of your offspring. When you would engage in activities that would normally produce healthy human offspring, you may choose the genes that are passed along. The child's genetics may be entirely from you, or have influence from the DNA of flesh you have grafted into yourself and the genes of your partner.",
+            "The child grows and develops as a normal child of the same race as your partner, but has the chance to display some unique features gained from an Undead ancestry. They may also gain the Primal Charm Feature."
         ]
     },
     "Flesh_Bud": {
