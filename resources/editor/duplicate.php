@@ -16,9 +16,9 @@
                     if ($result->num_rows == 1) {
                         $fetch = $result->fetch_assoc();
                         $user = $fetch["username"];
-                        $name = $fetch["name"];
-                        $img = $fetch["img"];
-                        $form = $fetch["data"];
+                        $name = $mysqli->real_escape_string($fetch["name"]);
+                        $img = $mysqli->real_escape_string($fetch["img"]);
+                        $form = $mysqli->real_escape_string($fetch["form"]);
 
                         $mysqli->query("INSERT INTO characters (username, name, img, data) VALUES ('$user', '$name', '$img', '$form')");
                         if ($mysqli->error)
