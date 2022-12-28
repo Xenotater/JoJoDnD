@@ -12,10 +12,11 @@
         "name": "Art of Distraction",
         "desc": "People are easy to fool, this is something that you've learned over years of experience.",
         "effects": [
-            "You gain Advantage on all Performance and Sleight of Hand Checks.",
-            "You may now make Sleight of Hand Checks as a Bonus Action."
+            "You're able to trap a helpless person within a conversation by spending your Action each turn and rolling a Performance Check against a single, non-hostile target's Wisdom saving throw. While keeping this individual distracted in this way, their movement speed is reduced to 0 and they cannot roll higher than 10 on a Perception Check, and their Passive Perception is now restricted to 10 at most.",
+            "You may keep a person trapped in this conversational purgatory for up to 10 minutes, until you stop spending your action or they succeed on their save, or something very obviously out of the ordinary happens in a way that you can't explain.",
+            "Additionally, you have figured out a way to enthrall several people by using your Action each turn to may keep an amount of non-hostile people equal to your Charisma Modifier focused on what you're doing for up to a minute. Anyone caught in this effect has Disadvantage on all Perception Checks, and has a -5 penalty to their Passive Perception."
         ],
-        "prereq": "Cha and Dex 13+"
+        "prereq": "Proficiency in Performance Checks."
     },
     "Automatic_Weapon_Proficiency": {
         "name": "Automatic Weapon Proficiency",
@@ -47,8 +48,8 @@
         "name": "Calculating",
         "desc": "A lot of Stand Users have their ability's strength tied to their willpower, but that is not always the case. Some use knowledge or their surroundings to make their abilities terrifying.",
         "effects": [
-            "You may use Wisdom or Intelligence to determine your Stand DC instead of Charisma.",
-            "If you have other Class Features relating to your Charisma Modifier like <a href='/abilities/?focus=Stand_Energy_Recharge'>Stand Energy Recharge</a>, you may also use Wisdom or Intelligence for it instead."
+            "You may use Intelligence, Wisdom, or Charisma to determine your Stand DC, and your Stand DC increases by 2.",
+            "If you have other Class Features relating to your Charisma Modifier like <a href='/abilities/?focus=Stand_Energy_Recharge'>Stand Energy Recharge</a>, you may also use Intelligence or Wisdom for them instead."
         ],
         "prereq": "<a href='/classes/?focus=Stands'>Stand User</a> Level 1+"
     },
@@ -166,6 +167,14 @@
         ],
         "prereq": "Dex 13+"
     },
+    "Exemplar": {
+        "name": "Exemplar",
+        "desc": "You're an inspiring person that leads by example and you serve as a model for others to look up to.",
+        "effects": [
+            "At any time, you may give 1 point of inspiration to an ally of your choice.",
+            "You may use this Feat once per Long Rest, and if this point of inspiration is not used by the next Long Rest (or day), it expires."
+        ]
+    },
     "Fortune_Teller": {
         "name": "Fortune Teller",
         "desc": "Some people have a gift that allows them to see Fate's inner workings. This allows them to see the future in a very specific way that isn't very helpful until the time of the divination comes to pass.",
@@ -173,6 +182,15 @@
             "At the end of each Long Rest, roll 3d20 and write the result of each of roll down.",
             "At any point, you may replace a d20 roll for an ally, yourself, or an enemy with one of the d20 rolls written down.",
             "Once you have used a number, it cannot be used again."
+        ]
+    },
+    "Guerilla_Fighter": {
+        "name": "Guerilla Fighter",
+        "desc": "You make use of irregular tactics in combat, including ambushes, sabotage, and hit-and-runs.",
+        "effects": [
+            "You may hide as a Bonus Action.",
+            "For you, Half Cover counts as Three-Quarters Cover, and Three-Quarters Cover counts as Total Cover.",
+            "You may get up from the Proned Condition as a Reaction, or by spending only 1m of Movement on your turn."
         ]
     },
     "Headhunter": {
@@ -198,6 +216,16 @@
             "When you use a point of Inspiration, roll a d4. If you roll a 4, you gain back a point of Inspiration."
         ],
         "prereq": "Cannot have Heart of Lies"
+    },
+    "Heavy_Sleeper": {
+        "name": "Heavy Sleeper",
+        "desc": "You rest efficiently, and can sleep through almost anything.",
+        "effects": [
+            "You only need to sleep for 4 hours to gain the benefits of a Long Rest. The rest of the time may be spent doing light activities.",
+            "You may take a 5 minute nap to gain the benefits of a full Short Rest. Additionally, you may either restore 2 expended Hit Dice or regain one use of a Feature or Ability that would normally be restored on a Long Rest.",
+            "You may take a nap like this equal to half of your Proficiency Bonus rounded down each Long Rest."
+        ],
+        "prereq": "Cannot have Light Sleeper."
     },
     "Heavy_Weapon_Specialist": {
         "name": "Heavy Weapon Specialist",
@@ -228,9 +256,8 @@
         "name": "Immense Impact",
         "desc": "You're used to utilizing momentum to attack your foes with a powerful attack, hitting them immediately and head-on.",
         "effects": [
-            "In order to activate this attack, you must first move at least 5 meters, then make a Melee Attack as the immediate action following it. This may activate whether you are running, falling, being thrown, etc, as long as you move more than 5 meters in the same turn immediately before your attack.",
-            "This first attack after moving deals extra damage if it hits. If the melee attack hits, it deals damage equal to the amount of meters you have moved before attacking this turn. For example, if you moved 10 meters before this attack, it would deal 10 extra damage to your target.",
-            "You may also perform a Reckless Dash, allowing you to make one free melee attack after moving in a straight line. You may use this ability an amount of times equal to your Strength Modifier per Long Rest."
+            "This first attack you make after moving in a straight line towards your target deals extra damage equal to the amount of meters moved before attacking this turn. The maximum additional damage you may deal with this attack is equal to your level.",
+            "You may also perform a Charge Attack, allowing you to make one free melee attack after moving in a straight line. You may use this ability once per turn."
         ]
     },
     "Interpreter": {
@@ -269,8 +296,11 @@
         "name": "Light Sleeper",
         "desc": "You regain consciousness fairly quickly.",
         "effects": [
-            "You only have to succeed on 2 Death Saving Throws in order to become stabilized. It still takes three failures to kill you."
-        ]
+            "While sleeping, you may use your Passive Perception as you would while conscious.",
+            "You only need to succeed 2 Death Saves to become Stable, and upon becoming Stable you may expend an amount of Hit Dice equal to your Proficiency Bonus to regain HP.",
+            "You may also expend Hit Dice when being revived via an ally's Medicine Check."
+        ],
+        "prereq": "Cannot have Heavy Sleeper"
     },
     "Martial_Weapon_Proficiency": {
         "name": "Martial Weapon Proficiency",
@@ -329,7 +359,14 @@
         "name": "Paranoia",
         "desc": "You've been aware of them for a while now. You don't know who, but you know that they've been after you for so long, and you've been evading them for what seems like forever.",
         "effects": [
-            "You may add your Proficiency Bonus to your Initiative Bonus, and enemies that attempt to surprise you get Disadvantage instead of Advantage on their Surprise Attack."
+            "You may add your Proficiency Bonus to your Initiative Bonus, and enemies that attempt to surprise you get Disadvantage instead of Advantage on their Surprise Attack. Additionally, you may use your Stand to defend against surprise attacks if you have one."
+        ]
+    },
+    "Perfected_Craft" : {
+        "name": "Perfected Craft",
+        "desc": "You've spent countless hours training a specific skill, and it's clear that effort paid off.",
+        "effects": [
+            "You may choose to gain Mastery in a skill that you have Expertise in, allowing you to add your Proficiency Bonus to it 3 times."
         ]
     },
     "Pistol_Proficiency": {
@@ -359,7 +396,8 @@
         "name": "Quick on your Feet",
         "desc": "You're used to getting out of difficult situations using your wit.",
         "effects": [
-            "You may gain Proficiency in a Saving Throw of your choice."
+            "You may gain Expertise in a Saving Throw that you're already Proficient in.",
+            "You may gain Proficiency in two Saving Throws of your choice."
         ]
     },
     "Rifle_Proficiency": {
@@ -401,6 +439,15 @@
         "effects": [
             "You may add your Proficiency Bonus to your Attack rolls when using Simple Weapons.",
             "You may throw a Simple Weapon with the Range of an Improvised Weapon (5/15), and use the same Attack Bonus and Damage Dice that you would when using it as a Melee Weapon."
+        ]
+    },
+    "Skirmisher": {
+        "name": "Skirmisher",
+        "desc": "You focus on being light and mobile in combat, often sporadically attacking or making moves from a distance to harass the enemy.",
+        "effects": [
+            "You may Disengage as a Bonus Action.",
+            "When you hit a creature with a Melee Attack, you may choose to make it so they cannot use reactions until the end of their next turn instead of dealing damage.",
+            "You gain Advantage on any Saving Throw or Ability Check that would attempt to restrict your movement (grappling, restraining, paralyzing, etc)."
         ]
     },
     "Stroke_of_Luck": {
@@ -518,9 +565,9 @@
         "name": "Weapon Master",
         "desc": "You're well-practiced and can be deadly with just about any weapon you pick up.",
         "effects": [
-            "You may add your Proficiency Bonus to Attack rolls when using any weapon of any type.",
+            "You gain Proficiency in the use of all weapon types.",
             "This does not apply to Improvised Weapons.",
-            "You do not gain the other benefits granted by specific Weapon Proficiency Feats."
+            "If you have other Weapon Proficiencies, this Feat gives you Expertise in the use of those weapons."
         ]
     }
 }
