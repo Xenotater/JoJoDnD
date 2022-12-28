@@ -299,7 +299,8 @@
         "desc": [
             "Using this attack takes an entire turn (consuming Action, Bonus Action, and Movement Action), you may perform a number of melee attacks equal to your Stand's Speed Modifier (+6 Speed would mean 6 attacks in one Melee Barrage), with a maximum of 10 Attacks.",
             "Each hit functions as normal in terms of the Attack rolls, but when you deal damage, you do not add your Stand's Power Modifier to the Damage Rolls. The Damage Dice for these attacks does NOT increase at Level 11 (A Power Type's Damage Dice changes from 1d12 to 2d10 at Level 11, but the maximum for this ability would still be 10d12).",
-            "Furthermore, you may not Activate a Stand Ability with any of these Attacks, and if you roll a 1 on any of these attack rolls, the Melee Barrage ends."
+            "Furthermore, you may not Activate a Stand Ability with any of these Attacks, and if you roll a 1 on any of these attack rolls, the Melee Barrage ends.",
+            "For Act Types, it should be noted that Act 3 Melee Barrage uses 1d10, rather than 2d8 for the damage dice."
         ]
     },
     "Mobile_Ability": {
