@@ -128,7 +128,7 @@
         "classes": ["Rev"],
         "desc": [
             "This Ability Activates when you and your Stand die. Your body remains lifeless for between 1 minute and 24 hours. At some point within this timeframe, your Stand reawakens as an Independent-Type Stand, complete with your mental capacity and memories.",
-            "You retain all of your Experience Points, but all of your Health, <a href='/feats'>Feats</a>, Proficiencies and Abilities are reset. This effectively means you may make a higher level character, so long as it retains the same memories you had in your first life."
+            "You retain all of your Experience Points, but all of your Health, <a href='/feats'>Feats</a>, Proficiencies and Abilities are reset. This effectively means you may make a new character with as many levels in Independent-Type as you had in Revenge-Type, as long as it retains the same memories you had in your first life."
         ]
     },
     "Self_Repair": {
@@ -232,12 +232,12 @@
             "An example of an Ultimate Stand Ability is <a href='https://jojo.fandom.com/wiki/White_Album' target='_blank'>White Album</a>'s Gently Weeps."
         ]
     },
-    "Unconscious_Control": {
-        "name": "Unconscious Control",
+    "Lasting_Grudge": {
+        "name": "Lasting Grudge",
         "classes": ["Rev"],
         "desc": [
-            "You and your Stand have different health pools. When your HP reaches 0, your Stand may continue to function, but NOT vice versa.",
-            "However, if either of them are killed, the other is killed as well."
+            "Rather than lasting for an amount of turns equal to your level in Revenge-Type (minimum of 2), your Grudge Points last for an amount of minutes equal to your level in Revenge-Type (minimum of 2).",
+            "Additionally, when you spend 5 Points to summon your Stand in its entirety, rather than lasting for an amount of turns equal to your level in Revenge-Type (minimum of 2), it lasts for a number of minutes equal to your level in Revenge-Type (minimum of 2)."
         ]
     },
     "Block_Physical_Projectile": {
@@ -321,7 +321,9 @@
         "name": "Near-Death Escape",
         "classes": ["Rev"],
         "desc": [
-            "When your HP is half of your maximum or less, you may trigger this Ability as a Bonus Action. Until you either stop moving or attack something you may move at twice the speed you would be able to normally, and you gain Advantage on all Acrobatics, Athletics, and Stealth Checks. You may use this Ability a number of times equal to your Constitution Modifier, and you regain all expended uses when you finish a Short Rest. "
+            "When your HP is at a quarter of your maximum or less, you may activate this Ability as a Reaction.",
+            "For the next minute, you may Dash, Disengage, or Hide as a Bonus Action, but if you use your Stand Ability or deal any damage the Ability ends prematurely.",
+            "You may use this ability once per Short Rest."
         ]
     },
     "Offensive_Blow": {
