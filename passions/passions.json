@@ -23,7 +23,7 @@
             "desc": "You have proficiency in Sleight of Hand and Performance. You also gain Proficiency in a set of Artisan's Tools or an instrument of your choice."
         },
         "profs": 2
-        },
+    },
     "Athlete": {
         "name": "Athlete",
         "desc": "People who push their bodies to and past their physical limits in order to see the true potential of humanity.",
@@ -35,7 +35,7 @@
             "desc": "You have proficiency in Athletics and Acrobatics."
         },
         "profs": 3
-        },
+    },
     "Con_Artist": {
         "name": "Con Artist",
         "desc": "Those who steal for their own greed. To attain power, money, or influence, these people take advantage of the human brain in order to push other people to achieve their own goals.",
@@ -48,7 +48,7 @@
         },
         "profs": 1,
         "languages": "You can speak, read, and write up to three additional human languages."
-        },
+    },
     "Hard_Laborer": {
         "name": "Hard Laborer",
         "desc": "Some people make a living performing physically taxing jobs. Without them, society would not function.",
@@ -60,7 +60,19 @@
             "desc": "You may choose to be proficient in two of the following: Athletics, Acrobatics, Animal Handling, or Intimidation."
         },
         "profs": 3
+    },
+    "Leader": {
+        "name": "Leader",
+        "desc": "Leaders are those who are able to sway others to help them perform great deeds, whether they be selfish or selfless. They are able to take charge of a situation and guide others along a specific path.",
+        "examples": ["Heads of a Community", "Heads of a Movement", "Some Politicians", "Royalty"],
+        "saves": "You are proficient in two of the following saving throws of your choice: Intelligence, Wisdom, or Charisma.",
+        "ability": "Your Intelligence, Wisdom, and Charisma scores increase by 1.",
+        "custom": {
+            "name": "Leadership Experience",
+            "desc": "You have proficiency in Insight, Performance, and Persuasion."
         },
+        "profs": 2
+    },
     "Performer": {
         "name": "Performer",
         "desc": "Those who perfect a craft in order to inspire, but also to hear the roar of the crowd.",
@@ -72,7 +84,7 @@
             "desc": "You have proficiency in Deception, Persuasion, and of course, Performance. You are also proficient in up to two instruments of your choice."
         },
         "profs": 2
-        },
+    },
     "Medical_Expert": {
         "name": "Medical Expert",
         "desc": "Medical Experts use their superior intellect, reasoning, and patience to assist the injured. Medical Experts have immense knowledge of anatomy, knowing how living things function in almost every way.",
@@ -84,7 +96,7 @@
             "desc": "You have proficiency in Animal Handling, and expertise in Medicine."
         },
         "profs": 2
-        },
+    },
     "Hospitality_Worker": {
         "name": "Hospitality Worker",
         "desc": "A person who makes their living serving people, using their training and wit to help them.",
@@ -97,7 +109,7 @@
         },
         "profs": 1,
         "languages": "You can speak, read, and write up to two additional human languages."
-        },
+    },
     "Student": {
         "name": "Student",
         "desc": "Students aim to learn about and gain experience in a wide variety of things, exploring what they’d like to do with their future.",
@@ -109,7 +121,7 @@
             "desc": "You have proficiency in any four skills of your choice."
         },
         "languages": "You can speak, read, and write up to two additional human languages."
-        },
+    },
     "Survivalist": {
         "name": "Survivalist",
         "desc": "Someone who has chosen to forgo most parts of modern society, instead choosing to live a simpler, more reclusive life.",
@@ -121,7 +133,7 @@
             "desc": "You have proficiency in Insight, Perception, Animal Handling, and Survival. You also gain proficiency in the use of the Herbalism Kit."
         },
         "profs": 1
-        },
+    },
     "Thief": {
         "name": "Thief",
         "desc": "Those who must make a living taking from the more fortunate. Through Stealth, Intimidation, or Speed, Thieves take to sustain the needs of themselves or those they hold close.",
@@ -133,7 +145,7 @@
             "desc": "You have proficiency in Sleight of Hand, Stealth, and Intimidation. You also gain proficiency in Thieves' Tools."
         },
         "profs": 1
-        },
+    },
     "Trained_Laborer": {
         "name": "Trained Laborer",
         "desc": "Someone who has studied for years in order to hone their craft. They use their Strength along with their experience in order to accomplish their tasks.",
@@ -145,7 +157,7 @@
             "desc": "You have proficiency in Athletics, Arcana and Investigation. You also gain proficiency in a set of Artisan's Tools of your choice."
         },
         "profs": 2
-        },
+    },
     "Traveler": {
         "name": "Traveler",
         "desc": "Those who travel immense distances, using their superior willpower and trained body to withstand immense pressure over long periods of time.",
@@ -157,5 +169,5 @@
             "desc": "You have proficiency in Survival and Religion."
         },
         "profs": 2
-        }
+    }
 }
