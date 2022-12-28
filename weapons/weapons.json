@@ -70,7 +70,7 @@
             "type": "Martial",
             "stat": "Dex",
             "prereq": "None",
-            "effect": "1d4 Piercing<br>If you have Advantage on the attack roll, add a number of d6s of Piercing damage equal to your Proficiency Bonus."
+            "effect": "1d4 Piercing<br>Deals an additional 3d6 damage if you have Advantage on the attack roll."
         },
         {
             "name": "Throwing Axe",
@@ -383,6 +383,14 @@
             "stat": "Con",
             "prereq": "<a href='/feats/?focus=Automatic_Weapon_Proficiency'>Automatic Weapon Proficiency</a>",
             "effect": "3d10 Piercing<br>Takes a full Action to set up unless already prepared.<br>Typically mounted, but can be carried Two-Handed by someone with 15+ Str.<br>Carrying halves your Movement Speed."
+        },
+        {
+            "name": "Clackers",
+            "attr": ["Thrown (5/15)", "One-Handed"],
+            "type": "Martial",
+            "stat": "Str/Dex",
+            "prereq": "Dex (13+)",
+            "effect": "1d4 Bludgeoning"
         }
     ]
 }

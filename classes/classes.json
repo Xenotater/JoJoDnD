@@ -175,7 +175,7 @@
         {
             "name": "Rules of Stands",
             "content": [
-                "<ul><li>A single person can only have one stand (Hive Stands are the same Stand, just split up into much smaller parts)</li><li>Whatever Damage is inflicted upon the Stand or the User is also dealt to the other</li><li>Only Stand Users can sense Stands</li><li>Stand Users can interact and speak with spirits or ghosts</li><li>Only Stands can defeat Stands, physical objects simply pass through or bounce off of all Stands except Enhancement or Independent types</li><li>If the User is knocked unconscious and the Stand is not a Revenge-Type, the Stand and it's Ability will disappear until resummoned by the User when conscious</li><li>Stand Energy is only consumed if the Ability actually affects something</li><li>If a Stand User fights a Non-Stand User, the Stand User gets Advantage on all Attacks using their Stand</li></ul>"
+                "<ul><li>A single person can only have one stand (Hive Stands are the same Stand, just split up into much smaller parts)</li><li>Whatever Damage is inflicted upon the Stand or the User is also dealt to the other</li><li>Only Stand Users can sense Stands</li><li>Stand Users can interact and speak with spirits or ghosts</li><li>Only Stands can defeat Stands, physical objects simply pass through or bounce off of all Stands except Enhancement or Independent types</li><li>If the User is knocked unconscious and the Stand is not a Revenge-Type, the Stand and it's Ability will disappear until resummoned by the User when conscious</li><li>Stand Energy is only consumed if the Ability actually affects something</li><li>If a Stand User fights a Non-Stand User, the Stand User gets Advantage on all Attacks using their Stand</li><li>If a Stand User is Surprised and does not have their Stand active, they may not use it to defend themselves.</li></ul>"
             ]
         },
         {
@@ -238,6 +238,7 @@
         "types": {
             "Power": {
                 "name": "Power-Type Stand",
+                "aka": "Close-Range",
                 "exampleOf": "Power Stands",
                 "examples": ["Star Platinum", "Crazy Diamond", "Gold Experience"],
                 "links": ["Star_Platinum", "Crazy_Diamond", "Gold_Experience"],
@@ -378,6 +379,7 @@
             },
             "Ranged": {
                 "name": "Ranged-Type Stand",
+                "aka": "Versatile",
                 "exampleOf": "Ranged Stands",
                 "examples": ["Hierophant Green", "Aerosmith", "Whitesnake"],
                 "links": ["Hierophant_Green", "Aerosmith", "Whitesnake"],
@@ -519,6 +521,7 @@
             },
             "Remote": {
                 "name": "Remote-Type Stand",
+                "aka": "Automatic",
                 "exampleOf": "Remote Stands",
                 "examples": ["Highway Star", "Black Sabbath", "Goo Goo Dolls", "Manhattan Transfer"],
                 "links": ["Highway_Star", "Black_Sabbath", "Goo_Goo_Dolls", "Manhattan_Transfer"],
@@ -660,6 +663,7 @@
             },
             "Ability": {
                 "name": "Ability-Type Stand",
+                "aka": "Phenomenon",
                 "exampleOf": "Ability Stands",
                 "examples": ["Hermit Purple", "Earth Wind and Fire (?)", "Moody Blues", "White Album", "Oasis"],
                 "links": ["Hermit_Purple", "Earth_Wind_and_Fire", "Moody_Blues", "White_Album", "Oasis"],
@@ -798,6 +802,7 @@
             },
             "Enhancement": {
                 "name": "Enhancement-Type Stand",
+                "aka": "Bound",
                 "exampleOf": "Enhancement Stands",
                 "examples": ["High Priestess", "Strength", "Wheel of Fortune", "The Fool", "Love Deluxe"],
                 "links": ["High_Priestess", "Strength", "Wheel_of_Fortune", "The_Fool", "Love_Deluxe"],
@@ -937,6 +942,7 @@
             },
             "Revenge": {
                 "name": "Revenge-Type Stand",
+                "aka": "Grudge",
                 "exampleOf": "Revenge Stands",
                 "examples": ["Ebony Devil", "Stray Cat", "Notorious B.I.G.", "Civil War"],
                 "links": ["Ebony_Devil", "Stray_Cat", "Notorious_B.I.G", "Civil_War"],
@@ -1078,6 +1084,7 @@
             },
             "Independent": {
                 "name": "Independent-Type Stand",
+                "aka": "Stand-Alone",
                 "exampleOf": "Independent Stands",
                 "examples": ["Anubis", "Superfly", "Foo Fighters"],
                 "links": ["Anubis", "Superfly", "Foo_Fighters"],
@@ -1217,6 +1224,7 @@
             },
             "Hive": {
                 "name": "Hive-Type Stand",
+                "aka": "Colony",
                 "exampleOf": "Hive Stands",
                 "examples": ["Bad Company", "Harvest", "Sex Pistols"],
                 "links": ["Bad_Company", "Harvest", "Sex_Pistols"],
@@ -1367,6 +1375,7 @@
             },
             "Act": {
                 "name": "Act-Type Stand",
+                "aka": "Evolution",
                 "exampleOf": "Act Stands",
                 "examples": ["Echoes", "Tusk"],
                 "links": ["Echoes", "Tusk"],

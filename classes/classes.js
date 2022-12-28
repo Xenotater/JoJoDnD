@@ -86,16 +86,20 @@ function updateDisplay() {
     if ($("#" + c).hasClass("non-super"))
         clss = cData["Non-Supernatural"].types[c];
 
-    newContent += "<h2 class='display-title'>" + clss.name + "</h2><div class='display-img'><img src='Assets/" + c + ".png' alt='" + c + "'></div>";
+    newContent += "<h2 class='display-title'>" + clss.name + "</h2><div class='display-img'><img src='Assets/" + c + ".png' alt='" + c + "'></div><p class='center'>";
     if (clss.exampleOf != null) {
-        newContent += "<p class='center'><small><b>Examples of " + clss.exampleOf + ": </b><i>";
+        newContent += "<small><b>Examples of " + clss.exampleOf + ": </b><i>";
         for (let i = 0; i < clss.examples.length; i++) {
             newContent += "<a href='https://jojo.fandom.com/wiki/" + clss.links[i] + "' target='_blank'>" + clss.examples[i] + "</a>";
             if (i != clss.examples.length - 1)
                 newContent += ", ";
         }
-        newContent += "</i></small></p>";
+        newContent += "</i></small><br>";
     }
+    if (clss.aka != null) {
+        newContent += "<small>Also Known As <i>" + clss.aka + "</i> Stands</small>"
+    }
+    newContent += "</p>";
     if (clss.dc != null)
         newContent += "<div class='row center stats'><div class='col-sm-4'><p><b>Hit Dice: </b>" + clss.hDice + "</p></div><div class='col-sm-8'><p><b>" + clss.dcName + "</b>: " + clss.dc + "</p></div></div>";
     else if (clss.hDice != null)
