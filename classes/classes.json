@@ -1848,7 +1848,7 @@
                     "6": {
                         "pro": "3",
                         "feats": "3",
-                        "featFeatures": ["Heavy Weapon Speciaoptions", "OR", "Shield Master"],
+                        "featFeatures": ["Heavy Weapon Specialist", "OR", "Shield Master"],
                         "ability": ["Ability Score Improvement"]
                     },
                     "7": {
@@ -1949,7 +1949,7 @@
                     "6": {
                         "pro": "3",
                         "feats": "3",
-                        "featFeatures": ["Heavy Weapon Speciaoptions", "OR", "Rifle Proficiency"],
+                        "featFeatures": ["Heavy Weapon Specialist", "OR", "Rifle Proficiency"],
                         "ability": ["Ability Score Improvement"]
                     },
                     "7": {
