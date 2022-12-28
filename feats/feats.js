@@ -83,7 +83,7 @@ function updateList() {
     if (reverse)
         feats.reverse();
     for (let i = 0; i < feats.length; i++)
-        $(".simplebar-content").append("<tr class='list-link' id='" + fData[feats[i]].name.replace(/[ -]/g, "_") + "'><td>" + fData[feats[i]].name + "</td></tr>");
+        $(".simplebar-content").append("<tr class='list-link' id='" + fData[feats[i]].name.replace(/[ -]/g, "_").replace(/'/g, "") + "'><td>" + fData[feats[i]].name + "</td></tr>");
     $("#" + f).addClass("listCurrent");
 }
 

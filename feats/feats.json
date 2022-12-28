@@ -184,6 +184,15 @@
             "Once you have used a number, it cannot be used again."
         ]
     },
+    "Guardians_Wrath": {
+        "name": "Guardian's Wrath",
+        "desc": "You're passionate about protecting those close to you and will lash out at those who bring them harm.",
+        "effects": [
+            "Whenever someone you consider to be a close ally or friend fulfills one of the conditions where Grudge Points are gained, you gain a Grudge Point.",
+            "You may only have one ally at a time where these conditions are met on, and you may change which one you have selected as a Bonus Action."
+        ],
+        "prereq": "<a href='/classes/?focus=Revenge'>Revenge-Type User</a> Level 1+"
+    },
     "Guerilla_Fighter": {
         "name": "Guerilla Fighter",
         "desc": "You make use of irregular tactics in combat, including ambushes, sabotage, and hit-and-runs.",
