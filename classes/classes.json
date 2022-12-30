@@ -947,7 +947,7 @@
                 "examples": ["Ebony Devil", "Stray Cat", "Notorious B.I.G.", "Civil War"],
                 "links": ["Ebony_Devil", "Stray_Cat", "Notorious_B.I.G", "Civil_War"],
                 "desc": "Some Stands have immense power but are unable to properly function unless their user feels a certain way. Through feelings of hatred, pain, or loss, certain Stands may manifest properly, showing their true form and relentlessly attacking those who wronged their users.",
-                "notes": ["You cannot activate a Revenge-Type Stand by yourself. Instead, you must take an amount of damage greater than or equal to your Level in order to summon your Stand. This damage may be dealt over time, or in one hit. After you take that initial damage, you can summon it or dispell it at will for an amount of minutes equal to your Level. The damage can be inflicted by yourself or something that another person/thing does to you."],
+                "notes": ["You cannot activate a Revenge-Type Stand by yourself. Instead, you must gain enough Grudge points to be able to activate your Stand. An explanation of the Grudge system can be found below."],
                 "hDice": "1d12",
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
@@ -1717,7 +1717,7 @@
             "20": {
                 "pro": "6",
                 "feats": "6",
-                "linkFeatures": ["Perfect Spin"]
+                "linkFeatures": ["Perfect Spiral"]
             }
         }
     },

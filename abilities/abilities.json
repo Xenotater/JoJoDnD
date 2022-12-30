@@ -511,7 +511,7 @@
         ]
     },
     "Scarlet_Overdrive": {
-        "name": "Scarlet_Overdrive",
+        "name": "Scarlet Overdrive",
         "classes": ["Rip"],
         "desc": [
             "As an Attack that costs 4 Ripple Points, you may harness the power of the sun within the beat of your own blood and form a new kind of Ripple: a Ripple of flame.",
@@ -1074,7 +1074,8 @@
         "name": "Stoneflesh",
         "classes": ["Rock"],
         "desc": [
-            "When entering full hibernation, you gain a thick layer of stone over your skin and enter a dormant state. You may not move while in this state, nor take any actions whatsoever. Your scent disappears, and you become practically indistinguishable from a regular boulder. In this state, your AC increases by 5, your Con score increases by 20, and you resist all damage types."
+            "As an Action you enter full hibernation, gaining a thick layer of stone over your skin and entering a dormant state. You may not move while in this state, nor take any actions whatsoever. Your scent disappears, and you become practically indistinguishable from a regular boulder.",
+            "In this state, your AC increases by 5, your Con score increases by 20, and you resist all damage types."
         ]
     },
     "Stone_Cold_Willpower": {

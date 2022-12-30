@@ -55,10 +55,10 @@
     },
     "Catlike_Agility": {
         "name": "Catlike Agility",
-        "desc": "Your Reflexes are faster than that of the average person.",
+        "desc": "Your reflexes are faster than that of the average person.",
         "effects": [
-            "As a Bonus Action, you may make the Dodge action.",
-            "You may use this Feat an amount of times equal to your Dexterity Modifier per Long Rest."
+            "Once per short rest, you may Dodge as a Bonus Action.",
+            "Additionally, while Dodging through any means, you may reduce incoming damage by half until the start of your next turn."
         ],
         "prereq": "Dex 13+ or <a href='/passions/?focus=Artist'>Artist</a>"
     },
@@ -429,9 +429,10 @@
     },
     "Scarflesh": {
         "name": "Scarflesh",
-        "desc": "You've gone through a lot of physical trauma, and your body is beginning to show the signs of it. Scar tissue is beginning to build up on your skin, as well as internally.",
+        "desc": "You've gone through a lot of physical trauma, and your body has learned to adapt accordingly. Scar tissue is beginning to build up on your skin, as well as internally.",
         "effects": [
-            "You gain Damage Reduction equal to your Constitution Modifier every turn."
+            "You gain Damage Reduction equal to twice your Constitution Modifier at the top of Initiative every round.",
+            "This Damage Reduction doesn't conflict with Stand Damage Reduction, and unlike Stand DR, applies on any hit."
         ]
     },
     "Shield_Master": {
