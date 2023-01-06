@@ -703,7 +703,7 @@
         "classes": ["Vamp"],
         "desc": [
             "When you kill someone using Vampiric Feeding or touch a corpse, you may activate this as a Bonus Action. You take an almost immeasurably small amount of Vampiric Essence and use it to replace the blood you have consumed.",
-            "This ability costs 5 Energy, and can be used an amount of times equal to your Level in Vampire per Long Rest. Upon using this Ability, the affected body revives at the start of their next turn as a <a href='/races/?focus=Zombie>Zombie</a>."
+            "This ability costs 5 Energy, and can be used an amount of times equal to your Level in Vampire per Long Rest. Upon using this Ability, the affected body revives at the start of their next turn as a <a href='/races/?focus=Zombie'>Zombie</a>."
         ]
     },
     "Primal_Charm": {
