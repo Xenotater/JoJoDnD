@@ -19,7 +19,7 @@
             <div class="container-fluid">
                 <div class="navigator" id="home">
                     <a href="/" class="nav-link nomargin">
-                        <img src="/Assets/icon.png" id="home-logo">
+                        <img src="/Assets/icon.webp" id="home-logo">
                     </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsible">
@@ -29,63 +29,63 @@
                     <ul class="navbar-nav">
                         <li class="nav-item navigator" id="rules">
                             <a class="nav-link" href="/rules">
-                                <img src="/Assets/list.png" class="img-fluid barImg">
+                                <img src="/Assets/list.webp" class="img-fluid barImg">
                                 <br class="nav-text-break">
                                 Rules
                             </a>
                         </li>
                         <li class="nav-item navigator" id="passions">
                             <a class="nav-link" href="/passions">
-                                <img src="/Assets/pencil.png" class="img-fluid barImg">
+                                <img src="/Assets/pencil.webp" class="img-fluid barImg">
                                 <br class="nav-text-break">
                                 Passions
                             </a>
                         </li>
                         <li class="nav-item navigator" id="races">
                             <a class="nav-link" href="/races">
-                                <img src="/Assets/person.png" class="img-fluid barImg">
+                                <img src="/Assets/person.webp" class="img-fluid barImg">
                                 <br class="nav-text-break">
                                 Races
                             </a>
                         </li>
                         <li class="nav-item navigator" id="classes">
                             <a class="nav-link" href="/classes">
-                                <img src="/Assets/muscle.png" class="img-fluid barImg">
+                                <img src="/Assets/muscle.webp" class="img-fluid barImg">
                                 <br class="nav-text-break">
                                 Classes
                             </a>
                         </li>
                         <li class="nav-item navigator" id="abilities">
                             <a class="nav-link" href="/abilities">
-                                <img src="/Assets/stars.png" class="img-fluid barImg">
+                                <img src="/Assets/stars.webp" class="img-fluid barImg">
                                 <br class="nav-text-break">
                                 Abilities
                             </a>
                         </li>
                         <li class="nav-item navigator" id="feats">
                             <a class="nav-link" href="/feats">
-                                <img src="/Assets/ribbon.png" class="img-fluid barImg">
+                                <img src="/Assets/ribbon.webp" class="img-fluid barImg">
                                 <br class="nav-text-break">
                                 Feats
                             </a>
                         </li>
                         <li class="nav-item navigator" id="weapons">
                             <a class="nav-link" href="/weapons">
-                                <img src="/Assets/swords.png" class="img-fluid barImg">
+                                <img src="/Assets/swords.webp" class="img-fluid barImg">
                                 <br class="nav-text-break">
                                 Weapons
                             </a>
                         </li>
                         <li class="nav-item navigator" id="artifacts">
                             <a class="nav-link" href="/artifacts">
-                                <img src="/Assets/exclamation.png" class="img-fluid barImg">
+                                <img src="/Assets/exclamation.webp" class="img-fluid barImg">
                                 <br class="nav-text-break">
                                 Artifacts
                             </a>
                         </li>
                         <li class="nav-item navigator" id="resources">
                             <a class="nav-link" href="/resources">
-                                <img src="/Assets/pages.png" class="img-fluid barImg">
+                                <img src="/Assets/pages.webp" class="img-fluid barImg">
                                 <br class="nav-text-break">
                                 Resources
                             </a>
