@@ -38,6 +38,10 @@ body {
     padding: 0;
     border-bottom: 2px solid white;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 88px;
+    z-index: 2;
 }
 
 .navbar-collapse {
@@ -320,4 +324,16 @@ h1, h2, h3, th {
 
 .header-ad {
     text-align: center;
+    height: auto;
+    min-height: 280px;
+    z-index: 1;
+}
+
+#header {
+    min-height: 368px;
+    border-bottom: 2px purple dashed;
+}
+
+#filler {
+    height: 88px;
 }

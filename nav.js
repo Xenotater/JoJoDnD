@@ -5,7 +5,7 @@ $(document).ready(function() {
 function getNav() {
     var data = "";
     $.post("/nav.php", {action: "nav"}, function(data) {
-        $("body").prepend(data);
+        $("#header").append(data);
         var id = "#" + window.location.pathname.replace(/\//g, "");
         if (id == "#")
             id += "home";
