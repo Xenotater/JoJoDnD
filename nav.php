@@ -15,7 +15,7 @@
     <body>
         <!-- navbar icons modified from https://freeicons.io/ -->
         <!-- expandable navbar code modified from https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp -->
-        <nav class="navbar navbar-expand-custom sticky-top">
+        <nav class="navbar navbar-expand-custom">
             <div class="container-fluid">
                 <div class="navigator" id="home">
                     <a href="/" class="nav-link nomargin">
@@ -94,6 +94,7 @@
                   </div>
             </div>
         </nav>
+        <div id="filler"></div>
         <div class='header-ad'>
             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282768297104356"
         crossorigin="anonymous"></script>

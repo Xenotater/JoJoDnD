@@ -127,14 +127,14 @@
     display: none;
 }
 
-#header {
+#controls {
     border-bottom: 2px dashed purple;
     margin-bottom: 12px;
     align-items: center;
     padding-bottom: 1rem;
 }
 
-#header div:last-child {
+#controls div:last-child {
     border-right: none;
 }
 
@@ -151,12 +151,12 @@
     background-color: rgb(187, 187, 187);
 }
 
-#header .col-3, #header .col-2 {
+#controls .col-3, #controls .col-2 {
     display: flex;
     justify-content: space-around;
 }
 
-#header div {
+#controls div {
     padding: 0;
 }
 
@@ -189,7 +189,7 @@
 }
 
 @media (max-width: 767px) {
-    #header {
+    #controls {
         padding-left: 8px;
         padding-right: 8px;
     }
