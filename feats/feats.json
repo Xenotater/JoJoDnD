@@ -125,7 +125,7 @@
             "When making an Attack with a weapon you may choose to use a full Action and Bonus Action to attack. If you choose to do this, you can add your To-Hit Bonus twice.",
             "Upon a successful Hit, you may roll double the Damage Dice that you would roll normally and gain Advantage on them.",
             "This Feat may be activated even when you use the ability that gives you Advantage on a Sniper Rifle.",
-            "When used with <a href='/abilities/?focus=Ranged_Attack'>Ranged Attack</a> this Feat instead on gives Advantage on the Damage Dice rolled."
+            "When used with <a href='/abilities/?focus=Ranged_Attack'>Ranged Attack</a> this Feat instead only gives Advantage on the Damage Dice rolled."
         ],
         "prereq": "Dex 13+"
     },
