@@ -37,7 +37,7 @@ function updateDisplay() {
     var art = aData[a];
     var newContent = "";
 
-    newContent += "<h2 class='display-title'>" + art.name + "</h2><div class='display-img'><img class='img-fluid' src='Assets/" + a + ".png' alt='" + a + "'></div>";
+    newContent += "<h2 class='display-title'>" + art.name + "</h2><div class='display-img'><img class='img-fluid' src='Assets/" + a + ".webp' alt='" + a + "'></div>";
     if (art.lore != null)
         newContent += "<p class='center note'><small><i>" + art.lore + "</i></small></p>";
     newContent += "<h4 class='display-heading'>Description</h4><p>" + art.desc + "</p>";
