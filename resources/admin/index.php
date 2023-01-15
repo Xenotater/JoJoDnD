@@ -12,9 +12,9 @@
         <link rel="stylesheet" href="/jojodnd.css">
         <link rel="stylesheet" href="admin.css">
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="admin.js"></script>
+        <script async src="admin.js"></script>
     </head>
     <body>
         <button id="back"><i class="bi bi-box-arrow-left"></i></i> Back to Site</button>
