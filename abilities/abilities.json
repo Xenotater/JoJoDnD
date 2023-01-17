@@ -87,7 +87,7 @@
         "classes": ["Rmt", "Enh", "Rev"],
         "desc": [
             "Your Stand is powerful, but was limited by how far it could be away from you before now.",
-            "Multiply your Stand's Range by 10. Any points gained to your Stand's Range from now on are also multipled by 10."
+            "Multiply your Stand's Range by 10. Any points gained to your Stand's Range from now on are also multiplied by 10."
         ]
     },
     "Immense_Resistance": {
@@ -179,7 +179,7 @@
         "classes": ["Act"],
         "desc": [
             "Your Stand has undergone an evolution, and has gained a new Ability alongside its new form.",
-            "This Ability should be an evelotion of your first Ability. Similar, but stronger or more versatile.",
+            "This Ability should be an evolution of your first Ability. Similar, but stronger or more versatile.",
             "This Ability follows the same guidelines as any other <a href='/abilities/?focus=Custom_Ability'>Custom Ability</a>."
         ]
     },
@@ -188,7 +188,7 @@
         "classes": ["Act"],
         "desc": [
             "Your Stand has undergone another evolution, and has gained a new Ability alongside its new form.",
-            "This Ability should be an evelotion of your second Ability. Similar, but stronger or more versatile.",
+            "This Ability should be an evolution of your second Ability. Similar, but stronger or more versatile.",
             "This Ability follows the same guidelines as any other <a href='/abilities/?focus=Custom_Ability'>Custom Ability</a>."
         ]
     },
@@ -204,9 +204,9 @@
         "name": "Split Stand",
         "classes": ["Hive"],
         "desc": [
-            "As a Hive Type Stand User, your Stand functions very differently than a typical Stand. Rather than a Stand being an extension of your will to fight, each Instance of your Stand is like a separate organism that simply must follow your orders. You may have anywhere between 2 and 500 Instances, though once choosen this number must remain constant.",
+            "As a Hive Type Stand User, your Stand functions very differently than a typical Stand. Rather than a Stand being an extension of your will to fight, each Instance of your Stand is like a separate organism that simply must follow your orders. You may have anywhere between 2 and 500 Instances, though once chosen this number must remain constant.",
             "Each Instance of your Stand only has a fraction of the Power of a regular Stand, but each Instance may act independently of the others or the Stand User. If one Instance is totally destroyed, that fraction of the User's Health is taken away. For example, if you have 12 Instances of your Stand and one gets destroyed you'll take damage equal to your maximum health divided by 12.",
-            "If every Instance of your Stand is destroyed, you fall unconsious. If your health is restored, so are your Stand Instances. Even when you fall unconscious, one instance will remain. Only when you die is that Instance destroyed."
+            "If every Instance of your Stand is destroyed, you fall unconscious. If your health is restored, so are your Stand Instances. Even when you fall unconscious, one instance will remain. Only when you die is that Instance destroyed."
         ]
     },
     "Stand_Pickpocketing": {
@@ -571,7 +571,7 @@
         "classes": ["Spin"],
         "desc": [
             "As an Attack, you may take a Sphere and throw it into an object. The energy produced by the Sphere will send vibrations up to one meter away from the point of impact. These vibrations are violent, and if placed correctly, could cause tunnels to collapse, sand to fall, rocks to shift, or the ground underneath somebody's feet to become unsteady.",
-            "You may throw beneath someone's feet (if they are standing on solid ground), and they must make a Dexterity Saving Throw, becoming Prone on failure. You may also change on square meter of a surface into Difficult Terrain."
+            "You may throw beneath someone's feet (if they are standing on solid ground), and they must make a Dexterity Saving Throw, becoming Prone on failure. You may also change one square meter of a surface into Difficult Terrain."
         ]
     },
     "Muscle_Contraction": {
@@ -656,7 +656,7 @@
         "classes": ["Spin"],
         "desc": [
             "You may use a Sphere, or something nearby that can be spun like a Sphere, to block an attack as a Reaction. Different materials absorb different amounts of damage, and the sphere is destroyed after the attack's damage is reduced.",
-            "Water reduced 1d4 damage, ice and wood reduce 1d6, stone reduces 1d8, and metal reduces 1d10. Your Dexterity Modifier is also added to the damage reduction."
+            "Water reduces 1d4 damage, ice and wood reduce 1d6, stone reduces 1d8, and metal reduces 1d10. Your Dexterity Modifier is also added to the damage reduction."
         ]
     },
     "Satellite_Spin": {
@@ -688,7 +688,7 @@
         "desc": [
             "As an Attack, you may make a Grapple Check upon a living creature. If you are successful, you place the blood vessels of your hand upon the creature and connect them to the body you have grappled.",
             "The damage dealt by this is 1d6 + your Level of Vampire Piercing Damage. This damage is dealt at the start of each of their turns until they escape your Grapple, and you heal half of the damage dealt.",
-            "Alternatively, if your target is willing, Incapacitated, or Unconcious, you may use this Ability to remove Energy from them, up to an amount equal to your Proficiency Bonus."
+            "Alternatively, if your target is willing, incapacitated, or unconscious, you may use this Ability to remove Energy from them, up to an amount equal to your Proficiency Bonus."
         ]
     },
     "Vampiric_Musculature": {
@@ -1105,7 +1105,7 @@
         "classes": ["Corpse"],
         "desc": [
             "While in possession of The Holy Corpse, if either you injure someone and are aware of the injury, you may choose how exactly the injury affects the person. You can reduce all damage, increase the damage caused, or even move the wound to a different part of the body. For example, a prick on the finger could be amplified and moved to the internal heart valve, causing an almost certain mortal wound.",
-            "It takes 2 full turns for one of theses wounds to become fatal. If healed at least 50 HP by a <a href='/classes/?focus=Stands'>Stand</a>'s power, the <a href='/classes/?focus=Ripple'>Ripple</a>, or a different supernatural technique within that window of time, the harm caused may instead only be applied to the original location of the wound, affecting the body as a wound of that type would normally. If the damage is restored, the receiver of the wound simply drops to 0 HP and becomes stable, rather than dying."
+            "It takes 2 full turns for one of these wounds to become fatal. If healed at least 50 HP by a <a href='/classes/?focus=Stands'>Stand</a>'s power, the <a href='/classes/?focus=Ripple'>Ripple</a>, or a different supernatural technique within that window of time, the harm caused may instead only be applied to the original location of the wound, affecting the body as a wound of that type would normally. If the damage is restored, the receiver of the wound simply drops to 0 HP and becomes stable, rather than dying."
         ]
     },
     "Gravitational_Pull": {
