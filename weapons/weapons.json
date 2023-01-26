@@ -1,396 +1,229 @@
 {
     "weapons": [
         {
-            "name": "Shortsword",
-            "attr": ["Melee", "One-Handed"],
-            "type": "Simple",
-            "stat": "Str/Dex",
-            "prereq": "None",
-            "effect": "1d6 Piercing/Slashing"
-        },
-        {
-            "name": "Greatsword",
-            "attr": ["Melee", "Two-Handed"],
-            "type": "Simple",
-            "stat": "Str",
-            "prereq": "None",
-            "effect": "2d6 Slashing"
-        },
-        {
-            "name": "Rapier",
-            "attr": ["Melee", "One-Handed"],
+            "name": "Assault Rifle",
+            "attr": ["Firearm", "Ranged (15/45)", "Reload (x6)", "Two-Handed"],
             "type": "Martial",
-            "stat": "Str/Dex",
-            "prereq": "Dex (13+)",
-            "effect": "1d8 Piercing"
-        },
-        {
-            "name": "Scythe",
-            "attr": ["Reach (2m)", "Two-Handed"],
-            "type": "Martial",
-            "stat": "Str",
-            "prereq": "None",
-            "effect": "1d8 Slashing"
-        },
-        {
-            "name": "Halberd",
-            "attr": ["Reach (2m)", "Two-Handed"],
-            "type": "Simple",
-            "stat": "Str",
-            "prereq": "Dex (15+)",
-            "effect": "1d10 Piercing/Slashing"
-        },
-        {
-            "name": "Spear",
-            "attr": ["Reach (3m)", "Two-Handed"],
-            "type": "Simple",
-            "stat": "Str/Dex",
-            "prereq": "None",
-            "effect": "1d6 Piercing"
-        },
-        {
-            "name": "Whip",
-            "attr": ["Reach (3m)", "One-Handed"],
-            "type": "Martial",
-            "stat": "Str/Dex",
-            "prereq": "None",
-            "effect": "1d4 Slashing"
-        },
-        {
-            "name": "Combat Knife",
-            "attr": ["Melee", "One-Handed"],
-            "type": "Simple",
-            "stat": "Str",
-            "prereq": "None",
-            "effect": "1d4 Piercing/Slashing<br>The enemy makes a Con Save on hit with a DC of 8 + Str + Proficiency (if proficient), taking another 1d12 Piercing if they fail."
-        },
-        {
-            "name": "Dagger",
-            "attr": ["Melee", "One-Handed"],
-            "type": "Martial",
+            "spec": "Rifle",
             "stat": "Dex",
-            "prereq": "None",
-            "effect": "1d4 Piercing<br>Deals an additional 3d6 damage if you have Advantage on the attack roll."
-        },
-        {
-            "name": "Throwing Axe",
-            "attr": ["Thrown (5/15)", "One-Handed"],
-            "type": "Martial",
-            "stat": "Str/Dex",
-            "prereq": "None",
-            "effect": "1d6 Slashing"
-        },
-        {
-            "name": "Throwing Knife",
-            "attr": ["Thrown (5/15)", "One-Handed"],
-            "type": "Martial",
-            "stat": "Str/Dex",
-            "prereq": "None",
-            "effect": "1d6 Piercing"
-        },
-        {
-            "name": "Throwing Hammer",
-            "attr": ["Thrown (5/15)", "One-Handed"],
-            "type": "Martial",
-            "stat": "Str/Dex",
-            "prereq": "None",
-            "effect": "1d6 Bludgeoning"
-        },
-        {
-            "name": "Wooden Baseball Bat",
-            "attr": ["Melee", "Two-Handed"],
-            "type": "Simple",
-            "stat": "Str",
-            "prereq": "None",
-            "effect": "1d8 Bludgeoning<br>If you deal more than 12 damage in one blow with this weapon it breaks and becomes unusable.<br>However, it deals an additional 2d6 Piercing thanks to the splinters and fragments."
-        },
-        {
-            "name": "Metal Baseball Bat",
-            "attr": ["Melee", "Two-Handed"],
-            "type": "Simple",
-            "stat": "Str",
-            "prereq": "None",
-            "effect": "1d10 Bludgeoning"
-        },
-        {
-            "name": "Greataxe",
-            "attr": ["Melee", "Two-Handed"],
-            "type": "Simple",
-            "stat": "Str",
-            "prereq": "None",
-            "effect": "1d12 Slashing"
-        },
-        {
-            "name": "Warhammer",
-            "attr": ["Melee", "Two-Handed"],
-            "type": "Simple",
-            "stat": "Str",
-            "prereq": "Str (13+)",
-            "effect": "2d4 Bludgeoning<br>The enemy makes a Con Save on hit with a DC of 8 + Str + Proficiency (if proficient), having their bones break in the location of the hit on failure.<br>With their bones broken, the enemy must make the save at the start of each of their turns for the next minute or they will be unable to take a Movement Action."
-        },
-        {
-            "name": "Quarterstaff",
-            "attr": ["Reach (2m)", "Two-Handed"],
-            "type": "Martial",
-            "stat": "Str/Dex",
-            "prereq": "None",
-            "effect": "1d8 Bludgeoning"
-        },
-        {
-            "name": "Shovel/Spade",
-            "attr": ["Reach (2m)", "Two-Handed"],
-            "type": "Simple",
-            "stat": "Str",
-            "prereq": "None",
-            "effect": "1d8 Slashing/Bludgeoning<br>You may tunnel/dig underground at a speed of Str/20m. You may not dig through anything more dense than Gravel using this tool."
-        },
-        {
-            "name": "Nunchucks",
-            "attr": ["Melee", "One-Handed"],
-            "type": "Martial",
-            "stat": "Str",
-            "prereq": "Dex (17+)",
-            "effect": "1d12 Bludgeoning"
-        },
-        {
-            "name": "Pistol",
-            "attr": ["Ranged (20/60)", "Firearm", "Reload (x9)", "One-Handed"],
-            "type": "Pistol",
-            "stat": "Dex",
-            "prereq": "None",
-            "effect": "1d6 Piercing"
-        },
-        {
-            "name": "Revolver",
-            "attr": ["Ranged (20/60)", "Firearm", "Reload (x6)", "One-Handed"],
-            "type": "Pistol",
-            "stat": "Dex",
-            "prereq": "Con (13+)",
-            "effect": "1d8 Piercing"
-        },
-        {
-            "name": "Handcannon",
-            "attr": ["Ranged (20/60)", "Firearm", "Reload (x6)", "One-Handed"],
-            "type": "Pistol",
-            "stat": "Dex",
-            "prereq": "Con (17+)",
-            "effect": "3d4 Piercing"
-        },
-        {
-            "name": "Pump-Action 20-Gauge Shotgun",
-            "attr": ["Ranged (5/15)", "Firearm", "Reload (x5)", "Two-Handed"],
-            "type": "Rifle",
-            "stat": "Con",
-            "prereq": "Str (15+)",
-            "effect": "1d10 Piercing"
-        },
-        {
-            "name": "Double-Barrelled 12-Gauge Shotgun",
-            "attr": ["Ranged (5/15)", "Firearm", "Reload (x2)", "Two-Handed"],
-            "type": "Rifle",
-            "stat": "Con",
-            "prereq": "Str (17+)",
-            "effect": "1d12 Piercing"
-        },
-        {
-            "name": "Sawed-Off Shotgun",
-            "attr": ["Ranged (5/15)", "Firearm", "Reload (x2)", "One-Handed"],
-            "type": "Pistol",
-            "stat": "Con",
-            "prereq": "Str (13+)",
-            "effect": "1d8 Piercing"
-        },
-        {
-            "name": "The Hand of God",
-            "attr": ["Ranged (5/15)", "Firearm", "Reload (x1)", "Two-Handed"],
-            "type": "Rifle",
-            "stat": "Con",
-            "prereq": "Con (17+), Str (17+)",
-            "effect": "1d20 Piercing"
-        },
-        {
-            "name": "Light Crossbow",
-            "attr": ["Ranged (20/60)", "Reload (x1)", "Two-Handed"],
-            "type": "Rifle",
-            "stat": "Dex",
-            "prereq": "None",
-            "effect": "1d8 Piercing<br>Firing within melee range does not impose Disadvantage."
-        },
-        {
-            "name": "Heavy Crossbow",
-            "attr": ["Ranged (50/200)", "Reload (x1)", "Two-Handed"],
-            "type": "Rifle",
-            "stat": "Dex",
-            "prereq": "Str (13+)",
-            "effect": "1d10 Piercing"
-        },
-        {
-            "name": "Shortbow",
-            "attr": ["Ranged (20/60)", "Two-Handed"],
-            "type": "Martial",
-            "stat": "Dex",
-            "prereq": "None",
-            "effect": "1d6 Piercing"
-        },
-        {
-            "name": "Longbow",
-            "attr": ["Ranged (50/200)", "Two-Handed"],
-            "type": "Martial",
-            "stat": "Dex",
-            "prereq": "Str (13+)",
-            "effect": "1d8 Piercing"
-        },
-        {
-            "name": "Bolt-Action Rifle",
-            "attr": ["Ranged (200/600)", "Firearm", "Reload (x5)", "Two-Handed"],
-            "type": "Rifle",
-            "stat": "Dex",
-            "prereq": "None",
-            "effect": "1d10 Piercing"
-        },
-        {
-            "name": "Sniper Rifle",
-            "attr": ["Ranged (600/1,200)", "Firearm", "Reload (x1)", "Two-Handed"],
-            "type": "Rifle",
-            "stat": "Dex",
-            "prereq": "Int (15+)",
-            "effect": "1d12 Piercing<br>If you don't use your Movement Action you may fire with Advantage.<br>If you spend an Action to set up your shot add an additional d12.<br>Firing between 1m and 10m imposes Disadvantage.<br>Easily concealed by disassembling into smaller parts.<br>Assembly takes 2 turns, and can only be done if proficient."
-        },
-        {
-            "name": "Taser",
-            "attr": ["Melee", "Reload (x3)", "Two-Handed"],
-            "type": "Simple",
-            "stat": "Str/Dex",
-            "prereq": "None",
-            "effect": "The enemy makes a Con Save on hit with a DC of 12, becoming paralyzed for 1d2 turns on failure."
-        },
-        {
+            "prereq": "Con 13+",
+            "dmg": "3d4 Piercing"
+        },{
             "name": "Brass Knuckles",
-            "attr": ["Melee", "One-Handed"],
-            "type": "Simple OR Martial",
+            "attr": ["Concealed (+10)", "Light"],
+            "type": "Simple",
+            "spec": "Melee",
             "stat": "Str",
             "prereq": "None",
-            "effect": "1d6 Bludgeoning"
-        },
-        {
-            "name": "Spiked Gauntlets",
-            "attr": ["Melee", "One-Handed"],
-            "type": "Martial",
+            "dmg": "1d6 Bludgeoning"
+        },{
+            "name": "C-4",
+            "attr": ["Radius (2m)", "Remote", "Siege", "Timer"],
+            "type": "Explosive",
+            "spec": "None",
+            "stat": "DC: 10",
+            "prereq": "Int 13+",
+            "dmg": "5d6 Thunder"
+        },{
+            "name": "Clackers",
+            "attr": ["Concealed (+8)", "Light", "Thrown (5/15)"],
+            "type": "Simple",
+            "spec": "Melee/Thrown",
+            "stat": "Str/Dex",
+            "prereq": "Dex 15+",
+            "dmg": "1d4 Bludgeoning"
+        },{
+            "name": "Dagger",
+            "attr": ["Ambush", "Concealed (+8)", "Light", "Thrown (5/15)"],
+            "type": "Simple",
+            "spec": "Melee/Thrown",
             "stat": "Str/Dex",
             "prereq": "None",
-            "effect": "2d4 Bludgeoning<br>Equiping/Unequiping takes a Bonus Action for each gauntlet."
-        },
-        {
-            "name": "Shield",
-            "attr": ["Shield", "One-Handed"],
-            "type": "None",
-            "stat": "None",
-            "prereq": "None",
-            "effect": "+2 AC, -2 Movement Speed"
-        },
-        {
-            "name": "Tower Shield",
-            "attr": ["Shield", "One-Handed"],
-            "type": "None",
-            "stat": "None",
-            "prereq": "Str (15+)",
-            "effect": "+5 AC, -5 Movement Speed<br>Can be hunkered behind as an Action to gain 3/4 Cover.<br>If you do not have the <a href='/abilities/?focus=Shield_Master'>Shield Master</a> Feat you only get +2 AC and may not use the hunker action."
-        },
-        {
-            "name": "Frag Grenade",
-            "attr": ["Explosive (DC 20)", "Thrown (5/15)", "One-Handed"],
-            "type": "None",
-            "stat": "None",
-            "prereq": "None",
-            "effect": "3d6 + 5 Thunder and 3d4 Piercing from 0-1m away<br>2d6 + 2 Thunder and 2d4 Piercing from 1-3m away<br>1d6 Thunder and 1d4 Piercing from 3-5m away<br>Explodes 5s after the pin is removed and the handle is released."
-        },
-        {
-            "name": "Dynamite Stick",
-            "attr": ["Explosive (DC 16)", "Thrown (5/15)", "One-Handed"],
-            "type": "None",
-            "stat": "None",
-            "prereq": "None",
-            "effect": "4d10 + 10 Thunder from 0-2m away<br>2d10 + 5 Thunder Damage from 2-4m away<br>Explodes after an amount of time determined by the length of the fuse.<br>1s of burn time is roughly equivalent to 10cm of fuse."
-        },
-        {
-            "name": "C-4",
-            "attr": ["Explosive (DC 30)", "Two-Handed"],
-            "type": "None",
-            "stat": "None",
-            "prereq": "None",
-            "effect": "8d10 + 20 Thunder from 0-1m away<br>2d10 + 10 Thunder from 1-3m away<br>2d10 Thunder from 3-6maway<br>1d10 Thunder from 6-10m away<br>Explodes after an amount of time set on a timer, which can be set for between 30s and 1hr."
-        },
-        {
-            "name": "Gasoline Bomb",
-            "attr": ["Explosive (DC 14)", "Thrown (3/15)", "One-Handed"],
-            "type": "None",
-            "stat": "None",
-            "prereq": "None",
-            "effect": "2d10 + 5 Thunder and 3d4 + 10 Fire from 0-1m away<br>1d10 + 5 Thunder and 1d4 + 5 Fire from 3-6m away<br>1d6 Thunder and 1d4 Fire from 6-10m away<br>Explodes 5s after being lit, or upon impact with something.<br>Fire spreads to flammable objects within the radius.<br>If there's nothing flammable in the radius the fire will continue to burn for 1d4 Turns."
-        },
-        {
-            "name": "Moltov Cocktail",
-            "attr": ["Explosive (DC 10)", "Thrown (5/15)", "One-Handed"],
-            "type": "None",
-            "stat": "None",
-            "prereq": "None",
-            "effect": "2d12 + 6 Fire from 0-1m away<br>1d12 Fire from 1-2m<br>Explodes 10s after being lit or upon impact with something.<br>Fire spreads to flammable objects within the radius.<br>If there's nothing flammable in the radius the fire will continue to burn for 1d4 Turns."
-        },
-        {
-            "name": "UV Flashlight",
-            "attr": ["Ranged (3/15)", "Reload (x15)", "One-Handed"],
-            "type": "None",
-            "stat": "None",
-            "prereq": "None",
-            "effect": "2d10 + 10 Radiant to <a href='/abilities/?focus=Undead_Nature'>Undead</a><br>1d8 Radiant to <a href='/races/Pillar_Men'>Pillar Men</a><br>0 damage to other creatures<br>Creatures in a 15m cone make a Con Save with a DC of 20, taking half damage on success.<br>Creatures further than 3m get Advantage on the Save."
-        },
-        {
-            "name": "UV Laser",
-            "attr": ["Ranged (10/50)", "Reload (x1)", "One-Handed"],
+            "dmg": "1d4 Piercing/Slashing"
+        },{
+            "name": "Derringer",
+            "attr": ["Ambush", "Concealed (+5)", "Firearm", "Light", "Point Blank", "Ranged (5/10)", "Reliable", "Reload (x4)"],
             "type": "Simple",
+            "spec": "Sidearm",
             "stat": "Dex",
             "prereq": "None",
-            "effect": "2d20 + 20 Radiant to <a href='/abilities/?focus=Undead_Nature'>Undead</a><br>2d10 + 10 Radiant to <a href='/races/?focus=Pillar_Men'>Pillar Men</a><br>1d4 Radiant to other creatures."
-        },
-        {
-            "name": "UV Canon",
-            "attr": ["Ranged (10/30)", "Reload (x5)", "Two-Handed"],
-            "type": "None",
-            "stat": "None",
-            "prereq": "None",
-            "effect": "3d20 + 30 Radiant to <a href='/abilities/?focus=Undead_Nature'>Undead</a><br>4d10 +10 Radiant to <a href='/races/Pillar_Men'>Pillar Men</a><br>1d2 Raidant to other creatures<br>Creatures in a 30m cone make a Con Save with a DC of 25, taking half damage on success.<br>Creatures further than 10m get Advantage on the Save."
-        },
-        {
-            "name": "Uzi",
-            "attr": ["Ranged (5/15)", "Firearm", "Reload (x15)", "Burst (x5)", "One-Handed"],
-            "type": "Automatic",
+            "dmg": "1d6 Piercing"
+        },{
+            "name": "Double-Barreled Shotgun",
+            "attr": ["Firearm", "Point Blank", "Ranged (5/30)", "Reload (x2)", "Two-Handed"],
+            "type": "Simple",
+            "spec": "Shotgun",
             "stat": "Con",
+            "prereq": "Con 15+",
+            "dmg": "2d12 Piercing"
+        },{
+            "name": "Dynamite Stick",
+            "attr": ["Concealed (+3)", "Radius (4m)", "Thrown (15/15)", "Siege"],
+            "type": "Explosive",
+            "spec": "None",
+            "stat": "DC: 15",
             "prereq": "None",
-            "effect": "3d6 Piercing"
-        },
-        {
-            "name": "Automatic Rifle",
-            "attr": ["Ranged (15/45)", "Firearm", "Reload (x30)", "Burst (x5)", "Two-Handed"],
-            "type": "Automatic",
-            "stat": "Con",
-            "prereq": "None",
-            "effect": "3d6 Piercing"
-        },
-        {
-            "name": "Mounted Minigun",
-            "attr": ["Ranged (20/60)", "Firearm", "Reload (xinfinite)", "Two-Handed"],
-            "type": "Automatic",
-            "stat": "Con",
-            "prereq": "<a href='/feats/?focus=Automatic_Weapon_Proficiency'>Automatic Weapon Proficiency</a>",
-            "effect": "3d10 Piercing<br>Takes a full Action to set up unless already prepared.<br>Typically mounted, but can be carried Two-Handed by someone with 15+ Str.<br>Carrying halves your Movement Speed."
-        },
-        {
-            "name": "Clackers",
-            "attr": ["Thrown (5/15)", "One-Handed"],
+            "dmg": "4d6 Thunder"
+        },{
+            "name": "Flamethrower",
+            "attr": ["Complex", "Ranged (5/15)", "Reload (x12)", "Flame"],
             "type": "Martial",
-            "stat": "Str/Dex",
-            "prereq": "Dex (13+)",
-            "effect": "1d4 Bludgeoning"
+            "spec": "Heavy",
+            "stat": "Dex",
+            "prereq": "Str 13+",
+            "dmg": "3d6 Fire"
+        },{
+            "name": "Gasoline Tank",
+            "attr": ["Radius (10m)", "Thrown (5/5)"],
+            "type": "Explosive",
+            "spec": "None",
+            "stat": "DC: 10",
+            "prereq": "None",
+            "dmg": "4d6 Thunder"
+        },{
+            "name": "Grenade",
+            "attr": ["Radius (10m)", "Thrown (25/25)"],
+            "type": "Explosive",
+            "spec": "None",
+            "stat": "DC: 15",
+            "prereq": "None",
+            "dmg": "3d6 Thunder"
+        },{
+            "name": "Guided Missle Launcher",
+            "attr": ["Bulky", "Complex", "Firearm", "Radius (3m)", "Ranged (300/900)", "Reload (x1)", "Siege"],
+            "type": "Explosive",
+            "spec": "Heavy",
+            "stat": "DC: 25",
+            "prereq": "Str 13+",
+            "dmg": "3d6 Thunder"
+        },{
+            "name": "Handcannon",
+            "attr": ["Firearm", "Ranged (15/45)", "Reliable", "Reload (x6)", "Point Blank"],
+            "type": "Martial",
+            "spec": "Sidearm",
+            "stat": "Dex",
+            "prereq": "Con 15+",
+            "dmg": "1d10 Piercing"
+        },{
+            "name": "Heavy Crossbow",
+            "attr": ["Point Blank", "Ranged (20/60)", "Reload (x1)", "Two-Handed"],
+            "type": "Martial",
+            "spec": "Rifle",
+            "stat": "Dex",
+            "prereq": "Str 13+",
+            "dmg": "1d10 Piercing"
+        },{
+            "name": "Light Crossbow",
+            "attr": ["Point Blank", "Ranged (10/30)", "Reload (x1)", "Two-Handed"],
+            "type": "Simple",
+            "spec": "Rifle",
+            "stat": "Dex",
+            "prereq": "None",
+            "dmg": "1d8 Piercing"
+        },{
+            "name": "Machine Pistol",
+            "attr": ["Concealed (+1)", "Firearm", "Light", "Point Blank", "Ranged (10/30)", "Reload (x4)"],
+            "type": "Martial",
+            "spec": "Sidearm",
+            "stat": "Dex",
+            "prereq": "None",
+            "dmg": "3d4 Piercing"
+        },{
+            "name": "Marksman Rifle",
+            "attr": ["Firearm", "Ranged (100/300)", "Reload (x8)", "Two-Handed"],
+            "type": "Martial",
+            "spec": "Rifle",
+            "stat": "Dex",
+            "prereq": "Dex 13+",
+            "dmg": "1d10 Piercing"
+        },{
+            "name": "Minigun",
+            "attr": ["Bulky", "Complex", "Firearm", "Ranged (20/60)", "Reload (x12)", "Siege", "Two-Handed"],
+            "type": "Martial",
+            "spec": "Heavy",
+            "stat": "Con",
+            "prereq": "Str 17+",
+            "dmg": "4d10 Piercing"
+        },{
+            "name": "Pistol",
+            "attr": ["Concealed (+2)", "Firearm", "Light", "Point Blank", "Ranged (15/45)", "Reload (x9)"],
+            "type": "Simple",
+            "spec": "Sidearm",
+            "stat": "Dex",
+            "prereq": "None",
+            "dmg": "1d8 Piercing"
+        },{
+            "name": "Pump-Action Shotgun",
+            "attr": ["Firearm", "Point Blank", "Ranged (10/30)", "Reload (x5)", "Siege", "Two-Handed"],
+            "type": "Martial",
+            "spec": "Shotgun",
+            "stat": "Dex",
+            "prereq": "Con 13+",
+            "dmg": "2d10 Piercing"
+        },{
+            "name": "Revolver",
+            "attr": ["Firearm", "Point Blank", "Ranged (15/45)", "Reliable", "Reload (x6)"],
+            "type": "Simple",
+            "spec": "Sidearm",
+            "stat": "Dex",
+            "prereq": "None",
+            "dmg": "1d8 Piercing"
+        },{
+            "name": "RPG",
+            "attr": ["Firearm", "Radius (5m)", "Ranged (200/600)", "Reload (x1)", "Siege"],
+            "type": "Explosive",
+            "spec": "Heavy",
+            "stat": "DC: 15",
+            "prereq": "None",
+            "dmg": "5d6 Thunder"
+        },{
+            "name": "Sawed-Off",
+            "attr": ["Firearm", "Light", "Point Blank", "Ranged (5/10)", "Reload (x2)", "Siege"],
+            "type": "Simple",
+            "spec": "Shotgun",
+            "stat": "Con",
+            "prereq": "Con 13+",
+            "dmg": "1d12 Piercing"
+        },{
+            "name": "Sledgehammer",
+            "attr": ["Siege", "Versatile (1d10)"],
+            "type": "Simple",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d8 Bludgeoning"
+        },{
+            "name": "SMG",
+            "attr": ["Firearm", "Point Blank", "Ranged (20/60)", "Reload (x5)", "Versatile (1d10)"],
+            "type": "Martial",
+            "spec": "Sidearm/Rifle",
+            "stat": "Dex",
+            "prereq": "None",
+            "dmg": "1d8 Piercing"
+        },{
+            "name": "Sniper Rifle",
+            "attr": ["Ambush", "Bulky", "Firearm", "Ranged (600/1200)", "Reload (x4)", "Two-Handed"],
+            "type": "Martial",
+            "spec": "Rifle",
+            "stat": "Dex",
+            "prereq": "Int 15+",
+            "dmg": "1d12 Piercing"
+        },{
+            "name": "UV Cannon",
+            "attr": ["Bulky", "Ranged (10/30)", "Reload (x4)", "Two-Handed"],
+            "type": "Martial",
+            "spec": "Heavy",
+            "stat": "Dex",
+            "prereq": "None",
+            "dmg": "5d12 Radiant (Undead Only)"
+        },{
+            "name": "UV Flashlight",
+            "attr": ["Concealed (+8)", "Light", "Point Blank", "Ranged (3/15)", "Reload (x15)"],
+            "type": "Simple",
+            "spec": "None",
+            "stat": "Dex",
+            "prereq": "None",
+            "dmg": "4d6 Radiant (Undead Only)"
         }
     ]
 }
