@@ -149,12 +149,8 @@ function hint(attr) {
             return("The requirement that must be met in order to use the weapon.");
         case "Damage":
             return("The damage the weapon deals when it hits.");
-        case "Melee":
-            return("This weapon has a range of 1m from the person/stand wielding it.");
-        case "Reach":
-            return("This weapon has a range of " + dist + " from the person/stand wielding it.");
         case "Two-Handed":
-            return("This weapon requires two hands to wield. Using this weapon to make an Attack with only 1 hand inflicts Disadvantage.<br>Difficult to holster or conceal.");
+            return("This weapon requires two hands to wield, and is difficult to holster or conceal.<br>May be carried (but not used) with one hand if desired.");
         case "Thrown":
             if (range[0] != range[1])
                 return("This weapon can be thrown up to " + range[0] + "m, or as far as " + range[1] + "m with Disadvantage.<br>Once thrown, this weapon must be picked up in order to be used again (unless it is an explosive, in which case it is destroyed).");
@@ -166,16 +162,12 @@ function hint(attr) {
             return("This weapon makes a loud sound which can be heard up to 0.5km away.<br>It also jams if a natural 1 is rolled while using it.<br>This weapon's ammuntion doesn't function when wet.");
         case "Reload":
             return("This weapon can be used " + ammo + " times before needing to be reloaded.<br>Reloading takes a full Attack.");
-        case "Shield":
-            return("This item grants a bonus to AC but lowers your movement speed.<br>You may not equip more than one shield at once.");
-        case "Explosive":
-            return("This weapon is destroyed once used. Damage is dealt in a radius around the target.<br>Explosives may be used to set traps, not just as thrown/propelled weapons.<br>Those caught within the blast radius make a Dex Save with a DC of " + dc + ", taking half damage on success.<br>If a 1 is rolled while throwing, the explosive goes off centered on the user.");
-        case "Burst":
+       case "Burst":
             return("This weapon consumes " + ammo + " of it's ammo each time it is fired.")
         case "Concealed":
             return("This weapon grants " + bonus + " to any Check made to conceal it.");
         case "Light":
-            return("This weapon is light and easy to handle, allowing you to wield another weapon in your other hand.");
+            return("This weapon is light and easy to handle, allowing you to make an additional attack using another Light weapon in your other hand as a Bonus Action.");
         case "Remote":
             return("This weapon can be detonated as a Bonus Action from up to 1km away.");
         case "Timer":
