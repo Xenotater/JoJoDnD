@@ -103,10 +103,14 @@
 }
 
 #weapon-list th:nth-child(4) {
-    width: 80px;
+    width: 175px;
 }
 
 #weapon-list th:nth-child(5) {
+    width: 110px;
+}
+
+#weapon-list th:nth-child(6) {
     width: 150px;
 }
 
