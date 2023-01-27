@@ -558,7 +558,7 @@
                     "5": {
                         "pro": "3",
                         "feats": "2",
-                        "featFeatures": ["Simple Weapon Proficiency", "OR", "Martial Weapon Proficiency", "OR", "Pistol Proficiency", "OR", "Rifle Proficiency", "OR", "Tavern Brawler"]
+                        "featFeatures": ["Simple Weapon Focus", "OR", "Professional Weapon Training", "OR", "Martial Arts"]
                     },
                     "6": {
                         "pro": "3",
@@ -595,7 +595,7 @@
                         "pro": "4",
                         "feats": "4",
                         "linkFeatures": ["Oblivious Facade", "OR"],
-                        "featFeatures": ["Close Combat Specialist"]
+                        "featFeatures": ["Melee Specialization"]
                     },
                     "13": {
                         "pro": "5",
@@ -694,7 +694,7 @@
                     "4": {
                         "pro": "2",
                         "feats": "2",
-                        "featFeatures": ["Simple Weapon Proficiency", "OR", "Martial Weapon Proficiency", "OR", "Unarmed Proficiency", "OR", "Close Combat Specialist", "OR", "Pistol Proficiency", "OR", "Rifle Proficiency"]
+                        "featFeatures": ["Simple Weapon Focus", "OR", "Professional Weapon Training", "OR", "Demolitionist", "OR", "Martial Arts", "OR", "Sidearm Specialization", "OR", "Rifle Specialization", "OR", "Shotgun Specialization", "OR", "Tavern Brawler", "OR", "Thrown Weapon Specialization"]
                     },
                     "5": {
                         "pro": "3",
@@ -987,7 +987,7 @@
                     "4": {
                         "pro": "2",
                         "feats": "2",
-                        "featFeatures": ["Scarflesh"]
+                        "featFeatures": ["Scarflesh", "Simple Weapon Focus", "OR", "Professional Weapon Training", "OR", "Demolitionist", "OR", "Martial Arts", "OR", "Sidearm Specialization", "OR", "Rifle Specialization", "OR", "Shotgun Specialization", "OR", "Tavern Brawler", "OR", "Thrown Weapon Specialization"]
                     },
                     "5": {
                         "pro": "3",
@@ -1738,7 +1738,7 @@
                     "1": {
                         "pro": "2",
                         "feats": "2",
-                        "featFeatures": ["Tavern Brawler", "OR", "Unarmed Proficiency"]
+                        "featFeatures": ["Tavern Brawler", "OR", "Martial Arts"]
                     },
                     "2": {
                         "pro": "2",
@@ -1761,7 +1761,7 @@
                     "6": {
                         "pro": "3",
                         "feats": "3",
-                        "featFeatures": ["Close Combat Specialist"],
+                        "featFeatures": ["Melee Specialization"],
                         "ability": ["Ability Score Improvement"]
                     },
                     "7": {
@@ -1839,7 +1839,7 @@
                     "1": {
                         "pro": "2",
                         "feats": "2",
-                        "featFeatures": ["Simple Weapon Proficiency", "Martial Weapon Proficiency"]
+                        "featFeatures": ["Simple Weapon Focus", "Professional Weapon Training"]
                     },
                     "2": {
                         "pro": "2",
@@ -1861,7 +1861,7 @@
                     "6": {
                         "pro": "3",
                         "feats": "3",
-                        "featFeatures": ["Heavy Weapon Specialist", "OR", "Shield Master"],
+                        "featFeatures": ["Heavy Specialization"],
                         "ability": ["Ability Score Improvement"]
                     },
                     "7": {
@@ -1939,7 +1939,7 @@
                     "1": {
                         "pro": "2",
                         "feats": "2",
-                        "featFeatures": ["Simple Weapon Proficiency", "Pistol Proficiency"]
+                        "featFeatures": ["Rifle Specialization", "OR", "Sidearm Specialization", "Professional Weapon Training"]
                     },
                     "2": {
                         "pro": "2",
@@ -1948,7 +1948,7 @@
                     "3": {
                         "pro": "2",
                         "feats": "2",
-                        "featFeatures": ["Tavern Brawler"],
+                        "featFeatures": ["Tavern Brawler", "OR", "Shotgun Specialization"],
                         "ability": ["Ability Score Improvement"]
                     },
                     "4": {
@@ -1962,7 +1962,7 @@
                     "6": {
                         "pro": "3",
                         "feats": "3",
-                        "featFeatures": ["Heavy Weapon Specialist", "OR", "Rifle Proficiency"],
+                        "featFeatures": ["Heavy Specialization", "OR", "Rifle Specialization"],
                         "ability": ["Ability Score Improvement"]
                     },
                     "7": {
@@ -1991,7 +1991,7 @@
                     "12": {
                         "pro": "4",
                         "feats": "4",
-                        "featFeatures": ["Headhunter", "OR", "Automatic Weapon Proficiency"]
+                        "featFeatures": ["Headhunter", "OR", "Demolitionist"]
                     },
                     "13": {
                         "pro": "5",
@@ -2040,7 +2040,7 @@
                     "1": {
                         "pro": "2",
                         "feats": "2",
-                        "featFeatures": ["Rifle Proficiency"]
+                        "featFeatures": ["Rifle Specialization"]
                     },
                     "2": {
                         "pro": "2",
@@ -2049,7 +2049,7 @@
                     "3": {
                         "pro": "2",
                         "feats": "2",
-                        "featFeatures": ["Pistol Proficiency"],
+                        "featFeatures": ["Sidearm Specialization"],
                         "ability": ["Ability Score Improvement"]
                     },
                     "4": {
@@ -2063,7 +2063,7 @@
                     "6": {
                         "pro": "3",
                         "feats": "3",
-                        "featFeatures": ["Level Headed"],
+                        "featFeatures": ["Level Headed", "OR", "Professional Weapon Training"],
                         "ability": ["Ability Score Improvement"]
                     },
                     "7": {
