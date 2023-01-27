@@ -184,6 +184,7 @@ function logIn() {
                 loggedIn = 1;
                 $("#popSignIn").remove();
                 $("#login").html('<i class="bi bi-door-closed"></i><br>Logout');
+                respond("<h5 id='response-text'>Login Successful!</h5>");
             }
             $("#login-failure").remove();
             $("#signIn-window").append(data);
