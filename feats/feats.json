@@ -224,7 +224,7 @@
         "desc": "Through all of the time you've spent lugging around and using heavy equipment you've realized how to deal the most damage using these powerful, heavy weapons.",
         "effects": [
             "You gain Profciency in the use of any weapon with the \"Heavy\" specialization type.",
-            "When bracing with a Heavy weapon, you gan +2 AC until the beginning of your next turn.",
+            "When bracing with a Heavy weapon, you gain +2 AC until the beginning of your next turn.",
             "If you are already Proficient in the use of a Heavy weapon, you gain Expertise in it."
         ]
     },
@@ -509,7 +509,7 @@
         "effects": [
             "You gain Profciency in the use of any weapon with the \"Thrown\" specialization type.",
             "You may draw a Thrown weapon as a free action.",
-            "Additionally, you may two of the same Thrown or Improvised weapons as a single Attack. You cannot do this with Spheres imbued with Spin.",
+            "Additionally, you may throw two of the same Thrown or Improvised weapons as a single Attack. You cannot do this with Spheres imbued with Spin.",
             "If you are already Proficient in the use of a Thrown weapon, you gain Expertise in it."
         ]
     },
@@ -557,7 +557,7 @@
         "desc": "Through knowledge and training, you have gained the ability to use shotguns to remarkable effect. ",
         "effects": [
             "You gain Profciency in the use of any weapon with the \"Shotgun\" specialization type.",
-            "When you hit a creature that is medium or smaller with a shotgun blast a short range or closer, you may choose to halve the damage dealt and force them to make a Constitution Saving Throw. The DC for this Save is 8 + Con + Proficiency, and if they fail they are knocked Prone.",
+            "When you hit a creature that is medium or smaller with a shotgun blast at short range or closer, you may choose to halve the damage dealt and force them to make a Constitution Saving Throw. The DC for this Save is 8 + Con + Proficiency, and if they fail they are knocked Prone.",
             "If you are already Proficient in the use of a Shotgun, you gain Expertise in it."
         ]
     },
@@ -567,7 +567,7 @@
         "effects": [
             "You gain Profciency in the use of any weapon with the \"Melee\" specialization type.",
             "When dealing damage using a Melee weapon, you may reroll the damage dice if desired. You must keep the new roll, and you can only do this once per turn.",
-            "Additionally, if you are hit by a melee attack while wielding a weapon you're Proficient in, you may use your Reaction to add your Proficiency bonus to your AC until the beginning of your next turn.",
+            "Additionally, if you are hit by a melee attack while wielding a Melee weapon, you may use your Reaction to add your Proficiency bonus to your AC until the beginning of your next turn.",
             "If you are already Proficient in the use of a Melee weapon, you gain Expertise in it."
         ]
     }
