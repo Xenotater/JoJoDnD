@@ -1,0 +1,23 @@
+{
+  "resources": [
+    {
+      "title": "5e-Style Sheets",
+      "img": "Assets/5e_sheets.webp",
+      "desc": "5e-style character sheets for JoJo D&D. Created by Tyler Schowalter.",
+      "link": "Assets/5E_JoJo_CharacterSheet.pdf",
+      "alt": "5e-Style Sheets"
+    },{
+      "title": "Mage's Bizarre Revamp",
+      "img": "Assets/mage.webp",
+      "desc": "Changes and new additions to give more options for PCs and DMs. Created by Mage#8500.",
+      "link": "https://docs.google.com/document/d/1dJzqksXFQ2Dd8_kHZaMcxxGBf0tsbuTm3ls0jbMgalg/edit",
+      "alt": "Mage's Revamp"
+    },{
+      "title": "Feature Yours Here!",
+      "img": "Assets/jotaro.webp",
+      "desc": "Want your work featured here? Reach out to Kyler (Xenotater#0303) through our Community Discord.",
+      "link": "https://discord.gg/nmgSjPW8xs",
+      "alt": "Feature your own!"
+    }
+  ]
+}

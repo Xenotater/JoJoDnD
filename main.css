@@ -36,7 +36,7 @@ p {
     padding: .5rem;
     border: 2px solid black;
     border-radius: 15px;
-    box-shadow: 5px 5px 10px black;
+    box-shadow: 3px 3px 10px black;
     background-color: rgb(35, 39, 42);
     width: 300px;
     height: 97px;
@@ -45,6 +45,7 @@ p {
 
 .socialButton:hover {
     background-color: rgb(42, 45, 48);
+    box-shadow: 5px 5px 10px black;
 }
 
 #credit {

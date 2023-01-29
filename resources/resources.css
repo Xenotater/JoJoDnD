@@ -6,10 +6,6 @@
     margin-top: 0;
 }
 
-h4 {
-    margin-bottom: 1.5rem;
-}
-
 .links {
     margin-left: auto;
     margin-right: auto;
@@ -247,7 +243,7 @@ h4 {
     margin-top: 1rem;
 }
 
-#edit-btn {
+#edit-btn, #com-btn {
     color: black;
     text-decoration: none;
     border: 1px solid black;
@@ -257,7 +253,8 @@ h4 {
     font-size: 1.5rem;
 }
 
-#edit-btn:hover {
+#edit-btn:hover, #com-btn:hover {
     color: black;
     background-color: rgb(45, 45, 252);
+    box-shadow: 2px 2px 5px black;
 }
