@@ -408,3 +408,22 @@
     top: calc(50% - 16px);
     left: calc(50% - 16px);
 }
+
+.arrow {
+    position: absolute;
+    bottom: 45%;
+    margin: 0;
+    color: purple;
+    font-size: 40px;
+    cursor: pointer;
+    line-height: 0;
+    display: none;
+}
+
+#prevPage {
+    left: 30px;
+}
+
+#nextPage {
+    right: 30px;
+}

@@ -21,23 +21,19 @@
         else {
             $user = $_SESSION["loggedin"];
             $characters = array();
-            if ($user == "admin") {
-                $result = $mysqli->query("SELECT COUNT(id) AS numChars FROM characters");
-                $num = $result->fetch_assoc()["numChars"];
 
-                for ($i = 0; $i < $num; $i++) {
-                    if($result){
-                        $result = $mysqli->query("SELECT id, username, name, img FROM characters LIMIT $i,1");
-                        $row = $result->fetch_assoc();
-                        $characters[] = array("ID"=>$row["id"], "Username"=>$row["username"], "Name"=>$row["name"], "Image"=>$row["img"]);
-                    }
-                }
-            }
+            if (empty($_POST["search"]))
+                $query = "%";
+            else
+                $query = $_POST["search"];
+
+            if ($user == "admin") 
+                $result = $mysqli->query("SELECT id, username, name, img FROM characters WHERE name LIKE '%$query%' OR username LIKE '%$query%' LIMIT 11 OFFSET " . $_POST["offset"]);
             else {
-                $result = $mysqli->query("SELECT id, username, name, img FROM characters WHERE username = '$user'");
-                while ($row = $result->fetch_assoc()) {
-                    $characters[] = array("ID"=>$row["id"], "Username"=>$row["username"], "Name"=>$row["name"], "Image"=>$row["img"]);
-                }
+                $result = $mysqli->query("SELECT id, username, name, img FROM characters WHERE username = '$user' AND name LIKE '%$query%' LIMIT 11 OFFSET " . $_POST["offset"]);
+            }
+            while ($row = $result->fetch_assoc()) {
+                $characters[] = array("ID"=>$row["id"], "Username"=>$row["username"], "Name"=>$row["name"], "Image"=>$row["img"]);
             }
             $result->close();
             $mysqli->close();
