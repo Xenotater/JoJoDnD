@@ -189,9 +189,10 @@ function updateCharacters() {
         else
             $("#nextPage").css("display", "none")
         
-        $.post("characters.php", { action: "count", search: query }, function(count) {
-            $("#pageCount").html((Math.floor(offset/11) + 1) + " / " + (Math.floor(count/11) + 1));
-        });
+        if (loggedIn)
+            $.post("characters.php", { action: "count", search: query }, function(count) {
+                $("#pageCount").html((Math.floor(offset/11) + 1) + " / " + (Math.floor(count/11) + 1));
+            });
     });
     $("#characters").append("<div class='loading'></div>");
 }
