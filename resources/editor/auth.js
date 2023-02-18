@@ -64,6 +64,7 @@ $(document).ready(function () {
     $("body").on("keypress", "#search", function(e) {
         if (e.which == 13) {
             query = $("#search").val();
+            offset = 0;
             updateCharacters();
         }
     });
@@ -159,12 +160,14 @@ function popLoad() {
     checkLoggedIn();
     var newText = "<div id='popLoad' class='center'>";
     newText += "<div class='content center' id='load-window'>";
-    newText += "<div id='charHead'>"
+    newText += "<div id='charHead'>";
     newText += "<input type='search' id='search' placeholder='Search'>";
     newText += "<i id='closeLoad' class='bi bi-x-lg'></i></div>";
     newText += "<div data-simplebar id='simple'><div id='characters'></div></div>";
+    newText += "<div id='charFoot'>";
     newText += "<i id='prevPage' class='bi bi-arrow-left-square arrow'></i><i id='nextPage'class='bi bi-arrow-right-square arrow'></i>"
-    newText += "</div></div>"
+    newText += "<span id='pageCount'></span>"
+    newText += "</div></div></div>"
     $("body").append(newText);
     updateCharacters();
 }
@@ -185,6 +188,10 @@ function updateCharacters() {
             $("#nextPage").css("display", "inline-block");
         else
             $("#nextPage").css("display", "none")
+        
+        $.post("characters.php", { action: "count", search: query }, function(count) {
+            $("#pageCount").html((Math.floor(offset/11) + 1) + " / " + (Math.floor(count/11) + 1));
+        });
     });
     $("#characters").append("<div class='loading'></div>");
 }
