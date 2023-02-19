@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- A Simple Stat Roller for JoJo D&D -->
+<!-- Created by Kyler Froman -->
+<html lang="en">
+  <head>
+    <title>JoJo Stat Roller</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="A Simple Stat Roller for JoJo D&D">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script async src="roller_logic.js"></script>
+  </head>
+  <body  style="text-align:center;background-color:powderblue;">
+    <h1>JoJo D&D Stat Roller</h1>
+    <p>Easily roll and calculate character and stand stats by selecting the desired options below.</p>
+    <div id="content" style="margin-right:auto;margin-left:auto;border:2px solid purple;border-radius:5px;width:50%;padding:8px;">
+      <h2>Character Stats</h2>
+      <input type="radio" id="3d6" class="method-select" name="method" value="3d6">
+      <label for="3d6">3d6</label>
+      <input type="radio" id="4d6" class="method-select" name="method" value="4d6">
+      <label for="4d6">4d6 drop lowest</label>
+      <input type="radio" id="standard" class="method-select" name="method" value="Standard Array">
+      <label for="standard">Standard Array</label>
+      <input type="radio" id="point" class="method-select" name="method" value="Point Buy">
+      <label for="point">Point Buy</label>
+      <input type="radio" id="manual" class="method-select" name="method" value="Manual" checked="checked">
+      <label for="manual">Manual</label><br>
+      <table style="table-layout:fixed;width:100%;">
+        <tbody><tr>
+          <td>
+            <label for="str">Str</label><br>
+            <input type="number" min=0 id="str" class="statbox" name="str" style="width:80%;">
+          </td>
+          <td>
+            <label for="dex">Dex</label><br>
+            <input type="number" min=0 id="dex" class="statbox" name="dex" style="width:80%;">
+          </td>
+          <td>
+            <label for="con">Con</label><br>
+            <input type="number" min=0 id="con" class="statbox" name="con" style="width:80%;">
+          </td>
+          <td>
+            <label for="int">Int</label><br>
+            <input type="number" min=0 id="int" class="statbox" name="int" style="width:80%;">
+          </td>
+          <td>
+            <label for="wis">Wis</label><br>
+            <input type="number" min=0 id="wis" class="statbox" name="wis" style="width:80%;">
+          </td>
+          <td>
+            <label for="cha">Cha</label><br>
+            <input type="number" min=0 id="cha" class="statbox" name="cha" style="width:80%;">
+          </td>
+        </tr></tbody>
+      </table>
+      <button id="roll-stats" style="margin-top:8px;" disabled>Randomize Stats</button>
+
+      <h2>Stand Stats</h2>
+      <input type="radio" id="pow" class="type" name="type" value="Power">
+      <label for="pow">Power</label>
+      <input type="radio" id="rgd" class="type" name="type" value="Ranged">
+      <label for="rgd">Ranged</label>
+      <input type="radio" id="rem" class="type" name="type" value="Remote">
+      <label for="rem">Remote</label>
+      <input type="radio" id="abl" class="type" name="type" value="Ability">
+      <label for="abl">Ability</label>
+      <input type="radio" id="enh" class="type" name="type" value="Enhancement">
+      <label for="enh">Enhancement</label><br>
+      <input type="radio" id="rev" class="type" name="type" value="Revenge">
+      <label for="rev">Revenge</label>
+      <input type="radio" id="ind" class="type" name="type" value="Independent">
+      <label for="ind">Independent</label>
+      <input type="radio" id="hive" class="type" name="type" value="Hive">
+      <label for="hive">Hive</label>
+      <input type="radio" id="act" class="type" name="type" value="Act">
+      <label for="act">Act</label><br>
+      <button id="rand-type" style="margin-top:8px;">Randomize Type</button>
+      <p>(Type is randomized using a d100 roll, see the table on <a href='https://www.jojodnd.com/classes/?focus=Stands' target="_blank">this page</a> for reference.)</p>
+      <table style="table-layout:fixed;width:100%;">
+        <tbody><tr>
+          <td>
+            <label for="pow">Pow</label><br>
+            <input type="number" min=0 id="pow" class="sstatbox" name="pow" style="width:80%;">
+          </td>
+          <td>
+            <label for="pre">Pre</label><br>
+            <input type="number" min=0 id="pre" class="sstatbox" name="pre" style="width:80%;">
+          </td>
+          <td>
+            <label for="dur">Dur</label><br>
+            <input type="number" min=0 id="dur" class="sstatbox" name="dur" style="width:80%;">
+          </td>
+          <td>
+            <label for="rng">Rng</label><br>
+            <input type="number" min=0 id="rng" class="sstatbox" name="rng" style="width:80%;">
+          </td>
+          <td>
+            <label for="spd">Spd</label><br>
+            <input type="number" min=0 id="spd" class="sstatbox" name="spd" style="width:80%;">
+          </td>
+          <td>
+            <label for="se">SE</label><br>
+            <input type="number" min=0 id="se" class="sstatbox" name="se" style="width:80%;">
+          </td>
+        </tr></tbody>
+      </table>
+      <button id="get-sstats" style="margin-top:8px;">Get From Stats</button>
+
+      <h2>Level-Up</h2>
+      <label for="min">Current Level:</label>
+      <input type="number" min=1 id="min" name="oldLevel" value=1 style="width:40px;margin-right:8px;">
+      <label for="max">New Level:</label>
+      <input type="number" min=1 id="max" name="newLevel" value=1 style="width:40px;"><br><br>
+      <label for="points">Level-Up Points: </label>
+      <input type="number" min=0 id="points" name="levelup-points" style="width:50px;"><br>
+      <button id="roll-points" style="margin-top:8px;margin-right:4px;">Roll Points</button>
+      <button id="avg-points" style="margin-top:8px;">Take Average</button>
+
+      <h2>New Stand Stats</h2>
+      <label for="points"><b>Remaining Points: </b></label>
+      <input type="number" id="rpoints" name="remaining" style="width:50px;">
+      <button id="copy-points" style="margin-left:4px;">Copy From Level-Up</button>
+      <table style="table-layout:fixed;width:100%;margin-top:8px;">
+        <tbody><tr>
+          <td>
+            <label for="new-pow">Pow</label><br>
+            <input type="number" min=0 id="new-pow" class="newsstatbox" name="new-pow" style="width:80%;">
+          </td>
+          <td>
+            <label for="new-pre">Pre</label><br>
+            <input type="number" min=0 id="new-pre" class="newsstatbox" name="new-pre" style="width:80%;">
+          </td>
+          <td>
+            <label for="new-dur">Dur</label><br>
+            <input type="number" min=0 id="new-dur" class="newsstatbox" name="new-dur" style="width:80%;">
+          </td>
+          <td>
+            <label for="new-rng">Rng</label><br>
+            <input type="number" min=0 id="new-rng" class="newsstatbox" name="new-rng" style="width:80%;">
+          </td>
+          <td>
+            <label for="new-spd">Spd</label><br>
+            <input type="number" min=0 id="new-spd" class="newsstatbox" name="new-spd" style="width:80%;">
+          </td>
+          <td>
+            <label for="new-se">SE</label><br>
+            <input type="number" min=0 id="new-se" class="newsstatbox" name="new-se" style="width:80%;">
+          </td>
+        </tr></tbody>
+      </table>
+      <button id="copy-sstats" style="margin-top:8px;margin-right:4px;">Copy From Stand Stats</button>
+      <button id="reset-sstats" style="margin-top:8px;">Reset</button>
+      <button id="distribute" style="margin-top:8px;margin-right:4px;">Distrube Randomly</button>
+    </div>
+      <button id="dl-btn" style="margin-top:24px;">Download Offline Version</button>
+      <a href="JoJo_Stat_Roller.zip" id="file" download style="display:none"></a>
+  </body>
+</html>
