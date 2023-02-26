@@ -6,7 +6,7 @@
     margin-bottom: 12px;
 }
 
-#popLoad, #popSignIn, #popConf {
+#popLoad, #popSignIn, #popConf, #popEmail {
     position: fixed;
     top: 0;
     left: 0;
@@ -16,7 +16,7 @@
     align-items: center;
 }
 
-#closeLoad, #closeSignIn, #closeConf {
+#closeLoad, #closeSignIn, #closeConf, #closeEmail {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -27,7 +27,7 @@
     line-height: 0;
 }
 
-#closeLoad:hover, #closeSignIn:hover, #closeConf:hover {
+#closeLoad:hover, #closeSignIn:hover, #closeConf:hover, #closeEmail:hover {
     font-size: 40px;
     top: 4px;
     right: 4px;
@@ -43,7 +43,7 @@
     box-shadow: -5px 5px 5px 5px black;
 }
 
-#signIn-window {
+#signIn-window, #email-window {
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -53,13 +53,17 @@
     box-shadow: -5px 5px 5px 5px black;
 }
 
-#signIn-window label {
+#email-window {
+    width: 40%;
+}
+
+#signIn-window label, #email-window label {
     font-size: 16px;
     margin-left: auto;
     margin-right: auto;
 }
 
-#user, #pass, #conf {
+#user, #email, #pass, #conf {
     border: 1px solid black;
     width: 80%;
     height: 30px;
@@ -68,14 +72,14 @@
     display: inline-block;
 }
 
-#signIn, #signUp, .renameBtn, .delBtn {
+#signIn, #signUp, #email-btn, .renameBtn, .delBtn {
     width: auto;
     height: 40px;
     border-radius: 2px;
     margin-bottom: 10px;
 }
 
-#signIn:hover, #signUp:hover, .renameBtn:hover, .delBtn:hover {
+#signIn:hover, #signUp:hover, #email-btn:hover, .renameBtn:hover, .delBtn:hover {
     background-color: rgb(189, 189, 189);
 }
 
@@ -87,6 +91,10 @@
 
 #toSignUp:hover, #toSignIn:hover {
     color: blue;
+}
+
+#toSignUp {
+    margin-right: 8px;
 }
 
 #login-failure, #del-failure {
@@ -169,6 +177,10 @@
     display: none;
 }
 
+.linkbreak {
+    display: none;
+}
+
 @media (max-width: 991px) {
     .header-btn {
         font-size: 1rem;
@@ -191,6 +203,12 @@
     }
     #prevPage {
         left: 24px !important;
+    }
+    .linkbreak {
+        display: unset;
+    }
+    #email-window {
+        width: 50%;
     }
 }
 
@@ -219,6 +237,9 @@
     }
     #prevage {
         right: 12px !important;
+    }
+    #email-window {
+        width: 60%;
     }
 }
 

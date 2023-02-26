@@ -21,6 +21,10 @@ $(document).ready(function () {
     $("body").on("click", "#closeConf", function() {
         $("#popConf").remove();
     });
+    
+    $("body").on("click", "#closeEmail", function() {
+        $("#popEmail").remove();
+    });
 
     $("body").on("click", "#login", function() {
         if (loggedIn) {
@@ -108,7 +112,7 @@ $(document).ready(function () {
         $("#pages")[0].reset();
         resetImg();
         charID = -1;
-        respond("<h5 id='response-text'>New character created!</h5>");
+        respond("New character created!");
     });
 
     $("body").on("mouseenter", ".arrow", function() {
@@ -143,6 +147,10 @@ $(document).ready(function () {
             offset = 0;
 
         updateCharacters();;
+    });
+
+    $("body").on("click", "#email-btn", function() {
+        updateEmail();
     });
 });
 
@@ -213,7 +221,7 @@ function popLogIn() {
     newText += "<label for='user'>Username:</label><br><input type='text' id='user' name='user' required><br>";
     newText += "<label for='pass'>Password:</label><br><input type='password' id='pass' name='pass' required><br>";
     newText += "<input type='submit' value='Login' id='signIn'>"
-    newText += "<br><a id='toSignUp'>Create Account</a>";
+    newText += "<br><a id='toSignUp'>Create Account</a><br class='linkbreak'><a href='recovery' target='_blank'>Forgot Password";
     newText += "</form></div></div>";
     $("body").append(newText);
 }
@@ -225,6 +233,7 @@ function popSignUp() {
     newText += "<h2>Sign Up</h2>";
     newText += "<form id='signUp-form' onsubmit='return false'>";
     newText += "<label for='user'>Username:</label><br><input type='text' id='user' name='user' required><br>";
+    newText += "<label for='email'>Email:</label><br><input type='email' id='email' name='email' required><br>";
     newText += "<label for='pass'>Password:</label><br><input type='password' id='pass' name='pass' required><br>";
     newText += "<label for='conf'>Confirm Password:</label><br><input type='password' id='conf' name='conf' required><br>";
     newText += "<input type='submit' value='Submit' id='signUp'>"
@@ -235,37 +244,45 @@ function popSignUp() {
 
 function logIn() {
     var user = $("#user").val(), pass = $("#pass").val();
-    if (user != "" && pass != "")
+    if ($("#login-form")[0].checkValidity())
         $.post("login.php", { action: "login", user: user, pass: pass }, function(data) {
-            if (data == "<h5 id='login-success'>Login Successful.</h5>") {
+            let eFlag = 1;
+            if (data.includes("Login Successful!")) {
+                eFlag = parseInt(data[0]);
                 loggedIn = 1;
                 $("#popSignIn").remove();
                 $("#login").html('<i class="bi bi-door-closed"></i><br>Logout');
-                respond("<h5 id='response-text'>Login Successful!</h5>");
+                respond("Login Successful!");
             }
-            $("#login-failure").remove();
-            $("#signIn-window").append(data);
-            updateCharacters();
+            else {
+                $("#login-failure").remove();
+                $("#signIn-window").append(data);
+            }
+            if(!eFlag)
+                promptEmail();
         });
 }
 
 function signUp() {
-    var user = $("#user").val(), pass = $("#pass").val(), conf = $("#conf").val();
-    if (user != "" && pass != "")
-        $.post("signup.php", { action: "signup", user: user, pass: pass, conf: conf }, function(data) {
-            if (data == "<h5 id='login-success'>Account successfully created.</h5>") {
+    var user = $("#user").val(), email = $("#email").val(), pass = $("#pass").val(), conf = $("#conf").val();
+    if ($("#signUp-form")[0].checkValidity())
+        $.post("signup.php", { action: "signup", user: user, email: email, pass: pass, conf: conf }, function(data) {
+            if (data == "<h5 id='login-success'>Account Created!</h5>") {
                 $("#popSignIn").remove();
+                respond("Account Created!");
                 popLogIn();
             }
-            $("#login-failure").remove();
-            $("#signIn-window").append(data);
+            else {
+                $("#login-failure").remove();
+                $("#signIn-window").append(data);
+            }
         });
 }
 
 function respond(text) {
     $("#response").remove();
-    $("body").append("<div id='response'>" + text + "</div>");
-    if ($("#response-text").html().indexOf("!") != -1) {
+    $("body").append("<div id='response'><h5 id='response-text'>" + text + "</h5></div>");
+    if (text.includes("!")) {
         $("#response").addClass("success");
     }
     else
@@ -296,10 +313,10 @@ function loadChar(id) {
             importData(file);
             $("#popLoad").remove();
             charID = id;
-            respond("<h5 id='response-text'>Your character was loaded!</h5>");
+            respond("Your character was loaded!");
         }
         else
-            respond("<h5 id='response-text'>An error occurred, please contact the site administrator.</h5>");
+            respond("An error occurred, please contact the site administrator.");
     });
 }
 
@@ -378,4 +395,32 @@ function del(id) {
         $("#del-failure").remove();
         $("#confirm-window").append("<p id='del-failure'>Type \"Delete\" to confirm.</p>");
     }
+}
+
+function promptEmail() {
+    var newText = "<div id='popEmail' class='center'>";
+    newText += "<div class='content' id='email-window'>";
+    newText += "<i id='closeEmail' class='bi bi-x-lg'></i>";
+    newText += "<h2>Enter Your Email</h2>";
+    newText += "<p>This isn't mandatory for current users, but we need your email to authenticate you if you ever need to reset your password.</p>";
+    newText += "<form id='email-form' onsubmit='return false'>";
+    newText += "<label for='email'>Email:</label><br><input type='email' id='email' name='email' required><br>";
+    newText += "<input type='submit' value='Submit' id='email-btn'>"
+    newText += "</form></div></div>";
+    $("body").append(newText);
+}
+
+function updateEmail() {
+    var email = $("#email").val();
+    if ($("#email-form")[0].checkValidity())
+        $.post("signup.php", {action: "email", email: email}, function(data) {
+            if (data == "<h5 id='login-success'>Email Updated!</h5>") {
+                $("#popEmail").remove();
+                respond("Email Updated!");
+            }
+            else {
+                $("#login-failure").remove();
+                $("#email-window").append(data);
+            }
+        });
 }

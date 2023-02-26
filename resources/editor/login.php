@@ -16,7 +16,7 @@
             $user = $mysqli->real_escape_string($_POST["user"]);
             $pass = $mysqli->real_escape_string($_POST["pass"]);
             
-            $result = $mysqli->query("SELECT id, password, oldpass FROM users WHERE username = '$user'");
+            $result = $mysqli->query("SELECT id, email, password, oldpass FROM users WHERE username = '$user'");
             
             if ($result) {
                 $match = $result->num_rows;
@@ -27,10 +27,11 @@
                 if ($match == 1)
                     {
                         $id = $fetch["id"];
+                        $email = $fetch["email"];
                         $dbPass = $fetch["password"];
                         if ($fetch["oldpass"]) { //old, less secure password format
                             if (md5($pass) != $dbPass) {
-                                echo "<h5 id='login-failure'>Invalid Credentials.";
+                                echo "<h5 id='login-failure'>Invalid Credentials.</h5>";
                                 $mysqli->close();
                                 exit;
                             }
@@ -43,7 +44,7 @@
                             $salt = substr($dbPass, -4);
                             $hash = substr($dbPass, 0, -4);
                             if(hash("sha512", $pass . $salt) != $hash){
-                                echo "<h5 id='login-failure'>Invalid Credentials.";
+                                echo "<h5 id='login-failure'>Invalid Credentials.</h5>";
                                 $mysqli->close();
                                 exit;
                             }
@@ -53,7 +54,12 @@
                             echo "<h5 id='login-failure'>Couldn't verify session, please contact the site administrator.</h5>";
                         }
                         $_SESSION["loggedin"] = $user;
-                        echo "<h5 id='login-success'>Login Successful.</h5>";
+
+                        $eFlag = 0;
+                        if ($email)
+                            $eFlag = 1;
+
+                        echo "$eFlag<h5 id='login-success'>Login Successful!</h5>";
                         $mysqli->close();
                     }
                 else
