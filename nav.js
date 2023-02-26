@@ -1,24 +1,13 @@
 $(document).ready(function() {
+    let ads = true;
     if (window.location.href.includes("recovery"))
-        getNavNoAd()
-    else
-        getNav();
+        ads = false;
+    getNav(ads);
 });
 
-function getNav() {
+function getNav(adFlag) {
     var data = "";
-    $.post("/nav.php", {action: "nav"}, function(data) {
-        $("#header").append(data);
-        var id = "#" + window.location.pathname.replace(/\//g, "");
-        if (id == "#")
-            id += "home";
-        $(id).addClass("current-nav");
-    });
-}
-
-function getNavNoAd() {
-    var data = "";
-    $.post("/navnoad.php", {action: "nav"}, function(data) {
+    $.post("/nav.php", {action: "nav", ads: adFlag}, function(data) {
         $("#header").append(data);
         var id = "#" + window.location.pathname.replace(/\//g, "");
         if (id == "#")
