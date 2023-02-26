@@ -1,10 +1,24 @@
 $(document).ready(function() {
-    getNav();
+    if (window.location.href.includes("recovery"))
+        getNavNoAd()
+    else
+        getNav();
 });
 
 function getNav() {
     var data = "";
     $.post("/nav.php", {action: "nav"}, function(data) {
+        $("#header").append(data);
+        var id = "#" + window.location.pathname.replace(/\//g, "");
+        if (id == "#")
+            id += "home";
+        $(id).addClass("current-nav");
+    });
+}
+
+function getNavNoAd() {
+    var data = "";
+    $.post("/navnoad.php", {action: "nav"}, function(data) {
         $("#header").append(data);
         var id = "#" + window.location.pathname.replace(/\//g, "");
         if (id == "#")
