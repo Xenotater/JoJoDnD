@@ -22,6 +22,11 @@ $(document).ready(function () {
             $("#div2").show();
         else
             $("#div2").hide();
+
+        if (!pages[0])
+            $("#statflip-switch").hide();
+        else
+            $("#statflip-switch").show();
     })
 
     $("#class").change(function() {
@@ -108,6 +113,10 @@ $(document).ready(function () {
 
     $("#export-btn").click(function() {
         exportData("export");
+    });
+
+    $("#statflip").click(function() {
+        flipStats(false);
     });
 });
 
@@ -243,6 +252,7 @@ function importData(data) {
         $("#multi").css("display", "none");
         $("#class").css("display", "inline-block");
     }
+    checkMeta();
 }
 
 function scale(object) {
@@ -258,4 +268,82 @@ function scale(object) {
         $(object).css("font-size", "16px");
     else
         $(object).css("font-size", "12px");
+}
+
+
+
+function flipStats(initial) {
+    let mod = [0,0,0,0,0,0];
+    let score = [0,0,0,0,0,0];
+    $(".stat-mod").each(function(i) {
+        $(this).attr("id", $(this).attr("id").replace("mod", "temp"));
+        $(this).attr("name", $(this).attr("id").replace("mod", "temp"));
+        $(this).removeClass("stat-mod");
+        $(this).addClass("stat-temp");
+        mod[i] = $(this).val();
+    });
+    $(".stat-score").each(function(i) {
+        $(this).attr("id", $(this).attr("id").replace("score", "mod"));
+        $(this).attr("name", $(this).attr("id").replace("score", "mod"));
+        $(this).removeClass("stat-score");
+        $(this).addClass("stat-mod");
+        score[i] = $(this).val();
+        if (!initial)
+            $(this).val(mod[i]);
+    });
+    $(".stat-temp").each(function(i) {
+        $(this).attr("id", $(this).attr("id").replace("temp", "score"));
+        $(this).attr("name", $(this).attr("id").replace("temp", "score"));
+        $(this).removeClass("stat-temp");
+        $(this).addClass("stat-score");
+        if (!initial)
+            $(this).val(score[i]);
+    });
+
+    $(".stand-mod").each(function(i) {
+        $(this).attr("id", $(this).attr("id").replace("mod", "temp"));
+        $(this).attr("name", $(this).attr("id").replace("mod", "temp"));
+        $(this).removeClass("stand-mod");
+        $(this).addClass("stand-temp");
+        mod[i] = $(this).val();
+    });
+    $(".stand-score").each(function(i) {
+        $(this).attr("id", $(this).attr("id").replace("score", "mod"));
+        $(this).attr("name", $(this).attr("id").replace("score", "mod"));
+        $(this).removeClass("stand-score");
+        $(this).addClass("stand-mod");
+        score[i] = $(this).val();
+        if (!initial)
+            $(this).val(mod[i]);
+    });
+    $(".stand-temp").each(function(i) {
+        $(this).attr("id", $(this).attr("id").replace("temp", "score"));
+        $(this).attr("name", $(this).attr("id").replace("temp", "score"));
+        $(this).removeClass("stand-temp");
+        $(this).addClass("stand-score");
+        if (!initial)
+            $(this).val(score[i]);
+    });
+
+    if (!initial) {
+        let meta = parseInt($("#meta").val());
+        if (meta % 2)
+            meta--;
+        else
+            meta++;
+        $("#meta").val(meta);
+    }
+}
+
+function checkMeta() {
+    if (parseInt($("#meta").val()) % 2) {
+        $("#statflip")[0].checked = true;
+        if ($("#str-mod").hasClass("bigBox"))
+            flipStats(true);
+    }
+    if(!(parseInt($("#meta").val()) % 2)) {
+        $("#statflip")[0].checked = false;
+        if ($("#str-mod").hasClass("lilBox"))
+            flipStats(true);
+    }
 }

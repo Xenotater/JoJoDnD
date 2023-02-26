@@ -213,12 +213,12 @@ input {
     margin-left: 2px;
 }
 
-.stat-mod, .stand-mod {
+.bigBox {
     height: 50px;
     font-size: 32px;
 }
 
-.stat-score, .stand-score {
+.lilBox {
     height: 30px;
     border-top: none;
 }
@@ -352,5 +352,9 @@ textarea {
 }
 
 #multi {
+    display: none;
+}
+
+#meta {
     display: none;
 }

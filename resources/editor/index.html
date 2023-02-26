@@ -84,8 +84,17 @@
                 <p id="desc">Fill out desired values or leave them blank, then select which pages you'd like to keep and press the download button below.</p>
                 <div data-simplebar>
                     <form id="pages">
+                        <div id="statflip-switch">
+                            <label>Score on Top</label><br>
+                            <label class="switch">
+                                <input type="checkbox" id="statflip">
+                                <span class="slider round"></span>
+                            </label><br>
+                            <label>Mod on Top</label>
+                        </div>
                         <div class="center">
                             <div class="page" id="page1">
+                                <input type="number" id="meta" name="meta" value="0">
                                 <div class="heading">
                                     <img src="/Assets/icon.webp" alt="JoJo D&D" id="logo">
                                     <span id="title"><b>JoJo's Bizarre Tabletop Game</b></span>
@@ -412,65 +421,65 @@
                                 <div class="row">
                                     <div class="col-2">
                                         <label for="str-mod">Strength</label>
-                                        <input type="text" class="stat-mod numbers" id="str-mod" name="str-mod">
-                                        <input type="text" class="numbers stat-score" id="str-score" name="str-score">
+                                        <input type="text" class="stat-mod bigBox numbers" id="str-mod" name="str-mod">
+                                        <input type="text" class="numbers stat-score lilBox lilBox" id="str-score" name="str-score">
                                     </div>
                                     <div class="col-2">
                                         <label for="dex-mod">Dexterity</label>
-                                        <input type="text" class="stat-mod numbers" id="dex-mod" name="dex-mod">
-                                        <input type="text" class="numbers stat-score" id="dex-score" name="dex-score">
+                                        <input type="text" class="stat-mod bigBox numbers" id="dex-mod" name="dex-mod">
+                                        <input type="text" class="numbers stat-score lilBox" id="dex-score" name="dex-score">
                                     </div>
                                     <div class="col-2">
                                         <label for="con-mod">Constitution</label>
-                                        <input type="text" class="stat-mod numbers" id="con-mod" name="con-mod">
-                                        <input type="text" class="numbers stat-score" id="con-score" name="con-score">
+                                        <input type="text" class="stat-mod bigBox numbers" id="con-mod" name="con-mod">
+                                        <input type="text" class="numbers stat-score lilBox" id="con-score" name="con-score">
                                     </div>
                                     <div class="col-2">
                                         <label for="int-mod">Intelligence</label>
-                                        <input type="text" class="stat-mod numbers" id="int-mod" name="int-mod">
-                                        <input type="text" class="numbers stat-score" id="int-score" name="int-score">
+                                        <input type="text" class="stat-mod bigBox numbers" id="int-mod" name="int-mod">
+                                        <input type="text" class="numbers stat-score lilBox" id="int-score" name="int-score">
                                     </div>
                                     <div class="col-2">
                                         <label for="wis-mod">Wisdom</label>
-                                        <input type="text" class="stat-mod numbers" id="wis-mod" name="wis-mod">
-                                        <input type="text" class="numbers stat-score" id="wis-score" name="wis-score">
+                                        <input type="text" class="stat-mod bigBox numbers" id="wis-mod" name="wis-mod">
+                                        <input type="text" class="numbers stat-score lilBox" id="wis-score" name="wis-score">
                                     </div>
                                     <div class="col-2">
                                         <label for="cha-mod">Charisma</label>
-                                        <input type="text" class="stat-mod numbers" id="cha-mod" name="cha-mod">
-                                        <input type="text" class="numbers stat-score" id="cha-score" name="cha-score">
+                                        <input type="text" class="stat-mod bigBox numbers" id="cha-mod" name="cha-mod">
+                                        <input type="text" class="numbers stat-score lilBox" id="cha-score" name="cha-score">
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-2">
                                         <label for="Sstr-mod">Power</label>
-                                        <input type="text" class="stand-mod numbers" id="Sstr-mod" name="Sstr-mod">
-                                        <input type="text" class="numbers stand-score" id="Sstr-score" name="Sstr-score">
+                                        <input type="text" class="stand-mod bigBox numbers" id="Sstr-mod" name="Sstr-mod">
+                                        <input type="text" class="numbers stand-score lilBox" id="Sstr-score" name="Sstr-score">
                                     </div>
                                     <div class="col-2">
                                         <label for="Sdex-mod">Precision</label>
-                                        <input type="text" class="stand-mod numbers" id="Sdex-mod" name="Sdex-mod">
-                                        <input type="text" class="numbers stand-score" id="Sdex-score" name="Sdex-score">
+                                        <input type="text" class="stand-mod bigBox numbers" id="Sdex-mod" name="Sdex-mod">
+                                        <input type="text" class="numbers stand-score lilBox" id="Sdex-score" name="Sdex-score">
                                     </div>
                                     <div class="col-2">
                                         <label for="Scon-mod">Durability</label>
-                                        <input type="text" class="stand-mod numbers" id="Scon-mod" name="Scon-mod">
-                                        <input type="text" class="numbers stand-score" id="Scon-score" name="Scon-score">
+                                        <input type="text" class="stand-mod bigBox numbers" id="Scon-mod" name="Scon-mod">
+                                        <input type="text" class="numbers stand-score lilBox" id="Scon-score" name="Scon-score">
                                     </div>
                                     <div class="col-2">
                                         <label for="Sint-mod">Range</label>
-                                        <input type="text" class="stand-mod numbers" id="Sint-mod" name="Sint-mod">
-                                        <input type="text" class="numbers stand-score" id="Sint-score" name="Sint-score">
+                                        <input type="text" class="stand-mod bigBox numbers" id="Sint-mod" name="Sint-mod">
+                                        <input type="text" class="numbers stand-score lilBox" id="Sint-score" name="Sint-score">
                                     </div>
                                     <div class="col-2">
                                         <label for="Swis-mod">Speed</label>
-                                        <input type="text" class="stand-mod numbers" id="Swis-mod" name="Swis-mod">
-                                        <input type="text" class="numbers stand-score" id="Swis-score" name="Swis-score">
+                                        <input type="text" class="stand-mod bigBox numbers" id="Swis-mod" name="Swis-mod">
+                                        <input type="text" class="numbers stand-score lilBox" id="Swis-score" name="Swis-score">
                                     </div>
                                     <div class="col-2">
                                         <label for="Scha-mod">Stand Energy</label>
-                                        <input type="text" class="stand-mod numbers" id="Scha-mod" name="Scha-mod">
-                                        <input type="text" class="numbers stand-score" id="Scha-score" name="Scha-score">
+                                        <input type="text" class="stand-mod bigBox numbers" id="Scha-mod" name="Scha-mod">
+                                        <input type="text" class="numbers stand-score lilBox" id="Scha-score" name="Scha-score">
                                     </div>
                                 </div>
                                 <div class="row">
