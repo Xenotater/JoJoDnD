@@ -56,6 +56,13 @@
                                 Classes
                             </a>
                         </li>
+                        <li class="nav-item navigator" id="familiars">
+                            <a class="nav-link" href="/familiars">
+                                <img src="/Assets/horse.webp" class="img-fluid barImg" alt="familiars">
+                                <br class="nav-text-break">
+                                Familiars
+                            </a>
+                        </li>
                         <li class="nav-item navigator" id="abilities">
                             <a class="nav-link" href="/abilities">
                                 <img src="/Assets/stars.webp" class="img-fluid barImg" alt="abilities_link">

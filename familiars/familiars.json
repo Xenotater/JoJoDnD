@@ -1,0 +1,57 @@
+{
+  "Familiars": {
+    "name": "Familiars",
+    "img": "Assets/horses.webp",
+    "desc": "Familiars are animal companions that a character may have with them. This may range anywhere from a pet to a steed. This system seeks to allow for far more customization for such beings.",
+    "content": [
+      {
+        "name": "Creating a Familiar",
+        "content": [
+          "<p>There is a simple order to follow for creating a Familiar:</p>",
+          "<ol><li>Roll their stats</li>",
+          "<li>Choose their size</li>",
+          "<li>Choose their <a href='.?focus=Guardian'>Class</a></li>",
+          "<li>Choose their <a href='.?focus=Always_Alert'>Feats</a></li></ol>",
+          "<small><i><b>Note:</b> Familiars use their own Classes and Feats, which are found on this page. Other Classes and Feats are not balanced or designed for Familiars.</i></small>"
+        ]
+      },
+      {
+        "name": "Rolling Familiar Stats",
+        "content": [
+          "<p>When rolling stats for a Familiar, roll their physical stats and Wisdom the same as you would for any other character.",
+          "For Intelligence and Charisma, roll 2d6 + 2 and drop the lowest d6.</p>"
+        ]
+      },
+      {
+        "name": "Creature Size",
+        "content": [
+          "<p>A Familiar's size determines its Movement Speed, AC bonus, and Hit Dice.</p>",
+          "<div id='sizes'><div class='size-card' id='tiny'><b>Tiny:</b><br>Hit Dice: 1d4<br>Movement: 5m OR<br>0m and 5m Flying/Swimming<br>Additional AC: +4<br>Natural Weapon Dice: 1d4</div>",
+          "<div class='size-card' id='small'><b>Small:</b><br>Hit Dice: 1d6<br>Movement: 8m OR<br>2m and 8m Flying/Swimming<br>Additional AC: +2<br>Natural Weapon Dice: 1d6</div>",
+          "<div class='size-card' id='med'><b>Medium:</b><br>Hit Dice: 1d8<br>Movement: 10m OR<br>3m and 10m Flying/Swimming<br>Additional AC: +1<br>Natural Weapon Dice: 1d8</div>",
+          "<div class='size-card' id='large'><b>Large:</b><br>Hit Dice: 1d10<br>Movement: 12m OR<br>5m and 12m Swimming<br>Additional AC: +0<br>Natural Weapon Dice: 1d10</div></div>"
+        ]
+      },
+      {
+        "name": "Creature Feats",
+        "content": [
+          "<p>Your Familiar will have a number of <a href='.?focus=Always_Alert'>Familiar Feats</a> equal to half of the <a href='/Feats'>Feats</a> that you have, rounded up. For example, if you have 3 Feats, your Familiar has 2.</p>"
+        ]
+      }
+    ],
+    "classes": {
+      "Guardian": {
+        "name": "The Guardian",
+        "content": [
+          "Temp."
+        ]
+      }
+    },
+    "features": {
+
+    },
+    "feats": {
+      
+    }
+  }
+}

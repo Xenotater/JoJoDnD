@@ -1,0 +1,84 @@
+#list-table tbody tr {
+  border-bottom: none;
+  border-top: 2px solid black;
+}
+
+#list-table .class, #list-table .feature, #list-table .feat {
+  display: none;
+  padding-left: 1rem;
+  font-size: .9rem;
+  border-top: 1px dashed black;
+}
+
+.class, .feature, .feat {
+  background-color: rgb(127, 99, 184);
+}
+
+#list-table tr#Classes, #list-table tr#Features, #list-table tr#Feats{
+  border-bottom: 2px solid black;
+}
+
+#list-table tr#Guardian {
+  border-top: none;
+}
+
+.class:hover, .feature:hover, .feat:hover {
+  background-color: rgb(113, 87, 163);
+}
+
+#list-table tr#Feats {
+  border-bottom: none;
+}
+
+#list-table tr#Feats.dropped {
+  border-bottom: 2px solid black;
+}
+
+.dropdown {
+  float: right;
+}
+
+.display-img img {
+  max-width: 100%;
+}
+
+.droppable:hover {
+  cursor: pointer;
+  background-color: rgb(132, 97, 202);
+}
+
+#sizes {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.size-card {
+  width: 275px; 
+  border: 2px solid black;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#tiny {
+  background-image: url("./Assets/bug.webp");
+}
+
+#small {
+  background-image: url("./Assets/rabbit.webp");
+}
+
+#med {
+  background-image: url("./Assets/dog.webp");
+}
+
+#large {
+  background-image: url("./Assets/horse.webp");
+}
