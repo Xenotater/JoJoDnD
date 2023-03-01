@@ -37,14 +37,498 @@
         "content": [
           "<p>Your Familiar will have a number of <a href='.?focus=Always_Alert'>Familiar Feats</a> equal to half of the <a href='/Feats'>Feats</a> that you have, rounded up. For example, if you have 3 Feats, your Familiar has 2.</p>"
         ]
+      },
+      {
+        "name": "Familiars and Stands",
+        "content": [
+          "<p>Some Familiars are gifted with special abilities thanks to a particularly strong fighting spirit. In order for your Familiar to awaken to its Stand, both of you must take the <a href='/feats/?focus=Familiar_Fighting_Spirit'>Familiar Fighting Spirit</a> Feat.</p>"
+        ]
       }
     ],
     "classes": {
       "Guardian": {
         "name": "The Guardian",
-        "content": [
-          "Temp."
-        ]
+        "img": "Assets/wolf.webp",
+        "desc": "Guardians are courageous and disciplined creatures. Using their powerful natural weapons they assist and protect others, and can shake off fear even in the most stressful of situations.",
+        "profs": "Acrobatics, Athletics, Intimidation, Perception, and Survival",
+        "profNum": 2,
+        "adProfs": 2,
+        "prime": "Strength",
+        "levels": {
+          "1": {
+            "pro": 2,
+            "feats": 1,
+            "dice": 1,
+            "features": ["Bravery"]
+          },
+          "2": {
+            "pro": 2,
+            "feats": 1,
+            "dice": 1
+          },
+          "3": {
+            "pro": 2,
+            "feats": 1,
+            "dice": 1,
+            "other": "Ability Score Improvement"
+          },
+          "4": {
+            "pro": 2,
+            "feats": 1,
+            "dice": 1
+          },
+          "5": {
+            "pro": 3,
+            "feats": 1,
+            "dice": 2,
+            "features": ["Extra Attack", "OR", "Finesse Attack"]
+          },
+          "6": {
+            "pro": 3,
+            "feats": 2,
+            "dice": 2
+          },
+          "7": {
+            "pro": 3,
+            "feats": 2,
+            "dice": 2,
+            "features": ["Superior Natural Weapon Dice"]
+          },
+          "8": {
+            "pro": 3,
+            "feats": 2,
+            "dice": 2,
+            "other": "Ability Score Improvement"
+          },
+          "9": {
+            "pro": 4,
+            "feats": 2,
+            "dice": 3,
+            "features": ["Superior Bravery"]
+          },
+          "10": {
+            "pro": 4,
+            "feats": 2,
+            "dice": 3
+          },
+          "11": {
+            "pro": 4,
+            "feats": 2,
+            "dice": 3,
+            "features": ["Siege Attack", "OR", "Power Attack"]
+          },
+          "12": {
+            "pro": 4,
+            "feats": 2,
+            "dice": 3
+          },
+          "13": {
+            "pro": 5,
+            "feats": 2,
+            "dice": 4
+          },
+          "14": {
+            "pro": 5,
+            "feats": 2,
+            "dice": 4
+          },
+          "15": {
+            "pro": 5,
+            "feats": 2,
+            "dice": 4,
+            "features": ["Superior Mobility", "OR", "Superior Saves"]
+          },
+          "16": {
+            "pro": 5,
+            "feats": 3,
+            "dice": 4
+          },
+          "17": {
+            "pro": 6,
+            "feats": 3,
+            "dice": 5
+          },
+          "18": {
+            "pro": 6,
+            "feats": 3,
+            "dice": 5,
+            "other": "Choose another Class Feature from the Level 5, Level 11, or Level 15 options."
+          },
+          "19": {
+            "pro": 6,
+            "feats": 3,
+            "dice": 5
+          },
+          "20": {
+            "pro": 6,
+            "feats": 3,
+            "dice": 5,
+            "features": ["Perfected Primary Stat"]
+          }
+        }
+      },
+      "Nimble": {
+        "name": "The Nimble",
+        "img": "Assets/wolf.webp",
+        "desc": "Nimbles are animals that specialize in stealth, quiet movement, and delicate operations. They are able to handle fragile objects and execute precise maneuvers, allowing them to slip through the most cunning of traps.",
+        "profs": "Acrobatics, Insight, Investigation, Perception, Sleight of Hand, Stealth, and Survival",
+        "profNum": 2,
+        "adProfs": 2,
+        "prime": "Dexterity",
+        "levels": {
+          "1": {
+            "pro": 2,
+            "feats": 1,
+            "dice": 1,
+            "features": ["Agility"]
+          },
+          "2": {
+            "pro": 2,
+            "feats": 1,
+            "dice": 1
+          },
+          "3": {
+            "pro": 2,
+            "feats": 1,
+            "dice": 1,
+            "other": "Ability Score Improvement"
+          },
+          "4": {
+            "pro": 2,
+            "feats": 1,
+            "dice": 1
+          },
+          "5": {
+            "pro": 3,
+            "feats": 1,
+            "dice": 2,
+            "features": ["Extra Attack", "OR", "Finesse Attack"]
+          },
+          "6": {
+            "pro": 3,
+            "feats": 2,
+            "dice": 2
+          },
+          "7": {
+            "pro": 3,
+            "feats": 2,
+            "dice": 2,
+            "features": ["Superior Natural Weapon Dice"]
+          },
+          "8": {
+            "pro": 3,
+            "feats": 2,
+            "dice": 2,
+            "other": "Ability Score Improvement"
+          },
+          "9": {
+            "pro": 4,
+            "feats": 2,
+            "dice": 3,
+            "features": ["Superior Agility"]
+          },
+          "10": {
+            "pro": 4,
+            "feats": 2,
+            "dice": 3
+          },
+          "11": {
+            "pro": 4,
+            "feats": 2,
+            "dice": 3,
+            "features": ["Binding Attack", "OR", "Pounce Attack"]
+          },
+          "12": {
+            "pro": 4,
+            "feats": 2,
+            "dice": 3
+          },
+          "13": {
+            "pro": 5,
+            "feats": 2,
+            "dice": 4
+          },
+          "14": {
+            "pro": 5,
+            "feats": 2,
+            "dice": 4
+          },
+          "15": {
+            "pro": 5,
+            "feats": 2,
+            "dice": 4,
+            "features": ["Superior Mobility", "OR", "Superior Saves"]
+          },
+          "16": {
+            "pro": 5,
+            "feats": 3,
+            "dice": 4
+          },
+          "17": {
+            "pro": 6,
+            "feats": 3,
+            "dice": 5
+          },
+          "18": {
+            "pro": 6,
+            "feats": 3,
+            "dice": 5,
+            "other": "Choose another Class Feature from the Level 5, Level 11, or Level 15 options."
+          },
+          "19": {
+            "pro": 6,
+            "feats": 3,
+            "dice": 5
+          },
+          "20": {
+            "pro": 6,
+            "feats": 3,
+            "dice": 5,
+            "features": ["Perfected Primary Stat"]
+          }
+        }
+      },
+      "Stalwart": {
+        "name": "The Stalwart",
+        "img": "Assets/horse2.webp",
+        "desc": "Stalwarts are creatures who are loyal, durable, and reliable. They are able to shrug off exhaustion and damage that would kill another member of their species.",
+        "profs": "Animal Handling, Athletics, History, Intimidation, Nature, Perception, and Survival",
+        "profNum": 2,
+        "adProfs": 2,
+        "prime": "Constitution",
+        "levels": {
+          "1": {
+            "pro": 2,
+            "feats": 1,
+            "dice": 1,
+            "features": ["Hardy"]
+          },
+          "2": {
+            "pro": 2,
+            "feats": 1,
+            "dice": 1
+          },
+          "3": {
+            "pro": 2,
+            "feats": 1,
+            "dice": 1,
+            "other": "Ability Score Improvement"
+          },
+          "4": {
+            "pro": 2,
+            "feats": 1,
+            "dice": 1
+          },
+          "5": {
+            "pro": 3,
+            "feats": 1,
+            "dice": 2,
+            "features": ["Extra Attack", "OR", "Siege Attack"]
+          },
+          "6": {
+            "pro": 3,
+            "feats": 2,
+            "dice": 2
+          },
+          "7": {
+            "pro": 3,
+            "feats": 2,
+            "dice": 2,
+            "features": ["Superior Natural Weapon Dice"]
+          },
+          "8": {
+            "pro": 3,
+            "feats": 2,
+            "dice": 2,
+            "other": "Ability Score Improvement"
+          },
+          "9": {
+            "pro": 4,
+            "feats": 2,
+            "dice": 3,
+            "features": ["Superior Hardy"]
+          },
+          "10": {
+            "pro": 4,
+            "feats": 2,
+            "dice": 3
+          },
+          "11": {
+            "pro": 4,
+            "feats": 2,
+            "dice": 3,
+            "features": ["Protecting Attack", "OR", "Shove Attack"]
+          },
+          "12": {
+            "pro": 4,
+            "feats": 2,
+            "dice": 3
+          },
+          "13": {
+            "pro": 5,
+            "feats": 2,
+            "dice": 4
+          },
+          "14": {
+            "pro": 5,
+            "feats": 2,
+            "dice": 4
+          },
+          "15": {
+            "pro": 5,
+            "feats": 2,
+            "dice": 4,
+            "features": ["Unrelenting", "OR", "Superior Saves"]
+          },
+          "16": {
+            "pro": 5,
+            "feats": 3,
+            "dice": 4
+          },
+          "17": {
+            "pro": 6,
+            "feats": 3,
+            "dice": 5
+          },
+          "18": {
+            "pro": 6,
+            "feats": 3,
+            "dice": 5,
+            "other": "Choose another Class Feature from the Level 5, Level 11, or Level 15 options."
+          },
+          "19": {
+            "pro": 6,
+            "feats": 3,
+            "dice": 5
+          },
+          "20": {
+            "pro": 6,
+            "feats": 3,
+            "dice": 5,
+            "features": ["Perfected Primary Stat"]
+          }
+        }
+      },
+      "Tracker": {
+        "name": "The Tracker",
+        "img": "Assets/rat.webp",
+        "desc": "Trackers are creatures that use their superior senses and natural knowledge to navigate difficult situations. They can track, find food and shelter easily, and are exceptionally perceptive.",
+        "profs": "Acrobatics, Animal Handling, History, Insight, Intimidation, Investigation, Medicine, Nature, and Survival",
+        "profNum": 3,
+        "adProfs": 2,
+        "prime": "Wisdom",
+        "levels": {
+          "1": {
+            "pro": 2,
+            "feats": 1,
+            "dice": 1,
+            "features": ["Natural Tracker"]
+          },
+          "2": {
+            "pro": 2,
+            "feats": 1,
+            "dice": 1
+          },
+          "3": {
+            "pro": 2,
+            "feats": 1,
+            "dice": 1,
+            "other": "Ability Score Improvement"
+          },
+          "4": {
+            "pro": 2,
+            "feats": 1,
+            "dice": 1
+          },
+          "5": {
+            "pro": 3,
+            "feats": 1,
+            "dice": 2,
+            "features": ["Finesse Attack", "OR", "Pounce Attack"]
+          },
+          "6": {
+            "pro": 3,
+            "feats": 2,
+            "dice": 2
+          },
+          "7": {
+            "pro": 3,
+            "feats": 2,
+            "dice": 2,
+            "features": ["Superior Natural Weapon Dice"]
+          },
+          "8": {
+            "pro": 3,
+            "feats": 2,
+            "dice": 2,
+            "other": "Ability Score Improvement"
+          },
+          "9": {
+            "pro": 4,
+            "feats": 2,
+            "dice": 3,
+            "features": ["Superior Natural Tracker"]
+          },
+          "10": {
+            "pro": 4,
+            "feats": 2,
+            "dice": 3
+          },
+          "11": {
+            "pro": 4,
+            "feats": 2,
+            "dice": 3,
+            "features": ["Blinding Attack", "OR", "Extra Attack"]
+          },
+          "12": {
+            "pro": 4,
+            "feats": 2,
+            "dice": 3
+          },
+          "13": {
+            "pro": 5,
+            "feats": 2,
+            "dice": 4
+          },
+          "14": {
+            "pro": 5,
+            "feats": 2,
+            "dice": 4
+          },
+          "15": {
+            "pro": 5,
+            "feats": 2,
+            "dice": 4,
+            "features": ["Superior Skills", "OR", "Superior Saves"]
+          },
+          "16": {
+            "pro": 5,
+            "feats": 3,
+            "dice": 4
+          },
+          "17": {
+            "pro": 6,
+            "feats": 3,
+            "dice": 5
+          },
+          "18": {
+            "pro": 6,
+            "feats": 3,
+            "dice": 5,
+            "other": "Choose another Class Feature from the Level 5, Level 11, or Level 15 options."
+          },
+          "19": {
+            "pro": 6,
+            "feats": 3,
+            "dice": 5
+          },
+          "20": {
+            "pro": 6,
+            "feats": 3,
+            "dice": 5,
+            "features": ["Perfected Primary Stat"]
+          }
+        }
       }
     },
     "features": {

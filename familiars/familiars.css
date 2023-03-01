@@ -82,3 +82,35 @@
 #large {
   background-image: url("./Assets/horse.webp");
 }
+
+.table {
+  border: 3px solid purple;
+}
+
+.table th, .table tbody td {
+  border-right: 1px solid purple;
+}
+
+.table th:last-child, .table tbody td:last-child {
+  border-right: unset;
+}
+
+.levels a {
+  text-decoration: none;
+}
+
+.levels th:nth-child(2) {
+  width: 80px;
+}
+
+.levels tr {
+  color: black;
+}
+
+.levels thead tr {
+  background-color: rgb(139, 139, 139);
+}
+
+.levels tbody tr {
+  background-color: rgb(209, 209, 209);
+}

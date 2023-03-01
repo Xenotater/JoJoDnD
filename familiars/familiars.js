@@ -100,9 +100,46 @@ function updateDisplay() {
   }
 
   $("#display").html(newContent);
+  $(".listCurrent").removeClass("listCurrent");
+  $("#" + f).addClass("listCurrent");
 }
 
 function displayClass(fam) {
   let text = "<h2 class='display-title'>" + fam.name + "</h2>";
+  text += "<div class='display-img'><img src='" + fam.img + "' alt='" + f + "'></div>"
+  text += "<h4 class='display-heading'>Description</h4><p>" + fam.desc + "</p>";
+  text += "<p><b>Primary Stat:</b> " + fam.prime + "</p>";
+  text += "<p><b>Proficiencies:</b> Choose " + fam.profNum + " of the following: " + fam.profs + ". Additionally, choose " + fam.adProfs +" other Proficiencies.</p>";
+  text += "<p><b>Saving Throws:</b> " + fam.name + " Familiars are Proficient in " + fam.prime + " Saving Throws, and one other Saving Throw of your choice.</p>";
+  text += "<p><b>Effect DC:</b> 8 + Proficiency Bonus + " + fam.prime + " Modifier";
+
+  text += "<h4 class='display-heading'>Leveling Up</h4>";
+  text += "<table class='table table-striped levels'><thead><tr><th>Level</th><th>Pro. Bonus</th><th>Feats</th><th>Features</th><th>Ability Dice</th></tr></thead><tbody>";
+  
+  for (let i=1; i<=20; i++) {
+    l = fam.levels[i];
+    text += "<tr><td>" + i + "</td><td>+" + l.pro + "</td><td>" + l.feats + "</td><td>";
+
+    if (l.other != null) {
+      text += l.other;
+      if (l.features != null)
+        text += ", ";
+    }
+
+    if (l.features != null) {
+      for (let j=0; j<l.features.length; j++) {
+        if (l.features[j] == "OR")
+          text += " OR ";
+        else
+          text += "<a href='./?focus=" + l.features[j].replace(/[ -]/g, "_") + "'>" + l.features[j] + "</a>";
+      }
+    }
+
+    text += "<td>" + l.dice + "dx</td>";
+    text += "</td></tr>"
+  }
+  
+  text += "</tbody></table>";
+
   return text;
 }
