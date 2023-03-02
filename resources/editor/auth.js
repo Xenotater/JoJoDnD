@@ -208,6 +208,7 @@ function updateCharacters() {
 function logOut() {
     $.post("logout.php", { action: "logout" }, function(data) {
         loggedIn = 0;
+        offset = 0;
         $("#login").html('<i class="bi bi-door-open"></i><br>Login');
     });
 }
@@ -307,9 +308,7 @@ function saveChar() {
 function loadChar(id) {
     $.post("load.php", { action: "load", id: id }, function(data) {
         if (data) {
-            file = {};
-            file["form"] = data.split("-------")[1];
-            file["img"] = data.split("-------")[0];
+            var file = JSON.parse(data);
             importData(file);
             $("#popLoad").remove();
             charID = id;
