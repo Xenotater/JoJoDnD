@@ -9,13 +9,6 @@ $(document).ready(function() {
     updateURL();
   }
 
-  if ($("#" + f).hasClass("class"))
-    drop("Classes");
-  if ($("#" + f).hasClass("feature"))
-    drop("Features");
-  if ($("#" + f).hasClass("feat"))
-    drop("Feat");
-
   getData();
 
   $(".droppable").click(function() {
@@ -25,15 +18,29 @@ $(document).ready(function() {
         drop($(this).attr("id"));
   });
 
-  $(".list-link").click(function() {
+  $("body").on("click", ".list-link", function() {
     f = $(this).attr("id");
     updateURL();
+    updateDisplay();
+  });
+
+  $("body").on("click", ".in-page", function() {
+    f = $(this).attr("id").replace("-link", "");
+    updateURL();
+    doDrops();
+    updateDisplay();
+  });
+
+  $(window).on('popstate', function() {
+    let url = new URL(window.location.href);
+    f = url.searchParams.get("focus");
+    doDrops();
     updateDisplay();
   });
 });
 
 function updateURL() {
-  window.history.replaceState(null, "", '?focus=' + f);
+  window.history.pushState(null, "", '?focus=' + f);
 }
 
 function getData() {
@@ -41,6 +48,8 @@ function getData() {
       fData = data;
       if (fData[f] == null && fData["Familiars"].classes[f] == null && fData["Familiars"].features[f] == null && fData["Familiars"].feats[f] == null)
           f = "Familiars";
+      populateList();
+      doDrops();
       updateDisplay();
   });
 
@@ -51,11 +60,11 @@ function drop(id) {
   $("#" + id).find(".dropdown").removeClass("bi-caret-down-fill");
   $("#" + id).find(".dropdown").addClass("bi-caret-up-fill");
   if (id == "Classes")
-    $(".class").show();
+    $(".class").css("display", "table");
   if (id == "Features")
-    $(".feature").show();
+    $(".feature").css("display", "table");
   if (id == "Feats")
-    $(".feat").show();
+    $(".feat").css("display", "table");
   $("#" + id).addClass("dropped");
 }
 
@@ -63,12 +72,37 @@ function hide(id) {
   $("#" + id).find(".dropdown").removeClass("bi-caret-up-fill");
   $("#" + id).find(".dropdown").addClass("bi-caret-down-fill");
   if (id == "Classes")
-    $(".class").hide();
+    $(".class").css("display", "none");
   if (id == "Features")
-    $(".feature").hide();
+    $(".feature").css("display", "none");
   if (id == "Feats")
-    $(".feat").hide();
+    $(".feat").css("display", "none");
   $("#" + id).removeClass("dropped");
+}
+
+function populateList() {
+  let classes = fData["Familiars"].classes;
+  let features = fData["Familiars"].features;
+  let feats = fData["Familiars"].feats;
+
+  for (var key in classes)
+    $("#class-list").append('<tr class="list-link class" id="' + key + '"><td>' + classes[key].name + '</td></tr>');
+  for (var key in features)
+    $("#feature-list .simplebar-content").append('<tr class="list-link feature" id="' + key + '"><td>' + features[key].name + '</td></tr>');
+  for (var key in feats)
+    $("#feat-list .simplebar-content").append('<tr class="list-link feat" id="' + key + '"><td>' + feats[key].name + '</td></tr>');
+}
+
+function doDrops() {
+  hide("Classes");
+  hide("Features");
+  hide("Feats");
+  if ($("#" + f).hasClass("class"))
+    drop("Classes");
+  if ($("#" + f).hasClass("feature"))
+    drop("Features");
+  if ($("#" + f).hasClass("feat"))
+    drop("Feats");
 }
 
 function updateDisplay() {
@@ -131,7 +165,7 @@ function displayClass(fam) {
         if (l.features[j] == "OR")
           text += " OR ";
         else
-          text += "<a href='./?focus=" + l.features[j].replace(/[ -]/g, "_") + "'>" + l.features[j] + "</a>";
+          text += "<a class='in-page' id='" + l.features[j].replace(/[ -]/g, "_") + "-link'>" + l.features[j] + "</a>";
       }
     }
 
@@ -141,5 +175,23 @@ function displayClass(fam) {
   
   text += "</tbody></table>";
 
+  return text;
+}
+
+function displayFeature(fam) {
+  let text = "<h2 class='display-title'>" + fam.name + "</h2>";
+  for (let i=0; i<fam.desc.length; i++)
+    text += "<p>" + fam.desc[i] + "</p>";
+  text += "<h4 class='display-heading'>Given To</h4><ul id='given'>";
+  for (let i=0; i<fam.classes.length; i++)
+    text += "<li><a class='in-page' id='" + fam.classes[i] + "-link'>The " + fam.classes[i] + "</a></li>";
+  text += "</ul>";
+  return text;
+}
+
+function displayFeat(fam) {
+  let text = "<h2 class='display-title'>" + fam.name + "</h2>";
+  for (let i=0; i<fam.desc.length; i++)
+    text += "<p>" + fam.desc[i] + "</p>";
   return text;
 }
