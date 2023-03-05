@@ -3,7 +3,7 @@
         "name": "Adrenaline Rush",
         "desc": "The body has a remarkable tendency to keep itself alive in tough situations, and your body is even better at doing so.",
         "effects": [
-            "As a Bonus Action you may activate this ability, giving you Advantage on all Strength, Constitution, and Dexterity Saving Throws, and an amount of Temporary Hit Points equal to your Level. These benefits last for up to 10 Rounds (1 Minute).",
+            "As a Bonus Action, you may gain Advantage on all Strength, Dexterity, and Constitution Saving Throws until the beginning of your next turn. You also gain an amount of temporary Hit Points equal to your Level which remain until your next Short or Long Rest.",
             "You can use this Feat an amount of times equal to your Strength Modifier per Long Rest."
         ],
         "prereq": "Str 13+ or <a href='/passions/?focus=Hard_Laborer'>Hard Laborer</a>"
@@ -30,9 +30,7 @@
         "name": "Brutality",
         "desc": "You've seen a lot of combat and have learned not to hold back.",
         "effects": [
-            "If you miss your target on a Melee Attack roll you may make the same Melee Attack as a Bonus Action. If this attack lands upon the intended target it is a guaranteed Critical Hit.",
-            "The damage dealt by this Brutality Attack cannot be Non-Lethal Damage.",
-            "You may use this ability once per Short or Long Rest, but it is not consumed if it misses."
+            "When you drop an enemy to 0 HP, you may spend another Attack to kill them instantly. When you do so, you may make a free Charisma (Intimidation) check against any enemies within a 5 meter radius. They contest with a Wisdom Saving Throw, and if they roll lower they become Frightened of you until the end of their next turn."
         ]
     },
     "Calculating": {
@@ -57,16 +55,17 @@
         "name": "Clever Disguise",
         "desc": "You're used to getting away from people and fighting from a distance. However, if those coming after you have seen your face or recognize you in any way, you may need a new set of clothes and a haircut to pass yourself off as someone else.",
         "effects": [
-            "You may spend 1 Minute to create a disguise for yourself.",
-            "While disguised, you gain Advantage on all Deception Checks to pass yourself off as someone else and any attempts to determine your true identity are made with Disadvantage."
+            "As an Action, you may create a disguise for yourself. While disguised in this way, you have Advantage on passing yourself off as someone other than yourself.",
+            "Any attempts to determine your true identity are made with Disadvantage while the disguise is intact.",
+            "Additionally, you gain Proficiency in the use of a disguise kit."
         ]
     },
-    "Cleave": {
-        "name": "Cleave",
+    "Whirlwind_Attacker": {
+        "name": "Whirlwind Attacker",
         "desc": "You know how to create and take advantage of opportunities.",
         "effects": [
-            "When you drop a creature to 0 Hit Points using a Melee Attack you may perform another Melee Attack.",
-            "A Successful Cleave may trigger other Cleave attacks."
+            "When you drop an enemy to 0 HP, you may make another melee Attack for free on a nearby target. This Feat may tie into itself.",
+            "Additionally, as an Action, you may force every hostile creature within a meter of you to make a Dexterity Saving Throw against a DC of 8 + Proficiency Bonus + Strength Modifier. If they fail the Save you deal an amount of damage equal to your unarmed strike, the melee weapon you are holding, or your Stand's Attack damage. If they succeed, they take no damage."
         ]
     },
     "Combat_Medic": {
@@ -90,14 +89,15 @@
         "name": "Consistent Accuracy",
         "desc": "You're very skilled at judging distance and accurately striking your target.",
         "effects": [
-            "When making attacks using Thrown or Ranged Weapons (including <a href='/abilities/?focus=Ranged_Attack'>Ranged Attack</a>), you may aim up to the Weapon's Long Range without Disadvantage."
+            "Whenever you make a ranged weapon Attack, thrown weapon Attack, a Stand's <a href='/abilities/?focus=Ranged_Attack'>Ranged Attack</a>, or balls for use with <a href='/classes/?focus=Spin'>The Spin</a>, before you hear if the result hits your target or not you may choose to make the roll of the Attack 8, and then add all of your typical modifiers. You may use this ability once per Short or Long Rest.",
+            "Additionally, whenever you have Advantage on one of the types of ranged Attacks mentioned above, you may roll 3 dice rather than 2, and take the highest of the result."
         ]
     },
     "Consistent_Skills": {
         "name": "Consistent Skills",
         "desc": "You've practiced your craft over and over again, to the point of perfection.",
         "effects": [
-            "When making a Skill Check that you have Proficiency or Expertise with, if you roll a 9 or lower on the d20 roll you may treat the roll as a 10."
+            "Whenever you make a Skill Check that you are Proficient in and roll a 7 or lower on the d20 roll, you may instead treat the roll as an 8, then add your regular modifiers."
         ]
     },
     "Deadly_Accuracy": {
@@ -137,18 +137,17 @@
         "name": "Enhanced Stand Senses",
         "desc": "You have spent enough time looking through your Stand that it feels as comfortable as using your own senses.",
         "effects": [
-            "When looking through your Stand you gain Advantage on Perception Checks and your Passive Perception is doubled."
+            "As an Action, you may focus on one or more of the particular senses of your Stand to a superhuman degree. Being able to see clear details from a kilometer away, hearing a nearby foe's heartbeat, or detecting a change of humidity in the air using touch are all examples of ways this ability may be used.",
+            "When your Stand is summoned, you gain +10 to your Passive Perception, as well as any Perception Checks that you make with it."
         ],
         "prereq": "<a href='/abilities/?focus=Detached_Senses'>Detached Senses</a>"
     },
-    "Evasive": {
-        "name": "Evasive",
+    "Specialized_Save": {
+        "name": "Specialized Save",
         "desc": "You're quick on your feet and know how to navigate a battlefield.",
         "effects": [
-            "When you succeed a Dexterity Saving Throw you take no damage.",
-            "When you fail a Dexterity Saving Throw you only take half damage."
-        ],
-        "prereq": "Dex 13+"
+            "Choose one of your six Ability Scores. When you fail a Saving Throw using that Ability Score against anything that deals damage,you only take half damage, and if you succeed you take none."
+        ]
     },
     "Exemplar": {
         "name": "Exemplar",
@@ -205,7 +204,7 @@
         "name": "Heart of Truth",
         "desc": "You've gone through a lot in life. You've witnessed struggle, pain, and possibly even death itself. You've seen the absolute worst of Humanity. and that is why it is of absolute importance that you achieve your goals.",
         "effects": [
-            "When you use a point of Inspiration, roll a d4. If you roll a 4, you gain back a point of Inspiration."
+            "Whenever you or an ally within 5 meters of you uses a point of Inspiration, you may roll a d4. If you roll a 4, they regain the point of Inspiration spent."
         ],
         "prereq": "Cannot have Heart of Lies"
     },
@@ -232,8 +231,8 @@
         "name": "Hidden Assassin",
         "desc": "You've spent a lot of time in the shadows and know how to keep yourself concealed.",
         "effects": [
-            "When making an attack with a Ranged weapon you do not reveal your position after your first shot, but on your second.",
-            "If you do not perform any other Action outside of this first shot, you may roll for damage twice and use the higher value."
+            "Whenever you Attack a target with a weapon with the Ambush property and have Advantage on the Attack, you deal an additional amount of d6’s of damage equal to your Proficiency Bonus (which are doubled if the opponent is Surprised).",
+            "You may only apply this additional damage once per round."
         ]
     },
     "Immediate_Connection": {
@@ -256,8 +255,9 @@
         "name": "Interpreter",
         "desc": "Through time spent learning languages you have gotten much better at learning new ones as well as decoding unknown languages.",
         "effects": [
-            "You learn 3 additional languages and learn another at Levels 5 and 10.",
-            "You gain Advantage on Skill Checks related to attempting to understand the meaning of an unknown language or script."
+            "You learn an additional 4 languages of your choice.",
+            "You are also able to quickly teach people who are unfamiliar with a language that you know basic words, symbols, and cultural norms that are particularly relevant over the course of a Long Rest. Even if they cannot comprehend the language fluently, they are able to use basic communication to gesture towards simple ideas, concepts, or ask for someone who speaks a language that they know.",
+            "Additionally, you have advantage on any Skill Check to attempt to comprehend an unknown language."        
         ],
         "prereq": "Int 13+ or <a href='/passions/?focus=Hospitality_Worker'>Hospitality Worker</a>"
     },
@@ -265,7 +265,10 @@
         "name": "Improvised Healing",
         "desc": "You've spent a lot of time out in the wild, simply trying to survive in an unforgiving environment.",
         "effects": [
-            "You gain Advantage on all Survival and Medicine Checks."
+            "As part of a Short Rest you may make a Nature or Survival check. For every 5 points that you roll on the skill check, you may perform one of the following actions on an additional friendly creature (5 or above for 1 creature, 10 for 2, etc). The actions you can perform include:",
+            "1: Restore an amount of Hit Points to them equal to your Level.",
+            "2: Allow an ally afflicted with a disease or poison to make a Saving Throw against it with Advantage. If the Saving Throw is successful, the effect ends.",
+            "3: You may create a makeshift first aid kit. You may have a maximum amount of these equal to your Proficiency Bonus. You may use one as an Action, which allows you to make a Medicine Check with Advantage. In addition, the target gains an amount of temporary Hit Points equal to half your Level, which remain until they are used or until the end of their next Short Rest."
         ],
         "prereq": "Wis 13+ or <a href='/passions/?focus=Survivalist'>Survivalist</a>"
     },
@@ -280,7 +283,9 @@
         "name": "Level-Headed",
         "desc": "Your level head allows you to get out of most situations using your experience and clever mind.",
         "effects": [
-            "When making a Charisma or Wisdom Saving Throw you may instead choose to make an Intelligence Saving Throw."
+            "When making a Wisdom or Charisma Saving Throw, you may instead choose to make an Intelligence Saving Throw.",
+            "Additionally, when you make a Wisdom or Charisma Skill Check, you may replace the Ability Score used with Intelligence.",
+            "You may use this Feat once per Short Rest."
         ],
         "prereq": "Int 13+ or <a href='/passions/?focus=Academic'>Academic</a>"
     },
@@ -298,8 +303,8 @@
         "name": "Menacing Aura",
         "desc": "You radiate threatening energy.",
         "effects": [
-            "You get a bonus of +2 to all Intimidation Checks.",
-            "You may take this Feat up to 3 times if desired, for a maximum bonus of +6 to Intimidation."
+            "You may make an Intimidation Check as a Bonus Action.",
+            "When you make an Intimidation Check, you may choose an amount of creatures within 5 meters equal to your Proficiency Bonus. These creatures must contest the result of your Intimidation check with a Wisdom Saving Throw, becoming Frightened until the end of their next turn on a failed Save."
         ]
     },
     "Motivated": {
@@ -330,14 +335,6 @@
         ],
         "prereq": "<a href='/races/?focus=Rock_Human'>Rock Human</a>"
     },
-    "Natural_Toughness": {
-        "name": "Natural Toughness",
-        "desc": "Your body is accustomed to dealing with intensely stressful conditions.",
-        "effects": [
-            "Each time you level up and roll for additional Hit Points, roll twice and take the higher of the two rolls."
-        ],
-        "prereq": "Con 13+ or <a href='/passions/?focus=Traveller'>Traveller</a>"
-    },
     "Paranoia": {
         "name": "Paranoia",
         "desc": "You've been aware of them for a while now. You don't know who, but you know that they've been after you for so long, and you've been evading them for what seems like forever.",
@@ -365,15 +362,14 @@
         "name": "Practical Experience",
         "desc": "Experience happens to be a great teacher, and you've learned a lot.",
         "effects": [
-            "You may gain Proficiency in Three Skills of your Choice.",
-            "You may take this Feat multiple times if desired."
+            "You may gain Proficiency in any four artisan’s tools, instruments, languages, or Skills."
         ]
     },
     "Pressure_Point_Manipulator": {
         "name": "Pressure Point Manipulator",
         "desc": "Through time spent studying the human body you've found the best way to hinder movement, cause immense pain, and defeat foes with little force. ",
         "effects": [
-            "As an Action, you may make an Attack and choose a limb on your Target. Upon a successful hit, rather than dealing damage, the opponent may not use the limb that you targeted for an amount of turns equal to your Intelligence Modifier."
+            "When you land an unarmed strike or melee Attack with your Stand you may use your Bonus Action to force your foe to make a Constitution (or Durability) Saving Throw against a DC of 8 + Proficiency Bonus + Wisdom Modifier. If they fail, they are stunned until the end of their next turn."
         ]
     },
     "Quick_on_your_Feet": {
@@ -455,8 +451,7 @@
         "name": "Superhuman",
         "desc": "People usually have limits on how strong or smart they can get, but this is not always the case. You've found a way to push yourself past human limits.",
         "effects": [
-            "Pick one of your six Ability Scores to increase the maximum score for that stat by two.",
-            "The Ability Score does not increase when you take this feat, only the maximum for it does.",
+            "Pick one of your six Ability Scores. You may increase that Score by 2, as well as the cap of that Score by 2.",
             "You may take this Feat multiple times if desired."
         ]
     },
@@ -467,15 +462,6 @@
             "Each Level, you gain an additional 2 Hit Points.",
             "This also applies retroactively, giving you twice your current Level additional HP.",
             "You may take this Feat multiple times if desired."
-        ]
-    },
-    "Toxin_Resistance": {
-        "name": "Toxin Resistance",
-        "desc": "Through training and patience alongside incremental exposure, you have made your body resistant to almost all toxins.",
-        "effects": [
-            "You gain complete Immunity to poisons or toxins ingested (up to 1/4 Liter every 24 hours), and the Poisoned condition.",
-            "You gain Advantage on all Constitution Saving Throws made against venoms, breathable toxins, and acids.",
-            "You gain Resistance to Poison and Acid damage."
         ]
     },
     "Tavern_Brawler": {
@@ -500,7 +486,7 @@
         "name": "Trap Detection",
         "desc": "You've gone through your fair share of dangerous situations. Over time, you've built up an awareness of Traps and the ability to better sense danger.",
         "effects": [
-            "You gain Advantage on Perception and Investigation Checks."
+            "Whenever you come within 5 meters of a hidden entrance or trap, you become aware of its existence. You also gain Advantage on any Checks relating to seeing the purpose and function of the trap or disarming the trap."
         ]
     },
     "Thrown_Weapon_Specialization": {
