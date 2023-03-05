@@ -227,9 +227,9 @@
             "If you are already Proficient in the use of a Heavy weapon, you gain Expertise in it."
         ]
     },
-    "Hidden_Assassin": {
-        "name": "Hidden Assassin",
-        "desc": "You've spent a lot of time in the shadows and know how to keep yourself concealed.",
+    "Assassin": {
+        "name": "Assassin",
+        "desc": "You've spent a lot of time in the shadows and know how to strike from them.",
         "effects": [
             "Whenever you Attack a target with a weapon with the Ambush property and have Advantage on the Attack, you deal an additional amount of d6’s of damage equal to your Proficiency Bonus (which are doubled if the opponent is Surprised).",
             "You may only apply this additional damage once per round."
@@ -568,7 +568,7 @@
         "effects": [
             "In order for your Familiar to have a Stand, <b>both of you must have this Feat</b>.",
             "Your Familiar now uses Stand features rather than the ones normally gained by Familiars.",
-            "They still roll Familiar stats for determining Ability Scores, they keep their size, may only use Familiar Feats, and they use the Familiar’s scaling Ability dice."
+            "They still roll Familiar stats for determining Ability Scores, they keep their size, may only use Familiar Feats, and they use the Familiar'’'s scaling Ability dice."
         ]
     }
 }

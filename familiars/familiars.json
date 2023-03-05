@@ -5,9 +5,10 @@
     "desc": "Familiars are animal companions that a character may have with them. This may range anywhere from a pet to a steed. This system seeks to allow for far more customization for such beings.",
     "content": [
       {
-        "name": "Creating a Familiar",
+        "name": "Obtaining a Familiar",
         "content": [
-          "<p>There is a simple order to follow for creating a Familiar:</p>",
+          "<p>In order to obtain a Familiar, you must take the <a href='/feats/?focus=Familiar_Bond'>Familiar Bond</a> Feat.</p>",
+          "<p>There is a simple order to follow for creating your new Familiar:</p>",
           "<ol><li>Roll their stats</li>",
           "<li>Choose their size</li>",
           "<li>Choose their <a class='in-page' id='Guardian-link'>Class</a></li>",
