@@ -1,4 +1,20 @@
-#list-table tbody {
+.thead {
+    font-weight: bold;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.thead #tbl-title {
+    font-size: 2rem;
+    border-bottom: 2px solid purple;
+    background-color: mediumpurple; 
+}
+
+.thead .th {
+    height: 36px;
+}
+
+#table-scroll {
     max-height: 400px;
 }
 
@@ -13,6 +29,7 @@
     padding: 5px;
     border-bottom: 2px solid black;
     font-size: 1rem;
+    float: left;
 }
 
 #stat {
@@ -21,6 +38,7 @@
     border-left: 1px solid black;
     border-bottom: 2px solid black;
     font-size: 1rem;
+    float: left;
 }
 
 #box1, #box2 {

@@ -146,7 +146,8 @@
         "name": "Specialized Save",
         "desc": "You're quick on your feet and know how to navigate a battlefield.",
         "effects": [
-            "Choose one of your six Ability Scores. When you fail a Saving Throw using that Ability Score against anything that deals damage,you only take half damage, and if you succeed you take none."
+            "Choose one of your six Ability Scores. When you fail a Saving Throw using that Ability Score against anything that deals damage,you only take half damage, and if you succeed you take none.",
+            "You may take this Feat multiple times if desired."
         ]
     },
     "Exemplar": {

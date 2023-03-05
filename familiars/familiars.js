@@ -60,11 +60,11 @@ function drop(id) {
   $("#" + id).find(".dropdown").removeClass("bi-caret-down-fill");
   $("#" + id).find(".dropdown").addClass("bi-caret-up-fill");
   if (id == "Classes")
-    $(".class").css("display", "table");
+    $("#class-list").css("display", "block");
   if (id == "Features")
-    $(".feature").css("display", "table");
+    $("#feature-list").css("display", "block");
   if (id == "Feats")
-    $(".feat").css("display", "table");
+    $("#feat-list").css("display", "block");
   $("#" + id).addClass("dropped");
 }
 
@@ -72,11 +72,11 @@ function hide(id) {
   $("#" + id).find(".dropdown").removeClass("bi-caret-up-fill");
   $("#" + id).find(".dropdown").addClass("bi-caret-down-fill");
   if (id == "Classes")
-    $(".class").css("display", "none");
+    $("#class-list").css("display", "none");
   if (id == "Features")
-    $(".feature").css("display", "none");
+    $("#feature-list").css("display", "none");
   if (id == "Feats")
-    $(".feat").css("display", "none");
+    $("#feat-list").css("display", "none");
   $("#" + id).removeClass("dropped");
 }
 
@@ -86,11 +86,11 @@ function populateList() {
   let feats = fData["Familiars"].feats;
 
   for (var key in classes)
-    $("#class-list").append('<tr class="list-link class" id="' + key + '"><td>' + classes[key].name + '</td></tr>');
+    $("#class-list").append('<div class="tr list-link class" id="' + key + '"><div class="td">' + classes[key].name + '</div></div>');
   for (var key in features)
-    $("#feature-list .simplebar-content").append('<tr class="list-link feature" id="' + key + '"><td>' + features[key].name + '</td></tr>');
+    $("#feature-list .simplebar-content").append('<div class="tr list-link feature" id="' + key + '"><div class="td">' + features[key].name + '</div></div>');
   for (var key in feats)
-    $("#feat-list .simplebar-content").append('<tr class="list-link feat" id="' + key + '"><td>' + feats[key].name + '</td></tr>');
+    $("#feat-list .simplebar-content").append('<div class="tr list-link feat" id="' + key + '"><div class="td">' + feats[key].name + '</div></div>');
 }
 
 function doDrops() {
