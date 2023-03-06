@@ -82,12 +82,12 @@ function getData(q) {
         }
     });
 
-    $(".simplebar-content").html("<tr id='temp'><td><div class='loading'></div></td></tr>");
+    $("#list-table tbody").html("<tr id='temp'><td><div class='loading'></div></td></tr>");
     $("#display").html("<div class='loading'></div>");
 }
 
 function updateList() {
-    $(".simplebar-content").html("");
+    $("#list-table tbody").html("");
 
     sort();
     if (reverse)
@@ -108,7 +108,7 @@ function updateList() {
         }
         newContent += "</tr>";
 
-        $(".simplebar-content").append(newContent);
+        $("#list-table tbody").append(newContent);
     }
     $("#" + a).addClass("listCurrent");
 }

@@ -1,4 +1,4 @@
-#list-table tbody {
+#table-scroll {
     max-height: 400px;
 }
 
@@ -8,19 +8,23 @@
     width: 100%;
 }
 
+.thead .th {
+    height: 36px;
+    border-top: 2px solid black;
+    font-size: 1rem;
+}
+
 #name {
     width: 50%;
     padding: 5px;
-    border-bottom: 2px solid black;
-    font-size: 1rem;
+    float: left;
 }
 
 #stat {
     width: 50%;
     padding: 5px;
     border-left: 1px solid black;
-    border-bottom: 2px solid black;
-    font-size: 1rem;
+    float: left;
 }
 
 #box1, #box2 {

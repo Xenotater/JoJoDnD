@@ -6,7 +6,7 @@
     margin-bottom: 12px;
 }
 
-#popLoad, #popSignIn, #popConf {
+#popLoad, #popSignIn, #popConf, #popEmail {
     position: fixed;
     top: 0;
     left: 0;
@@ -16,7 +16,7 @@
     align-items: center;
 }
 
-#closeLoad, #closeSignIn, #closeConf {
+#closeLoad, #closeSignIn, #closeConf, #closeEmail {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -27,7 +27,7 @@
     line-height: 0;
 }
 
-#closeLoad:hover, #closeSignIn:hover, #closeConf:hover {
+#closeLoad:hover, #closeSignIn:hover, #closeConf:hover, #closeEmail:hover {
     font-size: 40px;
     top: 4px;
     right: 4px;
@@ -43,7 +43,7 @@
     box-shadow: -5px 5px 5px 5px black;
 }
 
-#signIn-window {
+#signIn-window, #email-window {
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -53,13 +53,17 @@
     box-shadow: -5px 5px 5px 5px black;
 }
 
-#signIn-window label {
+#email-window {
+    width: 40%;
+}
+
+#signIn-window label, #email-window label {
     font-size: 16px;
     margin-left: auto;
     margin-right: auto;
 }
 
-#user, #pass, #conf {
+#user, #email, #pass, #conf {
     border: 1px solid black;
     width: 80%;
     height: 30px;
@@ -68,14 +72,14 @@
     display: inline-block;
 }
 
-#signIn, #signUp, .renameBtn, .delBtn {
+#signIn, #signUp, #email-btn, .renameBtn, .delBtn {
     width: auto;
     height: 40px;
     border-radius: 2px;
     margin-bottom: 10px;
 }
 
-#signIn:hover, #signUp:hover, .renameBtn:hover, .delBtn:hover {
+#signIn:hover, #signUp:hover, #email-btn:hover, .renameBtn:hover, .delBtn:hover {
     background-color: rgb(189, 189, 189);
 }
 
@@ -87,6 +91,10 @@
 
 #toSignUp:hover, #toSignIn:hover {
     color: blue;
+}
+
+#toSignUp {
+    margin-right: 8px;
 }
 
 #login-failure, #del-failure {
@@ -169,6 +177,10 @@
     display: none;
 }
 
+.linkbreak {
+    display: none;
+}
+
 @media (max-width: 991px) {
     .header-btn {
         font-size: 1rem;
@@ -185,6 +197,18 @@
     .option {
         width: 12px;
         height: 12px;
+    }
+    #nextPage {
+        right: 24px !important;
+    }
+    #prevPage {
+        left: 24px !important;
+    }
+    .linkbreak {
+        display: unset;
+    }
+    #email-window {
+        width: 50%;
     }
 }
 
@@ -207,6 +231,15 @@
     .option {
         width: 10px;
         height: 10px;
+    }
+    #nextPage {
+        right: 12px !important;
+    }
+    #prevage {
+        right: 12px !important;
+    }
+    #email-window {
+        width: 60%;
     }
 }
 
@@ -269,14 +302,14 @@
 }
 
 #simple {
-    height: calc(100% - 3rem - 12px);
+    height: calc(100% - 3rem - 8px - 2rem - 8px);
 }
 
 #charHead {
     width: 100%;
     height: 3rem;
     border-bottom: 2px dashed purple;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 #characters, .simplebar-content {
@@ -407,4 +440,142 @@
     position: absolute;
     top: calc(50% - 16px);
     left: calc(50% - 16px);
+}
+
+#charFoot {
+    width: 100%;
+    height: 2rem;
+    border-top: 2px dashed purple;
+    margin-top: 8px;
+    padding: 8px;
+}
+
+.arrow {
+    position: absolute;
+    margin: 0;
+    color: purple;
+    font-size: 32px;
+    cursor: pointer;
+    line-height: 0;
+    display: none;
+}
+
+#prevPage {
+    left: 30px;
+}
+
+#nextPage {
+    right: 30px;
+}
+
+#pageCount {
+    font-size: 20px;
+}
+
+#statflip-switch {
+    position: absolute;
+    left: 50px;
+    top: 515px;
+}
+
+/* toggle switch from https://www.w3schools.com/howto/howto_css_switch.asp */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 60px;
+  }
+  
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 2px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateY(-26px);
+    -ms-transform: translateY(-26px);
+    transform: translateY(-26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.lilLbl {
+    display: none;
+}
+  
+@media (max-width: 1199px) {
+    #statflip-switch {
+        position: unset;
+        margin-bottom: 8px;
+    }
+
+    .switch {
+        width: 60px;
+        height: 30px;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    .slider:before {
+        left: 4px;
+        bottom: 2px;;
+    }
+
+    #statflip-switch br {
+        display: none;
+    }
+
+    .lilLbl {
+        display: unset;
+    }
+
+    .bigLbl {
+        display: none;
+    }
 }

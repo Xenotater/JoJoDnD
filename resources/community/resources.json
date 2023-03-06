@@ -1,14 +1,21 @@
 {
   "resources": [
     {
+      "title": "JoJo Stat Roller",
+      "img": "Assets/Stat Roller/dice.jpg",
+      "desc": "Easily roll and calculate character and Stand stats. Created by Kyler Froman.",
+      "link": "Assets/Stat Roller/roller.html",
+      "alt": "JoJo Stat Roller"
+    },
+    {
       "title": "5e-Style Sheets",
-      "img": "Assets/5e_sheets.webp",
+      "img": "Assets/5E Sheets/5e_sheets.webp",
       "desc": "5e-style character sheets for JoJo D&D. Created by Tyler Schowalter.",
-      "link": "Assets/5E_JoJo_CharacterSheet.pdf",
+      "link": "Assets/5E Sheets/5E_JoJo_CharacterSheet.pdf",
       "alt": "5e-Style Sheets"
     },{
       "title": "Mage's Bizarre Revamp",
-      "img": "Assets/mage.webp",
+      "img": "Assets/Mage Revamp/mage.webp",
       "desc": "Changes and new additions to give more options for PCs and DMs. Created by Mage#8500.",
       "link": "https://docs.google.com/document/d/1dJzqksXFQ2Dd8_kHZaMcxxGBf0tsbuTm3ls0jbMgalg/edit",
       "alt": "Mage's Revamp"

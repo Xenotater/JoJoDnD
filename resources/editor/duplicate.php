@@ -18,9 +18,9 @@
                         $user = $fetch["username"];
                         $name = $mysqli->real_escape_string($fetch["name"]);
                         $img = $mysqli->real_escape_string($fetch["img"]);
-                        $form = $mysqli->real_escape_string($fetch["form"]);
+                        $data = $mysqli->real_escape_string($fetch["data"]);
 
-                        $mysqli->query("INSERT INTO characters (username, name, img, data) VALUES ('$user', '$name', '$img', '$form')");
+                        $mysqli->query("INSERT INTO characters (username, name, img, data) VALUES ('$user', '$name', '$img', '$data')");
                         if ($mysqli->error)
                             echo "<h5 id='response-text'>An error occurred, please contact the site administrator.</h5><p>{$mysqli->error}</p>";
                         else

@@ -56,6 +56,13 @@
                                 Classes
                             </a>
                         </li>
+                        <li class="nav-item navigator" id="familiars">
+                            <a class="nav-link" href="/familiars">
+                                <img src="/Assets/horse.webp" class="img-fluid barImg" alt="familiars">
+                                <br class="nav-text-break">
+                                Familiars
+                            </a>
+                        </li>
                         <li class="nav-item navigator" id="abilities">
                             <a class="nav-link" href="/abilities">
                                 <img src="/Assets/stars.webp" class="img-fluid barImg" alt="abilities_link">
@@ -96,19 +103,24 @@
             </div>
         </nav>
         <div id="filler"></div>
-        <div class='header-ad'>
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282768297104356"
-        crossorigin="anonymous"></script>
-            <!-- In-Page Ad -->
-            <ins class="adsbygoogle"
-                style="display:block"
-                data-ad-client="ca-pub-4282768297104356"
-                data-ad-slot="7014054509"
-                data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
+        <?php
+        if ($_POST["ads"] == "true") {
+            echo
+                '<div class="header-ad">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282768297104356"
+                crossorigin="anonymous"></script>
+                    <!-- In-Page Ad -->
+                    <ins class="adsbygoogle"
+                        style="display:block"
+                        data-ad-client="ca-pub-4282768297104356"
+                        data-ad-slot="7014054509"
+                        data-ad-format="auto"
+                        data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>';
+        }
+        ?>
     </body>
 </html>

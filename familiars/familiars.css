@@ -1,0 +1,134 @@
+#list-table .td {
+  padding: .5rem;
+}
+
+#list-table .thead .tr {
+  font-size: 2rem;
+  text-align: center;
+  border-bottom: 2px solid purple;
+  background-color: mediumpurple;
+}
+
+#class-list, #feature-list, #feat-list {
+  display: none;
+}
+
+#list-table .class, #list-table .feature, #list-table .feat {
+  padding-left: 1rem;
+  font-size: .9rem;
+  border-bottom: 1px dashed black;
+}
+
+.class, .feature, .feat {
+  background-color: rgb(127, 99, 184);
+}
+
+#list-table .tr#Familiars, #list-table .tr#Classes, #list-table .tr#Features.dropped, #list-table .tr#Feats.dropped, #list-table .tr#Tracker{
+  border-bottom: 2px solid black;
+}
+
+.class:hover, .feature:hover, .feat:hover {
+  background-color: rgb(113, 87, 163);
+}
+
+#list-table .tr#Feats {
+  border-top: 2px solid black;
+}
+
+.dropdown {
+  float: right;
+}
+
+.display-img img {
+  max-width: 100%;
+}
+
+.droppable:hover {
+  cursor: pointer;
+  background-color: rgb(132, 97, 202);
+}
+
+#sizes {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.size-card {
+  width: 275px; 
+  border: 2px solid black;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#tiny {
+  background-image: url("./Assets/bug.webp");
+}
+
+#small {
+  background-image: url("./Assets/rabbit.webp");
+}
+
+#med {
+  background-image: url("./Assets/dog.webp");
+}
+
+#large {
+  background-image: url("./Assets/horse.webp");
+}
+
+.table {
+  border: 3px solid purple;
+}
+
+.table th, .table tbody td {
+  border-right: 1px solid purple;
+}
+
+.table th:last-child, .table tbody td:last-child {
+  border-right: unset;
+}
+
+.levels a {
+  text-decoration: none;
+}
+
+.levels th:nth-child(2) {
+  width: 80px;
+}
+
+.levels tr {
+  color: black;
+}
+
+.levels thead tr {
+  background-color: rgb(139, 139, 139);
+}
+
+.levels tbody tr {
+  background-color: rgb(209, 209, 209);
+}
+
+.dropscroll {
+  height: 175px;
+}
+
+
+#given {
+  margin-left: 2rem;
+}
+
+.in-page {
+  cursor: pointer;
+}
+
+#display {
+  min-height: 405px;
+}

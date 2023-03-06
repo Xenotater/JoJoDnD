@@ -67,6 +67,10 @@ function detectChange(object) {
       updateName(id);
   }
 
+  if (id == "statflip") {
+    return;
+  }
+
   switch(id.replace("-score", "").replace("-mod", "")) {
       case "str":
           break;

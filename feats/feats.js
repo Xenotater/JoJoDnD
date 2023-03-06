@@ -73,17 +73,17 @@ function getData(q) {
         }
     });
 
-    $(".simplebar-content").html("<tr id='temp'><td><div class='loading'></div></td></tr>");
+    $("#list-table tbody").html("<tr id='temp'><td><div class='loading'></div></td></tr>");
     $("#display").html("<div class='loading'></div>");
 }
 
 function updateList() {
-    $(".simplebar-content").html("");
+    $("#list-table tbody").html("");
     feats.sort();
     if (reverse)
         feats.reverse();
     for (let i = 0; i < feats.length; i++)
-        $(".simplebar-content").append("<tr class='list-link' id='" + fData[feats[i]].name.replace(/[ -]/g, "_").replace(/'/g, "") + "'><td>" + fData[feats[i]].name + "</td></tr>");
+        $("#list-table tbody").append("<tr class='list-link' id='" + fData[feats[i]].name.replace(/[ -]/g, "_").replace(/'/g, "") + "'><td>" + fData[feats[i]].name + "</td></tr>");
     $("#" + f).addClass("listCurrent");
 }
 
