@@ -13,13 +13,22 @@
       "desc": "5e-style character sheets for JoJo D&D. Created by Tyler Schowalter.",
       "link": "Assets/5E Sheets/5E_JoJo_CharacterSheet.pdf",
       "alt": "5e-Style Sheets"
-    },{
+    },
+    {
       "title": "Mage's Bizarre Revamp",
       "img": "Assets/Mage Revamp/mage.webp",
       "desc": "Changes and new additions to give more options for PCs and DMs. Created by Mage#8500.",
       "link": "https://docs.google.com/document/d/1dJzqksXFQ2Dd8_kHZaMcxxGBf0tsbuTm3ls0jbMgalg/edit",
       "alt": "Mage's Revamp"
-    },{
+    },
+    {
+      "title": "Fill-In Google Sheets",
+      "img": "Assets/Google Sheets/sheet.webp",
+      "desc": "Character sheet in Google Docs, make a copy of the sheet and you're ready to fill in everything. Created by Dandy Silver Fox#4269.",
+      "link": "https://docs.google.com/spreadsheets/d/1Yu9Pbj8k_Efv7j3bGcewTN9NcDnUfGa7xsIvygaiDuc/edit?usp=sharing",
+      "alt": "Google Sheets"
+    },
+    {
       "title": "Feature Yours Here!",
       "img": "Assets/jotaro.webp",
       "desc": "Want your work featured here? Reach out to Kyler (Xenotater#0303) through our Community Discord.",
