@@ -95,21 +95,21 @@
                         <input type="search" id="search" placeholder="Search" autofocus>
                     </div>
                     <div class="content" id="list">
-                        <table id="list-table">
-                            <thead>
-                                <tr>
-                                    <th>
-                                        <div class='label'>Feats</div>
-                                        <div class='sortBtns'>
-                                            <i id='Up' class='bi bi-caret-up-fill sorter'></i>
-                                            <br>
-                                            <i id='Down' class='bi bi-caret-down sorter'></i>
-                                        </div>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody data-simplebar></tbody>
-                        </table>
+                        <div class="thead">
+                            <div class='th'>
+                                <div id="tbl-title" class='label'>Feats</div>
+                                <div class='sortBtns'>
+                                    <i id='Up' class='bi bi-caret-up-fill sorter'></i>
+                                    <br>
+                                    <i id='Down' class='bi bi-caret-down sorter'></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="table-scroll" data-simplebar>
+                            <table id="list-table">
+                                <tbody></tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-7">

@@ -14,15 +14,13 @@
 
 #name {
     width: 55%;
-    border-bottom: 2px solid black;
-    font-size: 1rem;
+    float: left;
 }
 
 #class {
     width: 45%;
     border-left: 1px solid black;
-    border-bottom: 2px solid black;
-    font-size: 1rem;
+    float: left;
 }
 
 .label {
@@ -44,7 +42,7 @@
     cursor: pointer;
 }
 
-#list-table tbody {
+#table-scroll {
     height: 500px;
 }
 
@@ -72,4 +70,10 @@
     margin-left: 2rem;
     margin-bottom: 0;
     width: calc(100% - 2rem);
+}
+
+.thead .th {
+    height: 42px;
+    border-top: 2px solid black;
+    font-size: 1rem;
 }

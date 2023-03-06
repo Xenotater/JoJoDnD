@@ -136,7 +136,7 @@ a:hover {
     color: rgb(17, 0, 255);
 }
 
-h1, h2, h3, th {
+h1, h2, h3, th, .th {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-display: swap;
 }
@@ -336,4 +336,16 @@ h1, h2, h3, th {
 
 #filler {
     height: 88px;
+}
+
+.thead {
+    font-weight: bold;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.thead {
+    font-size: 2rem;
+    border-bottom: 2px solid purple;
+    background-color: mediumpurple; 
 }

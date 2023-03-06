@@ -62,9 +62,7 @@
     cursor: pointer;
 }
 
-
-
-#list-table tbody {
+#table-scroll {
     height: 400px;
 }
 
@@ -76,4 +74,8 @@
 
 #display {
     margin-top: 48px;
+}
+
+.thead {
+    height: 68px;
 }

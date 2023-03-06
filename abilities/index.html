@@ -52,32 +52,33 @@
                         <input type="search" id="search" placeholder="Search" autofocus>
                     </div>
                     <div class="content" id="list">
-                        <table id="list-table">
-                            <thead>
-                                <tr>
-                                    <th colspan="2">Abilities</th>
-                                </tr>
-                                <tr>
-                                    <th id="name">
-                                        <div class='label'>Ability</div>
-                                        <div class='sortBtns'>
-                                            <i id='nameUp' class='bi bi-caret-up-fill sorter'></i>
-                                            <br>
-                                            <i id='nameDown' class='bi bi-caret-down sorter'></i>
-                                        </div>
-                                    </th>
-                                    <th id="class">
-                                        <div class='label'>Class</div>
-                                        <div class='sortBtns'>
-                                            <i id='classUp' class='bi bi-caret-up sorter'></i>
-                                            <br>
-                                            <i id='classDown' class='bi bi-caret-down sorter'></i>
-                                        </div>
-                                    </th>
-                                </tr>
+                        <div class="thead">
+                            <div id="tbl-title">Abilities</div>
+                            <div class="th">
+                                <div id="name">
+                                    <div class='label'>Ability</div>
+                                    <div class='sortBtns'>
+                                        <i id='nameUp' class='bi bi-caret-up-fill sorter'></i>
+                                        <br>
+                                        <i id='nameDown' class='bi bi-caret-down sorter'></i>
+                                    </div>
+                                </div>
+                                <div id="class">
+                                    <div class='label'>Class</div>
+                                    <div class='sortBtns'>
+                                        <i id='classUp' class='bi bi-caret-up sorter'></i>
+                                        <br>
+                                        <i id='classDown' class='bi bi-caret-down sorter'></i>
+                                    </div>
+                                </div>
+                            </div>
                             </thead>
-                            <tbody data-simplebar></tbody>
-                        </table>
+                        </div>
+                        <div id="table-scroll" data-simplebar>
+                            <table id="list-table">
+                                <tbody></tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-7">
