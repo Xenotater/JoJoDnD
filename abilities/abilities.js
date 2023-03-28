@@ -262,6 +262,9 @@ function reset(target) {
 
 //sort-by-key from https://stackoverflow.com/questions/8175093/simple-function-to-sort-an-array-of-objects
 function sort() {
+    abilities = [];
+    for (var key of Object.keys(aData))
+        abilities.push([key, aData[key]]);
     abilities.sort(function (a, b) {
         var x = a[1][sortType]; var y = b[1][sortType];
         return ((x < y) ? -1 : ((x > y) ? 1 : 0));
