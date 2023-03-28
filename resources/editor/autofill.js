@@ -6,11 +6,11 @@ $(document).ready(function () {
           saveScore(this);
     });
 
-    $(".stat-score").on("keyup", function(e) {
-        if (e.key === "Enter" || e.keyCode === 13) {
-                saveScore(this);
-        }
-    });
+    // $(".stat-score").on("keyup", function(e) {
+    //     if (e.key === "Enter" || e.keyCode === 13) {
+    //             saveScore(this);
+    //     }
+    // });
 
     $("input").on("blur", function() {
         detectChange(this);
@@ -51,6 +51,7 @@ function detectChange(object) {
       updateMod(stat);  
       updateSave(stat);
       updateSkills(stat);
+      saveScore(object);
   }
 
   if ($(object).hasClass("stat-mod")) {
