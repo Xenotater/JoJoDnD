@@ -175,16 +175,16 @@
         {
             "name": "Rules of Stands",
             "content": [
-                "<ul><li>A single person can only have one stand (Hive Stands are the same Stand, just split up into much smaller parts)</li><li>Whatever Damage is inflicted upon the Stand or the User is also dealt to the other</li><li>Only Stand Users can sense Stands</li><li>Stand Users can interact and speak with spirits or ghosts</li><li>Only Stands can defeat Stands, physical objects simply pass through or bounce off of all Stands except Enhancement or Independent types</li><li>If the User is knocked unconscious and the Stand is not a Revenge-Type, the Stand and it's Ability will disappear until resummoned by the User when conscious</li><li>Stand Energy is only consumed if the Ability actually affects something</li><li>If a Stand User fights a Non-Stand User, the Stand User gets Advantage on all Attacks using their Stand</li><li>If a Stand User is Surprised and does not have their Stand active, they may not use it to defend themselves.</li></ul>"
+                "<ul><li>A single person can only have one stand (Hive Stands are the same Stand, just split up into much smaller parts)</li><li>Whatever damage is inflicted upon the Stand or the User is also dealt to the other</li><li>Only Stand Users can sense Stands</li><li>Stand Users can interact and speak with spirits or ghosts</li><li>Only Stands can defeat Stands, physical objects simply pass through or bounce off of all Stands except Enhancement or Independent types</li><li>If the User is knocked unconscious and the Stand is not a Revenge-Type, the Stand and it's Ability will disappear until resummoned by the User when conscious</li><li>Stand Energy is only consumed if the Ability actually affects something</li><li>If a Stand User fights a Non-Stand User, the Stand User gets Advantage on all attacks using their Stand</li><li>If a Stand User is Surprised and does not have their Stand active, they may not use it to defend themselves.</li></ul>"
             ]
         },
         {
             "name": "Stand Stats",
             "content": [
                 "<p class='center label'><b>Ability Conversion Chart:</b></p><table class='table table-striped minor'><thead><tr><th>Ability</th><th>Stand Ability</th></tr></thead><tbody><tr><td>Strength</td><td>Power</td></tr><tr><td>Dexterity</td><td>Precision</td></tr><tr><td>Constitution</td><td>Durability</td></tr><tr><td>Intelligence</td><td>Range</td></tr><tr><td>Wisdom</td><td>Speed</td></tr><tr><td>Charisma</td><td>Stand Energy</td></tr></tbody></table>",
-                "<p><b>Stand Stat Modifiers: </b>Stand Stats are based on the User's Stats. To get the Modifiers for these Stats, simply divide their score by 10.</p>",
-                "<p><b>Damage Reduction: </b>Stands have natural resistance against damage, determined by their Durability Mod. Your Stand can resist that many points of damage per round. For example, a Stand with a 100 Durability would be able to resist 10 points of damage per round, and a Stand with 40 would only be able to resist 4. Physical Attacks that hit Stands deal no damage, unless specifically stated otherwise. The only types of damage that may deal damage to Stands is damage dealt by Stands, or the Abilities of Stands. Your Stand's Damage Reduction resets at the top of each round of Initiative.</p>",
-                "<p><b>Stand Movement: </b>Stands have a Movement Speed equal to twice their Stand's Speed Mod in meters, or a Movement Speed equal to their User, whichever is higher. Stands and Users each have a separate Movement Action. Independant-Type Stands can only move the base 10 Meters that a regular human can, unless they have a specific ability that allows them to increase it.</p>",
+                "<p><b>Stand Stat Modifiers: </b>Stand stats are based on the User's stats. To get the Modifiers for these Stats, simply divide their score by 10.</p>",
+                "<p><b>Damage Reduction: </b>Stands have natural resistance against damage, determined by their Durability Mod. Your Stand can resist that many points of damage per round. For example, a Stand with a 100 Durability would be able to resist 10 points of damage per round, and a Stand with 40 would only be able to resist 4. Physical attacks that hit Stands deal no damage, unless specifically stated otherwise. The only types of damage that may deal damage to Stands is damage dealt by Stands, or the Abilities of Stands. Your Stand's Damage Reduction resets at the top of each round of Initiative.</p>",
+                "<p><b>Stand Movement: </b>Stands have a Movement Speed equal to twice their Stand's Speed Mod in meters, or a Movement Speed equal to their User, whichever is higher. Stands and Users each have a separate Movement Action. Independant-Type Stands can only move the base 10 Meters that a regular human can, unless they have a specific Ability that allows them to increase it.</p>",
                 "<p><b>Stand Range: </b>Your Stand may move a number of meters away from you equal to its Range Mod, with a minimum of 1m.</p>",
                 "<p><b>Abilities and Stand Energy: </b>The amount of Energy your stand has is based on their Stand Energy Mod. Normal Abilities cost 1 point, Special Abilities cost more depending on the Stand type, and Abilities that manipulate Space or Time cost double the Energy they normally would. Stand Energy always fully replenishes when outside of combat. 1 Stand Energy is also replenished when you take the dodge action.</p>"
             ]
@@ -192,16 +192,16 @@
         {
             "name": "Attacking",
             "content": [
-                "Your Stand's normal Attacks (typically punches) are determined similarly to regular Attacks. Roll a d20 and add the Power or Precision Mod of your Stand and your Proficiency Bonus to determine if the attack hits. The amount of damage dealt is based off of your Stand's Attack Dice plus your Power (NOT Precision) Mod.</p>",
-                "<p>For User Attacks, roll a d20 and add your Strength or Dexterity Mod, whichever is higher. Every Unarmed Attack deals 1d4 + Str damage. <b>Regular physical attacks DO NOT AFFECT STANDS</b> (except for Enhancement or Independent Types).</p>",
+                "Your Stand's normal attacks (typically punches) are determined similarly to regular attacks. Roll a d20 and add the Power or Precision Mod of your Stand and your Proficiency Bonus to determine if the attack hits. The amount of damage dealt is based off of your Stand's Attack Dice plus your Power (NOT Precision) Mod.</p>",
+                "<p>For User attacks, roll a d20 and add your Strength or Dexterity Mod, whichever is higher. Every Unarmed Attack deals 1d4 + Str damage. <b>Regular physical attacks DO NOT AFFECT STANDS</b> (except for Enhancement or Independent Types).</p>",
                 "<p>Speed is also very important. The total Speed score of your Stand divided by 50 is one more Attack that the Stand or the User may perform each round, with a minimum of one. If Non-Stand Users want to have multiple Attacks per round, they may take the <a href='/feats/?focus=Trained_Combatant'>Trained Combatant</a> Feat."
             ]
         },
         {
             "name": "Stand AC",
             "content": [
-                "<p>Stand AC works the same way as regular AC, but using the Stand's Stats. Keep in mind the 3 ways to calculate AC mentioned on the <a href='/rules'>Rules</a> page. When your Stand is within 2 Meters of you your Stand can protect you from attacks using its AC. Like normal, if an Attack roll is less than your AC it misses. However, if the Attack roll is between your Stand AC and your own AC it hits your Stand instead, allowing you to apply your Stand's Damage Reduction. Additionally, if the damage type is Non-Stand, it simply bounces off of your Stand or phases through it. An Attack roll higher than your Stand AC is a direct hit to the User.</p>",
-                "<p><small><b>Note: </b><i>Enhancement/Independant Stands resist all types of damage but can aslo be hit by all types. Independent-Types also have both a regular AND Stand AC, despite not technically having a user.</i></small></p>"
+                "<p>Stand AC works the same way as regular AC, but using the Stand's stats. Keep in mind the 3 ways to calculate AC mentioned on the <a href='/rules'>Rules</a> page. When your Stand is within 2 Meters of you your Stand can protect you from attacks using its AC. Like normal, if an Attack roll is less than your AC it misses. However, if the Attack roll is between your Stand AC and your own AC it hits your Stand instead, allowing you to apply your Stand's Damage Reduction. Additionally, if the damage type is Non-Stand, it simply bounces off of your Stand or phases through it. An Attack roll higher than your Stand AC is a direct hit to the User.</p>",
+                "<p><small><b>Note: </b><i>Enhancement/Independant Stands are able to be affected by all damage types, rather than just Stand damage. Independent-Types also have both a regular AND Stand AC for the sake of Damage Reduction, despite not technically having a user.</i></small></p>"
             ]
         },
         {
@@ -209,7 +209,7 @@
             "content": [
                 "<p>There are 9 different Stand Types which each function very differently from eachother. You may either choose one of these 9, or roll a d100 and choose from the table below:</p>",
                 "<table class='table table-striped minor'><thead><tr><th>Result</th><th>Stand Type</th></tr></thead><tbody><tr><td>1-35</td><td>Power</td></tr><tr><td>36-49</td><td>Ranged</td></tr><tr><td>50-69</td><td>Enhancement</td></tr><tr><td>70-79</td><td>Remote</td></tr><tr><td>80-89</td><td>Ability</td></tr><tr><td>90-93</td><td>Independent</td></tr><tr><td>94-97</td><td>Hive</td></tr><tr><td>98-99</td><td>Revenge</td></tr><tr><td>100</td><td>Act</td></tr></tbody></table>",
-                "<p><b>Multi-Type Stands: </b>Some Stands have attributes of several different types of Stand. For these Stand's Stats, take the average of each Stat multiplier for the two respective types and use those multipliers, rounded down, when figuring out your initial Stand Stats. Furthermore, if there are any limitations on a Stand type's Stat increases still apply. For example, if a Stand is both a Power/Enhancement-Type you cannot have a Range Stat above 20, even if the initial average would be higher. You also take the lower of the Hit Dice and Attack Dice if you are using two types of stands. For Class features, you get all of the Level 1 features, but must choose which type's features to take for each subsequent Level.</p>"
+                "<p><b>Multi-Type Stands: </b>Some Stands have attributes of several different types of Stand. For these Stand's Stats, take the average of each stat multiplier for the two respective types and use those multipliers, rounded down, when figuring out your initial Stand stats. Furthermore, if there are any limitations on a Stand type's stat increases still apply. For example, if a Stand is both a Power/Enhancement-Type you cannot have a Range stat above 20, even if the initial average would be higher. You also take the lower of the Hit Dice and Attack Dice if you are using two types of stands. For Class Features, you get all of the Level 1 Features, but must choose which type's Features to take for each subsequent Level.</p>"
             ]
         },
         {
@@ -217,7 +217,7 @@
            "content": [
                "<p><b>Get Creative: </b>Stand Abilities have endless possibilities, able to do anything from cooking supernaturally good food to being able to stop time itself. The rules below should generally apply to most Stand Abilities, but you should work with your DM to create the perfect custom Ability for your Stand.",
                "<p><b>General Rules: </b>Abilities that heal or deal damage should follow the dice guidelines below, and these dice should increase every other Level (for example, at Level 3 1dx becomes 2dx). Abilities that require a Saving Throw should use the following Stand DC: 8 + Cha + Proficiency Bonus.</p>",
-               "<ul><li><b>No Dice: </b> Should be an ability that buffs/debuffs someone very little, or some sort of utility. Not combat-viable directly, but should be able to be used creatively in combat.</li><li><b>d4: </b>Group effects, healing/damage that affects a group of people. Can have a secondary effect if it is just a single target ability.</li><li><b>d6: </b>An ability that affects multiple targets and requires a Saving Throw, dealing no damage on  success, or ranged healing for a single target. Can also be touch healing that gives an additional effect.</li><li><b>d8: </b>Damage that may be added to a Stand's punch or touch on a hit and does not require a Saving Throw. Can also be a ranged Attack that requires a Saving Throw with half damage on success. Can be touch healing that takes a single Attack or Bonus Action to perform.</li><li><b>d10: </b>Damage that may be added to a Stand's punch or touch and requires a Saving Throw, dealing no damage on success. Can be touch healing that takes an Action to perform. Can be a ranged Attack that requires a Saving Throw, dealing no damage on success. Can be a single-target melee Attack that requires a Saving Throw, dealing half damage on success.</li><li><b>d12: </b>Can be a touch healing Ability that takes an Action as well as another type of Action (Reaction, Bonus Action, Movement Action). Can be a single-target melee Attack that requires a Saving Throw, dealing no damage on success.</li></ul>",
+               "<ul><li><b>No Dice: </b> Should be an Ability that buffs/debuffs someone very little, or some sort of utility. Not combat-viable directly, but should be able to be used creatively in combat.</li><li><b>d4: </b>Group effects, healing/damage that affects a group of people. Can have a secondary effect if it is just a single target Ability.</li><li><b>d6: </b>An Ability that affects multiple targets and requires a Saving Throw, dealing no damage on  success, or ranged healing for a single target. Can also be touch healing that gives an additional effect.</li><li><b>d8: </b>Damage that may be added to a Stand's punch or touch on a hit and does not require a Saving Throw. Can also be a ranged attack that requires a Saving Throw with half damage on success. Can be touch healing that takes a single Attack or Bonus Action to perform.</li><li><b>d10: </b>Damage that may be added to a Stand's punch or touch and requires a Saving Throw, dealing no damage on success. Can be touch healing that takes an Action to perform. Can be a ranged attack that requires a Saving Throw, dealing no damage on success. Can be a single-target melee attack that requires a Saving Throw, dealing half damage on success.</li><li><b>d12: </b>Can be a touch healing Ability that takes an Action as well as another type of Action (Reaction, Bonus Action, Movement Action). Can be a single-target melee attack that requires a Saving Throw, dealing no damage on success.</li></ul>",
                "<p><small><b>Note: </b><i>The damage cap for these scaling dice is normally 10dx, but this does not have to be the case. Characters or enemies may be able to go far past Level 20, and therefore, would be able to deal massive amounts of Damage using them. Your DM may decide that Abilities past that may increase in the same fashion as before (an additional dice for every odd Level), or that 10dx should be the limit for balance.</i></small></p>"
            ] 
         },
@@ -247,7 +247,7 @@
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
                 "aDice": ["1d12", "2d10"],
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats. Your Stand's Range may not be increased past 20 (2 meters).",
+                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats. Your Stand's Range may not be increased past 20 (2 meters).",
                 "mults": [4, 3, 3, 1, 4, 2],
                 "theme": "world",
                 "level": {
@@ -388,7 +388,7 @@
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
                 "aDice": ["1d6", "1d10"],
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats except for Power or Durability. Your Power and Durability may not be increased past their initial values.",
+                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except for Power or Durability. Your Power and Durability may not be increased past their initial values.",
                 "mults": [3, 3, 3, 6, 3, 3],
                 "theme": "hiero",
                 "level": {
@@ -525,12 +525,12 @@
                 "exampleOf": "Remote Stands",
                 "examples": ["Highway Star", "Black Sabbath", "Goo Goo Dolls", "Manhattan Transfer"],
                 "links": ["Highway_Star", "Black_Sabbath", "Goo_Goo_Dolls", "Manhattan_Transfer"],
-                "desc": "Remote-Type Stands are immensely powerful. Their Abilities and strength can often not be ignored. However, the users of these Stands often cannot control them, with their Stands instead automatically following a simple task. For example, attack the closest human until its breathing stops for 5 seconds, prevent anybody from entering a building, use your ability on anyone who opens a door, attack anyone who steps into a shadow, etc. These Stands, while often powerful indeed, have very easily exploitable weaknesses due to the simple nature of how they function.",
+                "desc": "Remote-Type Stands are immensely powerful. Their Abilities and strength can often not be ignored. However, the users of these Stands often cannot control them, with their Stands instead automatically following a simple task. For example, attack the closest human until its breathing stops for 5 seconds, prevent anybody from entering a building, use your Ability on anyone who opens a door, attack anyone who steps into a shadow, etc. These Stands, while often powerful indeed, have very easily exploitable weaknesses due to the simple nature of how they function.",
                 "hDice": "1d10",
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
                 "aDice": ["1d8", "2d8"],
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats except Precision. Your Precision may not be increased past it's initial value.",
+                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except Precision. Your Precision may not be increased past it's initial value.",
                 "mults": [3, 2, 4, 5, 3, 2],
                 "notes": ["These Stands cannot be controlled by their Users, the only power their User has over them is to send them out or recall them. These Stands can only perform one predetermined action."],
                 "theme": "hStar",
@@ -672,7 +672,7 @@
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
                 "aDice": ["1d4", "1d6"],
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats except Power or Durability. Your Stand's Power and Durability may not be increased past their initial values.",
+                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except Power or Durability. Your Stand's Power and Durability may not be increased past their initial values.",
                 "mults": [1, 3, 1, 4, 3, 5],
                 "theme": "album",
                 "level": {
@@ -1107,7 +1107,7 @@
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
                 "aDice": ["1d8", "2d6"],
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats except Range. Your Stand's Range may not be increased past 0.",
+                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except Range. Your Stand's Range may not be increased past 0.",
                 "mults": [3, 3, 4, 0,  3, 3],
                 "theme": "ff",
                 "level": {
@@ -1250,10 +1250,10 @@
                 "other": [{
                     "name": "Swarm Attacks",
                     "content": [
-                        "<p>Choose one of the three following saving throws: Strength, Dexterity, or Constitution. When you make a Melee Attack using your Stand, rather than making an Attack Roll, your target must make a Saving Throw of the type you chose. Your Stand must be within Melee Range of the target in order to make a Swarm Attack. When you make a Swarm Attack, you may choose between the following options:</p>",
+                        "<p>Choose one of the three following saving throws: Strength, Dexterity, or Constitution. When you make a mlee Attack using your Stand, rather than making an attack toll, your target must make a Saving Throw of the type you chose. Your Stand must be within Melee Range of the target in order to make a Swarm Attack. When you make a Swarm Attack, you may choose between the following options:</p>",
                         "<p><ul><li>Precise Swarm: 1d6 + Power Modifier damage (this damage increases to 2d6 at Level 11). Your opponent takes full damage if they fail the Saving Throw, or half if they succeed.</li>",
                         "<li>Violent Swarm: 1d10 + Power Modifier damage (this damage increases to 2d10 at Level 11). Your opponent takes full damage if they fail the Saving Throw, or none if they succeed.</li></ul></p>",
-                        "<p>This Attack's damage can be a type that you and your DM agree fits for your stand. When you attack using less than half of the total instances of your stand, your target has Advantage on the Saving Throw.</p>" 
+                        "<p>This Ability's damage can be a type that you and your DM agree fits for your stand. When you attack using less than half of the total instances of your stand, your target has Advantage on the Saving Throw.</p>" 
                     ]
                 }],
                 "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats.",
@@ -1400,7 +1400,7 @@
                 "hDice": "1d8",
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats except those mentioned in each Act. You put all of the points into each Act, so if for example you roll to get 15 points, each Act of your Stand get 15 points to increase Stats with. Stand Energy is an exception for this, as it must be the same for each Act. When you gain a new Act, you may roll the dice to retroactively increase the Stats of the new Stand.",
+                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except those mentioned in each Act. You put all of the points into each Act, so if for example you roll to get 15 points, each Act of your Stand get 15 points to increase stats with. Stand Energy is an exception for this, as it must be the same for each Act. When you gain a new Act, you may roll the dice to retroactively increase the stats of the new Stand.",
                 "acts": [{
                     "aDice": "0",
                     "note": "Act 0 Stands do not have an Ability, nor any capacity to move, attack, dodge, or evade. If they can even be summoned, they simply manifest as a large egg.",

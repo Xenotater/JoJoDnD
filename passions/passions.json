@@ -112,7 +112,7 @@
     },
     "Student": {
         "name": "Student",
-        "desc": "Students aim to learn about and gain experience in a wide variety of things, exploring what they’d like to do with their future.",
+        "desc": "Students aim to learn about and gain experience in a wide variety of things, exploring what they'd like to do with their future.",
         "examples": ["High School Students", "College Students"],
         "saves": "You are proficient in any two saving throws of your choice.",
         "ability": "You get +2 to one stat of your choice, +1 to three stats of your choice, and -1 to two stats of your choice.",
