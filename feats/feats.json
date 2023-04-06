@@ -571,5 +571,16 @@
             "Your Familiar now uses Stand features rather than the ones normally gained by Familiars.",
             "They still roll Familiar stats for determining Ability Scores, they keep their size, may only use Familiar Feats, and they use the Familiar'’'s scaling Ability dice."
         ]
+    },
+    "Suit_Stand": {
+        "name": "Suit Stand",
+        "desc": "Your Stand takes the physical form of a suit that covers you almost, if not completely.",
+        "effects": [
+            "Your Stand's Range Stat becomes 0, and it cannot be increased in any manner.",
+            "Your Stand becomes bound in reality as a more tangible object. Therefore, when summoned it has a physical form that surrounds parts of or the entire User and is visible, even to those without a Stand.",
+            "Your Stand is now able to take non-Stand damage.",
+            "You are now able to increase any stat (except Range) that your Stand has that you would normally be unable to increase. For example, an Ability-Type Suit Stand User could increase their Power and Durability past their initial values."
+        ],
+        "prereq": "<a href='/classes/?focus=Stands'>Stand User</a> Level 1+"
     }
 }
