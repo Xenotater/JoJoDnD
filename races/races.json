@@ -3,109 +3,133 @@
         "name": "Zombie",
         "examples": ["Police Zombie", "Doobie", "Jones"],
         "links": ["Unnamed_Characters#Police_Zombie", "Doobie", "Minor_Characters#Page,_Jones,_Plant_and_Bonham"],
-        "desc": "A Zombie is created whenever a Vampire takes blood out of a living human, or brings a shriveled corpse back from the dead. Zombies are creatures with great strength and durability, but almost total weakness to UV light. Most Zombies are slaves to their masters, but some Zombies may survive and live after their Master has left them in some way, mostly of their own free will but still slaves to their hunger for living flesh.",
+        "desc": "A Zombie is created whenever a Vampire takes blood out of a living Human, or brings a shriveled corpse back from the dead. Zombies are creatures with great strength and durability, but almost total weakness to UV light. Most Zombies are slaves to their masters, but some Zombies may survive and live after their Master has left them in some way, mostly of their own free will but still slaves to their hunger for living flesh.",
         "playing": "Zombies are powerful undead creatures, but they have several weaknesses and shortcomings, and they are the weakest type of Undead. Once a creature becomes a Zombie, they have reached their full potential, and may no longer grow or develop. A person turned Zombie keeps all of their stats and proficiencies, but they lose the ability to use their <a href='/classes/?focus=Stands'>Stand</a>. A Zombie must obey their master, as they are bound to them. If they have no orders, or no master, Zombies usually seek out flesh to satiate their immense hunger. Zombies are grotesque abominations, taking on some of the parts of Vampires, and immediately gaining immense strength. However, they, in their current state, may not become stronger. Regardless of the experience points gained by a Zombie, they cannot gain Levels. A Zombie can become a Vampire or an Ultimate Being, but they need the necessary equipment (<a href='/artifacts/?focus=Stone_Mask'>Stone Mask</a> or <a href='/artifacts/?focus=Completed_Stone_Mask'>Completed Stone Mask</a>, respectively).",
-        "changes": "When you become a Zombie, you retain all abilities, skills, and powers you had when you were a human. However, several things have changed. Any experience points gained are destroyed, and your class goes away. You then become a Level 1 Zombie. As Level 1 Zombie, your Strength increases by 2, your Constitution increases by 2, and your Dexterity Increases by 1. However, your Wisdom decreases by 3, your intelligence decreases by 4, and your Charisma score becomes 3 (unless it is lower, in which case, it remains the same). Zombies heal at roughly the same rate that they would heal before they became a Zombie. Any damage dealt by <a href='/classes/?focus=Ripple'>The Ripple</a> or UV Radiation leaves a wicked scar, similar to a severe burn on a normal human. Zombies do not need to eat or drink normally, instead needing to eat raw flesh or living creatures, usually humanoids. Zombies need to eat either their entire body weight in Human parts, or five times their body weight in animals, per month, in order to continue surviving. A Zombie may be turned into a higher form of Undead (Ghoul or Vampire), and they count as a fresh corpse for the purpose of any effects that would do so.",
-        "feats": ["Undead Nature", "Rotting Flesh", "Zombie Double Health", "Zombie Infection", "Zombie Strength"]
+        "changes": "When you become a Zombie, you retain any and all abilities possessed when you were Human. However, they may not develop or grow beyond their current capacity. Zombies retain any Levels, Proficiencies, and additional skills they had in life, but they cannot learn any new skills or gain any additional Class Levels.<br>While able to speak coherently, their insatiable hunger for flesh and violence will likely overtake them too much to do much else. Most Zombies will spend their time thinking about horrific and creative new ways to enact violence, or actually committing said violence.<br>Zombies have very little willpower of their own, and will obey commands with very little question from a greater undead, such as a Vampire, or even a powerful Ghoul. A Zombie who had a <a href='/classes/?focus=Stands'>Stand</a> in life will be unable to use it, as their insatiable hunger and lack of reason overcomes the fighting spirit needed to keep a Stand in control.",
+        "feats": ["Undead Nature", "Zombification", "Zombie Infection"]
     },
     "Ghoul": {
         "name": "Ghoul",
         "examples": ["Wang Chan", "Jack the Ripper", "Bruford", "Tarkus", "Adams"],
         "links": ["Wang_Chan#Zombie", "Jack_the_Ripper#Zombie", "Bruford", "Tarkus", "Adams"],
-        "desc": "A Ghoul is very similar to a Zombie, in that it is created when a Vampire steals the blood out of a living human. However, rather than simply leaving a shriveled corpse, the Vampire replaces some of the taken blood with a small amount of Vampiric Essence (Ghouls may also be created from corpses, even if there are very little remains left of the corpse).  This causes the Ghoul to undergo only minor changes as opposed to its Zombie counterpart. Ghouls are slaves to their Vampiric Masters, but not to the same level that Zombies are. Ghouls retain many skills and abilities that they once had, as well as their sense of pride and moral code. Their psyche is only changed to the point where they still may act independently of their Vampiric Masters, they simply respect and revere their Vampiric Masters. If someone more powerful were to come along, a Ghoul could potentially change their allegiance. Ghouls look very similar to their Humancounterparts, and are able to pass as Human with little to no trouble at all.",
-        "playing": "Ghouls are much stronger than Zombies for several reasons. For starters, a Ghoul retains all power, abilities, and skills that they had in life, including, if applicable, their <a href='/classes/?focus=Stands'>Stand</a>. Level 1 Ghoul is added to their character sheet, and they get to keep any Levels or Abilities that they had previously. However, once a character has become a Ghoul, they may not gain Levels in any class, regardless of experience points gained. A Ghoul may also become a Vampire or an Ultimate Being, but they need the necessary equipment in order to do so (<a href='/artifacts/?focus=Stone_Mask'>Stone Mask</a> or <a href='/artifacts/?focus=Completed_Stone_Mask'>Completed Stone Mask</a>, respectively).",
-        "changes": "Your Levels all stay the same, but you also become a Level 1 Ghoul on top of your already gathered abilities. You may not gain any more Levels, regardless of experience points gained. Your Strength and Constitution increase by 4, your Dexterity increases by 2, and your Intelligence, Wisdom, and Charisma all stay the same. Ghouls heal at roughly twice the rate that they would normally in life. Ghouls need to eat either their entire body weight in Human parts, or five times their body weight from animals, per week in order to continue surviving.",
-        "feats": ["Undead Nature", "Ghoulish Double Health", "Zombie Infection", "Ghoulish Strength", "OR", "Ghoulish Agility"]
+        "desc": "A Ghoul is very similar to a Zombie, in that it is created when a Vampire steals the blood out of a living Human. However, rather than simply leaving a shriveled corpse, the Vampire replaces some of the taken blood with a small amount of Vampiric Essence (Ghouls may also be created from corpses, even if there are very little remains left of the corpse). This causes the Ghoul to undergo only minor changes as opposed to its Zombie counterpart, even able to pass as Human with little to no trouble at all.<br>Ghouls are able to retain some semblance of their willpower, even if it has been twisted to some dark end. A Ghoul may not be able to control their hunger for flesh, but they may exhibit little quirks or mannerisms that they had in life including certain ideals, just manifested in corrupted ways. A Ghoul that strongly believed in fair combat, for example, may choose to fight specific Humans they believe to be worthy opponents head-on, rather than ambushing anything that moves from the shadows.",
+        "playing": "When you become a Ghoul, you retain any and all abilities possessed when you were Human. While you may not further develop these skills, you may still use your <a href='/classes/?focus=Stands'>Stand</a> if you had one. Ghouls retain any Levels, proficiencies, and additional skills they had in life, but they cannot learn any new skills or Levels, proficiencies, or additional skills aside from Levels in Ghoul.<br>Ghouls must consume life in order to survive. Most humanoids are worth 10 energy. You may safely take up to 2 energy from a person before they fall unconscious, and up to 4 before they die. Animals give 1/5th the energy that Humans do, and the amount they give is relative to your mass. For example, an animal who is the same mass as you would give you 2 energy.<br>Leveling up requires a certain total amount of energy, which is not consumed upon Level-Up. You may not lose Levels in Ghoul, even if your energy dips below the prerequisite after you Level-Up.",
+        "changes": "Your Levels all stay the same, but you also become a Level 1 Ghoul on top of your already gathered abilities. You may not gain any more non-Ghoul Levels, regardless of Experience gained. Your Strength and Constitution increase by 4, your Dexterity increases by 2, and your Intelligence, Wisdom, and Charisma all stay the same. Ghouls heal at roughly twice the rate that they would normally in life. Ghouls need to eat either their entire body weight in Human parts, or five times their body weight from animals, per week in order to continue surviving.",
+        "theme": "tarkus",
+        "levels": 5,
+        "level": {
+            "1": {
+                "energy": 0,
+                "feats": ["Undead Nature", "Ghoulification", "Zombie Infection"]
+            },
+            "2": {
+                "energy": 10,
+                "feats": ["Inferior Lifesteal"]
+            },
+            "3": {
+                "energy": 25,
+                "special": ["<a href='/feats/?focus=Menacing_Aura'>Menacing Aura</a>"]
+            },
+            "4": {
+                "energy": 50,
+                "feats": ["Ghoul Physique"]
+            },
+            "5": {
+                "energy": 100,
+                "feats": ["Ghoulish Peak"]
+            }
+        }
     },
     "Vampire": {
         "name": "Vampire",
         "examples": ["Dio Brando", "Straights", "Nukesaku", "Vanilla Ice"],
         "links": ["Dio Brando", "Straizo#Part_2_", "Nukesaku", "Vanilla_Ice"],
-        "desc": "Vampires are Humans that were able to find a <a href='/artifacts/?focus=Stone_Mask'>Stone Mask</a>, and awaken the true potential of the Human mind. In order to become a Vampire, a Human must put on and activate the Stone Mask. Vampires are a lot stronger than Humans, Zombies, or even Ghouls. Vampires have a wide array of powerful <a href='/abilities/?sort=Vampire'>Abilities</a>, but this power comes at a cost, as all things do. Vampires must consume the blood of the living in order to survive, as well as become stronger. A Vampire may also be created when a living Humanor a corpse receives a large amount of blood from another, very powerful Vampire.",
-        "playing": "Vampires are extremely powerful, but they have a massive flaw, and a huge weakness. Because Vampires are Undead, any exposure to sunlight or <a href='/classes/?focus=Ripple'>The Ripple</a> disintegrates the flesh itself. <b>Important: In order to level up, a Vampire must intake a certain amount of energy, as well as be able to achieve that level in their class.</b> 1 Human equal to the mass of the Vampire equals 10 Energy. An animal equal to the mass of the Vampire equals 2 Energy. <b>Levels of Vampire DO NOT CLASSIFY AS MULTICLASSING.</b> In order to level up in a <a href='/classes/?focus=Ripple'>Class</a> you must be the same Level of Vampire, but your Vampire Level can never be higher than your Class Level.",
-        "note": "Vampires are not weakened by artifacts like holy symbols, Holy Water, or a stake to the heart. They are, however, still weak to sunlight. Vampires must feed, gaining at least 10 energy when doing so, every week. An average living Human gives 10 Energy, but up to three energy may be taken without killing them. Animal blood does work, but at 1/5th of the efficiency of Human blood. You may also drain other Undead (Zombies and Ghouls both have 10 Energy by default), but when you do so you only get half of the Energy that they have.",
+        "desc": "Vampires are Humans that were able to find a <a href='/artifacts/?focus=Stone_Mask'>Stone Mask</a>, and awaken the true potential of the Human mind. When the front of the mask is exposed to blood, spikes shoot out from the mask, then retract after around 5 seconds. This kills anyone wearing the mask, and transforms them into a Vampire. When you become a Vampire, you retain all memories, skills, and abilities that you had in life, in addition to gaining later ones further down the line. Vampires are a lot stronger than Humans, Zombies, or even Ghouls. Vampires have a wide array of powerful <a href='/abilities/?search=Vampire'>Abilities</a>, but this power comes at a cost, as all things do. Vampires must consume the blood of the living in order to survive, as well as become stronger.",
+        "playing": "Vampires are extremely powerful, but they have a huge weakness. Because Vampires are Undead, any exposure to sunlight or <a href='/classes/?focus=Ripple'>The Ripple</a> disintegrates the flesh itself.<br>Vampires must consume life in order to survive. Most humanoids are worth 10 energy. You may safely take up to 2 energy from a person before they fall unconscious, and up to 4 before they die. Animals give 1/5th the energy that Humans do, and the amount they give is relative to your mass. For example, an animal who is the same mass as you would give you 2 energy. Vampires may consume other undead life as well, gaining half of the energy that undead had.<br>Leveling up requires a certain total amount of energy, which is not consumed upon Level-Up. You may not lose Levels in Vampire, even if your energy dips below the prerequisite after you Level-Up. Levels of Vampire <b>do not classify as Multiclassing</b>. You can Level-Up as an Undead independent of your Class, as long as you meet the energy requirements to do so.",
+        "note": "Vampires are not weakened by artifacts like holy symbols, Holy Water, or a stake to the heart. Sunlight and <a href='/classes/?focus=Ripple'>The Ripple</a> are their primary weakness.",
         "note2": "Your Vampiric DC is 8 + Proficiency Bonus + Charisma Modifier",
         "theme": "dio",
+        "levels": 20,
         "level": {
             "1": {
                 "energy": 0,
-                "feats": ["Undead Nature", "Vampire Double Health", "Vampiric Regeneration", "Vampiric Feeding"]
+                "feats": ["Undead Nature", "Vampirification", "Greater Undead Health Threshold", "Lifesteal", "Zombie Infection"]
             },
             "2": {
-                "energy": 10,
-                "special": ["<a href='/feats/?focus=Menacing_Aura'>Menacing Aura</a>"]
-            },
-            "3": {
-                "energy": 15,
-                "feats": ["Vampiric Musculature"]
-            },
-            "4": {
                 "energy": 20,
-                "feats": ["Zombie Creation"]
-            },
-            "5": {
-                "energy": 30,
                 "feats": ["Primal Charm"]
             },
+            "3": {
+                "energy": 40,
+                "special": ["Ability Score Improvement"]
+            },
+            "4": {
+                "energy": 60,
+                "special": ["<a href='/feats/?focus=Menacing_Aura'>Menacing Aura</a> OR <a href='/feats/?focus=Brutality'>Brutality</a>"]
+            },
+            "5": {
+                "energy": 80,
+                "feats": ["Greater Undead Senses"]
+            },
             "6": {
-                "energy": 45,
-                "feats": ["Vampiric Senses"]
+                "energy": 100,
+                "special": ["Ability Score Improvement"]
             },
             "7": {
-                "energy": 75,
+                "energy": 120,
                 "feats": ["Ghoul Creation"]
             },
             "8": {
-                "energy": 100,
-                "feats": ["Hypnosis"]
+                "energy": 140,
+                "special": ["Ability Score Improvement"]
             },
             "9": {
-                "energy": 150,
-                "feats": ["Flight"]
-            },
-            "10": {
-                "energy": 225,
-                "feats": ["Space Ripper Stingy Eyes"]
-            },
-            "11": {
-                "energy": 335,
+                "energy": 160,
                 "feats": ["Flesh Grafting"]
             },
+            "10": {
+                "energy": 180,
+                "special": ["Ability Score Improvement"]
+            },
+            "11": {
+                "energy": 200,
+                "feats": ["Hypnosis"]
+            },
             "12": {
-                "energy": 500,
-                "feats": ["Freezing Touch"]
+                "energy": 220,
+                "feats": ["Controlled Veins", "Freezing Touch"]
             },
             "13": {
-                "energy": 750,
-                "feats": ["Vampiric Body Control"]
+                "energy": 240,
+                "special": ["Ability Score Improvement"]
             },
             "14": {
-                "energy": 1125,
-                "feats": ["Controlled Veins"]
+                "energy": 260,
+                "feats": ["Vampiric Body Control", "Vampiric Dormancy"]
             },
             "15": {
-                "energy": 1685,
-                "feats": ["Body Evacuation"]
+                "energy": 280,
+                "feats": ["Space Ripper Stingy Eyes"]
             },
             "16": {
-                "energy": 2525,
-                "feats": ["Vampiric Dormancy"]
+                "energy": 300,
+                "special": ["Ability Score Improvement"]
             },
             "17": {
-                "energy": 3790,
-                "feats": ["Primal Offspring"]
+                "energy": 320,
+                "feats": ["Body Evacuation"]
             },
             "18": {
-                "energy": 5685,
+                "energy": 340,
                 "feats": ["Flesh Bud"]
             },
             "19": {
-                "energy": 8530,
-                "feats": ["Vampire Creation"]
+                "energy": 360,
+                "special": ["Ability Score Improvement"]
             },
             "20": {
-                "energy": 12500,
-                "feats": ["Vampiric Peak"]
+                "energy": 380,
+                "feats": ["Vampire Creation"]
             }
         }
     },
@@ -113,7 +137,7 @@
         "name": "Pillar Man",
         "examples": ["Pillar Men Clan"],
         "links": ["Unnamed_Characters#Pillar_Men_Clan"],
-        "desc": "An ancient race of people, they lived extremely long lives and were very strong, but they were weak to the sun. Although it was originally thought that all of the Pillar Men were killed by Cars, that is not really the case.</p><p>Some might have escaped and lived out long lives, or another extinction event occurred. Regardless, somehow, Pillar Men DNA got mixed up with some Human DNA, and passed down through the generations, lying dormant. Within some humans, the DNA of the Pillar Men lie, waiting to be activated. It may be activated through some sort of Trauma, or through lifestyle changes that mirror how the Pillar Men lived thousands of years ago.</p><p>Through eating only living or freshly killed creatures, avoiding sunlight, and adopting a nocturnal schedule, the DNA may be unlocked. However, once unlocked, it takes over, and the changes made cannot be reverted or reversed. To unlock it, you must have the Pillar Men DNA within your genome. It also takes 2 weeks of living the way that the Pillar Men did to unlock the genes, and to force them to take over.</p><p>Pillar Men is not really accurate, as there were also Pillar Women and Children. As such, Pillar Men is a misnomer, and you may be any gender, but still be classified as a “Pillar Man”.",
+        "desc": "An ancient race of people, they lived extremely long lives and were very strong, but they were weak to the sun. Although it was originally thought that all of the Pillar Men were killed by Cars, that is not really the case.</p><p>Some might have escaped and lived out long lives, or another extinction event occurred. Regardless, somehow, Pillar Men DNA got mixed up with some Human DNA, and passed down through the generations, lying dormant. Within some Humans, the DNA of the Pillar Men lie, waiting to be activated. It may be activated through some sort of Trauma, or through lifestyle changes that mirror how the Pillar Men lived thousands of years ago.</p><p>Through eating only living or freshly killed creatures, avoiding sunlight, and adopting a nocturnal schedule, the DNA may be unlocked. However, once unlocked, it takes over, and the changes made cannot be reverted or reversed. To unlock it, you must have the Pillar Men DNA within your genome. It also takes 2 weeks of living the way that the Pillar Men did to unlock the genes, and to force them to take over.</p><p>Pillar Men is not really accurate, as there were also Pillar Women and Children. As such, Pillar Men is a misnomer, and you may be any gender, but still be classified as a “Pillar Man”.",
         "note": "Despite their weakness to sunlight and their enhanced physical characteristics, they are not Undead. Pillar Men can still be killed in the same way that a conventional Humanwould be, they are simply more resilient. This also means any <a href='/abilities?search=undead'>Ability</a> or <a href='/feats?search=undead'>Feat</a> that refers to Undead does not include Pillar Men.",
         "changes": "As a Pillar Man, you must eat a lot more to survive. You still eat food in the same way that a Humandoes, but your diet changes slightly. You must eat either living animals, or animals that were living an hour before you initially consumed them. You may cook your food, but you get the same amount of nutrients eating flesh either cooked or raw. Every part of an animal gives you nutrients, and as such, you may eat the entirety of the animal, including the bones. You may also eat fruit and vegetables, but they do not give you nutrients, nor do they sate your hunger. Humans need to eat around 2000 calories to stay healthy, and properly nourished, and Pillar Men need roughly 10000 calories to stay healthy. You also gain an aversion to UV light. When you are in direct sunlight, you take 1d4 Radiant Damage at the start of each of your turns, for every turn when you are in direct sunlight. Your Hit Dice increases to 1d8, unless it was higher or equal, in which case, it stays the same. You now age a lot slower than you would normally. Humans only live to around 70, but Pillar Men live to around 200 years old. Your Strength, Dexterity, and Constitution increase by 2.",
         "feats": ["Primal Charm"]
@@ -123,90 +147,91 @@
         "examples": ["Santana", "Wham", "ACDC", "Cars"],
         "links": ["Santana", "Wammu", "Esidisi", "Kars"],
         "desc": "Thousands of years ago, a genius named Cars created the <a href='/artifacts/?focus=Stone_Mask'>Stone Mask</a> and tested it on himself, with the eventual goal of conquering the Sun, and being able to bask in its glow. The Stone Mask was an important step into this process. While it did not give him, nor his Pillar Men brethren any resistance to The Sun, it made them much, much stronger. The only drawback was that in order to sustain this new power, they had to consume massive amounts of energy.",
-        "playing": "Enhanced Pillar Men are some of the strongest creatures ever to walk The Earth, with strength, speed, and intelligence that rivals every other animal. However, in order to sustain this power, you must absorb immense amounts of energy from animals. Not only that, but when you become an Enhanced Pillar Man, your weakness to UV Light and <a href='/classes/?focus=Ripple'>The Ripple</a> actually becomes more acute. <b>Important: In order to level up, an Enhanced Pillar Man must intake a certain amount of energy, as well as be able to achieve that level in their class.</b> 1 Human equal to the mass of the Enhanced Pillar Man equals 10 Energy. An animal equal to the mass of the Enhanced Pillar Man equals 2 Energy. The following list shows how much total energy is needed for each level up. <b>Levels of Enhanced Pillar Man DO NOT CLASSIFY AS MULTICLASSING.</b> In order to level up in a <a href='/class'>Class</a> you must be the same Level of Enhanced Pillar Man, but your Enhanced Pillar Man Level can never be higher than your Class Level.",
-        "note": "Enhanced Pillar Men must feed, obtaining roughly 100 Energy every week in order to survive. A Human only provides 10 Energy (3 energy may be taken without killing them), animal blood only works at 1/5th the efficiency of Humans, and most Zombies and Ghouls only have 10 Energy which you only get half of. As such, it's best for an Enhanced Pillar Man to create or hunt down and consume Vampires, gaining half of their potentially much higher energy.",
+        "playing": "Enhanced Pillar Men are some of the strongest creatures ever to walk The Earth, with strength, speed, and intelligence that rivals every other animal. However, in order to sustain this power, you must absorb immense amounts of energy from animals. Not only that, but when you become an Enhanced Pillar Man, your weakness to UV Light and <a href='/classes/?focus=Ripple'>The Ripple</a> actually becomes more acute.<br>EPMs must consume life in order to survive. Most humanoids are worth 10 energy. You may safely take up to 2 energy from a person before they fall unconscious, and up to 4 before they die. Animals give 1/5th the energy that Humans do, and the amount they give is relative to your mass. For example, an animal who is the same mass as you would give you 2 energy. EMPs may consume other undead life as well, gaining all of the energy that undead had.<br>Leveling up requires a certain total amount of energy, which is not consumed upon Level-Up. You may not lose Levels in EPM, even if your energy dips below the prerequisite after you Level-Up. Levels of EPM <b>do not classify as Multiclassing</b>. You can Level-Up as an Undead independent of your Class, as long as you meet the energy requirements to do so.",
+        "note": "Because of their higher energy needs, it's common for an Enhanced Pillar Man to create or hunt down and consume Vampires.",
         "note2": "Enhanced Pillar Men are an enhanced version of the Pillar Men, and as such get the same stat increases and racial Features as Pillar Men.",
-        "theme": "santana", 
+        "theme": "santana",
+        "levels": 20,
         "level": {
             "1": {
                 "energy": 0,
-                "feats": ["Undead Nature", "EPM Double Health", "EPM Regeneration", "Superior Feeding"]
+                "feats": ["Undead Nature", "Pillar Man Enhancement", "Greater Undead Health Threshold", "Superior Lifesteal", "Zombie Infection"]
             },
             "2": {
-                "energy": 100,
-                "special": ["<a href='/feats/?focus=Menacing_Aura'>Menacing Aura</a>"]
+                "energy": 50,
+                "special": ["Ability Score Improvement, <a href='/feats/?focus=Menacing_Aura'>Menacing Aura</a>"]
             },
             "3": {
-                "energy": 150,
-                "feats": ["Ancient Charm"]
+                "energy": 100,
+                "feats": ["Ghoul Creation"]
             },
             "4": {
-                "energy": 200,
-                "feats": ["EPM Brain Stimulation"]
+                "energy": 150,
+                "special": ["Ability Score Improvement"]
             },
             "5": {
-                "energy": 300,
-                "feats": ["EPM Enhanced Musculature"]
+                "energy": 200,
+                "feats": ["Greater Undead Senses"]
             },
             "6": {
-                "energy": 450,
-                "feats": ["EPM Flexibility"]
+                "energy": 250,
+                "special": ["Ability Score Improvement"]
             },
             "7": {
-                "energy": 750,
-                "feats": ["EPM Senses"]
-            },
-            "8": {
-                "energy": 1000,
-                "feats": ["EPM Durability"]
-            },
-            "9": {
-                "energy": 1500,
-                "feats": ["Controlled Veins"]
-            },
-            "10": {
-                "energy": 2250,
-                "feats": ["Body Evacuation"]
-            },
-            "11": {
-                "energy": 3350,
+                "energy": 300,
                 "feats": ["Flesh Grafting"]
             },
+            "8": {
+                "energy": 350,
+                "special": ["Ability Score Improvement"]
+            },
+            "9": {
+                "energy": 400,
+                "feats": ["Vampire Creation"]
+            },
+            "10": {
+                "energy": 450,
+                "special": ["Ability Score Improvement"]
+            },
+            "11": {
+                "energy": 500,
+                "feats": ["Controlled Veins"]
+            },
             "12": {
-                "energy": 5000,
-                "feats": ["Total Body Control"]
+                "energy": 550,
+                "special": ["Ability Score Improvement"]
             },
             "13": {
-                "energy": 7500,
+                "energy": 600,
                 "feats": ["Cellular Phasing"]
             },
             "14": {
-                "energy": 11250,
-                "feats": ["Cellular Drive"]
+                "energy": 650,
+                "special": ["Ability Score Improvement"]
             },
             "15": {
-                "energy": 16850,
-                "feats": ["Elemental Battle Mode"]
-            },
-            "16": {
-                "energy": 25250,
+                "energy": 700,
                 "feats": ["EPM Dormancy"]
             },
+            "16": {
+                "energy": 750,
+                "special": ["Ability Score Improvement"]
+            },
             "17": {
-                "energy": 37900,
-                "special": "Gain an extra <a href='/feats'>Feat</a>"
+                "energy": 800,
+                "feats": ["Body Evacuation"]
             },
             "18": {
-                "energy": 56850,
-                "feats": ["EPM Muscular Proficiency"]
+                "energy": 850,
+                "special": ["Ability Score Improvement"]
             },
             "19": {
-                "energy": 85300,
-                "special": "Gain an extra <a href='/feats'>Feat</a>"
+                "energy": 900,
+                "feats": ["Specialized EPM Ability"]
             },
             "20": {
-                "energy": 125000,
-                "feats": ["EPM Peak"]
+                "energy": 950,
+                "special": ["Ability Score Improvement"]
             }
         }
     },
@@ -214,22 +239,22 @@
         "name": "Ultimate Being",
         "examples": ["Ultimate Cars"],
         "links": ["Kars"],
-        "desc": "Thousands of years ago, Cars created the <a href='/artifacts/?focus=Stone_Mask'>Stone Mask</a> so that he and his people could conquer their one weakness; The Sun. However, in order to do this, Cars would have to go about changing the very way in which his body functioned down to a molecular level. An Ultimate Being is created when an Undead Humanoid of immense strength (Level 20 Enhanced Pillar Man/Vampire) dons The <a href='/artifacts/?focus=Completed_Stone_Mask'>Completed Stone Mask</a>. After donning it, and exposing the Mask to any sort of direct UV radiation, the Mask latches on, and forces a beam of energy directly into the brain of the wearer. This changes their anatomy on a molecular level, forcing their brain to evolve massively and changing every cell in the body so that each cell contains the DNA of all known living creatures on Earth. Ultimate Creatures are terrifying, and there are very few creatures that could even hope to stand a chance against them.",
-        "note": "When becoming an Ultimate Being, the <a href='/abilities/?focus=Undead_Nature'>Undead Nature</a> feature is lost.",
-        "feats": ["Perfect Form", "Ultimate Nature", "Immortality", "Improved Imitation", "Living Drones"]
+        "desc": "Thousands of years ago, a genius named Cars created the <a href='/artifacts/?focus=Stone_Mask'>Stone Mask</a> as a way to overcome the sunlight. However, he was missing something and ended up creating Undeath instead. If one is to find a <a href='/artifacts/?focus=Red_Stone_of_Aja'>Perfect Aja</a> and slot it into the mask, a <a href='/artifacts/?focus=Completed_Stone_Mask'>Completed Stone Mask</a> is created. If the Completed Stone mask is donned and the front of it is wet with blood while UV light is channeled through the Aja, it will trigger the creation of the Ultimate Being. The Perfect Aja remains intact, but the mask itself crumbles after the transformation. The Ultimate Being is the perfect evolution of life itself, and there are very few who could possibly hope to stand against one.",
+        "changes": "When becoming an Ultimate Being, the <a href='/abilities/?focus=Undead_Nature'>Undead Nature</a> feature and anything else relating to Undeath is lost. Additionaly, your hit points are doubled or become 200, whichever is higher.",
+        "feats": ["Immortality", "Lifeweaver"]
     },
     "Abomination": {
         "name": "Abomination",
         "examples": ["Mr. Nijimura"],
         "links": ["Nijimura's_Father#Mutated"],
         "desc": "Abominations are Humans who have had a <a href='/abilities/?focus=Flesh_Bud'>Flesh Bud</a> implanted into their brains by a Vampire that's been destroyed. The Flesh Bud goes haywire, permanently changing the function of the once humanoid body. Extremely aggressive tumors rapidly grow within a matter of minutes after the death of the Vampire that had planted the Flesh Bud, taking over almost every cell in the body. This makes the skin turn a mossy shade of green, and makes the previously normal Human completely unrecognizable. It also invades the mind, making your mental functions drop to around the levels of a dog.",
-        "changes": "Your Intelligence, Wisdom, and Charisma all Drop to 1. Your Strength and Dexterity both drop by 5, and you lose all Skills, Feats, and anything else you've learned. Your Class becomes Abomination Level 1. You may not gain Experience Points, nor level up and you lose all sense of humanity or sentience. You also become effectively immortal, healing 50 Hit Points at the top of the Initiative order every turn. If you drop to 0 Health Points, you go comatose. However, in order to die you must reach -200 HP or the inverse of your maximum HP, whichever is lower. Only then will you not regenerate, and finally be destroyed."
+        "changes": "Your Intelligence, Wisdom, and Charisma all Drop to 3. Your Strength and Dexterity both drop by 5, and you lose all Skills, Feats, and anything else you've learned.  Your max HP remains whatever it was before your transformation or becomes 200, whichever is higher. Your Class becomes Abomination Level 1. You may not gain Experience Points nor Level-Up, and you lose all sense of humanity or sentience. You also become effectively immortal, healing 50 Hit Points at the top of the Initiative order every turn. If you drop to 0 Health Points, you go comatose. However, in order to actually die you must reach the inverse of your maximum HP. Only then will you not regenerate, and finally be destroyed."
     },
     "Rock_Human": {
         "name": "Rock Human",
         "examples": ["Yotsuyu Yagiyama", "Tamaki Damo", "Aisho Dainenjiyama"],
         "links": ["Yotsuyu_Yagiyama", "Tamaki_Damo", "Aisho_Dainenjiyama"],
-        "desc": "Rock Humans are an elusive evolutionary cousin of humans, but with a few key differences. For starters, Rock Humans usually live for around 240 years, and are silicone, rather than carbon based. Rock Humans must hibernate relatively often in periods of 1-3 months, but after hibernating they don't need to sleep for two months. While hibernating, a layer of stone covers their flesh and all processes except for breathing and some brain function cease. While in hibernation, they can survive high temperatures up to 950 C and low temperatures bottoming at around -240 C. The only way to kill a hibernating Rock Human is to either break through their rocky shell, or to suffocate them. Every 6 years, during hibernation, they will molt their old bodies and change themselves into a slightly different form. Rock Humans can eat any organic matter without issue, either raw or cooked. However, if the organic matter has little nutritional value, more of it must be consumed. For some unknown reason, all Rock Humans are deathly allergic to mangos. Rocks Humans tend to live on the outside of Humantowns or countries, preferring to live in the wild.",
+        "desc": "Rock Humans are an elusive evolutionary cousin of Humans, but with a few key differences. For starters, Rock Humans usually live for around 240 years, and are silicone, rather than carbon based. Rock Humans must hibernate relatively often in periods of 1-3 months, but after hibernating they don't need to sleep for two months. While hibernating, a layer of stone covers their flesh and all processes except for breathing and some brain function cease. While in hibernation, they can survive high temperatures up to 950 C and low temperatures bottoming at around -240 C. The only way to kill a hibernating Rock Human is to either break through their rocky shell, or to suffocate them. Every 6 years, during hibernation, they will molt their old bodies and change themselves into a slightly different form. Rock Humans can eat any organic matter without issue, either raw or cooked. However, if the organic matter has little nutritional value, more of it must be consumed. For some unknown reason, all Rock Humans are deathly allergic to mangos. Rocks Humans tend to live on the outside of Humantowns or countries, preferring to live in the wild.",
         "note": "While extremely rare, some animals share the same traits as Rock Humans, including possessing a <a href='/classes/?focus=Stands'>Stand</a>.",
         "feats": ["Stoneflesh", "Stone Cold Willpower", "Mysterious Disappearance"]
     }
