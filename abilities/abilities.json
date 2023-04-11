@@ -687,7 +687,7 @@
     },
     "Ghoul_Creation": {
         "name": "Ghoul Creation",
-        "classes": ["Vamp"],
+        "classes": ["Vamp", "EPM"],
         "desc": [
             "As a greater Undead, you have moved past simply creating Zombies. Now, you may create a lesser Undead of greater power than Zombies.",
             "As an Action, you may spend 10 energy to create a <a href='/races/?focus=Ghoul'>Ghoul</a> from a living being of the same species as a creature you have just killed, or a corpse. You may also choose to put up to 100 additional energy into them, allowing them to more rapidly become a Ghoul of even greater power.",
@@ -782,7 +782,7 @@
     },
     "Vampire_Creation": {
         "name": "Vampire Creation",
-        "classes": ["Vamp"],
+        "classes": ["Vamp", "EPM"],
         "desc": [
             "You have grown very powerful, and now have the ability to create other greater Undead with relative ease.",
             "If you expose a large amount of your blood to a recently deceased living being or corpse of the same species as you, you may spend 250 energy to make them into a Vampire. ",
