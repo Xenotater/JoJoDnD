@@ -189,7 +189,7 @@
         "name": "Headhunter",
         "desc": "You've fought the Undead many times before, and you know their tricks and how to best defeat them.",
         "effects": [
-            "You get +5 to all Attack rolls aimed at <a href='/abilities/?focus=Undead_Nature'>Undead Creatures</a>' heads.",
+            "You may add your Proficiency Bonus an additional time for any attack roll made against an <a href='/abilities/?focus=Undead_Nature'>Undead Creature's</a> Head.",
             "You gain Advantage on any Saving Throws against effects inflicted by an Undead Creature."
         ]
     },

@@ -668,37 +668,6 @@
             "The Satellite Sphere is destroyed after being thrown, and cannot be used again."
         ]
     },
-    "Vampire_Double_Health": {
-        "name": "Vampire Double Health",
-        "classes": ["Vamp"],
-        "desc": [
-            "As a Vampire you get the same amount of Hit Points that you did when you were alive. However, your Hit Dice becomes 1d10, unless it was already the same or higher. Your Head Hit Dice is 1d4, and it has an additional +5 added to its AC."
-        ]
-    },
-    "Vampiric_Regeneration": {
-        "name": "Vampiric Regeneration",
-        "classes": ["Vamp"],
-        "desc": [
-            "You gain an amount of Hit Points back in either your Head or Body for an amount equal to your Constitution Modifier, every time Initiative is rolled (each round).",
-            "Furthermore, as an Action, you may restore Hit Dice to yourself. You may only restore 1 Hit Die per Action. Hit Points restored by this Feature can either restore Hit Points to your Head or Body, and you may split Hit Points restored between the two if desired."
-        ]
-    },
-    "Vampiric_Feeding": {
-        "name": "Vampiric Feeding",
-        "classes": ["Vamp"],
-        "desc": [
-            "As an Attack, you may make a Grapple Check upon a living creature. If you are successful, you place the blood vessels of your hand upon the creature and connect them to the body you have grappled.",
-            "The damage dealt by this is 1d6 + your Level of Vampire Piercing damage. This damage is dealt at the start of each of their turns until they escape your Grapple, and you heal half of the damage dealt.",
-            "Alternatively, if your target is willing, incapacitated, or unconscious, you may use this Ability to remove Energy from them, up to an amount equal to your Proficiency Bonus."
-        ]
-    },
-    "Vampiric_Musculature": {
-        "name": "Vampiric Musculature",
-        "classes": ["Vamp"],
-        "desc": [
-            "Every time you level up from now on, including now, you may permanently add 1 to your Constitution, Dexterity, or Strength Score."
-        ]
-    },
     "Zombie_Creation": {
         "name": "Zombie Creation",
         "classes": ["Vamp"],
@@ -711,32 +680,18 @@
         "name": "Primal Charm",
         "classes": ["Vamp", "PM", "EPM"],
         "desc": [
-            "You've noticed that your body has changed in the time following your transformation. Your canines have become fangs, your hair has become long and now grows extremely quickly, and the irises of your eyes glow a soft, threatening red.",
-            "Your Charisma Score increases by 2, and you are now Proficient in Persuasion, Performance, and Intimidation rolls. If you were already Proficient in any of these Skills, you may gain Expertise in them instead."
-        ]
-    },
-    "Vampiric_Senses": {
-        "name": "Vampiric Senses",
-        "classes": ["Vamp"],
-        "desc": [
-            "The Stone Mask, or a Master of some sort, has unlocked the true potential of your Human Mind. Your body can perceive much more accurately, and your mind can quickly and efficiently process this information.",
-            "You are now Proficient in Perception rolls, and you may add your Proficiency Bonus to your Perception rolls and Passive Perception, even if you already had Proficiency or Expertise in them."
+            "Your body has responded nicely to the influence of Undead power. You may gain all or some Undead aesthetic features such as extended canines, dimly glowing red eyes, or long, flowing hair.",
+            "Your Charisma Score increases by 2, and you may choose up to twoSkills that use Charisma to become Proficient in. If you are already Proficient in all Charisma based Skills, you may instead gain Proficiency in a Skill that uses another stat.",
+            "If you have offspring, be they Undead or living, they inherit this Ability from you."
         ]
     },
     "Ghoul_Creation": {
         "name": "Ghoul Creation",
         "classes": ["Vamp"],
         "desc": [
-            "When you kill someone using Vampiric Feeding or touch a corpse, you may activate this as a Bonus Action. You take an almost immeasurably small amount of Vampiric Essence, and use it replace the blood you have consumed.",
-            "This Ability costs 50 Energy, and can be used once per Short Rest. Upon using this Ability, the affected body revives at the start of their next turn as a <a href='/races/?focus=Ghoul'>Ghoul</a>."
-        ]
-    },
-    "Flight": {
-        "name": "Flight",
-        "classes": ["Vamp"],
-        "desc": [
-            "The amount of energy in your body is immense, and you may now convert some of your body's mass into hydrogen and keep it within your body causing you to float in the air.",
-            "You now have a flying speed of 2 meters per round, and if you do not move you may levitate for indefinite periods of time and make your effective weight less than zero, with a minimum weight of inverse your normal weight. You may also use this Ability to walk on vertical surfaces or on a ceiling. "
+            "As a greater Undead, you have moved past simply creating Zombies. Now, you may create a lesser Undead of greater power than Zombies.",
+            "As an Action, you may spend 10 energy to create a <a href='/races/?focus=Ghoul'>Ghoul</a> from a living being of the same species as a creature you have just killed, or a corpse. You may also choose to put up to 100 additional energy into them, allowing them to more rapidly become a Ghoul of even greater power.",
+            "A freshly killed living being converted into a Ghoul completes their transformation after 1d6+1 turns, whereas a corpse completes their transformation after 3d12 turns."
         ]
     },
     "Hypnosis": {
@@ -744,45 +699,45 @@
         "classes": ["Vamp"],
         "desc": [
             "By reflecting light within your eyes for an entire turn, you may send your brain waves through the air and take control of another living creature. The Range of this Feature is 3 Meters, and you must make direct eye contact with the target in order to use this Ability.",
-            "The opposing creature must make a Wisdom Saving Throw against your Vampiric DC. If the save is successful nothing happens, but if the throw is failed the creature becomes Hypnotized.",
-            "This effect lasts up to an hour. While a creature is Hypnotized, they must follow any and all commands given to them by their Vampiric Controller, even if it would put them in the way of harm or be completely opposed to the creature's normal goals. If they are not given commands by you, they simply remain in the general position they were in when they were Hynotized, and they count as Incapacitated.",
-            "You may end this Hypnosis before the hour is up, if you so wish. They may remake the Saving Throw every time they take damage, or if an ally uses their Action to try to shake them out of it,  with the effect ending on success. The effect also ends if the target falls Unconscious. You may use this Feature once per Long Rest."
+            "The opposing creature must make a Wisdom Saving Throw against your Vampiric DC. If the Save is successful nothing happens, but if the throw is failed the creature becomes Hypnotized. Ripple Users are immune to this and automatically succeed the Save.",
+            "The effects last up to an hour. While a creature is Hypnotized, they must follow any and all commands given to them by their Vampiric controller, even if it would put them in the way of harm or be completely opposed to the creature's normal goals. If they are not given commands by you, they simply remain in the general position they were in when they were Hypnotized, and they count as Incapacitated for the duration.",
+            "You may end this Hypnosis before the hour is up, if you so wish. They may remake the Saving Throw every time they take damage, or if an ally uses their Action to try to shake them out of it, with the effect ending on success. The effect also ends if the target falls Unconscious. You may use this Ability once per Long Rest."
         ]
     },
     "Space_Ripper_Stingy_Eyes": {
         "name": "Space Ripper Stingy Eyes",
         "classes": ["Vamp"],
         "desc": [
-            "As an Attack, you are able to highly pressurize liquid within your eyeballs, convert it all into light, and fire it in the form of lasers. You may fire either one or two lasers at once, one for each eye.",
-            "Any creature caught within the laser's Range must make a Dexterity Saving Throw against your Vampire DC, taking 2d8 Piercing damage on a failed save, and no damage on a successful one. This damage cannot be reduced or circumvented in any way.",
-            "There is no effective Range for this Ability. The Laser will simply travel in a straight line wherever you aim, and it will continue to travel, despite any physical objects in the way. If there are several targets in the straight line that you fire at, they are all potentially hit by the laser.",
-            "Reflective objects may reflect the laser, but no matter can really stop it completely. You may perform this action an amount of times equal to your Proficiency Bonus, per Short or Long Rest. "
+            "By concentrating fluid in your eyes and then shooting it out extremely quickly, you may create a high-pressure steam that rips open anything it comes into contact with.",
+            "As an Action, you may target anything you may see with your eyes with an attack with an infinite effective range. You are considered to have Expertise in the use of this attack, and you use your Dexterity Modifier for the attack roll. A roll of 18, 19, or 20 is considered a Critical Hit for this attack. This attack also has the Siege property, dealing double damage to objects.",
+            "The beam is unstoppable, but may be deflected through a <a href='/classes/?focus=Ripple'>Ripple-infused</a> curve (a shot glass, for example).",
+            "Each beam deals 8d12 piercing damage, and you may fire either one or two beams at once. You may fire an attack out of each eye once per Long Rest."
         ]
     },
     "Flesh_Grafting": {
         "name": "Flesh Grafting",
         "classes": ["Vamp", "EPM"],
         "desc": [
-            "You've gained the ability to start controlling individual cells and their function within your body. You may now replace things such as removed limbs, removed organs, removed bones, and even entire bodies, with the flesh of other humanoid creatures.",
-            "This taken flesh will assimilate to your body much faster than if you were to attempt to grow back your own body through Regeneration. You may also use this Ability to connect living or undead creatures together in order to create Chimeras. Talk to your DM to determine the stats and abilities of the Chimeras that you create. You may perform this Ability at any time, without limit.",
-            "Attaching your Head to a new body, and making it perfectly attuned to yours, takes 1d6 days. While the new body is assimilating, it may regenerate a maximum of 1 HP per round, as opposed to the normal amount. Grafting the full body or a body part of a Hamon User takes 5d100 Days instead, for a perfect graft.",
-            "In theory, you could also use this Ability to fix injuries of living creatures, and as an Action, you could give an amount of Hit Points equal to your Level in Vampire to someone."
+            "In order to heal a missing body part more quickly, you may take a detached body part from a living thing or corpse and rapidly assimilate it into your flesh. It takes 1d4+1 turns for the flesh to assimilate fully, or 1d6+1 years if the flesh was from a <a href='/classes/?focus=Ripple'>Ripple</a> user.",
+            "You may also force the flesh to instantly assimilate by spending energy. You may reduce the amount of turns it takes to assimilate by 1 turn per 1 energy spent for a normal creature. You may also reduce the amount of years it takes to assimilate a Ripple user's flesh by 1 year for every 100 energy spent.",
+            "You may still use the flesh grafted before it is fully assimilated, but any Strength, Dexterity, or Constitution attack rolls, Checks, or Saving Throws you make using that flesh are at Disadvantage."   
         ]
     },
     "Freezing_Touch": {
         "name": "Freezing Touch",
         "classes": ["Vamp"],
         "desc": [
-            "As an Unarmed Strike, you may take almost all of the liquid and a lot of heat from any of your limbs, lowering the effective temperature of each limb to around -40 degrees Celsius.",
-            "If you successfully land this attack, the target must make a Constitution Saving Throw, taking 6d8 Cold damage and becoming unable to move the affected limb on failure. The target takes half damage, and is not affected, on a successful Save.",
-            "The Saving Throw may be repeated at the end of every one of the affected target's turns, and if succeeded, the effect ends on their limb. You may use this Feature an amount of times equal to your Proficiency Bonus per Long Rest."
+            "As an Action you may make an Unarmed Strike to freeze a creature's skin by removing all moisture and heat from one of your limbs, effectively stealing the warmth from that part of their body.",
+            "The creature you target must make a Constitution Saving Throw, taking 4d10 cold damage on a failed Save and half as much on a success. If the creature fails the Save, they are unable to effectively use the limb or area targeted, and any attacks, Saving Throws, or Skill Checks they attempt using that area will be made at Disadvantage.",
+            "The negative effect lasts for a minute, and you may remake the Saving Throw when exposed to a significant amount of warmth.",
+            "You may use this Ability an amount of times equal to your Constitution Modifier per Short Rest."
         ]
     },
     "Vampiric_Body_Control": {
         "name": "Vampiric Body Control",
         "classes": ["Vamp"],
         "desc": [
-            "You've become accustomed to the idea that the individual cells within your body are, in fact, under your conscious control. You may now perform tasks that would normally be impossible for a human. You can fit yourself through small spaces, reknit bones, and fractures in them almost instantly, and even fully heal from Sunlight/Ripple inflicted wounds, without having to pick away the scar first (although this takes a decent amount of time).",
+            "You've become accustomed to the idea that the individual cells within your body are, in fact, under your conscious control. You may now perform tasks that would normally be impossible for a human. You can fit yourself through small spaces, reknit bones, and fractures in them almost instantly, and even fully heal from sunlight/Ripple inflicted wounds, without having to pick away the scar first (although this takes a decent amount of time).",
             "You may also choose to override standard Human self-preservation instincts, such as breathing, the inability to severely harm yourself, and even the ability to simply shut down specific parts of your body, and reboot them at will. Shutting down parts is instant, but rebooting them is a Bonus Action. You may also put muscular cells and bones in places where they should not be normally."
         ]
     },
@@ -790,8 +745,8 @@
         "name": "Controlled Veins",
         "classes": ["Vamp", "EPM"],
         "desc": [
-            "You may put an entire miniature muscular system within the veins in your body. Not only that, but you may also turn energy or matter within your body into more veins, in order to have a Secondary Muscular System.",
-            "Your Veins may be used to pierce through your skin without damaging you. Your Veins may deal Slashing, Bludgeoning, or Piercing damage, and they count as Unarmed Strikes when you attack using them. You may attack using a Vein even if the health of the rest of your Body is zero or lower. If the health of your Head is zero or lower, you may not do this.",
+            "You may put an entire miniature muscular system within the veins in your body. Not only that, but you may also turn energy or matter within your body into more veins in order to have a Secondary Muscular System.",
+            "Your Veins may be used to pierce through your skin without damaging you. Your Veins may deal Slashing, Bludgeoning, or Piercing damage, and they count as Unarmed Strikes when you attack using them. You may attack using a Vein even if the health of the rest of your Body is zero or lower.",
             "You may have up to 5 Veins going outside of your body at a time. Your hair also operates in the same way, with a maximum of 5 “Veins” on the top of your head. When using Veins to move, you may move at up to half of your normal movement speed. You may also use Veins to Grapple. For every additional Vein used, add +1 to the Bonus for your Grapple Check. The Veins may stretch up to 5 meters."
         ]
     },
@@ -801,129 +756,37 @@
         "desc": [
             "The only part of the Undead body needed for Vampiric survival is the brain. If you find yourself in an incredibly desperate situation, you may perform this Ability to save yourself.",
             "As an Attack, you use your Secondary Muscular System (from <a href='/abilities/?focus=Controlled_Veins'>Controlled Veins</a>) to remove your Head and Secondary Muscular System from the rest of you.",
-            "Your Head and Secondary Muscular System are now all you are. You may slowly regenerate your own body, but it takes 3d4 days to do so, as well as 50 Energy for each Kilogram of flesh regenerated.",
-            "You still have to Feed at the standard rate, but you may now do this with your Secondary Muscular System as opposed to your standard <a href='/abilities/?focus=Vampiric_Feeding'>Feed</a> Action. The Action is the same, it is simply no longer carried out using your hand."
+            "Your Head and Secondary Muscular System are now all you are. You may slowly regenerate your own body, but it takes 3d4 days to do so, as well as 5 Energy for each kilogram of flesh regenerated.",
+            "You still have to consume energy at the standard rate, but you may now do this with your Secondary Muscular System, and you may use your <a href='/abilities/?focus=Lifesteal&search=lifesteal'>Lifesteal</a> ability as normal."
         ]
     },
     "Vampiric_Dormancy": {
         "name": "Vampiric Dormancy",
         "classes": ["Vamp"],
         "desc": [
-            "Normally, as a Vampire, you have to Feed for at least 10 energy once per week. However, you may, if you so choose, enter a state of extended Dormancy, in which every part of your body ceases to function, and it is effectively preserved.",
-            "This preservative runs throughout your entire body and brain, allowing your body to stay virtually the same for extended periods of time. Your brain almost completely stops functioning, and you must set a trigger to awaken you, such as a loud noise, or movement within a certain radius. When this trigger is activated, it takes an entire turn for you to return to your full self, with full control over your body.",
-            "Entering a state of Vampiric Dormancy takes one full minute (or 10 turns). You may survive in the state of Vampiric Dormancy for up to 500 years. Past around 500 years, every year you spend in Dormancy consumes 10 Energy from you. If you run out of Energy, your brain shuts off fully, and you die. Losing Energy does not cause you to lose Levels in Vampire."
-        ]
-    },
-    "Primal_Offspring": {
-        "name": "Primal Offspring",
-        "classes": ["Vamp"],
-        "desc": [
-            "You gain the ability to influence the genetics of your offspring. When you would engage in activities that would normally produce healthy human offspring, you may choose the genes that are passed along. The child's genetics may be entirely from you, or have influence from the DNA of flesh you have grafted into yourself and the genes of your partner.",
-            "The child grows and develops as a normal child of the same race as your partner, but has the chance to display some unique features gained from an Undead ancestry. They may also gain the Primal Charm Feature."
+            "Normally, as a Vampire, you must consume at least 10 energy per month in order to sustain yourself. However, you may also choose to enter a completely dormant state, in which your body ceases all but the most vital of functions.",
+            "In order to be woken up, you must set a specific trigger to be awoken to or experience a significant change in sensory input, such as your place of rest being moved or opened.",
+            "For every year that goes by, 2 energy is consumed. If the amount of total energy you have falls to 0 or less, you die."
         ]
     },
     "Flesh_Bud": {
         "name": "Flesh Bud",
         "classes": ["Vamp"],
         "desc": [
-            "Using some of your Secondary Muscular System, as well as 50 Energy, you may create a Flesh Bud. Flesh Buds are small collections of flesh that are placed upon the forehead. A Flesh Bud forces the one who it is implanted into to do the Vampire's bidding, despite the interests of the individual. However, this form of mind control does not completely change the personality of the victim in most cases. The only real change is in a person's goals and motives.",
+            "Using some of your Secondary Muscular System, as well as 20 Energy, you may create a Flesh Bud. Flesh Buds are small collections of flesh that are placed upon the forehead. A Flesh Bud forces the one who it is implanted into to do the Vampire's bidding, despite the interests of the individual. However, this form of mind control does not completely change the personality of the victim in most cases. The only real change is in a person's goals and motives.",
             "In order to implant a Flesh Bud into someone, you must place the Bud into their forehead as an Action. The target must be Grappled by you, and you must succeed on another Grapple Check in order to place the Flesh Bud into them.",
             "Flesh Buds have an amount of Health equal to your Level in Vampire. If the Flesh Bud's health drops below zero, the Flesh Bud begins to die. However, if the Flesh Bud is still implanted within a Human's brain when this happens, the Flesh Bud lashes out, dealing 10d10 Slashing damage directly to the brain.",
             "However, these Flesh Buds may be safely removed via a successful Medicine or Sleight of Hand Check (DC of 20), or through a direct hit using an attack from The Ripple. If the attack dealt by The Ripple deals an amount of damage equal or greater to the HP of the Flesh Bud, it is vaporized instantly in its entirety, without any chance to respond. The Flesh Bud is Undead flesh, and as such, it will immediately die when exposed to Sunlight.",
-            "The Flesh Bud will function normally for up to 3 years. After around 3.5 years have passed, the Flesh Bud will feed off of the blood of the brain directly, resulting in a loss of 1d4 Maximum HP per day. When the target's Maximum HP reaches zero, they are killed instantly. If the Vampire that implanted the Flesh Bud is killed, the Flesh Bud goes haywire, and the target becomes an <a href='/races/?focus=Abomination'>Abomination</a>."
+            "The Flesh Bud will function normally for up to 3 years. After around 3.5 years have passed, the Flesh Bud will feed off of the blood of the brain directly, resulting in a loss of 1d4 Maximum HP per month. When the target's Maximum HP reaches zero, they are killed instantly. If the Vampire that implanted the Flesh Bud is killed, the Flesh Bud goes haywire, and the target becomes an <a href='/races/?focus=Abomination'>Abomination</a>."
         ]
     },
     "Vampire_Creation": {
         "name": "Vampire Creation",
         "classes": ["Vamp"],
         "desc": [
-            "You've gained enough knowledge of the function of your own body that you've found out how exactly the Stone Mask or your Master changed your anatomy. Rather than taking blood away from your target, you may take a corpse or living creature, and simply infuse a large amount of your own blood, mixed with a decent amount of Vampiric Essence. This takes an entire turn to accomplish.",
-            "If the creature that you've attempted to convert is living, they must make a Constitution Saving Throw against your Vampire DC. Every time they fail the saving throw, they take 2d12 Piercing damage, which cannot be blocked or reduced in any way. If the target succeeds, they no longer take damage and the effect ends. When the target drops to below 0 hit points, they go unconscious.",
-            "After a full turn, the affected individual/corpse becomes a Level 1 <a href='/races/?focus=Vampire'>Vampire</a>, and they keep whatever Levels they had previously, or if they were a lower level Undead, they regain the Levels that they once had in life.",
-            "Upon becoming a Vampire, it is important to note that you do not lose your Experience Points. However, in order to level up further, you must meet the stated Energy requirement.",
-            "The Vampire created has total free will, and is not obligated to serve or obey you in any way. Their mind is as it was in life, the only difference being that they are now a Vampire as well."
-        ]
-    },
-    "Vampiric_Peak": {
-        "name": "Vampiric Peak",
-        "classes": ["Vamp"],
-        "desc": [
-            "You have perfectly honed your Vampiric Abilities, and your brain has been brought to its fullest potential, meaning that the only way to improve from here would be an option other than simply consuming blood. If you obtain a <a href='/artifacts/?focus=Completed_Stone_Mask'>Completed Stone Mask</a>, you may don it, put UV light into the Mask, and become an <a href='/races/?focus=Ultimate_Being'>Ultimate Being</a>."
-        ]
-    },
-    "EPM_Double_Health": {
-        "name": "EPM Double Health",
-        "classes": ["EPM"],
-        "desc": [
-            "As an Enhanced Pillar Man you get the same amount of Hit Points that you did when you were alive. However, your Hit Dice, regardless of your class, becomes 1d12. Your Head Hit Dice is 1d6, and it has an additional +5 to its AC."
-        ]
-    },
-    "EPM_Regeneration": {
-        "name": "EPM Regeneration",
-        "classes": ["EPM"],
-        "desc": [
-            "You gain an amount of Hit Points back in either your Head or Body equal to your Constitution Modifier, every time Initiative is rolled (each round).",
-            "Furthermore, as an Action, you may restore Hit Dice to yourself. You may only restore an amount of Hit Dice equal to your Proficiency Bonus per Action. Hit Points restored by this Feature can either restore Hit Points to your Head or Body, but you may split Hit Points restored between the two if desired."
-        ]
-    },
-    "Superior_Feeding": {
-        "name": "Superior Feeding",
-        "classes": ["EPM"],
-        "desc": [
-            "Your Body has changed on a cellular level. As a Pillar Man, your body was already fully accustomed to consuming living beings. However, now every cell in your body may break down living tissue and make it into energy extremely quickly. By simply touching living flesh, you may absorb the matter present and convert it into energy in a matter of seconds.",
-            "You may also use this as an attack. You may make contact with living flesh using your body and begin to absorb it. Upon making sustained contact, or as part of an Unarmed Strike, your flesh deals 1d6 Acid damage per turn.",
-            "This process becomes faster as you level up, dealing 2d6 at Level 5, 3d6 at Level 10, 4d6 at Level 15, and 5d6 at Level 20."
-        ]
-    },
-    "Ancient_Charm": {
-        "name": "Ancient Charm",
-        "classes": ["EPM"],
-        "desc": [
-            "The power coming from you is mysterious, and that of ridiculous strength. All living creatures recognize this power subconsciously.",
-            "Your Charisma score increases by 3, and you gain Proficiency in Intimidation (If you were already Proficient in Intimidation, you may gain Expertise and add the Proficiency Bonus again)."
-        ]
-    },
-    "EPM_Brain_Stimulation": {
-        "name": "EPM Brain Stimulation",
-        "classes": ["EPM"],
-        "desc": [
-            "The Stone Mask is made to be used by Pillar Men. It not only awakens the true potential of the mind, but also increases the efficiency of it. At Levels 4, 7, 10, 14, 17, and 20, add 1 point of Intelligence to your Intelligence Score."
-        ]
-    },
-    "EPM_Enhanced_Musculature": {
-        "name": "EPM Enhanced Musculature",
-        "classes": ["EPM"],
-        "desc": [
-            "Your muscles ripple with stolen life energy. At Levels 5, 8, 11, 15, 18 and 20, add 1 point of Strength to your Strength score."
-        ]
-    },
-    "EPM_Flexibility": {
-        "name": "EPM Flexibility",
-        "classes": ["EPM"],
-        "desc": [
-            "Your reflexes are just as strong as your muscles. At Levels 6, 9, 12, 19, and 20, add 1 point of Dexterity to your Dexterity score."
-        ]
-    },
-    "EPM_Senses": {
-        "name": "EPM Senses",
-        "classes": ["EPM"],
-        "desc": [
-            "You've had lots of experience, and can tell when something feels off. At Levels 7, 10, 13, 16, 19, and 20, add 1 point of Dexterity to your Dexterity score."
-        ]
-    },
-    "EPM_Durability": {
-        "name": "EPM Durability",
-        "classes": ["EPM"],
-        "desc": [
-            "Your body is becoming used to absorbing these massive amounts of energy, allowing you to convert some into tissue to make it much denser over time. At Levels 8, 11, 13, 15, and 20, add 1 point of Constitution to your Constitution score."
-        ]
-    },
-    "Total_Body_Control": {
-        "name": "Total Body Control",
-        "classes": ["EPM"],
-        "desc": [
-            "Every part of your body has tiny muscles inside of it, allowing every single part of your body to move around freely.",
-            "As an Action or Bonus Action, you may split, reassemble, flatten, inflate, or otherwise modify your body in almost any way imaginable, so long as it remains in one piece."
+            "You have grown very powerful, and now have the ability to create other greater Undead with relative ease.",
+            "If you expose a large amount of your blood to a recently deceased living being or corpse of the same species as you, you may spend 250 energy to make them into a Vampire. ",
+            "A recently deceased living being returns to life with full Hit Points as a Vampire one turn after exposure, but a corpse returns to life 1d4 minutes after exposure."
         ]
     },
     "Cellular_Phasing": {
@@ -933,142 +796,40 @@
             "Your cells all can move with incredible flexibility and speed. You may move your body, or parts of your body, through flesh without absorbing or affecting it in any negative way, if desired."
         ]
     },
-    "Cellular_Drive": {
-        "name": "Cellular Drive",
-        "classes": ["EPM"],
-        "desc": [
-            "Even when below 0 HP, in order for you to stop moving your Hit Points must drop below the inverse of your Maximum Health, in which case your Head/Body are destroyed."
-        ]
-    },
-    "Elemental_Battle_Mode": {
-        "name": "Elemental Battle Mode",
-        "classes": ["EPM"],
-        "desc": [
-            "You realize that your body may be used in a creative way in order to harness a primal force of Earth, such as Heat, Cold, Light, Rock, Water, Air, Electricity, etc.",
-            "You gain a body modification that allows your body to perform actions related to this force, and resistance to damage from your Ability. Talk to your DM about making and balancing this Ability."
-        ]
-    },
-    "EPM_Muscular_Proficiency": {
-        "name": "EPM Muscular Proficiency",
-        "classes": ["EPM"],
-        "desc": [
-            "Gain advantage on Strength, Constitution, and Dexterity Saving Throws."
-        ]
-    },
     "EPM_Dormancy": {
         "name": "EPM Dormancy",
         "classes": ["EPM"],
         "desc": [
-            "As an Action, you may seal yourself within a thin shell of rock at any point. While in this state you may not move in any way, but you also have total Immunity to UV light. At this point, you may either set an automatic timer or trigger (a bird lands on your casing, you hear a gunshot, etc.) that allows you to awaken as an Action.",
+            "As an Action, you may seal yourself within a thin shell of rock at any point. While in this state you may not move in any way, but you also have total Immunity to UV light. At this point, you may either set an automatic timer or trigger (a bird lands on your casing, you hear a gunshot, etc.) that allows you to awaken as an Action. Alternatively, you may also set a certain amount of time before awakening (such as 1,000 years), as well as having a trigger that can wake you early.",
             "Entering this state costs 100 Energy, and you may stay in it for up to ten thousand years. You may remain dormant for longer than that, but for every year that you are dormant past ten thousand, 5 Energy is consumed. If you run out of energy while in this state, your brain stops functioning completely."
-        ]
-    },
-    "EPM_Peak": {
-        "name": "EPM Peak",
-        "classes": ["EPM"],
-        "desc": [
-            "You have perfectly honed your Abilities, and your brain has been brought to its fullest potential, meaning that the only way to improve from here would be an option other than simply absorbing living things. If you obtain a <a href='/artifacts/?focus=Completed_Stone_Mask'>Completed Stone Mask</a>, you may don it, put UV light into the Mask, and become an <a href='/races/?focus=Ultimate_Being'>Ultimate Being</a>."
         ]
     },
     "Undead_Nature": {
         "name": "Undead Nature",
         "classes": ["Zom", "Ghl", "Vamp", "EPM"],
         "desc": [
-            "As a creature that has been changed and twisted, you have been removed from the traditional life cycle. Part of life is decay and death, but you have ascended beyond decay itself.",
-            "As an Undead creature you do not age in any capacity, and are physically incapable of doing so. When converted into an Undead creature, your body regains the youth that you may have lost, bringing your physical age to roughly 25, at the peak of your physical performance. If you are exposed to the Stone Mask when you are younger your mind fully develops and matures, and you continue to mature normally until you reach 25, and at that time you stop aging. You also do not need to sleep.",
-            "You are unable to be affected by any poison, toxin, or venom, so you gain Immunity to Poison damage and the Poisoned Condition, but acids still affect you normally.",
-            "You are unable to feel pain, except Radiant damage. Your body takes 1d100 Radiant damage every turn when any part of your body is exposed to direct sunlight. Your Head also takes 1d100 Radiant damage every turn when exposed to direct sunlight. This sunlight damage cannot be reduced in any way.",
-            "If your Body Hit Points reach 0 you become unable to move until you regenerate or are healed in some other fashion. When your Head's Hit Points reach 0 you become incapacitated like normal."
+            "You have been removed from the traditional cycle of life and death. You have become theoretically immortal, so long as you are able to consistently gain enough energy to stay alive.",
+            "As an Undead Creature, you do not age in any capacity. You also regain any lost youth, bringing your body to the strength, power, and endurance that you had when you were roughly 25 years old. If you were younger than 25 years old when you were turned, you instead age at the same rate until you get to the age of 25 years old",
+            "You no longer need to sleep or breathe air, and you gain immunity to Poison damage and the Poisoned Condition.",
+            "You are unable to feel pain, except for Radiant damage which is extremely painful. When damaged by <a href='/classes/?focus=Ripple'>The Ripple</a> you take double damage. When exposed to direct sunlight, you and/or your Head, depending on what parts were exposed, take 10d12 Radiant damage. This damage cannot be reduced or negated in any way.",
+            "You have two health pools in the form of Body HP and Head HP. When someone attempts to hit you with an attack, they must choose whether to aim for your Head or your Body. Your Body has an amount of Hit Points equal to what your class would give to you and whatever AC you would have normally. However, your Head has a smaller amount of Hit Points based on the type of Undead that you are, and an additional amount of AC equal to your Proficiency Bonus."                
         ]
     },
     "Zombie_Infection": {
         "name": "Zombie Infection",
-        "classes": ["Zom", "Ghl"],
+        "classes": ["Zom", "Ghl", "Vamp", "EPM"],
         "desc": [
-            "As an Action, you may infect living humans using this Ability and convert them into Zombies. When some of your blood or saliva comes into contact with a living being's blood they must make a Constitution Saving Throw (DC 10), taking 2d6 Necrotic damage on a failed save. If the target succeeds on the save, they take no damage.",
-            "If the Necrotic damage dealt to the target kills them, they revive at the start of their next turn as a Zombie. You may also use this Ability to revive a freshly deceased body, so long as they died within 24 hours of exposure or if they have been preserved through other means such as freezing."
-        ]
-    },
-    "Zombie_Double_Health": {
-        "name": "Zombie Double Health",
-        "classes": ["Zom"],
-        "desc": [
-            "As the weakest kind of Undead, Zombies have the same kind of power that other Undead have, just in a much weaker form. Zombies have 1d4 + their Constitution Modifier HP in their Head for each level they had, whereas the Body of a Zombie has 3 times the health they had in life at Level 1. The Head also has +5 to its AC."
-        ]
-    },
-    "Rotting_Flesh": {
-        "name": "Rotting Flesh",
-        "classes": ["Zom"],
-        "desc": [
-            "Your flesh dries out, and you smell like rotting meat. You have disadvantage on all rolls where you attempt to pass off as a living human."
-        ]
-    },
-    "Zombie_Strength": {
-        "name": "Zombie Strength",
-        "classes": ["Zom"],
-        "desc": [
-            "Zombies have an Advantage on all Strength Saving Throws, and as an Action, Zombies may lift or throw an object weighing up to 5 times their Strength score in kilograms."
-        ]
-    },
-    "Ghoulish_Agility": {
-        "name": "Ghoulish Agility",
-        "classes": ["Ghl"],
-        "desc": [
-            "You get Advantage on all Dexterity Saving Throws. You also get an additional 2 meters of movement speed and a +1 Bonus to your Body's AC."
-        ]
-    },
-    "Ghoulish_Double_Health": {
-        "name": "Ghoulish Double Health",
-        "classes": ["Ghl"],
-        "desc": [
-            "Ghouls get 1d6 + their Constitution Modifier Head HP for each level they had, whereas the Body of a Ghoul has twice the health they had in life. The Head also has +5 to its AC."
-        ]
-    },
-    "Ghoulish_Strength": {
-        "name": "Ghoulish Strength",
-        "classes": ["Ghl"],
-        "desc": [
-            "You get Advantage on all Strength Saving Throws, and as an Action, you may lift or throw an object up to 20 times your Strength score in kilograms."
-        ]
-    },
-    "Perfect_Form": {
-        "name": "Perfect Form",
-        "classes": ["Ult"],
-        "desc": [
-            "All of your Ability Scores increase by 5. You also have advantage to all Skill Checks and Saving Throws. You gain Proficiency in any Skill/Weapon/Tactic you have ever seen used before or used yourself."
-        ]
-    },
-    "Ultimate_Nature": {
-        "name": "Ultimate Nature",
-        "classes": ["Ult"],
-        "desc": [
-            "You are now resistant to UV light, as well as all other forms of damage, including Radiant. You do not need to sleep, and you must only intake organic matter equal to your body mass once every month. You gain 5 energy for every turn when you are in direct UV light, through passive photosynthesis.",
-            "You may also enter a dormant state, in which you do not move or think, and stay in this state for up to one million years.",
-            "You also sense at the maximum possible level, being able to detect the change in nearby air currents, see better than any ground-based telescope, and hear any and every noise that has any wave that reaches your ears."
+            "When you kill a living humanoid, you may choose to have them return as an Undead shade of their former self, hungry for living flesh. They revive as a <a href='/races/?focus=Zombie'>Zombie</a> after 1d4+1 turns.",
+            "You may also create a Zombie from an already deceased corpse by exposing yourself to their blood (via bite or transfusion). They revive as a Zombie in 2d12 turns.",
+            "<a href='/classes/?focus=Ripple'>Ripple</a> users are immune to this infection."
         ]
     },
     "Immortality": {
         "name": "Immortality",
         "classes": ["Ult"],
         "desc": [
-            "You gain new Hit Dice, being d20s, and lose your <a href='/abilities/?focus=Vampire_Double_Health'>Vampire</a> or <a href='/abilities/?focus=EPM_Double_Health'>EPM</a> Double Health.",
-            "You may reroll the Hit Points gained in all previous levels using these new Hit Dice upon transforming. You also regenerate an amount of Hit Points equal to your Constitution Modifier every round, and may choose to spend as many Hit Dice as you would like as an Action."
-        ]
-    },
-    "Improved_Imitation": {
-        "name": "Improved Imitation",
-        "classes": ["Ult"],
-        "desc": [
-            "You can perform any Action that any creature can, but better. When viewing any Action performed by a living creature, you may Imitate it instantly without having to roll for it.",
-            "You may also Imitate Actions viewed in the past. This means that you may gain up to 5 Class Features from other Classes. You may change the Class Features that you know as a Bonus Action."
-        ]
-    },
-    "Living_Drones": {
-        "name": "Living Drones",
-        "classes": ["Ult"],
-        "desc": [
-            "You may take a portion of your body's matter, or up to 100 Energy, and convert it into any Small (or smaller) living creature, a physical characteristic of a creature, or any organic matter.",
-            "This may be separated or attached to your body, and reattached or separated at will. If the Drone created has a brain, it will act as a normal animal of its species would in any given situation. However, you may also send commands that override the creature's standard brain function, effectively controlling it."
+            "When you drop to 0 Hit Points, rather than rolling Death Saves, you enter an inactive but conscious state where you are Incapacitated and begin to track negative HP if further damage is taken. Your regeneration still applies, and if you are able to positive HP again, you exit that inactive state.",
+            "You regenerate an amount of hit points equal to three times your Constitution Modifier every turn."
         ]
     },
     "Stoneflesh": {
@@ -1168,6 +929,135 @@
             "This Ability costs 50 SE when activated and costs 1 SE per turn if passive. Heavenly Abilities set Heaven Ascended Stands above all other Abilities of mortal beings. Heavenly Abilities are typically based on a particular word or phrase of great personal importance to the User, usually relating to their beliefs.",
             "As a general rule of thumb, when a Heavenly Ability is activated, if the Heaven Ascended Stand is intentionally using its full power, the entire universe could be affected. However, as powerful as this may seem, these abilities are usually broad, and affect a large area indiscriminately. The less broad an Ability, the stronger it is.",
             "For example, <a href='https://jojo.fandom.com/wiki/Made_in_Heaven'>Made In Heaven</a> can speed up time exponentially without end, but it affects everybody indiscriminately, with no ability to stop it once time begins to speed up. <a href='https://jojo.fandom.com/wiki/The_World_Over_Heaven'>The World Over Heaven</a>, on the other hand, can rewrite reality itself (sometimes even changing the laws of physics in a small region), with the trade off being that it has to hit something with its fists in order to change it."
+        ]
+    },
+    "Ghoulification": {
+        "name": "Ghoulification",
+        "classes": ["Ghl"],
+        "desc": [
+            "Ghouls, while able to be dispatched through significant force, often put up more of a fight than their Zombie counterparts.",
+            "Ghouls have an amount of Head Health equal to 1d2 + half of their Constitution Modifier per their total non-Ghoul levels in HP. Their Head has an AC equal to your regular AC + your proficiency bonus.",
+            "As an Action, a Ghoul may perform a great feat of strength. They may lift, push, or throw an amount of kilograms equal to their Strength Score multiplied by 50 kilograms. This may also be used to break down walls, etc.",
+            "Ghouls heal at a rate around 5x as fast as a Human. However, wounds caused by <a href='/classes/?focus=Ripple'>Ripple</a> or sunlight take 10x as much time to heal as a normal wound for a Ghoul.",
+            "Additionally, Ghouls are particularly effective at using Unarmed Strikes. Their base damage increases from 1d4 to 1d10.",
+            "Unlike Zombies, Ghouls are able to pass as Human with relative ease. However, they often have two forms. A more human-like form, as well as a more monstrous form.",
+            "Ghouls must consume an amount of Human flesh equal to twice their body weight per month, or ten times their body weight in animal flesh per month in order to sustain themselves.",
+            "Should a Ghoul be exposed to the Stone Mask or the Completed Stone Mask, they may be able to become a Vampire or Ultimate Being, respectively."
+        ]
+    },
+    "Ghoulish_Peak": {
+        "name": "Ghoulish Peak",
+        "classes": ["Ghl"],
+        "desc": [
+            "You have reached your maximum potential through your current means of Undeath.",
+            "Your Strength, Dexterity, and Constitution scores all increase by 2."
+        ]
+    },
+    "Ghoul_Physique": {
+        "name": "Ghoul Physique",
+        "classes": ["Ghl"],
+        "desc": [
+            "As a Ghoul, you have certain powerful biological functions not available to Zombies or Humans. You may gain either:<ul class='sublist'><li>+4 to your Strength, Dexterity, or Constitution score.</li><li>An additional function to a bodily part of your choice. For example, <a href='https://jojo.fandom.com/wiki/Bruford' target='_blank'>Bruford's</a> hair having a long-range grapple ability.</li></ul>"
+        ]
+    },
+    "Greater_Undead_Health_Threshold": {
+        "name": "Greater Undead Health Threshold",
+        "classes": ["Vamp", "EPM"],
+        "desc": [
+            "Due to the nature of your greater Undead body, you are able to easily deflect most blows to your head. Whenever someone attempts to attack your Head, they are unable to deal damage that first time. Instead, you must make a Constitution Saving Throw against a DC of 5 + the amount of damage dealt by that attack. If you succeed on the Save, you take no damage and keep your Threshold. Otherwise, you lose it.",
+            "Critical Hits and Radiant damage are able to instantly break through your Threshold, dealing damage to you immediately and destroying your threshold as well.",
+            "You regain the use of this class feature on a short rest."
+        ]
+    },
+    "Greater_Undead_Senses": {
+        "name": "Greater Undead Senses",
+        "classes": ["Vamp", "EPM"],
+        "desc": [
+            "After some time to adjust, your Undead body has become a finely tuned instrument, able to detect even the slightest of changes to sensory information.",
+            "You gain Proficiency in the Perception skill, and your Passive Perception increases by 5. If you are already Proficient in Perception you instead gain Expertise, and if you already have Expertise you instead gain Mastery."
+        ]
+    },
+    "Inferior_Lifesteal": {
+        "name": "Inferior Lifesteal",
+        "classes": ["Ghl"],
+        "desc": [
+            "As a Ghoul, you may regenerate slightly by consuming flesh of the living. When you attack someone with an Unarmed Strike, you may heal an amount equal to a quarter of the damage dealt (minimum of 1)."
+        ]
+    },
+    "Lifesteal": {
+        "name": "Lifesteal",
+        "classes": ["Vamp"],
+        "desc": [
+            "As a Vampire, you may heal a good amount of health by feeding off of lesser Undead or living beings. When you attack a creature with an Unarmed Strike, you may heal an amount equal to half of the damage dealt (minimum of 1)."
+        ]
+    },
+    "Lifeweaver": {
+        "name": "Lifeweaver",
+        "classes": ["Ult"],
+        "desc": [
+            "As the Ultimate Being, you may imitate or create any life by transforming parts of yourself. If you witness a creature performing a certain task, you may imitate it perfectly or even better. You may also recreate enhanced or changed versions of existing biological mechanisms.",
+            "You may even send out small parts of yourself that may move independently, controlling any number of them within 150m as a Bonus Action. If you are not issuing them commands they simply behave as they normally would in the wild."
+        ]
+    },
+    "Pillar_Man_Enhancement": {
+        "name": "Pillar Man Enhancement",
+        "classes": ["EPM"],
+        "desc": [
+            "Enhanced Pillar Men are the most powerful creatures on Earth, only outmatched by an Ultimate Being. An average Human would likely stand little to no chance in combat even against a relatively new one.",
+            "When you become an Enhanced Pillar Man, your physique changes to become more powerful. Your Strength, Dexterity, and Constitution are all increased to 19 if they are less than that. If one or more of those Ability Scores is already at or above 19, they're increased by 2 instead.",
+            "Enhanced Pillar Men have an amount of Head Health equal to 1d6 + their Constitution Modifier per their total non-EPM levels in HP. Their Head has an AC equal to your regular AC + your proficiency bonus.",
+            "As an Action, an EPM may perform a great feat of strength. They may lift, push, or throw an amount of kilograms equal to their Strength Score multiplied by 100 kilograms. This may also be used to break down walls, etc.",
+            "Enhanced Pillar Men regenerate rapidly, being able to heal an amount of Hit Points equal to double their Constitution Modifier every turn. When you regenerate, you may choose which Hit Points go to your Head and which ones go to your Body. Wounds caused by <a href='classes/?focus=Ripple'>Ripple</a> or sunlight take 10x as much time to heal, but this is purely aesthetic and doesn't affect your regeneration mechanic.",
+            "Additionally, EPM are particularly effective at using Unarmed Strikes. Their base damage increases from 1d4 to 4d8, and if you wish to do so, you may deal Acid damage rather than Bludgeoning.",
+            "Enhanced Pillar Men are able to easily pass as humanoid, with most untrained Humans entirely unable to tell the difference between you and any other Human unless you visibly display your power. However, many Pillar Men willingly and unflinchingly show off their incredibly powerful physique, as something like a Human would be completely insignificant to them.",
+            "Enhanced Pillar Men must consume at least 25 energy per month in order to sustain themselves.",
+            "If any EPM Ability requires another creature to make a Saving Throw of some sort, the DC for that Save is equal to 8 + your Proficiency Bonus + your Charisma Modifier",
+            "Should an EPM be exposed to the Completed Stone Mask, they may be able to become an Ultimate Being."
+        ]
+    },
+    "Specialized_EPM_Ability": {
+        "name": "Specialized EPM Ability",
+        "classes": ["EPM"],
+        "desc": [
+            "You have reached the pinnacle of your abilities as a greater Undead, growing close to your full potential. You gain a special ability of great power that is unique to you. An example of this special ability is <a href='https://jojo.fandom.com/wiki/Wamuu' target='_blank'>Wham's</a> wind mastery. Talk to your DM about the reach of this ability."
+        ]
+    },
+    "Superior_Lifesteal": {
+        "name": "Superior Lifesteal",
+        "classes": ["EPM"],
+        "desc": [
+            "As an Enhanced Pillar Men, you may absorb great amounts of energy all at once by feeding off of lesser Undead or living beings. When you attack a creature with an Unarmed Strike, you may heal an amount equal to the damage dealt (minimum of 1)."
+        ]
+    },
+    "Vampirification": {
+        "name": "Vampirification",
+        "classes": ["Vamp"],
+        "desc": [
+            "Vampires are a greater form of Undead, and while a skilled Human warrior may be able to dispatch of a Zombie or possibly a Ghoul, most Humans will fall before your might as a Vampire.",
+            "When you become a Vampire, your physique changes to become more powerful. Your Strength, Dexterity, and Constitution are all increased to 15 if they are less than that. If one or more of those Ability Scores is already at or above 15, they're increased by 2 instead.",
+            "Vampires have an amount of Head Health equal to 1d4 + their Constitution Modifier per their total non-Vampire levels in HP. Their Head has an AC equal to your regular AC + your Proficiency Bonus.",
+            "As an Action, a Vampire may perform a great feat of strength. They may lift, push, or throw an amount of kilograms equal to their Strength Score multiplied by 100 kilograms. This may also be used to break down walls, etc.",
+            "Vampires regenerate rapidly, being able to heal an amount of Hit Points equal to double their Constitution Modifier every turn. When you regenerate, you may choose which Hit Points go to your Head and which ones go to your Body. Wounds caused by <a href='classes/?focus=Ripple'>Ripple</a> or sunlight take 10x as much time to heal, but this is purely aesthetic and doesn't affect your regeneration mechanic.",
+            "Additionally, Vampires are particularly effective at using Unarmed Strikes. Their base damage increases from 1d4 to 2d8.",
+            "Vampires are able to easily pass as humanoid, with most untrained Humans entirely unable to tell the difference between you and any other human unless you visibly display your power.",
+            "Vampires must consume at least 10 energy per month in order to sustain themselves.",
+            "If any Vampire Ability requires another creature to make a Saving Throw of some sort, the DC for that Save is equal to 8 + your Proficiency Bonus + your Charisma Modifier.",
+            "Should a Vampire be exposed to the Completed Stone Mask, they may be able to become an Ultimate Being."            
+        ]
+    },
+    "Zombification": {
+        "name": "Zombification",
+        "classes": ["Zom"],
+        "desc": [
+            "As the weakest kind of Undead, Zombies are far easier to dispatch than other Undead, able to be dealt with relatively easily through the use of significant force or conventional weaponry. However, they are not to be underestimated.",
+            "Zombies have an amount of Head Health equal to half of their Constitution Modifier per their total Level. Their Head has an AC equal to your regular AC + your Proficiency Bonus.",
+            "As an Action, a Zombie may perform a great feat of strength. They may lift, push, or throw an amount of kilograms equal to their Strength Score multiplied by 50 kilograms. This may also be used to break down walls, etc.",
+            "Zombies heal at a rate around 3x as fast as a Human. Wounds caused by <a href='/classes/?focus=Ripple'>Ripple</a> or sunlight take 10x as much time to heal as a normal wound for a Zombie.",
+            "Additionally, Zombies are particularly effective at using Unarmed Strikes. Their base damage increases from 1d4 to 1d8.",
+            "Due to your rotting flesh, you are obviously not Human at a first glance, and even if you use perfumes and a cloak to mask it, you still have Disadvantage on any Check to pass yourself off as Human.",
+            "Zombies must consume an amount of human flesh equal to their body weight per month, or five times their body weight in animal flesh per month in order to sustain themselves.",
+            "If a Zombie is able to sustain themselves while separated from a greater Undead master for a year or longer, they are able to gain some strength and become a <a href='/races/?focus=Ghoul'>Ghoul</a>. Their Undead master may also decide that they are more useful as a Ghoul and may use <a href='/abilities/?focus=Ghoul_Creation’>Ghoul Creation</a> to convert them into a Ghoul.",
+            "Alternatively, should they be exposed to the Stone Mask or the Completed Stone Mask, they may be able to become a Vampire or Ultimate Being, respectively."
         ]
     }
 }

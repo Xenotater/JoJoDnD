@@ -125,8 +125,6 @@ function updateDisplay() {
         newContent += "<p>" + abil.desc[i] + "</p>";
     newContent += "<h4 class='display-heading'>Given To</h4><ul id='given'>";
     newContent += parseTypes(abil.classes);
-    if (abil.name == "Primal Charm")
-        newContent += "<li><a href='/abilities/?focus=Embryo_Implantation'>Vampire Children</a></li>";
     newContent += "</ul>";
 
     $("#display").html(newContent);
