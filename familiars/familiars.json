@@ -38,7 +38,7 @@
         "content": [
           "<p>Your Familiar will have a number of <a class='in-page' id='Always_Alert-link'>Familiar Feats</a> equal to half of the <a href='/Feats'>Feats</a> that you have, rounded up. For example, if you have 3 Feats, your Familiar has 2.</p>",
           "<p>In order for your Familiar to awaken a Stand, both of you must take the <a href='/feats/?focus=Familiar_Fighting_Spirit'>Familiar Fighting Spirit</a> Feat.</p>",
-          "<p>Your Familiar will follow your lead in combat, taking theirTurn in Initiative directly after yours.</p>"
+          "<p>Your Familiar will follow your lead in combat, taking their Turn in Initiative directly after yours.</p>"
         ]
       }
     ],
@@ -536,7 +536,7 @@
       },
       "Blinding_Attack": {
         "name": "Blinding Attack",
-        "desc": ["As an Action your Familiar may make a single Natural Weapon attack. If this attack lands, the opponent must make a Constitution Saving Throw, or be Blinded until the start of their nextTurn. Anyone who is surprised by your Familiar has Disadvantage on the Save."],
+        "desc": ["As an Action your Familiar may make a single Natural Weapon attack. If this attack lands, the opponent must make a Constitution Saving Throw, or be Blinded until the start of their next Turn. Anyone who is surprised by your Familiar has Disadvantage on the Save."],
         "classes": ["Nimble", "Tracker"]
       },
       "Bravery": {
@@ -546,12 +546,12 @@
       },
       "Extra_Attack": {
         "name": "Extra Attack",
-        "desc": ["When your Familiar takes the Attack Action on theirTurn, they may make two Natural Weapon attacks, rather than one."],
+        "desc": ["When your Familiar takes the Attack Action on their Turn, they may make two Natural Weapon attacks, rather than one."],
         "classes": ["Guardian", "Nimble", "Stalwart", "Tracker"]
       },
       "Finesse_Attack": {
         "name": "Finesse Attack",
-        "desc": ["Whenever your Familiar makes an attack using their Natural Weapons, they may use Dexterity for their Attack and damage rolls, rather than Strength. Additionally, once perTurn, if you land Finesse Attack on a Surprised enemy or an enemy that you have Advantage against, you deal an additional die of damage."],
+        "desc": ["Whenever your Familiar makes an attack using their Natural Weapons, they may use Dexterity for their Attack and damage rolls, rather than Strength. Additionally, once per Turn, if you land Finesse Attack on a Surprised enemy or an enemy that you have Advantage against, you deal an additional die of damage."],
         "classes": ["Guardian", "Nimble", "Tracker"]
       },
       "Hardy": {
@@ -578,7 +578,7 @@
           "As an Action, your Familiar may leap onto a foe. You may jump double its normal jump distance in a high jump or long jump. Alternatively, if your Familiar has a Flying Speed, it may simply fly into them.",
           "If the jump reaches the target, your Familiar may make a Natural Weapon attack. If the opponent fulfilled one of the following conditions, they must make a Strength Saving throw in addition to the damage of the attack if it hits:",
           "<ul><li>They are Surprised</li><li>Your Familiar has Advantage on the Attack Roll against them</li><li>They are engaged with one of your allies in melee combat</li></ul>",
-          "If they fail, they cannot take Reactions until the start of their nextTurn."
+          "If they fail, they cannot take Reactions until the start of their next Turn."
         ],
         "classes": ["Nimble", "Tracker"]
       },
@@ -589,14 +589,14 @@
       },
       "Protecting_Attack": {
         "name": "Protecting Attack",
-        "desc": ["As an Action, your Familiar may make a single Natural Weapon attack against a creature of your choice, or dodge. If they have an ally within Melee Range, as long as that ally remains within Melee Range, they may add your Familiar's Strength Modifier to their AC until the start of your Familiar's nextTurn."],
+        "desc": ["As an Action, your Familiar may make a single Natural Weapon attack against a creature of your choice, or dodge. If they have an ally within Melee Range, as long as that ally remains within Melee Range, they may add your Familiar's Strength Modifier to their AC until the start of your Familiar's next Turn."],
         "classes": ["Stalwart"]
       },
       "Shove_Attack": {
         "name": "Shove Attack",
         "desc": [
           "When your Familiar lands an attack on a creature that creature must make a Strength Saving Throw. If they fail, your Familiar may choose to knock them prone or push them back an amount of meters equal to their Strength Modifier.",
-          "Your Familiar may only use a Shove Attack once perTurn and only against creatures one size category above theirs or smaller."
+          "Your Familiar may only use a Shove Attack once per Turn and only against creatures one size category above theirs or smaller."
         ],
         "classes": ["Stalwart"]
       },
@@ -711,7 +711,7 @@
         "name": "Natural Skirmisher",
         "desc": [
           "Using natural mobility and speed, your Familiar has the ability to land a couple hits and leave before they can be hit themselves.",
-          "Whenever your Familiar attempts to make a melee attack against a creature, they cannot be targeted by Opportunity Attacks from that creature until the end of your Familar's nextTurn."
+          "Whenever your Familiar attempts to make a melee attack against a creature, they cannot be targeted by Opportunity Attacks from that creature until the end of your Familiar's next Turn."
         ]
       },
       "Treasure_Hunter": {

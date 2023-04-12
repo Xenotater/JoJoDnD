@@ -18,7 +18,7 @@
         },
         {
             "name": "Ripple Points",
-            "desc": "A Ripple User has an amount of Ripple Points equal to their Level. If they can comfortably breathe, they regain 1 Ripple Point at the start of eachTurn."
+            "desc": "A Ripple User has an amount of Ripple Points equal to their Level. If they can comfortably breathe, they regain 1 Ripple Point at the start of each Turn."
         },
         {
             "name": "Undead's Bane",
@@ -959,10 +959,10 @@
                         "<ul><li>You see someone who has previously wronged you, and you consider to be an enemy.</li>",
                         "<li>You are injured or slighted in some way (taking direct damage, someone's actions frustrate or anger you considerably, etc)</li></ul>",
                         "<p>You may spend Grudge Points in the following ways:</p>",
-                        "<ul><li>1 Point: You may use the Attack Action on yourTurn, summon your Stand to assist you with a single Skill Check, use your Stand Ability once, or summon it to take hits and assist you with Saving Throws, until the start of your nextTurn.</li>",
-                        "<li>3 Points: You may summon your Stand in its entirety for oneTurn.</li>",
-                        "<li>5 Points: You may summon your Stand in its entirety for an amount ofTurns equal to your level in Revenge-Type (minimum of 2).</li>",
-                        "If you do not gain any more Grudge Points on a givenTurn, your remaining Grudge Points persist for an amount ofTurns equal to your level in Revenge-Type, or until spent (minimum of 2)."
+                        "<ul><li>1 Point: You may use the Attack Action on your Turn, summon your Stand to assist you with a single Skill Check, use your Stand Ability once, or summon it to take hits and assist you with Saving Throws, until the start of your next Turn.</li>",
+                        "<li>3 Points: You may summon your Stand in its entirety for one Turn.</li>",
+                        "<li>5 Points: You may summon your Stand in its entirety for an amount of Turns equal to your level in Revenge-Type (minimum of 2).</li>",
+                        "If you do not gain any more Grudge Points on a given Turn, your remaining Grudge Points persist for an amount of Turns equal to your level in Revenge-Type, or until spent (minimum of 2)."
                     ]
                 }],
                 "levelUp": "Every Level-Up, You may roll 3d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats.",
