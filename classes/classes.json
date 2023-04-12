@@ -1790,7 +1790,7 @@
                     "12": {
                         "pro": "4",
                         "feats": "4",
-                        "featFeatures": ["Cleave", "OR", "Adrenaline Rush"]
+                        "featFeatures": ["Whirlwind Attacker", "OR", "Adrenaline Rush"]
                     },
                     "13": {
                         "pro": "5",
@@ -1848,7 +1848,7 @@
                     "3": {
                         "pro": "2",
                         "feats": "2",
-                        "featFeatures": ["Cleave", "OR", "Scarflesh"]
+                        "featFeatures": ["Whirlwind Attacker", "OR", "Scarflesh"]
                     },
                     "4": {
                         "pro": "2",
