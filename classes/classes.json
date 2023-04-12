@@ -10,7 +10,7 @@
         "desc": "The Ripple is an energy that travels through the blood and is powered by breathing. A sacred art, it can be used for both healing and destruction. It is extremely effective against Undead, and it can be used against corporeal objects to manipulate them. The Ripple works similarly to electricity, in that it is able to travel through liquids, metals, and most biomass incredibly well.",
         "extra": [{
             "name": "Honed Body",
-            "desc": "Ripple Users' bodies are much better honed than the bodies of most humans. Normally, Humans are limited to having a maximum of 20 of any Ability Score. However, if you have any Levels in Ripple, your maximum Strength, Dexterity, and Constitution may be 24."
+            "desc": "Ripple Users' bodies are much better honed than the bodies of most Humans. Normally, Humans are limited to having a maximum of 20 of any Ability Score. However, if you have any Levels in Ripple, your maximum Strength, Dexterity, and Constitution may be 24."
         },
         {
             "name": "Ripple Conductors",
@@ -18,7 +18,7 @@
         },
         {
             "name": "Ripple Points",
-            "desc": "A Ripple User has an amount of Ripple Points equal to their Level. If they can comfortably breathe, they regain 1 Ripple Point at the start of each turn."
+            "desc": "A Ripple User has an amount of Ripple Points equal to their Level. If they can comfortably breathe, they regain 1 Ripple Point at the start of eachTurn."
         },
         {
             "name": "Undead's Bane",
@@ -184,7 +184,7 @@
                 "<p class='center label'><b>Ability Conversion Chart:</b></p><table class='table table-striped minor'><thead><tr><th>Ability</th><th>Stand Ability</th></tr></thead><tbody><tr><td>Strength</td><td>Power</td></tr><tr><td>Dexterity</td><td>Precision</td></tr><tr><td>Constitution</td><td>Durability</td></tr><tr><td>Intelligence</td><td>Range</td></tr><tr><td>Wisdom</td><td>Speed</td></tr><tr><td>Charisma</td><td>Stand Energy</td></tr></tbody></table>",
                 "<p><b>Stand Stat Modifiers: </b>Stand stats are based on the User's stats. To get the Modifiers for these Stats, simply divide their score by 10.</p>",
                 "<p><b>Damage Reduction: </b>Stands have natural resistance against damage, determined by their Durability Mod. Your Stand can resist that many points of damage per round. For example, a Stand with a 100 Durability would be able to resist 10 points of damage per round, and a Stand with 40 would only be able to resist 4. Physical attacks that hit Stands deal no damage, unless specifically stated otherwise. The only types of damage that may deal damage to Stands is damage dealt by Stands, or the Abilities of Stands. Your Stand's Damage Reduction resets at the top of each round of Initiative.</p>",
-                "<p><b>Stand Movement: </b>Stands have a Movement Speed equal to twice their Stand's Speed Mod in meters, or a Movement Speed equal to their User, whichever is higher. Stands and Users each have a separate Movement Action. Independant-Type Stands can only move the base 10 Meters that a regular human can, unless they have a specific Ability that allows them to increase it.</p>",
+                "<p><b>Stand Movement: </b>Stands have a Movement Speed equal to twice their Stand's Speed Mod in meters, or a Movement Speed equal to their User, whichever is higher. Stands and Users each have a separate Movement Action. Independant-Type Stands can only move the base 10 Meters that a regular Human can, unless they have a specific Ability that allows them to increase it.</p>",
                 "<p><b>Stand Range: </b>Your Stand may move a number of meters away from you equal to its Range Mod, with a minimum of 1m.</p>",
                 "<p><b>Abilities and Stand Energy: </b>The amount of Energy your stand has is based on their Stand Energy Mod. Normal Abilities cost 1 point, Special Abilities cost more depending on the Stand type, and Abilities that manipulate Space or Time cost double the Energy they normally would. Stand Energy always fully replenishes when outside of combat. 1 Stand Energy is also replenished when you take the dodge action.</p>"
             ]
@@ -194,13 +194,13 @@
             "content": [
                 "Your Stand's normal attacks (typically punches) are determined similarly to regular attacks. Roll a d20 and add the Power or Precision Mod of your Stand and your Proficiency Bonus to determine if the attack hits. The amount of damage dealt is based off of your Stand's Attack Dice plus your Power (NOT Precision) Mod.</p>",
                 "<p>For User attacks, roll a d20 and add your Strength or Dexterity Mod, whichever is higher. Every Unarmed Attack deals 1d4 + Str damage. <b>Regular physical attacks DO NOT AFFECT STANDS</b> (except for Enhancement or Independent Types).</p>",
-                "<p>Speed is also very important. The total Speed score of your Stand divided by 50 is one more Attack that the Stand or the User may perform each round, with a minimum of one. If Non-Stand Users want to have multiple Attacks per round, they may take the <a href='/feats/?focus=Trained_Combatant'>Trained Combatant</a> Feat."
+                "<p>Speed is also very important. The total Speed Score of your Stand divided by 50 is one more Attack that the Stand or the User may perform each round, with a minimum of one. If Non-Stand Users want to have multiple Attacks per round, they may take the <a href='/feats/?focus=Trained_Combatant'>Trained Combatant</a> Feat."
             ]
         },
         {
             "name": "Stand AC",
             "content": [
-                "<p>Stand AC works the same way as regular AC, but using the Stand's stats. Keep in mind the 3 ways to calculate AC mentioned on the <a href='/rules'>Rules</a> page. When your Stand is within 2 Meters of you your Stand can protect you from attacks using its AC. Like normal, if an Attack roll is less than your AC it misses. However, if the Attack roll is between your Stand AC and your own AC it hits your Stand instead, allowing you to apply your Stand's Damage Reduction. Additionally, if the damage type is Non-Stand, it simply bounces off of your Stand or phases through it. An Attack roll higher than your Stand AC is a direct hit to the User.</p>",
+                "<p>Stand AC works the same way as regular AC, but using the Stand's stats. Keep in mind the 3 ways to calculate AC mentioned on the <a href='/rules'>Rules</a> page. When your Stand is within 2 Meters of you your Stand can protect you from attacks using its AC. Like normal, if an Attack Roll is less than your AC it misses. However, if the Attack Roll is between your Stand AC and your own AC it hits your Stand instead, allowing you to apply your Stand's Damage Reduction. Additionally, if the damage type is Non-Stand, it simply bounces off of your Stand or phases through it. An Attack Roll higher than your Stand AC is a direct hit to the User.</p>",
                 "<p><small><b>Note: </b><i>Enhancement/Independant Stands are able to be affected by all damage types, rather than just Stand damage. Independent-Types also have both a regular AND Stand AC for the sake of Damage Reduction, despite not technically having a user.</i></small></p>"
             ]
         },
@@ -525,7 +525,7 @@
                 "exampleOf": "Remote Stands",
                 "examples": ["Highway Star", "Black Sabbath", "Goo Goo Dolls", "Manhattan Transfer"],
                 "links": ["Highway_Star", "Black_Sabbath", "Goo_Goo_Dolls", "Manhattan_Transfer"],
-                "desc": "Remote-Type Stands are immensely powerful. Their Abilities and strength can often not be ignored. However, the users of these Stands often cannot control them, with their Stands instead automatically following a simple task. For example, attack the closest human until its breathing stops for 5 seconds, prevent anybody from entering a building, use your Ability on anyone who opens a door, attack anyone who steps into a shadow, etc. These Stands, while often powerful indeed, have very easily exploitable weaknesses due to the simple nature of how they function.",
+                "desc": "Remote-Type Stands are immensely powerful. Their Abilities and strength can often not be ignored. However, the users of these Stands often cannot control them, with their Stands instead automatically following a simple task. For example, attack the closest Human until its breathing stops for 5 seconds, prevent anybody from entering a building, use your Ability on anyone who opens a door, attack anyone who steps into a shadow, etc. These Stands, while often powerful indeed, have very easily exploitable weaknesses due to the simple nature of how they function.",
                 "hDice": "1d10",
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
@@ -959,10 +959,10 @@
                         "<ul><li>You see someone who has previously wronged you, and you consider to be an enemy.</li>",
                         "<li>You are injured or slighted in some way (taking direct damage, someone's actions frustrate or anger you considerably, etc)</li></ul>",
                         "<p>You may spend Grudge Points in the following ways:</p>",
-                        "<ul><li>1 Point: You may use the Attack Action on your turn, summon your Stand to assist you with a single Skill Check, use your Stand Ability once, or summon it to take hits and assist you with Saving Throws, until the start of your next turn.</li>",
-                        "<li>3 Points: You may summon your Stand in its entirety for one turn.</li>",
-                        "<li>5 Points: You may summon your Stand in its entirety for an amount of turns equal to your level in Revenge-Type (minimum of 2).</li>",
-                        "If you do not gain any more Grudge Points on a given turn, your remaining Grudge Points persist for an amount of turns equal to your level in Revenge-Type, or until spent (minimum of 2)."
+                        "<ul><li>1 Point: You may use the Attack Action on yourTurn, summon your Stand to assist you with a single Skill Check, use your Stand Ability once, or summon it to take hits and assist you with Saving Throws, until the start of your nextTurn.</li>",
+                        "<li>3 Points: You may summon your Stand in its entirety for oneTurn.</li>",
+                        "<li>5 Points: You may summon your Stand in its entirety for an amount ofTurns equal to your level in Revenge-Type (minimum of 2).</li>",
+                        "If you do not gain any more Grudge Points on a givenTurn, your remaining Grudge Points persist for an amount ofTurns equal to your level in Revenge-Type, or until spent (minimum of 2)."
                     ]
                 }],
                 "levelUp": "Every Level-Up, You may roll 3d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats.",
@@ -1507,7 +1507,7 @@
                 },
                 {
                     "aDice": "2d8",
-                    "note": "Your Range score may not go above 20.",
+                    "note": "Your Range Score may not go above 20.",
                     "mults": [3, 3, 4, 1, 4, 3],
                     "level": [
                         {
@@ -1600,7 +1600,7 @@
         "dc": "8 + Dex + Proficiency Bonus",
         "extra": [{
             "name": "The Golden Ratio",
-            "desc": "A Spin User must have a reference of a 9:16 ratio in order to use the Spin. A 9:16 ratio is found somewhere in almost every uninjured creature, except humans. The ratio may also be found in something artificial, such as a piece of paper or a tattoo, so long as it is made to be a 9:16 ratio."
+            "desc": "A Spin User must have a reference of a 9:16 ratio in order to use the Spin. A 9:16 ratio is found somewhere in almost every uninjured creature, except Humans. The ratio may also be found in something artificial, such as a piece of paper or a tattoo, so long as it is made to be a 9:16 ratio."
         },
         {
             "name": "Materials",

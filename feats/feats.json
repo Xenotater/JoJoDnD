@@ -3,7 +3,7 @@
         "name": "Adrenaline Rush",
         "desc": "The body has a remarkable tendency to keep itself alive in tough situations, and your body is even better at doing so.",
         "effects": [
-            "As a Bonus Action, you may gain Advantage on all Strength, Dexterity, and Constitution Saving Throws until the beginning of your next turn. You also gain an amount of temporary Hit Points equal to your Level which remain until your next Short or Long Rest.",
+            "As a Bonus Action, you may gain Advantage on all Strength, Dexterity, and Constitution Saving Throws until the beginning of your nextTurn. You also gain an amount of temporary Hit Points equal to your Level which remain until your next Short or Long Rest.",
             "You can use this Feat an amount of times equal to your Strength Modifier per Long Rest."
         ],
         "prereq": "Str 13+ or <a href='/passions/?focus=Hard_Laborer'>Hard Laborer</a>"
@@ -12,9 +12,9 @@
         "name": "Art of Distraction",
         "desc": "People are easy to fool, this is something that you've learned over years of experience.",
         "effects": [
-            "You're able to trap a helpless person within a conversation by spending your Action each turn and rolling a Performance Check against a single, non-hostile target's Wisdom saving throw. While keeping this individual distracted in this way, their movement speed is reduced to 0 and they cannot roll higher than 10 on a Perception Check, and their Passive Perception is now restricted to 10 at most.",
+            "You're able to trap a helpless person within a conversation by spending your Action eachTurn and rolling a Performance Check against a single, non-hostile target's Wisdom saving throw. While keeping this individual distracted in this way, their movement speed is reduced to 0 and they cannot roll higher than 10 on a Perception Check, and their Passive Perception is now restricted to 10 at most.",
             "You may keep a person trapped in this conversational purgatory for up to 10 minutes, until you stop spending your action or they succeed on their save, or something very obviously out of the ordinary happens in a way that you can't explain.",
-            "Additionally, you have figured out a way to enthrall several people by using your Action each turn to may keep an amount of non-hostile people equal to your Charisma Modifier focused on what you're doing for up to a minute. Anyone caught in this effect has Disadvantage on all Perception Checks, and has a -5 penalty to their Passive Perception."
+            "Additionally, you have figured out a way to enthrall several people by using your Action eachTurn to may keep an amount of non-hostile people equal to your Charisma Modifier focused on what you're doing for up to a minute. Anyone caught in this effect has Disadvantage on all Perception Checks, and has a -5 penalty to their Passive Perception."
         ],
         "prereq": "Proficiency in Performance Checks."
     },
@@ -30,7 +30,7 @@
         "name": "Brutality",
         "desc": "You've seen a lot of combat and have learned not to hold back.",
         "effects": [
-            "When you drop an enemy to 0 HP, you may spend another Attack to kill them instantly. When you do so, you may make a free Charisma (Intimidation) check against any enemies within a 5 meter radius. They contest with a Wisdom Saving Throw, and if they roll lower they become Frightened of you until the end of their next turn."
+            "When you drop an enemy to 0 HP, you may spend another Attack to kill them instantly. When you do so, you may make a free Charisma (Intimidation) check against any enemies within a 5 meter radius. They contest with a Wisdom Saving Throw, and if they roll lower they become Frightened of you until the end of their nextTurn."
         ]
     },
     "Calculating": {
@@ -46,8 +46,8 @@
         "name": "Catlike Agility",
         "desc": "Your reflexes are faster than that of the average person.",
         "effects": [
-            "Once per short rest, you may Dodge as a Bonus Action.",
-            "Additionally, while Dodging through any means, you may reduce incoming damage by half until the start of your next turn."
+            "Once per Short Rest, you may Dodge as a Bonus Action.",
+            "Additionally, while Dodging through any means, you may reduce incoming damage by half until the start of your nextTurn."
         ],
         "prereq": "Dex 13+ or <a href='/passions/?focus=Artist'>Artist</a>"
     },
@@ -182,14 +182,14 @@
         "effects": [
             "You may hide as a Bonus Action.",
             "For you, Half Cover counts as Three-Quarters Cover, and Three-Quarters Cover counts as Total Cover.",
-            "You may get up from the Proned Condition as a Reaction, or by spending only 1m of Movement on your turn."
+            "You may get up from the Proned Condition as a Reaction, or by spending only 1m of Movement on yourTurn."
         ]
     },
     "Headhunter": {
         "name": "Headhunter",
         "desc": "You've fought the Undead many times before, and you know their tricks and how to best defeat them.",
         "effects": [
-            "You may add your Proficiency Bonus an additional time for any attack roll made against an <a href='/abilities/?focus=Undead_Nature'>Undead Creature's</a> Head.",
+            "You may add your Proficiency Bonus an additional time for any Attack Roll made against an <a href='/abilities/?focus=Undead_Nature'>Undead Creature's</a> Head.",
             "You gain Advantage on any Saving Throws against effects inflicted by an Undead Creature."
         ]
     },
@@ -224,7 +224,7 @@
         "desc": "Through all of the time you've spent lugging around and using heavy equipment you've realized how to deal the most damage using these powerful, heavy weapons.",
         "effects": [
             "You gain Profciency in the use of any weapon with the \"Heavy\" specialization type.",
-            "When bracing with a Heavy weapon, you gain +2 AC until the beginning of your next turn.",
+            "When bracing with a Heavy weapon, you gain +2 AC until the beginning of your nextTurn.",
             "If you are already Proficient in the use of a Heavy weapon, you gain Expertise in it."
         ]
     },
@@ -248,8 +248,8 @@
         "name": "Immense Impact",
         "desc": "You're used to utilizing momentum to attack your foes with a powerful attack, hitting them immediately and head-on.",
         "effects": [
-            "This first Attack you make after moving in a straight line towards your target deals extra damage equal to the amount of meters moved before attacking this turn. The maximum additional damage you may deal with this attack is equal to your level.",
-            "You may also perform a Charge Attack, allowing you to make one free melee attack after moving in a straight line. You may use this ability once per turn."
+            "This first Attack you make after moving in a straight line towards your target deals extra damage equal to the amount of meters moved before attacking thisTurn. The maximum additional damage you may deal with this attack is equal to your level.",
+            "You may also perform a Charge Attack, allowing you to make one free melee attack after moving in a straight line. You may use this ability once perTurn."
         ]
     },
     "Interpreter": {
@@ -266,7 +266,7 @@
         "name": "Improvised Healing",
         "desc": "You've spent a lot of time out in the wild, simply trying to survive in an unforgiving environment.",
         "effects": [
-            "As part of a Short Rest you may make a Nature or Survival check. For every 5 points that you roll on the skill check, you may perform one of the following actions on an additional friendly creature (5 or above for 1 creature, 10 for 2, etc). The actions you can perform include:",
+            "As part of a Short Rest you may make a Nature or Survival check. For every 5 points that you roll on the Skill Check, you may perform one of the following actions on an additional friendly creature (5 or above for 1 creature, 10 for 2, etc). The actions you can perform include:",
             "1: Restore an amount of Hit Points to them equal to your Level.",
             "2: Allow an ally afflicted with a disease or poison to make a Saving Throw against it with Advantage. If the Saving Throw is successful, the effect ends.",
             "3: You may create a makeshift first aid kit. You may have a maximum amount of these equal to your Proficiency Bonus. You may use one as an Action, which allows you to make a Medicine Check with Advantage. In addition, the target gains an amount of temporary Hit Points equal to half your Level, which remain until they are used or until the end of their next Short Rest."
@@ -305,7 +305,7 @@
         "desc": "You radiate threatening energy.",
         "effects": [
             "You may make an Intimidation Check as a Bonus Action.",
-            "When you make an Intimidation Check, you may choose an amount of creatures within 5 meters equal to your Proficiency Bonus. These creatures must contest the result of your Intimidation check with a Wisdom Saving Throw, becoming Frightened until the end of their next turn on a failed Save."
+            "When you make an Intimidation Check, you may choose an amount of creatures within 5 meters equal to your Proficiency Bonus. These creatures must contest the result of your Intimidation check with a Wisdom Saving Throw, becoming Frightened until the end of their nextTurn on a failed Save."
         ]
     },
     "Motivated": {
@@ -347,7 +347,7 @@
         "name": "Perfected Craft",
         "desc": "You've spent countless hours training a specific skill, and it's clear that effort paid off.",
         "effects": [
-            "You may choose to gain Mastery in a skill that you have Expertise in, allowing you to add your Proficiency Bonus to it 3 times."
+            "You may choose to gain Mastery in a Skill that you have Expertise in, allowing you to add your Proficiency Bonus to it 3 times."
         ]
     },
     "Sidearm_Specialization": {
@@ -368,9 +368,9 @@
     },
     "Pressure_Point_Manipulator": {
         "name": "Pressure Point Manipulator",
-        "desc": "Through time spent studying the human body you've found the best way to hinder movement, cause immense pain, and defeat foes with little force. ",
+        "desc": "Through time spent studying the Human body you've found the best way to hinder movement, cause immense pain, and defeat foes with little force. ",
         "effects": [
-            "When you land an unarmed strike or melee attack with your Stand you may use your Bonus Action to force your foe to make a Constitution (or Durability) Saving Throw against a DC of 8 + Proficiency Bonus + Wisdom Modifier. If they fail, they are stunned until the end of their next turn."
+            "When you land an unarmed strike or melee attack with your Stand you may use your Bonus Action to force your foe to make a Constitution (or Durability) Saving Throw against a DC of 8 + Proficiency Bonus + Wisdom Modifier. If they fail, they are stunned until the end of their nextTurn."
         ]
     },
     "Quick_on_your_Feet": {
@@ -386,7 +386,7 @@
         "desc": "Through training and patience, you have gained the ability to accurately use rifles.",
         "effects": [
             "You gain Profciency in the use of any weapon with the \"Rifle\" specialization type.",
-            "When you roll a 19 on an Attack roll with a Rifle, it is counted as a critical hit just as if you had rolled a 20.",
+            "When you roll a 19 on an Attack Roll with a Rifle, it is counted as a critical hit just as if you had rolled a 20.",
             "While using a Rifle, you may attack at long range without imposing Disadvantage.",
             "If you are already Proficient in the use of a Rifle, you gain Expertise in it."
         ]
@@ -414,7 +414,7 @@
         "desc": "Through knowledge and training, you have gained the ability to use simple weapons to remarkable effect.",
         "effects": [
             "You gain Profciency in the use of Simple weapons.",
-            "You may add your Proficiency to the damage dealt by a Melee weapon, or a second time to the Attack roll for a Ranged weapon.",
+            "You may add your Proficiency to the damage dealt by a Melee weapon, or a second time to the Attack Roll for a Ranged weapon.",
             "If you are already Proficient in the use of a Simple weapon, you gain Expertise in it."
         ]
     },
@@ -423,7 +423,7 @@
         "desc": "You focus on being light and mobile in combat, often sporadically attacking or making moves from a distance to harass the enemy.",
         "effects": [
             "You may Disengage as a Bonus Action.",
-            "When you hit a creature with a melee attack, you may choose to make it so they cannot use reactions until the end of their next turn instead of dealing damage.",
+            "When you hit a creature with a melee attack, you may choose to make it so they cannot use reactions until the end of their nextTurn instead of dealing damage.",
             "You gain Advantage on any Saving Throw or Ability Check that would attempt to restrict your movement (grappling, restraining, paralyzing, etc)."
         ]
     },
@@ -470,7 +470,7 @@
         "desc": "Through experience and tussles, you've gained the ability to make objects from your environment into effective weaponry.",
         "effects": [
             "You gain Profciency in the use of Improvised weapons.",
-            "When making a melee attack on your turn, you may either make another attack with an Improvised weapon or Grapple/Shove your target as a Bonus Action.",
+            "When making a melee attack on yourTurn, you may either make another attack with an Improvised weapon or Grapple/Shove your target as a Bonus Action.",
             "If you are already Proficient in the use of an Improvised weapon, you gain Expertise in it."
         ]
     },
@@ -507,7 +507,7 @@
             "You gain Profciency in the use of Improvised weapons, and Expertise in Unarmed Strikes or melee Stand attacks.",
             "When making an Unarmed Strike, you deal 1d8 damage instead of 1d4.",
             "When making an Athletics Check to Grapple or Shove a target, you may use either Dexterity or Strength.",
-            "Additionally, you may spend a full Action to Grapple a target and cause them to be Restrained if successful. As long as you continue to use your full Action and don't move each turn, the target will continue to be Restrained.",
+            "Additionally, you may spend a full Action to Grapple a target and cause them to be Restrained if successful. As long as you continue to use your full Action and don't move eachTurn, the target will continue to be Restrained.",
             "If you are already Proficient in the use of an Improvised weapon, you gain Expertise in it."
         ]
     },
@@ -553,8 +553,8 @@
         "desc": "Through knowledge and training, you have gained the ability to use melee weapons to remarkable effect.",
         "effects": [
             "You gain Profciency in the use of any weapon with the \"Melee\" specialization type.",
-            "When dealing damage using a Melee weapon, you may reroll the Damage Dice if desired. You must keep the new roll, and you can only do this once per turn.",
-            "Additionally, if you are hit by a melee attack while wielding a Melee weapon, you may use your Reaction to add your Proficiency bonus to your AC until the beginning of your next turn.",
+            "When dealing damage using a Melee weapon, you may reroll the Damage Dice if desired. You must keep the new roll, and you can only do this once perTurn.",
+            "Additionally, if you are hit by a melee attack while wielding a Melee weapon, you may use your Reaction to add your Proficiency bonus to your AC until the beginning of your nextTurn.",
             "If you are already Proficient in the use of a Melee weapon, you gain Expertise in it."
         ]
     },
