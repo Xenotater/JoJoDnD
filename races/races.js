@@ -83,8 +83,6 @@ function updateDisplay() {
                         newContent += ", ";
                     else
                         newContent += "</td>";
-                    if (j == race.level[i].feats.length-2)
-                        newContent += "and ";
                 }
             newContent += "</tr>";
         }
