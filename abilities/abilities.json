@@ -1004,7 +1004,7 @@
         "classes": ["EPM"],
         "desc": [
             "Enhanced Pillar Men are the most powerful creatures on Earth, only outmatched by an Ultimate Being. An average Human would likely stand little to no chance in combat even against a relatively new one.",
-            "When you become an Enhanced Pillar Man, your physique changes to become more powerful. Your Strength, Dexterity, and Constitution are all increased to 19 if they are less than that. If one or more of those Ability Scores is already at or above 19, they're increased by 2 instead.",
+            "When you become an Enhanced Pillar Man, your physique changes to become more powerful. Your Strength, Dexterity, and Constitution are all increased to 19 if they are less than that. If one or more of those Ability Scores is already at or above 19, they're increased by 2 instead. Your maximum for each Ability Score is now 30.",
             "Enhanced Pillar Men have an amount of Head Health equal to 1d6 + their Constitution Modifier per their total non-EPM levels in HP. Their Head has an AC equal to your regular AC + your proficiency bonus.",
             "As an Action, an EPM may perform a great feat of strength. They may lift, push, or throw an amount of kilograms equal to their Strength Score multiplied by 100 kilograms. This may also be used to break down walls, etc.",
             "Enhanced Pillar Men regenerate rapidly, being able to heal an amount of Hit Points equal to double their Constitution Modifier everyTurn. When you regenerate, you may choose which Hit Points go to your Head and which ones go to your Body. Wounds caused by <a href='classes/?focus=Ripple'>Ripple</a> or sunlight take 10x as much time to heal, but this is purely aesthetic and doesn't affect your regeneration mechanic.",
@@ -1034,7 +1034,7 @@
         "classes": ["Vamp"],
         "desc": [
             "Vampires are a greater form of Undead, and while a skilled Human warrior may be able to dispatch of a Zombie or possibly a Ghoul, most Humans will fall before your might as a Vampire.",
-            "When you become a Vampire, your physique changes to become more powerful. Your Strength, Dexterity, and Constitution are all increased to 15 if they are less than that. If one or more of those Ability Scores is already at or above 15, they're increased by 2 instead.",
+            "When you become a Vampire, your physique changes to become more powerful. Your Strength, Dexterity, and Constitution are all increased to 15 if they are less than that. If one or more of those Ability Scores is already at or above 15, they're increased by 2 instead. Your maximum for each Ability Score is now 30.",
             "Vampires have an amount of Head Health equal to 1d4 + their Constitution Modifier per their total non-Vampire levels in HP. Their Head has an AC equal to your regular AC + your Proficiency Bonus.",
             "As an Action, a Vampire may perform a great feat of strength. They may lift, push, or throw an amount of kilograms equal to their Strength Score multiplied by 100 kilograms. This may also be used to break down walls, etc.",
             "Vampires regenerate rapidly, being able to heal an amount of Hit Points equal to double their Constitution Modifier everyTurn. When you regenerate, you may choose which Hit Points go to your Head and which ones go to your Body. Wounds caused by <a href='classes/?focus=Ripple'>Ripple</a> or sunlight take 10x as much time to heal, but this is purely aesthetic and doesn't affect your regeneration mechanic.",
