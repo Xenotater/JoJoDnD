@@ -69,10 +69,10 @@ function updateDisplay() {
     if (race.note2 != null) {
         newContent += "<p><small><b>Note: </b><i>" + race.note2 + "</i></small></p>";
     }
-    if (race.theme != null) {
+    if (race.levels != null) {
         newContent += "<h4 class='display-heading'>Leveling Up</h4>";
         newContent += "<table class='table table-striped levels' id='" + race.theme + "'><thead><tr><th>Level</th><th>Energy Required</th><th>Features</th></tr></thead><tbody>";
-        for (let i = 1; i <= 20; i++) {
+        for (let i = 1; i <= race.levels; i++) {
             newContent += "<tr><td>" + i + "</td><td>" + race.level[i].energy + "</td><td>";
             if (race.level[i].special != null)
                 newContent += race.level[i].special;
@@ -83,8 +83,6 @@ function updateDisplay() {
                         newContent += ", ";
                     else
                         newContent += "</td>";
-                    if (j == race.level[i].feats.length-2)
-                        newContent += "and ";
                 }
             newContent += "</tr>";
         }

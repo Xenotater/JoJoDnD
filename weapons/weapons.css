@@ -91,27 +91,31 @@
 }
 
 #weapon-list th:nth-child(1) {
-    width: 95px;
+    width: 8%
 }
 
 #weapon-list th:nth-child(2) {
-    width: 150px;
+    width: 18%
 }
 
 #weapon-list th:nth-child(3) {
-    width: 85px;
+    width: 6%
 }
 
 #weapon-list th:nth-child(4) {
-    width: 175px;
+    width: 20%
 }
 
 #weapon-list th:nth-child(5) {
-    width: 110px;
+    width: 14%
 }
 
 #weapon-list th:nth-child(6) {
-    width: 150px;
+    width: 18%
+}
+
+#weapon-list th:nth-child(7) {
+    width: 16%
 }
 
 .simplebar-track.simplebar-horizontal {

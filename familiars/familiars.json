@@ -38,7 +38,7 @@
         "content": [
           "<p>Your Familiar will have a number of <a class='in-page' id='Always_Alert-link'>Familiar Feats</a> equal to half of the <a href='/Feats'>Feats</a> that you have, rounded up. For example, if you have 3 Feats, your Familiar has 2.</p>",
           "<p>In order for your Familiar to awaken a Stand, both of you must take the <a href='/feats/?focus=Familiar_Fighting_Spirit'>Familiar Fighting Spirit</a> Feat.</p>",
-          "<p>Your Familiar will follow your lead in combat, taking their turn in Initiative directly after yours.</p>"
+          "<p>Your Familiar will follow your lead in combat, taking their Turn in Initiative directly after yours.</p>"
         ]
       }
     ],
@@ -536,7 +536,7 @@
       },
       "Blinding_Attack": {
         "name": "Blinding Attack",
-        "desc": ["As an Action your Familiar may make a single Natural Weapon Attack. If this Attack lands, the opponent must make a Constitution Saving Throw, or be Blinded until the start of their next turn. Anyone who is surprised by your Familiar has Disadvantage on the Save."],
+        "desc": ["As an Action your Familiar may make a single Natural Weapon attack. If this attack lands, the opponent must make a Constitution Saving Throw, or be Blinded until the start of their next Turn. Anyone who is surprised by your Familiar has Disadvantage on the Save."],
         "classes": ["Nimble", "Tracker"]
       },
       "Bravery": {
@@ -546,12 +546,12 @@
       },
       "Extra_Attack": {
         "name": "Extra Attack",
-        "desc": ["When your Familiar takes the Attack Action on their turn, they may make two Natural Weapon Attacks, rather than one."],
+        "desc": ["When your Familiar takes the Attack Action on their Turn, they may make two Natural Weapon attacks, rather than one."],
         "classes": ["Guardian", "Nimble", "Stalwart", "Tracker"]
       },
       "Finesse_Attack": {
         "name": "Finesse Attack",
-        "desc": ["Whenever your Familiar makes an Attack using their Natural Weapons, they may use Dexterity for their Attack and damage rolls, rather than Strength. Additionally, once per turn, if you land Finesse Attack on a Surprised enemy or an enemy that you have Advantage against, you deal an additional die of damage."],
+        "desc": ["Whenever your Familiar makes an attack using their Natural Weapons, they may use Dexterity for their Attack and damage rolls, rather than Strength. Additionally, once per Turn, if you land Finesse Attack on a Surprised enemy or an enemy that you have Advantage against, you deal an additional die of damage."],
         "classes": ["Guardian", "Nimble", "Tracker"]
       },
       "Hardy": {
@@ -562,7 +562,7 @@
       "Natural_Tracker": {
         "name": "Natural Tracker",
         "desc": [
-          "Your Familiar gains Proficiency in the Survival Skill. If they are already Proficient in Survival, they instead gain Expertise. Also, your Familiar may make Investigation checks using their Wisdom, rather than their Intelligence.",
+          "Your Familiar gains Proficiency in the Survival Skill. If they are already Proficient in Survival, they instead gain Expertise. Also, your Familiar may make Investigation Checks using their Wisdom, rather than their Intelligence.",
           "Additionally, your Familiar has Advantage on any Check made with the intent of looking for food, water, or shelter."
         ],
         "classes": ["Tracker"]
@@ -576,38 +576,38 @@
         "name": "Pounce Attack",
         "desc": [
           "As an Action, your Familiar may leap onto a foe. You may jump double its normal jump distance in a high jump or long jump. Alternatively, if your Familiar has a Flying Speed, it may simply fly into them.",
-          "If the jump reaches the target, your Familiar may make a Natural Weapon Attack. If the opponent fulfilled one of the following conditions, they must make a Strength Saving throw in addition to the damage of the attack if it hits:",
-          "<ul><li>They are Surprised</li><li>Your Familiar has Advantage on the Attack roll against them</li><li>They are engaged with one of your allies in melee combat</li></ul>",
-          "If they fail, they cannot take Reactions until the start of their next turn."
+          "If the jump reaches the target, your Familiar may make a Natural Weapon attack. If the opponent fulfilled one of the following conditions, they must make a Strength Saving throw in addition to the damage of the attack if it hits:",
+          "<ul><li>They are Surprised</li><li>Your Familiar has Advantage on the Attack Roll against them</li><li>They are engaged with one of your allies in melee combat</li></ul>",
+          "If they fail, they cannot take Reactions until the start of their next Turn."
         ],
         "classes": ["Nimble", "Tracker"]
       },
       "Power_Attack": {
         "name": "Power Attack",
-        "desc": ["Whenever your Familiar makes an Attack roll you may choose to have -5 to the attack roll of any Natural Weapon Attack, and add an additional +10 to the damage of that attack."],
+        "desc": ["Whenever your Familiar makes an Attack Roll you may choose to have -5 to the Attack Roll of any Natural Weapon attack, and add an additional +10 to the damage of that attack."],
         "classes": ["Guardian"]
       },
       "Protecting_Attack": {
         "name": "Protecting Attack",
-        "desc": ["As an Action, your Familiar may make a single Natural Weapon Attack against a creature of your choice, or dodge. If they have an ally within Melee Range, as long as that ally remains within Melee Range, they may add your Familiar'’'s Strength Modifier to their AC until the start of your Familiar's next turn."],
+        "desc": ["As an Action, your Familiar may make a single Natural Weapon attack against a creature of your choice, or dodge. If they have an ally within Melee Range, as long as that ally remains within Melee Range, they may add your Familiar's Strength Modifier to their AC until the start of your Familiar's next Turn."],
         "classes": ["Stalwart"]
       },
       "Shove_Attack": {
         "name": "Shove Attack",
         "desc": [
-          "When your Familiar lands an Attack on a creature that creature must make a Strength Saving Throw. If they fail, your Familiar may choose to knock them prone or push them back an amount of meters equal to their Strength Modifier.",
-          "Your Familiar may only use a Shove Attack once per turn and only against creatures one size category above theirs or smaller."
+          "When your Familiar lands an attack on a creature that creature must make a Strength Saving Throw. If they fail, your Familiar may choose to knock them prone or push them back an amount of meters equal to their Strength Modifier.",
+          "Your Familiar may only use a Shove Attack once per Turn and only against creatures one size category above theirs or smaller."
         ],
         "classes": ["Stalwart"]
       },
       "Siege_Attack": {
         "name": "Siege Attack",
-        "desc": ["As an Action, your Familiar may make a single Natural Weapon Attack on a creature or object, dealing double damage to any objects targeted."],
+        "desc": ["As an Action, your Familiar may make a single Natural Weapon attack on a creature or object, dealing double damage to any objects targeted."],
         "classes": ["Guardian", "Stalwart"]
       },
       "Superior_Agility": {
         "name": "Superior Agility",
-        "desc": ["In addition to the effects of <a class='in-page' id='Agility-link'>Agility</a>, your Familiar gains the ability to choose to pass any Saving Throw that would reduce their Movement Speed or restrict their mobility, as well as any Strength (Athletics) or Dexterity (Acrobatics) checks to avoid the Grappled or Restrained Conditions. You may use this ability once per Short Rest."],
+        "desc": ["In addition to the effects of <a class='in-page' id='Agility-link'>Agility</a>, your Familiar gains the ability to choose to pass any Saving Throw that would reduce their Movement Speed or restrict their mobility, as well as any Strength (Athletics) or Dexterity (Acrobatics) Checks to avoid the Grappled or Restrained Conditions. You may use this ability once per Short Rest."],
         "classes": ["Nimble"]
       },
       "Superior_Bravery": {
@@ -667,7 +667,7 @@
         "name": "Camouflage",
         "desc": [
           "Through clever hiding or a natural ability to change their appearance, your Familiar may hide themselves in a remarkably effective way.",
-          "As an Action, your Familiar may blend in with their surroundings. As long as they do not use any of their Movement Speed or make any Attack rolls, they gain Advantage on all Dexterity (Stealth) and Dexterity (Sleight of Hand) Checks."
+          "As an Action, your Familiar may blend in with their surroundings. As long as they do not use any of their Movement Speed or make any Attack Rolls, they gain Advantage on all Dexterity (Stealth) and Dexterity (Sleight of Hand) Checks."
         ]
       },
       "Climber": {
@@ -689,7 +689,7 @@
         "name": "Giant's Wrath",
         "desc": [
           "<b><u>Prerequisite:</u> Must be a familiar of Medium or Large size.</b>",
-          "Your Familiar deals an additional die of damage when they Attack using their Natural Weapons."
+          "Your Familiar deals an additional die of damage when they attack using their Natural Weapons."
         ]
       },
       "Keen_Senses": {
@@ -711,7 +711,7 @@
         "name": "Natural Skirmisher",
         "desc": [
           "Using natural mobility and speed, your Familiar has the ability to land a couple hits and leave before they can be hit themselves.",
-          "Whenever your Familiar attempts to make a melee Attack against a creature, they cannot be targeted by Opportunity Attacks from that creature until the end of your Familar's next turn."
+          "Whenever your Familiar attempts to make a melee attack against a creature, they cannot be targeted by Opportunity Attacks from that creature until the end of your Familiar's next Turn."
         ]
       },
       "Treasure_Hunter": {

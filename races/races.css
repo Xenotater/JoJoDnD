@@ -34,6 +34,10 @@
     background-color: rgb(173, 50, 50);
 }
 
+#tarkus thead tr {
+    background-color: rgb(109, 37, 53);
+}
+
 @media (max-width: 875px){ 
     #list {
         position: unset;

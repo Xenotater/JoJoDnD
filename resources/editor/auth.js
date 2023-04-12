@@ -359,7 +359,7 @@ function popDel(id) {
     var newText = "<div id='popConf' class='center'>";
     newText += "<div class='content' id='confirm-window'>";
     newText += "<i id='closeConf' class='bi bi-x-lg'></i>";
-    newText += "<h2>Delete this Character?</h2><p>This CANNOT be undone. Type \"Delete\" below to confirm.</p>";
+    newText += "<h2>Delete this character?</h2><p>This CANNOT be undone. Type \"Delete\" below to confirm.</p>";
     newText += "<input type='text' id='confDel'>";
     newText += "<button class='delBtn' id='del" + id + "'>Confirm</button>"
     newText += "</div></div></div>";
