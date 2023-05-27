@@ -221,14 +221,14 @@
         "classes": ["Rmt"],
         "desc": [
             "Interestingly, you have somehow gained power over your Stand, despite how incredibly volatile Remote Stands can be. At any time, as an Attack, you may switch to or from Ranged Mode.",
-            "In Ranged Mode, Remote Stands may function as any other Stand does, in that they may be controlled by the user's will, and can follow specific commands. However, while in Ranged Mode, you may not use your Stand Ability. If your Stand has <a href='/abilities/?focus=Stand_Marking'>Stand Marking</a> active, that also deactivates upon changing to Ranged Mode. Your Stand's stats do not change upon switching modes."
+            "In Ranged Mode, Remote Stands may function as any other Stand does, in that they may be controlled by the User's will, and can follow specific commands. However, while in Ranged Mode, you may not use your Stand Ability. If your Stand has <a href='/abilities/?focus=Stand_Marking'>Stand Marking</a> active, that also deactivates upon changing to Ranged Mode. Your Stand's stats do not change upon switching modes."
         ]
     },
     "Ultimate_Stand_Ability": {
         "name": "Ultimate Stand Ability",
         "classes": ["Abl"],
         "desc": [
-            "This Ability is something that very few Stands or Stand users are able to get to. It's an incredibly powerful Ability that uses a lot of your Stand's Energy. This Ability costs 5 Stand Energy, and this SE cost cannot be reduced.",
+            "This Ability is something that very few Stands or Stand Users are able to get to. It's an incredibly powerful Ability that uses a lot of your Stand's Energy. This Ability costs 5 Stand Energy, and this SE cost cannot be reduced.",
             "An example of an Ultimate Stand Ability is <a href='https://jojo.fandom.com/wiki/White_Album' target='_blank'>White Album</a>'s Gently Weeps."
         ]
     },
@@ -637,7 +637,7 @@
         "name": "Special Technique",
         "classes": ["Spin"],
         "desc": [
-            "As a competent user of The Spin, you've figured out how to properly use the excess energy produced in a creative way. Talk to your DM about making this Special Technique functional."
+            "As a competent User of The Spin, you've figured out how to properly use the excess energy produced in a creative way. Talk to your DM about making this Special Technique functional."
         ]
     },
     "Perfect_Spiral": {
@@ -710,8 +710,8 @@
         "name": "Flesh Grafting",
         "classes": ["Vamp", "EPM"],
         "desc": [
-            "In order to heal a missing body part more quickly, you may take a detached body part from a living thing or corpse and rapidly assimilate it into your flesh. It takes 1d4+1 Turns for the flesh to assimilate fully, or 1d6+1 years if the flesh was from a <a href='/classes/?focus=Ripple'>Ripple</a> user.",
-            "You may also force the flesh to instantly assimilate by spending energy. You may reduce the amount of Turns it takes to assimilate by 1 Turn per 1 energy spent for a normal creature. You may also reduce the amount of years it takes to assimilate a Ripple user's flesh by 1 year for every 100 energy spent.",
+            "In order to heal a missing body part more quickly, you may take a detached body part from a living thing or corpse and rapidly assimilate it into your flesh. It takes 1d4+1 Turns for the flesh to assimilate fully, or 1d6+1 years if the flesh was from a <a href='/classes/?focus=Ripple'>Ripple</a> User.",
+            "You may also force the flesh to instantly assimilate by spending energy. You may reduce the amount of Turns it takes to assimilate by 1 Turn per 1 energy spent for a normal creature. You may also reduce the amount of years it takes to assimilate a Ripple User's flesh by 1 year for every 100 energy spent.",
             "You may still use the flesh grafted before it is fully assimilated, but any Strength, Dexterity, or Constitution Attack Rolls, Checks, or Saving Throws you make using that flesh are at Disadvantage."   
         ]
     },
@@ -813,7 +813,7 @@
         "desc": [
             "When you kill a living humanoid, you may choose to have them return as an Undead shade of their former self, hungry for living flesh. They revive as a <a href='/races/?focus=Zombie'>Zombie</a> after 1d4+1 Turns.",
             "You may also create a Zombie from an already deceased corpse by exposing yourself to their blood (via bite or transfusion). They revive as a Zombie in 2d12 Turns.",
-            "<a href='/classes/?focus=Ripple'>Ripple</a> users are immune to this infection."
+            "<a href='/classes/?focus=Ripple'>Ripple</a> Users are immune to this infection."
         ]
     },
     "Immortality": {
@@ -866,14 +866,14 @@
         "name": "Gravitational Pull",
         "classes": ["Corpse"],
         "desc": [
-            "The Corpse has the ability to bring non-living objects and terrain towards its user. Any terrain within sight can be brought to the user's feet within a matter of 5 seconds (or one Turn). The surrounding terrain will shift around it to accommodate for the moving earth."
+            "The Corpse has the ability to bring non-living objects and terrain towards its User. Any terrain within sight can be brought to the User's feet within a matter of 5 seconds (or one Turn). The surrounding terrain will shift around it to accommodate for the moving earth."
         ]
     },
     "The_Wall": {
         "name": "The Wall",
         "classes": ["Corpse"],
         "desc": [
-            "In a line between The Corpse and slightly past the User, a two-dimensional grid is created with a small dimensional pocket dimension inside that only the current user of The Corpse can access. While within this wall, all damage directed at the person in the pocket dimension is redirected to somebody else random in the world. However, while in this dimension, you may also not attack unless you reach outside of the pocket dimension to do so. This effect is clearly visible to everybody, including non-stand users.",
+            "In a line between The Corpse and slightly past the User, a two-dimensional grid is created with a small dimensional pocket dimension inside that only the current User of The Corpse can access. While within this wall, all damage directed at the person in the pocket dimension is redirected to somebody else random in the world. However, while in this dimension, you may also not attack unless you reach outside of the pocket dimension to do so. This effect is clearly visible to everybody, including Non-Stand Users.",
             "This dimensional barrier is immune to all damage, with exception to things that are on the same power level as The Holy Corpse. Things that break through the dimensional wall include attacks and Abilities from <a href='/artifacts/?focus=Stand_Arrow'>Requiem Stands</a>, Abilities of <a href='/artifacts/?focus=Heaven'>Heaven Ascended Stands</a>, a physical melee attack from an <a href='/races/?focus=Ultimate_Being'>Ultimate Being</a>, or from an object with the <a href='/abilities/?focus=Perfect_Spiral'>Perfect Spiral</a>. These attacks/Abilities may affect you, but even if they do, any damage that you take is halved."
         ]
     },
@@ -911,7 +911,7 @@
         "desc": [
             "This is one of the most powerful abilities a Stand can possess. When used, at the cost of 3 SE, this kind of Ability has ridiculous power. Work with your DM to determine how this power works. However, there are some general guidelines that should be followed.",
             "First, your Requiem Ability is based upon what your greatest desire or goal was when you pierced yourself. This Ability manifests so that you may more easily achieve that goal or desire. As a general rule of thumb, a Requiem Ability should have enough power that, when used, the entirety of a town/city would notice all at once (if you wanted to show your full power).",
-            "Another general rule is that most Requiem Abilities are defensive, and cannot be activated by the user. Requiem Abilities also typically manifest in the form of a power that affects time, space, or living souls."
+            "Another general rule is that most Requiem Abilities are defensive, and cannot be activated by the User. Requiem Abilities also typically manifest in the form of a power that affects time, space, or living souls."
         ]
     },
     "Heavenly_Ability": {
