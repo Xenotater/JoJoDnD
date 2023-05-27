@@ -104,7 +104,7 @@
         "name": "Deadly Accuracy",
         "desc": "Your aim is steady and true, and you know exactly where to fire to maximize damage.",
         "effects": [
-            "When making an attack with a weapon you may choose to use a full Action and Bonus Action to attack. If you choose to do this, you can add your To-Hit Bonus twice.",
+            "When making an Attack with a weapon you may choose to use a full Action and Bonus Action to attack. If you choose to do this, you can add your To-Hit Bonus twice.",
             "Upon a successful Hit, you may roll double the Damage Dice that you would roll normally and gain Advantage on them.",
             "This Feat may be activated even when you use the ability that gives you Advantage on a Sniper Rifle.",
             "When used with <a href='/abilities/?focus=Ranged_Attack'>Ranged Attack</a> this Feat instead only gives Advantage on the Damage Dice rolled."
@@ -214,7 +214,7 @@
         "desc": "You rest efficiently, and can sleep through almost anything.",
         "effects": [
             "You only need to sleep for 4 hours to gain the benefits of a Long Rest. The rest of the time may be spent doing light activities.",
-            "You may take a 5 minute nap to gain the benefits of a full Short Rest. Additionally, you may either restore 2 expended Hit Dice or regain one use of a feature or ability that would normally be restored on a Long Rest.",
+            "You may take a 5 minute nap to gain the benefits of a full Short Rest. Additionally, you may either restore 2 expended Hit Dice or regain one use of an Ability that would normally be restored on a Long Rest.",
             "You may take a nap like this equal to half of your Proficiency Bonus rounded down each Long Rest."
         ],
         "prereq": "Cannot have Light Sleeper."

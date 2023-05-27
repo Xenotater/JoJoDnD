@@ -144,7 +144,7 @@ function hint(attr) {
         case "Specialization":
             return("The type of the weapon for the purpose of Specialization Feats.")
         case "Stat/DC":
-            return("The attack stat or DC of the weapon. The attack stat is added to both to-hit AND damage rolls. If the weapon has a DC, a Dex Save must be rolled and half damage is taken on success.");
+            return("The attack stat or DC of the weapon. The attack stat is added to both Attack AND Damage Rolls. If the weapon has a DC, a Dex Save must be rolled and half damage is taken on success.");
         case "Prerequisite":
             return("The requirement that must be met in order to use the weapon.");
         case "Damage":

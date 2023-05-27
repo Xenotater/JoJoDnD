@@ -551,7 +551,7 @@
       },
       "Finesse_Attack": {
         "name": "Finesse Attack",
-        "desc": ["Whenever your Familiar makes an attack using their Natural Weapons, they may use Dexterity for their Attack and damage rolls, rather than Strength. Additionally, once per Turn, if you land Finesse Attack on a Surprised enemy or an enemy that you have Advantage against, you deal an additional die of damage."],
+        "desc": ["Whenever your Familiar makes an attack using their Natural Weapons, they may use Dexterity for their Attack and Damage Rolls, rather than Strength. Additionally, once per Turn, if you land Finesse Attack on a Surprised enemy or an enemy that you have Advantage against, you deal an additional die of damage."],
         "classes": ["Guardian", "Nimble", "Tracker"]
       },
       "Hardy": {
@@ -612,7 +612,7 @@
       },
       "Superior_Bravery": {
         "name": "Superior Bravery",
-        "desc": ["Your Familiar is immune to the Frightened Condition. This replaces the <a class='in-page' id='Bravery-link'>Bravery</a> feature."],
+        "desc": ["Your Familiar is immune to the Frightened Condition. This replaces the <a class='in-page' id='Bravery-link'>Bravery</a> Feature."],
         "classes": ["Guardian"]
       },
       "Superior_Hardy": {
