@@ -13,7 +13,7 @@
         "classes": ["Pwr", "Rng", "Enh", "Rev", "Ind"],
         "desc": [
             "The amount of damage that your Stand can reduce per round is doubled.",
-            "This Ability replaces <a href='/abilities/?focus=Immense_Resistance'>Immense Resistance</a>, if you have it."
+            "This Ability replaces <a class='in-page'>Immense Resistance</a>, if you have it."
         ]
     },
     "Complete_Control": {
@@ -96,7 +96,7 @@
         "desc": [
             "Your Stand is incredibly resilient, a reflection of your willpower and experience.",
             "Rather than using the normal Damage Reduction formula, you may instead simply reduce an amount of damage equal to your Durability Modifier + your Constitution Modifier (even if you are an Independent-Type Stand).",
-            "If you obtain the <a href='/abilities/?focus=Armored_Stand'>Armored Stand</a> ability, it replaces this one."
+            "If you obtain the <a  class='in-page'>Armored Stand</a> ability, it replaces this one."
         ]
     },
     "Oblivious_Facade": {
@@ -168,7 +168,7 @@
         "name": "Special Ability",
         "classes": ["Pwr", "Rng", "Rmt", "Abl", "Enh", "Ind", "Rev", "Hive"],
         "desc": [
-            "These are powers that use the same concept of the regular <a href='/abilities/?focus=Custom_Ability'>Custom Ability</a>, but taken to a whole new level. These abilities have immense strength, but at a higher cost (usually twice the Stand Energy).",
+            "These are powers that use the same concept of the regular <a class='in-page'>Custom Ability</a>, but taken to a whole new level. These abilities have immense strength, but at a higher cost (usually twice the Stand Energy).",
             "Special Abilities are usually 1 bracket of Die stronger than the Ability would be normally (d4 would become d6, d6 would become d8, etc.). They also take more time to perform. Usually, but not always, taking a Full Action to perform.",
             "Examples of Special Abilities are <a href='https://jojo.fandom.com/wiki/The_World' target='_blank'>The World</a>'s The World, <a href='https://jojo.fandom.com/wiki/King_Crimson' target='_blank'>King Crimson</a>'s Time Deletion, or <a href='https://jojo.fandom.com/wiki/Weather_Report_(Stand)' target='_blank'>Weather Report</a>'s Heavy Weather.",
             "A Special Ability might also be a passive Ability that functions independently of activation, or one that may be activated or deactivated at will. Passive Abilities consume 2 Stand Energy at the Start of the Stand User's Turn, and also take their Bonus Action to perform. If you are unable to use your Bonus Action, or you do not have enough Stand Energy remaining, the Ability simply stops functioning. "
@@ -180,7 +180,7 @@
         "desc": [
             "Your Stand has undergone an evolution, and has gained a new Ability alongside its new form.",
             "This Ability should be an evolution of your first Ability. Similar, but stronger or more versatile.",
-            "This Ability follows the same guidelines as any other <a href='/abilities/?focus=Custom_Ability'>Custom Ability</a>."
+            "This Ability follows the same guidelines as any other <a class='in-page'>Custom Ability</a>."
         ]
     },
     "Third_Ability": {
@@ -189,7 +189,7 @@
         "desc": [
             "Your Stand has undergone another evolution, and has gained a new Ability alongside its new form.",
             "This Ability should be an evolution of your second Ability. Similar, but stronger or more versatile.",
-            "This Ability follows the same guidelines as any other <a href='/abilities/?focus=Custom_Ability'>Custom Ability</a>."
+            "This Ability follows the same guidelines as any other <a class='in-page'>Custom Ability</a>."
         ]
     },
     "Speedy_Movement": {
@@ -221,7 +221,7 @@
         "classes": ["Rmt"],
         "desc": [
             "Interestingly, you have somehow gained power over your Stand, despite how incredibly volatile Remote Stands can be. At any time, as an Attack, you may switch to or from Ranged Mode.",
-            "In Ranged Mode, Remote Stands may function as any other Stand does, in that they may be controlled by the User's will, and can follow specific commands. However, while in Ranged Mode, you may not use your Stand Ability. If your Stand has <a href='/abilities/?focus=Stand_Marking'>Stand Marking</a> active, that also deactivates upon changing to Ranged Mode. Your Stand's stats do not change upon switching modes."
+            "In Ranged Mode, Remote Stands may function as any other Stand does, in that they may be controlled by the User's will, and can follow specific commands. However, while in Ranged Mode, you may not use your Stand Ability. If your Stand has <a class='in-page'>Stand Marking</a> active, that also deactivates upon changing to Ranged Mode. Your Stand's stats do not change upon switching modes."
         ]
     },
     "Ultimate_Stand_Ability": {
@@ -251,7 +251,7 @@
         "name": "Block Stand Projectile",
         "classes": ["Pwr", "Act"],
         "desc": [
-            "When a Stand-based projectile or group of projectiles such as a <a href='/abilities/?focus=Ranged_Attack'>Ranged Attack</a> (<a href='https://jojo.fandom.com/wiki/Heirophant_Green' target='_blank'>Heirophant Green</a>'s Emerald Splash, <a href='https://jojo.fandom.com/wiki/Foo_Fighters' target='_blank'>Foo Fighters</a>' bullets, <a href='https://jojo.fandom.com/wiki/Tusk' target='_blank'>Tusk</a>'s Nails) lands a Stand Hit or Direct Hit, you may roll 1d6 as a Reaction and add your Stand's Precision Modifier. If the result is higher than the damage that the projectile would deal you may instead catch or block the projectile and take no damage."
+            "When a Stand-based projectile or group of projectiles such as a <a class='in-page'>Ranged Attack</a> (<a href='https://jojo.fandom.com/wiki/Heirophant_Green' target='_blank'>Heirophant Green</a>'s Emerald Splash, <a href='https://jojo.fandom.com/wiki/Foo_Fighters' target='_blank'>Foo Fighters</a>' bullets, <a href='https://jojo.fandom.com/wiki/Tusk' target='_blank'>Tusk</a>'s Nails) lands a Stand Hit or Direct Hit, you may roll 1d6 as a Reaction and add your Stand's Precision Modifier. If the result is higher than the damage that the projectile would deal you may instead catch or block the projectile and take no damage."
         ]
     },
     "Counterattacking_Blow": {
@@ -298,7 +298,7 @@
         "classes": ["Pwr", "Rng", "Ind", "Act"],
         "desc": [
             "Using this Ability takes an entire Turn (consuming Action, Bonus Action, and Movement Action), you may perform a number of melee attacks equal to your Stand's Speed Modifier (+6 Speed would mean 6 attacks in one Melee Barrage), with a maximum of 10 attacks.",
-            "Each hit functions as normal in terms of the Attack Rolls, but when you deal damage, you do not add your Stand's Power Modifier to the damage rolls. The Damage Dice for these attacks is whatever your Stand Type would deal at level 1, you may not use upgraded dice gained from Level 11 or from being an Undead.",
+            "Each hit functions as normal in terms of the Attack Rolls, but when you deal damage, you do not add your Stand's Power Modifier to the Damage Rolls. The Damage Dice for these attacks is whatever your Stand Type would deal at level 1, you may not use upgraded dice gained from Level 11 or from being an Undead.",
             "Furthermore, you may not Activate a Stand Ability with any of these attacks, and if you roll a 1 on any of these Attack Rolls, the Melee Barrage ends.",
             "For Act Types, it should be noted that Act 3 Melee Barrage uses 1d10, rather than 2d8 for the Damage Dice."
         ]
@@ -415,15 +415,41 @@
         "name": "Healing Ripple",
         "classes": ["Rip"],
         "desc": [
-            "As an Action, you may spend 1 Ripple Point and touch somebody else or yourself to heal 1d4 + your Constitution Modifier points of damage. You may spend additional Ripple Points to add additional d4s, but you may only add the Modifier once."
+            "As an Action, for 1 Ripple Point, you may heal yourself or another living creature for 5 + your Constitution Modifier Hit Points.",
+            "For every additional Ripple Point you spend, you heal an additional 5 Hit Points."
         ]
     },
-    "Ripple_Shield": {
-        "name": "Ripple Shield",
+    "Ripple_Fighting_Style": {
+        "name": "Ripple Fighting Style",
         "classes": ["Rip"],
         "desc": [
-            "As an Action, if there are enough materials nearby to use it. This action costs 5 ripple points. You are able to take any Ripple conductor and hold it together using the Ripple.",
-            "This Shield gives you and anyone within 1 meter of you an amount of  additional AC equal to your Constitution Modifier. It lasts until the start of your next Turn, and may be sustained for as long as you would prefer, with a Ripple Point cost of 1 per Turn. However, if you do this, you may not perform any kind of Action outside of Free Actions."
+            "You've learned one of the following schools of combat that enables you to better use your Ripple combatively.",
+            "<ul class='sublist'><li>Disciplined: You gain Proficiency in 2 Saving Throws of your Choice.</li><li>Enhanced Reflexes: As a Reaction, you may move up to half your Movement Speed without provoking Opportunity Attacks. You may use this to avoid an AOE Save, but not a single target attack.</li><li>Graceful Fighting: When you make Unarmed Attacks or Attacks using a Simple Melee Weapon you may use Dexterity for both the Attack and Damage rolls.</li><li>Powerful: Rather than using regular AC, you may choose to have your AC be 10 + your Strength Modifier + your Constitution Modifier.</li></ul>"
+        ]
+    },
+    "Recovery_Breathing": {
+        "name": "Recovery Breathing",
+        "classes": ["Rip"],
+        "desc": [
+            "As an Action, if you are comfortably able to breathe, you may regain an amount of Ripple Points equal to your Constitution Modifier.",
+            "You may use this Ability once per Short Rest."
+        ]
+    },
+    "Ripple_Possession": {
+        "name": "Ripple Possession",
+        "classes": ["Rip"],
+        "desc": [
+            "As an Action, for 5 Ripple Points, you may touch a living being and imbue it with your will and supernatural physicality for a short time.",
+            "The creature targeted must make a Charisma Save, shrugging off the effect on a success. A failed save adds +5 to the targets Strength, Dexterity, and Constitution rolls, and forces them to follow whatever simple command you give them for the next minute so long as the command is not directly harmful to the creature.",
+            "This Ability does not work on Constructs or Undead."
+        ]
+    },
+    "Conductor_Shield": {
+        "name": "Conductor Shield",
+        "classes": ["Rip"],
+        "desc": [
+            "As a Reaction, for 3 Ripple Points, you may create an improvised shield reinforced by Ripple.",
+            "This shield gives a +3 to your AC, as well as all Strength, Dexterity, and Constitution saves until the start of your next Turn."
         ]
     },
     "Life_Magnet": {
@@ -435,26 +461,33 @@
             "Each additional Turn of manipulation costs 1 Ripple Point. You may move while Life Magnet is being used, but if you stop touching the biomass the structure falls apart. The Structure has an amount of Hit Points equal three times your Level in The Ripple and has an AC equal to your Ripple DC."
         ]
     },
-    "Extreme_Healing_Ripple": {
-        "name": "Extreme Healing Ripple",
-        "classes": ["Rip"],
-        "desc": [
-            "As an Action, you may use as many Ripple Points as you would like and touch somebody, healing 1d8 + your Constitution Modifier Hit Points for every 2 Ripple Points consumed."
-        ]
-    },
     "Deep_Pass_Overdrive": {
         "name": "Deep Pass Overdrive",
         "classes": ["Rip"],
         "desc": [
-            "As an Action, you may spend 15 Ripple Points and touch a creature nearby. After performing this action, your Ripple Level drops to 0, you lose 1d10 Maximum Health every Turn from now on, and your Strength, Dexterity, and Constitution Scores all drop to 3.",
-            "Your target, however, gets a permanent boost of +2 in their Strength, Dexterity, and Constitution Scores, as well as another +3 in either Strength, Constitution, or Dexterity. They also gain 3 points of Inspiration, as well as all of the Inspiration that you had, and they get Advantage on all rolls involving a d20 for the next 10 minutes."
+            "You may use this Action when you touch a living creature, or a Ripple conductor. After performing this Action, you are no longer able to spend Ripple Points or use any Ripple Class Features. Your Strength, Dexterity, and Constitution Scores all drop to 3, and you lose a point of each Score for every additional 10 seconds that pass. This stat reduction cannot be slowed, reduced, or reversed, and you die when your physical stats drop to 0.",
+            "Your target gains a permanent stat increase of +4 to a physical stat of their choice, and a +2 to the other physical stats. Additionally, your target has Advantage on all d20 rolls for the next 10 minutes and gains all of your Inspiration, if you have any."
+        ]
+    },
+    "Ripple_Perception": {
+        "name": "Ripple Perception",
+        "classes": ["Rip"],
+        "desc": [
+            "As an Action, for 1 Ripple Point, you gain 10 meters of Blindsense that is able to travel through walls until the end of your next Turn. If you are standing on a surface that conducts Ripple (such as water or metal), the range is increased to 20 meters."
+        ]
+    },
+    "Improved_Ripple_Perception": {
+        "name": "Improved Ripple Perception",
+        "classes": ["Rip"],
+        "desc": [
+            "You have 5 meters of Blindsense by default, 10 meters if you are on a conductive surface. If you use <a class='in-page'>Ripple Perception</a>, you may extend your Blindsense by that amount."
         ]
     },
     "Ripple_Regeneration": {
         "name": "Ripple Regeneration",
         "classes": ["Rip"],
         "desc": [
-            "You gain an amount of Hit Points equal to your Constitution Modifier back at the start of every Turn, when you are conscious."
+            "At the top of Initiative you regain an amount of HP equal to twice your Constitution modifier if you are at 1 HP or more and are able to comfortably breathe. This also applies outside of combat."
         ]
     },
     "Toxin_Expulsion": {
@@ -469,9 +502,7 @@
         "name": "Liquid Solidification",
         "classes": ["Rip"],
         "desc": [
-            "Ripple is an art made to fight against the Undead. However, as time continued, many other uses were discovered for it, such as regenerative and defensive abilities as well as changing the properties of physical objects.",
-            "The waves of energy produced by the Ripple may force the surface tension of the water to form a tangible, solid \"skin\" over it. This \"skin\" may be used for a variety of purposes, such as holding water without using a container, blocking water from moving, or even walking on water.",
-            "Activating this Ability takes a Bonus Action, and it costs 2 Ripple Points each round."
+            "As a Reaction, as long as you can comfortably breathe, you may avoid all Poison damage from an Attack or Save you are hit with, or remove the Poisoned Condition from yourself."
         ]
     },
     "Rippling_Weapon": {
@@ -485,38 +516,55 @@
         "name": "Ripple Pressure",
         "classes": ["Rip"],
         "desc": [
-            "This action takes one Turn to perform, but may be charged for longer than that, with a cost of 1 Ripple Point per Turn. Ripple Pressure is a technique that continuously channels Ripple Energy into an airtight container, which builds up pressure. When the container cannot take it anymore, something gives, and the contents of this container burst out.",
-            "For every Turn that the container has Ripple put into it, it deals 1d6 more Radiant damage, with a maximum of 8d6 in any one container. You may release it as a Reaction, creating a 5 meter cone of damage. Those caught inside of the cone must make a Dexterity Saving Throw, taking half damage on a Successful Save."
+            "As an Action, for 1 Ripple Point, you can pressurize a sealed container and control how and where that pressure is finally released.",
+            "All enemies within a 10 meter cone must make a Dexterity Saving Throw, taking 4d6 Radiant damage on a failed Save and half as much on a successful Save.",
+            "Alternatively, you may spend additional time and Ripple to allow the pressure to build as well. For every additional Action and Ripple Point spent the container deals an additional 2d6 Radiant damage, with a maximum of 10d6 damage."
         ]
     },
     "Zoom_Punch": {
         "name": "Zoom Punch",
         "classes": ["Rip"],
         "desc": [
-            "As an Attack, you may spend 2 Ripple Points and make an Unarmed Strike. This punch deals additional Radiant damage equal to your Unarmed Damage Dice and gives you an Additional meter of Range for that Attack."
+            "As an Attack, for 1 Ripple Point, you may make a melee Attack with a reach of up to 3 meters that deals an additional amount of damage equal to your Unarmed Dice."
         ]
     },
     "Sunlight_Yellow_Overdrive": {
         "name": "Sunlight Yellow Overdrive",
         "classes": ["Rip"],
         "desc": [
-            "As an entire Turn (meaning that your Action, Bonus Action, Movement Action, and Reaction are all used, and if you have used any part of your Turn you may not use this ability), you may spend 4 Ripple Points and make a number of Unarmed Attacks equal to your Constitution Modifier. You may choose whether or not to make this lethal."
+            "As a Turn (full action economy, aside from Reaction), you may spend 4 Ripple Points to make an amount of Unarmed Strikes equal to your Constitution Modifier.",
+            "Additional techniques such as <a class='in-page'>Zoom Punch</a> cannot be used on these Attacks.",
+            "You may choose whether or not to make this lethal."
         ]
     },
     "Sendo_Overdrive": {
         "name": "Sendo Overdrive",
         "classes": ["Rip"],
         "desc": [
-            "As an Attack, and at the cost of 3 Ripple Points, your mastery of The Ripple allows you to affect objects from a distance. By carefully aiming, you can influence matter at a distance so long as there is a proper conduit.",
-            "Proper conduits include liquids, metals, or organisms, and these have a range of roughly 10 meters. Sendo may also be sent through an improper conduit, but doing this reduces the effective range down to 2 meters. Sendo Overdrive, if aimed at a target, deals an additional amount of Radiant damage equal to what your Unarmed Attacks deal."
+            "As an Attack, you may spend 1 Ripple Point to make an Unarmed Strike through a material that conducts Ripple (such as metal, water, or a living being) without causing any damage to the conductor. You may use this Ability to heal/damage a target up to 10 meters away, so long as there is a conductor connecting you and your target."
         ]
     },
     "Scarlet_Overdrive": {
         "name": "Scarlet Overdrive",
         "classes": ["Rip"],
         "desc": [
-            "As an Attack that costs 4 Ripple Points, you may harness the power of the sun within the beat of your own blood and form a new kind of Ripple: a Ripple of flame.",
-            "You may make an Unarmed Strike as normal, dealing an additional amount of Fire damage equal to twice the damage dealt by an Unarmed Strike if it lands. For example, an Unarmed Strike that would deal 1d10 + 3 damage would add 2d10 + 6 Fire damage."
+            "As an Attack, for 3 Ripple Points, you may make a melee Attack, dealing an additional amount of fire damage equal to twice your Unarmed Dice. Any objects hit by this Attack that aren't worn or carried by a creature catch on fire.",
+            "In addition, if you are afflicted with <a class='in-page'>Freezing Touch</a>, you may spend an Attack on yourself to end the effect without dealing damage."
+        ]
+    },
+    "Slowed_Aging": {
+        "name": "Slowed Aging",
+        "classes": ["Rip"],
+        "desc": [
+            "You have perfected your Ripple and your body to such a degree that you age half as slowly as the normal human, starting at this point. A 70 year old Ripple user who gained this feature at age 20 would have the physical body of a 45 year old, for example."
+        ]
+    },
+    "Spiritual_Ripple": {
+        "name": "Spiritual Ripple",
+        "classes": ["Rip"],
+        "desc": [
+            "If your DM allows it, and if you are in a campaign involving Stands, you may now see stands as well as damage them using your Ripple.",
+            "Additionally, Stand Users no longer have Advantage on Attacks against you."
         ]
     },
     "Ripple_Cutter": {
@@ -527,21 +575,21 @@
             "The range of this is a 5 meter cone in any one direction. Targets must make a Dexterity saving throw, taking 4d10 Slashing damage or half as much on a successful save."
         ]
     },
-    "Ionic_Rippling": {
-        "name": "Ionic Rippling",
-        "classes": ["Rip"],
-        "desc": [
-            "Your Ripple has progressed, and become more powerful. It is now able to affect energy-based abilities and interact with any form of energy, including warping light itself.",
-            "You may use this to create illusions, warping the path of light and making objects look like they are in different locations than where they actually are. You cannot, however, attack or affect Stands using this Ability."
-        ]
-    },
     "Custom_Ripple_Technique": {
         "name": "Custom Ripple Technique",
         "classes": ["Rip"],
         "desc": [
-            "Through countless hours spent training in the ancient art of The Ripple, you've created a fighting style or ability that is unique to you, and you alone.",
-            "Examples of this are <a href='https://jojo.fandom.com/wiki/Tonpetty'>Tompetty</a>'s Future Sight, <a href='https://jojo.fandom.com/wiki/Dire'>Dire</a>'s Thunder Cross Split Attack, and <a href='https://jojo.fandom.com/wiki/Caesar_Anthonio_Zeppeli'>Caesar</a>'s Bubble Launcher.",
+            "You create a Ripple technique that is unique to your use of Ripple, as well as your method of fighting. It should generally take an Action, and it should cost a number of Ripple Points relative to how powerful it is.",
+            "Examples of Custom Ripple Techniques come in the form of <a href='https://jojowiki.com/Lisa_Lisa' target='_blank'>Lisa Lisa</a>'s scarf technique, <a href='https://jojowiki.com/Dire</a>'s target='_blank'>Dire's Thunder Cross Split Attack, or <a href='https://jojowiki.com/Caesar_Anthonio_Zeppeli' target='_blank'>Caesar</a>'s Bubble Lens Technique.",
             "Talk to your DM to determine the function and details of this Technique."
+        ]
+    },
+    "Perfected_Ripple": {
+        "name": "Perfected Ripple",
+        "classes": ["Rip"],
+        "desc": [
+            "As a Level 20 Ripple User, you have reached your full potential through use of the Ripple. This costs 15 Ripple Points and takes an Action, allowing you to choose one of the following. The effect you choose may be used multiple times if applicable, but you may not change your choice.",
+            "<ul class='sublist'><li>You gain an immensely powerful skill or ability otherwise not available to you. An example of such a powerful ability is <a href='https://jojo.fandom.com/wiki/Tonpetty'>Tompetty</a>'s ability to tell the fate of a person they touch.</li><li>If you do not have a Stand, one manifests at Level 15.</li><li>If you are already a Stand User, your stand evolves. The stats of your Stand double, and this change lasts for 1 hour.</li></ul>"
         ]
     },
     "Spherical_Spin": {
@@ -747,7 +795,7 @@
         "classes": ["Vamp", "EPM"],
         "desc": [
             "The only part of the Undead body needed for Vampiric survival is the brain. If you find yourself in an incredibly desperate situation, you may perform this Ability to save yourself.",
-            "As an Attack, you use your Secondary Muscular System (from <a href='/abilities/?focus=Controlled_Veins'>Controlled Veins</a>) to remove your Head and Secondary Muscular System from the rest of you.",
+            "As an Attack, you use your Secondary Muscular System (from <a class='in-page'>Controlled Veins</a>) to remove your Head and Secondary Muscular System from the rest of you.",
             "Your Head and Secondary Muscular System are now all you are. You may slowly regenerate your own body, but it takes 3d4 days to do so, as well as 5 Energy for each kilogram of flesh regenerated.",
             "You still have to consume energy at the standard rate, but you may now do this with your Secondary Muscular System, and you may use your <a href='/abilities/?focus=Lifesteal&search=lifesteal'>Lifesteal</a> ability as normal."
         ]
@@ -874,7 +922,7 @@
         "classes": ["Corpse"],
         "desc": [
             "In a line between The Corpse and slightly past the User, a two-dimensional grid is created with a small dimensional pocket dimension inside that only the current User of The Corpse can access. While within this wall, all damage directed at the person in the pocket dimension is redirected to somebody else random in the world. However, while in this dimension, you may also not attack unless you reach outside of the pocket dimension to do so. This effect is clearly visible to everybody, including Non-Stand Users.",
-            "This dimensional barrier is immune to all damage, with exception to things that are on the same power level as The Holy Corpse. Things that break through the dimensional wall include attacks and Abilities from <a href='/artifacts/?focus=Stand_Arrow'>Requiem Stands</a>, Abilities of <a href='/artifacts/?focus=Heaven'>Heaven Ascended Stands</a>, a physical melee attack from an <a href='/races/?focus=Ultimate_Being'>Ultimate Being</a>, or from an object with the <a href='/abilities/?focus=Perfect_Spiral'>Perfect Spiral</a>. These attacks/Abilities may affect you, but even if they do, any damage that you take is halved."
+            "This dimensional barrier is immune to all damage, with exception to things that are on the same power level as The Holy Corpse. Things that break through the dimensional wall include attacks and Abilities from <a href='/artifacts/?focus=Stand_Arrow'>Requiem Stands</a>, Abilities of <a href='/artifacts/?focus=Heaven'>Heaven Ascended Stands</a>, a physical melee attack from an <a href='/races/?focus=Ultimate_Being'>Ultimate Being</a>, or from an object with the <a class='in-page'>Perfect Spiral</a>. These attacks/Abilities may affect you, but even if they do, any damage that you take is halved."
         ]
     },
     "Design_Change": {
@@ -958,7 +1006,7 @@
         "desc": [
             "Due to the nature of your greater Undead body, you are able to easily deflect most blows to your Had. Whenever someone attempts to attack your Head, they are unable to deal damage that first time. Instead, you must make a Constitution Saving Throw against a DC of 5 + the amount of damage dealt by that attack. If you succeed on the Save, you take no damage and keep your Threshold. Otherwise, you lose it.",
             "Critical Hits and Radiant damage are able to instantly break through your Threshold, dealing damage to you immediately and destroying your threshold as well.",
-            "You regain the use of this class feature on a Short Rest."
+            "You regain the use of this Ability on a Short Rest."
         ]
     },
     "Greater_Undead_Senses": {
@@ -1048,7 +1096,7 @@
             "Additionally, Zombies are particularly effective at using Unarmed Strikes. Their base damage increases from 1d4 to 1d8.",
             "Due to your rotting flesh, you are obviously not Human at a first glance, and even if you use perfumes and a cloak to mask it, you still have Disadvantage on any Check to pass yourself off as Human.",
             "Zombies must consume an amount of Human flesh equal to their body weight per month, or five times their body weight in animal flesh per month in order to sustain themselves.",
-            "If a Zombie is able to sustain themselves while separated from a greater Undead master for a year or longer, they are able to gain some strength and become a <a href='/races/?focus=Ghoul'>Ghoul</a>. Their Undead master may also decide that they are more useful as a Ghoul and may use <a href='/abilities/?focus=Ghoul_Creation'>Ghoul Creation</a> to convert them into a Ghoul.",
+            "If a Zombie is able to sustain themselves while separated from a greater Undead master for a year or longer, they are able to gain some strength and become a <a href='/races/?focus=Ghoul'>Ghoul</a>. Their Undead master may also decide that they are more useful as a Ghoul and may use <a class='in-page'>Ghoul Creation</a> to convert them into a Ghoul.",
             "Alternatively, should they be exposed to the Stone Mask or the Completed Stone Mask, they may be able to become a Vampire or Ultimate Being, respectively."
         ]
     }

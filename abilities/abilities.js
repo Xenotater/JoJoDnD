@@ -12,8 +12,14 @@ $(document).ready(function () {
 
     getData(q);
 
-    $("#list").on("click", ".list-link", function () {
+    $("#list").on("click", ".list-link", function() {
         a= $(this).attr("id");
+        updateURL();
+        updateDisplay();
+    });
+
+    $("#display").on("click", "a.in-page", function() {
+        a= $(this).html().replace(/ /g, "_");
         updateURL();
         updateDisplay();
     });
