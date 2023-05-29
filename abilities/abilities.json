@@ -452,8 +452,8 @@
             "This shield gives a +3 to your AC, as well as all Strength, Dexterity, and Constitution saves until the start of your next Turn."
         ]
     },
-    "Life_Magnet": {
-        "name": "Life Magnet",
+    "Life_Magnetism": {
+        "name": "Life Magnetism",
         "classes": ["Rip"],
         "desc": [
             "When finding a collection of significant biomass, as an Action, you may spend 5 Ripple Points to collect up to 1 Metric ton of it together and manipulate it in any way you'd like.",
