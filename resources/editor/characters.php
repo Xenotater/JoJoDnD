@@ -70,7 +70,7 @@
             <a href='#'>Rename</a><a href='#'>Duplicate</a><a href='#'>Delete</a></div>
             <div class='loadBox'>
             <?php if ($characters[$i]["Image"] == "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=")
-                $characters[$i]["Image"] = "../Assets/default.webp";
+                $characters[$i]["Image"] = "../Assets/.default.webp";
             if ($user == "admin") { ?>
                 <img class='charImgA' src='<?php echo $characters[$i]["Image"]; ?>' alt='charImg'>
                 <p class='charInfo'><?php echo $characters[$i]["Username"]; ?><br><?php echo $characters[$i]["Name"]; ?></p>
