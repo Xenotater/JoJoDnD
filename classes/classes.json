@@ -1599,7 +1599,7 @@
         "hDice": "1d8",
         "dcName": "Spin DC",
         "dc": "8 + Dex + Proficiency Bonus",
-        "notes": ["All attack made using Spheres imbued with the Spin deal Force damage, unless otherwise stated."],
+        "notes": ["All attacks made using Spheres imbued with the Spin deal Force damage, unless otherwise stated."],
         "extra": [{
             "name": "The Golden Ratio",
             "desc": "A Spin User must have a reference of a 9:16 ratio in order to use the Spin. A 9:16 ratio is found somewhere in almost every uninjured creature, except Humans. The ratio may also be found in something artificial, such as a piece of paper or a tattoo, so long as it is made to be a 9:16 ratio."
