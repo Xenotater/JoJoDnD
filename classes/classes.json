@@ -78,7 +78,7 @@
             "9": {
                 "pro": "4",
                 "feats": "3",
-                "linkFeatures": ["Conductor Shield", "Spiritual Ripple"]
+                "linkFeatures": ["Conductor Shield", "Spiritual Ripple (Variant Rule)"]
             },
             "10": {
                 "pro": "4",
@@ -243,7 +243,7 @@
                 "exampleOf": "Power Stands",
                 "examples": ["Star Platinum", "Crazy Diamond", "Gold Experience"],
                 "links": ["Star_Platinum", "Crazy_Diamond", "Gold_Experience"],
-                "desc": "Power-Type Stands are considered to be some of the most dangerous and powerful due to their all around physical ability. They're also the most common. Most opponents have no chance facing off against a Power-Type Stand User when within their range, but they do have a weakness in their extremely short range.",
+                "desc": "Power-Type Stands are considered to be some of the most dangerous and powerful due to their all around physical ability. They're also the most common. Most opponents have no chance facing off against a Power-Type Stand User when within their Range, but they do have a weakness in their extremely Short Range.",
                 "hDice": "1d12",
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
@@ -1251,7 +1251,7 @@
                 "other": [{
                     "name": "Swarm Attacks",
                     "content": [
-                        "<p>Choose one of the three following saving throws: Strength, Dexterity, or Constitution. When you make a mlee Attack using your Stand, rather than making an Attack Roll, your target must make a Saving Throw of the type you chose. Your Stand must be within Melee Range of the target in order to make a Swarm Attack. When you make a Swarm Attack, you may choose between the following options:</p>",
+                        "<p>Choose one of the three following saving throws: Strength, Dexterity, or Constitution. When you make a mlee Attack using your Stand, rather than making an Attack Roll, your target must make a Saving Throw of the type you chose. Your Stand must be within melee of the target in order to make a Swarm Attack. When you make a Swarm Attack, you may choose between the following options:</p>",
                         "<p><ul><li>Precise Swarm: 1d6 + Power Modifier damage (this damage increases to 2d6 at Level 11). Your opponent takes full damage if they fail the Saving Throw, or half if they succeed.</li>",
                         "<li>Violent Swarm: 1d10 + Power Modifier damage (this damage increases to 2d10 at Level 11). Your opponent takes full damage if they fail the Saving Throw, or none if they succeed.</li></ul></p>",
                         "<p>This Ability's damage can be a type that you and your DM agree fits for your stand. When you attack using less than half of the total instances of your stand, your target has Advantage on the Saving Throw.</p>" 
@@ -1599,6 +1599,7 @@
         "hDice": "1d8",
         "dcName": "Spin DC",
         "dc": "8 + Dex + Proficiency Bonus",
+        "note": "All attack made using Spheres imbued with the Spin deal Force damage, unless otherwise stated.",
         "extra": [{
             "name": "The Golden Ratio",
             "desc": "A Spin User must have a reference of a 9:16 ratio in order to use the Spin. A 9:16 ratio is found somewhere in almost every uninjured creature, except Humans. The ratio may also be found in something artificial, such as a piece of paper or a tattoo, so long as it is made to be a 9:16 ratio."
@@ -1610,10 +1611,14 @@
                 "class": "minor widen",
                 "head": ["Material", "Range", "Damage", "Effect"],
                 "body": [
-                    ["Wood", "10/30m", "1d4 + Dex", "The Wooden Sphere will splinter and shatter upon contact, causing splinters to fly off in all directions up to 2 meters from the point of the Sphere's impact. Those within 2 meters must make a Dex Save against your Spin DC, taking an additional 1d8 points of Piercing damage on failure. This Damage increases to 2d8 starting at Level 7, and 3d8 at Level 14."],
-                    ["Rubber", "40/240m", "1d6 + Dex", "None"],
-                    ["Stone", "20/60m", "1d8 + Dex", "None"],
-                    ["Metal", "10/30m", "1d10 + Dex", "None"]
+                    ["Satellite Sphere", "20/40m", "-", "Can only be used if you have the <a href='/abilities?focus=Satellite_Spin'>Satellite Spin</a> Ability.This Sphere takes a full Action to throw. The Satellite Sphere is a metal ball covered in many smaller, marble-sized metal balls. At a point in the air that you determine, or on contact, those within 5 meters must make a Wisdom Saving Throw against your spin DC (if targets are in the Long Range, they have Advantage on this Save). On failure, targets are given Disadvantage on all Strength and Dexterity Attack Rolls and Skill Checks, getting to repeat the Wisdom save at the end of their turn. The effect ends on a success, or after 1 minute passes."],
+                    ["Wood", "40/80m", "xd8 Slashing", "The Wooden Sphere will splinter and shatter upon contact, causing splinters to fly off in all directions up to 5 meters from the point of the Sphere's impact. Those within 5 meters must make a Dex Save against your Spin DC (if targets are in the Long Range of this sphere, they have Advantage on this Save), taking full damage on a failed Save or half as much on a success. When used, this Sphere destroys itself."],
+                    ["Rubber", "50/100m", "xd4 + Dex Force", "None"],
+                    ["Polished Wood", "40/80m", "xd6 + Dex Force", "None"],
+                    ["Stone", "30/60m", "xd8 + Dex Force", "None"],
+                    ["Steel", "20/40m", "xd10 + Dex Force", "None"],
+                    ["Ceramic", "15/45m", "xd12 + Dex Force", "When you roll a 19 on an Attack Roll with this Sphere, it counts as a Critical Hit. When used, this Sphere destroys itself."],
+                    ["Diamond", "10/20m", "xd12 + Dex Force", "None"]
                 ]
             }
         }],
@@ -1622,105 +1627,136 @@
             "1": {
                 "pro": "2",
                 "feats": "2",
-                "linkFeatures": ["Spherical Spin"]
+                "linkFeatures": ["Forced Motion", "Spherical Spin"]
             },
             "2": {
                 "pro": "2",
                 "feats": "2",
-                "linkFeatures": ["Sculpt Sphere"]
+                "linkFeatures": ["Sculpt Sphere", "Spin Fighting Style"]
             },
             "3": {
                 "pro": "2",
                 "feats": "2",
                 "linkFeatures": ["Return to Sender"],
+                "featFeatures": ["Deadly Accuracy"],
                 "ability": ["Ability Score Improvement"]
             },
             "4": {
                 "pro": "2",
                 "feats": "2",
-                "linkFeatures": ["Harden Flesh"]
+                "linkFeatures": ["Muscle Contraction", "OR", "Tendon Twister", "OR"],
+                "featFeatures": ["Catlike Agility"]
             },
             "5": {
                 "pro": "3",
                 "feats": "2",
-                "linkFeatures": ["Muscle Contraction", "OR", "Sendo Spin"]
+                "linkFeatures": ["Harden Flesh"]
             },
             "6": {
                 "pro": "3",
                 "feats": "3",
-                "linkFeatures": ["Wrist Memory"],
+                "linkFeatures": ["Object Manipulation", "OR", "Wrist Memory"],
                 "ability": ["Ability Score Improvement"]
             },
             "7": {
                 "pro": "3",
                 "feats": "3",
-                "otherFeatures": ["All Sphere Attacks deal an additional die of damage (for example, 1d6 becomes 2d6)"]
+                "linkFeatures": ["Spin Expertise"]
             },
             "8": {
                 "pro": "3",
                 "feats": "3",
-                "linkFeatures": ["Restraining Spin", "OR", "Twisting Spin"],
+                "linkFeatures": ["Projectile Boost", "OR", "Sendo Spin"],
                 "ability": ["Ability Score Improvement"]
             },
             "9": {
                 "pro": "4",
                 "feats": "3",
-                "otherFeatures": ["Choose another Class Feature from the Level 5 or Level 8 options"],
-                "linkFeatures": ["Supernatural Force"]
+                "linkFeatures": ["Immense Friction", "OR", "Restraining Spin", "Spiritual Spin (Variant Rule)"]
             },
             "10": {
                 "pro": "4",
                 "feats": "3",
-                "linkFeatures": ["Tendon Twister", "OR", "Medicinal Spin"],
+                "otherFeatures": ["Choose another Class Feature from the Level 4, Level 6, Level 8, or Level 9 options"],
                 "ability": ["Ability Score Improvement"]
             },
             "11": {
                 "pro": "4",
                 "feats": "4",
-                "linkFeatures": ["Defensive Spin", "OR", "Satellite Spin"]
+                "linkFeatures": ["Custom Spin Technique"]
             },
             "12": {
                 "pro": "4",
-                "feats": "4"
+                "feats": "4",
+                "linkFeatures": ["Medicinal Spin", "Satellite Spin"]
             },
             "13": {
                 "pro": "5",
                 "feats": "4",
+                "linkFeatures": ["Preparing For Infinity"],
                 "ability": ["Ability Score Improvement"]
             },
             "14": {
                 "pro": "5",
                 "feats": "4",
-                "otherFeatures": ["All Sphere Attacks deal an additional die of damage (for example, 2d6 becomes 3d6)", "Choose another Class Feature from the Level 5, Level 8, or Level 11 options"]
+                "linkFeatures": ["Spin Mastery"]
             },
             "15": {
                 "pro": "5",
                 "feats": "4",
-                "linkFeatures": ["Special Technique"]
+                "linkFeatures": ["Create Mirage", "OR", "Expose Weakness"]
             },
             "16": {
                 "pro": "5",
-                "feats": "5"
+                "feats": "5",
+                "otherFeatures": ["Choose another Class Feature from the Level 4, Level 6, Level 8, or Level 9, Level 12, or Level 15 options"]
             },
             "17": {
                 "pro": "6",
                 "feats": "5",
-                "ability": ["Ability Score Improvement"]
+                "linkFeatures": ["Deflect Distance Attack", "OR", "Self-Compression"]
             },
             "18": {
                 "pro": "6",
-                "feats": "5"
+                "feats": "5",
+                "otherFeatures": ["Choose another Class Feature from the Level 4, Level 6, Level 8, or Level 9, Level 12, Level 15, or Level 17 options"]
             },
             "19": {
                 "pro": "6",
-                "feats": "5"
+                "feats": "5",
+                "featFeatures": ["Trained Combatant"]
             },
             "20": {
                 "pro": "6",
                 "feats": "6",
-                "linkFeatures": ["Perfect Spiral"]
+                "linkFeatures": ["Perfected Spiral"]
             }
-        }
+        },
+        "otherCols": [{
+            "name": "Spin Dice",
+            "level": {
+                "1": 1,
+                "2": 1,
+                "3": 1,
+                "4": 1,
+                "5": 2,
+                "6": 2,
+                "7": 2,
+                "8": 2,
+                "9": 3,
+                "10": 3,
+                "11": 3,
+                "12": 3,
+                "13": 3,
+                "14": 4,
+                "15": 4,
+                "16": 4,
+                "17": 5,
+                "18": 5,
+                "19": 5,
+                "20": 6
+            }
+        }]
     },
     "Non-Supernatural": {
         "name": "Non-Supernatural Classes",
