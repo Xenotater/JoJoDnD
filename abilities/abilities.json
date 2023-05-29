@@ -424,7 +424,7 @@
         "classes": ["Rip"],
         "desc": [
             "You've learned one of the following schools of combat that enables you to better use your Ripple combatively.",
-            "<ul class='sublist'><li>Disciplined: You gain Proficiency in 2 Saving Throws of your Choice.</li><li>Enhanced Reflexes: As an Reaction you may move up to half your Movement Speed without provoking Opportunity Attacks. You may use this to avoid an AOE Save, but not a single target attack.</li><li>Graceful Fighting: When you make Unarmed Attacks or Attacks using a Simple Melee Weapon you may use Dexterity for both the Attack and Damage rolls.</li><li>Powerful: Rather than using regular AC, you may choose to have your AC be 10 + your Strength Modifier + your Constitution Modifier.</li></ul>"
+            "<ul class='sublist'><li>Disciplined: You gain Proficiency in 2 Saving Throws of your Choice.</li><li>Enhanced Reflexes: As a Reaction you may move up to half your Movement Speed without provoking Opportunity Attacks. You may use this to avoid an AOE Save, but not a single target attack.</li><li>Graceful Fighting: When you make Unarmed Attacks or Attacks using a Simple Melee Weapon you may use Dexterity for both the Attack and Damage rolls.</li><li>Powerful: Rather than using regular AC, you may choose to have your AC be 10 + your Strength Modifier + your Constitution Modifier.</li></ul>"
         ]
     },
     "Recovery_Breathing": {
@@ -440,7 +440,7 @@
         "classes": ["Rip"],
         "desc": [
             "As an Action, for 5 Ripple Points, you may touch a living being and imbue it with your will and supernatural physicality for a short time.",
-            "The creature targeted must make a Charisma Save, shrugging off the effect on a success. A failed save adds +5 to the targets Strength, Dexterity, and Constitution rolls, and forces them to follow whatever simple command you give them for the next minute so long as the command is not directly harmful to the creature.",
+            "The creature targeted must make a Charisma Save, shrugging off the effect on a success. A failed save adds +5 to the target's Strength, Dexterity, and Constitution rolls, and forces them to follow whatever simple command you give them for the next minute so long as the command is not directly harmful to the creature.",
             "This Ability does not work on Constructs or Undead."
         ]
     },
@@ -565,14 +565,6 @@
         "desc": [
             "If your DM allows it, and if you are in a campaign involving Stands, you may now see stands as well as damage them using your Ripple.",
             "Additionally, Stand Users no longer have Advantage on Attacks against you."
-        ]
-    },
-    "Ripple_Cutter": {
-        "name": "Ripple Cutter",
-        "classes": ["Rip"],
-        "desc": [
-            "As an Attack, at the cost of 4 Ripple Points, you are able to take any Ripple conductor (liquids, metals, organic material) and split it apart, propelling it through the air and imbuing it with Ripple energy.",
-            "The range of this is a 5 meter cone in any one direction. Targets must make a Dexterity saving throw, taking 4d10 Slashing damage or half as much on a successful save."
         ]
     },
     "Custom_Ripple_Technique": {
@@ -712,7 +704,7 @@
         "name": "Muscle Contraction",
         "classes": ["Spin"],
         "desc": [
-            "As a Reaction or Attack you may toss a Sphere at a target within the Sphere's Short Range and increase their muscular capabilities of considerably, creating a short burst of energy. The next Strength Check, Attack Roll, or Saving Throw the target makes until the end of their next Turn has a bonus added to the roll equal to your Dexterity Modifier."
+            "As a Reaction or Attack you may toss a Sphere at a target within the Sphere's Short Range and increase their muscular capabilities considerably, creating a short burst of energy. The next Strength Check, Attack Roll, or Saving Throw the target makes until the end of their next Turn has a bonus added to the roll equal to your Dexterity Modifier."
         ]
     },
     "Object_Manipulation": {
@@ -749,7 +741,7 @@
         "classes": ["Spin"],
         "desc": [
             "As an Action, make a DC 30 Acrobatics Check, or make a DC 30 Animal Handling check while riding atop a steed. If you succeed, you gain one of the following benefits. Once you choose which benefit to use, all subsequent uses of this Ability produce the same result.",
-            "<ul class='sublist'><li>You gain an immensely powerful additional Ability that harnesses the Spin, likely one that manipulates space, time, or gravity in some way.</li><li>If you do not have a stand, one manifests at level 15.</li><li>If you are already a Stand User, your stand evolves. The stats of your Stand double, and this change lasts for 1 hour.</li><li>"
+            "<ul class='sublist'><li>You gain an immensely powerful additional Ability that harnesses the Spin, likely one that manipulates space, time, or gravity in some way.</li><li>If you do not have a Stand, one manifests at level 15.</li><li>If you are already a Stand User, your Stand evolves. The stats of your Stand double, and this change lasts for 1 hour.</li><li>"
         ]
     },
     "Preparing_For_Infinity": {
