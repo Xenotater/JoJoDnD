@@ -10,7 +10,7 @@
         "desc": "The Ripple is an energy that travels through the blood and is powered by breathing. A sacred art, it can be used for both healing and destruction. It is extremely effective against Undead, and it can be used against corporeal objects to manipulate them. The Ripple works similarly to electricity, in that it is able to travel through liquids, metals, and most biomass incredibly well.",
         "extra": [{
             "name": "Honed Body",
-            "desc": "Ripple Users' bodies are much better honed than the bodies of most Humans. Normally, Humans are limited to having a maximum of 20 of any Ability Score. However, if you have any Levels in Ripple, your maximum Strength, Dexterity, and Constitution may be 24."
+            "desc": "Ripple Users' bodies are much better honed than the bodies of most Humans. Rather than a maximum of 20 in each Ability Score, Ripple users have a maximum of 24 for their Strength, Dexterity, and Constitution"
         },
         {
             "name": "Ripple Conductors",
@@ -18,13 +18,13 @@
         },
         {
             "name": "Ripple Points",
-            "desc": "A Ripple User has an amount of Ripple Points equal to their Level. If they can comfortably breathe, they regain 1 Ripple Point at the start of each Turn."
+            "desc": "Each Ripple User has an amount of Ripple Points equal to their level in Ripple. If a Ripple User is able to comfortably breathe, they gain 1 Ripple Point at the top of initiative"
         },
         {
             "name": "Undead's Bane",
-            "desc": "Against Undead creatures such as <a href='/races/?focus=Zombie'>Zombies</a>, <a href='/races/?focus=Ghoul'>Ghouls</a>, <a href='/races/?focus=Vampire'>Vampires</a>, or <a href='/races/?focus=Enhanced_Pillar_Man'>Enhanced Pillar Men</a>, attacks involving Ripple deal <b>double damage</b>. A successful hit upon the head of one of these creatures also deals double damage. Ripple-infused attacks against Pillar Men deal an extra 1d4 damage."
+            "desc": "Any Radiant Damage you deal is doubled against Undead."
         }],
-        "notes": ["You may not use any abilities involving The Ripple, nor regain Ripple Points, when unable to breathe."],
+        "notes": ["When unable to breathe, Ripple Users are not able to regain Ripple Points."],
         "theme": "sun",
         "level": {
             "1": {
@@ -36,92 +36,92 @@
             "2": {
                 "pro": "2",
                 "feats": "2",
-                "linkFeatures": ["Healing Ripple", "Rippling Weapon"],
+                "linkFeatures": ["Healing Ripple", "Liquid Solidification", "Ripple Fighting Style"],
                 "ability": ["Increase Str, Dex, or Con Score by 1"]
             },
             "3": {
                 "pro": "2",
                 "feats": "2",
-                "linkFeatures": ["Ionic Rippling"],
                 "featFeatures": ["Headhunter"], 
                 "ability": ["Ability Score Improvement"]
             },
             "4": {
                 "pro": "2",
                 "feats": "2",
-                "linkFeatures": ["Zoom Punch", "OR", "Ripple Pressure", "OR", "Sunlight Yellow Overdrive"],
+                "linkFeatures": ["Rippling Weapon", "OR"],
+                "featFeatures": ["Martial Arts"],
                 "ability": ["Increase Str, Dex, or Con Score by 1"]
             },
             "5": {
                 "pro": "3",
                 "feats": "2",
-                "otherFeatures": ["Choose another Class Feature from the Level 4 options"]
+                "linkFeatures": ["Ripple Regeneration", "Toxin Expulsion"],
+                "featFeatures": ["Trained Combatant"]
             },
             "6": {
                 "pro": "3",
                 "feats": "3",
-                "linkFeatures": ["Ripple Regeneration"],
+                "linkFeatures": ["Ripple Pressure", "OR", "Sunlight Yellow Overdrive", "OR", "Zoom Punch"],
                 "ability": ["Ability Score Improvement", "Increase Str, Dex, or Con Score by 1"]
             },
             "7": {
                 "pro": "3",
                 "feats": "3",
-                "linkFeatures": ["Sendo Overdrive", "OR", "Scarlet Overdrive"]
+                "linkFeatures": ["Ripple Perception"]
             },
             "8": {
                 "pro": "3",
                 "feats": "3",
-                "otherFeatures": ["Choose another Class Feature from the Level 4 or Level 7 options"],
+                "linkFeatures": ["Scarlet Overdrive", "OR", "Sendo Overdrive"],
                 "ability": ["Ability Score Improvement", "Increase Str, Dex, or Con Score by 1"]
             },
             "9": {
                 "pro": "4",
                 "feats": "3",
-                "linkFeatures": ["Toxin Expulsion"]
+                "linkFeatures": ["Conductor Shield", "Spiritual Ripple (Variant Rule)"]
             },
             "10": {
                 "pro": "4",
                 "feats": "3",
-                "linkFeatures": ["Ripple Shield", "OR", "Ripple Cutter"],
+                "otherFeatures": ["Choose another Class Feature from the Level 4, Level 6, or Level 8 options"],
                 "ability": ["Ability Score Improvement", "Increase Str, Dex, or Con Score by 1"]
             },
             "11": {
                 "pro": "4",
                 "feats": "4",
-                "linkFeatures": ["Liquid Solidification"]
+                "linkFeatures": ["Custom Ripple Technique"]
             },
             "12": {
                 "pro": "4",
                 "feats": "4",
-                "linkFeatures": ["Life Magnet", "OR", "Extreme Healing Ripple"],
+                "linkFeatures": ["Recovery Breathing", "OR", "Ripple Possession"],
                 "ability": ["Increase Str, Dex, or Con Score by 1"]
             },
             "13": {
                 "pro": "5",
                 "feats": "4",
-                "linkFeatures": ["Custom Ripple Technique"],
                 "ability": ["Ability Score Improvement"]
             },
             "14": {
                 "pro": "5",
                 "feats": "4",
-                "otherFeatures": ["Choose another Class Feature from the Level 4, Level 10, or Level 12 options"],
+                "otherFeatures": ["Choose another Class Feature from the Level 4, Level 6, or Level 8 options"],
                 "ability": ["Increase Str, Dex, or Con Score by 1"]
             },
             "15": {
                 "pro": "5",
                 "feats": "4",
-                "linkFeatures": ["Deep Pass Overdrive"]
+                "linkFeatures": ["Deep Pass Overdrive", "Slowed Aging"]
             },
             "16": {
                 "pro": "5",
                 "feats": "5",
-                "ability": ["Increase Str, Dex, or Con Score by 1"]
+                "featFeatures": ["Trained Combatant"]
             },
             "17": {
                 "pro": "6",
                 "feats": "5",
-                "ability": ["Increase Str, Dex, or Con Score by 1"]
+                "linkFeatures": ["Life Magnetism"]
             },
             "18": {
                 "pro": "6",
@@ -131,11 +131,12 @@
             "19": {
                 "pro": "6",
                 "feats": "5",
-                "ability": ["Increase Str, Dex, or Con Score by 1"]
+                "linkFeatures": ["Improved Ripple Perception"]
             },
             "20": {
                 "pro": "6",
                 "feats": "6",
+                "linkFeatures": ["Perfected Ripple"],
                 "ability": ["Increase Str, Dex, or Con Score by 1"]
             }
         },
@@ -170,7 +171,7 @@
         "desc": "Stands are one of, if not, the most iconic part of JoJo's Bizarre Adventure. Most PC's, NPCs, and enemies that you meet or create will most likely be Stand Users. A Stand is the physical manifestation of the soul's fighting spirit. If a person has a strong will to fight, and they are exposed to the right catalyst, they may manifest their Stand Ability in some form.",
         "other": [{
             "name": "Obtaining a Stand",
-        "content": ["<p>There are many ways to obtain a Stand. Very few people are lucky enough to be born with this power, passed down genetically. Some gain power when a relative gains a Stand as well, but this is a rare occurrence. In some cases, a relative that suddenly gains a Stand may also give their relatives a fever, putting them on the track to obtaining a Stand. One of the most common methods of obtaining a Stand comes from getting pierced by a <a href='/artifacts/Stand_Arrow'>Stand Arrow</a>.</p>"]
+        "content": ["<p>There are many ways to obtain a Stand. Very few people are lucky enough to be born with this power, passed down genetically. Some gain power when a relative gains a Stand as well, but this is a rare occurrence. In some cases, a relative that suddenly gains a Stand may also give their relatives a fever, putting them on the track to obtaining a Stand. One of the most common methods of obtaining a Stand comes from getting pierced by a <a href='/artifacts/?focus=Stand_Arrow'>Stand Arrow</a>.</p>"]
         },
         {
             "name": "Rules of Stands",
@@ -201,7 +202,7 @@
             "name": "Stand AC",
             "content": [
                 "<p>Stand AC works the same way as regular AC, but using the Stand's stats. Keep in mind the 3 ways to calculate AC mentioned on the <a href='/rules'>Rules</a> page. When your Stand is within 2 Meters of you your Stand can protect you from attacks using its AC. Like normal, if an Attack Roll is less than your AC it misses. However, if the Attack Roll is between your Stand AC and your own AC it hits your Stand instead, allowing you to apply your Stand's Damage Reduction. Additionally, if the damage type is Non-Stand, it simply bounces off of your Stand or phases through it. An Attack Roll higher than your Stand AC is a direct hit to the User.</p>",
-                "<p><small><b>Note: </b><i>Enhancement/Independant Stands are able to be affected by all damage types, rather than just Stand damage. Independent-Types also have both a regular AND Stand AC for the sake of Damage Reduction, despite not technically having a user.</i></small></p>"
+                "<p><small><b>Note: </b><i>Enhancement/Independant Stands are able to be affected by all damage types, rather than just Stand damage. Independent-Types also have both a regular AND Stand AC for the sake of Damage Reduction, despite not technically having a User.</i></small></p>"
             ]
         },
         {
@@ -242,7 +243,7 @@
                 "exampleOf": "Power Stands",
                 "examples": ["Star Platinum", "Crazy Diamond", "Gold Experience"],
                 "links": ["Star_Platinum", "Crazy_Diamond", "Gold_Experience"],
-                "desc": "Power-Type Stands are considered to be some of the most dangerous and powerful due to their all around physical ability. They're also the most common. Most opponents have no chance facing off against a Power-Type Stand user when within their range, but they do have a weakness in their extremely short range.",
+                "desc": "Power-Type Stands are considered to be some of the most dangerous and powerful due to their all around physical ability. They're also the most common. Most opponents have no chance facing off against a Power-Type Stand User when within their Range, but they do have a weakness in their extremely Short Range.",
                 "hDice": "1d12",
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
@@ -525,7 +526,7 @@
                 "exampleOf": "Remote Stands",
                 "examples": ["Highway Star", "Black Sabbath", "Goo Goo Dolls", "Manhattan Transfer"],
                 "links": ["Highway_Star", "Black_Sabbath", "Goo_Goo_Dolls", "Manhattan_Transfer"],
-                "desc": "Remote-Type Stands are immensely powerful. Their Abilities and strength can often not be ignored. However, the users of these Stands often cannot control them, with their Stands instead automatically following a simple task. For example, attack the closest Human until its breathing stops for 5 seconds, prevent anybody from entering a building, use your Ability on anyone who opens a door, attack anyone who steps into a shadow, etc. These Stands, while often powerful indeed, have very easily exploitable weaknesses due to the simple nature of how they function.",
+                "desc": "Remote-Type Stands are immensely powerful. Their Abilities and strength can often not be ignored. However, the Users of these Stands often cannot control them, with their Stands instead automatically following a simple task. For example, attack the closest Human until its breathing stops for 5 seconds, prevent anybody from entering a building, use your Ability on anyone who opens a door, attack anyone who steps into a shadow, etc. These Stands, while often powerful indeed, have very easily exploitable weaknesses due to the simple nature of how they function.",
                 "hDice": "1d10",
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
@@ -667,7 +668,7 @@
                 "exampleOf": "Ability Stands",
                 "examples": ["Hermit Purple", "Earth Wind and Fire (?)", "Moody Blues", "White Album", "Oasis"],
                 "links": ["Hermit_Purple", "Earth_Wind_and_Fire", "Moody_Blues", "White_Album", "Oasis"],
-                "desc": "Many Stands are able to physically manifest themselves clearly and powerfully, but most Ability-Type Stands do not function in the same way. Some Ability Stands are not visible or tangible unless specifically made so by their user. While these Stands have very little in the way of physical power, their masterful use of their Abilities are able to make them more than handy in the fight. ",
+                "desc": "Many Stands are able to physically manifest themselves clearly and powerfully, but most Ability-Type Stands do not function in the same way. Some Ability Stands are not visible or tangible unless specifically made so by their User. While these Stands have very little in the way of physical power, their masterful use of their Abilities are able to make them more than handy in the fight. ",
                 "hDice": "1d6",
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
@@ -946,7 +947,7 @@
                 "exampleOf": "Revenge Stands",
                 "examples": ["Ebony Devil", "Stray Cat", "Notorious B.I.G.", "Civil War"],
                 "links": ["Ebony_Devil", "Stray_Cat", "Notorious_B.I.G", "Civil_War"],
-                "desc": "Some Stands have immense power but are unable to properly function unless their user feels a certain way. Through feelings of hatred, pain, or loss, certain Stands may manifest properly, showing their true form and relentlessly attacking those who wronged their users.",
+                "desc": "Some Stands have immense power but are unable to properly function unless their User feels a certain way. Through feelings of hatred, pain, or loss, certain Stands may manifest properly, showing their true form and relentlessly attacking those who wronged their Users.",
                 "notes": ["You cannot activate a Revenge-Type Stand by yourself. Instead, you must gain enough Grudge points to be able to activate your Stand. An explanation of the Grudge system can be found below."],
                 "hDice": "1d12",
                 "dcName": "Stand DC",
@@ -1102,7 +1103,7 @@
                 "examples": ["Anubis", "Superfly", "Foo Fighters"],
                 "links": ["Anubis", "Superfly", "Foo_Fighters"],
                 "desc": "Independent-Type Stands are quite interesting, and are one of the more rare Stand Types in JoJo's Bizarre Adventure. These Stands are odd because they do not actually have a User, instead in control of themselves. They have the same sort of Attributes that regular Stands do and must follow most of the same rules. However, the Stand is still made up of physical matter, and thus is similar to an Enhancement type Stand in that they can be damaged physically by Non-Stand damage types.",
-                "notes": ["Some Independent Stands did in fact have a user at some point, or might even still have a user. They are not linked together though, as damaging the Stand does no harm to the User and vice versa. However, if a person does or did have an Independent-Type Stand they are still able to sense Stands and Ghosts, just like a normal Stand User would."],
+                "notes": ["Some Independent Stands did in fact have a User at some point, or might even still have a User. They are not linked together though, as damaging the Stand does no harm to the User and vice versa. However, if a person does or did have an Independent-Type Stand they are still able to sense Stands and Ghosts, just like a normal Stand User would."],
                 "hDice": "1d10",
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
@@ -1241,7 +1242,7 @@
                 "exampleOf": "Hive Stands",
                 "examples": ["Bad Company", "Harvest", "Sex Pistols"],
                 "links": ["Bad_Company", "Harvest", "Sex_Pistols"],
-                "desc": "It is said that Stands reflect their users. Hive-Type Stand Users are those that idolize the idea of individuals working as a team. Their Stands are formed of many much smaller Sub-Stands, each one with only a fragment of the power of a full Stand. These smaller parts may act in tandem or each one separately. Because of this, Hive Stands have around the same strength as a normal Stand, but they all have great range.",
+                "desc": "It is said that Stands reflect their Users. Hive-Type Stand Users are those that idolize the idea of individuals working as a team. Their Stands are formed of many much smaller Sub-Stands, each one with only a fragment of the power of a full Stand. These smaller parts may act in tandem or each one separately. Because of this, Hive Stands have around the same strength as a normal Stand, but they all have great range.",
                 "notes": ["Keep an eye on your health. The amount of Instances available for you to use is determined by the percentage of health you are at. If you are at 50% Health, you only have 50% of your Hive Stand available for use. When you are at 0 Hit Points, you may still have a maximum of 1 Stand Instance that functions, but it is recalled, and cannot act in any way. Your amount of Stand Instances only drops to 0 when you die."],
                 "hDice": "1d8",
                 "dcName": "Stand DC",
@@ -1250,7 +1251,7 @@
                 "other": [{
                     "name": "Swarm Attacks",
                     "content": [
-                        "<p>Choose one of the three following saving throws: Strength, Dexterity, or Constitution. When you make a mlee Attack using your Stand, rather than making an attack toll, your target must make a Saving Throw of the type you chose. Your Stand must be within Melee Range of the target in order to make a Swarm Attack. When you make a Swarm Attack, you may choose between the following options:</p>",
+                        "<p>Choose one of the three following saving throws: Strength, Dexterity, or Constitution. When you make a mlee Attack using your Stand, rather than making an Attack Roll, your target must make a Saving Throw of the type you chose. Your Stand must be within melee of the target in order to make a Swarm Attack. When you make a Swarm Attack, you may choose between the following options:</p>",
                         "<p><ul><li>Precise Swarm: 1d6 + Power Modifier damage (this damage increases to 2d6 at Level 11). Your opponent takes full damage if they fail the Saving Throw, or half if they succeed.</li>",
                         "<li>Violent Swarm: 1d10 + Power Modifier damage (this damage increases to 2d10 at Level 11). Your opponent takes full damage if they fail the Saving Throw, or none if they succeed.</li></ul></p>",
                         "<p>This Ability's damage can be a type that you and your DM agree fits for your stand. When you attack using less than half of the total instances of your stand, your target has Advantage on the Saving Throw.</p>" 
@@ -1598,6 +1599,7 @@
         "hDice": "1d8",
         "dcName": "Spin DC",
         "dc": "8 + Dex + Proficiency Bonus",
+        "notes": ["All attacks made using Spheres imbued with the Spin deal Force damage, unless otherwise stated."],
         "extra": [{
             "name": "The Golden Ratio",
             "desc": "A Spin User must have a reference of a 9:16 ratio in order to use the Spin. A 9:16 ratio is found somewhere in almost every uninjured creature, except Humans. The ratio may also be found in something artificial, such as a piece of paper or a tattoo, so long as it is made to be a 9:16 ratio."
@@ -1609,10 +1611,14 @@
                 "class": "minor widen",
                 "head": ["Material", "Range", "Damage", "Effect"],
                 "body": [
-                    ["Wood", "10/30m", "1d4 + Dex", "The Wooden Sphere will splinter and shatter upon contact, causing splinters to fly off in all directions up to 2 meters from the point of the Sphere's impact. Those within 2 meters must make a Dex Save against your Spin DC, taking an additional 1d8 points of Piercing damage on failure. This Damage increases to 2d8 starting at Level 7, and 3d8 at Level 14."],
-                    ["Rubber", "40/240m", "1d6 + Dex", "None"],
-                    ["Stone", "20/60m", "1d8 + Dex", "None"],
-                    ["Metal", "10/30m", "1d10 + Dex", "None"]
+                    ["Satellite Sphere", "20/40m", "-", "Can only be used if you have the <a href='/abilities?focus=Satellite_Spin'>Satellite Spin</a> Ability.This Sphere takes a full Action to throw. The Satellite Sphere is a metal ball covered in many smaller, marble-sized metal balls. At a point in the air that you determine, or on contact, those within 5 meters must make a Wisdom Saving Throw against your spin DC (if targets are in the Long Range, they have Advantage on this Save). On failure, targets are given Disadvantage on all Strength and Dexterity Attack Rolls and Skill Checks, getting to repeat the Wisdom save at the end of their turn. The effect ends on a success, or after 1 minute passes."],
+                    ["Wood", "40/80m", "xd8 Slashing", "The Wooden Sphere will splinter and shatter upon contact, causing splinters to fly off in all directions up to 5 meters from the point of the Sphere's impact. Those within 5 meters must make a Dex Save against your Spin DC (if targets are in the Long Range of this sphere, they have Advantage on this Save), taking full damage on a failed Save or half as much on a success. When used, this Sphere destroys itself."],
+                    ["Rubber", "50/100m", "xd4 + Dex Force", "None"],
+                    ["Polished Wood", "40/80m", "xd6 + Dex Force", "None"],
+                    ["Stone", "30/60m", "xd8 + Dex Force", "None"],
+                    ["Steel", "20/40m", "xd10 + Dex Force", "None"],
+                    ["Ceramic", "15/45m", "xd12 + Dex Force", "When you roll a 19 on an Attack Roll with this Sphere, it counts as a Critical Hit. When used, this Sphere destroys itself."],
+                    ["Diamond", "10/20m", "xd12 + Dex Force", "None"]
                 ]
             }
         }],
@@ -1621,105 +1627,136 @@
             "1": {
                 "pro": "2",
                 "feats": "2",
-                "linkFeatures": ["Spherical Spin"]
+                "linkFeatures": ["Forced Motion", "Spherical Spin"]
             },
             "2": {
                 "pro": "2",
                 "feats": "2",
-                "linkFeatures": ["Sculpt Sphere"]
+                "linkFeatures": ["Sculpt Sphere", "Spin Fighting Style"]
             },
             "3": {
                 "pro": "2",
                 "feats": "2",
                 "linkFeatures": ["Return to Sender"],
+                "featFeatures": ["Deadly Accuracy"],
                 "ability": ["Ability Score Improvement"]
             },
             "4": {
                 "pro": "2",
                 "feats": "2",
-                "linkFeatures": ["Harden Flesh"]
+                "linkFeatures": ["Muscle Contraction", "OR", "Tendon Twister", "OR"],
+                "featFeatures": ["Catlike Agility"]
             },
             "5": {
                 "pro": "3",
                 "feats": "2",
-                "linkFeatures": ["Muscle Contraction", "OR", "Sendo Spin"]
+                "linkFeatures": ["Harden Flesh"]
             },
             "6": {
                 "pro": "3",
                 "feats": "3",
-                "linkFeatures": ["Wrist Memory"],
+                "linkFeatures": ["Object Manipulation", "OR", "Wrist Memory"],
                 "ability": ["Ability Score Improvement"]
             },
             "7": {
                 "pro": "3",
                 "feats": "3",
-                "otherFeatures": ["All Sphere Attacks deal an additional die of damage (for example, 1d6 becomes 2d6)"]
+                "linkFeatures": ["Spin Expertise"]
             },
             "8": {
                 "pro": "3",
                 "feats": "3",
-                "linkFeatures": ["Restraining Spin", "OR", "Twisting Spin"],
+                "linkFeatures": ["Projectile Boost", "OR", "Sendo Spin"],
                 "ability": ["Ability Score Improvement"]
             },
             "9": {
                 "pro": "4",
                 "feats": "3",
-                "otherFeatures": ["Choose another Class Feature from the Level 5 or Level 8 options"],
-                "linkFeatures": ["Supernatural Force"]
+                "linkFeatures": ["Immense Friction", "OR", "Restraining Spin", "Spiritual Spin (Variant Rule)"]
             },
             "10": {
                 "pro": "4",
                 "feats": "3",
-                "linkFeatures": ["Tendon Twister", "OR", "Medicinal Spin"],
+                "otherFeatures": ["Choose another Class Feature from the Level 4, Level 6, Level 8, or Level 9 options"],
                 "ability": ["Ability Score Improvement"]
             },
             "11": {
                 "pro": "4",
                 "feats": "4",
-                "linkFeatures": ["Defensive Spin", "OR", "Satellite Spin"]
+                "linkFeatures": ["Custom Spin Technique"]
             },
             "12": {
                 "pro": "4",
-                "feats": "4"
+                "feats": "4",
+                "linkFeatures": ["Medicinal Spin", "Satellite Spin"]
             },
             "13": {
                 "pro": "5",
                 "feats": "4",
+                "linkFeatures": ["Preparing For Infinity"],
                 "ability": ["Ability Score Improvement"]
             },
             "14": {
                 "pro": "5",
                 "feats": "4",
-                "otherFeatures": ["All Sphere Attacks deal an additional die of damage (for example, 2d6 becomes 3d6)", "Choose another Class Feature from the Level 5, Level 8, or Level 11 options"]
+                "linkFeatures": ["Spin Mastery"]
             },
             "15": {
                 "pro": "5",
                 "feats": "4",
-                "linkFeatures": ["Special Technique"]
+                "linkFeatures": ["Create Mirage", "OR", "Expose Weakness"]
             },
             "16": {
                 "pro": "5",
-                "feats": "5"
+                "feats": "5",
+                "otherFeatures": ["Choose another Class Feature from the Level 4, Level 6, Level 8, or Level 9, Level 12, or Level 15 options"]
             },
             "17": {
                 "pro": "6",
                 "feats": "5",
-                "ability": ["Ability Score Improvement"]
+                "linkFeatures": ["Deflect Distance Attack", "OR", "Self-Compression"]
             },
             "18": {
                 "pro": "6",
-                "feats": "5"
+                "feats": "5",
+                "otherFeatures": ["Choose another Class Feature from the Level 4, Level 6, Level 8, or Level 9, Level 12, Level 15, or Level 17 options"]
             },
             "19": {
                 "pro": "6",
-                "feats": "5"
+                "feats": "5",
+                "featFeatures": ["Trained Combatant"]
             },
             "20": {
                 "pro": "6",
                 "feats": "6",
-                "linkFeatures": ["Perfect Spiral"]
+                "linkFeatures": ["Perfected Spiral"]
             }
-        }
+        },
+        "otherCols": [{
+            "name": "Spin Dice",
+            "level": {
+                "1": 1,
+                "2": 1,
+                "3": 1,
+                "4": 1,
+                "5": 2,
+                "6": 2,
+                "7": 2,
+                "8": 2,
+                "9": 3,
+                "10": 3,
+                "11": 3,
+                "12": 3,
+                "13": 4,
+                "14": 4,
+                "15": 4,
+                "16": 4,
+                "17": 5,
+                "18": 5,
+                "19": 5,
+                "20": 6
+            }
+        }]
     },
     "Non-Supernatural": {
         "name": "Non-Supernatural Classes",
@@ -1790,7 +1827,7 @@
                     "12": {
                         "pro": "4",
                         "feats": "4",
-                        "featFeatures": ["Cleave", "OR", "Adrenaline Rush"]
+                        "featFeatures": ["Whirlwind Attacker", "OR", "Adrenaline Rush"]
                     },
                     "13": {
                         "pro": "5",
@@ -1848,7 +1885,7 @@
                     "3": {
                         "pro": "2",
                         "feats": "2",
-                        "featFeatures": ["Cleave", "OR", "Scarflesh"]
+                        "featFeatures": ["Whirlwind Attacker", "OR", "Scarflesh"]
                     },
                     "4": {
                         "pro": "2",

@@ -1,7 +1,7 @@
 <?php
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
-    require 'Assets/Composer/vendor/autoload.php';
+    require 'Assets/.Composer/vendor/autoload.php';
 
     if ($_POST["action"] == "send")  {
         $mysqli = new mysqli("localhost", getenv('DB_USER'), getenv('DB_PASS'), "JoJoDnD");
