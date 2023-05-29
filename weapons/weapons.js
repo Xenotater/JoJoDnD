@@ -157,7 +157,7 @@ function hint(attr) {
             else
                 return("This weapon can be thrown up to " + range[0] + "m.<br>Once thrown, this weapon must be picked up in order to be used again (unless it is an explosive, in which case it is destroyed).")
         case "Ranged":
-            return("This weapon can fire up to " + range[0] + "m, or as far as " + range[1] + "m with Disadvantage.<br>Firing within melee range imposes Disadvantage.");
+            return("This weapon can fire up to " + range[0] + "m, or as far as " + range[1] + "m with Disadvantage.<br>Firing within melee imposes Disadvantage.");
         case "Firearm":
             return("This weapon makes a loud sound which can be heard up to 0.5km away.<br>It also jams if a natural 1 is rolled while using it.<br>This weapon's ammuntion doesn't function when wet.");
         case "Reload":
@@ -179,7 +179,7 @@ function hint(attr) {
         case "Reliable":
             return("This weapon does not jam if you roll a natural 1.");
         case "Point Blank":
-            return("This weapon does not grant Disadvantage if fired within melee range.<br>Additionally, this weapon grants Advantage when aiming at a Prone target within melee range.");
+            return("This weapon does not grant Disadvantage if fired within melee.<br>Additionally, this weapon grants Advantage when aiming at a Prone target within melee.");
         case "Ambush":
             return("This weapon always crits when attacking a Surprised target.");
         case "Bulky":
