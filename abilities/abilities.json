@@ -494,15 +494,15 @@
         "name": "Toxin Expulsion",
         "classes": ["Rip"],
         "desc": [
-            "Your blood moves and sends energy through your body. Foreign, harmful substances are detected and removed from the body automatically through the point of entry (venom exists through the injection site, poison is immediately spit up completely, etc.).",
-            "You are now immune to toxins of all sorts, including diseases. You gain Immunity to Poison and Acid damage."
+            "As a Reaction, as long as you can comfortably breathe, you may avoid all Poison damage from an Attack or Save you are hit with, or remove the Poisoned Condition from yourself."
         ]
     },
     "Liquid_Solidification": {
         "name": "Liquid Solidification",
         "classes": ["Rip"],
         "desc": [
-            "As a Reaction, as long as you can comfortably breathe, you may avoid all Poison damage from an Attack or Save you are hit with, or remove the Poisoned Condition from yourself."
+            "You may control the surface tension of water using the Ripple, creating a kind of skin around a liquid or allowing you to walk on water.",
+            "You are only able to use this Ability when you are able to comfortably breathe."
         ]
     },
     "Rippling_Weapon": {
