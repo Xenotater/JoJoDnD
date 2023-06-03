@@ -205,7 +205,7 @@
         "classes": ["Hive"],
         "desc": [
             "As a Hive Type Stand User, your Stand functions very differently than a typical Stand. Rather than a Stand being an extension of your will to fight, each Instance of your Stand is like a separate organism that simply must follow your orders. You may have anywhere between 2 and 500 Instances, though once chosen this number must remain constant.",
-            "Each Instance of your Stand only has a fraction of the Power of a regular Stand, but each Instance may act independently of the others or the Stand User. If one Instance is totally destroyed, that fraction of the User's Health is taken away. For example, if you have 12 Instances of your Stand and one gets destroyed you'll take damage equal to your maximum health divided by 12.",
+            "Each Instance may act independently of the others or the Stand User. If one Instance is totally destroyed, that fraction of the User's Health is taken away. For example, if you have 12 Instances of your Stand and one gets destroyed you'll take damage equal to your maximum health divided by 12. The inverse is true as well, losing 1/12th of your health would cause one of your 12 Instances to be destroyed.",
             "If every Instance of your Stand is destroyed, you fall unconscious. If your health is restored, so are your Stand Instances. Even when you fall unconscious, one instance will remain. Only when you die is that Instance destroyed."
         ]
     },
@@ -424,7 +424,7 @@
         "classes": ["Rip"],
         "desc": [
             "You've learned one of the following schools of combat that enables you to better use your Ripple combatively.",
-            "<ul class='sublist'><li>Disciplined: You gain Proficiency in 2 Saving Throws of your Choice.</li><li>Enhanced Reflexes: As a Reaction you may move up to half your Movement Speed without provoking Opportunity Attacks. You may use this to avoid an AOE Save, but not a single target attack.</li><li>Graceful Fighting: When you make Unarmed Attacks or Attacks using a Simple Melee Weapon you may use Dexterity for both the Attack and Damage rolls.</li><li>Powerful: Rather than using regular AC, you may choose to have your AC be 10 + your Strength Modifier + your Constitution Modifier.</li></ul>"
+            "<ul class='sublist'><li>Disciplined: You gain Proficiency in 2 Saving Throws of your Choice.</li><li>Enhanced Reflexes: As a Reaction you may move up to half your Movement Speed without provoking Opportunity Attacks. You may use this to avoid an AOE Save, but not a single target attack.</li><li>Graceful Fighting: When you make Unarmed Attacks or Attacks using a Simple Melee Weapon you may use Dexterity for both the Attack and Damage rolls. Additionally, you may use your Unarmed Dice with a Simple Melee Weapon instead of its regular damage die.</li><li>Powerful: Rather than using regular AC, you may choose to have your AC be 10 + your Strength Modifier + your Constitution Modifier.</li></ul>"
         ]
     },
     "Recovery_Breathing": {
