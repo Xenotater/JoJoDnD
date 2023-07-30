@@ -64,7 +64,7 @@
         "name": "Whirlwind Attacker",
         "desc": "You know how to create and take advantage of opportunities.",
         "effects": [
-            "When you drop an enemy to 0 HP, you may make another melee atack for free on a nearby target. This Feat may tie into itself.",
+            "When you drop an enemy to 0 HP, you may make another melee attack for free on a nearby target. This Feat may tie into itself.",
             "Additionally, as an Action, you may force every hostile creature within a meter of you to make a Dexterity Saving Throw against a DC of 8 + Proficiency Bonus + Strength Modifier. If they fail the Save you deal an amount of damage equal to your unarmed strike, the melee weapon you are holding, or your Stand's attack damage. If they succeed, they take no damage."
         ]
     },
@@ -386,7 +386,7 @@
         "desc": "Through training and patience, you have gained the ability to accurately use rifles.",
         "effects": [
             "You gain Proficiency in the use of any weapon with the \"Rifle\" specialization type.",
-            "When you roll a 19 on an Attack Roll with a Rifle, it is counted as a critical hit just as if you had rolled a 20.",
+            "When you roll a 19 on an Attack Roll with a Rifle, it is counted as a Critical hit just as if you had rolled a 20.",
             "While using a Rifle, you may attack at Long Range without imposing Disadvantage.",
             "If you are already Proficient in the use of a Rifle, you gain Expertise in it."
         ]

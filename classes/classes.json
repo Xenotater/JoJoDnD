@@ -1296,7 +1296,7 @@
                 "other": [{
                     "name": "Swarm Attacks",
                     "content": [
-                        "<p>Choose one of the three following saving throws: Strength, Dexterity, or Constitution. When you make a mlee Attack using your Stand, rather than making an Attack Roll, your target must make a Saving Throw of the type you chose. Your Stand must be within melee of the target in order to make a Swarm Attack. When you make a Swarm Attack, you may choose between the following options:</p>",
+                        "<p>Choose one of the three following saving throws: Strength, Dexterity, or Constitution. When you make a melee Attack using your Stand, rather than making an Attack Roll, your target must make a Saving Throw of the type you chose. Your Stand must be within melee of the target in order to make a Swarm Attack. When you make a Swarm Attack, you may choose between the following options:</p>",
                         "<p><ul><li>Precise Swarm: 1d6 + Power Modifier damage (this damage increases to 2d6 at Level 11). Your opponent takes full damage if they fail the Saving Throw, or half if they succeed.</li>",
                         "<li>Violent Swarm: 1d10 + Power Modifier damage (this damage increases to 2d10 at Level 11). Your opponent takes full damage if they fail the Saving Throw, or none if they succeed.</li></ul></p>",
                         "<p>This Ability's damage can be a type that you and your DM agree fits for your stand. When you attack using less than half of the total instances of your stand, your target has Advantage on the Saving Throw.</p>" 
