@@ -1,10 +1,17 @@
 {
+    "Ambush_Attacker": {
+        "name": "Ambush Attacker",
+        "classes": ["Rng"],
+        "desc": [
+            "Melee Attacks from your stand or the Focused Attack from <a class='in-page'>Ranged Attack</a> gain the Ambush property, meaning that they always inflict a Critical hit when attacking a Surprised target."
+        ]
+    },
     "Anchored_Stand": {
         "name": "Anchored Stand",
         "classes": ["Enh", "Ind"],
         "desc": [
             "Your Stand is physically attached and anchored to a physical object. As such, your Stand may be damaged by physical means, as well as Stands. However, regardless of if your Stand takes physical or Stand damage, you still apply the same Damage Reduction to it.",
-            "Also, both you and your Stand gain Vulnerability (double damage) to one damage type of your choice, as well as the Stand counterpart to that damage type.",
+            "Also, both you and your Stand gain Vulnerability (double damage) and Resistance (half damage) to one damage type of your choice, as well as the Stand counterparts to those damage types.",
             "If you are an Enhancement-Type Stand User, you must find an amount of material (or a specific object) that fits your specific anchor. This material must be within your Stand's Range in order for you to use it to Activate your Stand."
         ]
     },
@@ -51,14 +58,6 @@
             "It takes 1d4 hours for it to fully regenerate and be able to manifest again. However, if you are killed or knocked unconscious your Stand will cease to exist. "
         ]
     },
-    "Energy_Conservation": {
-        "name": "Energy Conservation",
-        "classes": ["Abl"],
-        "desc": [
-            "You've become an expert at using your Stand's Ability. As such, you may expend less Stand Energy to perform the same Abilities.",
-            "You consume half as much Stand Energy when using abilities that consume it, except for Ultimate Ability, which consumes the same amount as normal."
-        ]
-    },
     "General_Anchors": {
         "name": "General Anchors",
         "classes": ["Enh"],
@@ -71,7 +70,7 @@
         "name": "Hot Pursuit",
         "classes": ["Rng", "Hive"],
         "desc": [
-            "Whenever you are chasing after somebody, your Stand may keep pace with them regardless of Movement Speed, so long as you can see them and they remain within your Stand's Range."
+            "When an opponent moves outside of your Stand's melee range, you may spend your Reaction to move up to half your Stand's Movement Speed to bring you closer to your target."
         ]
     },
     "Immense_Power": {
@@ -95,8 +94,38 @@
         "classes": ["Enh", "Ind", "Hive"],
         "desc": [
             "Your Stand is incredibly resilient, a reflection of your willpower and experience.",
-            "Rather than using the normal Damage Reduction formula, you may instead simply reduce an amount of damage equal to your Durability Modifier + your Constitution Modifier (even if you are an Independent-Type Stand).",
-            "If you obtain the <a  class='in-page'>Armored Stand</a> ability, it replaces this one."
+            "Your Stand's Damage Reduction increases by double your Constitution Modifier.",
+            "<a class='in-page'>Armored Stand</a> still applies, but applies before this increase."
+        ]
+    },
+    "Improved_Awareness": {
+        "name": "Improved Awareness",
+        "classes": ["Rng", "Hive", "Act"],
+        "desc": [
+            "<b>Prerequisite: <a class='in-page'>Detached Senses</a></b>",
+            "Your Stand has a 3 meter Blindsense when summoned. Your Stand's Passive Perception also increases by 5 when summoned."
+        ]
+    },
+    "Improved_Immense_Range": {
+        "name": "Improved Immense Range",
+        "classes": ["Rmt", "Hive"],
+        "desc": [
+            "<b>Prerequisite: <a class='in-page'>Immense Range</a></b>",
+            "Your Stand's Range and any points that go into your Stand's Range score by an additional x10."
+        ]
+    },
+    "Improved_Slippery": {
+        "name": "Improved Slippery",
+        "classes": ["Rng"],
+        "desc": [
+          "In addition to being able to Dash and Disengage as a Bonus Action with your Stand or if your stand is within 2m, you also gain the ability to Dodge as a Bonus Action with yourStand or if your stand is within 2m."  
+        ]
+    },
+    "Juggernaut": {
+        "name": "Juggernaut",
+        "classes": ["Rmt", "Enh", "Ind"],
+        "desc": [
+            "Your Stand's Movement Speed cannot be reduced to less than half, including through Conditions such as Frightened or Grappled."
         ]
     },
     "Oblivious_Facade": {
@@ -107,6 +136,14 @@
             "You get Advantage on Deception Checks to pass yourself off as a Non-Stand User."
         ]
     },
+    "Perfected_Tremorsense": {
+        "name": "Perfected Tremorsense",
+        "classes": ["Rng"],
+        "desc": [
+            "<b>Prerequisite: <a class='in-page'>Detached Senses</a></b>",
+            "While intangible and inside of a solid surface (such as in a wall or underground), or while touching a solid surface, your Stand has a Tremorsense of 20 meters."
+        ]
+    },
     "Programmed_Stand": {
         "name": "Programmed Stand",
         "classes": ["Rmt"],
@@ -115,12 +152,12 @@
             "Examples include: preventing anybody from entering a specific building, using your Ability on anyone who opens a door, attacking anyone who steps into a shadow, etc."
         ]
     },
-    "Remote_Grappler": {
-        "name": "Remote Grappler",
+    "Remote_Ambusher": {
+        "name": "Remote Ambusher",
         "classes": ["Rmt"],
         "desc": [
-            "Your Stand is practiced in Grappling in order to engage in combat with somebody.",
-            "Your Stand now gets Advantage when attempting to grapple a Stand, Object, or Stand User. "
+            "Rather than pursuing a target directly, the Stand will take a longer path if it means a possibility of a surprise attack.",
+            "In addition, melee attacks with your Stand gain the Ambush property, meaning that they always inflict a Critical hit when attacking a Surprised target."
         ]
     },
     "Second_Life": {
@@ -128,7 +165,7 @@
         "classes": ["Rev"],
         "desc": [
             "This Ability Activates when you and your Stand die. Your body remains lifeless for between 1 minute and 24 hours. At some point within this timeframe, your Stand reawakens as an Independent-Type Stand, complete with your mental capacity and memories.",
-            "You retain all of your Experience Points, but all of your Health, <a href='/feats'>Feats</a>, Proficiencies and Abilities are reset. This effectively means you may make a new character with as many levels in Independent-Type as you had in Revenge-Type, as long as it retains the same memories you had in your first life."
+            "You retain all of your Experience Points, but all of your Health, <a href='/feats'>Feats</a>, Proficiencies and Abilities are reset. This effectively means you may make a new character with as many Levels in Independent-Type as you had in Revenge-Type, as long as it retains the same memories you had in your first life."
         ]
     },
     "Self_Repair": {
@@ -136,8 +173,9 @@
         "classes": ["Ind"],
         "desc": [
             "Your Stand (which may be yourself) acts independently of everything else. It does not have a physical form outside of the form that it has taken. As such, you must find a way to protect yourself and survive.",
-            "As an Action you may roll a Hit Die to heal, but you must spend 2 Hit Dice in order to roll one Hit Die. If you do not have enough Hit Dice for that roll, you may not heal.",
-            "Outside of Combat, every minute that you stand perfectly still, you may heal an amount of HP equal to your Durability Modifier."
+            "You may heal yourself swiftly both inside and outside of combat, using a special substance or form of energy such as water, electricity, or sunlight. When you have access to this substance, as an Action, you may heal an amount of Hit Points equal to double your Level in Independant Type.",
+            "You may use this Ability an amount of times equal to your Constitution Modifier per Short Rest (minimum of 1).",
+            "Additionally, if you remain motionless for 5 minutes, you may spend Hit Dice, as though you were taking a Short Rest, but without other Short Rest benefits."
         ]
     },
     "Self_Acclimation": {
@@ -181,6 +219,13 @@
             "Your Stand has undergone an evolution, and has gained a new Ability alongside its new form.",
             "This Ability should be an evolution of your first Ability. Similar, but stronger or more versatile.",
             "This Ability follows the same guidelines as any other <a class='in-page'>Custom Ability</a>."
+        ]
+    },
+    "Superior_Momentum": {
+        "name": "Superior Momentum",
+        "classes": ["Rmt"],
+        "desc": [
+            "Your Stand has Advantage on all Power, Precision, and Durability Saving Throws."
         ]
     },
     "Third_Ability": {
@@ -232,33 +277,34 @@
             "An example of an Ultimate Stand Ability is <a href='https://jojo.fandom.com/wiki/White_Album' target='_blank'>White Album</a>'s Gently Weeps."
         ]
     },
+    "Zealous_Focus": {
+        "name": "Zealous_Focus",
+        "classes": ["Rmt"],
+        "desc": [
+            "Your Stand is unable to be affected or impeded by any Ability that requires the Stand to make an Intelligence, Wisdom, or Charisma Saving Throw. In addition, they are not fooled by illusions."
+        ]
+    },
     "Lasting_Grudge": {
         "name": "Lasting Grudge",
         "classes": ["Rev"],
         "desc": [
-            "Rather than lasting for an amount of Turns equal to your level in Revenge-Type (minimum of 2), your Grudge Points last for an amount of minutes equal to your level in Revenge-Type (minimum of 2).",
-            "Additionally, when you spend 5 Points to summon your Stand in its entirety, rather than lasting for an amount of Turns equal to your level in Revenge-Type (minimum of 2), it lasts for a number of minutes equal to your level in Revenge-Type (minimum of 2)."
+            "Rather than lasting for an amount of Turns equal to your Level in Revenge-Type (minimum of 2), your Grudge Points last for an amount of minutes equal to your Level in Revenge-Type (minimum of 2).",
+            "Additionally, when you spend 5 Points to summon your Stand in its entirety, rather than lasting for an amount of Turns equal to your Level in Revenge-Type (minimum of 2), it lasts for a number of minutes equal to your Level in Revenge-Type (minimum of 2)."
         ]
     },
-    "Block_Physical_Projectile": {
+    "Block_Projectile": {
         "name": "Block Physical Projectile",
         "classes": ["Pwr", "Act"],
         "desc": [
-            "When a physical projectile (bullet, arrow, thrown object, etc.) lands a Direct Hit, you may roll 1d6 as a Reaction and add your Stand's Precision Modifier. If the result is higher than the damage that the projectile would deal, you may instead catch or block the projectile and take no damage."
+            "When you or your stand is hit with a projectile, as long as your stand is hit or you are within 2 meters of it, you may attempt to block it. As a Reaction you may reduce the damage of the oncoming projectile by 1d12 + your Stand's Precision Modifier"
         ]
     },
-    "Block_Stand_Projectile": {
-        "name": "Block Stand Projectile",
-        "classes": ["Pwr", "Act"],
-        "desc": [
-            "When a Stand-based projectile or group of projectiles such as a <a class='in-page'>Ranged Attack</a> (<a href='https://jojo.fandom.com/wiki/Heirophant_Green' target='_blank'>Heirophant Green</a>'s Emerald Splash, <a href='https://jojo.fandom.com/wiki/Foo_Fighters' target='_blank'>Foo Fighters</a>' bullets, <a href='https://jojo.fandom.com/wiki/Tusk' target='_blank'>Tusk</a>'s Nails) lands a Stand Hit or Direct Hit, you may roll 1d6 as a Reaction and add your Stand's Precision Modifier. If the result is higher than the damage that the projectile would deal you may instead catch or block the projectile and take no damage."
-        ]
-    },
-    "Counterattacking_Blow": {
-        "name": "Counterattacking Blow",
+    "Blow_for_Blow": {
+        "name": "Blow for Blow",
         "classes": ["Pwr"],
         "desc": [
-            "As an Action you may set up a Counterattacking Blow. When somebody enters your Stand's Range (if your Stand is within its movement speed), or at any time when your Target is within your melee, you may make an attack with Advantage as a Reaction. If the attack hits you may roll twice as many Damage Dice."
+            "When you are hit with a melee attack, you may use your Reaction to halve the damage of any melee attack from that opponent until the start of your next turn.",
+            "Additionally, the first time they damage you with a melee attack after using this Ability you may make a single melee attack in return."
         ]
     },
     "Camouflage": {
@@ -269,11 +315,27 @@
             "This disguise allows your Stand to perform surprise attacks if opponents do not take note. Anyone attempting to determine what your Stand is disguised as has Disadvantage on the roll, as long as your Stand does not move."
         ]
     },
+    "Condensed_Material": {
+        "name": "Condensed Material",
+        "classes": ["Enh"],
+        "desc": [
+            "Choose either Power, Precision, or Durability. While within a quarter of its maximum Range, that stat is doubled.",
+            "The chosen stat may not be changed once selected."
+        ]
+    },
     "Defensive_Ability": {
         "name": "Defensive Ability",
         "classes": ["Abl", "Ind"],
         "desc": [
             "Through clever use of your Stand's Ability you've found a way to properly defend yourself. As an Action you may spend 2 Stand Energy and gain one of the following benefits for 3 Turns (not including the one that you activate it on). You may only have one of the following buffs active at a time.<ul class='sublist'><li>+2d4 AC (Both for Stand and User)</li><li>Advantage on all Saving Throws</li><li>An amount of Temporary Hit Points equal to twice your Level</li></ul>"
+        ]
+    },
+    "Defenseive_Stance": {
+        "name": "Defensive Stance",
+        "classes": ["Pwr", "Rng", "Ind"],
+        "desc": [
+            "When taking the Dodge Action, you may choose to take a quarter (rounded down) damage from enemy attacks instead of the normal effect of Dodge. You still gain 1 Stand Energy back as normal when using the Dodge Action in this way.",
+            "This Ability only applies on Stand hits, unless your Stand is within 2m to protect you."
         ]
     },
     "Defensive_Wave": {
@@ -282,6 +344,31 @@
         "desc": [
             "As an Action you may give yourself a buff that remains active until the start of your next Turn. Your Stand is a bunch of little instances that can hold themselves together in order to form a shield in order to protect their User.",
             "When this Shield is active, any Stand Hits count as a Miss. You or your Stand may not use your Movement Actions until your next Turn. If you had already moved this Turn, you may not activate this Action."
+        ]
+    },
+    "Devastating_Critical": {
+        "name": "Devastating Critical",
+        "classes": ["Pwr", "Rev"],
+        "desc": [
+            "When you roll a Critical hit on a melee attack using your Stand, you roll three times the damage dice, rather than double."
+        ]
+    },
+    "Devastating_Melee": {
+        "name": "Devastating Melee",
+        "classes": ["Pwr", "Rev"],
+        "desc": [
+            "If you would have two conditions that would give you Advantage on a melee attack at the same time and you have no Disadvantage, you may instead roll 3 dice and take the highest of the three."
+        ]
+    },
+    "Enhanced_Custom_Ability": {
+        "name": "Enhanced Custom Ability",
+        "classes": ["Abl"],
+        "desc": [
+            "Talk to your DM if you have a special case or have an idea for how to make your Ability more useful/powerful, or choose from one of the following ways how your Stand's Ability is empowered:",
+            "<ul class='sublist'>If your Stand uses Scaling Dice, you gain an additional amount of Ability Dice equal to your Proficiency Bonus (A Level 20 stand user with this would have 16dx dice, for example, with 10dx from their class table + 6dx from their Proficiency Bonus).</li>",
+            "<li>Your Stand gains a Short and Long Range. The Short Range of your Stand is where the range of your Stand's Ability would normally end, and functions as normal. If you make attack rolls or force an enemy to make a Save with your Stand's Custom Ability while your target is within your Long Range, you have Disadvantage on the attack roll, or your enemy has Advantage on the Saving Throw.</li>",
+            "<li>Your Stand's Custom Ability increases greatly in its usefulness. A numerical value within your Stand's Custom Ability that determines how much it can affect at once increases by double. This may range from the amount of targets you may affect, to kilograms of an object you can affect, to seconds or time manipulated, etc.</li></ul>",
+            "Make sure to check with your DM, as they will want to know how the Custom Ability has been changed. It's important to check because such a change may be significant, and they need to let you know if it seems game-breaking, or something that will change how they plan based on your character."
         ]
     },
     "Feat_of_Power": {
@@ -293,12 +380,59 @@
             "This Ability may not be used as an attack against a creature, Undead, or Construct that does not wish to be manipulated by your Stand, unless they are Unconscious."
         ]
     },
+    "Fleeting_Invulnerability": {
+        "name": "Fleeting Invulnerability",
+        "classes": ["Ind"],
+        "desc": [
+            "<b>Prerequisite: <a class='in-page'>Armored Stand</a></b>",
+            "Once per long rest, as a Reaction, you may ignore one instance of damage taken, taking 0 damage instead.",
+            "You may not reduce a damage type that you are Vulnerable to."
+        ]
+    },
+    "Focused_Hatred": {
+        "name": "Focused Hatred",
+        "classes": ["Rev"],
+        "desc": [
+            "You may use your Bonus Action to spend 1 Grudge Point and mark a hostile creature as a target that has drawn your attention and rage. Until the end of the combat encounter, or until you stop interacting with them, you deal a Critical hit against them on an 18, 19, or 20 roll of a d20, rather than just a 20.",
+            "You may only have this Ability active on one person at a time, but are able to switch your target as a Bonus Action at the cost of another Grudge Point."
+        ]
+    },
+    "Great Recall": {
+        "name": "Great Recall",
+        "classes": ["Hive"],
+        "desc": [
+            "As an Action, you may place all of your Stand's Instances at a single point that you can see, regardless of how far they were away previously"
+        ]
+    },
+    "Hit_List": {
+        "name": "Hit List",
+        "classes": ["Rev"],
+        "desc": [
+            "You may create a list of up to 5 names, specifically of people or creatures who have directly wronged you at some point. If you come into contact with that person or creature, you immediately gain 5 Grudge Points. You hold on to those Grudge Points until you stop interacting with that person.",
+            "People or Creatures may be removed from this list if you resolve your issues with them, or if you feel you have gotten your revenge."
+        ]
+    },
+    "Instant_Swap": {
+        "name": "Instant Swap",
+        "classes": ["Act"],
+        "desc": [
+            "As a Free Action you may swap between Acts of your Stand, even if you have already done so this turn. The other requirements for switching between Acts still apply.",
+            "You may use this Ability once per Short Rest."
+        ]
+    },
+    "Lethal_Strike": {
+        "name": "Lethal Strike",
+        "classes": ["Pwr"],
+        "desc": [
+            "When you attack an unsuspecting enemy outside of combat, the first time you hit them you may force them to make a Constitution (not Durability) Saving Throw against a DC of 8 + your Strength Modifier + your PB. If they fail the Save, you deal double damage against them."
+        ]
+    },
     "Melee_Barrage": {
         "name": "Melee Barrage",
         "classes": ["Pwr", "Rng", "Ind", "Act"],
         "desc": [
             "Using this Ability takes an entire Turn (consuming Action, Bonus Action, and Movement Action), you may perform a number of melee attacks equal to your Stand's Speed Modifier (+6 Speed would mean 6 attacks in one Melee Barrage), with a maximum of 10 attacks.",
-            "Each hit functions as normal in terms of the Attack Rolls, but when you deal damage, you do not add your Stand's Power Modifier to the Damage Rolls. The Damage Dice for these attacks is whatever your Stand Type would deal at level 1, you may not use upgraded dice gained from Level 11 or from being an Undead.",
+            "Each hit functions as normal in terms of the Attack Rolls, but when you deal damage, you do not add your Stand's Power Modifier to the Damage Rolls. The Damage Dice for these attacks is whatever your Stand Type would deal at Level 1, you may not use upgraded dice gained from Level 11 or from being an Undead.",
             "Furthermore, you may not Activate a Stand Ability with any of these attacks, and if you roll a 1 on any of these Attack Rolls, the Melee Barrage ends.",
             "For Act Types, it should be noted that Act 3 Melee Barrage uses 1d10, rather than 2d8 for the Damage Dice."
         ]
@@ -317,38 +451,6 @@
             "The individual instances of your Stand may work as a collective, with the purpose of moving you to one place extremely quickly. As an Action you and your Stand may be transported to the same place, up to an amount of meters equal to twice your Stand's Movement Speed, without consuming your Movement Action. You may also climb, move through water, or across Difficult Terrain without penalty to your movement."
         ]
     },
-    "Near_Death_Escape": {
-        "name": "Near-Death Escape",
-        "classes": ["Rev"],
-        "desc": [
-            "When your HP is at a quarter of your maximum or less, you may activate this Ability as a Reaction.",
-            "For the next minute, you may Dash, Disengage, or Hide as a Bonus Action, but if you use your Stand Ability or deal any damage the Ability ends prematurely.",
-            "You may use this Ability once per Short Rest."
-        ]
-    },
-    "Offensive_Blow": {
-        "name": "Offensive Blow",
-        "classes": ["Pwr"],
-        "desc": [
-            "If you have not used your Movement Action for this Turn, you may hold your ground and perform an Offensive Blow as a Bonus Action. This gives you Advantage on the next Attack that you take this Turn, and you may use it at any point while attacking, as long as you have at least one Attack remaining for your Turn.",
-            "If the Attack with Advantage hits, you may roll double Damage Dice. You may not use your Movement Action after using this Ability."
-        ]
-    },
-    "Pincer_Attack": {
-        "name": "Pincer Attack",
-        "classes": ["Rng"],
-        "desc": [
-            "In order to prepare this Ability, you must successfully hide your Stand in a specific place within your Range. Preparing your Stand in a hiding place also counts as an Action.",
-            "Once it has been prepared, you may activate this Ability when you perform the Attack Action. You may spend just one Attack, but both you and your Stand may both make an attack. Both of these attacks also gain Advantage."
-        ]
-    },
-    "Powerful_Flex": {
-        "name": "Powerful Flex",
-        "classes": ["Abl", "Hive"],
-        "desc": [
-            "As an Action, and at the cost of 1 Stand Energy, you may use your Ability in a threatening way in order to make an Intimidation roll with Advantage."
-        ]
-    },
     "Ranged_Attack": {
         "name": "Ranged Attack",
         "classes": ["Rng", "Abl", "Ind"],
@@ -358,6 +460,36 @@
             "<li><b>Burst Attack:</b> Everyone within a 5 meter cone (10 meters at Level 11) in front of your Stand must make a Dexterity Saving Throw. The DC for this Save is 8 + Precision + Proficiency Bonus. If any creature within the cone fails the Save, they take Stand damage of a type of your choice. This deals an amount of d8s equal to the number of Attacks you have. For example, a Stand User with 120 Speed (and thus 3 Attacks), would deal 3d8 damage.</li></ul>"
         ]
     },
+    "Reckless_Attack": {
+        "name": "Reckless_Attack",
+        "classes": ["Rev"],
+        "desc": [
+            "You may spend 1 Grudge Point to gain Advantage on all attack rolls until your next turn, but all enemies have Advantage on any attack rolls against you."
+        ]
+    },
+    "Rejuvenation": {
+        "name": "Rejuvenation",
+        "classes": ["Pwr"],
+        "desc": [
+            "Once per Short Rest, you may heal an amount of HP equal to 1d12 + your Level in Power Type + Your Constitution Modifier as a Bonus Action."
+        ]
+    },
+    "Regenerative_Surge": {
+        "name": "Regenerative Surge",
+        "classes": ["Ind"],
+        "desc": [
+            "<b>Prerequisite: <a class='in-page'>Self-Repair</a></b>",
+            "Once per Short Rest, if you have access to a considerable amount of the substance you use to Self-Repair, you may consume it all to heal a considerable amount.",
+            "Additionally, as an Action you may heal an amount equal to twice your Level in HP for each use of Self-Repair that you spend. You may use this Ability once per Long Rest."
+        ]
+    },
+    "Second_Nature": {
+        "name": "Second Nature",
+        "classes": ["Abl"],
+        "desc": [
+            "Your Custom Ability's Stand Energy cost is reduced by half (rounded down). This may result in a 0 cost Ability."
+        ]
+    },
     "Self_Preservation": {
         "name": "Self-Preservation",
         "classes": ["Rmt"],
@@ -365,11 +497,19 @@
             "Your Stand may assess situations and make a basic judgement on them. If your Stand believes that the task at hand is too great, it may, instead of carrying out its programming, Hide, Defend, or Retreat. "
         ]
     },
+    "Siege_Combat": {
+        "name": "Siege Combat",
+        "classes": ["Pwr"],
+        "desc": [
+            "Attacks with your Stand deal double damage to objects and structures."
+        ]
+    },
     "Speedy_Switch": {
         "name": "Speedy Switch",
         "classes": ["Enh"],
         "desc": [
-            "As an Reaction you may switch between anchors for your Enhancement Stand very quickly, meaning that if someone attempts to hit you and you activate this ability, the first hit misses automatically. However, if your Stand moves outside of someone's melee, they can still take an Attack of Opportunity."
+            "As an Reaction you may switch between anchors for your Enhancement Stand very quickly, meaning that if someone attempts to hit you and you activate this ability, the first hit misses automatically. However, if your Stand moves outside of someone's melee, they can still take an Attack of Opportunity.",
+            "You may use this Ability once per combat encounter."
         ]
     },
     "Stand_Energy_Recharge": {
@@ -398,10 +538,31 @@
     },
     "Stand_Rush": {
         "name": "Stand Rush",
-        "classes": ["Pwr", "Ind", "Act"],
+        "classes": ["Pwr", "Act"],
         "desc": [
             "When your enemy or your enemy's Stand has been Incapacitated, Restrained, or unwilling to fight for a full Turn or more while in your Stand's melee, you may perform this action. You may also start this Ability for free when you drop someone to 0 Hit Points using some sort of melee Attack with your Stand.",
             "A Stand Rush takes an entire Turn, but if desired, may go on for a maximum of 10 Turns. Through this action, your Stand may punch an amount of times equal to your Stand's Speed Modifier. You may choose whether or not to make this lethal. When trapped within a Stand Rush, no actions can be taken."
+        ]
+    },
+    "Subtle_Assistance": {
+        "name": "Subtle Assistance",
+        "classes": ["Abl"],
+        "desc": [
+            "You may use your Stand's Ability in a very clever and subtle way to help you with tasks both in combat and everyday life. If you fail a Skill Check, you may use your Reaction to reroll the Skill Check, but you must take the new result. You may use this Ability an amount of times equal to your PB per long rest. Your Stand does not have to be summoned to use this."
+        ]
+    },
+    "Superior_Grudge": {
+        "name": "Superior Grudge",
+        "classes": ["Rev"],
+        "desc": [
+            "Rather than having a maximum of 5 Grudge Points, you now have a maximum of 7, and if you would begin combat with 0 Grudge Points you instead start with 1 Grudge Point."
+        ]
+    },
+    "Surrounding_Swarm": {
+        "name": "Surrounding Swarm",
+        "classing": ["Hive"],
+        "desc": [
+            "If all Instances of your Stand are attacking a target and there are a roughly equal amount of Instances on each side of a target, they have Disadvantage on the Saving Throw against Swarm Attack. "
         ]
     },
     "Healing_Hands": {
@@ -741,7 +902,7 @@
         "classes": ["Spin"],
         "desc": [
             "As an Action, make a DC 30 Acrobatics Check, or make a DC 30 Animal Handling check while riding atop a steed. If you succeed, you gain one of the following benefits. Once you choose which benefit to use, all subsequent uses of this Ability produce the same result.",
-            "<ul class='sublist'><li>You gain an immensely powerful additional Ability that harnesses the Spin, likely one that manipulates space, time, or gravity in some way.</li><li>If you do not have a Stand, one manifests at level 15.</li><li>If you are already a Stand User, your Stand evolves. The stats of your Stand double, and this change lasts for 1 hour.</li><li>"
+            "<ul class='sublist'><li>You gain an immensely powerful additional Ability that harnesses the Spin, likely one that manipulates space, time, or gravity in some way.</li><li>If you do not have a Stand, one manifests at Level 15.</li><li>If you are already a Stand User, your Stand evolves. The stats of your Stand double, and this change lasts for 1 hour.</li><li>"
         ]
     },
     "Preparing_For_Infinity": {
@@ -1042,7 +1203,7 @@
         "classes": ["Ghl"],
         "desc": [
             "Ghouls, while able to be dispatched through significant force, often put up more of a fight than their Zombie counterparts.",
-            "Ghouls have an amount of Head Health equal to 1d2 + half of their Constitution Modifier per their total non-Ghoul levels in HP. Their Head has an AC equal to your regular AC + your proficiency bonus.",
+            "Ghouls have an amount of Head Health equal to 1d2 + half of their Constitution Modifier per their total non-Ghoul Levels in HP. Their Head has an AC equal to your regular AC + your proficiency bonus.",
             "As an Action a Ghoul may perform a great feat of strength. They may lift, push, or throw an amount of kilograms equal to their Strength Score multiplied by 50 kilograms. This may also be used to break down walls, etc.",
             "Ghouls heal at a rate around 5x as fast as a Human. However, wounds caused by <a href='/classes/?focus=Ripple'>Ripple</a> or sunlight take 10x as much time to heal as a normal wound for a Ghoul.",
             "Additionally, Ghouls are particularly effective at using Unarmed Strikes. Their base damage increases from 1d4 to 1d10.",
@@ -1111,7 +1272,7 @@
         "desc": [
             "Enhanced Pillar Men are the most powerful creatures on Earth, only outmatched by an Ultimate Being. An average Human would likely stand little to no chance in combat even against a relatively new one.",
             "When you become an Enhanced Pillar Man, your physique changes to become more powerful. Your Strength, Dexterity, and Constitution are all increased to 19 if they are less than that. If one or more of those Ability Scores is already at or above 19, they're increased by 2 instead. Your maximum for each Ability Score is now 30.",
-            "Enhanced Pillar Men have an amount of Head Health equal to 1d6 + their Constitution Modifier per their total non-EPM levels in HP. Their Head has an AC equal to your regular AC + your proficiency bonus.",
+            "Enhanced Pillar Men have an amount of Head Health equal to 1d6 + their Constitution Modifier per their total non-EPM Levels in HP. Their Head has an AC equal to your regular AC + your proficiency bonus.",
             "As an Action an EPM may perform a great feat of strength. They may lift, push, or throw an amount of kilograms equal to their Strength Score multiplied by 100 kilograms. This may also be used to break down walls, etc.",
             "Enhanced Pillar Men regenerate rapidly, being able to heal an amount of Hit Points equal to double their Constitution Modifier every Turn. When you regenerate, you may choose which Hit Points go to your Head and which ones go to your Body. Wounds caused by <a href='classes/?focus=Ripple'>Ripple</a> or sunlight take 10x as much time to heal, but this is purely aesthetic and doesn't affect your regeneration mechanic.",
             "Additionally, EPM are particularly effective at using Unarmed Strikes. Their base damage increases from 1d4 to 4d8, and if you wish to do so, you may deal Acid damage rather than Bludgeoning.",
@@ -1141,7 +1302,7 @@
         "desc": [
             "Vampires are a greater form of Undead, and while a skilled Human warrior may be able to dispatch of a Zombie or possibly a Ghoul, most Humans will fall before your might as a Vampire.",
             "When you become a Vampire, your physique changes to become more powerful. Your Strength, Dexterity, and Constitution are all increased to 15 if they are less than that. If one or more of those Ability Scores is already at or above 15, they're increased by 2 instead. Your maximum for each Ability Score is now 30.",
-            "Vampires have an amount of Head Health equal to 1d4 + their Constitution Modifier per their total non-Vampire levels in HP. Their Head has an AC equal to your regular AC + your Proficiency Bonus.",
+            "Vampires have an amount of Head Health equal to 1d4 + their Constitution Modifier per their total non-Vampire Levels in HP. Their Head has an AC equal to your regular AC + your Proficiency Bonus.",
             "As an Action a Vampire may perform a great feat of strength. They may lift, push, or throw an amount of kilograms equal to their Strength Score multiplied by 100 kilograms. This may also be used to break down walls, etc.",
             "Vampires regenerate rapidly, being able to heal an amount of Hit Points equal to double their Constitution Modifier every Turn. When you regenerate, you may choose which Hit Points go to your Head and which ones go to your Body. Wounds caused by <a href='classes/?focus=Ripple'>Ripple</a> or sunlight take 10x as much time to heal, but this is purely aesthetic and doesn't affect your regeneration mechanic.",
             "Additionally, Vampires are particularly effective at using Unarmed Strikes. Their base damage increases from 1d4 to 2d8.",
