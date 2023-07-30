@@ -232,7 +232,7 @@
         "name": "Assassin",
         "desc": "You've spent a lot of time in the shadows and know how to strike from them.",
         "effects": [
-            "Whenever you attack a target with a weapon with the Ambush property and have Advantage on the attack, you deal an additional amount of d6's of damage equal to your Proficiency Bonus (which are doubled if the opponent is Surprised).",
+            "Whenever you use an attack or weapon with the Ambush property and have Advantage on the attack or an ally is within melee with your target, you deal an additional amount of d6's of damage equal to your Proficiency Bonus (which are doubled if the opponent is Surprised).",
             "You may only apply this additional damage once per round."
         ]
     },
@@ -579,7 +579,8 @@
             "Your Stand's Range stat becomes 0, and it cannot be increased in any manner.",
             "Your Stand becomes bound in reality as a more tangible object. Therefore, when summoned it has a physical form that surrounds parts of or the entire User and is visible, even to those without a Stand. It is also now able to be affected by Non-Stand damage types.",
             "You are now able to increase any stat (except Range) that your Stand has that you would normally be unable to increase. For example, an Ability-Type Suit Stand User could increase their Power and Durability past their initial values.",
-            "Additionally, your Stand gets a multiplier boost of 2 for its physical stats. For example, a Power-Type which would typically have x4, x3, x3 for Power, Precision, Durability would get boosted to x6, x5, and x5 respectively as a Suit Stand."
+            "Additionally, your Stand gets a multiplier boost of 2 for its physical stats. For example, a Power-Type which would typically have x4, x3, x3 for Power, Precision, Durability would get boosted to x6, x5, and x5 respectively as a Suit Stand.",
+            "You also gain <a href='/abilities/?focus=Anchored_Stand'>Anchored Stand</a> if you don't already have it."
         ],
         "prereq": "<a href='/classes/?focus=Stands'>Stand User</a> Level 1+"
     }

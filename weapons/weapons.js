@@ -190,6 +190,8 @@ function hint(attr) {
             return("When a targeted creature or object takes fire damage from this weapon, it is set ablaze (assuming the target is flammable).");
         case "Versatile":
             return("This weapon may be wielded with one or two hands. If two hands are used, it's damage becomes " + bonus + ".");
+        case "Special":
+            return("After making a Thrown Weapon attack with the weapon, you may use your Reaction to catch it, putting it back in your inventory.");
         default:
             return("Error: This attribute doesn't have a definition. Please alert the site administrator.");     
     }
