@@ -187,7 +187,7 @@ function updateDisplay() {
             if (l.featFeatures != null)
                 for (let j = 0; j < l.featFeatures.length; j++) {
                     if (l.featFeatures[j] != "OR") {
-                        newContent += "<a href='/feats/?focus=" + l.featFeatures[j].replace(/[ -]/g, "_") + "'>" + l.featFeatures[j] + "</a>";
+                        newContent += "<a href='/feats/?focus=" + l.featFeatures[j].replace(/[']/g, "").replace(/[ -]/g, "_") + "'>" + l.featFeatures[j] + "</a>";
                         if ((j != l.featFeatures.length-1 || l.ability != null) && l.featFeatures[j+1] != "OR")
                             newContent += " | ";
                     }

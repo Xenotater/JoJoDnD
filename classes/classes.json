@@ -787,7 +787,7 @@
                     "18": {
                         "pro": "6",
                         "feats": "5",
-                        "linkFeatures": ["Subtle Assistance"],
+                        "linkFeatures": ["Subtle Assistance", "OR"],
                         "featFeatures": ["Menacing Aura"]
                     },
                     "19": {
