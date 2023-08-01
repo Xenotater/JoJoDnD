@@ -345,7 +345,7 @@
                     "18": {
                         "pro": "6",
                         "feats": "5",
-                        "linkFeatures": ["Devastating Melee", "OR", "Rejuvination"]
+                        "linkFeatures": ["Devastating Melee", "OR", "Rejuvenation"]
                     },
                     "19": {
                         "pro": "6",
@@ -423,8 +423,8 @@
                     "5": {
                         "pro": "3",
                         "feats": "2",
-                        "otherFeatures": ["<a href='/feats/?focus=Deadly_Accuracy'>Deadly Accuracy</a>", "OR", "<a href='/abilities/?focus=Melee_Barrage'>Melee Barrage</a>",
-                            "OR", "<a href='/abilities/?focus=Oblivious_Facade'>Oblivious Facade</a>", "OR", "<a href='/feats/?focus=Clever_Disguise'>Clever Disguise</a>"]
+                        "otherFeatures": ["<a href='/feats/?focus=Deadly_Accuracy'>Deadly Accuracy</a> OR <a href='/abilities/?focus=Melee_Barrage'>Melee Barrage</a>",
+                        "<a href='/abilities/?focus=Oblivious_Facade'>Oblivious Facade</a> OR <a href='/feats/?focus=Clever_Disguise'>Clever Disguise</a>"]
                     },
                     "6": {
                         "pro": "3",
@@ -470,7 +470,7 @@
                     "14": {
                         "pro": "5",
                         "feats": "4",
-                        "featFeatures": ["Assassin", "Enhanced Stand Senses"]
+                        "featFeatures": ["Assassin", "OR", "Enhanced Stand Senses"]
                     },
                     "15": {
                         "pro": "5",
@@ -497,7 +497,7 @@
                     "19": {
                         "pro": "6",
                         "feats": "5",
-                        "otherFeatures": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 14, Level 15, Level 16, or Level 18"]
+                        "otherFeatures": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 14, Level 16, or Level 18"]
                     },
                     "20": {
                         "pro": "6",
@@ -924,7 +924,7 @@
                     "16": {
                         "pro": "5",
                         "feats": "5",
-                        "featFeatures": ["Resilient", "OR", "Stand Specalization"]
+                        "featFeatures": ["Resilient", "OR", "Stand Specialization"]
                     },
                     "17": {
                         "pro": "6",
@@ -1232,7 +1232,7 @@
                     "16": {
                         "pro": "5",
                         "feats": "5",
-                        "featFeatures": ["Resilient", "Stand Specalization"]
+                        "featFeatures": ["Resilient", "Stand Specialization"]
                     },
                     "17": {
                         "pro": "6",
@@ -1252,7 +1252,7 @@
                     "20": {
                         "pro": "6",
                         "feats": "6",
-                        "linkFeatures": ["Fleeting Invulnerability", "Regenerative Surge"],
+                        "linkFeatures": ["Fleeting Invulnerability", "OR", "Regenerative Surge"],
                         "otherFeatures": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
                     }
                 },
@@ -1403,7 +1403,7 @@
                     "19": {
                         "pro": "6",
                         "feats": "5",
-                        "otherFeatures": ["Choose another Class Feature from the Level 1, Level 4, Level 7, Level 9, Level 14, Level 16, or Level 18 options"]
+                        "otherFeatures": ["Choose another Class Feature from Level 1, Level 4, Level 7, Level 9, Level 14, Level 16, or Level 18"]
                     },
                     "20": {
                         "pro": "6",
@@ -1611,7 +1611,7 @@
                             "pro": "5",
                             "feats": "5",
                             "abilDice": "8dx",
-                            "linkFeatures": ["Improved Awareness", "OR", "Immense Range"]
+                            "linkFeatures": ["Improved Awareness (Act 1)", "OR", "Immense Range (Act 1)"]
                         },
                         {
                             "lvl": "17",
@@ -1625,14 +1625,14 @@
                             "pro": "6",
                             "feats": "5",
                             "abilDice": "9dx",
-                            "linkFeatures": ["Slippery", "Stand Energy Recharge"]
+                            "linkFeatures": ["Slippery (Act 2)", "Stand Energy Recharge (Act 2)"]
                         },
                         {
                             "lvl": "19",
                             "pro": "6",
                             "feats": "5",
                             "abilDice": "10dx",
-                            "otherFeatures": ["Choose another Class Feature from the Level 4, Level 7, Level 9, Level 16, or Level 18 options"]
+                            "otherFeatures": ["Choose another Class Feature from Level 4, Level 7, Level 9, Level 16, or Level 18"]
                         },
                         {
                             "lvl": "20",

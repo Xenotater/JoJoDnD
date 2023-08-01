@@ -83,7 +83,7 @@
     },
     "Immense_Range": {
         "name": "Immense Range",
-        "classes": ["Rmt", "Enh", "Rev"],
+        "classes": ["Rmt", "Enh", "Rev", "Act"],
         "desc": [
             "Your Stand is powerful, but was limited by how far it could be away from you before now.",
             "Multiply your Stand's Range by 10. Any points gained to your Stand's Range from now on are also multiplied by 10."
@@ -278,7 +278,7 @@
         ]
     },
     "Zealous_Focus": {
-        "name": "Zealous_Focus",
+        "name": "Zealous Focus",
         "classes": ["Rmt"],
         "desc": [
             "Your Stand is unable to be affected or impeded by any Ability that requires the Stand to make an Intelligence, Wisdom, or Charisma Saving Throw. In addition, they are not fooled by illusions."
@@ -293,10 +293,10 @@
         ]
     },
     "Block_Projectile": {
-        "name": "Block Physical Projectile",
+        "name": "Block Projectile",
         "classes": ["Pwr", "Act"],
         "desc": [
-            "When you or your stand is hit with a projectile, as long as your stand is hit or you are within 2 meters of it, you may attempt to block it. As a Reaction you may reduce the damage of the oncoming projectile by 1d12 + your Stand's Precision Modifier"
+            "When you or your Stand is hit with a projectile, as long as your Stand is hit or you are within 2 meters of it, you may attempt to block it. As a Reaction you may reduce the damage of the oncoming projectile by 1d12 + your Stand's Precision Modifier"
         ]
     },
     "Blow_for_Blow": {
@@ -330,7 +330,7 @@
             "Through clever use of your Stand's Ability you've found a way to properly defend yourself. As an Action you may spend 2 Stand Energy and gain one of the following benefits for 3 Turns (not including the one that you activate it on). You may only have one of the following buffs active at a time.<ul class='sublist'><li>+2d4 AC (Both for Stand and User)</li><li>Advantage on all Saving Throws</li><li>An amount of Temporary Hit Points equal to twice your Level</li></ul>"
         ]
     },
-    "Defenseive_Stance": {
+    "Defensive_Stance": {
         "name": "Defensive Stance",
         "classes": ["Pwr", "Rng", "Ind"],
         "desc": [
@@ -397,7 +397,7 @@
             "You may only have this Ability active on one person at a time, but are able to switch your target as a Bonus Action at the cost of another Grudge Point."
         ]
     },
-    "Great Recall": {
+    "Great_Recall": {
         "name": "Great Recall",
         "classes": ["Hive"],
         "desc": [
@@ -461,7 +461,7 @@
         ]
     },
     "Reckless_Attack": {
-        "name": "Reckless_Attack",
+        "name": "Reckless Attack",
         "classes": ["Rev"],
         "desc": [
             "You may spend 1 Grudge Point to gain Advantage on all attack rolls until your next turn, but all enemies have Advantage on any attack rolls against you."
@@ -508,7 +508,7 @@
         "name": "Speedy Switch",
         "classes": ["Enh"],
         "desc": [
-            "As an Reaction you may switch between anchors for your Enhancement Stand very quickly, meaning that if someone attempts to hit you and you activate this ability, the first hit misses automatically. However, if your Stand moves outside of someone's melee, they can still take an Attack of Opportunity.",
+            "As a Reaction you may switch between anchors for your Enhancement Stand very quickly, meaning that if someone attempts to hit you and you activate this ability, the first hit misses automatically. However, if your Stand moves outside of someone's melee, they can still take an Attack of Opportunity.",
             "You may use this Ability once per combat encounter."
         ]
     },
@@ -560,7 +560,7 @@
     },
     "Surrounding_Swarm": {
         "name": "Surrounding Swarm",
-        "classing": ["Hive"],
+        "classes": ["Hive"],
         "desc": [
             "If all Instances of your Stand are attacking a target and there are a roughly equal amount of Instances on each side of a target, they have Disadvantage on the Saving Throw against Swarm Attack. "
         ]
