@@ -121,7 +121,8 @@
             "17": {
                 "pro": "6",
                 "feats": "5",
-                "linkFeatures": ["Life Magnetism"]
+                "linkFeatures": ["Life Magnetism"],
+                "ability": ["Ability Score Improvement"]
             },
             "18": {
                 "pro": "6",
@@ -1770,7 +1771,8 @@
             "17": {
                 "pro": "6",
                 "feats": "5",
-                "linkFeatures": ["Deflect Distance Attack", "OR", "Self-Compression"]
+                "linkFeatures": ["Deflect Distance Attack", "OR", "Self-Compression"],
+                "ability": ["Ability Score Improvement"]
             },
             "18": {
                 "pro": "6",
