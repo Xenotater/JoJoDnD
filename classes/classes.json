@@ -83,7 +83,7 @@
             "10": {
                 "pro": "4",
                 "feats": "3",
-                "otherFeatures": ["Choose another Class Feature from the Level 4, Level 6, or Level 8 options"],
+                "otherFeatures": ["Choose another Class Feature from Level 4, Level 6, or Level 8"],
                 "ability": ["Ability Score Improvement", "Increase Str, Dex, or Con Score by 1"]
             },
             "11": {
@@ -105,7 +105,7 @@
             "14": {
                 "pro": "5",
                 "feats": "4",
-                "otherFeatures": ["Choose another Class Feature from the Level 4, Level 6, or Level 8 options"],
+                "otherFeatures": ["Choose another Class Feature from Level 4, Level 6, or Level 8"],
                 "ability": ["Increase Str, Dex, or Con Score by 1"]
             },
             "15": {
@@ -121,7 +121,8 @@
             "17": {
                 "pro": "6",
                 "feats": "5",
-                "linkFeatures": ["Life Magnetism"]
+                "linkFeatures": ["Life Magnetism"],
+                "ability": ["Ability Score Improvement"]
             },
             "18": {
                 "pro": "6",
@@ -280,13 +281,14 @@
                     "6": {
                         "pro": "3",
                         "feats": "3",
-                        "otherFeatures": ["Choose another Class Feature from the Level 4 options"],
+                        "otherFeatures": ["Choose another Class Feature from Level 4"],
                         "ability": ["Ability Score Improvement"]
                     },
                     "7": {
                         "pro": "3",
                         "feats": "3",
-                        "linkFeatures": ["Counterattacking Blow", "OR", "Offensive Blow"]
+                        "linkFeatures": ["Siege Combat", "OR"],
+                        "featFeatures": ["Whirlwind Attacker"]
                     },
                     "8": {
                         "pro": "3",
@@ -296,7 +298,7 @@
                     "9": {
                         "pro": "4",
                         "feats": "3",
-                        "linkFeatures": ["Block Physical Projectile", "OR", "Block Stand Projectile"]
+                        "linkFeatures": ["Block Projectile", "OR", "Devastating Critical"]
                     },
                     "10": {
                         "pro": "4",
@@ -321,7 +323,7 @@
                     "14": {
                         "pro": "5",
                         "feats": "4",
-                        "otherFeatures": ["Choose another Class Feature from the Level 4, Level 7, or Level 9 options"],
+                        "otherFeatures": ["Choose another Class Feature from Level 4, Level 7, or Level 9"],
                         "featFeatures": ["Menacing Aura"]
                     },
                     "15": {
@@ -332,23 +334,28 @@
                     },
                     "16": {
                         "pro": "5",
-                        "feats": "5"
+                        "feats": "5",
+                        "linkFeatures": ["Defensive Stance", "OR", "Lethal Strike"]
                     },
                     "17": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "18": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "linkFeatures": ["Devastating Melee", "OR", "Rejuvenation"]
                     },
                     "19": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "otherFeatures": ["Choose another Class Feature from Level 4, Level 7, Level 9, Level 16, or Level 18"]
                     },
                     "20": {
                         "pro": "6",
                         "feats": "6",
+                        "linkFeatures": ["Blow for Blow"],
                         "otherFeatures": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
                     }
                 },
@@ -388,9 +395,9 @@
                 "hDice": "1d8",
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
-                "aDice": ["1d6", "1d10"],
+                "aDice": ["1d6", "2d6"],
                 "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except for Power or Durability. Your Power and Durability may not be increased past their initial values.",
-                "mults": [3, 3, 3, 6, 3, 3],
+                "mults": [3, 3, 3, 10, 3, 3],
                 "theme": "hiero",
                 "level": {
                     "1": {
@@ -401,7 +408,7 @@
                     "2": {
                         "pro": "2",
                         "feats": "2",
-                        "linkFeatures": ["Custom Ability"]
+                        "linkFeatures": ["Custom Ability", "Stand Pickpocketing"]
                     },
                     "3": {
                         "pro": "2",
@@ -411,13 +418,13 @@
                     "4": {
                         "pro": "2",
                         "feats": "2",
-                        "linkFeatures": ["Melee Barrage", "OR", "Ranged Attack"]
+                        "linkFeatures": ["Immense Power", "OR", "Ranged Attack"]
                     },
                     "5": {
                         "pro": "3",
                         "feats": "2",
-                        "linkFeatures": ["Oblivious Facade", "OR"],
-                        "featFeatures": ["Clever Disguise"]
+                        "otherFeatures": ["<a href='/feats/?focus=Deadly_Accuracy'>Deadly Accuracy</a> OR <a href='/abilities/?focus=Melee_Barrage'>Melee Barrage</a>",
+                        "<a href='/abilities/?focus=Oblivious_Facade'>Oblivious Facade</a> OR <a href='/feats/?focus=Clever_Disguise'>Clever Disguise</a>"]
                     },
                     "6": {
                         "pro": "3",
@@ -432,13 +439,13 @@
                     "8": {
                         "pro": "3",
                         "feats": "3",
-                        "otherFeatures": ["Choose another Class Feature from the Level 4, Level 5, or Level 7 options"],
+                        "otherFeatures": ["Choose another Class Feature from Level 4, Level 5, or Level 7"],
                         "ability": ["Ability Score Improvement"]
                     },
                     "9": {
                         "pro": "4",
                         "feats": "3",
-                        "linkFeatures": ["Pincer Attack", "OR", "Hot Pursuit"]
+                        "linkFeatures": ["Ambush Attacker", "OR", "Hot Pursuit"]
                     },
                     "10": {
                         "pro": "4",
@@ -448,12 +455,12 @@
                     "11": {
                         "pro": "4",
                         "feats": "4",
-                        "otherFeatures": ["Attack Dice increases to 1d10"]
+                        "otherFeatures": ["Attack Dice increases to 2d6"]
                     },
                     "12": {
                         "pro": "4",
                         "feats": "4",
-                        "otherFeatures": ["Choose another Class Feature from the Level 4, Level 5, Level 7, or Level 9 options"]
+                        "otherFeatures": ["Choose another Class Feature from Level 4, Level 5, Level 7, or Level 9"]
                     },
                     "13": {
                         "pro": "5",
@@ -463,8 +470,7 @@
                     "14": {
                         "pro": "5",
                         "feats": "4",
-                        "linkFeatures": ["Stand Pickpocketing", "OR"],
-                        "featFeatures": ["Menacing Aura"]
+                        "featFeatures": ["Assassin", "OR", "Enhanced Stand Senses"]
                     },
                     "15": {
                         "pro": "5",
@@ -474,23 +480,29 @@
                     },
                     "16": {
                         "pro": "5",
-                        "feats": "5"
+                        "feats": "5",
+                        "linkFeatures": ["Defensive Stance", "OR", "Improved Awareness"]
                     },
                     "17": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "18": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "linkFeatures": ["Immense Range", "OR"],
+                        "featFeatures": ["Skirmisher"]
                     },
                     "19": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "otherFeatures": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 14, Level 16, or Level 18"]
                     },
                     "20": {
                         "pro": "6",
                         "feats": "6",
+                        "linkFeatures": ["Improved Slippery", "OR", "Perfected Tremorsense"],
                         "otherFeatures": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
                     }
                 },
@@ -530,7 +542,7 @@
                 "hDice": "1d10",
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
-                "aDice": ["1d8", "2d8"],
+                "aDice": ["1d10", "2d8"],
                 "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except Precision. Your Precision may not be increased past it's initial value.",
                 "mults": [3, 2, 4, 5, 3, 2],
                 "notes": ["These Stands cannot be controlled by their Users, the only power their User has over them is to send them out or recall them. These Stands can only perform one predetermined action."],
@@ -549,7 +561,8 @@
                     "3": {
                         "pro": "2",
                         "feats": "2",
-                        "ability": ["Ability Score Improvement"]
+                        "ability": ["Ability Score Improvement"],
+                        "featFeatures": ["Oblivious Facade"]
                     },
                     "4": {
                         "pro": "2",
@@ -559,7 +572,8 @@
                     "5": {
                         "pro": "3",
                         "feats": "2",
-                        "featFeatures": ["Simple Weapon Focus", "OR", "Professional Weapon Training", "OR", "Martial Arts"]
+                        "featFeatures": ["Simple Weapon Focus", "OR", "Professional Weapon Training", "OR", "Demolitionist", "OR", "Martial Arts", "OR",
+                            "Rifle Specialization", "OR", "Sidearm Specialization", "OR", "Shotgun Specialization", "OR", "Tavern Brawler", "OR", "Thrown Weapon Specialization"]
                     },
                     "6": {
                         "pro": "3",
@@ -569,7 +583,7 @@
                     "7": {
                         "pro": "3",
                         "feats": "3",
-                        "linkFeatures": ["Remote Grappler", "OR", "Self-Preservation"]
+                        "linkFeatures": ["Juggernaut", "OR", "Armored Stand"]
                     },
                     "8": {
                         "pro": "3",
@@ -595,8 +609,7 @@
                     "12": {
                         "pro": "4",
                         "feats": "4",
-                        "linkFeatures": ["Oblivious Facade", "OR"],
-                        "featFeatures": ["Melee Specialization"]
+                        "featFeatures": ["Guerilla Fighter", "OR", "Melee Specialization"]
                     },
                     "13": {
                         "pro": "5",
@@ -606,7 +619,7 @@
                     "14": {
                         "pro": "5",
                         "feats": "4",
-                        "otherFeatures": ["Choose another Class Feature from the Level 1, Level 4, Level 5, Level 7, or Level 12 options"]
+                        "otherFeatures": ["Choose another Class Feature from Level 1, Level 4, Level 5, Level 7, or Level 12"]
                     },
                     "15": {
                         "pro": "5",
@@ -616,23 +629,28 @@
                     },
                     "16": {
                         "pro": "5",
-                        "feats": "5"
+                        "feats": "5",
+                        "linkFeatures": ["Improved Immense Range", "OR", "Self-Preservation"]
                     },
                     "17": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "18": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "linkFeatures": ["Remote Ambusher", "OR", "Superior Momentum"]
                     },
                     "19": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "otherFeatures": ["Choose another Class Feature from Level 1, Level 4, Level 5, Level 7, Level 12, Level 16, or Level 18"]
                     },
                     "20": {
                         "pro": "6",
                         "feats": "6",
+                        "linkFeatures": ["Zealous Focus"],
                         "otherFeatures": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
                     }
                 },
@@ -680,7 +698,7 @@
                     "1": {
                         "pro": "2",
                         "feats": "2",
-                        "linkFeatures": ["Custom Ability", "Slippery"]
+                        "linkFeatures": ["Custom Ability"]
                     },
                     "2": {
                         "pro": "2",
@@ -695,12 +713,13 @@
                     "4": {
                         "pro": "2",
                         "feats": "2",
-                        "featFeatures": ["Simple Weapon Focus", "OR", "Professional Weapon Training", "OR", "Demolitionist", "OR", "Martial Arts", "OR", "Sidearm Specialization", "OR", "Rifle Specialization", "OR", "Shotgun Specialization", "OR", "Tavern Brawler", "OR", "Thrown Weapon Specialization"]
+                        "featFeatures": ["Simple Weapon Focus", "OR", "Professional Weapon Training", "OR", "Demolitionist", "OR", "Martial Arts", "OR", "Sidearm Specialization",
+                            "OR", "Rifle Specialization", "OR", "Shotgun Specialization", "OR", "Tavern Brawler", "OR", "Thrown Weapon Specialization"]
                     },
                     "5": {
                         "pro": "3",
                         "feats": "2",
-                        "linkFeatures": ["Ranged Attack", "OR", "Stand Energy Recharge", "OR", "Detached Senses", "OR"],
+                        "linkFeatures": ["Ranged Attack", "OR", "Detached Senses", "OR"],
                         "featFeatures": ["Energy Imbuement"]
                     },
                     "6": {
@@ -711,7 +730,7 @@
                     "7": {
                         "pro": "3",
                         "feats": "3",
-                        "linkFeatures": ["Powerful Flex", "Defensive Ability", "OR", "Mobile Ability"]
+                        "linkFeatures": ["Stand Energy Recharge", "Defensive Ability", "OR", "Mobile Ability"]
                     },
                     "8": {
                         "pro": "3",
@@ -731,12 +750,12 @@
                     "11": {
                         "pro": "4",
                         "feats": "4",
-                        "otherFeatures": ["Choose another Class Feature from the Level 4, Level 5, or Level 7 options", "Attack Dice increases to 1d6"]
+                        "otherFeatures": ["Choose another Class Feature from Level 4, Level 5, or Level 7", "Attack Dice increases to 1d6"]
                     },
                     "12": {
                         "pro": "4",
                         "feats": "4",
-                        "linkFeatures": ["Energy Conservation"]
+                        "linkFeatures": ["Enhanced Custom Ability"]
                     },
                     "13": {
                         "pro": "5",
@@ -745,7 +764,9 @@
                     },
                     "14": {
                         "pro": "5",
-                        "feats": "4"
+                        "feats": "4",
+                        "linkFeatures": ["Slippery", "OR"],
+                        "featFeatures": ["Tanky"]
                     },
                     "15": {
                         "pro": "5",
@@ -755,23 +776,29 @@
                     },
                     "16": {
                         "pro": "5",
-                        "feats": "5"
+                        "feats": "5",
+                        "featFeatures": ["Calculating", "OR", "Quick on your Feet"]
                     },
                     "17": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "18": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "linkFeatures": ["Subtle Assistance", "OR"],
+                        "featFeatures": ["Menacing Aura"]
                     },
                     "19": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "otherFeatures": ["Choose another Class Feature from Level 1, Level 4, Level 5, Level 7, Level 14, Level 16, or Level 18"]
                     },
                     "20": {
                         "pro": "6",
                         "feats": "6",
+                        "linkFeatures": ["Second Nature"],
                         "otherFeatures": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
                     }
                 },
@@ -835,12 +862,12 @@
                     "4": {
                         "pro": "2",
                         "feats": "2",
-                        "linkFeatures": ["Detached Senses"]
+                        "linkFeatures": ["Detached Senses", "OR", "Armored Stand"]
                     },
                     "5": {
                         "pro": "3",
                         "feats": "2",
-                        "linkFeatures": ["Complete Control", "OR", "Armored Stand", "OR", "Immense Range"]
+                        "linkFeatures": ["Complete Control", "OR", "Immense Range"]
                     },
                     "6": {
                         "pro": "3",
@@ -850,7 +877,8 @@
                     "7": {
                         "pro": "3",
                         "feats": "3",
-                        "linkFeatures": ["Oblivious Facade", "OR", "Stand Marking"]
+                        "linkFeatures": ["Stand Marking", "Oblivious Facade", "OR"],
+                        "featFeatures": ["Clever Disguise"]
                     },
                     "8": {
                         "pro": "3",
@@ -860,7 +888,7 @@
                     "9": {
                         "pro": "4",
                         "feats": "3",
-                        "linkFeatures": ["Camouflage"]
+                        "linkFeatures": ["Camouflage", "OR", "Juggernaut"]
                     },
                     "10": {
                         "pro": "4",
@@ -885,7 +913,7 @@
                     "14": {
                         "pro": "5",
                         "feats": "4",
-                        "otherFeatures": ["Choose another Class Feature from the Level 5, Level 7, or Level 12 options"]
+                        "otherFeatures": ["Choose another Class Feature from Level 5, Level 7, Level 9, or Level 12"]
                     },
                     "15": {
                         "pro": "5",
@@ -895,23 +923,28 @@
                     },
                     "16": {
                         "pro": "5",
-                        "feats": "5"
+                        "feats": "5",
+                        "featFeatures": ["Resilient", "OR", "Stand Specialization"]
                     },
                     "17": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "18": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "featFeatures": ["Guerilla Fighter", "OR", "Tanky"]
                     },
                     "19": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "otherFeatures": ["Choose another Class Feature from Level 5, Level 7, Level 9, Level 12, Level 16, or Level 18"]
                     },
                     "20": {
                         "pro": "6",
                         "feats": "6",
+                        "linkFeatures": ["Condensed Material"],
                         "otherFeatures": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
                     }
                 },
@@ -967,7 +1000,7 @@
                     ]
                 }],
                 "levelUp": "Every Level-Up, You may roll 3d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats.",
-                "mults": [3, 4, 4, 7, 3, 2],
+                "mults": [4, 3, 4, 5, 3, 3],
                 "theme": "cat",
                 "level": {
                     "1": {
@@ -988,12 +1021,13 @@
                     "4": {
                         "pro": "2",
                         "feats": "2",
-                        "featFeatures": ["Scarflesh", "Simple Weapon Focus", "OR", "Professional Weapon Training", "OR", "Demolitionist", "OR", "Martial Arts", "OR", "Sidearm Specialization", "OR", "Rifle Specialization", "OR", "Shotgun Specialization", "OR", "Tavern Brawler", "OR", "Thrown Weapon Specialization"]
+                        "featFeatures": ["Scarflesh", "Simple Weapon Focus", "OR", "Professional Weapon Training", "OR", "Demolitionist", "OR", "Martial Arts", "OR",
+                            "Sidearm Specialization", "OR", "Rifle Specialization", "OR", "Shotgun Specialization", "OR", "Tavern Brawler", "OR", "Thrown Weapon Specialization"]
                     },
                     "5": {
                         "pro": "3",
                         "feats": "2",
-                        "linkFeatures": ["Oblivious Facade", "OR"],
+                        "linkFeatures": ["Reckless Attack", "Oblivious Facade", "OR"],
                         "featFeatures": ["Menacing Aura"]
                     },
                     "6": {
@@ -1015,7 +1049,7 @@
                     "9": {
                         "pro": "4",
                         "feats": "3",
-                        "linkFeatures": ["Near-Death Escape"]
+                        "linkFeatures": ["Focused Hatred"]
                     },
                     "10": {
                         "pro": "4",
@@ -1040,7 +1074,7 @@
                     "14": {
                         "pro": "5",
                         "feats": "4",
-                        "otherFeatures": ["Choose another Class Feature from the Level 5, Level 7, or Level 12 options"]
+                        "otherFeatures": ["Choose another Class Feature from Level 5, Level 7, or Level 12"]
                     },
                     "15": {
                         "pro": "5",
@@ -1050,23 +1084,29 @@
                     },
                     "16": {
                         "pro": "5",
-                        "feats": "5"
+                        "feats": "5",
+                        "linkFeatures": ["Devastating Critical", "OR", "Devastating Melee"]
                     },
                     "17": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "18": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "linkFeatures": ["Superior Grudge", "OR"],
+                        "featFeatures": ["Guardian's Wrath"]
                     },
                     "19": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "otherFeatures": ["Choose another Class Feature from Level 5, Level 7, Level 12, Level 16, or Level 18"]
                     },
                     "20": {
                         "pro": "6",
                         "feats": "6",
+                        "linkFeatures": ["Hit List"],
                         "otherFeatures": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
                     }
                 },
@@ -1130,12 +1170,13 @@
                     "4": {
                         "pro": "2",
                         "feats": "2",
-                        "linkFeatures": ["Ranged Attack", "OR", "Self-Repair"]
+                        "linkFeatures": ["Oblivious Facade", "Melee Barrage", "OR", "Ranged Attack", "OR"],
+                        "featFeatures": ["Energy Imbuement"]
                     },
                     "5": {
                         "pro": "3",
                         "feats": "2",
-                        "linkFeatures": ["Melee Barrage", "OR", "Armored Stand"]
+                        "linkFeatures": ["Armored Stand", "OR", "Self-Repair"]
                     },
                     "6": {
                         "pro": "3",
@@ -1145,7 +1186,7 @@
                     "7": {
                         "pro": "3",
                         "feats": "3",
-                        "otherFeatures": ["Choose another Class Feature from the Level 4 or Level 5 options"]
+                        "otherFeatures": ["Choose another Class Feature from Level 4 or Level 5"]
                     },
                     "8": {
                         "pro": "3",
@@ -1155,7 +1196,7 @@
                     "9": {
                         "pro": "4",
                         "feats": "3",
-                        "linkFeatures": ["Oblivious Facade"]
+                        "linkFeatures": ["Camouflage", "OR", "Juggernaut"]
                     },
                     "10": {
                         "pro": "4",
@@ -1180,7 +1221,7 @@
                     "14": {
                         "pro": "5",
                         "feats": "4",
-                        "linkFeatures": ["Stand Rush"]
+                        "otherFeatures": ["Choose another Class Feature from Level 4, Level 5, Level 9, or Level 12"]
                     },
                     "15": {
                         "pro": "5",
@@ -1190,23 +1231,28 @@
                     },
                     "16": {
                         "pro": "5",
-                        "feats": "5"
+                        "feats": "5",
+                        "featFeatures": ["Resilient", "OR", "Stand Specialization"]
                     },
                     "17": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "18": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "linkFeatures": ["Defensive Stance", "OR", "Slippery"]
                     },
                     "19": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "otherFeatures": ["Choose another Class Feature from Level 4, Level 5, Level 9, Level 12, Level 16, or Level 18"]
                     },
                     "20": {
                         "pro": "6",
                         "feats": "6",
+                        "linkFeatures": ["Fleeting Invulnerability", "OR", "Regenerative Surge"],
                         "otherFeatures": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
                     }
                 },
@@ -1251,14 +1297,14 @@
                 "other": [{
                     "name": "Swarm Attacks",
                     "content": [
-                        "<p>Choose one of the three following saving throws: Strength, Dexterity, or Constitution. When you make a mlee Attack using your Stand, rather than making an Attack Roll, your target must make a Saving Throw of the type you chose. Your Stand must be within melee of the target in order to make a Swarm Attack. When you make a Swarm Attack, you may choose between the following options:</p>",
+                        "<p>Choose one of the three following saving throws: Strength, Dexterity, or Constitution. When you make a melee Attack using your Stand, rather than making an Attack Roll, your target must make a Saving Throw of the type you chose. Your Stand must be within melee of the target in order to make a Swarm Attack. When you make a Swarm Attack, you may choose between the following options:</p>",
                         "<p><ul><li>Precise Swarm: 1d6 + Power Modifier damage (this damage increases to 2d6 at Level 11). Your opponent takes full damage if they fail the Saving Throw, or half if they succeed.</li>",
                         "<li>Violent Swarm: 1d10 + Power Modifier damage (this damage increases to 2d10 at Level 11). Your opponent takes full damage if they fail the Saving Throw, or none if they succeed.</li></ul></p>",
                         "<p>This Ability's damage can be a type that you and your DM agree fits for your stand. When you attack using less than half of the total instances of your stand, your target has Advantage on the Saving Throw.</p>" 
                     ]
                 }],
                 "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats.",
-                "mults": ["3/N", "2/N", 3, 10, "3/N", 2],
+                "mults": [3, 2, 3, 8, 3, 3],
                 "theme": "bad",
                 "level": {
                     "1": {
@@ -1284,8 +1330,7 @@
                     "5": {
                         "pro": "3",
                         "feats": "2",
-                        "linkFeatures": ["Powerful Flex", "OR"],
-                        "featFeatures": ["Menacing Aura"]
+                        "linkFeatures": ["Surrounding Swarm"]
                     },
                     "6": {
                         "pro": "3",
@@ -1295,8 +1340,7 @@
                     "7": {
                         "pro": "3",
                         "feats": "3",
-                        "linkFeatures": ["Oblivious Facade", "OR"],
-                        "featFeatures": ["Clever Disguise"]
+                        "linkFeatures": ["Stand Pickpocketing", "Immense Range", "OR", "Armored Stand"]
                     },
                     "8": {
                         "pro": "3",
@@ -1321,7 +1365,7 @@
                     "12": {
                         "pro": "4",
                         "feats": "4",
-                        "otherFeatures": ["Choose another Class Feature from the Level 1, Level 4, Level 7, or Level 9 options"]
+                        "otherFeatures": ["Choose another Class Feature from Level 1, Level 4, Level 7, or Level 9"]
                     },
                     "13": {
                         "pro": "5",
@@ -1341,23 +1385,30 @@
                     },
                     "16": {
                         "pro": "5",
-                        "feats": "5"
+                        "feats": "5",
+                        "linkFeatures": ["Improved Immense Range", "OR"],
+                        "featFeatures": ["Enhanced Stand Senses"]
                     },
                     "17": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "ability": ["Ability Score Improvement"]
                     },
                     "18": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "linkFeatures": ["Improved Awareness", "OR"],
+                        "featFeatures": ["Guerilla Fighter", "OR", "Skirmisher"]
                     },
                     "19": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "otherFeatures": ["Choose another Class Feature from Level 1, Level 4, Level 7, Level 9, Level 14, Level 16, or Level 18"]
                     },
                     "20": {
                         "pro": "6",
                         "feats": "6",
+                        "linkFeatures": ["Great Recall"],
                         "otherFeatures": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
                     }
                 },
@@ -1425,14 +1476,14 @@
                 {
                     "aDice": "1d4",
                     "note": "You may not increase your Power or Speed upon leveling up.",
-                    "mults": [1, 3, 2, 10, 2, 3],
+                    "mults": [2, 3, 3, 8, 3, 3],
                     "level": [
                         {
                             "lvl": "2",
                             "pro": "2",
                             "feats": "2",
                             "abilDice": "1dx",
-                            "linkFeatures": ["Custom Ability", "Detached Senses (Acts 1 & 2)", "Slippery (Acts 1 & 2)"]
+                            "linkFeatures": ["Custom Ability", "Slippery", "Detached Senses (Acts 1 & 2)"]
                         },
                         {
                             "lvl": "3",
@@ -1460,7 +1511,7 @@
                 {
                     "aDice": "1d8",
                     "note": "You may not increase your Power upon leveling up.",
-                    "mults": [2, 3, 3, 5, 3, 3],
+                    "mults": [2, 3, 3, 3, 3, 5],
                     "level": [
                         {
                             "lvl": "5",
@@ -1481,7 +1532,7 @@
                             "pro": "3",
                             "feats": "3",
                             "abilDice": "4dx",
-                            "linkFeatures": ["Stand Pickpocketing (All Acts)"]
+                            "linkFeatures": ["Defensive Ability", "Mobile Ability"]
                         },
                         {
                             "lvl": "8",
@@ -1495,7 +1546,8 @@
                             "pro": "4",
                             "feats": "3",
                             "abilDice": "5dx",
-                            "linkFeatures": ["Melee Barrage (Acts 2 & 3)"]
+                            "linkFeatures": ["Melee Barrage (Acts 2 & 3)", "OR"],
+                            "featFeatures": ["Calculating"]
                         },
                         {
                             "lvl": "10",
@@ -1509,7 +1561,7 @@
                 {
                     "aDice": "2d8",
                     "note": "Your Range Score may not go above 20.",
-                    "mults": [3, 3, 4, 1, 4, 3],
+                    "mults": [4, 3, 4, 1, 4, 2],
                     "level": [
                         {
                         "lvl": "10",
@@ -1544,7 +1596,7 @@
                             "pro": "5",
                             "feats": "4",
                             "abilDice": "7dx",
-                            "linkFeatures": ["Stand Rush", "Block Stand Projectile", "OR", "Block Physical Projectile"]
+                            "linkFeatures": ["Stand Rush", "Block Projectile"]
                         },
                         {
                             "lvl": "15",
@@ -1558,31 +1610,36 @@
                             "lvl": "16",
                             "pro": "5",
                             "feats": "5",
-                            "abilDice": "8dx"
+                            "abilDice": "8dx",
+                            "linkFeatures": ["Improved Awareness (Act 1)", "OR", "Immense Range (Act 1)"]
                         },
                         {
                             "lvl": "17",
                             "pro": "6",
                             "feats": "5",
-                            "abilDice": "9dx"
+                            "abilDice": "9dx",
+                            "ability": ["Ability Score Improvement"]
                         },
                         {
                             "lvl": "18",
                             "pro": "6",
                             "feats": "5",
-                            "abilDice": "9dx"
+                            "abilDice": "9dx",
+                            "linkFeatures": ["Slippery (Act 2)", "OR", "Stand Energy Recharge (Act 2)"]
                         },
                         {
                             "lvl": "19",
                             "pro": "6",
                             "feats": "5",
-                            "abilDice": "10dx"
+                            "abilDice": "10dx",
+                            "otherFeatures": ["Choose another Class Feature from Level 4, Level 7, Level 9, Level 16, or Level 18"]
                         },
                         {
                             "lvl": "20",
                             "pro": "6",
                             "feats": "6",
                             "abilDice": "10dx",
+                            "linkFeatures": ["Instant Swap"],
                             "otherFeatures": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
                         }
                     ]
@@ -1677,7 +1734,7 @@
             "10": {
                 "pro": "4",
                 "feats": "3",
-                "otherFeatures": ["Choose another Class Feature from the Level 4, Level 6, Level 8, or Level 9 options"],
+                "otherFeatures": ["Choose another Class Feature from Level 4, Level 6, Level 8, or Level 9"],
                 "ability": ["Ability Score Improvement"]
             },
             "11": {
@@ -1709,17 +1766,18 @@
             "16": {
                 "pro": "5",
                 "feats": "5",
-                "otherFeatures": ["Choose another Class Feature from the Level 4, Level 6, Level 8, or Level 9, Level 12, or Level 15 options"]
+                "otherFeatures": ["Choose another Class Feature from Level 4, Level 6, Level 8, or Level 9, Level 12, or Level 15"]
             },
             "17": {
                 "pro": "6",
                 "feats": "5",
-                "linkFeatures": ["Deflect Distance Attack", "OR", "Self-Compression"]
+                "linkFeatures": ["Deflect Distance Attack", "OR", "Self-Compression"],
+                "ability": ["Ability Score Improvement"]
             },
             "18": {
                 "pro": "6",
                 "feats": "5",
-                "otherFeatures": ["Choose another Class Feature from the Level 4, Level 6, Level 8, or Level 9, Level 12, Level 15, or Level 17 options"]
+                "otherFeatures": ["Choose another Class Feature from Level 4, Level 6, Level 8, or Level 9, Level 12, Level 15, or Level 17"]
             },
             "19": {
                 "pro": "6",
@@ -2042,7 +2100,7 @@
                     "15": {
                         "pro": "5",
                         "feats": "4",
-                        "otherFeatures": ["Choose another Class Feature from the Level 1, Level 6, or Level 12 options"]
+                        "otherFeatures": ["Choose another Class Feature from Level 1, Level 6, or Level 12"]
                     },
                     "16": {
                         "pro": "5",

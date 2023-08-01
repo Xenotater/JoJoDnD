@@ -165,7 +165,7 @@ function updateDisplay() {
                 for (let j = 0; j < l.otherFeatures.length; j++) {
                     newContent += l.otherFeatures[j];
                     if (j != l.otherFeatures.length-1 || l.linkFeatures != null || l.featFeatures != null || l.ability != null)
-                        newContent += ", ";
+                        newContent += " | ";
                 }
             if (l.linkFeatures != null)
                 for (let j = 0; j < l.linkFeatures.length; j++) {
@@ -179,7 +179,7 @@ function updateDisplay() {
                         else
                             newContent += "<a href='/abilities/?focus=" + f.replace(/[ -]/g, "_") + "'>" + f + "</a>"
                         if ((j != l.linkFeatures.length-1 || l.featFeatures != null ||l.ability != null) && l.linkFeatures[j+1] != "OR")
-                            newContent += ", ";
+                            newContent += " | ";
                     }
                     else
                         newContent += " OR ";
@@ -187,9 +187,9 @@ function updateDisplay() {
             if (l.featFeatures != null)
                 for (let j = 0; j < l.featFeatures.length; j++) {
                     if (l.featFeatures[j] != "OR") {
-                        newContent += "<a href='/feats/?focus=" + l.featFeatures[j].replace(/[ -]/g, "_") + "'>" + l.featFeatures[j] + "</a>";
-                        if (j != l.featFeatures.length-1 || l.ability != null)
-                            newContent += ", ";
+                        newContent += "<a href='/feats/?focus=" + l.featFeatures[j].replace(/[']/g, "").replace(/[ -]/g, "_") + "'>" + l.featFeatures[j] + "</a>";
+                        if ((j != l.featFeatures.length-1 || l.ability != null) && l.featFeatures[j+1] != "OR")
+                            newContent += " | ";
                     }
                     else
                         newContent += " OR ";
@@ -198,7 +198,7 @@ function updateDisplay() {
                 for (let j = 0; j < l.ability.length; j++) {
                     newContent += l.ability[j];
                     if (j != l.ability.length-1)
-                        newContent += ", ";
+                        newContent += " | ";
                 }
             if (l.otherFeatures == null && l.linkFeatures == null && l.featFeatures == null && l.ability == null)
                 newContent += "-";
@@ -235,7 +235,7 @@ function updateDisplay() {
                     for (let j = 0; j < l.otherFeatures.length; j++) {
                         newContent += l.otherFeatures[j];
                         if (j != l.otherFeatures.length-1 || l.linkFeatures != null || l.featFeatures != null || l.ability != null)
-                            newContent += ", ";
+                            newContent += " | ";
                     }
                 if (l.linkFeatures != null)
                     for (let j = 0; j < l.linkFeatures.length; j++) {
@@ -249,7 +249,7 @@ function updateDisplay() {
                             else
                                 newContent += "<a href='/abilities/?focus=" + f.replace(/[ -]/g, "_") + "'>" + f + "</a>"
                             if ((j != l.linkFeatures.length-1 || l.featFeatures != null ||l.ability != null) && l.linkFeatures[j+1] != "OR")
-                                newContent += ", ";
+                                newContent += " | ";
                         }
                         else
                             newContent += " OR ";
@@ -259,7 +259,7 @@ function updateDisplay() {
                         if (l.featFeatures[j] != "OR") {
                             newContent += "<a href='/feats/?focus=" + l.featFeatures[j].replace(/[ -]/g, "_") + "'>" + l.featFeatures[j] + "</a>";
                             if (j != l.featFeatures.length-1 || l.ability != null)
-                                newContent += ", ";
+                                newContent += " | ";
                         }
                         else
                             newContent += " OR ";
@@ -268,7 +268,7 @@ function updateDisplay() {
                     for (let j = 0; j < l.ability.length; j++) {
                         newContent += l.ability[j];
                         if (j != l.ability.length-1)
-                            newContent += ", ";
+                            newContent += " | ";
                     }
                 if (l.otherFeatures == null && l.linkFeatures == null && l.featFeatures == null && l.ability == null)
                     newContent += "-";

@@ -224,6 +224,14 @@
             "stat": "Dex",
             "prereq": "None",
             "dmg": "4d6 Radiant (Undead Only)"
+        },{
+            "name": "Boomerang",
+            "attr": ["Return", "Ambush", "Thrown (10/30)"],
+            "type": "Martial",
+            "spec": "Melee/Thrown",
+            "stat": "Str/Dex",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning"
         }
     ]
 }

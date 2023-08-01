@@ -6,7 +6,7 @@ $(document).ready(function () {
     q = url.searchParams.get("search");
 
     if (a == null) {
-        a= "Anchored_Stand";
+        a = "Ambush_Attacker";
         updateURL();
     }
 
@@ -19,7 +19,7 @@ $(document).ready(function () {
     });
 
     $("#display").on("click", "a.in-page", function() {
-        a= $(this).html().replace(/ /g, "_");
+        a= $(this).html().replace(/[ -]/g, "_");
         updateURL();
         updateDisplay();
     });
@@ -79,7 +79,7 @@ function getData(q) {
     $.getJSON("abilities.json", function(data) {
         aData = data;
         if (aData[a] == null)
-            a = "Anchored_Stand";
+            a = "Ambush_Attacker";
         for (var key of Object.keys(aData))
             abilities.push([key, aData[key]]);
         updateList();

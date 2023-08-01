@@ -64,7 +64,7 @@
         "name": "Whirlwind Attacker",
         "desc": "You know how to create and take advantage of opportunities.",
         "effects": [
-            "When you drop an enemy to 0 HP, you may make another melee atack for free on a nearby target. This Feat may tie into itself.",
+            "When you drop an enemy to 0 HP, you may make another melee attack for free on a nearby target. This Feat may tie into itself.",
             "Additionally, as an Action, you may force every hostile creature within a meter of you to make a Dexterity Saving Throw against a DC of 8 + Proficiency Bonus + Strength Modifier. If they fail the Save you deal an amount of damage equal to your unarmed strike, the melee weapon you are holding, or your Stand's attack damage. If they succeed, they take no damage."
         ]
     },
@@ -182,7 +182,7 @@
         "effects": [
             "You may hide as a Bonus Action.",
             "For you, Half Cover counts as Three-Quarters Cover, and Three-Quarters Cover counts as Total Cover.",
-            "You may get up from the Proned Condition as a Reaction, or by spending only 1m of Movement on your Turn."
+            "You may get up from the Prone Condition as a Reaction, or by spending only 1m of Movement on your Turn."
         ]
     },
     "Headhunter": {
@@ -223,7 +223,7 @@
         "name": "Heavy Specialization",
         "desc": "Through all of the time you've spent lugging around and using heavy equipment you've realized how to deal the most damage using these powerful, heavy weapons.",
         "effects": [
-            "You gain Profciency in the use of any weapon with the \"Heavy\" specialization type.",
+            "You gain Proficiency in the use of any weapon with the \"Heavy\" specialization type.",
             "When bracing with a Heavy weapon, you gain +2 AC until the beginning of your next Turn.",
             "If you are already Proficient in the use of a Heavy weapon, you gain Expertise in it."
         ]
@@ -232,7 +232,7 @@
         "name": "Assassin",
         "desc": "You've spent a lot of time in the shadows and know how to strike from them.",
         "effects": [
-            "Whenever you attack a target with a weapon with the Ambush property and have Advantage on the attack, you deal an additional amount of d6's of damage equal to your Proficiency Bonus (which are doubled if the opponent is Surprised).",
+            "Whenever you use an attack or weapon with the Ambush property and have Advantage on the attack or an ally is within melee with your target, you deal an additional amount of d6's of damage equal to your Proficiency Bonus (which are doubled if the opponent is Surprised).",
             "You may only apply this additional damage once per round."
         ]
     },
@@ -305,7 +305,8 @@
         "desc": "You radiate threatening energy.",
         "effects": [
             "You may make an Intimidation Check as a Bonus Action.",
-            "When you make an Intimidation Check, you may choose an amount of creatures within 5 meters equal to your Proficiency Bonus. These creatures must contest the result of your Intimidation check with a Wisdom Saving Throw, becoming Frightened until the end of their next Turn on a failed Save."
+            "When you make an Intimidation Check, you may choose an amount of creatures within 5 meters equal to your Proficiency Bonus. These creatures must contest the result of your Intimidation check with a Wisdom Saving Throw, becoming Frightened until the end of their next Turn on a failed Save.",
+            "When a creature is Frightened in this way, they can't be Frightened by it again for 1 minute."
         ]
     },
     "Motivated": {
@@ -354,7 +355,7 @@
         "name": "Sidearm Specialization",
         "desc": "Through knowledge and training, you have gained the ability to use sidearms to remarkable effect. ",
         "effects": [
-            "You gain Profciency in the use of any weapon with the \"Sidearm\" specialization type.",
+            "You gain Proficiency in the use of any weapon with the \"Sidearm\" specialization type.",
             "You may reload sidearms as a free action.",
             "If you are already Proficient in the use of a Sidearm, you gain Expertise in it."
         ]
@@ -385,8 +386,8 @@
         "name": "Rifle Specialization",
         "desc": "Through training and patience, you have gained the ability to accurately use rifles.",
         "effects": [
-            "You gain Profciency in the use of any weapon with the \"Rifle\" specialization type.",
-            "When you roll a 19 on an Attack Roll with a Rifle, it is counted as a critical hit just as if you had rolled a 20.",
+            "You gain Proficiency in the use of any weapon with the \"Rifle\" specialization type.",
+            "When you roll a 19 on an Attack Roll with a Rifle, it is counted as a Critical hit just as if you had rolled a 20.",
             "While using a Rifle, you may attack at Long Range without imposing Disadvantage.",
             "If you are already Proficient in the use of a Rifle, you gain Expertise in it."
         ]
@@ -413,7 +414,7 @@
         "name": "Simple Weapon Focus",
         "desc": "Through knowledge and training, you have gained the ability to use simple weapons to remarkable effect.",
         "effects": [
-            "You gain Profciency in the use of Simple weapons.",
+            "You gain Proficiency in the use of Simple weapons.",
             "You may add your Proficiency to the damage dealt by a Melee weapon, or a second time to the Attack Roll for a Ranged weapon.",
             "If you are already Proficient in the use of a Simple weapon, you gain Expertise in it."
         ]
@@ -469,7 +470,7 @@
         "name": "Tavern Brawler",
         "desc": "Through experience and tussles, you've gained the ability to make objects from your environment into effective weaponry.",
         "effects": [
-            "You gain Profciency in the use of Improvised weapons.",
+            "You gain Proficiency in the use of Improvised weapons.",
             "When making a melee attack on your Turn, you may either make another attack with an Improvised weapon or Grapple/Shove your target as a Bonus Action.",
             "If you are already Proficient in the use of an Improvised weapon, you gain Expertise in it."
         ]
@@ -494,7 +495,7 @@
         "name": "Thrown Weapon Specialization",
         "desc": "You've spent a lot of time throwing all sorts of objects from darts to tomahawks and more.",
         "effects": [
-            "You gain Profciency in the use of any weapon with the \"Thrown\" specialization type.",
+            "You gain Proficiency in the use of any weapon with the \"Thrown\" specialization type.",
             "You may draw a Thrown weapon as a free action.",
             "Additionally, you may throw two of the same Thrown or Improvised weapons as a single Attack. You cannot do this with Spheres imbued with Spin.",
             "If you are already Proficient in the use of a Thrown weapon, you gain Expertise in it."
@@ -504,7 +505,7 @@
         "name": "Martial Arts",
         "desc": "Through knowledge and training you have become remarkably effective in unarmed combat. ",
         "effects": [
-            "You gain Profciency in the use of Improvised weapons, and Expertise in Unarmed Strikes or melee Stand attacks.",
+            "You gain Proficiency in the use of Improvised weapons, and Expertise in Unarmed Strikes or melee Stand attacks.",
             "When making an Unarmed Strike, you deal 1d8 damage instead of 1d4.",
             "When making an Athletics Check to Grapple or Shove a target, you may use either Dexterity or Strength.",
             "Additionally, you may spend a full Action to Grapple a target and cause them to be Restrained if successful. As long as you continue to use your full Action and don't move each Turn, the target will continue to be Restrained.",
@@ -543,7 +544,7 @@
         "name": "Shotgun Specialization",
         "desc": "Through knowledge and training, you have gained the ability to use shotguns to remarkable effect. ",
         "effects": [
-            "You gain Profciency in the use of any weapon with the \"Shotgun\" specialization type.",
+            "You gain Proficiency in the use of any weapon with the \"Shotgun\" specialization type.",
             "When you hit a creature that is medium or smaller with a shotgun blast at short range or closer, you may choose to halve the damage dealt and force them to make a Constitution Saving Throw. The DC for this Save is 8 + Con + Proficiency, and if they fail they are knocked Prone.",
             "If you are already Proficient in the use of a Shotgun, you gain Expertise in it."
         ]
@@ -552,7 +553,7 @@
         "name": "Melee Specialization",
         "desc": "Through knowledge and training, you have gained the ability to use melee weapons to remarkable effect.",
         "effects": [
-            "You gain Profciency in the use of any weapon with the \"Melee\" specialization type.",
+            "You gain Proficiency in the use of any weapon with the \"Melee\" specialization type.",
             "When dealing damage using a Melee weapon, you may reroll the Damage Dice if desired. You must keep the new roll, and you can only do this once per Turn.",
             "Additionally, if you are hit by a melee attack while wielding a Melee weapon, you may use your Reaction to add your Proficiency bonus to your AC until the beginning of your next Turn.",
             "If you are already Proficient in the use of a Melee weapon, you gain Expertise in it."
@@ -579,7 +580,8 @@
             "Your Stand's Range stat becomes 0, and it cannot be increased in any manner.",
             "Your Stand becomes bound in reality as a more tangible object. Therefore, when summoned it has a physical form that surrounds parts of or the entire User and is visible, even to those without a Stand. It is also now able to be affected by Non-Stand damage types.",
             "You are now able to increase any stat (except Range) that your Stand has that you would normally be unable to increase. For example, an Ability-Type Suit Stand User could increase their Power and Durability past their initial values.",
-            "Additionally, your Stand gets a multiplier boost of 2 for its physical stats. For example, a Power-Type which would typically have x4, x3, x3 for Power, Precision, Durability would get boosted to x6, x5, and x5 respectively as a Suit Stand."
+            "Additionally, your Stand gets a multiplier boost of 2 for its physical stats. For example, a Power-Type which would typically have x4, x3, x3 for Power, Precision, Durability would get boosted to x6, x5, and x5 respectively as a Suit Stand.",
+            "You also gain <a href='/abilities/?focus=Anchored_Stand'>Anchored Stand</a> if you don't already have it."
         ],
         "prereq": "<a href='/classes/?focus=Stands'>Stand User</a> Level 1+"
     }
