@@ -80,7 +80,7 @@ function updateDisplay() {
                 for (let j = 0; j < race.level[i].feats.length; j++) {
                     newContent += "<a href='/abilities/?focus=" + race.level[i].feats[j].replace(/ /g, "_") + "'>" + race.level[i].feats[j] + "</a>";
                     if (j != race.level[i].feats.length-1)
-                        newContent += ", ";
+                        newContent += " | ";
                     else
                         newContent += "</td>";
                 }

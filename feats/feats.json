@@ -305,7 +305,8 @@
         "desc": "You radiate threatening energy.",
         "effects": [
             "You may make an Intimidation Check as a Bonus Action.",
-            "When you make an Intimidation Check, you may choose an amount of creatures within 5 meters equal to your Proficiency Bonus. These creatures must contest the result of your Intimidation check with a Wisdom Saving Throw, becoming Frightened until the end of their next Turn on a failed Save."
+            "When you make an Intimidation Check, you may choose an amount of creatures within 5 meters equal to your Proficiency Bonus. These creatures must contest the result of your Intimidation check with a Wisdom Saving Throw, becoming Frightened until the end of their next Turn on a failed Save.",
+            "When a creature is Frightened in this way, they can't be Frightened by it again for 1 minute."
         ]
     },
     "Motivated": {

@@ -55,7 +55,7 @@
         "classes": ["Rmt"],
         "desc": [
             "Your Stand no longer shares a health pool with you. If your Stand is destroyed or knocked unconscious it will not affect you in any way.",
-            "It takes 1d4 hours for it to fully regenerate and be able to manifest again. However, if you are killed or knocked unconscious your Stand will cease to exist. "
+            "It takes 1d4 hours for it to fully regenerate and be able to manifest again. However, if you are killed or knocked unconscious your Stand will dissapear as usual. "
         ]
     },
     "General_Anchors": {

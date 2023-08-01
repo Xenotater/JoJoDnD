@@ -1232,7 +1232,7 @@
                     "16": {
                         "pro": "5",
                         "feats": "5",
-                        "featFeatures": ["Resilient", "Stand Specialization"]
+                        "featFeatures": ["Resilient", "OR", "Stand Specialization"]
                     },
                     "17": {
                         "pro": "6",
@@ -1386,7 +1386,7 @@
                     "16": {
                         "pro": "5",
                         "feats": "5",
-                        "linkFeatures": ["Improved Immense Range"],
+                        "linkFeatures": ["Improved Immense Range", "OR"],
                         "featFeatures": ["Enhanced Stand Senses"]
                     },
                     "17": {
@@ -1625,7 +1625,7 @@
                             "pro": "6",
                             "feats": "5",
                             "abilDice": "9dx",
-                            "linkFeatures": ["Slippery (Act 2)", "Stand Energy Recharge (Act 2)"]
+                            "linkFeatures": ["Slippery (Act 2)", "OR", "Stand Energy Recharge (Act 2)"]
                         },
                         {
                             "lvl": "19",
