@@ -149,7 +149,7 @@ function updateStandScore(stat, diff) {
         case "rng":
             multipliers = {"str":3,"dex":3,"con":3,"int":6,"wis":3,"cha":3};
             break;
-        case "rem":
+        case "rmt":
             multipliers = {"str":3,"dex":2,"con":4,"int":5,"wis":3,"cha":2};
             break;
         case "abl":
