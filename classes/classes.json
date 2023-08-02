@@ -619,7 +619,7 @@
                     "14": {
                         "pro": "5",
                         "feats": "4",
-                        "otherFeatures": ["Choose another Class Feature from Level 1, Level 4, Level 5, Level 7, or Level 12"]
+                        "otherFeatures": ["Choose another Class Feature from Level 4, Level 5, Level 7, or Level 12"]
                     },
                     "15": {
                         "pro": "5",
@@ -645,7 +645,7 @@
                     "19": {
                         "pro": "6",
                         "feats": "5",
-                        "otherFeatures": ["Choose another Class Feature from Level 1, Level 4, Level 5, Level 7, Level 12, Level 16, or Level 18"]
+                        "otherFeatures": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 12, Level 16, or Level 18"]
                     },
                     "20": {
                         "pro": "6",
@@ -793,7 +793,7 @@
                     "19": {
                         "pro": "6",
                         "feats": "5",
-                        "otherFeatures": ["Choose another Class Feature from Level 1, Level 4, Level 5, Level 7, Level 14, Level 16, or Level 18"]
+                        "otherFeatures": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 14, Level 16, or Level 18"]
                     },
                     "20": {
                         "pro": "6",
@@ -1532,7 +1532,7 @@
                             "pro": "3",
                             "feats": "3",
                             "abilDice": "4dx",
-                            "linkFeatures": ["Defensive Ability", "Mobile Ability"]
+                            "linkFeatures": ["Defensive Ability", "OR", "Mobile Ability"]
                         },
                         {
                             "lvl": "8",
