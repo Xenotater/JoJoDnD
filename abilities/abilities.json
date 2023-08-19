@@ -20,7 +20,7 @@
         "classes": ["Pwr", "Rng", "Enh", "Rev", "Ind"],
         "desc": [
             "The amount of damage that your Stand can reduce per round is doubled.",
-            "This Ability replaces <a class='in-page'>Immense Resistance</a>, if you have it."
+            "<a class='in-page'>Immense Resistance</a> still applies if you have it, but applies after this increase."
         ]
     },
     "Complete_Control": {
@@ -118,7 +118,8 @@
         "name": "Improved Slippery",
         "classes": ["Rng"],
         "desc": [
-          "In addition to being able to Dash and Disengage as a Bonus Action with your Stand or if your stand is within 2m, you also gain the ability to Dodge as a Bonus Action with your Stand or if your stand is within 2m."  
+          "In addition to being able to Dash and Disengage as a Bonus Action with your Stand or if your stand is within 2m, you also gain the ability to Dodge as a Bonus Action with your Stand or if your stand is within 2m.",
+          "You may use this Ability twice per Short Rest." 
         ]
     },
     "Juggernaut": {
@@ -350,7 +351,7 @@
         "name": "Devastating Critical",
         "classes": ["Pwr", "Rev"],
         "desc": [
-            "When you roll a Critical hit on a melee attack using your Stand, you roll three times the damage dice, rather than double."
+            "When you roll a Critical hit on a melee attack using your Stand, you roll three times the Damage Dice, rather than double."
         ]
     },
     "Devastating_Melee": {
@@ -431,10 +432,8 @@
         "name": "Melee Barrage",
         "classes": ["Pwr", "Rng", "Ind", "Act"],
         "desc": [
-            "Using this Ability takes an entire Turn (consuming Action, Bonus Action, and Movement Action), you may perform a number of melee attacks equal to your Stand's Speed Modifier (+6 Speed would mean 6 attacks in one Melee Barrage), with a maximum of 10 attacks.",
-            "Each hit functions as normal in terms of the Attack Rolls, but when you deal damage, you do not add your Stand's Power Modifier to the Damage Rolls. The Damage Dice for these attacks is whatever your Stand Type would deal at Level 1, you may not use upgraded dice gained from Level 11 or from being an Undead.",
-            "Furthermore, you may not Activate a Stand Ability with any of these attacks, and if you roll a 1 on any of these Attack Rolls, the Melee Barrage ends.",
-            "For Act Types, it should be noted that Act 3 Melee Barrage uses 1d10, rather than 2d8 for the Damage Dice."
+            "Using this Ability takes an entire Turn (consuming Action, Bonus Action, and Movement Action), you may perform a number of melee attacks equal to half your Stand's Speed Modifier (+6 Speed would mean 3 attacks in one Melee Barrage), with a maximum of 5 attacks.",
+            "Each hit functions as normal in terms of the Attack Rolls, but you may only add your Power modifier to the Damage Roll once."
         ]
     },
     "Mobile_Ability": {
@@ -456,8 +455,9 @@
         "classes": ["Rng", "Abl", "Ind"],
         "desc": [
             "Destructive energy is summoned from deep within your Stand and somehow released in a direction with the intent to harm or deal damage. Using this Ability consumes an entire Action, allowing you to fire Stand projectiles (flavor as you'd like) in one of two ways:",
-            "<ul class='sublist'><li><b>Focused Attack:</b> Make 1 Attack Roll against a single target in range using your Precision + Proficiency Bonus, dealing Stand damage of a type of your choice on hit. This deals an amount of d8s equal to the number of Attacks you have plus your Speed Modifier. For example, a Stand User with 120 Speed (and thus 3 Attacks), would deal 3d8+12 damage. The range of this Ability is 10/20 meters, increasing to 20/40 at Level 11.</li>",
-            "<li><b>Burst Attack:</b> Everyone within a 5 meter cone (10 meters at Level 11) in front of your Stand must make a Dexterity Saving Throw. The DC for this Save is 8 + Precision + Proficiency Bonus. If any creature within the cone fails the Save, they take Stand damage of a type of your choice. This deals an amount of d8s equal to the number of Attacks you have. For example, a Stand User with 120 Speed (and thus 3 Attacks), would deal 3d8 damage.</li></ul>"
+            "<ul class='sublist'><li><b>Focused Attack:</b> Make 1 Attack Roll against a single target in range using your Precision + Proficiency Bonus, dealing Stand damage of a type of your choice on hit. This deals an amount of d8s equal to the number of Attacks you have plus your Speed Modifier. For example, a Stand User with 120 Speed (and thus 3 Attacks), would deal 3d8+12 damage. The range of this Ability is 10/20 meters.</li>",
+            "<li><b>Burst Attack:</b> Everyone within a 5 meter cone in front of your Stand must make a Dexterity Saving Throw. The DC for this Save is 8 + Precision + Proficiency Bonus. If any creature within the cone fails the Save, they take Stand damage of a type of your choice. This deals an amount of d8s equal to the number of Attacks you have. For example, a Stand User with 120 Speed (and thus 3 Attacks), would deal 3d8 damage.</li></ul>",
+            "At Level 11, both the number of Damage Dice rolled and the range of this Ability are doubled."
         ]
     },
     "Reckless_Attack": {
@@ -749,7 +749,7 @@
         "name": "Spherical Spin",
         "classes": ["Spin"],
         "desc": [
-            "You're able to spin special Spheres in a way that imbues them with powerful energy. The number of damage dice used with these Spheres increases with the column on the right of The Spin's class table.",
+            "You're able to spin special Spheres in a way that imbues them with powerful energy. The number of Damage Dice used with these Spheres increases with the column on the right of The Spin's class table.",
             "In order to use the Spin, you must have a relatively undamaged non-human animal or plant nearby that you can see clearly as a reference. You can only use Dexterity for the Spin, not Precision."
         ]
     },

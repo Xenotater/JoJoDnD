@@ -99,16 +99,16 @@
     },
     "Hospitality_Worker": {
         "name": "Hospitality Worker",
-        "desc": "A person who makes their living serving people, using their training and wit to help them.",
+        "desc": "A person who makes their living serving people, using their using their mind and their social skills to help them.",
         "examples": ["Waitstaff", "Receptionists", "Secretaries", "Salespeople"],
         "saves": "You are proficient in Wisdom and Charisma saving throws.",
-        "ability": "Your Wisdom Score increases by 1 and your Charisma Score increases by 1.",
+        "ability": "Your Wisdom Score increases by 1 and your Charisma Score increases by 2.",
         "custom": {
             "name": "People Person",
             "desc": "You have proficiency in Insight, Perception, and Persuasion."
         },
-        "profs": 1,
-        "languages": "You can speak, read, and write up to two additional Human languages."
+        "profs": 3,
+        "languages": "You can speak, read, and write an additional Human language."
     },
     "Student": {
         "name": "Student",

@@ -196,7 +196,7 @@
             "content": [
                 "Your Stand's normal attacks (typically punches) are determined similarly to regular attacks. Roll a d20 and add the Power or Precision Mod of your Stand and your Proficiency Bonus to determine if the attack hits. The amount of damage dealt is based off of your Stand's Attack Dice plus your Power (NOT Precision) Mod.</p>",
                 "<p>For User attacks, roll a d20 and add your Strength or Dexterity Mod, whichever is higher. Every Unarmed Attack deals 1d4 + Str damage. <b>Regular physical attacks DO NOT AFFECT STANDS</b> (except for Enhancement or Independent Types).</p>",
-                "<p>Speed is also very important. The total Speed Score of your Stand divided by 50 is one more Attack that the Stand or the User may perform each round, with a minimum of one. If Non-Stand Users want to have multiple Attacks per round, they may take the <a href='/feats/?focus=Trained_Combatant'>Trained Combatant</a> Feat."
+                "<p>Speed is also very important. The total Speed Score of your Stand divided by 50 is one more Attack that the Stand or the User may perform each round, with a minimum of one and a maximum of 10. If Non-Stand Users want to have multiple Attacks per round, they may take the <a href='/feats/?focus=Trained_Combatant'>Trained Combatant</a> Feat."
             ]
         },
         {
@@ -455,7 +455,7 @@
                     "11": {
                         "pro": "4",
                         "feats": "4",
-                        "otherFeatures": ["Attack Dice increases to 2d6"]
+                        "otherFeatures": ["Attack Dice increases to 2d6", "<a href='/abilities/?focus=Ranged_Attack'>Ranged Attack</a> dice and range are doubled"]
                     },
                     "12": {
                         "pro": "4",
@@ -750,7 +750,7 @@
                     "11": {
                         "pro": "4",
                         "feats": "4",
-                        "otherFeatures": ["Choose another Class Feature from Level 4, Level 5, or Level 7", "Attack Dice increases to 1d6"]
+                        "otherFeatures": ["Choose another Class Feature from Level 4, Level 5, or Level 7", "Attack Dice increases to 1d6", "<a href='/abilities/?focus=Ranged_Attack'>Ranged Attack</a> dice and range are doubled"]
                     },
                     "12": {
                         "pro": "4",
@@ -1206,7 +1206,7 @@
                     "11": {
                         "pro": "4",
                         "feats": "4",
-                        "otherFeatures": ["Attack Dice increases to 2d6"]
+                        "otherFeatures": ["Attack Dice increases to 2d6", "<a href='/abilities/?focus=Ranged_Attack'>Ranged Attack</a> dice and range are doubled"]
                     },
                     "12": {
                         "pro": "4",
@@ -1375,7 +1375,7 @@
                     "14": {
                         "pro": "5",
                         "feats": "4",
-                        "linkFeatures": ["Stand Pickpocketing", "OR", "Silent Movement"]
+                        "linkFeatures": ["Silent Movement", "OR", "Speedy Movement"]
                     },
                     "15": {
                         "pro": "5",
@@ -1447,12 +1447,13 @@
                 "desc": "It is said that Stands are a physical manifestation of one's fighting spirit. However, there are some that are exposed to a <a href='/artifacts'>Stand-Granting item</a> that do not possess a proper fighting spirit, but develop a Stand regardless due to  some (often benevolent) outside force. These Stand Users will grow and develop alongside their Stand. Despite starting out extremely weak, they eventually become some of the strongest, scariest, and most versatile Stand Users. They are forced to evolve their Stand once they have developed as a person, experienced combat several times, and when they are in a situation that puts them in despair.",
                 "notes": [
                     "You may switch between your Acts as a Bonus Action once you have obtained them, all except for the Act 0 Stand. In order to evolve your Stand, you must have either; Ready to Hatch, Ready to Walk, or Ready To Fly, and you must be trapped in an event that your DM considers to be “hopeless.” Only then will your Stand evolve.",
+                    "When switching to an Act with a higher Stand Energy Modifier, your Stand Energy must remain at the lower value. For example, if your Act 2 Stand has 6 SE and you switch to Act 1 with a maximum of 10, your available Stand Energy remains at 6.",
                     "Unless stated otherwise, Class Features can only be used by the Act that gained them."
                 ],
                 "hDice": "1d8",
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except those mentioned in each Act. You put all of the points into each Act, so if for example you roll to get 15 points, each Act of your Stand get 15 points to increase stats with. Stand Energy is an exception for this, as it must be the same for each Act. When you gain a new Act, you may roll the dice to retroactively increase the stats of the new Stand.",
+                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except those mentioned in each Act. You put all of the points into each Act, so if for example you roll to get 15 points, each Act of your Stand get 15 points to increase stats with. When you gain a new Act, you may roll the dice to retroactively increase the stats of the new Stand.",
                 "acts": [{
                     "aDice": "0",
                     "note": "Act 0 Stands do not have an Ability, nor any capacity to move, attack, dodge, or evade. If they can even be summoned, they simply manifest as a large egg.",

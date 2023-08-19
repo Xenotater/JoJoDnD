@@ -65,7 +65,7 @@
         "desc": "You know how to create and take advantage of opportunities.",
         "effects": [
             "When you drop an enemy to 0 HP, you may make another melee attack for free on a nearby target. This Feat may tie into itself.",
-            "Additionally, as an Action, you may force every hostile creature within a meter of you to make a Dexterity Saving Throw against a DC of 8 + Proficiency Bonus + Strength Modifier. If they fail the Save you deal an amount of damage equal to your unarmed strike, the melee weapon you are holding, or your Stand's attack damage. If they succeed, they take no damage."
+            "Additionally, as an Action, you may force every hostile creature within a meter of you to make a Dexterity (NOT Precision) Saving Throw against a DC of 8 + Proficiency Bonus + Strength Modifier. If they fail the Save you deal an amount of damage equal to your unarmed strike, the melee weapon you are holding, or your Stand's attack damage. If they succeed, they still take half damage."
         ]
     },
     "Combat_Medic": {
@@ -232,7 +232,7 @@
         "name": "Assassin",
         "desc": "You've spent a lot of time in the shadows and know how to strike from them.",
         "effects": [
-            "Whenever you use an attack or weapon with the Ambush property and have Advantage on the attack or an ally is within melee with your target, you deal an additional amount of d6's of damage equal to your Proficiency Bonus (which are doubled if the opponent is Surprised).",
+            "Whenever you use an attack or weapon with the Ambush property and have Advantage on the attack or an ally is within melee with your target, you deal an additional amount of d8s of damage equal to your Proficiency Bonus (which are doubled if the opponent is Surprised).",
             "You may only apply this additional damage once per round."
         ]
     },
