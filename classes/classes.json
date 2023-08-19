@@ -196,7 +196,7 @@
             "content": [
                 "Your Stand's normal attacks (typically punches) are determined similarly to regular attacks. Roll a d20 and add the Power or Precision Mod of your Stand and your Proficiency Bonus to determine if the attack hits. The amount of damage dealt is based off of your Stand's Attack Dice plus your Power (NOT Precision) Mod.</p>",
                 "<p>For User attacks, roll a d20 and add your Strength or Dexterity Mod, whichever is higher. Every Unarmed Attack deals 1d4 + Str damage. <b>Regular physical attacks DO NOT AFFECT STANDS</b> (except for Enhancement or Independent Types).</p>",
-                "<p>Speed is also very important. The total Speed Score of your Stand divided by 50 is one more Attack that the Stand or the User may perform each round, with a minimum of one and a maximum of 10. If Non-Stand Users want to have multiple Attacks per round, they may take the <a href='/feats/?focus=Trained_Combatant'>Trained Combatant</a> Feat."
+                "<p>Speed is also very important. The total Speed Score of your Stand divided by 50 is one more Attack that the Stand or the User may perform each round, with a minimum of one and a maximum of ten. If Non-Stand Users want to have multiple Attacks per round, they may take the <a href='/feats/?focus=Trained_Combatant'>Trained Combatant</a> Feat."
             ]
         },
         {
