@@ -199,7 +199,7 @@ function getMults(type) {
     case "Power":
       return [4,3,3,1,4,2];
     case "Ranged":
-      return [3,3,3,6,3,3];
+      return [3,3,3,10,3,3];
     case "Remote":
       return [3,2,4,5,3,2];
     case "Ability":
@@ -207,11 +207,11 @@ function getMults(type) {
     case "Enhancement":
       return [3,3,5,5,3,3];
     case "Revenge":
-      return [3,4,4,7,3,2];
+      return [4,3,4,5,3,3];
     case "Independent":
       return [3,3,4,0,3,3];
     case "Hive":
-      return [3,2,3,10,3,2];
+      return [3,2,3,8,3,3];
     //can't do act since each act has differnt mults/stats
     default:
       return [0,0,0,0,0,0];
