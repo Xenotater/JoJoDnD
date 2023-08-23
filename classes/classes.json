@@ -1746,7 +1746,7 @@
             "12": {
                 "pro": "4",
                 "feats": "4",
-                "linkFeatures": ["Medicinal Spin", "Satellite Spin"]
+                "linkFeatures": ["Medicinal Spin", "OR", "Satellite Spin"]
             },
             "13": {
                 "pro": "5",
