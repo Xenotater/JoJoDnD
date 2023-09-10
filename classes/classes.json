@@ -562,7 +562,7 @@
                         "pro": "2",
                         "feats": "2",
                         "ability": ["Ability Score Improvement"],
-                        "featFeatures": ["Oblivious Facade"]
+                        "linkFeatures": ["Oblivious Facade"]
                     },
                     "4": {
                         "pro": "2",
