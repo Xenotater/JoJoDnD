@@ -38,7 +38,8 @@
         "content": [
           "<p>Your Familiar will have a number of <a class='in-page' id='Always_Alert-link'>Familiar Feats</a> equal to half of the <a href='/Feats'>Feats</a> that you have, rounded up. For example, if you have 3 Feats, your Familiar has 2.</p>",
           "<p>In order for your Familiar to awaken a Stand, both of you must take the <a href='/feats/?focus=Familiar_Fighting_Spirit'>Familiar Fighting Spirit</a> Feat.</p>",
-          "<p>Your Familiar will follow your lead in combat, taking their Turn in Initiative directly after yours.</p>"
+          "<p>Your Familiar will follow your lead in combat, taking their Turn in Initiative directly after yours.</p>",
+          "<p>Your Familiar will Level-Up alongside you, and will always be the same Level as you.</p>"
         ]
       }
     ],
