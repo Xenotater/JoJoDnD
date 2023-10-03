@@ -23,7 +23,7 @@
     "Red_Stone_of_Aja": {
         "name": "Red Stone of Aja",
         "desc": "A beautiful crimson gemstone that amplifies light shined into it by internally reflecting it millions of times, the Aja is highly valued and sought after. There are many imperfect stones, but only one perfect Artifact.",
-        "effect": "<ul><li><b>Imperfect Red Stone of Aja:</b> UV Light or Ripple channeled through this stone deals an additional 2d10 Radiant damage as a short range (3m) beam that is fired out of the stone. This imperfect relic may be esasily damged however, having 12 AC and 15 HP.</li><li><b>Perfected Red Stone of Aja:</b>Whenever UV Light or Ripple channeled through this stone deals an additional 12d10 Radiant damage as a 10m beam. It's more durable than its imperfect counterparts, with 20 AC and 100 HP and regenerating 1 HP for each minute it is not in use.",
+        "effect": "<ul><li><b>Imperfect Red Stone of Aja:</b> UV Light or Ripple channeled through this stone deals an additional 2d10 Radiant damage as a short range (3m) beam that is fired out of the stone. This imperfect relic may be esasily damged however, having 12 AC and 15 HP.</li><li><b>Perfected Red Stone of Aja:</b> Whenever UV Light or Ripple channeled through this stone deals an additional 12d10 Radiant damage as a 10m beam. It's more durable than its imperfect counterparts, with 20 AC and 100 HP and regenerating 1 HP for each minute it is not in use.",
         "note": "If the Perfeted Red Stone of Aja is combined with a Stone Mask, that mask will become the Completed Stone Mask."
     },
     "Completed_Stone_Mask": {
