@@ -48,8 +48,8 @@
             "4": {
                 "pro": "2",
                 "feats": "2",
-                "linkFeatures": ["Rippling Weapon", "OR"],
-                "featFeatures": ["Martial Arts"],
+                "linkFeatures": ["Rippling Weapon"],
+                "featFeatures": ["Martial Arts", "OR", "Simple Weapon Focus"],
                 "ability": ["Increase Str, Dex, or Con Score by 1"]
             },
             "5": {
@@ -144,26 +144,26 @@
         "otherCols": [{
             "name": "Unarmed Dice",
             "level": {
-                "1": "1d6",
-                "2": "1d6",
-                "3": "1d6",
-                "4": "1d6",
-                "5": "1d8",
-                "6": "1d8",
-                "7": "1d8",
-                "8": "1d8",
-                "9": "1d8",
-                "10": "1d10",
-                "11": "1d10",
-                "12": "1d10",
-                "13": "1d10",
-                "14": "1d10",
-                "15": "1d12",
-                "16": "1d12",
-                "17": "1d12",
-                "18": "1d12",
-                "19": "1d12",
-                "20": "1d12"
+                "1": "2d6",
+                "2": "2d6",
+                "3": "2d6",
+                "4": "2d6",
+                "5": "2d8",
+                "6": "2d8",
+                "7": "2d8",
+                "8": "2d8",
+                "9": "2d8",
+                "10": "2d10",
+                "11": "2d10",
+                "12": "2d10",
+                "13": "2d10",
+                "14": "2d10",
+                "15": "2d12",
+                "16": "2d12",
+                "17": "2d12",
+                "18": "2d12",
+                "19": "2d12",
+                "20": "2d12"
             }
         }]
     },
@@ -188,7 +188,7 @@
                 "<p><b>Damage Reduction: </b>Stands have natural resistance against damage, determined by their Durability Mod. Your Stand can resist that many points of damage per round. For example, a Stand with a 100 Durability would be able to resist 10 points of damage per round, and a Stand with 40 would only be able to resist 4. Physical attacks that hit Stands deal no damage, unless specifically stated otherwise. The only types of damage that may deal damage to Stands is damage dealt by Stands, or the Abilities of Stands. Your Stand's Damage Reduction resets at the top of each round of Initiative.</p>",
                 "<p><b>Stand Movement: </b>Stands have a Movement Speed equal to twice their Stand's Speed Mod in meters, or a Movement Speed equal to their User, whichever is higher. Stands and Users each have a separate Movement Action. Independant-Type Stands can only move the base 10 Meters that a regular Human can, unless they have a specific Ability that allows them to increase it.</p>",
                 "<p><b>Stand Range: </b>Your Stand may move a number of meters away from you equal to its Range Mod, with a minimum of 1m.</p>",
-                "<p><b>Abilities and Stand Energy: </b>The amount of Energy your stand has is based on their Stand Energy Mod. Normal Abilities cost 1 point, Special Abilities cost more depending on the Stand type, and Abilities that manipulate Space or Time cost double the Energy they normally would. Stand Energy always fully replenishes when outside of combat. 1 Stand Energy is also replenished when you take the dodge action.</p>"
+                "<p><b>Abilities and Stand Energy: </b>The amount of Energy your stand has is based on their Stand Energy Mod. Normal Abilities typically cost 1 point and Special Abilities generally cost more depending on the Stand type. However, the cost may vary depending on how strong the Ability is at the DMs descretion, for example the Ability to stop time might cost double the normal cost. Stand Energy always fully replenishes when outside of combat. 1 Stand Energy is also replenished when you take the dodge action.</p>"
             ]
         },
         {
@@ -249,7 +249,7 @@
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
                 "aDice": ["1d12", "2d10"],
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats. Your Stand's Range may not be increased past 20 (2 meters).",
+                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats. You may choose to take the average roll instead (5 + Level), but must do so before rolling. Your Stand's Range may not be increased past 20 (2 meters).",
                 "mults": [4, 3, 3, 1, 4, 2],
                 "theme": "world",
                 "level": {
@@ -396,7 +396,7 @@
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
                 "aDice": ["1d6", "2d6"],
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except for Power or Durability. Your Power and Durability may not be increased past their initial values.",
+                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except for Power or Durability. You may choose to take the average roll instead (5 + Level), but must do so before rolling. Your Power and Durability may not be increased past their initial values.",
                 "mults": [3, 3, 3, 10, 3, 3],
                 "theme": "hiero",
                 "level": {
@@ -543,7 +543,7 @@
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
                 "aDice": ["1d10", "2d8"],
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except Precision. Your Precision may not be increased past it's initial value.",
+                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except Precision. You may choose to take the average roll instead (5 + Level), but must do so before rolling. Your Precision may not be increased past it's initial value.",
                 "mults": [3, 2, 4, 5, 3, 2],
                 "notes": ["These Stands cannot be controlled by their Users, the only power their User has over them is to send them out or recall them. These Stands can only perform one predetermined action."],
                 "theme": "hStar",
@@ -691,7 +691,7 @@
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
                 "aDice": ["1d4", "1d6"],
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except Power or Durability. Your Stand's Power and Durability may not be increased past their initial values.",
+                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except Power or Durability. You may choose to take the average roll instead (5 + Level), but must do so before rolling. Your Stand's Power and Durability may not be increased past their initial values.",
                 "mults": [1, 3, 1, 4, 3, 5],
                 "theme": "album",
                 "level": {
@@ -840,7 +840,7 @@
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
                 "aDice": ["1d10", "2d8"],
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats.",
+                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats. You may choose to take the average roll instead (5 + Level), but must do so before rolling.",
                 "mults": [3, 3, 5, 5, 3, 3],
                 "theme": "love",
                 "level": {
@@ -999,7 +999,7 @@
                         "If you do not gain any more Grudge Points on a given Turn, your remaining Grudge Points persist for an amount of Turns equal to your level in Revenge-Type, or until spent (minimum of 2)."
                     ]
                 }],
-                "levelUp": "Every Level-Up, You may roll 3d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats.",
+                "levelUp": "Every Level-Up, You may roll 3d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats. You may choose to take the average roll instead (8 + Level), but must do so before rolling.",
                 "mults": [4, 3, 4, 5, 3, 3],
                 "theme": "cat",
                 "level": {
@@ -1148,7 +1148,7 @@
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
                 "aDice": ["1d8", "2d6"],
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except Range. Your Stand's Range may not be increased past 0.",
+                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except Range. You may choose to take the average roll instead (5 + Level), but must do so before rolling. Your Stand's Range may not be increased past 0.",
                 "mults": [3, 3, 4, 0,  3, 3],
                 "theme": "ff",
                 "level": {
@@ -1303,7 +1303,7 @@
                         "<p>This Ability's damage can be a type that you and your DM agree fits for your stand. When you attack using less than half of the total instances of your stand, your target has Advantage on the Saving Throw.</p>" 
                     ]
                 }],
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats.",
+                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats. You may choose to take the average roll instead (5 + Level), but must do so before rolling.",
                 "mults": [3, 2, 3, 8, 3, 3],
                 "theme": "bad",
                 "level": {
@@ -1453,7 +1453,7 @@
                 "hDice": "1d8",
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except those mentioned in each Act. You put all of the points into each Act, so if for example you roll to get 15 points, each Act of your Stand get 15 points to increase stats with. When you gain a new Act, you may roll the dice to retroactively increase the stats of the new Stand.",
+                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except those mentioned in each Act. You may choose to take the average roll instead (5 + Level), but must do so before rolling. You put all of the points into each Act, so if for example you roll to get 15 points, each Act of your Stand get 15 points to increase stats with. When you gain a new Act, you may roll the dice to retroactively increase the stats of the new Stand.",
                 "acts": [{
                     "aDice": "0",
                     "note": "Act 0 Stands do not have an Ability, nor any capacity to move, attack, dodge, or evade. If they can even be summoned, they simply manifest as a large egg.",
@@ -1719,7 +1719,8 @@
             "7": {
                 "pro": "3",
                 "feats": "3",
-                "linkFeatures": ["Spin Expertise"]
+                "linkFeatures": ["Spin Expertise"],
+                "featFeatures": ["Trained Combatant"]
             },
             "8": {
                 "pro": "3",
@@ -1828,7 +1829,7 @@
             "Brawler": {
                 "name": "Brawler",
                 "desc": "Brawlers tend to face their opponents head on using their fists, as well as their surroundings, in order to come out on top in fights.",
-                "hDice": "1d8",
+                "hDice": "1d12",
                 "theme": "basic",
                 "level": {
                     "1": {
@@ -1843,7 +1844,7 @@
                     "3": {
                         "pro": "2",
                         "feats": "2",
-                        "featFeatures": ["Trained Combatant"],
+                        "featFeatures": ["Quick on your Feet", "OR", "Catlike Agility"],
                         "ability": ["Ability Score Improvement"]
                     },
                     "4": {
@@ -1852,17 +1853,18 @@
                     },
                     "5": {
                         "pro": "3",
-                        "feats": "2"
+                        "feats": "2",
+                        "featFeatures": ["Trained Combatant"]
                     },
                     "6": {
                         "pro": "3",
                         "feats": "3",
-                        "featFeatures": ["Melee Specialization"],
                         "ability": ["Ability Score Improvement"]
                     },
                     "7": {
                         "pro": "3",
-                        "feats": "3"
+                        "feats": "3",
+                        "featFeatures": ["Immense Impact", "Skirmisher"]
                     },
                     "8": {
                         "pro": "3",
@@ -1872,7 +1874,7 @@
                     "9": {
                         "pro": "4",
                         "feats": "3",
-                        "ability": ["Ability Score Improvement"]
+                        "featFeatures": ["Tanky"]
                     },
                     "10": {
                         "pro": "4",
@@ -1881,16 +1883,17 @@
                     },
                     "11": {
                         "pro": "4",
-                        "feats": "4"
+                        "feats": "4",
+                        "featFeatures": ["Trained Combatant"]
                     },
                     "12": {
                         "pro": "4",
-                        "feats": "4",
-                        "featFeatures": ["Whirlwind Attacker", "OR", "Adrenaline Rush"]
+                        "feats": "4"
                     },
                     "13": {
                         "pro": "5",
                         "feats": "4",
+                        "featFeatures": ["Specialized Save", "OR", "Motivated"],
                         "ability": ["Ability Score Improvement"]
                     },
                     "14": {
@@ -1908,28 +1911,29 @@
                     },
                     "17": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "featFeatures": ["Guerilla Fighter", "OR", "Veteran Sprinter"],
+                        "ability": ["Ability Score Improvement"]
                     },
                     "18": {
                         "pro": "6",
-                        "feats": "5",
-                        "ability": ["Ability Score Improvement"]
+                        "feats": "5"
                     },
                     "19": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "featFeatures": ["Menacing Aura"]
                     },
                     "20": {
                         "pro": "6",
-                        "feats": "6",
-                        "featFeatures": ["Unstoppable Willpower"]
+                        "feats": "6"
                     }
                 }
             },
             "Knight": {
                 "name": "Knight",
                 "desc": "Knights are those who train to use heavy weapons and traverse long distances tirelessly.  ",
-                "hDice": "1d8",
+                "hDice": "1d10",
                 "theme": "basic",
                 "level": {
                     "1": {
@@ -1944,7 +1948,8 @@
                     "3": {
                         "pro": "2",
                         "feats": "2",
-                        "featFeatures": ["Whirlwind Attacker", "OR", "Scarflesh"]
+                        "featFeatures": ["Adrenaline Rush"],
+                        "ability": ["Ability Score Improvement"]
                     },
                     "4": {
                         "pro": "2",
@@ -1952,17 +1957,18 @@
                     },
                     "5": {
                         "pro": "3",
-                        "feats": "2"
+                        "feats": "2",
+                        "featFeatures": ["Melee Specialization"]
                     },
                     "6": {
                         "pro": "3",
                         "feats": "3",
-                        "featFeatures": ["Heavy Specialization"],
                         "ability": ["Ability Score Improvement"]
                     },
                     "7": {
                         "pro": "3",
-                        "feats": "3"
+                        "feats": "3",
+                        "featFeatures": ["Heavy Specialization", "OR", "Immense Impact"]
                     },
                     "8": {
                         "pro": "3",
@@ -1972,7 +1978,7 @@
                     "9": {
                         "pro": "4",
                         "feats": "3",
-                        "ability": ["Ability Score Improvement"]
+                        "featFeatures": ["Trained Combatant"]
                     },
                     "10": {
                         "pro": "4",
@@ -1981,16 +1987,17 @@
                     },
                     "11": {
                         "pro": "4",
-                        "feats": "4"
+                        "feats": "4",
+                        "featFeatures": ["Tanky"]
                     },
                     "12": {
                         "pro": "4",
-                        "feats": "4",
-                        "ability": ["Ability Score Improvement"]
+                        "feats": "4"
                     },
                     "13": {
                         "pro": "5",
                         "feats": "4",
+                        "featFeatures": ["Specialized Save", "OR", "Tanky"],
                         "ability": ["Ability Score Improvement"]
                     },
                     "14": {
@@ -2008,34 +2015,35 @@
                     },
                     "17": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "featFeatures": ["Motivated", "OR", "Superhuman"],
+                        "ability": ["Ability Score Improvement"]
                     },
                     "18": {
                         "pro": "6",
-                        "feats": "5",
-                        "ability": ["Ability Score Improvement"]
+                        "feats": "5"
                     },
                     "19": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "featFeatures": ["Resilient"]
                     },
                     "20": {
                         "pro": "6",
-                        "feats": "6",
-                        "featFeatures": ["Tanky"]
+                        "feats": "6"
                     }
                 }
             },
             "Soldier": {
                 "name": "Soldier",
                 "desc": "Soldiers are modern-day Warriors, often trained in the use of firearms as well as close combat. They are a more modern-day version of the Knight.",
-                "hDice": "1d6",
+                "hDice": "1d8",
                 "theme": "basic",
                 "level": {
                     "1": {
                         "pro": "2",
                         "feats": "2",
-                        "featFeatures": ["Rifle Specialization", "OR", "Sidearm Specialization", "Professional Weapon Training"]
+                        "featFeatures": ["Simple Weapon Focus", "OR", "Professional Weapon Training"]
                     },
                     "2": {
                         "pro": "2",
@@ -2044,7 +2052,7 @@
                     "3": {
                         "pro": "2",
                         "feats": "2",
-                        "featFeatures": ["Tavern Brawler", "OR", "Shotgun Specialization"],
+                        "featFeatures": ["Guerilla Fighter"],
                         "ability": ["Ability Score Improvement"]
                     },
                     "4": {
@@ -2053,17 +2061,18 @@
                     },
                     "5": {
                         "pro": "3",
-                        "feats": "2"
+                        "feats": "2",
+                        "featFeatures": ["Rifle Specialization", "OR", "Sidearm Specialization"]
                     },
                     "6": {
                         "pro": "3",
                         "feats": "3",
-                        "featFeatures": ["Heavy Specialization", "OR", "Rifle Specialization"],
                         "ability": ["Ability Score Improvement"]
                     },
                     "7": {
                         "pro": "3",
-                        "feats": "3"
+                        "feats": "3",
+                        "featFeatures": ["Shotgun Specialization", "OR", "Heavy Specialization"]
                     },
                     "8": {
                         "pro": "3",
@@ -2073,7 +2082,7 @@
                     "9": {
                         "pro": "4",
                         "feats": "3",
-                        "ability": ["Ability Score Improvement"]
+                        "featFeatures": ["Trained Combatant"]
                     },
                     "10": {
                         "pro": "4",
@@ -2082,16 +2091,17 @@
                     },
                     "11": {
                         "pro": "4",
-                        "feats": "4"
+                        "feats": "4",
+                        "featFeatures": ["Quick on your Feet"]
                     },
                     "12": {
                         "pro": "4",
-                        "feats": "4",
-                        "featFeatures": ["Headhunter", "OR", "Demolitionist"]
+                        "feats": "4"
                     },
                     "13": {
                         "pro": "5",
                         "feats": "4",
+                        "featFeatures": ["Assassin", "OR", "Demolitionist"],
                         "ability": ["Ability Score Improvement"]
                     },
                     "14": {
@@ -2101,7 +2111,7 @@
                     "15": {
                         "pro": "5",
                         "feats": "4",
-                        "otherFeatures": ["Choose another Class Feature from Level 1, Level 6, or Level 12"]
+                        "featFeatures": ["Trained Combatant"]
                     },
                     "16": {
                         "pro": "5",
@@ -2109,34 +2119,35 @@
                     },
                     "17": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "featFeatures": ["Deadly Accuracy", "OR", "Scarflesh"],
+                        "ability": ["Ability Score Improvement"]
                     },
                     "18": {
                         "pro": "6",
-                        "feats": "5",
-                        "ability": ["Ability Score Improvement"]
+                        "feats": "5"
                     },
                     "19": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "featFeatures": ["Trap Detection"]
                     },
                     "20": {
                         "pro": "6",
-                        "feats": "6",
-                        "featFeatures": ["Trap Detection"]
+                        "feats": "6"
                     }
                 }
             },
             "Sniper": {
                 "name": "Sniper",
                 "desc": "Snipers prefer to take out their enemies from a good distance away, attacking from behind cover rather than facing their enemies directly.",
-                "hDice": "1d4",
+                "hDice": "1d6",
                 "theme": "basic",
                 "level": {
                     "1": {
                         "pro": "2",
                         "feats": "2",
-                        "featFeatures": ["Rifle Specialization"]
+                        "featFeatures": ["Rifle Specialization", "OR", "Sidearm Specialization"]
                     },
                     "2": {
                         "pro": "2",
@@ -2145,7 +2156,7 @@
                     "3": {
                         "pro": "2",
                         "feats": "2",
-                        "featFeatures": ["Sidearm Specialization"],
+                        "featFeatures": ["Assassin"],
                         "ability": ["Ability Score Improvement"]
                     },
                     "4": {
@@ -2154,17 +2165,18 @@
                     },
                     "5": {
                         "pro": "3",
-                        "feats": "2"
+                        "feats": "2",
+                        "featFeatures": ["Deadly Accuracy"]
                     },
                     "6": {
                         "pro": "3",
                         "feats": "3",
-                        "featFeatures": ["Level Headed", "OR", "Professional Weapon Training"],
                         "ability": ["Ability Score Improvement"]
                     },
                     "7": {
                         "pro": "3",
-                        "feats": "3"
+                        "feats": "3",
+                        "featFeatures": ["Calculating", "OR", "Natural Talent"]
                     },
                     "8": {
                         "pro": "3",
@@ -2174,7 +2186,7 @@
                     "9": {
                         "pro": "4",
                         "feats": "3",
-                        "ability": ["Ability Score Improvement"]
+                        "featFeatures": ["Trained Combatant"]
                     },
                     "10": {
                         "pro": "4",
@@ -2183,16 +2195,17 @@
                     },
                     "11": {
                         "pro": "4",
-                        "feats": "4"
+                        "feats": "4",
+                        "featFeatures": ["Consistent Accuracy"]
                     },
                     "12": {
                         "pro": "4",
-                        "feats": "4",
-                        "featFeatures": ["Headhunter"]
+                        "feats": "4"
                     },
                     "13": {
                         "pro": "5",
                         "feats": "4",
+                        "featFeatures": ["Trap Detection", "OR", "Paranoia"],
                         "ability": ["Ability Score Improvement"]
                     },
                     "14": {
@@ -2202,7 +2215,7 @@
                     "15": {
                         "pro": "5",
                         "feats": "4",
-                        "featFeatures": ["Hidden Assassin"]
+                        "featFeatures": ["Professional Weapon Training"]
                     },
                     "16": {
                         "pro": "5",
@@ -2210,21 +2223,22 @@
                     },
                     "17": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "featFeatures": ["Catlike Agility", "OR", "Level-Headed"],
+                        "ability": ["Ability Score Improvement"]
                     },
                     "18": {
                         "pro": "6",
-                        "feats": "5",
-                        "ability": ["Ability Score Improvement"]
+                        "feats": "5"
                     },
                     "19": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "featFeatures": ["Guerilla Fighter"]
                     },
                     "20": {
                         "pro": "6",
-                        "feats": "6",
-                        "featFeatures": ["Deadly Accuracy"]
+                        "feats": "6"
                     }
                 }
             }

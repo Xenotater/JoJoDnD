@@ -3,7 +3,7 @@
         "name": "Ambush Attacker",
         "classes": ["Rng"],
         "desc": [
-            "Melee Attacks from your stand or the Focused Attack from <a class='in-page'>Ranged Attack</a> gain the Ambush property, meaning that they always inflict a Critical hit when attacking a Surprised target."
+            "Melee attacks from your stand or the Focused Attack from <a class='in-page'>Ranged Attack</a> gain the Ambush property, meaning that they always inflict a Critical hit when attacking a Surprised target."
         ]
     },
     "Anchored_Stand": {
@@ -432,8 +432,9 @@
         "name": "Melee Barrage",
         "classes": ["Pwr", "Rng", "Ind", "Act"],
         "desc": [
-            "Using this Ability takes an entire Turn (consuming Action, Bonus Action, and Movement Action), you may perform a number of melee attacks equal to half your Stand's Speed Modifier (+6 Speed would mean 3 attacks in one Melee Barrage), with a maximum of 5 attacks.",
-            "Each hit functions as normal in terms of the Attack Rolls, but you may only add your Power modifier to the Damage Roll once."
+            "With a flurry of punching attacks you create a 2m cone of damage, forcing targets within to make a Dexterity/Precision Saving Throw with a DC of 8 + PB + Power Modifier. On failure, you deal damage equal to your Stand's initial Attack Dice (<b>not the level 11 increase</b>) for every 10 Speed, with a maximum of 15 dice at 150 Speed, then add your Power Modifier to the end of the attack as usual. On a success, your targets still take half damage",
+            "For example, a Power-Type with +2 PB, +5 Power, and +8 Speed would force targets within 2m to make a DC 15 Saving Throw, dealing 8d12 + 5 damage on failure.",
+            "Using this Ability takes an entire Turn (consuming Action, Bonus Action, and Movement Action), and you may not activate any touch-based abilities on your targets during the barrage."
         ]
     },
     "Mobile_Ability": {
@@ -456,7 +457,7 @@
         "desc": [
             "Destructive energy is summoned from deep within your Stand and somehow released in a direction with the intent to harm or deal damage. Using this Ability consumes an entire Action, allowing you to fire Stand projectiles (flavor as you'd like) in one of two ways:",
             "<ul class='sublist'><li><b>Focused Attack:</b> Make 1 Attack Roll against a single target in range using your Precision + Proficiency Bonus, dealing Stand damage of a type of your choice on hit. This deals an amount of d8s equal to the number of Attacks you have plus your Speed Modifier. For example, a Stand User with 120 Speed (and thus 3 Attacks), would deal 3d8+12 damage. The range of this Ability is 10/20 meters.</li>",
-            "<li><b>Burst Attack:</b> Everyone within a 5 meter cone in front of your Stand must make a Dexterity Saving Throw. The DC for this Save is 8 + Precision + Proficiency Bonus. If any creature within the cone fails the Save, they take Stand damage of a type of your choice. This deals an amount of d8s equal to the number of Attacks you have. For example, a Stand User with 120 Speed (and thus 3 Attacks), would deal 3d8 damage.</li></ul>",
+            "<li><b>Burst Attack:</b> Everyone within a 5 meter cone in front of your Stand must make a Dexterity Saving Throw. The DC for this Save is 8 + Precision + Proficiency Bonus. If any creature within the cone fails the Save, they take Stand damage of a type of your choice. This deals an amount of d8s equal to the number of Attacks you have. For example, a Stand User with 120 Speed (and thus 3 Attacks), would deal 3d8 damage. On a success, targets still take half damage.</li></ul>",
             "At Level 11, both the number of Damage Dice rolled and the range of this Ability are doubled."
         ]
     },
@@ -464,7 +465,7 @@
         "name": "Reckless Attack",
         "classes": ["Rev"],
         "desc": [
-            "You may spend 1 Grudge Point to gain Advantage on all attack rolls until your next turn, but all enemies have Advantage on any attack rolls against you."
+            "As a Reaction you may choose to gain Advantage on all attack rolls until your next turn, but all enemies gain Advantage on any attack rolls against you as well."
         ]
     },
     "Rejuvenation": {
@@ -516,7 +517,7 @@
         "name": "Stand Energy Recharge",
         "classes": ["Abl"],
         "desc": [
-            "You have very strong abilities, but it's very tiring to try to use them repeatedly. Luckily, you've learned through practice how to pace yourself and replenish your energy. As an Action you may regain an amount of Stand Energy equal to your Charisma Modifier."
+            "You have very strong abilities, but it's very tiring to try to use them repeatedly. Luckily, you've learned through practice how to pace yourself and replenish your energy. As an Action you may regain an amount of Stand Energy equal to your Proficiency Bonus."
         ]
     },
     "Stand_Leap": {
@@ -569,14 +570,14 @@
         "name": "Healing Hands",
         "classes": ["Rip"],
         "desc": [
-            "As an Action you may touch an Unconcious (but still living) creature, and restore them to 1 Hit Point."
+            "As an Attack you may touch an Unconcious (but still living) creature, and restore them to 1 Hit Point."
         ]
     },
     "Healing_Ripple": {
         "name": "Healing Ripple",
         "classes": ["Rip"],
         "desc": [
-            "As an Action, for 1 Ripple Point, you may heal yourself or another living creature for 5 + your Constitution Modifier Hit Points.",
+            "As an Attack, for 1 Ripple Point, you may heal yourself or another living creature for 5 + your Constitution Modifier Hit Points.",
             "For every additional Ripple Point you spend, you heal an additional 5 Hit Points."
         ]
     },
@@ -585,7 +586,7 @@
         "classes": ["Rip"],
         "desc": [
             "You've learned one of the following schools of combat that enables you to better use your Ripple combatively.",
-            "<ul class='sublist'><li>Disciplined: You gain Proficiency in 2 Saving Throws of your Choice.</li><li>Enhanced Reflexes: As a Reaction you may move up to half your Movement Speed without provoking Opportunity Attacks. You may use this to avoid an AOE Save, but not a single target attack.</li><li>Graceful Fighting: When you make Unarmed Attacks or Attacks using a Simple Melee Weapon you may use Dexterity for both the Attack and Damage rolls. Additionally, you may use your Unarmed Dice with a Simple Melee Weapon instead of its regular damage die.</li><li>Powerful: Rather than using regular AC, you may choose to have your AC be 10 + your Strength Modifier + your Constitution Modifier.</li></ul>"
+            "<ul class='sublist'><li>Disciplined: You gain Proficiency in 2 Saving Throws of your Choice.</li><li>Enhanced Reflexes: As a Reaction you may move up to half your Movement Speed without provoking Opportunity Attacks. You may use this to avoid an AOE Save, but not a single target attack.</li><li>Graceful Fighting: When you make Unarmed Attacks or Attacks using a Simple melee Weapon you may use Dexterity for both the Attack and Damage rolls. Additionally, you may use your Unarmed Dice with a Simple melee Weapon instead of its regular damage die.</li><li>Powerful: Rather than using regular AC, you may choose to have your AC be 10 + your Strength Modifier + your Constitution Modifier.</li></ul>"
         ]
     },
     "Recovery_Breathing": {
@@ -600,7 +601,7 @@
         "name": "Ripple Possession",
         "classes": ["Rip"],
         "desc": [
-            "As an Action, for 5 Ripple Points, you may touch a living being and imbue it with your will and supernatural physicality for a short time.",
+            "As an Action, for 3 Ripple Points, you may touch a living being and imbue it with your will and supernatural physicality for a short time.",
             "The creature targeted must make a Charisma Save, shrugging off the effect on a success. A failed save adds +5 to the target's Strength, Dexterity, and Constitution rolls, and forces them to follow whatever simple command you give them for the next minute so long as the command is not directly harmful to the creature.",
             "This Ability does not work on Constructs or Undead."
         ]
@@ -609,15 +610,15 @@
         "name": "Conductor Shield",
         "classes": ["Rip"],
         "desc": [
-            "As a Reaction, for 3 Ripple Points, you may create an improvised shield reinforced by Ripple.",
-            "This shield gives a +3 to your AC, as well as all Strength, Dexterity, and Constitution saves until the start of your next Turn."
+            "As a Reaction, for 1 Ripple Point, you may create an improvised shield reinforced by Ripple.",
+            "This shield allows you to add your Proficiency Bonus to your AC, as well as all Strength, Dexterity, and Constitution saves until the start of your next Turn."
         ]
     },
     "Life_Magnetism": {
         "name": "Life Magnetism",
         "classes": ["Rip"],
         "desc": [
-            "When finding a collection of significant biomass, as an Action, you may spend 5 Ripple Points to collect up to 1 Metric ton of it together and manipulate it in any way you'd like.",
+            "When finding a collection of significant biomass, as an Action, you may spend 1 Ripple Point to collect up to 1 Metric ton of it together and manipulate it in any way you'd like.",
             "Examples of biomass manipulation include creating a leaf glider, creating a hole in a tree to hide in, or using blades of grass to create skin tight armor.",
             "Each additional Turn of manipulation costs 1 Ripple Point. You may move while Life Magnet is being used, but if you stop touching the biomass the structure falls apart. The Structure has an amount of Hit Points equal three times your Level in The Ripple and has an AC equal to your Ripple DC."
         ]
@@ -634,7 +635,7 @@
         "name": "Ripple Perception",
         "classes": ["Rip"],
         "desc": [
-            "As an Action, for 1 Ripple Point, you gain 10 meters of Blindsense that is able to travel through walls until the end of your next Turn. If you are standing on a surface that conducts Ripple (such as water or metal), the range is increased to 20 meters."
+            "As an Bonus Action, for 1 Ripple Point, gain 10 meters of Blindsense that is able to travel through walls until the end of your next Turn. If you are standing on a surface that conducts Ripple (such as water or metal), the range is increased to 20 meters."
         ]
     },
     "Improved_Ripple_Perception": {
@@ -670,7 +671,8 @@
         "name": "Rippling Weapon",
         "classes": ["Rip"],
         "desc": [
-            "As a Bonus Action, you may spend 2 Ripple Points to imbue a melee weapon (or an Unarmed Strike) with The Ripple. When you make a Rippling Weapon, it deals additional Radiant damage equal to twice your Unarmed Attack Dice (if you had 1d6 as your Unarmed Attack damage, you may deal an additional 2d6 Radiant damage on your next successful strike with the Weapon). The extra damage goes away if you hit something with the weapon, or if your Turn ends."
+            "You may use your Unarmed Dice for attacks with Simple Melee Weapons.",
+            "Additionally, when making any melee attack you may spend 1 Ripple Point to imbue your strike with The Ripple, dealing additional Radiant damage equal to twice your Unarmed Attack Dice."
         ]
     },
     "Ripple_Pressure": {
@@ -693,7 +695,7 @@
         "name": "Sunlight Yellow Overdrive",
         "classes": ["Rip"],
         "desc": [
-            "As a Turn (full action economy, aside from Reaction), you may spend 4 Ripple Points to make an amount of Unarmed Strikes equal to your Constitution Modifier.",
+            "As a Turn (full action economy, aside from Reaction), you may spend 2 Ripple Points to make an amount of Unarmed Strikes equal to your Constitution Modifier.",
             "Additional techniques such as <a class='in-page'>Zoom Punch</a> cannot be used on these Attacks.",
             "You may choose whether or not to make this lethal."
         ]
@@ -709,7 +711,7 @@
         "name": "Scarlet Overdrive",
         "classes": ["Rip"],
         "desc": [
-            "As an Attack, for 3 Ripple Points, you may make a melee Attack, dealing an additional amount of fire damage equal to twice your Unarmed Dice. Any objects hit by this Attack that aren't worn or carried by a creature catch on fire.",
+            "As an Attack, for 2 Ripple Points, you may make a melee Attack, dealing an additional amount of fire damage equal to twice your Unarmed Dice. Any objects hit by this Attack that aren't worn or carried by a creature catch on fire.",
             "In addition, if you are afflicted with <a class='in-page'>Freezing Touch</a>, you may spend an Attack on yourself to end the effect without dealing damage."
         ]
     },
@@ -1104,7 +1106,7 @@
         "classes": ["Rock"],
         "desc": [
             "As an Action you enter full hibernation, gaining a thick layer of stone over your skin and entering a dormant state. You may not move while in this state, nor take any actions whatsoever. Your scent disappears, and you become practically indistinguishable from a regular boulder.",
-            "In this state, your AC increases by 5, your Constitution Score increases by 20, and you resist all damage types."
+            "In this state, your AC increases by 5, and you gain twice your Level in temp HP at the top of Initiative."
         ]
     },
     "Stone_Cold_Willpower": {
@@ -1126,7 +1128,8 @@
         "classes": ["Corpse"],
         "desc": [
             "If the User is not currently using another aspect of <a href='/artifacts/?focus=Holy_Corpse_Parts'>Love Train</a>, they may instead activate this Ability. This Ability causes protection and good fortune to befall a group of people, an organization, or anything in general, determined by The Corpse's User.",
-            "This luck protects and helps the chosen entity, at the cost of other people. If one person is obtaining a lot of luck, another randomly chosen person is extremely unlucky. If land is blessed, there is an equal amount of land somewhere in the world that is seemingly cursed. The same applies for anything made. The limit of this Ability is half of the land/people/entities in the world, as the net fortune has to equal zero."
+            "This luck protects and helps the chosen entity, but at the cost of other people. If one person is obtaining a lot of luck, another randomly chosen person is extremely unlucky. If an area of land is blessed, there is an equal amount of land somewhere in the world that is seemingly cursed. The same applies for anything made. The limit of this Ability is half of the land/people/entities in the world, as the net fortune has to equal zero.",
+            "The effect of this luck is that the chosen person/group/area may not roll below a 15 and is granted Advantage on all rolls made. However, the cursed person/group/area may not roll above a 5 and is given Disadvantage on all rolls made. The random person or area that is cursed is only affected briefly before a new random target is selected."
         ]
     },
     "Vicious_Misfortune": {
@@ -1134,14 +1137,14 @@
         "classes": ["Corpse"],
         "desc": [
             "While in possession of The Holy Corpse, if either you injure someone and are aware of the injury, you may choose how exactly the injury affects the person. You can reduce all damage, increase the damage caused, or even move the wound to a different part of the body. For example, a prick on the finger could be amplified and moved to the internal heart valve, causing an almost certain mortal wound.",
-            "It takes 2 full Turns for one of these wounds to become fatal. If healed at least 50 HP by a <a href='/classes/?focus=Stands'>Stand</a>'s power, the <a href='/classes/?focus=Ripple'>Ripple</a>, or a different supernatural technique within that window of time, the harm caused may instead only be applied to the original location of the wound, affecting the body as a wound of that type would normally. If the damage is restored, the receiver of the wound simply drops to 0 HP and becomes stable, rather than dying."
+            "It takes 1d4 + 1 full Turns for one of these wounds to become fatal. If the target receives any healing they fall unconscious (but stable) instead. If they're able to receive healing that is more than the injury dealt, they may shruge of the effect."
         ]
     },
     "Gravitational_Pull": {
         "name": "Gravitational Pull",
         "classes": ["Corpse"],
         "desc": [
-            "The Corpse has the ability to bring non-living objects and terrain towards its User. Any terrain within sight can be brought to the User's feet within a matter of 5 seconds (or one Turn). The surrounding terrain will shift around it to accommodate for the moving earth."
+            "The Corpse has the ability to bring non-living objects and terrain towards its User. Any terrain within sight can be brought to the User's feet within one Turn. The surrounding terrain will shift around it to accommodate for the moving earth."
         ]
     },
     "The_Wall": {
@@ -1166,13 +1169,6 @@
             "Requiem Stands have immense power. Take all of your Stand's stats and double them."
         ]
     },
-    "Surging_Energy": {
-        "name": "Surging Energy",
-        "classes": ["Req"],
-        "desc": [
-            "You gain 1 Stand Energy back at the start of each of your Turns."
-        ]
-    },
     "Enhanced_Ability": {
         "name": "Enhanced Ability",
         "classes": ["Req"],
@@ -1193,7 +1189,7 @@
         "name": "Heavenly Ability",
         "classes": ["Heav"],
         "desc": [
-            "This Ability costs 50 SE when activated and costs 1 SE per Turn if passive. Heavenly Abilities set Heaven Ascended Stands above all other Abilities of mortal beings. Heavenly Abilities are typically based on a particular word or phrase of great personal importance to the User, usually relating to their beliefs.",
+            "This Ability costs 50 SE when activated and costs 10 SE per Turn if passive. Heavenly Abilities set Heaven Ascended Stands above all other Abilities of mortal beings. Heavenly Abilities are typically based on a particular word or phrase of great personal importance to the User, usually relating to their beliefs.",
             "As a general rule of thumb, when a Heavenly Ability is activated, if the Heaven Ascended Stand is intentionally using its full power, the entire universe could be affected. However, as powerful as this may seem, these abilities are usually broad, and affect a large area indiscriminately. The less broad an Ability, the stronger it is.",
             "For example, <a href='https://jojo.fandom.com/wiki/Made_in_Heaven'>Made In Heaven</a> can speed up time exponentially without end, but it affects everybody indiscriminately, with no ability to stop it once time begins to speed up. <a href='https://jojo.fandom.com/wiki/The_World_Over_Heaven'>The World Over Heaven</a>, on the other hand, can rewrite reality itself (sometimes even changing the laws of physics in a small region), with the trade off being that it has to hit something with its fists in order to change it."
         ]
@@ -1325,6 +1321,14 @@
             "Zombies must consume an amount of Human flesh equal to their body weight per month, or five times their body weight in animal flesh per month in order to sustain themselves.",
             "If a Zombie is able to sustain themselves while separated from a greater Undead master for a year or longer, they are able to gain some strength and become a <a href='/races/?focus=Ghoul'>Ghoul</a>. Their Undead master may also decide that they are more useful as a Ghoul and may use <a class='in-page'>Ghoul Creation</a> to convert them into a Ghoul.",
             "Alternatively, should they be exposed to the Stone Mask or the Completed Stone Mask, they may be able to become a Vampire or Ultimate Being, respectively."
+        ]
+    },
+    "Nemesis": {
+        "name": "Nemesis",
+        "classes": ["Rev"],
+        "desc": [
+            "You may choose one person to becom your Nemesis. Whenever you encounter that person, you instantly gain 3 Grudge Points, which are held onto until you stop interacting with them, or until combat with your Nemesis ends and they have not been used.",
+            "This Ability is replaced by <a class='in-page'>Hit List</a> at Level 20."
         ]
     }
 }
