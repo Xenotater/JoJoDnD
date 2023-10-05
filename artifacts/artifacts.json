@@ -9,13 +9,13 @@
     "Conductive_Clothing": {
         "name": "Conductive Clothing",
         "desc": "Certain clothing may be crafted with the express purpose of conducting <a href='/classes/?focuse=Ripple'>The Ripple</a> and its energy. Such clothing is often very expensive to make, as there are few materials that conduct The Ripple so effectively. The best conductors are the yarn of the Satiporoja Beetle, silk, and wool. Most wet clothing also acts more than adequately.",
-        "effect": "Ripple Energy can easily be sent through Conductive Clothing, allowing the clothing to act as a conduit for the energy. Ripple users are proficient in the use of Conductive Clothing, but must be able to properly breathe and channel The Ripple to make use of these special features and may only use one of these Artifacts at a time. Undead that wear one of these Artifacts can use it as a Ripple Anchor to gain Advantage on any Saving Throws inflicted by the Ripple.",
+        "effect": "Ripple Energy can easily be sent through Conductive Clothing, allowing the clothing to act as a conduit for the energy. Ripple users are Proficient in the use of Conductive Clothing, but must be able to properly breathe and channel The Ripple to make use of these special features and may only use one of these Artifacts at a time. Undead that wear one of these Artifacts can use it as a Ripple Anchor to gain Advantage on any Saving Throws inflicted by the Ripple.",
         "other": [{
             "name": "Variants",
             "content": [
                 "<p>Conductive Clothing comes in several different forms. Here are a few examples, and their differing effects.</p>",
                 "<ul><li><b>Scarab Cape:</b> As a Reaction you may increase your AC by an amount equal to half your level in The Ripple, with a minimum of 1.</li>",
-                "<li><b>Scarab Cloak:</b> Whenever an Creature hits you with an Unarmed Strike, they take Radiant Damage equal to double your Unarmed Dice. If they are Undead, they take triple instead. If you're hit by a non-Unarmed melee attack, you may choose to deal this damage as a Reaction (rather than automatically).</li>",
+                "<li><b>Scarab Cloak:</b> Whenever a Creature hits you with an Unarmed Strike, they take Radiant Damage equal to double your Unarmed Dice. If they are Undead, they take triple instead. If you're hit by a non-Unarmed melee attack, you may choose to deal this damage as a Reaction (rather than automatically).</li>",
                 "<li><b>Scarab Scarf:</b> You may make Unarmed Strikes from up to 3m away. Additionally your vertical and horizontal jump height is doubled.</li></ul>"
             ]
         }]

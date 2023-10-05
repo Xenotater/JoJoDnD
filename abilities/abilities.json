@@ -111,7 +111,7 @@
         "classes": ["Rmt", "Hive"],
         "desc": [
             "<b>Prerequisite: <a class='in-page'>Immense Range</a></b>",
-            "Your Stand's Range and any points that go into your Stand's Range score by an additional x10."
+            "Your Stand's Range and any points that go into your Stand's Range Score by an additional x10."
         ]
     },
     "Improved_Slippery": {
@@ -611,7 +611,7 @@
         "classes": ["Rip"],
         "desc": [
             "As a Reaction, for 1 Ripple Point, you may create an improvised shield reinforced by Ripple.",
-            "This shield allows you to add your Proficiency Bonus to your AC, as well as all Strength, Dexterity, and Constitution saves until the start of your next Turn."
+            "This shield allows you to add your Proficiency Bonus to your AC, as well as all Strength, Dexterity, and Constitution Saves until the start of your next Turn."
         ]
     },
     "Life_Magnetism": {
@@ -635,7 +635,7 @@
         "name": "Ripple Perception",
         "classes": ["Rip"],
         "desc": [
-            "As an Bonus Action, for 1 Ripple Point, gain 10 meters of Blindsense that is able to travel through walls until the end of your next Turn. If you are standing on a surface that conducts Ripple (such as water or metal), the range is increased to 20 meters."
+            "As a Bonus Action, for 1 Ripple Point, gain 10 meters of Blindsense that is able to travel through walls until the end of your next Turn. If you are standing on a surface that conducts Ripple (such as water or metal), the range is increased to 20 meters."
         ]
     },
     "Improved_Ripple_Perception": {
@@ -1199,7 +1199,7 @@
         "classes": ["Ghl"],
         "desc": [
             "Ghouls, while able to be dispatched through significant force, often put up more of a fight than their Zombie counterparts.",
-            "Ghouls have an amount of Head Health equal to 1d2 + half of their Constitution Modifier per their total non-Ghoul Levels in HP. Their Head has an AC equal to your regular AC + your proficiency bonus.",
+            "Ghouls have an amount of Head Health equal to 1d2 + half of their Constitution Modifier per their total non-Ghoul Levels in HP. Their Head has an AC equal to your regular AC + your Proficiency bonus.",
             "As an Action a Ghoul may perform a great feat of strength. They may lift, push, or throw an amount of kilograms equal to their Strength Score multiplied by 50 kilograms. This may also be used to break down walls, etc.",
             "Ghouls heal at a rate around 5x as fast as a Human. However, wounds caused by <a href='/classes/?focus=Ripple'>Ripple</a> or sunlight take 10x as much time to heal as a normal wound for a Ghoul.",
             "Additionally, Ghouls are particularly effective at using Unarmed Strikes. Their base damage increases from 1d4 to 1d10.",
@@ -1268,7 +1268,7 @@
         "desc": [
             "Enhanced Pillar Men are the most powerful creatures on Earth, only outmatched by an Ultimate Being. An average Human would likely stand little to no chance in combat even against a relatively new one.",
             "When you become an Enhanced Pillar Man, your physique changes to become more powerful. Your Strength, Dexterity, and Constitution are all increased to 19 if they are less than that. If one or more of those Ability Scores is already at or above 19, they're increased by 2 instead. Your maximum for each Ability Score is now 30.",
-            "Enhanced Pillar Men have an amount of Head Health equal to 1d6 + their Constitution Modifier per their total non-EPM Levels in HP. Their Head has an AC equal to your regular AC + your proficiency bonus.",
+            "Enhanced Pillar Men have an amount of Head Health equal to 1d6 + their Constitution Modifier per their total non-EPM Levels in HP. Their Head has an AC equal to your regular AC + your Proficiency bonus.",
             "As an Action an EPM may perform a great feat of strength. They may lift, push, or throw an amount of kilograms equal to their Strength Score multiplied by 100 kilograms. This may also be used to break down walls, etc.",
             "Enhanced Pillar Men regenerate rapidly, being able to heal an amount of Hit Points equal to double their Constitution Modifier every Turn. When you regenerate, you may choose which Hit Points go to your Head and which ones go to your Body. Wounds caused by <a href='classes/?focus=Ripple'>Ripple</a> or sunlight take 10x as much time to heal, but this is purely aesthetic and doesn't affect your regeneration mechanic.",
             "Additionally, EPM are particularly effective at using Unarmed Strikes. Their base damage increases from 1d4 to 4d8, and if you wish to do so, you may deal Acid damage rather than Bludgeoning.",
@@ -1327,7 +1327,7 @@
         "name": "Nemesis",
         "classes": ["Rev"],
         "desc": [
-            "You may choose one person to becom your Nemesis. Whenever you encounter that person, you instantly gain 3 Grudge Points, which are held onto until you stop interacting with them, or until combat with your Nemesis ends and they have not been used.",
+            "You may choose one person to become your Nemesis. Whenever you encounter that person, you instantly gain 3 Grudge Points, which are held onto until you stop interacting with them, or until combat with your Nemesis ends and they have not been used.",
             "This Ability is replaced by <a class='in-page'>Hit List</a> at Level 20."
         ]
     }

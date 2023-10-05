@@ -28,7 +28,7 @@
     "Athlete": {
         "name": "Athlete",
         "desc": "People who push their bodies to and past their physical limits in order to see the true potential of humanity.",
-        "examples": ["Olympians", "Professional Sports Players", "Warriors / Soldiers", "High School Quarterbacks"],
+        "examples": ["Olympians", "Professional Sports Players", "Marathon Runners", "High School Quarterbacks"],
         "saves": "You are Proficient in two of the following Saving Throws: Strength, Dexterity, or Constitution.",
         "ability": "Your Strength, Dexterity, and Constitution Scores increase by 1.",
         "custom": {
@@ -46,7 +46,7 @@
         "ability": "Your Charisma Score increases by 2 and your Wisdom Score increases by 1.",
         "custom": {
             "name": "Award-Winning Smile",
-            "desc": "You have Proficiency in two of the following: Deception, Insight, Persuasion, Slight of Hand, or Religion."
+            "desc": "You have Proficiency in two of the following: Deception, Insight, Persuasion, Sleight of Hand, or Religion."
         },
         "profs": 3,
         "alt": "Proficiency in two sets of tools or Expertise in a skill that you're already Proficient in."

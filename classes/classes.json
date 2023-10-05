@@ -184,11 +184,11 @@
             "name": "Stand Stats",
             "content": [
                 "<p class='center label'><b>Ability Conversion Chart:</b></p><table class='table table-striped minor'><thead><tr><th>Ability</th><th>Stand Ability</th></tr></thead><tbody><tr><td>Strength</td><td>Power</td></tr><tr><td>Dexterity</td><td>Precision</td></tr><tr><td>Constitution</td><td>Durability</td></tr><tr><td>Intelligence</td><td>Range</td></tr><tr><td>Wisdom</td><td>Speed</td></tr><tr><td>Charisma</td><td>Stand Energy</td></tr></tbody></table>",
-                "<p><b>Stand Stat Modifiers: </b>Stand stats are based on the User's stats. To get the Modifiers for these Stats, simply divide their score by 10.</p>",
+                "<p><b>Stand Stat Modifiers: </b>Stand stats are based on the User's stats. To get the Modifiers for these Stats, simply divide their Score by 10.</p>",
                 "<p><b>Damage Reduction: </b>Stands have natural resistance against damage, determined by their Durability Mod. Your Stand can resist that many points of damage per round. For example, a Stand with a 100 Durability would be able to resist 10 points of damage per round, and a Stand with 40 would only be able to resist 4. Physical attacks that hit Stands deal no damage, unless specifically stated otherwise. The only types of damage that may deal damage to Stands is damage dealt by Stands, or the Abilities of Stands. Your Stand's Damage Reduction resets at the top of each round of Initiative.</p>",
                 "<p><b>Stand Movement: </b>Stands have a Movement Speed equal to twice their Stand's Speed Mod in meters, or a Movement Speed equal to their User, whichever is higher. Stands and Users each have a separate Movement Action. Independant-Type Stands can only move the base 10 Meters that a regular Human can, unless they have a specific Ability that allows them to increase it.</p>",
                 "<p><b>Stand Range: </b>Your Stand may move a number of meters away from you equal to its Range Mod, with a minimum of 1m.</p>",
-                "<p><b>Abilities and Stand Energy: </b>The amount of Energy your stand has is based on their Stand Energy Mod. Normal Abilities typically cost 1 point and Special Abilities generally cost more depending on the Stand type. However, the cost may vary depending on how strong the Ability is at the DMs descretion, for example the Ability to stop time might cost double the normal cost. Stand Energy always fully replenishes when outside of combat. 1 Stand Energy is also replenished when you take the dodge action.</p>"
+                "<p><b>Abilities and Stand Energy: </b>The amount of Energy your stand has is based on their Stand Energy Mod. Normal Abilities typically cost 1 point and Special Abilities generally cost more depending on the Stand type. However, the cost may vary depending on how strong the Ability is at the DMs discretion, for example the Ability to stop time might cost double the normal cost. Stand Energy always fully replenishes when outside of combat. 1 Stand Energy is also replenished when you take the dodge action.</p>"
             ]
         },
         {
@@ -211,7 +211,7 @@
             "content": [
                 "<p>There are 9 different Stand Types which each function very differently from eachother. You may either choose one of these 9, or roll a d100 and choose from the table below:</p>",
                 "<table class='table table-striped minor'><thead><tr><th>Result</th><th>Stand Type</th></tr></thead><tbody><tr><td>1-35</td><td>Power</td></tr><tr><td>36-49</td><td>Ranged</td></tr><tr><td>50-69</td><td>Enhancement</td></tr><tr><td>70-79</td><td>Remote</td></tr><tr><td>80-89</td><td>Ability</td></tr><tr><td>90-93</td><td>Independent</td></tr><tr><td>94-97</td><td>Hive</td></tr><tr><td>98-99</td><td>Revenge</td></tr><tr><td>100</td><td>Act</td></tr></tbody></table>",
-                "<p><b>Multi-Type Stands: </b>Some Stands have attributes of several different types of Stand. For these Stand's Stats, take the average of each stat multiplier for the two respective types and use those multipliers, rounded down, when figuring out your initial Stand stats. Furthermore, if there are any limitations on a Stand type's stat increases still apply. For example, if a Stand is both a Power/Enhancement-Type you cannot have a Range stat above 20, even if the initial average would be higher. You also take the lower of the Hit Dice and Attack Dice if you are using two types of stands. For Class Features, you get all of the Level 1 Features, but must choose which type's Features to take for each subsequent Level.</p>"
+                "<p><b>Multi-Type Stands: </b>Some Stands have attributes of several different types of Stand. For these Stand's Stats, take the average of each stat multiplier for the two respective types and use those multipliers, rounded down, when figuring out your initial Stand stats. Furthermore, if there are any limitations on a Stand type's stat increases still apply. For example, if a Stand is both a Power/Enhancement-Type you cannot have a Range stat above 20, even if the initial average would be higher. You also take the lower of the Attack Dice if you are using two types of Stands, and you get an equal amount of each Hit Dice, alternating each Level. For Class Features, you get all of the Level 1 Features, but must choose which type's Features to take for each subsequent Level.</p>"
             ]
         },
         {
@@ -227,10 +227,11 @@
             "name": "Substands",
             "content": [
                 "<p><small><b>Examples of Substands:</b> <a href='https://jojowiki.com/Sheer_Heart_Attack' target='_blank'>Killer Queen's Sheer Heart Attack</a> and <a href='https://jojowiki.com/King_Crimson#Epitaph'>King Crimson's Epitaph</a></small></p>",
-                "<p>Substands are extremely rare types of stands that form under extreme conditions. These sorts of Stands typically occur when there is a great mental divide within the Stand User, or when a Stand User undergoes a massive amount of development very quickly. When you get the trait Special Ability, rather than giving yourself a Special Ability with your current Stand, you may give yourself a Substand. Substands use the same rules as regular stands, and Level-Up and gain points to their stats in the exact same way that your primary Stand does, but it may be a different type of Stand with its own Ability.</p>",
+                "<p>Substands are extremely rare types of Stands that form under extreme conditions. These sorts of Stands typically occur when there is a great mental divide within the Stand User, or when a Stand User undergoes a massive amount of development very quickly. When you get the trait <a href='/abilities?focus=Special_Ability'>Special Ability</a>, rather than giving yourself a Special Ability, you may give yourself a Substand. Substands use the same rules as regular stands, and Level-Up and gain points to their stats in the exact same way that your primary Stand does, but it may be a different type of Stand with its own Ability.</p>",
                 "<p>You may switch between your Stand and Substand as a Bonus Action when both your Stand is within 2 meters of you. When you summon your Stand, it defaults to the stand you most recently summoned, though you can switch this with a Bonus Action at any time.</p>",
-                "<p>If one Stand has more Stand Energy than the other and you switch to the one with less, the amount of stand energy available is reduced to that maximum of the other stand and remains at that amount until combat ends. For example a primary stand with 12/12 maximum energy switching to a substand with 7 max energy brings the stand's energy to 7. Even if you switch back to the primary stand without spending any energy, the primary stand now has 7/12 energy remaining. Energy spent in either form takes away from the same Stand Energy pool.</p>",
-                "<p>Aside from what is mentioned here, Substands are completely seperate Stands from their primary Stand, having different stats, a unique Ability, and gaining seperate Class Features upon Level-Up.</p>"
+                "<p>If one Stand has more Stand Energy than the other and you switch to the one with less, the amount of Stand Energy available is reduced to that maximum of the other stand and remains at that amount until combat ends. For example a primary Stand with 12/12 maximum energy switching to a Substand with 7 max Energy brings the Stand's energy to 7. Even if you switch back to the primary Stand without spending any Energy, the primary Stand now has 7/12 Energy remaining. Energy spent in either form takes away from the same Stand Energy pool.</p>",
+                "<p>Upon initially gaining your Substand, your health will need to be recalculated to make up for your potential new focus on melee or a new powerful Ability. Your Hit Dice will function the same way as a Multi-Type Stand would, alternating between the two Hit Dice each Level-Up.</p>",
+                "<p>Aside from what is mentioned here, Substands are completely seperate Stands from their primary Stand, having different stats, a unique Custom Ability (not Special Ability), and gaining seperate Class Features upon Level-Up.</p>"
             ]
         },
         {
@@ -1049,7 +1050,7 @@
                     "9": {
                         "pro": "4",
                         "feats": "3",
-                        "linkFeatures": ["Focused Hatred"]
+                        "linkFeatures": ["Focused Hatred", "Nemesis"]
                     },
                     "10": {
                         "pro": "4",
@@ -1297,7 +1298,7 @@
                 "other": [{
                     "name": "Swarm Attacks",
                     "content": [
-                        "<p>Choose one of the three following saving throws: Strength, Dexterity, or Constitution. When you make a melee Attack using your Stand, rather than making an Attack Roll, your target must make a Saving Throw of the type you chose. Your Stand must be within melee of the target in order to make a Swarm Attack. When you make a Swarm Attack, you may choose between the following options:</p>",
+                        "<p>Choose one of the three following saving throws: Strength, Dexterity, or Constitution. When you make a Melee Attack using your Stand, rather than making an Attack Roll, your target must make a Saving Throw of the chosen type with a DC of 8 + Proficiency Bonus + Power Modifier. Your Stand must be within Melee Range of the target in order to make a Swarm Attack. When you make a Swarm Attack, you may choose between the following options:</p>",
                         "<p><ul><li>Precise Swarm: 1d6 + Power Modifier damage (this damage increases to 2d6 at Level 11). Your opponent takes full damage if they fail the Saving Throw, or half if they succeed.</li>",
                         "<li>Violent Swarm: 1d10 + Power Modifier damage (this damage increases to 2d10 at Level 11). Your opponent takes full damage if they fail the Saving Throw, or none if they succeed.</li></ul></p>",
                         "<p>This Ability's damage can be a type that you and your DM agree fits for your stand. When you attack using less than half of the total instances of your stand, your target has Advantage on the Saving Throw.</p>" 
@@ -1453,7 +1454,7 @@
                 "hDice": "1d8",
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except those mentioned in each Act. You may choose to take the average roll instead (5 + Level), but must do so before rolling. You put all of the points into each Act, so if for example you roll to get 15 points, each Act of your Stand get 15 points to increase stats with. When you gain a new Act, you may roll the dice to retroactively increase the stats of the new Stand.",
+                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except those mentioned in each Act. You may choose to take the average roll instead (5 + Level), but must do so before rolling. You put all of the points into each Act, so if for example you roll to get 15 points, each Act of your Stand gets 15 points to increase stats with. When you gain a new Act, you may roll the dice to retroactively increase the stats of the new Stand.",
                 "acts": [{
                     "aDice": "0",
                     "note": "Act 0 Stands do not have an Ability, nor any capacity to move, attack, dodge, or evade. If they can even be summoned, they simply manifest as a large egg.",
@@ -1864,7 +1865,7 @@
                     "7": {
                         "pro": "3",
                         "feats": "3",
-                        "featFeatures": ["Immense Impact", "Skirmisher"]
+                        "featFeatures": ["Immense Impact", "OR", "Skirmisher"]
                     },
                     "8": {
                         "pro": "3",
