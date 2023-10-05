@@ -65,7 +65,7 @@
         "desc": "You know how to create and take advantage of opportunities.",
         "effects": [
             "When you drop an enemy to 0 HP, you may make another melee attack for free on a nearby target. This Feat may tie into itself.",
-            "Additionally, as an Action, you may force every hostile creature within a meter of you to make a Dexterity Saving Throw against a DC of 8 + Proficiency Bonus + Strength Modifier. If they fail the Save you deal an amount of damage equal to your unarmed strike, the melee weapon you are holding, or your Stand's attack damage. If they succeed, they take no damage."
+            "Additionally, as an Action, you may force every hostile creature within a meter of you to make a Dexterity (NOT Precision) Saving Throw against a DC of 8 + Proficiency Bonus + Strength Modifier. If they fail the Save you deal an amount of damage equal to your unarmed strike, the melee weapon you are holding, or your Stand's attack damage. If they succeed, they still take half damage."
         ]
     },
     "Combat_Medic": {
@@ -232,7 +232,7 @@
         "name": "Assassin",
         "desc": "You've spent a lot of time in the shadows and know how to strike from them.",
         "effects": [
-            "Whenever you use an attack or weapon with the Ambush property and have Advantage on the attack or an ally is within melee with your target, you deal an additional amount of d6's of damage equal to your Proficiency Bonus (which are doubled if the opponent is Surprised).",
+            "Whenever you use an attack or weapon with the Ambush property and have Advantage on the attack or an ally is within melee with your target, you deal an additional amount of d8s of damage equal to your Proficiency Bonus (which are doubled if the opponent is Surprised).",
             "You may only apply this additional damage once per round."
         ]
     },
@@ -410,12 +410,32 @@
             "This Damage Reduction doesn't conflict with Stand Damage Reduction, and unlike Stand DR, applies on any hit."
         ]
     },
+    "Sentient_Stand": {
+        "name": "Sentient Stand",
+        "prereq": "Cannot have <a href='/abilities?focus=Detached_Senses'>Detached Senses</a>.",
+        "desc": "You and your Stand have two separate minds and personalities, and your Stand may act independently from you. Your Stand might even have different strengths and weaknesses from you.",
+        "effects": [
+            "In order for you and your Stand to communicate, you must be within line of sight of each other, or have some other method of communication like walkie-talkies or a phone call.",
+            "You and your Stand may have different mental stats (Intelligence, Wisdom, and Charisma) and Proficiences from you. The mental stats may be shuffled around, but the values must remain the same. For example, a user might have 8 Intelligence, 19 Wisdom, and 14 Charisma while the Stand has 19 Intelligence, 14 Wisdom, and 8 Charisma.",
+            "When Levelling-Up your Stand, you may not put points into these mental stats. However when the User gains an Ability Score Improvement and puts points into their mental values, the Stands increase as well. For example if the User above decided to put 2 more points into their Intelligence increasing it to 10, the Stand's Charisma would also increase to 10."
+        ]
+    },
+    "Shared_Stand": {
+        "name": "Shared Stand",
+        "prereq": "Others affected by this Feat must not have a Stand of their own and must also take this Feat.",
+        "desc": "Your Stand is uniquely able to be shared amongst several people with whom you share an extremely close bond, be it familial, friendly, or romantic.",
+        "effects": [
+            "Several people are able to use your Stand's Ability at once. However, your Stand gets a multiplier reduction of 2 for its physical stats, to a minimum of x1. For example, a Power-Type which would typically have a x4, x3, and x3 for its physical stats would only get x2, x1, and x1 to Power, Precision, and Durability respectively.",
+            "Everyone affected by this Feat becomes a Stand User equal in Level, Stand-stats, and Ability to you. They may still have their own stats, Proficiencies, and Feats that differ from yours however.",
+            "Your Stand may be shared with a maximum number of people equal to twice your Proficiency Bonus."
+        ]
+    },
     "Simple_Weapon_Focus": {
         "name": "Simple Weapon Focus",
         "desc": "Through knowledge and training, you have gained the ability to use simple weapons to remarkable effect.",
         "effects": [
             "You gain Proficiency in the use of Simple weapons.",
-            "You may add your Proficiency to the damage dealt by a Melee weapon, or a second time to the Attack Roll for a Ranged weapon.",
+            "You may add your Proficiency to the damage dealt by a melee weapon, or a second time to the Attack Roll for a Ranged weapon.",
             "If you are already Proficient in the use of a Simple weapon, you gain Expertise in it."
         ]
     },
@@ -555,7 +575,7 @@
         "effects": [
             "You gain Proficiency in the use of any weapon with the \"Melee\" specialization type.",
             "When dealing damage using a Melee weapon, you may reroll the Damage Dice if desired. You must keep the new roll, and you can only do this once per Turn.",
-            "Additionally, if you are hit by a melee attack while wielding a Melee weapon, you may use your Reaction to add your Proficiency bonus to your AC until the beginning of your next Turn.",
+            "Additionally, if you are hit by a melee attack while wielding a Melee weapon, you may use your Reaction to add your Proficiency Bonus to your AC until the beginning of your next Turn.",
             "If you are already Proficient in the use of a Melee weapon, you gain Expertise in it."
         ]
     },

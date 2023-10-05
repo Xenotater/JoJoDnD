@@ -147,9 +147,9 @@ function updateStandScore(stat, diff) {
             multipliers = {"str":4,"dex":3,"con":3,"int":1,"wis":4,"cha":2};
             break;
         case "rng":
-            multipliers = {"str":3,"dex":3,"con":3,"int":6,"wis":3,"cha":3};
+            multipliers = {"str":3,"dex":3,"con":3,"int":10,"wis":3,"cha":3};
             break;
-        case "rem":
+        case "rmt":
             multipliers = {"str":3,"dex":2,"con":4,"int":5,"wis":3,"cha":2};
             break;
         case "abl":
@@ -159,13 +159,13 @@ function updateStandScore(stat, diff) {
             multipliers = {"str":3,"dex":3,"con":5,"int":5,"wis":3,"cha":3};
             break;
         case "rev":
-            multipliers = {"str":3,"dex":4,"con":4,"int":7,"wis":3,"cha":2};
+            multipliers = {"str":4,"dex":3,"con":4,"int":5,"wis":3,"cha":3};
             break;
         case "ind":
             multipliers = {"str":3,"dex":3,"con":4,"int":0,"wis":3,"cha":3};
             break;
         case "hive":
-            multipliers = {"str":3,"dex":2,"con":3,"int":10,"wis":3,"cha":2};
+            multipliers = {"str":3,"dex":2,"con":3,"int":8,"wis":3,"cha":3};
             break;
         //can't do act since each act has differnt mults/stats
         default:
