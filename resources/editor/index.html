@@ -44,9 +44,9 @@
         </script>
         
         <script async src="/nav.js"></script>
+        <script async src="autofill.js"></script>
         <script async src="editor.js"></script>
         <script async src="auth.js"></script>
-        <script async src="autofill.js"></script>
     </head>
     
     <body>
@@ -120,7 +120,7 @@
                                         <label for="race">Race & Passion</label>
                                         <input type="text" class="scales" id="race" name="race">
                                     </div>
-                                    <div class="col-3">
+                                    <div class="col-3" style="position: relative">
                                         <label for="class">Class & Level</label>
                                         <!-- <input type="text" class="scales" id="class" name="class"> -->
                                         <select class="box" id="class" name="class">
@@ -142,6 +142,7 @@
                                             <option value="snp">Sniper</option>
                                             <option value="multi">Other/Multiclass</option>
                                         </select>
+                                        <input type="number" id="act-num" min="0" max="3" value="0">
                                         <input type="text" class="box scales" id="multi" name="multi">
                                         <input type="text" class="numbers" id="level" name="level">
                                     </div>

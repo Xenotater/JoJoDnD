@@ -12,6 +12,7 @@
                 $name = $mysqli->real_escape_string($_POST["name"]);
                 $img = $mysqli->real_escape_string($_POST["img"]);
                 $form = $mysqli->real_escape_string($_POST["form"]);
+                $acts = $mysqli->real_escape_string($_POST["acts"]);
 
                 if (strlen($img) + strlen($form) >= 536870912) {
                     echo "<h5 id='response-text'>Character data is too large (0.5GB+). Please contact the site administrator if you beleive this is an error.</h5>";
@@ -24,7 +25,7 @@
                 }
 
                 if ($id == -1) {
-                    $mysqli->query("INSERT INTO characters (username, name, img, data) VALUES ('$user', '$name', '$img', '$form')");
+                    $mysqli->query("INSERT INTO characters (username, name, img, data, acts) VALUES ('$user', '$name', '$img', '$form', '$acts')");
 
                     if ($mysqli->error)
                         echo "<h5 id='response-text'>An error occurred, please contact the site administrator.</h5><p>{$mysqli->error}</p>";
@@ -34,9 +35,9 @@
                 }
                 else {
                     if ($user == "admin")
-                        $mysqli->query("UPDATE characters SET data = '$form', img = '$img' WHERE id = '$id'");
+                        $mysqli->query("UPDATE characters SET data = '$form', acts = '$acts', img = '$img' WHERE id = '$id'");
                     else
-                        $mysqli->query("UPDATE characters SET data = '$form', img = '$img' WHERE username = '$user' AND id = '$id'");
+                        $mysqli->query("UPDATE characters SET data = '$form', acts = '$acts', img = '$img' WHERE username = '$user' AND id = '$id'");
 
                     if ($mysqli->error)
                         echo "<h5 id='response-text'>An error occurred, please contact the site administrator.</h5><p>{$mysqli->error}</p>";

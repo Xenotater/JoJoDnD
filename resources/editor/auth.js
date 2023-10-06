@@ -297,7 +297,7 @@ function respond(text) {
 
 function saveChar() {
     var result = exportData("save");
-    $.post("save.php", { action: "save", id: charID, name: result[0], form: result[1], img: result[2] }, function(data) {
+    $.post("save.php", { action: "save", id: charID, name: result[0], form: result[1], acts: result[2], img: result[3] }, function(data) {
         if (data.match(/^[0-9]+/))
             charID = parseInt(data.match(/^[0-9]+/)[0]);
         respond(data.replace(/^[0-9]+/, ""));

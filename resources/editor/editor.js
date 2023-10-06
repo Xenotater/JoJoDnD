@@ -35,6 +35,10 @@ $(document).ready(function () {
             $("#multi").css("display", "inline-block");
             $("#multi").focus();
         }
+        if ($(this).val() == "act")
+            $("#act-num").css("display", "inline-block");
+        else
+            $("#act-num").css("display", "none");
     });
 
     $("#multi").on("keyup", function(e) { //numerous ways to get back to the dropdown
@@ -212,6 +216,7 @@ function filter(node) {
 function exportData(mode) {
     var data = {};
     data["form"] = JSON.stringify($("#pages").serializeArray());
+    data["acts"] = JSON.stringify(actScores);
     data["img"] = $("#char-img").attr("src");
     var file = new Blob([JSON.stringify(data)], {type: "text/plain"});
 
@@ -224,7 +229,7 @@ function exportData(mode) {
     if (mode == "export")
         saveAs(file, name + "_data.json");
     else if (mode == "save")
-        return [name, data["form"], data["img"]];
+        return [name, data["form"], data["acts"], data["img"]];
 }
 
 //thanks to kflorence for creating a deserialize plugin https://stackoverflow.com/a/8918929
@@ -232,6 +237,14 @@ function importData(data) {
     $("#multi").val(""); //ensure older data w/o this field still load properly
     $("#pages")[0].reset();
     $("#pages").deserialize(JSON.parse(data["form"]));
+    
+    if (data["acts"]) {
+        actScores = JSON.parse(data["acts"]);
+        console.log(actScores);
+        updateAct(0, false);
+    }
+    saveScores();
+
     $("#char-img").attr("src", data["img"]);
     if ($("#char-img").attr("src") == "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=") {
         $("#char-img").css("display", "none");
@@ -241,9 +254,11 @@ function importData(data) {
         $("#char-img").css("display", "unset");
         $("#image").css("background-color", "black");
     }
+
     $(".scales").each(function() {
         scale(this);
     });
+
     if ($("#multi").val() != "") {
         $("#class").css("display", "none");
         $("#multi").css("display", "inline-block");
@@ -252,6 +267,10 @@ function importData(data) {
         $("#multi").css("display", "none");
         $("#class").css("display", "inline-block");
     }
+
+    if ($("#class").val() == "act")
+        $("#act-num").css("display", "inline-block");
+
     checkMeta();
 }
 

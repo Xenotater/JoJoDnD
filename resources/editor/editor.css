@@ -544,6 +544,17 @@ input:checked + .slider:before {
 .lilLbl {
     display: none;
 }
+
+#act-num {
+    display: none;
+    position: absolute;
+    left: 84px;
+    width: 40px;
+    border: none;
+    top: 34px;
+    height: 40px;
+    font-size: 16px;
+}
   
 @media (max-width: 1199px) {
     #statflip-switch {
