@@ -434,7 +434,7 @@
         "desc": [
             "With a flurry of punching attacks you create a 2m cone of damage, forcing targets within to make a Dexterity/Precision Saving Throw with a DC of 8 + PB + Power Modifier. On failure, you deal damage equal to your Stand's initial Attack Dice (<b>not the level 11 increase</b>) for every 10 Speed, with a maximum of 15 dice at 150 Speed, then add your Power Modifier to the end of the attack as usual. On a success, your targets still take half damage",
             "For example, a Power-Type with +2 PB, +5 Power, and +8 Speed would force targets within 2m to make a DC 15 Saving Throw, dealing 8d12 + 5 damage on failure.",
-            "Using this Ability takes an entire Turn (consuming Action, Bonus Action, and Movement Action), and you may not activate any touch-based abilities on your targets during the barrage."
+            "Using this Ability takes an entire Turn (consuming Action, Bonus Action, Reaction, and Movement Action), and you may not activate any touch-based abilities on your targets during the barrage."
         ]
     },
     "Mobile_Ability": {
