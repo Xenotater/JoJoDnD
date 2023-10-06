@@ -240,7 +240,6 @@ function importData(data) {
     
     if (data["acts"]) {
         actScores = JSON.parse(data["acts"]);
-        console.log(actScores);
         updateAct(0, false);
     }
     saveScores();

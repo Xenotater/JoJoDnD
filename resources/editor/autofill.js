@@ -42,6 +42,10 @@ function detectChange(object) {
     var id = $(object).attr("id");
 
     if (id == "act-num") {
+        if ($(object).val() > 3)
+            $(object).val(3);
+        if ($(object).val() < 0)
+            $(object).val(0);
         updateAct($(object).val(), true);
     }
 
@@ -419,7 +423,6 @@ function updateAct(newAct, saveFirst) {
 }
 
 function updateAllStandScores() {
-    console.log('update');
     updateStandScore("str", scores.str);
     updateStandScore("dex", scores.dex);
     updateStandScore("con", scores.con);
