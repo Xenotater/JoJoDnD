@@ -547,9 +547,11 @@ input:checked + .slider:before {
 
 #act-num {
     display: none;
+    background: none;
+    text-align: left;
     position: absolute;
     left: 84px;
-    width: 40px;
+    width: 30px;
     border: none;
     top: 34px;
     height: 40px;

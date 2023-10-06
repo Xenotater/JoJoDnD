@@ -269,6 +269,8 @@ function importData(data) {
 
     if ($("#class").val() == "act")
         $("#act-num").css("display", "inline-block");
+    else
+        $("#act-num").css("display", "none");
 
     checkMeta();
 }
