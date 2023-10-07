@@ -58,6 +58,7 @@ input {
     text-align: center;
     border: 3px solid black;
     border-radius: 0;
+    line-height: initial;
 }
 
 .box {
@@ -69,7 +70,7 @@ input {
 #class, #multi {
     float: left;
     width: 70%;
-    text-align: center;
+    text-align-last: center;
 }
 
 #level {
@@ -115,7 +116,11 @@ input {
     height: 144px;
     text-align: left;
     font-size: 8px;
-    line-height: 14px;
+    line-height: 12px;
+}
+
+#skills-list li {
+    height: 15px;
 }
 
 #stats {
@@ -131,7 +136,7 @@ input {
 
 .savecheck {
     height: 16px;
-    width: 12px;
+    width: 14px;
     float: left;
     margin-left: .5rem;
     margin-top: 2px;
@@ -156,7 +161,7 @@ input {
 #proflbl, #atkslbl, #insplbl {
     width: 100px;
     float: left;
-    padding-top: 3px;
+    padding-top: 5px;
 }
 
 #insplbl {
@@ -166,7 +171,7 @@ input {
 #bonus, #atks, #insp {
     float: right;
     width: 45px;
-    height: 17px;
+    height: 18px;
     border: none;
     border-bottom: 2px solid black;
     margin-right: 5px;
@@ -201,7 +206,7 @@ input {
     height: 14px;
     font-size: 8px;
     margin-left: 3px;
-    text-align: center;
+    text-align-last: center;
     line-height: normal;
 }
 
