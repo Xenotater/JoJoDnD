@@ -2,7 +2,7 @@
   "resources": [
     {
       "title": "JoJo Stat Roller",
-      "img": "Assets/Stat Roller/dice.jpg",
+      "img": "Assets/Stat Roller/dice.webp",
       "desc": "Easily roll and calculate character and Stand stats. Created by Kyler Froman.",
       "link": "Assets/Stat Roller/roller.html",
       "alt": "JoJo Stat Roller"
