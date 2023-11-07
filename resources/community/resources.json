@@ -29,6 +29,20 @@
       "alt": "Google Sheets"
     },
     {
+      "title": "Sandman's DM Screen",
+      "img": "Assets/DM Screen/sandman.webp",
+      "desc": "A virtual DM Screen with quick references to necessary information. Created by Sandman.",
+      "link": "Assets/DM Screen/screen.html",
+      "alt": "Sandman's DM Screen"
+    },
+    {
+      "title": "Act 4 Stands Homebrew",
+      "img": "Assets/Act 4/coconut.webp",
+      "desc": "A simple homebrew allowing for a 4th evolution for Act-Type Stands. Created by Odd_Coconut.",
+      "link": "https://docs.google.com/document/d/1sjwoge0f7MZHciub30IZTibnscaildA1Gni8Iq5iM14/edit?usp=sharing",
+      "alt": "Act 4 Homebrew"
+    },
+    {
       "title": "Feature Yours Here!",
       "img": "Assets/jotaro.webp",
       "desc": "Want your work featured here? Reach out to Kyler (Xenotater) through our Community Discord.",
