@@ -1,4 +1,9 @@
 {
+    "Human": {
+        "name": "Human",
+        "desc": "The most common and basic race in the world of JoJo's, Humans are fairly uninteresting. They gain no special abilities like other races do, but they have boundless potential. Though they may start out quite ordinary, they're able to become a <a href='/classes?focus=Stands'>Stand User</a>, <a href='/classes?focus=Ripple'>Ripple User</a>, <a href='/classes?focus=Spin'>Spin User</a>, or even a <a href='/races?focus=Vampire'>Vampire</a> if the right conditions are met.",
+        "playing": "Humans gain no special features, abilities, or attributes from their race. Extra <a href='/feats'>Feats</a> are granted based on level, and stat bonuses and Proficiences are granted by <a href='/passions'>Passions</a>."
+    },
     "Zombie": {
         "name": "Zombie",
         "examples": ["Police Zombie", "Doobie", "Jones"],

@@ -5,7 +5,7 @@ $(document).ready(function () {
     r = url.searchParams.get("focus");
 
     if (r == null) {
-        r = "Zombie";
+        r = "Human";
         updateURL();
     }
 
@@ -26,7 +26,7 @@ function getData() {
     $.getJSON("races.json", function(data) {
         rData = data;
         if (rData[r] == null)
-            r = "Zombie";
+            r = "Human";
         updateDisplay();
     });
 
@@ -39,13 +39,15 @@ function updateDisplay() {
     var newContent = "";
 
     newContent += "<h2 class='display-title'>" + race.name + "</h2><div class='display-img'><img class='img-fluid' src='Assets/" + r + ".webp' alt='" + r + "'></div>";
-    newContent += "<p class='center'><small><b>Examples of " + (race.name + 's').replace(/Mans$/g, "Men") + ": </b><i>";
-    for (let i = 0; i < race.examples.length; i++) {
-        newContent += "<a href='https://jojo.fandom.com/wiki/" + race.links[i] + "' target='_blank'>"  + race.examples[i] + "</a>";
-        if (i != race.examples.length-1)
-            newContent += ", ";
-        else
-            newContent += "</i></small></p>";
+    if (race.examples != null) {
+        newContent += "<p class='center'><small><b>Examples of " + (race.name + 's').replace(/Mans$/g, "Men") + ": </b><i>";
+        for (let i = 0; i < race.examples.length; i++) {
+            newContent += "<a href='https://jojo.fandom.com/wiki/" + race.links[i] + "' target='_blank'>"  + race.examples[i] + "</a>";
+            if (i != race.examples.length-1)
+                newContent += ", ";
+            else
+                newContent += "</i></small></p>";
+        }
     }
     newContent += "<h4 class='display-heading'>Description</h4><p>" + race.desc + "</p>";
     if (race.playing != null)
