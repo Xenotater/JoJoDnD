@@ -50,7 +50,7 @@
             "dmg": "1d6 Piercing"
         },{
             "name": "Double-Barreled Shotgun",
-            "attr": ["Firearm", "Point Blank", "Ranged (5/30)", "Reload (x2)", "Two-Handed"],
+            "attr": ["Firearm", "Point Blank", "Ranged (5/30)", "Reload (x2)", "Siege", "Two-Handed"],
             "type": "Simple",
             "spec": "Shotgun",
             "stat": "Con",

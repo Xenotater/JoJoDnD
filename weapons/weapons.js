@@ -179,7 +179,7 @@ function hint(attr) {
         case "Reliable":
             return("This weapon does not jam if you roll a natural 1.");
         case "Point Blank":
-            return("This weapon does not grant Disadvantage if fired within melee.<br>Additionally, this weapon grants Advantage when aiming at a Prone target within melee.");
+            return("This weapon does not impose Disadvantage if fired within melee.");
         case "Ambush":
             return("This weapon always crits when attacking a Surprised target.");
         case "Bulky":
