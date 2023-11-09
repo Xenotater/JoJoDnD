@@ -325,18 +325,6 @@
             "You may take this Feat multiple times if desired."
         ]
     },
-    "Natural_Armor": {
-        "name": "Natural Armor",
-        "desc": "Because of your unique physiology ou may change your body between several different forms.",
-        "effects": [
-            "Humanoid: No changes.",
-            "Hybrid: +5 Temporary Hit Points, +5 AC, -5 meters Movement Speed, Resistance to Slashing damage (as well as Stand Slashing).",
-            "Rock: +20 Temporary Hit Points, +10 AC, No Movement Speed, Resistance to all physical damage (and their Stand counterparts).",
-            "The only Actions you can take in Rock Form are Stand Actions or changing forms.",
-            "Changing forms takes a full Action."
-        ],
-        "prereq": "<a href='/races/?focus=Rock_Human'>Rock Human</a>"
-    },
     "Paranoia": {
         "name": "Paranoia",
         "desc": "You've been aware of them for a while now. You don't know who, but you know that they've been after you for so long, and you've been evading them for what seems like forever.",
@@ -537,8 +525,9 @@
         "desc": "Some have an inner strength that simply cannot be stopped. Some are born with it, and others earn it through struggle and perseverance.",
         "effects": [
             "Any time you take damage that would put you at 0 Hit Points or below, you may make a Constitution (Not Durability), or Charisma Saving Throw.",
-            "The DC of this throw is equal to the half of the damage dealt to you, or 15, whichever is higher.",
-            "Upon Failure you simply drop to 0 HP. Upon Success you instead drop to, or remain at, 1 HP."
+            "The DC of this throw is equal to the half of the damage dealt to you, or 10, whichever is higher.",
+            "Upon Failure you simply drop to 0 HP. Upon Success you instead drop to, or remain at, 1 HP.",
+            "You may use this Feat an amount of times equal to your Proficiency Bonus per Long Rest."
         ]
     },
     "Veteran_Sprinter": {

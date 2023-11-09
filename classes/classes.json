@@ -1039,7 +1039,7 @@
                     "7": {
                         "pro": "3",
                         "feats": "3",
-                        "linkFeatures": ["Armored Stand", "OR"],
+                        "linkFeatures": ["Armored Stand", "OR", "Melee Barrage", "OR"],
                         "featFeatures": ["Catlike Agility"]
                     },
                     "8": {
