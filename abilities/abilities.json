@@ -455,7 +455,7 @@
         "name": "Natural Armor",
         "classes": ["Rock"],
         "desc": [
-            "Because of your unique physiology ou may change your body between several different forms. Changing forms takes a full Action.",
+            "Because of your unique physiology you may change your body between several different forms. Changing forms takes a full Action.",
             "<ul class='sublist'><li><b>Humanoid:</b> No changes.</li><li><b>Hybrid</b>: +5 Temporary Hit Points at the start of your Turn, +5 AC, -5 meters Movement Speed, Resistance to Slashing damage (as well as Stand Slashing).</li><li><b>Rock:</b> +20 Temporary Hit Points at the start of your Turn, +10 AC, No Movement Speed, Resistance to all physical damage (and their Stand counterparts). The only Actions you can take in Rock Form are Stand Actions or changing forms.</li></ul>"
         ]
     },
