@@ -305,7 +305,8 @@
         "classes": ["Pwr"],
         "desc": [
             "When you are hit with a melee attack, you may use your Reaction to halve the damage of any melee attack from that opponent until the start of your next turn.",
-            "Additionally, the first time they damage you with a melee attack after using this Ability you may make a single melee attack in return."
+            "Additionally, the first time they damage you with a melee attack after using this Ability you may make a single melee attack in return.",
+            "You may also use this to halve the damage of an incoming Melee Barrage, making your own in response at no additional Action Economy cost. However, this free Melee Barrage only deals half damage as well."
         ]
     },
     "Camouflage": {
@@ -329,14 +330,6 @@
         "classes": ["Abl", "Ind"],
         "desc": [
             "Through clever use of your Stand's Ability you've found a way to properly defend yourself. As an Action you may spend 2 Stand Energy and gain one of the following benefits for 3 Turns (not including the one that you activate it on). You may only have one of the following buffs active at a time.<ul class='sublist'><li>+2d4 AC (Both for Stand and User)</li><li>Advantage on all Saving Throws</li><li>An amount of Temporary Hit Points equal to twice your Level</li></ul>"
-        ]
-    },
-    "Defensive_Stance": {
-        "name": "Defensive Stance",
-        "classes": ["Pwr", "Rng", "Ind"],
-        "desc": [
-            "When taking the Dodge Action, you may choose to take a quarter (rounded down) damage from enemy attacks instead of the normal effect of Dodge. You still gain 1 Stand Energy back as normal when using the Dodge Action in this way.",
-            "This Ability only applies on Stand hits, unless your Stand is within 2m to protect you."
         ]
     },
     "Defensive_Wave": {
@@ -455,8 +448,9 @@
         "name": "Natural Armor",
         "classes": ["Rock"],
         "desc": [
-            "Because of your unique physiology you may change your body between several different forms. Changing forms takes a full Action.",
-            "<ul class='sublist'><li><b>Humanoid:</b> No changes.</li><li><b>Hybrid</b>: +5 Temporary Hit Points at the start of your Turn, +5 AC, -5 meters Movement Speed, Resistance to Slashing damage (as well as Stand Slashing).</li><li><b>Rock:</b> +20 Temporary Hit Points at the start of your Turn, +10 AC, No Movement Speed, Resistance to all physical damage (and their Stand counterparts). The only Actions you can take in Rock Form are Stand Actions or changing forms.</li></ul>"
+            "As a Rock Human, you gain an additional Hit Point per Level.",
+            "Additionally, because of your unique physiology you may change your body between several different forms. Changing forms takes a Bonus Action.",
+            "<ul class='sublist'><li><b>Humanoid:</b> No changes.</li><li><b>Hybrid</b>: You gain an amount of Temporary Hit Points equal to your Level at the start of your Turns and are considered to have half Cover (does not stack with other sources of Cover). You also may resist a physical damage type of your choice (Bludgeoning, Piercing, or Slashing). However, your Movement Speed is halved and you cannot take the Dodge or Dash actions in this form.</li><li><b>Rock:</b> You gain an amount of Temporary Hit Points equal to twice your Level at the start of your Turns and are considered to have three-quarters Cover (does not stack with other sources of Cover). You also resist all physical damage (Bludgeoning, Piercing, and Slashing). However, the only things you may do in this form are take Bonus Actions and the Hide Action. If you choose to Hide, you may make the Stealth Check with Advantage.</li></ul>"
         ]
     },
     "Ranged_Attack": {
@@ -478,9 +472,9 @@
     },
     "Rejuvenation": {
         "name": "Rejuvenation",
-        "classes": ["Pwr"],
+        "classes": ["Pwr", "Rev"],
         "desc": [
-            "Once per Short Rest, you may heal an amount of HP equal to 1d12 + your Level in Power Type + Your Constitution Modifier as a Bonus Action."
+            "Once per Short Rest, you may heal an amount of HP equal to 1d12 + your Level + Your Constitution Modifier as a Bonus Action."
         ]
     },
     "Regenerative_Surge": {
@@ -1337,6 +1331,16 @@
         "desc": [
             "You may choose one person to become your Nemesis. Whenever you encounter that person, you instantly gain 3 Grudge Points, which are held onto until you stop interacting with them, or until combat with your Nemesis ends and they have not been used.",
             "This Ability is replaced by <a class='in-page'>Hit List</a> at Level 20."
+        ]
+    },
+    "Act_4": {
+        "name": "Act 4",
+        "classes": ["Act"],
+        "desc": [
+            "Through the pursuit of perfection, you have gotten close enough to summon an immensely powerful version of one of your Stands.",
+            "You may select Act 1, Act 2, or Act 3 for this evolution to use as a baseline for its stats and Ability.",
+            "You may temporarily summon an immensely powerful Stand. The stats of this Stand are doubled from the chosen baseline, and it gains a unique and powerful Ability. Speak to your DM about the details of this Ability. The new Stand keeps the Class Features of the Act its stats are based on.",
+            "These changes last for an hour, and you may summon Act 4 once per Long Rest. If you choose to summon your Stand an additional time, you may, but you must make a DC 15 Constitution Saving Throw, gaining 1 point of Exhaustion on a successful Save, and 2 an unsuccessful Save."
         ]
     }
 }

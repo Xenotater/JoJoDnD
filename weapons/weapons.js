@@ -183,7 +183,7 @@ function hint(attr) {
         case "Ambush":
             return("This weapon always crits when attacking a Surprised target.");
         case "Bulky":
-            return("This weapon must be braced using a Bonus Action in order to begin firing.");
+            return("This weapon must be braced using a Bonus Action in order to begin firing. Once braced, you remain braced until you move.");
         case "Complex":
             return("This weapon takes a total of three Attacks to reload.");
         case "Flame":

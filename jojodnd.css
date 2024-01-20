@@ -130,6 +130,7 @@ nav .current-nav:hover {
 
 a {
     color: rgb(10, 0, 155);
+    cursor: pointer;
 }
 
 a:hover {

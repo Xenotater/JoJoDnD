@@ -37,8 +37,7 @@
         "name": "Calculating",
         "desc": "A lot of Stand Users have their Ability's strength tied to their willpower, but that is not always the case. Some use knowledge or their surroundings to make their Abilities terrifying.",
         "effects": [
-            "You may use Intelligence, Wisdom, or Charisma to determine your Stand DC, and your Stand DC increases by 2.",
-            "If you have other Class Features relating to your Charisma Modifier like <a href='/abilities/?focus=Stand_Energy_Recharge'>Stand Energy Recharge</a>, you may also use Intelligence or Wisdom for them instead."
+            "You may use Intelligence, Wisdom, or Charisma to determine your Stand DC, and your Stand DC increases by 2."
         ],
         "prereq": "<a href='/classes/?focus=Stands'>Stand User</a> Level 1+"
     },
@@ -73,7 +72,7 @@
         "desc": "Your medical knowledge is priceless on the battlefield.",
         "effects": [
             "You may make Medicine Checks as a Bonus Actions.",
-            "If you have a first aid kit or something similar you may make a DC 15 Medicine Check as an Action upon a creature that you can touch. On success, the creature may spend a Hit Die to heal."
+            "If you have a first aid kit or something similar you may make a DC 15 Medicine Check as an Action upon a creature that you can touch. On success, the creature may spend an amount of Hit Dice equal to their Proficiency Bonus to heal that amount plus your Level."
         ],
         "prereq": "Int 13+ or <a href='/passions/?focus=Medical_Expert'>Medical Expert</a>"
     },
@@ -89,7 +88,7 @@
         "name": "Consistent Accuracy",
         "desc": "You're very skilled at judging distance and accurately striking your target.",
         "effects": [
-            "Whenever you make a ranged weapon attack, thrown weapon attack, a Stand's <a href='/abilities/?focus=Ranged_Attack'>Ranged Attack</a>, or balls for use with <a href='/classes/?focus=Spin'>The Spin</a>, before you hear if the result hits your target or not you may choose to make the roll of the attack 8, and then add all of your typical modifiers. You may use this ability once per Short or Long Rest.",
+            "Whenever you make a ranged weapon attack, thrown weapon attack, a Stand's <a href='/abilities/?focus=Ranged_Attack'>Ranged Attack</a>, or balls for use with <a href='/classes/?focus=Spin'>The Spin</a>, before you hear if the result hits your target or not you may choose to make the roll of the attack 10, and then add all of your typical modifiers. You may use this ability once per Short or Long Rest.",
             "Additionally, whenever you have Advantage on one of the types of ranged attacks mentioned above, you may roll 3 dice rather than 2, and take the highest of the result."
         ]
     },
@@ -104,7 +103,7 @@
         "name": "Deadly Accuracy",
         "desc": "Your aim is steady and true, and you know exactly where to fire to maximize damage.",
         "effects": [
-            "When making an Attack with a weapon you may choose to use a full Action and Bonus Action to attack. If you choose to do this, you can add your To-Hit Bonus twice.",
+            "When making an Attack with a Ranged or Thrown weapon you may choose to use a full Action and Bonus Action to attack. If you choose to do this, you can add your To-Hit Bonus twice.",
             "Upon a successful Hit, you may roll double the Damage Dice that you would roll normally and gain Advantage on them.",
             "This Feat may be activated even when you use the ability that gives you Advantage on a Sniper Rifle.",
             "When used with <a href='/abilities/?focus=Ranged_Attack'>Ranged Attack</a> this Feat instead only gives Advantage on the Damage Dice rolled."
@@ -116,7 +115,7 @@
         "desc": "You've handled your fair-share of explosives, and know how to do so safely.",
         "effects": [
             "You gain Proficiency in the use of Explosives.",
-            "When you detonate and Explosive weapon, the DC for the save increases by 2.",
+            "When you detonate and Explosive weapon, the DC for the save increases by your Proficiency Bonus.",
             "Additionally, you gain Advantage on any Check made to disarm or setup an explosive device, as well as Saving Throws made against them."
         ]
     },
@@ -128,6 +127,7 @@
             "The object now deals Stand damage and gains the same resistance that the rest of your Stand has.",
             "If the object is destroyed, it does not damage the User in any way and it regenerates mass at a rate of 1kg/hour.",
             "If the object is a Ranged Weapon then you may refill its ammo to maximum capacity as a single Attack at the cost of 1 Stand Energy.",
+            "If the weapon is non-explosive and its maximum capacity is less than 5, you still get 5 'shots' before needing to expend Stand Energy again.",
             "This Feat may not be replaced once the object is permanently imbued.",
             "You may take this Feat multiple times if desired."
         ],
@@ -154,8 +154,9 @@
         "name": "Exemplar",
         "desc": "You're an inspiring person that leads by example and you serve as a model for others to look up to.",
         "effects": [
-            "At any time, you may give 1 point of inspiration to an ally of your choice.",
-            "You may use this Feat once per Long Rest, and if this point of inspiration is not used by the next Long Rest (or day), it expires."
+            "At any time, you may give 1 point of Inspiration to anyone you can see or hear as a Free Action.",
+            "You may give out Inspiration 3 times per Long Rest.",
+            "Inpsiration gained in this way may not be given to other players, can only be gained in this way once per Long Rest per person, and expires if not used by the end of the next Long Rest."
         ]
     },
     "Fortune_Teller": {
@@ -286,7 +287,7 @@
         "effects": [
             "When making a Wisdom or Charisma Saving Throw, you may instead choose to make an Intelligence Saving Throw.",
             "Additionally, when you make a Wisdom or Charisma Skill Check, you may replace the Ability Score used with Intelligence.",
-            "You may use this Feat once per Short Rest."
+            "You may use this Feat for Skill Checks once per Short Rest."
         ],
         "prereq": "Int 13+ or <a href='/passions/?focus=Academic'>Academic</a>"
     },
@@ -441,11 +442,11 @@
         "desc": "You seem to have some sort of unknown force that protects you and watches over you, kicking in at the most crucial moments.",
         "effects": [
             "When you roll a 1 on any roll, you may instead choose to make it a 20.",
-            "You may use this Feat an amount of times equal to half of your Proficiency Bonus (rounded down), per Long Rest."
+            "You may use this Feat an amount of times equal to your Proficiency Bonus per Long Rest."
         ]
     },
-    "Stand_Specialization": {
-        "name": "Stand Specialization",
+    "Anchored_Immunity": {
+        "name": "Anchored Immunity",
         "desc": "Due to the Nature of your Stand, there are some things that simply cannot harm you.",
         "effects": [
             "You and your Stand may gain Immunity to two damage types of your choice, but you gain Vulnerability to a damage type of your choice as well.",
@@ -593,5 +594,156 @@
             "You also gain <a href='/abilities/?focus=Anchored_Stand'>Anchored Stand</a> if you don't already have it."
         ],
         "prereq": "<a href='/classes/?focus=Stands'>Stand User</a> Level 1+"
+    },
+    "Weapon_Feat": {
+        "name": "Weapon Feat",
+        "desc": "<b>THIS IS NOT A FEAT</b>, this is a category of Feats.",
+        "effects": [
+            "Please select a Feat from the list below. You may not gain the same Feat from this list twice, unless otherwise specified.<ul class='sublist'><li><a class='in-page'>Demolitionist</a></li><li><a class='in-page'>Heavy Specialization</a></li><li><a class='in-page'>Martial Arts</a></li><li><a class='in-page'>Melee Specialization</a></li><li><a class='in-page'>Professional Weapon Training</a></li><li><a class='in-page'>Shield Proficiency</a></li><li><a class='in-page'>Shotgun Specialization</a></li><li><a class='in-page'>Sidearm Specialization</a></li><li><a class='in-page'>Simple Weapon Focus</a></li><li><a class='in-page'>Tavern Brawler</a></li><li><a class='in-page'>Thrown Weapon Specialization</a></li></ul>"
+        ]
+    },
+    "Epic_Feat": {
+        "name": "Epic Feat",
+        "desc": "<b>THIS IS NOT A FEAT</b>, this is a category of Feats.</p><p>This is a rule option for those wanting to run powerful boss characters who can stand up to a group of enemies by themselves. A particularly powerful and experienced Stand User may have the ability to take 1 Epic Feat, one of notable power may have up to 2, and very may even have up to 3, and these are generally reserved for end-game bosses.</p><p>These Epic Feats still take a regular Feat slot to obtain, and who gets them or if they're allowed at all is entirely up to the DM.",
+        "effects": [
+            "You may gain an Epic Feat from the list below, if your DM allows it:<ul class='sublist'><li><a class='in-page'>Extreme Motivation</a></li><li><a class='in-page'>Health Sponge</a></li><li><a class='in-page'>Immovable Object</a></li><li><a class='in-page'>Legendary Recovery</a></li><li><a class='in-page'>Skill Master</a></li><li><a class='in-page'>Superhuman Ability</a></li><li><a class='in-page'>Terrifying Aura</a></li><li><a class='in-page'>Warrior's Zeal</a></li><li><a class='in-page'>Uncanny Reflexes</a></li><li><a class='in-page'>Unstoppable Force</a></li></ul>"
+        ]
+    },
+    "Extreme_Motivation": {
+        "name": "Extreme Motivation",
+        "effects": [
+            "You may choose to succeed on an amount of Saving Throws equal to your Proficiency Bonus, taking an amount of Necrotic damage equal to the Level of the character who caused the Save instead.",
+            "The damage from this may not be reduced or avoided in any way."
+        ],
+        "prereq": "<a class='in-page'>Epic Feat</a> allowed by your DM"
+    },
+    "Health_Sponge": {
+        "name": "Health Sponge",
+        "effects": [
+            "Your Hit Points increase by an amount equal to three times your Level."
+        ],
+        "prereq": "<a class='in-page'>Epic Feat</a> allowed by your DM"
+    },
+    "Immovable_Object": {
+        "name": "Immovable Object",
+        "effects": [
+            "You gain Proficiency in two additional Saving Throws.",
+            "You also gain Advantage against any Ability or effect that would move you against your will or know you Prone, such as a Stand Ability or someone trying to Grapple or Shove you."
+        ],
+        "prereq": "<a class='in-page'>Epic Feat</a> allowed by your DM"
+    },
+    "Legendary_Recovery": {
+        "name": "Legendary Recovery",
+        "effects": [
+            "You regain 3 Ripple Points at the start of your Turn if you are able to comfortably breathe, rather than just regaining 1."
+        ],
+        "prereq": "<a href='/classes?focus=Ripple'>Ripple</a> Level 1+, <a class='in-page'>Epic Feat</a> allowed by your DM"
+    },
+    "Skill_Master": {
+        "name": "Skill Master",
+        "effects": [
+            "You may gain Mastery (three time Proficiency Bonus) in a Skill that your have Proficiency or Expertise in, and you gain Expertise in up to two Skills that you have Proficiency in."
+        ],
+        "prereq": "<a class='in-page'>Epic Feat</a> allowed by your DM"
+    },
+    "Superhuman_Ability": {
+        "name": "Superhuman Ability",
+        "effects": [
+            "One of your Ability Scores increases by 4 up to a maximum of 24."
+        ],
+        "prereq": "<a class='in-page'>Epic Feat</a> allowed by your DM"
+    },
+    "Terrifying_Aura": {
+        "name": "Terrifying Aura",
+        "effects": [
+            "Anyone within 20m of you who can see or hear you must make a Wisdom Saving Throw against a DC of 8 + your Proficiency Bonus + your Charisma Modifier. If they fail the Save, they become Frightend of you for one minute, or until they succeed the Save, which they may remake at the end of each of their Turns.",
+            "Those who succeed the Saving Throw or have been under the effect within the last 24 hours become immune to the effect for the next 24 hours."
+        ],
+        "prereq": "<a class='in-page'>Epic Feat</a> allowed by your DM"
+    },
+    "Warriors_Zeal": {
+        "name": "Warriors Zeal",
+        "effects": [
+            "you gain Proficiency in the use of all weapons and Expertise in up to three of your choice",
+            "Additionally, you deal an additional amount of damage equal to your Proficiency Bonus with any weapon."
+        ],
+        "prereq": "<a class='in-page'>Epic Feat</a> allowed by your DM"
+    },
+    "Uncanny_Reflexes": {
+        "name": "Uncanny Reflexes",
+        "effects": [
+            "You may halve any damage taken due to failing a Dexterity Saving Throw. If you succeed a Dexterity Saving Throw that would have dealt damage on success, it does not.",
+            "Additionally, you may spend your Reaction to halve the damage of any Attack directed at you from a foe you can see."
+        ],
+        "prereq": "<a class='in-page'>Epic Feat</a> allowed by your DM"
+    },
+    "Unstoppable_Force": {
+        "name": "Unstoppable Force",
+        "effects": [
+            "You deal triple damage to all objects and structures",
+            "Additionally, when attacking a target, you may also choose to target a part of the enviornment within 1m of the target to cause damage to it as well."
+        ],
+        "prereq": "<a class='in-page'>Epic Feat</a> allowed by your DM"
+    },
+    "Defensive_Stance": {
+        "name": "Defensive Stance",
+        "desc": "You enter a more defensive stance, allowing you to redirect most of the energy from powerful blows, rather than focusing on avoiding damage.",
+        "effects": [
+            "When taking the Dodge Action, you may choose to take a quarter (rounded down) damage from enemy attacks instead of the normal effect of Dodge."
+        ]
+    },
+    "Duelists_Agility": {
+        "name": "Duelist's Agility",
+        "desc": "Through training, you have mastered the art of offense through defense, allowing you to lash out at opponents whenever you are struck.",
+        "effects": [
+            "Once per Short Rest, you may Dodge as a Bonus Action.",
+            "Additionally, when Dodging through any means, any time you take damage from an Attack or Saving Throw effect, you may make a single Attack for free targeting whoever damaged you."
+        ],
+        "prereq": "Dex 13+"
+    },
+    "Impeccable_Agility": {
+        "name": "Impeccable Agility",
+        "desc": "Your reflexes and awareness are polished, allowing you to avoid or absorb attacks with ease. ",
+        "effects": [
+            "Once per Short Rest, you may Dodge as a Bonus Action.",
+            "Addtionally, while Dodging through any means, you gain an amount of AC equal to your Proficiency Bonus.",
+            "If you are a <a href='/classes?focuse=Stands'>Stand User</a>, you may instead choose to double your Stand AC."
+        ],
+        "prereq": "Dex 13+"
+    },
+    "Massive_Stand": {
+        "name": "Massive Stand",
+        "desc": "Through training and experimentation, you have discovered that you may increase a Stand's size, so long as you have enough material to do so and it is relatively close to you.",
+        "effects": [
+            "Your Stand is able to increase by one size category, so long as you have enough material for your Stand to anchor onto. Each size category increase requires an amount of material equivalent to twice your Stand's current mass of material. You may estimate this or ask your DM to estimate it, no need to do volume and density math to figure it out.",
+            "You may take this Feat up to three times, increasing by another size category (and doubling the required material mass) foe each one.",
+            "For each category increase, you Stand must be closer to you. For one category, it must be within half of its Range, a quarter for two, and an eigth for three.",
+            "Due to the increase in size, your Stand gains the following benefits:<ul class='sublist><li>Each category increases your Stand's Range score by an additional multiplier (for example, x2 becomes x3, and so on).</li><li>Your Stand's Attack dice increase, giving an additional 1d10 before Level 11 or an additional 2d8 after, per category increase.</li><li>Your Stand's melee Attacks have a sweeping effect, causing them to hit everyone within a 1m cone rather than a single target. The radius of this cone increases by 1m for each category increase. You only need to make one Attack Roll against the ACs of all targets in range.</li><li>Your Stand more lifting and carrying capacity relative to its new size.</li></ul>"
+        ],
+        "prereq": "<a href='/classes/?focus=Enhancement'>Enhancement-Type User</a> Level 1+"
+    },
+    "Shield_Proficiency": {
+        "name": "Shield Proficiency",
+        "desc": "Through knowledge and training, you have learned to use Shields to their fullest effect.",
+        "effects": [
+            "Whenever you gain Cover using a Shield or Tower Shield, you may share that Cover with another creature withing 1m of you.",
+            "Additionally, you may move with half of your Movement Speed while hunkered, allowing any creature you're sharing Cover with to move with you up to half of their Movemenmt Speed as well as their Reaction."
+        ]
+    },
+    "Uncontrollable_Stand": {
+        "name": "Uncontrollable Stand",
+        "desc": "Your Stand is incredibly powerful, but not very reliable, which may result in unwanted or expected collateral damage.",
+        "effects": [
+            "Your Stand is massively powerful, but is interested in pursuing its own motives, sometimes being willing to harm allies or the user to do so. The only control the user has over their Stand is to have them summoned or not.",
+            "In addition, your stand gains two of the following benefits:<ul class='sublist'><li>Your Stands Custom Ability massively increases in potency. For example, if your Stand uses scaling dice, you gain an additional amount of Ability Dice equal to your Proficiency Bonus. Alternatively, you may speak to your DM about increasing the potency of your Stands Ability in some other way, similar to <a href='/abilities/Enhanced_Custom_Ability'>Enhanced Custom Ability</a>.</li><li>Your Range becomes irrelevant, and affects everyone or everything on the planet.</li><li>Your Stand Energy becomes 0, and your Stands Abilities may be used without cost.</li><li>Two of your Stands stats of your choice are doubled, as well as all of the points you put into those stats later.</li><li>Your Stand DC increases by an amount equal to your Proficiency Bonus.</li></ul>"
+        ],
+        "prereq": "<a href='/classes/?focus=Stands'>Stand User</a> Level 1+, Cannot be a Remote-Type or Independent-Type Stand User"
+    },
+    "": {
+        "name": "",
+        "desc": "",
+        "effects": [
+            ""
+        ]
     }
 }

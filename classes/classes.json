@@ -49,7 +49,7 @@
                 "pro": "2",
                 "feats": "2",
                 "linkFeatures": ["Rippling Weapon"],
-                "featFeatures": ["Martial Arts", "OR", "Simple Weapon Focus"],
+                "featFeatures": ["Spiritual Ripple (Variant Rule)", "Martial Arts", "OR", "Simple Weapon Focus"],
                 "ability": ["Increase Str, Dex, or Con Score by 1"]
             },
             "5": {
@@ -78,7 +78,7 @@
             "9": {
                 "pro": "4",
                 "feats": "3",
-                "linkFeatures": ["Conductor Shield", "Spiritual Ripple (Variant Rule)"]
+                "linkFeatures": ["Conductor Shield"]
             },
             "10": {
                 "pro": "4",
@@ -336,7 +336,8 @@
                     "16": {
                         "pro": "5",
                         "feats": "5",
-                        "linkFeatures": ["Defensive Stance", "OR", "Lethal Strike"]
+                        "linkFeatures": ["Lethal Strike", "OR"],
+                        "featFeatures": ["Defensive Stance"]
                     },
                     "17": {
                         "pro": "6",
@@ -482,7 +483,8 @@
                     "16": {
                         "pro": "5",
                         "feats": "5",
-                        "linkFeatures": ["Defensive Stance", "OR", "Improved Awareness"]
+                        "linkFeatures": ["Improved Awareness", "OR"],
+                        "featFeatures": ["Defensive Stance"]
                     },
                     "17": {
                         "pro": "6",
@@ -573,8 +575,7 @@
                     "5": {
                         "pro": "3",
                         "feats": "2",
-                        "featFeatures": ["Simple Weapon Focus", "OR", "Professional Weapon Training", "OR", "Demolitionist", "OR", "Martial Arts", "OR",
-                            "Rifle Specialization", "OR", "Sidearm Specialization", "OR", "Shotgun Specialization", "OR", "Tavern Brawler", "OR", "Thrown Weapon Specialization"]
+                        "featFeatures": ["Weapon Feat"]
                     },
                     "6": {
                         "pro": "3",
@@ -714,8 +715,7 @@
                     "4": {
                         "pro": "2",
                         "feats": "2",
-                        "featFeatures": ["Simple Weapon Focus", "OR", "Professional Weapon Training", "OR", "Demolitionist", "OR", "Martial Arts", "OR", "Sidearm Specialization",
-                            "OR", "Rifle Specialization", "OR", "Shotgun Specialization", "OR", "Tavern Brawler", "OR", "Thrown Weapon Specialization"]
+                        "featFeatures": ["Weapon Feat"]
                     },
                     "5": {
                         "pro": "3",
@@ -1022,8 +1022,7 @@
                     "4": {
                         "pro": "2",
                         "feats": "2",
-                        "featFeatures": ["Scarflesh", "Simple Weapon Focus", "OR", "Professional Weapon Training", "OR", "Demolitionist", "OR", "Martial Arts", "OR",
-                            "Sidearm Specialization", "OR", "Rifle Specialization", "OR", "Shotgun Specialization", "OR", "Tavern Brawler", "OR", "Thrown Weapon Specialization"]
+                        "featFeatures": ["Weapon Feat"]
                     },
                     "5": {
                         "pro": "3",
@@ -1039,8 +1038,7 @@
                     "7": {
                         "pro": "3",
                         "feats": "3",
-                        "linkFeatures": ["Armored Stand", "OR", "Melee Barrage", "OR"],
-                        "featFeatures": ["Catlike Agility"]
+                        "linkFeatures": ["Armored Stand", "OR", "Melee Barrage", "OR", "Rejuvenation"]
                     },
                     "8": {
                         "pro": "3",
@@ -1243,7 +1241,8 @@
                     "18": {
                         "pro": "6",
                         "feats": "5",
-                        "linkFeatures": ["Defensive Stance", "OR", "Slippery"]
+                        "linkFeatures": ["Slippery", "OR"],
+                        "featFeatures": ["Defensive Stance"]
                     },
                     "19": {
                         "pro": "6",
@@ -1641,7 +1640,7 @@
                             "pro": "6",
                             "feats": "6",
                             "abilDice": "10dx",
-                            "linkFeatures": ["Instant Swap"],
+                            "linkFeatures": ["Instant Swap", "OR", "Act 4 (Variant Rule)"],
                             "otherFeatures": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
                         }
                     ]
@@ -1703,7 +1702,7 @@
             "4": {
                 "pro": "2",
                 "feats": "2",
-                "linkFeatures": ["Muscle Contraction", "OR", "Tendon Twister", "OR"],
+                "linkFeatures": ["Spiritual Spin (Variant Rule)", "Muscle Contraction", "OR", "Tendon Twister", "OR"],
                 "featFeatures": ["Catlike Agility"]
             },
             "5": {
@@ -1732,7 +1731,7 @@
             "9": {
                 "pro": "4",
                 "feats": "3",
-                "linkFeatures": ["Immense Friction", "OR", "Restraining Spin", "Spiritual Spin (Variant Rule)"]
+                "linkFeatures": ["Immense Friction", "OR", "Restraining Spin"]
             },
             "10": {
                 "pro": "4",

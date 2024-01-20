@@ -14,6 +14,14 @@ $(document).ready(function () {
 
     $("#list").on("click", ".list-link", function () {
         f = $(this).attr("id");
+        if (f == "Epic_Feat")
+            search("Epic Feat");
+        updateURL();
+        updateDisplay();
+    });
+
+    $("#display").on("click", "a.in-page", function() {
+        f= $(this).html().replace(/[ -]/g, "_").replace(/'/g, "");
         updateURL();
         updateDisplay();
     });
@@ -82,8 +90,10 @@ function updateList() {
     feats.sort();
     if (reverse)
         feats.reverse();
-    for (let i = 0; i < feats.length; i++)
-        $("#list-table tbody").append("<tr class='list-link' id='" + fData[feats[i]].name.replace(/[ -]/g, "_").replace(/'/g, "") + "'><td>" + fData[feats[i]].name + "</td></tr>");
+    for (let i = 0; i < feats.length; i++) {
+        if (feats[i].prereq == null || !feats[i].prereq.includes("Epic Feat"))
+            $("#list-table tbody").append("<tr class='list-link' id='" + fData[feats[i]].name.replace(/[ -]/g, "_").replace(/'/g, "") + "'><td>" + fData[feats[i]].name + "</td></tr>");
+    }
     $("#" + f).addClass("listCurrent");
 }
 
@@ -94,7 +104,8 @@ function updateDisplay() {
     newContent += "<h2 class='display-title'>" + feat.name + "</h2>";
     if (feat.prereq != null)
         newContent += "<p><b><u>Prerequisite:</u> " + feat.prereq + "</b></p>";
-    newContent += "<p class='section'><b>Description: </b></p><p>" + feat.desc + "</p>";
+    if (feat.desc != null)
+        newContent += "<p class='section'><b>Description: </b></p><p>" + feat.desc + "</p>";
     newContent += "<p class='section'><b>Effects: </b></p><ul class='effects'>"
     for (let i = 0; i <feat.effects.length; i++)
         newContent += "<li>" + feat.effects[i] + "</li>";
@@ -107,6 +118,7 @@ function updateDisplay() {
 
 function search(query) {
     var not = false;
+    var showEpic = query.includes("Epic");
     feats = [];
     
     if (query.match(/^NOT */)) {
@@ -123,10 +135,13 @@ function search(query) {
                 matched = true;
             if ("prerequisite".includes(query.toLowerCase()) && fData[key].prereq != null) //make sure prereqs can be searched for
                 matched = true;
+            if (fData[key].prereq != null && fData[key].prereq.includes("Epic Feat") && !showEpic)
+                matched = false;
         }
         if ((matched && !not) || (!matched && not))
             feats.push(key);
     }
 
     updateList();
+    $("#search").val(query); //put query in the search box, in case the search was done through some other method
 }
