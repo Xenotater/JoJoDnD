@@ -145,6 +145,22 @@ function parseTypes(classes) {
         for (let i = 0; i < classes.length; i++) {
             var cls = "", lnk = "", page = "classes";
             switch (classes[i]) {
+                case "Ass":
+                    cls = "Assassins",
+                    lnk = "Assassin"
+                    break;
+                case "Sch":
+                    cls = "Scholars",
+                    lnk = "Scholar"
+                    break;
+                case "Con":
+                    cls = "Consuls",
+                    lnk = "Consul"
+                    break;
+                case "War":
+                    cls = "Warriors",
+                    lnk = "Warrior"
+                    break;
                 case "Pwr":
                     cls = "Power-Type Stands";
                     lnk = "Power";

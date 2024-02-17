@@ -588,7 +588,7 @@
         "classes": ["Rip"],
         "desc": [
             "You've learned one of the following schools of combat that enables you to better use your Ripple combatively.",
-            "<ul class='sublist'><li>Disciplined: You gain Proficiency in 2 Saving Throws of your Choice.</li><li>Enhanced Reflexes: As a Reaction you may move up to half your Movement Speed without provoking Opportunity Attacks. You may use this to avoid an AOE Save, but not a single target attack.</li><li>Graceful Fighting: When you make Unarmed Attacks or Attacks using a Simple melee Weapon you may use Dexterity for both the Attack and Damage rolls. Additionally, you may use your Unarmed Dice with a Simple melee Weapon instead of its regular damage die.</li><li>Powerful: Rather than using regular AC, you may choose to have your AC be 10 + your Strength Modifier + your Constitution Modifier.</li></ul>"
+            "<ul class='sublist'><li><b>Disciplined</b>: You gain Proficiency in 2 Saving Throws of your Choice.</li><li><b>Enhanced Reflexes</b>: As a Reaction you may move up to half your Movement Speed without provoking Opportunity Attacks. You may use this to avoid an AOE Save, but not a single target attack.</li><li><b>Graceful Fighting</b>: When you make Unarmed Attacks or Attacks using a Simple melee Weapon you may use Dexterity for both the Attack and Damage rolls. Additionally, you may use your Unarmed Dice with a Simple melee Weapon instead of its regular damage die.</li><li><b>Powerful</b>: Rather than using regular AC, you may choose to have your AC be 10 + your Strength Modifier + your Constitution Modifier.</li></ul>"
         ]
     },
     "Recovery_Breathing": {
@@ -784,7 +784,7 @@
         "classes": ["Spin"],
         "desc": [
             "You gain one of the following Spin Fighting Styles:",
-            "<ul class='sublist'><li>Aggressive: If you use your Action to only make damage-dealing Attacks with Spin imbued Spheres you may use your Bonus Action to make another Attack using the spin, so long as it is only used to deal damage.</li><li>Dead Eye: Unless you are throwing a Sphere at Long Range, your Attacks with Spheres imbued with the spin cannot be made with Disadvantage.</li><li>Disciplined: You gain Proficiency in 2 Saving Throws of your choice.</li><li>Mobile: You have Advantage on Saving Throws that would restrict your movement. Additionally, you may spend a Bonus Action in order to ignore difficult terrain.</li></ul>"
+            "<ul class='sublist'><li><b>Aggressive</b>: If you use your Action to only make damage-dealing Attacks with Spin imbued Spheres you may use your Bonus Action to make another Attack using the spin, so long as it is only used to deal damage.</li><li><b>Dead Eye</b>: Unless you are throwing a Sphere at Long Range, your Attacks with Spheres imbued with the spin cannot be made with Disadvantage.</li><li><b>Disciplined</b>: You gain Proficiency in 2 Saving Throws of your choice.</li><li><b>Mobile</b>: You have Advantage on Saving Throws that would restrict your movement. Additionally, you may spend a Bonus Action in order to ignore difficult terrain.</li></ul>"
         ]
     },
     "Create_Mirage": {
@@ -1341,6 +1341,147 @@
             "You may select Act 1, Act 2, or Act 3 for this evolution to use as a baseline for its stats and Ability.",
             "You may temporarily summon an immensely powerful Stand. The stats of this Stand are doubled from the chosen baseline, and it gains a unique and powerful Ability. Speak to your DM about the details of this Ability. The new Stand keeps the Class Features of the Act its stats are based on.",
             "These changes last for an hour, and you may summon Act 4 once per Long Rest. If you choose to summon your Stand an additional time, you may, but you must make a DC 15 Constitution Saving Throw, gaining 1 point of Exhaustion on a successful Save, and 2 an unsuccessful Save."
+        ]
+    },
+    "Assassin_Fighting_Style": {
+        "name": "Assassin Fighting Style",
+        "classes": ["Ass"],
+        "desc": [
+            "Choose one of the following Fighting Styles:<ul class='sublist'><li><b>Disciplined:</b> You gain Proficiency in 2 Saving Throws of your choice</li><li><b>Dual Wielding:</b> When you make an Attack using two weapons with the Light property, you can make an amount of additional Attacks equeal to half your Proficiency Bonus as a Bonus Action.</li><li><b>Mobile:</b> You have Advantage on Saving Throws that would restrict your Movement. Additionally, you may spend your Bonus Action in order to ignore Difficult Terrain.</li><li><b>Swift:</b> You gain an additional 5m of Movement Speed.</li></ul>"
+        ]
+    },
+    "Aura_of_Knowledge": {
+        "name": "Aura of Knowledge",
+        "classes": ["Sch"],
+        "desc": [
+            "You're knowledgable about many situations and can share that knowledge.",
+            "When you or an ally within 3m of you makes a Skill Check you may add your Intelligence Modifier to the roll."
+        ]
+    },
+    "Consul_Fighting_Style": {
+        "name": "Consul Fighting Style", 
+        "classes": ["Con"],
+        "desc": [
+            "Choose one of the following Fighting Styles:<ul class='sublist'><li><b>Determined Fighting:</b> You may choose one weapon you have. When using that weapon, you can add your Charisma Modifier to the Attack and Damage Rolls. You may switch which weapon has this property on a Long Rest.</li><li><b>Extended Encouragement:</b> The range and duration of your Encouragement Dice extend to 10 meters and 30 minutes respectively.</li><li><b>Mobile:</b> You gain Advantage on Saving Throws that would restrict your Movement. Additionally, you may spend your Bonus Action in order to ignore Difficult Terrain.</li><li><b>Warrior's Encouragement:</b> When you or an ally receives an Encouragement Dice from you, it can also be added to Attack Rolls, and when using it in this way the value is also added to the damage dealt.</li></ul>"
+        ]
+    },
+    "Damage_Minimum": {
+        "name": "Damage Minimum",
+        "classes": ["War"],
+        "desc": [
+            "Whenever you Attack with a weapon you are Proficient in you may round the damage up to an amount equal to double your Proficiency Bonus if it is lower."
+        ]
+    },
+    "Encouragement_Dice": {
+        "name": "Encouragement Dice",
+        "classes": ["Con"],
+        "desc": [
+            "Through using Encouragement Dice, you can either heal a nearby ally or boost their abilities through bolstering their spirits.",
+            "You have an amount of Encouragement Dice equal to your Charisma Modifier + your Proficiency Bonus. You regain all spent Encouragement Dice on a Long Rest. You may spend Encouragement Dice in the following ways:",
+            "As an Attack, you may restore 1d6 + your Charisma Modifier Hit Points to yourself or an ally who can see or hear you within 5 meters, and you may choose to spend several Encouragement Dice at once in order to add an additional 1d6 for each Die.",
+            "As a Reaction, when you or an ally within 5 meters makes a Skill Check or Saving Throw, you may add 1d6 to that roll. Alternatively the die may be saved and spent on a later roll within the next 5 minutes, after which it expires. A character can have one Encouragement Die at a time, and you can only have an amount of people equal to you Proficienty Bonus boosted by Encouragement Dice at the same time."
+        ]
+    },
+    "Expert_Assassin": {
+        "name": "Expert Assassin",
+        "classes": ["Ass"],
+        "desc": [
+            "Any Dexterity-based weapon your are Profcient in gains the Ambush property when you wield it."
+        ]
+    },
+    "Field_Study": {
+        "name": "Field Study",
+        "classes": ["Sch"],
+        "desc": [
+            "You may spend an Attack to make a Skill Check, rather than your full Action.",
+            "This applies to all Checks, including excaping a Grapple, using the Hide Action, performing Medicine Checks to revive an ally, and more."
+        ]
+    },
+    "Improved_Encouragement_Dice": {
+        "name": "Improved Encouragement Dice",
+        "classes": ["Con"],
+        "desc": [
+            "Your Encouragement Dice increase from d6s to d12s.",
+            "Whenever you use these dice to heal, for every additional die spent, you may add your Charima Modifier as well."
+        ]
+    },
+    "Improved_Fighting_Style": {
+        "name": "Improved Fighting Style",
+        "classes": ["Ass", "Con", "Sch", "War"],
+        "desc": [
+            "You gain an additional Fighting Style from the Assassin, Consul, Scholar, or Warrior <a href='/abilities?search=Fighting%20Style'>Fighting Styles</a>."
+        ]
+    },
+    "Paragon_of_Knowledge": {
+        "name": "Paragon of Knowledge",
+        "classes": ["Sch"],
+        "desc": [
+            "Twice per Short Rest when you make a Skill Check that you're Proficient in using Intelligence, Wisdom, Charisma, you may choose to make the roll a 20 before rolling the die."
+        ]
+    },
+    "Perfected_Encouragement": {
+        "name": "Perfected Encouragement",
+        "classes": ["Con"],
+        "desc": [
+            "Whenever you take a Short Rest you regain an amount of Encouragement Dice equal to your Charisma Modifier.",
+            "Additionally, when you or an ally roll a 3 or lower on any of your Encouragement Dice, it may be rerolled, though the new roll must be kept."
+        ]
+    },
+    "Reaping_Strikes": {
+        "name": "Reaping Strikes",
+        "classes": ["Ass"],
+        "desc": [
+            "When you Surprise an opponent, you may add your Assassin Dice and their benefits twice per Turn, rather than just once."
+        ]
+    },
+    "Scholar_Fighting_Style": {
+        "name": "Scholar Fighting Style",
+        "classes": ["Sch"],
+        "desc": [
+            "Choose one of the following Fighting Styles:<ul class='sublist'><li><b>Disciplined:</b> You gain Proficiency in 2 Saving Throws of your choice</li><li><b>Foresight:</b> As a Reaction, you may move up to half your Movement Speed without provoking Opportunity Attacks. You may use this to avoid an AOE Saving Throw, but not a single target Attack.</li><li><b>Intelligent Fighting:</b> When you are Proficient in the use of Simple Melee Weapons, Rifles, or Sidearms, you may use your Intelligence Modifier instead of Strength or Dexterity when making Attack Rolls.</li><li><b>Scholar's Defense:</b> When you gain Half Cover from an ally from <a class='in-page'>Scholarly Combatant</a>, you instead gain Three-Quarters Cover. </li></ul>"
+        ]
+    },
+    "Scholarly_Combatant": {
+        "name": "Scholarly Combatant",
+        "classes": ["Sch"],
+        "desc": [
+            "Whenever you gain Hit Points at 1st Level or when Leveling Up in Scholar, you may use your Intelligence Modifier instead of Constitution to determine additional Hit Points.",
+            "Additionally, as a Bonus Action, you may take Half Cover behind an ally of the same size as you or larger."
+        ]
+    },
+    "Steady_Aim": {
+        "name": "Steady_Aim",
+        "classes": ["Ass"],
+        "desc": [
+            "If you've not moved this Turn, you may choose to spend a Bonus Action and drop your Movement to 0 to give yourself Advantage on an Attack.",
+            "If you would already have Advantage on an Attack through Surprising your target, you may roll 3d20 and take the highest value."
+        ]
+    },
+    "Supernatural_Item": {
+        "name": "Supernatural Item",
+        "classes": ["Ass", "Con", "Sch", "War"],
+        "desc": [
+            "From your exposure to the supernatural you have gained, found, or created a weapon, piece of armor, or charm that holds supernatural abilities. If your DM allows it, you may choose one of the three following options:",
+            "<ul class='sublist'><li><b>Supernatural Charm:</b> A small trinket or object that gives the wearer strength. While wearing this, you and allies within 3 meters of you gain a bonus to Saving Throws equal to half your Proficiency Bonus (rounded down). In addition, you may choose one Charm Ability, and either another Charm Ability or a Defensive Ability.</li><li><b>Supernatural Defense:</b> A suit of armor, article of clothing, or shield that protects the holder. With this item, you gain a bonus to your AC equal to half your Proficiency Bonus (rounded down). Any damage taken is also reduced by the same amount. In addition, you may choose one Defensive Ability, and either another Defensive Ability or a Charm Ability.</li><li><b>Supernatural Weapon:</b> A weapon of some sort that deals powerful damage. This weapon cannot be explosive and functions as normal, but is capable of damaging <a href='/classes?focus=Stands'>Stands</a>. The weapon gains a bonus to Attack and Damage Rolls equal to half your Proficiency Bonus (rounded down). In addition, you may choose one Weapon Ability and either another Weapon Ability or a Defensive Ability.</li></ul>",
+            "The item has an amount of charges equal to your Proficiency Bonus per Long Rest, and you may regain half of the charges on a Short Rest. These charges are used when activating the item's Ability, chosen from the options below:",
+            "<b><u>Charm Abilities:</u></b><ul class='sublist'><li>Inspiring Trinket: When you fail a Skill Check you may attempt the roll a second time as a Free Action. Alternatively, you may spend a second charge to also have Advantage on the reroll. You may only use this Ability once per Turn.</li><li>Ready Stance: When someone you can see makes a Skill Check or Saving Throw you can use your Reaction to give them Advantage. Alternatively, you may spend a second charge to also grant them Advantage on all Checks and Saves they may until the end of their next Turn.</li><li>Source of Motivation: When you fail a Saving Throw you may use your Reaction to reroll it. Alternatively, you may spend a second charge to also gain Advantage on all Saving Throws of that type until the start of your next Turn.</li></ul>",
+            "<b><u>Defensive Abilities:</u></b><ul class='sublist'><li>Clever Preparation: You may use a Bonus Action to gain Resistance to any non-physical damage type, or use an Action to instead gain Resistance to a physical damage type, until the start of your next Turn. Alternatively, you may spend a second charge to gain Resistance to 2 non-physical types, or one physical damage type, as a Bonus Action.</li><li>Patient Guard: As a Bonus Action, you may gain the effects of either Disengage or Dodge as well as gain an amount of AC equal to your Proficiency Bonus until the start of your next Turn. Alternatively, you may spend a second charge to gain both the effects of Disengage AND Dodge, as well as the AC bonus.</li><li>Stand Defense: You may gain an amount of Stand Damage Reduction equal to 4 times your Proficiency Bonus. Your \"Stand AC\" is equal to 10 + 3 times your Level, or 20, whichever is higher. Your \"Stand\" may still be hit by regular physical damage. Alternatively, you may spend a second charge to gain 8 times instead and double your \"Stand AC\". This effect lasts until the start of your next Turn. You can find the rules on Stand Damage Reduction and Stand AC on the main <a href='/classes?focus=Stands'>Stands</a> page.</li></ul>",
+            "<b><u>Weapon Abilities:</u></b><ul class='sublist'><li>Deflect Attack: To use this Ability, your item must be a melee weapon. Whenever you take damage from an Attack, you may make an Attack Roll to contest your attacker. If your Attack Roll is higher than that of your opponent, you take no damage from the Attack against you. Alternatively, you may spend a second charge to also gain Advantage on the contesting Attack Roll.</li><li>Expose Weak Point: When dealing damage with this weapon you may either:<ul class='sublist'><li>Give Advantage to the next Attack from someone else targeting your target</li><li>Force your target to make a Constitution (NOT Durability) Saving Throw against a DC of 8 + Proficiency Bonus + Intelligence Modifier. On a failure, the target becomes Vulnerable to a damage type of your choice until they're next damaged by that damage type. However if they were Immune or Resistant to that type, they instead become Resistant or normally damaged by it respectively until the start of your next Turn. You may only use this Ability once per Turn.</li></ul>Alternatively, you may spend a second charge to use both effects at once.</li>Wrathful Strike: When dealing damage with this weapon you may choose to deal an additional amount of d6s of damage equal to your Proficiency Bonus. Alternatively you may spend a second charge to use d12s rather than d6s. You may only use this Ability once per Turn.</li></ul>"
+        ]
+    },
+    "Warrior_Fighting_Style": {
+        "name": "Warrior Fighting Style",
+        "classes": ["War"],
+        "desc": [
+            "Choose one of the following Fighting Styles:<ul class='sublist'><li><b>Disciplined:</b> You gain Proficiency in 2 Saving Throws of your choice</li><li><b>Dual Wielding:</b> When you make an Attack using two weapons with the Light property, you can make an amount of additional Attacks equeal to half your Proficiency Bonus as a Bonus Action.</li><li><b>Powerful:</b> Rather than using your regular AC, you may choose to have your AC be 10 + Strength Modifier + Con Modifier.</li><li><b>Swift:</b> You gain an additional 5m of Movement Speed.</li><li><b>Unshakable:</b> You have Advantage against any effect that would attempt to move you against your will or knock you Prone.</li></ul>"
+        ]
+    },
+    "Weapon_Aficionado": {
+        "name": "Weapon Aficionado",
+        "classes": ["War"],
+        "desc": [
+            "You may add your Proficiency Bonus to Attack Rolls whenever you use a weapon or your Unarmed Strikes, in addition to any other bonuses you may get including Weapon Proficiencies.",
+            "Additionally, once per Short Rest when missing an Attack Roll you may instead choose to make the number you rolled a 20, guaranteeing a Critical Hit."
         ]
     }
 }

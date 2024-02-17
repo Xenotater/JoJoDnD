@@ -232,6 +232,118 @@
             "stat": "Str/Dex",
             "prereq": "None",
             "dmg": "1d6 Bludgeoning"
+        },{
+            "name": "Atlatl and Dart",
+            "attr": ["Ranged (15/45)"],
+            "type": "Simple",
+            "spec": "Rifle/Thrown",
+            "stat": "Str/Dex",
+            "prereq": "None",
+            "dmg": "1d8 Piercing"
+        },{
+            "name": "Buckler",
+            "attr": ["AC Bonus (+1)", "Light"],
+            "type": "Martial",
+            "spec": "Melee/Shield",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning"
+        },{
+            "name": "Greatsword",
+            "attr": ["Two-Handed"],
+            "type": "Martial",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d12 Slashing"
+        },{
+            "name": "Halberd",
+            "attr": ["Reach", "Two-Handed"],
+            "type": "Martial",
+            "spec": "Heavy/Melee",
+            "stat": "Str",
+            "prereq": "Str 13+",
+            "dmg": "1d10 Slashing"
+        },{
+            "name": "Hatchet",
+            "attr": ["Light", "Thrown (5/15)"],
+            "type": "Simple",
+            "spec": "Melee/Thrown",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d6 Slashing"
+        },{
+            "name": "Longbow",
+            "attr": ["Ranged (50/200)", "Two-Handed"],
+            "type": "Martial",
+            "spec": "Rifle",
+            "stat": "Dex",
+            "prereq": "Str 15+",
+            "dmg": "1d10 Piercing"
+        },{
+            "name": "Longspear",
+            "attr": ["Reach", "Versatile (1d8)"],
+            "type": "Martial",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d6 Piercing"
+        },{
+            "name": "Longsword",
+            "attr": ["Versatile (1d10)"],
+            "type": "Martial",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d8 Slashing"
+        },{
+            "name": "Shield",
+            "attr": ["AC Bonus (+2)", "Hunker (Half)"],
+            "type": "Martial",
+            "spec": "Shield",
+            "stat": "N/A",
+            "prereq": "None",
+            "dmg": "N/A"
+        },{
+            "name": "Shortbow",
+            "attr": ["Ranged (20/60)", "Two-Handed"],
+            "type": "Simple",
+            "spec": "Sidearm",
+            "stat": "Dex",
+            "prereq": "None",
+            "dmg": "1d6 Piercing"
+        },{
+            "name": "Shortspear",
+            "attr": ["Thrown (5/15)", "Versatile (1d8)"],
+            "type": "Simple",
+            "spec": "Melee/Thrown",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d6 Piercing"
+        },{
+            "name": "Sling",
+            "attr": ["Concealed (+8)", "Ranged (40/120)"],
+            "type": "Simple",
+            "spec": "Sidearm/Thrown",
+            "stat": "Str/Dex",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning"
+        },{
+            "name": "Tower Shield",
+            "attr": ["AC Bonus (+3)", "Hunker (Three-Quarters)"],
+            "type": "Martial",
+            "spec": "Shield/Heavy",
+            "stat": "N/A",
+            "prereq": "Shield Proficiency",
+            "dmg": "N/A"
+        },{
+            "name": "Zweihänder",
+            "attr": ["Bulky", "Reach", "Two-Handed"],
+            "type": "Martial",
+            "spec": "Heavy/Melee",
+            "stat": "Str",
+            "prereq": "Str 15+ AND Dex 15+",
+            "dmg": "3d6 Slashing"
         }
     ]
 }
