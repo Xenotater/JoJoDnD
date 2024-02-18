@@ -720,7 +720,7 @@
             "For each category increase, you Stand must be closer to you. For one category, it must be within half of its Range, a quarter for two, and an eigth for three.",
             "Due to the increase in size, your Stand gains the following benefits:<ul class='sublist><li>Each category increases your Stand's Range score by an additional multiplier (for example, x2 becomes x3, and so on).</li><li>Your Stand's Attack dice increase, giving an additional 1d10 before Level 11 or an additional 2d8 after, per category increase.</li><li>Your Stand's melee Attacks have a sweeping effect, causing them to hit everyone within a 1m cone rather than a single target. The radius of this cone increases by 1m for each category increase. You only need to make one Attack Roll against the ACs of all targets in range.</li><li>Your Stand more lifting and carrying capacity relative to its new size.</li><li>Your Stand gains an additional amount of Damage Reduction equal to its Durability Modifier for each additional category increase.</ul>"
         ],
-        "prereq": "<a href='/classes/?focus=Enhancement'>Enhancement-Type User</a> Level 1+"
+        "prereq": "<a href='/classes/?focus=Enhancement'>Enhancement-Type</a> or <a href='/classes/?focus=Independent'>Independent-Type</a> User Level 1+"
     },
     "Shield_Proficiency": {
         "name": "Shield Proficiency",

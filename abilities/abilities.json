@@ -637,14 +637,14 @@
         "name": "Ripple Perception",
         "classes": ["Rip"],
         "desc": [
-            "As a Bonus Action, for 1 Ripple Point, gain 10 meters of Blindsense that is able to travel through walls until the end of your next Turn. If you are standing on a surface that conducts Ripple (such as water or metal), the range is increased to 20 meters."
+            "You have 5 meters of Blindsense that is able to travel through walls until the end of your next Turn. If you are standing on a surface that conducts Ripple (such as water or metal), the range is increased to 10 meters. You may spend a Ripple Point to double this range."
         ]
     },
     "Improved_Ripple_Perception": {
         "name": "Improved Ripple Perception",
         "classes": ["Rip"],
         "desc": [
-            "You have 5 meters of Blindsense by default, 10 meters if you are on a conductive surface. If you use <a class='in-page'>Ripple Perception</a>, you may extend your Blindsense by that amount."
+            "Your passive Blindsense is increased to 10m, or 20m on a conductive surface, and may still spend a Ripple Point to double the range."
         ]
     },
     "Ripple_Regeneration": {

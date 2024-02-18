@@ -55,7 +55,7 @@
             "5": {
                 "pro": "3",
                 "feats": "2",
-                "linkFeatures": ["Ripple Regeneration", "Toxin Expulsion"],
+                "linkFeatures": ["Ripple Regeneration", "Ripple Perception"],
                 "featFeatures": ["Trained Combatant"]
             },
             "6": {
@@ -67,7 +67,7 @@
             "7": {
                 "pro": "3",
                 "feats": "3",
-                "linkFeatures": ["Ripple Perception"]
+                "linkFeatures": ["Toxin Expulsion"]
             },
             "8": {
                 "pro": "3",
