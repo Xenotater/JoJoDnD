@@ -90,7 +90,7 @@ function updateDisplay() {
     if (clss.exampleOf != null) {
         newContent += "<small><b>Examples of " + clss.exampleOf + ": </b><i>";
         for (let i = 0; i < clss.examples.length; i++) {
-            newContent += "<a href='https://jojo.fandom.com/wiki/" + clss.links[i] + "' target='_blank'>" + clss.examples[i] + "</a>";
+            newContent += "<a href='https://jojowiki.com/" + clss.links[i] + "' target='_blank'>" + clss.examples[i] + "</a>";
             if (i != clss.examples.length - 1)
                 newContent += ", ";
         }

@@ -42,7 +42,7 @@ function updateDisplay() {
     if (race.examples != null) {
         newContent += "<p class='center'><small><b>Examples of " + (race.name + 's').replace(/Mans$/g, "Men") + ": </b><i>";
         for (let i = 0; i < race.examples.length; i++) {
-            newContent += "<a href='https://jojo.fandom.com/wiki/" + race.links[i] + "' target='_blank'>"  + race.examples[i] + "</a>";
+            newContent += "<a href='https://jojowiki.com/" + race.links[i] + "' target='_blank'>"  + race.examples[i] + "</a>";
             if (i != race.examples.length-1)
                 newContent += ", ";
             else

@@ -80,7 +80,7 @@
         "name": "Commentator",
         "desc": "You're able to follow what's happening in combat and describe it for others.",
         "effects": [
-            "As a reaction, you may use the Help Action on an ally within 10 meters. However, your character must narrate what they are doing (Like <a href=\"https://jojo.fandom.com/wiki/Robert_E._O._Speedwagon\" target=\"_blank\">Speedwagon</a>).",
+            "As a reaction, you may use the Help Action on an ally within 10 meters. However, your character must narrate what they are doing (Like <a href=\"https://jojowiki.com/Robert_E._O._Speedwagon\" target=\"_blank\">Speedwagon</a>).",
             "You may do this an amount of times equal to your Charisma Modifier per Long Rest."
         ]
     },

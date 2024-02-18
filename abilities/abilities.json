@@ -28,7 +28,7 @@
         "classes": ["Enh"],
         "desc": [
             "Your Stand is a fusion of Stand Energy and a physical object. You've gained enough control over your Stand that you can completely influence how the object or material your Stand is fused with functions.",
-            "Examples of this include <a href='https://jojo.fandom.com/wiki/Wheel_of_Fortune' target='_blank'>Wheel Of Fortune</a>'s squeezing and <a href='https://jojo.fandom.com/wiki/Strength' target='_blank'>Strength</a>'s control of the Ship itself."
+            "Examples of this include <a href='https://jojowiki.com/Wheel_of_Fortune' target='_blank'>Wheel Of Fortune</a>'s squeezing and <a href='https://jojowiki.com/Strength' target='_blank'>Strength</a>'s control of the Ship itself."
         ]
     },
     "Custom_Ability": {
@@ -38,7 +38,7 @@
             "This is something that must be discussed with the DM of your Campaign. Further details can be found on the <a href='/classes/?focus=Stands'>Stands</a> page.",
             "Stand Abilities are something integral to the existence of Stands, and it's a huge part of what makes JoJo's Bizarre Adventure such a fun, varied, and unique experience.",
             "A general rule of thumb is that the more specific your Stand Ability is, the more powerful it is. However, the more general it is, the more versatile it can be.",
-            "Examples of Abilities are <a href='https://jojo.fandom.com/wiki/Anubis' target='_blank'>Anubis</a>'s Possession, <a href='https://jojo.fandom.com/wiki/Hermit_Purple' target='_blank'>Hermit Purple</a>'s Spirit Photos, or <a href='https://jojo.fandom.com/wiki/White_Album' target='_blank'>White Album</a>'s Ability to freeze.",
+            "Examples of Abilities are <a href='https://jojowiki.com/Anubis' target='_blank'>Anubis</a>'s Possession, <a href='https://jojowiki.com/Hermit_Purple' target='_blank'>Hermit Purple</a>'s Spirit Photos, or <a href='https://jojowiki.com/White_Album' target='_blank'>White Album</a>'s Ability to freeze.",
             "A Custom Ability might also be a passive Ability that may be activated or deactivated at will. Passive Abilities consume 1 Stand Energy at the Start of the Stand User's Turn and also consume their Bonus Action to perform. If you are unable to use your Bonus Action, or you do not have enough Stand Energy remaining, the Ability simply stops functioning."
         ]
     },
@@ -63,7 +63,7 @@
         "classes": ["Enh"],
         "desc": [
             "As an Enhancement-Type Stand User you've taken your Ability to the next level. Rather than having to anchor onto something very specific, you may now anchor onto anything that's similar to your original anchor.",
-            "For example, <a href='https://jojo.fandom.com/wiki/Wheel_of_Fortune' target='_blank'>Wheel of Fortune</a> would be able to anchor onto anything with wheels instead of a specific car, or <a href='https://jojo.fandom.com/wiki/Strength' target='_blank'>Strength</a> would be able to anchor onto anything that floats in water instead of a specific boat."
+            "For example, <a href='https://jojowiki.com/Wheel_of_Fortune' target='_blank'>Wheel of Fortune</a> would be able to anchor onto anything with wheels instead of a specific car, or <a href='https://jojowiki.com/Strength' target='_blank'>Strength</a> would be able to anchor onto anything that floats in water instead of a specific boat."
         ]
     },
     "Hot_Pursuit": {
@@ -183,7 +183,7 @@
         "name": "Self-Acclimation",
         "classes": ["Abl"],
         "desc": [
-            "You've spent so much time manipulating certain elements that you've gained Immunity to one damage type. This Immunity should relate to your Stand Ability in some way. For example, <a href='https://jojo.fandom.com/wiki/Ghiaccio' target='_blank'>Ghiaccio</a>'s Cold Immunity. You also gain Immunity to that type's Stand counterpart.",
+            "You've spent so much time manipulating certain elements that you've gained Immunity to one damage type. This Immunity should relate to your Stand Ability in some way. For example, <a href='https://jojowiki.com/Ghiaccio' target='_blank'>Ghiaccio</a>'s Cold Immunity. You also gain Immunity to that type's Stand counterpart.",
             "<a href='/races/?focus=Pillar_Man'>Pillar Men</a>, and <a href='/abilities/?focus=Undead_Nature'>Undead</a> of all kinds cannot choose Radiant as the damage type for which they are immune."
         ]
     },
@@ -209,7 +209,7 @@
         "desc": [
             "These are powers that use the same concept of the regular <a class='in-page'>Custom Ability</a>, but taken to a whole new level. These abilities have immense strength, but at a higher cost (usually twice the Stand Energy).",
             "Special Abilities are usually 1 bracket of Die stronger than the Ability would be normally (d4 would become d6, d6 would become d8, etc.). They also take more time to perform. Usually, but not always, taking a Full Action to perform.",
-            "Examples of Special Abilities are <a href='https://jojo.fandom.com/wiki/The_World' target='_blank'>The World</a>'s The World, <a href='https://jojo.fandom.com/wiki/King_Crimson' target='_blank'>King Crimson</a>'s Time Deletion, or <a href='https://jojo.fandom.com/wiki/Weather_Report_(Stand)' target='_blank'>Weather Report</a>'s Heavy Weather.",
+            "Examples of Special Abilities are <a href='https://jojowiki.com/The_World' target='_blank'>The World</a>'s The World, <a href='https://jojowiki.com/King_Crimson' target='_blank'>King Crimson</a>'s Time Deletion, or <a href='https://jojowiki.com/Weather_Report_(Stand)' target='_blank'>Weather Report</a>'s Heavy Weather.",
             "A Special Ability might also be a passive Ability that functions independently of activation, or one that may be activated or deactivated at will. Passive Abilities consume 2 Stand Energy at the Start of the Stand User's Turn, and also take their Bonus Action to perform. If you are unable to use your Bonus Action, or you do not have enough Stand Energy remaining, the Ability simply stops functioning. "
         ]
     },
@@ -275,7 +275,7 @@
         "classes": ["Abl"],
         "desc": [
             "This Ability is something that very few Stands or Stand Users are able to get to. It's an incredibly powerful Ability that uses a lot of your Stand's Energy. This Ability costs 5 Stand Energy, and this SE cost cannot be reduced.",
-            "An example of an Ultimate Stand Ability is <a href='https://jojo.fandom.com/wiki/White_Album' target='_blank'>White Album</a>'s Gently Weeps."
+            "An example of an Ultimate Stand Ability is <a href='https://jojowiki.com/White_Album' target='_blank'>White Album</a>'s Gently Weeps."
         ]
     },
     "Zealous_Focus": {
@@ -313,7 +313,7 @@
         "name": "Camouflage",
         "classes": ["Enh"],
         "desc": [
-            "As an Action you may perfectly disguise your Stand, making it difficult for others to tell where or what your Stand is (for example, <a href='https://jojo.fandom.com/wiki/High_Priestess' target='_blank'>High Priestess</a> disguising as a metal object, or <a href='https://jojo.fandom.com/wiki/Wheel_of_Fortune' target='_blank'>Wheel of Fortune</a> shifting to look like a normal car).",
+            "As an Action you may perfectly disguise your Stand, making it difficult for others to tell where or what your Stand is (for example, <a href='https://jojowiki.com/High_Priestess' target='_blank'>High Priestess</a> disguising as a metal object, or <a href='https://jojowiki.com/Wheel_of_Fortune' target='_blank'>Wheel of Fortune</a> shifting to look like a normal car).",
             "This disguise allows your Stand to perform surprise attacks if opponents do not take note. Anyone attempting to determine what your Stand is disguised as has Disadvantage on the roll, as long as your Stand does not move."
         ]
     },
@@ -746,7 +746,7 @@
         "classes": ["Rip"],
         "desc": [
             "As a Level 20 Ripple User, you have reached your full potential through use of the Ripple. This costs 15 Ripple Points and takes an Action, allowing you to choose one of the following. The effect you choose may be used multiple times if applicable, but you may not change your choice.",
-            "<ul class='sublist'><li>You gain an immensely powerful skill or ability otherwise not available to you. An example of such a powerful ability is <a href='https://jojo.fandom.com/wiki/Tonpetty'>Tompetty</a>'s ability to tell the fate of a person they touch.</li><li>If you do not have a Stand, one manifests at Level 15.</li><li>If you are already a Stand User, your stand evolves. The stats of your Stand double, and this change lasts for 1 hour.</li></ul>"
+            "<ul class='sublist'><li>You gain an immensely powerful skill or ability otherwise not available to you. An example of such a powerful ability is <a href='https://jojowiki.com/Tonpetty'>Tompetty</a>'s ability to tell the fate of a person they touch.</li><li>If you do not have a Stand, one manifests at Level 15.</li><li>If you are already a Stand User, your stand evolves. The stats of your Stand double, and this change lasts for 1 hour.</li></ul>"
         ]
     },
     "Spherical_Spin": {
@@ -1193,7 +1193,7 @@
         "desc": [
             "This Ability costs 50 SE when activated and costs 10 SE per Turn if passive. Heavenly Abilities set Heaven Ascended Stands above all other Abilities of mortal beings. Heavenly Abilities are typically based on a particular word or phrase of great personal importance to the User, usually relating to their beliefs.",
             "As a general rule of thumb, when a Heavenly Ability is activated, if the Heaven Ascended Stand is intentionally using its full power, the entire universe could be affected. However, as powerful as this may seem, these abilities are usually broad, and affect a large area indiscriminately. The less broad an Ability, the stronger it is.",
-            "For example, <a href='https://jojo.fandom.com/wiki/Made_in_Heaven'>Made In Heaven</a> can speed up time exponentially without end, but it affects everybody indiscriminately, with no ability to stop it once time begins to speed up. <a href='https://jojo.fandom.com/wiki/The_World_Over_Heaven'>The World Over Heaven</a>, on the other hand, can rewrite reality itself (sometimes even changing the laws of physics in a small region), with the trade off being that it has to hit something with its fists in order to change it."
+            "For example, <a href='https://jojowiki.com/Made_in_Heaven'>Made In Heaven</a> can speed up time exponentially without end, but it affects everybody indiscriminately, with no ability to stop it once time begins to speed up. <a href='https://jojowiki.com/The_World_Over_Heaven'>The World Over Heaven</a>, on the other hand, can rewrite reality itself (sometimes even changing the laws of physics in a small region), with the trade off being that it has to hit something with its fists in order to change it."
         ]
     },
     "Ghoulification": {
@@ -1222,7 +1222,7 @@
         "name": "Ghoul Physique",
         "classes": ["Ghl"],
         "desc": [
-            "As a Ghoul, you have certain powerful biological functions not available to Zombies or Humans. You may gain either:<ul class='sublist'><li>+4 to your Strength, Dexterity, or Constitution Score.</li><li>An additional function to a bodily part of your choice. For example, <a href='https://jojo.fandom.com/wiki/Bruford' target='_blank'>Bruford's</a> hair having a long-range grapple ability.</li></ul>"
+            "As a Ghoul, you have certain powerful biological functions not available to Zombies or Humans. You may gain either:<ul class='sublist'><li>+4 to your Strength, Dexterity, or Constitution Score.</li><li>An additional function to a bodily part of your choice. For example, <a href='https://jojowiki.com/Bruford' target='_blank'>Bruford's</a> hair having a long-range grapple ability.</li></ul>"
         ]
     },
     "Greater_Undead_Health_Threshold": {
@@ -1284,7 +1284,7 @@
         "name": "Specialized EPM Ability",
         "classes": ["EPM"],
         "desc": [
-            "You have reached the pinnacle of your abilities as a greater Undead, growing close to your full potential. You gain a special ability of great power that is unique to you. An example of this special ability is <a href='https://jojo.fandom.com/wiki/Wamuu' target='_blank'>Wham's</a> wind mastery. Talk to your DM about the reach of this ability."
+            "You have reached the pinnacle of your abilities as a greater Undead, growing close to your full potential. You gain a special ability of great power that is unique to you. An example of this special ability is <a href='https://jojowiki.com/Wamuu' target='_blank'>Wham's</a> wind mastery. Talk to your DM about the reach of this ability."
         ]
     },
     "Superior_Lifesteal": {
