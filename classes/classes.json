@@ -1830,7 +1830,7 @@
         "desc": "Despite all of the odd happenings and abilities in the world of JoJo's Bizarre Adventure, most people don't even know about them. However, the world always needs those who fight for what they believe in. As such, these Classes also exist.",
         "extra": [{
             "name": "Gaining a Stand",
-            "desc": "If a person in a Non-Supernatural Class gains a Stand, they may erase all of their <a href='/abilities'>Abilities</a>, <a href='/feats'>Feats</a>, and Proficiencies, and then convert them into the respective Stand Type that they obtain. For example, if a Level 5 Brawler gains a Power Stand, they may opt to simply become a Level 5 Power Type Stand User instead of multiclassing. When you become a Stand User your Max HP reverts to what it was originally, then you re-roll for every Level suddenly gained. You may only convert Non-Supernatural Levels into Stand Levels, you may not convert them back."
+            "desc": "If a person in a Non-Supernatural Class gains a Stand, they may erase all of their <a href='/abilities'>Abilities</a>, <a href='/feats'>Feats</a>, and Proficiencies, and then convert them into the respective Stand Type that they obtain. For example, if a Level 5 Warrior gains a Power-Type Stand, they may opt to simply become a Level 5 Power-Type Stand User instead of multiclassing. When you become a Stand User your Max HP reverts to what it was originally, then you re-roll for every Level gained. However, you do not have to give up all of your Levels, and you may have Levels in both a Supernatural and Non-Supernatural Class. Any instances of Trained Combatant instead become a Feat of your choice if you have any Levels in Stand User."
         }],
         "types": {
             "Assassin": {
