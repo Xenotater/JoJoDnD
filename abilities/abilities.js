@@ -6,7 +6,7 @@ $(document).ready(function () {
     q = url.searchParams.get("search");
 
     if (a == null) {
-        a = "Ambush_Attacker";
+        a = "Act_4";
         updateURL();
     }
 
@@ -79,7 +79,7 @@ function getData(q) {
     $.getJSON("abilities.json", function(data) {
         aData = data;
         if (aData[a] == null)
-            a = "Ambush_Attacker";
+            a = "Act_4";
         for (var key of Object.keys(aData))
             abilities.push([key, aData[key]]);
         updateList();

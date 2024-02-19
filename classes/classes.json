@@ -207,6 +207,13 @@
             ]
         },
         {
+            "name": "Skill Checks and Saving Throws",
+            "content": [
+                "<p>Your Stand may assist you with physical Skill Checks and Saving Throws, using Power, Precision, and Durability in place of Strength, Dexterity, and Constitution respectively. However, your Stand's Damage Reduction cannot be applied to damage taken from the effects of a Saving Throw, unless the Stand is being targeted on its own separate from the user.</p>",
+                "<p>Stands do not have mental stats, and as such may not assist with Intelligence, Wisdom, or Charisma Checks and Saves. Independent-Type Stands may use their own actual mental stats.</p>"
+            ]
+        },
+        {
             "name": "Choosing a Stand Type",
             "content": [
                 "<p>There are 9 different Stand Types which each function very differently from eachother. You may either choose one of these 9, or roll a d100 and choose from the table below:</p>",
@@ -1828,7 +1835,7 @@
         "types": {
             "Assassin": {
                 "name": "Assassin",
-                "desc": "Brawlers tend to face their opponents head on using their fists, as well as their surroundings, in order to come out on top in fights.",
+                "desc": "Assassins utilize the element of surprise to strike from the shadows, able to hit opponents precisely where it hurts the most. They have ways of avoiding damage through dodging, and are generally pretty tricky.",
                 "hDice": "1d8",
                 "theme": "basic",
                 "level": {
@@ -1941,7 +1948,7 @@
             },
             "Consul": {
                 "name": "Consul",
-                "desc": "Knights are those who train to use heavy weapons and traverse long distances tirelessly.",
+                "desc": "Consuls use their speech and unwavering confidence together to inspire themselves and allies. They can heal themselves and others, supporting allies and hindering enemies as well.",
                 "hDice": "1d8",
                 "theme": "basic",
                 "level": {
@@ -2017,7 +2024,7 @@
                     "14": {
                         "pro": "5",
                         "feats": "4",
-                        "featFeatures": ["Quick on your Feet", "Specialized Save"]
+                        "featFeatures": ["Quick on your Feet", "OR", "Specialized Save"]
                     },
                     "15": {
                         "pro": "5",
@@ -2054,14 +2061,14 @@
             },
             "Scholar": {
                 "name": "Scholar",
-                "desc": "Soldiers are modern-day Warriors, often trained in the use of firearms as well as close combat. They are a more modern-day version of the Knight.",
+                "desc": "Scholars use their extensive knowledge as a reference in tense situations, using their intelligence in unorthodox but clever ways to achieve their goals.",
                 "hDice": "1d6",
                 "theme": "basic",
                 "level": {
                     "1": {
                         "pro": "2",
                         "feats": "2",
-                        "linkFeatures": ["Scholarly Combat"],
+                        "linkFeatures": ["Scholarly Combatant"],
                         "featFeatures": ["Weapon Feat"]
                     },
                     "2": {
@@ -2118,7 +2125,8 @@
                     },
                     "12": {
                         "pro": "4",
-                        "feats": "4"
+                        "feats": "4",
+                        "otherFeatures": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, or Level 11"]
                     },
                     "13": {
                         "pro": "5",
@@ -2166,7 +2174,7 @@
             },
             "Warrior": {
                 "name": "Warrior",
-                "desc": "Snipers prefer to take out their enemies from a good distance away, attacking from behind cover rather than facing their enemies directly.",
+                "desc": "Warriors specialize in battling and the effective use of weaponry. They hit hard, can hold their own in melee, and know their weapons better than anyone.",
                 "hDice": "1d10",
                 "theme": "basic",
                 "level": {
@@ -2252,12 +2260,12 @@
                     "16": {
                         "pro": "5",
                         "feats": "5",
-                        "otherFeatures": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 11, Level 12, or Level 14 options"]
+                        "otherFeatures": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 11, Level 12, or Level 14"]
                     },
                     "17": {
                         "pro": "6",
                         "feats": "5",
-                        "featFeatures": ["Catlike Agility", "OR", "Level-Headed"],
+                        "featFeatures": ["Weapon Feat"],
                         "ability": ["Ability Score Improvement"]
                     },
                     "18": {

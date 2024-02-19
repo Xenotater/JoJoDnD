@@ -115,8 +115,8 @@
         "desc": "You've handled your fair-share of explosives, and know how to do so safely.",
         "effects": [
             "You gain Proficiency in the use of Explosives.",
-            "When you detonate and Explosive weapon, the DC for the save increases by your Proficiency Bonus.",
-            "Additionally, you gain Advantage on any Check made to disarm or setup an explosive device, as well as Saving Throws made against them."
+            "When you detonate an Explosive weapon, the DC for the save increases by your Proficiency Bonus.",
+            "Additionally, you gain Advantage on any Check made to disarm or set up an explosive device, as well as Saving Throws made against them."
         ]
     },
     "Energy_Imbuement": {
@@ -405,7 +405,7 @@
         "desc": "You and your Stand have two separate minds and personalities, and your Stand may act independently from you. Your Stand might even have different strengths and weaknesses from you.",
         "effects": [
             "In order for you and your Stand to communicate, you must be within line of sight of each other, or have some other method of communication like walkie-talkies or a phone call.",
-            "You and your Stand may have different mental stats (Intelligence, Wisdom, and Charisma) and Proficiences from you. The mental stats may be shuffled around, but the values must remain the same. For example, a user might have 8 Intelligence, 19 Wisdom, and 14 Charisma while the Stand has 19 Intelligence, 14 Wisdom, and 8 Charisma.",
+            "You and your Stand may have different mental stats (Intelligence, Wisdom, and Charisma) and Proficiencies from you. The mental stats may be shuffled around, but the values must remain the same. For example, a user might have 8 Intelligence, 19 Wisdom, and 14 Charisma while the Stand has 19 Intelligence, 14 Wisdom, and 8 Charisma.",
             "When Levelling-Up your Stand, you may not put points into these mental stats. However when the User gains an Ability Score Improvement and puts points into their mental values, the Stands increase as well. For example if the User above decided to put 2 more points into their Intelligence increasing it to 10, the Stand's Charisma would also increase to 10."
         ]
     },
@@ -606,7 +606,7 @@
         "name": "Epic Feat",
         "desc": "<b>THIS IS NOT A FEAT</b>, this is a category of Feats.</p><p>This is a rule option for those wanting to run powerful boss characters who can stand up to a group of enemies by themselves. A particularly powerful and experienced Stand User may have the ability to take 1 Epic Feat, one of notable power may have up to 2, and very may even have up to 3, and these are generally reserved for end-game bosses.</p><p>These Epic Feats still take a regular Feat slot to obtain, and who gets them or if they're allowed at all is entirely up to the DM.",
         "effects": [
-            "You may gain an Epic Feat from the list below, if your DM allows it:<ul class='sublist'><li><a class='in-page'>Extreme Motivation</a></li><li><a class='in-page'>Health Sponge</a></li><li><a class='in-page'>Immovable Object</a></li><li><a class='in-page'>Legendary Recovery</a></li><li><a class='in-page'>Skill Master</a></li><li><a class='in-page'>Superhuman Ability</a></li><li><a class='in-page'>Terrifying Aura</a></li><li><a class='in-page'>Warrior's Zeal</a></li><li><a class='in-page'>Uncanny Reflexes</a></li><li><a class='in-page'>Unstoppable Force</a></li></ul>"
+            "You may gain an Epic Feat from the list below, if your DM allows it:<ul class='sublist'><li><a class='in-page'>Extreme Motivation</a></li><li><a class='in-page'>Health Sponge</a></li><li><a class='in-page'>Immovable Object</a></li><li><a class='in-page'>Legendary Recovery</a></li><li><a class='in-page'>Skill Master</a></li><li><a class='in-page'>Superhuman Ability</a></li><li><a class='in-page'>Terrifying Aura</a></li><li><a class='in-page'>Uncanny Reflexes</a></li><li><a class='in-page'>Unstoppable Force</a></li><li><a class='in-page'>Warrior's Zeal</a></li></ul>"
         ]
     },
     "Extreme_Motivation": {
@@ -642,7 +642,7 @@
     "Skill_Master": {
         "name": "Skill Master",
         "effects": [
-            "You may gain Mastery (three time Proficiency Bonus) in a Skill that your have Proficiency or Expertise in, and you gain Expertise in up to two Skills that you have Proficiency in."
+            "You may gain Mastery (three time Proficiency Bonus) in a Skill that you have Proficiency or Expertise in, and you gain Expertise in up to two Skills that you have Proficiency in."
         ],
         "prereq": "<a class='in-page'>Epic Feat</a> allowed by your DM"
     },
@@ -656,15 +656,15 @@
     "Terrifying_Aura": {
         "name": "Terrifying Aura",
         "effects": [
-            "Anyone within 20m of you who can see or hear you must make a Wisdom Saving Throw against a DC of 8 + your Proficiency Bonus + your Charisma Modifier. If they fail the Save, they become Frightend of you for one minute, or until they succeed the Save, which they may remake at the end of each of their Turns.",
+            "Anyone within 20m of you who can see or hear you must make a Wisdom Saving Throw against a DC of 8 + your Proficiency Bonus + your Charisma Modifier. If they fail the Save, they become Frightened of you for one minute, or until they succeed the Save, which they may remake at the end of each of their Turns.",
             "Those who succeed the Saving Throw or have been under the effect within the last 24 hours become immune to the effect for the next 24 hours."
         ],
         "prereq": "<a class='in-page'>Epic Feat</a> allowed by your DM"
     },
     "Warriors_Zeal": {
-        "name": "Warriors Zeal",
+        "name": "Warrior's Zeal",
         "effects": [
-            "you gain Proficiency in the use of all weapons and Expertise in up to three of your choice",
+            "You gain Proficiency in the use of all weapons and Expertise in up to three of your choice",
             "Additionally, you deal an additional amount of damage equal to your Proficiency Bonus with any weapon."
         ],
         "prereq": "<a class='in-page'>Epic Feat</a> allowed by your DM"
@@ -681,7 +681,7 @@
         "name": "Unstoppable Force",
         "effects": [
             "You deal triple damage to all objects and structures",
-            "Additionally, when attacking a target, you may also choose to target a part of the enviornment within 1m of the target to cause damage to it as well."
+            "Additionally, when attacking a target, you may also choose to target a part of the environment within 1m of the target to cause damage to it as well."
         ],
         "prereq": "<a class='in-page'>Epic Feat</a> allowed by your DM"
     },
@@ -706,7 +706,7 @@
         "desc": "Your reflexes and awareness are polished, allowing you to avoid or absorb attacks with ease. ",
         "effects": [
             "Once per Short Rest, you may Dodge as a Bonus Action.",
-            "Addtionally, while Dodging through any means, you gain an amount of AC equal to your Proficiency Bonus.",
+            "Additionally, while Dodging through any means, you gain an amount of AC equal to your Proficiency Bonus.",
             "If you are a <a href='/classes?focuse=Stands'>Stand User</a>, you may instead choose to double your Stand AC."
         ],
         "prereq": "Dex 13+"
@@ -716,9 +716,9 @@
         "desc": "Through training and experimentation, you have discovered that you may increase a Stand's size, so long as you have enough material to do so and it is relatively close to you.",
         "effects": [
             "Your Stand is able to increase by one size category, so long as you have enough material for your Stand to anchor onto. Each size category increase requires an amount of material equivalent to twice your Stand's current mass of material. You may estimate this or ask your DM to estimate it, no need to do volume and density math to figure it out.",
-            "You may take this Feat up to three times, increasing by another size category (and doubling the required material mass) foe each one.",
-            "For each category increase, you Stand must be closer to you. For one category, it must be within half of its Range, a quarter for two, and an eigth for three.",
-            "Due to the increase in size, your Stand gains the following benefits:<ul class='sublist><li>Each category increases your Stand's Range score by an additional multiplier (for example, x2 becomes x3, and so on).</li><li>Your Stand's Attack dice increase, giving an additional 1d10 before Level 11 or an additional 2d8 after, per category increase.</li><li>Your Stand's melee Attacks have a sweeping effect, causing them to hit everyone within a 1m cone rather than a single target. The radius of this cone increases by 1m for each category increase. You only need to make one Attack Roll against the ACs of all targets in range.</li><li>Your Stand more lifting and carrying capacity relative to its new size.</li><li>Your Stand gains an additional amount of Damage Reduction equal to its Durability Modifier for each additional category increase.</ul>"
+            "You may take this Feat up to three times, increasing by another size category (and doubling the required material mass) for each one.",
+            "For each category increase, your Stand must be closer to you. For one category, it must be within half of its Range, a quarter for two, and an eighth for three.",
+            "Due to the increase in size, your Stand gains the following benefits:<ul class='sublist><li>Each category increases your Stand's Range score by an additional multiplier (for example, x2 becomes x3, and so on).</li><li>Your Stand's Attack dice increase, giving an additional 1d10 before Level 11 or an additional 2d8 after, per category increase.</li><li>Your Stand's melee Attacks have a sweeping effect, causing them to hit everyone within a 1m cone rather than a single target. The radius of this cone increases by 1m for each category increase. You only need to make one Attack Roll against the ACs of all targets in range.</li><li>Your Stand has more lifting and carrying capacity relative to its new size.</li><li>Your Stand gains an additional amount of Damage Reduction equal to its Durability Modifier for each additional category increase.</ul>"
         ],
         "prereq": "<a href='/classes/?focus=Enhancement'>Enhancement-Type</a> or <a href='/classes/?focus=Independent'>Independent-Type</a> User Level 1+"
     },
@@ -726,8 +726,8 @@
         "name": "Shield Proficiency",
         "desc": "Through knowledge and training, you have learned to use Shields to their fullest effect.",
         "effects": [
-            "Whenever you gain Cover using a Shield or Tower Shield, you may share that Cover with another creature withing 1m of you.",
-            "Additionally, you may move with half of your Movement Speed while hunkered, allowing any creature you're sharing Cover with to move with you up to half of their Movemenmt Speed as well as their Reaction."
+            "Whenever you gain Cover using a Shield, you may share that Cover with another creature within 1m of you.",
+            "Additionally, you may move with half of your Movement Speed while hunkered, allowing any creature you're sharing Cover with to move with you up to half of their Movement Speed as well as their Reaction."
         ]
     },
     "Uncontrollable_Stand": {
@@ -735,6 +735,7 @@
         "desc": "Your Stand is incredibly powerful, but not very reliable, which may result in unwanted or expected collateral damage.",
         "effects": [
             "Your Stand is massively powerful, but is interested in pursuing its own motives, sometimes being willing to harm allies or the user to do so. The only control the user has over their Stand is to have them summoned or not.",
+            "Functionally, the stand will generally do what you suggest it to and you can influence its actions, but its behavior is ultimately determined by the DM.",
             "In addition, your stand gains two of the following benefits:<ul class='sublist'><li>Your Stands Custom Ability massively increases in potency. For example, if your Stand uses scaling dice, you gain an additional amount of Ability Dice equal to your Proficiency Bonus. Alternatively, you may speak to your DM about increasing the potency of your Stands Ability in some other way, similar to <a href='/abilities/Enhanced_Custom_Ability'>Enhanced Custom Ability</a>.</li><li>Your Range becomes irrelevant, and affects everyone or everything on the planet.</li><li>Your Stand Energy becomes 0, and your Stands Abilities may be used without cost.</li><li>Two of your Stands stats of your choice are doubled, as well as all of the points you put into those stats later.</li><li>Your Stand DC increases by an amount equal to your Proficiency Bonus.</li></ul>"
         ],
         "prereq": "<a href='/classes/?focus=Stands'>Stand User</a> Level 1+, Cannot be a Remote-Type or Independent-Type Stand User"
