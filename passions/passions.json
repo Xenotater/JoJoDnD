@@ -1,6 +1,7 @@
 {
     "Academic": {
         "name": "Academic",
+        "stats": "Int +2, Con +1",
         "desc": "Academics do exactly as the name suggests. They study hard, or teach hard, using their intelligence and experience to do their jobs.",
         "examples": ["Professors", "Accountants", "Teachers", "Programmers", "Scientists / Researchers"],
         "saves": "You are Proficient in Intelligence and Constitution Saving Throws.",
@@ -14,6 +15,7 @@
     },
     "Artist": {
         "name": "Artist",
+        "stats": "Dex +2, Int +1",
         "desc": "Using a variety of mediums, Artists create beautiful things to invoke feelings in people. Whether it be a comic, a painting, a sculpture, or a gourmet meal, Artists spend hours honing their craft.",
         "examples": ["Writers", "Painters", "Sculptors", "Mangakas", "Acrobats", "Dancers", "Chefs"],
         "saves": "You are Proficient in Dexterity and Intelligence Saving Throws.",
@@ -27,6 +29,7 @@
     },
     "Athlete": {
         "name": "Athlete",
+        "stats": "Str +1, Dex +1, Con +1",
         "desc": "People who push their bodies to and past their physical limits in order to see the true potential of humanity.",
         "examples": ["Olympians", "Professional Sports Players", "Marathon Runners", "High School Quarterbacks"],
         "saves": "You are Proficient in two of the following Saving Throws: Strength, Dexterity, or Constitution.",
@@ -40,6 +43,7 @@
     },
     "Con_Artist": {
         "name": "Con Artist",
+        "stats": "Cha +2, Wis +1",
         "desc": "Those who steal for their own greed. To attain power, money, or influence, these people take advantage of the Human brain in order to push other people to achieve their own goals.",
         "examples": ["Certain Lawyers", "Fake Fortune Tellers", "Most Politicians", "Scammers", "Cult Leaders"],
         "saves": "You are Proficient in Charisma and Wisdom Saving Throws.",
@@ -53,6 +57,7 @@
     },
     "Hard_Laborer": {
         "name": "Hard Laborer",
+        "stats": "Con +2, Str +1",
         "desc": "Some people make a living performing physically taxing jobs. Without them, society would not function.",
         "examples": ["Construction Workers", "Garbage Collectors", "Coal Miners"],
         "saves": "You are Proficient in Constitution and Strength Saving Throws.",
@@ -66,6 +71,7 @@
     },
     "Leader": {
         "name": "Leader",
+        "stats": "Int +1, Wis +1, Cha +1",
         "desc": "Leaders are those who are able to sway others to help them perform great deeds, whether they be selfish or selfless. They are able to take charge of a situation and guide others along a specific path.",
         "examples": ["Heads of a Community", "Heads of a Movement", "Some Politicians", "Royalty"],
         "saves": "You are Proficient in two of the following Saving Throws: Intelligence, Wisdom, or Charisma.",
@@ -79,6 +85,7 @@
     },
     "Performer": {
         "name": "Performer",
+        "stats": "Cha +2, Con +1",
         "desc": "Those who perfect a craft in order to inspire, but also to hear the roar of the crowd.",
         "examples": ["Stand Up Comedians", "Actors", "Musicians", "DJs"],
         "saves": "You are Proficient in Charisma and Constitution Saving Throws.",
@@ -92,6 +99,7 @@
     },
     "Medical_Expert": {
         "name": "Medical Expert",
+        "stats": "Int +2, Wis +1",
         "desc": "Medical Experts use their superior intellect, reasoning, and patience to assist the injured. Medical Experts have immense knowledge of anatomy, knowing how living things function in almost every way.",
         "examples": ["Doctors", "Nurses", "Surgeons", "EMT Operators", "Veterinarians"],
         "saves": "You are Proficient in Intelligence and Wisdom Saving Throws.",
@@ -105,6 +113,7 @@
     },
     "Hospitality_Worker": {
         "name": "Hospitality Worker",
+        "stats": "Cha +2, Int +1",
         "desc": "A person who makes their living serving people, using their using their mind and their social skills to help them.",
         "examples": ["Waitstaff", "Receptionists", "Secretaries", "Salespeople"],
         "saves": "You are Proficient in Charisma and Intelligence Saving Throws.",
@@ -118,6 +127,7 @@
     },
     "Student": {
         "name": "Student",
+        "stats": "Varies",
         "desc": "Students aim to learn about and gain experience in a wide variety of things, exploring what they'd like to do with their future.",
         "examples": ["High School Students", "College Students"],
         "saves": "You are Proficient in any two Saving Throws of your choice.",
@@ -130,6 +140,7 @@
     },
     "Survivalist": {
         "name": "Survivalist",
+        "stats": "Wis +2, Con +1",
         "desc": "Someone who has chosen to forgo most parts of modern society, instead choosing to live a simpler, more reclusive life.",
         "examples": ["Wilderness Survivors", "Rural Subsistence Farmers", "Hunters", "Gangsters", "Monks"],
         "saves": "You are Proficient in Wisdom and Constitution Saving Throws.",
@@ -143,6 +154,7 @@
     },
     "Thief": {
         "name": "Thief",
+        "stats": "Dex +2, Cha +1",
         "desc": "Those who must make a living taking from the more fortunate. Through Stealth, Intimidation, or Speed, Thieves take to sustain the needs of themselves or those they hold close.",
         "examples": ["Robbers", "Muggers"],
         "saves": "You are Proficient in Dexterity and Charisma Saving Throws.",
@@ -156,6 +168,7 @@
     },
     "Trained_Laborer": {
         "name": "Trained Laborer",
+        "stats": "Str +2, Int +1",
         "desc": "Someone who has studied for years in order to hone their craft. They use their Strength along with their experience in order to accomplish their tasks.",
         "examples": ["Mechanics", "Blacksmiths / Metal Workers"],
         "saves": "You are Proficient in Strength and Intelligence Saving Throws.",
@@ -169,6 +182,7 @@
     },
     "Warrior": {
         "name": "Warrior",
+        "stats": "Dex +2, Con +1",
         "desc": "People of discipline who devote their lives training in the field of combat. Some fight to protect, while others might do so for selfish reasons.",
         "examples": ["Soldiers", "Mercenaries", "Bodyguards"],
         "saves": "You are Proficient in Dexterity and Constitution Saving Throws.",

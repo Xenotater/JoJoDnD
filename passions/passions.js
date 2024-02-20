@@ -1,4 +1,4 @@
-var p, pData;
+var p, pData, passions;
 
 $(document).ready(function () {
     var url = new URL(window.location.href);
@@ -11,7 +11,7 @@ $(document).ready(function () {
 
     getData();
 
-    $(".list-link").click(function () {
+    $("#list").on("click", ".list-link", function () {
         p = $(this).attr("id");
         updateURL();
         updateDisplay();
@@ -27,10 +27,21 @@ function getData() {
         pData = data;
         if (pData[p] == null)
             p = "Academic";
+        passions = Object.keys(pData);
+        updateList();
         updateDisplay();
     });
 
     $("#display").html("<div class='loading'></div>");
+}
+
+function updateList() {
+    $("#list-table tbody").html("");
+    for (let i=0; i < passions.length; i++) {
+        let passion = pData[passions[i]];
+        $("#list-table tbody").append("<tr class='list-link' id='" + passion.name.replace(/ /g, "_") + "'><td>" + passion.name + "</td><td>" + passion.stats + "</td></tr>");
+    }
+    $("#" + p).addClass("listCurrent");
 }
 
 function updateDisplay() {

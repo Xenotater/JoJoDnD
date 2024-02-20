@@ -72,6 +72,8 @@ function getData(q) {
         if (fData[f] == null)
             f = "Adrenaline_Rush";
         feats = Object.keys(fData);
+        if (f == "Epic Feat" || (fData[f].prereq != null && fData[f].prereq.includes("Epic")))
+            search("Epic Feat");
         updateList();
         updateDisplay();
 
@@ -86,13 +88,15 @@ function getData(q) {
 }
 
 function updateList() {
+    var showEpic = $("#search").val().includes("Epic");
     $("#list-table tbody").html("");
     feats.sort();
     if (reverse)
         feats.reverse();
     for (let i = 0; i < feats.length; i++) {
-        if (feats[i].prereq == null || !feats[i].prereq.includes("Epic Feat"))
-            $("#list-table tbody").append("<tr class='list-link' id='" + fData[feats[i]].name.replace(/[ -]/g, "_").replace(/'/g, "") + "'><td>" + fData[feats[i]].name + "</td></tr>");
+        let feat = fData[feats[i]];
+        if (feat.prereq == null || !feat.prereq.includes("Epic Feat") || showEpic)
+            $("#list-table tbody").append("<tr class='list-link' id='" + feat.name.replace(/[ -]/g, "_").replace(/'/g, "") + "'><td>" + feat.name + "</td></tr>");
     }
     $("#" + f).addClass("listCurrent");
 }
@@ -118,7 +122,6 @@ function updateDisplay() {
 
 function search(query) {
     var not = false;
-    var showEpic = query.includes("Epic");
     feats = [];
     
     if (query.match(/^NOT */)) {
@@ -135,13 +138,11 @@ function search(query) {
                 matched = true;
             if ("prerequisite".includes(query.toLowerCase()) && fData[key].prereq != null) //make sure prereqs can be searched for
                 matched = true;
-            if (fData[key].prereq != null && fData[key].prereq.includes("Epic Feat") && !showEpic)
-                matched = false;
         }
         if ((matched && !not) || (!matched && not))
             feats.push(key);
     }
 
-    updateList();
     $("#search").val(query); //put query in the search box, in case the search was done through some other method
+    updateList();
 }

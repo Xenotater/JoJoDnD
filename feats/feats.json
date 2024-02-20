@@ -739,12 +739,5 @@
             "In addition, your stand gains two of the following benefits:<ul class='sublist'><li>Your Stands Custom Ability massively increases in potency. For example, if your Stand uses scaling dice, you gain an additional amount of Ability Dice equal to your Proficiency Bonus. Alternatively, you may speak to your DM about increasing the potency of your Stands Ability in some other way, similar to <a href='/abilities/Enhanced_Custom_Ability'>Enhanced Custom Ability</a>.</li><li>Your Range becomes irrelevant, and affects everyone or everything on the planet.</li><li>Your Stand Energy becomes 0, and your Stands Abilities may be used without cost.</li><li>Two of your Stands stats of your choice are doubled, as well as all of the points you put into those stats later.</li><li>Your Stand DC increases by an amount equal to your Proficiency Bonus.</li></ul>"
         ],
         "prereq": "<a href='/classes/?focus=Stands'>Stand User</a> Level 1+, Cannot be a Remote-Type or Independent-Type Stand User"
-    },
-    "": {
-        "name": "",
-        "desc": "",
-        "effects": [
-            ""
-        ]
     }
 }
