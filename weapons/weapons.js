@@ -116,12 +116,12 @@ function updateTable() {
     $("#weapon-list tbody").html(newText);
 }
 
-function hint(attr) {
+function hint(attr) { //this whole thing should be replaced by json..
     if (attr.includes("Thrown") || attr.includes("Ranged")) {
         var range = attr.substring(attr.indexOf('(') + 1, attr.indexOf(')')).split('/');
         attr = attr.substring(0, attr.indexOf(' '));
     }
-    if (attr.includes("Reach") || attr.includes("Radius")) {
+    if (attr.includes("Radius")) {
         var dist = attr.substring(attr.indexOf('(') + 1, attr.indexOf(')'));
         attr = attr.substring(0, attr.indexOf(' '));
     }
@@ -132,6 +132,15 @@ function hint(attr) {
     if (attr.includes("Concealed") || attr.includes("Versatile")) {
         var bonus = attr.substring(attr.indexOf('(') + 1, attr.indexOf(')'));
         attr = attr.substring(0, attr.indexOf(' '));
+    }
+    if (attr.includes("Hunker")) {
+        var cover = attr.substring(attr.indexOf('(') + 1, attr.indexOf(')'));
+        attr = attr.substring(0, attr.indexOf(' '));
+    }
+    if (attr.includes("AC Bonus")) {
+        var bonus = attr.substring(attr.indexOf('(') + 1, attr.indexOf(')'));
+        attr = attr.split(' '); //ew
+        attr = attr[0] + " " + attr[1] //EW
     }
 
     switch(attr) {
@@ -179,11 +188,11 @@ function hint(attr) {
         case "Reliable":
             return("This weapon does not jam if you roll a natural 1.");
         case "Point Blank":
-            return("This weapon does not grant Disadvantage if fired within melee.<br>Additionally, this weapon grants Advantage when aiming at a Prone target within melee.");
+            return("This weapon does not impose Disadvantage if fired within melee.");
         case "Ambush":
             return("This weapon always crits when attacking a Surprised target.");
         case "Bulky":
-            return("This weapon must be braced using a Bonus Action in order to begin firing.");
+            return("This weapon must be braced using a Bonus Action in order to attack with it. Once braced, you remain braced until you move.");
         case "Complex":
             return("This weapon takes a total of three Attacks to reload.");
         case "Flame":
@@ -192,6 +201,12 @@ function hint(attr) {
             return("This weapon may be wielded with one or two hands. If two hands are used, it's damage becomes " + bonus + ".");
         case "Return":
             return("After making a Thrown Weapon attack with the weapon, you may use your Reaction to catch it, putting it back in your inventory.");
+        case "AC Bonus":
+            return("This weapon grants " + bonus + " to your AC while it is equipped.");
+        case "Hunker":
+            return("While holding this item, if you've not moved this turn, you may gain " + cover + " Cover as a Bonus Action until the start of your turn, though this also reduces your Movement Speed to 0.")
+        case "Reach":
+            return("This weapon can attack targets from an additional meter away.");
         default:
             return("Error: This attribute doesn't have a definition. Please alert the site administrator.");     
     }

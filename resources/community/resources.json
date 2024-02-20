@@ -2,7 +2,7 @@
   "resources": [
     {
       "title": "JoJo Stat Roller",
-      "img": "Assets/Stat Roller/dice.jpg",
+      "img": "Assets/Stat Roller/dice.webp",
       "desc": "Easily roll and calculate character and Stand stats. Created by Kyler Froman.",
       "link": "Assets/Stat Roller/roller.html",
       "alt": "JoJo Stat Roller"
@@ -27,6 +27,34 @@
       "desc": "Character sheet in Google Docs, make a copy of the sheet and you're ready to fill in everything. Created by Dandy Silver Fox.",
       "link": "https://docs.google.com/spreadsheets/d/1Yu9Pbj8k_Efv7j3bGcewTN9NcDnUfGa7xsIvygaiDuc/edit?usp=sharing",
       "alt": "Google Sheets"
+    },
+    {
+      "title": "Act 4 Stands Homebrew",
+      "img": "Assets/Act 4/coconut.webp",
+      "desc": "A simple homebrew allowing for a 4th evolution for Act-Type Stands. Created by Odd_Coconut.",
+      "link": "https://docs.google.com/document/d/1sjwoge0f7MZHciub30IZTibnscaildA1Gni8Iq5iM14/edit?usp=sharing",
+      "alt": "Act 4 Homebrew"
+    },
+    {
+      "title": "JoJo D&D Baseball",
+      "img": "Assets/Baseball/baseball.webp",
+      "desc": "A homebrew to play JoJo-themed baseball within the JoJo D&D module. Created by sandman.",
+      "link": "https://docs.google.com/document/d/1uaivKIFgslFGANCBY204VNsvwf500k_sDuYOrYULgKw/edit",
+      "alt": "JoJo Baseball"
+    },
+    {
+      "title": "sandman's DM Screen",
+      "img": "Assets/DM Screen/sandman.webp",
+      "desc": "A virtual DM Screen with quick references to necessary information. Created by sandman.",
+      "link": "Assets/DM Screen/screen.html",
+      "alt": "sandman's Ultimate DM Screen"
+    },
+    {
+      "title": "sandman's Tracker",
+      "img": "Assets/Tracker/sandman2.webp",
+      "desc": "A handy page to keep track of all sorts of things in-session like HP, Abilities, Energy, and more. Created by sandman.",
+      "link": "Assets/Tracker/tracker.html",
+      "alt": "sandman's Ultimate Tracker"
     },
     {
       "title": "Feature Yours Here!",

@@ -28,7 +28,7 @@
         "classes": ["Enh"],
         "desc": [
             "Your Stand is a fusion of Stand Energy and a physical object. You've gained enough control over your Stand that you can completely influence how the object or material your Stand is fused with functions.",
-            "Examples of this include <a href='https://jojo.fandom.com/wiki/Wheel_of_Fortune' target='_blank'>Wheel Of Fortune</a>'s squeezing and <a href='https://jojo.fandom.com/wiki/Strength' target='_blank'>Strength</a>'s control of the Ship itself."
+            "Examples of this include <a href='https://jojowiki.com/Wheel_of_Fortune' target='_blank'>Wheel Of Fortune</a>'s squeezing and <a href='https://jojowiki.com/Strength' target='_blank'>Strength</a>'s control of the Ship itself."
         ]
     },
     "Custom_Ability": {
@@ -38,7 +38,7 @@
             "This is something that must be discussed with the DM of your Campaign. Further details can be found on the <a href='/classes/?focus=Stands'>Stands</a> page.",
             "Stand Abilities are something integral to the existence of Stands, and it's a huge part of what makes JoJo's Bizarre Adventure such a fun, varied, and unique experience.",
             "A general rule of thumb is that the more specific your Stand Ability is, the more powerful it is. However, the more general it is, the more versatile it can be.",
-            "Examples of Abilities are <a href='https://jojo.fandom.com/wiki/Anubis' target='_blank'>Anubis</a>'s Possession, <a href='https://jojo.fandom.com/wiki/Hermit_Purple' target='_blank'>Hermit Purple</a>'s Spirit Photos, or <a href='https://jojo.fandom.com/wiki/White_Album' target='_blank'>White Album</a>'s Ability to freeze.",
+            "Examples of Abilities are <a href='https://jojowiki.com/Anubis' target='_blank'>Anubis</a>'s Possession, <a href='https://jojowiki.com/Hermit_Purple' target='_blank'>Hermit Purple</a>'s Spirit Photos, or <a href='https://jojowiki.com/White_Album' target='_blank'>White Album</a>'s Ability to freeze.",
             "A Custom Ability might also be a passive Ability that may be activated or deactivated at will. Passive Abilities consume 1 Stand Energy at the Start of the Stand User's Turn and also consume their Bonus Action to perform. If you are unable to use your Bonus Action, or you do not have enough Stand Energy remaining, the Ability simply stops functioning."
         ]
     },
@@ -63,7 +63,7 @@
         "classes": ["Enh"],
         "desc": [
             "As an Enhancement-Type Stand User you've taken your Ability to the next level. Rather than having to anchor onto something very specific, you may now anchor onto anything that's similar to your original anchor.",
-            "For example, <a href='https://jojo.fandom.com/wiki/Wheel_of_Fortune' target='_blank'>Wheel of Fortune</a> would be able to anchor onto anything with wheels instead of a specific car, or <a href='https://jojo.fandom.com/wiki/Strength' target='_blank'>Strength</a> would be able to anchor onto anything that floats in water instead of a specific boat."
+            "For example, <a href='https://jojowiki.com/Wheel_of_Fortune' target='_blank'>Wheel of Fortune</a> would be able to anchor onto anything with wheels instead of a specific car, or <a href='https://jojowiki.com/Strength' target='_blank'>Strength</a> would be able to anchor onto anything that floats in water instead of a specific boat."
         ]
     },
     "Hot_Pursuit": {
@@ -183,7 +183,7 @@
         "name": "Self-Acclimation",
         "classes": ["Abl"],
         "desc": [
-            "You've spent so much time manipulating certain elements that you've gained Immunity to one damage type. This Immunity should relate to your Stand Ability in some way. For example, <a href='https://jojo.fandom.com/wiki/Ghiaccio' target='_blank'>Ghiaccio</a>'s Cold Immunity. You also gain Immunity to that type's Stand counterpart.",
+            "You've spent so much time manipulating certain elements that you've gained Immunity to one damage type. This Immunity should relate to your Stand Ability in some way. For example, <a href='https://jojowiki.com/Ghiaccio' target='_blank'>Ghiaccio</a>'s Cold Immunity. You also gain Immunity to that type's Stand counterpart.",
             "<a href='/races/?focus=Pillar_Man'>Pillar Men</a>, and <a href='/abilities/?focus=Undead_Nature'>Undead</a> of all kinds cannot choose Radiant as the damage type for which they are immune."
         ]
     },
@@ -209,7 +209,7 @@
         "desc": [
             "These are powers that use the same concept of the regular <a class='in-page'>Custom Ability</a>, but taken to a whole new level. These abilities have immense strength, but at a higher cost (usually twice the Stand Energy).",
             "Special Abilities are usually 1 bracket of Die stronger than the Ability would be normally (d4 would become d6, d6 would become d8, etc.). They also take more time to perform. Usually, but not always, taking a Full Action to perform.",
-            "Examples of Special Abilities are <a href='https://jojo.fandom.com/wiki/The_World' target='_blank'>The World</a>'s The World, <a href='https://jojo.fandom.com/wiki/King_Crimson' target='_blank'>King Crimson</a>'s Time Deletion, or <a href='https://jojo.fandom.com/wiki/Weather_Report_(Stand)' target='_blank'>Weather Report</a>'s Heavy Weather.",
+            "Examples of Special Abilities are <a href='https://jojowiki.com/The_World' target='_blank'>The World</a>'s The World, <a href='https://jojowiki.com/King_Crimson' target='_blank'>King Crimson</a>'s Time Deletion, or <a href='https://jojowiki.com/Weather_Report_(Stand)' target='_blank'>Weather Report</a>'s Heavy Weather.",
             "A Special Ability might also be a passive Ability that functions independently of activation, or one that may be activated or deactivated at will. Passive Abilities consume 2 Stand Energy at the Start of the Stand User's Turn, and also take their Bonus Action to perform. If you are unable to use your Bonus Action, or you do not have enough Stand Energy remaining, the Ability simply stops functioning. "
         ]
     },
@@ -275,7 +275,7 @@
         "classes": ["Abl"],
         "desc": [
             "This Ability is something that very few Stands or Stand Users are able to get to. It's an incredibly powerful Ability that uses a lot of your Stand's Energy. This Ability costs 5 Stand Energy, and this SE cost cannot be reduced.",
-            "An example of an Ultimate Stand Ability is <a href='https://jojo.fandom.com/wiki/White_Album' target='_blank'>White Album</a>'s Gently Weeps."
+            "An example of an Ultimate Stand Ability is <a href='https://jojowiki.com/White_Album' target='_blank'>White Album</a>'s Gently Weeps."
         ]
     },
     "Zealous_Focus": {
@@ -305,14 +305,15 @@
         "classes": ["Pwr"],
         "desc": [
             "When you are hit with a melee attack, you may use your Reaction to halve the damage of any melee attack from that opponent until the start of your next turn.",
-            "Additionally, the first time they damage you with a melee attack after using this Ability you may make a single melee attack in return."
+            "Additionally, the first time they damage you with a melee attack after using this Ability you may make a single melee attack in return.",
+            "You may also use this to halve the damage of an incoming Melee Barrage, making your own in response at no additional Action Economy cost. However, this free Melee Barrage only deals half damage as well."
         ]
     },
     "Camouflage": {
         "name": "Camouflage",
         "classes": ["Enh"],
         "desc": [
-            "As an Action you may perfectly disguise your Stand, making it difficult for others to tell where or what your Stand is (for example, <a href='https://jojo.fandom.com/wiki/High_Priestess' target='_blank'>High Priestess</a> disguising as a metal object, or <a href='https://jojo.fandom.com/wiki/Wheel_of_Fortune' target='_blank'>Wheel of Fortune</a> shifting to look like a normal car).",
+            "As an Action you may perfectly disguise your Stand, making it difficult for others to tell where or what your Stand is (for example, <a href='https://jojowiki.com/High_Priestess' target='_blank'>High Priestess</a> disguising as a metal object, or <a href='https://jojowiki.com/Wheel_of_Fortune' target='_blank'>Wheel of Fortune</a> shifting to look like a normal car).",
             "This disguise allows your Stand to perform surprise attacks if opponents do not take note. Anyone attempting to determine what your Stand is disguised as has Disadvantage on the roll, as long as your Stand does not move."
         ]
     },
@@ -329,14 +330,6 @@
         "classes": ["Abl", "Ind"],
         "desc": [
             "Through clever use of your Stand's Ability you've found a way to properly defend yourself. As an Action you may spend 2 Stand Energy and gain one of the following benefits for 3 Turns (not including the one that you activate it on). You may only have one of the following buffs active at a time.<ul class='sublist'><li>+2d4 AC (Both for Stand and User)</li><li>Advantage on all Saving Throws</li><li>An amount of Temporary Hit Points equal to twice your Level</li></ul>"
-        ]
-    },
-    "Defensive_Stance": {
-        "name": "Defensive Stance",
-        "classes": ["Pwr", "Rng", "Ind"],
-        "desc": [
-            "When taking the Dodge Action, you may choose to take a quarter (rounded down) damage from enemy attacks instead of the normal effect of Dodge. You still gain 1 Stand Energy back as normal when using the Dodge Action in this way.",
-            "This Ability only applies on Stand hits, unless your Stand is within 2m to protect you."
         ]
     },
     "Defensive_Wave": {
@@ -430,11 +423,11 @@
     },
     "Melee_Barrage": {
         "name": "Melee Barrage",
-        "classes": ["Pwr", "Rng", "Ind", "Act"],
+        "classes": ["Pwr", "Rng", "Rev", "Ind", "Act"],
         "desc": [
             "With a flurry of punching attacks you create a 2m cone of damage, forcing targets within to make a Dexterity/Precision Saving Throw with a DC of 8 + PB + Power Modifier. On failure, you deal damage equal to your Stand's initial Attack Dice (<b>not the level 11 increase</b>) for every 10 Speed, with a maximum of 15 dice at 150 Speed, then add your Power Modifier to the end of the attack as usual. On a success, your targets still take half damage",
             "For example, a Power-Type with +2 PB, +5 Power, and +8 Speed would force targets within 2m to make a DC 15 Saving Throw, dealing 8d12 + 5 damage on failure.",
-            "Using this Ability takes an entire Turn (consuming Action, Bonus Action, and Movement Action), and you may not activate any touch-based abilities on your targets during the barrage."
+            "Using this Ability takes an entire Turn (consuming Action, Bonus Action, Reaction, and Movement Action), and you may not activate any touch-based abilities on your targets during the barrage."
         ]
     },
     "Mobile_Ability": {
@@ -449,6 +442,15 @@
         "classes": ["Hive"],
         "desc": [
             "The individual instances of your Stand may work as a collective, with the purpose of moving you to one place extremely quickly. As an Action you and your Stand may be transported to the same place, up to an amount of meters equal to twice your Stand's Movement Speed, without consuming your Movement Action. You may also climb, move through water, or across Difficult Terrain without penalty to your movement."
+        ]
+    },
+    "Natural_Armor": {
+        "name": "Natural Armor",
+        "classes": ["Rock"],
+        "desc": [
+            "As a Rock Human, you gain an additional Hit Point per Level.",
+            "Additionally, because of your unique physiology you may change your body between several different forms. Changing forms takes a Bonus Action.",
+            "<ul class='sublist'><li><b>Humanoid:</b> No changes.</li><li><b>Hybrid</b>: You gain an amount of Temporary Hit Points equal to your Level at the start of your Turns and are considered to have half Cover (does not stack with other sources of Cover). You also may resist a physical damage type of your choice (Bludgeoning, Piercing, or Slashing). However, your Movement Speed is halved and you cannot take the Dodge or Dash actions in this form.</li><li><b>Rock:</b> You gain an amount of Temporary Hit Points equal to twice your Level at the start of your Turns and are considered to have three-quarters Cover (does not stack with other sources of Cover). You also resist all physical damage (Bludgeoning, Piercing, and Slashing). However, the only things you may do in this form are take Bonus Actions and the Hide Action. If you choose to Hide, you may make the Stealth Check with Advantage.</li></ul>"
         ]
     },
     "Ranged_Attack": {
@@ -470,9 +472,9 @@
     },
     "Rejuvenation": {
         "name": "Rejuvenation",
-        "classes": ["Pwr"],
+        "classes": ["Pwr", "Rev", "War"],
         "desc": [
-            "Once per Short Rest, you may heal an amount of HP equal to 1d12 + your Level in Power Type + Your Constitution Modifier as a Bonus Action."
+            "Once per Short Rest, you may heal an amount of HP equal to 1d12 + your Level + Your Constitution Modifier as a Bonus Action."
         ]
     },
     "Regenerative_Surge": {
@@ -586,7 +588,7 @@
         "classes": ["Rip"],
         "desc": [
             "You've learned one of the following schools of combat that enables you to better use your Ripple combatively.",
-            "<ul class='sublist'><li>Disciplined: You gain Proficiency in 2 Saving Throws of your Choice.</li><li>Enhanced Reflexes: As a Reaction you may move up to half your Movement Speed without provoking Opportunity Attacks. You may use this to avoid an AOE Save, but not a single target attack.</li><li>Graceful Fighting: When you make Unarmed Attacks or Attacks using a Simple melee Weapon you may use Dexterity for both the Attack and Damage rolls. Additionally, you may use your Unarmed Dice with a Simple melee Weapon instead of its regular damage die.</li><li>Powerful: Rather than using regular AC, you may choose to have your AC be 10 + your Strength Modifier + your Constitution Modifier.</li></ul>"
+            "<ul class='sublist'><li><b>Disciplined</b>: You gain Proficiency in 2 Saving Throws of your Choice.</li><li><b>Enhanced Reflexes</b>: As a Reaction you may move up to half your Movement Speed without provoking Opportunity Attacks. You may use this to avoid an AOE Save, but not a single target attack.</li><li><b>Graceful Fighting</b>: When you make Unarmed Attacks or Attacks using a Simple melee Weapon you may use Dexterity for both the Attack and Damage rolls. Additionally, you may use your Unarmed Dice with a Simple melee Weapon instead of its regular damage die.</li><li><b>Powerful</b>: Rather than using regular AC, you may choose to have your AC be 10 + your Strength Modifier + your Constitution Modifier.</li></ul>"
         ]
     },
     "Recovery_Breathing": {
@@ -635,14 +637,14 @@
         "name": "Ripple Perception",
         "classes": ["Rip"],
         "desc": [
-            "As a Bonus Action, for 1 Ripple Point, gain 10 meters of Blindsense that is able to travel through walls until the end of your next Turn. If you are standing on a surface that conducts Ripple (such as water or metal), the range is increased to 20 meters."
+            "You have 5 meters of Blindsense that is able to travel through walls until the end of your next Turn. If you are standing on a surface that conducts Ripple (such as water or metal), the range is increased to 10 meters. You may spend a Ripple Point to double this range."
         ]
     },
     "Improved_Ripple_Perception": {
         "name": "Improved Ripple Perception",
         "classes": ["Rip"],
         "desc": [
-            "You have 5 meters of Blindsense by default, 10 meters if you are on a conductive surface. If you use <a class='in-page'>Ripple Perception</a>, you may extend your Blindsense by that amount."
+            "Your passive Blindsense is increased to 10m, or 20m on a conductive surface, and may still spend a Ripple Point to double the range."
         ]
     },
     "Ripple_Regeneration": {
@@ -735,7 +737,7 @@
         "classes": ["Rip"],
         "desc": [
             "You create a Ripple technique that is unique to your use of the Ripple as well as your method of fighting. It should generally take an Action, and it should cost a number of Ripple Points relative to how powerful it is.",
-            "Examples of Custom Ripple Techniques come in the form of <a href='https://jojowiki.com/Lisa_Lisa' target='_blank'>Lisa Lisa</a>'s scarf technique, <a href='https://jojowiki.com/Dire</a>'s target='_blank'>Dire's Thunder Cross Split Attack, or <a href='https://jojowiki.com/Caesar_Anthonio_Zeppeli' target='_blank'>Caesar</a>'s Bubble Lens Technique.",
+            "Examples of Custom Ripple Techniques come in the form of <a href='https://jojowiki.com/Lisa_Lisa' target='_blank'>Lisa Lisa</a>'s scarf technique, <a href='https://jojowiki.com/Dire' target='_blank'>Dire</a>'s Thunder Cross Split Attack, or <a href='https://jojowiki.com/Caesar_Anthonio_Zeppeli' target='_blank'>Caesar</a>'s Bubble Lens Technique.",
             "Talk to your DM to determine the function and details of this Ability."
         ]
     },
@@ -744,7 +746,7 @@
         "classes": ["Rip"],
         "desc": [
             "As a Level 20 Ripple User, you have reached your full potential through use of the Ripple. This costs 15 Ripple Points and takes an Action, allowing you to choose one of the following. The effect you choose may be used multiple times if applicable, but you may not change your choice.",
-            "<ul class='sublist'><li>You gain an immensely powerful skill or ability otherwise not available to you. An example of such a powerful ability is <a href='https://jojo.fandom.com/wiki/Tonpetty'>Tompetty</a>'s ability to tell the fate of a person they touch.</li><li>If you do not have a Stand, one manifests at Level 15.</li><li>If you are already a Stand User, your stand evolves. The stats of your Stand double, and this change lasts for 1 hour.</li></ul>"
+            "<ul class='sublist'><li>You gain an immensely powerful skill or ability otherwise not available to you. An example of such a powerful ability is <a href='https://jojowiki.com/Tonpetty'>Tompetty</a>'s ability to tell the fate of a person they touch.</li><li>If you do not have a Stand, one manifests at Level 15.</li><li>If you are already a Stand User, your stand evolves. The stats of your Stand double, and this change lasts for 1 hour.</li></ul>"
         ]
     },
     "Spherical_Spin": {
@@ -782,7 +784,7 @@
         "classes": ["Spin"],
         "desc": [
             "You gain one of the following Spin Fighting Styles:",
-            "<ul class='sublist'><li>Aggressive: If you use your Action to only make damage-dealing Attacks with Spin imbued Spheres you may use your Bonus Action to make another Attack using the spin, so long as it is only used to deal damage.</li><li>Dead Eye: Unless you are throwing a Sphere at Long Range, your Attacks with Spheres imbued with the spin cannot be made with Disadvantage.</li><li>Disciplined: You gain Proficiency in 2 Saving Throws of your choice.</li><li>Mobile: You have Advantage on Saving Throws that would restrict your movement. Additionally, you may spend a Bonus Action in order to ignore difficult terrain.</li></ul>"
+            "<ul class='sublist'><li><b>Aggressive</b>: If you use your Action to only make damage-dealing Attacks with Spin imbued Spheres you may use your Bonus Action to make another Attack using the spin, so long as it is only used to deal damage.</li><li><b>Dead Eye</b>: Unless you are throwing a Sphere at Long Range, your Attacks with Spheres imbued with the spin cannot be made with Disadvantage.</li><li><b>Disciplined</b>: You gain Proficiency in 2 Saving Throws of your choice.</li><li><b>Mobile</b>: You have Advantage on Saving Throws that would restrict your movement. Additionally, you may spend a Bonus Action in order to ignore difficult terrain.</li></ul>"
         ]
     },
     "Create_Mirage": {
@@ -1191,7 +1193,7 @@
         "desc": [
             "This Ability costs 50 SE when activated and costs 10 SE per Turn if passive. Heavenly Abilities set Heaven Ascended Stands above all other Abilities of mortal beings. Heavenly Abilities are typically based on a particular word or phrase of great personal importance to the User, usually relating to their beliefs.",
             "As a general rule of thumb, when a Heavenly Ability is activated, if the Heaven Ascended Stand is intentionally using its full power, the entire universe could be affected. However, as powerful as this may seem, these abilities are usually broad, and affect a large area indiscriminately. The less broad an Ability, the stronger it is.",
-            "For example, <a href='https://jojo.fandom.com/wiki/Made_in_Heaven'>Made In Heaven</a> can speed up time exponentially without end, but it affects everybody indiscriminately, with no ability to stop it once time begins to speed up. <a href='https://jojo.fandom.com/wiki/The_World_Over_Heaven'>The World Over Heaven</a>, on the other hand, can rewrite reality itself (sometimes even changing the laws of physics in a small region), with the trade off being that it has to hit something with its fists in order to change it."
+            "For example, <a href='https://jojowiki.com/Made_in_Heaven'>Made In Heaven</a> can speed up time exponentially without end, but it affects everybody indiscriminately, with no ability to stop it once time begins to speed up. <a href='https://jojowiki.com/The_World_Over_Heaven'>The World Over Heaven</a>, on the other hand, can rewrite reality itself (sometimes even changing the laws of physics in a small region), with the trade off being that it has to hit something with its fists in order to change it."
         ]
     },
     "Ghoulification": {
@@ -1220,7 +1222,7 @@
         "name": "Ghoul Physique",
         "classes": ["Ghl"],
         "desc": [
-            "As a Ghoul, you have certain powerful biological functions not available to Zombies or Humans. You may gain either:<ul class='sublist'><li>+4 to your Strength, Dexterity, or Constitution Score.</li><li>An additional function to a bodily part of your choice. For example, <a href='https://jojo.fandom.com/wiki/Bruford' target='_blank'>Bruford's</a> hair having a long-range grapple ability.</li></ul>"
+            "As a Ghoul, you have certain powerful biological functions not available to Zombies or Humans. You may gain either:<ul class='sublist'><li>+4 to your Strength, Dexterity, or Constitution Score.</li><li>An additional function to a bodily part of your choice. For example, <a href='https://jojowiki.com/Bruford' target='_blank'>Bruford's</a> hair having a long-range grapple ability.</li></ul>"
         ]
     },
     "Greater_Undead_Health_Threshold": {
@@ -1282,7 +1284,7 @@
         "name": "Specialized EPM Ability",
         "classes": ["EPM"],
         "desc": [
-            "You have reached the pinnacle of your abilities as a greater Undead, growing close to your full potential. You gain a special ability of great power that is unique to you. An example of this special ability is <a href='https://jojo.fandom.com/wiki/Wamuu' target='_blank'>Wham's</a> wind mastery. Talk to your DM about the reach of this ability."
+            "You have reached the pinnacle of your abilities as a greater Undead, growing close to your full potential. You gain a special ability of great power that is unique to you. An example of this special ability is <a href='https://jojowiki.com/Wamuu' target='_blank'>Wham's</a> wind mastery. Talk to your DM about the reach of this ability."
         ]
     },
     "Superior_Lifesteal": {
@@ -1329,6 +1331,157 @@
         "desc": [
             "You may choose one person to become your Nemesis. Whenever you encounter that person, you instantly gain 3 Grudge Points, which are held onto until you stop interacting with them, or until combat with your Nemesis ends and they have not been used.",
             "This Ability is replaced by <a class='in-page'>Hit List</a> at Level 20."
+        ]
+    },
+    "Act_4": {
+        "name": "Act 4",
+        "classes": ["Act"],
+        "desc": [
+            "Through the pursuit of perfection, you have gotten close enough to summon an immensely powerful version of one of your Stands.",
+            "You may select Act 1, Act 2, or Act 3 for this evolution to use as a baseline for its stats and Ability.",
+            "You may temporarily summon an immensely powerful Stand. The stats of this Stand are doubled from the chosen baseline, and it gains a unique and powerful Ability. Speak to your DM about the details of this Ability. The new Stand keeps the Class Features of the Act its stats are based on.",
+            "These changes last for an hour, and you may summon Act 4 once per Long Rest. If you choose to summon your Stand an additional time, you may, but you must make a DC 15 Constitution Saving Throw, gaining 1 point of Exhaustion on a successful Save, and 2 an unsuccessful Save."
+        ]
+    },
+    "Assassin_Fighting_Style": {
+        "name": "Assassin Fighting Style",
+        "classes": ["Ass"],
+        "desc": [
+            "Choose one of the following Fighting Styles:<ul class='sublist'><li><b>Disciplined:</b> You gain Proficiency in 2 Saving Throws of your choice</li><li><b>Dual Wielding:</b> When you make an Attack using two weapons with the Light property, you can make an amount of additional Attacks equal to half your Proficiency Bonus as a Bonus Action.</li><li><b>Mobile:</b> You have Advantage on Saving Throws that would restrict your Movement. Additionally, you may spend your Bonus Action in order to ignore Difficult Terrain.</li><li><b>Swift:</b> You gain an additional 5m of Movement Speed.</li></ul>"
+        ]
+    },
+    "Aura_of_Knowledge": {
+        "name": "Aura of Knowledge",
+        "classes": ["Sch"],
+        "desc": [
+            "You're knowledgeable about many situations and can share that knowledge.",
+            "When you or an ally within 3m of you makes a Skill Check you may add your Intelligence Modifier to the roll."
+        ]
+    },
+    "Consul_Fighting_Style": {
+        "name": "Consul Fighting Style", 
+        "classes": ["Con"],
+        "desc": [
+            "Choose one of the following Fighting Styles:<ul class='sublist'><li><b>Determined Fighting:</b> You may choose one weapon you have. When using that weapon, you can add your Charisma Modifier to the Attack and Damage Rolls. You may switch which weapon has this property on a Long Rest.</li><li><b>Extended Encouragement:</b> The range and duration of your Encouragement Dice extend to 10 meters and 30 minutes respectively.</li><li><b>Mobile:</b> You gain Advantage on Saving Throws that would restrict your Movement. Additionally, you may spend your Bonus Action in order to ignore Difficult Terrain.</li><li><b>Warrior's Encouragement:</b> When you or an ally receives an Encouragement Dice from you, it can also be added to Attack Rolls, and when using it in this way the value is also added to the damage dealt.</li></ul>"
+        ]
+    },
+    "Damage_Minimum": {
+        "name": "Damage Minimum",
+        "classes": ["War"],
+        "desc": [
+            "Whenever you Attack with a weapon you are Proficient in you may round the damage up to an amount equal to double your Proficiency Bonus if it is lower."
+        ]
+    },
+    "Encouragement_Dice": {
+        "name": "Encouragement Dice",
+        "classes": ["Con"],
+        "desc": [
+            "Through using Encouragement Dice, you can either heal a nearby ally or boost their abilities through bolstering their spirits.",
+            "You have an amount of Encouragement Dice equal to your Charisma Modifier + your Proficiency Bonus. You regain all spent Encouragement Dice on a Long Rest. You may spend Encouragement Dice in the following ways:",
+            "As an Attack, you may restore 1d6 + your Charisma Modifier Hit Points to yourself or an ally who can see or hear you within 5 meters, and you may choose to spend several Encouragement Dice at once in order to add an additional 1d6 for each Die.",
+            "As a Reaction, when you or an ally within 5 meters makes a Skill Check or Saving Throw, you may add 1d6 to that roll. Alternatively the die may be saved and spent on a later roll within the next 5 minutes, after which it expires. A character can have one Encouragement Die at a time, and you can only have an amount of people equal to your Proficiency Bonus boosted by Encouragement Dice at the same time."
+        ]
+    },
+    "Expert_Assassin": {
+        "name": "Expert Assassin",
+        "classes": ["Ass"],
+        "desc": [
+            "Any Dexterity-based weapon you are Proficient in gains the Ambush property when you wield it."
+        ]
+    },
+    "Field_Study": {
+        "name": "Field Study",
+        "classes": ["Sch"],
+        "desc": [
+            "You may spend an Attack to make a Skill Check, rather than your full Action.",
+            "This applies to all Checks, including escaping a Grapple, using the Hide Action, performing Medicine Checks to revive an ally, and more."
+        ]
+    },
+    "Improved_Encouragement_Dice": {
+        "name": "Improved Encouragement Dice",
+        "classes": ["Con"],
+        "desc": [
+            "Your Encouragement Dice increase from d6s to d12s.",
+            "Whenever you use these dice to heal, for every additional die spent, you may add your Charisma Modifier as well."
+        ]
+    },
+    "Improved_Fighting_Style": {
+        "name": "Improved Fighting Style",
+        "classes": ["War"],
+        "desc": [
+            "You gain an additional Fighting Style from the Assassin, Consul, Scholar, or Warrior <a href='/abilities?search=Fighting%20Style'>Fighting Styles</a>."
+        ]
+    },
+    "Paragon_of_Knowledge": {
+        "name": "Paragon of Knowledge",
+        "classes": ["Sch"],
+        "desc": [
+            "Twice per Short Rest when you make a Skill Check that you're Proficient in using Intelligence, Wisdom, Charisma, you may choose to make the roll a 20 before rolling the die."
+        ]
+    },
+    "Perfected_Encouragement": {
+        "name": "Perfected Encouragement",
+        "classes": ["Con"],
+        "desc": [
+            "Whenever you take a Short Rest you regain an amount of Encouragement Dice equal to your Charisma Modifier.",
+            "Additionally, when you or an ally roll a 3 or lower on any of your Encouragement Dice, it may be rerolled, though the new roll must be kept."
+        ]
+    },
+    "Reaping_Strikes": {
+        "name": "Reaping Strikes",
+        "classes": ["Ass"],
+        "desc": [
+            "When you Surprise an opponent, you may add your Assassin Dice and their benefits twice per Turn, rather than just once."
+        ]
+    },
+    "Scholar_Fighting_Style": {
+        "name": "Scholar Fighting Style",
+        "classes": ["Sch"],
+        "desc": [
+            "Choose one of the following Fighting Styles:<ul class='sublist'><li><b>Disciplined:</b> You gain Proficiency in 2 Saving Throws of your choice</li><li><b>Foresight:</b> As a Reaction, you may move up to half your Movement Speed without provoking Opportunity Attacks. You may use this to avoid an AOE Saving Throw, but not a single target Attack.</li><li><b>Intelligent Fighting:</b> When you are Proficient in the use of Simple Melee Weapons, Rifles, or Sidearms, you may use your Intelligence Modifier instead of Strength or Dexterity when making Attack Rolls.</li><li><b>Scholar's Defense:</b> When you gain Half Cover from an ally from <a class='in-page'>Scholarly Combatant</a>, you instead gain Three-Quarters Cover. </li></ul>"
+        ]
+    },
+    "Scholarly_Combatant": {
+        "name": "Scholarly Combatant",
+        "classes": ["Sch"],
+        "desc": [
+            "Whenever you gain Hit Points at 1st Level or when Leveling Up in Scholar, you may use your Intelligence Modifier instead of Constitution to determine additional Hit Points.",
+            "Additionally, as a Bonus Action, you may take Half Cover behind an ally of the same size as you or larger."
+        ]
+    },
+    "Steady_Aim": {
+        "name": "Steady Aim",
+        "classes": ["Ass"],
+        "desc": [
+            "If you've not moved this Turn, you may choose to spend a Bonus Action and drop your Movement to 0 to give yourself Advantage on an Attack.",
+            "If you would already have Advantage on an Attack through Surprising your target, you may roll 3d20 and take the highest value."
+        ]
+    },
+    "Supernatural_Item": {
+        "name": "Supernatural Item",
+        "classes": ["Ass", "Con", "Sch", "War"],
+        "desc": [
+            "From your exposure to the supernatural you have gained, found, or created a weapon, piece of armor, or charm that holds supernatural abilities. If your DM allows it, you may choose one of the three following options:",
+            "<ul class='sublist'><li><b>Supernatural Charm:</b> A small trinket or object that gives the wearer strength. While wearing this, you and allies within 3 meters of you gain a bonus to Saving Throws equal to half your Proficiency Bonus (rounded down). In addition, you may choose one Charm Ability, and either another Charm Ability or a Defensive Ability.</li><li><b>Supernatural Defense:</b> A suit of armor, article of clothing, or shield that protects the holder. With this item, you gain a bonus to your AC equal to half your Proficiency Bonus (rounded down). Any damage taken is also reduced by the same amount. In addition, you may choose one Defensive Ability, and either another Defensive Ability or a Charm Ability.</li><li><b>Supernatural Weapon:</b> A weapon of some sort that deals powerful damage. This weapon cannot be explosive and functions as normal, but is capable of damaging <a href='/classes?focus=Stands'>Stands</a>. The weapon gains a bonus to Attack and Damage Rolls equal to half your Proficiency Bonus (rounded down). In addition, you may choose one Weapon Ability and either another Weapon Ability or a Defensive Ability.</li></ul>",
+            "The item has an amount of charges equal to your Proficiency Bonus per Long Rest, and you may regain half of the charges on a Short Rest. These charges are used when activating the item's Ability, chosen from the options below:",
+            "<b><u>Charm Abilities:</u></b><ul class='sublist'><li>Inspiring Trinket: When you fail a Skill Check you may attempt the roll a second time as a Free Action. Alternatively, you may spend a second charge to also have Advantage on the reroll. You may only use this Ability once per Turn.</li><li>Ready Stance: When someone you can see makes a Skill Check or Saving Throw you can use your Reaction to give them Advantage. Alternatively, you may spend a second charge to also grant them Advantage on all Checks and Saves until the end of their next Turn.</li><li>Source of Motivation: When you fail a Saving Throw you may use your Reaction to reroll it. Alternatively, you may spend a second charge to also gain Advantage on all Saving Throws of that type until the start of your next Turn.</li></ul>",
+            "<b><u>Defensive Abilities:</u></b><ul class='sublist'><li>Clever Preparation: You may use a Bonus Action to gain Resistance to any non-physical damage type, or use an Action to instead gain Resistance to a physical damage type, until the start of your next Turn. Alternatively, you may spend a second charge to gain Resistance to 2 non-physical types, or one physical damage type, as a Bonus Action.</li><li>Patient Guard: As a Bonus Action, you may gain the effects of either Disengage or Dodge as well as gain an amount of AC equal to your Proficiency Bonus until the start of your next Turn. Alternatively, you may spend a second charge to gain both the effects of Disengage AND Dodge, as well as the AC bonus.</li><li>Stand Defense: You may gain an amount of Stand Damage Reduction equal to 4 times your Proficiency Bonus. Your \"Stand AC\" is equal to 10 + 3 times your Level, or 20, whichever is higher. Your \"Stand\" may still be hit by regular physical damage. Alternatively, you may spend a second charge to gain 8 times instead and double your \"Stand AC\". This effect lasts until the start of your next Turn. You can find the rules on Stand Damage Reduction and Stand AC on the main <a href='/classes?focus=Stands'>Stands</a> page.</li></ul>",
+            "<b><u>Weapon Abilities:</u></b><ul class='sublist'><li>Deflect Attack: To use this Ability, your item must be a melee weapon. Whenever you take damage from an Attack, you may make an Attack Roll to contest your attacker. If your Attack Roll is higher than that of your opponent, you take no damage from the Attack against you. Alternatively, you may spend a second charge to also gain Advantage on the contesting Attack Roll.</li><li>Expose Weak Point: When dealing damage with this weapon you may either:<ul class='sublist'><li>Give Advantage to the next Attack from someone else targeting your target</li><li>Force your target to make a Constitution (NOT Durability) Saving Throw against a DC of 8 + Proficiency Bonus + Intelligence Modifier. On a failure, the target becomes Vulnerable to a damage type of your choice until they're next damaged by that damage type. However if they were Immune or Resistant to that type, they instead become Resistant or normally damaged by it respectively until the start of your next Turn. You may only use this Ability once per Turn.</li></ul>Alternatively, you may spend a second charge to use both effects at once.</li>Wrathful Strike: When dealing damage with this weapon you may choose to deal an additional amount of d6s of damage equal to your Proficiency Bonus. Alternatively you may spend a second charge to use d12s rather than d6s. You may only use this Ability once per Turn.</li></ul>"
+        ]
+    },
+    "Warrior_Fighting_Style": {
+        "name": "Warrior Fighting Style",
+        "classes": ["War"],
+        "desc": [
+            "Choose one of the following Fighting Styles:<ul class='sublist'><li><b>Disciplined:</b> You gain Proficiency in 2 Saving Throws of your choice</li><li><b>Dual Wielding:</b> When you make an Attack using two weapons with the Light property, you can make an amount of additional Attacks equal to half your Proficiency Bonus as a Bonus Action.</li><li><b>Powerful:</b> Rather than using your regular AC, you may choose to have your AC be 10 + Strength Modifier + Con Modifier.</li><li><b>Swift:</b> You gain an additional 5m of Movement Speed.</li><li><b>Unshakable:</b> You have Advantage against any effect that would attempt to move you against your will or knock you Prone.</li></ul>"
+        ]
+    },
+    "Weapon_Aficionado": {
+        "name": "Weapon Aficionado",
+        "classes": ["War"],
+        "desc": [
+            "You may add your Proficiency Bonus to Attack Rolls whenever you use a weapon or your Unarmed Strikes, in addition to any other bonuses you may get including Weapon Proficiencies.",
+            "Additionally, once per Short Rest when missing an Attack Roll you may instead choose to make the number you rolled a 20, guaranteeing a Critical Hit."
         ]
     }
 }

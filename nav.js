@@ -1,6 +1,6 @@
 $(document).ready(function() {
     let ads = true;
-    if (window.location.href.includes("recovery"))
+    if (window.location.href.includes("recovery") || window.location.href.includes("privacy"))
         ads = false;
     getNav(ads);
 });

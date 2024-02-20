@@ -48,14 +48,14 @@
             "4": {
                 "pro": "2",
                 "feats": "2",
-                "linkFeatures": ["Rippling Weapon"],
+                "linkFeatures": ["Spiritual Ripple (Variant Rule)", "Rippling Weapon"],
                 "featFeatures": ["Martial Arts", "OR", "Simple Weapon Focus"],
                 "ability": ["Increase Str, Dex, or Con Score by 1"]
             },
             "5": {
                 "pro": "3",
                 "feats": "2",
-                "linkFeatures": ["Ripple Regeneration", "Toxin Expulsion"],
+                "linkFeatures": ["Ripple Regeneration", "Ripple Perception"],
                 "featFeatures": ["Trained Combatant"]
             },
             "6": {
@@ -67,7 +67,7 @@
             "7": {
                 "pro": "3",
                 "feats": "3",
-                "linkFeatures": ["Ripple Perception"]
+                "linkFeatures": ["Toxin Expulsion"]
             },
             "8": {
                 "pro": "3",
@@ -78,7 +78,7 @@
             "9": {
                 "pro": "4",
                 "feats": "3",
-                "linkFeatures": ["Conductor Shield", "Spiritual Ripple (Variant Rule)"]
+                "linkFeatures": ["Conductor Shield"]
             },
             "10": {
                 "pro": "4",
@@ -207,6 +207,13 @@
             ]
         },
         {
+            "name": "Skill Checks and Saving Throws",
+            "content": [
+                "<p>Your Stand may assist you with physical Skill Checks and Saving Throws, using Power, Precision, and Durability in place of Strength, Dexterity, and Constitution respectively. However, your Stand's Damage Reduction cannot be applied to damage taken from the effects of a Saving Throw, unless the Stand is being targeted on its own separate from the user.</p>",
+                "<p>Stands do not have mental stats, and as such may not assist with Intelligence, Wisdom, or Charisma Checks and Saves. Independent-Type Stands may use their own actual mental stats.</p>"
+            ]
+        },
+        {
             "name": "Choosing a Stand Type",
             "content": [
                 "<p>There are 9 different Stand Types which each function very differently from eachother. You may either choose one of these 9, or roll a d100 and choose from the table below:</p>",
@@ -236,7 +243,7 @@
         },
         {
             "name": "Stand Whispers",
-            "content": ["<p>Those who have the potential to gain a Stand and are destined to in the future may have what is known as a Stand Whisper. This is an Ability that manifests itself before the User actually has controll over their Stand, which may not necessarily be the same as their Stand Ability would be. We see examples of this in <a href='https://jojo.fandom.com/wiki/Joseph_Joestar'>Joseph</a>'s \"Your Next Line is\" being a form of future prediction, young <a href='https://jojo.fandom.com/wiki/Giorno_Giovanna'>Giorno</a> growing grass to cover the injured gangster, and <a href='https://jojo.fandom.com/wiki/Guido_Mista'>Mista</a>'s ability to dodge bullets at point-blank range. Stand Whispers are often subconscious, but the User can utilize them to their full potential if they take notice of how the Ability functions. The Whispers disappear once the User obtains their Stand.</p>"]
+            "content": ["<p>Those who have the potential to gain a Stand and are destined to in the future may have what is known as a Stand Whisper. This is an Ability that manifests itself before the User actually has controll over their Stand, which may not necessarily be the same as their Stand Ability would be. We see examples of this in <a href='https://jojowiki.com/Joseph_Joestar'>Joseph</a>'s \"Your Next Line is\" being a form of future prediction, young <a href='https://jojowiki.com/Giorno_Giovanna'>Giorno</a> growing grass to cover the injured gangster, and <a href='https://jojowiki.com/Guido_Mista'>Mista</a>'s ability to dodge bullets at point-blank range. Stand Whispers are often subconscious, but the User can utilize them to their full potential if they take notice of how the Ability functions. The Whispers disappear once the User obtains their Stand.</p>"]
         }],
         "types": {
             "Power": {
@@ -336,7 +343,8 @@
                     "16": {
                         "pro": "5",
                         "feats": "5",
-                        "linkFeatures": ["Defensive Stance", "OR", "Lethal Strike"]
+                        "linkFeatures": ["Lethal Strike", "OR"],
+                        "featFeatures": ["Defensive Stance"]
                     },
                     "17": {
                         "pro": "6",
@@ -482,7 +490,8 @@
                     "16": {
                         "pro": "5",
                         "feats": "5",
-                        "linkFeatures": ["Defensive Stance", "OR", "Improved Awareness"]
+                        "linkFeatures": ["Improved Awareness", "OR"],
+                        "featFeatures": ["Defensive Stance"]
                     },
                     "17": {
                         "pro": "6",
@@ -573,8 +582,7 @@
                     "5": {
                         "pro": "3",
                         "feats": "2",
-                        "featFeatures": ["Simple Weapon Focus", "OR", "Professional Weapon Training", "OR", "Demolitionist", "OR", "Martial Arts", "OR",
-                            "Rifle Specialization", "OR", "Sidearm Specialization", "OR", "Shotgun Specialization", "OR", "Tavern Brawler", "OR", "Thrown Weapon Specialization"]
+                        "featFeatures": ["Weapon Feat"]
                     },
                     "6": {
                         "pro": "3",
@@ -714,8 +722,7 @@
                     "4": {
                         "pro": "2",
                         "feats": "2",
-                        "featFeatures": ["Simple Weapon Focus", "OR", "Professional Weapon Training", "OR", "Demolitionist", "OR", "Martial Arts", "OR", "Sidearm Specialization",
-                            "OR", "Rifle Specialization", "OR", "Shotgun Specialization", "OR", "Tavern Brawler", "OR", "Thrown Weapon Specialization"]
+                        "featFeatures": ["Weapon Feat"]
                     },
                     "5": {
                         "pro": "3",
@@ -1022,8 +1029,7 @@
                     "4": {
                         "pro": "2",
                         "feats": "2",
-                        "featFeatures": ["Scarflesh", "Simple Weapon Focus", "OR", "Professional Weapon Training", "OR", "Demolitionist", "OR", "Martial Arts", "OR",
-                            "Sidearm Specialization", "OR", "Rifle Specialization", "OR", "Shotgun Specialization", "OR", "Tavern Brawler", "OR", "Thrown Weapon Specialization"]
+                        "featFeatures": ["Weapon Feat"]
                     },
                     "5": {
                         "pro": "3",
@@ -1039,8 +1045,7 @@
                     "7": {
                         "pro": "3",
                         "feats": "3",
-                        "linkFeatures": ["Armored Stand", "OR"],
-                        "featFeatures": ["Catlike Agility"]
+                        "linkFeatures": ["Armored Stand", "OR", "Melee Barrage", "OR", "Rejuvenation"]
                     },
                     "8": {
                         "pro": "3",
@@ -1243,7 +1248,8 @@
                     "18": {
                         "pro": "6",
                         "feats": "5",
-                        "linkFeatures": ["Defensive Stance", "OR", "Slippery"]
+                        "linkFeatures": ["Slippery", "OR"],
+                        "featFeatures": ["Defensive Stance"]
                     },
                     "19": {
                         "pro": "6",
@@ -1641,7 +1647,7 @@
                             "pro": "6",
                             "feats": "6",
                             "abilDice": "10dx",
-                            "linkFeatures": ["Instant Swap"],
+                            "linkFeatures": ["Instant Swap", "OR", "Act 4 (Variant Rule)"],
                             "otherFeatures": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
                         }
                     ]
@@ -1703,7 +1709,7 @@
             "4": {
                 "pro": "2",
                 "feats": "2",
-                "linkFeatures": ["Muscle Contraction", "OR", "Tendon Twister", "OR"],
+                "linkFeatures": ["Spiritual Spin (Variant Rule)", "Muscle Contraction", "OR", "Tendon Twister", "OR"],
                 "featFeatures": ["Catlike Agility"]
             },
             "5": {
@@ -1732,7 +1738,7 @@
             "9": {
                 "pro": "4",
                 "feats": "3",
-                "linkFeatures": ["Immense Friction", "OR", "Restraining Spin", "Spiritual Spin (Variant Rule)"]
+                "linkFeatures": ["Immense Friction", "OR", "Restraining Spin"]
             },
             "10": {
                 "pro": "4",
@@ -1824,246 +1830,41 @@
         "desc": "Despite all of the odd happenings and abilities in the world of JoJo's Bizarre Adventure, most people don't even know about them. However, the world always needs those who fight for what they believe in. As such, these Classes also exist.",
         "extra": [{
             "name": "Gaining a Stand",
-            "desc": "If a person in a Non-Supernatural Class gains a Stand, they may erase all of their <a href='/abilities'>Abilities</a>, <a href='/feats'>Feats</a>, and Proficiencies, and then convert them into the respective Stand Type that they obtain. For example, if a Level 5 Brawler gains a Power Stand, they may opt to simply become a Level 5 Power Type Stand User instead of multiclassing. When you become a Stand User your Max HP reverts to what it was originally, then you re-roll for every Level suddenly gained. You may only convert Non-Supernatural Levels into Stand Levels, you may not convert them back."
+            "desc": "If a person in a Non-Supernatural Class gains a Stand, they may erase all of their <a href='/abilities'>Abilities</a>, <a href='/feats'>Feats</a>, and Proficiencies, and then convert them into the respective Stand Type that they obtain. For example, if a Level 5 Warrior gains a Power-Type Stand, they may opt to simply become a Level 5 Power-Type Stand User instead of multiclassing. When you become a Stand User your Max HP reverts to what it was originally, then you re-roll for every Level gained. However, you do not have to give up all of your Levels, and you may have Levels in both a Supernatural and Non-Supernatural Class. Any instances of Trained Combatant instead become a Feat of your choice if you have any Levels in Stand User."
         }],
         "types": {
-            "Brawler": {
-                "name": "Brawler",
-                "desc": "Brawlers tend to face their opponents head on using their fists, as well as their surroundings, in order to come out on top in fights.",
-                "hDice": "1d12",
-                "theme": "basic",
-                "level": {
-                    "1": {
-                        "pro": "2",
-                        "feats": "2",
-                        "featFeatures": ["Tavern Brawler", "OR", "Martial Arts"]
-                    },
-                    "2": {
-                        "pro": "2",
-                        "feats": "2"
-                    },
-                    "3": {
-                        "pro": "2",
-                        "feats": "2",
-                        "featFeatures": ["Quick on your Feet", "OR", "Catlike Agility"],
-                        "ability": ["Ability Score Improvement"]
-                    },
-                    "4": {
-                        "pro": "2",
-                        "feats": "2"
-                    },
-                    "5": {
-                        "pro": "3",
-                        "feats": "2",
-                        "featFeatures": ["Trained Combatant"]
-                    },
-                    "6": {
-                        "pro": "3",
-                        "feats": "3",
-                        "ability": ["Ability Score Improvement"]
-                    },
-                    "7": {
-                        "pro": "3",
-                        "feats": "3",
-                        "featFeatures": ["Immense Impact", "OR", "Skirmisher"]
-                    },
-                    "8": {
-                        "pro": "3",
-                        "feats": "3",
-                        "ability": ["Ability Score Improvement"]
-                    },
-                    "9": {
-                        "pro": "4",
-                        "feats": "3",
-                        "featFeatures": ["Tanky"]
-                    },
-                    "10": {
-                        "pro": "4",
-                        "feats": "3",
-                        "ability": ["Ability Score Improvement"]
-                    },
-                    "11": {
-                        "pro": "4",
-                        "feats": "4",
-                        "featFeatures": ["Trained Combatant"]
-                    },
-                    "12": {
-                        "pro": "4",
-                        "feats": "4"
-                    },
-                    "13": {
-                        "pro": "5",
-                        "feats": "4",
-                        "featFeatures": ["Specialized Save", "OR", "Motivated"],
-                        "ability": ["Ability Score Improvement"]
-                    },
-                    "14": {
-                        "pro": "5",
-                        "feats": "4"
-                    },
-                    "15": {
-                        "pro": "5",
-                        "feats": "4",
-                        "featFeatures": ["Trained Combatant"]
-                    },
-                    "16": {
-                        "pro": "5",
-                        "feats": "5"
-                    },
-                    "17": {
-                        "pro": "6",
-                        "feats": "5",
-                        "featFeatures": ["Guerilla Fighter", "OR", "Veteran Sprinter"],
-                        "ability": ["Ability Score Improvement"]
-                    },
-                    "18": {
-                        "pro": "6",
-                        "feats": "5"
-                    },
-                    "19": {
-                        "pro": "6",
-                        "feats": "5",
-                        "featFeatures": ["Menacing Aura"]
-                    },
-                    "20": {
-                        "pro": "6",
-                        "feats": "6"
-                    }
-                }
-            },
-            "Knight": {
-                "name": "Knight",
-                "desc": "Knights are those who train to use heavy weapons and traverse long distances tirelessly.  ",
-                "hDice": "1d10",
-                "theme": "basic",
-                "level": {
-                    "1": {
-                        "pro": "2",
-                        "feats": "2",
-                        "featFeatures": ["Simple Weapon Focus", "Professional Weapon Training"]
-                    },
-                    "2": {
-                        "pro": "2",
-                        "feats": "2"
-                    },
-                    "3": {
-                        "pro": "2",
-                        "feats": "2",
-                        "featFeatures": ["Adrenaline Rush"],
-                        "ability": ["Ability Score Improvement"]
-                    },
-                    "4": {
-                        "pro": "2",
-                        "feats": "2"
-                    },
-                    "5": {
-                        "pro": "3",
-                        "feats": "2",
-                        "featFeatures": ["Melee Specialization"]
-                    },
-                    "6": {
-                        "pro": "3",
-                        "feats": "3",
-                        "ability": ["Ability Score Improvement"]
-                    },
-                    "7": {
-                        "pro": "3",
-                        "feats": "3",
-                        "featFeatures": ["Heavy Specialization", "OR", "Immense Impact"]
-                    },
-                    "8": {
-                        "pro": "3",
-                        "feats": "3",
-                        "ability": ["Ability Score Improvement"]
-                    },
-                    "9": {
-                        "pro": "4",
-                        "feats": "3",
-                        "featFeatures": ["Trained Combatant"]
-                    },
-                    "10": {
-                        "pro": "4",
-                        "feats": "3",
-                        "ability": ["Ability Score Improvement"]
-                    },
-                    "11": {
-                        "pro": "4",
-                        "feats": "4",
-                        "featFeatures": ["Tanky"]
-                    },
-                    "12": {
-                        "pro": "4",
-                        "feats": "4"
-                    },
-                    "13": {
-                        "pro": "5",
-                        "feats": "4",
-                        "featFeatures": ["Specialized Save", "OR", "Tanky"],
-                        "ability": ["Ability Score Improvement"]
-                    },
-                    "14": {
-                        "pro": "5",
-                        "feats": "4"
-                    },
-                    "15": {
-                        "pro": "5",
-                        "feats": "4",
-                        "featFeatures": ["Trained Combatant"]
-                    },
-                    "16": {
-                        "pro": "5",
-                        "feats": "5"
-                    },
-                    "17": {
-                        "pro": "6",
-                        "feats": "5",
-                        "featFeatures": ["Motivated", "OR", "Superhuman"],
-                        "ability": ["Ability Score Improvement"]
-                    },
-                    "18": {
-                        "pro": "6",
-                        "feats": "5"
-                    },
-                    "19": {
-                        "pro": "6",
-                        "feats": "5",
-                        "featFeatures": ["Resilient"]
-                    },
-                    "20": {
-                        "pro": "6",
-                        "feats": "6"
-                    }
-                }
-            },
-            "Soldier": {
-                "name": "Soldier",
-                "desc": "Soldiers are modern-day Warriors, often trained in the use of firearms as well as close combat. They are a more modern-day version of the Knight.",
+            "Assassin": {
+                "name": "Assassin",
+                "desc": "Assassins utilize the element of surprise to strike from the shadows, able to hit opponents precisely where it hurts the most. They have ways of avoiding damage through dodging, and are generally pretty tricky.",
                 "hDice": "1d8",
                 "theme": "basic",
                 "level": {
                     "1": {
                         "pro": "2",
                         "feats": "2",
-                        "featFeatures": ["Simple Weapon Focus", "OR", "Professional Weapon Training"]
+                        "linkFeatures": ["Steady Aim"],
+                        "featFeatures": ["Weapon Feat"]
                     },
                     "2": {
                         "pro": "2",
-                        "feats": "2"
+                        "feats": "2",
+                        "linkFeatures": ["Assassin Fighting Style"]
                     },
                     "3": {
                         "pro": "2",
                         "feats": "2",
-                        "featFeatures": ["Guerilla Fighter"],
                         "ability": ["Ability Score Improvement"]
                     },
                     "4": {
                         "pro": "2",
-                        "feats": "2"
+                        "feats": "2",
+                        "linkFeatures": ["Supernatural Item (Variant Rule)"],
+                        "featFeatures": ["Assassin", "Deadly Accuracy", "OR", "Defensive Stance"]
                     },
                     "5": {
                         "pro": "3",
                         "feats": "2",
-                        "featFeatures": ["Rifle Specialization", "OR", "Sidearm Specialization"]
+                        "featFeatures": ["Catlike Agility", "OR", "Duelist's Agility", "OR", "Impeccable Agility"]
                     },
                     "6": {
                         "pro": "3",
@@ -2073,7 +1874,7 @@
                     "7": {
                         "pro": "3",
                         "feats": "3",
-                        "featFeatures": ["Shotgun Specialization", "OR", "Heavy Specialization"]
+                        "featFeatures": ["Trained Combatant", "Guerilla Fighter", "OR", "Skirmisher", "OR", "Specialized Save"]
                     },
                     "8": {
                         "pro": "3",
@@ -2083,7 +1884,7 @@
                     "9": {
                         "pro": "4",
                         "feats": "3",
-                        "featFeatures": ["Trained Combatant"]
+                        "featFeatures": ["Natural Talent", "OR", "Practical Experience"]
                     },
                     "10": {
                         "pro": "4",
@@ -2093,21 +1894,24 @@
                     "11": {
                         "pro": "4",
                         "feats": "4",
-                        "featFeatures": ["Quick on your Feet"]
+                        "linkFeatures": ["Expert Assassin"],
+                        "featFeatures": ["Headhunter", "OR", "Paranoia"]
                     },
                     "12": {
                         "pro": "4",
-                        "feats": "4"
+                        "feats": "4",
+                        "otherFeatures": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, or Level 11"]
                     },
                     "13": {
                         "pro": "5",
                         "feats": "4",
-                        "featFeatures": ["Assassin", "OR", "Demolitionist"],
+                        "featFeatures": ["Clever Disguise", "OR", "Light Sleeper"],
                         "ability": ["Ability Score Improvement"]
                     },
                     "14": {
                         "pro": "5",
-                        "feats": "4"
+                        "feats": "4",
+                        "featFeatures": ["Familiar Bond", "OR", "Veteran Sprinter"]
                     },
                     "15": {
                         "pro": "5",
@@ -2116,58 +1920,177 @@
                     },
                     "16": {
                         "pro": "5",
-                        "feats": "5"
+                        "feats": "5",
+                        "otherFeatures": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 13, or Level 14"]
                     },
                     "17": {
                         "pro": "6",
                         "feats": "5",
-                        "featFeatures": ["Deadly Accuracy", "OR", "Scarflesh"],
+                        "featFeatures": ["Brutality", "OR", "Menacing Aura"],
                         "ability": ["Ability Score Improvement"]
                     },
                     "18": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "otherFeatures": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 13, Level 14, or Level 17"]
                     },
                     "19": {
                         "pro": "6",
                         "feats": "5",
-                        "featFeatures": ["Trap Detection"]
+                        "featFeatures": ["Consistent Accuracy", "OR", "Weapon Feat"]
                     },
                     "20": {
                         "pro": "6",
-                        "feats": "6"
+                        "feats": "6",
+                        "linkFeatures": ["Reaping Strikes"]
                     }
                 }
             },
-            "Sniper": {
-                "name": "Sniper",
-                "desc": "Snipers prefer to take out their enemies from a good distance away, attacking from behind cover rather than facing their enemies directly.",
+            "Consul": {
+                "name": "Consul",
+                "desc": "Consuls use their speech and unwavering confidence together to inspire themselves and allies. They can heal themselves and others, supporting allies and hindering enemies as well.",
+                "hDice": "1d8",
+                "theme": "basic",
+                "level": {
+                    "1": {
+                        "pro": "2",
+                        "feats": "2",
+                        "linkFeatures": ["Encouragement Dice"],
+                        "featFeatures": ["Weapon Feat"]
+                    },
+                    "2": {
+                        "pro": "2",
+                        "feats": "2",
+                        "linkFeatures": ["Consul Fighting Style"]
+                    },
+                    "3": {
+                        "pro": "2",
+                        "feats": "2",
+                        "ability": ["Ability Score Improvement"]
+                    },
+                    "4": {
+                        "pro": "2",
+                        "feats": "2",
+                        "linkFeatures": ["Supernatural Item (Variant Rule)"],
+                        "featFeatures": ["Clever Disguise", "Commentator", "OR", "Exemplar", "OR", "Tanky"]
+                    },
+                    "5": {
+                        "pro": "3",
+                        "feats": "2",
+                        "featFeatures": ["Jack of all Trades", "OR", "Menacing Aura", "OR", "Stroke of Luck"]
+                    },
+                    "6": {
+                        "pro": "3",
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
+                    },
+                    "7": {
+                        "pro": "3",
+                        "feats": "3",
+                        "featFeatures": ["Trained Combatant", "Guerilla Fighter", "OR", "Skirmisher"]
+                    },
+                    "8": {
+                        "pro": "3",
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
+                    },
+                    "9": {
+                        "pro": "4",
+                        "feats": "3",
+                        "featFeatures": ["Natural Talent", "OR", "Practical Experience"]
+                    },
+                    "10": {
+                        "pro": "4",
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
+                    },
+                    "11": {
+                        "pro": "4",
+                        "feats": "4",
+                        "linkFeatures": ["Improved Encouragement Dice"],
+                        "featFeatures": ["Art of Distraction", "OR", "Headhunter", "OR", "Interpreter"]
+                    },
+                    "12": {
+                        "pro": "4",
+                        "feats": "4",
+                        "otherFeatures": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, or Level 11"]
+                    },
+                    "13": {
+                        "pro": "5",
+                        "feats": "4",
+                        "featFeatures": ["Light Sleeper", "OR", "Heavy Sleeper"],
+                        "ability": ["Ability Score Improvement"]
+                    },
+                    "14": {
+                        "pro": "5",
+                        "feats": "4",
+                        "featFeatures": ["Quick on your Feet", "OR", "Specialized Save"]
+                    },
+                    "15": {
+                        "pro": "5",
+                        "feats": "4",
+                        "featFeatures": ["Trained Combatant"]
+                    },
+                    "16": {
+                        "pro": "5",
+                        "feats": "5",
+                        "otherFeatures": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, or Level 14"]
+                    },
+                    "17": {
+                        "pro": "6",
+                        "feats": "5",
+                        "featFeatures": ["Paranoia", "OR", "Trap Detection"],
+                        "ability": ["Ability Score Improvement"]
+                    },
+                    "18": {
+                        "pro": "6",
+                        "feats": "5",
+                        "otherFeatures": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 14, or Level 17"]
+                    },
+                    "19": {
+                        "pro": "6",
+                        "feats": "5",
+                        "featFeatures": ["Consistent Skills", "OR", "Motivated"]
+                    },
+                    "20": {
+                        "pro": "6",
+                        "feats": "6",
+                        "linkFeatures": ["Perfected Encouragement"]
+                    }
+                }
+            },
+            "Scholar": {
+                "name": "Scholar",
+                "desc": "Scholars use their extensive knowledge as a reference in tense situations, using their intelligence in unorthodox but clever ways to achieve their goals.",
                 "hDice": "1d6",
                 "theme": "basic",
                 "level": {
                     "1": {
                         "pro": "2",
                         "feats": "2",
-                        "featFeatures": ["Rifle Specialization", "OR", "Sidearm Specialization"]
+                        "linkFeatures": ["Scholarly Combatant"],
+                        "featFeatures": ["Weapon Feat"]
                     },
                     "2": {
                         "pro": "2",
-                        "feats": "2"
+                        "feats": "2",
+                        "linkFeatures": ["Scholar Fighting Style"]
                     },
                     "3": {
                         "pro": "2",
                         "feats": "2",
-                        "featFeatures": ["Assassin"],
                         "ability": ["Ability Score Improvement"]
                     },
                     "4": {
                         "pro": "2",
-                        "feats": "2"
+                        "feats": "2",
+                        "linkFeatures": ["Supernatural Item (Variant Rule)", "Field Study"],
+                        "featFeatures": ["Level-Headed", "OR", "Jack of all Trades"]
                     },
                     "5": {
                         "pro": "3",
                         "feats": "2",
-                        "featFeatures": ["Deadly Accuracy"]
+                        "featFeatures": ["Natural Talent", "OR", "Practical Experience"]
                     },
                     "6": {
                         "pro": "3",
@@ -2177,7 +2100,120 @@
                     "7": {
                         "pro": "3",
                         "feats": "3",
-                        "featFeatures": ["Calculating", "OR", "Natural Talent"]
+                        "featFeatures": ["Trained Combatant", "Consistent Skills", "OR", "Unstoppable Willpower"]
+                    },
+                    "8": {
+                        "pro": "3",
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
+                    },
+                    "9": {
+                        "pro": "4",
+                        "feats": "3",
+                        "featFeatures": ["Interpreter", "OR", "Trap Detection"]
+                    },
+                    "10": {
+                        "pro": "4",
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
+                    },
+                    "11": {
+                        "pro": "4",
+                        "feats": "4",
+                        "linkFeatures": ["Aura of Knowledge"],
+                        "featFeatures": ["Natural Talent", "OR", "Perfected Craft"]
+                    },
+                    "12": {
+                        "pro": "4",
+                        "feats": "4",
+                        "otherFeatures": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, or Level 11"]
+                    },
+                    "13": {
+                        "pro": "5",
+                        "feats": "4",
+                        "featFeatures": ["Familiar Bond", "OR", "Paranoia"],
+                        "ability": ["Ability Score Improvement"]
+                    },
+                    "14": {
+                        "pro": "5",
+                        "feats": "4",
+                        "featFeatures": ["Fortune Teller", "OR", "Stroke of Luck", "OR", "Motivated"]
+                    },
+                    "15": {
+                        "pro": "5",
+                        "feats": "4",
+                        "featFeatures": ["Trained Combatant"]
+                    },
+                    "16": {
+                        "pro": "5",
+                        "feats": "5",
+                        "otherFeatures": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, or Level 13, or Level 14"]
+                    },
+                    "17": {
+                        "pro": "6",
+                        "feats": "5",
+                        "featFeatures": ["Perfected Craft", "OR", "Practical Experience"],
+                        "ability": ["Ability Score Improvement"]
+                    },
+                    "18": {
+                        "pro": "6",
+                        "feats": "5",
+                        "otherFeatures": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, or Level 13, Level 14, or Level 17"]
+                    },
+                    "19": {
+                        "pro": "6",
+                        "feats": "5",
+                        "featFeatures": ["Quick on your Feet", "OR", "Specialized Save"]
+                    },
+                    "20": {
+                        "pro": "6",
+                        "feats": "6",
+                        "linkFeatures": ["Paragon of Knowledge"]
+                    }
+                }
+            },
+            "Warrior": {
+                "name": "Warrior",
+                "desc": "Warriors specialize in battling and the effective use of weaponry. They hit hard, can hold their own in melee, and know their weapons better than anyone.",
+                "hDice": "1d10",
+                "theme": "basic",
+                "level": {
+                    "1": {
+                        "pro": "2",
+                        "feats": "2",
+                        "linkFeatures": ["Damage Minimum"],
+                        "featFeatures": ["Weapon Feat"]
+                    },
+                    "2": {
+                        "pro": "2",
+                        "feats": "2",
+                        "linkFeatures": ["Warrior Fighting Style"]
+                    },
+                    "3": {
+                        "pro": "2",
+                        "feats": "2",
+                        "ability": ["Ability Score Improvement"]
+                    },
+                    "4": {
+                        "pro": "2",
+                        "feats": "2",
+                        "linkFeatures": ["Supernatural Item (Variant Rule)", "Rejuvenation"],
+                        "featFeatures": ["Adrenaline Rush", "OR", "Scarflesh"]
+                    },
+                    "5": {
+                        "pro": "3",
+                        "feats": "2",
+                        "featFeatures": ["Trained Combatant", "Quick on your Feet", "OR", "Tanky"]
+                    },
+                    "6": {
+                        "pro": "3",
+                        "feats": "3",
+                        "ability": ["Ability Score Improvement"]
+                    },
+                    "7": {
+                        "pro": "3",
+                        "feats": "3",
+                        "featFeatures": ["Specialized Save", "OR", "Veteran Sprinter"]
                     },
                     "8": {
                         "pro": "3",
@@ -2197,49 +2233,55 @@
                     "11": {
                         "pro": "4",
                         "feats": "4",
-                        "featFeatures": ["Consistent Accuracy"]
+                        "linkFeatures": ["Improved Fighting Style"],
+                        "featFeatures": ["Heavy Specialization", "OR", "Melee Specialization"]
                     },
                     "12": {
                         "pro": "4",
-                        "feats": "4"
+                        "feats": "4",
+                        "featFeatures": ["Catlike Agility", "OR", "Duelist's Agility", "OR", "Impeccable Agility"]
                     },
                     "13": {
                         "pro": "5",
                         "feats": "4",
-                        "featFeatures": ["Trap Detection", "OR", "Paranoia"],
+                        "featFeatures": ["Light Sleeper", "OR", "Heavy Sleeper"],
                         "ability": ["Ability Score Improvement"]
                     },
                     "14": {
                         "pro": "5",
-                        "feats": "4"
+                        "feats": "4",
+                        "featFeatures": ["Immense Impact", "OR", "Motivated", "OR", "Unstoppable Willpower"]
                     },
                     "15": {
                         "pro": "5",
                         "feats": "4",
-                        "featFeatures": ["Professional Weapon Training"]
+                        "featFeatures": ["Trained Combatant"]
                     },
                     "16": {
                         "pro": "5",
-                        "feats": "5"
+                        "feats": "5",
+                        "otherFeatures": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 11, Level 12, or Level 14"]
                     },
                     "17": {
                         "pro": "6",
                         "feats": "5",
-                        "featFeatures": ["Catlike Agility", "OR", "Level-Headed"],
+                        "featFeatures": ["Weapon Feat"],
                         "ability": ["Ability Score Improvement"]
                     },
                     "18": {
                         "pro": "6",
-                        "feats": "5"
+                        "feats": "5",
+                        "featFeatures": ["Resilient", "OR", "Tanky"]
                     },
                     "19": {
                         "pro": "6",
                         "feats": "5",
-                        "featFeatures": ["Guerilla Fighter"]
+                        "ability": ["Ability Score Improvement"]
                     },
                     "20": {
                         "pro": "6",
-                        "feats": "6"
+                        "feats": "6",
+                        "linkFeatures": ["Weapon Aficionado"]
                     }
                 }
             }

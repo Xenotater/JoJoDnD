@@ -6,7 +6,7 @@ $(document).ready(function () {
     q = url.searchParams.get("search");
 
     if (a == null) {
-        a = "Ambush_Attacker";
+        a = "Act_4";
         updateURL();
     }
 
@@ -79,7 +79,7 @@ function getData(q) {
     $.getJSON("abilities.json", function(data) {
         aData = data;
         if (aData[a] == null)
-            a = "Ambush_Attacker";
+            a = "Act_4";
         for (var key of Object.keys(aData))
             abilities.push([key, aData[key]]);
         updateList();
@@ -145,6 +145,22 @@ function parseTypes(classes) {
         for (let i = 0; i < classes.length; i++) {
             var cls = "", lnk = "", page = "classes";
             switch (classes[i]) {
+                case "Ass":
+                    cls = "Assassins",
+                    lnk = "Assassin"
+                    break;
+                case "Sch":
+                    cls = "Scholars",
+                    lnk = "Scholar"
+                    break;
+                case "Con":
+                    cls = "Consuls",
+                    lnk = "Consul"
+                    break;
+                case "War":
+                    cls = "Warriors",
+                    lnk = "Warrior"
+                    break;
                 case "Pwr":
                     cls = "Power-Type Stands";
                     lnk = "Power";

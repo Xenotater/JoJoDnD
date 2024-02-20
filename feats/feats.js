@@ -14,6 +14,14 @@ $(document).ready(function () {
 
     $("#list").on("click", ".list-link", function () {
         f = $(this).attr("id");
+        if (f == "Epic_Feat")
+            search("Epic Feat");
+        updateURL();
+        updateDisplay();
+    });
+
+    $("#display").on("click", "a.in-page", function() {
+        f= $(this).html().replace(/[ -]/g, "_").replace(/'/g, "");
         updateURL();
         updateDisplay();
     });
@@ -64,6 +72,8 @@ function getData(q) {
         if (fData[f] == null)
             f = "Adrenaline_Rush";
         feats = Object.keys(fData);
+        if (f == "Epic Feat" || (fData[f].prereq != null && fData[f].prereq.includes("Epic")))
+            search("Epic Feat");
         updateList();
         updateDisplay();
 
@@ -78,12 +88,16 @@ function getData(q) {
 }
 
 function updateList() {
+    var showEpic = $("#search").val().includes("Epic");
     $("#list-table tbody").html("");
     feats.sort();
     if (reverse)
         feats.reverse();
-    for (let i = 0; i < feats.length; i++)
-        $("#list-table tbody").append("<tr class='list-link' id='" + fData[feats[i]].name.replace(/[ -]/g, "_").replace(/'/g, "") + "'><td>" + fData[feats[i]].name + "</td></tr>");
+    for (let i = 0; i < feats.length; i++) {
+        let feat = fData[feats[i]];
+        if (feat.prereq == null || !feat.prereq.includes("Epic Feat") || showEpic)
+            $("#list-table tbody").append("<tr class='list-link' id='" + feat.name.replace(/[ -]/g, "_").replace(/'/g, "") + "'><td>" + feat.name + "</td></tr>");
+    }
     $("#" + f).addClass("listCurrent");
 }
 
@@ -94,7 +108,8 @@ function updateDisplay() {
     newContent += "<h2 class='display-title'>" + feat.name + "</h2>";
     if (feat.prereq != null)
         newContent += "<p><b><u>Prerequisite:</u> " + feat.prereq + "</b></p>";
-    newContent += "<p class='section'><b>Description: </b></p><p>" + feat.desc + "</p>";
+    if (feat.desc != null)
+        newContent += "<p class='section'><b>Description: </b></p><p>" + feat.desc + "</p>";
     newContent += "<p class='section'><b>Effects: </b></p><ul class='effects'>"
     for (let i = 0; i <feat.effects.length; i++)
         newContent += "<li>" + feat.effects[i] + "</li>";
@@ -128,5 +143,6 @@ function search(query) {
             feats.push(key);
     }
 
+    $("#search").val(query); //put query in the search box, in case the search was done through some other method
     updateList();
 }
