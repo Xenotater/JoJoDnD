@@ -54,8 +54,12 @@ function updateDisplay() {
         box1Text += "<li>" + passion.examples[i] + "</li>";
     }
     box1Text += "</ul>";
-    box2Text += "<h3 class='display-title'>" + passion.name + " Traits</h3><p><b><u>Saving Throws:</u></b> " + passion.saves + "</p><p><b><u>\
-    Ability Score Increase:</u></b> " + passion.ability + "</p><p><b><u>" + passion.custom.name + ":</u></b> " + passion.custom.desc;
+    box2Text += "<h3 class='display-title'>" + passion.name + " Traits</h3><p><b><u>Saving Throws:</u></b> " + passion.saves + "</p><p><b><u>Ability Score Increase:</u></b> ";
+    if (passion.ability != null)
+        box2Text += passion.ability;
+    else
+        box2Text += parseASI(passion.stats);
+    box2Text += "</p><p><b><u>" + passion.custom.name + ":</u></b> " + passion.custom.desc;
     if (passion.alt != null) box2Text += " Alternatively, you may choose to forgo one of these Proficiencies to instead gain " + passion.alt;
     box2Text += "</p>";
     if (passion.profs != null) {
@@ -71,4 +75,58 @@ function updateDisplay() {
     $("#box2").html(box2Text);
     $(".listCurrent").removeClass("listCurrent");
     $("#" + p).addClass("listCurrent");
+}
+
+function parseASI(asi) {
+    let stats = [], vals = [];
+    let text = "Your ";
+
+    asi = asi.split(", ");
+
+    for (let i=0; i<asi.length; i++) {
+        let stat = asi[i].split(" ");
+        stats.push(parseStat(stat[0]));
+        vals.push(stat[1].replace("+", ""));
+    }
+
+    if ([...new Set(vals)].length == 1) {
+        for (let i=0; i<asi.length; i++) {
+            text += stats[i];
+            if (i + 2 == asi.length)
+                text += ", and ";
+            else if (i + 1 != asi.length)
+                text += ", ";
+        }
+        text += " Scores increase by " + vals[0];
+    }
+    else if (asi.length > 1) {
+        for (let i=0; i<asi.length; i++) {
+            text += stats[i] + " Score increases by " + vals[i];
+            if (i + 2 == asi.length)
+                text += ", and your ";
+            else if (i + 1 != asi.length)
+                text += ", your ";
+        }
+    }
+    else
+        text += stats[0] + " Score increases by " + vals[0];
+
+    return text + ".";
+}
+
+function parseStat(stat) {
+    switch (stat) {
+        case "Str":
+            return "Strength";
+        case "Dex":
+            return "Dexterity";
+        case "Con":
+            return "Constitution";
+        case "Int":
+            return "Intelligence";
+        case "Cha":
+            return "Charisma";
+        default:
+            return "";
+    }
 }

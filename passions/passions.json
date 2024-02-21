@@ -5,7 +5,6 @@
         "desc": "Academics do exactly as the name suggests. They study hard, or teach hard, using their intelligence and experience to do their jobs.",
         "examples": ["Professors", "Accountants", "Teachers", "Programmers", "Scientists / Researchers"],
         "saves": "You are Proficient in Intelligence and Constitution Saving Throws.",
-        "ability": "Your Intelligence Score increases by 2 and your Constitution Score increases by 1.",
         "custom": {
             "name": "Academic Studies",
             "desc": "You have Proficiency in two of the following: Arcana, History, Investigation, Nature, or Religion."
@@ -19,7 +18,6 @@
         "desc": "Using a variety of mediums, Artists create beautiful things to invoke feelings in people. Whether it be a comic, a painting, a sculpture, or a gourmet meal, Artists spend hours honing their craft.",
         "examples": ["Writers", "Painters", "Sculptors", "Mangakas", "Acrobats", "Dancers", "Chefs"],
         "saves": "You are Proficient in Dexterity and Intelligence Saving Throws.",
-        "ability": "Your Dexterity Score increases by 2 and your Intelligence Score increases by 1.",
         "custom": {
             "name": "Artist's Soul",
             "desc": "You have Proficiency in two of the following: Medicine, Sleight of Hand, Perception, or Performance."
@@ -33,7 +31,6 @@
         "desc": "People who push their bodies to and past their physical limits in order to see the true potential of humanity.",
         "examples": ["Olympians", "Professional Sports Players", "Marathon Runners", "High School Quarterbacks"],
         "saves": "You are Proficient in two of the following Saving Throws: Strength, Dexterity, or Constitution.",
-        "ability": "Your Strength, Dexterity, and Constitution Scores increase by 1.",
         "custom": {
             "name": "Athletic Experience",
             "desc": "You have Proficiency in two of the following: Athletics, Acrobatics, Medicine, Perception, Performance, or Sleight of Hand."
@@ -47,7 +44,6 @@
         "desc": "Those who steal for their own greed. To attain power, money, or influence, these people take advantage of the Human brain in order to push other people to achieve their own goals.",
         "examples": ["Certain Lawyers", "Fake Fortune Tellers", "Most Politicians", "Scammers", "Cult Leaders"],
         "saves": "You are Proficient in Charisma and Wisdom Saving Throws.",
-        "ability": "Your Charisma Score increases by 2 and your Wisdom Score increases by 1.",
         "custom": {
             "name": "Award-Winning Smile",
             "desc": "You have Proficiency in two of the following: Deception, Insight, Persuasion, Sleight of Hand, or Religion."
@@ -61,7 +57,6 @@
         "desc": "Some people make a living performing physically taxing jobs. Without them, society would not function.",
         "examples": ["Construction Workers", "Garbage Collectors", "Coal Miners"],
         "saves": "You are Proficient in Constitution and Strength Saving Throws.",
-        "ability": "Your Constitution Score increases by 2 and your Strength Score increases by 1.",
         "custom": {
             "name": "Grit",
             "desc": "You have Proficiency in two of the following: Athletics, Acrobatics, Animal Handling, or Intimidation."
@@ -75,7 +70,6 @@
         "desc": "Leaders are those who are able to sway others to help them perform great deeds, whether they be selfish or selfless. They are able to take charge of a situation and guide others along a specific path.",
         "examples": ["Heads of a Community", "Heads of a Movement", "Some Politicians", "Royalty"],
         "saves": "You are Proficient in two of the following Saving Throws: Intelligence, Wisdom, or Charisma.",
-        "ability": "Your Intelligence, Wisdom, and Charisma Scores increase by 1.",
         "custom": {
             "name": "Leadership Experience",
             "desc": "You have Proficiency in two of the following: Arcana, Deception, Insight, Performance, Perception, or Persuasion."
@@ -89,7 +83,6 @@
         "desc": "Those who perfect a craft in order to inspire, but also to hear the roar of the crowd.",
         "examples": ["Stand Up Comedians", "Actors", "Musicians", "DJs"],
         "saves": "You are Proficient in Charisma and Constitution Saving Throws.",
-        "ability": "Your Charisma Score increases by 2 and your Constitution Score increases by 1.",
         "custom": {
             "name": "Crowd Pleaser",
             "desc": "You have Proficiency in two of the following: Acrobatics, Deception, Persuasion, or Performance."
@@ -103,7 +96,6 @@
         "desc": "Medical Experts use their superior intellect, reasoning, and patience to assist the injured. Medical Experts have immense knowledge of anatomy, knowing how living things function in almost every way.",
         "examples": ["Doctors", "Nurses", "Surgeons", "EMT Operators", "Veterinarians"],
         "saves": "You are Proficient in Intelligence and Wisdom Saving Throws.",
-        "ability": "Your Intelligence Score increases by 2 and your Wisdom Score increases by 1.",
         "custom": {
             "name": "Medical Experience",
             "desc": "You have Proficiency in two of the following: Animal Handling, Investigation, Medicine, Nature, or Sleight of Hand."
@@ -117,7 +109,6 @@
         "desc": "A person who makes their living serving people, using their using their mind and their social skills to help them.",
         "examples": ["Waitstaff", "Receptionists", "Secretaries", "Salespeople"],
         "saves": "You are Proficient in Charisma and Intelligence Saving Throws.",
-        "ability": "Your Charisma Score increases by 2 and your Intellegence Score increases by 1.",
         "custom": {
             "name": "People Person",
             "desc": "You have Proficiency in two of the following: Insight, Investigation, Perception, or Persuasion."
@@ -144,7 +135,6 @@
         "desc": "Someone who has chosen to forgo most parts of modern society, instead choosing to live a simpler, more reclusive life.",
         "examples": ["Wilderness Survivors", "Rural Subsistence Farmers", "Hunters", "Gangsters", "Monks"],
         "saves": "You are Proficient in Wisdom and Constitution Saving Throws.",
-        "ability": "Your Wisdom Score increases by 2 and your Constitution Score increases by 1.",
         "custom": {
             "name": "Will to Thrive",
             "desc": "You have Proficiency in two of the following: Insight, Perception, Animal Handling, Nature, or Survival."
@@ -158,7 +148,6 @@
         "desc": "Those who must make a living taking from the more fortunate. Through Stealth, Intimidation, or Speed, Thieves take to sustain the needs of themselves or those they hold close.",
         "examples": ["Robbers", "Muggers"],
         "saves": "You are Proficient in Dexterity and Charisma Saving Throws.",
-        "ability": "Your Dexterity Score increases by 2 and your Charisma Score increases by 1.",
         "custom": {
             "name": "Street Smarts",
             "desc": "You have Proficiency in two of the following: Deception, Intimidation, Perception, Sleight of Hand, or Stealth."
@@ -172,7 +161,6 @@
         "desc": "Someone who has studied for years in order to hone their craft. They use their Strength along with their experience in order to accomplish their tasks.",
         "examples": ["Mechanics", "Blacksmiths / Metal Workers"],
         "saves": "You are Proficient in Strength and Intelligence Saving Throws.",
-        "ability": "Your Strength Score increases by 2 and your Intelligence Score increases by 1.",
         "custom": {
             "name": "Labor Experience",
             "desc": "You have Proficiency in two of the following: Athletics, Arcana, History, Sleight of Hand, or Investigation."
@@ -186,7 +174,6 @@
         "desc": "People of discipline who devote their lives training in the field of combat. Some fight to protect, while others might do so for selfish reasons.",
         "examples": ["Soldiers", "Mercenaries", "Bodyguards"],
         "saves": "You are Proficient in Dexterity and Constitution Saving Throws.",
-        "ability": "Your Dexterity Score increases by 2 and your Constitution Score increases by 1.",
         "custom": {
             "name": "Soldier's Discipline",
             "desc": "You have Proficiency in two of the following: Athletics, Acrobatics, Perception, Stealth, or Survival."
