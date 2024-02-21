@@ -124,6 +124,8 @@ function parseStat(stat) {
             return "Constitution";
         case "Int":
             return "Intelligence";
+        case "Wis":
+            return "Wisdom";
         case "Cha":
             return "Charisma";
         default:
