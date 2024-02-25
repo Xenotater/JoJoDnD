@@ -78,6 +78,9 @@ function updateDisplay() {
 }
 
 function parseASI(asi) {
+    if (asi == "")
+        return "";
+
     let stats = [], vals = [];
     let text = "Your ";
 
