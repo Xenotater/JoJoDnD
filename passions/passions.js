@@ -92,10 +92,10 @@ function parseASI(asi) {
     if ([...new Set(vals)].length == 1) {
         for (let i=0; i<asi.length; i++) {
             text += stats[i];
-            if (i + 2 == asi.length)
-                text += ", and ";
-            else if (i + 1 != asi.length)
+            if (i + 1 != asi.length && asi.length > 2)
                 text += ", ";
+            if (i + 2 == asi.length)
+                text += " and ";
         }
         text += " Scores increase by " + vals[0];
     }
