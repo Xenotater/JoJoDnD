@@ -989,7 +989,7 @@
                 "examples": ["Ebony Devil", "Stray Cat", "Notorious B.I.G.", "Civil War"],
                 "links": ["Ebony_Devil", "Stray_Cat", "Notorious_B.I.G", "Civil_War"],
                 "desc": "Some Stands have immense power but are unable to properly function unless their User feels a certain way. Through feelings of hatred, pain, or loss, certain Stands may manifest properly, showing their true form and relentlessly attacking those who wronged their Users.",
-                "notes": ["You cannot activate a Revenge-Type Stand by yourself. Instead, you must gain enough Grudge points to be able to activate your Stand. An explanation of the Grudge system can be found below."],
+                "notes": ["You cannot activate a Revenge-Type Stand by yourself. Instead, you must gain enough Grudge Points to be able to activate your Stand. An explanation of the Grudge system can be found below."],
                 "hDice": "1d12",
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
@@ -1003,7 +1003,7 @@
                         "<p>You may spend Grudge Points in the following ways:</p>",
                         "<ul><li>1 Point: You may use the Attack Action on your Turn, summon your Stand to assist you with a single Skill Check, use your Stand Ability once, or summon it to take hits and assist you with Saving Throws, until the start of your next Turn.</li>",
                         "<li>3 Points: You may summon your Stand in its entirety for one Turn.</li>",
-                        "<li>5 Points: You may summon your Stand in its entirety for an amount of Turns equal to your level in Revenge-Type (minimum of 2).</li>",
+                        "<li>5 Points: You may summon your Stand in its entirety for an amount of Turns equal to your level in Revenge-Type (minimum of 2).</li></ul>",
                         "If you do not gain any more Grudge Points on a given Turn, your remaining Grudge Points persist for an amount of Turns equal to your level in Revenge-Type, or until spent (minimum of 2)."
                     ]
                 }],

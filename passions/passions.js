@@ -92,7 +92,7 @@ function parseASI(asi) {
         vals.push(stat[1].replace("+", ""));
     }
 
-    if ([...new Set(vals)].length == 1) {
+    if ([...new Set(vals)].length == 1 && asi.length > 1) {
         for (let i=0; i<asi.length; i++) {
             text += stats[i];
             if (i + 1 != asi.length && asi.length > 2)
