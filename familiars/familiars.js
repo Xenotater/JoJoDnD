@@ -157,17 +157,17 @@ function displayClass(fam) {
     if (l.features != null) {
       for (let j=0; j<l.features.length; j++) {
         if (l.features[j] == "OR")
-          newContent += " OR ";
+          text += " OR ";
         else {
-          newContent += "<a class='in-page' id='" + l.features[j].replace(/[ -]/g, "_") + "-link'>" + l.features[j] + "</a>";
+          text += "<a class='in-page' id='" + l.features[j].replace(/[ -]/g, "_") + "-link'>" + l.features[j] + "</a>";
           if ((j != l.features.length - 1 && l.features[j+1] != "OR") || l.other != null)
-            newContent += " | "
+            text += " | "
         }
       }
     }
 
     if (l.other != null) {
-      newContent += l.other;
+      text += l.other;
     }
 
     text += "<td>" + l.dice + "dx</td>";
