@@ -11,21 +11,22 @@
                 $id = $_POST["id"];
                 $name = $mysqli->real_escape_string($_POST["name"]);
                 $img = $mysqli->real_escape_string($_POST["img"]);
+                $img2 = $mysqli->real_escape_string($_POST["img2"]);
                 $form = $mysqli->real_escape_string($_POST["form"]);
                 $acts = $mysqli->real_escape_string($_POST["acts"]);
 
-                if (strlen($img) + strlen($form) >= 536870912) {
+                if (strlen($img) + strlen($img2) + strlen($form) >= 536870912) {
                     echo "<h5 id='response-text'>Character data is too large (0.5GB+). Please contact the site administrator if you beleive this is an error.</h5>";
                     exit;
                 }
 
-                if ($name == "" || $img == "" || $form == "") {
+                if ($name == "" || $img == "" || $img2 == "" || $form == "") {
                     echo "<h5 id='response-text'>An error occurred, please contact the site administrator.</h5>";
                     exit;
                 }
 
                 if ($id == -1) {
-                    $mysqli->query("INSERT INTO characters (username, name, img, data, acts) VALUES ('$user', '$name', '$img', '$form', '$acts')");
+                    $mysqli->query("INSERT INTO characters (username, name, img, img2, data, acts) VALUES ('$user', '$name', '$img', '$img2', '$form', '$acts')");
 
                     if ($mysqli->error)
                         echo "<h5 id='response-text'>An error occurred, please contact the site administrator.</h5><p>{$mysqli->error}</p>";
@@ -35,9 +36,9 @@
                 }
                 else {
                     if ($user == "admin")
-                        $mysqli->query("UPDATE characters SET data = '$form', acts = '$acts', img = '$img' WHERE id = '$id'");
+                        $mysqli->query("UPDATE characters SET data = '$form', acts = '$acts', img = '$img', img2 = '$img2' WHERE id = '$id'");
                     else
-                        $mysqli->query("UPDATE characters SET data = '$form', acts = '$acts', img = '$img' WHERE username = '$user' AND id = '$id'");
+                        $mysqli->query("UPDATE characters SET data = '$form', acts = '$acts', img = '$img', img2 = '$img2' WHERE username = '$user' AND id = '$id'");
 
                     if ($mysqli->error)
                         echo "<h5 id='response-text'>An error occurred, please contact the site administrator.</h5><p>{$mysqli->error}</p>";

@@ -1,6 +1,7 @@
 var scores = { "str": 0, "dex": 0, "con": 0, "int": 0, "wis": 0, "cha": 0 };
 var actScores = [[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0]];
 var act = 0;
+var chart;
 
 $(document).ready(function () {
     if ($("#autofill").is(":checked")) {
@@ -36,6 +37,12 @@ $(document).ready(function () {
             updateSkills(stat);
         });
     }
+
+    createChart();
+
+    $(".stand-score").keyup(function() {
+        updateChart();
+    });
 });
 
 function detectChange(object) {
@@ -211,6 +218,7 @@ function updateStandScore(stat, diff) {
     updateSpeed();
     updateSAC();
     updateAtks();
+    updateChart();
 }
 
 function updateStandMod(stat) {
@@ -447,4 +455,74 @@ function saveScores() {
     saveScore($("#int-score"));
     saveScore($("#wis-score"));
     saveScore($("#cha-score"));
+}
+
+function createChart() {
+    chart = new Chart($("#sArrayChart")[0], {
+        type: 'radar',
+        data: {
+            labels: ['Power', 'Speed', 'Range', 'Durability', 'Precision', 'Potential'],
+            datasets: [{
+                data: getChartData(),
+                fill: true,
+                backgroundColor: 'rgba(255, 0, 0, 0.3)',
+                borderColor: 'rgba(255, 0, 0, 0.7)',
+                pointBackgroundColor: 'rgba(255, 0, 0, 0.7)',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: 'rgba(255, 0, 0, 0.7)',
+                pointRadius: 4
+            }]
+        },
+        options: {
+            scales: {
+                r: {
+                    min: 0,
+                    suggestedMax: 120,
+                    ticks: {
+                        beginAtZero: true,
+                        stepSize: 20,
+                        font: {
+                            size: 8
+                        }
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                  display: false,
+                }
+            }
+        }
+    });
+    updateChart();
+}
+
+function updateChart() {
+    $("#sArrayChart").show();
+    let data = getChartData();
+    let set = new Set(data);
+    if (set.size == 1 && set.has(0)) {
+        $("#sArrayChart").hide();
+    }
+    else {
+        chart.data.datasets[0].data = data;
+        chart.update();
+    }
+}
+
+function getChartData() {
+    let data = [];
+    data.push(getIntVal($("#Sstr-score")));
+    data.push(getIntVal($("#Swis-score")));
+    data.push(getIntVal($("#Sint-score")));
+    data.push(getIntVal($("#Scon-score")));
+    data.push(getIntVal($("#Sdex-score")));
+    data.push(getIntVal($("#Scha-score")));
+    return data;
+}
+
+function getIntVal(elem) {
+    let val = parseInt(elem.val());
+    return isNaN(val) ? 0 : val;
 }

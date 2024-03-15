@@ -23,6 +23,7 @@
         <script async src="https://cdn.jsdelivr.net/npm/jquery-deserialize@2.0.0/src/jquery.deserialize.min.js"></script>
         <script async src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-EQW3R4RE6P"></script>
@@ -537,52 +538,78 @@
                         <div class="center">
                             <div class="page" id="page2">
                                 <div class="heading">
-                                    <h2><b>JoJo D&D Undead Character Sheet</b></h2>
+                                    <h2><b>JoJo D&D Ability Sheet</b></h2>
                                 </div>
                                 <div class="row">
                                     <div class="col-6">
                                         <label for="Uname">Character Name</label>
                                         <input type="text" class="scales" id="Uname" name="Uname">
                                     </div>
-                                    <div class="col-2">
-                                        <label for="headHP">Head Hit Points</label>
-                                        <input type="text" class="numbers" id="headHP" name="headHP">
-                                    </div>
-                                    <div class="col-4">
-                                        <label for="curHeadHP">Current Head Hit Points</label>
-                                        <input type="text" class="numbers" id="curHeadHP" name="curHeadHP">
+                                    <div class="col-6">
+                                        <label for="sName">Stand Name</label>
+                                        <input type="text" class="scales" id="sName" name="sName">
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-6">
-                                        <div><label for="type">Type & Level</label></div>
-                                        <input type="text" class="scales" id="type" name="type">
-                                        <input type="text" class="numbers" id="Ulevel" name="Ulevel">
+                                    <div class="col-2">
+                                        <label for="headHP">Head HP</label>
+                                        <input type="text" class="numbers" id="headHP" name="headHP">
                                     </div>
-                                    <div class="col-3">
+                                    <div class="col-2">
                                         <label for="hac">Head AC</label>
                                         <input type="text" class="numbers" id="hac" name="hac">
                                     </div>
-                                    <div class="col-3">
+                                    <div class="col-2">
                                         <label for="energy">Energy</label>
                                         <input type="text" class="numbers" id="energy" name="energy">
                                     </div>
-                                </div>
-                                <span class="label">Minions</span>
-                                <div class="box" id="minionbox">
-                                    <textarea name="minions"></textarea>
+                                    <div class="col-2">
+                                        <label for="Ulevel">Alt. Level</label>
+                                        <input type="text" class="numbers" id="Ulevel" name="Ulevel">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="standHP">Stand HP</label>
+                                        <input type="text" class="numbers" id="standHP" name="standHP">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="cse">Current SE</label>
+                                        <input type="text" class="numbers" id="cse" name="cse">
+                                    </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-6">
-                                        <span class="label">Class Features</span>
-                                        <div class="box" id="Ufeatbox">
-                                            <textarea name="Ufeats"></textarea>
+                                        <label for="sImage">Stand / Alt. Image</label>
+                                        <div id="sImage">
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" alt="stand-img" id="stand-img">
+                                            <div id="blur2"></div>
+                                            <h2><b><i class="bi bi-plus-square img-icon2" id="upload2"></i></b></h2>
+                                            <h2><b><i class="bi bi-pencil-square img-icon2" id="edit2"></i></b></h2>
+                                            <h2><b><i class="bi bi-x-square img-icon2" id="reset2"></i></b></h2>
+                                            <input type="file" id="img-input2" accept="image/png, image/jpg">
                                         </div>
                                     </div>
                                     <div class="col-6">
-                                        <span class="label">Attacks & Actions</span>
-                                        <div class="box" id="Uatkbox">
-                                            <textarea name="Uatks"></textarea>
+                                        <label for="sArrayBox">Stat Array</label>
+                                        <div id="sArrayBox">
+                                            <canvas id="sArrayChart"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="label">Ability Info</span>
+                                <div class="box" id="abilitybox">
+                                    <textarea name="Uatks"></textarea>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <span class="label">Minions / Equipment</span>
+                                        <div class="box" id="minionbox">
+                                            <textarea name="minions"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <span class="label">Other Notes and Features</span>
+                                        <div class="box" id="othernotebox">
+                                            <textarea name="Ufeats"></textarea>
                                         </div>
                                     </div>
                                 </div>

@@ -110,7 +110,8 @@ $(document).ready(function () {
     $("body").on("click", "#newChar", function() {
         $("#popLoad").remove();
         $("#pages")[0].reset();
-        resetImg();
+        resetImg(true);
+        resetImg(false);
         charID = -1;
         respond("New character created!");
     });
@@ -297,7 +298,7 @@ function respond(text) {
 
 function saveChar() {
     var result = exportData("save");
-    $.post("save.php", { action: "save", id: charID, name: result[0], form: result[1], acts: result[2], img: result[3] }, function(data) {
+    $.post("save.php", { action: "save", id: charID, name: result[0], form: result[1], acts: result[2], img: result[3], img2: result[4] }, function(data) {
         if (data.match(/^[0-9]+/))
             charID = parseInt(data.match(/^[0-9]+/)[0]);
         respond(data.replace(/^[0-9]+/, ""));

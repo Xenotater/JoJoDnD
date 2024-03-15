@@ -15,7 +15,7 @@
                 if ($result) {
                     if ($result->num_rows == 1) {
                         $fetch = $result->fetch_assoc();
-                        echo '{"form":"' . addcslashes($fetch["data"], '"\\') . '","acts":"' . $fetch["acts"] . '","img":"' . $fetch["img"] . '"}';
+                        echo '{"form":"' . addcslashes($fetch["data"], '"\\') . '","acts":"' . $fetch["acts"] . '","img":"' . $fetch["img"] . '","img2":"' . $fetch["img2"] . '"}';
                     }              
                     $result->close();
                 }
