@@ -71,6 +71,10 @@
                 ],
                 "ability": [
                     "Ability Score Improvement"
+                ],
+                "linkFeatures": [
+                    "Slowed Aging",
+                    "Ripple Possession"
                 ]
             },
             "4": {
@@ -93,6 +97,7 @@
                 "pro": "3",
                 "feats": "2",
                 "linkFeatures": [
+                    "Custom Ripple Technique",
                     "Ripple Regeneration",
                     "Ripple Perception"
                 ],
@@ -157,16 +162,14 @@
                 "pro": "4",
                 "feats": "4",
                 "linkFeatures": [
-                    "Custom Ripple Technique"
+                    "Enhanced Custom Ripple Technique"
                 ]
             },
             "12": {
                 "pro": "4",
                 "feats": "4",
                 "linkFeatures": [
-                    "Recovery Breathing",
-                    "OR",
-                    "Ripple Possession"
+                    "Recovery Breathing"
                 ],
                 "ability": [
                     "Increase Str, Dex, or Con Score by 1"
@@ -193,8 +196,7 @@
                 "pro": "5",
                 "feats": "4",
                 "linkFeatures": [
-                    "Deep Pass Overdrive",
-                    "Slowed Aging"
+                    "Deep Pass Overdrive"
                 ]
             },
             "16": {

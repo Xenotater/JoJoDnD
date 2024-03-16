@@ -819,7 +819,7 @@
         "desc": [
             "As an Action, for 3 Ripple Points, you may touch a living being and imbue it with your will and supernatural physicality for a short time.",
             "The creature targeted must make a Charisma Save, shrugging off the effect on a success. A failed save adds +5 to the target's Strength, Dexterity, and Constitution rolls, and forces them to follow whatever simple command you give them for the next minute so long as the command is not directly harmful to the creature.",
-            "This Ability does not work on Constructs or Undead."
+            "This Ability does not work on Constructs."
         ]
     },
     "Conductor_Shield": {
@@ -1926,6 +1926,28 @@
         "desc": [
             "You may add your Proficiency Bonus to Attack Rolls whenever you use a weapon or your Unarmed Strikes, in addition to any other bonuses you may get including Weapon Proficiencies.",
             "Additionally, once per Short Rest when missing an Attack Roll you may instead choose to make the number you rolled a 20, guaranteeing a Critical Hit."
+        ]
+    },
+    "Enhanced_Custom_Ripple_Technique": {
+        "name": "Enhanced Custom Ripple Technique",
+        "desc": [
+            "Talk to your DM to determine how to make your technique more useful\/powerful, or choose from one of the following ways:",
+            "<ul class='sublist'><li>The cost is halved<\/li><li>The amount of dice for the healing\/damage increases, or the damage is rerolled on a 1 or 2 (keeping the new number)<\/li><li>The range is doubled<\/li><li>The move is significantly more effective when put through a ripple conductor (water, living beings, etc)<\/li><\/ul>",
+            "Make sure to check with your DM, as they will want to know how the move has been changed. It's important to check because such a change may be significant, and they need to let you know if it seems game-breaking, or something that will change how they plan based on your character."
+        ],
+        "classes": [
+            "Rip"
+        ]
+    },
+    "Enhanced_Custom_Spin_Technique": {
+        "name": "Enhanced Custom Spin Technique",
+        "desc": [
+            "Talk to your DM to determine how to make your technique more useful\/powerful, or choose from one of the following ways:",
+            "<ul class='sublist'><li>The amount of dice rolled for damage increases<\/li><li>The move may be used at Long Range without penalty<\/li><li>The range is doubled<\/li><li>The amount of space affected by your ability doubles<\/li><\/ul>",
+            "Make sure to check with your DM, as they will want to know how the move has been changed. It's important to check because such a change may be significant, and they need to let you know if it seems game-breaking, or something that will change how they plan based on your character."
+        ],
+        "classes": [
+            "Spin"
         ]
     }
 }
