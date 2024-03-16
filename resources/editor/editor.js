@@ -252,6 +252,7 @@ function filter(node) {
 }
 
 function exportData(mode) {
+    saveAct();
     var data = {};
     data["form"] = JSON.stringify($("#pages").serializeArray());
     data["acts"] = JSON.stringify(actScores);
@@ -280,7 +281,7 @@ function importData(data) {
     if (data["acts"]) {
         actScores = JSON.parse(data["acts"]);
         if ($("#class").val() == "act")
-            updateAct(0, false);
+            loadAct(0);
     }
     saveScores();
 

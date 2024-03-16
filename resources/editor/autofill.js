@@ -43,18 +43,21 @@ $(document).ready(function () {
     $(".stand-score").keyup(function() {
         updateChart();
     });
+
+    
+    $("#act-num").on("change", function() {
+        if ($(this).val() > 3)
+            $(this).val(3);
+        if ($(this).val() < 0)
+            $(this).val(0);
+        saveAct();
+        loadAct($(this).val());
+        updateChart();
+    });
 });
 
 function detectChange(object) {
     var id = $(object).attr("id");
-
-    if (id == "act-num") {
-        if ($(object).val() > 3)
-            $(object).val(3);
-        if ($(object).val() < 0)
-            $(object).val(0);
-        updateAct($(object).val(), true);
-    }
 
     if ($(object).hasClass("scales")) {
         scale(object);
@@ -408,15 +411,16 @@ function updateName(id) {
     }
 }
 
-function updateAct(newAct, saveFirst) {
-    if (saveFirst) {
-        actScores[act][0] = parseInt($("#Sstr-score").val()) || 0;
-        actScores[act][1] = parseInt($("#Sdex-score").val()) || 0;
-        actScores[act][2] = parseInt($("#Scon-score").val()) || 0;
-        actScores[act][3] = parseInt($("#Sint-score").val()) || 0;
-        actScores[act][4] = parseInt($("#Swis-score").val()) || 0;
-        actScores[act][5] = parseInt($("#Scha-score").val()) || 0;
-    }
+function saveAct() {
+    actScores[act][0] = parseInt($("#Sstr-score").val()) || 0;
+    actScores[act][1] = parseInt($("#Sdex-score").val()) || 0;
+    actScores[act][2] = parseInt($("#Scon-score").val()) || 0;
+    actScores[act][3] = parseInt($("#Sint-score").val()) || 0;
+    actScores[act][4] = parseInt($("#Swis-score").val()) || 0;
+    actScores[act][5] = parseInt($("#Scha-score").val()) || 0;
+}
+
+function loadAct(newAct) {
     act = newAct;
     $("#Sstr-score").val(actScores[act][0]);
     $("#Sdex-score").val(actScores[act][1]);
