@@ -2695,6 +2695,7 @@
                 "pro": "3",
                 "feats": "2",
                 "linkFeatures": [
+                    "Custom Spin Technique",
                     "Harden Flesh"
                 ]
             },
@@ -2755,7 +2756,7 @@
                 "pro": "4",
                 "feats": "4",
                 "linkFeatures": [
-                    "Custom Spin Technique"
+                    "Enhanced Custom Spin Technique"
                 ]
             },
             "12": {
