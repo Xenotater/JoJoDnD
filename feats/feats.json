@@ -1,12 +1,14 @@
 {
     "Adrenaline_Rush": {
         "name": "Adrenaline Rush",
-        "desc": "The body has a remarkable tendency to keep itself alive in tough situations, and your body is even better at doing so.",
+        "desc": [
+            "The body has a remarkable tendency to keep itself alive in tough situations, and your body is even better at doing so."
+        ],
         "effects": [
-            "As a Bonus Action, you may gain Advantage on all Strength, Dexterity, and Constitution Saving Throws until the beginning of your next Turn. You also gain an amount of temporary Hit Points equal to your Level which remain until your next Short or Long Rest.",
+            "A a Bonus Action, you may gain Advantage on all Strength, Dexterity, and Constitution Saving Throws until the beginning of your next Turn. You also gain an amount of temporary Hit Points equal to your Level which remain until your next Short or Long Rest.",
             "You can use this Feat an amount of times equal to your Strength Modifier per Long Rest."
         ],
-        "prereq": "Str 13+ or <a href='/passions/?focus=Hard_Laborer'>Hard Laborer</a>"
+        "prereq": "Str 13+ or <a href='\/passions\/?focus=Hard_Laborer'>Hard Laborer<\/a>"
     },
     "Art_of_Distraction": {
         "name": "Art of Distraction",
@@ -24,7 +26,7 @@
         "effects": [
             "When you make at least one attack using your Stand you as the User may also make an attack as a Bonus Action. This attack may be made with a Weapon, Unarmed Strike, or any other action that counts as a singular Attack (such as a Grapple). This attack must use your own Stats, not your Stand's."
         ],
-        "prereq": "<a href='/classes/?focus=Stands'>Stand User</a> Level 1+"
+        "prereq": "<a href='\/classes\/?focus=Stands'>Stand User<\/a> Level 1+"
     },
     "Brutality": {
         "name": "Brutality",
@@ -39,7 +41,7 @@
         "effects": [
             "You may use Intelligence, Wisdom, or Charisma to determine your Stand DC, and your Stand DC increases by 2."
         ],
-        "prereq": "<a href='/classes/?focus=Stands'>Stand User</a> Level 1+"
+        "prereq": "<a href='\/classes\/?focus=Stands'>Stand User<\/a> Level 1+"
     },
     "Catlike_Agility": {
         "name": "Catlike Agility",
@@ -48,7 +50,7 @@
             "Once per Short Rest, you may Dodge as a Bonus Action.",
             "Additionally, while Dodging through any means, you may reduce incoming damage by half until the start of your next Turn."
         ],
-        "prereq": "Dex 13+ or <a href='/passions/?focus=Artist'>Artist</a>"
+        "prereq": "Dex 13+ or <a href='\/passions\/?focus=Artist'>Artist<\/a>"
     },
     "Clever_Disguise": {
         "name": "Clever Disguise",
@@ -74,13 +76,13 @@
             "You may make Medicine Checks as a Bonus Actions.",
             "If you have a first aid kit or something similar you may make a DC 15 Medicine Check as an Action upon a creature that you can touch. On success, the creature may spend an amount of Hit Dice equal to their Proficiency Bonus to heal that amount plus your Level."
         ],
-        "prereq": "Int 13+ or <a href='/passions/?focus=Medical_Expert'>Medical Expert</a>"
+        "prereq": "Int 13+ or <a href='\/passions\/?focus=Medical_Expert'>Medical Expert<\/a>"
     },
-    "Commentator" : {
+    "Commentator": {
         "name": "Commentator",
         "desc": "You're able to follow what's happening in combat and describe it for others.",
         "effects": [
-            "As a reaction, you may use the Help Action on an ally within 10 meters. However, your character must narrate what they are doing (Like <a href=\"https://jojowiki.com/Robert_E._O._Speedwagon\" target=\"_blank\">Speedwagon</a>).",
+            "As a reaction, you may use the Help Action on an ally within 10 meters. However, your character must narrate what they are doing (Like <a href=\"https:\/\/jojowiki.com\/Robert_E._O._Speedwagon\" target=\"_blank\">Speedwagon<\/a>).",
             "You may do this an amount of times equal to your Charisma Modifier per Long Rest."
         ]
     },
@@ -88,7 +90,7 @@
         "name": "Consistent Accuracy",
         "desc": "You're very skilled at judging distance and accurately striking your target.",
         "effects": [
-            "Whenever you make a ranged weapon attack, thrown weapon attack, a Stand's <a href='/abilities/?focus=Ranged_Attack'>Ranged Attack</a>, or balls for use with <a href='/classes/?focus=Spin'>The Spin</a>, before you hear if the result hits your target or not you may choose to make the roll of the attack 10, and then add all of your typical modifiers. You may use this ability once per Short or Long Rest.",
+            "Whenever you make a ranged weapon attack, thrown weapon attack, a Stand's <a href='\/abilities\/?focus=Ranged_Attack'>Ranged Attack<\/a>, or balls for use with <a href='\/classes\/?focus=Spin'>The Spin<\/a>, before you hear if the result hits your target or not you may choose to make the roll of the attack 10, and then add all of your typical modifiers. You may use this ability once per Short or Long Rest.",
             "Additionally, whenever you have Advantage on one of the types of ranged attacks mentioned above, you may roll 3 dice rather than 2, and take the highest of the result."
         ]
     },
@@ -106,7 +108,7 @@
             "When making an Attack with a Ranged or Thrown weapon you may choose to use a full Action and Bonus Action to attack. If you choose to do this, you can add your To-Hit Bonus twice.",
             "Upon a successful Hit, you may roll double the Damage Dice that you would roll normally and gain Advantage on them.",
             "This Feat may be activated even when you use the ability that gives you Advantage on a Sniper Rifle.",
-            "When used with <a href='/abilities/?focus=Ranged_Attack'>Ranged Attack</a> this Feat instead only gives Advantage on the Damage Dice rolled."
+            "When used with <a href='\/abilities\/?focus=Ranged_Attack'>Ranged Attack<\/a> this Feat instead only gives Advantage on the Damage Dice rolled."
         ],
         "prereq": "Dex 13+"
     },
@@ -125,13 +127,13 @@
         "effects": [
             "You may make an object a permanent part of your Stand by imbuing it with Stand Energy for 8 hours. ",
             "The object now deals Stand damage and gains the same resistance that the rest of your Stand has.",
-            "If the object is destroyed, it does not damage the User in any way and it regenerates mass at a rate of 1kg/hour.",
+            "If the object is destroyed, it does not damage the User in any way and it regenerates mass at a rate of 1kg\/hour.",
             "If the object is a Ranged Weapon then you may refill its ammo to maximum capacity as a single Attack at the cost of 1 Stand Energy.",
             "If the weapon is non-explosive and its maximum capacity is less than 5, you still get 5 'shots' before needing to expend Stand Energy again.",
             "This Feat may not be replaced once the object is permanently imbued.",
             "You may take this Feat multiple times if desired."
         ],
-        "prereq": "<a href='/classes/?focus=Stands'>Stand User</a> Level 1+"
+        "prereq": "<a href='\/classes\/?focus=Stands'>Stand User<\/a> Level 1+"
     },
     "Enhanced_Stand_Senses": {
         "name": "Enhanced Stand Senses",
@@ -140,7 +142,7 @@
             "As an Action, you may focus on one or more of the particular senses of your Stand to a superhuman degree. Being able to see clear details from a kilometer away, hearing a nearby foe's heartbeat, or detecting a change of humidity in the air using touch are all examples of ways this ability may be used.",
             "When your Stand is summoned, you gain +10 to your Passive Perception, as well as any Perception Checks that you make with it."
         ],
-        "prereq": "<a href='/abilities/?focus=Detached_Senses'>Detached Senses</a>"
+        "prereq": "<a href='\/abilities\/?focus=Detached_Senses'>Detached Senses<\/a>"
     },
     "Specialized_Save": {
         "name": "Specialized Save",
@@ -175,7 +177,7 @@
             "Whenever someone you consider to be a close ally or friend fulfills one of the conditions where Grudge Points are gained, you gain a Grudge Point.",
             "You may only have one ally at a time where these conditions are met on, and you may change which one you have selected as a Bonus Action."
         ],
-        "prereq": "<a href='/classes/?focus=Revenge'>Revenge-Type User</a> Level 1+"
+        "prereq": "<a href='\/classes\/?focus=Revenge'>Revenge-Type User<\/a> Level 1+"
     },
     "Guerilla_Fighter": {
         "name": "Guerilla Fighter",
@@ -190,7 +192,7 @@
         "name": "Headhunter",
         "desc": "You've fought the Undead many times before, and you know their tricks and how to best defeat them.",
         "effects": [
-            "You may add your Proficiency Bonus an additional time for any Attack Roll made against an <a href='/abilities/?focus=Undead_Nature'>Undead Creature's</a> Head.",
+            "You may add your Proficiency Bonus an additional time for any Attack Roll made against an <a href='\/abilities\/?focus=Undead_Nature'>Undead Creature's<\/a> Head.",
             "You gain Advantage on any Saving Throws against effects inflicted by an Undead Creature."
         ]
     },
@@ -243,9 +245,9 @@
         "effects": [
             "You gain Advantage on all Persuasion and Deception Checks on people that you've met within the past 24 hours."
         ],
-        "prereq": "Cha 13+ or <a href='/passions/?focus=Con_Artist'>Con Artist</a>"
+        "prereq": "Cha 13+ or <a href='\/passions\/?focus=Con_Artist'>Con Artist<\/a>"
     },
-    "Immense_Impact" : {
+    "Immense_Impact": {
         "name": "Immense Impact",
         "desc": "You're used to utilizing momentum to attack your foes with a powerful attack, hitting them immediately and head-on.",
         "effects": [
@@ -259,9 +261,9 @@
         "effects": [
             "You learn an additional 4 languages of your choice.",
             "You are also able to quickly teach people who are unfamiliar with a language that you know basic words, symbols, and cultural norms that are particularly relevant over the course of a Long Rest. Even if they cannot comprehend the language fluently, they are able to use basic communication to gesture towards simple ideas, concepts, or ask for someone who speaks a language that they know.",
-            "Additionally, you have advantage on any Skill Check to attempt to comprehend an unknown language."        
+            "Additionally, you have advantage on any Skill Check to attempt to comprehend an unknown language."
         ],
-        "prereq": "Int 13+ or <a href='/passions/?focus=Hospitality_Worker'>Hospitality Worker</a>"
+        "prereq": "Int 13+ or <a href='\/passions\/?focus=Hospitality_Worker'>Hospitality Worker<\/a>"
     },
     "Improvised_Healing": {
         "name": "Improvised Healing",
@@ -272,7 +274,7 @@
             "2: Allow an ally afflicted with a disease or poison to make a Saving Throw against it with Advantage. If the Saving Throw is successful, the effect ends.",
             "3: You may create a makeshift first aid kit. You may have a maximum amount of these equal to your Proficiency Bonus. You may use one as an Action, which allows you to make a Medicine Check with Advantage. In addition, the target gains an amount of temporary Hit Points equal to half your Level, which remain until they are used or until the end of their next Short Rest."
         ],
-        "prereq": "Wis 13+ or <a href='/passions/?focus=Survivalist'>Survivalist</a>"
+        "prereq": "Wis 13+ or <a href='\/passions\/?focus=Survivalist'>Survivalist<\/a>"
     },
     "Jack_of_all_Trades": {
         "name": "Jack of all Trades",
@@ -289,7 +291,7 @@
             "Additionally, when you make a Wisdom or Charisma Skill Check, you may replace the Ability Score used with Intelligence.",
             "You may use this Feat for Skill Checks once per Short Rest."
         ],
-        "prereq": "Int 13+ or <a href='/passions/?focus=Academic'>Academic</a>"
+        "prereq": "Int 13+ or <a href='\/passions\/?focus=Academic'>Academic<\/a>"
     },
     "Light_Sleeper": {
         "name": "Light Sleeper",
@@ -333,7 +335,7 @@
             "You may add your Proficiency Bonus to your Initiative Bonus, and enemies that attempt to surprise you get Disadvantage instead of Advantage on their Surprise Attack. Additionally, you may use your Stand to defend against Surprise Attacks if you have one."
         ]
     },
-    "Perfected_Craft" : {
+    "Perfected_Craft": {
         "name": "Perfected Craft",
         "desc": "You've spent countless hours training a specific skill, and it's clear that effort paid off.",
         "effects": [
@@ -401,7 +403,7 @@
     },
     "Sentient_Stand": {
         "name": "Sentient Stand",
-        "prereq": "Cannot have <a href='/abilities?focus=Detached_Senses'>Detached Senses</a>.",
+        "prereq": "Cannot have <a href='\/abilities?focus=Detached_Senses'>Detached Senses<\/a>.",
         "desc": "You and your Stand have two separate minds and personalities, and your Stand may act independently from you. Your Stand might even have different strengths and weaknesses from you.",
         "effects": [
             "In order for you and your Stand to communicate, you must be within line of sight of each other, or have some other method of communication like walkie-talkies or a phone call.",
@@ -456,7 +458,7 @@
             "You may gain Immunities at the cost of Vulnerabilities as many times as you wish.",
             "Vulnerabilities gained through this Feat cannot be cancelled out by Resistance or Immunity gained through any means."
         ],
-        "prereq": "<a href='/abilities/?focus=Anchored_Stand'>Anchored Stand</a>"
+        "prereq": "<a href='\/abilities\/?focus=Anchored_Stand'>Anchored Stand<\/a>"
     },
     "Superhuman": {
         "name": "Superhuman",
@@ -480,7 +482,7 @@
         "desc": "Through experience and tussles, you've gained the ability to make objects from your environment into effective weaponry.",
         "effects": [
             "You gain Proficiency in the use of Improvised weapons.",
-            "When making a melee attack on your Turn, you may either make another attack with an Improvised weapon or Grapple/Shove your target as a Bonus Action.",
+            "When making a melee attack on your Turn, you may either make another attack with an Improvised weapon or Grapple\/Shove your target as a Bonus Action.",
             "If you are already Proficient in the use of an Improvised weapon, you gain Expertise in it."
         ]
     },
@@ -491,7 +493,7 @@
             "When you take the Attack Action, you may perform an additional Attack.",
             "You may take this Feat up to 3 times, granting a maximum of four Attacks per Action."
         ],
-        "prereq": "Cannot be a <a href='/classes/?focus=Stands'>Stand User</a>"
+        "prereq": "Cannot be a <a href='\/classes\/?focus=Stands'>Stand User<\/a>"
     },
     "Trap_Detection": {
         "name": "Trap Detection",
@@ -540,7 +542,7 @@
             "You may perform a Reckless Dash, where, as an Action, you may move up to three times your Movement Speed.",
             "You may perform a Reckless Dash an amount of times equal to your Strength Modifier per Short or Long Rest."
         ],
-        "prereq": "Str 13+ or <a href='/passions/?focus=Athlete'>Athlete</a>"
+        "prereq": "Str 13+ or <a href='\/passions\/?focus=Athlete'>Athlete<\/a>"
     },
     "Professional_Weapon_Training": {
         "name": "Professional Weapon Training",
@@ -572,13 +574,15 @@
     "Familiar_Bond": {
         "name": "Familiar Bond",
         "desc": "You have an animal companion that you have built a significant bond of trust with.",
-        "effects": ["Choose an animal to be your companion, then head to the <a href='/familiars'>Familiars</a> page to build them."]
+        "effects": [
+            "Choose an animal to be your companion, then head to the <a href='\/familiars'>Familiars<\/a> page to build them."
+        ]
     },
     "Familiar_Fighting_Spirit": {
         "name": "Familiar Fighting Spirit",
-        "desc": "Your Familiar is quite special, and through its strong fighting spirit, has developed a <a href='/classes?focus=Stands'>Stand</a> of its own.",
+        "desc": "Your Familiar is quite special, and through its strong fighting spirit, has developed a <a href='\/classes?focus=Stands'>Stand<\/a> of its own.",
         "effects": [
-            "In order for your Familiar to have a Stand, <b>both of you must have this Feat</b>.",
+            "In order for your Familiar to have a Stand, <b>both of you must have this Feat<\/b>.",
             "Your Familiar now uses Stand features rather than the ones normally gained by Familiars.",
             "They still roll Familiar stats for determining Ability Scores, they keep their size, may only use Familiar Feats, and they use the Familiar's scaling Ability dice."
         ]
@@ -591,22 +595,22 @@
             "Your Stand becomes bound in reality as a more tangible object. Therefore, when summoned it has a physical form that surrounds parts of or the entire User and is visible, even to those without a Stand. It is also now able to be affected by Non-Stand damage types.",
             "You are now able to increase any stat (except Range) that your Stand has that you would normally be unable to increase. For example, an Ability-Type Suit Stand User could increase their Power and Durability past their initial values.",
             "Additionally, your Stand gets a multiplier boost of 2 for its physical stats. For example, a Power-Type which would typically have x4, x3, x3 for Power, Precision, Durability would get boosted to x6, x5, and x5 respectively as a Suit Stand.",
-            "You also gain <a href='/abilities/?focus=Anchored_Stand'>Anchored Stand</a> if you don't already have it."
+            "You also gain <a href='\/abilities\/?focus=Anchored_Stand'>Anchored Stand<\/a> if you don't already have it."
         ],
-        "prereq": "<a href='/classes/?focus=Stands'>Stand User</a> Level 1+"
+        "prereq": "<a href='\/classes\/?focus=Stands'>Stand User<\/a> Level 1+"
     },
     "Weapon_Feat": {
         "name": "Weapon Feat",
-        "desc": "<b>THIS IS NOT A FEAT</b>, this is a category of Feats.",
+        "desc": "<b>THIS IS NOT A FEAT<\/b>, this is a category of Feats.",
         "effects": [
-            "Please select a Feat from the list below. You may not gain the same Feat from this list twice, unless otherwise specified.<ul class='sublist'><li><a class='in-page'>Demolitionist</a></li><li><a class='in-page'>Heavy Specialization</a></li><li><a class='in-page'>Martial Arts</a></li><li><a class='in-page'>Melee Specialization</a></li><li><a class='in-page'>Professional Weapon Training</a></li><li><a class='in-page'>Shield Proficiency</a></li><li><a class='in-page'>Shotgun Specialization</a></li><li><a class='in-page'>Sidearm Specialization</a></li><li><a class='in-page'>Simple Weapon Focus</a></li><li><a class='in-page'>Tavern Brawler</a></li><li><a class='in-page'>Thrown Weapon Specialization</a></li></ul>"
+            "Please select a Feat from the list below. You may not gain the same Feat from this list twice, unless otherwise specified.<ul class='sublist'><li><a class='in-page'>Demolitionist<\/a><\/li><li><a class='in-page'>Heavy Specialization<\/a><\/li><li><a class='in-page'>Martial Arts<\/a><\/li><li><a class='in-page'>Melee Specialization<\/a><\/li><li><a class='in-page'>Professional Weapon Training<\/a><\/li><li><a class='in-page'>Shield Proficiency<\/a><\/li><li><a class='in-page'>Shotgun Specialization<\/a><\/li><li><a class='in-page'>Sidearm Specialization<\/a><\/li><li><a class='in-page'>Simple Weapon Focus<\/a><\/li><li><a class='in-page'>Tavern Brawler<\/a><\/li><li><a class='in-page'>Thrown Weapon Specialization<\/a><\/li><\/ul>"
         ]
     },
     "Epic_Feat": {
         "name": "Epic Feat",
-        "desc": "<b>THIS IS NOT A FEAT</b>, this is a category of Feats.</p><p>This is a rule option for those wanting to run powerful boss characters who can stand up to a group of enemies by themselves. A particularly powerful and experienced Stand User may have the ability to take 1 Epic Feat, one of notable power may have up to 2, and very may even have up to 3, and these are generally reserved for end-game bosses.</p><p>These Epic Feats still take a regular Feat slot to obtain, and who gets them or if they're allowed at all is entirely up to the DM.",
+        "desc": "<b>THIS IS NOT A FEAT<\/b>, this is a category of Feats.<\/p><p>This is a rule option for those wanting to run powerful boss characters who can stand up to a group of enemies by themselves. A particularly powerful and experienced Stand User may have the ability to take 1 Epic Feat, one of notable power may have up to 2, and very may even have up to 3, and these are generally reserved for end-game bosses.<\/p><p>These Epic Feats still take a regular Feat slot to obtain, and who gets them or if they're allowed at all is entirely up to the DM.",
         "effects": [
-            "You may gain an Epic Feat from the list below, if your DM allows it:<ul class='sublist'><li><a class='in-page'>Extreme Motivation</a></li><li><a class='in-page'>Health Sponge</a></li><li><a class='in-page'>Immovable Object</a></li><li><a class='in-page'>Legendary Recovery</a></li><li><a class='in-page'>Skill Master</a></li><li><a class='in-page'>Superhuman Ability</a></li><li><a class='in-page'>Terrifying Aura</a></li><li><a class='in-page'>Uncanny Reflexes</a></li><li><a class='in-page'>Unstoppable Force</a></li><li><a class='in-page'>Warrior's Zeal</a></li></ul>"
+            "You may gain an Epic Feat from the list below, if your DM allows it:<ul class='sublist'><li><a class='in-page'>Extreme Motivation<\/a><\/li><li><a class='in-page'>Health Sponge<\/a><\/li><li><a class='in-page'>Immovable Object<\/a><\/li><li><a class='in-page'>Legendary Recovery<\/a><\/li><li><a class='in-page'>Skill Master<\/a><\/li><li><a class='in-page'>Superhuman Ability<\/a><\/li><li><a class='in-page'>Terrifying Aura<\/a><\/li><li><a class='in-page'>Uncanny Reflexes<\/a><\/li><li><a class='in-page'>Unstoppable Force<\/a><\/li><li><a class='in-page'>Warrior's Zeal<\/a><\/li><\/ul>"
         ]
     },
     "Extreme_Motivation": {
@@ -615,14 +619,14 @@
             "You may choose to succeed on an amount of Saving Throws equal to your Proficiency Bonus, taking an amount of Necrotic damage equal to the Level of the character who caused the Save instead.",
             "The damage from this may not be reduced or avoided in any way."
         ],
-        "prereq": "<a class='in-page'>Epic Feat</a> allowed by your DM"
+        "prereq": "<a class='in-page'>Epic Feat<\/a> allowed by your DM"
     },
     "Health_Sponge": {
         "name": "Health Sponge",
         "effects": [
             "Your Hit Points increase by an amount equal to three times your Level."
         ],
-        "prereq": "<a class='in-page'>Epic Feat</a> allowed by your DM"
+        "prereq": "<a class='in-page'>Epic Feat<\/a> allowed by your DM"
     },
     "Immovable_Object": {
         "name": "Immovable Object",
@@ -630,28 +634,28 @@
             "You gain Proficiency in two additional Saving Throws.",
             "You also gain Advantage against any Ability or effect that would move you against your will or know you Prone, such as a Stand Ability or someone trying to Grapple or Shove you."
         ],
-        "prereq": "<a class='in-page'>Epic Feat</a> allowed by your DM"
+        "prereq": "<a class='in-page'>Epic Feat<\/a> allowed by your DM"
     },
     "Legendary_Recovery": {
         "name": "Legendary Recovery",
         "effects": [
             "You regain 3 Ripple Points at the start of your Turn if you are able to comfortably breathe, rather than just regaining 1."
         ],
-        "prereq": "<a href='/classes?focus=Ripple'>Ripple</a> Level 1+, <a class='in-page'>Epic Feat</a> allowed by your DM"
+        "prereq": "<a href='\/classes?focus=Ripple'>Ripple<\/a> Level 1+, <a class='in-page'>Epic Feat<\/a> allowed by your DM"
     },
     "Skill_Master": {
         "name": "Skill Master",
         "effects": [
             "You may gain Mastery (three time Proficiency Bonus) in a Skill that you have Proficiency or Expertise in, and you gain Expertise in up to two Skills that you have Proficiency in."
         ],
-        "prereq": "<a class='in-page'>Epic Feat</a> allowed by your DM"
+        "prereq": "<a class='in-page'>Epic Feat<\/a> allowed by your DM"
     },
     "Superhuman_Ability": {
         "name": "Superhuman Ability",
         "effects": [
             "One of your Ability Scores increases by 4 up to a maximum of 24."
         ],
-        "prereq": "<a class='in-page'>Epic Feat</a> allowed by your DM"
+        "prereq": "<a class='in-page'>Epic Feat<\/a> allowed by your DM"
     },
     "Terrifying_Aura": {
         "name": "Terrifying Aura",
@@ -659,7 +663,7 @@
             "Anyone within 20m of you who can see or hear you must make a Wisdom Saving Throw against a DC of 8 + your Proficiency Bonus + your Charisma Modifier. If they fail the Save, they become Frightened of you for one minute, or until they succeed the Save, which they may remake at the end of each of their Turns.",
             "Those who succeed the Saving Throw or have been under the effect within the last 24 hours become immune to the effect for the next 24 hours."
         ],
-        "prereq": "<a class='in-page'>Epic Feat</a> allowed by your DM"
+        "prereq": "<a class='in-page'>Epic Feat<\/a> allowed by your DM"
     },
     "Warriors_Zeal": {
         "name": "Warrior's Zeal",
@@ -667,7 +671,7 @@
             "You gain Proficiency in the use of all weapons and Expertise in up to three of your choice",
             "Additionally, you deal an additional amount of damage equal to your Proficiency Bonus with any weapon."
         ],
-        "prereq": "<a class='in-page'>Epic Feat</a> allowed by your DM"
+        "prereq": "<a class='in-page'>Epic Feat<\/a> allowed by your DM"
     },
     "Uncanny_Reflexes": {
         "name": "Uncanny Reflexes",
@@ -675,7 +679,7 @@
             "You may halve any damage taken due to failing a Dexterity Saving Throw. If you succeed a Dexterity Saving Throw that would have dealt damage on success, it does not.",
             "Additionally, you may spend your Reaction to halve the damage of any Attack directed at you from a foe you can see."
         ],
-        "prereq": "<a class='in-page'>Epic Feat</a> allowed by your DM"
+        "prereq": "<a class='in-page'>Epic Feat<\/a> allowed by your DM"
     },
     "Unstoppable_Force": {
         "name": "Unstoppable Force",
@@ -683,7 +687,7 @@
             "You deal triple damage to all objects and structures",
             "Additionally, when attacking a target, you may also choose to target a part of the environment within 1m of the target to cause damage to it as well."
         ],
-        "prereq": "<a class='in-page'>Epic Feat</a> allowed by your DM"
+        "prereq": "<a class='in-page'>Epic Feat<\/a> allowed by your DM"
     },
     "Defensive_Stance": {
         "name": "Defensive Stance",
@@ -707,7 +711,7 @@
         "effects": [
             "Once per Short Rest, you may Dodge as a Bonus Action.",
             "Additionally, while Dodging through any means, you gain an amount of AC equal to your Proficiency Bonus.",
-            "If you are a <a href='/classes?focuse=Stands'>Stand User</a>, you may instead choose to double your Stand AC."
+            "If you are a <a href='\/classes?focuse=Stands'>Stand User<\/a>, you may instead choose to double your Stand AC."
         ],
         "prereq": "Dex 13+"
     },
@@ -718,9 +722,9 @@
             "Your Stand is able to increase by one size category, so long as you have enough material for your Stand to anchor onto. Each size category increase requires an amount of material equivalent to twice your Stand's current mass of material. You may estimate this or ask your DM to estimate it, no need to do volume and density math to figure it out.",
             "You may take this Feat up to three times, increasing by another size category (and doubling the required material mass) for each one.",
             "For each category increase, your Stand must be closer to you. For one category, it must be within half of its Range, a quarter for two, and an eighth for three.",
-            "Due to the increase in size, your Stand gains the following benefits:<ul class='sublist><li>Each category increases your Stand's Range score by an additional multiplier (for example, x2 becomes x3, and so on).</li><li>Your Stand's Attack dice increase, giving an additional 1d10 before Level 11 or an additional 2d8 after, per category increase.</li><li>Your Stand's melee Attacks have a sweeping effect, causing them to hit everyone within a 1m cone rather than a single target. The radius of this cone increases by 1m for each category increase. You only need to make one Attack Roll against the ACs of all targets in range.</li><li>Your Stand has more lifting and carrying capacity relative to its new size.</li><li>Your Stand gains an additional amount of Damage Reduction equal to its Durability Modifier for each additional category increase.</ul>"
+            "Due to the increase in size, your Stand gains the following benefits:<ul class='sublist><li>Each category increases your Stand's Range score by an additional multiplier (for example, x2 becomes x3, and so on).<\/li><li>Your Stand's Attack dice increase, giving an additional 1d10 before Level 11 or an additional 2d8 after, per category increase.<\/li><li>Your Stand's melee Attacks have a sweeping effect, causing them to hit everyone within a 1m cone rather than a single target. The radius of this cone increases by 1m for each category increase. You only need to make one Attack Roll against the ACs of all targets in range.<\/li><li>Your Stand has more lifting and carrying capacity relative to its new size.<\/li><li>Your Stand gains an additional amount of Damage Reduction equal to its Durability Modifier for each additional category increase.<\/ul>"
         ],
-        "prereq": "<a href='/classes/?focus=Enhancement'>Enhancement-Type</a> or <a href='/classes/?focus=Independent'>Independent-Type</a> User Level 1+"
+        "prereq": "<a href='\/classes\/?focus=Enhancement'>Enhancement-Type<\/a> or <a href='\/classes\/?focus=Independent'>Independent-Type<\/a> User Level 1+"
     },
     "Shield_Proficiency": {
         "name": "Shield Proficiency",
@@ -736,8 +740,8 @@
         "effects": [
             "Your Stand is massively powerful, but is interested in pursuing its own motives, sometimes being willing to harm allies or the user to do so. The only control the user has over their Stand is to have them summoned or not.",
             "Functionally, the stand will generally do what you suggest it to and you can influence its actions, but its behavior is ultimately determined by the DM.",
-            "In addition, your stand gains two of the following benefits:<ul class='sublist'><li>Your Stands Custom Ability massively increases in potency. For example, if your Stand uses scaling dice, you gain an additional amount of Ability Dice equal to your Proficiency Bonus. Alternatively, you may speak to your DM about increasing the potency of your Stands Ability in some other way, similar to <a href='/abilities/Enhanced_Custom_Ability'>Enhanced Custom Ability</a>.</li><li>Your Range becomes irrelevant, and affects everyone or everything on the planet.</li><li>Your Stand Energy becomes 0, and your Stands Abilities may be used without cost.</li><li>Two of your Stands stats of your choice are doubled, as well as all of the points you put into those stats later.</li><li>Your Stand DC increases by an amount equal to your Proficiency Bonus.</li></ul>"
+            "In addition, your stand gains two of the following benefits:<ul class='sublist'><li>Your Stands Custom Ability massively increases in potency. For example, if your Stand uses scaling dice, you gain an additional amount of Ability Dice equal to your Proficiency Bonus. Alternatively, you may speak to your DM about increasing the potency of your Stands Ability in some other way, similar to <a href='\/abilities\/Enhanced_Custom_Ability'>Enhanced Custom Ability<\/a>.<\/li><li>Your Range becomes irrelevant, and affects everyone or everything on the planet.<\/li><li>Your Stand Energy becomes 0, and your Stands Abilities may be used without cost.<\/li><li>Two of your Stands stats of your choice are doubled, as well as all of the points you put into those stats later.<\/li><li>Your Stand DC increases by an amount equal to your Proficiency Bonus.<\/li><\/ul>"
         ],
-        "prereq": "<a href='/classes/?focus=Stands'>Stand User</a> Level 1+, Cannot be a Remote-Type or Independent-Type Stand User"
+        "prereq": "<a href='\/classes\/?focus=Stands'>Stand User<\/a> Level 1+, Cannot be a Remote-Type or Independent-Type Stand User"
     }
 }
