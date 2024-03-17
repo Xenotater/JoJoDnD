@@ -40,7 +40,7 @@ $(document).ready(function () {
 
     createChart();
 
-    $(".stand-score").keyup(function() {
+    $(".bigBox, .lilBox").keyup(function() {
         updateChart();
     });
 
