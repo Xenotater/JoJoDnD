@@ -5,7 +5,7 @@
             "Rng"
         ],
         "desc": [
-            "Melee attacks from your stand or the Focused Attack from <a class='in-page'>Ranged Attack<\/a> gain the Ambush property, meaning that they always inflict a Critical hit when attacking a Surprised target."
+            "Melee attacks from your stand or the Focused Attack from <a class=\"in-page\">Ranged Attack<\/a> gain the Ambush property, meaning that they always inflict a Critical hit when attacking a Surprised target."
         ]
     },
     "Anchored_Stand": {
@@ -423,7 +423,7 @@
             "Pwr"
         ],
         "desc": [
-            "When you are hit with a melee attack, you may use your Reaction to halve the damage of any melee attack from that opponent until the start of your next turn.",
+            "When you are hit with a melee attack, you may use your Reaction to halve the damage of any melee attack from that opponent until the start of your next Turn.",
             "Additionally, the first time they damage you with a melee attack after using this Ability you may make a single melee attack in return.",
             "You may also use this to halve the damage of an incoming Melee Barrage, making your own in response at no additional Action Economy cost. However, this free Melee Barrage only deals half damage as well."
         ]
@@ -560,7 +560,7 @@
             "Act"
         ],
         "desc": [
-            "As a Free Action you may swap between Acts of your Stand, even if you have already done so this turn. The other requirements for switching between Acts still apply.",
+            "As a Free Action you may swap between Acts of your Stand, even if you have already done so this Turn. The other requirements for switching between Acts still apply.",
             "You may use this Ability once per Short Rest."
         ]
     },
@@ -638,7 +638,8 @@
             "Rev"
         ],
         "desc": [
-            "As a Reaction you may choose to gain Advantage on all attack rolls until your next turn, but all enemies gain Advantage on any attack rolls against you as well."
+            "As a Free Action, you may choose to gain Advantage on all attack rolls until your next Turn, but all enemies gain Advantage on any attack rolls against you as well.",
+            "If enemies already have Advantage to attack you, they roll 3d20 and take the highest roll. "
         ]
     },
     "Rejuvenation": {
@@ -798,7 +799,7 @@
         ],
         "desc": [
             "You've learned one of the following schools of combat that enables you to better use your Ripple combatively.",
-            "<ul class='sublist'><li><b>Disciplined<\/b>: You gain Proficiency in 2 Saving Throws of your Choice.<\/li><li><b>Enhanced Reflexes<\/b>: As a Reaction you may move up to half your Movement Speed without provoking Opportunity Attacks. You may use this to avoid an AOE Save, but not a single target attack.<\/li><li><b>Graceful Fighting<\/b>: When you make Unarmed Attacks or Attacks using a Simple melee Weapon you may use Dexterity for both the Attack and Damage rolls. Additionally, you may use your Unarmed Dice with a Simple melee Weapon instead of its regular damage die.<\/li><li><b>Powerful<\/b>: Rather than using regular AC, you may choose to have your AC be 10 + your Strength Modifier + your Constitution Modifier.<\/li><\/ul>"
+            "<ul class='sublist'><li><b>Disciplined<\/b>: You gain Proficiency in 2 Saving Throws of your Choice.<\/li><li><b>Enhanced Reflexes<\/b>: As a Reaction you may move up to half your Movement Speed without provoking Opportunity Attacks. You may use this to avoid an AOE Save, but not a single target attack.<\/li><li><b>Graceful Fighting<\/b>: When you make Unarmed Attacks or Attacks using a Simple melee Weapon you may use Dexterity for both the Attack and Damage rolls. Additionally, you may use your Unarmed Dice with a Simple melee Weapon instead of its regular Damage Die.<\/li><li><b>Powerful<\/b>: Rather than using regular AC, you may choose to have your AC be 10 + your Strength Modifier + your Constitution Modifier.<\/li><\/ul>"
         ]
     },
     "Recovery_Breathing": {
@@ -1226,7 +1227,7 @@
         ],
         "desc": [
             "As an Attack you may throw a Sphere into the flesh of a creature within your Sphere's range. If you hit them, roll normal damage and your target must make a Constitution Saving Throw, becoming Restrained until the end of your next Turn on failure.",
-            "You may only attempt this Attack once per turn, and a creature who has been Restrained by this Ability becomes immune to it for the next hour."
+            "You may only attempt this Attack once per Turn, and a creature who has been Restrained by this Ability becomes immune to it for the next hour."
         ]
     },
     "Satellite_Spin": {
@@ -1754,7 +1755,7 @@
             "Ass"
         ],
         "desc": [
-            "Choose one of the following Fighting Styles:<ul class='sublist'><li><b>Disciplined:<\/b> You gain Proficiency in 2 Saving Throws of your choice<\/li><li><b>Dual Wielding:<\/b> When you make an Attack using two weapons with the Light property, you can make an amount of additional Attacks equal to half your Proficiency Bonus as a Bonus Action.<\/li><li><b>Mobile:<\/b> You have Advantage on Saving Throws that would restrict your Movement. Additionally, you may spend your Bonus Action in order to ignore Difficult Terrain.<\/li><li><b>Swift:<\/b> You gain an additional 5m of Movement Speed.<\/li><\/ul>"
+            "Choose one of the following Fighting Styles:<ul class='sublist'><li><b>Disciplined:<\/b> You gain Proficiency in 2 Saving Throws of your choice<\/li><li><b>Dual Wielding:<\/b> When you make an Attack using two weapons with the Light property or your fists, you can make an amount of additional Attacks equal to half your Proficiency Bonus as a Bonus Action.<\/li><li><b>Mobile:<\/b> You have Advantage on Saving Throws that would restrict your Movement. Additionally, you may spend your Bonus Action in order to ignore Difficult Terrain.<\/li><li><b>Swift:<\/b> You gain an additional 5m of Movement Speed.<\/li><\/ul>"
         ]
     },
     "Aura_of_Knowledge": {
@@ -1832,7 +1833,7 @@
             "War"
         ],
         "desc": [
-            "You gain an additional Fighting Style from the Assassin, Consul, Scholar, or Warrior <a href='\/abilities?search=Fighting%20Style'>Fighting Styles<\/a>."
+            "You gain an additional Fighting Style from the Artisan, Assassin, Consul, Heavyweight, Ranger, Scholar, or Warrior <a href='\/abilities?search=Fighting%20Style'>Fighting Styles<\/a>."
         ]
     },
     "Paragon_of_Knowledge": {
@@ -1879,7 +1880,7 @@
         ],
         "desc": [
             "Whenever you gain Hit Points at 1st Level or when Leveling Up in Scholar, you may use your Intelligence Modifier instead of Constitution to determine additional Hit Points.",
-            "Additionally, as a Bonus Action, you may take Half Cover behind an ally of the same size as you or larger."
+            "Additionally, as a Bonus Action, you may take Half Cover behind an ally of the same size as you or larger. You cannot gain Total Cover by hiding behind an ally, even if other Abilities would increase the quality of your Cover."
         ]
     },
     "Steady_Aim": {
@@ -1901,7 +1902,7 @@
             "War"
         ],
         "desc": [
-            "From your exposure to the supernatural you have gained, found, or created a weapon, piece of armor, or charm that holds supernatural abilities. If your DM allows it, you may choose one of the three following options:",
+            "From your exposure to the supernatural you have gained, found, or created a weapon, piece of armor, or charm that holds supernatural abilities. If your DM allows it, you now have the ability to see Stands, and Stands no longer have Advantage to hit you. In addition, you may choose one of the three following options:",
             "<ul class='sublist'><li><b>Supernatural Charm:<\/b> A small trinket or object that gives the wearer strength. While wearing this, you and allies within 3 meters of you gain a bonus to Saving Throws equal to half your Proficiency Bonus (rounded down). In addition, you may choose one Charm Ability, and either another Charm Ability or a Defensive Ability.<\/li><li><b>Supernatural Defense:<\/b> A suit of armor, article of clothing, or shield that protects the holder. With this item, you gain a bonus to your AC equal to half your Proficiency Bonus (rounded down). Any damage taken is also reduced by the same amount. In addition, you may choose one Defensive Ability, and either another Defensive Ability or a Charm Ability.<\/li><li><b>Supernatural Weapon:<\/b> A weapon of some sort that deals powerful damage. This weapon cannot be explosive and functions as normal, but is capable of damaging <a href='\/classes?focus=Stands'>Stands<\/a>. The weapon gains a bonus to Attack and Damage Rolls equal to half your Proficiency Bonus (rounded down). In addition, you may choose one Weapon Ability and either another Weapon Ability or a Defensive Ability.<\/li><\/ul>",
             "The item has an amount of charges equal to your Proficiency Bonus per Long Rest, and you may regain half of the charges on a Short Rest. These charges are used when activating the item's Ability, chosen from the options below:",
             "<b><u>Charm Abilities:<\/u><\/b><ul class='sublist'><li>Inspiring Trinket: When you fail a Skill Check you may attempt the roll a second time as a Free Action. Alternatively, you may spend a second charge to also have Advantage on the reroll. You may only use this Ability once per Turn.<\/li><li>Ready Stance: When someone you can see makes a Skill Check or Saving Throw you can use your Reaction to give them Advantage. Alternatively, you may spend a second charge to also grant them Advantage on all Checks and Saves until the end of their next Turn.<\/li><li>Source of Motivation: When you fail a Saving Throw you may use your Reaction to reroll it. Alternatively, you may spend a second charge to also gain Advantage on all Saving Throws of that type until the start of your next Turn.<\/li><\/ul>",
@@ -1915,7 +1916,7 @@
             "War"
         ],
         "desc": [
-            "Choose one of the following Fighting Styles:<ul class='sublist'><li><b>Disciplined:<\/b> You gain Proficiency in 2 Saving Throws of your choice<\/li><li><b>Dual Wielding:<\/b> When you make an Attack using two weapons with the Light property, you can make an amount of additional Attacks equal to half your Proficiency Bonus as a Bonus Action.<\/li><li><b>Powerful:<\/b> Rather than using your regular AC, you may choose to have your AC be 10 + Strength Modifier + Con Modifier.<\/li><li><b>Swift:<\/b> You gain an additional 5m of Movement Speed.<\/li><li><b>Unshakable:<\/b> You have Advantage against any effect that would attempt to move you against your will or knock you Prone.<\/li><\/ul>"
+            "Choose one of the following Fighting Styles:<ul class='sublist'><li><b>Disciplined:<\/b> You gain Proficiency in 2 Saving Throws of your choice<\/li><li><b>Dual Wielding:<\/b> When you make an Attack using two weapons with the Light property or your fists, you can make an amount of additional Attacks equal to half your Proficiency Bonus as a Bonus Action.<\/li><li><b>Powerful:<\/b> Rather than using your regular AC, you may choose to have your AC be 10 + Strength Modifier + Con Modifier.<\/li><li><b>Swift:<\/b> You gain an additional 5m of Movement Speed.<\/li><li><b>Unshakable:<\/b> You have Advantage against any effect that would attempt to move you against your will or knock you Prone.<\/li><\/ul>"
         ]
     },
     "Weapon_Aficionado": {
@@ -1948,6 +1949,217 @@
         ],
         "classes": [
             "Spin"
+        ]
+    },
+    "Artisan_Fighting_Style": {
+        "name": "Artisan Fighting Style",
+        "desc": [
+            "Choose one of the following Fighting Styles: <ul class='sublist'><li><b>Artisan's Willpower:<\/b> Whenever you spend an Artisan Charge, you regain an amount of HP equal to the amount of Artisan Charges you have. <\/li><li><b>Disciplined:<\/b> You gain Proficiency in 2 Saving Throws of your choice.<\/li><li><b>Foresight:<\/b> As a Reaction, you may move up to half your Movement Speed without provoking Opportunity Attacks. You may use this to avoid an AOE Saving Throw, but not a single target Attack. <\/li><li><b>Mobile:<\/b> You gain Advantage on Saving Throws that would restrict your Movement.<\/li><\/ul>"
+        ],
+        "classes": [
+            "Art"
+        ]
+    },
+    "Artisans_Resurgence": {
+        "name": "Artisan's Resurgence",
+        "desc": [
+            "When you take a Short Rest, you may regain some spent Artisan Charges. You may restore up to half of your total charges rounded up per Long Rest."
+        ],
+        "classes": [
+            "Art"
+        ]
+    },
+    "Bullish_Brawn": {
+        "name": "Bullish Brawn",
+        "desc": [
+            "When you have someone Grappled, you have Advantage on Checks to keep them Grappled. In addition, when you Grapple or Shove Stand Users, you can force them to contest you with their own stats rather than their Stand's, so long as you also use your own stats and not your Stand's. This also applies when they attempt to Grapple you.",
+            "When you use the Shove action, instead of pushing you target one meter back on a success, you push them an amount of meters back equal to your Strength Modifier. If a target hits a wall, for every meter they could not be shoved they take a number of d6s of Bludgeoning damage equal to your Proficiency Bonus."
+        ],
+        "classes": [
+            "Hvy"
+        ]
+    },
+    "Confident_Provocation": {
+        "name": "Confident Provocation",
+        "desc": [
+            "As a Free Action during your Turn, you may encourage enemies to attack you by giving their Attack Rolls against you Advantage until the start of your next Turn. However, when you do this, you may use two Reactions instead of one on your Turn.",
+            "If someone already has Advantage to attack you, they roll 3d20 and take the highest roll."
+        ],
+        "classes": [
+            "Rip",
+            "Pwr",
+            "Rev",
+            "Enh",
+            "Ind",
+            "Hvy",
+            "War"
+        ]
+    },
+    "Heavyweight_Fighting_Style": {
+        "name": "Heavyweight Fighting Style",
+        "desc": [
+            "Choose one of the following Fighting Styles: <ul class='sublist'><li><b>Bulwark:<\/b> As a bonus action, you may give an ally within 2 meters of you Half Cover until the start of their next Turn, so long as you stay within 2 meters of each other. If they already have Half Cover, they gain Three-Quarters cover.<\/li><li><b>Disciplined:<\/b> You gain Proficiency in 2 Saving Throws of your choice.<\/li><li><b>Powerful:<\/b> Rather than using your regular AC, you may choose to have your AC be 10 + Strength Modifier + Con Modifier.<\/li><li><b>Unshakable:<\/b> You have Advantage against any effect that would attempt to move you against your will or knock you Prone.<\/li>"
+        ],
+        "classes": [
+            "Hvy"
+        ]
+    },
+    "Improved_Rejuvenation": {
+        "name": "Improved Rejuvenation",
+        "desc": [
+            "When you use <a class='in-page'>Rejuvenation</a>, instead of having 1d12 and then adding the other modifiers, you have an amount of d12s equal to your Constitution Modifier. When you use Rejuvenation, you also gain two elemental Resistances or one physical Resistance of your choice until the start of your next Turn. You cannot gain Resistance to a damage type that you are Vulnerable to.",
+            "In addition, you now have two uses of Rejuvenation per Short Rest."
+        ],
+        "classes": [
+            "Hvy"
+        ]
+    },
+    "Improved_Survivalist": {
+        "name": "Improved Survivalist",
+        "desc": [
+            "You gain Expertise in Perception and Survival. If you already had Expertise, you gain Mastery instead.",
+            "As a Bonus Action, you may give your elemental Resistances to an ally within melee range until the start of their next Turn.",
+            "Additionally, when members of your traveling party take a Short Rest and spend Hit Dice, or take a Long Rest with you, they gain half of the Temporary HP that you do from <a class='in-page'>Ranger's Recovery</a>."
+        ],
+        "classes": [
+            "Rgr"
+        ]
+    },
+    "Improved_Specialty": {
+        "name": "Improved Specialty",
+        "desc": [
+            "You may gain the additional suboptions from an <a class='in-page'>Artisan's Specialty</a> you already had, or an additional suboption for a different speciality type.",
+            "You also gain Expertise in the use of the tool set(s) you use with this Class. "
+        ],
+        "classes": [
+            "Art"
+        ]
+    },
+    "Legendary_Brawn": {
+        "name": "Legendary Brawn",
+        "desc": [
+            "Your Constitution Score increases by 6, and the maximum cap for your Constitution also increases by 6."
+        ],
+        "classes": [
+            "Hvy"
+        ]
+    },
+    "Perfected_Specialty": {
+        "name": "Perfected Specialty",
+        "desc": [
+            "You may gain the additional suboptions from an <a class='in-page'>Artisan's Specialty</a> you already had, or an additional suboption for a different speciality type.",
+            "You also gain Mastery in the use of the tool set(s) you use with this Class. "
+        ],
+        "classes": [
+            "Art"
+        ]
+    },
+    "Perfected_Survivalist": {
+        "name": "Perfected Survivalist",
+        "desc": [
+            "You gain Mastery in Perception and Survival. If you already had Mastery, add your Proficiency Bonus an additional time.",
+            "You also gain two additional elemental damage types to Resist, or one physical damage type.",
+            "As a Bonus Action, you may give your elemental Resistances to all allies within 5m of you.",
+            "Finally, when you use your <a class='in-page'>Ranger's Recovery</a>, instead of the health from the Hit Dice being lost in exchange for the Temp HP you get both, and you may spend a maximum amount of Hit Dice at once equal to your Wisdom Modifier."
+        ],
+        "classes": [
+            "Rgr"
+        ]
+    },
+    "Ranger_Fighting_Style": {
+        "name": "Ranger Fighting Style",
+        "desc": [
+            "Choose one of the following Fighting Styles:",
+            "<ul class='sublist'><li><b>Disciplined:<\/b> You gain Proficiency in 2 Saving Throws of your choice.<\/li><li><b>Foresight:<\/b> As a Reaction, you may move up to half your Movement Speed without provoking Opportunity Attacks. You may use this to avoid an AOE Saving Throw, but not a single target Attack.<\/li><li><b>Mobile:<\/b> You gain Advantage on Saving Throws that would restrict your Movement. Additionally, you may spend your Bonus Action in order to ignore Difficult Terrain.<\/li><li><b>Ranger's Knowledge:<\/b> You may use your Wisdom Modifier to determine additional Proficiencies, rather than Intelligence.<\/li><li><b>Swift:<\/b> You gain an additional 5m of Movement Speed.<\/li><\/ul>"
+        ],
+        "classes": [
+            "Rgr"
+        ]
+    },
+    "Rangers_Recovery": {
+        "name": "Ranger's Recovery",
+        "desc": [
+            "When you spend Hit Dice on a Short Rest or take a Long Rest, you gain an amount of Temporary Hit Points equal to your Wisdom Modifier + Level in Ranger, so long as you spend at least one Hit Die. If you gain Temp HP from another source while you still have Temp HP from only this ability, you may add it to the total.",
+            "As an Attack, you may use a Hit Die, to gain the Temp HP effect instead of restoring Hit Points."
+        ],
+        "classes": [
+            "Rgr"
+        ]
+    },
+    "Survivalist": {
+        "name": "Survivalist",
+        "desc": [
+            "You gain Proficiency in Perception and Survival. If you already had Expertise, you gain Mastery instead.",
+            "When making navigation Checks where you can see the sky or have a map, if you roll lower than 10 on the d20 you may treat it as a 10.",
+            "You gain the ability to effectively navigate and accurately tell the time just by being able to see the position of the sun in the sky or the stars.",
+            "Additionally, you have Resistance to any negative weather effects (extreme heat, extreme cold, sandstorms, etc), as well as two elemental damage types of your choice."
+        ],
+        "classes": [
+            "Rgr"
+        ]
+    },
+    "Artisans_Specialty": {
+        "name": "Artisan's Specialty",
+        "desc": [
+            "You gain Proficiency in the use of a tool set, as well as additional abilities. Some of the abilities use Artisan Charges, and you get more Charges the higher Level you are. You regain all lost Charges on a long rest. You may choose between one of the following options:",
+            "<ul class='sublist'><li><a class='in-page'>Chemist<\/a><\/li><li><a class='in-page'>Engineer<\/a><\/li><li><a class='in-page'>Fortune Teller<\/a><\/li><li><a class='in-page'>Herbalist<\/a><\/li><li><a class='in-page'>Weapon Smith<\/a><\/li><\/ul>"
+        ],
+        "classes": [
+            "Art"
+        ]
+    },
+    "Chemist": {
+        "name": "Chemist",
+        "desc": [
+            "You gain the ability to throw concoctions and cause a wide variety of chemical reactions. You gain Proficiency in the use of Chemist's Tools. Your concoctions that deal damage have a Short and Long Range. If the target is outside of your Short Range but within your Long Range, they may make the Saving Throw with Advantage. Your Chemist DC is 8 + Proficiency Bonus + Intelligence Modifier.",
+            "You may choose one of the following subclass options:<ul class='sublist'><li><b>Gassy Stuff:<\/b> You gain knowledge of how to use dangerous and useful gasses.<ul><li>You gain resistance to Poison damage.<\/li><li>As an Attack, for 1 Charge, you may use a smoke bomb within 40m to obscure an 8m cube. Creatures inside the cloud of smoke are Blinded and cannot see and anyone outside the cloud cannot see inside it. The cloud lasts until the end of your next Turn.<\/li><li>As an Action or two Attacks, for 1 Charge, you may use a gas grenade that has a range of (15\/45) to create an 5m cube of harmful toxins. Anyone within must make a Constitution Saving Throw against your Chemist DC, taking nd8 Poison damage, where n is your maximum number of Artisan Charges, or half on a successful Save. The cloud lasts until the end of your next Turn, and anyone who starts their Turn in the gas must make the Save again.<\/li><\/ul><\/li><li><b>Melty Stuff:<\/b> You gain knowledge of how to use dangerous acids effectively.<ul><li>You gain resistance to Acid damage.<\/li><li>You may make a thrown weapon Attack using Intelligence that deals 1d8 Acid damage and has a range of (10\/30).<\/li><li>For 1 Charge, when you are within melee range of a structure made of stone or wood, you may make a single Attack to deal nd10 Acid damage, where n is your maximum number of Artisan Charges. After doing so any attacks against the structure also gain the Siege property until it is repaired. You may also use this against metal, but the damage will be halved. If you use this as a melee Attack on a person, they must make a Constitution Saving Throw against your Chemist DC, taking no damage on a success.<\/li><\/ul><\/li><li><b>Burny Stuff:<\/b> You gain knowledge of how to use blazing chemical fires effectively.<ul><li>You gain resistance to Fire damage.<\/li><li>You may make a thrown weapon Attack using Intelligence that deals 1d6 Fire damage and has a Range of (15\/45).<\/li><li>As an Action or two Attacks, for 1 Charge, you may create a sphere of fire with a radius of 5m at a range of (20\/60). Anything within takes nd6 Fire damage, where n is your maximum number of Artisan Charges. Objects not worn or carried catch fire and if the fire gets out of control it may spread to nearby structures or trees etc.<\/ul><\/li><\/ul>"
+        ],
+        "classes": [
+            "Art"
+        ]
+    },
+    "Engineer": {
+        "name": "Engineer",
+        "desc": [
+            "You gain Proficiency in Engineer's tools. You also gain the ability to use your Engineer's tools as a powerful melee weapon, and a way to defend you from powerful blows. Through your understanding of physics and applied use of energy, you may use Intelligence when making an Athletics check or melee Attack using Engineer's tools. In addition, your Artisan hit dice are d8s rather than d6s.",
+            "You may choose one of the following subclass options:<ul class='sublist'><li><b>Builder:<\/b> You have the ability to keep larger structures maintained and build relatively simple structures quickly. Your Engineer's tools work for construction as well.<ul><li>You gain Proficiency in Athletics (or Expertise if already Proficient)<\/li><li>Over the course of a Short Rest you may create a small-scale structure such as: a temporary shelter able to comfortably house up to 6 medium creatures, a rope and wood bridge, a huge lever with support, a small wooden boat, a semi-permanent one-room dwelling for up to 6 medium creatures, etc.<\/li><li>As an Attack, for 1 Charge, you may create or destroy certain structures such as: a 2x1 meter trench, a 2x1 meter wooden bulwark that may give up to 2 creatures three-quarters cover, a decently large simple machine or tool, etc.<\/li><li>Your Attacks using Engineer's tools have the properties of the <a href='\/weapons?search=Builder'>Builder's Tools<\/a> weapon. You must choose which damage type your tools will deal as weapons and may not change it. When you make an Attack with one of your tools and your other hand is free, you may spend 1 Charge to Grapple or Shove your target as a Free Action.<\/li><\/ul><\/li><li><b>Electrician:<\/b> You understand electricity, the location of electrical wiring, and the function of many electrical machines. Your Engineer's tools work for electrical issues as well.<ul><li>For 1 Charge, you have the ability to channel great amounts of electricity (or Ripple) through your weapons without it harming you. While within melee range of a conductive source, you may deal additional damage by channeling it through your weapon into your target. A conductive source is a place that current travels through, such as power lines, an electrical socket, or a Ripple User able to comfortably breathe. You also have an amount of electricity you may use even while away from a source in the form of batteries. Each battery allows you to make 2 Attacks with the bonus electrical damage before you must recharge them. When you hit someone with channeled electricity, you may deal an additional amount of nd10 of Lightning (or Radiant if the source is Ripple) damage, where n is your maximum number of Artisan Charges.<\/li><li>Your Attacks using Engineer's tools have the properties of the <a href='\/weapons?search=Electrician'>Electrician's Tools<\/a> weapon. You must choose which damage type your tools will deal as weapons and may not change it.<\/li><\/ul><\/li><li><b>Mechanic:<\/b> You understand how to keep machines well maintained and cared for, and you know how to use them. Your Engineer's tools can be used to repair and strengthen vehicles.<ul><li>You may repair a mundane vehicle over the course of a Long Rest, assuming it's in a repairable condition.<\/li><li>You gain Proficiency in the use of all vehicle types that may be driven by a single person.<\/li><li>As an Attack, for 1 Charge, you may restore nd10 + Intelligence Modifier of health to a vehicle, where n is your maximum number of Artisan Charges. Vehicles repaired in this way become immune to the effects of Siege for an amount of Turns equal to your Level in Artisan.<\/li><li>Your Attacks using Engineer's tools have the properties of the <a href='\/weapons?search=Mechanic'>Mechanic's Tools<\/a> weapon. You must choose which damage type your tools will deal as weapons, but you may change it by spending 1 Charge.<\/li><\/ul><\/li><\/ul>",
+            ""
+        ],
+        "classes": [
+            "Art"
+        ]
+    },
+    "Fortune_Teller": {
+        "name": "Fortune Teller",
+        "desc": [
+            "Your interest in the supernatural and ability to read patterns gives you a slight amount of divination, giving you some insight on what may happen in the future, just none of the context around it. You gain Proficiency in Diviner's tools. Your Fortune Teller DC is 8 + Proficiency Bonus + Intelligence\/Wisdom Modifier.",
+            "You gain the ability to intervene in fate, with a slight cost to both you and the person you assisted. When an ally that you can see or hear rolls a d20, you may use your Reaction to treat the number rolled on the d20 as 10. However, the next Attack Roll, Saving Throw, or Skill Check both you and your ally make is at Disadvantage. If you use it on yourself, it instead applies for the next two rolls. The ability costs 1 Artisan Charge to use.",
+            "You must choose either Intelligence or Wisdom as your stat to use for Fortune Telling.",
+            "You may choose one of the following subclass options:<ul class='sublist'><li><b>Medium:<\/b> You gain the ability to communicate with ghosts using your Diviner's tools.<ul><li>As an Attack, for 1 Charge, you may command a vengeful spirit to curse a target within 10m, forcing them to make a Charisma Saving Throw against your Fortune Teller DC. If they fail, they become cursed for the next minute or until you fall unconscious. When cursed, the target gets a reduction to either their Attack Rolls, Saving Throws, or Skill Checks, equal to the Modifier of your Fortune Telling stat. The target can remake the Save at the end of their Turns.<\/li><li>Twice per Long rest, you may bribe a spirit to summon them to help you or give you information, but you must offer a sufficient sacrifice to do so. This sacrifice may take many forms, for example a quality snack food, a meal, a neat trinket, a lovely work of craftsmanship, etc. You cannot summon a specific spirit unless you have an object of particular importance to them and their corpse is nearby, but you may try to summon a specific type of spirit (a janitor, old woman, etc.).<\/li><\/ul><\/li><li><b>Oracle:<\/b> You gain the ability to see little snippets of possible futures out of context. These may come as visions, dreams, or in any variety of ways. Talk to your DM about using this subclass, as it will likely mean additional work for them.<ul><li>As a Reaction, for 1 Charge, you may save an ally from harm by warning them of an incoming threat. This can take the form of forcing the attacker to reroll their Attack or your ally to reroll a Saving Throw. When the die is rerolled, the Modifier of your Fortune Telling stat (Intelligence or Wisdom) is subtracted from the Attack Roll or added to the Saving Throw.<\/li><li>Every time you take damage from a type you are not Vulnerable to, you may utilize your foresight of the attack to reduce the amount of damage you take by the Modifier of your Fortune Telling stat. As a Free Action, for 1 Charge, you may also give this ability to an ally within 5m, allowing it to protect them instead of you until the start of your next Turn.<\/li><\/ul><\/li><li><b>Fateweaver:<\/b> You gain the ability to personally influence fate. You may not see very far into the future, but you recognize when something or someone is important when you see them\/it. In addition, you have a strange knack for getting involved with fateful encounters.<ul><li>You may use your expertise in dealing with fate to analyze what role a person may play in its grand dance. You gain Proficiency in Insight (or Expertise if already Proficient), and may make Insight Checks using Intelligence if that's what you use for your Fortune Telling stat.<\/li><li>As a Bonus Action, you may make an Insight Check against someone, which they may contest using Deception. If you succeed, you learn two of the following things about them:<ul><li>Any damage Resistances, Immunities, and Vulnerabilities they have<\/li><li>A general estimate of their Level (around half yours, close to equal, around 4 times yours, etc.)<\/li><li>A tragic or traumatic event from their past, assuming a physical or mental scar remains<\/li><li>A hidden object on their person<\/li><\/ul>You may use this twice per Short Rest, requiring 1 Charge to use any more than that.<\/li><li>Your ability to change dice rolls to 10 is improved, becoming a Free Action rather than a Reaction. However, you may only change a specific creature's fate once per Turn and all other effects still apply.<\/ul><\/li><\/ul>"
+        ],
+        "classes": [
+            "Art"
+        ]
+    },
+    "Herbalist": {
+        "name": "Herbalist",
+        "desc": [
+            "You gain the ability to brew poisons and cures, cook with great skill, or check people for ailments and issues of the body. You are able to cure and treat minor diseases and injuries with ease, and if you don't know the cure or treatment due to it being a unique condition, you may research where it may be found over the course of a short rest.",
+            "You gain Proficiency in Medicine Checks and may use Intelligence to make such checks. Your Herbalist's DC is 8 + Proficiency Bonus + Intelligence\/Wisdom Modifier.",
+            "You may choose one of the following subclass options:<ul class='sublist'><li><b>Cook:<\/b> You have the ability to whip up something hearty and healthy in almost any setting.<ul><li>You may use Constitution to make Medicine Checks.<\/li><li>Your Cook's DC is 8 + Proficiency Bonus + Constitution\/Wisdom Modifier.<\/li><li>You have the ability to create an amount of snacks equal to your Constitution or Wisdom Modifier (whichever is higher) per Long Rest. You may spread these snacks out amongst your party if you wish. Each snack functions as a point of Inspiration, but takes a Reaction to use.<\/li><li>When you and your party take a Short or Long Rest, each person gains one of the following benefits:<ul><li>Regain an amount of Hit Dice equal to half of your Proficiency Bonus<\/li><li>1s or 2s rolled on Hit Dice are rerolled<\/li><li>Gain an amount of Temporary Hit Points equal to your Level in Artisan. These Hit Points last until they're depleted or until your next Short or Long Rest.<\/ul><\/li><li>Used to working in a high-stress environment, you know how to get things done and help others refocus. As a Bonus Action, for 1 Charge, you may give someone or yourself one of the following benefits:<ul><li>Ignore the effects of Charmed, Frightened, and Stunned. This does not negate the Condition entirely but allows the target to ignore the effects until the start of your next Turn.<\/li><li>Gain Resistance to one of Acid, Cold, Fire, Poison, Psychic, or Thunder damage, so long as the target is not Vulnerable to it. This lasts until the start of your next Turn.<\/li><li>Spend an amount of Hit Dice up to your Proficiency Bonus, rerolling any 1s or 2s.<\/ul><\/li><\/ul><\/li><li><b>Pharmacist:<\/b> You have the ability to create powerful medicines to heal yourself and allies, as well as things to bolster them.<ul><li>When you and your party take a Short or Long Rest, each person gains one of the following benefits which last until used or the next Short or Long Rest:<ul><li>Gain an amount of Temporary Hit Points equal to your Level in Artisan.<\/li><li>Gain a bonus to their next Initiative Roll equal to your Proficiency Bonus.<\/li><li>Reduce the next damage taken by half.<\/li><\/ul><\/li><li>As an Attack, for 1 Charge, you may perform one of the following to yourself or an ally within melee range:<ul><li>Heal the target for an amount of Hit Points equal to 3x your Artisan Level + your Medicine Skill Bonus.<\/li><li>Allow the target to make a Saving Throw to shake off a negative condition affecting them with Advantage.<\/li><li>Grant a bonus equal to your Intelligence\/Wisdom Modifier to any physical OR mental Checks and Saves (but not both), until the start of you next Turn.<\/li><\/ul><\/li><li>You may create an amount of Medicine Kits equal to your Intelligence or Wisdom Mod (whichever is higher) per Long Rest. Anyone may use one of these kits on themselves or an ally within melee range as a Bonus Action, restoring nd8 Hit Points where n is half of your Level in Artisan. Alternatively, a full Action may be used, ensuring the maximum amount of healing.<\/li><\/ul><\/li><li><b>Toxicologist:<\/b> You are a master of creating and identifying poisons and toxins, able to inflict and cure them easily.<ul><li>You gain access to the following various poisons:<ul><li>Fleshrot Powder (Ingestible): A fast-acting powder that is nearly tasteless. When someone ingests it in some way, they must make a Constitution Saving Throw against your Herbalist DC. If they fail, they gain the Poisoned Condition and take an amount of Necrotic damage equal to 2x your Artisan Level every Turn. They may attempt the Save at the end of each Turn, losing the condition after succeeding 3 times, though if they fail 3 times further attempts gain Disadvantage. This poison can be detected fairly easily by someone with Medicine Proficiency or an Herbalist's Kit.<\/li><li>Lifedrinker Powder (Ingestible): A slow-acting powder that is nearly tasteless. When someone ingests it in some way, they must make a Constitution Saving Throw against your Herbalist DC every hour. On a failure, they gain the Poisoned Condition and their maximum Hit Points are reduced by an amount equal to 2x your Artisan Level. If they succeed 3 times, they lose the Condition, though if they fail 3 times further attempts gain Disadvantage. This poison is difficult to detect even by someone with Medicine Proficiency or an Herbalist's Kit.<\/li><li>Shutdown Gel (Ingestible): A relatively quick-acting clear gel. When someone ingests it in some way, they must make a Constitution Saving Throw against your Herbalist DC, gaining the Restrained Condition on a failure. Every 5 minutes they may attempt the Save again, losing the Condition on success, though if they fail 3 times further attempts gain Disadvantage. This poison can be easily detected by anyone closely examining their food\/drink with a successful Medicine or Perception check against your Herbalist DC.<\/li><li> Lightning Leaf (Contact): A kind of green leafy plant. When exposed to someone they develop a rash that makes moving difficult, having to make a Constitution Saving Throw against your Herbalist DC. If they fail, their Movement Speed is halved and they must use all of their movement to recover from the Prone Condition. They may repeat the Save at the end of their Turns, ending the effect on success.<\/li><li>Blinding Oil (Contact): A small container of oil. When exposed to someone they must make a Constitution Saving Throw against your Herbalist DC, gaining the Blinded Condition on failure. They may repeat the Save at the end of their Turns, ending the effect on success.<\/li><li>Stinkroot Extract (Contact): A small container of green powder that turns into a gas upon being exposed to the air. When exposed to someone, they must make a Constitution Saving Throw against your Herbalist DC, gaining the Poisoned Condition on failure. They may repeat the Save at the end of their Turns, ending the effect on success.<\/li><\/ul><\/li><li>Slipping an ingestible poison into food or drink requires the performance of a Sleight of Hand Check and costs an Attack and 1 Charge.<\/li><li>Exposing someone to a contact poison requires skin-contact in melee range and costs an Attack and 1 Charge.<\/li><li>You have an amount of antidotes equal to your Intelligence or Wisdom Modifier (whichever is higher) per Long Rest. Consuming an Antidote will remove the effect of any of your poisons.<\/li><li>It should be noted that anyone that is Immune to the Poisoned Condition (Undead) will be unaffected by any of these poisons.<\/li><li>When you make an Attack with a melee weapon or slow moving projectile (not an explosive or firearm), you may choose to spend a Charge to deal an additional nd8 Necrotic or Poison damage, where n is your maximum number of Artisan Charges.<\/li><\/ul><\/li><\/ul>"
+        ],
+        "classes": [
+            "Art"
+        ]
+    },
+    "Weapon_Smith": {
+        "name": "Weapon Smith",
+        "desc": [
+            "You gain the ability to create and enhance various weapons. You gain Proficiency in any weapon you create. Over the course of a Long Rest and have your tools and supplies, you may apply enhancements to your weapons. A weapon may have multiple enhancements applied to it, but you may only have a total number of enhancements equal to your Proficiency Bonus.",
+            "You may choose one of the following subclass options:<ul class='sublist'><li><b>Blacksmith:<\/b> You have the ability to create and enhance metallic tools and weapons, so long as you have access to a considerable heat source or forge and your Blacksmith's Tools.<ul><li>You gain Proficiency in Blacksmith's Tools.<\/li><li>Your Blacksmith's DC is 8 + Strength\/Constitution Modifier.<\/li><li>You may create metallic weapons, such as daggers, axes, shields, bludgeons, spears, brass knuckles, etc.<\/li><li>You may apply the following enhancements to your weapons:<ul><li>Add an additional physical damage type to a melee weapon that only has one.<\/li><li>Grant +3 Concealed to the weapon as well as the Ambush attribute. Does not work with Heavy or Two-Handed weapons.<\/li><li>Grant the Siege attribute to a weapon.<\/li><li>Add +1 AC Bonus to any Shield or Heavy\/Two-Handed melee weapon.<\/li><li>Increase the Range of a throwing weapon by 10m.<\/li><li>Grant the Reach attribute to a Two-Handed melee weapon. If it already has Reach, extend it by 1m.<\/li><\/ul><\/li><li>As an Attack, for 1 Charge, you may use one of the following abilities:<ul><li>Force an enemy within melee range to make a Dexterity Saving Throw, giving them Disadvantage with their weapon until the end of their next Turn on a failure. Alternatively, you may target an enemy's shield and remove the AC bonus until the end of their next Turn.<\/li><li>Force an enemy within melee range to make a Strength Saving Throw, dropping their weapon on failure. You may also kick the weapon away a number of meters equal to your Strength Modifier as a Free Action, or pick it up as a Reaction.<\/li><li>You may look at a metallic weapon in sight and learn its attributes and Damage Dice.<\/li><\/ul><\/li><\/ul><\/li><li><b>Fletcher:<\/b> You have the ability to create and enhance tools and weapons created from wood and other natural materials, so long as you have access to raw materials.<ul><li>You gain Proficiency in Fletcher's Tools.<\/li><li>Your Fletcher's DC is 8 + Dexterity\/Wisdom Modifier.<\/li><li>You may create natural weapons, such as bows, crossbows, darts, atlatl, clubs, spears, etc. You may also use your Wisdom to make Attack Rolls with these weapons.<\/li><li>You may apply the following enhancements to your weapons:<ul><li>Grant +3 Concealed to the weapon as well as the Ambush attribute. Does not work with Heavy or Two-Handed weapons.<\/li><li>Increase the Range of a throwing weapon by 50% rounded down to the nearest meter, or 10m, whichever is higher.<\/li><li>Add an additional Damage Die to a weapon that is not Two-Handed, Heavy, or Versatile.<\/li><li>Remove the Reload attribute from a crossbow, allowing it to be used like a bow.<\/li><li>Allow dual-wielding a Light weapon alongside a light crossbow or shortbow.<\/li><\/ul><\/li><li>As an Attack, for 1 Charge, you may use one of the following abilities:<ul><li>Make a ranged weapon Attack with a natural weapon within its Short Range, ignoring Half Cover and treating Three-Quarters Cover as Half Cover.<\/li><li>Force someone within your weapon's Short Range to make a Constitution Saving Throw, forcing them to either fall Prone or have their Movement Speed reduced to 0 until the end of their next Turn on failure.<\/li><li>You may look at a natural weapon in sight and learn its attributes and Damage Dice.<\/li><\/ul><\/li><\/ul><\/li><li><b>Gunsmith:<\/b> You have the ability to create and enhance tools and weapons created from gunpowder and steel, so long as you have access to the materials and chemicals necessary.<ul><li>You gain Proficiency in Gunsmith's Tools.<\/li><li>Your Gunsmith's DC is 8 + Dexterity\/Constitution Modifier.<\/li><li>You may create firearms such as pistols, rifles, shotguns, SMGs, etc.<\/li><li>You may apply the following enhancements to your weapons:<ul><li>Grant +3 Concealed to the weapon as well as the Ambush attribute. Does not work with Heavy or Two-Handed weapons.<\/li><li>Increase the Range of a throwing weapon by 50% rounded down to the nearest meter.<\/li><li>Reduce the noise created by a firearm to be audible within 0.1km, rather than 0.5km. Attacking at Long Range no longer reveals the attackers location.<\/li><li>Grant a firearm the Reliable attribute. The ammunition may now function while wet as well.<\/li><li>Add an additional Damage Die to a weapon that is not Two-Handed, Heavy, or Versatile.<\/li><\/ul><\/li><li>As an Attack, for 1 Charge, you may use one of the following abilities:<ul><li>Make a ranged weapon Attack with a firearm, changing the damage type dealt to Fire and applying the Flame attribute to the weapon for this Attack. The projectile leaves a small trail of smoke after being fired.<\/li><li>Make a ranged weapon Attack with a firearm, changing the damage type dealt to Thunder and applying the Siege attribute to the weapon for this Attack. If it already has the Siege attribute, the damage dealt to objects is multiplied by 3 rather than 2.<\/li><li>You may look at a firearm in sight and learn its attributes and Damage Dice.<\/li><\/ul><\/ul><\/li><\/ul><\/li><\/ul>"
+        ],
+        "classes": [
+            "Art"
         ]
     }
 }

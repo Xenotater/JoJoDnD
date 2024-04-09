@@ -57,7 +57,8 @@
                 "linkFeatures": [
                     "Healing Ripple",
                     "Liquid Solidification",
-                    "Ripple Fighting Style"
+                    "Ripple Fighting Style",
+                    "Confident Provocation"
                 ],
                 "ability": [
                     "Increase Str, Dex, or Con Score by 1"
@@ -398,7 +399,8 @@
                         "pro": "2",
                         "feats": "2",
                         "linkFeatures": [
-                            "Custom Ability"
+                            "Custom Ability",
+                            "Confident Provocation"
                         ]
                     },
                     "3": {
@@ -444,7 +446,9 @@
                             "OR"
                         ],
                         "featFeatures": [
-                            "Whirlwind Attacker"
+                            "Whirlwind Attacker",
+                            "OR",
+                            "Berserker"
                         ]
                     },
                     "8": {
@@ -1340,7 +1344,8 @@
                         "pro": "2",
                         "feats": "2",
                         "linkFeatures": [
-                            "Custom Ability"
+                            "Custom Ability",
+                            "Confident Provocation"
                         ]
                     },
                     "3": {
@@ -1587,7 +1592,8 @@
                         "feats": "2",
                         "linkFeatures": [
                             "Custom Ability",
-                            "Stand Marking"
+                            "Stand Marking",
+                            "Confident Provocation"
                         ]
                     },
                     "3": {
@@ -1631,7 +1637,11 @@
                             "OR",
                             "Melee Barrage",
                             "OR",
-                            "Rejuvenation"
+                            "Rejuvenation",
+                            "OR"
+                        ],
+                        "featFeatures": [
+                            "Berserker"
                         ]
                     },
                     "8": {
@@ -1819,7 +1829,8 @@
                         "pro": "2",
                         "feats": "2",
                         "linkFeatures": [
-                            "Custom Ability"
+                            "Custom Ability",
+                            "Confident Provocation"
                         ]
                     },
                     "3": {
@@ -1936,7 +1947,7 @@
                         "featFeatures": [
                             "Resilient",
                             "OR",
-                            "Stand Specialization"
+                            "Anchored Immunity"
                         ]
                     },
                     "17": {
@@ -2303,7 +2314,7 @@
                     },
                     {
                         "aDice": "1d4",
-                        "note": "You may not increase your Power or Speed upon leveling up.",
+                        "note": "You may not increase your Power or Durability upon leveling up.",
                         "mults": [
                             2,
                             3,
@@ -2894,6 +2905,9 @@
                         "feats": "2",
                         "linkFeatures": [
                             "Assassin Fighting Style"
+                        ],
+                        "featFeatures": [
+                            "Assassin"
                         ]
                     },
                     "3": {
@@ -2910,7 +2924,7 @@
                             "Supernatural Item (Variant Rule)"
                         ],
                         "featFeatures": [
-                            "Assassin",
+                            "Catlike Agility",
                             "Deadly Accuracy",
                             "OR",
                             "Defensive Stance"
@@ -2920,7 +2934,7 @@
                         "pro": "3",
                         "feats": "2",
                         "featFeatures": [
-                            "Catlike Agility",
+                            "Pressure Point Manipulator",
                             "OR",
                             "Duelist's Agility",
                             "OR",
@@ -3081,6 +3095,9 @@
                         "feats": "2",
                         "linkFeatures": [
                             "Consul Fighting Style"
+                        ],
+                        "featFeatures": [
+                            "Art of Distraction"
                         ]
                     },
                     "3": {
@@ -3163,8 +3180,6 @@
                             "Improved Encouragement Dice"
                         ],
                         "featFeatures": [
-                            "Art of Distraction",
-                            "OR",
                             "Headhunter",
                             "OR",
                             "Interpreter"
@@ -3270,6 +3285,9 @@
                         "feats": "2",
                         "linkFeatures": [
                             "Scholar Fighting Style"
+                        ],
+                        "featFeatures": [
+                            "Level-Headed"
                         ]
                     },
                     "3": {
@@ -3287,7 +3305,7 @@
                             "Field Study"
                         ],
                         "featFeatures": [
-                            "Level-Headed",
+                            "Guerilla Fighter",
                             "OR",
                             "Jack of all Trades"
                         ]
@@ -3454,7 +3472,8 @@
                         "pro": "2",
                         "feats": "2",
                         "linkFeatures": [
-                            "Warrior Fighting Style"
+                            "Warrior Fighting Style",
+                            "Confident Provocation"
                         ]
                     },
                     "3": {
@@ -3500,7 +3519,15 @@
                         "featFeatures": [
                             "Specialized Save",
                             "OR",
-                            "Veteran Sprinter"
+                            "Veteran Sprinter",
+                            "OR",
+                            "Berserker",
+                            "OR",
+                            "Martial Artist",
+                            "OR",
+                            "Simple Weapon Focus",
+                            "OR",
+                            "Professional Weapon Training"
                         ]
                     },
                     "8": {
@@ -3531,9 +3558,7 @@
                             "Improved Fighting Style"
                         ],
                         "featFeatures": [
-                            "Heavy Specialization",
-                            "OR",
-                            "Melee Specialization"
+                            "Weapon Feat"
                         ]
                     },
                     "12": {
@@ -3618,6 +3643,601 @@
                         ]
                     }
                 }
+            },
+            "Artisan": {
+                "name": "Artisan",
+                "level": {
+                    "1": {
+                        "pro": "2",
+                        "feats": "2",
+                        "linkFeatures": [
+                            "Artisan's Specialty"
+                        ],
+                        "featFeatures": [
+                            "Weapon Feat"
+                        ]
+                    },
+                    "2": {
+                        "pro": "2",
+                        "feats": "2",
+                        "linkFeatures": [
+                            "Artisan Fighting Style"
+                        ],
+                        "featFeatures": [
+                            "Natural Talent"
+                        ]
+                    },
+                    "3": {
+                        "pro": "2",
+                        "feats": "2",
+                        "ability": [
+                            "Ability Score Improvement"
+                        ]
+                    },
+                    "4": {
+                        "pro": "2",
+                        "feats": "2",
+                        "linkFeatures": [
+                            "Supernatural Item (Variant Rule)",
+                            "Artisan's Resurgence"
+                        ],
+                        "featFeatures": [
+                            "Catlike Agility",
+                            "OR",
+                            "Practical Experience",
+                            "OR",
+                            "Skirmisher"
+                        ]
+                    },
+                    "5": {
+                        "pro": "3",
+                        "feats": "2",
+                        "featFeatures": [
+                            "Defensive Stance",
+                            "OR",
+                            "Quick on your Feet",
+                            "OR",
+                            "Tanky"
+                        ]
+                    },
+                    "6": {
+                        "pro": "3",
+                        "feats": "3",
+                        "ability": [
+                            "Ability Score Improvement"
+                        ]
+                    },
+                    "7": {
+                        "pro": "3",
+                        "feats": "3",
+                        "featFeatures": [
+                            "Trained Combatant",
+                            "Fortune Teller",
+                            "OR",
+                            "Level-Headed",
+                            "OR",
+                            "Menacing Aura",
+                            "OR",
+                            "Pressure Point Manipulator",
+                            "OR",
+                            "Unstoppable Willpower",
+                            "OR",
+                            "Veteran Sprinter"
+                        ]
+                    },
+                    "8": {
+                        "pro": "3",
+                        "feats": "3",
+                        "ability": [
+                            "Ability Score Improvement"
+                        ]
+                    },
+                    "9": {
+                        "pro": "4",
+                        "feats": "3",
+                        "featFeatures": [
+                            "Jack of all Trades",
+                            "OR",
+                            "Natural Talent",
+                            "OR",
+                            "Perfected Craft"
+                        ]
+                    },
+                    "10": {
+                        "pro": "4",
+                        "feats": "3",
+                        "ability": [
+                            "Ability Score Improvement"
+                        ]
+                    },
+                    "11": {
+                        "pro": "4",
+                        "feats": "4",
+                        "linkFeatures": [
+                            "Improved Specialty"
+                        ],
+                        "featFeatures": [
+                            "Headhunter",
+                            "OR",
+                            "Interpreter",
+                            "OR",
+                            "Trap Detection",
+                            "OR",
+                            "Paranoia"
+                        ]
+                    },
+                    "12": {
+                        "pro": "4",
+                        "feats": "4",
+                        "otherFeatures": [
+                            "Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11"
+                        ]
+                    },
+                    "13": {
+                        "pro": "5",
+                        "feats": "4",
+                        "ability": [
+                            "Ability Score Improvement"
+                        ],
+                        "featFeatures": [
+                            "Heavy Sleeper",
+                            "OR",
+                            "Light Sleeper"
+                        ]
+                    },
+                    "14": {
+                        "pro": "5",
+                        "feats": "4",
+                        "featFeatures": [
+                            "Consistent Skills",
+                            "OR",
+                            "Specialized Save"
+                        ]
+                    },
+                    "15": {
+                        "pro": "5",
+                        "feats": "4",
+                        "featFeatures": [
+                            "Trained Combatant"
+                        ]
+                    },
+                    "16": {
+                        "pro": "5",
+                        "feats": "5",
+                        "otherFeatures": [
+                            "Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, or Level 14"
+                        ]
+                    },
+                    "17": {
+                        "pro": "6",
+                        "feats": "5",
+                        "ability": [
+                            "Ability Score Improvement"
+                        ],
+                        "featFeatures": [
+                            "Assassin",
+                            "OR",
+                            "Familiar Bond",
+                            "OR",
+                            "Resilient"
+                        ]
+                    },
+                    "18": {
+                        "pro": "6",
+                        "feats": "5",
+                        "otherFeatures": [
+                            "Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 14, or Level 17"
+                        ]
+                    },
+                    "19": {
+                        "pro": "6",
+                        "feats": "5",
+                        "featFeatures": [
+                            "Motivated",
+                            "OR",
+                            "Perfected Craft"
+                        ]
+                    },
+                    "20": {
+                        "pro": "6",
+                        "feats": "6",
+                        "linkFeatures": [
+                            "Perfected Specialty"
+                        ]
+                    }
+                },
+                "hDice": "1d8",
+                "desc": "Artisans use their expertise in specific subjects and their use of tools to perform a variety of incredible deeds. "
+            },
+            "Heavyweight": {
+                "name": "Heavyweight",
+                "level": {
+                    "1": {
+                        "pro": "2",
+                        "feats": "2",
+                        "linkFeatures": [
+                            "Bullish Brawn"
+                        ],
+                        "featFeatures": [
+                            "Weapon Feat"
+                        ]
+                    },
+                    "2": {
+                        "pro": "2",
+                        "feats": "2",
+                        "linkFeatures": [
+                            "Heavyweight Fighting Style",
+                            "Confident Provication"
+                        ]
+                    },
+                    "3": {
+                        "pro": "2",
+                        "feats": "2",
+                        "ability": [
+                            "Ability Score Improvement"
+                        ]
+                    },
+                    "4": {
+                        "pro": "2",
+                        "feats": "2",
+                        "linkFeatures": [
+                            "Supernatural Item (Variant Rule)",
+                            "Rejuvenation"
+                        ],
+                        "featFeatures": [
+                            "Defensive Stance",
+                            "OR",
+                            "Whirlwind Attacker"
+                        ]
+                    },
+                    "5": {
+                        "pro": "3",
+                        "feats": "2",
+                        "featFeatures": [
+                            "Quick on your Feet",
+                            "OR",
+                            "Scarflesh",
+                            "OR",
+                            "Tanky"
+                        ]
+                    },
+                    "6": {
+                        "pro": "3",
+                        "feats": "3",
+                        "ability": [
+                            "Ability Score Improvement"
+                        ]
+                    },
+                    "7": {
+                        "pro": "3",
+                        "feats": "3",
+                        "featFeatures": [
+                            "Trained Combatant",
+                            "Heavy Specialization",
+                            "OR",
+                            "Shield Proficiency",
+                            "OR",
+                            "Tavern Brawler",
+                            "OR",
+                            "Specialized Save"
+                        ]
+                    },
+                    "8": {
+                        "pro": "3",
+                        "feats": "3",
+                        "ability": [
+                            "Ability Score Improvement"
+                        ]
+                    },
+                    "9": {
+                        "pro": "4",
+                        "feats": "3",
+                        "featFeatures": [
+                            "Motivated",
+                            "OR",
+                            "Resilient",
+                            "OR",
+                            "Tanky"
+                        ]
+                    },
+                    "10": {
+                        "pro": "4",
+                        "feats": "3",
+                        "ability": [
+                            "Ability Score Improvement"
+                        ]
+                    },
+                    "11": {
+                        "pro": "4",
+                        "feats": "4",
+                        "linkFeatures": [
+                            "Improved Rejuvenation"
+                        ],
+                        "featFeatures": [
+                            "Adrenaline Rush",
+                            "OR",
+                            "Berserker"
+                        ]
+                    },
+                    "12": {
+                        "pro": "4",
+                        "feats": "4",
+                        "otherFeatures": [
+                            "Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, or  Level 11"
+                        ]
+                    },
+                    "13": {
+                        "pro": "5",
+                        "feats": "4",
+                        "ability": [
+                            "Ability Score Improvement"
+                        ],
+                        "featFeatures": [
+                            "Headhunter",
+                            "OR",
+                            "Heavy Sleeper"
+                        ]
+                    },
+                    "14": {
+                        "pro": "5",
+                        "feats": "4",
+                        "featFeatures": [
+                            "Superhuman",
+                            "OR",
+                            "Unstoppable Willpower"
+                        ]
+                    },
+                    "15": {
+                        "pro": "5",
+                        "feats": "4",
+                        "featFeatures": [
+                            "Trained Combatant"
+                        ]
+                    },
+                    "16": {
+                        "pro": "5",
+                        "feats": "5",
+                        "otherFeatures": [
+                            "Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 13, or Level 14"
+                        ]
+                    },
+                    "17": {
+                        "pro": "6",
+                        "feats": "5",
+                        "ability": [
+                            "Ability Score Improvement"
+                        ],
+                        "featFeatures": [
+                            "Resilient",
+                            "OR",
+                            "Tanky"
+                        ]
+                    },
+                    "18": {
+                        "pro": "6",
+                        "feats": "5",
+                        "otherFeatures": [
+                            "Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 13, Level 14, or Level 17"
+                        ]
+                    },
+                    "19": {
+                        "pro": "6",
+                        "feats": "5",
+                        "featFeatures": [
+                            "Natural Talent",
+                            "OR",
+                            "Practical Experience"
+                        ]
+                    },
+                    "20": {
+                        "pro": "6",
+                        "feats": "6",
+                        "linkFeatures": [
+                            "Legendary Brawn"
+                        ]
+                    }
+                },
+                "desc": "Heavyweights are built to fight on the front lines, taking powerful blows with ease, excelling in melee combat, wrestling, and using large weapons. ",
+                "hDice": "1d12"
+            },
+            "Ranger": {
+                "name": "Ranger",
+                "level": {
+                    "1": {
+                        "pro": "2",
+                        "feats": "2",
+                        "linkFeatures": [
+                            "Survivalist"
+                        ],
+                        "featFeatures": [
+                            "Weapon Feat"
+                        ]
+                    },
+                    "2": {
+                        "pro": "2",
+                        "feats": "2",
+                        "linkFeatures": [
+                            "Ranger Fighting Style"
+                        ],
+                        "featFeatures": [
+                            "Paranoia"
+                        ]
+                    },
+                    "3": {
+                        "pro": "2",
+                        "feats": "2",
+                        "ability": [
+                            "Ability Score Improvement"
+                        ]
+                    },
+                    "4": {
+                        "pro": "2",
+                        "feats": "2",
+                        "linkFeatures": [
+                            "Supernatural Item (Variant Rule)",
+                            "Ranger's Recovery"
+                        ],
+                        "featFeatures": [
+                            "Assassin",
+                            "OR",
+                            "Familiar Bond",
+                            "OR",
+                            "Pressure Point Manipulator"
+                        ]
+                    },
+                    "5": {
+                        "pro": "3",
+                        "feats": "2",
+                        "featFeatures": [
+                            "Catlike Agility",
+                            "OR",
+                            "Guerilla Fighter",
+                            "OR",
+                            "Skirmisher"
+                        ]
+                    },
+                    "6": {
+                        "pro": "3",
+                        "feats": "3",
+                        "ability": [
+                            "Ability Score Improvement"
+                        ]
+                    },
+                    "7": {
+                        "pro": "3",
+                        "feats": "3",
+                        "featFeatures": [
+                            "Trained Combatant",
+                            "Improvised Healing",
+                            "OR",
+                            "Rifle Specialization",
+                            "OR",
+                            "Professional Weapon Training",
+                            "OR",
+                            "Specialized Save"
+                        ]
+                    },
+                    "8": {
+                        "pro": "3",
+                        "feats": "3",
+                        "ability": [
+                            "Ability Score Improvement"
+                        ]
+                    },
+                    "9": {
+                        "pro": "4",
+                        "feats": "3",
+                        "featFeatures": [
+                            "Deadly Accuracy",
+                            "OR",
+                            "Natural Talent",
+                            "OR",
+                            "Quick on your Feet"
+                        ]
+                    },
+                    "10": {
+                        "pro": "4",
+                        "feats": "3",
+                        "ability": [
+                            "Ability Score Improvement"
+                        ]
+                    },
+                    "11": {
+                        "pro": "4",
+                        "feats": "4",
+                        "linkFeatures": [
+                            "Improved Survivalist"
+                        ],
+                        "featFeatures": [
+                            "Interpreter",
+                            "OR",
+                            "Headhunter"
+                        ]
+                    },
+                    "12": {
+                        "pro": "4",
+                        "feats": "4",
+                        "otherFeatures": [
+                            "Choose another Class Feature from Level 4, Level 5, Level 7, or Level 9"
+                        ]
+                    },
+                    "13": {
+                        "pro": "5",
+                        "feats": "4",
+                        "ability": [
+                            "Ability Score Improvement"
+                        ],
+                        "featFeatures": [
+                            "Light Sleeper",
+                            "OR",
+                            "Trap Detection"
+                        ]
+                    },
+                    "14": {
+                        "pro": "5",
+                        "feats": "4",
+                        "featFeatures": [
+                            "Familiar Fighting Spirit",
+                            "OR",
+                            "Immense Impact"
+                        ]
+                    },
+                    "15": {
+                        "pro": "5",
+                        "feats": "4",
+                        "featFeatures": [
+                            "Trained Combatant"
+                        ]
+                    },
+                    "16": {
+                        "pro": "5",
+                        "feats": "5",
+                        "otherFeatures": [
+                            "Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 13, or Level 14"
+                        ]
+                    },
+                    "17": {
+                        "pro": "6",
+                        "feats": "5",
+                        "ability": [
+                            "Ability Score Improvement"
+                        ],
+                        "featFeatures": [
+                            "Consistent Skills",
+                            "OR",
+                            "Jack of all Trades",
+                            "OR",
+                            "Tanky"
+                        ]
+                    },
+                    "18": {
+                        "pro": "6",
+                        "feats": "5",
+                        "otherFeatures": [
+                            "Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 13, Level 14, or Level 17"
+                        ]
+                    },
+                    "19": {
+                        "pro": "6",
+                        "feats": "5",
+                        "featFeatures": [
+                            "Defensive Stance",
+                            "OR",
+                            "Duelist's Agility",
+                            "OR",
+                            "Resilient"
+                        ]
+                    },
+                    "20": {
+                        "pro": "6",
+                        "feats": "6",
+                        "linkFeatures": [
+                            "Perfected Survivalist"
+                        ]
+                    }
+                },
+                "desc": "Rangers are people of the wild at heart, familiar with nature, and alert to any disruptions within it. They work as navigators, survivalists, and they recover very quickly.",
+                "hDice": "1d8"
             }
         }
     }

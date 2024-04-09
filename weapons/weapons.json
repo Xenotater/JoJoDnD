@@ -588,6 +588,185 @@
             "stat": "Str",
             "prereq": "Str 15+ AND Dex 15+",
             "dmg": "3d6 Slashing"
+        },
+        {
+            "name": "Heavy Repeating Crossbow",
+            "attr": [
+                "Bulky",
+                "Point Blank",
+                "Ranged (20\/40)",
+                "Reload (x5)",
+                "Two-Handed"
+            ],
+            "type": "Martial",
+            "spec": "Heavy\/Rifle",
+            "stat": "Dex",
+            "prereq": "None",
+            "dmg": "1d10 Piercing"
+        },
+        {
+            "name": "Mace",
+            "attr": [
+                "Siege"
+            ],
+            "type": "Simple",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning\/Piercing"
+        },
+        {
+            "name": "Quarterstaff",
+            "attr": [
+                "Concealed (+5)",
+                "Versatile (1d8)"
+            ],
+            "type": "Simple",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning"
+        },
+        {
+            "name": "Rapier",
+            "attr": [
+                "Ambush"
+            ],
+            "type": "Martial",
+            "spec": "Melee",
+            "stat": "Str\/Dex",
+            "prereq": "None",
+            "dmg": "1d8 Piercing"
+        },
+        {
+            "name": "Repeating Crossbow",
+            "attr": [
+                "Point Blank",
+                "Ranged (15\/45)",
+                "Reload (x10)",
+                "Two-Handed"
+            ],
+            "type": "Simple",
+            "spec": "Rifle",
+            "stat": "Dex",
+            "prereq": "None",
+            "dmg": "1d6 Piercing"
+        },
+        {
+            "name": "Throwing Dart",
+            "attr": [
+                "Ambush",
+                "Concealed (+10)",
+                "Light",
+                "Thrown (10\/20)"
+            ],
+            "type": "Simple",
+            "spec": "Sidearm\/Thrown",
+            "stat": "Str\/Dex",
+            "prereq": "None",
+            "dmg": "1d4 Piercing"
+        },
+        {
+            "name": "Whip",
+            "attr": [
+                "Reach"
+            ],
+            "type": "Martial",
+            "spec": "Melee",
+            "stat": "Str\/Dex",
+            "prereq": "Dex 13+",
+            "dmg": "1d6 Slashing"
+        },
+        {
+            "name": "Bec de Corbin",
+            "attr": [
+                "Reach",
+                "Two-Handed"
+            ],
+            "type": "Martial",
+            "spec": "Heavy\/Melee",
+            "stat": "Str",
+            "prereq": "Str 13+",
+            "dmg": "1d6 Bludgeoning\/Piercing\/Slashing"
+        },
+        {
+            "name": "Club",
+            "attr": [
+                "Ambush",
+                "Concealed (+2)",
+                "Light"
+            ],
+            "type": "Simple",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning"
+        },
+        {
+            "name": "Greatclub",
+            "attr": [
+                "Reach",
+                "Two_Handed"
+            ],
+            "type": "Simple",
+            "spec": "Heavy\/Melee",
+            "stat": "Str",
+            "prereq": "Str 13+",
+            "dmg": "1d8 Bludgeoning"
+        },
+        {
+            "name": "Hand Crossbow",
+            "attr": [
+                "Ambush",
+                "Light",
+                "Point Blank",
+                "Ranged (15\/45)",
+                "Reload (x1)"
+            ],
+            "type": "Martial",
+            "spec": "Sidearm",
+            "stat": "Dex",
+            "prereq": "None",
+            "dmg": "1d6 Piercing"
+        },
+        {
+            "name": "Builder's Tools",
+            "attr": [
+                "Concealed (+3)",
+                "Siege",
+                "Versatile (1d10)"
+            ],
+            "type": "Simple",
+            "spec": "Melee",
+            "stat": "Str\/Int",
+            "prereq": "Artisan (Engineer)",
+            "dmg": "1d6 Piercing\/Slashing"
+        },
+        {
+            "name": "Electrician's Tools",
+            "attr": [
+                "Concealed (+2)",
+                "Reach",
+                "Versatile (1d8)",
+                "Conductive"
+            ],
+            "type": "Martial",
+            "spec": "Heavy\/Melee",
+            "stat": "Str\/Dex\/Int",
+            "prereq": "Artisan (Engineer)",
+            "dmg": "1d6 Bludgeoning\/Slashing\/Piecing"
+        },
+        {
+            "name": "Mechanic's Tools",
+            "attr": [
+                "AC Bonus (+2)",
+                "Two-Handed"
+            ],
+            "type": "Simple",
+            "spec": "Heavy\/Melee",
+            "stat": "Str\/Int",
+            "prereq": "Artisan (Engineer)",
+            "dmg": "1d10 Bludgeoning\/Slashing"
         }
     ]
 }

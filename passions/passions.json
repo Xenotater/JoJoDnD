@@ -180,7 +180,7 @@
             "name": "Constant Improvement",
             "desc": "You have Proficiency in any five Skills of your choice."
         },
-        "alt": "Proficiency in three additional languages."
+        "alt": "Proficiency in three additional languages, two sets of tools, or three instruments."
     },
     "Survivalist": {
         "name": "Survivalist",
@@ -249,5 +249,57 @@
         },
         "profs": 3,
         "alt": "Proficiency in Simple weapons or three weapons of your choice, or Expertise in a skill or weapon that you're already Proficient in."
+    },
+    "Chef": {
+        "name": "Chef",
+        "stats": "Con +2, Wis +1",
+        "desc": "Those who make a living creating wonderful food for people. These people work with extreme patience and resilience to make culinary wonders.",
+        "examples": [
+            "Chef",
+            "Sous Chef",
+            "Cook"
+        ],
+        "saves": "You are Proficient in Constitution and Wisdom Saving Throws.",
+        "custom": {
+            "name": "Culinary Experience",
+            "desc": "You have Proficiency in two of the following: Athletics, Medicine, Nature, Perception or Sleight of Hand."
+        },
+        "profs": 3,
+        "alt": "Proficiency in two sets of tools, or Expertise in a skill\/tool that you're already Proficient in."
+    },
+    "Scientist": {
+        "name": "Scientist",
+        "stats": "Int +2, Dex +1",
+        "desc": "Those who make a living pushing the frontiers of science through calculations and experimentation.",
+        "examples": [
+            "Mathematicians",
+            "Physicists",
+            "Engineers",
+            "Chemists"
+        ],
+        "saves": "You are Proficient in Dexterity and Intelligence Saving Throws.",
+        "custom": {
+            "name": "Scientific Research",
+            "desc": "You have Proficiency in two of the following: Arcana, History, Investigation, Medicine, Nature, or Sleight of Hand."
+        },
+        "profs": 3,
+        "alt": "Proficiency in two sets of tools of your choice or Expertise in a skill\/tool that you're already Proficient in."
+    },
+    "Weightlifter": {
+        "name": "Weightlifter",
+        "stats": "Str +2, Cha +1",
+        "desc": "Those who work on their physique for muscle mass or pure strength. These people work diligently to not only keep in top shape, but to be able to show the work of their labors off.",
+        "examples": [
+            "Bodybuilders",
+            "Some Olympians",
+            "Powerlifters"
+        ],
+        "saves": "You are Proficient in Strength and Charisma Saving Throws.",
+        "custom": {
+            "name": "Powerful Performance",
+            "desc": "You have Proficiency in two of the following: Athletics, Acrobatics, Intimidation, Medicine, Performance, or Persuasion."
+        },
+        "profs": 3,
+        "alt": "Expertise in a skill that you're already Proficient in."
     }
 }

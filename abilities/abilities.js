@@ -146,20 +146,28 @@ function parseTypes(classes) {
             var cls = "", lnk = "", page = "classes";
             switch (classes[i]) {
                 case "Ass":
-                    cls = "Assassins",
-                    lnk = "Assassin"
+                    cls = "Assassins";
+                    lnk = "Assassin";
                     break;
                 case "Sch":
-                    cls = "Scholars",
-                    lnk = "Scholar"
+                    cls = "Scholars";
+                    lnk = "Scholar";
                     break;
                 case "Con":
-                    cls = "Consuls",
-                    lnk = "Consul"
+                    cls = "Consuls";
+                    lnk = "Consul";
                     break;
                 case "War":
-                    cls = "Warriors",
-                    lnk = "Warrior"
+                    cls = "Warriors";
+                    lnk = "Warrior";
+                    break;
+                case "Art":
+                    cls = "Artisans";
+                    lnk = "Artisan";
+                    break;
+                case "Hvy":
+                    cls = "Heavyweights";
+                    lnk = "Heavyweight";
                     break;
                 case "Pwr":
                     cls = "Power-Type Stands";

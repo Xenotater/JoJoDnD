@@ -207,6 +207,8 @@ function hint(attr) { //this whole thing should be replaced by json..
             return("While holding this item, if you've not moved this turn, you may gain " + cover + " Cover as a Bonus Action until the start of your turn, though this also reduces your Movement Speed to 0.")
         case "Reach":
             return("This weapon can attack targets from an additional meter away.");
+        case "Conductive":
+            return("Energy currents, such as electricity or Ripple, may be run through this weapon.");
         default:
             return("Error: This attribute doesn't have a definition. Please alert the site administrator.");     
     }

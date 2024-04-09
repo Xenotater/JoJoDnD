@@ -743,5 +743,21 @@
             "In addition, your stand gains two of the following benefits:<ul class='sublist'><li>Your Stands Custom Ability massively increases in potency. For example, if your Stand uses scaling dice, you gain an additional amount of Ability Dice equal to your Proficiency Bonus. Alternatively, you may speak to your DM about increasing the potency of your Stands Ability in some other way, similar to <a href='\/abilities\/Enhanced_Custom_Ability'>Enhanced Custom Ability<\/a>.<\/li><li>Your Range becomes irrelevant, and affects everyone or everything on the planet.<\/li><li>Your Stand Energy becomes 0, and your Stands Abilities may be used without cost.<\/li><li>Two of your Stands stats of your choice are doubled, as well as all of the points you put into those stats later.<\/li><li>Your Stand DC increases by an amount equal to your Proficiency Bonus.<\/li><\/ul>"
         ],
         "prereq": "<a href='\/classes\/?focus=Stands'>Stand User<\/a> Level 1+, Cannot be a Remote-Type or Independent-Type Stand User"
+    },
+    "Berserker": {
+        "name": "Berserker",
+        "desc": [
+            "Either by entering a trance, or through sheer adrenaline and rage, you have found a way to tap into a primal rage locked within you. You are able to use it to great destructive effect, at risk of pushing yourself far past your limits."
+        ],
+        "effects": [
+            "As a Free Action at the start of your Turn, you may go Berserk. This lasts for an amount of Turns equal to your Proficiency Bonus, so long as you either make a Skill Check using Strength (including Grapple and Shove) or at least one Attack Roll using Strength on your Turn. When you going Berserk, you gain the following traits<ul>",
+            "While Berserk, your Strength Modifier increases by an amount equal to your Proficiency Bonus. If you have a Stand, your Stand's Power increases by the same amount.",
+            "Your melee Attacks gain the Siege attribute.",
+            "You gain Resistance to Piercing, Slashing, and Fire damage (so long as you are not Vulnerable).",
+            "You do not go unconscious when you hit 0 HP, but you still make Death Saves as normal until healed. If you fail all three Death Saves, you die as normal.",
+            "Your mental faculties are unable to keep up while your body is in this accelerated state. Your sense of reason is reduced, replaced by a boiling rage that screams at you to destroy everyone and everything in your path. You have Disadvantage on Saving Throws against illusions and effects that would change or warp your perception, and Disadvantage on all Charisma Skill Checks except Intimidation.<\/ul>",
+            "You may only go Berserk twice per Long Rest, but may take a level of Exhaustion in order to do so more than twice."
+        ],
+        "prereq": "13+ Str and 13+ Con"
     }
 }
