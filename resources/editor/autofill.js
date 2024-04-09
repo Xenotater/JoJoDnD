@@ -79,10 +79,15 @@ function detectChange(object) {
         var stat = id.replace("-mod", "");
         updateSave(stat);
         updateSkills(stat);
+        fixMod(object);
     }
 
     if ($(object).hasClass("stand-score")) {
         updateStandMod(id.replace("S", "").replace("-score", ""));
+    }
+
+    if ($(object).hasClass("stand-mod")) {
+        fixMod(object);
     }
 
     if (id == "name" || id == "Uname" || id == "Fname") {
@@ -138,6 +143,12 @@ function detectChange(object) {
         default:
             break;
     }
+}
+
+function fixMod(object) {
+    var val = $(object).val();
+    if (val > 0)
+        $(object).val("+" + val);
 }
 
 function saveScore(object) {
@@ -363,14 +374,10 @@ function updatePassive() {
 
 function updateProfs() {
     var mod = parseInt($("#int-mod").val());
-    if (isNaN(mod))
-        mod = 0;
-    if (mod < 0)
-        mod = 0;
-    if ($("#int-score").val() != "")
-        $("#skillcnt").html(" (+" + mod + ")");
-    else
+    if (isNaN(mod) || mod < 1)
         $("#skillcnt").html("");
+    else
+        $("#skillcnt").html(" (+" + mod + ")");
 }
 
 function updateAtks() {

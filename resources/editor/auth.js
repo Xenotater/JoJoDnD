@@ -192,15 +192,23 @@ function updateCharacters() {
             $("#prevPage").css("display", "inline-block");
         else
             $("#prevPage").css("display", "none");
-
-        if ($(".charCard").length == 11)
-            $("#nextPage").css("display", "inline-block");
-        else
-            $("#nextPage").css("display", "none")
         
         if (loggedIn)
             $.post("characters.php", { action: "count", search: query }, function(count) {
-                $("#pageCount").html((Math.floor(offset/11) + 1) + " / " + (Math.floor(count/11) + 1));
+                count = parseInt(count);
+                let current = Math.floor(offset/11) + 1, max = Math.floor(count/11) + 1;
+                if (count % 11 == 0)
+                    max--;
+                if (current > max) {
+                    offset = 11 * (max - 1);
+                    updateCharacters();
+                    return;
+                }
+                $("#pageCount").html(current + " / " + max);
+                if (count >= 11 && count - offset > 11)
+                    $("#nextPage").css("display", "inline-block");
+                else
+                    $("#nextPage").css("display", "none")
             });
     });
     $("#characters").append("<div class='loading'></div>");
