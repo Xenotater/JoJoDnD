@@ -2007,7 +2007,7 @@
     "Improved_Rejuvenation": {
         "name": "Improved Rejuvenation",
         "desc": [
-            "When you use <a class='in-page'>Rejuvenation</a>, instead of having 1d12 and then adding the other modifiers, you have an amount of d12s equal to your Constitution Modifier. When you use Rejuvenation, you also gain two elemental Resistances or one physical Resistance of your choice until the start of your next Turn. You cannot gain Resistance to a damage type that you are Vulnerable to.",
+            "When you use <a class='in-page'>Rejuvenation<\/a>, instead of having 1d12 and then adding the other modifiers, you have an amount of d12s equal to your Constitution Modifier. When you use Rejuvenation, you also gain two elemental Resistances or one physical Resistance of your choice until the start of your next Turn. You cannot gain Resistance to a damage type that you are Vulnerable to.",
             "In addition, you now have two uses of Rejuvenation per Short Rest."
         ],
         "classes": [
@@ -2019,7 +2019,7 @@
         "desc": [
             "You gain Expertise in Perception and Survival. If you already had Expertise, you gain Mastery instead.",
             "As a Bonus Action, you may give your elemental Resistances to an ally within melee range until the start of their next Turn.",
-            "Additionally, when members of your traveling party take a Short Rest and spend Hit Dice, or take a Long Rest with you, they gain half of the Temporary HP that you do from <a class='in-page'>Ranger's Recovery</a>."
+            "Additionally, when members of your traveling party take a Short Rest and spend Hit Dice, or take a Long Rest with you, they gain half of the Temporary HP that you do from <a class='in-page'>Ranger's Recovery<\/a>."
         ],
         "classes": [
             "Rgr"
@@ -2028,8 +2028,8 @@
     "Improved_Specialty": {
         "name": "Improved Specialty",
         "desc": [
-            "You may gain the additional suboptions from an <a class='in-page'>Artisan's Specialty</a> you already had, or an additional suboption for a different speciality type.",
-            "You also gain Expertise in the use of the tool set(s) you use with this Class. "
+            "You also gain Expertise in the use of the tool set(s) you use with this Class.",
+            "Whenever you fail a Skill Check using a set of tools you are Proficient in, as a Reaction you may spend an Artisan charge to instead make the d20\u2019s result equal to your Level in Artisan instead."
         ],
         "classes": [
             "Art"
@@ -2047,8 +2047,8 @@
     "Perfected_Specialty": {
         "name": "Perfected Specialty",
         "desc": [
-            "You may gain the additional suboptions from an <a class='in-page'>Artisan's Specialty</a> you already had, or an additional suboption for a different speciality type.",
-            "You also gain Mastery in the use of the tool set(s) you use with this Class. "
+            "Your <a class='in-page'>Artisan's Resurgence<\/a> is improved, granting an amount of Artisan Charges equal to you maximum.",
+            "You also gain Mastery in the use of the tool set(s) you use with this Class."
         ],
         "classes": [
             "Art"
@@ -2060,7 +2060,7 @@
             "You gain Mastery in Perception and Survival. If you already had Mastery, add your Proficiency Bonus an additional time.",
             "You also gain two additional elemental damage types to Resist, or one physical damage type.",
             "As a Bonus Action, you may give your elemental Resistances to all allies within 5m of you.",
-            "Finally, when you use your <a class='in-page'>Ranger's Recovery</a>, instead of the health from the Hit Dice being lost in exchange for the Temp HP you get both, and you may spend a maximum amount of Hit Dice at once equal to your Wisdom Modifier."
+            "Finally, when you use your <a class='in-page'>Ranger's Recovery<\/a>, instead of the health from the Hit Dice being lost in exchange for the Temp HP you get both, and you may spend a maximum amount of Hit Dice at once equal to your Wisdom Modifier."
         ],
         "classes": [
             "Rgr"

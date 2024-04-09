@@ -174,10 +174,10 @@ function updateDisplay() {
                         if (f.includes("(")) {
                             f = l.linkFeatures[j].split(" (");
                             f[1] = " (" + f[1];
-                            newContent += "<a href='/abilities/?focus=" + f[0].replace(/[ -]/g, "_") + "'>" + f[0] + "</a>" + f[1];
+                            newContent += "<a href='/abilities/?focus=" + f[0].replace(/[ -]/g, "_").replace("'", "") + "'>" + f[0] + "</a>" + f[1];
                         }
                         else
-                            newContent += "<a href='/abilities/?focus=" + f.replace(/[ -]/g, "_") + "'>" + f + "</a>"
+                            newContent += "<a href='/abilities/?focus=" + f.replace(/[ -]/g, "_").replace("'", "") + "'>" + f + "</a>"
                         if ((j != l.linkFeatures.length-1 || l.featFeatures != null ||l.ability != null) && l.linkFeatures[j+1] != "OR")
                             newContent += " | ";
                     }
@@ -244,10 +244,10 @@ function updateDisplay() {
                             if (f.includes("(")) {
                                 f = l.linkFeatures[j].split(" (");
                                 f[1] = " (" + f[1];
-                                newContent += "<a href='/abilities/?focus=" + f[0].replace(/[ -]/g, "_") + "'>" + f[0] + "</a>" + f[1];
+                                newContent += "<a href='/abilities/?focus=" + f[0].replace(/[ -]/g, "_").replace("'", "") + "'>" + f[0] + "</a>" + f[1];
                             }
                             else
-                                newContent += "<a href='/abilities/?focus=" + f.replace(/[ -]/g, "_") + "'>" + f + "</a>"
+                                newContent += "<a href='/abilities/?focus=" + f.replace(/[ -]/g, "_").replace("'", "") + "'>" + f + "</a>"
                             if ((j != l.linkFeatures.length-1 || l.featFeatures != null ||l.ability != null) && l.linkFeatures[j+1] != "OR")
                                 newContent += " | ";
                         }

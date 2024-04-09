@@ -3847,7 +3847,34 @@
                     }
                 },
                 "hDice": "1d8",
-                "desc": "Artisans use their expertise in specific subjects and their use of tools to perform a variety of incredible deeds. "
+                "desc": "Artisans use their expertise in specific subjects and their use of tools to perform a variety of incredible deeds.",
+                "otherCols": [
+                    {
+                        "name": "Artisan Charges",
+                        "level": {
+                            "1": "2",
+                            "2": "2",
+                            "3": "3",
+                            "4": "3",
+                            "5": "4",
+                            "6": "4",
+                            "7": "5",
+                            "8": "5",
+                            "9": "6",
+                            "10": "6",
+                            "11": "7",
+                            "12": "7",
+                            "13": "8",
+                            "14": "8",
+                            "15": "9",
+                            "16": "9",
+                            "17": "10",
+                            "18": "10",
+                            "19": "11",
+                            "20": "12"
+                        }
+                    }
+                ]
             },
             "Heavyweight": {
                 "name": "Heavyweight",
