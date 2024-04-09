@@ -491,9 +491,10 @@
         "desc": "You're well-trained in combat, and really know how to overwhelm an opponent.",
         "effects": [
             "When you take the Attack Action, you may perform an additional Attack.",
-            "You may take this Feat up to 3 times, granting a maximum of four Attacks per Action."
-        ],
-        "prereq": "Cannot be a <a href='\/classes\/?focus=Stands'>Stand User<\/a>"
+            "You may take this Feat up to 3 times, granting a maximum of four Attacks per Action.",
+            "<a href='\/classes?focus=Stands'>Stand Users<\/a> that take this Feat still have a maximum number of 10 Attacks allowed between those granted by this Feat and by their Speed Modifier.",
+            "Those with Levels in <a href='\/classes?focus=Ripple'>Ripple<\/a>, <a href='\/classes?focus=Warrior'>Warrior<\/a>, or are <a href='\/abilities?focus=Undead_Nature'>Undead<\/a> have a maximum of 10 attacks rather than 4."
+        ]
     },
     "Trap_Detection": {
         "name": "Trap Detection",
