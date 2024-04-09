@@ -27,7 +27,7 @@ function getData() {
         pData = data;
         if (pData[p] == null)
             p = "Academic";
-        passions = Object.keys(pData);
+        passions = Object.keys(pData).sort();
         updateList();
         updateDisplay();
     });

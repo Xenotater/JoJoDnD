@@ -364,9 +364,9 @@ function updatePassive() {
 function updateProfs() {
     var mod = parseInt($("#int-mod").val());
     if (isNaN(mod))
-        mod = 1;
-    if (mod < 1)
-        mod = 1;
+        mod = 0;
+    if (mod < 0)
+        mod = 0;
     if ($("#int-score").val() != "")
         $("#skillcnt").html(" (+" + mod + ")");
     else

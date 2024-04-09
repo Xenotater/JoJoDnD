@@ -603,7 +603,7 @@
         "name": "Weapon Feat",
         "desc": "<b>THIS IS NOT A FEAT<\/b>, this is a category of Feats.",
         "effects": [
-            "Please select a Feat from the list below. You may not gain the same Feat from this list twice, unless otherwise specified.<ul class='sublist'><li><a class='in-page'>Demolitionist<\/a><\/li><li><a class='in-page'>Heavy Specialization<\/a><\/li><li><a class='in-page'>Martial Arts<\/a><\/li><li><a class='in-page'>Melee Specialization<\/a><\/li><li><a class='in-page'>Professional Weapon Training<\/a><\/li><li><a class='in-page'>Shield Proficiency<\/a><\/li><li><a class='in-page'>Shotgun Specialization<\/a><\/li><li><a class='in-page'>Sidearm Specialization<\/a><\/li><li><a class='in-page'>Simple Weapon Focus<\/a><\/li><li><a class='in-page'>Tavern Brawler<\/a><\/li><li><a class='in-page'>Thrown Weapon Specialization<\/a><\/li><\/ul>"
+            "Please select a Feat from the list below. You may not gain the same Feat from this list twice, unless otherwise specified.<ul class='sublist'><li><a class='in-page'>Demolitionist<\/a><\/li><li><a class='in-page'>Heavy Specialization<\/a><\/li><li><a class='in-page'>Martial Arts<\/a><\/li><li><a class='in-page'>Melee Specialization<\/a><\/li><li><a class='in-page'>Professional Weapon Training<\/a><\/li><li><a class='in-page'>Rifle Specialization<\/a><\/li><li><a class='in-page'>Shield Proficiency<\/a><\/li><li><a class='in-page'>Shotgun Specialization<\/a><\/li><li><a class='in-page'>Sidearm Specialization<\/a><\/li><li><a class='in-page'>Simple Weapon Focus<\/a><\/li><li><a class='in-page'>Tavern Brawler<\/a><\/li><li><a class='in-page'>Thrown Weapon Specialization<\/a><\/li><\/ul>"
         ]
     },
     "Epic_Feat": {
