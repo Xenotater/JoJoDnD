@@ -3846,7 +3846,7 @@
                         ]
                     }
                 },
-                "hDice": "1d8",
+                "hDice": "1d6",
                 "desc": "Artisans use their expertise in specific subjects and their use of tools to perform a variety of incredible deeds.",
                 "otherCols": [
                     {
