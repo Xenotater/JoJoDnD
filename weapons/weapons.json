@@ -706,7 +706,7 @@
             "name": "Greatclub",
             "attr": [
                 "Reach",
-                "Two_Handed"
+                "Two-Handed"
             ],
             "type": "Simple",
             "spec": "Heavy\/Melee",

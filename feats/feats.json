@@ -14,11 +14,11 @@
         "name": "Art of Distraction",
         "desc": "People are easy to fool, this is something that you've learned over years of experience.",
         "effects": [
-            "You're able to trap a helpless person within a conversation by spending your Action each Turn and rolling a Performance Check against a single, non-hostile target's Wisdom saving throw. While keeping this individual distracted in this way, their movement speed is reduced to 0 and they cannot roll higher than 10 on a Perception Check, and their Passive Perception is now restricted to 10 at most.",
-            "You may keep a person trapped in this conversational purgatory for up to 10 minutes, until you stop spending your action or they succeed on their save, or something very obviously out of the ordinary happens in a way that you can't explain.",
-            "Additionally, you have figured out a way to enthrall several people by using your Action each Turn to may keep an amount of non-hostile people equal to your Charisma Modifier focused on what you're doing for up to a minute. Anyone caught in this effect has Disadvantage on all Perception Checks, and has a -5 penalty to their Passive Perception."
+            "You're able to trap a helpless person within a conversation by spending your Action each Turn and rolling a Performance Check against a single, non-hostile target's Wisdom saving throw. While keeping this individual distracted in this way, their movement speed is reduced to 0, and their Passive Perception and Perception Checks are now restricted to a value of 10 at most.",
+            "You may keep a person trapped in this conversational purgatory for up to an amount of time equal to 30 minutes times your Proficiency Bonus, until you stop spending your Action or they succeed on their save, or something very obviously out of the ordinary happens in a way that you can't explain.",
+            "Additionally, you have figured out a way to enthrall several people by using your Action each Turn to keep an amount of non-hostile people equal to your Charisma Modifier focused on what you're doing for up to an hour. Anyone caught in this effect has Disadvantage on all Perception Checks, and has a -5 penalty to their Passive Perception."
         ],
-        "prereq": "Proficiency in Performance Checks."
+        "prereq": "Proficiency in Performance Checks or <a href='/classes?focus=Consul'>Consul</a> Level 1+"
     },
     "Blended_Fighting": {
         "name": "Blended Fighting",

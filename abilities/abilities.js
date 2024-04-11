@@ -169,6 +169,10 @@ function parseTypes(classes) {
                     cls = "Heavyweights";
                     lnk = "Heavyweight";
                     break;
+                case "Rgr":
+                    cls = "Rangers";
+                    lnk = "Ranger";
+                    break;
                 case "Pwr":
                     cls = "Power-Type Stands";
                     lnk = "Power";

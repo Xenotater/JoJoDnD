@@ -1793,7 +1793,7 @@
         ],
         "desc": [
             "Through using Encouragement Dice, you can either heal a nearby ally or boost their abilities through bolstering their spirits.",
-            "You have an amount of Encouragement Dice equal to your Charisma Modifier + your Proficiency Bonus. You regain all spent Encouragement Dice on a Long Rest. You may spend Encouragement Dice in the following ways:",
+            "You have an amount of Encouragement Dice equal to your Level in Consul + your Charisma Modifier. You regain all spent Encouragement Dice on a Long Rest. You may spend Encouragement Dice in the following ways:",
             "As an Attack, you may restore 1d6 + your Charisma Modifier Hit Points to yourself or an ally who can see or hear you within 5 meters, and you may choose to spend several Encouragement Dice at once in order to add an additional 1d6 for each Die.",
             "As a Reaction, when you or an ally within 5 meters makes a Skill Check or Saving Throw, you may add 1d6 to that roll. Alternatively the die may be saved and spent on a later roll within the next 5 minutes, after which it expires. A character can have one Encouragement Die at a time, and you can only have an amount of people equal to your Proficiency Bonus boosted by Encouragement Dice at the same time."
         ]
@@ -1976,7 +1976,7 @@
         "name": "Bullish Brawn",
         "desc": [
             "When you have someone Grappled, you have Advantage on Checks to keep them Grappled. In addition, when you Grapple or Shove Stand Users, you can force them to contest you with their own stats rather than their Stand's, so long as you also use your own stats and not your Stand's. This also applies when they attempt to Grapple you.",
-            "When you use the Shove action, instead of pushing you target one meter back on a success, you push them an amount of meters back equal to your Strength Modifier. If a target hits a wall, for every meter they could not be shoved they take a number of d6s of Bludgeoning damage equal to your Proficiency Bonus."
+            "When you use the Shove action, instead of pushing your target one meter back on a success, you push them an amount of meters back equal to your Strength Modifier. If a target hits a wall, for every meter they could not be shoved they take a number of d6s of Bludgeoning damage equal to your Proficiency Bonus."
         ],
         "classes": [
             "Hvy"
@@ -2020,7 +2020,7 @@
     "Improved_Survivalist": {
         "name": "Improved Survivalist",
         "desc": [
-            "You gain Expertise in Perception and Survival. If you already had Expertise, you gain Mastery instead.",
+            "You gain Expertise in Perception and Survival. If you already have Expertise, you gain Mastery instead.",
             "As a Bonus Action, you may give your elemental Resistances to an ally within melee range until the start of their next Turn.",
             "Additionally, when members of your traveling party take a Short Rest and spend Hit Dice, or take a Long Rest with you, they gain half of the Temporary HP that you do from <a class='in-page'>Ranger's Recovery<\/a>."
         ],
@@ -2050,7 +2050,7 @@
     "Perfected_Specialty": {
         "name": "Perfected Specialty",
         "desc": [
-            "Your <a class='in-page'>Artisan's Resurgence<\/a> is improved, granting an amount of Artisan Charges equal to you maximum.",
+            "Your <a class='in-page'>Artisan's Resurgence<\/a> is improved, granting an amount of Artisan Charges equal to your maximum.",
             "You also gain Mastery in the use of the tool set(s) you use with this Class."
         ],
         "classes": [
@@ -2060,7 +2060,7 @@
     "Perfected_Survivalist": {
         "name": "Perfected Survivalist",
         "desc": [
-            "You gain Mastery in Perception and Survival. If you already had Mastery, add your Proficiency Bonus an additional time.",
+            "You gain Mastery in Perception and Survival. If you already have Mastery, add your Proficiency Bonus an additional time.",
             "You also gain two additional elemental damage types to Resist, or one physical damage type.",
             "As a Bonus Action, you may give your elemental Resistances to all allies within 5m of you.",
             "Finally, when you use your <a class='in-page'>Ranger's Recovery<\/a>, instead of the health from the Hit Dice being lost in exchange for the Temp HP you get both, and you may spend a maximum amount of Hit Dice at once equal to your Wisdom Modifier."
@@ -2092,7 +2092,7 @@
     "Survivalist": {
         "name": "Survivalist",
         "desc": [
-            "You gain Proficiency in Perception and Survival. If you already had Expertise, you gain Mastery instead.",
+            "You gain Proficiency in Perception and Survival. If you already have Proficiency, you gain Expertise instead.",
             "When making navigation Checks where you can see the sky or have a map, if you roll lower than 10 on the d20 you may treat it as a 10.",
             "You gain the ability to effectively navigate and accurately tell the time just by being able to see the position of the sun in the sky or the stars.",
             "Additionally, you have Resistance to any negative weather effects (extreme heat, extreme cold, sandstorms, etc), as well as two elemental damage types of your choice."

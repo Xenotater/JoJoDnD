@@ -8,7 +8,7 @@
             "Accountants",
             "Teachers",
             "Programmers",
-            "Scientists \/ Researchers"
+            "Researchers"
         ],
         "saves": "You are Proficient in Intelligence and Constitution Saving Throws.",
         "custom": {
@@ -21,15 +21,14 @@
     "Artist": {
         "name": "Artist",
         "stats": "Dex +2, Int +1",
-        "desc": "Using a variety of mediums, Artists create beautiful things to invoke feelings in people. Whether it be a comic, a painting, a sculpture, or a gourmet meal, Artists spend hours honing their craft.",
+        "desc": "Using a variety of mediums, Artists create beautiful things to invoke feelings in people. Whether it be a comic, a painting, a sculpture, or a heartfelt performance, Artists spend hours honing their craft.",
         "examples": [
             "Writers",
             "Painters",
             "Sculptors",
             "Mangakas",
             "Acrobats",
-            "Dancers",
-            "Chefs"
+            "Dancers"
         ],
         "saves": "You are Proficient in Dexterity and Intelligence Saving Throws.",
         "custom": {
@@ -44,7 +43,7 @@
         "stats": "Str +1, Dex +1, Con +1",
         "desc": "People who push their bodies to and past their physical limits in order to see the true potential of humanity.",
         "examples": [
-            "Olympians",
+            "Some Olympians",
             "Professional Sports Players",
             "Marathon Runners",
             "High School Quarterbacks"
@@ -83,7 +82,8 @@
         "examples": [
             "Construction Workers",
             "Garbage Collectors",
-            "Coal Miners"
+            "Coal Miners",
+            "Firefighters"
         ],
         "saves": "You are Proficient in Constitution and Strength Saving Throws.",
         "custom": {
@@ -131,7 +131,7 @@
     },
     "Medical_Expert": {
         "name": "Medical Expert",
-        "stats": "Int +2, Wis +1",
+        "stats": "Wis +2, Int +1",
         "desc": "Medical Experts use their superior intellect, reasoning, and patience to assist the injured. Medical Experts have immense knowledge of anatomy, knowing how living things function in almost every way.",
         "examples": [
             "Doctors",
@@ -255,9 +255,9 @@
         "stats": "Con +2, Wis +1",
         "desc": "Those who make a living creating wonderful food for people. These people work with extreme patience and resilience to make culinary wonders.",
         "examples": [
-            "Chef",
-            "Sous Chef",
-            "Cook"
+            "Chefs",
+            "Sous Chefs",
+            "Cooks"
         ],
         "saves": "You are Proficient in Constitution and Wisdom Saving Throws.",
         "custom": {

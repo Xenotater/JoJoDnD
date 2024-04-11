@@ -1461,7 +1461,7 @@
                         "featFeatures": [
                             "Resilient",
                             "OR",
-                            "Stand Specialization"
+                            "Anchored Immunity"
                         ]
                     },
                     "17": {
@@ -3894,7 +3894,7 @@
                         "feats": "2",
                         "linkFeatures": [
                             "Heavyweight Fighting Style",
-                            "Confident Provication"
+                            "Confident Provocation"
                         ]
                     },
                     "3": {
