@@ -157,7 +157,8 @@
             "9": {
                 "energy": 160,
                 "feats": [
-                    "Flesh Grafting"
+                    "Flesh Grafting",
+                    "Spider Climb"
                 ]
             },
             "10": {
@@ -309,7 +310,8 @@
             "7": {
                 "energy": 300,
                 "feats": [
-                    "Flesh Grafting"
+                    "Flesh Grafting",
+                    "Spider Climb"
                 ]
             },
             "8": {

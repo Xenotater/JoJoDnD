@@ -136,7 +136,7 @@
         ],
         "desc": [
             "Your Stand is incredibly resilient, a reflection of your willpower and experience.",
-            "Your Stand's Damage Reduction increases by double your Constitution Modifier.",
+            "Your Stand's Damage Reduction increases by double your Constitution Modifier, with a minimum increase of 2.",
             "<a class='in-page'>Armored Stand<\/a> still applies, but applies before this increase."
         ]
     },
@@ -2163,6 +2163,17 @@
         ],
         "classes": [
             "Art"
+        ]
+    },
+    "Spider_Climb": {
+        "name": "Spider Climb",
+        "desc": [
+            "You are not affected by gravity so long as you are attached to a surface like a wall or ceiling.",
+            "You gain a Climbing Speed equal to your Walking Speed (typically 10m) and may use it to move across sheer surfaces like walls and ceilings."
+        ],
+        "classes": [
+            "Vamp",
+            "EPM"
         ]
     }
 }

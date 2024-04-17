@@ -517,7 +517,7 @@
         "name": "Martial Arts",
         "desc": "Through knowledge and training you have become remarkably effective in unarmed combat. ",
         "effects": [
-            "You gain Proficiency in the use of Improvised weapons, and Expertise in Unarmed Strikes or melee Stand attacks.",
+            "You gain Proficiency in the use of Improvised weapons, and Expertise in Unarmed Strikes and melee Stand attacks.",
             "When making an Unarmed Strike, you deal 1d8 damage instead of 1d4.",
             "When making an Athletics Check to Grapple or Shove a target, you may use either Dexterity or Strength.",
             "Additionally, you may spend a full Action to Grapple a target and cause them to be Restrained if successful. As long as you continue to use your full Action and don't move each Turn, the target will continue to be Restrained.",
