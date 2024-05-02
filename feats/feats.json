@@ -757,7 +757,7 @@
             "Your melee Attacks gain the Siege attribute.",
             "You gain Resistance to Piercing, Slashing, and Fire damage (so long as you are not Vulnerable).",
             "You do not go unconscious when you hit 0 HP, but you still make Death Saves as normal until healed. If you fail all three Death Saves, you die as normal.",
-            "Your mental faculties are unable to keep up while your body is in this accelerated state. Your sense of reason is reduced, replaced by a boiling rage that screams at you to destroy everyone and everything in your path. You have Disadvantage on all Intelligence, Wisdom, and Charisma Saving Throws except Intimidation.<\/ul>",
+            "Your mental faculties are unable to keep up while your body is in this accelerated state. Your sense of reason is reduced, replaced by a boiling rage that screams at you to destroy everyone and everything in your path. You have Disadvantage on all Intelligence, Wisdom, and Charisma Saving Throws, as well as all Charisma Checks except Intimidation.<\/ul>",
             "You may only go Berserk twice per Long Rest, but may take a level of Exhaustion in order to do so more than twice."
         ],
         "prereq": "13+ Str and 13+ Con"
