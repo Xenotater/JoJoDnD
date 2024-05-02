@@ -5,6 +5,7 @@ $(document).ready(function() {
     var q = url.searchParams.get("search");
 
     getData(q);
+    getAttributes();
 
     $("#weapon-list").on("mouseenter", ".attr", function(e) {
         hintText = hint($(this).html());
@@ -80,7 +81,7 @@ function getData(q) {
 }
 
 function createTable() {
-    var newText = "<div data-simplebar><table class='table table-striped'><thead><tr>";
+    var newText = "<div id='table-wrapper' data-simplebar><table class='table table-striped'><thead><tr>";
     newText += "<th><div class='label attr'>Name</div><div class='sortBtns'><i id='nameUp' class='bi bi-caret-up sorter'></i><br><i id='nameDown' class='bi bi-caret-down sorter'></i></div></th>";
     newText += "<th><div class='label attr'>Attributes</div><div class='sortBtns'><i id='attrUp' class='bi bi-caret-up sorter'></i><br><i id='attrDown' class='bi bi-caret-down sorter'></i></div></th>";
     newText += "<th><div class='label attr'>Type</div><div class='sortBtns'><i id='typeUp' class='bi bi-caret-up sorter'></i><br><i id='typeDown' class='bi bi-caret-down sorter'></i></div></th>";
@@ -168,7 +169,7 @@ function hint(attr) { //this whole thing should be replaced by json..
         case "Ranged":
             return("This weapon can fire up to " + range[0] + "m, or as far as " + range[1] + "m with Disadvantage.<br>Firing within melee imposes Disadvantage.");
         case "Firearm":
-            return("This weapon makes a loud sound which can be heard up to 0.5km away.<br>It also jams if a natural 1 is rolled while using it.<br>This weapon's ammuntion doesn't function when wet.");
+            return("This weapon makes a loud sound which can be heard up to 0.5km away.<br>It also jams if a natural 1 is rolled while using it.<br>This weapon's ammunition doesn't function when wet.");
         case "Reload":
             return("This weapon can be used " + ammo + " times before needing to be reloaded.<br>Reloading takes a full Attack.");
        case "Burst":
