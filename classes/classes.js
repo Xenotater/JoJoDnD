@@ -153,14 +153,14 @@ function updateDisplay() {
 
     if (clss.level != null) {
         newContent += "<h4 class='display-heading'>Leveling Up</h4>";
-        newContent += "<table class='table table-striped levels' id='" + clss.theme + "'><thead><tr><th>Level</th><th>Pro. Bonus</th><th>Feats</th><th>Features</th>";
+        newContent += "<table class='table table-striped levels' id='" + clss.theme + "'><thead><tr><th>Level</th><th>Pro. Bonus</th><th>Features</th>";
         if(clss.otherCols != null)
             for (let i = 0; i < clss.otherCols.length; i++)
                 newContent += "<th>" + clss.otherCols[i].name + "</th>"
         newContent += "</tr></thead><tbody>";
         for (let i = 1; i <= 20; i++) {
             l = clss.level[i];
-            newContent += "<tr><td>" + i + "</td><td>+" + l.pro + "</td><td>" + l.feats + "</td><td>";
+            newContent += "<tr><td>" + i + "</td><td>+" + l.pro + "</td><td>";
             if (l.otherFeatures != null)
                 for (let j = 0; j < l.otherFeatures.length; j++) {
                     newContent += l.otherFeatures[j];
@@ -227,10 +227,10 @@ function updateDisplay() {
             newContent += "<tr><td>Stand Energy</td><td>Cha x" + a.mults[5] + "</td></tr>";
             newContent += "</tbody></table>";
             newContent += "<b>Leveling Up:</b>";
-            newContent += "<table class='table table-striped levels echoes'><thead><tr><th>Level</th><th>Pro. Bonus</th><th>Feats</th><th>Features</th><th>Ability Dice</th></tr></thead><tbody>";
+            newContent += "<table class='table table-striped levels echoes'><thead><tr><th>Level</th><th>Pro. Bonus</th><th>Features</th><th>Ability Dice</th></tr></thead><tbody>";
             for (let j = 0; j < a.level.length; j++) {
                 l = a.level[j];
-                newContent += "<tr><td>" + l.lvl + "</td><td>+" + l.pro + "</td><td>" + l.feats + "</td><td>";
+                newContent += "<tr><td>" + l.lvl + "</td><td>+" + l.pro + "</td><td>";
                 if (l.otherFeatures != null)
                     for (let j = 0; j < l.otherFeatures.length; j++) {
                         newContent += l.otherFeatures[j];

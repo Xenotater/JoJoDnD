@@ -63,8 +63,12 @@
     text-decoration: none;
 }
 
+.levels th:first-child {
+    width: 10%; 
+}
+
 .levels th:nth-child(2) {
-    width: 80px;
+    width: 12%;
 }
 
 .levels tr {

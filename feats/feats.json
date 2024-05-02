@@ -127,9 +127,10 @@
         "effects": [
             "You may make an object a permanent part of your Stand by imbuing it with Stand Energy for 8 hours. ",
             "The object now deals Stand damage and gains the same resistance that the rest of your Stand has.",
+            "You become Proficient in the use of the imbued object, if you weren't already.",
             "If the object is destroyed, it does not damage the User in any way and it regenerates mass at a rate of 1kg\/hour.",
             "If the object is a Ranged Weapon then you may refill its ammo to maximum capacity as a single Attack at the cost of 1 Stand Energy.",
-            "If the weapon is non-explosive and its maximum capacity is less than 5, you still get 5 'shots' before needing to expend Stand Energy again.",
+            "If the weapon is non-explosive and its maximum ammo capacity is less than 5, you still get 5 'shots' before needing to expend Stand Energy again.",
             "This Feat may not be replaced once the object is permanently imbued.",
             "You may take this Feat multiple times if desired."
         ],
@@ -751,12 +752,12 @@
             "Either by entering a trance, or through sheer adrenaline and rage, you have found a way to tap into a primal rage locked within you. You are able to use it to great destructive effect, at risk of pushing yourself far past your limits."
         ],
         "effects": [
-            "As a Free Action at the start of your Turn, you may go Berserk. This lasts for an amount of Turns equal to your Proficiency Bonus, so long as you either make a Skill Check using Strength (including Grapple and Shove) or at least one Attack Roll using Strength on your Turn. When you going Berserk, you gain the following traits<ul>",
+            "As a Free Action at the start of your Turn, you may go Berserk. This lasts until you choose to exit this state or for an amount of Turns equal to your Proficiency Bonus, so long as you either make a Skill Check using Strength (including Grapple and Shove) or at least one Attack Roll using Strength on your Turn. When you going Berserk, you gain the following traits<ul>",
             "While Berserk, your Strength Modifier increases by an amount equal to your Proficiency Bonus. If you have a Stand, your Stand's Power increases by the same amount.",
             "Your melee Attacks gain the Siege attribute.",
             "You gain Resistance to Piercing, Slashing, and Fire damage (so long as you are not Vulnerable).",
             "You do not go unconscious when you hit 0 HP, but you still make Death Saves as normal until healed. If you fail all three Death Saves, you die as normal.",
-            "Your mental faculties are unable to keep up while your body is in this accelerated state. Your sense of reason is reduced, replaced by a boiling rage that screams at you to destroy everyone and everything in your path. You have Disadvantage on Saving Throws against illusions and effects that would change or warp your perception, and Disadvantage on all Charisma Skill Checks except Intimidation.<\/ul>",
+            "Your mental faculties are unable to keep up while your body is in this accelerated state. Your sense of reason is reduced, replaced by a boiling rage that screams at you to destroy everyone and everything in your path. You have Disadvantage on all Intelligence, Wisdom, and Charisma Saving Throws except Intimidation.<\/ul>",
             "You may only go Berserk twice per Long Rest, but may take a level of Exhaustion in order to do so more than twice."
         ],
         "prereq": "13+ Str and 13+ Con"
