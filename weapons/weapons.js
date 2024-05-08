@@ -5,7 +5,6 @@ $(document).ready(function() {
     var q = url.searchParams.get("search");
 
     getData(q);
-    getAttributes();
 
     $("#weapon-list").on("mouseenter", ".attr", function(e) {
         hintText = hint($(this).html());
