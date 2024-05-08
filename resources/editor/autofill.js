@@ -391,12 +391,12 @@ function updateFeats() {
     var level = $("#level").val();
     if (!isNaN(level)) {
         var feats = "";
-        if (level > 19)
+        if (level > 20)
             feats = 6;
         else if (level < 1)
             feats = 2;
         else
-            feats = Math.floor((level - 1) / 5) + 2;
+            feats = Math.ceil(level / 4) + 1;
         $("#featcnt").html(" (+" + feats + ")");
     }
     else
