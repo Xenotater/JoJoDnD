@@ -2021,7 +2021,7 @@
         "name": "Improved Survivalist",
         "desc": [
             "You gain Expertise in Perception and Survival. If you already have Expertise, you gain Mastery instead.",
-            "As a Bonus Action, you may give your elemental Resistances to an ally within melee range until the start of their next Turn.",
+            "As a Bonus Action, you may give your non-physical Resistances to an ally within melee range until the start of their next Turn.",
             "Additionally, when members of your traveling party take a Short Rest and spend Hit Dice, or take a Long Rest with you, they gain half of the Temporary HP that you do from <a class='in-page'>Ranger's Recovery<\/a>."
         ],
         "classes": [
@@ -2061,8 +2061,8 @@
         "name": "Perfected Survivalist",
         "desc": [
             "You gain Mastery in Perception and Survival. If you already have Mastery, add your Proficiency Bonus an additional time.",
-            "You also gain two additional elemental damage types to Resist, or one physical damage type.",
-            "As a Bonus Action, you may give your elemental Resistances to all allies within 5m of you.",
+            "You also gain two additional non-physical damage types to Resist, or one physical damage type.",
+            "As a Bonus Action, you may give your non-physical Resistances to all allies within 5m of you.",
             "Finally, when you use your <a class='in-page'>Ranger's Recovery<\/a>, instead of the health from the Hit Dice being lost in exchange for the Temp HP you get both, and you may spend a maximum amount of Hit Dice at once equal to your Wisdom Modifier."
         ],
         "classes": [
@@ -2095,7 +2095,7 @@
             "You gain Proficiency in Perception and Survival. If you already have Proficiency, you gain Expertise instead.",
             "When making navigation Checks where you can see the sky or have a map, if you roll lower than 10 on the d20 you may treat it as a 10.",
             "You gain the ability to effectively navigate and accurately tell the time just by being able to see the position of the sun in the sky or the stars.",
-            "Additionally, you have Resistance to any negative weather effects (extreme heat, extreme cold, sandstorms, etc), as well as two elemental damage types of your choice."
+            "Additionally, you have Resistance to any negative weather effects (extreme heat, extreme cold, sandstorms, etc), as well as two non-physical damage types of your choice."
         ],
         "classes": [
             "Rgr"
