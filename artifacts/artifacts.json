@@ -88,7 +88,14 @@
         "name": "Devil's Palm",
         "lore": "Hundreds of years ago, one of the strongest beings to walk to the face of the Earth perished in North America. When he died, the ground itself split, and power flowed through the Earth itself, saturating it with excess energy.",
         "desc": "There are 4 known Devil's Palms, and they are notoriously difficult to find as the Palms move slowly over time. The locations of the Palms are: The Arizona Desert, West of Chicago, South Carolina, and the Rocky Mountains. Each Palm is harsh and unforgiving, with very little life in them.",
-        "effect": "After entering a Devil's Palm only those with strong wills may find themselves able to leave. those who possess strong willpower may still find themselves stranded for days or weeks on end. However, those able to escape will find that they have gained a new ability in the form of a <a href='/classes/?focus=Stands'>Stand</a>. Very rarely, the Palm may even reveal a part of the Holy Corpse, which they exist to protect, to someone."
+        "effect": "After entering a Devil's Palm only those with strong wills may find themselves able to leave. those who possess strong willpower may still find themselves stranded for days or weeks on end. However, those able to escape will find that they have gained a new ability in the form of a <a href='/classes/?focus=Stands'>Stand</a>. Very rarely, the Palm may even reveal a part of the Holy Corpse, which they exist to protect, to someone.",
+        "other": [{
+            "name": "Variant: Wall Eyes",
+            "content": [
+                "<p>A particular kind of Devil's Palm left behind in the location where a Saint dies. The Wall Eyes have the special ability of fusing similar objects that get left underground, and certain parts are exchanged. For example, if a lemon and a lime get left underground, half of the internals of the lemon will appear in the lemon, the other half in the lime, and vice versa.</p>",
+                "<p>Those who find themselves drawn to the Wall Eyes will gain a wound that looks suspiciously like a human bite mark. People who are “bitten” in this way often develop a stand, or a case of the Stand Virus (As seen under <a href='/artifacts/?focus=Stand_Arrow'>Stand Arrow</a>).</p>"
+            ]
+        }]
     },
     "Holy_Corpse_Parts": {
         "name": "Holy Corpse Parts",
@@ -98,7 +105,7 @@
         "other": [{
             "name": "The Completed Holy Corpse",
             "content": [
-                "Once the entire Corpse is brought together, the Parts fuse and form a complete body. Once together, the one who possesses the Corpse gains abilities of unique strength and immeasurable fortune. When one obtains the corpse, they will find that only good fortune will meet them, both in a tangible, physical manner, as well as good things slowly accumulating over time. However, The Holy Corpse cannot stay inside of a Human in the same way that its individual parts can. In order to use The Completed Holy Corpse, the User must stay within 10m of it. The last one to touch The Corpse is the one that gains the Corpse's powers.",
+                "<p>Once the entire Corpse is brought together, the Parts fuse and form a complete body. Once together, the one who possesses the Corpse gains abilities of unique strength and immeasurable fortune. When one obtains the corpse, they will find that only good fortune will meet them, both in a tangible, physical manner, as well as good things slowly accumulating over time. However, The Holy Corpse cannot stay inside of a Human in the same way that its individual parts can. In order to use The Completed Holy Corpse, the User must stay within 10m of it. The last one to touch The Corpse is the one that gains the Corpse's powers.</p>",
                 "<h5 class='display-heading'>Love Train</h5>",
                 "<p>This Ability is the physical manifestation of luck in a quantitative, tangible way, an effect that may manifest around anybody who is currently in possession of The Completed Holy Corpse. It is an ability that has several sub-abilities, which are listed below. Additionaly, while Love Train is active, The Corpse may not be touched by anybody else, as it is protected by a forcefield.</p>",
                 "<ul><li><a href='/abilities/?focus=Incalculable_Fortune'>Incalculable Fortune</a></li><li><a href='/abilities/?focus=Vicious_Misfortune'>Vicious Misfortune</a></li><li><a href='/abilities/?focus=Gravitational_Pull'>Gravitational Pull</a></li><li><a href='/abilities/?focus=The_Wall'>The Wall</a></li></ul>"
@@ -134,6 +141,12 @@
                 "<tr><td>19</td><td>Nose</td><td>Lose ability to breathe through the nose, as well as all sense of smell. This also alters the sense of taste.</td></tr>",
                 "<tr><td>20</td><td>Reproductive Organs</td><td>Sterility</td></tr>",
                 "</tbody></table>"
+            ]
+        },{
+            "name": "Variants:",
+            "content": [
+                "<p><b>New Locacaca:</b> A variant of the Locacaca that allows for equivalent exchange between two organisms. Injuries may be repaired, and the consequences placed on another creature.</p>",
+                "<p><b>Locacaca 6251:</b> A variant of the Locacaca that has been made into a more refined medicine. Rather than rolling a random number, you may roll on the table an amount of times equal to your 1 + your Constitution Modifier (minimum of 2), then choose from the options rolled. Heals you over the course of an Action.</p>"
             ]
         }]
     }
