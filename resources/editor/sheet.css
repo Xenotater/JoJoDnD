@@ -104,12 +104,12 @@ input {
 
 #savebox {
     float: left;
-    width: 40%;
+    width: 25%;
 }
 
 #skillbox {
     float: left;
-    width: 60%;
+    width: 75%;
     border-left: none;
 }
 
@@ -131,14 +131,18 @@ input {
     height: 15px;
 }
 
+.single-stat {
+    margin-right: 24px;
+}
+
 #stats {
-    width: 50%;
+    width: 30%;
     float: left;
     line-height: 17.75px;
 }
 
 #checks {
-    width: 50%;
+    width: 70%;
     float: left;
 }
 
@@ -146,15 +150,15 @@ input {
     height: 16px;
     width: 14px;
     float: left;
-    margin-left: .5rem;
+    margin-left: 4px;
     margin-top: 2px;
 }
 
 .save-bonus {
     height: 16px;
-    width: 35px;
+    width: 25px;
     float: left;
-    margin-left: .5rem;
+    margin-left: 4px;
     margin-top: 2px;
     border: none;
     border-bottom: 2px solid black;
@@ -166,7 +170,11 @@ input {
     padding-left: 5px;
 }
 
-#proflbl, #atkslbl, #insplbl {
+#proflbl {
+    padding-top: 5px;
+}
+
+#atkslbl, #insplbl {
     width: 100px;
     float: left;
     padding-top: 5px;
@@ -188,8 +196,8 @@ input {
 }
 
 #bonus {
-    width: 30px;
-    margin-right: 2px;
+    width: 25px;
+    margin-right: 8px;
 }
 
 #skills-list {

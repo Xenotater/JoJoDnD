@@ -284,6 +284,10 @@ function importData(data) {
             loadAct(0);
     }
     saveScores();
+    
+    if ($("#autofill").is(":checked"))
+        updateAllSkills(); //ensure new fields get filled out
+    updateProfs(); //this should always display
 
     $("#char-img").attr("src", data["img"]);
     if ($("#char-img").attr("src") == "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=") {

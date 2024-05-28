@@ -344,6 +344,7 @@ function updateSkills(stat) {
 function updateAllSkills() {
     updateSkills("str");
     updateSkills("dex");
+    updateSkills("con");
     updateSkills("int");
     updateSkills("wis");
     updateSkills("cha");
