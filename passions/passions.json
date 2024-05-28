@@ -13,9 +13,8 @@
         "saves": "You are Proficient in Intelligence and Constitution Saving Throws.",
         "custom": {
             "name": "Academic Studies",
-            "desc": "You have Proficiency in two of the following: Arcana, History, Investigation, Nature, or Religion."
+            "desc": "You have Proficiency in two of the following: Grit, Investigation, Knowledge, Science or Supernatural."
         },
-        "profs": 3,
         "alt": "Proficiency in three additional languages or Expertise in a skill that you're already Proficient in."
     },
     "Artist": {
@@ -33,9 +32,8 @@
         "saves": "You are Proficient in Dexterity and Intelligence Saving Throws.",
         "custom": {
             "name": "Artist's Soul",
-            "desc": "You have Proficiency in two of the following: Medicine, Sleight of Hand, Perception, or Performance."
+            "desc": "You have Proficiency in two of the following: Finesse, Medicine, Perception, or Presence."
         },
-        "profs": 3,
         "alt": "Proficiency in two sets of tools, three instruments, or Expertise in a skill, tool, or instrument that you're already Proficient in."
     },
     "Athlete": {
@@ -51,9 +49,8 @@
         "saves": "You are Proficient in two of the following Saving Throws: Strength, Dexterity, or Constitution.",
         "custom": {
             "name": "Athletic Experience",
-            "desc": "You have Proficiency in two of the following: Athletics, Acrobatics, Medicine, Perception, Performance, or Sleight of Hand."
+            "desc": "You have Proficiency in two of the following: Athletics, Acrobatics, Finesse, Grit, Medicine, or Presence."
         },
-        "profs": 3,
         "alt": "Expertise in a skill that you're already Proficient in."
     },
     "Con_Artist": {
@@ -70,9 +67,8 @@
         "saves": "You are Proficient in Charisma and Wisdom Saving Throws.",
         "custom": {
             "name": "Award-Winning Smile",
-            "desc": "You have Proficiency in two of the following: Deception, Insight, Persuasion, Sleight of Hand, or Religion."
+            "desc": "You have Proficiency in two of the following: Bluff, Finesse, Supernatural, or Vibe"
         },
-        "profs": 3,
         "alt": "Proficiency in two sets of tools or Expertise in a skill that you're already Proficient in."
     },
     "Hard_Laborer": {
@@ -88,9 +84,8 @@
         "saves": "You are Proficient in Constitution and Strength Saving Throws.",
         "custom": {
             "name": "Grit",
-            "desc": "You have Proficiency in two of the following: Athletics, Acrobatics, Animal Handling, or Intimidation."
+            "desc": "You have Proficiency in two of the following: Athletics, Care, Grit, or Intimidate."
         },
-        "profs": 3,
         "alt": "Proficiency in three additional languages, two sets of artisan tools, or Expertise in a skill that you're already Proficient in."
     },
     "Leader": {
@@ -106,9 +101,8 @@
         "saves": "You are Proficient in two of the following Saving Throws: Intelligence, Wisdom, or Charisma.",
         "custom": {
             "name": "Leadership Experience",
-            "desc": "You have Proficiency in two of the following: Arcana, Deception, Insight, Performance, Perception, or Persuasion."
+            "desc": "You have Proficiency in two of the following: Bluff, Diplomacy, Perception, Presence, Supernatural, or Vibe"
         },
-        "profs": 3,
         "alt": "Expertise in a skill that you're already Proficient in."
     },
     "Performer": {
@@ -124,9 +118,8 @@
         "saves": "You are Proficient in Charisma and Constitution Saving Throws.",
         "custom": {
             "name": "Crowd Pleaser",
-            "desc": "You have Proficiency in two of the following: Acrobatics, Deception, Persuasion, or Performance."
+            "desc": "You have Proficiency in two of the following: Acrobatics, Bluff, Diplomacy, or Presence."
         },
-        "profs": 3,
         "alt": "Proficiency in two sets of tools, three instruments, or Expertise in a skill, tool, or instrument that you're already Proficient in."
     },
     "Medical_Expert": {
@@ -143,9 +136,8 @@
         "saves": "You are Proficient in Intelligence and Wisdom Saving Throws.",
         "custom": {
             "name": "Medical Experience",
-            "desc": "You have Proficiency in two of the following: Animal Handling, Investigation, Medicine, Nature, or Sleight of Hand."
+            "desc": "You have Proficiency in two of the following: Care, Finesse, Investigation, or Medicine."
         },
-        "profs": 3,
         "alt": "Proficiency in two sets of tools or Expertise in a skill that you're already Proficient in."
     },
     "Hospitality_Worker": {
@@ -161,9 +153,8 @@
         "saves": "You are Proficient in Charisma and Intelligence Saving Throws.",
         "custom": {
             "name": "People Person",
-            "desc": "You have Proficiency in two of the following: Insight, Investigation, Perception, or Persuasion."
+            "desc": "You have Proficiency in two of the following: Diplomacy, Investigation, Perception, or Vibe."
         },
-        "profs": 3,
         "alt": "Proficiency in three additional languages, two sets of artisan tools, or Expertise in a skill that you're already Proficient in."
     },
     "Student": {
@@ -196,9 +187,8 @@
         "saves": "You are Proficient in Wisdom and Constitution Saving Throws.",
         "custom": {
             "name": "Will to Thrive",
-            "desc": "You have Proficiency in two of the following: Insight, Perception, Animal Handling, Nature, or Survival."
+            "desc": "You have Proficiency in two of the following: Care, Grit, Perception, Survival, or Vibe."
         },
-        "profs": 3,
         "alt": "Proficiency in two sets of tools or Expertise in a skill that you're already Proficient in."
     },
     "Thief": {
@@ -212,9 +202,8 @@
         "saves": "You are Proficient in Dexterity and Charisma Saving Throws.",
         "custom": {
             "name": "Street Smarts",
-            "desc": "You have Proficiency in two of the following: Deception, Intimidation, Perception, Sleight of Hand, or Stealth."
+            "desc": "You have Proficiency in two of the following: Bluff, Finesse, Intimidate, Perception, or Sneak."
         },
-        "profs": 3,
         "alt": "Proficiency in two sets of tools or Expertise in a skill that you're already Proficient in."
     },
     "Trained_Laborer": {
@@ -228,9 +217,8 @@
         "saves": "You are Proficient in Strength and Intelligence Saving Throws.",
         "custom": {
             "name": "Labor Experience",
-            "desc": "You have Proficiency in two of the following: Athletics, Arcana, History, Sleight of Hand, or Investigation."
+            "desc": "You have Proficiency in two of the following: Athletics, Finesse, Grit, Investigation, or Science."
         },
-        "profs": 3,
         "alt": "Proficiency in two sets of tools or Expertise in a skill that you're already Proficient in."
     },
     "Warrior": {
@@ -245,9 +233,8 @@
         "saves": "You are Proficient in Dexterity and Constitution Saving Throws.",
         "custom": {
             "name": "Soldier's Discipline",
-            "desc": "You have Proficiency in two of the following: Athletics, Acrobatics, Perception, Stealth, or Survival."
+            "desc": "You have Proficiency in two of the following: Athletics, Acrobatics, Grit, Perception, Sneak."
         },
-        "profs": 3,
         "alt": "Proficiency in Simple weapons or three weapons of your choice, or Expertise in a skill or weapon that you're already Proficient in."
     },
     "Chef": {
@@ -262,9 +249,8 @@
         "saves": "You are Proficient in Constitution and Wisdom Saving Throws.",
         "custom": {
             "name": "Culinary Experience",
-            "desc": "You have Proficiency in two of the following: Athletics, Medicine, Nature, Perception or Sleight of Hand."
+            "desc": "You have Proficiency in two of the following: Athletics, Finesse, Grit, Perception, or Survival."
         },
-        "profs": 3,
         "alt": "Proficiency in two sets of tools, or Expertise in a skill\/tool that you're already Proficient in."
     },
     "Scientist": {
@@ -280,9 +266,8 @@
         "saves": "You are Proficient in Dexterity and Intelligence Saving Throws.",
         "custom": {
             "name": "Scientific Research",
-            "desc": "You have Proficiency in two of the following: Arcana, History, Investigation, Medicine, Nature, or Sleight of Hand."
+            "desc": "You have Proficiency in two of the following:   Finesse, Investigation, Knowledge, Medicine, Science, or Supernatural."
         },
-        "profs": 3,
         "alt": "Proficiency in two sets of tools of your choice or Expertise in a skill\/tool that you're already Proficient in."
     },
     "Weightlifter": {
@@ -297,9 +282,8 @@
         "saves": "You are Proficient in Strength and Charisma Saving Throws.",
         "custom": {
             "name": "Powerful Performance",
-            "desc": "You have Proficiency in two of the following: Athletics, Acrobatics, Intimidation, Medicine, Performance, or Persuasion."
+            "desc": "You have Proficiency in two of the following: Athletics, Acrobatics, Grit, Intimidate, Medicine, or Presence."
         },
-        "profs": 3,
         "alt": "Expertise in a skill that you're already Proficient in."
     }
 }
