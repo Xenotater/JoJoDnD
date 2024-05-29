@@ -42,7 +42,6 @@
         "theme": "sun",
         "level": {
             "1": {
-                "pro": "2",
                 "otherFeatures": [
                     "Unarmed Strikes deal Radiant damage"
                 ],
@@ -51,7 +50,6 @@
                 ]
             },
             "2": {
-                "pro": "2",
                 "linkFeatures": [
                     "Healing Ripple",
                     "Liquid Solidification",
@@ -63,7 +61,6 @@
                 ]
             },
             "3": {
-                "pro": "2",
                 "featFeatures": [
                     "Headhunter"
                 ],
@@ -76,7 +73,6 @@
                 ]
             },
             "4": {
-                "pro": "2",
                 "linkFeatures": [
                     "Spiritual Ripple (Variant Rule)",
                     "Rippling Weapon"
@@ -91,7 +87,6 @@
                 ]
             },
             "5": {
-                "pro": "3",
                 "linkFeatures": [
                     "Custom Ripple Technique",
                     "Ripple Regeneration",
@@ -102,7 +97,6 @@
                 ]
             },
             "6": {
-                "pro": "3",
                 "linkFeatures": [
                     "Ripple Pressure",
                     "OR",
@@ -116,13 +110,11 @@
                 ]
             },
             "7": {
-                "pro": "3",
                 "linkFeatures": [
                     "Toxin Expulsion"
                 ]
             },
             "8": {
-                "pro": "3",
                 "linkFeatures": [
                     "Scarlet Overdrive",
                     "OR",
@@ -134,13 +126,11 @@
                 ]
             },
             "9": {
-                "pro": "4",
                 "linkFeatures": [
                     "Conductor Shield"
                 ]
             },
             "10": {
-                "pro": "4",
                 "otherFeatures": [
                     "Choose another Class Feature from Level 4, Level 6, or Level 8"
                 ],
@@ -150,13 +140,11 @@
                 ]
             },
             "11": {
-                "pro": "4",
                 "linkFeatures": [
                     "Enhanced Custom Ripple Technique"
                 ]
             },
             "12": {
-                "pro": "4",
                 "linkFeatures": [
                     "Recovery Breathing"
                 ],
@@ -165,13 +153,11 @@
                 ]
             },
             "13": {
-                "pro": "5",
                 "ability": [
                     "Ability Score Improvement"
                 ]
             },
             "14": {
-                "pro": "5",
                 "otherFeatures": [
                     "Choose another Class Feature from Level 4, Level 6, or Level 8"
                 ],
@@ -180,19 +166,16 @@
                 ]
             },
             "15": {
-                "pro": "5",
                 "linkFeatures": [
                     "Deep Pass Overdrive"
                 ]
             },
             "16": {
-                "pro": "5",
                 "featFeatures": [
                     "Trained Combatant"
                 ]
             },
             "17": {
-                "pro": "6",
                 "linkFeatures": [
                     "Life Magnetism"
                 ],
@@ -201,19 +184,16 @@
                 ]
             },
             "18": {
-                "pro": "6",
                 "ability": [
                     "Increase Str, Dex, or Con Score by 1"
                 ]
             },
             "19": {
-                "pro": "6",
                 "linkFeatures": [
                     "Improved Ripple Perception"
                 ]
             },
             "20": {
-                "pro": "6",
                 "linkFeatures": [
                     "Perfected Ripple"
                 ],
@@ -371,26 +351,22 @@
                 "theme": "world",
                 "level": {
                     "1": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Feat of Power"
                         ]
                     },
                     "2": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Custom Ability",
                             "Confident Provocation"
                         ]
                     },
                     "3": {
-                        "pro": "2",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "4": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Armored Stand",
                             "OR",
@@ -400,13 +376,11 @@
                         ]
                     },
                     "5": {
-                        "pro": "3",
                         "linkFeatures": [
                             "Stand Rush"
                         ]
                     },
                     "6": {
-                        "pro": "3",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4"
                         ],
@@ -415,7 +389,6 @@
                         ]
                     },
                     "7": {
-                        "pro": "3",
                         "linkFeatures": [
                             "Siege Combat",
                             "OR"
@@ -427,13 +400,11 @@
                         ]
                     },
                     "8": {
-                        "pro": "3",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "9": {
-                        "pro": "4",
                         "linkFeatures": [
                             "Block Projectile",
                             "OR",
@@ -441,31 +412,26 @@
                         ]
                     },
                     "10": {
-                        "pro": "4",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "11": {
-                        "pro": "4",
                         "otherFeatures": [
                             "Attack Dice increases to 2d10"
                         ]
                     },
                     "12": {
-                        "pro": "4",
                         "linkFeatures": [
                             "Stand Leap"
                         ]
                     },
                     "13": {
-                        "pro": "5",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "14": {
-                        "pro": "5",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4, Level 7, or Level 9"
                         ],
@@ -474,7 +440,6 @@
                         ]
                     },
                     "15": {
-                        "pro": "5",
                         "otherFeatures": [
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
                         ],
@@ -483,7 +448,6 @@
                         ]
                     },
                     "16": {
-                        "pro": "5",
                         "linkFeatures": [
                             "Lethal Strike",
                             "OR"
@@ -493,13 +457,11 @@
                         ]
                     },
                     "17": {
-                        "pro": "6",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "18": {
-                        "pro": "6",
                         "linkFeatures": [
                             "Devastating Melee",
                             "OR",
@@ -507,13 +469,11 @@
                         ]
                     },
                     "19": {
-                        "pro": "6",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4, Level 7, Level 9, Level 16, or Level 18"
                         ]
                     },
                     "20": {
-                        "pro": "6",
                         "linkFeatures": [
                             "Blow for Blow"
                         ],
@@ -586,7 +546,6 @@
                 "theme": "hiero",
                 "level": {
                     "1": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Slippery",
                             "Detached Senses",
@@ -595,20 +554,17 @@
                         ]
                     },
                     "2": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Custom Ability",
                             "Stand Pickpocketing"
                         ]
                     },
                     "3": {
-                        "pro": "2",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "4": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Immense Power",
                             "OR",
@@ -616,20 +572,17 @@
                         ]
                     },
                     "5": {
-                        "pro": "3",
                         "otherFeatures": [
                             "<a href='\/feats\/?focus=Deadly_Accuracy'>Deadly Accuracy<\/a> OR <a href='\/abilities\/?focus=Melee_Barrage'>Melee Barrage<\/a>",
                             "<a href='\/abilities\/?focus=Oblivious_Facade'>Oblivious Facade<\/a> OR <a href='\/feats\/?focus=Clever_Disguise'>Clever Disguise<\/a>"
                         ]
                     },
                     "6": {
-                        "pro": "3",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "7": {
-                        "pro": "3",
                         "linkFeatures": [
                             "Silent Movement",
                             "OR",
@@ -637,7 +590,6 @@
                         ]
                     },
                     "8": {
-                        "pro": "3",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4, Level 5, or Level 7"
                         ],
@@ -646,7 +598,6 @@
                         ]
                     },
                     "9": {
-                        "pro": "4",
                         "linkFeatures": [
                             "Ambush Attacker",
                             "OR",
@@ -654,32 +605,27 @@
                         ]
                     },
                     "10": {
-                        "pro": "4",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "11": {
-                        "pro": "4",
                         "otherFeatures": [
                             "Attack Dice increases to 2d6",
                             "<a href='\/abilities\/?focus=Ranged_Attack'>Ranged Attack<\/a> dice and range are doubled"
                         ]
                     },
                     "12": {
-                        "pro": "4",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4, Level 5, Level 7, or Level 9"
                         ]
                     },
                     "13": {
-                        "pro": "5",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "14": {
-                        "pro": "5",
                         "featFeatures": [
                             "Assassin",
                             "OR",
@@ -687,7 +633,6 @@
                         ]
                     },
                     "15": {
-                        "pro": "5",
                         "otherFeatures": [
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
                         ],
@@ -696,7 +641,6 @@
                         ]
                     },
                     "16": {
-                        "pro": "5",
                         "linkFeatures": [
                             "Improved Awareness",
                             "OR"
@@ -706,13 +650,11 @@
                         ]
                     },
                     "17": {
-                        "pro": "6",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "18": {
-                        "pro": "6",
                         "linkFeatures": [
                             "Immense Range",
                             "OR"
@@ -722,13 +664,11 @@
                         ]
                     },
                     "19": {
-                        "pro": "6",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 14, Level 16, or Level 18"
                         ]
                     },
                     "20": {
-                        "pro": "6",
                         "linkFeatures": [
                             "Improved Slippery",
                             "OR",
@@ -806,14 +746,12 @@
                 "theme": "hStar",
                 "level": {
                     "1": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Programmed Stand",
                             "Stand Marking"
                         ]
                     },
                     "2": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Custom Ability",
                             "Immense Range",
@@ -822,7 +760,6 @@
                         ]
                     },
                     "3": {
-                        "pro": "2",
                         "ability": [
                             "Ability Score Improvement"
                         ],
@@ -831,7 +768,6 @@
                         ]
                     },
                     "4": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Detached Stand",
                             "OR",
@@ -839,19 +775,16 @@
                         ]
                     },
                     "5": {
-                        "pro": "3",
                         "featFeatures": [
                             "Weapon Feat"
                         ]
                     },
                     "6": {
-                        "pro": "3",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "7": {
-                        "pro": "3",
                         "linkFeatures": [
                             "Juggernaut",
                             "OR",
@@ -859,13 +792,11 @@
                         ]
                     },
                     "8": {
-                        "pro": "3",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "9": {
-                        "pro": "4",
                         "linkFeatures": [
                             "Two Modes",
                             "OR"
@@ -877,19 +808,16 @@
                         ]
                     },
                     "10": {
-                        "pro": "4",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "11": {
-                        "pro": "4",
                         "otherFeatures": [
                             "Attack Dice increases to 2d8"
                         ]
                     },
                     "12": {
-                        "pro": "4",
                         "featFeatures": [
                             "Guerilla Fighter",
                             "OR",
@@ -897,19 +825,16 @@
                         ]
                     },
                     "13": {
-                        "pro": "5",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "14": {
-                        "pro": "5",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4, Level 5, Level 7, or Level 12"
                         ]
                     },
                     "15": {
-                        "pro": "5",
                         "otherFeatures": [
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
                         ],
@@ -918,7 +843,6 @@
                         ]
                     },
                     "16": {
-                        "pro": "5",
                         "linkFeatures": [
                             "Improved Immense Range",
                             "OR",
@@ -926,13 +850,11 @@
                         ]
                     },
                     "17": {
-                        "pro": "6",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "18": {
-                        "pro": "6",
                         "linkFeatures": [
                             "Remote Ambusher",
                             "OR",
@@ -940,13 +862,11 @@
                         ]
                     },
                     "19": {
-                        "pro": "6",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4, Level 5, Level 7, Level 12, Level 16, or Level 18"
                         ]
                     },
                     "20": {
-                        "pro": "6",
                         "linkFeatures": [
                             "Zealous Focus"
                         ],
@@ -1017,31 +937,26 @@
                 "theme": "album",
                 "level": {
                     "1": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Custom Ability"
                         ]
                     },
                     "2": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Self-Acclimation"
                         ]
                     },
                     "3": {
-                        "pro": "2",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "4": {
-                        "pro": "2",
                         "featFeatures": [
                             "Weapon Feat"
                         ]
                     },
                     "5": {
-                        "pro": "3",
                         "linkFeatures": [
                             "Ranged Attack",
                             "OR",
@@ -1053,13 +968,11 @@
                         ]
                     },
                     "6": {
-                        "pro": "3",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "7": {
-                        "pro": "3",
                         "linkFeatures": [
                             "Stand Energy Recharge",
                             "Defensive Ability",
@@ -1068,25 +981,21 @@
                         ]
                     },
                     "8": {
-                        "pro": "3",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "9": {
-                        "pro": "4",
                         "linkFeatures": [
                             "Special Ability (2 SE)"
                         ]
                     },
                     "10": {
-                        "pro": "4",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "11": {
-                        "pro": "4",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4, Level 5, or Level 7",
                             "Attack Dice increases to 1d6",
@@ -1094,19 +1003,16 @@
                         ]
                     },
                     "12": {
-                        "pro": "4",
                         "linkFeatures": [
                             "Enhanced Custom Ability"
                         ]
                     },
                     "13": {
-                        "pro": "5",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "14": {
-                        "pro": "5",
                         "linkFeatures": [
                             "Slippery",
                             "OR"
@@ -1116,7 +1022,6 @@
                         ]
                     },
                     "15": {
-                        "pro": "5",
                         "otherFeatures": [
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
                         ],
@@ -1125,7 +1030,6 @@
                         ]
                     },
                     "16": {
-                        "pro": "5",
                         "featFeatures": [
                             "Calculating",
                             "OR",
@@ -1133,13 +1037,11 @@
                         ]
                     },
                     "17": {
-                        "pro": "6",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "18": {
-                        "pro": "6",
                         "linkFeatures": [
                             "Subtle Assistance",
                             "OR"
@@ -1149,13 +1051,11 @@
                         ]
                     },
                     "19": {
-                        "pro": "6",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4, Level 5, Level 7, Level 14, Level 16, or Level 18"
                         ]
                     },
                     "20": {
-                        "pro": "6",
                         "linkFeatures": [
                             "Second Nature"
                         ],
@@ -1233,27 +1133,23 @@
                 "theme": "love",
                 "level": {
                     "1": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Anchored Stand",
                             "Immense Resistance"
                         ]
                     },
                     "2": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Custom Ability",
                             "Confident Provocation"
                         ]
                     },
                     "3": {
-                        "pro": "2",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "4": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Detached Senses",
                             "OR",
@@ -1261,7 +1157,6 @@
                         ]
                     },
                     "5": {
-                        "pro": "3",
                         "linkFeatures": [
                             "Complete Control",
                             "OR",
@@ -1269,13 +1164,11 @@
                         ]
                     },
                     "6": {
-                        "pro": "3",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "7": {
-                        "pro": "3",
                         "linkFeatures": [
                             "Stand Marking",
                             "Oblivious Facade",
@@ -1286,13 +1179,11 @@
                         ]
                     },
                     "8": {
-                        "pro": "3",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "9": {
-                        "pro": "4",
                         "linkFeatures": [
                             "Camouflage",
                             "OR",
@@ -1300,19 +1191,16 @@
                         ]
                     },
                     "10": {
-                        "pro": "4",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "11": {
-                        "pro": "4",
                         "otherFeatures": [
                             "Attack Dice increases to 2d8"
                         ]
                     },
                     "12": {
-                        "pro": "4",
                         "linkFeatures": [
                             "General Anchors",
                             "OR",
@@ -1320,19 +1208,16 @@
                         ]
                     },
                     "13": {
-                        "pro": "5",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "14": {
-                        "pro": "5",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 5, Level 7, Level 9, or Level 12"
                         ]
                     },
                     "15": {
-                        "pro": "5",
                         "otherFeatures": [
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
                         ],
@@ -1341,7 +1226,6 @@
                         ]
                     },
                     "16": {
-                        "pro": "5",
                         "featFeatures": [
                             "Resilient",
                             "OR",
@@ -1349,13 +1233,11 @@
                         ]
                     },
                     "17": {
-                        "pro": "6",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "18": {
-                        "pro": "6",
                         "featFeatures": [
                             "Guerilla Fighter",
                             "OR",
@@ -1363,13 +1245,11 @@
                         ]
                     },
                     "19": {
-                        "pro": "6",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 5, Level 7, Level 9, Level 12, Level 16, or Level 18"
                         ]
                     },
                     "20": {
-                        "pro": "6",
                         "linkFeatures": [
                             "Condensed Material"
                         ],
@@ -1460,14 +1340,12 @@
                 "theme": "cat",
                 "level": {
                     "1": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Detached Senses",
                             "Feat of Power"
                         ]
                     },
                     "2": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Custom Ability",
                             "Stand Marking",
@@ -1475,19 +1353,16 @@
                         ]
                     },
                     "3": {
-                        "pro": "2",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "4": {
-                        "pro": "2",
                         "featFeatures": [
                             "Weapon Feat"
                         ]
                     },
                     "5": {
-                        "pro": "3",
                         "linkFeatures": [
                             "Reckless Attack",
                             "Oblivious Facade",
@@ -1498,13 +1373,11 @@
                         ]
                     },
                     "6": {
-                        "pro": "3",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "7": {
-                        "pro": "3",
                         "linkFeatures": [
                             "Armored Stand",
                             "OR",
@@ -1518,32 +1391,27 @@
                         ]
                     },
                     "8": {
-                        "pro": "3",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "9": {
-                        "pro": "4",
                         "linkFeatures": [
                             "Focused Hatred",
                             "Nemesis"
                         ]
                     },
                     "10": {
-                        "pro": "4",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "11": {
-                        "pro": "4",
                         "otherFeatures": [
                             "Attack Dice increases to 2d10"
                         ]
                     },
                     "12": {
-                        "pro": "4",
                         "linkFeatures": [
                             "Second Life",
                             "OR",
@@ -1553,19 +1421,16 @@
                         ]
                     },
                     "13": {
-                        "pro": "5",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "14": {
-                        "pro": "5",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 5, Level 7, or Level 12"
                         ]
                     },
                     "15": {
-                        "pro": "5",
                         "otherFeatures": [
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
                         ],
@@ -1574,7 +1439,6 @@
                         ]
                     },
                     "16": {
-                        "pro": "5",
                         "linkFeatures": [
                             "Devastating Critical",
                             "OR",
@@ -1582,13 +1446,11 @@
                         ]
                     },
                     "17": {
-                        "pro": "6",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "18": {
-                        "pro": "6",
                         "linkFeatures": [
                             "Superior Grudge",
                             "OR"
@@ -1598,13 +1460,11 @@
                         ]
                     },
                     "19": {
-                        "pro": "6",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 5, Level 7, Level 12, Level 16, or Level 18"
                         ]
                     },
                     "20": {
-                        "pro": "6",
                         "linkFeatures": [
                             "Hit List"
                         ],
@@ -1678,27 +1538,23 @@
                 "theme": "ff",
                 "level": {
                     "1": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Immense Resistance",
                             "Anchored Stand"
                         ]
                     },
                     "2": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Custom Ability",
                             "Confident Provocation"
                         ]
                     },
                     "3": {
-                        "pro": "2",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "4": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Oblivious Facade",
                             "Melee Barrage",
@@ -1711,7 +1567,6 @@
                         ]
                     },
                     "5": {
-                        "pro": "3",
                         "linkFeatures": [
                             "Armored Stand",
                             "OR",
@@ -1719,25 +1574,21 @@
                         ]
                     },
                     "6": {
-                        "pro": "3",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "7": {
-                        "pro": "3",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4 or Level 5"
                         ]
                     },
                     "8": {
-                        "pro": "3",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "9": {
-                        "pro": "4",
                         "linkFeatures": [
                             "Camouflage",
                             "OR",
@@ -1745,20 +1596,17 @@
                         ]
                     },
                     "10": {
-                        "pro": "4",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "11": {
-                        "pro": "4",
                         "otherFeatures": [
                             "Attack Dice increases to 2d6",
                             "<a href='\/abilities\/?focus=Ranged_Attack'>Ranged Attack<\/a> dice and range are doubled"
                         ]
                     },
                     "12": {
-                        "pro": "4",
                         "linkFeatures": [
                             "Defensive Ability",
                             "OR",
@@ -1766,19 +1614,16 @@
                         ]
                     },
                     "13": {
-                        "pro": "5",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "14": {
-                        "pro": "5",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4, Level 5, Level 9, or Level 12"
                         ]
                     },
                     "15": {
-                        "pro": "5",
                         "otherFeatures": [
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
                         ],
@@ -1787,7 +1632,6 @@
                         ]
                     },
                     "16": {
-                        "pro": "5",
                         "featFeatures": [
                             "Resilient",
                             "OR",
@@ -1795,13 +1639,11 @@
                         ]
                     },
                     "17": {
-                        "pro": "6",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "18": {
-                        "pro": "6",
                         "linkFeatures": [
                             "Slippery",
                             "OR"
@@ -1811,13 +1653,11 @@
                         ]
                     },
                     "19": {
-                        "pro": "6",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4, Level 5, Level 9, Level 12, Level 16, or Level 18"
                         ]
                     },
                     "20": {
-                        "pro": "6",
                         "linkFeatures": [
                             "Fleeting Invulnerability",
                             "OR",
@@ -1904,7 +1744,6 @@
                 "theme": "bad",
                 "level": {
                     "1": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Split Stand",
                             "Immense Resistance",
@@ -1913,19 +1752,16 @@
                         ]
                     },
                     "2": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Custom Ability"
                         ]
                     },
                     "3": {
-                        "pro": "2",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "4": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Stand Marking",
                             "OR",
@@ -1933,19 +1769,16 @@
                         ]
                     },
                     "5": {
-                        "pro": "3",
                         "linkFeatures": [
                             "Surrounding Swarm"
                         ]
                     },
                     "6": {
-                        "pro": "3",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "7": {
-                        "pro": "3",
                         "linkFeatures": [
                             "Stand Pickpocketing",
                             "Immense Range",
@@ -1954,13 +1787,11 @@
                         ]
                     },
                     "8": {
-                        "pro": "3",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "9": {
-                        "pro": "4",
                         "linkFeatures": [
                             "Defensive Wave",
                             "OR",
@@ -1968,31 +1799,26 @@
                         ]
                     },
                     "10": {
-                        "pro": "4",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "11": {
-                        "pro": "4",
                         "otherFeatures": [
                             "Swarm Attack Dice increases to 2dx"
                         ]
                     },
                     "12": {
-                        "pro": "4",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 1, Level 4, Level 7, or Level 9"
                         ]
                     },
                     "13": {
-                        "pro": "5",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "14": {
-                        "pro": "5",
                         "linkFeatures": [
                             "Silent Movement",
                             "OR",
@@ -2000,7 +1826,6 @@
                         ]
                     },
                     "15": {
-                        "pro": "5",
                         "otherFeatures": [
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
                         ],
@@ -2009,7 +1834,6 @@
                         ]
                     },
                     "16": {
-                        "pro": "5",
                         "linkFeatures": [
                             "Improved Immense Range",
                             "OR"
@@ -2019,13 +1843,11 @@
                         ]
                     },
                     "17": {
-                        "pro": "6",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "18": {
-                        "pro": "6",
                         "linkFeatures": [
                             "Improved Awareness",
                             "OR"
@@ -2037,13 +1859,11 @@
                         ]
                     },
                     "19": {
-                        "pro": "6",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 1, Level 4, Level 7, Level 9, Level 14, Level 16, or Level 18"
                         ]
                     },
                     "20": {
-                        "pro": "6",
                         "linkFeatures": [
                             "Great Recall"
                         ],
@@ -2104,13 +1924,11 @@
                 "theme": "echoes",
                 "level": {
                     "1": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Act 0"
                         ]
                     },
                     "2": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Act 1 (Long Range)",
                             "Custom Ability (Act 1)",
@@ -2124,17 +1942,14 @@
                         ]
                     },
                     "3": {
-                        "pro": "2",
                         "ability": ["Ability Score Improvement"]
                     },
                     "4": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Stand Pickpocketing (Act 1)"
                         ]
                     },
                     "5": {
-                        "pro": "3",
                         "linkFeatures": [
                             "Melee Barrage (Act 1)",
                             "OR",
@@ -2148,7 +1963,6 @@
                         ]
                     },
                     "6": {
-                        "pro": "3",
                         "linkFeatures": [
                             "Act 2 (Ability-Focused)",
                             "Custom Ability (Act 2)"
@@ -2156,17 +1970,14 @@
                         "ability": ["Ability Score Improvement"]
                     },
                     "7": {
-                        "pro": "3",
                         "linkFeatures": [
                             "Stand Energy Recharge (Act 2)"
                         ]
                     },
                     "8": {
-                        "pro": "3",
                         "ability": ["Ability Score Improvement"]
                     },
                     "9": {
-                        "pro": "4",
                         "linkFeatures": [
                             "Act Modifier",
                             "OR",
@@ -2176,18 +1987,15 @@
                         ]
                     },
                     "10": {
-                        "pro": "4",
                         "ability": ["Ability Score Improvement"]
                     },
                     "11": {
-                        "pro": "4",
                         "linkFeatures": [
                             "Act 3 (Close-Range)",
                             "Custom Ability (Act 3)"
                         ]
                     },
                     "12": {
-                        "pro": "4",
                         "linkFeatures": [
                             "Armored Stand (Act 3)",
                             "OR",
@@ -2197,11 +2005,9 @@
                         ]
                     },
                     "13": {
-                        "pro": "5",
                         "ability": ["Ability Score Improvement"]
                     },
                     "14": {
-                        "pro": "5",
                         "linkFeatures": [
                             "Act Modifier",
                             "OR",
@@ -2213,23 +2019,19 @@
                         ]
                     },
                     "15": {
-                        "pro": "5",
                         "otherFeatures": [
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
                         ]
                     },
                     "16": {
-                        "pro": "5",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 5, Level 9, Level 12, or Level 14"
                         ]
                     },
                     "17": {
-                        "pro": "6",
                         "ability": ["Ability Score Improvement"]
                     },
                     "18": {
-                        "pro": "6",
                         "linkFeatures": [
                             "Act Modifier",
                             "OR",
@@ -2249,13 +2051,11 @@
                         ]
                     },
                     "19": {
-                        "pro": "6",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 5, Level 9, Level 12, Level 14, or Level 18"
                         ]
                     },
                     "20": {
-                        "pro": "6",
                         "linkFeatures": [
                             "Instant Swap",
                             "OR",
@@ -2386,21 +2186,18 @@
         "theme": "gyro",
         "level": {
             "1": {
-                "pro": "2",
                 "linkFeatures": [
                     "Forced Motion",
                     "Spherical Spin"
                 ]
             },
             "2": {
-                "pro": "2",
                 "linkFeatures": [
                     "Sculpt Sphere",
                     "Spin Fighting Style"
                 ]
             },
             "3": {
-                "pro": "2",
                 "linkFeatures": [
                     "Return to Sender"
                 ],
@@ -2412,7 +2209,6 @@
                 ]
             },
             "4": {
-                "pro": "2",
                 "linkFeatures": [
                     "Spiritual Spin (Variant Rule)",
                     "Muscle Contraction",
@@ -2425,14 +2221,12 @@
                 ]
             },
             "5": {
-                "pro": "3",
                 "linkFeatures": [
                     "Custom Spin Technique",
                     "Harden Flesh"
                 ]
             },
             "6": {
-                "pro": "3",
                 "linkFeatures": [
                     "Object Manipulation",
                     "OR",
@@ -2443,7 +2237,6 @@
                 ]
             },
             "7": {
-                "pro": "3",
                 "linkFeatures": [
                     "Spin Expertise"
                 ],
@@ -2452,7 +2245,6 @@
                 ]
             },
             "8": {
-                "pro": "3",
                 "linkFeatures": [
                     "Projectile Boost",
                     "OR",
@@ -2463,7 +2255,6 @@
                 ]
             },
             "9": {
-                "pro": "4",
                 "linkFeatures": [
                     "Immense Friction",
                     "OR",
@@ -2471,7 +2262,6 @@
                 ]
             },
             "10": {
-                "pro": "4",
                 "otherFeatures": [
                     "Choose another Class Feature from Level 4, Level 6, Level 8, or Level 9"
                 ],
@@ -2480,13 +2270,11 @@
                 ]
             },
             "11": {
-                "pro": "4",
                 "linkFeatures": [
                     "Enhanced Custom Spin Technique"
                 ]
             },
             "12": {
-                "pro": "4",
                 "linkFeatures": [
                     "Medicinal Spin",
                     "OR",
@@ -2494,7 +2282,6 @@
                 ]
             },
             "13": {
-                "pro": "5",
                 "linkFeatures": [
                     "Preparing For Infinity"
                 ],
@@ -2503,13 +2290,11 @@
                 ]
             },
             "14": {
-                "pro": "5",
                 "linkFeatures": [
                     "Spin Mastery"
                 ]
             },
             "15": {
-                "pro": "5",
                 "linkFeatures": [
                     "Create Mirage",
                     "OR",
@@ -2517,13 +2302,11 @@
                 ]
             },
             "16": {
-                "pro": "5",
                 "otherFeatures": [
                     "Choose another Class Feature from Level 4, Level 6, Level 8, or Level 9, Level 12, or Level 15"
                 ]
             },
             "17": {
-                "pro": "6",
                 "linkFeatures": [
                     "Deflect Distance Attack",
                     "OR",
@@ -2534,19 +2317,16 @@
                 ]
             },
             "18": {
-                "pro": "6",
                 "otherFeatures": [
                     "Choose another Class Feature from Level 4, Level 6, Level 8, or Level 9, Level 12, Level 15, or Level 17"
                 ]
             },
             "19": {
-                "pro": "6",
                 "featFeatures": [
                     "Trained Combatant"
                 ]
             },
             "20": {
-                "pro": "6",
                 "linkFeatures": [
                     "Perfected Spiral"
                 ]
@@ -2597,7 +2377,6 @@
                 "theme": "basic",
                 "level": {
                     "1": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Steady Aim"
                         ],
@@ -2606,7 +2385,6 @@
                         ]
                     },
                     "2": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Assassin Fighting Style"
                         ],
@@ -2615,13 +2393,11 @@
                         ]
                     },
                     "3": {
-                        "pro": "2",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "4": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Supernatural Item (Variant Rule)"
                         ],
@@ -2633,7 +2409,6 @@
                         ]
                     },
                     "5": {
-                        "pro": "3",
                         "featFeatures": [
                             "Pressure Point Manipulator",
                             "OR",
@@ -2643,13 +2418,11 @@
                         ]
                     },
                     "6": {
-                        "pro": "3",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "7": {
-                        "pro": "3",
                         "featFeatures": [
                             "Trained Combatant",
                             "Guerilla Fighter",
@@ -2660,13 +2433,11 @@
                         ]
                     },
                     "8": {
-                        "pro": "3",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "9": {
-                        "pro": "4",
                         "featFeatures": [
                             "Natural Talent",
                             "OR",
@@ -2674,13 +2445,11 @@
                         ]
                     },
                     "10": {
-                        "pro": "4",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "11": {
-                        "pro": "4",
                         "linkFeatures": [
                             "Expert Assassin"
                         ],
@@ -2691,13 +2460,11 @@
                         ]
                     },
                     "12": {
-                        "pro": "4",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, or Level 11"
                         ]
                     },
                     "13": {
-                        "pro": "5",
                         "featFeatures": [
                             "Clever Disguise",
                             "OR",
@@ -2708,7 +2475,6 @@
                         ]
                     },
                     "14": {
-                        "pro": "5",
                         "featFeatures": [
                             "Familiar Bond",
                             "OR",
@@ -2716,19 +2482,16 @@
                         ]
                     },
                     "15": {
-                        "pro": "5",
                         "featFeatures": [
                             "Trained Combatant"
                         ]
                     },
                     "16": {
-                        "pro": "5",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 13, or Level 14"
                         ]
                     },
                     "17": {
-                        "pro": "6",
                         "featFeatures": [
                             "Brutality",
                             "OR",
@@ -2739,13 +2502,11 @@
                         ]
                     },
                     "18": {
-                        "pro": "6",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 13, Level 14, or Level 17"
                         ]
                     },
                     "19": {
-                        "pro": "6",
                         "featFeatures": [
                             "Consistent Accuracy",
                             "OR",
@@ -2753,7 +2514,6 @@
                         ]
                     },
                     "20": {
-                        "pro": "6",
                         "linkFeatures": [
                             "Reaping Strikes"
                         ]
@@ -2767,7 +2527,6 @@
                 "theme": "basic",
                 "level": {
                     "1": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Encouragement Dice"
                         ],
@@ -2776,7 +2535,6 @@
                         ]
                     },
                     "2": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Consul Fighting Style"
                         ],
@@ -2785,13 +2543,11 @@
                         ]
                     },
                     "3": {
-                        "pro": "2",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "4": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Supernatural Item (Variant Rule)"
                         ],
@@ -2805,7 +2561,6 @@
                         ]
                     },
                     "5": {
-                        "pro": "3",
                         "featFeatures": [
                             "Jack of all Trades",
                             "OR",
@@ -2815,13 +2570,11 @@
                         ]
                     },
                     "6": {
-                        "pro": "3",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "7": {
-                        "pro": "3",
                         "featFeatures": [
                             "Trained Combatant",
                             "Guerilla Fighter",
@@ -2830,13 +2583,11 @@
                         ]
                     },
                     "8": {
-                        "pro": "3",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "9": {
-                        "pro": "4",
                         "featFeatures": [
                             "Natural Talent",
                             "OR",
@@ -2844,13 +2595,11 @@
                         ]
                     },
                     "10": {
-                        "pro": "4",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "11": {
-                        "pro": "4",
                         "linkFeatures": [
                             "Improved Encouragement Dice"
                         ],
@@ -2861,13 +2610,11 @@
                         ]
                     },
                     "12": {
-                        "pro": "4",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, or Level 11"
                         ]
                     },
                     "13": {
-                        "pro": "5",
                         "featFeatures": [
                             "Light Sleeper",
                             "OR",
@@ -2878,7 +2625,6 @@
                         ]
                     },
                     "14": {
-                        "pro": "5",
                         "featFeatures": [
                             "Quick on your Feet",
                             "OR",
@@ -2886,19 +2632,16 @@
                         ]
                     },
                     "15": {
-                        "pro": "5",
                         "featFeatures": [
                             "Trained Combatant"
                         ]
                     },
                     "16": {
-                        "pro": "5",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, or Level 14"
                         ]
                     },
                     "17": {
-                        "pro": "6",
                         "featFeatures": [
                             "Paranoia",
                             "OR",
@@ -2909,13 +2652,11 @@
                         ]
                     },
                     "18": {
-                        "pro": "6",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 14, or Level 17"
                         ]
                     },
                     "19": {
-                        "pro": "6",
                         "featFeatures": [
                             "Consistent Skills",
                             "OR",
@@ -2923,7 +2664,6 @@
                         ]
                     },
                     "20": {
-                        "pro": "6",
                         "linkFeatures": [
                             "Perfected Encouragement"
                         ]
@@ -2937,7 +2677,6 @@
                 "theme": "basic",
                 "level": {
                     "1": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Scholarly Combatant"
                         ],
@@ -2946,7 +2685,6 @@
                         ]
                     },
                     "2": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Scholar Fighting Style"
                         ],
@@ -2955,13 +2693,11 @@
                         ]
                     },
                     "3": {
-                        "pro": "2",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "4": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Supernatural Item (Variant Rule)",
                             "Field Study"
@@ -2973,7 +2709,6 @@
                         ]
                     },
                     "5": {
-                        "pro": "3",
                         "featFeatures": [
                             "Natural Talent",
                             "OR",
@@ -2981,13 +2716,11 @@
                         ]
                     },
                     "6": {
-                        "pro": "3",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "7": {
-                        "pro": "3",
                         "featFeatures": [
                             "Trained Combatant",
                             "Consistent Skills",
@@ -2996,13 +2729,11 @@
                         ]
                     },
                     "8": {
-                        "pro": "3",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "9": {
-                        "pro": "4",
                         "featFeatures": [
                             "Interpreter",
                             "OR",
@@ -3010,13 +2741,11 @@
                         ]
                     },
                     "10": {
-                        "pro": "4",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "11": {
-                        "pro": "4",
                         "linkFeatures": [
                             "Aura of Knowledge"
                         ],
@@ -3027,13 +2756,11 @@
                         ]
                     },
                     "12": {
-                        "pro": "4",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, or Level 11"
                         ]
                     },
                     "13": {
-                        "pro": "5",
                         "featFeatures": [
                             "Familiar Bond",
                             "OR",
@@ -3044,7 +2771,6 @@
                         ]
                     },
                     "14": {
-                        "pro": "5",
                         "featFeatures": [
                             "Fortune Teller",
                             "OR",
@@ -3054,19 +2780,16 @@
                         ]
                     },
                     "15": {
-                        "pro": "5",
                         "featFeatures": [
                             "Trained Combatant"
                         ]
                     },
                     "16": {
-                        "pro": "5",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, or Level 13, or Level 14"
                         ]
                     },
                     "17": {
-                        "pro": "6",
                         "featFeatures": [
                             "Perfected Craft",
                             "OR",
@@ -3077,13 +2800,11 @@
                         ]
                     },
                     "18": {
-                        "pro": "6",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, or Level 13, Level 14, or Level 17"
                         ]
                     },
                     "19": {
-                        "pro": "6",
                         "featFeatures": [
                             "Quick on your Feet",
                             "OR",
@@ -3091,7 +2812,6 @@
                         ]
                     },
                     "20": {
-                        "pro": "6",
                         "linkFeatures": [
                             "Paragon of Knowledge"
                         ]
@@ -3105,7 +2825,6 @@
                 "theme": "basic",
                 "level": {
                     "1": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Damage Minimum"
                         ],
@@ -3114,20 +2833,17 @@
                         ]
                     },
                     "2": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Warrior Fighting Style",
                             "Confident Provocation"
                         ]
                     },
                     "3": {
-                        "pro": "2",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "4": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Supernatural Item (Variant Rule)",
                             "Rejuvenation"
@@ -3139,7 +2855,6 @@
                         ]
                     },
                     "5": {
-                        "pro": "3",
                         "featFeatures": [
                             "Trained Combatant",
                             "Quick on your Feet",
@@ -3148,13 +2863,11 @@
                         ]
                     },
                     "6": {
-                        "pro": "3",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "7": {
-                        "pro": "3",
                         "featFeatures": [
                             "Specialized Save",
                             "OR",
@@ -3170,25 +2883,21 @@
                         ]
                     },
                     "8": {
-                        "pro": "3",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "9": {
-                        "pro": "4",
                         "featFeatures": [
                             "Trained Combatant"
                         ]
                     },
                     "10": {
-                        "pro": "4",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "11": {
-                        "pro": "4",
                         "linkFeatures": [
                             "Improved Fighting Style"
                         ],
@@ -3197,7 +2906,6 @@
                         ]
                     },
                     "12": {
-                        "pro": "4",
                         "featFeatures": [
                             "Catlike Agility",
                             "OR",
@@ -3207,7 +2915,6 @@
                         ]
                     },
                     "13": {
-                        "pro": "5",
                         "featFeatures": [
                             "Light Sleeper",
                             "OR",
@@ -3218,7 +2925,6 @@
                         ]
                     },
                     "14": {
-                        "pro": "5",
                         "featFeatures": [
                             "Immense Impact",
                             "OR",
@@ -3228,19 +2934,16 @@
                         ]
                     },
                     "15": {
-                        "pro": "5",
                         "featFeatures": [
                             "Trained Combatant"
                         ]
                     },
                     "16": {
-                        "pro": "5",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4, Level 5, Level 7, Level 11, Level 12, or Level 14"
                         ]
                     },
                     "17": {
-                        "pro": "6",
                         "featFeatures": [
                             "Weapon Feat"
                         ],
@@ -3249,7 +2952,6 @@
                         ]
                     },
                     "18": {
-                        "pro": "6",
                         "featFeatures": [
                             "Resilient",
                             "OR",
@@ -3257,13 +2959,11 @@
                         ]
                     },
                     "19": {
-                        "pro": "6",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "20": {
-                        "pro": "6",
                         "linkFeatures": [
                             "Weapon Aficionado"
                         ]
@@ -3275,7 +2975,6 @@
                 "theme": "basic",
                 "level": {
                     "1": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Artisan's Specialty"
                         ],
@@ -3284,7 +2983,6 @@
                         ]
                     },
                     "2": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Artisan Fighting Style"
                         ],
@@ -3293,13 +2991,11 @@
                         ]
                     },
                     "3": {
-                        "pro": "2",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "4": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Supernatural Item (Variant Rule)",
                             "Artisan's Resurgence"
@@ -3313,7 +3009,6 @@
                         ]
                     },
                     "5": {
-                        "pro": "3",
                         "featFeatures": [
                             "Defensive Stance",
                             "OR",
@@ -3323,13 +3018,11 @@
                         ]
                     },
                     "6": {
-                        "pro": "3",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "7": {
-                        "pro": "3",
                         "featFeatures": [
                             "Trained Combatant",
                             "Fortune Teller",
@@ -3346,13 +3039,11 @@
                         ]
                     },
                     "8": {
-                        "pro": "3",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "9": {
-                        "pro": "4",
                         "featFeatures": [
                             "Jack of all Trades",
                             "OR",
@@ -3362,13 +3053,11 @@
                         ]
                     },
                     "10": {
-                        "pro": "4",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "11": {
-                        "pro": "4",
                         "linkFeatures": [
                             "Improved Specialty"
                         ],
@@ -3383,13 +3072,11 @@
                         ]
                     },
                     "12": {
-                        "pro": "4",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11"
                         ]
                     },
                     "13": {
-                        "pro": "5",
                         "ability": [
                             "Ability Score Improvement"
                         ],
@@ -3400,7 +3087,6 @@
                         ]
                     },
                     "14": {
-                        "pro": "5",
                         "featFeatures": [
                             "Consistent Skills",
                             "OR",
@@ -3408,19 +3094,16 @@
                         ]
                     },
                     "15": {
-                        "pro": "5",
                         "featFeatures": [
                             "Trained Combatant"
                         ]
                     },
                     "16": {
-                        "pro": "5",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, or Level 14"
                         ]
                     },
                     "17": {
-                        "pro": "6",
                         "ability": [
                             "Ability Score Improvement"
                         ],
@@ -3433,13 +3116,11 @@
                         ]
                     },
                     "18": {
-                        "pro": "6",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 14, or Level 17"
                         ]
                     },
                     "19": {
-                        "pro": "6",
                         "featFeatures": [
                             "Motivated",
                             "OR",
@@ -3447,7 +3128,6 @@
                         ]
                     },
                     "20": {
-                        "pro": "6",
                         "linkFeatures": [
                             "Perfected Specialty"
                         ]
@@ -3488,7 +3168,6 @@
                 "theme": "basic",
                 "level": {
                     "1": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Bullish Brawn"
                         ],
@@ -3497,20 +3176,17 @@
                         ]
                     },
                     "2": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Heavyweight Fighting Style",
                             "Confident Provocation"
                         ]
                     },
                     "3": {
-                        "pro": "2",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "4": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Supernatural Item (Variant Rule)",
                             "Rejuvenation"
@@ -3522,7 +3198,6 @@
                         ]
                     },
                     "5": {
-                        "pro": "3",
                         "featFeatures": [
                             "Quick on your Feet",
                             "OR",
@@ -3532,13 +3207,11 @@
                         ]
                     },
                     "6": {
-                        "pro": "3",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "7": {
-                        "pro": "3",
                         "featFeatures": [
                             "Trained Combatant",
                             "Heavy Specialization",
@@ -3551,13 +3224,11 @@
                         ]
                     },
                     "8": {
-                        "pro": "3",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "9": {
-                        "pro": "4",
                         "featFeatures": [
                             "Motivated",
                             "OR",
@@ -3567,13 +3238,11 @@
                         ]
                     },
                     "10": {
-                        "pro": "4",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "11": {
-                        "pro": "4",
                         "linkFeatures": [
                             "Improved Rejuvenation"
                         ],
@@ -3584,13 +3253,11 @@
                         ]
                     },
                     "12": {
-                        "pro": "4",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, or  Level 11"
                         ]
                     },
                     "13": {
-                        "pro": "5",
                         "ability": [
                             "Ability Score Improvement"
                         ],
@@ -3601,7 +3268,6 @@
                         ]
                     },
                     "14": {
-                        "pro": "5",
                         "featFeatures": [
                             "Superhuman",
                             "OR",
@@ -3609,19 +3275,16 @@
                         ]
                     },
                     "15": {
-                        "pro": "5",
                         "featFeatures": [
                             "Trained Combatant"
                         ]
                     },
                     "16": {
-                        "pro": "5",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 13, or Level 14"
                         ]
                     },
                     "17": {
-                        "pro": "6",
                         "ability": [
                             "Ability Score Improvement"
                         ],
@@ -3632,13 +3295,11 @@
                         ]
                     },
                     "18": {
-                        "pro": "6",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 13, Level 14, or Level 17"
                         ]
                     },
                     "19": {
-                        "pro": "6",
                         "featFeatures": [
                             "Natural Talent",
                             "OR",
@@ -3646,7 +3307,6 @@
                         ]
                     },
                     "20": {
-                        "pro": "6",
                         "linkFeatures": [
                             "Legendary Brawn"
                         ]
@@ -3660,7 +3320,6 @@
                 "theme": "basic",
                 "level": {
                     "1": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Survivalist"
                         ],
@@ -3669,7 +3328,6 @@
                         ]
                     },
                     "2": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Ranger Fighting Style"
                         ],
@@ -3678,13 +3336,11 @@
                         ]
                     },
                     "3": {
-                        "pro": "2",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "4": {
-                        "pro": "2",
                         "linkFeatures": [
                             "Supernatural Item (Variant Rule)",
                             "Ranger's Recovery"
@@ -3698,7 +3354,6 @@
                         ]
                     },
                     "5": {
-                        "pro": "3",
                         "featFeatures": [
                             "Catlike Agility",
                             "OR",
@@ -3708,13 +3363,11 @@
                         ]
                     },
                     "6": {
-                        "pro": "3",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "7": {
-                        "pro": "3",
                         "featFeatures": [
                             "Trained Combatant",
                             "Improvised Healing",
@@ -3727,13 +3380,11 @@
                         ]
                     },
                     "8": {
-                        "pro": "3",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "9": {
-                        "pro": "4",
                         "featFeatures": [
                             "Deadly Accuracy",
                             "OR",
@@ -3743,13 +3394,11 @@
                         ]
                     },
                     "10": {
-                        "pro": "4",
                         "ability": [
                             "Ability Score Improvement"
                         ]
                     },
                     "11": {
-                        "pro": "4",
                         "linkFeatures": [
                             "Improved Survivalist"
                         ],
@@ -3760,13 +3409,11 @@
                         ]
                     },
                     "12": {
-                        "pro": "4",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4, Level 5, Level 7, or Level 9"
                         ]
                     },
                     "13": {
-                        "pro": "5",
                         "ability": [
                             "Ability Score Improvement"
                         ],
@@ -3777,7 +3424,6 @@
                         ]
                     },
                     "14": {
-                        "pro": "5",
                         "featFeatures": [
                             "Familiar Fighting Spirit",
                             "OR",
@@ -3785,19 +3431,16 @@
                         ]
                     },
                     "15": {
-                        "pro": "5",
                         "featFeatures": [
                             "Trained Combatant"
                         ]
                     },
                     "16": {
-                        "pro": "5",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 13, or Level 14"
                         ]
                     },
                     "17": {
-                        "pro": "6",
                         "ability": [
                             "Ability Score Improvement"
                         ],
@@ -3810,13 +3453,11 @@
                         ]
                     },
                     "18": {
-                        "pro": "6",
                         "otherFeatures": [
                             "Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 13, Level 14, or Level 17"
                         ]
                     },
                     "19": {
-                        "pro": "6",
                         "featFeatures": [
                             "Defensive Stance",
                             "OR",
@@ -3826,7 +3467,6 @@
                         ]
                     },
                     "20": {
-                        "pro": "6",
                         "linkFeatures": [
                             "Perfected Survivalist"
                         ]
