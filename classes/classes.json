@@ -3272,6 +3272,7 @@
             },
             "Artisan": {
                 "name": "Artisan",
+                "theme": "basic",
                 "level": {
                     "1": {
                         "pro": "2",
@@ -3484,6 +3485,7 @@
             },
             "Heavyweight": {
                 "name": "Heavyweight",
+                "theme": "basic",
                 "level": {
                     "1": {
                         "pro": "2",
@@ -3655,6 +3657,7 @@
             },
             "Ranger": {
                 "name": "Ranger",
+                "theme": "basic",
                 "level": {
                     "1": {
                         "pro": "2",
