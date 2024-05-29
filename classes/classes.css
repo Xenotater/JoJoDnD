@@ -57,6 +57,7 @@
 
 .table th:last-child, .table tbody td:last-child {
     border-right: unset;
+    width: 15%;
 }
 
 .levels a {
@@ -81,6 +82,24 @@
 
 .label {
     margin-bottom: 0;
+}
+
+#levelup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px 0 8px;
+}
+
+#levelup-header h4 {
+    display: inline;
+    margin: 0;
+}
+
+#modular-switch-box {
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
 
 .minor {
@@ -140,7 +159,7 @@
     background-color: rgb(60, 168, 69);
 }
 
-.echoes thead tr {
+#echoes thead tr {
     background-color: rgb(77, 168, 107);
 }
 

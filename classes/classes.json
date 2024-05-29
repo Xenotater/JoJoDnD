@@ -2094,274 +2094,203 @@
                 ],
                 "desc": "It is said that Stands are a physical manifestation of one's fighting spirit. However, there are some that are exposed to a <a href='\/artifacts'>Stand-Granting item<\/a> that do not possess a proper fighting spirit, but develop a Stand regardless due to  some (often benevolent) outside force. These Stand Users will grow and develop alongside their Stand. Despite starting out extremely weak, they eventually become some of the strongest, scariest, and most versatile Stand Users. They are forced to evolve their Stand once they have developed as a person, experienced combat several times, and when they are in a situation that puts them in despair.",
                 "notes": [
-                    "You may switch between your Acts as a Bonus Action once you have obtained them, all except for the Act 0 Stand. In order to evolve your Stand, you must have either; Ready to Hatch, Ready to Walk, or Ready To Fly, and you must be trapped in an event that your DM considers to be \u201chopeless.\u201d Only then will your Stand evolve.",
-                    "When switching to an Act with a higher Stand Energy Modifier, your Stand Energy must remain at the lower value. For example, if your Act 2 Stand has 6 SE and you switch to Act 1 with a maximum of 10, your available Stand Energy remains at 6.",
-                    "Unless stated otherwise, Class Features can only be used by the Act that gained them."
+                    "You may switch between your Acts as a Bonus Action once you have obtained them, all except for the Act 0 Stand. In order to evolve your Stand, you must have unlocked the next Act, and you must go through an event that your DM considers to be hopeless or desperate",
+                    "When switching to an Act with a higher Stand Energy Modifier, your Stand Energy must remain at the lower value. For example, if your Act 2 Stand has 6 SE and you switch to Act 1 with a maximum of 10, your available Stand Energy remains at 6."
                 ],
                 "hDice": "1d8",
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
                 "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except those mentioned in each Act. You may choose to take the average roll instead (5 + Level), but must do so before rolling. You put all of the points into each Act, so if for example you roll to get 15 points, each Act of your Stand gets 15 points to increase stats with. When you gain a new Act, you may roll the dice to retroactively increase the stats of the new Stand.",
-                "acts": [
-                    {
-                        "aDice": "0",
-                        "note": "Act 0 Stands do not have an Ability, nor any capacity to move, attack, dodge, or evade. If they can even be summoned, they simply manifest as a large egg.",
-                        "mults": [
-                            0,
-                            0,
-                            1,
-                            1,
-                            0,
-                            0
-                        ],
-                        "level": [
-                            {
-                                "lvl": "1",
-                                "pro": "2",
-                                "abilDice": "N/A"
-                            },
-                            {
-                                "lvl": "2",
-                                "pro": "2",
-                                "abilDice": "N/A",
-                                "otherFeatures": [
-                                    "Ready to Hatch"
-                                ]
-                            }
+                "theme": "echoes",
+                "level": {
+                    "1": {
+                        "pro": "2",
+                        "linkFeatures": [
+                            "Act 0"
                         ]
                     },
-                    {
-                        "aDice": "1d4",
-                        "note": "You may not increase your Power or Durability upon leveling up.",
-                        "mults": [
-                            2,
-                            3,
-                            3,
-                            8,
-                            3,
-                            3
+                    "2": {
+                        "pro": "2",
+                        "linkFeatures": [
+                            "Act 1 (Long Range)",
+                            "Custom Ability (Act 1)",
+                            "Act Modifier",
+                            "OR"
                         ],
-                        "level": [
-                            {
-                                "lvl": "2",
-                                "pro": "2",
-                                "abilDice": "1dx",
-                                "linkFeatures": [
-                                    "Custom Ability",
-                                    "Slippery",
-                                    "Detached Senses (Acts 1 & 2)"
-                                ]
-                            },
-                            {
-                                "lvl": "3",
-                                "pro": "2",
-                                "abilDice": "2dx",
-                                "ability": [
-                                    "Ability Score Improvement"
-                                ]
-                            },
-                            {
-                                "lvl": "4",
-                                "pro": "2",
-                                "abilDice": "2dx",
-                                "linkFeatures": [
-                                    "Silent Movement",
-                                    "OR",
-                                    "Speedy Movement"
-                                ]
-                            },
-                            {
-                                "lvl": "5",
-                                "pro": "3",
-                                "abilDice": "3dx",
-                                "otherFeatures": [
-                                    "Ready to Walk"
-                                ]
-                            }
+                        "featFeatures": [
+                            "Clever Disguise",
+                            "OR",
+                            "Oblivious Facade"
                         ]
                     },
-                    {
-                        "aDice": "1d8",
-                        "note": "You may not increase your Power upon leveling up.",
-                        "mults": [
-                            2,
-                            3,
-                            3,
-                            3,
-                            3,
-                            5
-                        ],
-                        "level": [
-                            {
-                                "lvl": "5",
-                                "pro": "3",
-                                "abilDice": "3dx",
-                                "linkFeatures": [
-                                    "Second Ability"
-                                ]
-                            },
-                            {
-                                "lvl": "6",
-                                "pro": "3",
-                                "abilDice": "3dx",
-                                "ability": [
-                                    "Ability Score Improvement"
-                                ]
-                            },
-                            {
-                                "lvl": "7",
-                                "pro": "3",
-                                "abilDice": "4dx",
-                                "linkFeatures": [
-                                    "Defensive Ability",
-                                    "OR",
-                                    "Mobile Ability"
-                                ]
-                            },
-                            {
-                                "lvl": "8",
-                                "pro": "3",
-                                "abilDice": "4dx",
-                                "ability": [
-                                    "Ability Score Improvement"
-                                ]
-                            },
-                            {
-                                "lvl": "9",
-                                "pro": "4",
-                                "abilDice": "5dx",
-                                "linkFeatures": [
-                                    "Melee Barrage (Acts 2 & 3)",
-                                    "OR"
-                                ],
-                                "featFeatures": [
-                                    "Calculating"
-                                ]
-                            },
-                            {
-                                "lvl": "10",
-                                "pro": "4",
-                                "abilDice": "5dx",
-                                "otherFeatures": [
-                                    "Ready to Fly"
-                                ]
-                            }
+                    "3": {
+                        "pro": "2",
+                        "ability": ["Ability Score Improvement"]
+                    },
+                    "4": {
+                        "pro": "2",
+                        "linkFeatures": [
+                            "Stand Pickpocketing (Act 1)"
                         ]
                     },
-                    {
-                        "aDice": "2d8",
-                        "note": "Your Range Score may not go above 20.",
-                        "mults": [
-                            4,
-                            3,
-                            4,
-                            1,
-                            4,
-                            2
+                    "5": {
+                        "pro": "3",
+                        "linkFeatures": [
+                            "Melee Barrage (Act 1)",
+                            "OR",
+                            "Act Modifier",
+                            "OR"
                         ],
-                        "level": [
-                            {
-                                "lvl": "10",
-                                "pro": "4",
-                                "abilDice": "5dx",
-                                "linkFeatures": [
-                                    "Third Ability"
-                                ]
-                            },
-                            {
-                                "lvl": "11",
-                                "pro": "4",
-                                "abilDice": "6dx",
-                                "ability": [
-                                    "Ability Score Improvement"
-                                ]
-                            },
-                            {
-                                "lvl": "12",
-                                "pro": "4",
-                                "abilDice": "6dx",
-                                "linkFeatures": [
-                                    "Feat of Power"
-                                ]
-                            },
-                            {
-                                "lvl": "13",
-                                "pro": "5",
-                                "abilDice": "7dx",
-                                "ability": [
-                                    "Ability Score Improvement"
-                                ]
-                            },
-                            {
-                                "lvl": "14",
-                                "pro": "5",
-                                "abilDice": "7dx",
-                                "linkFeatures": [
-                                    "Stand Rush",
-                                    "Block Projectile"
-                                ]
-                            },
-                            {
-                                "lvl": "15",
-                                "pro": "5",
-                                "abilDice": "8dx",
-                                "otherFeatures": [
-                                    "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
-                                ],
-                                "linkFeatures": [
-                                    "Stand Leap"
-                                ]
-                            },
-                            {
-                                "lvl": "16",
-                                "pro": "5",
-                                "abilDice": "8dx",
-                                "linkFeatures": [
-                                    "Improved Awareness (Act 1)",
-                                    "OR",
-                                    "Immense Range (Act 1)"
-                                ]
-                            },
-                            {
-                                "lvl": "17",
-                                "pro": "6",
-                                "abilDice": "9dx",
-                                "ability": [
-                                    "Ability Score Improvement"
-                                ]
-                            },
-                            {
-                                "lvl": "18",
-                                "pro": "6",
-                                "abilDice": "9dx",
-                                "linkFeatures": [
-                                    "Slippery (Act 2)",
-                                    "OR",
-                                    "Stand Energy Recharge (Act 2)"
-                                ]
-                            },
-                            {
-                                "lvl": "19",
-                                "pro": "6",
-                                "abilDice": "10dx",
-                                "otherFeatures": [
-                                    "Choose another Class Feature from Level 4, Level 7, Level 9, Level 16, or Level 18"
-                                ]
-                            },
-                            {
-                                "lvl": "20",
-                                "pro": "6",
-                                "abilDice": "10dx",
-                                "linkFeatures": [
-                                    "Instant Swap",
-                                    "OR",
-                                    "Act 4 (Variant Rule)"
-                                ],
-                                "otherFeatures": [
-                                    "<a href='\/artifacts\/?focus=Heaven'>Heaven Calls<\/a>"
-                                ]
-                            }
+                        "featFeatures": [
+                            "Deadly Accuracy",
+                            "OR",
+                            "Ranged Attack (Act 1)"
                         ]
+                    },
+                    "6": {
+                        "pro": "3",
+                        "linkFeatures": [
+                            "Act 2 (Ability-Focused)",
+                            "Custom Ability (Act 2)"
+                        ],
+                        "ability": ["Ability Score Improvement"]
+                    },
+                    "7": {
+                        "pro": "3",
+                        "linkFeatures": [
+                            "Stand Energy Recharge (Act 2)"
+                        ]
+                    },
+                    "8": {
+                        "pro": "3",
+                        "ability": ["Ability Score Improvement"]
+                    },
+                    "9": {
+                        "pro": "4",
+                        "linkFeatures": [
+                            "Act Modifier",
+                            "OR",
+                            "Defensive Ability (Act 2)",
+                            "OR",
+                            "Mobile Ability (Act 2)"
+                        ]
+                    },
+                    "10": {
+                        "pro": "4",
+                        "ability": ["Ability Score Improvement"]
+                    },
+                    "11": {
+                        "pro": "4",
+                        "linkFeatures": [
+                            "Act 3 (Close-Range)",
+                            "Custom Ability (Act 3)"
+                        ]
+                    },
+                    "12": {
+                        "pro": "4",
+                        "linkFeatures": [
+                            "Armored Stand (Act 3)",
+                            "OR",
+                            "Melee Barrage (Act 3)",
+                            "OR",
+                            "Stand Leap (Act 3)"
+                        ]
+                    },
+                    "13": {
+                        "pro": "5",
+                        "ability": ["Ability Score Improvement"]
+                    },
+                    "14": {
+                        "pro": "5",
+                        "linkFeatures": [
+                            "Act Modifier",
+                            "OR",
+                            "Block Projectile (Act 3)",
+                            "OR",
+                            "Menacing Aura (Act 3)",
+                            "OR",
+                            "Siege Combat (Act 3)"
+                        ]
+                    },
+                    "15": {
+                        "pro": "5",
+                        "otherFeatures": [
+                            "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
+                        ]
+                    },
+                    "16": {
+                        "pro": "5",
+                        "otherFeatures": [
+                            "Choose another Class Feature from Level 5, Level 9, Level 12, or Level 14"
+                        ]
+                    },
+                    "17": {
+                        "pro": "6",
+                        "ability": ["Ability Score Improvement"]
+                    },
+                    "18": {
+                        "pro": "6",
+                        "linkFeatures": [
+                            "Act Modifier",
+                            "OR",
+                            "Immense Range (Act 1)",
+                            "OR",
+                            "Improved Awareness (Act 1)",
+                            "OR",
+                            "Subtle Assistance (Act 2)",
+                            "OR",
+                            "Devastating Melee (Act 3)",
+                            "OR"
+                        ],
+                        "featFeatures": [
+                            "Calculating",
+                            "OR",
+                            "Defensive Stance"
+                        ]
+                    },
+                    "19": {
+                        "pro": "6",
+                        "otherFeatures": [
+                            "Choose another Class Feature from Level 5, Level 9, Level 12, Level 14, or Level 18"
+                        ]
+                    },
+                    "20": {
+                        "pro": "6",
+                        "linkFeatures": [
+                            "Instant Swap",
+                            "OR",
+                            "Act 4 (Variant Rule)"
+                        ],
+                        "otherFeatures": [
+                            "<a href='\/artifacts\/?focus=Heaven'>Heaven Calls<\/a>"
+                        ]
+                    }
+                },
+                "otherCols": [
+                    {
+                        "name": "Ability Dice",
+                        "level": {
+                            "1": "1dx",
+                            "2": "1dx",
+                            "3": "2dx",
+                            "4": "2dx",
+                            "5": "3dx",
+                            "6": "3dx",
+                            "7": "4dx",
+                            "8": "4dx",
+                            "9": "5dx",
+                            "10": "5dx",
+                            "11": "6dx",
+                            "12": "6dx",
+                            "13": "7dx",
+                            "14": "7dx",
+                            "15": "8dx",
+                            "16": "8dx",
+                            "17": "9dx",
+                            "18": "9dx",
+                            "19": "10dx",
+                            "20": "10dx"
+                        }
                     }
                 ]
             }
