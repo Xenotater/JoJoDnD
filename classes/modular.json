@@ -1,110 +1,496 @@
 {
-  "Act": [
-    {
-      "linkFeatures": [
-        "Act 0"
-      ]
-    },
-    {
-      "linkFeatures": [
-        "Act 1",
-        "Custom Ability (Act 1)",
-        "Act Modifier",
-        "OR",
-        "Act Feature"
-      ]
-    },
-    {
-      "ability": ["Ability Score Improvement"]
-    },
-    {
-      "linkFeatures": [
-        "Act Feature"
-      ]
-    },
-    {
-      "linkFeatures": [
-        "Act Modifier",
-        "OR",
-        "Act Feature"
-      ]
-    },
-    {
-      "linkFeatures": [
-        "Act 2",
-        "Custom Ability (Act 2)"
-      ],
-      "ability": ["Ability Score Improvement"]
-    },
-    {
-      "linkFeatures": [
-        "Act Feature"
-      ]
-    },
-    {
-      "ability": ["Ability Score Improvement"]
-    },
-    {
-      "linkFeatures": [
-        "Act Modifier",
-        "OR",
-        "Act Feature"
-      ]
-    },
-    {
-      "ability": ["Ability Score Improvement"]
-    },
-    {
-      "linkFeatures": [
-        "Act 3",
-        "Custom Ability (Act 3)"
-      ]
-    },
-    {
-      "linkFeatures": [
-        "Act Feature"
-      ]
-    },
-    {
-      "ability": ["Ability Score Improvement"]
-    },
-    {
-      "linkFeatures": [
-        "Act Modifier"
-      ]
-    },
-    {
-      "otherFeatures": [
-          "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
-      ]
-    },
-    {
-      "linkFeatures": [
-        "Act Feature"
-      ]
-    },
-    {
-        "ability": ["Ability Score Improvement"]
-    },
-    {
-      "linkFeatures": [
-        "Act Modifier"
-      ]
-    },
-    {
-      "linkFeatures": [
-        "Act Feature"
-      ]
-    },
-    {
-      "linkFeatures": [
-          "Instant Swap",
-          "OR",
-          "Act 4 (Variant Rule)"
-      ],
-      "otherFeatures": [
-          "<a href='\/artifacts\/?focus=Heaven'>Heaven Calls<\/a>"
-      ]
-    }
-  ]
+    "Act": [
+        {
+            "linkFeatures": [
+                "Act 0"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Act 1",
+                "Custom Ability (Act 1)",
+                "Act Modifier",
+                "OR",
+                "Act Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Act Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Act Modifier",
+                "OR",
+                "Act Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Act 2",
+                "Custom Ability (Act 2)"
+            ],
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Act Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Act Modifier",
+                "OR",
+                "Act Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Act 3",
+                "Custom Ability (Act 3)"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Act Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Act Modifier"
+            ]
+        },
+        {
+            "otherFeatures": [
+                "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Act Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Act Modifier"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Act Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Instant Swap",
+                "OR",
+                "Act 4 (Variant Rule)"
+            ],
+            "otherFeatures": [
+                "<a href='\/artifacts\/?focus=Heaven'>Heaven Calls<\/a>"
+            ]
+        }
+    ],
+    "Ripple": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "Spin": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "Power": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "Ranged": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "Remote": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "Ability": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "Enhancement": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "Revenge": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "Independent": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "Hive": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "Assassin": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "Consul": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "Scholar": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "Warrior": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "Artisan": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "Heavyweight": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "Ranger": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ]
 }

@@ -35,6 +35,7 @@ $(document).ready(function() {
 
     $(".list-link").click(function() {
         c = $(this).attr("id");
+        viewModular = false;
         updateURL();
         updateDisplay();
     });
