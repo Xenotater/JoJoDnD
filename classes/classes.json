@@ -142,6 +142,9 @@
             "11": {
                 "linkFeatures": [
                     "Enhanced Custom Ripple Technique"
+                ],
+                "featFeatures": [
+                    "Trained Combatant"
                 ]
             },
             "12": {
@@ -173,6 +176,9 @@
             "16": {
                 "featFeatures": [
                     "Trained Combatant"
+                ],
+                "ability": [
+                    "Increase Str, Dex, or Con Score by 1"
                 ]
             },
             "17": {
@@ -376,13 +382,17 @@
                         ]
                     },
                     "5": {
-                        "linkFeatures": [
-                            "Stand Rush"
+                        "featFeatures": [
+                            "Blended Fighting",
+                            "OR",
+                            "Martial Artist",
+                            "OR",
+                            "Veteran Sprinter"
                         ]
                     },
                     "6": {
                         "otherFeatures": [
-                            "Choose another Class Feature from Level 4"
+                            "Choose another Class Feature from Level 4 or Level 5"
                         ],
                         "ability": [
                             "Ability Score Improvement"
@@ -390,13 +400,7 @@
                     },
                     "7": {
                         "linkFeatures": [
-                            "Siege Combat",
-                            "OR"
-                        ],
-                        "featFeatures": [
-                            "Whirlwind Attacker",
-                            "OR",
-                            "Berserker"
+                            "Stand Leap"
                         ]
                     },
                     "8": {
@@ -423,7 +427,15 @@
                     },
                     "12": {
                         "linkFeatures": [
-                            "Stand Leap"
+                            "Siege Combat",
+                            "OR"
+                        ],
+                        "featFeatures": [
+                            "Stand Breaker",
+                            "OR",
+                            "Whirlwind Attacker",
+                            "OR",
+                            "Berserker"
                         ]
                     },
                     "13": {
@@ -433,7 +445,7 @@
                     },
                     "14": {
                         "otherFeatures": [
-                            "Choose another Class Feature from Level 4, Level 7, or Level 9"
+                            "Choose another Class Feature from Level 4, Level 5, Level 9, or Level 12"
                         ],
                         "featFeatures": [
                             "Menacing Aura"
@@ -470,7 +482,7 @@
                     },
                     "19": {
                         "otherFeatures": [
-                            "Choose another Class Feature from Level 4, Level 7, Level 9, Level 16, or Level 18"
+                            "Choose another Class Feature from Level 4, Level 5, Level 9, Level 12, Level 16, or Level 18"
                         ]
                     },
                     "20": {
@@ -1204,7 +1216,11 @@
                         "linkFeatures": [
                             "General Anchors",
                             "OR",
-                            "Speedy Switch"
+                            "Massive Stand",
+                            "OR",
+                            "Speedy Switch",
+                            "OR",
+                            "Siege Combat"
                         ]
                     },
                     "13": {
@@ -1387,6 +1403,8 @@
                             "OR"
                         ],
                         "featFeatures": [
+                            "Stand Breaker",
+                            "OR",
                             "Berserker"
                         ]
                     },
@@ -1556,7 +1574,6 @@
                     },
                     "4": {
                         "linkFeatures": [
-                            "Oblivious Facade",
                             "Melee Barrage",
                             "OR",
                             "Ranged Attack",
@@ -1564,6 +1581,9 @@
                         ],
                         "featFeatures": [
                             "Energy Imbuement"
+                        ],
+                        "otherFeatures": [
+                            "<a href='\/abilities\/?focus=Oblivious_Facade'>Oblivious Facade<\/a> OR <a href='\/feats\/?focus=Clever_Disguise'>Clever Disguise<\/a>"
                         ]
                     },
                     "5": {
@@ -1712,14 +1732,15 @@
                 ],
                 "desc": "It is said that Stands reflect their Users. Hive-Type Stand Users are those that idolize the idea of individuals working as a team. Their Stands are formed of many much smaller Sub-Stands, each one with only a fragment of the power of a full Stand. These smaller parts may act in tandem or each one separately. Because of this, Hive Stands have around the same strength as a normal Stand, but they all have great range.",
                 "notes": [
-                    "Keep an eye on your health. The amount of Instances available for you to use is determined by the percentage of health you are at. If you are at 50% Health, you only have 50% of your Hive Stand available for use. When you are at 0 Hit Points, you may still have a maximum of 1 Stand Instance that functions, but it is recalled, and cannot act in any way. Your amount of Stand Instances only drops to 0 when you die."
+                    "Keep an eye on your health. The amount of Instances available for you to use is determined by the percentage of health you are at. If you are at 50% Health, you only have 50% of your Hive Stand available for use. When you are at 0 Hit Points, you may still have a maximum of 1 Stand Instance that functions, but it is recalled, and cannot act in any way. Your amount of Stand Instances only drops to 0 when you die.",
+                    "Your attacks may take the form of regular Stand melee attacks, or Swarm Attacks (defined below). When attacking normally, you have Disadvantage if using less than half of your total instances."
                 ],
                 "hDice": "1d8",
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
                 "aDice": [
-                    "1d6\/1d10",
-                    "2d6\/2d10"
+                    "1d8",
+                    "2d6"
                 ],
                 "other": [
                     {
@@ -1917,6 +1938,24 @@
                     "You may switch between your Acts as a Bonus Action once you have obtained them, all except for the Act 0 Stand. In order to evolve your Stand, you must have unlocked the next Act, and you must go through an event that your DM considers to be hopeless or desperate",
                     "When switching to an Act with a higher Stand Energy Modifier, your Stand Energy must remain at the lower value. For example, if your Act 2 Stand has 6 SE and you switch to Act 1 with a maximum of 10, your available Stand Energy remains at 6."
                 ],
+                "other": [
+                    {
+                        "name": "Act Types",
+                        "content": [
+                            "<p>Each time you gain a new Act, you must choose what type it is from the following list. Your Act Type determines the Attack Dice, Ability Score Multipliers, and Class Features gained for that Act.</p>",
+                            "<div id='actTypes'>",
+                            "<div class='actType'><b>Close-Range</b><span>You gain: <a href='/abilities/?focus=Feat_of_Power'>Feat of Power</a> and <a href='/abilities/?focus=Confident_Provocation'>Confident Provocation</a></span><span>Note: Your Range Score may not go above 20</span><span>Attack Dice: 1d10 (2d8 past Level 11)</span><b>Ability Score Multipliers</b>",
+                            "<table class='table table-striped minor'><thead><tr><th>Stat</th><th>Multiplier</tr></thead><tbody><tr><td>Power</td><td>Str x3</td></tr><tr><td>Precision</td><td>Dex x3</td></tr><tr><td>Durability</td><td>Con x3</td></tr><tr><td>Range</td><td>Int x1</td></tr><tr><td>Speed</td><td>Wis x4</td></tr><tr><td>Stand Energy</td><td>Cha x2</td></tr></tbody></table></div>",
+                            "<div class='actType'><b>Long-Range</b><span>You gain: <a href='/abilities/?focus=Slippery'>Slippery</a> and either <a href='/abilities/?focus=Detached_Senses'>Detached Senses</a> OR <a href='/abilities/?focus=Immense_Resistance'>Immense Resistance</a></span><span>Note: You may not increase your Power or Durability when Leveling Up.</span><span>Attack Dice: 1d8 (2d6 past Level 11)</span><b>Ability Score Multipliers</b>",
+                            "<table class='table table-striped minor'><thead><tr><th>Stat</th><th>Multiplier</tr></thead><tbody><tr><td>Power</td><td>Str x3</td></tr><tr><td>Precision</td><td>Dex x3</td></tr><tr><td>Durability</td><td>Con x3</td></tr><tr><td>Range</td><td>Int x8</td></tr><tr><td>Speed</td><td>Wis x3</td></tr><tr><td>Stand Energy</td><td>Cha x3</td></tr></tbody></table></div>",
+                            "<div class='actType'><b>Ability-Focused</b><span>You gain: <a href='/abilities/?focus=Self_Acclimation'>Self Acclimation</a></span><span>Note: You may not increase your Power or Durability when Leveling Up.</span><span>Attack Dice: 1d4 (1d6 past Level 11)</span><b>Ability Score Multipliers</b>",
+                            "<table class='table table-striped minor'><thead><tr><th>Stat</th><th>Multiplier</tr></thead><tbody><tr><td>Power</td><td>Str x1</td></tr><tr><td>Precision</td><td>Dex x2</td></tr><tr><td>Durability</td><td>Con x1</td></tr><tr><td>Range</td><td>Int x3</td></tr><tr><td>Speed</td><td>Wis x3</td></tr><tr><td>Stand Energy</td><td>Cha x5</td></tr></tbody></table></div>",
+                            "<div class='actType'><b>Remote-Focused</b><span>You gain: <a href='/abilities/?focus=Programmed_Stand'>Programmed Stand</a> and <a href='/abilities/?focus=Stand_Marking'>Stand Marking</a></span><span>Note: You may not increase your Precision when Leveling Up. If someone activates your Remote trigger, you may switch to your Remote-Focused Act as a Reaction.</span><span>Attack Dice: 1d10 (2d8 past Level 11)</span><b>Ability Score Multipliers</b>",
+                            "<table class='table table-striped minor'><thead><tr><th>Stat</th><th>Multiplier</tr></thead><tbody><tr><td>Power</td><td>Str x3</td></tr><tr><td>Precision</td><td>Dex x2</td></tr><tr><td>Durability</td><td>Con x3</td></tr><tr><td>Range</td><td>Int x4</td></tr><tr><td>Speed</td><td>Wis x3</td></tr><tr><td>Stand Energy</td><td>Cha x2</td></tr></tbody></table></div>",
+                            "</div>"
+                        ]
+                    }
+                ],
                 "hDice": "1d8",
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
@@ -1942,7 +1981,9 @@
                         ]
                     },
                     "3": {
-                        "ability": ["Ability Score Improvement"]
+                        "ability": [
+                            "Ability Score Improvement"
+                        ]
                     },
                     "4": {
                         "linkFeatures": [
@@ -1967,7 +2008,9 @@
                             "Act 2 (Ability-Focused)",
                             "Custom Ability (Act 2)"
                         ],
-                        "ability": ["Ability Score Improvement"]
+                        "ability": [
+                            "Ability Score Improvement"
+                        ]
                     },
                     "7": {
                         "linkFeatures": [
@@ -1975,7 +2018,9 @@
                         ]
                     },
                     "8": {
-                        "ability": ["Ability Score Improvement"]
+                        "ability": [
+                            "Ability Score Improvement"
+                        ]
                     },
                     "9": {
                         "linkFeatures": [
@@ -1987,7 +2032,9 @@
                         ]
                     },
                     "10": {
-                        "ability": ["Ability Score Improvement"]
+                        "ability": [
+                            "Ability Score Improvement"
+                        ]
                     },
                     "11": {
                         "linkFeatures": [
@@ -2005,7 +2052,9 @@
                         ]
                     },
                     "13": {
-                        "ability": ["Ability Score Improvement"]
+                        "ability": [
+                            "Ability Score Improvement"
+                        ]
                     },
                     "14": {
                         "linkFeatures": [
@@ -2029,7 +2078,9 @@
                         ]
                     },
                     "17": {
-                        "ability": ["Ability Score Improvement"]
+                        "ability": [
+                            "Ability Score Improvement"
+                        ]
                     },
                     "18": {
                         "linkFeatures": [
@@ -2229,7 +2280,6 @@
             "6": {
                 "linkFeatures": [
                     "Object Manipulation",
-                    "OR",
                     "Wrist Memory"
                 ],
                 "ability": [
@@ -2263,7 +2313,7 @@
             },
             "10": {
                 "otherFeatures": [
-                    "Choose another Class Feature from Level 4, Level 6, Level 8, or Level 9"
+                    "Choose another Class Feature from Level 4, Level 8, or Level 9"
                 ],
                 "ability": [
                     "Ability Score Improvement"
@@ -2303,7 +2353,7 @@
             },
             "16": {
                 "otherFeatures": [
-                    "Choose another Class Feature from Level 4, Level 6, Level 8, or Level 9, Level 12, or Level 15"
+                    "Choose another Class Feature from Level 4, Level 8, or Level 9, Level 12, or Level 15"
                 ]
             },
             "17": {
@@ -2318,7 +2368,7 @@
             },
             "18": {
                 "otherFeatures": [
-                    "Choose another Class Feature from Level 4, Level 6, Level 8, or Level 9, Level 12, Level 15, or Level 17"
+                    "Choose another Class Feature from Level 4, Level 8, or Level 9, Level 12, Level 15, or Level 17"
                 ]
             },
             "19": {
@@ -2410,6 +2460,7 @@
                     },
                     "5": {
                         "featFeatures": [
+                            "Trained Combatant",
                             "Pressure Point Manipulator",
                             "OR",
                             "Duelist's Agility",
@@ -2424,7 +2475,6 @@
                     },
                     "7": {
                         "featFeatures": [
-                            "Trained Combatant",
                             "Guerilla Fighter",
                             "OR",
                             "Skirmisher",
@@ -2845,21 +2895,36 @@
                     },
                     "4": {
                         "linkFeatures": [
-                            "Supernatural Item (Variant Rule)",
-                            "Rejuvenation"
+                            "Supernatural Item (Variant Rule)"
                         ],
                         "featFeatures": [
                             "Adrenaline Rush",
                             "OR",
-                            "Scarflesh"
+                            "Scarflesh",
+                            "OR",
+                            "Crusher",
+                            "OR",
+                            "Piercer",
+                            "OR",
+                            "Slasher",
+                            "OR",
+                            "Weapon Attribute Specialist"
                         ]
                     },
                     "5": {
                         "featFeatures": [
-                            "Trained Combatant",
+                            "Defensive Stance",
+                            "OR",
                             "Quick on your Feet",
                             "OR",
                             "Tanky"
+                        ],
+                        "linkFeatures": [
+                            "Rejuvenation",
+                            "OR"
+                        ],
+                        "otherFeatures": [
+                            "<a href=\/feats\/?focus=Trained_Combatant'>Trained Combatant<\/a>"
                         ]
                     },
                     "6": {
@@ -2869,6 +2934,8 @@
                     },
                     "7": {
                         "featFeatures": [
+                            "Stand Breaker",
+                            "OR",
                             "Specialized Save",
                             "OR",
                             "Veteran Sprinter",
@@ -2966,6 +3033,9 @@
                     "20": {
                         "linkFeatures": [
                             "Weapon Aficionado"
+                        ],
+                        "featFeatures": [
+                            "Trained Combatant"
                         ]
                     }
                 }
@@ -3199,6 +3269,7 @@
                     },
                     "5": {
                         "featFeatures": [
+                            "Trained Combatant",
                             "Quick on your Feet",
                             "OR",
                             "Scarflesh",
@@ -3213,7 +3284,6 @@
                     },
                     "7": {
                         "featFeatures": [
-                            "Trained Combatant",
                             "Heavy Specialization",
                             "OR",
                             "Shield Proficiency",
@@ -3230,6 +3300,7 @@
                     },
                     "9": {
                         "featFeatures": [
+                            "Trained Combatant",
                             "Motivated",
                             "OR",
                             "Resilient",
@@ -3355,6 +3426,7 @@
                     },
                     "5": {
                         "featFeatures": [
+                            "Trained Combatant",
                             "Catlike Agility",
                             "OR",
                             "Guerilla Fighter",
@@ -3369,7 +3441,6 @@
                     },
                     "7": {
                         "featFeatures": [
-                            "Trained Combatant",
                             "Improvised Healing",
                             "OR",
                             "Rifle Specialization",

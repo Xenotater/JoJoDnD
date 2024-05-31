@@ -124,7 +124,7 @@ function updateDisplay() {
         for (let i = 0; i < clss.other.length; i++) {
             newContent += "<h4 class='display-heading'>" + clss.other[i].name + "</h4>";
             for (let j = 0; j < clss.other[i].content.length; j++)
-            newContent += clss.other[i].content[j];
+                newContent += clss.other[i].content[j];
         }
 
     if (clss.mults != null) {

@@ -164,26 +164,119 @@
         {}
     ],
     "Power": [
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
+        {
+            "linkFeatures": [
+                "Feat of Power"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Custom Ability",
+                "Confident Provocation"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Power Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Power Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ],
+            "linkFeatures": [
+                "Power Feature"
+            ]
+        },
+        {
+            "otherFeatures": [
+                "Power Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Power Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "otherFeatures": [
+                "Attack Dice increases to 2d10"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Power Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "featFeatures": [
+                "Menacing Aura"
+            ],
+            "linkFeatures": [
+                "Power Feature"
+            ]
+        },
+        {
+            "otherFeatures": [
+                "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
+            ],
+            "linkFeatures": [
+                "Special Ability (2 SE)"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Power Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Power Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Power Feature"
+            ]
+        },
+        {
+            "otherFeatures": [
+                "<a href='\/artifacts\/?focus=Heaven'>Heaven Calls<\/a>"
+            ],
+            "linkFeatures": [
+                "Blow for Blow"
+            ]
+        }
     ],
     "Ranged": [
         {},

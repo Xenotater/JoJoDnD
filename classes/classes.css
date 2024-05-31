@@ -105,6 +105,36 @@
     gap: 4px;
 }
 
+#modularInfo {
+    display: none;
+}
+
+#actTypes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.actType {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    min-width: 275px; 
+    width: 40%;
+    border: 2px solid purple;
+    border-radius: 4px;
+    margin: 8px;
+    padding: 8px;
+}
+
+.actType .minor {
+    width: 200px;
+    margin: 0;
+}
+
 .minor {
     width: 60%;
     margin: auto;

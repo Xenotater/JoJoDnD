@@ -2,10 +2,11 @@
     "Ambush_Attacker": {
         "name": "Ambush Attacker",
         "classes": [
-            "Rng"
+            "Rng",
+            "Act"
         ],
         "desc": [
-            "Melee attacks from your stand or the Focused Attack from <a class=\"in-page\">Ranged Attack<\/a> gain the Ambush property, meaning that they always inflict a Critical hit when attacking a Surprised target."
+            "Melee attacks from your Stand or the Focused Attack from <a class=\"in-page\">Ranged Attack<\/a> gain the Ambush property, meaning that they always inflict a Critical hit when attacking a Surprised target."
         ]
     },
     "Anchored_Stand": {
@@ -17,7 +18,7 @@
         "desc": [
             "Your Stand is physically attached and anchored to a physical object. As such, your Stand may be damaged by physical means, as well as Stands. However, regardless of if your Stand takes physical or Stand damage, you still apply the same Damage Reduction to it.",
             "Also, both you and your Stand gain Vulnerability (double damage) and Resistance (half damage) to one damage type of your choice, as well as the Stand counterparts to those damage types.",
-            "If you are an Enhancement-Type Stand User, you must find an amount of material (or a specific object) that fits your specific anchor. This material must be within your Stand's Range in order for you to use it to Activate your Stand."
+            "You may choose between the following subtypes of Anchored Stand:<ul class='sublist'><li><u>Material-Anchor<\/u>: Examples: Geb, High Priestess, Justice<ul><li>You have the ability to bind your Stand to a specific type of material, examples including; wood, fog, metal, stone, water, or fire. Once you determine this material, you cannot change it.<\/li><li>Your Stand is able to change its anchor, so long as the new anchor is composed of the same material, and as long as it is within two meters of the material it was previously inhabiting. You may change the anchor of your Stand as an Action, and when you do so you may also take the Hide Action for free. You are able to summon or unsummon your Stand if its within two meters of the User (if they have one). <\/li><li>Your Stand's melee attacks may use physical or non-physical damage, so long as the type makes sense for the material. For example, a Stand anchored to snow could choose to deal bludgeoning or cold damage each time they deal damage with a melee attack.<\/li><li>You may choose to change an existing Resistance to an Immunity, to gain Resistance in two non-physical damage types, or Resistance in one physical damage type.<\/li><\/ul><\/li><li><u>Object-Anchor<\/u>: Examples: Wheel of Fortune, Strength, Surface, Superfly<ul><li>You have the ability to bind your Stand to a specific kind of object, such as a car, a sword, a radio tower, or a hat. Once you determine the specific object, you cannot change it.<\/li><li>While your Stand is bound to an object, it still has the ability to move and function on its own. Your Stand is able to change its anchor as an action so long as you are within two meters of it. You are able to summon or unsummon your Stand if its within two meters of the User (if they have one).<\/li><li>Your Stand's Damage Reduction is increased considerably. <a class='in-page'>Immense Resistance<\/a> instead functions like <a class='in-page'>Armored Stand<\/a> (giving you double your Durability Modifier in Stand Damage Reduction). Armored Stand instead gives you triple your Durability Modifier for your Stand Damage Reduction.<\/li><li>You gain <a class='in-page'>Feat of Power<\/a>. If you already have Feat of Power, the amount you can lift and throw using it is doubled and you only take 1 damage for every two meters traveled.<\/li><\/ul><\/li><li><u>Self-Anchor<\/u>: Examples: Love Deluxe, Metallica, Stone Free, Oh! Lonesome Me, Dr. Wu.<ul><li>Your Stand is uniquely inseparable from you, meaning that you yourself are made of your Stand.<\/li><li>Your Unarmed Strikes can deal damage to Stands, and the Damage Die is raised to be equal to that of your Stand Attack Dice. In addition, you can always use your Stand stats for Strength, Dexterity, and Constitution Checks, Saves, and Attack Rolls, even if something would normally specify that you can't use your Stand stats.<\/li><li>Your User Movement Speed is brought up to be equal to that of your Stand's Movement Speed.<\/li><li>Your Range no longer determines how far your Stand can travel from you. Instead, it is a measure of how far you can extend your Stand, which is a part of yourself that must stay attached to your body somehow, either through separating parts of yourself or stretching out from you like an appendage. You may extend up to twice your normal Range, but pushing past your Range results in taking damage. When you start your turn beyond your normal Range, or exit the threshold of your normal Range, you take an amount of force damage equal to your Level, which cannot be reduced or negated in any way. If you have a Stand that stretches out from you, the Range Modifier determines how far in meters your Stand can stretch in a single direction.<\/li><li>You cannot change where your Stand is anchored, it will always be anchored to your body. In addition, it is always summoned, unless you are unconscious.<\/li><\/ul><\/li><\/ul>"
         ]
     },
     "Armored_Stand": {
@@ -26,21 +27,22 @@
             "Pwr",
             "Enh",
             "Rev",
-            "Ind"
+            "Ind",
+            "Act"
         ],
         "desc": [
             "The amount of damage that your Stand can reduce per round is doubled.",
             "<a class='in-page'>Immense Resistance<\/a> still applies if you have it, but applies after this increase."
         ]
     },
-    "Complete_Control": {
-        "name": "Complete Control",
+    "Superior_Control": {
+        "name": "Superior Control",
         "classes": [
             "Enh"
         ],
         "desc": [
-            "Your Stand is a fusion of Stand Energy and a physical object. You've gained enough control over your Stand that you can completely influence how the object or material your Stand is fused with functions.",
-            "Examples of this include <a href='https:\/\/jojowiki.com\/Wheel_of_Fortune' target='_blank'>Wheel Of Fortune<\/a>'s squeezing and <a href='https:\/\/jojowiki.com\/Strength' target='_blank'>Strength<\/a>'s control of the Ship itself."
+            "You have enough control and experience using an anchored Stand that you are able to have the object or material perform tasks they normally wouldn't be able to. As a Bonus Action, you may perform the following:",
+            "<ul class='sublist'><li>Your Stand squeezes tightly, allowing it to comfortably fit through a space as if they were a creature one size category smaller than the Stand is. You may stay squeezed in a place like this so long as you keep spending your Bonus Action to use this effect.<\/li><li>Your Stand gains a method of locomotion it may not normally have, gaining a Climbing Speed or Swimming Speed equal to half of the Stand's Movement Speed.<\/li><\/ul>"
         ]
     },
     "Custom_Ability": {
@@ -89,6 +91,7 @@
             "Enh"
         ],
         "desc": [
+            "Prerequisite: Can only be used with Material-Anchor and Object-Anchor Stands. ",
             "As an Enhancement-Type Stand User you've taken your Ability to the next level. Rather than having to anchor onto something very specific, you may now anchor onto anything that's similar to your original anchor.",
             "For example, <a href='https:\/\/jojowiki.com\/Wheel_of_Fortune' target='_blank'>Wheel of Fortune<\/a> would be able to anchor onto anything with wheels instead of a specific car, or <a href='https:\/\/jojowiki.com\/Strength' target='_blank'>Strength<\/a> would be able to anchor onto anything that floats in water instead of a specific boat."
         ]
@@ -97,7 +100,8 @@
         "name": "Hot Pursuit",
         "classes": [
             "Rng",
-            "Hive"
+            "Hive",
+            "Act"
         ],
         "desc": [
             "When an opponent moves outside of your Stand's melee range, you may spend your Reaction to move up to half your Stand's Movement Speed to bring you closer to your target."
@@ -106,7 +110,8 @@
     "Immense_Power": {
         "name": "Immense Power",
         "classes": [
-            "Rmt"
+            "Rmt",
+            "Act"
         ],
         "desc": [
             "Your Stand is versatile, but was limited by its strength before now.",
@@ -132,7 +137,8 @@
             "Enh",
             "Ind",
             "Hive",
-            "Rng"
+            "Rng",
+            "Act"
         ],
         "desc": [
             "Your Stand is incredibly resilient, a reflection of your willpower and experience.",
@@ -156,7 +162,8 @@
         "name": "Improved Immense Range",
         "classes": [
             "Rmt",
-            "Hive"
+            "Hive",
+            "Act"
         ],
         "desc": [
             "<b>Prerequisite: <a class='in-page'>Immense Range<\/a><\/b>",
@@ -169,7 +176,7 @@
             "Rng"
         ],
         "desc": [
-            "In addition to being able to Dash and Disengage as a Bonus Action with your Stand or if your stand is within 2m, you also gain the ability to Dodge as a Bonus Action with your Stand or if your stand is within 2m.",
+            "In addition to being able to Dash and Disengage as a Bonus Action with your Stand or if your Stand is within 2m, you also gain the ability to Dodge as a Bonus Action with your Stand or if your Stand is within 2m.",
             "You may use this Ability twice per Short Rest."
         ]
     },
@@ -178,7 +185,8 @@
         "classes": [
             "Rmt",
             "Enh",
-            "Ind"
+            "Ind",
+            "Act"
         ],
         "desc": [
             "Your Stand's Movement Speed cannot be reduced to less than half, including through Conditions such as Frightened or Grappled."
@@ -192,11 +200,12 @@
             "Enh",
             "Ind",
             "Rev",
-            "Hive"
+            "Hive",
+            "Act"
         ],
         "desc": [
             "You've attempted to hide the fact that you're a Stand User numerous times before. You know what works, and what doesn't.",
-            "You get Advantage on Deception Checks to pass yourself off as a Non-Stand User."
+            "You get Advantage on Bluff Checks to pass yourself off as a Non-Stand User."
         ]
     },
     "Perfected_Tremorsense": {
@@ -212,7 +221,8 @@
     "Programmed_Stand": {
         "name": "Programmed Stand",
         "classes": [
-            "Rmt"
+            "Rmt",
+            "Act"
         ],
         "desc": [
             "Your Stand does not follow your command. Rather, you may set a simple program that your Stand must follow.",
@@ -222,7 +232,8 @@
     "Remote_Ambusher": {
         "name": "Remote Ambusher",
         "classes": [
-            "Rmt"
+            "Rmt",
+            "Act"
         ],
         "desc": [
             "Rather than pursuing a target directly, the Stand will take a longer path if it means a possibility of a surprise attack.",
@@ -254,7 +265,8 @@
     "Self_Acclimation": {
         "name": "Self-Acclimation",
         "classes": [
-            "Abl"
+            "Abl",
+            "Act"
         ],
         "desc": [
             "You've spent so much time manipulating certain elements that you've gained Immunity to one damage type. This Immunity should relate to your Stand Ability in some way. For example, <a href='https:\/\/jojowiki.com\/Ghiaccio' target='_blank'>Ghiaccio<\/a>'s Cold Immunity. You also gain Immunity to that type's Stand counterpart.",
@@ -270,7 +282,7 @@
         ],
         "desc": [
             "Through experience you've gained better control of your Stand, allowing you to move your Stand extremely carefully to ensure that the only way that your Stand may be detected is when it is seen.",
-            "Your Stand's movement is silent. When it moves in an attempt to evade detection, they may roll Stealth with Advantage."
+            "Your Stand's movement is silent. When it moves in an attempt to evade detection, they may roll Sneak with Advantage."
         ]
     },
     "Slippery": {
@@ -306,9 +318,7 @@
     },
     "Second_Ability": {
         "name": "Second Ability",
-        "classes": [
-            "Act"
-        ],
+        "classes": [],
         "desc": [
             "Your Stand has undergone an evolution, and has gained a new Ability alongside its new form.",
             "This Ability should be an evolution of your first Ability. Similar, but stronger or more versatile.",
@@ -318,7 +328,8 @@
     "Superior_Momentum": {
         "name": "Superior Momentum",
         "classes": [
-            "Rmt"
+            "Rmt",
+            "Act"
         ],
         "desc": [
             "Your Stand has Advantage on all Power, Precision, and Durability Saving Throws."
@@ -326,9 +337,7 @@
     },
     "Third_Ability": {
         "name": "Third Ability",
-        "classes": [
-            "Act"
-        ],
+        "classes": [],
         "desc": [
             "Your Stand has undergone another evolution, and has gained a new Ability alongside its new form.",
             "This Ability should be an evolution of your second Ability. Similar, but stronger or more versatile.",
@@ -342,7 +351,7 @@
             "Act"
         ],
         "desc": [
-            "Through experience you've built up the movement speed of your Stand. At any time, as a Reaction, you may call your Stand back to you, allowing it to come back and defend you or perform any action requiring your Stand to be near you, up to its Movement Speed.",
+            "Through experience you've built up the Movement Speed of your Stand. At any time, as a Reaction, you may call your Stand back to you, allowing it to come back and defend you or perform any action requiring your Stand to be near you, up to its Movement Speed.",
             "This also means that your AC may be increased to your Stand's AC if it is able to return to you. However, if it passes through the melee of a Stand or creature that can sense it while returning to you, the Stand or creature may make an Opportunity Attack against your Stand."
         ]
     },
@@ -365,13 +374,14 @@
             "Act"
         ],
         "desc": [
-            "Through trial and error you've gained the ability to slip objects from the grasp of other people using your Stand. From now on, you have Advantage when making Sleight of Hand Checks using your Stand."
+            "Through trial and error you've gained the ability to slip objects from the grasp of other people using your Stand, and to move with extreme precision. From now on, you have Advantage when making Finesse Checks using your Stand."
         ]
     },
     "Two_Modes": {
         "name": "Two Modes",
         "classes": [
-            "Rmt"
+            "Rmt",
+            "Act"
         ],
         "desc": [
             "Interestingly, you have somehow gained power over your Stand, despite how incredibly volatile Remote Stands can be. At any time, as an Attack, you may switch to or from Ranged Mode.",
@@ -452,10 +462,11 @@
         "name": "Defensive Ability",
         "classes": [
             "Abl",
-            "Ind"
+            "Ind",
+            "Act"
         ],
         "desc": [
-            "Through clever use of your Stand's Ability you've found a way to properly defend yourself. As an Action you may spend 2 Stand Energy and gain one of the following benefits for 3 Turns (not including the one that you activate it on). You may only have one of the following buffs active at a time.<ul class='sublist'><li>+2d4 AC (Both for Stand and User)<\/li><li>Advantage on all Saving Throws<\/li><li>An amount of Temporary Hit Points equal to twice your Level<\/li><\/ul>"
+            "Through clever use of your Stand's Ability you've found a way to properly defend yourself. As an Attack you may spend 1 Stand Energy and gain one of the following benefits for 3 Turns (not including the one that you activate it on). You may only have one of the following buffs active at a time.<ul class='sublist'><li>+An amount of AC equal to your PB for your User, 2x your PB for your Stand<\/li><li>Advantage on all Saving Throws<\/li><li>An amount of Temporary Hit Points equal to twice your Level<\/li><\/ul>"
         ]
     },
     "Defensive_Wave": {
@@ -464,15 +475,16 @@
             "Hive"
         ],
         "desc": [
-            "As an Action you may give yourself a buff that remains active until the start of your next Turn. Your Stand is a bunch of little instances that can hold themselves together in order to form a shield in order to protect their User.",
-            "When this Shield is active, any Stand Hits count as a Miss. You or your Stand may not use your Movement Actions until your next Turn. If you had already moved this Turn, you may not activate this Action."
+            "Once per turn, as an attack, you may give yourself a buff that remains active until the start of your next Turn. Your Stand is a bunch of little instances that can hold themselves together in order to form a shield in order to protect their User.",
+            "When this Shield is active, you gain an additional amount of damage reduction and Stand AC equal to your Durability modifier. "
         ]
     },
     "Devastating_Critical": {
         "name": "Devastating Critical",
         "classes": [
             "Pwr",
-            "Rev"
+            "Rev",
+            "Act"
         ],
         "desc": [
             "When you roll a Critical hit on a melee attack using your Stand, you roll three times the Damage Dice, rather than double."
@@ -482,7 +494,8 @@
         "name": "Devastating Melee",
         "classes": [
             "Pwr",
-            "Rev"
+            "Rev",
+            "Act"
         ],
         "desc": [
             "If you would have two conditions that would give you Advantage on a melee attack at the same time and you have no Disadvantage, you may instead roll 3 dice and take the highest of the three."
@@ -491,11 +504,12 @@
     "Enhanced_Custom_Ability": {
         "name": "Enhanced Custom Ability",
         "classes": [
-            "Abl"
+            "Abl",
+            "Act"
         ],
         "desc": [
             "Talk to your DM if you have a special case or have an idea for how to make your Ability more useful\/powerful, or choose from one of the following ways how your Stand's Ability is empowered:",
-            "<ul class='sublist'>If your Stand uses Scaling Dice, you gain an additional amount of Ability Dice equal to your Proficiency Bonus (A Level 20 stand user with this would have 16dx dice, for example, with 10dx from their class table + 6dx from their Proficiency Bonus).<\/li>",
+            "<ul class='sublist'>If your Stand uses Scaling Dice, you gain an additional amount of Ability Dice equal to your Proficiency Bonus (A Level 20 Stand User with this would have 16dx dice, for example, with 10dx from their class table + 6dx from their Proficiency Bonus).<\/li>",
             "<li>Your Stand gains a Short and Long Range. The Short Range of your Stand is where the range of your Stand's Ability would normally end, and functions as normal. If you make attack rolls or force an enemy to make a Save with your Stand's Custom Ability while your target is within your Long Range, you have Disadvantage on the attack roll, or your enemy has Advantage on the Saving Throw.<\/li>",
             "<li>Your Stand's Custom Ability increases greatly in its usefulness. A numerical value within your Stand's Custom Ability that determines how much it can affect at once increases by double. This may range from the amount of targets you may affect, to kilograms of an object you can affect, to seconds or time manipulated, etc.<\/li><\/ul>",
             "Make sure to check with your DM, as they will want to know how the Custom Ability has been changed. It's important to check because such a change may be significant, and they need to let you know if it seems game-breaking, or something that will change how they plan based on your character."
@@ -567,7 +581,8 @@
     "Lethal_Strike": {
         "name": "Lethal Strike",
         "classes": [
-            "Pwr"
+            "Pwr",
+            "Act"
         ],
         "desc": [
             "When you attack an unsuspecting enemy outside of combat, the first time you hit them you may force them to make a Constitution (not Durability) Saving Throw against a DC of 8 + your Strength Modifier + your PB. If they fail the Save, you deal double damage against them."
@@ -592,10 +607,11 @@
         "name": "Mobile Ability",
         "classes": [
             "Abl",
-            "Ind"
+            "Ind",
+            "Act"
         ],
         "desc": [
-            "Through clever use of your Stand's Ability you've found a way to propel yourself, or boost your movement in some way. As an Action you may spend 2 Stand Energy and gain one of the following benefits for 3 Turns (not including the one that you activate it on). You may only have one of the following buffs active at a time.<ul class='sublist'><li>Gain 5 meters of movement speed per Turn<\/li><li>You may make an additional Attack per Attack Action<\/li><li>You may use your Bonus Action twice per Turn<\/li><\/ul>"
+            "Through clever use of your Stand's Ability you've found a way to propel yourself, or boost your movement in some way. As an Attack you may spend 1 Stand Energy and gain one of the following benefits for 3 Turns (not including the one that you activate it on). You may only have one of the following buffs active at a time.<ul class='sublist'><li>Gain 5 meters of Movement Speed per Turn<\/li><li>You may make an additional Attack per Attack Action<\/li><li>You may use your Bonus Action twice per Turn<\/li><\/ul>"
         ]
     },
     "Mobile_Wave": {
@@ -604,7 +620,7 @@
             "Hive"
         ],
         "desc": [
-            "The individual instances of your Stand may work as a collective, with the purpose of moving you to one place extremely quickly. As an Action you and your Stand may be transported to the same place, up to an amount of meters equal to twice your Stand's Movement Speed, without consuming your Movement Action. You may also climb, move through water, or across Difficult Terrain without penalty to your movement."
+            "The individual instances of your Stand may work as a collective, with the purpose of moving you to one place extremely quickly. If your Standis within 2 meters of you, as an Attack you and your Stand may be transported to the same place, up to an amount of meters equal to your Stand's Movement Speed, without consuming your Movement Action. You may also climb, move through water, or across Difficult Terrain without penalty to your movement."
         ]
     },
     "Natural_Armor": {
@@ -615,7 +631,7 @@
         "desc": [
             "As a Rock Human, you gain an additional Hit Point per Level.",
             "Additionally, because of your unique physiology you may change your body between several different forms. Changing forms takes a Bonus Action.",
-            "<ul class='sublist'><li><b>Humanoid:<\/b> No changes.<\/li><li><b>Hybrid<\/b>: You gain an amount of Temporary Hit Points equal to your Level at the start of your Turns and are considered to have half Cover (does not stack with other sources of Cover). You also may resist a physical damage type of your choice (Bludgeoning, Piercing, or Slashing). However, your Movement Speed is halved and you cannot take the Dodge or Dash actions in this form.<\/li><li><b>Rock:<\/b> You gain an amount of Temporary Hit Points equal to twice your Level at the start of your Turns and are considered to have three-quarters Cover (does not stack with other sources of Cover). You also resist all physical damage (Bludgeoning, Piercing, and Slashing). However, the only things you may do in this form are take Bonus Actions and the Hide Action. If you choose to Hide, you may make the Stealth Check with Advantage.<\/li><\/ul>"
+            "<ul class='sublist'><li><b>Humanoid:<\/b> No changes.<\/li><li><b>Hybrid<\/b>: You gain an amount of Temporary Hit Points equal to your Level at the start of your Turns and are considered to have half Cover (does not stack with other sources of Cover). You also may resist a physical damage type of your choice (Bludgeoning, Piercing, or Slashing). However, your Movement Speed is halved and you cannot take the Dodge or Dash actions in this form.<\/li><li><b>Rock:<\/b> You gain an amount of Temporary Hit Points equal to twice your Level at the start of your Turns and are considered to have three-quarters Cover (does not stack with other sources of Cover). You also resist all physical damage (Bludgeoning, Piercing, and Slashing). However, the only things you may do in this form are take Bonus Actions and the Hide Action. If you choose to Hide, you may make the Sneak Check with Advantage.<\/li><\/ul>"
         ]
     },
     "Ranged_Attack": {
@@ -623,7 +639,8 @@
         "classes": [
             "Rng",
             "Abl",
-            "Ind"
+            "Ind",
+            "Act"
         ],
         "desc": [
             "Destructive energy is summoned from deep within your Stand and somehow released in a direction with the intent to harm or deal damage. Using this Ability consumes an entire Action, allowing you to fire Stand projectiles (flavor as you'd like) in one of two ways:",
@@ -676,7 +693,8 @@
     "Self_Preservation": {
         "name": "Self-Preservation",
         "classes": [
-            "Rmt"
+            "Rmt",
+            "Act"
         ],
         "desc": [
             "Your Stand may assess situations and make a basic judgement on them. If your Stand believes that the task at hand is too great, it may, instead of carrying out its programming, Hide, Defend, or Retreat. "
@@ -685,7 +703,9 @@
     "Siege_Combat": {
         "name": "Siege Combat",
         "classes": [
-            "Pwr"
+            "Pwr",
+            "Act",
+            "Enh"
         ],
         "desc": [
             "Attacks with your Stand deal double damage to objects and structures."
@@ -697,6 +717,7 @@
             "Enh"
         ],
         "desc": [
+            "Prerequisite: Can only be used with Material-Anchor Stands",
             "As a Reaction you may switch between anchors for your Enhancement Stand very quickly, meaning that if someone attempts to hit you and you activate this ability, the first hit misses automatically. However, if your Stand moves outside of someone's melee, they can still take an Attack of Opportunity.",
             "You may use this Ability once per combat encounter."
         ]
@@ -704,7 +725,8 @@
     "Stand_Energy_Recharge": {
         "name": "Stand Energy Recharge",
         "classes": [
-            "Abl"
+            "Abl",
+            "Act"
         ],
         "desc": [
             "You have very strong abilities, but it's very tiring to try to use them repeatedly. Luckily, you've learned through practice how to pace yourself and replenish your energy. As an Action you may regain an amount of Stand Energy equal to your Proficiency Bonus."
@@ -727,7 +749,8 @@
             "Rmt",
             "Enh",
             "Rev",
-            "Hive"
+            "Hive",
+            "Act"
         ],
         "desc": [
             "As an Action you may \"Mark\" a specific object or person with your Stand, so long as the target is within your Stand's Range and activates a specific, predetermined trigger at some point.",
@@ -737,10 +760,7 @@
     },
     "Stand_Rush": {
         "name": "Stand Rush",
-        "classes": [
-            "Pwr",
-            "Act"
-        ],
+        "classes": [],
         "desc": [
             "When your enemy or your enemy's Stand has been Incapacitated, Restrained, or unwilling to fight for a full Turn or more while in your Stand's melee, you may perform this action. You may also start this Ability for free when you drop someone to 0 Hit Points using some sort of melee Attack with your Stand.",
             "A Stand Rush takes an entire Turn, but if desired, may go on for a maximum of 10 Turns. Through this action, your Stand may punch an amount of times equal to your Stand's Speed Modifier. You may choose whether or not to make this lethal. When trapped within a Stand Rush, no actions can be taken."
@@ -749,7 +769,8 @@
     "Subtle_Assistance": {
         "name": "Subtle Assistance",
         "classes": [
-            "Abl"
+            "Abl",
+            "Act"
         ],
         "desc": [
             "You may use your Stand's Ability in a very clever and subtle way to help you with tasks both in combat and everyday life. If you fail a Skill Check, you may use your Reaction to reroll the Skill Check, but you must take the new result. You may use this Ability an amount of times equal to your PB per long rest. Your Stand does not have to be summoned to use this."
@@ -966,7 +987,7 @@
             "Rip"
         ],
         "desc": [
-            "You have perfected your Ripple and your body to such a degree that you age half as slowly as the normal human, starting at this point. A 70 year old Ripple user who gained this feature at age 20 would have the physical body of a 45 year old, for example."
+            "You have perfected your Ripple and your body to such a degree that you age half as slowly as the normal human, starting at this point. A 70 year old Ripple User who gained this feature at age 20 would have the physical body of a 45 year old, for example."
         ]
     },
     "Spiritual_Ripple": {
@@ -975,7 +996,7 @@
             "Rip"
         ],
         "desc": [
-            "If your DM allows it, and if you are in a campaign involving Stands, you may now see stands as well as damage them using your Ripple.",
+            "If your DM allows it, and if you are in a campaign involving Stands, you may now see Stands as well as damage them using your Ripple.",
             "Additionally, Stand Users no longer have Advantage on Attacks against you."
         ]
     },
@@ -997,7 +1018,7 @@
         ],
         "desc": [
             "As a Level 20 Ripple User, you have reached your full potential through use of the Ripple. This costs 15 Ripple Points and takes an Action, allowing you to choose one of the following. The effect you choose may be used multiple times if applicable, but you may not change your choice.",
-            "<ul class='sublist'><li>You gain an immensely powerful skill or ability otherwise not available to you. An example of such a powerful ability is <a href='https:\/\/jojowiki.com\/Tonpetty'>Tompetty<\/a>'s ability to tell the fate of a person they touch.<\/li><li>If you do not have a Stand, one manifests at Level 15.<\/li><li>If you are already a Stand User, your stand evolves. The stats of your Stand double, and this change lasts for 1 hour.<\/li><\/ul>"
+            "<ul class='sublist'><li>You gain an immensely powerful skill or ability otherwise not available to you. An example of such a powerful ability is <a href='https:\/\/jojowiki.com\/Tonpetty'>Tompetty<\/a>'s ability to tell the fate of a person they touch.<\/li><li>If you do not have a Stand, one manifests at Level 15.<\/li><li>If you are already a Stand User, your Standevolves. The stats of your Stand double, and this change lasts for 1 hour.<\/li><\/ul>"
         ]
     },
     "Spherical_Spin": {
@@ -1142,7 +1163,7 @@
             "Spin"
         ],
         "desc": [
-            "If your DM allows it, and if you are in a campaign involving Stands, you may now see stands as well as damage them using Spheres imbued with the Spin.",
+            "If your DM allows it, and if you are in a campaign involving Stands, you may now see Stands as well as damage them using Spheres imbued with the Spin.",
             "Additionally, Stand Users no longer have Advantage on Attacks against you."
         ]
     },
@@ -1180,7 +1201,12 @@
             "Spin"
         ],
         "desc": [
-            "As an Attack, using a Sphere imbued with the Spin, choose a creature within the Short Range of your Sphere to make a Strength Saving Throw. On a failed Save, they may not use a limb of your choice until they succeed the Strength Saving Throw, which can be repeated at the end of the target's Turn, or up to a minute."
+            "As an attack, you may toss a sphere at a creature within the short range of the sphere to make a Str (or Pow) Saving Throw against your Spin DC. If they fail the saving throw, you may remove function from one of their four limbs, with the following effects:",
+            "<ul class='sublist'><li>Arms: The target loses function in one arm entirety, causing it to hang limply from your target's shoulder. This prevents them from using weapons that require two hands, and gives them Disadvantage on Athletics Checks and Strength Saves (but not the Save for this Ability).<\/li><li>Legs: The target loses function in one leg entirely, causing it to go numb and hang limply. If they have one paralyzed leg their Movement Speed is cut in half, and if they have two their Movement Speed drops to 0 and they fall Prone. A target with a paralyzed leg will have Disadvantage on all Acrobatics checks and Dexterity Saves.<\/li><\/ul> ",
+            "At the end of the target's turn, they make the Strength Saving Throw again. A successful Save means that they regain control of a single limb of their choice that has been paralyzed. They do not get to make the save for each limb, and only one limb's paralysis is removed on a success.",
+            "The effect lasts for a minute, or until they make enough Saves to remove the effect. Alternatively, the target (if they have at least one functional hand) or an ally of theirs can make a Medicine Check against your DC, removing paralysis from all affected limbs on success and only regaining control over a single limb of their choice on failure.",
+            "<a class='in-page'>Medicinal Spin<\/a> can remove the effect from a single paralyzed limb. ",
+            "<a class='in-page'>Forced Motion<\/a> from the Spin still works on a paralyzed limb.   "
         ]
     },
     "Wrist_Memory": {
@@ -1198,7 +1224,7 @@
             "Spin"
         ],
         "desc": [
-            "As an Action, make a DC 30 Acrobatics Check, or make a DC 30 Animal Handling check while riding atop a steed. If you succeed, you gain one of the following benefits. Once you choose which benefit to use, all subsequent uses of this Ability produce the same result.",
+            "As an Action, make a DC 30 Acrobatics Check, or make a DC 30 Care check while riding atop a steed. If you succeed, you gain one of the following benefits. Once you choose which benefit to use, all subsequent uses of this Ability produce the same result.",
             "<ul class='sublist'><li>You gain an immensely powerful additional Ability that harnesses the Spin, likely one that manipulates space, time, or gravity in some way.<\/li><li>If you do not have a Stand, one manifests at Level 15.<\/li><li>If you are already a Stand User, your Stand evolves. The stats of your Stand double, and this change lasts for 1 hour.<\/li><li>"
         ]
     },
@@ -1208,7 +1234,7 @@
             "Spin"
         ],
         "desc": [
-            "You gain Proficiency in Acrobatics and Animal Handling. If you are already Proficient, you may instead gain Expertise, and if you already have Expertise, you may gain Mastery"
+            "You gain Proficiency in Acrobatics and Care. If you are already Proficient, you may instead gain Expertise, and if you already have Expertise, you may gain Mastery."
         ]
     },
     "Projectile_Boost": {
@@ -1342,7 +1368,7 @@
         "desc": [
             "You may put an entire miniature muscular system within the veins in your body. Not only that, but you may also Turn energy or matter within your body into more veins in order to have a Secondary Muscular System.",
             "Your Veins may be used to pierce through your skin without damaging you. Your Veins may deal Slashing, Bludgeoning, or Piercing damage, and they count as Unarmed Strikes when you attack using them. You may attack using a Vein even if the health of the rest of your Body is zero or lower.",
-            "You may have up to 5 Veins going outside of your body at a time. Your hair also operates in the same way, with a maximum of 5 \u201cVeins\u201d on the top of your head. When using Veins to move, you may move at up to half of your normal movement speed. You may also use Veins to Grapple. For every additional Vein used, add +1 to the Bonus for your Grapple Check. The Veins may stretch up to 5 meters."
+            "You may have up to 5 Veins going outside of your body at a time. Your hair also operates in the same way, with a maximum of 5 'Veins' on the top of your head. When using Veins to move, you may move at up to half of your normal Movement Speed. You may also use Veins to Grapple. For every additional Vein used, add +1 to the Bonus for your Grapple Check. The Veins may stretch up to 5 meters."
         ]
     },
     "Body_Evacuation": {
@@ -1378,7 +1404,7 @@
             "Using some of your Secondary Muscular System, as well as 20 Energy, you may create a Flesh Bud. Flesh Buds are small collections of flesh that are placed upon the forehead. A Flesh Bud forces the one who it is implanted into to do the Vampire's bidding, despite the interests of the individual. However, this form of mind control does not completely change the personality of the victim in most cases. The only real change is in a person's goals and motives.",
             "In order to implant a Flesh Bud into someone, you must place the Bud into their forehead as an Action. The target must be Grappled by you, and you must succeed on another Grapple Check in order to place the Flesh Bud into them.",
             "Flesh Buds have an amount of Health equal to your Level in Vampire. If the Flesh Bud's health drops below zero, the Flesh Bud begins to die. However, if the Flesh Bud is still implanted within a Human's brain when this happens, the Flesh Bud lashes out, dealing 10d10 Slashing damage directly to the brain.",
-            "However, these Flesh Buds may be safely removed via a successful Medicine or Sleight of Hand Check (DC of 20), or through a direct hit using an attack from The Ripple. If the attack dealt by The Ripple deals an amount of damage equal or greater to the HP of the Flesh Bud, it is vaporized instantly in its entirety, without any chance to respond. The Flesh Bud is Undead flesh, and as such, it will immediately die when exposed to Sunlight.",
+            "However, these Flesh Buds may be safely removed via a successful Finesse or Medicine (DC of 20), or through a direct hit using an attack from The Ripple. If the attack dealt by The Ripple deals an amount of damage equal or greater to the HP of the Flesh Bud, it is vaporized instantly in its entirety, without any chance to respond. The Flesh Bud is Undead flesh, and as such, it will immediately die when exposed to Sunlight.",
             "The Flesh Bud will function normally for up to 3 years. After around 3.5 years have passed, the Flesh Bud will feed off of the blood of the brain directly, resulting in a loss of 1d4 Maximum HP per month. When the target's Maximum HP reaches zero, they are killed instantly. If the Vampire that implanted the Flesh Bud is killed, the Flesh Bud goes haywire, and the target becomes an <a href='\/races\/?focus=Abomination'>Abomination<\/a>."
         ]
     },
@@ -2032,7 +2058,7 @@
         "name": "Improved Specialty",
         "desc": [
             "You also gain Expertise in the use of the tool set(s) you use with this Class.",
-            "Whenever you fail a Skill Check using a set of tools you are Proficient in, as a Reaction you may spend an Artisan charge to instead make the d20\u2019s result equal to your Level in Artisan instead."
+            "Whenever you fail a Skill Check using a set of tools you are Proficient in, as a Reaction you may spend an Artisan charge to instead make the d20's result equal to your Level in Artisan instead."
         ],
         "classes": [
             "Art"
@@ -2138,7 +2164,7 @@
             "Your interest in the supernatural and ability to read patterns gives you a slight amount of divination, giving you some insight on what may happen in the future, just none of the context around it. You gain Proficiency in Diviner's tools. Your Fortune Teller DC is 8 + Proficiency Bonus + Intelligence\/Wisdom Modifier.",
             "You gain the ability to intervene in fate, with a slight cost to both you and the person you assisted. When an ally that you can see or hear rolls a d20, you may use your Reaction to treat the number rolled on the d20 as 10. However, the next Attack Roll, Saving Throw, or Skill Check both you and your ally make is at Disadvantage. If you use it on yourself, it instead applies for the next two rolls. The ability costs 1 Artisan Charge to use.",
             "You must choose either Intelligence or Wisdom as your stat to use for Fortune Telling.",
-            "You may choose one of the following subclass options:<ul class='sublist'><li><b>Medium:<\/b> You gain the ability to communicate with ghosts using your Diviner's tools.<ul><li>As an Attack, for 1 Charge, you may command a vengeful spirit to curse a target within 10m, forcing them to make a Charisma Saving Throw against your Fortune Teller DC. If they fail, they become cursed for the next minute or until you fall unconscious. When cursed, the target gets a reduction to either their Attack Rolls, Saving Throws, or Skill Checks, equal to the Modifier of your Fortune Telling stat. The target can remake the Save at the end of their Turns.<\/li><li>Twice per Long rest, you may bribe a spirit to summon them to help you or give you information, but you must offer a sufficient sacrifice to do so. This sacrifice may take many forms, for example a quality snack food, a meal, a neat trinket, a lovely work of craftsmanship, etc. You cannot summon a specific spirit unless you have an object of particular importance to them and their corpse is nearby, but you may try to summon a specific type of spirit (a janitor, old woman, etc.).<\/li><\/ul><\/li><li><b>Oracle:<\/b> You gain the ability to see little snippets of possible futures out of context. These may come as visions, dreams, or in any variety of ways. Talk to your DM about using this subclass, as it will likely mean additional work for them.<ul><li>As a Reaction, for 1 Charge, you may save an ally from harm by warning them of an incoming threat. This can take the form of forcing the attacker to reroll their Attack or your ally to reroll a Saving Throw. When the die is rerolled, the Modifier of your Fortune Telling stat (Intelligence or Wisdom) is subtracted from the Attack Roll or added to the Saving Throw.<\/li><li>Every time you take damage from a type you are not Vulnerable to, you may utilize your foresight of the attack to reduce the amount of damage you take by the Modifier of your Fortune Telling stat. As a Free Action, for 1 Charge, you may also give this ability to an ally within 5m, allowing it to protect them instead of you until the start of your next Turn.<\/li><\/ul><\/li><li><b>Fateweaver:<\/b> You gain the ability to personally influence fate. You may not see very far into the future, but you recognize when something or someone is important when you see them\/it. In addition, you have a strange knack for getting involved with fateful encounters.<ul><li>You may use your expertise in dealing with fate to analyze what role a person may play in its grand dance. You gain Proficiency in Insight (or Expertise if already Proficient), and may make Insight Checks using Intelligence if that's what you use for your Fortune Telling stat.<\/li><li>As a Bonus Action, you may make an Insight Check against someone, which they may contest using Deception. If you succeed, you learn two of the following things about them:<ul><li>Any damage Resistances, Immunities, and Vulnerabilities they have<\/li><li>A general estimate of their Level (around half yours, close to equal, around 4 times yours, etc.)<\/li><li>A tragic or traumatic event from their past, assuming a physical or mental scar remains<\/li><li>A hidden object on their person<\/li><\/ul>You may use this twice per Short Rest, requiring 1 Charge to use any more than that.<\/li><li>Your ability to change dice rolls to 10 is improved, becoming a Free Action rather than a Reaction. However, you may only change a specific creature's fate once per Turn and all other effects still apply.<\/ul><\/li><\/ul>"
+            "You may choose one of the following subclass options:<ul class='sublist'><li><b>Medium:<\/b> You gain the ability to communicate with ghosts using your Diviner's tools.<ul><li>As an Attack, for 1 Charge, you may command a vengeful spirit to curse a target within 10m, forcing them to make a Charisma Saving Throw against your Fortune Teller DC. If they fail, they become cursed for the next minute or until you fall unconscious. When cursed, the target gets a reduction to either their Attack Rolls, Saving Throws, or Skill Checks, equal to the Modifier of your Fortune Telling stat. The target can remake the Save at the end of their Turns.<\/li><li>Twice per Long rest, you may bribe a spirit to summon them to help you or give you information, but you must offer a sufficient sacrifice to do so. This sacrifice may take many forms, for example a quality snack food, a meal, a neat trinket, a lovely work of craftsmanship, etc. You cannot summon a specific spirit unless you have an object of particular importance to them and their corpse is nearby, but you may try to summon a specific type of spirit (a janitor, old woman, etc.).<\/li><\/ul><\/li><li><b>Oracle:<\/b> You gain the ability to see little snippets of possible futures out of context. These may come as visions, dreams, or in any variety of ways. Talk to your DM about using this subclass, as it will likely mean additional work for them.<ul><li>As a Reaction, for 1 Charge, you may save an ally from harm by warning them of an incoming threat. This can take the form of forcing the attacker to reroll their Attack or your ally to reroll a Saving Throw. When the die is rerolled, the Modifier of your Fortune Telling stat (Intelligence or Wisdom) is subtracted from the Attack Roll or added to the Saving Throw.<\/li><li>Every time you take damage from a type you are not Vulnerable to, you may utilize your foresight of the attack to reduce the amount of damage you take by the Modifier of your Fortune Telling stat. As a Free Action, for 1 Charge, you may also give this ability to an ally within 5m, allowing it to protect them instead of you until the start of your next Turn.<\/li><\/ul><\/li><li><b>Fateweaver:<\/b> You gain the ability to personally influence fate. You may not see very far into the future, but you recognize when something or someone is important when you see them\/it. In addition, you have a strange knack for getting involved with fateful encounters.<ul><li>You may use your expertise in dealing with fate to analyze what role a person may play in its grand dance. You gain Proficiency in Vibe (or Expertise if already Proficient), and may make Vibe Checks using Intelligence if that's what you use for your Fortune Telling stat.<\/li><li>As a Bonus Action, you may make a Vibe Check against someone, which they may contest using Bluff. If you succeed, you learn two of the following things about them:<ul><li>Any damage Resistances, Immunities, and Vulnerabilities they have<\/li><li>A general estimate of their Level (around half yours, close to equal, around 4 times yours, etc.)<\/li><li>A tragic or traumatic event from their past, assuming a physical or mental scar remains<\/li><li>A hidden object on their person<\/li><\/ul>You may use this twice per Short Rest, requiring 1 Charge to use any more than that.<\/li><li>Your ability to change dice rolls to 10 is improved, becoming a Free Action rather than a Reaction. However, you may only change a specific creature's fate once per Turn and all other effects still apply.<\/ul><\/li><\/ul>"
         ],
         "classes": [
             "Art"
@@ -2148,8 +2174,8 @@
         "name": "Herbalist",
         "desc": [
             "You gain the ability to brew poisons and cures, cook with great skill, or check people for ailments and issues of the body. You are able to cure and treat minor diseases and injuries with ease, and if you don't know the cure or treatment due to it being a unique condition, you may research where it may be found over the course of a short rest.",
-            "You gain Proficiency in Medicine Checks and may use Intelligence to make such checks. Your Herbalist's DC is 8 + Proficiency Bonus + Intelligence\/Wisdom Modifier.",
-            "You may choose one of the following subclass options:<ul class='sublist'><li><b>Cook:<\/b> You have the ability to whip up something hearty and healthy in almost any setting.<ul><li>You may use Constitution to make Medicine Checks.<\/li><li>Your Cook's DC is 8 + Proficiency Bonus + Constitution\/Wisdom Modifier.<\/li><li>You have the ability to create an amount of snacks equal to your Constitution or Wisdom Modifier (whichever is higher) per Long Rest. You may spread these snacks out amongst your party if you wish. Each snack functions as a point of Inspiration, but takes a Reaction to use.<\/li><li>When you and your party take a Short or Long Rest, each person gains one of the following benefits:<ul><li>Regain an amount of Hit Dice equal to half of your Proficiency Bonus<\/li><li>1s or 2s rolled on Hit Dice are rerolled<\/li><li>Gain an amount of Temporary Hit Points equal to your Level in Artisan. These Hit Points last until they're depleted or until your next Short or Long Rest.<\/ul><\/li><li>Used to working in a high-stress environment, you know how to get things done and help others refocus. As a Bonus Action, for 1 Charge, you may give someone or yourself one of the following benefits:<ul><li>Ignore the effects of Charmed, Frightened, and Stunned. This does not negate the Condition entirely but allows the target to ignore the effects until the start of your next Turn.<\/li><li>Gain Resistance to one of Acid, Cold, Fire, Poison, Psychic, or Thunder damage, so long as the target is not Vulnerable to it. This lasts until the start of your next Turn.<\/li><li>Spend an amount of Hit Dice up to your Proficiency Bonus, rerolling any 1s or 2s.<\/ul><\/li><\/ul><\/li><li><b>Pharmacist:<\/b> You have the ability to create powerful medicines to heal yourself and allies, as well as things to bolster them.<ul><li>When you and your party take a Short or Long Rest, each person gains one of the following benefits which last until used or the next Short or Long Rest:<ul><li>Gain an amount of Temporary Hit Points equal to your Level in Artisan.<\/li><li>Gain a bonus to their next Initiative Roll equal to your Proficiency Bonus.<\/li><li>Reduce the next damage taken by half.<\/li><\/ul><\/li><li>As an Attack, for 1 Charge, you may perform one of the following to yourself or an ally within melee range:<ul><li>Heal the target for an amount of Hit Points equal to 3x your Artisan Level + your Medicine Skill Bonus.<\/li><li>Allow the target to make a Saving Throw to shake off a negative condition affecting them with Advantage.<\/li><li>Grant a bonus equal to your Intelligence\/Wisdom Modifier to any physical OR mental Checks and Saves (but not both), until the start of you next Turn.<\/li><\/ul><\/li><li>You may create an amount of Medicine Kits equal to your Intelligence or Wisdom Mod (whichever is higher) per Long Rest. Anyone may use one of these kits on themselves or an ally within melee range as a Bonus Action, restoring nd8 Hit Points where n is half of your Level in Artisan. Alternatively, a full Action may be used, ensuring the maximum amount of healing.<\/li><\/ul><\/li><li><b>Toxicologist:<\/b> You are a master of creating and identifying poisons and toxins, able to inflict and cure them easily.<ul><li>You gain access to the following various poisons:<ul><li>Fleshrot Powder (Ingestible): A fast-acting powder that is nearly tasteless. When someone ingests it in some way, they must make a Constitution Saving Throw against your Herbalist DC. If they fail, they gain the Poisoned Condition and take an amount of Necrotic damage equal to 2x your Artisan Level every Turn. They may attempt the Save at the end of each Turn, losing the condition after succeeding 3 times, though if they fail 3 times further attempts gain Disadvantage. This poison can be detected fairly easily by someone with Medicine Proficiency or an Herbalist's Kit.<\/li><li>Lifedrinker Powder (Ingestible): A slow-acting powder that is nearly tasteless. When someone ingests it in some way, they must make a Constitution Saving Throw against your Herbalist DC every hour. On a failure, they gain the Poisoned Condition and their maximum Hit Points are reduced by an amount equal to 2x your Artisan Level. If they succeed 3 times, they lose the Condition, though if they fail 3 times further attempts gain Disadvantage. This poison is difficult to detect even by someone with Medicine Proficiency or an Herbalist's Kit.<\/li><li>Shutdown Gel (Ingestible): A relatively quick-acting clear gel. When someone ingests it in some way, they must make a Constitution Saving Throw against your Herbalist DC, gaining the Restrained Condition on a failure. Every 5 minutes they may attempt the Save again, losing the Condition on success, though if they fail 3 times further attempts gain Disadvantage. This poison can be easily detected by anyone closely examining their food\/drink with a successful Medicine or Perception check against your Herbalist DC.<\/li><li> Lightning Leaf (Contact): A kind of green leafy plant. When exposed to someone they develop a rash that makes moving difficult, having to make a Constitution Saving Throw against your Herbalist DC. If they fail, their Movement Speed is halved and they must use all of their movement to recover from the Prone Condition. They may repeat the Save at the end of their Turns, ending the effect on success.<\/li><li>Blinding Oil (Contact): A small container of oil. When exposed to someone they must make a Constitution Saving Throw against your Herbalist DC, gaining the Blinded Condition on failure. They may repeat the Save at the end of their Turns, ending the effect on success.<\/li><li>Stinkroot Extract (Contact): A small container of green powder that turns into a gas upon being exposed to the air. When exposed to someone, they must make a Constitution Saving Throw against your Herbalist DC, gaining the Poisoned Condition on failure. They may repeat the Save at the end of their Turns, ending the effect on success.<\/li><\/ul><\/li><li>Slipping an ingestible poison into food or drink requires the performance of a Sleight of Hand Check and costs an Attack and 1 Charge.<\/li><li>Exposing someone to a contact poison requires skin-contact in melee range and costs an Attack and 1 Charge.<\/li><li>You have an amount of antidotes equal to your Intelligence or Wisdom Modifier (whichever is higher) per Long Rest. Consuming an Antidote will remove the effect of any of your poisons.<\/li><li>It should be noted that anyone that is Immune to the Poisoned Condition (Undead) will be unaffected by any of these poisons.<\/li><li>When you make an Attack with a melee weapon or slow moving projectile (not an explosive or firearm), you may choose to spend a Charge to deal an additional nd8 Necrotic or Poison damage, where n is your maximum number of Artisan Charges.<\/li><\/ul><\/li><\/ul>"
+            "You gain Proficiency in Medicine Checks. Your Herbalist's DC is 8 + Proficiency Bonus + Intelligence\/Wisdom Modifier.",
+            "You may choose one of the following subclass options:<ul class='sublist'><li><b>Cook:<\/b> You have the ability to whip up something hearty and healthy in almost any setting.<ul><li>You may use Constitution to make Medicine Checks.<\/li><li>Your Cook's DC is 8 + Proficiency Bonus + Constitution\/Wisdom Modifier.<\/li><li>You have the ability to create an amount of snacks equal to your Constitution or Wisdom Modifier (whichever is higher) per Long Rest. You may spread these snacks out amongst your party if you wish. Each snack functions as a point of Inspiration, but takes a Reaction to use.<\/li><li>When you and your party take a Short or Long Rest, each person gains one of the following benefits:<ul><li>Regain an amount of Hit Dice equal to half of your Proficiency Bonus<\/li><li>1s or 2s rolled on Hit Dice are rerolled<\/li><li>Gain an amount of Temporary Hit Points equal to your Level in Artisan. These Hit Points last until they're depleted or until your next Short or Long Rest.<\/ul><\/li><li>Used to working in a high-stress environment, you know how to get things done and help others refocus. As a Bonus Action, for 1 Charge, you may give someone or yourself one of the following benefits:<ul><li>Ignore the effects of Charmed, Frightened, and Stunned. This does not negate the Condition entirely but allows the target to ignore the effects until the start of your next Turn.<\/li><li>Gain Resistance to one of Acid, Cold, Fire, Poison, Psychic, or Thunder damage, so long as the target is not Vulnerable to it. This lasts until the start of your next Turn.<\/li><li>Spend an amount of Hit Dice up to your Proficiency Bonus, rerolling any 1s or 2s.<\/ul><\/li><\/ul><\/li><li><b>Pharmacist:<\/b> You have the ability to create powerful medicines to heal yourself and allies, as well as things to bolster them.<ul><li>When you and your party take a Short or Long Rest, each person gains one of the following benefits which last until used or the next Short or Long Rest:<ul><li>Gain an amount of Temporary Hit Points equal to your Level in Artisan.<\/li><li>Gain a bonus to their next Initiative Roll equal to your Proficiency Bonus.<\/li><li>Reduce the next damage taken by half.<\/li><\/ul><\/li><li>As an Attack, for 1 Charge, you may perform one of the following to yourself or an ally within melee range:<ul><li>Heal the target for an amount of Hit Points equal to 3x your Artisan Level + your Medicine Skill Bonus.<\/li><li>Allow the target to make a Saving Throw to shake off a negative condition affecting them with Advantage.<\/li><li>Grant a bonus equal to your Intelligence\/Wisdom Modifier to any physical OR mental Checks and Saves (but not both), until the start of you next Turn.<\/li><\/ul><\/li><li>You may create an amount of Medicine Kits equal to your Intelligence or Wisdom Mod (whichever is higher) per Long Rest. Anyone may use one of these kits on themselves or an ally within melee range as a Bonus Action, restoring nd8 Hit Points where n is half of your Level in Artisan. Alternatively, a full Action may be used, ensuring the maximum amount of healing.<\/li><\/ul><\/li><li><b>Toxicologist:<\/b> You are a master of creating and identifying poisons and toxins, able to inflict and cure them easily.<ul><li>You gain access to the following various poisons:<ul><li>Fleshrot Powder (Ingestible): A fast-acting powder that is nearly tasteless. When someone ingests it in some way, they must make a Constitution Saving Throw against your Herbalist DC. If they fail, they gain the Poisoned Condition and take an amount of Necrotic damage equal to 2x your Artisan Level every Turn. They may attempt the Save at the end of each Turn, losing the condition after succeeding 3 times, though if they fail 3 times further attempts gain Disadvantage. This poison can be detected fairly easily by someone with Medicine Proficiency or an Herbalist's Kit.<\/li><li>Lifedrinker Powder (Ingestible): A slow-acting powder that is nearly tasteless. When someone ingests it in some way, they must make a Constitution Saving Throw against your Herbalist DC every hour. On a failure, they gain the Poisoned Condition and their maximum Hit Points are reduced by an amount equal to 2x your Artisan Level. If they succeed 3 times, they lose the Condition, though if they fail 3 times further attempts gain Disadvantage. This poison is difficult to detect even by someone with Medicine Proficiency or an Herbalist's Kit.<\/li><li>Shutdown Gel (Ingestible): A relatively quick-acting clear gel. When someone ingests it in some way, they must make a Constitution Saving Throw against your Herbalist DC, gaining the Restrained Condition on a failure. Every 5 minutes they may attempt the Save again, losing the Condition on success, though if they fail 3 times further attempts gain Disadvantage. This poison can be easily detected by anyone closely examining their food\/drink with a successful Medicine or Perception check against your Herbalist DC.<\/li><li> Lightning Leaf (Contact): A kind of green leafy plant. When exposed to someone they develop a rash that makes moving difficult, having to make a Constitution Saving Throw against your Herbalist DC. If they fail, their Movement Speed is halved and they must use all of their movement to recover from the Prone Condition. They may repeat the Save at the end of their Turns, ending the effect on success.<\/li><li>Blinding Oil (Contact): A small container of oil. When exposed to someone they must make a Constitution Saving Throw against your Herbalist DC, gaining the Blinded Condition on failure. They may repeat the Save at the end of their Turns, ending the effect on success.<\/li><li>Stinkroot Extract (Contact): A small container of green powder that turns into a gas upon being exposed to the air. When exposed to someone, they must make a Constitution Saving Throw against your Herbalist DC, gaining the Poisoned Condition on failure. They may repeat the Save at the end of their Turns, ending the effect on success.<\/li><\/ul><\/li><li>Slipping an ingestible poison into food or drink requires the performance of a Finesse Check and costs an Attack and 1 Charge.<\/li><li>Exposing someone to a contact poison requires skin-contact in melee range and costs an Attack and 1 Charge.<\/li><li>You have an amount of antidotes equal to your Intelligence or Wisdom Modifier (whichever is higher) per Long Rest. Consuming an Antidote will remove the effect of any of your poisons.<\/li><li>It should be noted that anyone that is Immune to the Poisoned Condition (Undead) will be unaffected by any of these poisons.<\/li><li>When you make an Attack with a melee weapon or slow moving projectile (not an explosive or firearm), you may choose to spend a Charge to deal an additional nd8 Necrotic or Poison damage, where n is your maximum number of Artisan Charges.<\/li><\/ul><\/li><\/ul>"
         ],
         "classes": [
             "Art"
@@ -2174,6 +2200,66 @@
         "classes": [
             "Vamp",
             "EPM"
+        ]
+    },
+    "Act_0": {
+        "name": "Act 0",
+        "desc": [
+            "Act 0 Stands do not have an Ability, nor any real capacity to move, attack, dodge, or evade. If they can even be summoned at all, they manifest as a large egg. Once you gain the ability to use Act 1, this Act ceases to exist."
+        ],
+        "classes": [
+            "Act"
+        ]
+    },
+    "Act_1": {
+        "name": "Act 1",
+        "desc": [
+            "Act 1 Stands are relatively weak starting out. In order for you to gain an Act 1 Stand, you must go through an event that is considered hopeless or desperate.",
+            "When you gain a new Act, you should determine what type of Act it is (listed on the main Act-Type page)."
+        ],
+        "classes": [
+            "Act"
+        ]
+    },
+    "Act_2": {
+        "name": "Act 2",
+        "desc": [
+            "Act 2 Stands are generally a bit stronger and more versatile than their first Act. In order for you to gain a new Act, you must go through an event that is considered hopeless or desperate.",
+            "When you gain a new Act, you should determine what type of Act it is (listed on the main Act-Type page).",
+            "You gain an amount of Level-Up points for Act 2 equal to those put into Act 1. Alternatively, you may reroll to get caught up to the Level Act 1 is at."
+        ],
+        "classes": []
+    },
+    "Act_3": {
+        "name": "Act 3",
+        "desc": [
+            "Act 3 Stands are capable and powerful in comparison to their previous Act when they start out. In order for you to gain a new Act, you must go through an event that is considered hopeless or desperate.",
+            "When you gain a new Act, you should determine what type of Act it is (listed on the main Act-Type page).",
+            "You gain an amount of Level-Up points for Act 3 equal to those put into Acts 1 or Act 2. Alternatively, you may reroll to get caught up to the previous Acts are at."
+        ],
+        "classes": [
+            "Act"
+        ]
+    },
+    "Act_Feature": {
+        "name": "Act Feature",
+        "desc": [
+            "You may choose a Feature from the following list that matches one of your Act Types. When you select a Feature, it only applies to one Act, unless it is a Feat.<ul class='sublist'><li><u>Close-Range Acts<\/u>:<ul><li><a class='in-page'>Armored Stand<\/a><\/li><li><a href='\/feats\/?focus=Blended_Fighting'>Blended Fighting<\/a> (feat)<\/li><li><a class='in-page'>Detached Senses<\/a><\/li><li><a href='\/feats\/?focus=Martial_Artist'>Martial Artist<\/a> (feat)<\/li><li><a class='in-page'>Melee Barrage<\/a><\/li><li><a href='\/feats\/?focus=Veteran_Sprinter'>Veteran Sprinter<\/a> (feat)<\/li><li><a class='in-page'>Block Projectile<\/a> (Level 6+)<\/li><li><a class='in-page'>Devastating Critical<\/a> (Level 6+)<\/li><li><a class='in-page'>Stand Leap<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Menacing_Aura'>Menacing Aura<\/a> (feat) (Level 11+)<\/li><li><a class='in-page'>Siege Combat<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Defensive_Stance'>Defensive Stance<\/a> (feat) (Level 16+)<\/li><li><a class='in-page'>Devastating Melee<\/a> (Level 16+)<\/li><li><a class='in-page'>Lethal Strike<\/a> (Level 16+)<\/li><\/ul><\/li><li><u>Long-Range Acts<\/u>:<ul><li><a href='\/feats\/?focus=Clever_Disguise'>Clever Disguise<\/a> (feat)<\/li><li><a href='\/feats\/?focus=Deadly_Accuracy'>Deadly Accuracy<\/a> (feat)<\/li><li><a class='in-page'>Immense Power<\/a><\/li><li><a class='in-page'>Melee Barrage<\/a><\/li><li><a class='in-page'>Oblivious Facade<\/a><\/li><li><a class='in-page'>Ranged Attack<\/a><\/li><li><a class='in-page'>Stand Pickpocketing<\/a><\/li><li><a class='in-page'>Hot Pursuit<\/a> (Level 6+)<\/li><li><a class='in-page'>Silent Movement<\/a> (Level 6+)<\/li><li><a class='in-page'>Speedy Movement<\/a> (Level 6+)<\/li><li><a class='in-page'>Ambush Attacker<\/a> (Level 11+)<\/li><li><a class='in-page'>Enhanced Stand Senses<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Defensive_Stance'>Defensive Stance<\/a> (feat) (Level 16+)<\/li><li><a class='in-page'>Immense Range<\/a> (Level 16+)<\/li><li><a class='in-page'>Improved Awareness<\/a> (Level 16+)<\/li><\/li><\/ul><\/li><li><u>Ability-Focused Acts<\/u>:<ul><li><a class='in-page'>Detached Senses<\/a><\/li><li><a href='\/feats\/?focus=Energy_Imbuement'>Energy Imbuement<\/a> (feat)<\/li><li><a class='in-page'>Ranged Attack<\/a><\/li><li><a href='\/feats\/?focus=Weapon_Feat'>Weapon Feat<\/a><\/li><li><a class='in-page'>Defensive Ability<\/a> (Level 6+)<\/li><li><a class='in-page'>Mobile Ability<\/a> (Level 6+)<\/li><li><a class='in-page'>Stand Energy Recharge<\/a> (Level 6+)<\/li><li><a class='in-page'>Enhanced Custom Ability<\/a> (Level 11+)<\/li><li><a class='in-page'>Slippery<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Tanky'>Tanky<\/a> (feat) (Level 11+)<\/li><li><a href='\/feats\/?focus=Calculating'>Calculating<\/a> (feat) (Level 16+)<\/li><li><a href='\/feats\/?focus=Menacing_Aura'>Menacing Aura<\/a> (feat) (Level 16+)<\/li><li><a class='in-page'>Subtle Assistance<\/a> (Level 16+)<\/li><\/ul><\/li><li><u>Remote-Focused Acts<\/u>:<ul><li><a class='in-page'>Detached Senses<\/a><\/li><li><a class='in-page'>Detached Stand<\/a><\/li><li><a class='in-page'>Immense Power<\/a><\/li><li><a class='in-page'>Immense Range<\/a><\/li><li><a class='in-page'>Oblivious Facade<\/a><\/li><li><a href='\/feats\/?focus=Weapon_Feat'>Weapon Feat<\/a><\/li><li><a class='in-page'>Armored Stand<\/a> (Level 6+)<\/li><li><a class='in-page'>Juggernaut<\/a> (Level 6+)<\/li><li><a class='in-page'>Two Modes<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Guerilla_Fighter'>Guerilla Fighter<\/a> (feat) (Level 11+)<\/li><li><a href='\/feats\/?focus=Melee_Weapon_Specialization'>Melee Weapon Specialization<\/a> (feat) (Level 11+)<\/li><li><a class='in-page'>Self-Preservation<\/a> (Level 11+)<\/li><li><a class='in-page'>Improved Immense Range<\/a> (Level 16+)<\/li><li><a class='in-page'>Remote Ambusher<\/a> (Level 16+)<\/li><li><a class='in-page'>Superior Momentum<\/a> (Level 16+)<\/li><\/ul><\/li><\/ul>"
+        ],
+        "classes": [
+            "Act"
+        ]
+    },
+    "Act_Modifier": {
+        "name": "Act Modifier",
+        "desc": [
+            "<b>Prerequisite: <a href='\/feats\/?focus=Act_Modification'>Act Modification<\/a><\/b>",
+            "When you gain this Ability for the first time, you must choose one of the following modification types.",
+            "Every time you gain this Ability, choose one of the features under your chosen modification type.",
+            "<ul class='sublist'><li><u>Anchor-Based<\/u>: All Acts gain <a class='in-page'>Anchored Stand<\/a>.<ul><li>Your Hit Dice increase by 1 size (d8s become d10s etc.) and you retroactively gain 1 Hit Point per Level you currently have. You also gain <a class='in-page'>Confident Provocation<\/a> if you didn't have it already. You may not take this option if your Hit Dice are already d12s.<\/li><li>Your Stands' Damage Reduction increases. All Acts gain <a class='in-page'>Immense Resistance<\/a>. If one of your Acts already had Immense Resistance, it instead gains <a class='in-page'>Armored Stand<\/a>.<\/li><li>Gain one of the following for all Acts: <a class='in-page'>Camouflage<\/a>, <a class='in-page'>Juggernaut<\/a>, or <a class='in-page'>Superior Control<\/a>. (Level 6+)<\/li><li>Gain one of the following for all Acts: <a class='in-page'>General Anchors<\/a> or <a class='in-page'>Speedy Switch<\/a>. (Level 11+)<\/li><li>Gain either the <a class='\/feats\/?focus=Anchored_Immunity'>Anchored Immunity<\/a> or <a class='\/feats\/?focus=Resilient'>Resilient<\/a> Feat. (Level 16+)<\/li><\/ul><li><u>Grudge-Based:<\/u> Your Stand uses the Grudge Point system from <a href='\/classes\/?focus=Revenge'>Revenge-Type<\/a>. Once you meet the Grudge requirement to summon your Stand, you may switch Acts as normal. When you Level-Up in Act Type, you roll an addition d4 for Stand stat points (3d4 + Level), and may roll a d4 per Level to gain points retroactively when you choose this modification. Finally, all Acts gain <a class='in-page'>Stand Marking<\/a> and <a class='in-page'>Detached Senses<\/a>.<ul><li>Your Hit Dice increase by 1 size (d8s become d10s etc.) and you retroactively gain 1 Hit Point per Level you currently have. You also gain <a class='in-page'>Confident Provocation<\/a> if you didn't have it already. You may not take this option if your Hit Dice are already d12s.<\/li><li>Your offensive capabilities increase. All Acts gain <a class='in-page'>Reckless Attack<\/a>, as well as one of the following: <a class='in-page'>Melee Barrage<\/a>, <a class='\/feats\/?focus=Menacing_Aura'>Menacing Aura<\/a>, or <a class='\/feats\/?focus=Weapon_Feat'>Weapon Feat<\/a>.<\/li><li>Gain one of the following for all Acts: <a class='in-page'>Armored Stand<\/a> (only for Acts that do not have a Durability restriction), <a class='\/feats\/?focus=Berserker'>Berserker<\/a>, <a class='in-page'>Focused Hatred<\/a>, <a class='in-page'>Nemesis<\/a>, or <a class='in-page'>Rejuvenation<\/a>. (Level 6+)<\/li><li>Gain one of the following for all Acts: <a class='in-page'>Lasting Grudge<\/a> or <a class='in-page'>Second Life<\/a>. (Level 11+)<\/li><li>Gain one of the following for all Acts: <a class='in-page'>Devastating Critical<\/a>, <a class='in-page'>Devastating Melee<\/a>, <a href='\/feats\/?focus=Guardians_Wrath'>Guardian's Wrath<\/a>, or <a class='in-page'>Superior Grudge<\/a>. (Level 16+)<\/li><\/ul><\/li><li><u>Hive-Based<\/u>: All Acts gain <a class='in-page'>Split Stand<\/a> and gain the ability to use Swarm Attacks from <a href='\/classes\/?focus=Hive'>Hive-Type<\/a>.<ul><li>Your reconnaissance abilities increase. All Acts gain <a class='in-page'>Detached Senses<\/a>, as well as either <a class='in-page'>Hot Pursuit<\/a> or <a class='in-page'>Stand Marking<\/a>.<\/li><li>Your combat abilities increase. All Acts gain <a class='in-page'>Immense Resistance<\/a> and <a class='in-page'>Surrounding Swarm<\/a>.<\/li><li>Gain one of the following for all Acts: <a class='in-page'>Armored Stand<\/a> (only for Acts that do not have a Durability restriction), <a class='in-page'>Immense Range<\/a> (only for Acts that do not have a Range restriction), <a class='in-page'>Defensive Wave<\/a>, or <a class='in-page'>Mobile Wave<\/a>. (Level 6+)<\/li><li>Gain one of the following for all Acts: <a class='in-page'>Silent Movement<\/a> or <a class='in-page'>Speedy Movement<\/a>. (Level 11+)<\/li><li>Gaine one of the following for all Acts: <a class='\/feats\/?focus=Enhanced_Stand_Senses'>Enhanced Stand Senses<\/a>, <a class='\/feats\/?focus=Improved_Awareness'>Improved Awareness<\/a>, <a class='\/feats\/?focus=Skirmisher'>Skirmisher<\/a>, or <a class='in-page'>Immense Range<\/a> (only for Acts that do not have a Range restriction). (Level 16+)<\/li><\/ul><\/li><\/ul>"
+        ],
+        "classes": [
+            "Act"
         ]
     }
 }
