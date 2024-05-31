@@ -2228,7 +2228,9 @@
             "When you gain a new Act, you should determine what type of Act it is (listed on the main Act-Type page).",
             "You gain an amount of Level-Up points for Act 2 equal to those put into Act 1. Alternatively, you may reroll to get caught up to the Level Act 1 is at."
         ],
-        "classes": []
+        "classes": [
+            "Act"
+        ]
     },
     "Act_3": {
         "name": "Act 3",
