@@ -14,11 +14,11 @@
         "name": "Art of Distraction",
         "desc": "People are easy to fool, this is something that you've learned over years of experience.",
         "effects": [
-            "You're able to trap a helpless person within a conversation by spending your Action each Turn and rolling a Performance Check against a single, non-hostile target's Wisdom saving throw. While keeping this individual distracted in this way, their movement speed is reduced to 0, and their Passive Perception and Perception Checks are now restricted to a value of 10 at most.",
+            "You're able to trap a helpless person within a conversation by spending your Action each Turn and rolling a Presence Check against a single, non-hostile target's Wisdom saving throw. While keeping this individual distracted in this way, their movement speed is reduced to 0, and their Passive Perception and Perception Checks are now restricted to a value of 10 at most.",
             "You may keep a person trapped in this conversational purgatory for up to an amount of time equal to 30 minutes times your Proficiency Bonus, until you stop spending your Action or they succeed on their save, or something very obviously out of the ordinary happens in a way that you can't explain.",
             "Additionally, you have figured out a way to enthrall several people by using your Action each Turn to keep an amount of non-hostile people equal to your Charisma Modifier focused on what you're doing for up to an hour. Anyone caught in this effect has Disadvantage on all Perception Checks, and has a -5 penalty to their Passive Perception."
         ],
-        "prereq": "Proficiency in Performance Checks or <a href='/classes?focus=Consul'>Consul</a> Level 1+"
+        "prereq": "Proficiency in Presence Checks or <a href='/classes?focus=Consul'>Consul</a> Level 1+"
     },
     "Blended_Fighting": {
         "name": "Blended Fighting",
@@ -32,7 +32,7 @@
         "name": "Brutality",
         "desc": "You've seen a lot of combat and have learned not to hold back.",
         "effects": [
-            "When you drop an enemy to 0 HP, you may spend another Attack to kill them instantly. When you do so, you may make a free Charisma (Intimidation) check against any enemies within a 5 meter radius. They contest with a Wisdom Saving Throw, and if they roll lower they become Frightened of you until the end of their next Turn."
+            "When you drop an enemy to 0 HP, you may spend another Attack to kill them instantly. When you do so, you may make a free Charisma (Intimidate) check against any enemies within a 5 meter radius. They contest with a Wisdom Saving Throw, and if they roll lower they become Frightened of you until the end of their next Turn."
         ]
     },
     "Calculating": {
@@ -244,7 +244,7 @@
         "name": "Immediate Connection",
         "desc": "You've spent a lot of time around other people, both those that you know very well as well as strangers.",
         "effects": [
-            "You gain Advantage on all Persuasion and Deception Checks on people that you've met within the past 24 hours."
+            "You gain Advantage on all Diplomacy and Bluff Checks on people that you've met within the past 24 hours."
         ],
         "prereq": "Cha 13+ or <a href='\/passions\/?focus=Con_Artist'>Con Artist<\/a>"
     },
@@ -308,8 +308,8 @@
         "name": "Menacing Aura",
         "desc": "You radiate threatening energy.",
         "effects": [
-            "You may make an Intimidation Check as a Bonus Action.",
-            "When you make an Intimidation Check, you may choose an amount of creatures within 5 meters equal to your Proficiency Bonus. These creatures must contest the result of your Intimidation check with a Wisdom Saving Throw, becoming Frightened until the end of their next Turn on a failed Save.",
+            "You may make an Intimidate Check as a Bonus Action.",
+            "When you make an Intimidate Check, you may choose an amount of creatures within 5 meters equal to your Proficiency Bonus. These creatures must contest the result of your Intimidate check with a Wisdom Saving Throw, becoming Frightened until the end of their next Turn on a failed Save.",
             "When a creature is Frightened in this way, they can't be Frightened by it again for 1 minute."
         ]
     },
@@ -757,7 +757,7 @@
             "Your melee Attacks gain the Siege attribute.",
             "You gain Resistance to Piercing, Slashing, and Fire damage (so long as you are not Vulnerable).",
             "You do not go unconscious when you hit 0 HP, but you still make Death Saves as normal until healed. If you fail all three Death Saves, you die as normal.",
-            "Your mental faculties are unable to keep up while your body is in this accelerated state. Your sense of reason is reduced, replaced by a boiling rage that screams at you to destroy everyone and everything in your path. You have Disadvantage on all Intelligence, Wisdom, and Charisma Saving Throws, as well as all Charisma Checks except Intimidation.<\/ul>",
+            "Your mental faculties are unable to keep up while your body is in this accelerated state. Your sense of reason is reduced, replaced by a boiling rage that screams at you to destroy everyone and everything in your path. You have Disadvantage on all Intelligence, Wisdom, and Charisma Saving Throws, as well as all Charisma Checks except Intimidate.<\/ul>",
             "You may only go Berserk twice per Long Rest, but may take a level of Exhaustion in order to do so more than twice."
         ],
         "prereq": "13+ Str and 13+ Con"

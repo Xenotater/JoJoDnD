@@ -194,7 +194,7 @@
     "Thief": {
         "name": "Thief",
         "stats": "Dex +2, Cha +1",
-        "desc": "Those who must make a living taking from the more fortunate. Through Stealth, Intimidation, or Speed, Thieves take to sustain the needs of themselves or those they hold close.",
+        "desc": "Those who must make a living taking from the more fortunate. Through Stealth, Intimidate, or Speed, Thieves take to sustain the needs of themselves or those they hold close.",
         "examples": [
             "Robbers",
             "Muggers"

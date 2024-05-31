@@ -48,7 +48,7 @@
         "name": "The Guardian",
         "img": "Assets/wolf.webp",
         "desc": "Guardians are courageous and disciplined creatures. Using their powerful natural weapons they assist and protect others, and can shake off fear even in the most stressful of situations.",
-        "profs": "Acrobatics, Athletics, Intimidation, Perception, and Survival",
+        "profs": "Acrobatics, Athletics, Intimidate, Perception, and Survival",
         "profNum": 2,
         "adProfs": 2,
         "prime": "Strength",
@@ -169,7 +169,7 @@
         "name": "The Nimble",
         "img": "Assets/eagle.webp",
         "desc": "Nimbles are animals that specialize in stealth, quiet movement, and delicate operations. They are able to handle fragile objects and execute precise maneuvers, allowing them to slip through the most cunning of traps.",
-        "profs": "Acrobatics, Insight, Investigation, Perception, Sleight of Hand, Stealth, and Survival",
+        "profs": "Acrobatics, Vibe, Investigation, Perception, Finesse, Sneak, and Survival",
         "profNum": 2,
         "adProfs": 2,
         "prime": "Dexterity",
@@ -290,7 +290,7 @@
         "name": "The Stalwart",
         "img": "Assets/horse2.webp",
         "desc": "Stalwarts are creatures who are loyal, durable, and reliable. They are able to shrug off exhaustion and damage that would kill another member of their species.",
-        "profs": "Animal Handling, Athletics, History, Intimidation, Nature, Perception, and Survival",
+        "profs": "Care, Athletics, Knowledge, Intimidate, Perception, and Survival",
         "profNum": 2,
         "adProfs": 2,
         "prime": "Constitution",
@@ -411,7 +411,7 @@
         "name": "The Tracker",
         "img": "Assets/rat.webp",
         "desc": "Trackers are creatures that use their superior senses and natural knowledge to navigate difficult situations. They can track, find food and shelter easily, and are exceptionally perceptive.",
-        "profs": "Acrobatics, Animal Handling, History, Insight, Intimidation, Investigation, Medicine, Nature, and Survival",
+        "profs": "Acrobatics, Care, Knowledge, Vibe, Intimidate, Investigation, Medicine, and Survival",
         "profNum": 3,
         "adProfs": 2,
         "prime": "Wisdom",
@@ -662,13 +662,13 @@
       },
       "Animal_Instincts": {
         "name": "Animal Instincts",
-        "desc": ["Your Familiar has Advantage on any Insight Checks made against a creature that they've just met for the first time. Additionally, they grant Advantage to their partner's Initiative rolls."]
+        "desc": ["Your Familiar has Advantage on any Vibe Checks made against a creature that they've just met for the first time. Additionally, they grant Advantage to their partner's Initiative rolls."]
       },
       "Camouflage": {
         "name": "Camouflage",
         "desc": [
           "Through clever hiding or a natural ability to change their appearance, your Familiar may hide themselves in a remarkably effective way.",
-          "As an Action, your Familiar may blend in with their surroundings. As long as they do not use any of their Movement Speed or make any Attack Rolls, they gain Advantage on all Dexterity (Stealth) and Dexterity (Sleight of Hand) Checks."
+          "As an Action, your Familiar may blend in with their surroundings. As long as they do not use any of their Movement Speed or make any Attack Rolls, they gain Advantage on all Sneak and Finesse Checks."
         ]
       },
       "Climber": {
