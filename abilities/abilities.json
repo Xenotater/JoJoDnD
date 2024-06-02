@@ -2263,5 +2263,158 @@
         "classes": [
             "Act"
         ]
+    },
+    "Power_Feature": {
+        "name": "Power Feature",
+        "desc": [
+            "You may choose a Feature from the following list:<ul class='sublist'><li><a class='in-page'>Armored Stand<\/a><\/li><li><a href='\/feats\/?focus=Blended_Fighting'>Blended Fighting<\/a><\/li><li><a class='in-page'>Detached Senses<\/a><\/li><li><a href='\/feats\/?focus=Martial_Artist'>Martial Artist<\/a><\/li><li><a class='in-page'>Melee Barrage<\/a><\/li><li><a href='\/feats\/?focus=Veteran_Sprinter'>Veteran Sprinter<\/a><\/li><li><a class='in-page'>Block Projectile<\/a> (Level 6+)<\/li><li><a class='in-page'>Devastating Critical<\/a> (Level 6+)<\/li><li><a class='in-page'>Stand Leap<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Berserker'>Berserker<\/a> (Level 11+)<\/li><li><a class='in-page'>Siege Combat<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Stand_Breaker'>Stand Breaker<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Whirlwind_Attacker'>Whirlwind Attacker<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Defensive_Stance'>Defensive Stance<\/a> (Level 16+)<\/li><li><a class='in-page'>Devastating Melee<\/a> (Level 16+)<\/li><li><a class='in-page'>Lethal Strike<\/a> (Level 16+)<\/li><li><a class='in-page'>Rejuvenation<\/a> (Level 16+)<\/li><\/ul>"
+        ],
+        "classes": [
+            "Pwr"
+        ]
+    },
+    "Ranged_Feature": {
+        "name": "Ranged Feature",
+        "desc": [
+            "You may choose a Feature from the following list:<ul class='sublist'><li><a href='\/feats\/?focus=Deadly_Accuracy'>Deadly Accuracy<\/a><\/li><li><a class='in-page'>Immense Power<\/a><\/li><li><a class='in-page'>Melee Barrage<\/a><\/li><li><a class='in-page'>Ranged Attack<\/a><\/li><li><a class='in-page'>Ambush Attacker<\/a> (Level 6+)<\/li><li><a class='in-page'>Hot Pursuit<\/a> (Level 6+)<\/li><li><a class='in-page'>Silent Movement<\/a> (Level 6+)<\/li><li><a class='in-page'>Speedy Movement<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Assassin'>Assassin<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Enhanced_Stand_Senses'>Enhanced Stand Senses<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Defensive_Stance'>Defensive Stance<\/a> (Level 16+)<\/li><li><a class='in-page'>Immense Range<\/a> (Level 16+)<\/li><li><a class='in-page'>Immense Range<\/a> (Level 16+)<\/li><li><a class='in-page'>Improved Awareness<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Skirmisher'>Skirmisher<\/a> (Level 16+)<\/li><\/ul>"
+        ],
+        "classes": [
+            "Rng"
+        ]
+    },
+    "Remote_Feature": {
+        "name": "Remote Feature",
+        "desc": [
+            "You may choose a Feature from the following list:<ul class='sublist'><li><a class='in-page'>Detached Senses<\/a><\/li><li><a class='in-page'>Detached Stand<\/a><\/li><li><a href='\/feats\/?focus=Weapon_Feat'>Weapon Feat<\/a><\/li><li><a class='in-page'>Armored Stand<\/a> (Level 6+)<\/li><li><a class='in-page'>Juggernaut<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Scarflesh'>Scarflesh<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Tanky'>Tanky<\/a> (Level 6+)<\/li><li><a class='in-page'>Two Modes<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Guerilla_Fighter'>Guerilla Fighter<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Melee_Weapon_Specialization'>Melee Weapon Specialization<\/a> (Level 11+)<\/li><li><a class='in-page'>Improved Immense Range<\/a> (Level 16+)<\/li><li><a class='in-page'>Remote Ambusher<\/a> (Level 16+)<\/li><li><a class='in-page'>Self-Preservation<\/a> (Level 16+)<\/li><li><a class='in-page'>Superior Momentum<\/a> (Level 16+)<\/li><\/ul>"
+        ],
+        "classes": [
+            "Rmt"
+        ]
+    },
+    "Ability_Feature": {
+        "name": "Ability Feature",
+        "desc": [
+            "You may choose a Feature from the following list:<ul class='sublist'><li><a class='in-page'>Detached Senses<\/a><\/li><li><a href='\/feats\/?focus=Energy_Imbuement'>Energy Imbuement<\/a><\/li><li><a class='in-page'>Ranged Attack<\/a><\/li><li><a href='\/feats\/?focus=Weapon_Feat'>Weapon Feat<\/a><\/li><li><a class='in-page'>Defensive Ability<\/a> (Level 6+)<\/li><li><a class='in-page'>Mobile Ability<\/a> (Level 6+)<\/li><li><a class='in-page'>Enhanced Custom Ability<\/a> (Level 11+)<\/li><li><a class='in-page'>Slippery<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Tanky'>Tanky<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Calculating'>Calculating<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Menacing_Aura'>Menacing Aura<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Quick_on_your_Feet'>Quick on your Feet<\/a> (Level 16+)<\/li><li><a class='in-page'>Subtle Assistance<\/a> (Level 16+)<\/ul>"
+        ],
+        "classes": [
+            "Abl"
+        ]
+    },
+    "Enhancement_Feature": {
+        "name": "Enhancement Feature",
+        "desc": [
+            "You may choose a Feature from the following list:<ul class='sublist'><li><a class='in-page'>Immense Range<\/a><\/li><li><a class='in-page'>Superior Control<\/a><\/li><li><a class='in-page'>Camouflage<\/a> (Level 6+)<\/li><li><a class='in-page'>Juggernaut<\/a> (Level 6+)<\/li><li><a class='in-page'>Stand Marking<\/a> (Level 6+)<\/li><li><a class='in-page'>General Anchors<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Massive_Stand'>Massive Stand<\/a> (Level 11+)<\/li><li><a class='in-page'>Siege Combat<\/a> (Level 11+)<\/li><li><a class='in-page'>Speedy Switch<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Anchored_Immunity'>Anchored Immunity<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Deadly_Accuracy'>Guerilla Fighter<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Resilient'>Resilient<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Tanky'>Tanky<\/a> (Level 16+)<\/li><\/ul>"
+        ],
+        "classes": [
+            "Enh"
+        ]
+    },
+    "Revenge_Feature": {
+        "name": "Revenge Feature",
+        "desc": [
+            "You may choose a Feature from the following list:<ul class='sublist'><li><a href='\/feats\/?focus=Menacing_Aura'>Menacing Aura<\/a><\/li><li><a class='in-page'>Oblivious Facade<\/a><\/li><li><a href='\/feats\/?focus=Weapon_Feat'>Weapon Feat<\/a><\/li><li><a class='in-page'>Armored Stand<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Berserker'>Berserker<\/a> (Level 6+)<\/li><li><a class='in-page'>Focused Hatred<\/a> (Level 6+)<\/li><li><a class='in-page'>Melee Barrage<\/a> (Level 6+)<\/li><li><a class='in-page'>Rejuvenation<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Stand_Breaker'>Stand Breaker<\/a> (Level 6+)<\/li><li><a class='in-page'>Immense Range<\/a> (Level 11+)<\/li><li><a class='in-page'>Lasting Grudge<\/a> (Level 11+)<\/li><li><a class='in-page'>Second Life<\/a> (Level 11+)<\/li><li><a class='in-page'>Devastating Critical<\/a> (Level 16+)<\/li><li><a class='in-page'>Devastating Melee<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Guardians_Wrath'>Guardian's Wrath<\/a> (Level 16+)<\/li><li><a class='in-page'>Superior Grudge<\/a> (Level 16+)<\/li><\/ul>"
+        ],
+        "classes": [
+            "Rev"
+        ]
+    },
+    "Independent_Feature": {
+        "name": "Independent Feature",
+        "desc": [
+            "You may choose a Feature from the following list:<ul class='sublist'><li><a class='in-page'>Armored Stand<\/a><\/li><li><a href='\/feats\/?focus=Energy_Imbuemente'>Energy Imbuement<\/a><\/li><li><a class='in-page'>Melee Barrage<\/a><\/li><li><a class='in-page'>Ranged Attack<\/a><\/li><li><a class='in-page'>Self-Repair<\/a><\/li><li><a class='in-page'>Camouflage<\/a> (Level 6+)<\/li><li><a class='in-page'>Juggernaut<\/a> (Level 6+)<\/li><li><a class='in-page'>Defensive Ability<\/a> (Level 11+)<\/li><li><a class='in-page'>Mobile Ability<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Anchored_Immunity'>Anchored Immunity<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Defensive_Stance'>Defensive Stance<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Resilient'>Resilient<\/a> (Level 16+)<\/li><li><a class='in-page'>Slippery<\/a> (Level 16+)<\/li><\/ul>"
+        ],
+        "classes": [
+            "Ind"
+        ]
+    },
+    "Hive_Feature": {
+        "name": "Hive Feature",
+        "desc": [
+            "You may choose a Feature from the following list:<ul class='sublist'><li><a class='in-page'>Detached Senses<\/a><\/li><li><a class='in-page'>Immense Resistance<\/a><\/li><li><a class='in-page'>Stand Marking<\/a><\/li><li><a class='in-page'>Hot Pursuit<\/a><\/li><li><a class='in-page'>Surrounding Swarm<\/a><\/li><li><a class='in-page'>Armored Stand<\/a> (Level 6+)<\/li><li><a class='in-page'>Defensive Wave<\/a> (Level 6+)<\/li><li><a class='in-page'>Immense Range<\/a> (Level 6+)<\/li><li><a class='in-page'>Mobile Wave<\/a> (Level 6+)<\/li><li><a class='in-page'>Silent Movement<\/a> (Level 11+)<\/li><li><a class='in-page'>Speedy Movement<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Enhanced_Stand_Senses'>Enhanced Stand Senses<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Guerilla_Fighter'>Guerilla Fighter<\/a> (Level 16+)<\/li><li><a class='in-page'>Improved Awareness<\/a> (Level 16+)<\/li><li><a class='in-page'>Improved Immense Range<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Skirmisher'>Skirmisher<\/a> (Level 16+)<\/li><\/ul>"
+        ],
+        "classes": [
+            "Hive"
+        ]
+    },
+    "Ripple_Feature": {
+        "name": "Ripple Feature",
+        "desc": [
+            "You may choose a Feature from the following list:<ul class='sublist'><li><a href='\/feats\/?focus=Martial_Arts'>Martial Artist<\/a><\/li><li><a href='\/feats\/?focus=Simple_Weapon_Focus'>Simple Weapon Focus<\/a><\/li><li><a class='in-page'>Conductor Shield<\/a> (Level 6+)<\/li><li><a class='in-page'>Ripple Pressure<\/a> (Level 6+)<\/li><li><a class='in-page'>Scarlet Overdrive<\/a> (Level 6+)<\/li><li><a class='in-page'>Sendo Overdrive<\/a> (Level 6+)<\/li><li><a class='in-page'>Sunlight Yellow Overdrive<\/a> (Level 6+)<\/li><li><a class='in-page'>Zoom Punch<\/a> (Level 6+)<\/li><li><a class='in-page'>Enhanced Custom Ripple Technique<\/a> (Level 11+)<\/li><li><a class='in-page'>Recovery Breathing<\/a> (Level 11+)<\/li><li><a class='in-page'>Life Magnetism<\/a> (Level 16+)<\/li><li><a class='in-page'>Improved Ripple Perception<\/a> (Level 16+)<\/li><\/ul>"
+        ],
+        "classes": [
+            "Rip"
+        ]
+    },
+    "Spin_Feature": {
+        "name": "Spin Feature",
+        "desc": [
+            "You may choose a Feature from the following list:<ul class='sublist'><li><a href='\/feats\/?focus=Catlike_Agility'>Catlike Agility<\/a><\/li><li><a href='\/feats\/?focus=Deadly_Accuracy'>Deadly Accuracy<\/a><\/li><li><a class='in-page'>Harden Flesh<\/a><\/li><li><a class='in-page'>Immense Friction<\/a><\/li><li><a class='in-page'>Muscle Contraction<\/a><\/li><li><a class='in-page'>Restraining Spin<\/a><\/li><li><a class='in-page'>Tendon Twister<\/a><\/li><li><a class='in-page'>Object Manipulation<\/a> (Level 6+)<\/li><li><a class='in-page'>Projectile Boost<\/a> (Level 6+)<\/li><li><a class='in-page'>Sendo Spin<\/a> (Level 6+)<\/li><li><a class='in-page'>Wrist Memory<\/a> (Level 6+)<\/li><li><a class='in-page'>Create Mirage<\/a> (Level 11+)<\/li><li><a class='in-page'>Enhanced Custom Spin Technique<\/a> (Level 11+)<\/li><li><a class='in-page'>Expose Weakness<\/a> (Level 11+)<\/li><li><a class='in-page'>Medicinal Spin<\/a> (Level 11+)<\/li><li><a class='in-page'>Satellite Spin<\/a> (Level 11+)<\/li><li><a class='in-page'>Deflect Distance Attack<\/a> (Level 16+)<\/li><li><a class='in-page'>Self-Compression<\/a> (Level 16+)<\/li><\/ul>"
+        ],
+        "classes": [
+            "Spin"
+        ]
+    },
+    "Artisan_Feature": {
+        "name": "Artisan Feature",
+        "desc": [
+            "You may choose a Feature from the following list:<ul class='sublist'><li><a href='\/feats\/?focus=Catlike_Agility'>Catlike Agility<\/a><\/li><li><a href='\/feats\/?focus=Defensive_Stance'>Defensive Stance<\/a><\/li><li><a href='\/feats\/?focus=Natural_Talent'>Natural Talent<\/a><\/li><li><a href='\/feats\/?focus=Practical_Experience'>Practical Experience<\/a><\/li><li><a href='\/feats\/?focus=Quick_on_your_Feet'>Quick on your Feet<\/a><\/li><li><a href='\/feats\/?focus=Skirmisher'>Skirmisher<\/a><\/li><li><a href='\/feats\/?focus=Tanky'>Tanky<\/a><\/li><li><a href='\/feats\/?focus=Weapon_Feat'>Weapon Feat<\/a><\/li><li><a href='\/feats\/?focus=Fortune_Teller'>Fortune Teller<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Jack_of_All_Trades'>Jack of All Trades<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Level-Headed'>Level-Headed<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Menacing_Aura'>Menacing Aura<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Perfected_Craft'>Perfected Craft<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Pressure_Point_Manipulator'>Pressure Point Manipulator<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Unstoppable_Willpower'>Unstoppable Willpower<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Veteran_Sprinter'>Veteran Sprinter<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Consistent_Skills'>Consistent Skills<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Headhunter'>Headhunter<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Interpreter'>Interpreter<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Trap_Detection'>Trap Detection<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Paranoia'>Paranoia<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Specialized_Save'>Specialized Save<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Assassin'>Assassin<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Familiar_Bond'>Familiar Bond<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Motivated'>Motivated<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Resilient'>Resilient<\/a> (Level 16+)<\/li><\/ul>"
+        ],
+        "classes": [
+            "Art"
+        ]
+    },
+    "Assassin_Feature": {
+        "name": "Assassin Feature",
+        "desc": [
+            "You may choose a Feature from the following list:<ul class='sublist'><li><a href='\/feats\/?focus=Deadly_Accuracy'>Deadly Accuracy<\/a><\/li><li><a href='\/feats\/?focus=Defensive_Stance'>Defensive Stance<\/a><\/li><li><a href='\/feats\/?focus=Duelists_Agility'>Duelist's Agility<\/a><\/li><li><a href='\/feats\/?focus=Impeccable_Agility'>Impeccable Agility<\/a><\/li><li><a href='\/feats\/?focus=Pressure_Point_Manipulator'>Pressure Point Manipulator<\/a><\/li><li><a href='\/feats\/?focus=Weapon_Feat'>Weapon Feat<\/a><\/li><li><a href='\/feats\/?focus=Guerilla_Fighter'>Guerilla Fighter<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Natural_Talent'>Natural Talent<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Practical_Experience'>Practical Experience<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Skirmisher'>Skirmisher<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Specialized_Save'>Specialized Save<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Familiar_Bond'>Familiar Bond<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Headhunter'>Headhunter<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Paranoia'>Paranoia<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Veteran_Sprinter'>Veteran Sprinter<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Brutality'>Brutality<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Consistent_Accuracy'>Consistent Accuracy<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Menacing_Aura'>Menacing Aura<\/a> (Level 16+)<\/li><\/ul>"
+        ],
+        "classes": [
+            "Ass"
+        ]
+    },
+    "Consul_Feature": {
+        "name": "Consul Feature",
+        "desc": [
+            "You may choose a Feature from the following list:<ul class='sublist'><li><a href='\/feats\/?focus=Art_of_Distraction'>Art of Distraction<\/a><\/li><li><a href='\/feats\/?focus=Commentator'>Commentation<\/a><\/li><li><a href='\/feats\/?focus=Exemplar'>Exemplar<\/a><\/li><li><a href='\/feats\/?focus=Jack_of_All_Trades'>Jack of All Trades<\/a><\/li><li><a href='\/feats\/?focus=Menacing_Aura'>Menacing Aura<\/a><\/li><li><a href='\/feats\/?focus=Stroke_of_Luck'>Stroke of Luck<\/a><\/li><li><a href='\/feats\/?focus=Tanky'>Tanky<\/a><\/li><li><a href='\/feats\/?focus=Weapon_Feat'>Weapon Feat<\/a><\/li><li><a href='\/feats\/?focus=Guerilla_Fighter'>Guerilla Fighter<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Natural_Talent'>Natural Talent<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Practical_Experience'>Practical Experience<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Skirmisher'>Skirmisher<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Headhunter'>Headhunter<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Heavy_Sleeper'>Heavy Sleeper<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Interpreter'>Interpreter<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Light_Sleeper'>Light Sleeper<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Quick_on_your_Feet'>Quick on your Feet<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Specialized_Save'>Specialized Save<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Consistent_Skills'>Consistent Skills<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Motivated'>Motivated<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Paranoia'>Paranoia<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Trap_Detection'>Trap Detection<\/a> (Level 16+)<\/li><\/ul>"
+        ],
+        "classes": [
+            "Con"
+        ]
+    },
+    "Heavyweight_Feature": {
+        "name": "Heavyweight Feature",
+        "desc": [
+            "You may choose a Feature from the following list:<ul class='sublist'><li><a href='\/feats\/?focus=Defensive_Stance'>Defensive Stance<\/a><\/li><li><a href='\/feats\/?focus=Quick_on_your_Feet'>Quick on your Feet<\/a><\/li><li><a href='\/feats\/?focus=Scarflesh'>Scarflesh<\/a><\/li><li><a href='\/feats\/?focus=Tanky'>Tanky<\/a><\/li><li><a href='\/feats\/?focus=Weapon_Feat'>Weapon Feat<\/a><\/li><li><a href='\/feats\/?focus=Whirlwind_Attacker'>Whirlwind Attacker<\/a><\/li><li><a href='\/feats\/?focus=Motivated'>Motivated<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Resilient'>Resilient<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Specialized_Save'>Specialized Save<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Stand_Breaker'>Stand Breaker<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Tanky'>Tanky<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Adrenaline_Rush'>Adrenaline Rush<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Berserker'>Berserker<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Superhuman'>Superhuman<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Unstoppable_Willpower'>Unstoppable Willpower<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Natural_Talent'>Natural Talent<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Practical_Experience'>Practical Experience<\/a> (Level 16+)<\/li><\/ul>"
+        ],
+        "classes": [
+            "Hvy"
+        ]
+    },
+    "Ranger_Feature": {
+        "name": "Ranger Feature",
+        "desc": [
+            "You may choose a Feature from the following list:<ul class='sublist'><li><a href='\/feats\/?focus=Assassin'>Assassin<\/a><\/li><li><a href='\/feats\/?focus=Catlike_Agility'>Catlike Agility<\/a><\/li><li><a href='\/feats\/?focus=Familiar_Bond'>Familiar Bond<\/a><\/li><li><a href='\/feats\/?focus=Guerilla_Fighter'>Guerilla Fighter<\/a><\/li><li><a href='\/feats\/?focus=Pressure_Point_Manipulator'>Pressure Point Manipulator<\/a><\/li><li><a href='\/feats\/?focus=Skirmisher'>Skirmisher<\/a><\/li><li><a href='\/feats\/?focus=Weapon_Feat'>Weapon Feat<\/a><\/li><li><a href='\/feats\/?focus=Deadly_Accuracy'>Deadly Accuracy<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Improvised_Healing'>Improvised Healing<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Natural_Talent'>Natural Talent<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Quick_on_your_Feet'>Quick on your Feet<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Specialized_Save'>Specialized Save<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Familiar_Fighting_Spirit'>Familiar Fighting Spirit<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Headhunter'>Headhunter<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Immense_Impact'>Immense Impact<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Interpreter'>Interpreter<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Consistent_Skills'>Consistent Skills<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Defensive_Stance'>Defensive Stance<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Duelists_Agility'>Duelist's Agility<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Jack_of_All_Trades'>Jack of All Trades<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Resilient'>Resilient<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Tanky'>Tanky<\/a> (Level 16+)<\/li><\/ul>"
+        ],
+        "classes": [
+            "Rgr"
+        ]
+    },
+    "Scholar_Feature": {
+        "name": "Scholar Feature",
+        "desc": [
+            "You may choose a Feature from the following list:<ul class='sublist'><li><a href='\/feats\/?focus=Guerilla_Fighter'>Guerilla Fighter<\/a><\/li><li><a href='\/feats\/?focus=Jack_of_All_Trades'>Jack of All Trades<\/a><\/li><li><a href='\/feats\/?focus=Natural_Talent'>Natural Talent<\/a><\/li><li><a href='\/feats\/?focus=Practical_Experience'>Practical Experience<\/a><\/li><li><a href='\/feats\/?focus=Weapon_Feat'>Weapon Feat<\/a><\/li><li><a href='\/feats\/?focus=Consistent_Skills'>Consistent Skills<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Interpreter'>Interpreter<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Trap_Detection'>Trap Detection<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Unstoppable_Willpower'>Unstoppable Willpower<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Familiar_Bond'>Familiar Bond<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Fortune_Teller'>Fortune Teller<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Motivated'>Motivated<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Paranoia'>Paranoia<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Perfected_Craft'>Perfected Craft<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Stroke_of_Luck'>Stroke of Luck<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Quick_on_your_Feet'>Quick on your Feet<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Specialized_Save'>Specialized Save<\/a> (Level 16+)<\/li><\/ul>"
+        ],
+        "classes": [
+            "Sch"
+        ]
+    },
+    "Warrior_Feature": {
+        "name": "Warrior Feature",
+        "desc": [
+            "You may choose a Feature from the following list:<ul class='sublist'><li><a href='\/feats\/?focus=Adrenaline_Rush'>Adrenaline Rush<\/a><\/li><li><a href='\/feats\/?focus=Defensive_Stance'>Defensive Stance<\/a><\/li><li><a href='\/feats\/?focus=Rejuvenation'>Rejuvenation<\/a><\/li><li><a href='\/feats\/?focus=Quick_on_your_Feet'>Quick on your Feet<\/a><\/li><li><a href='\/feats\/?focus=Scarflesh'>Scarflesh<\/a><\/li><li><a href='\/feats\/?focus=Tanky'>Tanky<\/a><\/li><li><a href='\/feats\/?focus=Weapon_Feat'>Weapon Feat<\/a><\/li><li><a href='\/feats\/?focus=Berserker'>Berserker<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Specialized_Save'>Specialized Save<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Stand_Breaker'>Stand Breaker<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Veteran_Sprinter'>Veteran Sprinter<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Catlike_Agility'>Catlike Agility<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Duelists_Agility'>Duelist's Agility<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Immense_Impact'>Immense Impact<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Impeccable_Agility'>Impeccable Agility<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Motivated'>Motivated<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Unstoppable_Willpower'>Unstoppable Willpower<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Resilient'>Resilient<\/a> (Level 16+)<\/li><\/ul>"
+        ],
+        "classes": [
+            "War"
+        ]
     }
 }
