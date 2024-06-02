@@ -510,7 +510,7 @@
         "desc": [
             "Talk to your DM if you have a special case or have an idea for how to make your Ability more useful\/powerful, or choose from one of the following ways how your Stand's Ability is empowered:",
             "<ul class='sublist'>If your Stand uses Scaling Dice, you gain an additional amount of Ability Dice equal to your Proficiency Bonus (A Level 20 Stand User with this would have 16dx dice, for example, with 10dx from their class table + 6dx from their Proficiency Bonus).<\/li>",
-            "<li>Your Stand gains a Short and Long Range. The Short Range of your Stand is where the range of your Stand's Ability would normally end, and functions as normal. If you make attack rolls or force an enemy to make a Save with your Stand's Custom Ability while your target is within your Long Range, you have Disadvantage on the attack roll, or your enemy has Advantage on the Saving Throw.<\/li>",
+            "<li>Your Stand gains a Short and Long Range. The Short Range of your Stand is where the range of your Stand's Ability would normally end, and functions as normal. If you make Attack Rolls or force an enemy to make a Save with your Stand's Custom Ability while your target is within your Long Range, you have Disadvantage on the Attack Roll, or your enemy has Advantage on the Saving Throw.<\/li>",
             "<li>Your Stand's Custom Ability increases greatly in its usefulness. A numerical value within your Stand's Custom Ability that determines how much it can affect at once increases by double. This may range from the amount of targets you may affect, to kilograms of an object you can affect, to seconds or time manipulated, etc.<\/li><\/ul>",
             "Make sure to check with your DM, as they will want to know how the Custom Ability has been changed. It's important to check because such a change may be significant, and they need to let you know if it seems game-breaking, or something that will change how they plan based on your character."
         ]
@@ -620,7 +620,7 @@
             "Hive"
         ],
         "desc": [
-            "The individual instances of your Stand may work as a collective, with the purpose of moving you to one place extremely quickly. If your Standis within 2 meters of you, as an Attack you and your Stand may be transported to the same place, up to an amount of meters equal to your Stand's Movement Speed, without consuming your Movement Action. You may also climb, move through water, or across Difficult Terrain without penalty to your movement."
+            "The individual instances of your Stand may work as a collective, with the purpose of moving you to one place extremely quickly. If your Stand is within 2 meters of you, as an Attack you and your Stand may be transported to the same place, up to an amount of meters equal to your Stand's Movement Speed, without consuming your Movement Action. You may also climb, move through water, or across Difficult Terrain without penalty to your movement."
         ]
     },
     "Natural_Armor": {
@@ -655,7 +655,7 @@
             "Rev"
         ],
         "desc": [
-            "As a Free Action, you may choose to gain Advantage on all attack rolls until your next Turn, but all enemies gain Advantage on any attack rolls against you as well.",
+            "As a Free Action, you may choose to gain Advantage on all Attack Rolls until your next Turn, but all enemies gain Advantage on any Attack Rolls against you as well.",
             "If enemies already have Advantage to attack you, they roll 3d20 and take the highest roll. "
         ]
     },
@@ -820,7 +820,7 @@
         ],
         "desc": [
             "You've learned one of the following schools of combat that enables you to better use your Ripple combatively.",
-            "<ul class='sublist'><li><b>Disciplined<\/b>: You gain Proficiency in 2 Saving Throws of your Choice.<\/li><li><b>Enhanced Reflexes<\/b>: As a Reaction you may move up to half your Movement Speed without provoking Opportunity Attacks. You may use this to avoid an AOE Save, but not a single target attack.<\/li><li><b>Graceful Fighting<\/b>: When you make Unarmed Attacks or Attacks using a Simple melee Weapon you may use Dexterity for both the Attack and Damage rolls. Additionally, you may use your Unarmed Dice with a Simple melee Weapon instead of its regular Damage Die.<\/li><li><b>Powerful<\/b>: Rather than using regular AC, you may choose to have your AC be 10 + your Strength Modifier + your Constitution Modifier.<\/li><\/ul>"
+            "<ul class='sublist'><li><b>Disciplined<\/b>: You gain Proficiency in 2 Saving Throws of your Choice.<\/li><li><b>Enhanced Reflexes<\/b>: As a Reaction you may move up to half your Movement Speed without provoking Opportunity Attacks. You may use this to avoid an AOE Save, but not a single target attack.<\/li><li><b>Graceful Fighting<\/b>: When you make Unarmed Attacks or Attacks using a Simple melee Weapon you may use Dexterity for both the Attack and Damage Rolls. Additionally, you may use your Unarmed Dice with a Simple melee Weapon instead of its regular Damage Die.<\/li><li><b>Powerful<\/b>: Rather than using regular AC, you may choose to have your AC be 10 + your Strength Modifier + your Constitution Modifier.<\/li><\/ul>"
         ]
     },
     "Recovery_Breathing": {
@@ -1018,7 +1018,7 @@
         ],
         "desc": [
             "As a Level 20 Ripple User, you have reached your full potential through use of the Ripple. This costs 15 Ripple Points and takes an Action, allowing you to choose one of the following. The effect you choose may be used multiple times if applicable, but you may not change your choice.",
-            "<ul class='sublist'><li>You gain an immensely powerful skill or ability otherwise not available to you. An example of such a powerful ability is <a href='https:\/\/jojowiki.com\/Tonpetty'>Tompetty<\/a>'s ability to tell the fate of a person they touch.<\/li><li>If you do not have a Stand, one manifests at Level 15.<\/li><li>If you are already a Stand User, your Standevolves. The stats of your Stand double, and this change lasts for 1 hour.<\/li><\/ul>"
+            "<ul class='sublist'><li>You gain an immensely powerful skill or ability otherwise not available to you. An example of such a powerful ability is <a href='https:\/\/jojowiki.com\/Tonpetty'>Tompetty<\/a>'s ability to tell the fate of a person they touch.<\/li><li>If you do not have a Stand, one manifests at Level 15.<\/li><li>If you are already a Stand User, your Stand evolves. The stats of your Stand double, and this change lasts for 1 hour.<\/li><\/ul>"
         ]
     },
     "Spherical_Spin": {

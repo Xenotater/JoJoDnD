@@ -249,7 +249,7 @@
             {
                 "name": "Rules of Stands",
                 "content": [
-                    "<ul><li>A single person can only have one stand (Hive Stands are the same Stand, just split up into much smaller parts)<\/li><li>Whatever damage is inflicted upon the Stand or the User is also dealt to the other<\/li><li>Only Stand Users can sense Stands<\/li><li>Stand Users can interact and speak with spirits or ghosts<\/li><li>Only Stands can defeat Stands, physical objects simply pass through or bounce off of all Stands except Enhancement or Independent types<\/li><li>If the User is knocked unconscious and the Stand is not a Revenge-Type, the Stand and it's Ability will disappear until resummoned by the User when conscious<\/li><li>Stand Energy is only consumed if the Ability actually affects something<\/li><li>If a Stand User fights a Non-Stand User, the Stand User gets Advantage on all attacks using their Stand<\/li><li>If a Stand User is Surprised and does not have their Stand active, they may not use it to defend themselves.<\/li><\/ul>"
+                    "<ul><li>A single person can only have one Stand (Hive Stands are the same Stand, just split up into much smaller parts)<\/li><li>Whatever damage is inflicted upon the Stand or the User is also dealt to the other<\/li><li>Only Stand Users can sense Stands<\/li><li>Stand Users can interact and speak with spirits or ghosts<\/li><li>Only Stands can defeat Stands, physical objects simply pass through or bounce off of all Stands except Enhancement or Independent types<\/li><li>If the User is knocked unconscious and the Stand is not a Revenge-Type, the Stand and it's Ability will disappear until resummoned by the User when conscious<\/li><li>Stand Energy is only consumed if the Ability actually affects something<\/li><li>If a Stand User fights a Non-Stand User, the Stand User gets Advantage on all attacks using their Stand<\/li><li>If a Stand User is Surprised and does not have their Stand active, they may not use it to defend themselves.<\/li><\/ul>"
                 ]
             },
             {
@@ -260,7 +260,7 @@
                     "<p><b>Damage Reduction: <\/b>Stands have natural resistance against damage, determined by their Durability Mod. Your Stand can resist that many points of damage per round. For example, a Stand with a 100 Durability would be able to resist 10 points of damage per round, and a Stand with 40 would only be able to resist 4. Physical attacks that hit Stands deal no damage, unless specifically stated otherwise. The only types of damage that may deal damage to Stands is damage dealt by Stands, or the Abilities of Stands. It should be noted that if the User is in the radius of a Saving Throw, Damage Reduction cannot be applied to any damage inflicted. Your Stand's Damage Reduction resets at the top of each round of Initiative.<\/p>",
                     "<p><b>Stand Movement: <\/b>Stands have a Movement Speed equal to twice their Stand's Speed Mod in meters, or a Movement Speed equal to their User, whichever is higher. Stands and Users each have a separate Movement Action. Independant-Type Stands can only move the base 10 Meters that a regular Human can, unless they have a specific Ability that allows them to increase it.<\/p>",
                     "<p><b>Stand Range: <\/b>Your Stand may move a number of meters away from you equal to its Range Mod, with a minimum of 1m.<\/p>",
-                    "<p><b>Abilities and Stand Energy: <\/b>The amount of Energy your stand has is based on their Stand Energy Mod. Normal Abilities typically cost 1 point and Special Abilities generally cost more depending on the Stand type. However, the cost may vary depending on how strong the Ability is at the DMs discretion, for example the Ability to stop time might cost double the normal cost. Stand Energy always fully replenishes when outside of combat. 1 Stand Energy is also replenished when you take the dodge action.<\/p>"
+                    "<p><b>Abilities and Stand Energy: <\/b>The amount of Energy your Stand has is based on their Stand Energy Mod. Normal Abilities typically cost 1 point and Special Abilities generally cost more depending on the Stand type. However, the cost may vary depending on how strong the Ability is at the DMs discretion, for example the Ability to stop time might cost double the normal cost. Stand Energy always fully replenishes when outside of combat. 1 Stand Energy is also replenished when you take the dodge action.<\/p>"
                 ]
             },
             {
@@ -307,8 +307,8 @@
                 "content": [
                     "<p><small><b>Examples of Substands:<\/b> <a href='https:\/\/jojowiki.com\/Sheer_Heart_Attack' target='_blank'>Killer Queen's Sheer Heart Attack<\/a> and <a href='https:\/\/jojowiki.com\/King_Crimson#Epitaph'>King Crimson's Epitaph<\/a><\/small><\/p>",
                     "<p>Substands are extremely rare types of Stands that form under extreme conditions. These sorts of Stands typically occur when there is a great mental divide within the Stand User, or when a Stand User undergoes a massive amount of development very quickly. When you get the trait <a href='\/abilities?focus=Special_Ability'>Special Ability<\/a>, rather than giving yourself a Special Ability, you may give yourself a Substand. Substands use the same rules as regular stands, and Level-Up and gain points to their stats in the exact same way that your primary Stand does, but it may be a different type of Stand with its own Ability.<\/p>",
-                    "<p>You may switch between your Stand and Substand as a Bonus Action when both your Stand is within 2 meters of you. When you summon your Stand, it defaults to the stand you most recently summoned, though you can switch this with a Bonus Action at any time.<\/p>",
-                    "<p>If one Stand has more Stand Energy than the other and you switch to the one with less, the amount of Stand Energy available is reduced to that maximum of the other stand and remains at that amount until combat ends. For example a primary Stand with 12\/12 maximum energy switching to a Substand with 7 max Energy brings the Stand's energy to 7. Even if you switch back to the primary Stand without spending any Energy, the primary Stand now has 7\/12 Energy remaining. Energy spent in either form takes away from the same Stand Energy pool.<\/p>",
+                    "<p>You may switch between your Stand and Substand as a Bonus Action when both your Stand is within 2 meters of you. When you summon your Stand, it defaults to the Stand you most recently summoned, though you can switch this with a Bonus Action at any time.<\/p>",
+                    "<p>If one Stand has more Stand Energy than the other and you switch to the one with less, the amount of Stand Energy available is reduced to that maximum of the other Stand and remains at that amount until combat ends. For example a primary Stand with 12\/12 maximum energy switching to a Substand with 7 max Energy brings the Stand's energy to 7. Even if you switch back to the primary Stand without spending any Energy, the primary Stand now has 7\/12 Energy remaining. Energy spent in either form takes away from the same Stand Energy pool.<\/p>",
                     "<p>Upon initially gaining your Substand, your health will need to be recalculated to make up for your potential new focus on melee or a new powerful Ability. Your Hit Dice will function the same way as a Multi-Type Stand would, alternating between the two Hit Dice each Level-Up and starting with the lower one.<\/p>",
                     "<p>Aside from what is mentioned here, Substands are completely seperate Stands from their primary Stand, having different stats, a unique Custom Ability (not Special Ability), and gaining seperate Class Features upon Level-Up.<\/p>"
                 ]
@@ -833,7 +833,7 @@
                         "featFeatures": [
                             "Guerilla Fighter",
                             "OR",
-                            "Melee Specialization"
+                            "Melee Weapon Specialization"
                         ]
                     },
                     "13": {
@@ -1749,7 +1749,7 @@
                             "<p>Choose one of the three following saving throws: Strength, Dexterity, or Constitution. When you make a Melee Attack using your Stand, rather than making an Attack Roll, your target must make a Saving Throw of the chosen type with a DC of 8 + Proficiency Bonus + Power Modifier. Your Stand must be within Melee Range of the target in order to make a Swarm Attack. When you make a Swarm Attack, you may choose between the following options:<\/p>",
                             "<p><ul><li>Precise Swarm: 1d6 + Power Modifier damage (this damage increases to 2d6 at Level 11). Your opponent takes full damage if they fail the Saving Throw, or half if they succeed.<\/li>",
                             "<li>Violent Swarm: 1d10 + Power Modifier damage (this damage increases to 2d10 at Level 11). Your opponent takes full damage if they fail the Saving Throw, or none if they succeed.<\/li><\/ul><\/p>",
-                            "<p>This Ability's damage can be a type that you and your DM agree fits for your stand. When you attack using less than half of the total instances of your stand, your target has Advantage on the Saving Throw.<\/p>"
+                            "<p>This Ability's damage can be a type that you and your DM agree fits for your Stand. When you attack using less than half of the total instances of your Stand, your target has Advantage on the Saving Throw.<\/p>"
                         ]
                     }
                 ],
@@ -1942,17 +1942,17 @@
                     {
                         "name": "Act Types",
                         "content": [
-                            "<p>Each time you gain a new Act, you must choose what type it is from the following list. Your Act Type determines the Attack Dice, Ability Score Multipliers, and Class Features gained for that Act.</p>",
+                            "<p>Each time you gain a new Act, you must choose what type it is from the following list. Your Act Type determines the Attack Dice, Ability Score Multipliers, and Class Features gained for that Act.<\/p>",
                             "<div id='actTypes'>",
-                            "<div class='actType'><b>Close-Range</b><span>You gain: <a href='/abilities/?focus=Feat_of_Power'>Feat of Power</a> and <a href='/abilities/?focus=Confident_Provocation'>Confident Provocation</a></span><span>Note: Your Range Score may not go above 20</span><span>Attack Dice: 1d10 (2d8 past Level 11)</span><b>Ability Score Multipliers</b>",
-                            "<table class='table table-striped minor'><thead><tr><th>Stat</th><th>Multiplier</tr></thead><tbody><tr><td>Power</td><td>Str x3</td></tr><tr><td>Precision</td><td>Dex x3</td></tr><tr><td>Durability</td><td>Con x3</td></tr><tr><td>Range</td><td>Int x1</td></tr><tr><td>Speed</td><td>Wis x4</td></tr><tr><td>Stand Energy</td><td>Cha x2</td></tr></tbody></table></div>",
-                            "<div class='actType'><b>Long-Range</b><span>You gain: <a href='/abilities/?focus=Slippery'>Slippery</a> and either <a href='/abilities/?focus=Detached_Senses'>Detached Senses</a> OR <a href='/abilities/?focus=Immense_Resistance'>Immense Resistance</a></span><span>Note: You may not increase your Power or Durability when Leveling Up.</span><span>Attack Dice: 1d8 (2d6 past Level 11)</span><b>Ability Score Multipliers</b>",
-                            "<table class='table table-striped minor'><thead><tr><th>Stat</th><th>Multiplier</tr></thead><tbody><tr><td>Power</td><td>Str x3</td></tr><tr><td>Precision</td><td>Dex x3</td></tr><tr><td>Durability</td><td>Con x3</td></tr><tr><td>Range</td><td>Int x8</td></tr><tr><td>Speed</td><td>Wis x3</td></tr><tr><td>Stand Energy</td><td>Cha x3</td></tr></tbody></table></div>",
-                            "<div class='actType'><b>Ability-Focused</b><span>You gain: <a href='/abilities/?focus=Self_Acclimation'>Self Acclimation</a></span><span>Note: You may not increase your Power or Durability when Leveling Up.</span><span>Attack Dice: 1d4 (1d6 past Level 11)</span><b>Ability Score Multipliers</b>",
-                            "<table class='table table-striped minor'><thead><tr><th>Stat</th><th>Multiplier</tr></thead><tbody><tr><td>Power</td><td>Str x1</td></tr><tr><td>Precision</td><td>Dex x2</td></tr><tr><td>Durability</td><td>Con x1</td></tr><tr><td>Range</td><td>Int x3</td></tr><tr><td>Speed</td><td>Wis x3</td></tr><tr><td>Stand Energy</td><td>Cha x5</td></tr></tbody></table></div>",
-                            "<div class='actType'><b>Remote-Focused</b><span>You gain: <a href='/abilities/?focus=Programmed_Stand'>Programmed Stand</a> and <a href='/abilities/?focus=Stand_Marking'>Stand Marking</a></span><span>Note: You may not increase your Precision when Leveling Up. If someone activates your Remote trigger, you may switch to your Remote-Focused Act as a Reaction.</span><span>Attack Dice: 1d10 (2d8 past Level 11)</span><b>Ability Score Multipliers</b>",
-                            "<table class='table table-striped minor'><thead><tr><th>Stat</th><th>Multiplier</tr></thead><tbody><tr><td>Power</td><td>Str x3</td></tr><tr><td>Precision</td><td>Dex x2</td></tr><tr><td>Durability</td><td>Con x3</td></tr><tr><td>Range</td><td>Int x4</td></tr><tr><td>Speed</td><td>Wis x3</td></tr><tr><td>Stand Energy</td><td>Cha x2</td></tr></tbody></table></div>",
-                            "</div>"
+                            "<div class='actType'><b>Close-Range<\/b><span>You gain: <a href='\/abilities\/?focus=Feat_of_Power'>Feat of Power<\/a> and <a href='\/abilities\/?focus=Confident_Provocation'>Confident Provocation<\/a><\/span><span>Note: Your Range Score may not go above 20<\/span><span>Attack Dice: 1d10 (2d8 past Level 11)<\/span><b>Ability Score Multipliers<\/b>",
+                            "<table class='table table-striped minor'><thead><tr><th>Stat<\/th><th>Multiplier<\/tr><\/thead><tbody><tr><td>Power<\/td><td>Str x3<\/td><\/tr><tr><td>Precision<\/td><td>Dex x3<\/td><\/tr><tr><td>Durability<\/td><td>Con x3<\/td><\/tr><tr><td>Range<\/td><td>Int x1<\/td><\/tr><tr><td>Speed<\/td><td>Wis x4<\/td><\/tr><tr><td>Stand Energy<\/td><td>Cha x2<\/td><\/tr><\/tbody><\/table><\/div>",
+                            "<div class='actType'><b>Long-Range<\/b><span>You gain: <a href='\/abilities\/?focus=Slippery'>Slippery<\/a> and either <a href='\/abilities\/?focus=Detached_Senses'>Detached Senses<\/a> OR <a href='\/abilities\/?focus=Immense_Resistance'>Immense Resistance<\/a><\/span><span>Note: You may not increase your Power or Durability when Leveling Up.<\/span><span>Attack Dice: 1d8 (2d6 past Level 11)<\/span><b>Ability Score Multipliers<\/b>",
+                            "<table class='table table-striped minor'><thead><tr><th>Stat<\/th><th>Multiplier<\/tr><\/thead><tbody><tr><td>Power<\/td><td>Str x3<\/td><\/tr><tr><td>Precision<\/td><td>Dex x3<\/td><\/tr><tr><td>Durability<\/td><td>Con x3<\/td><\/tr><tr><td>Range<\/td><td>Int x8<\/td><\/tr><tr><td>Speed<\/td><td>Wis x3<\/td><\/tr><tr><td>Stand Energy<\/td><td>Cha x3<\/td><\/tr><\/tbody><\/table><\/div>",
+                            "<div class='actType'><b>Ability-Focused<\/b><span>You gain: <a href='\/abilities\/?focus=Self_Acclimation'>Self Acclimation<\/a><\/span><span>Note: You may not increase your Power or Durability when Leveling Up.<\/span><span>Attack Dice: 1d4 (1d6 past Level 11)<\/span><b>Ability Score Multipliers<\/b>",
+                            "<table class='table table-striped minor'><thead><tr><th>Stat<\/th><th>Multiplier<\/tr><\/thead><tbody><tr><td>Power<\/td><td>Str x1<\/td><\/tr><tr><td>Precision<\/td><td>Dex x2<\/td><\/tr><tr><td>Durability<\/td><td>Con x1<\/td><\/tr><tr><td>Range<\/td><td>Int x3<\/td><\/tr><tr><td>Speed<\/td><td>Wis x3<\/td><\/tr><tr><td>Stand Energy<\/td><td>Cha x5<\/td><\/tr><\/tbody><\/table><\/div>",
+                            "<div class='actType'><b>Remote-Focused<\/b><span>You gain: <a href='\/abilities\/?focus=Programmed_Stand'>Programmed Stand<\/a> and <a href='\/abilities\/?focus=Stand_Marking'>Stand Marking<\/a><\/span><span>Note: You may not increase your Precision when Leveling Up. If someone activates your Remote trigger, you may switch to your Remote-Focused Act as a Reaction.<\/span><span>Attack Dice: 1d10 (2d8 past Level 11)<\/span><b>Ability Score Multipliers<\/b>",
+                            "<table class='table table-striped minor'><thead><tr><th>Stat<\/th><th>Multiplier<\/tr><\/thead><tbody><tr><td>Power<\/td><td>Str x3<\/td><\/tr><tr><td>Precision<\/td><td>Dex x2<\/td><\/tr><tr><td>Durability<\/td><td>Con x3<\/td><\/tr><tr><td>Range<\/td><td>Int x4<\/td><\/tr><tr><td>Speed<\/td><td>Wis x3<\/td><\/tr><tr><td>Stand Energy<\/td><td>Cha x2<\/td><\/tr><\/tbody><\/table><\/div>",
+                            "<\/div>"
                         ]
                     }
                 ],
@@ -2172,7 +2172,7 @@
             },
             {
                 "name": "Materials",
-                "desc": "The following materials may be used to form spheres to use the Spin with. Objects that are not perfectly spherical may be Spun and thrown, but your Attack and Damage rolls, as well as Range are all cut in half.",
+                "desc": "The following materials may be used to form spheres to use the Spin with. Objects that are not perfectly spherical may be Spun and thrown, but your Attack and Damage Rolls, as well as Range are all cut in half.",
                 "table": {
                     "class": "minor widen",
                     "head": [
@@ -2965,11 +2965,11 @@
                         ]
                     },
                     "11": {
-                        "linkFeatures": [
-                            "Improved Fighting Style"
-                        ],
                         "featFeatures": [
                             "Weapon Feat"
+                        ],
+                        "linkFeatures": [
+                            "Improved Fighting Style"
                         ]
                     },
                     "12": {

@@ -3,8 +3,9 @@
         {
             "name": "Assault Rifle",
             "attr": [
+                "Bayonet",
                 "Firearm",
-                "Ranged (15\/45)",
+                "Ranged (50\/150)",
                 "Reload (x6)",
                 "Two-Handed"
             ],
@@ -24,7 +25,7 @@
             "spec": "Melee",
             "stat": "Str",
             "prereq": "None",
-            "dmg": "1d6 Bludgeoning"
+            "dmg": "1d8 Bludgeoning"
         },
         {
             "name": "C-4",
@@ -51,7 +52,7 @@
             "spec": "Melee\/Thrown",
             "stat": "Str\/Dex",
             "prereq": "Dex 15+",
-            "dmg": "1d4 Bludgeoning"
+            "dmg": "1d6 Bludgeoning"
         },
         {
             "name": "Dagger",
@@ -65,7 +66,7 @@
             "spec": "Melee\/Thrown",
             "stat": "Str\/Dex",
             "prereq": "None",
-            "dmg": "1d4 Piercing\/Slashing"
+            "dmg": "1d6 Piercing\/Slashing"
         },
         {
             "name": "Derringer",
@@ -75,7 +76,7 @@
                 "Firearm",
                 "Light",
                 "Point Blank",
-                "Ranged (5\/10)",
+                "Ranged (10\/20)",
                 "Reliable",
                 "Reload (x4)"
             ],
@@ -83,14 +84,14 @@
             "spec": "Sidearm",
             "stat": "Dex",
             "prereq": "None",
-            "dmg": "1d6 Piercing"
+            "dmg": "1d8 Piercing"
         },
         {
             "name": "Double-Barreled Shotgun",
             "attr": [
                 "Firearm",
                 "Point Blank",
-                "Ranged (5\/30)",
+                "Ranged (20\/40)",
                 "Reload (x2)",
                 "Siege",
                 "Two-Handed"
@@ -174,7 +175,7 @@
             "name": "Handcannon",
             "attr": [
                 "Firearm",
-                "Ranged (15\/45)",
+                "Ranged (20\/60)",
                 "Reliable",
                 "Reload (x6)",
                 "Point Blank"
@@ -220,7 +221,7 @@
                 "Firearm",
                 "Light",
                 "Point Blank",
-                "Ranged (10\/30)",
+                "Ranged (15\/45)",
                 "Reload (x4)"
             ],
             "type": "Martial",
@@ -232,8 +233,9 @@
         {
             "name": "Marksman Rifle",
             "attr": [
+                "Bayonet",
                 "Firearm",
-                "Ranged (100\/300)",
+                "Ranged (200\/600)",
                 "Reload (x8)",
                 "Two-Handed"
             ],
@@ -249,7 +251,7 @@
                 "Bulky",
                 "Complex",
                 "Firearm",
-                "Ranged (20\/60)",
+                "Ranged (30\/90)",
                 "Reload (x12)",
                 "Siege",
                 "Two-Handed"
@@ -267,7 +269,7 @@
                 "Firearm",
                 "Light",
                 "Point Blank",
-                "Ranged (15\/45)",
+                "Ranged (20\/60)",
                 "Reload (x9)"
             ],
             "type": "Simple",
@@ -281,7 +283,7 @@
             "attr": [
                 "Firearm",
                 "Point Blank",
-                "Ranged (10\/30)",
+                "Ranged (30\/90)",
                 "Reload (x5)",
                 "Siege",
                 "Two-Handed"
@@ -297,7 +299,7 @@
             "attr": [
                 "Firearm",
                 "Point Blank",
-                "Ranged (15\/45)",
+                "Ranged (20\/60)",
                 "Reliable",
                 "Reload (x6)"
             ],
@@ -328,7 +330,7 @@
                 "Firearm",
                 "Light",
                 "Point Blank",
-                "Ranged (5\/10)",
+                "Ranged (10\/30)",
                 "Reload (x2)",
                 "Siege"
             ],
@@ -342,20 +344,20 @@
             "name": "Sledgehammer",
             "attr": [
                 "Siege",
-                "Versatile (1d10)"
+                "Two-Handed"
             ],
             "type": "Simple",
             "spec": "Melee",
             "stat": "Str",
             "prereq": "None",
-            "dmg": "1d8 Bludgeoning"
+            "dmg": "3d4 Bludgeoning"
         },
         {
             "name": "SMG",
             "attr": [
                 "Firearm",
                 "Point Blank",
-                "Ranged (20\/60)",
+                "Ranged (25\/75)",
                 "Reload (x5)",
                 "Versatile (1d10)"
             ],
@@ -371,7 +373,7 @@
                 "Ambush",
                 "Bulky",
                 "Firearm",
-                "Ranged (600\/1200)",
+                "Ranged (750\/1500)",
                 "Reload (x4)",
                 "Two-Handed"
             ],
@@ -421,7 +423,7 @@
             "spec": "Melee\/Thrown",
             "stat": "Str\/Dex",
             "prereq": "None",
-            "dmg": "1d6 Bludgeoning"
+            "dmg": "1d8 Bludgeoning"
         },
         {
             "name": "Atlatl and Dart",
@@ -444,7 +446,7 @@
             "spec": "Melee\/Shield",
             "stat": "Str",
             "prereq": "None",
-            "dmg": "1d6 Bludgeoning"
+            "dmg": "1d8 Bludgeoning"
         },
         {
             "name": "Greatsword",
@@ -455,7 +457,7 @@
             "spec": "Melee",
             "stat": "Str",
             "prereq": "None",
-            "dmg": "1d12 Slashing"
+            "dmg": "4d4 Slashing"
         },
         {
             "name": "Halberd",
@@ -467,7 +469,7 @@
             "spec": "Heavy\/Melee",
             "stat": "Str",
             "prereq": "Str 13+",
-            "dmg": "1d10 Slashing"
+            "dmg": "1d12 Slashing"
         },
         {
             "name": "Hatchet",
@@ -479,7 +481,7 @@
             "spec": "Melee\/Thrown",
             "stat": "Str",
             "prereq": "None",
-            "dmg": "1d6 Slashing"
+            "dmg": "1d8 Slashing"
         },
         {
             "name": "Longbow",
@@ -497,24 +499,24 @@
             "name": "Longspear",
             "attr": [
                 "Reach",
-                "Versatile (1d8)"
-            ],
-            "type": "Martial",
-            "spec": "Melee",
-            "stat": "Str",
-            "prereq": "None",
-            "dmg": "1d6 Piercing"
-        },
-        {
-            "name": "Longsword",
-            "attr": [
                 "Versatile (1d10)"
             ],
             "type": "Martial",
             "spec": "Melee",
             "stat": "Str",
             "prereq": "None",
-            "dmg": "1d8 Slashing"
+            "dmg": "1d8 Piercing"
+        },
+        {
+            "name": "Longsword",
+            "attr": [
+                "Versatile (1d12)"
+            ],
+            "type": "Martial",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d10 Slashing"
         },
         {
             "name": "Shield",
@@ -544,13 +546,13 @@
             "name": "Shortspear",
             "attr": [
                 "Thrown (5\/15)",
-                "Versatile (1d8)"
+                "Versatile (1d10)"
             ],
             "type": "Simple",
             "spec": "Melee\/Thrown",
             "stat": "Str",
             "prereq": "None",
-            "dmg": "1d6 Piercing"
+            "dmg": "1d8 Piercing"
         },
         {
             "name": "Sling",
@@ -587,7 +589,7 @@
             "spec": "Heavy\/Melee",
             "stat": "Str",
             "prereq": "Str 15+ AND Dex 15+",
-            "dmg": "3d6 Slashing"
+            "dmg": "3d8 Slashing"
         },
         {
             "name": "Heavy Repeating Crossbow",
@@ -613,19 +615,19 @@
             "spec": "Melee",
             "stat": "Str",
             "prereq": "None",
-            "dmg": "1d6 Bludgeoning\/Piercing"
+            "dmg": "1d8 Bludgeoning\/Piercing"
         },
         {
             "name": "Quarterstaff",
             "attr": [
                 "Concealed (+5)",
-                "Versatile (1d8)"
+                "Versatile (1d10)"
             ],
             "type": "Simple",
             "spec": "Melee",
             "stat": "Str",
             "prereq": "None",
-            "dmg": "1d6 Bludgeoning"
+            "dmg": "1d8 Bludgeoning"
         },
         {
             "name": "Rapier",
@@ -636,7 +638,7 @@
             "spec": "Melee",
             "stat": "Str\/Dex",
             "prereq": "None",
-            "dmg": "1d8 Piercing"
+            "dmg": "1d10 Piercing"
         },
         {
             "name": "Repeating Crossbow",
@@ -664,7 +666,7 @@
             "spec": "Sidearm\/Thrown",
             "stat": "Str\/Dex",
             "prereq": "None",
-            "dmg": "1d4 Piercing"
+            "dmg": "1d6 Piercing"
         },
         {
             "name": "Whip",
@@ -675,7 +677,7 @@
             "spec": "Melee",
             "stat": "Str\/Dex",
             "prereq": "Dex 13+",
-            "dmg": "1d6 Slashing"
+            "dmg": "1d8 Slashing"
         },
         {
             "name": "Bec de Corbin",
@@ -687,7 +689,7 @@
             "spec": "Heavy\/Melee",
             "stat": "Str",
             "prereq": "Str 13+",
-            "dmg": "1d6 Bludgeoning\/Piercing\/Slashing"
+            "dmg": "1d8 Bludgeoning\/Piercing\/Slashing"
         },
         {
             "name": "Club",
@@ -712,7 +714,7 @@
             "spec": "Heavy\/Melee",
             "stat": "Str",
             "prereq": "Str 13+",
-            "dmg": "1d8 Bludgeoning"
+            "dmg": "1d10 Bludgeoning"
         },
         {
             "name": "Hand Crossbow",
@@ -740,7 +742,7 @@
             "spec": "Melee",
             "stat": "Str\/Int",
             "prereq": "Artisan (Engineer)",
-            "dmg": "1d6 Piercing\/Slashing"
+            "dmg": "1d8 Piercing\/Slashing"
         },
         {
             "name": "Electrician's Tools",
@@ -754,7 +756,7 @@
             "spec": "Heavy\/Melee",
             "stat": "Str\/Dex\/Int",
             "prereq": "Artisan (Engineer)",
-            "dmg": "1d6 Bludgeoning\/Slashing\/Piecing"
+            "dmg": "1d8 Bludgeoning\/Slashing\/Piecing"
         },
         {
             "name": "Mechanic's Tools",
@@ -766,7 +768,218 @@
             "spec": "Heavy\/Melee",
             "stat": "Str\/Int",
             "prereq": "Artisan (Engineer)",
-            "dmg": "1d10 Bludgeoning\/Slashing"
+            "dmg": "1d12 Bludgeoning\/Slashing"
+        },
+        {
+            "name": "Battle Axe",
+            "attr": [
+                "Versatile (2d6)"
+            ],
+            "type": "Martial",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d10 Slashing"
+        },
+        {
+            "name": "Blunderbuss",
+            "attr": [
+                "Complex",
+                "Firearm",
+                "Point Blank",
+                "Ranged (10\/20)",
+                "Reload (x1)",
+                "Siege",
+                "Two-Handed"
+            ],
+            "type": "Martial",
+            "spec": "Shotgun\/Heavy",
+            "stat": "Con",
+            "prereq": "Con 15+",
+            "dmg": "2d12 Piercing"
+        },
+        {
+            "name": "Bolt-Action Rifle",
+            "attr": [
+                "Bayonet",
+                "Firearm",
+                "Ranged (100\/300)",
+                "Reliable",
+                "Reload (x8)",
+                "Two-Handed"
+            ],
+            "type": "Simple",
+            "spec": "Rifle",
+            "stat": "Dex",
+            "prereq": "None",
+            "dmg": "1d10 Piercing"
+        },
+        {
+            "name": "Carbine",
+            "attr": [
+                "Firearm",
+                "Point Blank",
+                "Ranged (50\/150)",
+                "Reload (x10)",
+                "Two-Handed"
+            ],
+            "type": "Simple",
+            "spec": "Rifle",
+            "stat": "Dex",
+            "prereq": "None",
+            "dmg": "1d8 Piercing"
+        },
+        {
+            "name": "Chakram",
+            "attr": [
+                "Ambush",
+                "Return",
+                "Thrown (10\/30)"
+            ],
+            "type": "Martial",
+            "spec": "Melee\/Thrown",
+            "stat": "Str\/Dex",
+            "prereq": "None",
+            "dmg": "1d8 Slashing"
+        },
+        {
+            "name": "Fire Axe",
+            "attr": [
+                "Siege",
+                "Two-Handed"
+            ],
+            "type": "Simple",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d10 Slashing"
+        },
+        {
+            "name": "Gauntlet",
+            "attr": [
+                "Concealed (+2)",
+                "Light",
+                "Open Hand",
+                "Siege"
+            ],
+            "type": "Simple",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d8 Bludgeoning"
+        },
+        {
+            "name": "Lance",
+            "attr": [
+                "Reach",
+                "Versatile (3d6)"
+            ],
+            "type": "Martial",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "Str 17+ or Mounted",
+            "dmg": "1d12 Piercing"
+        },
+        {
+            "name": "Machete",
+            "attr": [
+                "Siege"
+            ],
+            "type": "Simple",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d8 Slashing"
+        },
+        {
+            "name": "Musket",
+            "attr": [
+                "Bayonet",
+                "Complex",
+                "Firearm",
+                "Ranged (15\/30)",
+                "Reload (x1)"
+            ],
+            "type": "Simple",
+            "spec": "Rifle",
+            "stat": "Dex",
+            "prereq": "None",
+            "dmg": "2d6 Piercing"
+        },
+        {
+            "name": "Musket Pistol",
+            "attr": [
+                "Complex",
+                "Firearm",
+                "Light",
+                "Point Blank",
+                "Ranged (10\/20)"
+            ],
+            "type": "Simple",
+            "spec": "Sidearm",
+            "stat": "Dex",
+            "prereq": "None",
+            "dmg": "2d6 Piercing"
+        },
+        {
+            "name": "Scimitar",
+            "attr": [
+                "Light"
+            ],
+            "type": "Martial",
+            "spec": "Melee",
+            "stat": "Str\/Dex",
+            "prereq": "Str\/Dex",
+            "dmg": "1d8"
+        },
+        {
+            "name": "Shortsword",
+            "attr": [
+                "Light"
+            ],
+            "type": "Martial",
+            "spec": "Melee",
+            "stat": "Str\/Dex",
+            "prereq": "None",
+            "dmg": "1d8 Piercing"
+        },
+        {
+            "name": "Spiked Gauntlet",
+            "attr": [
+                "Light",
+                "Open Hand"
+            ],
+            "type": "Simple",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d10 Piercing"
+        },
+        {
+            "name": "Throwing Hammer",
+            "attr": [
+                "Light",
+                "Siege",
+                "Thrown (5\/15)"
+            ],
+            "type": "Simple",
+            "spec": "Melee\/Thrown",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d8 Bludgeoning"
+        },
+        {
+            "name": "War Fan",
+            "attr": [
+                "AC Bonus (+1)",
+                "Concealed (+10)",
+                "Light"
+            ],
+            "type": "Martial",
+            "spec": "Melee",
+            "stat": "Str\/Dex",
+            "prereq": "13+ Dex",
+            "dmg": "1d6 Slashing"
         }
     ]
 }

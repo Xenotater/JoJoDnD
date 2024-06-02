@@ -209,6 +209,10 @@ function hint(attr) { //this whole thing should be replaced by json..
             return("This weapon can attack targets from an additional meter away.");
         case "Conductive":
             return("Energy currents, such as electricity or Ripple, may be run through this weapon.");
+        case "Bayonet":
+            return("You may attach a dagger to the front of the rifle, allowing the weapon to be used in melee with the stats of a longspear.");
+        case "Open Hand":
+            return("When you have this weapon equipped, you may also hold other weapons or objects in the same hand or perform actions such as Shove or Grapple as though your hand was free.")
         default:
             return("Error: This attribute doesn't have a definition. Please alert the site administrator.");     
     }
