@@ -77,7 +77,7 @@
           },
           "5": {
             "pro": 3,
-            "feats": 1,
+            "feats": 2,
             "dice": 2,
             "features": ["Extra Attack", "OR", "Finesse Attack"]
           },
@@ -122,12 +122,12 @@
           },
           "13": {
             "pro": 5,
-            "feats": 2,
+            "feats": 3,
             "dice": 4
           },
           "14": {
             "pro": 5,
-            "feats": 2,
+            "feats": 3,
             "dice": 4
           },
           "15": {
@@ -198,7 +198,7 @@
           },
           "5": {
             "pro": 3,
-            "feats": 1,
+            "feats": 2,
             "dice": 2,
             "features": ["Extra Attack", "OR", "Finesse Attack"]
           },
@@ -243,17 +243,17 @@
           },
           "13": {
             "pro": 5,
-            "feats": 2,
+            "feats": 3,
             "dice": 4
           },
           "14": {
             "pro": 5,
-            "feats": 2,
+            "feats": 3,
             "dice": 4
           },
           "15": {
             "pro": 5,
-            "feats": 2,
+            "feats": 3,
             "dice": 4,
             "features": ["Superior Mobility", "OR", "Superior Saves"]
           },
@@ -319,7 +319,7 @@
           },
           "5": {
             "pro": 3,
-            "feats": 1,
+            "feats": 2,
             "dice": 2,
             "features": ["Extra Attack", "OR", "Siege Attack"]
           },
@@ -364,17 +364,17 @@
           },
           "13": {
             "pro": 5,
-            "feats": 2,
+            "feats": 3,
             "dice": 4
           },
           "14": {
             "pro": 5,
-            "feats": 2,
+            "feats": 3,
             "dice": 4
           },
           "15": {
             "pro": 5,
-            "feats": 2,
+            "feats": 3,
             "dice": 4,
             "features": ["Unrelenting", "OR", "Superior Saves"]
           },
@@ -440,7 +440,7 @@
           },
           "5": {
             "pro": 3,
-            "feats": 1,
+            "feats": 2,
             "dice": 2,
             "features": ["Finesse Attack", "OR", "Pounce Attack"]
           },
@@ -485,17 +485,17 @@
           },
           "13": {
             "pro": 5,
-            "feats": 2,
+            "feats": 3,
             "dice": 4
           },
           "14": {
             "pro": 5,
-            "feats": 2,
+            "feats": 3,
             "dice": 4
           },
           "15": {
             "pro": 5,
-            "feats": 2,
+            "feats": 3,
             "dice": 4,
             "features": ["Superior Skills", "OR", "Superior Saves"]
           },
