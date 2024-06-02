@@ -860,8 +860,7 @@
             "You may use piercing projectiles or strikes to break through armor and deal precise, devestating hits."
         ],
         "effects": [
-            "Any effects of this Ability that require a Saving Throw use a DC of 8 + twice your Proficiency Bonus.",
-            "Once per Turn when you deal piercing damage you may perform one of the following options:<ul><li>You deal a precise strike or loose a well-placed projectile. You may add your Proficiency Bonus an additional time to your Attack Roll. If you hit above the target's regular AC by 5 or more, you roll double the Damage Dice.<\/li><li>You deal double damage against Stand Damage Reduction.</li><li>You may force the target to make a Dexterity (Not Precision) Saving Throw. If they fail it, they either:<ul><li>Have their normal AC reduced by an amount equal to your Proficiency Bonus until the start of your next Turn.<\/li><li>Have their Stand AC cut in half until the start of your next Turn.<\/li><\/ul></ul>",
+            "Once per Turn when you deal piercing damage you may force your taget to make a Save against a DC of 8 + twice your Proficiency Bonus. You choose one of the following options:<ul><li>You deal a precise strike or loose a well-placed projectile. You may add your Proficiency Bonus an additional time to your Attack Roll. If you hit above the target's regular AC by 5 or more, you roll double the Damage Dice.<\/li><li>You deal double damage against Stand Damage Reduction.</li><li>You may force the target to make a Dexterity (Not Precision) Saving Throw. If they fail it, they either:<ul><li>Have their normal AC reduced by an amount equal to your Proficiency Bonus until the start of your next Turn.<\/li><li>Have their Stand AC cut in half until the start of your next Turn.<\/li><\/ul></ul>",
             "Those who have Resistance to piercing damage have Advantage on the Saves, and those who have Immunity are immune to these effects as well."
         ]
     },
@@ -881,8 +880,7 @@
             "You have the ability to deal grevious wounds using slashing attacks."
         ],
         "effects": [
-            "Any effects of this Ability that require a saving throw use a DC of 8 + twice your Proficiency Bonus.",
-            "As a Bonus Action, you may make a single Attack, so long as that Attack deals slashing damage. When you land this Attack, you may perform one of the following options:<ul><li>The target is forced to make a Con Save. If they fail, the next time an enemy deals damage to them before the start of your next Turn, it is doubled.</li><li>If you roll a 1 on any of the Damage Dice for this Attack, reroll them, keeping the new result. Furthermore, if you roll the maximum amount on any Damage Dice, you roll another Damage Die of the same die size you rolled max on (neither of the reroll abilities apply to additional dice gained in this way).<\/li><\/ul>",
+            "As a Bonus Action, you may make a single Attack, so long as that Attack deals slashing damage. When you land this Attack, you force your taget to make a Save against a DC of 8 + twice your Proficiency Bonus. You choose one of the following options:<ul><li>The target is forced to make a Con Save. If they fail, the next time an enemy deals damage to them before the start of your next Turn, it is doubled.</li><li>If you roll a 1 on any of the Damage Dice for this Attack, reroll them, keeping the new result. Furthermore, if you roll the maximum amount on any Damage Dice, you roll another Damage Die of the same die size you rolled max on (neither of the reroll abilities apply to additional dice gained in this way).<\/li><\/ul>",
             "Those who have Resistance to slashing damage have Advantage on the Saves, and those who have Immunity are immune to these effects as well."
         ]
     },

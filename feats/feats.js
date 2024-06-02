@@ -6,7 +6,7 @@ $(document).ready(function () {
     q = url.searchParams.get("search");
 
     if (f == null) {
-        f = "Adrenaline_Rush";
+        f = "Act_Modification";
         updateURL();
     }
 
@@ -70,7 +70,7 @@ function getData(q) {
     $.getJSON("feats.json", function(data) {
         fData = data;
         if (fData[f] == null)
-            f = "Adrenaline_Rush";
+            f = "Act_Modification";
         feats = Object.keys(fData);
         if (f == "Epic Feat" || (fData[f].prereq != null && fData[f].prereq.includes("Epic")))
             search("Epic Feat");
