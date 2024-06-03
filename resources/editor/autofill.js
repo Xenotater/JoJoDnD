@@ -280,14 +280,14 @@ function updateAC() {
 
 function updateSAC() {
     var pre = parseInt($("#Sdex-mod").val()), dur = parseInt($("#Scon-mod").val()), spd = parseInt($("#Swis-mod").val());
-    var sac = 10 + pre + dur + spd - Math.min(pre, dur, spd);
+    var sac = 10 + pre + dur + spd;
     if (isNaN(sac))
         sac = "";
     $("#sac").val(sac);
 }
 
 function updateHAC() {
-    var hac = parseInt($("#ac").val()) + 5;
+    var hac = parseInt($("#ac").val()) + parseInt($("#bonus").val());
     if (isNaN(hac))
         hac = "";
     $("#hac").val(hac);
