@@ -762,7 +762,7 @@
         "name": "Act Modification",
         "desc": "Allows you to gain a slightly modified Act Stand.",
         "effects": [
-            "Allows you to take an Act Modifier whenever it appears as a Class Feature."
+            "Allows you to take an <a href='/abilities/?focus=Act_Modifier'>Act Modifier</a> whenever it appears as a Class Feature."
         ],
         "prereq": "<a href='/classes/?focus=Act'>Act-Type</a> Level 1+"
     },

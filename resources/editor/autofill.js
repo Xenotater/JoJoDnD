@@ -31,10 +31,7 @@ $(document).ready(function () {
         });
 
         $(".skillcheck").change(function () {
-            var skill = $(this).attr("id");
-            var classes = $("#" + skill + "-bonus").attr('class').split(/\s+/);
-            var stat = classes[2].replace("-skill", "");
-            updateSkills(stat);
+            updateAllSkills();
         });
     }
 
@@ -318,7 +315,7 @@ function updateAllSaves() {
 
 function updateSkills(stat) {
     $("." + stat + "-skill").each(function () {
-        var skill = $(this).attr("id").replace("-bonus", "");
+        var skill = $(this).attr("id").replace(/-bonus[0-2]?/, "");
         var mod = parseInt($("#" + stat + "-mod").val());
         var bonus = parseInt($("#bonus").val());
         var val = "";
