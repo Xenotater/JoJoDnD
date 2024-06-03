@@ -63,22 +63,30 @@ $(document).ready(function () {
         }
     });
 
-    $("#image").hover(imgOn, imgOff);
+    $("#image").hover(() => {imgOn(true)}, () => {imgOff(true)});
 
-    $("#upload").click(function() {
+    $("#upload, #edit").click(function() {
         $("#img-input").click();
-        imgOff();
-        imgOn();
-    });
-
-    $("#edit").click(function() {
-        $("#img-input").click();
-        imgOff();
-        imgOn();
+        imgOff(true);
+        imgOn(true);
     });
 
     $("#reset").click(function() {
-        resetImg();
+        resetImg(true);
+        imgOff(true);
+        imgOn(true);
+    });
+
+    $("#sImage").hover(() => {imgOn(false)}, () => {imgOff(false)});
+
+    $("#upload2, #edit2").click(function() {
+        $("#img-input2").click();
+    });
+
+    $("#reset2").click(function() {
+        resetImg(false);
+        imgOff(false);
+        imgOn(false);
     });
 
     //img upload render assisted by https://medium.com/@iamcodefoxx/how-to-upload-and-preview-an-image-with-javascript-749b92711b91
@@ -89,6 +97,21 @@ $(document).ready(function () {
             $("#char-img").attr("src", upload);
             $("#char-img").css("display", "unset");
             $("#image").css("background-color", "black");
+            imgOff(true);
+            imgOn(true);
+        });
+        reader.readAsDataURL(this.files[0]);
+    });
+    
+    $("#img-input2").change(function() {
+        var reader = new FileReader();
+        reader.addEventListener("load", () => {
+            var upload = reader.result;
+            $("#stand-img").attr("src", upload);
+            $("#stand-img").css("display", "unset");
+            $("#sImage").css("background-color", "black");
+            imgOff(false);
+            imgOn(false);
         });
         reader.readAsDataURL(this.files[0]);
     });
@@ -124,27 +147,42 @@ $(document).ready(function () {
     });
 });
 
-function imgOn() {
-    if ($("#char-img").attr("src") == "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=")
-        $("#upload").css("display", "unset");
-    else {
-        $("#edit").css("display", "unset");
-        $("#reset").css("display", "unset");
+function imgOn(isMain) {
+    let imgId = "#char-img", idAdd = "";
+    if (!isMain) {
+        imgId = "#stand-img";
+        idAdd = "2";
     }
-    $("#blur").css("display", "unset");
+
+    if ($(imgId).attr("src") == "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=")
+        $("#upload" + idAdd).css("display", "unset");
+    else {
+        $("#edit" + idAdd).css("display", "unset");
+        $("#reset" + idAdd).css("display", "unset");
+    }
+    $("#blur" + idAdd).css("display", "unset");
 }
 
-function imgOff() {
-    $(".img-icon").css("display", "none");
-    $("#blur").css("display", "none");
+function imgOff(isMain) {
+    let idAdd = "";
+    if (!isMain) {
+        idAdd = "2";
+    }
+
+    $(".img-icon" + idAdd).css("display", "none");
+    $("#blur" + idAdd).css("display", "none");
 }
 
-function resetImg() {
-    $("#char-img").attr("src", "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=");
-    $("#char-img").css("display", "none");
-    $("#image").css("background-color", "white");
-    imgOff();
-    imgOn();
+function resetImg(isMain) {
+    let imgId = "#char-img", idAdd = "i";
+    if (!isMain) {
+        imgId = "#stand-img";
+        idAdd = "sI";
+    }
+
+    $(imgId).attr("src", "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=");
+    $(imgId).css("display", "none");
+    $("#" + idAdd + "mage").css("background-color", "white");
 }
 
 //PDF generation assisted by https://www.freakyjolly.com/html2canvas-multipage-pdf-tutorial/
@@ -214,10 +252,12 @@ function filter(node) {
 }
 
 function exportData(mode) {
+    saveAct();
     var data = {};
     data["form"] = JSON.stringify($("#pages").serializeArray());
     data["acts"] = JSON.stringify(actScores);
     data["img"] = $("#char-img").attr("src");
+    data["img2"] = $("#stand-img").attr("src");
     var file = new Blob([JSON.stringify(data)], {type: "text/plain"});
 
     var name;
@@ -229,7 +269,7 @@ function exportData(mode) {
     if (mode == "export")
         saveAs(file, name + "_data.json");
     else if (mode == "save")
-        return [name, data["form"], data["acts"], data["img"]];
+        return [name, data["form"], data["acts"], data["img"], data["img2"]];
 }
 
 //thanks to kflorence for creating a deserialize plugin https://stackoverflow.com/a/8918929
@@ -241,9 +281,13 @@ function importData(data) {
     if (data["acts"]) {
         actScores = JSON.parse(data["acts"]);
         if ($("#class").val() == "act")
-            updateAct(0, false);
+            loadAct(0);
     }
     saveScores();
+    
+    if ($("#autofill").is(":checked"))
+        updateAllSkills(); //ensure new fields get filled out
+    updateProfs(); //this should always display
 
     $("#char-img").attr("src", data["img"]);
     if ($("#char-img").attr("src") == "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=") {
@@ -253,6 +297,19 @@ function importData(data) {
     else {
         $("#char-img").css("display", "unset");
         $("#image").css("background-color", "black");
+    }
+
+    if (data["img2"] == "") //ensure older data w/o this field still load properly
+        data["img2"] = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=";
+
+    $("#stand-img").attr("src", data["img2"]);
+    if ($("#stand-img").attr("src") == "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=") {
+        $("#stand-img").css("display", "none");
+        $("#sImage").css("background-color", "white");
+    }
+    else {
+        $("#stand-img").css("display", "unset");
+        $("#sImage").css("background-color", "black");
     }
 
     $(".scales").each(function() {
@@ -274,6 +331,7 @@ function importData(data) {
         $("#act-num").css("display", "none");
 
     checkMeta();
+    updateChart();
 }
 
 function scale(object) {

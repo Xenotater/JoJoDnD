@@ -39,7 +39,7 @@ function updateDisplay() {
     var newContent = "";
 
     newContent += "<h2 class='display-title'>" + race.name + "</h2><div class='display-img'><img class='img-fluid' src='Assets/" + r + ".webp' alt='" + r + "'></div>";
-    if (race.examples != null) {
+    if (race.examples != null && race.links != null && race.examples.length == race.links.length) {
         newContent += "<p class='center'><small><b>Examples of " + (race.name + 's').replace(/Mans$/g, "Men") + ": </b><i>";
         for (let i = 0; i < race.examples.length; i++) {
             newContent += "<a href='https://jojowiki.com/" + race.links[i] + "' target='_blank'>"  + race.examples[i] + "</a>";
@@ -78,7 +78,7 @@ function updateDisplay() {
             newContent += "<tr><td>" + i + "</td><td>" + race.level[i].energy + "</td><td>";
             if (race.level[i].special != null)
                 newContent += race.level[i].special;
-            else
+            else if (race.level[i].feats != null)
                 for (let j = 0; j < race.level[i].feats.length; j++) {
                     newContent += "<a href='/abilities/?focus=" + race.level[i].feats[j].replace(/ /g, "_") + "'>" + race.level[i].feats[j] + "</a>";
                     if (j != race.level[i].feats.length-1)

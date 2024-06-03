@@ -1,6 +1,7 @@
 var scores = { "str": 0, "dex": 0, "con": 0, "int": 0, "wis": 0, "cha": 0 };
 var actScores = [[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0]];
 var act = 0;
+var chart;
 
 $(document).ready(function () {
     if ($("#autofill").is(":checked")) {
@@ -36,18 +37,27 @@ $(document).ready(function () {
             updateSkills(stat);
         });
     }
+
+    createChart();
+
+    $(".bigBox, .lilBox").keyup(function() {
+        updateChart();
+    });
+
+    
+    $("#act-num").on("change", function() {
+        if ($(this).val() > 3)
+            $(this).val(3);
+        if ($(this).val() < 0)
+            $(this).val(0);
+        saveAct();
+        loadAct($(this).val());
+        updateChart();
+    });
 });
 
 function detectChange(object) {
     var id = $(object).attr("id");
-
-    if (id == "act-num") {
-        if ($(object).val() > 3)
-            $(object).val(3);
-        if ($(object).val() < 0)
-            $(object).val(0);
-        updateAct($(object).val(), true);
-    }
 
     if ($(object).hasClass("scales")) {
         scale(object);
@@ -69,10 +79,15 @@ function detectChange(object) {
         var stat = id.replace("-mod", "");
         updateSave(stat);
         updateSkills(stat);
+        fixMod(object);
     }
 
     if ($(object).hasClass("stand-score")) {
         updateStandMod(id.replace("S", "").replace("-score", ""));
+    }
+
+    if ($(object).hasClass("stand-mod")) {
+        fixMod(object);
     }
 
     if (id == "name" || id == "Uname" || id == "Fname") {
@@ -128,6 +143,12 @@ function detectChange(object) {
         default:
             break;
     }
+}
+
+function fixMod(object) {
+    var val = $(object).val();
+    if (val > 0)
+        $(object).val("+" + val);
 }
 
 function saveScore(object) {
@@ -211,6 +232,7 @@ function updateStandScore(stat, diff) {
     updateSpeed();
     updateSAC();
     updateAtks();
+    updateChart();
 }
 
 function updateStandMod(stat) {
@@ -258,14 +280,14 @@ function updateAC() {
 
 function updateSAC() {
     var pre = parseInt($("#Sdex-mod").val()), dur = parseInt($("#Scon-mod").val()), spd = parseInt($("#Swis-mod").val());
-    var sac = 10 + pre + dur + spd - Math.min(pre, dur, spd);
+    var sac = 10 + pre + dur + spd;
     if (isNaN(sac))
         sac = "";
     $("#sac").val(sac);
 }
 
 function updateHAC() {
-    var hac = parseInt($("#ac").val()) + 5;
+    var hac = parseInt($("#ac").val()) + parseInt($("#bonus").val());
     if (isNaN(hac))
         hac = "";
     $("#hac").val(hac);
@@ -322,6 +344,7 @@ function updateSkills(stat) {
 function updateAllSkills() {
     updateSkills("str");
     updateSkills("dex");
+    updateSkills("con");
     updateSkills("int");
     updateSkills("wis");
     updateSkills("cha");
@@ -352,14 +375,10 @@ function updatePassive() {
 
 function updateProfs() {
     var mod = parseInt($("#int-mod").val());
-    if (isNaN(mod))
-        mod = 1;
-    if (mod < 1)
-        mod = 1;
-    if ($("#int-score").val() != "")
-        $("#skillcnt").html(" (+" + mod + ")");
-    else
+    if (isNaN(mod) || mod < 1)
         $("#skillcnt").html("");
+    else
+        $("#skillcnt").html(" (+" + mod + ")");
 }
 
 function updateAtks() {
@@ -373,12 +392,12 @@ function updateFeats() {
     var level = $("#level").val();
     if (!isNaN(level)) {
         var feats = "";
-        if (level > 19)
+        if (level > 20)
             feats = 6;
         else if (level < 1)
             feats = 2;
         else
-            feats = Math.floor((level - 1) / 5) + 2;
+            feats = Math.ceil(level / 4) + 1;
         $("#featcnt").html(" (+" + feats + ")");
     }
     else
@@ -400,15 +419,16 @@ function updateName(id) {
     }
 }
 
-function updateAct(newAct, saveFirst) {
-    if (saveFirst) {
-        actScores[act][0] = parseInt($("#Sstr-score").val()) || 0;
-        actScores[act][1] = parseInt($("#Sdex-score").val()) || 0;
-        actScores[act][2] = parseInt($("#Scon-score").val()) || 0;
-        actScores[act][3] = parseInt($("#Sint-score").val()) || 0;
-        actScores[act][4] = parseInt($("#Swis-score").val()) || 0;
-        actScores[act][5] = parseInt($("#Scha-score").val()) || 0;
-    }
+function saveAct() {
+    actScores[act][0] = parseInt($("#Sstr-score").val()) || 0;
+    actScores[act][1] = parseInt($("#Sdex-score").val()) || 0;
+    actScores[act][2] = parseInt($("#Scon-score").val()) || 0;
+    actScores[act][3] = parseInt($("#Sint-score").val()) || 0;
+    actScores[act][4] = parseInt($("#Swis-score").val()) || 0;
+    actScores[act][5] = parseInt($("#Scha-score").val()) || 0;
+}
+
+function loadAct(newAct) {
     act = newAct;
     $("#Sstr-score").val(actScores[act][0]);
     $("#Sdex-score").val(actScores[act][1]);
@@ -447,4 +467,74 @@ function saveScores() {
     saveScore($("#int-score"));
     saveScore($("#wis-score"));
     saveScore($("#cha-score"));
+}
+
+function createChart() {
+    chart = new Chart($("#sArrayChart")[0], {
+        type: 'radar',
+        data: {
+            labels: ['Power', 'Speed', 'Range', 'Durability', 'Precision', 'Potential'],
+            datasets: [{
+                data: getChartData(),
+                fill: true,
+                backgroundColor: 'rgba(255, 0, 0, 0.3)',
+                borderColor: 'rgba(255, 0, 0, 0.7)',
+                pointBackgroundColor: 'rgba(255, 0, 0, 0.7)',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: 'rgba(255, 0, 0, 0.7)',
+                pointRadius: 4
+            }]
+        },
+        options: {
+            scales: {
+                r: {
+                    min: 0,
+                    suggestedMax: 120,
+                    ticks: {
+                        beginAtZero: true,
+                        stepSize: 20,
+                        font: {
+                            size: 8
+                        }
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                  display: false,
+                }
+            }
+        }
+    });
+    updateChart();
+}
+
+function updateChart() {
+    $("#sArrayChart").show();
+    let data = getChartData();
+    let set = new Set(data);
+    if (set.size == 1 && set.has(0)) {
+        $("#sArrayChart").hide();
+    }
+    else {
+        chart.data.datasets[0].data = data;
+        chart.update();
+    }
+}
+
+function getChartData() {
+    let data = [];
+    data.push(getIntVal($("#Sstr-score")));
+    data.push(getIntVal($("#Swis-score")));
+    data.push(getIntVal($("#Sint-score")));
+    data.push(getIntVal($("#Scon-score")));
+    data.push(getIntVal($("#Sdex-score")));
+    data.push(getIntVal($("#Scha-score")));
+    return data;
+}
+
+function getIntVal(elem) {
+    let val = parseInt(elem.val());
+    return isNaN(val) ? 0 : val;
 }

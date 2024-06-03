@@ -1,7 +1,6 @@
-var c, cData;
+var c, cData, modData, viewModular = false;;
 
 $(document).ready(function() {
-    var sdropped = true, ndropped = true;
     var url = new URL(window.location.href);
     c = url.searchParams.get("focus");
 
@@ -36,8 +35,14 @@ $(document).ready(function() {
 
     $(".list-link").click(function() {
         c = $(this).attr("id");
+        viewModular = false;
         updateURL();
         updateDisplay();
+    });
+
+    $("body").on("change", "#modular-switch", function() {
+        viewModular = !viewModular;
+        updateLevelupTable();
     });
 });
 
@@ -50,7 +55,11 @@ function getData() {
         cData = data;
         if (cData[c] == null && cData["Stands"].types[c] == null && cData["Non-Supernatural"].types[c] == null)
             c = "Stands";
-        updateDisplay();
+
+        $.getJSON("modular.json", function(data) {
+            modData = data;
+            updateDisplay();
+        });
     });
 
     $("#display").html("<div class='loading'></div>");
@@ -115,7 +124,7 @@ function updateDisplay() {
         for (let i = 0; i < clss.other.length; i++) {
             newContent += "<h4 class='display-heading'>" + clss.other[i].name + "</h4>";
             for (let j = 0; j < clss.other[i].content.length; j++)
-            newContent += clss.other[i].content[j];
+                newContent += clss.other[i].content[j];
         }
 
     if (clss.mults != null) {
@@ -152,133 +161,95 @@ function updateDisplay() {
         }
 
     if (clss.level != null) {
-        newContent += "<h4 class='display-heading'>Leveling Up</h4>";
-        newContent += "<table class='table table-striped levels' id='" + clss.theme + "'><thead><tr><th>Level</th><th>Pro. Bonus</th><th>Feats</th><th>Features</th>";
+        newContent += "<div id='levelup-header'><h4 class='display-heading'>Leveling Up</h4>"
+        newContent += "<div id='modular-switch-box'><label>Modular Variant</label>"
+        newContent += "<label class='switch horizontal'><input type='checkbox' id='modular-switch'";
+        newContent += viewModular ? " checked " : "";
+        newContent += "><span class='slider round horizontal'></span></label>";
+        newContent += "</div></div>";
+        newContent += "<table class='table table-striped levels' id='" + clss.theme + "'><thead><tr><th>Level</th><th>Pro. Bonus</th><th>Features</th>";
         if(clss.otherCols != null)
             for (let i = 0; i < clss.otherCols.length; i++)
                 newContent += "<th>" + clss.otherCols[i].name + "</th>"
-        newContent += "</tr></thead><tbody>";
-        for (let i = 1; i <= 20; i++) {
-            l = clss.level[i];
-            newContent += "<tr><td>" + i + "</td><td>+" + l.pro + "</td><td>" + l.feats + "</td><td>";
-            if (l.otherFeatures != null)
-                for (let j = 0; j < l.otherFeatures.length; j++) {
-                    newContent += l.otherFeatures[j];
-                    if (j != l.otherFeatures.length-1 || l.linkFeatures != null || l.featFeatures != null || l.ability != null)
-                        newContent += " | ";
-                }
-            if (l.linkFeatures != null)
-                for (let j = 0; j < l.linkFeatures.length; j++) {
-                    if (l.linkFeatures[j] != "OR") {
-                        var f = l.linkFeatures[j];
-                        if (f.includes("(")) {
-                            f = l.linkFeatures[j].split(" (");
-                            f[1] = " (" + f[1];
-                            newContent += "<a href='/abilities/?focus=" + f[0].replace(/[ -]/g, "_") + "'>" + f[0] + "</a>" + f[1];
-                        }
-                        else
-                            newContent += "<a href='/abilities/?focus=" + f.replace(/[ -]/g, "_") + "'>" + f + "</a>"
-                        if ((j != l.linkFeatures.length-1 || l.featFeatures != null ||l.ability != null) && l.linkFeatures[j+1] != "OR")
-                            newContent += " | ";
-                    }
-                    else
-                        newContent += " OR ";
-                }
-            if (l.featFeatures != null)
-                for (let j = 0; j < l.featFeatures.length; j++) {
-                    if (l.featFeatures[j] != "OR") {
-                        newContent += "<a href='/feats/?focus=" + l.featFeatures[j].replace(/[']/g, "").replace(/[ -]/g, "_") + "'>" + l.featFeatures[j] + "</a>";
-                        if ((j != l.featFeatures.length-1 || l.ability != null) && l.featFeatures[j+1] != "OR")
-                            newContent += " | ";
-                    }
-                    else
-                        newContent += " OR ";
-                }
-            if (l.ability != null)
-                for (let j = 0; j < l.ability.length; j++) {
-                    newContent += l.ability[j];
-                    if (j != l.ability.length-1)
-                        newContent += " | ";
-                }
-            if (l.otherFeatures == null && l.linkFeatures == null && l.featFeatures == null && l.ability == null)
-                newContent += "-";
-            newContent += "</td>";
-            if (clss.otherCols != null)
-                for (let j = 0; j < clss.otherCols.length; j++)
-                    newContent += "<td>" + clss.otherCols[j].level[i] + "</td>";
-            newContent += "</tr>";
-        }
-        newContent += "</tbody></table>";
-    }
-
-    if (c == "Act") {
-        for (let i = 0; i < 4; i++) {
-            var a = clss.acts[i];
-            newContent += "<h4 class='display-heading'>Act " + i + "</h4>";
-            newContent += "<p><b>Note: </b><i>" + a.note + "</i></p>";
-            newContent += "<p><b>Attack Dice:</b> " + a.aDice + "</p>";
-            newContent += "<b>Ability Score Multipliers:</b>";
-            newContent += "<table class='table table-striped minor'><thead><tr><th>Stat</th><th>Multiplier</tr></thead><tbody>";
-            newContent += "<tr><td>Power</td><td>Str x" + a.mults[0] + "</td></tr>";
-            newContent += "<tr><td>Precision</td><td>Dex x" + a.mults[1] + "</td></tr>";
-            newContent += "<tr><td>Durability</td><td>Con x" + a.mults[2] + "</td></tr>";
-            newContent += "<tr><td>Range</td><td>Int x" + a.mults[3] + "</td></tr>";
-            newContent += "<tr><td>Speed</td><td>Wis x" + a.mults[4] + "</td></tr>";
-            newContent += "<tr><td>Stand Energy</td><td>Cha x" + a.mults[5] + "</td></tr>";
-            newContent += "</tbody></table>";
-            newContent += "<b>Leveling Up:</b>";
-            newContent += "<table class='table table-striped levels echoes'><thead><tr><th>Level</th><th>Pro. Bonus</th><th>Feats</th><th>Features</th><th>Ability Dice</th></tr></thead><tbody>";
-            for (let j = 0; j < a.level.length; j++) {
-                l = a.level[j];
-                newContent += "<tr><td>" + l.lvl + "</td><td>+" + l.pro + "</td><td>" + l.feats + "</td><td>";
-                if (l.otherFeatures != null)
-                    for (let j = 0; j < l.otherFeatures.length; j++) {
-                        newContent += l.otherFeatures[j];
-                        if (j != l.otherFeatures.length-1 || l.linkFeatures != null || l.featFeatures != null || l.ability != null)
-                            newContent += " | ";
-                    }
-                if (l.linkFeatures != null)
-                    for (let j = 0; j < l.linkFeatures.length; j++) {
-                        if (l.linkFeatures[j] != "OR") {
-                            var f = l.linkFeatures[j];
-                            if (f.includes("(")) {
-                                f = l.linkFeatures[j].split(" (");
-                                f[1] = " (" + f[1];
-                                newContent += "<a href='/abilities/?focus=" + f[0].replace(/[ -]/g, "_") + "'>" + f[0] + "</a>" + f[1];
-                            }
-                            else
-                                newContent += "<a href='/abilities/?focus=" + f.replace(/[ -]/g, "_") + "'>" + f + "</a>"
-                            if ((j != l.linkFeatures.length-1 || l.featFeatures != null ||l.ability != null) && l.linkFeatures[j+1] != "OR")
-                                newContent += " | ";
-                        }
-                        else
-                            newContent += " OR ";
-                    }
-                if (l.featFeatures != null)
-                    for (let j = 0; j < l.featFeatures.length; j++) {
-                        if (l.featFeatures[j] != "OR") {
-                            newContent += "<a href='/feats/?focus=" + l.featFeatures[j].replace(/[ -]/g, "_") + "'>" + l.featFeatures[j] + "</a>";
-                            if (j != l.featFeatures.length-1 || l.ability != null)
-                                newContent += " | ";
-                        }
-                        else
-                            newContent += " OR ";
-                    }
-                if (l.ability != null)
-                    for (let j = 0; j < l.ability.length; j++) {
-                        newContent += l.ability[j];
-                        if (j != l.ability.length-1)
-                            newContent += " | ";
-                    }
-                if (l.otherFeatures == null && l.linkFeatures == null && l.featFeatures == null && l.ability == null)
-                    newContent += "-";
-                newContent += "</td><td>" + l.abilDice + "</td></tr>";
-            }
-            newContent += "</tbody></table>";
-        }
+        newContent += "</tr></thead><tbody></tbody></table>";
     }
     
     $("#display").html(newContent);
     $(".listCurrent").removeClass("listCurrent");
     $("#" + c).addClass("listCurrent");
+
+    updateLevelupTable();
+}
+
+function updateLevelupTable() {
+    let clss = cData[c];
+    let newContent = "";
+
+    if ($("#" + c).hasClass("stand-type"))
+        clss = cData["Stands"].types[c];
+
+    if ($("#" + c).hasClass("non-super"))
+        clss = cData["Non-Supernatural"].types[c];
+    
+    for (let i = 1; i <= 20; i++) {
+        let l = viewModular ? modData[c][i-1] : clss.level[i];
+        newContent += "<tr><td>" + i + "</td><td>+" + calcPB(i) + "</td><td>";
+        if (l.otherFeatures != null)
+            for (let j = 0; j < l.otherFeatures.length; j++) {
+                newContent += l.otherFeatures[j];
+                if (j != l.otherFeatures.length-1 || l.linkFeatures != null || l.featFeatures != null || l.ability != null)
+                    newContent += " | ";
+            }
+        if (l.linkFeatures != null)
+            for (let j = 0; j < l.linkFeatures.length; j++) {
+                if (l.linkFeatures[j] != "OR") {
+                    var f = l.linkFeatures[j];
+                    if (f.includes("(")) {
+                        f = l.linkFeatures[j].split(" (");
+                        f[1] = " (" + f[1];
+                        newContent += "<a href='/abilities/?focus=" + f[0].replace(/[ -]/g, "_").replace("'", "") + "'>" + f[0] + "</a>" + f[1];
+                    }
+                    else
+                        newContent += "<a href='/abilities/?focus=" + f.replace(/[ -]/g, "_").replace("'", "") + "'>" + f + "</a>"
+                    if ((j != l.linkFeatures.length-1 || l.featFeatures != null ||l.ability != null) && l.linkFeatures[j+1] != "OR")
+                        newContent += " | ";
+                }
+                else
+                    newContent += " OR ";
+            }
+        if (l.featFeatures != null)
+            for (let j = 0; j < l.featFeatures.length; j++) {
+                if (l.featFeatures[j] != "OR") {
+                    newContent += "<a href='/feats/?focus=" + l.featFeatures[j].replace(/[']/g, "").replace(/[ -]/g, "_") + "'>" + l.featFeatures[j] + "</a>";
+                    if ((j != l.featFeatures.length-1 || l.ability != null) && l.featFeatures[j+1] != "OR")
+                        newContent += " | ";
+                }
+                else
+                    newContent += " OR ";
+            }
+        if (l.ability != null)
+            for (let j = 0; j < l.ability.length; j++) {
+                newContent += l.ability[j];
+                if (j != l.ability.length-1)
+                    newContent += " | ";
+            }
+        if (l.otherFeatures == null && l.linkFeatures == null && l.featFeatures == null && l.ability == null)
+            newContent += "-";
+        newContent += "</td>";
+        if (clss.otherCols != null)
+            for (let j = 0; j < clss.otherCols.length; j++)
+                newContent += "<td>" + clss.otherCols[j].level[i] + "</td>";
+        newContent += "</tr>";
+    }
+
+    $("table.levels tbody").html(newContent);
+}
+
+function calcPB(level) {
+    if (level > 20)
+        return 6;
+    else if (level < 1)
+        return 2;
+    else
+        return Math.ceil(level / 4) + 1;
 }

@@ -6,7 +6,7 @@ $(document).ready(function () {
     q = url.searchParams.get("search");
 
     if (a == null) {
-        a = "Act_4";
+        a = "Ability_Feature";
         updateURL();
     }
 
@@ -19,7 +19,7 @@ $(document).ready(function () {
     });
 
     $("#display").on("click", "a.in-page", function() {
-        a= $(this).html().replace(/[ -]/g, "_");
+        a= $(this).html().replace(/[ -]/g, "_").replace("'", "");
         updateURL();
         updateDisplay();
     });
@@ -79,7 +79,7 @@ function getData(q) {
     $.getJSON("abilities.json", function(data) {
         aData = data;
         if (aData[a] == null)
-            a = "Act_4";
+            a = "Ability_Feature";
         for (var key of Object.keys(aData))
             abilities.push([key, aData[key]]);
         updateList();
@@ -107,7 +107,7 @@ function updateList() {
         var classes = abil.classes;
         var races = abil.races;
 
-        var newContent = "<tr class='list-link' id='" + abil.name.replace(/[ -]/g, "_") + "'><td>" + abil.name + "</td><td>";
+        var newContent = "<tr class='list-link' id='" + abil.name.replace(/[ -]/g, "_").replace("'", "") + "'><td>" + abil.name + "</td><td>";
         for (let i = 0; i < abil.classes.length; i++) {
             newContent += abil.classes[i];
             if (i != abil.classes.length - 1)
@@ -146,20 +146,32 @@ function parseTypes(classes) {
             var cls = "", lnk = "", page = "classes";
             switch (classes[i]) {
                 case "Ass":
-                    cls = "Assassins",
-                    lnk = "Assassin"
+                    cls = "Assassins";
+                    lnk = "Assassin";
                     break;
                 case "Sch":
-                    cls = "Scholars",
-                    lnk = "Scholar"
+                    cls = "Scholars";
+                    lnk = "Scholar";
                     break;
                 case "Con":
-                    cls = "Consuls",
-                    lnk = "Consul"
+                    cls = "Consuls";
+                    lnk = "Consul";
                     break;
                 case "War":
-                    cls = "Warriors",
-                    lnk = "Warrior"
+                    cls = "Warriors";
+                    lnk = "Warrior";
+                    break;
+                case "Art":
+                    cls = "Artisans";
+                    lnk = "Artisan";
+                    break;
+                case "Hvy":
+                    cls = "Heavyweights";
+                    lnk = "Heavyweight";
+                    break;
+                case "Rgr":
+                    cls = "Rangers";
+                    lnk = "Ranger";
                     break;
                 case "Pwr":
                     cls = "Power-Type Stands";
@@ -245,17 +257,17 @@ function parseTypes(classes) {
                     lnk = "Rock_Human";
                     break;
                 case "Corpse":
-                    cls = "Holy Corpse Holder";
+                    cls = "Holy Corpse Holders";
                     page = "artifacts";
                     lnk = "Holy_Corpse_Parts";
                     break;
                 case "Heav":
-                    cls = "Heaven Stand";
+                    cls = "Heaven Stands";
                     page = "artifacts";
                     lnk = "Heaven";
                     break;
                 case "Req":
-                    cls = "Requiem Stand";
+                    cls = "Requiem Stands";
                     page = "artifacts";
                     lnk = "Stand_Arrow";
                     break;

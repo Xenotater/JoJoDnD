@@ -154,19 +154,20 @@ function displayClass(fam) {
     l = fam.levels[i];
     text += "<tr><td>" + i + "</td><td>+" + l.pro + "</td><td>" + l.feats + "</td><td>";
 
-    if (l.other != null) {
-      text += l.other;
-      if (l.features != null)
-        text += ", ";
-    }
-
     if (l.features != null) {
       for (let j=0; j<l.features.length; j++) {
         if (l.features[j] == "OR")
           text += " OR ";
-        else
+        else {
           text += "<a class='in-page' id='" + l.features[j].replace(/[ -]/g, "_") + "-link'>" + l.features[j] + "</a>";
+          if ((j != l.features.length - 1 && l.features[j+1] != "OR") || l.other != null)
+            text += " | "
+        }
       }
+    }
+
+    if (l.other != null) {
+      text += l.other;
     }
 
     text += "<td>" + l.dice + "dx</td>";

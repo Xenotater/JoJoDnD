@@ -61,10 +61,10 @@
         }
     }
     ?>
-        <h1 id='greeting'><?php echo $user; ?>'s Saved Characters</h1>
+        <h1 id='greeting'><?php echo htmlspecialchars($user); ?>'s Saved Characters</h1>
         <div id='chars'>
         <?php for ($i = 0; $i < count($characters); $i++) {
-            $id = $characters[$i]["ID"]; ?>
+            $id = htmlspecialchars($characters[$i]["ID"]); ?>
             <div class='charCard' id='char<?php echo $id; ?>'>
             <i class='bi bi-three-dots-vertical' id='opt<?php echo $id; ?>'></i><div class='drop' id='drop<?php echo $id; ?>'>
             <a href='#'>Rename</a><a href='#'>Duplicate</a><a href='#'>Delete</a></div>
@@ -72,12 +72,12 @@
             <?php if ($characters[$i]["Image"] == "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=")
                 $characters[$i]["Image"] = "../Assets/.default.webp";
             if ($user == "admin") { ?>
-                <img class='charImgA' src='<?php echo $characters[$i]["Image"]; ?>' alt='charImg'>
-                <p class='charInfo'><?php echo $characters[$i]["Username"]; ?><br><?php echo $characters[$i]["Name"]; ?></p>
+                <img class='charImgA' src='<?php echo htmlspecialchars($characters[$i]["Image"]); ?>' alt='charImg'>
+                <p class='charInfo'><?php echo htmlspecialchars($characters[$i]["Username"]); ?><br><?php echo htmlspecialchars($characters[$i]["Name"]); ?></p>
             <?php }
             else { ?>
-                <img class='charImg' src='<?php echo $characters[$i]["Image"]; ?>' alt='charImg'>
-                <p class='charName'><?php echo $characters[$i]["Name"]; ?></p>
+                <img class='charImg' src='<?php echo htmlspecialchars($characters[$i]["Image"]); ?>' alt='charImg'>
+                <p class='charName'><?php echo htmlspecialchars($characters[$i]["Name"]); ?></p>
             <?php } ?>
             </div></div>
         <?php } ?>

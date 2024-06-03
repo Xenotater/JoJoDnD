@@ -104,12 +104,12 @@ input {
 
 #savebox {
     float: left;
-    width: 40%;
+    width: 25%;
 }
 
 #skillbox {
     float: left;
-    width: 60%;
+    width: 75%;
     border-left: none;
 }
 
@@ -131,14 +131,18 @@ input {
     height: 15px;
 }
 
+.single-stat {
+    margin-right: 24px;
+}
+
 #stats {
-    width: 50%;
+    width: 30%;
     float: left;
     line-height: 17.75px;
 }
 
 #checks {
-    width: 50%;
+    width: 70%;
     float: left;
 }
 
@@ -146,15 +150,15 @@ input {
     height: 16px;
     width: 14px;
     float: left;
-    margin-left: .5rem;
+    margin-left: 4px;
     margin-top: 2px;
 }
 
 .save-bonus {
     height: 16px;
-    width: 35px;
+    width: 25px;
     float: left;
-    margin-left: .5rem;
+    margin-left: 4px;
     margin-top: 2px;
     border: none;
     border-bottom: 2px solid black;
@@ -166,7 +170,11 @@ input {
     padding-left: 5px;
 }
 
-#proflbl, #atkslbl, #insplbl {
+#proflbl {
+    padding-top: 5px;
+}
+
+#atkslbl, #insplbl {
     width: 100px;
     float: left;
     padding-top: 5px;
@@ -188,8 +196,8 @@ input {
 }
 
 #bonus {
-    width: 30px;
-    margin-right: 2px;
+    width: 25px;
+    margin-right: 8px;
 }
 
 #skills-list {
@@ -267,7 +275,7 @@ textarea {
 }
 
 #classbox, #featsbox, #otherbox {
-    height: 150px;
+    height: 151px;
 }
 
 #pages h2 {
@@ -279,23 +287,29 @@ textarea {
     width: 80%;
 }
 
-#Ulevel {
-    float: left;
-    width: 20%;
-    border-left: none;
-}
-
-#minionbox {
-    height: 225px;
-}
-
 #image {
     height: 336px;
     overflow: hidden;
+    position: relative;
 }
 
-#Ufeatbox, #Uatkbox {
-    height: 475px;
+#sImage, #sArrayBox {
+    height: 250px;
+    overflow: hidden;
+    border: 3px solid black;
+    position: relative;
+}
+
+#sArrayChart {
+    margin: auto;
+}
+
+#abilitybox {
+    height: 255px;
+}
+
+#minionbox, #othernotebox {
+    height: 180px;
 }
 
 #backbox {
@@ -324,17 +338,19 @@ textarea {
     height: 274px;
 }
 
-#image {
-    position: relative;
-}
-
 #char-img {
     display: none;
     height: 330px;
     width: auto;
 }
 
-#img-input {
+#stand-img {
+    display: none;
+    height: 244px;
+    width: auto;
+}
+
+#img-input, #img-input2 {
     display: none;
 }
 
@@ -348,7 +364,17 @@ textarea {
     background-color: rgba(240, 240, 240, 0.5);
 }
 
-#upload, #edit {
+#blur2 {
+    display: none;
+    position: absolute;
+    width: 358px;
+    height: 244px;
+    top: 0;
+    left: 0;
+    background-color: rgba(240, 240, 240, 0.5);
+}
+
+#upload, #edit, #upload2, #edit2 {
     display: none;
     position: absolute;
     top: calc(50% - 16px);
@@ -356,7 +382,7 @@ textarea {
     cursor: pointer;
 }
 
-#reset {
+#reset, #reset2 {
     display: none;
     position: absolute;
     top: 3px;

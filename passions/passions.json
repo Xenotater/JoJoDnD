@@ -3,195 +3,287 @@
         "name": "Academic",
         "stats": "Int +2, Con +1",
         "desc": "Academics do exactly as the name suggests. They study hard, or teach hard, using their intelligence and experience to do their jobs.",
-        "examples": ["Professors", "Accountants", "Teachers", "Programmers", "Scientists / Researchers"],
+        "examples": [
+            "Professors",
+            "Accountants",
+            "Teachers",
+            "Programmers",
+            "Researchers"
+        ],
         "saves": "You are Proficient in Intelligence and Constitution Saving Throws.",
-        "ability": "Your Intelligence Score increases by 2 and your Constitution Score increases by 1.",
         "custom": {
             "name": "Academic Studies",
-            "desc": "You have Proficiency in two of the following: Arcana, History, Investigation, Nature, or Religion."
+            "desc": "You have Proficiency in two of the following: Grit, Investigation, Knowledge, Science or Supernatural."
         },
-        "profs": 3,
         "alt": "Proficiency in three additional languages or Expertise in a skill that you're already Proficient in."
     },
     "Artist": {
         "name": "Artist",
         "stats": "Dex +2, Int +1",
-        "desc": "Using a variety of mediums, Artists create beautiful things to invoke feelings in people. Whether it be a comic, a painting, a sculpture, or a gourmet meal, Artists spend hours honing their craft.",
-        "examples": ["Writers", "Painters", "Sculptors", "Mangakas", "Acrobats", "Dancers", "Chefs"],
+        "desc": "Using a variety of mediums, Artists create beautiful things to invoke feelings in people. Whether it be a comic, a painting, a sculpture, or a heartfelt performance, Artists spend hours honing their craft.",
+        "examples": [
+            "Writers",
+            "Painters",
+            "Sculptors",
+            "Mangakas",
+            "Acrobats",
+            "Dancers"
+        ],
         "saves": "You are Proficient in Dexterity and Intelligence Saving Throws.",
-        "ability": "Your Dexterity Score increases by 2 and your Intelligence Score increases by 1.",
         "custom": {
             "name": "Artist's Soul",
-            "desc": "You have Proficiency in two of the following: Medicine, Sleight of Hand, Perception, or Performance."
+            "desc": "You have Proficiency in two of the following: Finesse, Medicine, Perception, or Presence."
         },
-        "profs": 3,
         "alt": "Proficiency in two sets of tools, three instruments, or Expertise in a skill, tool, or instrument that you're already Proficient in."
     },
     "Athlete": {
         "name": "Athlete",
         "stats": "Str +1, Dex +1, Con +1",
         "desc": "People who push their bodies to and past their physical limits in order to see the true potential of humanity.",
-        "examples": ["Olympians", "Professional Sports Players", "Marathon Runners", "High School Quarterbacks"],
+        "examples": [
+            "Some Olympians",
+            "Professional Sports Players",
+            "Marathon Runners",
+            "High School Quarterbacks"
+        ],
         "saves": "You are Proficient in two of the following Saving Throws: Strength, Dexterity, or Constitution.",
-        "ability": "Your Strength, Dexterity, and Constitution Scores increase by 1.",
         "custom": {
             "name": "Athletic Experience",
-            "desc": "You have Proficiency in two of the following: Athletics, Acrobatics, Medicine, Perception, Performance, or Sleight of Hand."
+            "desc": "You have Proficiency in two of the following: Athletics, Acrobatics, Finesse, Grit, Medicine, or Presence."
         },
-        "profs": 3,
         "alt": "Expertise in a skill that you're already Proficient in."
     },
     "Con_Artist": {
         "name": "Con Artist",
         "stats": "Cha +2, Wis +1",
         "desc": "Those who steal for their own greed. To attain power, money, or influence, these people take advantage of the Human brain in order to push other people to achieve their own goals.",
-        "examples": ["Certain Lawyers", "Fake Fortune Tellers", "Most Politicians", "Scammers", "Cult Leaders"],
+        "examples": [
+            "Certain Lawyers",
+            "Fake Fortune Tellers",
+            "Most Politicians",
+            "Scammers",
+            "Cult Leaders"
+        ],
         "saves": "You are Proficient in Charisma and Wisdom Saving Throws.",
-        "ability": "Your Charisma Score increases by 2 and your Wisdom Score increases by 1.",
         "custom": {
             "name": "Award-Winning Smile",
-            "desc": "You have Proficiency in two of the following: Deception, Insight, Persuasion, Sleight of Hand, or Religion."
+            "desc": "You have Proficiency in two of the following: Bluff, Finesse, Supernatural, or Vibe"
         },
-        "profs": 3,
         "alt": "Proficiency in two sets of tools or Expertise in a skill that you're already Proficient in."
     },
     "Hard_Laborer": {
         "name": "Hard Laborer",
         "stats": "Con +2, Str +1",
         "desc": "Some people make a living performing physically taxing jobs. Without them, society would not function.",
-        "examples": ["Construction Workers", "Garbage Collectors", "Coal Miners"],
+        "examples": [
+            "Construction Workers",
+            "Garbage Collectors",
+            "Coal Miners",
+            "Firefighters"
+        ],
         "saves": "You are Proficient in Constitution and Strength Saving Throws.",
-        "ability": "Your Constitution Score increases by 2 and your Strength Score increases by 1.",
         "custom": {
             "name": "Grit",
-            "desc": "You have Proficiency in two of the following: Athletics, Acrobatics, Animal Handling, or Intimidation."
+            "desc": "You have Proficiency in two of the following: Athletics, Care, Grit, or Intimidate."
         },
-        "profs": 3,
         "alt": "Proficiency in three additional languages, two sets of artisan tools, or Expertise in a skill that you're already Proficient in."
     },
     "Leader": {
         "name": "Leader",
         "stats": "Int +1, Wis +1, Cha +1",
         "desc": "Leaders are those who are able to sway others to help them perform great deeds, whether they be selfish or selfless. They are able to take charge of a situation and guide others along a specific path.",
-        "examples": ["Heads of a Community", "Heads of a Movement", "Some Politicians", "Royalty"],
+        "examples": [
+            "Heads of a Community",
+            "Heads of a Movement",
+            "Some Politicians",
+            "Royalty"
+        ],
         "saves": "You are Proficient in two of the following Saving Throws: Intelligence, Wisdom, or Charisma.",
-        "ability": "Your Intelligence, Wisdom, and Charisma Scores increase by 1.",
         "custom": {
             "name": "Leadership Experience",
-            "desc": "You have Proficiency in two of the following: Arcana, Deception, Insight, Performance, Perception, or Persuasion."
+            "desc": "You have Proficiency in two of the following: Bluff, Diplomacy, Perception, Presence, Supernatural, or Vibe"
         },
-        "profs": 3,
         "alt": "Expertise in a skill that you're already Proficient in."
     },
     "Performer": {
         "name": "Performer",
         "stats": "Cha +2, Con +1",
         "desc": "Those who perfect a craft in order to inspire, but also to hear the roar of the crowd.",
-        "examples": ["Stand Up Comedians", "Actors", "Musicians", "DJs"],
+        "examples": [
+            "Stand Up Comedians",
+            "Actors",
+            "Musicians",
+            "DJs"
+        ],
         "saves": "You are Proficient in Charisma and Constitution Saving Throws.",
-        "ability": "Your Charisma Score increases by 2 and your Constitution Score increases by 1.",
         "custom": {
             "name": "Crowd Pleaser",
-            "desc": "You have Proficiency in two of the following: Acrobatics, Deception, Persuasion, or Performance."
+            "desc": "You have Proficiency in two of the following: Acrobatics, Bluff, Diplomacy, or Presence."
         },
-        "profs": 3,
         "alt": "Proficiency in two sets of tools, three instruments, or Expertise in a skill, tool, or instrument that you're already Proficient in."
     },
     "Medical_Expert": {
         "name": "Medical Expert",
-        "stats": "Int +2, Wis +1",
+        "stats": "Wis +2, Int +1",
         "desc": "Medical Experts use their superior intellect, reasoning, and patience to assist the injured. Medical Experts have immense knowledge of anatomy, knowing how living things function in almost every way.",
-        "examples": ["Doctors", "Nurses", "Surgeons", "EMT Operators", "Veterinarians"],
+        "examples": [
+            "Doctors",
+            "Nurses",
+            "Surgeons",
+            "EMT Operators",
+            "Veterinarians"
+        ],
         "saves": "You are Proficient in Intelligence and Wisdom Saving Throws.",
-        "ability": "Your Intelligence Score increases by 2 and your Wisdom Score increases by 1.",
         "custom": {
             "name": "Medical Experience",
-            "desc": "You have Proficiency in two of the following: Animal Handling, Investigation, Medicine, Nature, or Sleight of Hand."
+            "desc": "You have Proficiency in two of the following: Care, Finesse, Investigation, or Medicine."
         },
-        "profs": 3,
         "alt": "Proficiency in two sets of tools or Expertise in a skill that you're already Proficient in."
     },
     "Hospitality_Worker": {
         "name": "Hospitality Worker",
         "stats": "Cha +2, Int +1",
         "desc": "A person who makes their living serving people, using their using their mind and their social skills to help them.",
-        "examples": ["Waitstaff", "Receptionists", "Secretaries", "Salespeople"],
+        "examples": [
+            "Waitstaff",
+            "Receptionists",
+            "Secretaries",
+            "Salespeople"
+        ],
         "saves": "You are Proficient in Charisma and Intelligence Saving Throws.",
-        "ability": "Your Charisma Score increases by 2 and your Intellegence Score increases by 1.",
         "custom": {
             "name": "People Person",
-            "desc": "You have Proficiency in two of the following: Insight, Investigation, Perception, or Persuasion."
+            "desc": "You have Proficiency in two of the following: Diplomacy, Investigation, Perception, or Vibe."
         },
-        "profs": 3,
         "alt": "Proficiency in three additional languages, two sets of artisan tools, or Expertise in a skill that you're already Proficient in."
     },
     "Student": {
         "name": "Student",
         "stats": "Varies",
         "desc": "Students aim to learn about and gain experience in a wide variety of things, exploring what they'd like to do with their future.",
-        "examples": ["High School Students", "College Students"],
+        "examples": [
+            "High School Students",
+            "College Students"
+        ],
         "saves": "You are Proficient in any two Saving Throws of your choice.",
         "ability": "You get +2 to one stat of your choice, +1 to three stats of your choice, and -1 to two stats of your choice.",
         "custom": {
             "name": "Constant Improvement",
-            "desc": "You have Proficiency in any five Skills of your choice."
+            "desc": "You have Proficiency in a number of Skills of your choice equal to 3 + your Proficiency Bonus."
         },
-        "alt": "Proficiency in three additional languages."
+        "alt": "Proficiency in three additional languages, two sets of tools, or three instruments."
     },
     "Survivalist": {
         "name": "Survivalist",
         "stats": "Wis +2, Con +1",
         "desc": "Someone who has chosen to forgo most parts of modern society, instead choosing to live a simpler, more reclusive life.",
-        "examples": ["Wilderness Survivors", "Rural Subsistence Farmers", "Hunters", "Gangsters", "Monks"],
+        "examples": [
+            "Wilderness Survivors",
+            "Rural Subsistence Farmers",
+            "Hunters",
+            "Gangsters",
+            "Monks"
+        ],
         "saves": "You are Proficient in Wisdom and Constitution Saving Throws.",
-        "ability": "Your Wisdom Score increases by 2 and your Constitution Score increases by 1.",
         "custom": {
             "name": "Will to Thrive",
-            "desc": "You have Proficiency in two of the following: Insight, Perception, Animal Handling, Nature, or Survival."
+            "desc": "You have Proficiency in two of the following: Care, Grit, Perception, Survival, or Vibe."
         },
-        "profs": 3,
         "alt": "Proficiency in two sets of tools or Expertise in a skill that you're already Proficient in."
     },
     "Thief": {
         "name": "Thief",
         "stats": "Dex +2, Cha +1",
-        "desc": "Those who must make a living taking from the more fortunate. Through Stealth, Intimidation, or Speed, Thieves take to sustain the needs of themselves or those they hold close.",
-        "examples": ["Robbers", "Muggers"],
+        "desc": "Those who must make a living taking from the more fortunate. Through stealth, intimidation, or speed, Thieves take to sustain the needs of themselves or those they hold close.",
+        "examples": [
+            "Robbers",
+            "Muggers"
+        ],
         "saves": "You are Proficient in Dexterity and Charisma Saving Throws.",
-        "ability": "Your Dexterity Score increases by 2 and your Charisma Score increases by 1.",
         "custom": {
             "name": "Street Smarts",
-            "desc": "You have Proficiency in two of the following: Deception, Intimidation, Perception, Sleight of Hand, or Stealth."
+            "desc": "You have Proficiency in two of the following: Bluff, Finesse, Intimidate, Perception, or Sneak."
         },
-        "profs": 3,
         "alt": "Proficiency in two sets of tools or Expertise in a skill that you're already Proficient in."
     },
     "Trained_Laborer": {
         "name": "Trained Laborer",
         "stats": "Str +2, Int +1",
         "desc": "Someone who has studied for years in order to hone their craft. They use their Strength along with their experience in order to accomplish their tasks.",
-        "examples": ["Mechanics", "Blacksmiths / Metal Workers"],
+        "examples": [
+            "Mechanics",
+            "Blacksmiths \/ Metal Workers"
+        ],
         "saves": "You are Proficient in Strength and Intelligence Saving Throws.",
-        "ability": "Your Strength Score increases by 2 and your Intelligence Score increases by 1.",
         "custom": {
             "name": "Labor Experience",
-            "desc": "You have Proficiency in two of the following: Athletics, Arcana, History, Sleight of Hand, or Investigation."
+            "desc": "You have Proficiency in two of the following: Athletics, Finesse, Grit, Investigation, or Science."
         },
-        "profs": 3,
         "alt": "Proficiency in two sets of tools or Expertise in a skill that you're already Proficient in."
     },
     "Warrior": {
         "name": "Warrior",
         "stats": "Dex +2, Con +1",
         "desc": "People of discipline who devote their lives training in the field of combat. Some fight to protect, while others might do so for selfish reasons.",
-        "examples": ["Soldiers", "Mercenaries", "Bodyguards"],
+        "examples": [
+            "Soldiers",
+            "Mercenaries",
+            "Bodyguards"
+        ],
         "saves": "You are Proficient in Dexterity and Constitution Saving Throws.",
-        "ability": "Your Dexterity Score increases by 2 and your Constitution Score increases by 1.",
         "custom": {
             "name": "Soldier's Discipline",
-            "desc": "You have Proficiency in two of the following: Athletics, Acrobatics, Perception, Stealth, or Survival."
+            "desc": "You have Proficiency in two of the following: Athletics, Acrobatics, Grit, Perception, Sneak."
         },
-        "profs": 3,
         "alt": "Proficiency in Simple weapons or three weapons of your choice, or Expertise in a skill or weapon that you're already Proficient in."
+    },
+    "Chef": {
+        "name": "Chef",
+        "stats": "Con +2, Wis +1",
+        "desc": "Those who make a living creating wonderful food for people. These people work with extreme patience and resilience to make culinary wonders.",
+        "examples": [
+            "Chefs",
+            "Sous Chefs",
+            "Cooks"
+        ],
+        "saves": "You are Proficient in Constitution and Wisdom Saving Throws.",
+        "custom": {
+            "name": "Culinary Experience",
+            "desc": "You have Proficiency in two of the following: Athletics, Finesse, Grit, Perception, or Survival."
+        },
+        "alt": "Proficiency in two sets of tools, or Expertise in a skill\/tool that you're already Proficient in."
+    },
+    "Scientist": {
+        "name": "Scientist",
+        "stats": "Int +2, Dex +1",
+        "desc": "Those who make a living pushing the frontiers of science through calculations and experimentation.",
+        "examples": [
+            "Mathematicians",
+            "Physicists",
+            "Engineers",
+            "Chemists"
+        ],
+        "saves": "You are Proficient in Dexterity and Intelligence Saving Throws.",
+        "custom": {
+            "name": "Scientific Research",
+            "desc": "You have Proficiency in two of the following:   Finesse, Investigation, Knowledge, Medicine, Science, or Supernatural."
+        },
+        "alt": "Proficiency in two sets of tools of your choice or Expertise in a skill\/tool that you're already Proficient in."
+    },
+    "Weightlifter": {
+        "name": "Weightlifter",
+        "stats": "Str +2, Cha +1",
+        "desc": "Those who work on their physique for muscle mass or pure strength. These people work diligently to not only keep in top shape, but to be able to show the work of their labors off.",
+        "examples": [
+            "Bodybuilders",
+            "Some Olympians",
+            "Powerlifters"
+        ],
+        "saves": "You are Proficient in Strength and Charisma Saving Throws.",
+        "custom": {
+            "name": "Powerful Performance",
+            "desc": "You have Proficiency in two of the following: Athletics, Acrobatics, Grit, Intimidate, Medicine, or Presence."
+        },
+        "alt": "Expertise in a skill that you're already Proficient in."
     }
 }

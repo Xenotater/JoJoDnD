@@ -1,0 +1,2184 @@
+{
+    "Act": [
+        {
+            "linkFeatures": [
+                "Act 0"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Act 1",
+                "Custom Ability (Act 1)",
+                "Act Modifier",
+                "OR",
+                "Act Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Act Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Act Modifier",
+                "OR",
+                "Act Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Act 2",
+                "Custom Ability (Act 2)"
+            ],
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Act Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Act Modifier",
+                "OR",
+                "Act Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Act 3",
+                "Custom Ability (Act 3)"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Act Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Act Modifier",
+                "OR",
+                "Act Feature"
+            ]
+        },
+        {
+            "otherFeatures": [
+                "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Act Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Act Modifier",
+                "OR",
+                "Act Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Act Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Instant Swap",
+                "OR",
+                "Act 4 (Variant Rule)"
+            ],
+            "otherFeatures": [
+                "<a href='\/artifacts\/?focus=Heaven'>Heaven Calls<\/a>"
+            ]
+        }
+    ],
+    "Ripple": [
+        {
+            "linkFeatures": [
+                "Healing Hands"
+            ],
+            "otherFeatures": [
+                "Unarmed Strikes deal Radiant damage"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Healing Ripple",
+                "Liquid Solidification",
+                "Ripple Fighting Style",
+                "Confident Provocation"
+            ],
+            "ability": [
+                "Increase Str, Dex, or Con Score by 1"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Slowed Aging",
+                "Ripple Possession"
+            ],
+            "featFeatures": [
+                "Headhunter"
+            ],
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Spiritual Ripple (Variant Rule)",
+                "Rippling Weapon",
+                "Ripple Feature"
+            ],
+            "ability": [
+                "Increase Str, Dex, or Con Score by 1"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Custom Ripple Technique",
+                "Ripple Regeneration",
+                "Ripple Perception"
+            ],
+            "featFeatures": [
+                "Trained Combatant"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement",
+                "Increase Str, Dex, or Con Score by 1"
+            ],
+            "linkFeatures": [
+                "Ripple Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ripple Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement",
+                "Increase Str, Dex, or Con Score by 1"
+            ],
+            "linkFeatures": [
+                "Ripple Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ripple Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ripple Feature"
+            ],
+            "ability": [
+                "Ability Score Improvement",
+                "Increase Str, Dex, or Con Score by 1"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ripple Feature"
+            ],
+            "featFeatures": [
+                "Trained Combatant"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ripple Feature"
+            ],
+            "ability": [
+                "Increase Str, Dex, or Con Score by 1"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ripple Feature"
+            ],
+            "ability": [
+                "Increase Str, Dex, or Con Score by 1"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Deep Pass Overdrive"
+            ]
+        },
+        {
+            "ability": [
+                "Increase Str, Dex, or Con Score by 1"
+            ],
+            "featFeatures": [
+                "Trained Combatant"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ripple Feature"
+            ],
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "ability": [
+                "Increase Str, Dex, or Con Score by 1"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ripple Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Increase Str, Dex, or Con Score by 1"
+            ],
+            "linkFeatures": [
+                "Perfected Ripple"
+            ]
+        }
+    ],
+    "Spin": [
+        {
+            "linkFeatures": [
+                "Forced Motion",
+                "Spherical Spin"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Sculpt Sphere",
+                "Spin Fighting Style"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Return to Sender",
+                "Spin Feature"
+            ],
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Spiritual Spin (Variant Rule)",
+                "Spin Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Custom Spin Technique",
+                "Spin Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ],
+            "linkFeatures": [
+                "Spin Feature"
+            ]
+        },
+        {
+            "featFeatures": [
+                "Trained Combatant"
+            ],
+            "linkFeatures": [
+                "Spin Expertise"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Spin Feature"
+            ],
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Spin Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Spin Feature"
+            ],
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Spin Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Spin Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ],
+            "linkFeatures": [
+                "Preparing For Infinity"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Spin Mastery"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Spin Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Spin Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Spin Feature"
+            ],
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Spin Feature"
+            ]
+        },
+        {
+            "featFeatures": [
+                "Trained Combatant"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Perfected Spiral"
+            ]
+        }
+    ],
+    "Power": [
+        {
+            "linkFeatures": [
+                "Feat of Power"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Custom Ability",
+                "Confident Provocation"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Power Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Power Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ],
+            "linkFeatures": [
+                "Power Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Power Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Power Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "otherFeatures": [
+                "Attack Dice increases to 2d10"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Power Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "featFeatures": [
+                "Menacing Aura"
+            ],
+            "linkFeatures": [
+                "Power Feature"
+            ]
+        },
+        {
+            "otherFeatures": [
+                "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
+            ],
+            "linkFeatures": [
+                "Special Ability (2 SE)"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Power Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Power Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Power Feature"
+            ]
+        },
+        {
+            "otherFeatures": [
+                "<a href='\/artifacts\/?focus=Heaven'>Heaven Calls<\/a>"
+            ],
+            "linkFeatures": [
+                "Blow for Blow"
+            ]
+        }
+    ],
+    "Ranged": [
+        {
+            "linkFeatures": [
+                "Slippery",
+                "Detached Senses",
+                "OR",
+                "Immense Resistance"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Custom Ability",
+                "Stand Pickpocketing"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ranged Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ranged Feature",
+                "Oblivious Facade",
+                "OR"
+            ],
+            "featFeatures": [
+                "Clever Disguise"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ranged Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ],
+            "linkFeatures": [
+                "Ranged Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ranged Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "otherFeatures": [
+                "Attack Dice increases to 2d6, <a href='\/abilities\/?focus=Ranged_Attack'>Ranged Attack<\/a> dice and range are doubled"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ranged Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ranged Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Special Ability (2 SE)"
+            ],
+            "otherFeatures": [
+                "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ranged Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ranged Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ranged Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Improved Slippery",
+                "OR",
+                "Perfected Tremorsense"
+            ],
+            "otherFeatures": [
+                "<a href='\/artifacts\/?focus=Heaven'>Heaven Calls<\/a>"
+            ]
+        }
+    ],
+    "Remote": [
+        {
+            "linkFeatures": [
+                "Programmed Stand",
+                "Stand Marking"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Custom Ability",
+                "Immense Range",
+                "OR",
+                "Immense Power"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Oblivious Facade"
+            ],
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Remote Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Remote Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Remote Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Remote Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "otherFeatures": [
+                "Attack Dice increases to 2d8"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Remote Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Remote Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Special Ability (2 SE)"
+            ],
+            "otherFeatures": [
+                "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Remote Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Remote Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Remote Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Zealous Focus"
+            ],
+            "otherFeatures": [
+                "<a href='\/artifacts\/?focus=Heaven'>Heaven Calls<\/a>"
+            ]
+        }
+    ],
+    "Ability": [
+        {
+            "linkFeatures": [
+                "Custom Ability"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Self-Acclimation"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ability Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ability Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Stand Energy Recharge",
+                "Ability Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Special Ability (2 SE)"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ability Feature"
+            ],
+            "otherFeatures": [
+                "Attack Dice increases to 2d6, <a href='\/abilities\/?focus=Ranged_Attack'>Ranged Attack<\/a> dice and range are doubled"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ability Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ability Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ultimate Stand Ability"
+            ],
+            "otherFeatures": [
+                "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ability Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ability Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ability Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Second Nature"
+            ],
+            "otherFeatures": [
+                "<a href='\/artifacts\/?focus=Heaven'>Heaven Calls<\/a>"
+            ]
+        }
+    ],
+    "Enhancement": [
+        {
+            "linkFeatures": [
+                "Anchored Stand",
+                "Immense Resistance"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Custom Ability",
+                "Confident Provocation"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Detached Senses",
+                "OR",
+                "Armored Stand"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Enhancement Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Enhancement Feature",
+                "Oblivious Facade",
+                "OR"
+            ],
+            "featFeatures": [
+                "Clever Disguise"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Enhancement Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "otherFeatures": [
+                "Attack Dice increases to 2d8"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Enhancement Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Enhancement Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Special Ability (2 SE)"
+            ],
+            "otherFeatures": [
+                "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Enhancement Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Enhancement Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Enhancement Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Condensed Material"
+            ],
+            "otherFeatures": [
+                "<a href='\/artifacts\/?focus=Heaven'>Heaven Calls<\/a>"
+            ]
+        }
+    ],
+    "Revenge": [
+        {
+            "linkFeatures": [
+                "Detached Senses",
+                "Feat of Power"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Custom Ability",
+                "Stand Marking",
+                "Confident Provocation"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Revenge Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Reckless Attack",
+                "Revenge Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Revenge Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Nemesis",
+                "Revenge Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "otherFeatures": [
+                "Attack Dice increases to 2d10"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Revenge Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Revenge Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Special Ability (2 SE)"
+            ],
+            "otherFeatures": [
+                "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Revenge Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Revenge Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Revenge Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Hit List"
+            ],
+            "otherFeatures": [
+                "<a href='\/artifacts\/?focus=Heaven'>Heaven Calls<\/a>"
+            ]
+        }
+    ],
+    "Independent": [
+        {
+            "linkFeatures": [
+                "Immense Resistance",
+                "Anchored Stand"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Custom Ability",
+                "Confident Provocation"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Independent Feature",
+                "Oblivious Facade",
+                "OR"
+            ],
+            "featFeatures": [
+                "Clever Disguise"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Independent Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Independent Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Independent Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "otherFeatures": [
+                "Attack Dice increases to 2d6, <a href='\/abilities\/?focus=Ranged_Attack'>Ranged Attack<\/a> dice and range are doubled"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Independent Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Independent Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Special Ability (2 SE)"
+            ],
+            "otherFeatures": [
+                "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Independent Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Independent Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Independent Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Fleeting Invulnerability",
+                "OR",
+                "Regenerative Surge"
+            ],
+            "otherFeatures": [
+                "<a href='\/artifacts\/?focus=Heaven'>Heaven Calls<\/a>"
+            ]
+        }
+    ],
+    "Hive": [
+        {
+            "linkFeatures": [
+                "Split Stand",
+                "Hive Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Custom Ability"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Hive Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Hive Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Stand Pickpocketing",
+                "Hive Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Hive Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "otherFeatures": [
+                "Swarm Attack Dice increases to 2dx"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Hive Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Hive Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Special Ability (2 SE)"
+            ],
+            "otherFeatures": [
+                "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Hive Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Hive Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Hive Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Great Recall"
+            ],
+            "otherFeatures": [
+                "<a href='\/artifacts\/?focus=Heaven'>Heaven Calls<\/a>"
+            ]
+        }
+    ],
+    "Assassin": [
+        {
+            "linkFeatures": [
+                "Steady Aim",
+                "Assassin Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Assassin Fighting Style"
+            ],
+            "featFeatures": [
+                "Assassin"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Supernatural Item (Variant Rule)",
+                "Assassin Feature"
+            ],
+            "featFeatures": [
+                "Catlike Agility"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Assassin Feature"
+            ],
+            "featFeatures": [
+                "Trained Combatant"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Assassin Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Assassin Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Expert Assassin",
+                "Assassin Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Assassin Feature"
+            ]
+        },
+        {
+            "featFeatures": [
+                "Clever Disguise",
+                "OR",
+                "Light Sleeper"
+            ],
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Assassin Feature"
+            ]
+        },
+        {
+            "featFeatures": [
+                "Trained Combatant"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Assassin Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ],
+            "linkFeatures": [
+                "Assassin Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Assassin Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Assassin Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Reaping Strikes"
+            ]
+        }
+    ],
+    "Consul": [
+        {
+            "linkFeatures": [
+                "Encouragement Dice",
+                "Consul Feature"
+            ]
+        },
+        {
+            "featFeatures": [
+                "Art of Distraction"
+            ],
+            "linkFeatures": [
+                "Consul Fighting Style"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Supernatural Item (Variant Rule)",
+                "Consul Feature"
+            ],
+            "featFeatures": [
+                "Clever Disguise"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Consul Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "featFeatures": [
+                "Trained Combatant"
+            ],
+            "linkFeatures": [
+                "Consul Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Consul Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Improved Encouragement Dice",
+                "Consul Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Consul Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ],
+            "featFeatures": [
+                "Light Sleeper",
+                "OR",
+                "Heavy Sleeper"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Consul Feature"
+            ]
+        },
+        {
+            "featFeatures": [
+                "Trained Combatant"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Consul Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Consul Feature"
+            ],
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Consul Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Consul Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Perfected Encouragement"
+            ]
+        }
+    ],
+    "Scholar": [
+        {
+            "linkFeatures": [
+                "Scholarly Combatant",
+                "Scholar Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Scholar Fighting Style"
+            ],
+            "featFeatures": [
+                "Level-Headed"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Supernatural Item (Variant Rule)",
+                "Field Study",
+                "Scholar Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Scholar Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Scholar Feature"
+            ],
+            "featFeatures": [
+                "Trained Combatant"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Scholar Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Aura of Knowledge",
+                "Scholar Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Scholar Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ],
+            "featFeatures": [
+                "Familiar Bond",
+                "OR",
+                "Paranoia"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Scholar Feature"
+            ]
+        },
+        {
+            "featFeatures": [
+                "Trained Combatant"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Scholar Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ],
+            "linkFeatures": [
+                "Scholar Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Scholar Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Scholar Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Paragon of Knowledge"
+            ]
+        }
+    ],
+    "Warrior": [
+        {
+            "linkFeatures": [
+                "Damage Minimum",
+                "Warrior Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Warrior Fighting Style",
+                "Confident Provocation"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Supernatural Item (Variant Rule)",
+                "Warrior Feature"
+            ],
+            "featFeatures": [
+                "Crusher",
+                "OR",
+                "Piercer",
+                "OR",
+                "Slasher",
+                "OR",
+                "Weapon Attribute Specialist"
+            ]
+        },
+        {
+            "featFeatures": [
+                "Trained Combatant"
+            ],
+            "linkFeatures": [
+                "Warrior Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Warrior Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "featFeatures": [
+                "Trained Combatant"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Improved Fighting Style",
+                "Warrior Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Warrior Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ],
+            "featFeatures": [
+                "Light Sleeper",
+                "OR",
+                "Heavy Sleeper"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Warrior Feature"
+            ]
+        },
+        {
+            "featFeatures": [
+                "Trained Combatant"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Warrior Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Warrior Feature"
+            ],
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Warrior Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Warrior Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Weapon Aficionado"
+            ],
+            "featFeatures": [
+                "Trained Combatant"
+            ]
+        }
+    ],
+    "Artisan": [
+        {
+            "linkFeatures": [
+                "Artisan's Specialty",
+                "Artisan Feature"
+            ]
+        },
+        {
+            "featFeatures": [
+                "Natural Talent"
+            ],
+            "linkFeatures": [
+                "Artisan Fighting Style"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Supernatural Item (Variant Rule)",
+                "Artisan's Resurgence",
+                "Artisan Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Artisan Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "featFeatures": [
+                "Trained Combatant"
+            ],
+            "linkFeatures": [
+                "Artisan Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Artisan Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Improved Specialty",
+                "Artisan Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Artisan Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ],
+            "featFeatures": [
+                "Heavy Sleeper",
+                "OR",
+                "Light Sleeper"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Artisan Feature"
+            ]
+        },
+        {
+            "featFeatures": [
+                "Trained Combatant"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Artisan Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ],
+            "linkFeatures": [
+                "Artisan Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Artisan Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Artisan Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Perfected Specialty"
+            ]
+        }
+    ],
+    "Heavyweight": [
+        {
+            "linkFeatures": [
+                "Bullish Brawn",
+                "Heavyweight Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Heavyweight Fighting Style",
+                "Confident Provocation"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Supernatural Item (Variant Rule)",
+                "Rejuvenation",
+                "Heavyweight Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Heavyweight Feature"
+            ],
+            "featFeatures": [
+                "Trained Combatant"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Heavyweight Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Heavyweight Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Improved Rejuvenation",
+                "Heavyweight Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Heavyweight Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ],
+            "featFeatures": [
+                "Headhunter",
+                "OR",
+                "Heavy Sleeper"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Heavyweight Feature"
+            ]
+        },
+        {
+            "featFeatures": [
+                "Trained Combatant"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Heavyweight Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Heavyweight Feature"
+            ],
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Heavyweight Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Heavyweight Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Legendary Brawn"
+            ]
+        }
+    ],
+    "Ranger": [
+        {
+            "linkFeatures": [
+                "Survivalist",
+                "Ranger Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ranger Fighting Style"
+            ],
+            "featFeatures": [
+                "Paranoia"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Supernatural Item (Variant Rule)",
+                "Ranger's Recovery",
+                "Ranger Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ranger Feature"
+            ],
+            "featFeatures": [
+                "Trained Combatant"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ranger Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ranger Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Improved Survivalist",
+                "Ranger Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ranger Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ],
+            "featFeatures": [
+                "Light Sleeper",
+                "OR",
+                "Trap Detection"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ranger Feature"
+            ]
+        },
+        {
+            "featFeatures": [
+                "Trained Combatant"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ranger Feature"
+            ]
+        },
+        {
+            "ability": [
+                "Ability Score Improvement"
+            ],
+            "linkFeatures": [
+                "Ranger Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ranger Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Ranger Feature"
+            ]
+        },
+        {
+            "linkFeatures": [
+                "Perfected Survivalist"
+            ]
+        }
+    ]
+}

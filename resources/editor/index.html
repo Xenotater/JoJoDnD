@@ -23,6 +23,7 @@
         <script async src="https://cdn.jsdelivr.net/npm/jquery-deserialize@2.0.0/src/jquery.deserialize.min.js"></script>
         <script async src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-EQW3R4RE6P"></script>
@@ -173,12 +174,12 @@
                                             <div class="box" id="saves">
                                                 <div id="not-prof">
                                                     <div id="stats">
-                                                        <span class="label">Strength</span>
-                                                        <span class="label">Dexterity</span>
-                                                        <span class="label">Constitution</span>
-                                                        <span class="label">Intelligence</span>
-                                                        <span class="label">Wisdom</span>
-                                                        <span class="label">Charisma</span>
+                                                        <span class="label">Str</span>
+                                                        <span class="label">Dex</span>
+                                                        <span class="label">Con</span>
+                                                        <span class="label">Int</span>
+                                                        <span class="label">Wis</span>
+                                                        <span class="label">Cha</span>
                                                     </div>
                                                     <div id="checks">
                                                         <input type="checkbox" class="savecheck" id="str-save" name="str-save">
@@ -196,7 +197,7 @@
                                                     </div>
                                                 </div>
                                                 <div id="prof-bonus">
-                                                    <label for="bonus" id="proflbl">Proficiency Bonus:</label>
+                                                    <label for="bonus" id="proflbl">PB:</label>
                                                     <input type="text" class="numbers" id="bonus" name="bonus">
                                                 </div>
                                             </div>
@@ -212,28 +213,8 @@
                                                             <option value="e">E</option>
                                                             <option value="m">M</option>
                                                         </select>
-                                                        <input type="text" class="numbers skill-bonus dex-skill" id="acro-bonus" name="acro-bonus">
+                                                        <input type="text" class="numbers skill-bonus dex-skill single-stat" id="acro-bonus" name="acro-bonus">
                                                         <span class="skilllbl">Acro</span><span class="skillstat">(dex)</span>
-                                                    </li>
-                                                    <li>
-                                                        <select class="skillcheck" id="ani" name="ani">
-                                                            <option value=""></option>
-                                                            <option value="p">P</option>
-                                                            <option value="e">E</option>
-                                                            <option value="m">M</option>
-                                                        </select>
-                                                        <input type="text" class="numbers skill-bonus wis-skill" id="ani-bonus" name="ani-bonus">
-                                                        <span class="skilllbl">Animals</span><span class="skillstat">(wis)</span>
-                                                    </li>
-                                                    <li>
-                                                        <select class="skillcheck" id="arc" name="arc">
-                                                            <option value=""></option>
-                                                            <option value="p">P</option>
-                                                            <option value="e">E</option>
-                                                            <option value="m">M</option>
-                                                        </select>
-                                                        <input type="text" class="numbers skill-bonus int-skill" id="arc-bonus" name="arc-bonus">
-                                                        <span class="skilllbl">Arcana</span><span class="skillstat">(int)</span>
                                                     </li>
                                                     <li>
                                                         <select class="skillcheck" id="ath" name="ath">
@@ -243,7 +224,8 @@
                                                             <option value="m">M</option>
                                                         </select>
                                                         <input type="text" class="numbers skill-bonus str-skill" id="ath-bonus" name="ath-bonus">
-                                                        <span class="skilllbl">Athlete</span><span class="skillstat">(str)</span>
+                                                        <input type="text" class="numbers skill-bonus wis-skill" id="ath-bonus2" name="ath-bonus2">
+                                                        <span class="skilllbl">Athlete</span><span class="skillstat">(str/wis)</span>
                                                     </li>
                                                     <li>
                                                         <select class="skillcheck" id="dec" name="dec">
@@ -252,28 +234,49 @@
                                                             <option value="e">E</option>
                                                             <option value="m">M</option>
                                                         </select>
-                                                        <input type="text" class="numbers skill-bonus cha-skill" id="dec-bonus" name="dec-bonus">
-                                                        <span class="skilllbl">Decept</span><span class="skillstat">(cha)</span>
+                                                        <input type="text" class="numbers skill-bonus cha-skill single-stat" id="dec-bonus" name="dec-bonus">
+                                                        <span class="skilllbl">Bluff</span><span class="skillstat">(cha)</span>
                                                     </li>
                                                     <li>
-                                                        <select class="skillcheck" id="his" name="his">
+                                                        <select class="skillcheck" id="ani" name="ani">
                                                             <option value=""></option>
                                                             <option value="p">P</option>
                                                             <option value="e">E</option>
                                                             <option value="m">M</option>
                                                         </select>
-                                                        <input type="text" class="numbers skill-bonus int-skill" id="his-bonus" name="his-bonus">
-                                                        <span class="skilllbl">History</span><span class="skillstat">(int)</span>
+                                                        <input type="text" class="numbers skill-bonus wis-skill" id="ani-bonus" name="ani-bonus">
+                                                        <input type="text" class="numbers skill-bonus cha-skill" id="ani-bonus2" name="ani-bonus2">
+                                                        <span class="skilllbl">Care</span><span class="skillstat">(wis/cha)</span>
                                                     </li>
                                                     <li>
-                                                        <select class="skillcheck" id="ins" name="ins">
+                                                        <select class="skillcheck" id="pers" name="pers">
                                                             <option value=""></option>
                                                             <option value="p">P</option>
                                                             <option value="e">E</option>
                                                             <option value="m">M</option>
                                                         </select>
-                                                        <input type="text" class="numbers skill-bonus wis-skill" id="ins-bonus" name="ins-bonus">
-                                                        <span class="skilllbl">Insight</span><span class="skillstat">(wis)</span>
+                                                        <input type="text" class="numbers skill-bonus cha-skill single-stat" id="pers-bonus" name="pers-bonus">
+                                                        <span class="skilllbl">Diplo</span><span class="skillstat">(cha)</span>
+                                                    </li>
+                                                    <li>
+                                                        <select class="skillcheck" id="sli" name="sli">
+                                                            <option value=""></option>
+                                                            <option value="p">P</option>
+                                                            <option value="e">E</option>
+                                                            <option value="m">M</option>
+                                                        </select>
+                                                        <input type="text" class="numbers skill-bonus dex-skill single-stat" id="sli-bonus" name="sli-bonus">
+                                                        <span class="skilllbl">Finesse</span><span class="skillstat">(dex)</span>
+                                                    </li>
+                                                    <li>
+                                                        <select class="skillcheck" id="grit" name="grit">
+                                                            <option value=""></option>
+                                                            <option value="p">P</option>
+                                                            <option value="e">E</option>
+                                                            <option value="m">M</option>
+                                                        </select>
+                                                        <input type="text" class="numbers skill-bonus con-skill single-stat" id="grit-bonus" name="grit-bonus">
+                                                        <span class="skilllbl">Grit</span><span class="skillstat">(con)</span>
                                                     </li>
                                                     <li>
                                                         <select class="skillcheck" id="intim" name="intim">
@@ -282,8 +285,9 @@
                                                             <option value="e">E</option>
                                                             <option value="m">M</option>
                                                         </select>
+                                                        <input type="text" class="numbers skill-bonus str-skill" id="intim-bonus0" name="intim-bonus0">
                                                         <input type="text" class="numbers skill-bonus cha-skill" id="intim-bonus" name="intim-bonus">
-                                                        <span class="skilllbl">Intimid</span><span class="skillstat">(cha)</span>
+                                                        <span class="skilllbl">Intimid</span><span class="skillstat">(str/cha)</span>
                                                     </li>
                                                     <li>
                                                         <select class="skillcheck" id="invest" name="invest">
@@ -292,7 +296,7 @@
                                                             <option value="e">E</option>
                                                             <option value="m">M</option>
                                                         </select>
-                                                        <input type="text" class="numbers skill-bonus int-skill" id="invest-bonus" name="invest-bonus">
+                                                        <input type="text" class="numbers skill-bonus int-skill single-stat" id="invest-bonus" name="invest-bonus">
                                                         <span class="skilllbl">Invest</span><span class="skillstat">(int)</span>
                                                     </li>
                                                     <li>
@@ -302,18 +306,19 @@
                                                             <option value="e">E</option>
                                                             <option value="m">M</option>
                                                         </select>
+                                                        <input type="text" class="numbers skill-bonus int-skill" id="medi-bonus0" name="medi-bonus0">
                                                         <input type="text" class="numbers skill-bonus wis-skill" id="medi-bonus" name="medi-bonus">
-                                                        <span class="skilllbl">Medic</span><span class="skillstat">(wis)</span>
+                                                        <span class="skilllbl">Medic</span><span class="skillstat">(int/wis)</span>
                                                     </li>
                                                     <li>
-                                                        <select class="skillcheck" id="nat" name="nat">
+                                                        <select class="skillcheck" id="his" name="his">
                                                             <option value=""></option>
                                                             <option value="p">P</option>
                                                             <option value="e">E</option>
                                                             <option value="m">M</option>
                                                         </select>
-                                                        <input type="text" class="numbers skill-bonus int-skill" id="nat-bonus" name="nat-bonus">
-                                                        <span class="skilllbl">Nature</span><span class="skillstat">(int)</span>
+                                                        <input type="text" class="numbers skill-bonus int-skill single-stat" id="his-bonus" name="his-bonus">
+                                                        <span class="skilllbl">Know</span><span class="skillstat">(int)</span>
                                                     </li>
                                                     <li>
                                                         <select class="skillcheck" id="perc" name="perc">
@@ -322,7 +327,7 @@
                                                             <option value="e">E</option>
                                                             <option value="m">M</option>
                                                         </select>
-                                                        <input type="text" class="numbers skill-bonus wis-skill" id="perc-bonus" name="perc-bonus">
+                                                        <input type="text" class="numbers skill-bonus wis-skill single-stat" id="perc-bonus" name="perc-bonus">
                                                         <span class="skilllbl">Percept</span><span class="skillstat">(wis)</span>
                                                     </li>
                                                     <li>
@@ -332,38 +337,18 @@
                                                             <option value="e">E</option>
                                                             <option value="m">M</option>
                                                         </select>
-                                                        <input type="text" class="numbers skill-bonus cha-skill" id="perf-bonus" name="perf-bonus">
-                                                        <span class="skilllbl">Perform</span><span class="skillstat">(cha)</span>
+                                                        <input type="text" class="numbers skill-bonus cha-skill single-stat" id="perf-bonus" name="perf-bonus">
+                                                        <span class="skilllbl">Pres</span><span class="skillstat">(cha)</span>
                                                     </li>
                                                     <li>
-                                                        <select class="skillcheck" id="pers" name="pers">
+                                                        <select class="skillcheck" id="sci" name="sci">
                                                             <option value=""></option>
                                                             <option value="p">P</option>
                                                             <option value="e">E</option>
                                                             <option value="m">M</option>
                                                         </select>
-                                                        <input type="text" class="numbers skill-bonus cha-skill" id="pers-bonus" name="pers-bonus">
-                                                        <span class="skilllbl">Persua</span><span class="skillstat">(cha)</span>
-                                                    </li>
-                                                    <li>
-                                                        <select class="skillcheck" id="reli" name="reli">
-                                                            <option value=""></option>
-                                                            <option value="p">P</option>
-                                                            <option value="e">E</option>
-                                                            <option value="m">M</option>
-                                                        </select>
-                                                        <input type="text" class="numbers skill-bonus int-skill" id="reli-bonus" name="reli-bonus">
-                                                        <span class="skilllbl">Religion</span><span class="skillstat">(int)</span>
-                                                    </li>
-                                                    <li>
-                                                        <select class="skillcheck" id="sli" name="sli">
-                                                            <option value=""></option>
-                                                            <option value="p">P</option>
-                                                            <option value="e">E</option>
-                                                            <option value="m">M</option>
-                                                        </select>
-                                                        <input type="text" class="numbers skill-bonus dex-skill" id="sli-bonus" name="sli-bonus">
-                                                        <span class="skilllbl">Slight</span><span class="skillstat">(dex)</span>
+                                                        <input type="text" class="numbers skill-bonus int-skill single-stat" id="sci-bonus" name="sci-bonus">
+                                                        <span class="skilllbl">Science</span><span class="skillstat">(int)</span>
                                                     </li>
                                                     <li>
                                                         <select class="skillcheck" id="steal" name="steal">
@@ -372,8 +357,19 @@
                                                             <option value="e">E</option>
                                                             <option value="m">M</option>
                                                         </select>
-                                                        <input type="text" class="numbers skill-bonus dex-skill" id="steal-bonus" name="steal-bonus">
-                                                        <span class="skilllbl">Stealth</span><span class="skillstat">(dex)</span>
+                                                        <input type="text" class="numbers skill-bonus dex-skill single-stat" id="steal-bonus" name="steal-bonus">
+                                                        <span class="skilllbl">Sneak</span><span class="skillstat">(dex)</span>
+                                                    </li>
+                                                    <li>
+                                                        <select class="skillcheck" id="arc" name="arc">
+                                                            <option value=""></option>
+                                                            <option value="p">P</option>
+                                                            <option value="e">E</option>
+                                                            <option value="m">M</option>
+                                                        </select>
+                                                        <input type="text" class="numbers skill-bonus int-skill" id="arc-bonus" name="arc-bonus">
+                                                        <input type="text" class="numbers skill-bonus wis-skill" id="arc-bonus2" name="arc-bonus2">
+                                                        <span class="skilllbl">Super</span><span class="skillstat">(int/wis)</span>
                                                     </li>
                                                     <li>
                                                         <select class="skillcheck" id="surv" name="surv">
@@ -382,8 +378,20 @@
                                                             <option value="e">E</option>
                                                             <option value="m">M</option>
                                                         </select>
+                                                        <input type="text" class="numbers skill-bonus int-skill" id="surv-bonus0" name="surv-bonus0">
                                                         <input type="text" class="numbers skill-bonus wis-skill" id="surv-bonus" name="surv-bonus">
-                                                        <span class="skilllbl">Survive</span><span class="skillstat">(wis)</span>
+                                                        <span class="skilllbl">Surviv</span><span class="skillstat">(int/wis)</span>
+                                                    </li>
+                                                    <li>
+                                                        <select class="skillcheck" id="ins" name="ins">
+                                                            <option value=""></option>
+                                                            <option value="p">P</option>
+                                                            <option value="e">E</option>
+                                                            <option value="m">M</option>
+                                                        </select>
+                                                        <input type="text" class="numbers skill-bonus wis-skill" id="ins-bonus" name="ins-bonus">
+                                                        <input type="text" class="numbers skill-bonus cha-skill" id="ins-bonus2" name="ins-bonus2">
+                                                        <span class="skilllbl">Vibe</span><span class="skillstat">(wis/cha)</span>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -537,52 +545,78 @@
                         <div class="center">
                             <div class="page" id="page2">
                                 <div class="heading">
-                                    <h2><b>JoJo D&D Undead Character Sheet</b></h2>
+                                    <h2><b>JoJo D&D Ability Sheet</b></h2>
                                 </div>
                                 <div class="row">
                                     <div class="col-6">
                                         <label for="Uname">Character Name</label>
                                         <input type="text" class="scales" id="Uname" name="Uname">
                                     </div>
-                                    <div class="col-2">
-                                        <label for="headHP">Head Hit Points</label>
-                                        <input type="text" class="numbers" id="headHP" name="headHP">
-                                    </div>
-                                    <div class="col-4">
-                                        <label for="curHeadHP">Current Head Hit Points</label>
-                                        <input type="text" class="numbers" id="curHeadHP" name="curHeadHP">
+                                    <div class="col-6">
+                                        <label for="sName">Stand Name</label>
+                                        <input type="text" class="scales" id="sName" name="sName">
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-6">
-                                        <div><label for="type">Type & Level</label></div>
-                                        <input type="text" class="scales" id="type" name="type">
-                                        <input type="text" class="numbers" id="Ulevel" name="Ulevel">
+                                    <div class="col-2">
+                                        <label for="headHP">Head HP</label>
+                                        <input type="text" class="numbers" id="headHP" name="headHP">
                                     </div>
-                                    <div class="col-3">
+                                    <div class="col-2">
                                         <label for="hac">Head AC</label>
                                         <input type="text" class="numbers" id="hac" name="hac">
                                     </div>
-                                    <div class="col-3">
+                                    <div class="col-2">
                                         <label for="energy">Energy</label>
                                         <input type="text" class="numbers" id="energy" name="energy">
                                     </div>
-                                </div>
-                                <span class="label">Minions</span>
-                                <div class="box" id="minionbox">
-                                    <textarea name="minions"></textarea>
+                                    <div class="col-2">
+                                        <label for="Ulevel">Alt. Level</label>
+                                        <input type="text" class="numbers" id="Ulevel" name="Ulevel">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="standHP">Stand HP</label>
+                                        <input type="text" class="numbers" id="standHP" name="standHP">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="cse">Current SE</label>
+                                        <input type="text" class="numbers" id="cse" name="cse">
+                                    </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-6">
-                                        <span class="label">Class Features</span>
-                                        <div class="box" id="Ufeatbox">
-                                            <textarea name="Ufeats"></textarea>
+                                        <label for="sImage">Stand / Alt. Image</label>
+                                        <div id="sImage">
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" alt="stand-img" id="stand-img">
+                                            <div id="blur2"></div>
+                                            <h2><b><i class="bi bi-plus-square img-icon2" id="upload2"></i></b></h2>
+                                            <h2><b><i class="bi bi-pencil-square img-icon2" id="edit2"></i></b></h2>
+                                            <h2><b><i class="bi bi-x-square img-icon2" id="reset2"></i></b></h2>
+                                            <input type="file" id="img-input2" accept="image/png, image/jpg">
                                         </div>
                                     </div>
                                     <div class="col-6">
-                                        <span class="label">Attacks & Actions</span>
-                                        <div class="box" id="Uatkbox">
-                                            <textarea name="Uatks"></textarea>
+                                        <label for="sArrayBox">Stat Array</label>
+                                        <div id="sArrayBox">
+                                            <canvas id="sArrayChart"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="label">Ability Info</span>
+                                <div class="box" id="abilitybox">
+                                    <textarea name="Uatks"></textarea>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <span class="label">Minions / Equipment</span>
+                                        <div class="box" id="minionbox">
+                                            <textarea name="minions"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <span class="label">Other Notes and Features</span>
+                                        <div class="box" id="othernotebox">
+                                            <textarea name="Ufeats"></textarea>
                                         </div>
                                     </div>
                                 </div>
