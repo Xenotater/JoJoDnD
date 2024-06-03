@@ -169,7 +169,7 @@
         "ability": "You get +2 to one stat of your choice, +1 to three stats of your choice, and -1 to two stats of your choice.",
         "custom": {
             "name": "Constant Improvement",
-            "desc": "You have Proficiency in any five Skills of your choice."
+            "desc": "You have Proficiency in a number of Skills of your choice equal to 3 + your Proficiency Bonus."
         },
         "alt": "Proficiency in three additional languages, two sets of tools, or three instruments."
     },
@@ -194,7 +194,7 @@
     "Thief": {
         "name": "Thief",
         "stats": "Dex +2, Cha +1",
-        "desc": "Those who must make a living taking from the more fortunate. Through Stealth, Intimidate, or Speed, Thieves take to sustain the needs of themselves or those they hold close.",
+        "desc": "Those who must make a living taking from the more fortunate. Through stealth, intimidation, or speed, Thieves take to sustain the needs of themselves or those they hold close.",
         "examples": [
             "Robbers",
             "Muggers"

@@ -257,17 +257,17 @@ function parseTypes(classes) {
                     lnk = "Rock_Human";
                     break;
                 case "Corpse":
-                    cls = "Holy Corpse Holder";
+                    cls = "Holy Corpse Holders";
                     page = "artifacts";
                     lnk = "Holy_Corpse_Parts";
                     break;
                 case "Heav":
-                    cls = "Heaven Stand";
+                    cls = "Heaven Stands";
                     page = "artifacts";
                     lnk = "Heaven";
                     break;
                 case "Req":
-                    cls = "Requiem Stand";
+                    cls = "Requiem Stands";
                     page = "artifacts";
                     lnk = "Stand_Arrow";
                     break;

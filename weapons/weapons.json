@@ -929,8 +929,8 @@
             "type": "Martial",
             "spec": "Melee",
             "stat": "Str\/Dex",
-            "prereq": "Str\/Dex",
-            "dmg": "1d8"
+            "prereq": "None",
+            "dmg": "1d8 Slashing"
         },
         {
             "name": "Shortsword",
@@ -978,7 +978,7 @@
             "type": "Martial",
             "spec": "Melee",
             "stat": "Str\/Dex",
-            "prereq": "13+ Dex",
+            "prereq": "Dex 13+",
             "dmg": "1d6 Slashing"
         }
     ]

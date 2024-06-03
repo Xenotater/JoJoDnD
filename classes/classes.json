@@ -1216,11 +1216,13 @@
                         "linkFeatures": [
                             "General Anchors",
                             "OR",
-                            "Massive Stand",
-                            "OR",
                             "Speedy Switch",
                             "OR",
-                            "Siege Combat"
+                            "Siege Combat",
+                            "OR"
+                        ],
+                        "featFeatures": [
+                            "Massive Stand"
                         ]
                     },
                     "13": {
@@ -1935,7 +1937,7 @@
                 ],
                 "desc": "It is said that Stands are a physical manifestation of one's fighting spirit. However, there are some that are exposed to a <a href='\/artifacts'>Stand-Granting item<\/a> that do not possess a proper fighting spirit, but develop a Stand regardless due to  some (often benevolent) outside force. These Stand Users will grow and develop alongside their Stand. Despite starting out extremely weak, they eventually become some of the strongest, scariest, and most versatile Stand Users. They are forced to evolve their Stand once they have developed as a person, experienced combat several times, and when they are in a situation that puts them in despair.",
                 "notes": [
-                    "You may switch between your Acts as a Bonus Action once you have obtained them, all except for the Act 0 Stand. In order to evolve your Stand, you must have unlocked the next Act, and you must go through an event that your DM considers to be hopeless or desperate",
+                    "You may switch between your Acts as a Bonus Action once you have obtained them, all except for the Act 0 Stand. In order to evolve your Stand, you must have unlocked the next Act, and you must go through an event that your DM considers to be hopeless or desperate.",
                     "When switching to an Act with a higher Stand Energy Modifier, your Stand Energy must remain at the lower value. For example, if your Act 2 Stand has 6 SE and you switch to Act 1 with a maximum of 10, your available Stand Energy remains at 6."
                 ],
                 "other": [

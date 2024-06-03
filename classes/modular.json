@@ -144,6 +144,13 @@
             ]
         },
         {
+            "linkFeatures": [
+                "Slowed Aging",
+                "Ripple Possession"
+            ],
+            "featFeatures": [
+                "Headhunter"
+            ],
             "ability": [
                 "Ability Score Improvement"
             ]
@@ -438,7 +445,7 @@
             ]
         },
         {
-            "otherFeatures": [
+            "linkFeatures": [
                 "Power Feature"
             ]
         },
@@ -1116,6 +1123,7 @@
         },
         {
             "linkFeatures": [
+                "Independent Feature",
                 "Oblivious Facade",
                 "OR"
             ],
@@ -1716,7 +1724,7 @@
                 "OR",
                 "Slasher",
                 "OR",
-                "Weapon Feat"
+                "Weapon Attribute Specialist"
             ]
         },
         {

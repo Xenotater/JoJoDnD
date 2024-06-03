@@ -18,7 +18,7 @@
         "desc": [
             "Your Stand is physically attached and anchored to a physical object. As such, your Stand may be damaged by physical means, as well as Stands. However, regardless of if your Stand takes physical or Stand damage, you still apply the same Damage Reduction to it.",
             "Also, both you and your Stand gain Vulnerability (double damage) and Resistance (half damage) to one damage type of your choice, as well as the Stand counterparts to those damage types.",
-            "You may choose between the following subtypes of Anchored Stand:<ul class='sublist'><li><u>Material-Anchor<\/u>: Examples: Geb, High Priestess, Justice<ul><li>You have the ability to bind your Stand to a specific type of material, examples including; wood, fog, metal, stone, water, or fire. Once you determine this material, you cannot change it.<\/li><li>Your Stand is able to change its anchor, so long as the new anchor is composed of the same material, and as long as it is within two meters of the material it was previously inhabiting. You may change the anchor of your Stand as an Action, and when you do so you may also take the Hide Action for free. You are able to summon or unsummon your Stand if its within two meters of the User (if they have one). <\/li><li>Your Stand's melee attacks may use physical or non-physical damage, so long as the type makes sense for the material. For example, a Stand anchored to snow could choose to deal bludgeoning or cold damage each time they deal damage with a melee attack.<\/li><li>You may choose to change an existing Resistance to an Immunity, to gain Resistance in two non-physical damage types, or Resistance in one physical damage type.<\/li><\/ul><\/li><li><u>Object-Anchor<\/u>: Examples: Wheel of Fortune, Strength, Surface, Superfly<ul><li>You have the ability to bind your Stand to a specific kind of object, such as a car, a sword, a radio tower, or a hat. Once you determine the specific object, you cannot change it.<\/li><li>While your Stand is bound to an object, it still has the ability to move and function on its own. Your Stand is able to change its anchor as an action so long as you are within two meters of it. You are able to summon or unsummon your Stand if its within two meters of the User (if they have one).<\/li><li>Your Stand's Damage Reduction is increased considerably. <a class='in-page'>Immense Resistance<\/a> instead functions like <a class='in-page'>Armored Stand<\/a> (giving you double your Durability Modifier in Stand Damage Reduction). Armored Stand instead gives you triple your Durability Modifier for your Stand Damage Reduction.<\/li><li>You gain <a class='in-page'>Feat of Power<\/a>. If you already have Feat of Power, the amount you can lift and throw using it is doubled and you only take 1 damage for every two meters traveled.<\/li><\/ul><\/li><li><u>Self-Anchor<\/u>: Examples: Love Deluxe, Metallica, Stone Free, Oh! Lonesome Me, Dr. Wu.<ul><li>Your Stand is uniquely inseparable from you, meaning that you yourself are made of your Stand.<\/li><li>Your Unarmed Strikes can deal damage to Stands, and the Damage Die is raised to be equal to that of your Stand Attack Dice. In addition, you can always use your Stand stats for Strength, Dexterity, and Constitution Checks, Saves, and Attack Rolls, even if something would normally specify that you can't use your Stand stats.<\/li><li>Your User Movement Speed is brought up to be equal to that of your Stand's Movement Speed.<\/li><li>Your Range no longer determines how far your Stand can travel from you. Instead, it is a measure of how far you can extend your Stand, which is a part of yourself that must stay attached to your body somehow, either through separating parts of yourself or stretching out from you like an appendage. You may extend up to twice your normal Range, but pushing past your Range results in taking damage. When you start your turn beyond your normal Range, or exit the threshold of your normal Range, you take an amount of force damage equal to your Level, which cannot be reduced or negated in any way. If you have a Stand that stretches out from you, the Range Modifier determines how far in meters your Stand can stretch in a single direction.<\/li><li>You cannot change where your Stand is anchored, it will always be anchored to your body. In addition, it is always summoned, unless you are unconscious.<\/li><\/ul><\/li><\/ul>"
+            "You may choose between the following subtypes of Anchored Stand:<ul class='sublist'><li><u>Material-Anchor<\/u>: Examples: Geb, High Priestess, Justice<ul><li>You have the ability to bind your Stand to a specific type of material, examples including; wood, fog, metal, stone, water, or fire. Once you determine this material, you cannot change it.<\/li><li>Your Stand is able to change its anchor, so long as the new anchor is composed of the same material, and as long as it is within two meters of the material it was previously inhabiting. You may change the anchor of your Stand as an Action, and when you do so you may also take the Hide Action for free. You are able to summon or unsummon your Stand if it's within two meters of the User (if they have one). <\/li><li>Your Stand's melee attacks may use physical or non-physical damage, so long as the type makes sense for the material. For example, a Stand anchored to snow could choose to deal bludgeoning or cold damage each time they deal damage with a melee attack.<\/li><li>You may choose to change an existing Resistance to an Immunity, to gain Resistance in two non-physical damage types, or Resistance in one physical damage type.<\/li><\/ul><\/li><li><u>Object-Anchor<\/u>: Examples: Wheel of Fortune, Strength, Surface, Superfly<ul><li>You have the ability to bind your Stand to a specific kind of object, such as a car, a sword, a radio tower, or a hat. Once you determine the specific object, you cannot change it.<\/li><li>While your Stand is bound to an object, it still has the ability to move and function on its own. Your Stand is able to change its anchor as an action so long as you are within two meters of it. You are able to summon or unsummon your Stand if it's within two meters of the User (if they have one).<\/li><li>Your Stand's Damage Reduction is increased considerably. <a class='in-page'>Immense Resistance<\/a> instead functions like <a class='in-page'>Armored Stand<\/a> (giving you double your Durability Modifier in Stand Damage Reduction). Armored Stand instead gives you triple your Durability Modifier for your Stand Damage Reduction.<\/li><li>You gain <a class='in-page'>Feat of Power<\/a>. If you already have Feat of Power, the amount you can lift and throw using it is doubled and you only take 1 damage for every two meters traveled.<\/li><\/ul><\/li><li><u>Self-Anchor<\/u>: Examples: Love Deluxe, Metallica, Stone Free, Oh! Lonesome Me, Dr. Wu.<ul><li>Your Stand is uniquely inseparable from you, meaning that you yourself are made of your Stand.<\/li><li>Your Unarmed Strikes can deal damage to Stands, and the Damage Die is raised to be equal to that of your Stand Attack Dice. In addition, you can always use your Stand stats for Strength, Dexterity, and Constitution Checks, Saves, and Attack Rolls, even if something would normally specify that you can't use your Stand stats.<\/li><li>Your User Movement Speed is brought up to be equal to that of your Stand's Movement Speed.<\/li><li>Your Range no longer determines how far your Stand can travel from you. Instead, it is a measure of how far you can extend your Stand, which is a part of yourself that must stay attached to your body somehow, either through separating parts of yourself or stretching out from you like an appendage. You may extend up to twice your normal Range, but pushing past your Range results in taking damage. When you start your turn beyond your normal Range, or exit the threshold of your normal Range, you take an amount of force damage equal to your Level, which cannot be reduced or negated in any way. If you have a Stand that stretches out from you, the Range Modifier determines how far in meters your Stand can stretch in a single direction.<\/li><li>You cannot change where your Stand is anchored, it will always be anchored to your body. In addition, it is always summoned, unless you are unconscious.<\/li><\/ul><\/li><\/ul>"
         ]
     },
     "Armored_Stand": {
@@ -91,7 +91,7 @@
             "Enh"
         ],
         "desc": [
-            "Prerequisite: Can only be used with Material-Anchor and Object-Anchor Stands. ",
+            "<b>Prerequisite: Material-Anchor or Object-Anchor</b>",
             "As an Enhancement-Type Stand User you've taken your Ability to the next level. Rather than having to anchor onto something very specific, you may now anchor onto anything that's similar to your original anchor.",
             "For example, <a href='https:\/\/jojowiki.com\/Wheel_of_Fortune' target='_blank'>Wheel of Fortune<\/a> would be able to anchor onto anything with wheels instead of a specific car, or <a href='https:\/\/jojowiki.com\/Strength' target='_blank'>Strength<\/a> would be able to anchor onto anything that floats in water instead of a specific boat."
         ]
@@ -316,15 +316,6 @@
             "A Special Ability might also be a passive Ability that functions independently of activation, or one that may be activated or deactivated at will. Passive Abilities consume 2 Stand Energy at the Start of the Stand User's Turn, and also take their Bonus Action to perform. If you are unable to use your Bonus Action, or you do not have enough Stand Energy remaining, the Ability simply stops functioning. "
         ]
     },
-    "Second_Ability": {
-        "name": "Second Ability",
-        "classes": [],
-        "desc": [
-            "Your Stand has undergone an evolution, and has gained a new Ability alongside its new form.",
-            "This Ability should be an evolution of your first Ability. Similar, but stronger or more versatile.",
-            "This Ability follows the same guidelines as any other <a class='in-page'>Custom Ability<\/a>."
-        ]
-    },
     "Superior_Momentum": {
         "name": "Superior Momentum",
         "classes": [
@@ -333,15 +324,6 @@
         ],
         "desc": [
             "Your Stand has Advantage on all Power, Precision, and Durability Saving Throws."
-        ]
-    },
-    "Third_Ability": {
-        "name": "Third Ability",
-        "classes": [],
-        "desc": [
-            "Your Stand has undergone another evolution, and has gained a new Ability alongside its new form.",
-            "This Ability should be an evolution of your second Ability. Similar, but stronger or more versatile.",
-            "This Ability follows the same guidelines as any other <a class='in-page'>Custom Ability<\/a>."
         ]
     },
     "Speedy_Movement": {
@@ -441,7 +423,8 @@
     "Camouflage": {
         "name": "Camouflage",
         "classes": [
-            "Enh"
+            "Enh",
+            "Ind"
         ],
         "desc": [
             "As an Action you may perfectly disguise your Stand, making it difficult for others to tell where or what your Stand is (for example, <a href='https:\/\/jojowiki.com\/High_Priestess' target='_blank'>High Priestess<\/a> disguising as a metal object, or <a href='https:\/\/jojowiki.com\/Wheel_of_Fortune' target='_blank'>Wheel of Fortune<\/a> shifting to look like a normal car).",
@@ -466,7 +449,7 @@
             "Act"
         ],
         "desc": [
-            "Through clever use of your Stand's Ability you've found a way to properly defend yourself. As an Attack you may spend 1 Stand Energy and gain one of the following benefits for 3 Turns (not including the one that you activate it on). You may only have one of the following buffs active at a time.<ul class='sublist'><li>+An amount of AC equal to your PB for your User, 2x your PB for your Stand<\/li><li>Advantage on all Saving Throws<\/li><li>An amount of Temporary Hit Points equal to twice your Level<\/li><\/ul>"
+            "Through clever use of your Stand's Ability you've found a way to properly defend yourself. As an Attack you may spend 1 Stand Energy and gain one of the following benefits for 3 Turns (not including the one that you activate it on). You may only have one of the following buffs active at a time.<ul class='sublist'><li>Gain an amount of AC equal to your Proficiency Bonus for your User and twice as much for your Stand<\/li><li>Advantage on all Saving Throws<\/li><li>An amount of Temporary Hit Points equal to twice your Level<\/li><\/ul>"
         ]
     },
     "Defensive_Wave": {
@@ -475,7 +458,7 @@
             "Hive"
         ],
         "desc": [
-            "Once per turn, as an attack, you may give yourself a buff that remains active until the start of your next Turn. Your Stand is a bunch of little instances that can hold themselves together in order to form a shield in order to protect their User.",
+            "Once per Turn, as an Attack, you may give yourself a buff that remains active until the start of your next Turn. Your Stand is a bunch of little instances that can hold themselves together in order to form a shield in order to protect their User.",
             "When this Shield is active, you gain an additional amount of damage reduction and Stand AC equal to your Durability modifier. "
         ]
     },
@@ -487,7 +470,7 @@
             "Act"
         ],
         "desc": [
-            "When you roll a Critical hit on a melee attack using your Stand, you roll three times the Damage Dice, rather than double."
+            "When you roll a Critical hit on a melee Attack using your Stand, you roll three times the Damage Dice, rather than double."
         ]
     },
     "Devastating_Melee": {
@@ -498,7 +481,7 @@
             "Act"
         ],
         "desc": [
-            "If you would have two conditions that would give you Advantage on a melee attack at the same time and you have no Disadvantage, you may instead roll 3 dice and take the highest of the three."
+            "If you would have two conditions that would give you Advantage on a melee Attack at the same time and you have no Disadvantage, you may instead roll 3 dice and take the highest of the three."
         ]
     },
     "Enhanced_Custom_Ability": {
@@ -704,8 +687,8 @@
         "name": "Siege Combat",
         "classes": [
             "Pwr",
-            "Act",
-            "Enh"
+            "Enh",
+            "Act"
         ],
         "desc": [
             "Attacks with your Stand deal double damage to objects and structures."
@@ -717,7 +700,7 @@
             "Enh"
         ],
         "desc": [
-            "Prerequisite: Can only be used with Material-Anchor Stands",
+            "<b>Prerequisite: Material-Anchor</b>",
             "As a Reaction you may switch between anchors for your Enhancement Stand very quickly, meaning that if someone attempts to hit you and you activate this ability, the first hit misses automatically. However, if your Stand moves outside of someone's melee, they can still take an Attack of Opportunity.",
             "You may use this Ability once per combat encounter."
         ]
@@ -756,14 +739,6 @@
             "As an Action you may \"Mark\" a specific object or person with your Stand, so long as the target is within your Stand's Range and activates a specific, predetermined trigger at some point.",
             "When a person or object is \"Marked\" your Stand automatically follows them, affecting them with their Ability. This effect continues until you recall your Stand back to you, you are killed, or the object\/person that is Marked is destroyed\/killed.",
             "When something is Marked by your Stand, the amount of meters that your Stand is active within is equal to your Stand's Range Score (not Modifier). If the object or person leaves your Range your Stand returns to you, but may instantly jump back to the object if the object\/person reenters the range of your Stand Marking."
-        ]
-    },
-    "Stand_Rush": {
-        "name": "Stand Rush",
-        "classes": [],
-        "desc": [
-            "When your enemy or your enemy's Stand has been Incapacitated, Restrained, or unwilling to fight for a full Turn or more while in your Stand's melee, you may perform this action. You may also start this Ability for free when you drop someone to 0 Hit Points using some sort of melee Attack with your Stand.",
-            "A Stand Rush takes an entire Turn, but if desired, may go on for a maximum of 10 Turns. Through this action, your Stand may punch an amount of times equal to your Stand's Speed Modifier. You may choose whether or not to make this lethal. When trapped within a Stand Rush, no actions can be taken."
         ]
     },
     "Subtle_Assistance": {
@@ -1201,12 +1176,9 @@
             "Spin"
         ],
         "desc": [
-            "As an attack, you may toss a sphere at a creature within the short range of the sphere to make a Str (or Pow) Saving Throw against your Spin DC. If they fail the saving throw, you may remove function from one of their four limbs, with the following effects:",
-            "<ul class='sublist'><li>Arms: The target loses function in one arm entirety, causing it to hang limply from your target's shoulder. This prevents them from using weapons that require two hands, and gives them Disadvantage on Athletics Checks and Strength Saves (but not the Save for this Ability).<\/li><li>Legs: The target loses function in one leg entirely, causing it to go numb and hang limply. If they have one paralyzed leg their Movement Speed is cut in half, and if they have two their Movement Speed drops to 0 and they fall Prone. A target with a paralyzed leg will have Disadvantage on all Acrobatics checks and Dexterity Saves.<\/li><\/ul> ",
-            "At the end of the target's turn, they make the Strength Saving Throw again. A successful Save means that they regain control of a single limb of their choice that has been paralyzed. They do not get to make the save for each limb, and only one limb's paralysis is removed on a success.",
-            "The effect lasts for a minute, or until they make enough Saves to remove the effect. Alternatively, the target (if they have at least one functional hand) or an ally of theirs can make a Medicine Check against your DC, removing paralysis from all affected limbs on success and only regaining control over a single limb of their choice on failure.",
-            "<a class='in-page'>Medicinal Spin<\/a> can remove the effect from a single paralyzed limb. ",
-            "<a class='in-page'>Forced Motion<\/a> from the Spin still works on a paralyzed limb.   "
+            "As an Attack, you may toss a sphere at a creature within the Short Range of the sphere to make a Strength (or Power) Saving Throw against your Spin DC. If they fail the Saving Throw, you may remove function from one of their four limbs, with the following effects:<ul class='sublist'><li>Arms: The target loses function in one arm entirety, causing it to hang limply from their shoulder. This prevents them from using weapons that require two hands, and gives them Disadvantage on Athletics Checks and Strength Saves.<\/li><li>Legs: The target loses function in one leg entirely, causing it to go numb and hang limply. If they have one paralyzed leg their Movement Speed is cut in half, and if they have two paralyzed legs their Movement Speed drops to 0 and they fall Prone. A target with a paralyzed leg will have Disadvantage on all Acrobatics Checks and Dexterity Saves. <\/ul><\/li>",
+            "At the end of the target's Turn, they make the Constitution Saving Throw again, regaining control of a single limb of their choice that has been paralyzed on success. The effect lasts for a minute, or until they make enough Saves to remove the effect. Alternatively, the target (if they have at least one functional hand) or an ally of theirs can make a Medicine Check against your DC, removing paralysis from all affected limbs on success and regaining control over a single limb of their choice on failure.",
+            "<a href='\/abilities\/?focus=Medicinal_Spin'>Medicinal Spin<\/a> can remove the effect from a single paralyzed limb, and <a href='\/abilities\/?focus=Forced_Motion'>Forced Motion<\/a> still works on a paralyzed limb."
         ]
     },
     "Wrist_Memory": {
@@ -2237,7 +2209,7 @@
         "desc": [
             "Act 3 Stands are capable and powerful in comparison to their previous Act when they start out. In order for you to gain a new Act, you must go through an event that is considered hopeless or desperate.",
             "When you gain a new Act, you should determine what type of Act it is (listed on the main Act-Type page).",
-            "You gain an amount of Level-Up points for Act 3 equal to those put into Acts 1 or Act 2. Alternatively, you may reroll to get caught up to the previous Acts are at."
+            "You gain an amount of Level-Up points for Act 3 equal to those put into Acts 1 or Act 2. Alternatively, you may reroll to get caught up to the Level the previous Acts are at."
         ],
         "classes": [
             "Act"
@@ -2258,7 +2230,7 @@
             "<b>Prerequisite: <a href='\/feats\/?focus=Act_Modification'>Act Modification<\/a><\/b>",
             "When you gain this Ability for the first time, you must choose one of the following modification types.",
             "Every time you gain this Ability, choose one of the features under your chosen modification type.",
-            "<ul class='sublist'><li><u>Anchor-Based<\/u>: All Acts gain <a class='in-page'>Anchored Stand<\/a>.<ul><li>Your Hit Dice increase by 1 size (d8s become d10s etc.) and you retroactively gain 1 Hit Point per Level you currently have. You also gain <a class='in-page'>Confident Provocation<\/a> if you didn't have it already. You may not take this option if your Hit Dice are already d12s.<\/li><li>Your Stands' Damage Reduction increases. All Acts gain <a class='in-page'>Immense Resistance<\/a>. If one of your Acts already had Immense Resistance, it instead gains <a class='in-page'>Armored Stand<\/a>.<\/li><li>Gain one of the following for all Acts: <a class='in-page'>Camouflage<\/a>, <a class='in-page'>Juggernaut<\/a>, or <a class='in-page'>Superior Control<\/a>. (Level 6+)<\/li><li>Gain one of the following for all Acts: <a class='in-page'>General Anchors<\/a> or <a class='in-page'>Speedy Switch<\/a>. (Level 11+)<\/li><li>Gain either the <a class='\/feats\/?focus=Anchored_Immunity'>Anchored Immunity<\/a> or <a class='\/feats\/?focus=Resilient'>Resilient<\/a> Feat. (Level 16+)<\/li><\/ul><li><u>Grudge-Based:<\/u> Your Stand uses the Grudge Point system from <a href='\/classes\/?focus=Revenge'>Revenge-Type<\/a>. Once you meet the Grudge requirement to summon your Stand, you may switch Acts as normal. When you Level-Up in Act Type, you roll an addition d4 for Stand stat points (3d4 + Level), and may roll a d4 per Level to gain points retroactively when you choose this modification. Finally, all Acts gain <a class='in-page'>Stand Marking<\/a> and <a class='in-page'>Detached Senses<\/a>.<ul><li>Your Hit Dice increase by 1 size (d8s become d10s etc.) and you retroactively gain 1 Hit Point per Level you currently have. You also gain <a class='in-page'>Confident Provocation<\/a> if you didn't have it already. You may not take this option if your Hit Dice are already d12s.<\/li><li>Your offensive capabilities increase. All Acts gain <a class='in-page'>Reckless Attack<\/a>, as well as one of the following: <a class='in-page'>Melee Barrage<\/a>, <a class='\/feats\/?focus=Menacing_Aura'>Menacing Aura<\/a>, or <a class='\/feats\/?focus=Weapon_Feat'>Weapon Feat<\/a>.<\/li><li>Gain one of the following for all Acts: <a class='in-page'>Armored Stand<\/a> (only for Acts that do not have a Durability restriction), <a class='\/feats\/?focus=Berserker'>Berserker<\/a>, <a class='in-page'>Focused Hatred<\/a>, <a class='in-page'>Nemesis<\/a>, or <a class='in-page'>Rejuvenation<\/a>. (Level 6+)<\/li><li>Gain one of the following for all Acts: <a class='in-page'>Lasting Grudge<\/a> or <a class='in-page'>Second Life<\/a>. (Level 11+)<\/li><li>Gain one of the following for all Acts: <a class='in-page'>Devastating Critical<\/a>, <a class='in-page'>Devastating Melee<\/a>, <a href='\/feats\/?focus=Guardians_Wrath'>Guardian's Wrath<\/a>, or <a class='in-page'>Superior Grudge<\/a>. (Level 16+)<\/li><\/ul><\/li><li><u>Hive-Based<\/u>: All Acts gain <a class='in-page'>Split Stand<\/a> and gain the ability to use Swarm Attacks from <a href='\/classes\/?focus=Hive'>Hive-Type<\/a>.<ul><li>Your reconnaissance abilities increase. All Acts gain <a class='in-page'>Detached Senses<\/a>, as well as either <a class='in-page'>Hot Pursuit<\/a> or <a class='in-page'>Stand Marking<\/a>.<\/li><li>Your combat abilities increase. All Acts gain <a class='in-page'>Immense Resistance<\/a> and <a class='in-page'>Surrounding Swarm<\/a>.<\/li><li>Gain one of the following for all Acts: <a class='in-page'>Armored Stand<\/a> (only for Acts that do not have a Durability restriction), <a class='in-page'>Immense Range<\/a> (only for Acts that do not have a Range restriction), <a class='in-page'>Defensive Wave<\/a>, or <a class='in-page'>Mobile Wave<\/a>. (Level 6+)<\/li><li>Gain one of the following for all Acts: <a class='in-page'>Silent Movement<\/a> or <a class='in-page'>Speedy Movement<\/a>. (Level 11+)<\/li><li>Gaine one of the following for all Acts: <a class='\/feats\/?focus=Enhanced_Stand_Senses'>Enhanced Stand Senses<\/a>, <a class='\/feats\/?focus=Improved_Awareness'>Improved Awareness<\/a>, <a class='\/feats\/?focus=Skirmisher'>Skirmisher<\/a>, or <a class='in-page'>Immense Range<\/a> (only for Acts that do not have a Range restriction). (Level 16+)<\/li><\/ul><\/li><\/ul>"
+            "<ul class='sublist'><li><u>Anchor-Based<\/u>: All Acts gain <a class='in-page'>Anchored Stand<\/a>.<ul><li>Your Hit Dice increase by 1 size (d8s become d10s etc.) and you retroactively gain 1 Hit Point per Level you currently have. You also gain <a class='in-page'>Confident Provocation<\/a> if you didn't have it already. You may not take this option if your Hit Dice are already d12s.<\/li><li>Your Stands' Damage Reduction increases. All Acts gain <a class='in-page'>Immense Resistance<\/a>. If one of your Acts already had Immense Resistance, it instead gains <a class='in-page'>Armored Stand<\/a>.<\/li><li>Gain one of the following for all Acts: <a class='in-page'>Camouflage<\/a>, <a class='in-page'>Juggernaut<\/a>, or <a class='in-page'>Superior Control<\/a>. (Level 6+)<\/li><li>Gain one of the following for all Acts: <a class='in-page'>General Anchors<\/a> or <a class='in-page'>Speedy Switch<\/a>. (Level 11+)<\/li><li>Gain either the <a class='\/feats\/?focus=Anchored_Immunity'>Anchored Immunity<\/a> or <a class='\/feats\/?focus=Resilient'>Resilient<\/a> Feat. (Level 16+)<\/li><\/ul><li><u>Grudge-Based:<\/u> Your Stand uses the Grudge Point system from <a href='\/classes\/?focus=Revenge'>Revenge-Type<\/a>. Once you meet the Grudge requirement to summon your Stand, you may switch Acts as normal. When you Level-Up in Act Type, you roll an additional d4 for Stand stat points (3d4 + Level), and may roll a d4 per Level to gain points retroactively when you choose this modification. Finally, all Acts gain <a class='in-page'>Stand Marking<\/a> and <a class='in-page'>Detached Senses<\/a>.<ul><li>Your Hit Dice increase by 1 size (d8s become d10s etc.) and you retroactively gain 1 Hit Point per Level you currently have. You also gain <a class='in-page'>Confident Provocation<\/a> if you didn't have it already. You may not take this option if your Hit Dice are already d12s.<\/li><li>Your offensive capabilities increase. All Acts gain <a class='in-page'>Reckless Attack<\/a>, as well as one of the following: <a class='in-page'>Melee Barrage<\/a>, <a class='\/feats\/?focus=Menacing_Aura'>Menacing Aura<\/a>, or <a class='\/feats\/?focus=Weapon_Feat'>Weapon Feat<\/a>.<\/li><li>Gain one of the following for all Acts: <a class='in-page'>Armored Stand<\/a> (only for Acts that do not have a Durability restriction), <a class='\/feats\/?focus=Berserker'>Berserker<\/a>, <a class='in-page'>Focused Hatred<\/a>, <a class='in-page'>Nemesis<\/a>, or <a class='in-page'>Rejuvenation<\/a>. (Level 6+)<\/li><li>Gain one of the following for all Acts: <a class='in-page'>Lasting Grudge<\/a> or <a class='in-page'>Second Life<\/a>. (Level 11+)<\/li><li>Gain one of the following for all Acts: <a class='in-page'>Devastating Critical<\/a>, <a class='in-page'>Devastating Melee<\/a>, <a href='\/feats\/?focus=Guardians_Wrath'>Guardian's Wrath<\/a>, or <a class='in-page'>Superior Grudge<\/a>. (Level 16+)<\/li><\/ul><\/li><li><u>Hive-Based<\/u>: All Acts gain <a class='in-page'>Split Stand<\/a> and gain the ability to use Swarm Attacks from <a href='\/classes\/?focus=Hive'>Hive-Type<\/a>.<ul><li>Your reconnaissance abilities increase. All Acts gain <a class='in-page'>Detached Senses<\/a>, as well as either <a class='in-page'>Hot Pursuit<\/a> or <a class='in-page'>Stand Marking<\/a>.<\/li><li>Your combat abilities increase. All Acts gain <a class='in-page'>Immense Resistance<\/a> and <a class='in-page'>Surrounding Swarm<\/a>.<\/li><li>Gain one of the following for all Acts: <a class='in-page'>Armored Stand<\/a> (only for Acts that do not have a Durability restriction), <a class='in-page'>Immense Range<\/a> (only for Acts that do not have a Range restriction), <a class='in-page'>Defensive Wave<\/a>, or <a class='in-page'>Mobile Wave<\/a>. (Level 6+)<\/li><li>Gain one of the following for all Acts: <a class='in-page'>Silent Movement<\/a> or <a class='in-page'>Speedy Movement<\/a>. (Level 11+)<\/li><li>Gain one of the following for all Acts: <a class='\/feats\/?focus=Enhanced_Stand_Senses'>Enhanced Stand Senses<\/a>, <a class='\/feats\/?focus=Improved_Awareness'>Improved Awareness<\/a>, <a class='\/feats\/?focus=Skirmisher'>Skirmisher<\/a>, or <a class='in-page'>Immense Range<\/a> (only for Acts that do not have a Range restriction). (Level 16+)<\/li><\/ul><\/li><\/ul>"
         ],
         "classes": [
             "Act"

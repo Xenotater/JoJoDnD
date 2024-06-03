@@ -62,7 +62,8 @@ function updateDisplay() {
     box2Text += "</p><p><b><u>" + passion.custom.name + ":</u></b> " + passion.custom.desc;
     if (passion.alt != null) box2Text += " Alternatively, you may choose to forgo one of these Proficiencies to instead gain " + passion.alt;
     box2Text += "</p>";
-    box2Text += "<p><b><u>Additional Proficiencies:</u></b> You gain an additional amount of Proficiencies of your choice equal to 1 + your Proficiency Bonus."
+    if (p != "Student")
+        box2Text += "<p><b><u>Additional Proficiencies:</u></b> You gain an additional amount of Proficiencies of your choice equal to 1 + your Proficiency Bonus."
     
     $("#box1").html(box1Text);
     $("#box2").html(box2Text);
