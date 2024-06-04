@@ -274,7 +274,7 @@
             {
                 "name": "Stand AC",
                 "content": [
-                    "<p>Your Stand AC is equal to 8 plus your Durability, Precision, and Speed Modifiers. When your Stand is within 2 Meters of you your Stand can protect you from attacks using its AC. Like normal, if an Attack Roll is less than your AC it misses. However, if the Attack Roll is between your Stand AC and your own AC it hits your Stand instead, allowing you to apply your Stand's Damage Reduction. Additionally, if the damage type is Non-Stand, it simply bounces off of your Stand or phases through it. An Attack Roll higher than your Stand AC is a direct hit to the User.<\/p>",
+                    "<p>Your Stand AC is equal to 10 plus your Durability, Precision, and Speed Modifiers. When your Stand is within 2 Meters of you your Stand can protect you from attacks using its AC. Like normal, if an Attack Roll is less than your AC it misses. However, if the Attack Roll is between your Stand AC and your own AC it hits your Stand instead, allowing you to apply your Stand's Damage Reduction. Additionally, if the damage type is Non-Stand, it simply bounces off of your Stand or phases through it. An Attack Roll higher than your Stand AC is a direct hit to the User.<\/p>",
                     "<p><small><b>Note: <\/b><i>Enhancement\/Independant Stands are able to be affected by all damage types, rather than just Stand damage. Independent-Types also have both a regular AND Stand AC for the sake of Damage Reduction, despite not technically having a User.<\/i><\/small><\/p>"
                 ]
             },
