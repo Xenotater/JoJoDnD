@@ -67,7 +67,7 @@
         "saves": "You are Proficient in Charisma and Wisdom Saving Throws.",
         "custom": {
             "name": "Award-Winning Smile",
-            "desc": "You have Proficiency in two of the following: Bluff, Finesse, Supernatural, or Vibe"
+            "desc": "You have Proficiency in two of the following: Bluff, Finesse, Supernatural, or Vibe."
         },
         "alt": "Proficiency in two sets of tools or Expertise in a skill that you're already Proficient in."
     },
@@ -101,7 +101,7 @@
         "saves": "You are Proficient in two of the following Saving Throws: Intelligence, Wisdom, or Charisma.",
         "custom": {
             "name": "Leadership Experience",
-            "desc": "You have Proficiency in two of the following: Bluff, Diplomacy, Perception, Presence, Supernatural, or Vibe"
+            "desc": "You have Proficiency in two of the following: Bluff, Diplomacy, Perception, Presence, Supernatural, or Vibe."
         },
         "alt": "Expertise in a skill that you're already Proficient in."
     },

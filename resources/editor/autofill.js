@@ -372,10 +372,12 @@ function updatePassive() {
 
 function updateProfs() {
     var mod = parseInt($("#int-mod").val());
-    if (isNaN(mod) || mod < 1)
+    var bonus = parseInt($("#bonus").val());
+    var total = 3 + mod + bonus;
+    if (isNaN(total) || total < 1)
         $("#skillcnt").html("");
     else
-        $("#skillcnt").html(" (+" + mod + ")");
+        $("#skillcnt").html(" (+" + total + ")");
 }
 
 function updateAtks() {
