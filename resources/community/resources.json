@@ -39,7 +39,7 @@
       "title": "JoJo D&D Baseball",
       "img": "Assets/Baseball/baseball.webp",
       "desc": "A homebrew to play JoJo-themed baseball within the JoJo D&D module. Created by sandman.",
-      "link": "https://docs.google.com/document/d/1uaivKIFgslFGANCBY204VNsvwf500k_sDuYOrYULgKw/edit",
+      "link": "Assets/Baseball/JoJoDND_Baseball.pdf",
       "alt": "JoJo Baseball"
     },
     {
@@ -62,6 +62,20 @@
       "desc": "A bare-bones version of the character sheets. Created by sandman.",
       "link": "Assets/Bare Bones/Bare Bones Sheet.pdf",
       "alt": "sandman's Sheet"
+    },
+    {
+      "title": "The Chained",
+      "img": "Assets/The Chained/chained.webp",
+      "desc": "A Stand Typing designed for villians, antagonists, and more evil characters. Created by Sammick.",
+      "link": "Assets/The Chained/The_Chained.pdf",
+      "alt": "The Chained"
+    },
+    {
+      "title": "Level Helper",
+      "img": "Assets/Level Helper/helper.webp",
+      "desc": "A table of level based stuff like Proficiency Bonuses, Ability Dice, and more. Created by Sammick.",
+      "link": "https://docs.google.com/spreadsheets/d/1rAwnVnnurLVH13rcwskcD9VhfLYgQ34blORD_N8bWIA/edit?usp=sharing",
+      "alt": "Helper"
     },
     {
       "title": "Feature Yours Here!",
