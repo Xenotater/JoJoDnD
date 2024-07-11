@@ -272,6 +272,7 @@ textarea {
     border: none;
     overflow: hidden;
     font-size: 12px;
+    line-height: 14px;
 }
 
 #classbox, #featsbox, #otherbox {

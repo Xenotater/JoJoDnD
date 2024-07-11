@@ -137,10 +137,13 @@
                                             <option value="act">Act</option>
                                             <option value="rip">Ripple</option>
                                             <option value="spin">Spin</option>
-                                            <option value="brl">Brawler</option>
-                                            <option value="knt">Knight</option>
-                                            <option value="sld">Soldier</option>
-                                            <option value="snp">Sniper</option>
+                                            <option value="art">Artisan</option>
+                                            <option value="ass">Assassin</option>
+                                            <option value="con">Consul</option>
+                                            <option value="heav">Heavyweight</option>
+                                            <option value="ran">Ranger</option>
+                                            <option value="sch">Scholar</option>
+                                            <option value="war">Warrior</option>
                                             <option value="multi">Other/Multiclass</option>
                                         </select>
                                         <input type="number" id="act-num" min="0" max="3" value="0">
@@ -300,6 +303,16 @@
                                                         <span class="skilllbl">Invest</span><span class="skillstat">(int)</span>
                                                     </li>
                                                     <li>
+                                                        <select class="skillcheck" id="his" name="his">
+                                                            <option value=""></option>
+                                                            <option value="p">P</option>
+                                                            <option value="e">E</option>
+                                                            <option value="m">M</option>
+                                                        </select>
+                                                        <input type="text" class="numbers skill-bonus int-skill single-stat" id="his-bonus" name="his-bonus">
+                                                        <span class="skilllbl">Know</span><span class="skillstat">(int)</span>
+                                                    </li>
+                                                    <li>
                                                         <select class="skillcheck" id="medi" name="medi">
                                                             <option value=""></option>
                                                             <option value="p">P</option>
@@ -309,16 +322,6 @@
                                                         <input type="text" class="numbers skill-bonus int-skill" id="medi-bonus0" name="medi-bonus0">
                                                         <input type="text" class="numbers skill-bonus wis-skill" id="medi-bonus" name="medi-bonus">
                                                         <span class="skilllbl">Medic</span><span class="skillstat">(int/wis)</span>
-                                                    </li>
-                                                    <li>
-                                                        <select class="skillcheck" id="his" name="his">
-                                                            <option value=""></option>
-                                                            <option value="p">P</option>
-                                                            <option value="e">E</option>
-                                                            <option value="m">M</option>
-                                                        </select>
-                                                        <input type="text" class="numbers skill-bonus int-skill single-stat" id="his-bonus" name="his-bonus">
-                                                        <span class="skilllbl">Know</span><span class="skillstat">(int)</span>
                                                     </li>
                                                     <li>
                                                         <select class="skillcheck" id="perc" name="perc">
