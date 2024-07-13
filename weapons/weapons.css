@@ -68,7 +68,7 @@
 
 #popUp {
     position: absolute;
-    max-width: 45vw;
+    max-width: 40vw;
     min-width: 170px;
     border: 2px solid black;
     border-radius: unset;
@@ -137,4 +137,12 @@
 
 .simplebar-track.simplebar-horizontal {
     top: 39px; /* move scrollbar to top */
+}
+
+@media (max-width: 600px)
+{
+    #popUp {
+        max-width: 75vw;
+        width: max-content;
+    }
 }

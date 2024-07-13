@@ -204,15 +204,17 @@ function hint(attr) { //this whole thing should be replaced by json..
         case "AC Bonus":
             return("This weapon grants " + bonus + " to your AC while it is equipped.");
         case "Hunker":
-            return("While holding this item, if you've not moved this turn, you may gain " + cover + " Cover as a Bonus Action until the start of your turn, though this also reduces your Movement Speed to 0.")
+            return("While holding this item, if you've not moved this turn, you may gain " + cover + " Cover as a Bonus Action until the start of your turn, though this also reduces your Movement Speed to 0.");
         case "Reach":
             return("This weapon can attack targets from an additional meter away.");
         case "Conductive":
-            return("Energy currents, such as electricity or Ripple, may be run through this weapon.");
+            return("Energy currents, such as electricity or Ripple, may be run through this weapon without harming the wielder.");
         case "Bayonet":
             return("You may attach a dagger to the front of the rifle, allowing the weapon to be used in melee with the stats of a longspear.");
         case "Open Hand":
-            return("When you have this weapon equipped, you may also hold other weapons or objects in the same hand or perform actions such as Shove or Grapple as though your hand was free.")
+            return("When you have this weapon equipped, you may also use other weapons or objects in the same hand or perform actions such as Shove or Grapple as though your hand was free.<br>This weapon's attributes and damage do not apply at the same time as another in the same hand.");
+        case "Limited Hand":
+            return("When you have this weapon equipped, you may also use other Light weapons, tiny objects, or Shove and Grapple as though your hand was free.<br>This weapon's attributes and damage do not apply at the same time as another in the same hand.");
         default:
             return("Error: This attribute doesn't have a definition. Please alert the site administrator.");     
     }
@@ -221,7 +223,7 @@ function hint(attr) { //this whole thing should be replaced by json..
 function popUp(text, posX, posY) {
     $("#popUp").remove(); //just in case
     $("body").append("<div class='content' id='popUp'><p>" + text + "</p></div>");
-    $("#popUp").css("left", posX + 25);
+    $("#popUp").css("left", posX - 100);
 
     //ensure popUp doesn't go past navbar
     if (posY - $("#popUp").outerHeight() > $("nav").position().top + 88)
@@ -229,7 +231,7 @@ function popUp(text, posX, posY) {
     else
         posY -= .5 * $("#popUp").outerHeight();
 
-    $("#popUp").css("top", posY - 25);
+    $("#popUp").css("top", posY - 50);
 }
 
 //sort-by-key from https://stackoverflow.com/questions/8175093/simple-function-to-sort-an-array-of-objects

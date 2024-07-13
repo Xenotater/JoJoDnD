@@ -19,7 +19,8 @@
             "name": "Brass Knuckles",
             "attr": [
                 "Concealed (+10)",
-                "Light"
+                "Light",
+                "Limited Hand"
             ],
             "type": "Simple",
             "spec": "Melee",
@@ -46,6 +47,7 @@
             "attr": [
                 "Concealed (+8)",
                 "Light",
+                "Limited Hand",
                 "Thrown (5\/15)"
             ],
             "type": "Simple",
@@ -440,7 +442,8 @@
             "name": "Buckler",
             "attr": [
                 "AC Bonus (+1)",
-                "Light"
+                "Light",
+                "Limited Hand"
             ],
             "type": "Martial",
             "spec": "Melee\/Shield",
@@ -558,6 +561,7 @@
             "name": "Sling",
             "attr": [
                 "Concealed (+8)",
+                "Limited Hand",
                 "Ranged (40\/120)"
             ],
             "type": "Simple",
@@ -621,7 +625,8 @@
             "name": "Quarterstaff",
             "attr": [
                 "Concealed (+5)",
-                "Versatile (1d10)"
+                "Versatile (1d10)",
+                "Reach"
             ],
             "type": "Simple",
             "spec": "Melee",
@@ -660,6 +665,7 @@
                 "Ambush",
                 "Concealed (+10)",
                 "Light",
+                "Limited Hand",
                 "Thrown (10\/20)"
             ],
             "type": "Simple",
@@ -857,6 +863,7 @@
         {
             "name": "Gauntlet",
             "attr": [
+                "AC Bonus (+1)",
                 "Concealed (+2)",
                 "Light",
                 "Open Hand",
@@ -866,7 +873,7 @@
             "spec": "Melee",
             "stat": "Str",
             "prereq": "None",
-            "dmg": "1d8 Bludgeoning"
+            "dmg": "1d6 Bludgeoning"
         },
         {
             "name": "Lance",
@@ -898,7 +905,8 @@
                 "Complex",
                 "Firearm",
                 "Ranged (15\/30)",
-                "Reload (x1)"
+                "Reload (x1)",
+                "Two-Handed"
             ],
             "type": "Simple",
             "spec": "Rifle",
@@ -946,6 +954,7 @@
         {
             "name": "Spiked Gauntlet",
             "attr": [
+                "AC Bonus (+1)",
                 "Light",
                 "Open Hand"
             ],
@@ -953,7 +962,7 @@
             "spec": "Melee",
             "stat": "Str",
             "prereq": "None",
-            "dmg": "1d10 Piercing"
+            "dmg": "1d8 Piercing"
         },
         {
             "name": "Throwing Hammer",
@@ -980,6 +989,43 @@
             "stat": "Str\/Dex",
             "prereq": "Dex 13+",
             "dmg": "1d6 Slashing"
+        },
+        {
+            "name": "Hand Wraps",
+            "attr": [
+                "Concealed (+10)",
+                "Light",
+                "Open Hand"
+            ],
+            "type": "Simple",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning"
+        },
+        {
+            "name": "Meteor Hammer",
+            "attr": [
+                "Reach"
+            ],
+            "type": "Martial",
+            "spec": "Melee",
+            "stat": "Str\/Dex",
+            "prereq": "Dex 13+",
+            "dmg": "1d8 Bludgeoning"
+        },
+        {
+            "name": "Tonfa",
+            "attr": [
+                "AC Bonus (+1)",
+                "Ambush",
+                "Light"
+            ],
+            "type": "Martial",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning"
         }
     ]
 }
