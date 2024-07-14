@@ -143,6 +143,7 @@
         "desc": [
             "Your Stand is incredibly resilient, a reflection of your willpower and experience.",
             "Your Stand's Damage Reduction increases by double your Constitution Modifier, with a minimum increase of 2.",
+            "If you have <a class='in-page'> Distant Defense<\/a> and your Stand is more than 2 meters away from you and not protecting anyone, you may increase your Stand's Damage Reduction by double your Dexterity Modifier instead of Constitution.",
             "<a class='in-page'>Armored Stand<\/a> still applies, but applies before this increase."
         ]
     },
@@ -294,7 +295,8 @@
         ],
         "desc": [
             "Your Stand has the ability to defend you and let you escape from very dangerous situations with relative ease.",
-            "When your Stand is within 2 meters of you, you may Disengage or Hide as a Bonus Action."
+            "When your Stand is within 2 meters of you, you may Disengage or Hide as a Bonus Action.",
+            "If your Stand is more than 2 meters away from you, it may still Disengage or Hide as a Bonus Action, but you may not."
         ]
     },
     "Special_Ability": {
@@ -723,8 +725,8 @@
             "Act"
         ],
         "desc": [
-            "At the cost of 5 meters of your Movement Action your Stand may punch or kick against a strong, rigid surface in order to propel both the Stand and User into the air. This can be done straight up, horizontally, or at an angle somewhere in between.",
-            "The Stand User can move an amount of meters equal to their Stand's Power Modifier in any direction midair. Also, as a Reaction, you can negate all fall damage."
+            "At the cost of 5 meters of your Movement Speed (not your Stand's) your Stand may punch or kick against a strong, rigid surface in order to propel both the Stand and User into the air. This can be done straight up, horizontally, or at an angle somewhere in between.",
+            "If your Stand is within 2 meters it may propel you with it up to an amount of meters equal to your Stand's Power Modifier in a straight line any direction midair. Also, as a Reaction, you can negate all fall damage."
         ]
     },
     "Stand_Marking": {
@@ -796,7 +798,7 @@
         ],
         "desc": [
             "You've learned one of the following schools of combat that enables you to better use your Ripple combatively.",
-            "<ul class='sublist'><li><b>Disciplined<\/b>: You gain Proficiency in 2 Saving Throws of your Choice.<\/li><li><b>Enhanced Reflexes<\/b>: As a Reaction you may move up to half your Movement Speed without provoking Opportunity Attacks. You may use this to avoid an AOE Save, but not a single target attack.<\/li><li><b>Graceful Fighting<\/b>: When you make Unarmed Attacks or Attacks using a Simple melee Weapon you may use Dexterity for both the Attack and Damage Rolls. Additionally, you may use your Unarmed Dice with a Simple melee Weapon instead of its regular Damage Die.<\/li><li><b>Powerful<\/b>: Rather than using regular AC, you may choose to have your AC be 10 + your Strength Modifier + your Constitution Modifier.<\/li><\/ul>"
+            "<ul class='sublist'><li><b>Disciplined<\/b>: You gain Proficiency in 2 Saving Throws of your Choice.<\/li><li><b>Enhanced Reflexes<\/b>: As a Reaction you may move up to half your Movement Speed without provoking Opportunity Attacks. You may use this to avoid an AOE Save, but not a single target attack.<\/li><li><b>Graceful Fighting<\/b>: When you make Unarmed Attacks or Attacks using a Simple melee Weapon you may use Dexterity for both the Attack and Damage Rolls. Additionally, you may use your Unarmed Dice with a Simple melee Weapon instead of its regular Damage Die.<\/li><li><b>Mobile:<\/b> You gain Advantage on Saving Throws that would restrict your Movement. Additionally, you may spend your Bonus Action in order to ignore Difficult Terrain.<\/li><li><b>Powerful<\/b>: Rather than using regular AC, you may choose to have your AC be 10 + your Strength Modifier + your Constitution Modifier.<\/li><\/ul>"
         ]
     },
     "Recovery_Breathing": {
@@ -1121,7 +1123,7 @@
         "desc": [
             "The Spin has been used as a medical tool by powerful practitioners for many years. The Spin applied in this way numbs the pain around a wound and makes it easier to repair and notice problem areas.",
             "As a Reaction or Attack you may use a Sphere to perform one of the following on a target within the Sphere's Long Range:",
-            "<ul class='sublist'><li>Restore the target to 1 Hit Point if they are at 0<\/li><li>Remove one of the following Conditions from the target: Poisoned, Paralyzed, or Stunned<\/li><li>Double any healing or temporary hit points the target receives until the end of their next Turn.<\/li><\/ul>"
+            "<ul class='sublist'><li>Restore the target to 1 Hit Point if they are at 0<\/li><li>Remove one of the following Conditions from the target: Poisoned, Restrained, Staggered, or Stunned<\/li><li>Double any healing or temporary hit points the target receives until the end of their next Turn.<\/li><\/ul>"
         ]
     },
     "Sendo_Spin": {
@@ -1280,10 +1282,11 @@
             "Vamp"
         ],
         "desc": [
-            "By reflecting light within your eyes for an entire Turn, you may send your brain waves through the air and take control of another living creature. The range of this Feature is 3 Meters, and you must make direct eye contact with the target in order to use this Ability.",
-            "The opposing creature must make a Wisdom Saving Throw against your Vampiric DC. If the Save is successful nothing happens, but if the throw is failed the creature becomes Hypnotized. Ripple Users are immune to this and automatically succeed the Save.",
-            "The effects last up to an hour. While a creature is Hypnotized, they must follow any and all commands given to them by their Vampiric controller, even if it would put them in the way of harm or be completely opposed to the creature's normal goals. If they are not given commands by you, they simply remain in the general position they were in when they were Hypnotized, and they count as Incapacitated for the duration.",
-            "You may end this Hypnosis before the hour is up, if you so wish. They may remake the Saving Throw every time they take damage, or if an ally uses their Action to try to shake them out of it, with the effect ending on success. The effect also ends if the target falls Unconscious. You may use this Ability once per Long Rest."
+            "By reflecting light within your eyes for an Action, you may send your brain waves through the air and take control of another living creature. The range of this Feature is 5 Meters, and you must make direct eye contact with the target in order to use this Ability.",
+            "The opposing creature must make a Charisma Saving Throw against your Vampiric DC. If the Save is successful nothing happens, but if the throw is failed the creature becomes Hypnotized. Ripple Users are immune to this and automatically succeed the Save.",
+            "The effects last up to an hour. While a creature is Hypnotized, they must follow any and all commands given to them by their Vampiric controller even if it would be completely opposed to the creature's normal goals, unless it would obviously cause direct harm to themself. If they are not given commands by you, they simply remain in the general position they were in when they were Hypnotized, and they count as Incapacitated for the duration.",
+            "You may end this Hypnosis before the hour is up, if you so wish. They may remake the Saving Throw every time they take damage, or if an ally uses their Action to try to shake them out of it, with the effect ending on success. If the effect is ended by a successful Save or an ally's assistance, the affected becomes immune to Hypnosis for the next hour. The effect also ends if the target falls Unconscious.",
+            "You may use this Ability an amount of times equal to your Charisma Modifier per Long Rest."
         ]
     },
     "Space_Ripper_Stingy_Eyes": {
@@ -1633,7 +1636,8 @@
             "Ghl"
         ],
         "desc": [
-            "As a Ghoul, you may regenerate slightly by consuming flesh of the living. When you attack someone with an Unarmed Strike, you may heal an amount equal to a quarter of the damage dealt (minimum of 1)."
+            "As a Ghoul, you may regenerate slightly by consuming flesh of the living. When you attack someone with an Unarmed Strike, you may heal an amount equal to a quarter of the damage dealt (minimum of 1).",
+            "Whenever you kill an enemy and are able to consume their flesh and\/or blood, you may use an amount of your Hit Dice equal to the amount of Hit Dice that the creature had."
         ]
     },
     "Lifesteal": {
@@ -1642,7 +1646,8 @@
             "Vamp"
         ],
         "desc": [
-            "As a Vampire, you may heal a good amount of health by feeding off of lesser Undead or living beings. When you attack a creature with an Unarmed Strike, you may heal an amount equal to half of the damage dealt (minimum of 1)."
+            "As a Vampire, you may heal a good amount of health by feeding off of lesser Undead or living beings. When you attack a creature with an Unarmed Strike, you may heal an amount equal to half of the damage dealt (minimum of 1).",
+            "Whenever you kill an enemy and are able to consume their flesh and\/or blood, you may use an amount of your Hit Dice equal to the amount of Hit Dice that the creature had, but may also add your Constitution Modifier an additional time for each die. Additionally, consuming a person grants you the benefits of a Short Rest."
         ]
     },
     "Lifeweaver": {
@@ -1679,7 +1684,7 @@
             "EPM"
         ],
         "desc": [
-            "You have reached the pinnacle of your abilities as a greater Undead, growing close to your full potential. You gain a special ability of great power that is unique to you. An example of this special ability is <a href='https:\/\/jojowiki.com\/Wamuu' target='_blank'>Wham's<\/a> wind mastery. Talk to your DM about the reach of this ability."
+            "You have reached the pinnacle of your abilities as a greater Undead, growing close to your full potential. Your <a class='in-page'>Custom Bodily Ability<\/a> is greatly increased in potency. Discuss this change with your DM."
         ]
     },
     "Superior_Lifesteal": {
@@ -1688,7 +1693,8 @@
             "EPM"
         ],
         "desc": [
-            "As an Enhanced Pillar Men, you may absorb great amounts of energy all at once by feeding off of lesser Undead or living beings. When you attack a creature with an Unarmed Strike, you may heal an amount equal to the damage dealt (minimum of 1)."
+            "As an Enhanced Pillar Men, you may absorb great amounts of energy all at once by feeding off of lesser Undead or living beings. When you attack a creature with an Unarmed Strike, you may heal an amount equal to the damage dealt (minimum of 1).",
+            "Whenever you kill an enemy and are able to consume their flesh and\/or blood, you may use an amount of your Hit Dice equal to the amount of Hit Dice that the creature had, but may also add your Constitution Modifier an additional time for each die. Additionally, consuming a person grants you the benefits of a Short Rest, or fully replenishes a single Ability or Feat that would normally require a Long Rest to replenish."
         ]
     },
     "Vampirification": {
@@ -1812,7 +1818,7 @@
             "Sch"
         ],
         "desc": [
-            "You may spend an Attack to make a Skill Check, rather than your full Action.",
+            "You may spend an Attack or your Bonus Action to make a Skill Check, rather than your full Action.",
             "This applies to all Checks, including escaping a Grapple, using the Hide Action, performing Medicine Checks to revive an ally, and more."
         ]
     },
@@ -1909,7 +1915,7 @@
             "The item has an amount of charges equal to your Proficiency Bonus per Long Rest, and you may regain half of the charges on a Short Rest. These charges are used when activating the item's Ability, chosen from the options below:",
             "<b><u>Charm Abilities:<\/u><\/b><ul class='sublist'><li>Inspiring Trinket: When you fail a Skill Check you may attempt the roll a second time as a Free Action. Alternatively, you may spend a second charge to also have Advantage on the reroll. You may only use this Ability once per Turn.<\/li><li>Ready Stance: When someone you can see makes a Skill Check or Saving Throw you can use your Reaction to give them Advantage. Alternatively, you may spend a second charge to also grant them Advantage on all Checks and Saves until the end of their next Turn.<\/li><li>Source of Motivation: When you fail a Saving Throw you may use your Reaction to reroll it. Alternatively, you may spend a second charge to also gain Advantage on all Saving Throws of that type until the start of your next Turn.<\/li><\/ul>",
             "<b><u>Defensive Abilities:<\/u><\/b><ul class='sublist'><li>Clever Preparation: You may use a Bonus Action to gain Resistance to any non-physical damage type, or use an Action to instead gain Resistance to a physical damage type, until the start of your next Turn. Alternatively, you may spend a second charge to gain Resistance to 2 non-physical types, or one physical damage type, as a Bonus Action.<\/li><li>Patient Guard: As a Bonus Action, you may gain the effects of either Disengage or Dodge as well as gain an amount of AC equal to your Proficiency Bonus until the start of your next Turn. Alternatively, you may spend a second charge to gain both the effects of Disengage AND Dodge, as well as the AC bonus.<\/li><li>Stand Defense: You may gain an amount of Stand Damage Reduction equal to 4 times your Proficiency Bonus. Your \"Stand AC\" is equal to 10 + 3 times your Level, or 20, whichever is higher. Your \"Stand\" may still be hit by regular physical damage. Alternatively, you may spend a second charge to gain 8 times instead and double your \"Stand AC\". This effect lasts until the start of your next Turn. You can find the rules on Stand Damage Reduction and Stand AC on the main <a href='\/classes?focus=Stands'>Stands<\/a> page.<\/li><\/ul>",
-            "<b><u>Weapon Abilities:<\/u><\/b><ul class='sublist'><li>Deflect Attack: To use this Ability, your item must be a melee weapon. Whenever you take damage from an Attack, you may make an Attack Roll to contest your attacker. If your Attack Roll is higher than that of your opponent, you take no damage from the Attack against you. Alternatively, you may spend a second charge to also gain Advantage on the contesting Attack Roll.<\/li><li>Expose Weak Point: When dealing damage with this weapon you may either:<ul class='sublist'><li>Give Advantage to the next Attack from someone else targeting your target<\/li><li>Force your target to make a Constitution (NOT Durability) Saving Throw against a DC of 8 + Proficiency Bonus + Intelligence Modifier. On a failure, the target becomes Vulnerable to a damage type of your choice until they're next damaged by that damage type. However if they were Immune or Resistant to that type, they instead become Resistant or normally damaged by it respectively until the start of your next Turn. You may only use this Ability once per Turn.<\/li><\/ul>Alternatively, you may spend a second charge to use both effects at once.<\/li><li>Wrathful Strike: When dealing damage with this weapon you may choose to deal an additional amount of d6s of damage equal to your Proficiency Bonus. Alternatively you may spend a second charge to use d12s rather than d6s. You may only use this Ability once per Turn.<\/li><\/ul>"
+            "<b><u>Weapon Abilities:<\/u><\/b><ul class='sublist'><li>Deflect Attack: To use this Ability, your item must be a melee weapon. Whenever you take damage from an Attack, you may make an Attack Roll to contest your attacker. If your Attack Roll is higher than that of your opponent, you take no damage from the Attack against you. Alternatively, you may spend a second charge to also gain Advantage on the contesting Attack Roll.<\/li><li>Expose Weak Point: When dealing damage with this weapon you may either:<ul class='sublist'><li>Give Advantage to the next Attack from someone else targeting your target<\/li><li>Force your target to make a Constitution (NOT Durability) Saving Throw against a DC of 8 + Proficiency Bonus x 2 + Intelligence Modifier. On a failure, the target becomes Vulnerable to a damage type of your choice until they're next damaged by that damage type. However if they were Immune or Resistant to that type, they instead become Resistant or normally damaged by it respectively until the start of your next Turn. You may only use this Ability once per Turn.<\/li><\/ul>Alternatively, you may spend a second charge to use both effects at once.<\/li><li>Wrathful Strike: When dealing damage with this weapon you may choose to deal an additional amount of d6s of damage equal to your Proficiency Bonus. Alternatively you may spend a second charge to use d12s rather than d6s. You may only use this Ability once per Turn.<\/li><\/ul>"
         ]
     },
     "Warrior_Fighting_Style": {
@@ -1918,7 +1924,7 @@
             "War"
         ],
         "desc": [
-            "Choose one of the following Fighting Styles:<ul class='sublist'><li><b>Disciplined:<\/b> You gain Proficiency in 2 Saving Throws of your choice<\/li><li><b>Dual Wielding:<\/b> When you make an Attack using two weapons with the Light property or your fists, you can make an amount of additional Attacks equal to half your Proficiency Bonus as a Bonus Action.<\/li><li><b>Powerful:<\/b> Rather than using your regular AC, you may choose to have your AC be 10 + Strength Modifier + Con Modifier.<\/li><li><b>Swift:<\/b> You gain an additional 5m of Movement Speed.<\/li><li><b>Unshakable:<\/b> You have Advantage against any effect that would attempt to move you against your will or knock you Prone.<\/li><\/ul>"
+            "Choose one of the following Fighting Styles:<ul class='sublist'><li><b>Disciplined:<\/b> You gain Proficiency in 2 Saving Throws of your choice<\/li><li><b>Dual Wielding:<\/b> When you make an Attack using a weapon with the Light property or your fists, you can make an amount of additional Attacks using another Light weapon or fist equal to 1 plus half your Proficiency Bonus as a Bonus Action.<\/li><li><b>Graceful Fighting:<\/b> When you make an Unarmed Strike or an Attack using a Simple melee weapon, you may use Dexterity for both the Attack and Damage Rolls. Additionally, you may use your Unarmed Damage Die with a Simple melee weapon instead of its regular Damage Die.<\/li><li><b>Mobile:<\/b> You gain Advantage on Saving Throws that would restrict your Movement. Additionally, you may spend your Bonus Action in order to ignore Difficult Terrain.<\/li><li><b>Powerful:<\/b> Rather than using your regular AC, you may choose to have your AC be 10 + Strength Modifier + Con Modifier.<\/li><li><b>Swift:<\/b> You gain an additional 5m of Movement Speed.<\/li><li><b>Unshakable:<\/b> You have Advantage against any effect that would attempt to move you against your will or knock you Prone.<\/li><\/ul>"
         ]
     },
     "Weapon_Aficionado": {
@@ -2072,7 +2078,7 @@
         "name": "Ranger Fighting Style",
         "desc": [
             "Choose one of the following Fighting Styles:",
-            "<ul class='sublist'><li><b>Disciplined:<\/b> You gain Proficiency in 2 Saving Throws of your choice.<\/li><li><b>Foresight:<\/b> As a Reaction, you may move up to half your Movement Speed without provoking Opportunity Attacks. You may use this to avoid an AOE Saving Throw, but not a single target Attack.<\/li><li><b>Mobile:<\/b> You gain Advantage on Saving Throws that would restrict your Movement. Additionally, you may spend your Bonus Action in order to ignore Difficult Terrain.<\/li><li><b>Ranger's Knowledge:<\/b> You may use your Wisdom Modifier to determine additional Proficiencies, rather than Intelligence.<\/li><li><b>Swift:<\/b> You gain an additional 5m of Movement Speed.<\/li><\/ul>"
+            "<ul class='sublist'><li><b>Disciplined:<\/b> You gain Proficiency in 2 Saving Throws of your choice.<\/li><li><b>Dual Wielding:<\/b> When you make an Attack using a weapon with the Light property or your fists, you can make an amount of additional Attacks using another Light weapon or fist equal to 1 plus half your Proficiency Bonus as a Bonus Action.<\/li><li><b>Foresight:<\/b> As a Reaction, you may move up to half your Movement Speed without provoking Opportunity Attacks. You may use this to avoid an AOE Saving Throw, but not a single target Attack.<\/li><li><b>Mobile:<\/b> You gain Advantage on Saving Throws that would restrict your Movement. Additionally, you may spend your Bonus Action in order to ignore Difficult Terrain.<\/li><li><b>Ranger's Knowledge:<\/b> You may use your Wisdom Modifier to determine additional Proficiencies, rather than Intelligence.<\/li><li><b>Swift:<\/b> You gain an additional 5m of Movement Speed.<\/li><\/ul>"
         ],
         "classes": [
             "Rgr"
@@ -2303,7 +2309,7 @@
     "Hive_Feature": {
         "name": "Hive Feature",
         "desc": [
-            "You may choose a Feature from the following list:<ul class='sublist'><li><a class='in-page'>Detached Senses<\/a><\/li><li><a class='in-page'>Immense Resistance<\/a><\/li><li><a class='in-page'>Stand Marking<\/a><\/li><li><a class='in-page'>Hot Pursuit<\/a><\/li><li><a class='in-page'>Surrounding Swarm<\/a><\/li><li><a class='in-page'>Armored Stand<\/a> (Level 6+)<\/li><li><a class='in-page'>Defensive Wave<\/a> (Level 6+)<\/li><li><a class='in-page'>Immense Range<\/a> (Level 6+)<\/li><li><a class='in-page'>Mobile Wave<\/a> (Level 6+)<\/li><li><a class='in-page'>Silent Movement<\/a> (Level 11+)<\/li><li><a class='in-page'>Speedy Movement<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Enhanced_Stand_Senses'>Enhanced Stand Senses<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Guerilla_Fighter'>Guerilla Fighter<\/a> (Level 16+)<\/li><li><a class='in-page'>Improved Awareness<\/a> (Level 16+)<\/li><li><a class='in-page'>Improved Immense Range<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Skirmisher'>Skirmisher<\/a> (Level 16+)<\/li><\/ul>"
+            "You may choose a Feature from the following list:<ul class='sublist'><li><a class='in-page'>Detached Senses<\/a><\/li><li><a class='in-page'>Immense Resistance<\/a><\/li><li><a class='in-page'>Stand Marking<\/a><\/li><li><a class='in-page'>Hot Pursuit<\/a><\/li><li><a class='in-page'>Surrounding Swarm<\/a><\/li><li><a class='in-page'>Armored Stand<\/a> (Level 6+)<\/li><li><a class='in-page'>Defensive Wave<\/a> (Level 6+)<\/li><li><a class='in-page'>Immense Range<\/a> (Level 6+)<\/li><li><a class='in-page'>Mobile Wave<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Resource_Regeneration'>Resource Regeneration<\/a> (Level 6+)<\/li><li><a class='in-page'>Silent Movement<\/a> (Level 11+)<\/li><li><a class='in-page'>Speedy Movement<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Enhanced_Stand_Senses'>Enhanced Stand Senses<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Guerilla_Fighter'>Guerilla Fighter<\/a> (Level 16+)<\/li><li><a class='in-page'>Improved Awareness<\/a> (Level 16+)<\/li><li><a class='in-page'>Improved Immense Range<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Skirmisher'>Skirmisher<\/a> (Level 16+)<\/li><\/ul>"
         ],
         "classes": [
             "Hive"
