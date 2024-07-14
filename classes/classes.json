@@ -561,14 +561,19 @@
                         "linkFeatures": [
                             "Slippery",
                             "Detached Senses",
+                            "and",
+                            "Doubled Range",
                             "OR",
-                            "Immense Resistance"
+                            "Immense Resistance",
+                            "and",
+                            "Tanky"
                         ]
                     },
                     "2": {
                         "linkFeatures": [
                             "Custom Ability",
-                            "Stand Pickpocketing"
+                            "Stand Pickpocketing",
+                            "Distant Defense"
                         ]
                     },
                     "3": {
@@ -921,13 +926,14 @@
                 "exampleOf": "Ability Stands",
                 "examples": [
                     "Hermit Purple",
-                    "Earth Wind and Fire (?)",
-                    "White Album"
+                    "White Album",
+                    "Man in the Mirror"
                 ],
                 "links": [
                     "Hermit_Purple",
                     "Earth_Wind_and_Fire",
-                    "White_Album"
+                    "White_Album",
+                    "Man in the Mirror"
                 ],
                 "desc": "Many Stands are able to physically manifest themselves clearly and powerfully, but most Ability-Type Stands do not function in the same way. Some Ability Stands are not visible or tangible unless specifically made so by their User. While these Stands have very little in the way of physical power, their masterful use of their Abilities are able to make them more than handy in the fight. ",
                 "hDice": "1d6",
@@ -955,7 +961,8 @@
                     },
                     "2": {
                         "linkFeatures": [
-                            "Self-Acclimation"
+                            "Self-Acclimation",
+                            "Distant Defense"
                         ]
                     },
                     "3": {
@@ -989,7 +996,11 @@
                             "Stand Energy Recharge",
                             "Defensive Ability",
                             "OR",
-                            "Mobile Ability"
+                            "Mobile Ability",
+                            "OR"
+                        ],
+                        "featFeatures": [
+                            "Resource Regeneration"
                         ]
                     },
                     "8": {
@@ -1818,7 +1829,11 @@
                         "linkFeatures": [
                             "Defensive Wave",
                             "OR",
-                            "Mobile Wave"
+                            "Mobile Wave",
+                            "OR"
+                        ],
+                        "featFeatures": [
+                            "Resource Regeneration"
                         ]
                     },
                     "10": {
@@ -1948,9 +1963,9 @@
                             "<div id='actTypes'>",
                             "<div class='actType'><b>Close-Range<\/b><span>You gain: <a href='\/abilities\/?focus=Feat_of_Power'>Feat of Power<\/a> and <a href='\/abilities\/?focus=Confident_Provocation'>Confident Provocation<\/a><\/span><span>Note: Your Range Score may not go above 20<\/span><span>Attack Dice: 1d10 (2d8 past Level 11)<\/span><b>Ability Score Multipliers<\/b>",
                             "<table class='table table-striped minor'><thead><tr><th>Stat<\/th><th>Multiplier<\/tr><\/thead><tbody><tr><td>Power<\/td><td>Str x3<\/td><\/tr><tr><td>Precision<\/td><td>Dex x3<\/td><\/tr><tr><td>Durability<\/td><td>Con x3<\/td><\/tr><tr><td>Range<\/td><td>Int x1<\/td><\/tr><tr><td>Speed<\/td><td>Wis x4<\/td><\/tr><tr><td>Stand Energy<\/td><td>Cha x2<\/td><\/tr><\/tbody><\/table><\/div>",
-                            "<div class='actType'><b>Long-Range<\/b><span>You gain: <a href='\/abilities\/?focus=Slippery'>Slippery<\/a> and either <a href='\/abilities\/?focus=Detached_Senses'>Detached Senses<\/a> OR <a href='\/abilities\/?focus=Immense_Resistance'>Immense Resistance<\/a><\/span><span>Note: You may not increase your Power or Durability when Leveling Up.<\/span><span>Attack Dice: 1d8 (2d6 past Level 11)<\/span><b>Ability Score Multipliers<\/b>",
+                            "<div class='actType'><b>Long-Range<\/b><span>You gain: <a href='\/abilities\/?focus=Slippery'>Slippery<\/a> and <a href='\/abilities\/?focus=Distant_Defense'>Distant Defense<\/a> and either <a href='\/abilities\/?focus=Detached_Senses'>Detached Senses<\/a> and <a href='\/abilities\/?focus=Doubled_Range'>Doubled Range<\/a> OR <a href='\/abilities\/?focus=Immense_Resistance'>Immense Resistance<\/a> and <a href='\/abilities\/?focus=Tanky'>Tanky<\/a><\/span><span>Note: You may not increase your Power or Durability when Leveling Up.<\/span><span>Attack Dice: 1d8 (2d6 past Level 11)<\/span><b>Ability Score Multipliers<\/b>",
                             "<table class='table table-striped minor'><thead><tr><th>Stat<\/th><th>Multiplier<\/tr><\/thead><tbody><tr><td>Power<\/td><td>Str x3<\/td><\/tr><tr><td>Precision<\/td><td>Dex x3<\/td><\/tr><tr><td>Durability<\/td><td>Con x3<\/td><\/tr><tr><td>Range<\/td><td>Int x8<\/td><\/tr><tr><td>Speed<\/td><td>Wis x3<\/td><\/tr><tr><td>Stand Energy<\/td><td>Cha x3<\/td><\/tr><\/tbody><\/table><\/div>",
-                            "<div class='actType'><b>Ability-Focused<\/b><span>You gain: <a href='\/abilities\/?focus=Self_Acclimation'>Self Acclimation<\/a><\/span><span>Note: You may not increase your Power or Durability when Leveling Up.<\/span><span>Attack Dice: 1d4 (1d6 past Level 11)<\/span><b>Ability Score Multipliers<\/b>",
+                            "<div class='actType'><b>Ability-Focused<\/b><span>You gain: <a href='\/abilities\/?focus=Self_Acclimation'>Self Acclimation<\/a> and <a href='\/abilities\/?focus=Distant_Defense'>Distant Defense<\/a><\/span><span>Note: You may not increase your Power or Durability when Leveling Up.<\/span><span>Attack Dice: 1d4 (1d6 past Level 11)<\/span><b>Ability Score Multipliers<\/b>",
                             "<table class='table table-striped minor'><thead><tr><th>Stat<\/th><th>Multiplier<\/tr><\/thead><tbody><tr><td>Power<\/td><td>Str x1<\/td><\/tr><tr><td>Precision<\/td><td>Dex x2<\/td><\/tr><tr><td>Durability<\/td><td>Con x1<\/td><\/tr><tr><td>Range<\/td><td>Int x3<\/td><\/tr><tr><td>Speed<\/td><td>Wis x3<\/td><\/tr><tr><td>Stand Energy<\/td><td>Cha x5<\/td><\/tr><\/tbody><\/table><\/div>",
                             "<div class='actType'><b>Remote-Focused<\/b><span>You gain: <a href='\/abilities\/?focus=Programmed_Stand'>Programmed Stand<\/a> and <a href='\/abilities\/?focus=Stand_Marking'>Stand Marking<\/a><\/span><span>Note: You may not increase your Precision when Leveling Up. If someone activates your Remote trigger, you may switch to your Remote-Focused Act as a Reaction.<\/span><span>Attack Dice: 1d10 (2d8 past Level 11)<\/span><b>Ability Score Multipliers<\/b>",
                             "<table class='table table-striped minor'><thead><tr><th>Stat<\/th><th>Multiplier<\/tr><\/thead><tbody><tr><td>Power<\/td><td>Str x3<\/td><\/tr><tr><td>Precision<\/td><td>Dex x2<\/td><\/tr><tr><td>Durability<\/td><td>Con x3<\/td><\/tr><tr><td>Range<\/td><td>Int x4<\/td><\/tr><tr><td>Speed<\/td><td>Wis x3<\/td><\/tr><tr><td>Stand Energy<\/td><td>Cha x2<\/td><\/tr><\/tbody><\/table><\/div>",
@@ -2030,7 +2045,11 @@
                             "OR",
                             "Defensive Ability (Act 2)",
                             "OR",
-                            "Mobile Ability (Act 2)"
+                            "Mobile Ability (Act 2)",
+                            "OR"
+                        ],
+                        "featFeatures": [
+                            "Resource Regeneration"
                         ]
                     },
                     "10": {

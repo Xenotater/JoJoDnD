@@ -91,7 +91,7 @@
             "Enh"
         ],
         "desc": [
-            "<b>Prerequisite: Material-Anchor or Object-Anchor</b>",
+            "<b>Prerequisite: Material-Anchor or Object-Anchor<\/b>",
             "As an Enhancement-Type Stand User you've taken your Ability to the next level. Rather than having to anchor onto something very specific, you may now anchor onto anything that's similar to your original anchor.",
             "For example, <a href='https:\/\/jojowiki.com\/Wheel_of_Fortune' target='_blank'>Wheel of Fortune<\/a> would be able to anchor onto anything with wheels instead of a specific car, or <a href='https:\/\/jojowiki.com\/Strength' target='_blank'>Strength<\/a> would be able to anchor onto anything that floats in water instead of a specific boat."
         ]
@@ -406,7 +406,8 @@
             "Act"
         ],
         "desc": [
-            "When you or your Stand is hit with a projectile, as long as your Stand is hit or you are within 2 meters of it, you may attempt to block it. As a Reaction you may reduce the damage of the oncoming projectile by 1d12 + your Stand's Precision Modifier"
+            "When you or your Stand is hit with a projectile, as long as your Stand is hit or you are within 2 meters of it, you may attempt to block it. As a Reaction you may reduce the damage of the oncoming projectile by and amount equal to the roll of your Stand's Attack Die plus your Precision and Speed Modifiers.",
+            "If you completely negate the damage of a projectile, any leftover points may be used to block any additional projectiles fired at you until you run out of reduction points or your next Turn begins."
         ]
     },
     "Blow_for_Blow": {
@@ -481,7 +482,7 @@
             "Act"
         ],
         "desc": [
-            "If you would have two conditions that would give you Advantage on a melee Attack at the same time and you have no Disadvantage, you may instead roll 3 dice and take the highest of the three."
+            "If you would have two conditions that would give you Advantage on a melee Attack at the same time you may instead roll 3 dice and take the highest of the three."
         ]
     },
     "Enhanced_Custom_Ability": {
@@ -700,7 +701,7 @@
             "Enh"
         ],
         "desc": [
-            "<b>Prerequisite: Material-Anchor</b>",
+            "<b>Prerequisite: Material-Anchor<\/b>",
             "As a Reaction you may switch between anchors for your Enhancement Stand very quickly, meaning that if someone attempts to hit you and you activate this ability, the first hit misses automatically. However, if your Stand moves outside of someone's melee, they can still take an Attack of Opportunity.",
             "You may use this Ability once per combat encounter."
         ]
@@ -1672,8 +1673,8 @@
             "Should an EPM be exposed to the Completed Stone Mask, they may be able to become an Ultimate Being."
         ]
     },
-    "Specialized_EPM_Ability": {
-        "name": "Specialized EPM Ability",
+    "Enhanced_Bodily_Ability": {
+        "name": "Enhanced Bodily Ability",
         "classes": [
             "EPM"
         ],
@@ -1753,7 +1754,7 @@
             "Ass"
         ],
         "desc": [
-            "Choose one of the following Fighting Styles:<ul class='sublist'><li><b>Disciplined:<\/b> You gain Proficiency in 2 Saving Throws of your choice<\/li><li><b>Dual Wielding:<\/b> When you make an Attack using two weapons with the Light property or your fists, you can make an amount of additional Attacks equal to half your Proficiency Bonus as a Bonus Action.<\/li><li><b>Mobile:<\/b> You have Advantage on Saving Throws that would restrict your Movement. Additionally, you may spend your Bonus Action in order to ignore Difficult Terrain.<\/li><li><b>Swift:<\/b> You gain an additional 5m of Movement Speed.<\/li><\/ul>"
+            "Choose one of the following Fighting Styles:<ul class='sublist'><li><b>Disciplined:<\/b> You gain Proficiency in 2 Saving Throws of your choice<\/li><li><b>Dual Wielding:<\/b> When you make an Attack using a weapon with the Light property or your fists, you can make an amount of additional Attacks using another Light weapon or fist equal to 1 plus half your Proficiency Bonus as a Bonus Action.<\/li><li><b>Mobile:<\/b> You have Advantage on Saving Throws that would restrict your Movement. Additionally, you may spend your Bonus Action in order to ignore Difficult Terrain.<\/li><li><b>Swift:<\/b> You gain an additional 5m of Movement Speed.<\/li><\/ul>"
         ]
     },
     "Aura_of_Knowledge": {
@@ -1763,7 +1764,7 @@
         ],
         "desc": [
             "You're knowledgeable about many situations and can share that knowledge.",
-            "When you or an ally within 3m of you makes a Skill Check you may add your Intelligence Modifier to the roll."
+            "When you or an ally within 5 meters of you makes a Skill Check you may add your Intelligence Modifier to the roll."
         ]
     },
     "Consul_Fighting_Style": {
@@ -1955,7 +1956,7 @@
     "Artisan_Fighting_Style": {
         "name": "Artisan Fighting Style",
         "desc": [
-            "Choose one of the following Fighting Styles: <ul class='sublist'><li><b>Artisan's Willpower:<\/b> Whenever you spend an Artisan Charge, you regain an amount of HP equal to the amount of Artisan Charges you have. <\/li><li><b>Disciplined:<\/b> You gain Proficiency in 2 Saving Throws of your choice.<\/li><li><b>Foresight:<\/b> As a Reaction, you may move up to half your Movement Speed without provoking Opportunity Attacks. You may use this to avoid an AOE Saving Throw, but not a single target Attack. <\/li><li><b>Mobile:<\/b> You gain Advantage on Saving Throws that would restrict your Movement.<\/li><\/ul>"
+            "Choose one of the following Fighting Styles: <ul class='sublist'><li><b>Artisan's Willpower:<\/b> Whenever you spend an Artisan Charge, you regain an amount of HP equal to the amount of total Artisan Charges you have. <\/li><li><b>Disciplined:<\/b> You gain Proficiency in 2 Saving Throws of your choice.<\/li><li><b>Foresight:<\/b> As a Reaction, you may move up to half your Movement Speed without provoking Opportunity Attacks. You may use this to avoid an AOE Saving Throw, but not a single target Attack. <\/li><li><b>Mobile:<\/b> You gain Advantage on Saving Throws that would restrict your Movement.<\/li><\/ul>"
         ],
         "classes": [
             "Art"
@@ -2218,7 +2219,7 @@
     "Act_Feature": {
         "name": "Act Feature",
         "desc": [
-            "You may choose a Feature from the following list that matches one of your Act Types. When you select a Feature, it only applies to one Act, unless it is a Feat.<ul class='sublist'><li><u>Close-Range Acts<\/u>:<ul><li><a class='in-page'>Armored Stand<\/a><\/li><li><a href='\/feats\/?focus=Blended_Fighting'>Blended Fighting<\/a> (feat)<\/li><li><a class='in-page'>Detached Senses<\/a><\/li><li><a href='\/feats\/?focus=Martial_Arts'>Martial Arts<\/a> (feat)<\/li><li><a class='in-page'>Melee Barrage<\/a><\/li><li><a href='\/feats\/?focus=Veteran_Sprinter'>Veteran Sprinter<\/a> (feat)<\/li><li><a class='in-page'>Block Projectile<\/a> (Level 6+)<\/li><li><a class='in-page'>Devastating Critical<\/a> (Level 6+)<\/li><li><a class='in-page'>Stand Leap<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Menacing_Aura'>Menacing Aura<\/a> (feat) (Level 11+)<\/li><li><a class='in-page'>Siege Combat<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Defensive_Stance'>Defensive Stance<\/a> (feat) (Level 16+)<\/li><li><a class='in-page'>Devastating Melee<\/a> (Level 16+)<\/li><li><a class='in-page'>Lethal Strike<\/a> (Level 16+)<\/li><\/ul><\/li><li><u>Long-Range Acts<\/u>:<ul><li><a href='\/feats\/?focus=Clever_Disguise'>Clever Disguise<\/a> (feat)<\/li><li><a href='\/feats\/?focus=Deadly_Accuracy'>Deadly Accuracy<\/a> (feat)<\/li><li><a class='in-page'>Immense Power<\/a><\/li><li><a class='in-page'>Melee Barrage<\/a><\/li><li><a class='in-page'>Oblivious Facade<\/a><\/li><li><a class='in-page'>Ranged Attack<\/a><\/li><li><a class='in-page'>Stand Pickpocketing<\/a><\/li><li><a class='in-page'>Hot Pursuit<\/a> (Level 6+)<\/li><li><a class='in-page'>Silent Movement<\/a> (Level 6+)<\/li><li><a class='in-page'>Speedy Movement<\/a> (Level 6+)<\/li><li><a class='in-page'>Ambush Attacker<\/a> (Level 11+)<\/li><li><a href='/feats/?focus=Enhanced_Stand_Senses'>Enhanced Stand Senses<\/a> (feat) (Level 11+)<\/li><li><a href='\/feats\/?focus=Defensive_Stance'>Defensive Stance<\/a> (feat) (Level 16+)<\/li><li><a class='in-page'>Immense Range<\/a> (Level 16+)<\/li><li><a class='in-page'>Improved Awareness<\/a> (Level 16+)<\/li><\/li><\/ul><\/li><li><u>Ability-Focused Acts<\/u>:<ul><li><a class='in-page'>Detached Senses<\/a><\/li><li><a href='\/feats\/?focus=Energy_Imbuement'>Energy Imbuement<\/a> (feat)<\/li><li><a class='in-page'>Ranged Attack<\/a><\/li><li><a href='\/feats\/?focus=Weapon_Feat'>Weapon Feat<\/a> (feat)<\/li><li><a class='in-page'>Defensive Ability<\/a> (Level 6+)<\/li><li><a class='in-page'>Mobile Ability<\/a> (Level 6+)<\/li><li><a class='in-page'>Stand Energy Recharge<\/a> (Level 6+)<\/li><li><a class='in-page'>Enhanced Custom Ability<\/a> (Level 11+)<\/li><li><a class='in-page'>Slippery<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Tanky'>Tanky<\/a> (feat) (Level 11+)<\/li><li><a href='\/feats\/?focus=Calculating'>Calculating<\/a> (feat) (Level 16+)<\/li><li><a href='\/feats\/?focus=Menacing_Aura'>Menacing Aura<\/a> (feat) (Level 16+)<\/li><li><a class='in-page'>Subtle Assistance<\/a> (Level 16+)<\/li><\/ul><\/li><li><u>Remote-Focused Acts<\/u>:<ul><li><a class='in-page'>Detached Senses<\/a><\/li><li><a class='in-page'>Detached Stand<\/a><\/li><li><a class='in-page'>Immense Power<\/a><\/li><li><a class='in-page'>Immense Range<\/a><\/li><li><a class='in-page'>Oblivious Facade<\/a><\/li><li><a href='\/feats\/?focus=Weapon_Feat'>Weapon Feat<\/a> (feat)<\/li><li><a class='in-page'>Armored Stand<\/a> (Level 6+)<\/li><li><a class='in-page'>Juggernaut<\/a> (Level 6+)<\/li><li><a class='in-page'>Two Modes<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Guerilla_Fighter'>Guerilla Fighter<\/a> (feat) (Level 11+)<\/li><li><a href='\/feats\/?focus=Melee_Weapon_Specialization'>Melee Weapon Specialization<\/a> (feat) (Level 11+)<\/li><li><a class='in-page'>Self-Preservation<\/a> (Level 11+)<\/li><li><a class='in-page'>Improved Immense Range<\/a> (Level 16+)<\/li><li><a class='in-page'>Remote Ambusher<\/a> (Level 16+)<\/li><li><a class='in-page'>Superior Momentum<\/a> (Level 16+)<\/li><\/ul><\/li><\/ul>"
+            "You may choose a Feature from the following list that matches one of your Act Types. When you select a Feature, it only applies to one Act, unless it is a Feat.<ul class='sublist'><li><u>Close-Range Acts<\/u>:<ul><li><a class='in-page'>Armored Stand<\/a><\/li><li><a href='\/feats\/?focus=Blended_Fighting'>Blended Fighting<\/a> (feat)<\/li><li><a class='in-page'>Detached Senses<\/a><\/li><li><a href='\/feats\/?focus=Martial_Arts'>Martial Arts<\/a> (feat)<\/li><li><a class='in-page'>Melee Barrage<\/a><\/li><li><a href='\/feats\/?focus=Veteran_Sprinter'>Veteran Sprinter<\/a> (feat)<\/li><li><a class='in-page'>Block Projectile<\/a> (Level 6+)<\/li><li><a class='in-page'>Devastating Critical<\/a> (Level 6+)<\/li><li><a class='in-page'>Stand Leap<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Menacing_Aura'>Menacing Aura<\/a> (feat) (Level 11+)<\/li><li><a class='in-page'>Siege Combat<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Defensive_Stance'>Defensive Stance<\/a> (feat) (Level 16+)<\/li><li><a class='in-page'>Devastating Melee<\/a> (Level 16+)<\/li><li><a class='in-page'>Lethal Strike<\/a> (Level 16+)<\/li><\/ul><\/li><li><u>Long-Range Acts<\/u>:<ul><li><a href='\/feats\/?focus=Clever_Disguise'>Clever Disguise<\/a> (feat)<\/li><li><a href='\/feats\/?focus=Deadly_Accuracy'>Deadly Accuracy<\/a> (feat)<\/li><li><a class='in-page'>Immense Power<\/a><\/li><li><a class='in-page'>Melee Barrage<\/a><\/li><li><a class='in-page'>Oblivious Facade<\/a><\/li><li><a class='in-page'>Ranged Attack<\/a><\/li><li><a class='in-page'>Stand Pickpocketing<\/a><\/li><li><a class='in-page'>Hot Pursuit<\/a> (Level 6+)<\/li><li><a class='in-page'>Silent Movement<\/a> (Level 6+)<\/li><li><a class='in-page'>Speedy Movement<\/a> (Level 6+)<\/li><li><a class='in-page'>Ambush Attacker<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Enhanced_Stand_Senses'>Enhanced Stand Senses<\/a> (feat) (Level 11+)<\/li><li><a href='\/feats\/?focus=Defensive_Stance'>Defensive Stance<\/a> (feat) (Level 16+)<\/li><li><a class='in-page'>Immense Range<\/a> (Level 16+)<\/li><li><a class='in-page'>Improved Awareness<\/a> (Level 16+)<\/li><\/li><\/ul><\/li><li><u>Ability-Focused Acts<\/u>:<ul><li><a class='in-page'>Detached Senses<\/a><\/li><li><a href='\/feats\/?focus=Energy_Imbuement'>Energy Imbuement<\/a> (feat)<\/li><li><a class='in-page'>Ranged Attack<\/a><\/li><li><a href='\/feats\/?focus=Weapon_Feat'>Weapon Feat<\/a> (feat)<\/li><li><a class='in-page'>Defensive Ability<\/a> (Level 6+)<\/li><li><a class='in-page'>Mobile Ability<\/a> (Level 6+)<\/li><li><a class='in-page'>Stand Energy Recharge<\/a> (Level 6+)<\/li><li><a class='in-page'>Enhanced Custom Ability<\/a> (Level 11+)<\/li><li><a class='in-page'>Slippery<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Tanky'>Tanky<\/a> (feat) (Level 11+)<\/li><li><a href='\/feats\/?focus=Calculating'>Calculating<\/a> (feat) (Level 16+)<\/li><li><a href='\/feats\/?focus=Menacing_Aura'>Menacing Aura<\/a> (feat) (Level 16+)<\/li><li><a class='in-page'>Subtle Assistance<\/a> (Level 16+)<\/li><\/ul><\/li><li><u>Remote-Focused Acts<\/u>:<ul><li><a class='in-page'>Detached Senses<\/a><\/li><li><a class='in-page'>Detached Stand<\/a><\/li><li><a class='in-page'>Immense Power<\/a><\/li><li><a class='in-page'>Immense Range<\/a><\/li><li><a class='in-page'>Oblivious Facade<\/a><\/li><li><a href='\/feats\/?focus=Weapon_Feat'>Weapon Feat<\/a> (feat)<\/li><li><a class='in-page'>Armored Stand<\/a> (Level 6+)<\/li><li><a class='in-page'>Juggernaut<\/a> (Level 6+)<\/li><li><a class='in-page'>Two Modes<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Guerilla_Fighter'>Guerilla Fighter<\/a> (feat) (Level 11+)<\/li><li><a href='\/feats\/?focus=Melee_Weapon_Specialization'>Melee Weapon Specialization<\/a> (feat) (Level 11+)<\/li><li><a class='in-page'>Self-Preservation<\/a> (Level 11+)<\/li><li><a class='in-page'>Improved Immense Range<\/a> (Level 16+)<\/li><li><a class='in-page'>Remote Ambusher<\/a> (Level 16+)<\/li><li><a class='in-page'>Superior Momentum<\/a> (Level 16+)<\/li><\/ul><\/li><\/ul>"
         ],
         "classes": [
             "Act"
@@ -2266,7 +2267,7 @@
     "Ability_Feature": {
         "name": "Ability Feature",
         "desc": [
-            "You may choose a Feature from the following list:<ul class='sublist'><li><a class='in-page'>Detached Senses<\/a><\/li><li><a href='\/feats\/?focus=Energy_Imbuement'>Energy Imbuement<\/a><\/li><li><a class='in-page'>Ranged Attack<\/a><\/li><li><a href='\/feats\/?focus=Weapon_Feat'>Weapon Feat<\/a><\/li><li><a class='in-page'>Defensive Ability<\/a> (Level 6+)<\/li><li><a class='in-page'>Mobile Ability<\/a> (Level 6+)<\/li><li><a class='in-page'>Enhanced Custom Ability<\/a> (Level 11+)<\/li><li><a class='in-page'>Slippery<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Tanky'>Tanky<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Calculating'>Calculating<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Menacing_Aura'>Menacing Aura<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Quick_on_your_Feet'>Quick on your Feet<\/a> (Level 16+)<\/li><li><a class='in-page'>Subtle Assistance<\/a> (Level 16+)<\/ul>"
+            "You may choose a Feature from the following list:<ul class='sublist'><li><a class='in-page'>Detached Senses<\/a><\/li><li><a href='\/feats\/?focus=Energy_Imbuement'>Energy Imbuement<\/a><\/li><li><a class='in-page'>Ranged Attack<\/a><\/li><li><a href='\/feats\/?focus=Weapon_Feat'>Weapon Feat<\/a><\/li><li><a class='in-page'>Defensive Ability<\/a> (Level 6+)<\/li><li><a class='in-page'>Mobile Ability<\/a> (Level 6+)<\/li><li><a href='\/feats\/?focus=Resource_Regeneration'>Resource Regeneration<\/a> (Level 6+)<\/li><li><a class='in-page'>Enhanced Custom Ability<\/a> (Level 11+)<\/li><li><a class='in-page'>Slippery<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Tanky'>Tanky<\/a> (Level 11+)<\/li><li><a href='\/feats\/?focus=Calculating'>Calculating<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Menacing_Aura'>Menacing Aura<\/a> (Level 16+)<\/li><li><a href='\/feats\/?focus=Quick_on_your_Feet'>Quick on your Feet<\/a> (Level 16+)<\/li><li><a class='in-page'>Subtle Assistance<\/a> (Level 16+)<\/ul>"
         ],
         "classes": [
             "Abl"
@@ -2387,6 +2388,48 @@
         ],
         "classes": [
             "War"
+        ]
+    },
+    "Custom_Bodily_Ability": {
+        "name": "Custom Bodily Ability",
+        "desc": [
+            "You're able to modify your body in order to give yourself a special ability or function. Talk to your DM to work out the specifics of this bodily modification."
+        ],
+        "classes": [
+            "EPM",
+            "Vamp"
+        ]
+    },
+    "Distant_Defense": {
+        "name": "Distant Defense",
+        "desc": [
+            "When determining your Stand AC, you may replace the bonus granted by your Durability Modifier with your Precision or Speed Modifiers.",
+            "Additionally, when your Stand is more than 2 meters away from you and not protecting anyone, you may use Precision instead of Durability to determine your Stand Damage Reduction."
+        ],
+        "classes": [
+            "Rng",
+            "Abl",
+            "Act"
+        ]
+    },
+    "Doubled_Range": {
+        "name": "Doubled Range",
+        "desc": [
+            "Your Stand's Range Score is doubled, as are any points you put into it later on."
+        ],
+        "classes": [
+            "Rng",
+            "Act"
+        ]
+    },
+    "Flight": {
+        "name": "Flight",
+        "desc": [
+            "You gain a Flight (Hover) Speed equal to your regular Movement Speed."
+        ],
+        "classes": [
+            "Vamp",
+            "EPM"
         ]
     }
 }

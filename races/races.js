@@ -80,11 +80,19 @@ function updateDisplay() {
                 newContent += race.level[i].special;
             else if (race.level[i].feats != null)
                 for (let j = 0; j < race.level[i].feats.length; j++) {
-                    newContent += "<a href='/abilities/?focus=" + race.level[i].feats[j].replace(/ /g, "_") + "'>" + race.level[i].feats[j] + "</a>";
-                    if (j != race.level[i].feats.length-1)
-                        newContent += " | ";
-                    else
-                        newContent += "</td>";
+                    var f = race.level[i].feats[j];
+                    if (f.includes("(")) {
+                        f = f.split(" (");
+                        f[1] = " (" + f[1];
+                        newContent += "<a href='/abilities/?focus=" + f[0].replace(/[ -]/g, "_").replace("'", "") + "'>" + f[0] + "</a>" + f[1];
+                    }
+                    else {
+                        newContent += "<a href='/abilities/?focus=" + race.level[i].feats[j].replace(/ /g, "_") + "'>" + race.level[i].feats[j] + "</a>";
+                        if (j != race.level[i].feats.length-1)
+                            newContent += " | ";
+                        else
+                            newContent += "</td>";
+                    }
                 }
             newContent += "</tr>";
         }

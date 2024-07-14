@@ -529,8 +529,12 @@
             "linkFeatures": [
                 "Slippery",
                 "Detached Senses",
+                "and",
+                "Doubled Range",
                 "OR",
-                "Immense Resistance"
+                "Immense Resistance",
+                "and",
+                "Tanky"
             ]
         },
         {
@@ -769,7 +773,8 @@
         },
         {
             "linkFeatures": [
-                "Self-Acclimation"
+                "Self-Acclimation",
+                "Distant Defense"
             ]
         },
         {

@@ -133,6 +133,7 @@
             "5": {
                 "energy": 80,
                 "feats": [
+                    "Custom Bodily Ability",
                     "Greater Undead Senses"
                 ]
             },
@@ -158,7 +159,8 @@
                 "energy": 160,
                 "feats": [
                     "Flesh Grafting",
-                    "Spider Climb"
+                    "Spider Climb",
+                    "Flight (Variant Rule)"
                 ]
             },
             "10": {
@@ -298,6 +300,7 @@
             "5": {
                 "energy": 200,
                 "feats": [
+                    "Custom Bodily Ability",
                     "Greater Undead Senses"
                 ]
             },
@@ -311,7 +314,8 @@
                 "energy": 300,
                 "feats": [
                     "Flesh Grafting",
-                    "Spider Climb"
+                    "Spider Climb",
+                    "Flight (Variant Rule)"
                 ]
             },
             "8": {
