@@ -1006,7 +1006,8 @@
         {
             "name": "Meteor Hammer",
             "attr": [
-                "Reach"
+                "Reach",
+                "Two-Handed"
             ],
             "type": "Martial",
             "spec": "Melee",
