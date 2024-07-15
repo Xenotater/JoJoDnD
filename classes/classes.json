@@ -814,11 +814,9 @@
                         ]
                     },
                     "9": {
-                        "linkFeatures": [
-                            "Two Modes",
-                            "OR"
-                        ],
                         "featFeatures": [
+                            "Two Modes",
+                            "OR",
                             "Tanky",
                             "OR",
                             "Scarflesh"
