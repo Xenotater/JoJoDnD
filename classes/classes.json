@@ -565,7 +565,9 @@
                             "Doubled Range",
                             "OR",
                             "Immense Resistance",
-                            "and",
+                            "and"
+                        ],
+                        "featFeatures": [
                             "Tanky"
                         ]
                     },

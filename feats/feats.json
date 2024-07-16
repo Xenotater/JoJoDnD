@@ -13,7 +13,7 @@
         "desc": "People are easy to fool, this is something that you've learned over years of experience.",
         "effects": [
             "You're able to trap a helpless person within a conversation by spending your Action each Turn and rolling a Presence Check against a single, non-hostile target's Charisma Saving Throw. While keeping this individual distracted in this way, their movement speed is reduced to 0, and their Passive Perception and Perception Checks are now restricted to a value of 10 at most.",
-            "You may keep a person trapped in this conversational purgatory for up to an amount of time equal to 30 minutes times your Proficiency Bonus, until you stop spending your Action or they succeed on their save, or something very obviously out of the ordinary happens in a way that you can't explain.",
+            "You may keep a person trapped in this conversational purgatory for up to an amount of time equal to 30 minutes times your Proficiency Bonus, until you stop spending your Action or they succeed on their Save, or something very obviously out of the ordinary happens in a way that you can't explain.",
             "Additionally, you have figured out a way to enthrall several people by using your Action each Turn to keep an amount of non-hostile people equal to your Charisma Modifier focused on what you're doing for up to an hour. Anyone caught in this effect has Disadvantage on all Perception Checks, and has a -5 penalty to their Passive Perception."
         ],
         "prereq": "Proficiency in Presence Checks or <a href='\/classes?focus=Consul'>Consul<\/a> Level 1+"
@@ -72,7 +72,7 @@
         "desc": "Your medical knowledge is priceless on the battlefield.",
         "effects": [
             "You may make Medicine Checks as an Attack or Bonus Action.",
-            "You have a pool of d6s called Combat Medic (CM) Dice that you may expend to help others, given an amount equal to you Medicine Skill bonus (Int or Wis). You regain all CM Dice on a Long Rest, and an amount equal to your Medicine bonus on a Short Rest.",
+            "You have a pool of d6s called Combat Medic (CM) Dice that you may expend to help others, given an amount equal to your Medicine Skill bonus (Int or Wis). You regain all CM Dice on a Long Rest, and an amount equal to your Medicine bonus on a Short Rest.",
             "You may spend CM Dice to heal an ally when you make a Medicine Check on them, healing a d6 plus your Medicine bonus per CM Die spent.",
             "Additionally, when you make a Medicine Check on a Downed ally, they may roll an amount of Hit Dice equal to their Proficiency Bonus to heal rather than just being brought back to 1 HP, and they may get up from Prone for free."
         ],
@@ -167,7 +167,7 @@
         "effects": [
             "You have an amount of d4s equal to your Intelligence or Wisdom Modifier (minimum of 0) plus your Proficiency Bonus that you may spend as a Reaction to add or subtract the rolled value to an ally or enemy's raw d20 roll.",
             "Since this applies to the raw roll, it may cause any rolls at or below 1 to become a Critical Miss or any rolls above 20 to become a Critical Hit.",
-            "You're able to use multiple d4s on one roll, but must declare how many you will use before hand.",
+            "You're able to use multiple d4s on one roll, but must declare how many you will use beforehand.",
             "You regain an amount of these d4s equal to half your Proficiency Bonus on a Short Rest, and all of them on a Long Rest."
         ]
     },
@@ -308,7 +308,7 @@
         "desc": "You radiate threatening energy.",
         "effects": [
             "You may make Intimidate Checks as Bonus Actions.",
-            "If a creature has already been forced to make a Save against your Menacing Aura, the get a +4 bonus to further Menacing Aura Saves for the next minute.",
+            "If a creature has already been forced to make a Save against your Menacing Aura, they get a +4 bonus to further Menacing Aura Saves for the next minute.",
             "If you use this against a target that's already Frightened, you may increase their level of Fear by 1 if they fail the Save, or by 2 if they fail the Save by 5 or more."
         ]
     },
@@ -924,12 +924,12 @@
         ],
         "effects": [
             "You and any allies that can see or hear you within 5m gain a bonus to Saving Throws equal to your Wisdom Modifier.",
-            "Additionally, you and affect allies gain a bonus to Initiative equal to half your Wisdom Modifier.",
+            "Additionally, you and affected allies gain a bonus to Initiative equal to half your Wisdom Modifier.",
             "These bonuses have a minimum of +1."
         ],
         "prereq": "Wis 13+ or <a href='\/passions?focus=Leader'>Leader<\/a>"
     },
-    "Close-Range_Mobility": {
+    "Close_Range_Mobility": {
         "name": "Close-Range Mobility",
         "desc": [
             "Despite being focused on close-range combat, your Stand is surprisingly mobile."
@@ -996,7 +996,7 @@
         ],
         "effects": [
             "You gain a resource called Focus, which allows you to give yourself a bonus to a Skill Check, Saving Throw, or Attack Roll that you're proficient in.",
-            "The bonus granted is +1 for each Focus that spent.",
+            "The bonus granted is +1 for each Focus that is spent.",
             "The amount of Focus you have is equal to your Wisdom Modifier x Proficiency Bonus.",
             "You regain an amount of Focus equal to your Wisdom Modifier on a Short Rest, and regain it all on a Long Rest."
         ]
@@ -1018,7 +1018,7 @@
             "You know the ins and outs of how the body heals itself, and are able to use that knowledge to heal yourself and others more effectively."
         ],
         "effects": [
-            "An amount of times equal to your Intelligence or Wisdom Modifier per Long Rest you may choose to Overheal. Doing so allows you or an ally you're healing to gain Temp HP when healed above the target's typical HP maximum. This Temp HP lasts until it is used or your next Short Rest, and may stack along side other forms of Temp HP (but not itself).",
+            "An amount of times equal to your Intelligence or Wisdom Modifier per Long Rest you may choose to Overheal. Doing so allows you or an ally you're healing to gain Temp HP when healed above the target's typical HP maximum. This Temp HP lasts until it is used, or your next Short Rest, and may stack alongside other forms of Temp HP (but not itself).",
             "If the target is not at or close to their maximum HP, you may instead choose to heal an additional amount equal to your Level, but this may not create Temp HP."
         ]
     },
@@ -1058,7 +1058,7 @@
     "Tactician": {
         "name": "Tactician",
         "desc": [
-            "You have a tactical mind, able to quickly asses your situation and environment to help you and your allies make the most optimal choices."
+            "You have a tactical mind, able to quickly assess your situation and environment to help you and your allies make the most optimal choices."
         ],
         "effects": [
             "You gain a resource known as Tactician Dice, getting an amount of d8s equal to your Intelligence Modifier. You regain all spent Tactician Dice on a Short or Long Rest. You may use these dice to perform one of the following effects. Any effects that require a Saving Throw use a DC of 8 + Intelligence Modifier + Proficiency Bonus.<ul class='sublist'><li>Ally's Strike: As a Reaction you may direct an ally to make a single Attack, adding 1d8 to the Attack Roll. If the Attack lands, it deals additional damage equal to your Intelligence Modifier.<\/li><li>Ambassador: When you or an ally within 5m makes a Charisma Skill Check you may swap the Charisma Modifier bonus to instead use your Intelligence Modifier and add 1d8 to the result.<\/li><li>Assessment: When you or an ally within 5m makes a Skill Check to gather information in some way (Investigation, Medicine, Knowledge, Perception, Science, Supernatural, Survival, Vibe), you may spend a Reaction to add 1d8 plus half your Intelligence Modifier to the roll if it fails, potentially resulting in a success.<\/li><li>Reposition: As a Reaction you may direct an ally within 5m to reposition themselves, letting them move an amount of meters equal to 1d8 plus half your Intelligence Modifier. Opportunity Attacks may still be made against this ally, but with a -4 penalty.<\/li><\/ul>"

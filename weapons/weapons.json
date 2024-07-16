@@ -625,8 +625,8 @@
             "name": "Quarterstaff",
             "attr": [
                 "Concealed (+5)",
-                "Versatile (1d10)",
-                "Reach"
+                "Reach",
+                "Versatile (1d10)"
             ],
             "type": "Simple",
             "spec": "Melee",

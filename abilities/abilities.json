@@ -110,9 +110,9 @@
     "Immense_Power": {
         "name": "Immense Power",
         "classes": [
+            "Rng",
             "Rmt",
-            "Act",
-            "Rng"
+            "Act"
         ],
         "desc": [
             "Your Stand is versatile, but was limited by its strength before now.",
@@ -1905,7 +1905,7 @@
             "The item has an amount of charges equal to your Proficiency Bonus per Long Rest, and you may regain half of the charges on a Short Rest. These charges are used when activating the item's Ability, chosen from the options below:",
             "<b><u>Charm Abilities:<\/u><\/b><ul class='sublist'><li>Inspiring Trinket: When you fail a Skill Check you may attempt the roll a second time as a Free Action. Alternatively, you may spend a second charge to also have Advantage on the reroll. You may only use this Ability once per Turn.<\/li><li>Ready Stance: When someone you can see makes a Skill Check or Saving Throw you can use your Reaction to give them Advantage. Alternatively, you may spend a second charge to also grant them Advantage on all Checks and Saves until the end of their next Turn.<\/li><li>Source of Motivation: When you fail a Saving Throw you may use your Reaction to reroll it. Alternatively, you may spend a second charge to also gain Advantage on all Saving Throws of that type until the start of your next Turn.<\/li><\/ul>",
             "<b><u>Defensive Abilities:<\/u><\/b><ul class='sublist'><li>Clever Preparation: You may use a Bonus Action to gain Resistance to any non-physical damage type, or use an Action to instead gain Resistance to a physical damage type, until the start of your next Turn. Alternatively, you may spend a second charge to gain Resistance to 2 non-physical types, or one physical damage type, as a Bonus Action.<\/li><li>Patient Guard: As a Bonus Action, you may gain the effects of either Disengage or Dodge as well as gain an amount of AC equal to your Proficiency Bonus until the start of your next Turn. Alternatively, you may spend a second charge to gain both the effects of Disengage AND Dodge, as well as the AC bonus.<\/li><li>Stand Defense: You may gain an amount of Stand Damage Reduction equal to 4 times your Proficiency Bonus. Your \"Stand AC\" is equal to 10 + 3 times your Level, or 20, whichever is higher. Your \"Stand\" may still be hit by regular physical damage. Alternatively, you may spend a second charge to gain 8 times instead and double your \"Stand AC\". This effect lasts until the start of your next Turn. You can find the rules on Stand Damage Reduction and Stand AC on the main <a href='\/classes?focus=Stands'>Stands<\/a> page.<\/li><\/ul>",
-            "<b><u>Weapon Abilities:<\/u><\/b><ul class='sublist'><li>Deflect Attack: To use this Ability, your item must be a melee weapon. Whenever you take damage from an Attack, you may make an Attack Roll to contest your attacker. If your Attack Roll is higher than that of your opponent, you take no damage from the Attack against you. Alternatively, you may spend a second charge to also gain Advantage on the contesting Attack Roll.<\/li><li>Expose Weak Point: When dealing damage with this weapon you may either:<ul class='sublist'><li>Give Advantage to the next Attack from someone else targeting your target<\/li><li>Force your target to make a Constitution (NOT Durability) Saving Throw against a DC of 8 + Proficiency Bonus x 2 + Intelligence Modifier. On a failure, the target becomes Vulnerable to a damage type of your choice until they're next damaged by that damage type. However if they were Immune or Resistant to that type, they instead become Resistant or normally damaged by it respectively until the start of your next Turn. You may only use this Ability once per Turn.<\/li><\/ul>Alternatively, you may spend a second charge to use both effects at once.<\/li><li>Wrathful Strike: When dealing damage with this weapon you may choose to deal an additional amount of d6s of damage equal to your Proficiency Bonus. Alternatively you may spend a second charge to use d12s rather than d6s. You may only use this Ability once per Turn.<\/li><\/ul>"
+            "<b><u>Weapon Abilities:<\/u><\/b><ul class='sublist'><li>Deflect Attack: To use this Ability, your item must be a melee weapon. Whenever you take damage from an Attack, you may make an Attack Roll to contest your attacker. If your Attack Roll is higher than that of your opponent, you take no damage from the Attack against you. Alternatively, you may spend a second charge to also gain Advantage on the contesting Attack Roll.<\/li><li>Expose Weak Point: When dealing damage with this weapon you may either:<ul class='sublist'><li>Give Advantage to the next Attack from someone else targeting your target<\/li><li>Force your target to make a Constitution (NOT Durability) Saving Throw against a DC of 8 + Proficiency Bonus x 2. On a failure, the target becomes Vulnerable to a damage type of your choice until they're next damaged by that damage type. However if they were Immune or Resistant to that type, they instead become Resistant or normally damaged by it respectively until the start of your next Turn. You may only use this Ability once per Turn.<\/li><\/ul>Alternatively, you may spend a second charge to use both effects at once.<\/li><li>Wrathful Strike: When dealing damage with this weapon you may choose to deal an additional amount of d6s of damage equal to your Proficiency Bonus. Alternatively you may spend a second charge to use d12s rather than d6s. You may only use this Ability once per Turn.<\/li><\/ul>"
         ]
     },
     "Warrior_Fighting_Style": {
@@ -2392,8 +2392,8 @@
             "You're able to modify your body in order to give yourself a special ability or function. Talk to your DM to work out the specifics of this bodily modification."
         ],
         "classes": [
-            "EPM",
-            "Vamp"
+            "Vamp",
+            "EPM"
         ]
     },
     "Distant_Defense": {
