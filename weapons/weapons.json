@@ -755,7 +755,7 @@
             "attr": [
                 "Concealed (+2)",
                 "Reach",
-                "Versatile (1d8)",
+                "Versatile (1d10)",
                 "Conductive"
             ],
             "type": "Martial",
@@ -774,7 +774,7 @@
             "spec": "Heavy\/Melee",
             "stat": "Str\/Int",
             "prereq": "Artisan (Engineer)",
-            "dmg": "1d12 Bludgeoning\/Slashing"
+            "dmg": "1d10 Bludgeoning\/Slashing"
         },
         {
             "name": "Battle Axe",
