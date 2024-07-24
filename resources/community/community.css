@@ -60,8 +60,8 @@
   flex-direction: column;
   gap: 4px;
   padding: 4px;
-  right: 0;
-  bottom: 0;
+  right: 4px;
+  bottom: 4px;
 }
 
 .version {
