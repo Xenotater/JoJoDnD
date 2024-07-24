@@ -762,7 +762,7 @@
             "spec": "Heavy\/Melee",
             "stat": "Str\/Dex\/Int",
             "prereq": "Artisan (Engineer)",
-            "dmg": "1d8 Bludgeoning\/Slashing\/Piecing"
+            "dmg": "1d8 Bludgeoning\/Slashing\/Piercing"
         },
         {
             "name": "Mechanic's Tools",
