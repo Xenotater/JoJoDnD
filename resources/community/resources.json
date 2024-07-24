@@ -11,8 +11,21 @@
       "title": "5e-Style Sheets",
       "img": "Assets/5E Sheets/5e_sheets.webp",
       "desc": "5e-style character sheets for JoJo D&D. Created by karltonmarx.",
-      "link": "Assets/5E Sheets/5E_JoJo_CharacterSheet.pdf",
-      "alt": "5e-Style Sheets"
+      "alt": "5e-Style Sheets",
+      "versions": [
+        {
+          "name": "Fillable 5e Sheet",
+          "link": "Assets/5E Sheets/5E_JoJo_CharacterSheet_updated.pdf"
+        },
+        {
+          "name": "Nonfillable 5e Sheet",
+          "link": "Assets/5E Sheets/5E_JoJo_CharacterSheet_nonfillable.pdf"
+        },
+        {
+          "name": "Autofill 5e Sheet",
+          "link": "Assets/5E Sheets/5E_JoJo_CharacterSheet_auto.pdf"
+        }
+      ]
     },
     {
       "title": "Mage's Bizarre Revamp",
