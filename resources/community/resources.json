@@ -84,6 +84,13 @@
       "alt": "The Chained"
     },
     {
+      "title": "The Ballista",
+      "img": "Assets/The Ballista/ballista.webp",
+      "desc": "A Stand Typing that is physically powerful with long range, but also a bit more fragile and slower. Created by Sammick.",
+      "link": "https://docs.google.com/document/d/1fFWTpAJ-vrfM-HwPJPlAvmXHqPSEMACfwr7ukgnH5Vw/edit?usp=drivesdk",
+      "alt": "The Ballista"
+    },
+    {
       "title": "Level Helper",
       "img": "Assets/Level Helper/helper.webp",
       "desc": "A table of level based stuff like Proficiency Bonuses, Ability Dice, and more. Created by Sammick.",
