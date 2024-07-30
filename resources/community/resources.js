@@ -28,6 +28,11 @@ function getData() {
 }
 
 function updateResources(resources) {
+  resources.sort(function (a, b) {
+    const x = a.title, y = b.title;
+    return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+  });
+
   resources.forEach(r => {
     let newText = "";
     
