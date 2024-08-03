@@ -22,15 +22,20 @@
     margin-bottom: 1rem;
 }
 
+.flex-heading {
+    display: flex;
+    align-items: flex-end;
+}
+
 #logo {
     margin-bottom: 8px;
-    vertical-align: middle;
+    height: fit-content;
 }
 
 #title {
-    margin-left: 1rem;
     font-size: 2.5rem;
-    vertical-align: bottom;
+    flex-grow: 1;
+    text-align: right;
 }
 
 /* arrow removal from https://www.geeksforgeeks.org/how-to-remove-the-default-arrow-icon-from-a-dropdown-list/ */
@@ -49,6 +54,7 @@ select {
 label, .label {
     font-size: 12px;
     white-space: nowrap;
+    max-width: 100%;
 }
 
 /* fix selects on iOS */
@@ -104,12 +110,12 @@ input {
 
 #savebox {
     float: left;
-    width: 25%;
+    width: 20%;
 }
 
 #skillbox {
     float: left;
-    width: 75%;
+    width: 80%;
     border-left: none;
 }
 
@@ -129,6 +135,8 @@ input {
 
 #skills-list li {
     height: 15px;
+    display: flex;
+    gap: 1px;
 }
 
 .single-stat {
@@ -136,19 +144,19 @@ input {
 }
 
 #stats {
-    width: 30%;
+    width: 25%;
     float: left;
     line-height: 17.75px;
 }
 
 #checks {
-    width: 70%;
-    float: left;
+    width: 65%;
+    float: right;
 }
 
 .savecheck {
     height: 16px;
-    width: 14px;
+    width: 12px;
     float: left;
     margin-left: 4px;
     margin-top: 2px;
@@ -156,9 +164,9 @@ input {
 
 .save-bonus {
     height: 16px;
-    width: 25px;
-    float: left;
-    margin-left: 4px;
+    width: 20px;
+    float: right;
+    margin-right: 2px;
     margin-top: 2px;
     border: none;
     border-bottom: 2px solid black;
@@ -227,11 +235,12 @@ input {
 
 .skilllbl {
     font-size: 10px;
+    margin-left: 2px;
 }
 
 .skillstat {
     font-size: 8px;
-    margin-left: 2px;
+    margin-left: 1px;
 }
 
 .bigBox {
@@ -277,6 +286,10 @@ textarea {
 
 #classbox, #featsbox, #otherbox {
     height: 151px;
+}
+
+#otherlbl {
+    width: 100%
 }
 
 #pages h2 {

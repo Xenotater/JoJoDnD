@@ -108,6 +108,30 @@ nav .current-nav:hover {
     margin-bottom: .5rem;
 }
 
+#lang-selector-box {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 88px;
+}
+
+#lang-selector {
+    margin: 8px;
+}
+
+#lang-selector-label {
+    color: rgb(170, 155, 255);
+    font-size: 14px;
+}
+
+#lang-select-input {
+    font-size: 14px;
+    padding: 1px;
+    background-color: mediumpurple;
+    border-radius: 3px;
+}
+
 .bi-list {
     color: white;
 }
