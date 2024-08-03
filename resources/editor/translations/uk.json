@@ -39,7 +39,7 @@
   "Int": "Інт",
   "Wis": "Муд",
   "Cha": "Хар",
-  "PB:": "ДБ:",
+  "PB:": "БВ:",
   "Skill Proficiencies": "Вміння в Навичках",
   "(str)": "(сил)",
   "(str/wis)": "(сил/муд)",
@@ -90,8 +90,8 @@
   "Class Features": "Особливості Класу",
   "Feats": "Подвиги",
   "Languages & Other Proficiencies": "Мови і Інші Вміння",
-  "Attacks & Actions": "Атаки і ДіїІнвентар",
-  "Inventory": "тар",
+  "Attacks & Actions": "Атаки і Дії",
+  "Inventory": "Інвентар",
   "Attacks Per Round:": "Атаки за Раунд:",
   "Inspiration:": "Натхнення:"
 }
