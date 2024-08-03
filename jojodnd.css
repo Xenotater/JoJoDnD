@@ -283,7 +283,7 @@ h1, h2, h3, th, .th {
     }
 }
 
-@media (min-width: 971px){
+@media (min-width: 991px){
     .navbar-expand-custom {
         flex-direction: row;
         flex-wrap: nowrap;
@@ -311,7 +311,7 @@ h1, h2, h3, th, .th {
     }
 }
 
-@media (max-width: 970px){
+@media (max-width: 990px){
     #home.current-nav, #home.current-nav:hover {
         background-color: unset;
     }
@@ -319,6 +319,7 @@ h1, h2, h3, th, .th {
     .navbar-collapse {
         border-top: 2px solid white;
         overflow-y: scroll;
+        position: relative;
     }
 
     .nav-item {
@@ -344,6 +345,20 @@ h1, h2, h3, th, .th {
 
     .nav-item:last-child {
         border-bottom: none;
+    }
+
+    #lang-selector-box {
+        position: absolute;
+        bottom: -215px;
+        right: 0px;
+        height: unset;
+    }
+}
+
+@media (max-width: 1130px) {
+    .navbar-expand-custom .nav-link {
+        padding-left: .05rem;
+        padding-right: .05rem;
     }
 }
 
