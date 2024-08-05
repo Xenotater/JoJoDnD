@@ -60,7 +60,7 @@ function translatePage() {
 function translateElement(element) {
     if (!element)
         return;
-    
+
     const key = element.dataset?.translationKey;
     const placeholder = element.placeholder;
     const newText = translateData[key ? key : placeholder ? placeholder : $(element).text()];
@@ -136,7 +136,7 @@ function getLanguage() {
 }
 
 function getAvailableLangs(path) {
-    if (path.includes("editor"))
+    if (path.includes("resources"))
         return ["uk"];
     return [];
 }
