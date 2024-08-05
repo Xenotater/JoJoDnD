@@ -37,6 +37,7 @@ function isAdEnabled(path) {
 
 function translatePage() {
     const lang = getLanguage(), path = window.location.pathname.replace(/\/$/, "");
+    $("html").attr("lang", lang);
     if (lang != "en" && getAvailableLangs(path).includes(lang)) {
         $.getJSON(path + "/translations/" + lang + ".json", function (translation) {
             translateData = translation;
