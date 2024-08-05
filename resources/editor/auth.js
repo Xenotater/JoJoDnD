@@ -161,7 +161,7 @@ function checkLoggedIn() {
         if (!loggedIn)
             $("#login").html('<i class="bi bi-door-open"></i><br><span data-translation-key="loginBtn" id="loginText">Login</span>');
         else
-            $("#login").html('<i class="bi bi-door-closed"></i><br><span data-translation-key="loginBtn" id="loginText">Logout</span>');
+            $("#login").html('<i class="bi bi-door-closed"></i><br><span data-translation-key="logoutBtn" id="loginText">Logout</span>');
         translateElement($("#loginText")[0]);
     });
 }
@@ -231,7 +231,7 @@ function logOut() {
     $.post("logout.php", { action: "logout" }, function(data) {
         loggedIn = 0;
         offset = 0;
-        $("#login").html('<i class="bi bi-door-open"></i><br><span data-translation-key="LoginBtn" id="loginText">Login</span>');
+        $("#login").html('<i class="bi bi-door-open"></i><br><span data-translation-key="loginBtn" id="loginText">Login</span>');
         translateElement($("#loginText")[0]);
     });
 }
@@ -277,7 +277,7 @@ function logIn() {
                 eFlag = parseInt(data[0]);
                 loggedIn = 1;
                 $("#popSignIn").remove();
-                $("#login").html('<i class="bi bi-door-closed"></i><br><span data-translation-key="LoginBtn" id="loginText">Logout</span>');
+                $("#login").html('<i class="bi bi-door-closed"></i><br><span data-translation-key="logoutBtn" id="loginText">Logout</span>');
                 translateElement($("#loginText")[0]);
                 respond("Login Successful!");
             }
