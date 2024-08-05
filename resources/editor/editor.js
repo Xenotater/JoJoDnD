@@ -350,10 +350,11 @@ function scale(object) {
 }
 
 function shouldScale(object) {
+    const disallowedIds = ["desc"];
     const disallowedClasses = ["skillstat", "skilllbl"];
     const disallowedParentIds = ["stats"];
 
-    if (disallowedParentIds.includes(object.parentElement?.id))
+    if (disallowedIds.includes(object?.id) || disallowedParentIds.includes(object.parentElement?.id))
         return false;
 
     let isAllowed = true;

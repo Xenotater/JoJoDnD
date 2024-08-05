@@ -1,3 +1,5 @@
+var translateData = {};
+
 $(document).ready(function () {
     let langParam = new URL(window.location.href).searchParams.get("lang");
 
@@ -34,56 +36,71 @@ function isAdEnabled(path) {
 }
 
 function translatePage() {
-    const lang = getLanguage(), path = window.location.pathname;
+    const lang = getLanguage(), path = window.location.pathname.replace(/\/$/, "");
     if (lang != "en" && getAvailableLangs(path).includes(lang)) {
         $.getJSON(path + "/translations/" + lang + ".json", function (translation) {
+            translateData = translation;
             document.querySelectorAll('*').forEach(element => {
                 const key = element.dataset?.translationKey;
-                const newText = translation[key ? key : $(element).text()];
-                if (newText) {
-                    $(element).text(newText);
-                    if (element.tagName.match("H[1-3]"))
-                        fixScaleBig($(element));
-                    else if (element.tagName != "P")
-                        fixScale($(element));
+                const placeholder = element.placeholder;
+                const newText = translation[key ? key : placeholder ? placeholder : $(element).text()];
+                if (newText && !placeholder) {
+                    $(element).html($(element).html().replace($(element).text().replace("&", "&amp;"), newText));
+                    fixScale(element);
                 }
+                else if (newText && placeholder)
+                    element.placeholder = newText;
             });
+            if (typeof postTranslate === "function")
+                postTranslate();
         });
     }
 }
 
-function fixScaleBig(element) {
-    let val = element.parent().width() / element.text().length, upper = 24, medium = 20, lower = 16;
-    console.log(element.text() + ": " + val);
+function translateElement(element) {
+    if (!element)
+        return;
+    
+    const key = element.dataset?.translationKey;
+    const placeholder = element.placeholder;
+    const newText = translateData[key ? key : placeholder ? placeholder : $(element).text()];
+    if (newText && !placeholder) {
+        $(element).html($(element).html().replace($(element).text().replace("&", "&amp;"), newText));
+        fixScale(element);
+    }
+    else if (newText && placeholder)
+        element.placeholder = newText;
+    if (element.children.length > 0)
+        Array.from(element.children).forEach(child => translateElement(child));
+}
 
-    if (val > upper)
-        element.css("font-size", "40px");
-    else if (val < upper && val > medium)
-        element.css("font-size", "32px");
-    else if (val < medium && val > lower)
-        element.css("font-size", "28px");
-    else
-        element.css("font-size", "24px");
+function translateText(text) {
+    const newText = translateData[text];
+    if (newText)
+        return newText;
+    return text;
 }
 
 function fixScale(element) {
-    var val = $(element).parent().width() / $(element).text().length, upper = 7, lower = 5;
-    console.log(element.text() + ": " + val);
+    try {
+        if (typeof shouldScale === "function")
+            if (!shouldScale(element))
+                return;
 
-    if (shouldScale)
-        if (!shouldScale(element[0]))
-            return;
-
-    if (element.attr("for") == "dc")
-        console.log(val);
-
-    if (val > upper)
-        $(element).css("font-size", "12px");
-    else if (val < upper && val > lower)
-        $(element).css("font-size", "10px");
-    else {
-        $(element).css("font-size", "8px");
-        $(element).css("font-weight", "bold");
+        $(element).css("white-space", "nowrap");
+        var size = parseInt(getComputedStyle(element).getPropertyValue('font-size'));
+        const parent_styles = getComputedStyle(element.parentElement);
+        const parent_width = parseInt(parent_styles.getPropertyValue('width'))
+        const parent_padding = parseInt(parent_styles.getPropertyValue('padding-left')) + parseInt(parent_styles.getPropertyValue('padding-right'));
+        while(element.offsetWidth + parent_padding > parent_width && size > 0)
+        {
+            element.style.fontSize = size + "px"
+            size -= 1
+        }
+        $(element).css("white-space", "");
+    }
+    catch {
+        return;
     }
 }
 

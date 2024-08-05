@@ -13,16 +13,16 @@
                     $mysqli->query("DELETE FROM characters WHERE username = '$user' AND id = '$id'");
 
                 if ($mysqli->error)
-                    echo "<h5 id='response-text'>An error occurred, please contact the site administrator.</h5><p>{$mysqli->error}</p>";
+                    echo "An error occurred, please contact the site administrator.";
                 else
-                    echo "<h5 id='response-text'>Your character was deleted!</h5>"; 
+                    echo "Your character was deleted!"; 
                 $mysqli->close();
             }
             else
-                echo "<h5 id='response-text'>An error occurred, please contact the site administrator.</h5>";
+                echo "An error occurred, please contact the site administrator.";
         }
         else
-            echo "<h5 id='response-text'>You are not logged in.</h5>";
+            echo "You are not logged in.";
     }
     else
         header("Location: /not_found");

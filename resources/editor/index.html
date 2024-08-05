@@ -57,11 +57,11 @@
             <div class="content">
                 <div id="controls" class="row">
                     <div class="col-2">
-                        <button id="login" class="header-btn"><i class="bi bi-door-open"></i><br>Login</button>
+                        <button id="login" class="header-btn"><i class="bi bi-door-open"></i><br><span data-translation-key="LoginBtn" id="loginText">Login</span></button>
                     </div>
                     <div class="col-3">
-                        <button id="load" class="header-btn"><i class="bi bi-folder2-open"></i><br>Load</button>
-                        <button id="save" class="header-btn"><i class="bi bi-bookmark"></i><br>Save</button>
+                        <button id="load" class="header-btn"><i class="bi bi-folder2-open"></i><br><span data-translation-key="LoadBtn">Load</span></button>
+                        <button id="save" class="header-btn"><i class="bi bi-bookmark"></i><br><span data-translation-key="SaveBtn">Save</span></button>
                     </div>
                     <div class="col-1" id="options">
                         <label for="p1">Page 1</label>
@@ -70,19 +70,21 @@
                         <input type="checkbox" id="p2" class="pageSelect option" value="p2" checked><br>
                         <label for="p3">Page 3</label>
                         <input type="checkbox" id="p3" class="pageSelect option" value="p3" checked><br>
-                        <label for="autofill">Autofill</label>
-                        <input type="checkbox" id="autofill" class="option" value="autofill" checked>
+                        <div>
+                        <label for="autofill">Autofill <input type="checkbox" id="autofill" class="option" value="autofill" checked></label>
+                        
+                        </div>
                     </div>
                     <div class="col-3">
                         <input type="file" id="import">
-                        <button id="import-btn" class="header-btn"><i class="bi bi-upload"></i><br>Import</button>
-                        <button id="export-btn" class="header-btn"><i class="bi bi-download"></i><br>Export</button>
+                        <button id="import-btn" class="header-btn"><i class="bi bi-upload"></i><br><span data-translation-key="ImportBtn">Import</span></button>
+                        <button id="export-btn" class="header-btn"><i class="bi bi-download"></i><br><span data-translation-key="ExportBtn">Export</span></button>
                     </div>
                     <div class="col-3">
-                        <button id="dl-btn" class="header-btn"><i class="bi bi-filetype-pdf"></i><br>Download PDF</button><br>
+                        <button id="dl-btn" class="header-btn"><i class="bi bi-filetype-pdf"></i><br><span data-translation-key="PDFBtn">Download PDF</span></button><br>
                     </div>
                 </div>
-                <p id="desc">Fill out desired values or leave them blank, then select which pages you'd like to keep and press the download button.</p>
+                <p id="desc" data-translation-key="Instructions">Fill out desired values or leave them blank, then select which pages you'd like to keep and press the download button.</p>
                 <div data-simplebar>
                     <form id="pages">
                         <div id="statflip-switch">
@@ -100,7 +102,9 @@
                                 <input type="number" id="meta" name="meta" value="0">
                                 <div class="heading flex-heading">
                                     <img src="/Assets/icon.webp" alt="JoJo D&D" id="logo">
-                                    <h2 id="title"><b>JoJo's Bizarre Tabletop Game</b></h2>
+                                    <div id="titleBox">
+                                        <h2 id="title">JoJo's Bizarre Tabletop Game</h2>
+                                    </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-6">

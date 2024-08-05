@@ -159,9 +159,10 @@ function checkLoggedIn() {
     $.post("login.php", { action: "check" }, function(data) {
         loggedIn = parseInt(data);
         if (!loggedIn)
-            $("#login").html('<i class="bi bi-door-open"></i><br>Login');
+            $("#login").html('<i class="bi bi-door-open"></i><br><span data-translation-key="LoginBtn" id="loginText">Login</span>');
         else
-            $("#login").html('<i class="bi bi-door-closed"></i><br>Logout');
+            $("#login").html('<i class="bi bi-door-closed"></i><br><span data-translation-key="LoginBtn" id="loginText">Logout</span>');
+        translateElement($("#loginText")[0]);
     });
 }
 
@@ -209,16 +210,24 @@ function updateCharacters() {
                     $("#nextPage").css("display", "inline-block");
                 else
                     $("#nextPage").css("display", "none")
+
+                if (getLanguage() != "en") {
+                    let greeting = $("#greeting"); user = greeting.text().split("'")[0];
+                    greeting.text(translateText("greeting").replace("{name}", user));
+                    translateElement($("#err")[0]);
+                }
             });
     });
     $("#characters").append("<div class='loading'></div>");
+    translateElement($("#search")[0]);
 }
 
 function logOut() {
     $.post("logout.php", { action: "logout" }, function(data) {
         loggedIn = 0;
         offset = 0;
-        $("#login").html('<i class="bi bi-door-open"></i><br>Login');
+        $("#login").html('<i class="bi bi-door-open"></i><br><span data-translation-key="LoginBtn" id="loginText">Login</span>');
+        translateElement($("#loginText")[0]);
     });
 }
 
@@ -230,10 +239,11 @@ function popLogIn() {
     newText += "<form id='login-form' onsubmit='return false'>";
     newText += "<label for='user'>Username:</label><br><input type='text' id='user' name='user' required><br>";
     newText += "<label for='pass'>Password:</label><br><input type='password' id='pass' name='pass' required><br>";
-    newText += "<input type='submit' value='Login' id='signIn'>"
+    newText += "<button type='submit' id='signIn'>Login</button>"
     newText += "<br><a id='toSignUp'>Create Account</a><br class='linkbreak'><a href='recovery' target='_blank'>Forgot Password";
     newText += "</form></div></div>";
     $("body").append(newText);
+    translateElement($("#popSignIn")[0]);
 }
 
 function popSignUp() {
@@ -246,10 +256,11 @@ function popSignUp() {
     newText += "<label for='email'>Email:</label><br><input type='email' id='email' name='email' required><br>";
     newText += "<label for='pass'>Password:</label><br><input type='password' id='pass' name='pass' required><br>";
     newText += "<label for='conf'>Confirm Password:</label><br><input type='password' id='conf' name='conf' required><br>";
-    newText += "<input type='submit' value='Submit' id='signUp'>"
+    newText += "<button type='submit' id='signUp'>Create</button>"
     newText += "<br><a id='toSignIn'>Back</a>";
     newText += "</form></div></div>";
     $("body").append(newText);
+    translateElement($("#popSignIn")[0]);
 }
 
 function logIn() {
@@ -261,12 +272,14 @@ function logIn() {
                 eFlag = parseInt(data[0]);
                 loggedIn = 1;
                 $("#popSignIn").remove();
-                $("#login").html('<i class="bi bi-door-closed"></i><br>Logout');
+                $("#login").html('<i class="bi bi-door-closed"></i><br><span data-translation-key="LoginBtn" id="loginText">Logout</span>');
+                translateElement($("#loginText")[0]);
                 respond("Login Successful!");
             }
             else {
                 $("#login-failure").remove();
-                $("#signIn-window").append(data);
+                $("#signIn-window").append(translateText(data));
+                translateElement($("#login-failure"));
             }
             if(!eFlag)
                 promptEmail();
@@ -302,6 +315,8 @@ function respond(text) {
             $("#response").remove();
         });
     }, 3000);
+    if (getLanguage() != "en")
+        translateElement($("#response-text")[0]);
 }
 
 function saveChar() {
@@ -361,6 +376,7 @@ function popRename(id) {
     newText += "</div></div></div>";
     $("body").append(newText);
     $("#newName").val($($("#char" + id).children()[2]).children()[1].textContent);
+    translateElement($("#popConf")[0]);
 }
 
 function popDel(id) {
@@ -368,11 +384,12 @@ function popDel(id) {
     var newText = "<div id='popConf' class='center'>";
     newText += "<div class='content' id='confirm-window'>";
     newText += "<i id='closeConf' class='bi bi-x-lg'></i>";
-    newText += "<h2>Delete this character?</h2><p>This CANNOT be undone. Type \"Delete\" below to confirm.</p>";
+    newText += "<h2>Delete this character?</h2><p data-translation-key='deleteDesc'>This CANNOT be undone. Type \"Delete\" below to confirm.</p>";
     newText += "<input type='text' id='confDel'>";
     newText += "<button class='delBtn' id='del" + id + "'>Confirm</button>"
     newText += "</div></div></div>";
     $("body").append(newText);
+    translateElement($("#popConf")[0]);
 }
 
 function rename(id) {
@@ -410,12 +427,13 @@ function promptEmail() {
     newText += "<div class='content' id='email-window'>";
     newText += "<i id='closeEmail' class='bi bi-x-lg'></i>";
     newText += "<h2>Enter Your Email</h2>";
-    newText += "<p>This isn't mandatory for current users, but we need your email to authenticate you if you ever need to reset your password.</p>";
+    newText += "<p data-translation-key='emailDesc'>This isn't mandatory for current users, but we need your email to authenticate you if you ever need to reset your password.</p>";
     newText += "<form id='email-form' onsubmit='return false'>";
     newText += "<label for='email'>Email:</label><br><input type='email' id='email' name='email' required><br>";
-    newText += "<input type='submit' value='Submit' id='email-btn'>"
+    newText += "<button type='submit' id='email-btn'>Submit</button>";
     newText += "</form></div></div>";
     $("body").append(newText);
+    translateElement($("#popEmail")[0]);
 }
 
 function updateEmail() {
