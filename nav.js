@@ -93,10 +93,14 @@ function fixScale(element) {
         const parent_styles = getComputedStyle(element.parentElement);
         const parent_width = parseInt(parent_styles.getPropertyValue('width'))
         const parent_padding = parseInt(parent_styles.getPropertyValue('padding-left')) + parseInt(parent_styles.getPropertyValue('padding-right'));
-        while(element.offsetWidth + parent_padding > parent_width && size > 0)
+        while(element.offsetWidth + parent_padding >= parent_width && size > 0)
         {
+            if (element.tagName === "H2")
+                console.log(element.offsetWidth + parent_padding + ", " + parent_width);
             element.style.fontSize = size + "px"
             size -= 1
+            if (element.tagName === "H2")
+                console.log(element.offsetWidth + parent_padding);
         }
         $(element).css("white-space", "");
     }

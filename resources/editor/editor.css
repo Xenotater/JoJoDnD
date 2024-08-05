@@ -195,12 +195,9 @@
 @media (max-width: 991px) {
     .header-btn {
         font-size: 1rem;
-        padding-left: 12px;
-        padding-right: 12px;
-        width: auto;
+        width: 80%;
         margin: 0;
-        margin-left: auto;
-        margin-right: auto;
+        padding: 0 2px;
     }
     #options {
         line-height: 16px;

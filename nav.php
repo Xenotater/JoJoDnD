@@ -99,24 +99,24 @@ if ($_POST["action"] != "nav") {
                             Resources
                         </a>
                     </li>
+                    <?php
+                    if (!empty($_POST["langs"])) {
+                        echo
+                        '<div id="lang-selector-box">
+                            <div id="lang-selector">
+                                <label id="lang-selector-label">Lang:</label>
+                                <select name="lang-select" id="lang-select-input">
+                                    <option value="en">en</option>';
+                                    foreach($_POST["langs"] as $l) {
+                                        echo '<option value="' . $l . '">' . $l . "</option>";
+                                    }
+                                echo
+                                '</select>
+                            </div>
+                        </div>';
+                    }
+                    ?>
                 </ul>
-                <?php
-                if (!empty($_POST["langs"])) {
-                    echo
-                    '<div id="lang-selector-box">
-                        <div id="lang-selector">
-                            <label id="lang-selector-label">Lang:</label>
-                            <select name="lang-select" id="lang-select-input">
-                                <option value="en">en</option>';
-                                foreach($_POST["langs"] as $l) {
-                                    echo '<option value="' . $l . '">' . $l . "</option>";
-                                }
-                            echo
-                            '</select>
-                        </div>
-                    </div>';
-                }
-                ?>
             </div>
         </div>
     </nav>

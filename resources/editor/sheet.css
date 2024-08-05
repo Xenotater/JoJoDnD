@@ -235,7 +235,7 @@ input {
     width: 19px;
     height: 14px;
     font-size: 8px;
-    margin-left: 3px;
+    margin-left: 2px;
     text-align-last: center;
 }
 
@@ -246,7 +246,6 @@ input {
 
 .skillstat {
     font-size: 8px;
-    margin-left: 1px;
 }
 
 .bigBox {
@@ -300,6 +299,9 @@ textarea {
 
 #pages h2 {
     font-family: sans-serif;
+    font-weight: bold;
+    width: fit-content;
+    margin: auto;
 }
 
 #type {

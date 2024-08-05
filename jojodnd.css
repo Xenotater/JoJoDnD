@@ -291,6 +291,7 @@ h1, h2, h3, th, .th {
     }
     .navbar-expand-custom .navbar-nav {
         flex-direction: row;
+        flex-grow: 1;
     }
     .navbar-expand-custom .dropdown-menu {
         position: absolute;
@@ -319,6 +320,9 @@ h1, h2, h3, th, .th {
     .navbar-collapse {
         border-top: 2px solid white;
         overflow-y: scroll;
+    }
+
+    .navbar-nav {
         position: relative;
     }
 
@@ -349,8 +353,8 @@ h1, h2, h3, th, .th {
 
     #lang-selector-box {
         position: absolute;
-        bottom: -215px;
-        right: 0px;
+        bottom: 0;
+        right: 0;
         height: unset;
     }
 }
