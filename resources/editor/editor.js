@@ -349,7 +349,18 @@ function scale(object) {
         $(object).css("font-size", "12px");
 }
 
+function shouldScale(object) {
+    const disallowedIds = ["desc"];
+    const disallowedClasses = ["skillstat", "skilllbl"];
+    const disallowedParentIds = ["stats"];
 
+    if (disallowedIds.includes(object?.id) || disallowedParentIds.includes(object.parentElement?.id))
+        return false;
+
+    let isAllowed = true;
+    object.classList.forEach(cls => {if (disallowedClasses.includes(cls)) isAllowed = false;});
+    return isAllowed;
+}
 
 function flipStats(initial) {
     let mod = [0,0,0,0,0,0];

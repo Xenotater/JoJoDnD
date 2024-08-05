@@ -51,7 +51,7 @@
                         }
 
                         if (!session_start()) {
-                            echo "<h5 id='login-failure'>Couldn't verify session, please contact the site administrator.</h5>";
+                            echo "<h5 id='login-failure'>An error occurred, please contact the site administrator.</h5>";
                         }
                         $_SESSION["loggedin"] = $user;
 
@@ -66,7 +66,7 @@
                     echo "<h5 id='login-failure'>Invalid Credentials.";
             }
             else
-                echo "<h5 id='login-failure'>Something went wrong, please contact the site administrator.</h5>";
+                echo "<h5 id='login-failure'>An error occurred, please contact the site administrator.</h5>";
         }
     }
     else

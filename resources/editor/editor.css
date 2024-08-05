@@ -78,6 +78,10 @@
     border-radius: 2px;
     margin-bottom: 10px;
     background-color: rgb(240, 240, 240);
+    font-size: 24px;
+    border: 3px solid black;
+    line-height: initial;
+    color: black;
 }
 
 #signIn:hover, #signUp:hover, #email-btn:hover, .renameBtn:hover, .delBtn:hover {
@@ -155,10 +159,15 @@
     width: 75%;
     margin: 12px;
     color: black;
+    white-space: nowrap;
 }
 
 .header-btn:hover {
     background-color: rgb(187, 187, 187);
+}
+
+#load, #save, #import-btn, #export-btn {
+    width: 38%;
 }
 
 #controls .col-3, #controls .col-2 {

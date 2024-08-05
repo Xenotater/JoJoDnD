@@ -29,7 +29,7 @@
                     echo "<h5 id='login-failure'>Invalid Credentials.";
             }
             else
-                echo "<h5 id='login-failure'>Something went wrong, please contact the site administrator.</h5>";
+                echo "<h5 id='login-failure'>An error occurred, please contact the site administrator.</h5>";
         }
     }
     else

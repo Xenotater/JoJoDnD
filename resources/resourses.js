@@ -34,6 +34,11 @@ $(document).ready(function() {
                 $("#login-window").append(data);
             });
     });
+
+    if (getLanguage() != "en") {
+        $("#viewSheet").attr("href", "Assets/translations/JoJo_Char_Sheet_" + getLanguage().toUpperCase() + ".pdf");
+        $("#downloadSheet").attr("href", "Assets/translations/JoJo_Char_Sheet_" + getLanguage().toUpperCase() + ".pdf");
+    }
 });
 
 function popUp() {

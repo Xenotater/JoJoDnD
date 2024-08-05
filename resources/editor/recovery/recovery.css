@@ -1,0 +1,9 @@
+#submit-btn, #reset-btn {
+  height: 50px;
+  padding: 8px;
+  font-size: 24px;
+}
+
+#submit-btn:hover, #reset-btn:hover{
+  background-color: rgb(225, 225, 225);
+}
