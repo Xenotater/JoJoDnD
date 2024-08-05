@@ -159,11 +159,16 @@ function checkLoggedIn() {
     $.post("login.php", { action: "check" }, function(data) {
         loggedIn = parseInt(data);
         if (!loggedIn)
-            $("#login").html('<i class="bi bi-door-open"></i><br><span data-translation-key="LoginBtn" id="loginText">Login</span>');
+            $("#login").html('<i class="bi bi-door-open"></i><br><span data-translation-key="loginBtn" id="loginText">Login</span>');
         else
-            $("#login").html('<i class="bi bi-door-closed"></i><br><span data-translation-key="LoginBtn" id="loginText">Logout</span>');
+            $("#login").html('<i class="bi bi-door-closed"></i><br><span data-translation-key="loginBtn" id="loginText">Logout</span>');
         translateElement($("#loginText")[0]);
     });
+}
+
+function postTranslate() {
+    console.log("done");
+    translateElement($("#loginText")[0]); //just in case of a race condition issue
 }
 
 function popLoad() {
@@ -214,9 +219,9 @@ function updateCharacters() {
                 if (getLanguage() != "en") {
                     let greeting = $("#greeting"); user = greeting.text().split("'")[0];
                     greeting.text(translateText("greeting").replace("{name}", user));
-                    translateElement($("#err")[0]);
                 }
-            });
+            });    
+        translateElement($("#err")[0]);
     });
     $("#characters").append("<div class='loading'></div>");
     translateElement($("#search")[0]);
@@ -298,6 +303,7 @@ function signUp() {
             else {
                 $("#login-failure").remove();
                 $("#signIn-window").append(data);
+                translateElement($("#login-failure"));
             }
         });
 }
@@ -447,6 +453,7 @@ function updateEmail() {
             else {
                 $("#login-failure").remove();
                 $("#email-window").append(data);
+                translateElement($("#login-failure"));
             }
         });
 }
