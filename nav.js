@@ -141,7 +141,7 @@ function getLanguage() {
 }
 
 function getAvailableLangs(path) {
-    if (path.includes("resources"))
+    if (path.includes("resources") && !path.includes("community"))
         return ["uk"];
     return [];
 }
