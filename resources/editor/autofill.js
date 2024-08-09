@@ -323,11 +323,11 @@ function updateSkills(stat) {
         if (!isNaN(mod) && !isNaN(bonus)) {
             val = mod;
             var select = $("#" + skill).find(":selected").text();
-            if (select == "P")
+            if (select == translateText("P"))
                 val += bonus;
-            else if (select == "E")
+            else if (select == translateText("E"))
                 val += bonus * 2;
-            else if (select == "M")
+            else if (select == translateText("M"))
                 val += bonus * 3;
         }
 
