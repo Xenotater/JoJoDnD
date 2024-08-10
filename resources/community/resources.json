@@ -70,11 +70,24 @@
       "alt": "sandman's Ultimate Tracker"
     },
     {
-      "title": "Bare Bones Sheet",
+      "title": "Bare Bones Sheets",
       "img": "Assets/Bare Bones/sandman3.webp",
       "desc": "A bare-bones version of the character sheets. Created by sandman.",
-      "link": "Assets/Bare Bones/Bare Bones Sheet.pdf",
-      "alt": "sandman's Sheet"
+      "alt": "sandman's Sheet",
+      "versions": [
+        {
+          "name": "Regular",
+          "link": "https://docs.google.com/document/d/150yYFt5-Et7NQp9FCLhqaGuGgdiUUEVdNIb6tzjBLfo/edit?usp=sharing"
+        },
+        {
+          "name": "Act",
+          "link": "https://docs.google.com/document/d/1hEe8xJTv36ddLtMqyNLJSEobY5hW3mIAR7URohV4PUc/edit?usp=sharing"
+        },
+        {
+          "name": "Non-Stand",
+          "link": "https://docs.google.com/document/d/1IF127vL6aelw0fbMu-V2UeO-Z2IBNHMSls1L-LWW2Pw/edit?usp=sharing"
+        }
+      ]
     },
     {
       "title": "The Chained",
