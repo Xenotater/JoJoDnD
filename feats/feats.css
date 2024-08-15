@@ -28,15 +28,22 @@
     margin-bottom: 0;
 }
 
-#search-box {
-    text-align: right;
-    margin-right: 15px;
+#toolbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 15px 0;
+}
+
+#switch-box {
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+    margin-bottom: 2px;
 }
 
 #search {
     outline: none;
     border: 1px solid black;
-    margin-top: 20px;
 }
 
 #list {
@@ -63,7 +70,7 @@
 }
 
 #table-scroll {
-    height: 400px;
+    height: 418px;
 }
 
 #list-table tr {
