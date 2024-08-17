@@ -20,7 +20,7 @@ $(document).ready(function () {
 
 function displayPrompt() {
   let newText = "<h4 data-translation-key='promptTitle1'>Enter your email below.</h4>";
-  newText += "<p data-translation-key='promptDesc1'>If we have an account in our system that matches your info, we'll send you a link to reset your password.</p>";
+  newText += "<p data-translation-key='promptDesc1'>If we have an account in our system that matches your info, we'll send you your username and a link to reset your password.</p>";
   newText += "<form id='email-form' onsubmit='return false'>";
   newText += "<input type='email' name='email' id='email' placeholder='diobrando@wryyyyy.com' style='width:80%;height:40px;margin-bottom:20px;' required>";
   newText += "<br><button type='submit' id='submit-btn'>Submit</button></form>";

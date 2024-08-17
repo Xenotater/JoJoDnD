@@ -309,7 +309,7 @@ function popLogIn() {
     newText += "<label for='user'>Username:</label><br><input type='text' id='user' name='user' required><br>";
     newText += "<label for='pass'>Password:</label><br><input type='password' id='pass' name='pass' required><br>";
     newText += "<button type='submit' id='signIn'>Login</button>"
-    newText += "<br><a id='toSignUp'>Create Account</a><br class='linkbreak'><a href='recovery' target='_blank'>Forgot Password";
+    newText += "<br><a id='toSignUp'>Create Account</a><br class='linkbreak'><a href='recovery' target='_blank'>Account Recovery";
     newText += "</form></div></div>";
     $("body").append(newText);
     translateElement($("#popSignIn")[0]);
