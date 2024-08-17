@@ -445,7 +445,7 @@ function popRename(id, isFold) {
     let newText = "<div id='popConf' class='center'>";
     newText += "<div class='content' id='confirm-window'>";
     newText += "<i id='closeConf' class='bi bi-x-lg'></i>";
-    newText += "<h2>New" + (isFold ? " Folder" : "Character") + " Name</h2>";
+    newText += "<h2>New" + (isFold ? " Folder" : " Character") + " Name</h2>";
     newText += "<input type='text' id='newName'>";
     newText += "<button class='renameBtn' id='rename" + (isFold ? "-fold" : "-char") + id + "'>Rename</button>";
     newText += "</div></div></div>";
