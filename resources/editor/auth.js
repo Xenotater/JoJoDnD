@@ -475,7 +475,7 @@ function popMove(id, isFold) {
     let newText = "<div id='popConf' class='center'>";
     newText += "<div class='content' id='confirm-window'>";
     newText += "<i id='closeConf' class='bi bi-x-lg'></i>";
-    newText += "<h2>Move " + (isFold ? " Folder" : "Character") + "</h2>";
+    newText += "<h2>Move " + (isFold ? "Folder" : "Character") + "</h2>";
     newText += "<p data-translation-key='moveDesc'>Enter the name of the folder to move to. If the folder doesn't exist, one will be created here. Alternatively, you may choose to move it up 1 folder.</p>";
     newText += "<input type='text' id='newLocation'>";
     newText += "<button class='moveBackBtn' id='moveBack" + (isFold ? "-fold": "-char") + id + "'" + (folder == "0" ? " disabled" : "") + ">Move Up</button>";

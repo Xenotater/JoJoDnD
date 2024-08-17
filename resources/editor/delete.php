@@ -6,7 +6,6 @@ if ($_POST["action"] == "del") {
         if (!$mysqli->connect_error) {
             $user = $_SESSION["loggedin"];
             $id = $_POST["id"];
-            $folder = $_POST["folder"];
             $isFold = $_POST["isFolder"];
 
             if ($isFold == "true" && $id == "0") {
