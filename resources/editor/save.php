@@ -1,7 +1,8 @@
 <?php
     if ($_POST["action"] == "save")  {
         if (session_start() && !empty($_SESSION["loggedin"])) {
-            $mysqli = new mysqli("localhost", getenv('DB_USER'), getenv('DB_PASS'), "JoJoDnD");
+            $mysqli = mysqli_init();
+            $mysqli->real_connect("localhost", getenv('DB_USER'), getenv('DB_PASS'), "JoJoDnD", null, null, MYSQLI_CLIENT_FOUND_ROWS);
 
             if($mysqli->connect_error) {
                 echo "An error occurred, please contact the site administrator.";

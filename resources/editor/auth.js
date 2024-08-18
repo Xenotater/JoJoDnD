@@ -2,6 +2,7 @@ var loggedIn = 0;
 var charID = -1, charFolder = "0", folder = "0";
 var offsetF = [0], offsetC = [0];
 var folderpath = [{name: "Main", id: "0"}];
+var images = {};
 var query = "";
 
 $(document).ready(function () {
@@ -298,9 +299,16 @@ function updateFolderpath() {
 function updateCardImages() {
     $(".character").each(function (i, char) {
         let id = $(char).attr("id").replace("char", "");
-        $.post("image.php", { action: "image", id: id }, function (data) {
-            $("#char" + id + " img").attr("src", data);
-        });
+        
+        if (images[id] != undefined) {
+            $("#char" + id + " img").attr("src", images[id])
+        }
+        else {
+            $.post("image.php", { action: "image", id: id }, function (data) {
+                $("#char" + id + " img").attr("src", data);
+                images[id] = data;
+            });
+        }
     });
 }
 
@@ -408,6 +416,8 @@ function saveChar() {
             folder = 0;
             folderpath.splice(1, Infinity);
         }
+        if (data.includes("!"))
+            images[charID] = result[3];
         respond(data.replace(/[0-9]+$/, ""));
         updateCharacters();
     });
