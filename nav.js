@@ -149,7 +149,7 @@ function getLanguage() {
 }
 
 function getAvailableLangs(path) {
-    if (path.includes("resources") && !path.includes("community"))
+    if (path.includes("resources") && !path.includes("community") && !path.includes("patches"))
         return ["uk"];
     return [];
 }
