@@ -5,7 +5,7 @@
   }
 
   $version = $_POST["version"];
-  $latest = "1.12.1.5";
+  $latest = "1.12.1.6";
 
   if ($version != $latest) {
     header("Clear-Site-Data: \"cache\"");
