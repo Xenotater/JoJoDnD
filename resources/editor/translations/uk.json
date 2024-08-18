@@ -19,7 +19,7 @@
   "Username:": "Ім'я Користувача:",
   "Password:": "Пароль:",
   "Create Account": "Створити Акаунт",
-  "Forgot Password": "Забув Пароль",
+  "Account Recovery": "Повернення Акаунту",
   "Login": "Логін",
   "Invalid Credentials.": "Невірні облікові дані.",
 
@@ -45,11 +45,12 @@
   "Log in to save and load characters.": "Ввійдіть щоб зберегти і завантажити персонажів.",
   "Couldn't connect to database, please contact the site administrator.": "Не можливо під'єднатися до бази даних, будь ласка зв'яжіться з адміністрацією.",
 
-  "New Name": "Нове Ім'я",
+  "New Character Name": "Нове Ім'я Персонажа",
   "Rename": "Переіменувати",
 
   "Delete this character?": "Видалити цього Персонажа?",
   "deleteDesc": "Після цього його НЕ можна повернути. Введіть \"Delete\" нижче щоб підтвердити.",
+  "Type \"Delete\" to confim.": "Введіть \"Delete\" щоб підтвердити.",
   "Confirm": "Підтвердити",
 
   "Login Successful!": "Ви Ввійшли!",
@@ -62,6 +63,26 @@
   "You are not logged in.": "Ви не ввійшли.",
   "An error occurred, please contact the site administrator.": "Сталася помилка, будь ласка,зв'яжіться з адміністрацією.",
   "Character data is too large (0.5GB+). Please contact the site administrator if you believe this is an error.": "Персонаж займає багато пам'яті(0.5ГБ+).Будь ласка, зв'яжіться з адміністрацією сайту, якщо думаєте що це помилка.",
+
+  "New Folder Name": "Нова Папка",
+  "Delete this folder?": "Видалити цю папку?",
+  "deleteFoldDesc": "Все, що знаходиться всередині буде видалено. Дороги назад НЕМА. Введіть \"Delete\" нижче щоб підтвердити.",
+  "Move Character": "Перемістити Персонажа",
+  "Move Folder": "Перемістити Папку",
+  "moveDesc": "Введіть ім'я папки в яку перемістити. Якщо папки не існує, одна створиться тут. Інакше, Ви можете перемістити на одну папку вище.",
+  "Move": "Перемістити",
+  "Move Up": "Перемістити Вище",
+  
+  "Your folder was renamed!": "Ваша папка була перейменована!",
+  "Your folder was moved!": "Ваша папка була переміщена!",
+  "Your folder was duplicated!": "Ваша папка була дублікована!",
+  "Your folder was deleted!": "Ваша папка була видалена!",
+  "A folder with that name already exists there.": "Папка з цим ім'ям вже існує.",
+  "The root folder may not be renamed.": "Коренева папка не може бути перейменована.",
+  "The root folder may not be moved.": "Коренева папка не може бути переміщена.",
+  "The root folder may not be duplicated.": "Коренева папка не може бути дублікована.",
+  "The root folder may not be deleted.": "Коренева папка не може бути видалена.",
+  "You do not own this folder, your character will be saved to the main folder. ": "Ти не володієш цією папкою, твій персонаж збережеться в головній папці. ",
 
   "JoJo's Bizarre Tabletop Game": "Настільна Гра Неймовірні Пригоди ДжоДжо",
   "PowerType": "Потужний",

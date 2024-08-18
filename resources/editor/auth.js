@@ -1,6 +1,7 @@
 var loggedIn = 0;
-var charID = -1;
-var offset = 0;
+var charID = -1, charFolder = "0", folder = "0";
+var offsetF = [0], offsetC = [0];
+var folderpath = [{name: "Main", id: "0"}];
 var query = "";
 
 $(document).ready(function () {
@@ -61,20 +62,45 @@ $(document).ready(function () {
     });
 
     $("body").on("click", ".loadBox", function() {
-        var id = $(this).parent().attr("id").replace("char", "");
+        let id = $(this).parent().attr("id").replace("char", "");
         loadChar(id);
+    });
+    
+    $("body").on("click", ".foldLoadBox", function() {
+        let id = $(this).parent().attr("id").replace("fold", "");
+        let name = $("#fold" + id + " .charName").text();
+        folder = id;
+        folderpath.push({name: name, id: id});
+        updateCharacters();
+    });
+
+    $("body").on("click", "#folderBack", function() {
+        folder = folderpath.at(-2).id;
+        folderpath.splice(-1);
+        updateCharacters();
+    });
+
+    $("body").on("click", ".pathLink", function() {
+        let id = $(this).attr("id").replace("path", "");
+        folder = id;
+        folderpath = folderpath.splice(0, folderpath.findIndex(info => info.id === id) + 1);
+        updateCharacters();
     });
 
     $("body").on("keypress", "#search", function(e) {
         if (e.which == 13) {
             query = $("#search").val();
-            offset = 0;
+            offsetF = [0];
+            offsetC = [0];
             updateCharacters();
         }
     });
 
     $("body").on("click", ".bi-three-dots-vertical", function () {
-        $("#drop" + $(this).attr("id").replace("opt", "")).css("display", "unset");
+        if ($(this).attr("id").includes("fold"))
+            $("#fold-drop" + $(this).attr("id").replace("fold-opt", "")).css("display", "unset");
+        else
+            $("#drop" + $(this).attr("id").replace("opt", "")).css("display", "unset");
     });
 
     $(document).mouseup(function (e) {
@@ -83,16 +109,20 @@ $(document).ready(function () {
     });
 
     $("body").on("click", ".drop", function (e) {
-        var id = $(this).parent().attr("id").replace("char", "");
+        let isFolder = $(this).attr("id").includes("fold");
+        let id = $(this).attr("id").replace(/^(fold-)?drop/, "");
         switch (e.target.textContent) {
             case "Rename":
-                popRename(id);
+                popRename(id, isFolder);
                 break;
             case "Duplicate":
-                dupe(id);
+                dupe(id, isFolder);
                 break;
             case "Delete":
-                popDel(id);
+                popDel(id, isFolder);
+                break;
+            case "Move": 
+                popMove(id, isFolder);
                 break;
             default:
                 break;
@@ -100,11 +130,25 @@ $(document).ready(function () {
     });
 
     $("body").on("click", ".renameBtn", function() {
-        rename($(this).attr("id").replace("rename", ""));
+        let isFolder = $(this).attr("id").includes("fold");
+        rename($(this).attr("id").replace(/^rename-(fold|char)/, ""), isFolder);
     });
 
     $("body").on("click", ".delBtn", function() {
-        del($(this).attr("id").replace("del", ""));
+        let isFolder = $(this).attr("id").includes("fold");
+        del($(this).attr("id").replace(/^del-(fold|char)/, ""), isFolder);
+    });
+
+    $("body").on("click", ".moveBtn", function() {
+        let isFolder = $(this).attr("id").includes("fold");
+        move($(this).attr("id").replace(/^move-(fold|char)/, ""), isFolder, false);
+    });
+
+    $("body").on("click", ".moveBackBtn", function() {
+        if (!$(this).attr("disabled")) {
+            let isFolder = $(this).attr("id").includes("fold");
+            move($(this).attr("id").replace(/^moveBack-(fold|char)/, ""), isFolder, true);
+        }
     });
 
     $("body").on("click", "#newChar", function() {
@@ -113,6 +157,7 @@ $(document).ready(function () {
         resetImg(true);
         resetImg(false);
         charID = -1;
+        charFolder = folder;
         respond("New character created!");
     });
 
@@ -139,15 +184,24 @@ $(document).ready(function () {
     });
 
     $("body").on("click", ".arrow", function() {
-        if ($(this).attr("id") == "prevPage")
-            offset -= 11;
-        else
-            offset += 11;
-        
-        if (offset < 0)
-            offset = 0;
+        let folderCount = $(".folder").length, charCount = $(".character").length;
 
-        updateCharacters();;
+        if ($(this).attr("id") == "prevPage") {
+            offsetC.splice(-1);
+            offsetF.splice(-1);
+        }
+        else {
+            offsetC.push(offsetC.at(-1) + charCount);
+            offsetF.push(offsetF.at(-1) + folderCount);
+        }
+        
+        if (offsetC.length < 0 || offsetC.at(-1) < 0)
+            offsetC = [0];
+
+        if (offsetF.length < 0 || offsetF.at(-1) < 0)
+            offsetF = [0];
+
+        updateCharacters();
     });
 
     $("body").on("click", "#email-btn", function() {
@@ -173,7 +227,7 @@ function postTranslate() {
 
 function popLoad() {
     checkLoggedIn();
-    var newText = "<div id='popLoad' class='center'>";
+    let newText = "<div id='popLoad' class='center'>";
     newText += "<div class='content center' id='load-window'>";
     newText += "<div id='charHead'>";
     newText += "<input type='search' id='search' placeholder='Search'>";
@@ -189,29 +243,26 @@ function popLoad() {
 
 function updateCharacters() {
     $("#characters").empty();
-    $.post("characters.php", { action: "chars", search: query, offset: offset }, function(data) {
+    $.post("characters.php", { action: "chars", search: query, folder: folder, f_offset: offsetF.at(-1), c_offset: offsetC.at(-1) }, function(data) {
         $("#characters").empty();
         $("#characters").append(data);
         $("#char" + charID).addClass("curChar");
 
-        if (offset >= 11)
+        let totalOffset = offsetF.at(-1) + offsetC.at(-1);
+        if (totalOffset >= 11)
             $("#prevPage").css("display", "inline-block");
         else
             $("#prevPage").css("display", "none");
         
         if (loggedIn)
-            $.post("characters.php", { action: "count", search: query }, function(count) {
+            $.post("characters.php", { action: "count", search: query, folder: folder }, function(count) {
                 count = parseInt(count);
-                let current = Math.floor(offset/11) + 1, max = Math.floor(count/11) + 1;
+                let current = Math.floor(totalOffset/11) + 1, max = Math.floor(count/11) + 1;
                 if (count % 11 == 0)
                     max--;
-                if (current > max) {
-                    offset = 11 * (max - 1);
-                    updateCharacters();
-                    return;
-                }
+
                 $("#pageCount").html(current + " / " + max);
-                if (count >= 11 && count - offset > 11)
+                if (count >= 11 && count - totalOffset > 11)
                     $("#nextPage").css("display", "inline-block");
                 else
                     $("#nextPage").css("display", "none")
@@ -220,6 +271,11 @@ function updateCharacters() {
                     let greeting = $("#greeting"); user = greeting.text().split("'")[0];
                     greeting.text(translateText("greeting").replace("{name}", user));
                 }
+
+                if(folderpath.length > 1)
+                    updateFolderpath();
+                else
+                    $("#folderpath").hide();
             });    
         translateElement($("#err")[0]);
     });
@@ -227,17 +283,25 @@ function updateCharacters() {
     translateElement($("#search")[0]);
 }
 
+function updateFolderpath() {
+    $("#folderpath").empty();
+    $("#folderpath").append("<i id='folderBack' class='bi bi-arrow-left-circle'></i>");
+    folderpath.forEach((info) => {
+        $("#folderpath").append("<span><a href='#' class='pathLink' id='path" + info.id + "'>" + info.name + "</a>/</span>");
+    });
+    last = $("#folderpath").children().last();
+    last.text(last.text().slice(0, -1))
+    $("#folderpath").show();
+}
+
 function logOut() {
     $.post("logout.php", { action: "logout" }, function(data) {
-        loggedIn = 0;
-        offset = 0;
-        $("#login").html('<i class="bi bi-door-open"></i><br><span data-translation-key="loginBtn" id="loginText">Login</span>');
-        translateElement($("#loginText")[0]);
+        window.location.reload();
     });
 }
 
 function popLogIn() {
-    var newText = "<div id='popSignIn' class='center'>";
+    let newText = "<div id='popSignIn' class='center'>";
     newText += "<div class='content' id='signIn-window'>";
     newText += "<i id='closeSignIn' class='bi bi-x-lg'></i>";
     newText += "<h2>Sign In</h2>";
@@ -245,14 +309,14 @@ function popLogIn() {
     newText += "<label for='user'>Username:</label><br><input type='text' id='user' name='user' required><br>";
     newText += "<label for='pass'>Password:</label><br><input type='password' id='pass' name='pass' required><br>";
     newText += "<button type='submit' id='signIn'>Login</button>"
-    newText += "<br><a id='toSignUp'>Create Account</a><br class='linkbreak'><a href='recovery' target='_blank'>Forgot Password";
+    newText += "<br><a id='toSignUp'>Create Account</a><br class='linkbreak'><a href='recovery' target='_blank'>Account Recovery";
     newText += "</form></div></div>";
     $("body").append(newText);
     translateElement($("#popSignIn")[0]);
 }
 
 function popSignUp() {
-    var newText = "<div id='popSignIn' class='center'>";
+    let newText = "<div id='popSignIn' class='center'>";
     newText += "<div class='content' id='signIn-window'>";
     newText += "<i id='closeSignIn' class='bi bi-x-lg'></i>";
     newText += "<h2>Sign Up</h2>";
@@ -269,7 +333,7 @@ function popSignUp() {
 }
 
 function logIn() {
-    var user = $("#user").val(), pass = $("#pass").val();
+    let user = $("#user").val(), pass = $("#pass").val();
     if ($("#login-form")[0].checkValidity())
         $.post("login.php", { action: "login", user: user, pass: pass }, function(data) {
             let eFlag = 1;
@@ -292,7 +356,7 @@ function logIn() {
 }
 
 function signUp() {
-    var user = $("#user").val(), email = $("#email").val(), pass = $("#pass").val(), conf = $("#conf").val();
+    let user = $("#user").val(), email = $("#email").val(), pass = $("#pass").val(), conf = $("#conf").val();
     if ($("#signUp-form")[0].checkValidity())
         $.post("signup.php", { action: "signup", user: user, email: email, pass: pass, conf: conf }, function(data) {
             if (data == "<h5 id='login-success'>Account Created!</h5>") {
@@ -326,11 +390,15 @@ function respond(text) {
 }
 
 function saveChar() {
-    var result = exportData("save");
-    $.post("save.php", { action: "save", id: charID, name: result[0], form: result[1], acts: result[2], img: result[3], img2: result[4] }, function(data) {
-        if (data.match(/^[0-9]+/))
-            charID = parseInt(data.match(/^[0-9]+/)[0]);
-        respond(data.replace(/^[0-9]+/, ""));
+    let result = exportData("save");
+    $.post("save.php", { action: "save", id: charID, name: result[0], form: result[1], acts: result[2], img: result[3], img2: result[4], folder: charFolder }, function(data) {
+        if (data.match(/[0-9]+$/))
+            charID = parseInt(data.match(/[0-9]+$/)[0]);
+        if (data.includes("You do not own this folder")) {
+            folder = 0;
+            folderpath.splice(1, Infinity);
+        }
+        respond(data.replace(/[0-9]+$/, ""));
         updateCharacters();
     });
 }
@@ -338,10 +406,11 @@ function saveChar() {
 function loadChar(id) {
     $.post("load.php", { action: "load", id: id }, function(data) {
         if (data) {
-            var file = JSON.parse(data);
+            let file = JSON.parse(data);
             importData(file);
             $("#popLoad").remove();
             charID = id;
+            charFolder = folder;
             respond("Your character was loaded!");
         }
         else
@@ -350,73 +419,100 @@ function loadChar(id) {
 }
 
 function search(query) {
-    var not = false;
+    let not = false;
 
     if (query.match(/^NOT */)) {
         not = true;
         query = query.replace(/^NOT */, "");
     }
 
-    var chars = $("#chars").children();
+    let chars = $("#chars").children();
 
     for (i = 0; i < chars.length; i++) { //reset search
-        var info = chars[i].textContent.toLowerCase().replace("renameduplicatedelete", "");
+        let info = chars[i].textContent.toLowerCase().replace("renameduplicatedelete", "");
         $(chars[i]).css("display", "block");
     }
 
     for (i = 0; i < chars.length; i++) { //new search
-        var info = chars[i].textContent.toLowerCase().replace("renameduplicatedelete", "");
+        let info = chars[i].textContent.toLowerCase().replace("renameduplicatedelete", "");
         if ((!info.includes(query.toLowerCase()) && !not) || (info.includes(query.toLowerCase()) && not))
             $(chars[i]).css("display", "none");
     }
 }
 
-function popRename(id) {
+function popRename(id, isFold) {
     $(".drop").css("display", "none");
-    var newText = "<div id='popConf' class='center'>";
+    let newText = "<div id='popConf' class='center'>";
     newText += "<div class='content' id='confirm-window'>";
     newText += "<i id='closeConf' class='bi bi-x-lg'></i>";
-    newText += "<h2>New Name</h2>";
+    newText += "<h2>New" + (isFold ? " Folder" : " Character") + " Name</h2>";
     newText += "<input type='text' id='newName'>";
-    newText += "<button class='renameBtn' id='rename" + id + "'>Rename</button>"
+    newText += "<button class='renameBtn' id='rename" + (isFold ? "-fold" : "-char") + id + "'>Rename</button>";
     newText += "</div></div></div>";
     $("body").append(newText);
-    $("#newName").val($($("#char" + id).children()[2]).children()[1].textContent);
+    $("#newName").val($($((isFold ? "#fold" : "#char") + id).children()[2]).children()[1].textContent);
     translateElement($("#popConf")[0]);
 }
 
-function popDel(id) {
+function popDel(id, isFold) {
     $(".drop").css("display", "none");
-    var newText = "<div id='popConf' class='center'>";
+    let newText = "<div id='popConf' class='center'>";
     newText += "<div class='content' id='confirm-window'>";
     newText += "<i id='closeConf' class='bi bi-x-lg'></i>";
-    newText += "<h2>Delete this character?</h2><p data-translation-key='deleteDesc'>This CANNOT be undone. Type \"Delete\" below to confirm.</p>";
+    if (isFold)
+        newText += "<h2>Delete this folder?</h2><p data-translation-key='deleteFoldDesc'>Anything inside will also be deleted. This CANNOT be undone. Type \"Delete\" below to confirm.</p>";
+    else
+        newText += "<h2>Delete this character?</h2><p data-translation-key='deleteDesc'>This CANNOT be undone. Type \"Delete\" below to confirm.</p>";
     newText += "<input type='text' id='confDel'>";
-    newText += "<button class='delBtn' id='del" + id + "'>Confirm</button>"
+    newText += "<button class='delBtn' id='del" + (isFold ? "-fold" : "-char")+ id + "'>Confirm</button>";
     newText += "</div></div></div>";
     $("body").append(newText);
     translateElement($("#popConf")[0]);
 }
 
-function rename(id) {
-    var newName = $("#newName").val();
-    $.post("rename.php", { action: "rename", id: id, name: newName }, function(data) {
+function popMove(id, isFold) {
+    $(".drop").css("display", "none");
+    let newText = "<div id='popConf' class='center'>";
+    newText += "<div class='content' id='confirm-window'>";
+    newText += "<i id='closeConf' class='bi bi-x-lg'></i>";
+    newText += "<h2>Move " + (isFold ? "Folder" : "Character") + "</h2>";
+    newText += "<p data-translation-key='moveDesc'>Enter the name of the folder to move to. If the folder doesn't exist, one will be created here. Alternatively, you may choose to move it up 1 folder.</p>";
+    newText += "<input type='text' id='newLocation'>";
+    newText += "<button class='moveBackBtn' id='moveBack" + (isFold ? "-fold": "-char") + id + "'" + (folder == "0" ? " disabled" : "") + ">Move Up</button>";
+    newText += "<button class='moveBtn' id='move" + (isFold ? "-fold" : "-char") + id + "'>Move</button>";
+    newText += "</div></div></div>";
+    $("body").append(newText);
+    translateElement($("#popConf")[0]);
+}
+
+function rename(id, isFold) {
+    let newName = $("#newName").val();
+    $.post("rename.php", { action: "rename", id: id, name: newName, isFolder: isFold }, function(data) {
         $("#popConf").remove();
         respond(data);
         updateCharacters();
     });
 }
 
-function dupe(id) {
-    $.post("duplicate.php", { action: "dupe", id: id }, function(data) {
+function dupe(id, isFold) {
+    $.post("duplicate.php", { action: "dupe", id: id, folder: folder, isFolder: isFold }, function(data) {
         respond(data);
         updateCharacters();
     });
 }
 
-function del(id) {
+function move(id, isFold, goBack) {
+    let newFold = $("#newLocation").val();
+    $.post("move.php", { action: "move", newFold: newFold, id: id, folder: folder, isFolder: isFold, goBack: goBack }, function(data) {
+        $("#popConf").remove();
+        respond(data);
+        updateCharacters();
+    });
+}
+
+function del(id, isFold) {
     if ($("#confDel").val() == "Delete") {
-        $.post("delete.php", { action: "del", id: id }, function(data) {
+        $.post("delete.php", { action: "del", id: id, isFolder: isFold }, function(data) {
             $("#popConf").remove();
             respond(data);
             updateCharacters();
@@ -429,7 +525,7 @@ function del(id) {
 }
 
 function promptEmail() {
-    var newText = "<div id='popEmail' class='center'>";
+    let newText = "<div id='popEmail' class='center'>";
     newText += "<div class='content' id='email-window'>";
     newText += "<i id='closeEmail' class='bi bi-x-lg'></i>";
     newText += "<h2>Enter Your Email</h2>";
@@ -443,7 +539,7 @@ function promptEmail() {
 }
 
 function updateEmail() {
-    var email = $("#email").val();
+    let email = $("#email").val();
     if ($("#email-form")[0].checkValidity())
         $.post("signup.php", {action: "email", email: email}, function(data) {
             if (data == "<h5 id='login-success'>Email Updated!</h5>") {

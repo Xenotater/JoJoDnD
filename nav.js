@@ -1,6 +1,9 @@
+var version = {number: "1.12.1.6", date: "8/17/24"}
 var translateData = {};
 
 $(document).ready(function () {
+    checkForUpdate();
+
     let langParam = new URL(window.location.href).searchParams.get("lang");
 
     if (langParam != null)
@@ -33,6 +36,15 @@ function getNav() {
 
 function isAdEnabled(path) {
     return !(path.includes("recovery") || path.includes("privacy"))
+}
+
+function checkForUpdate() {
+    $.post("/update.php", { action: "update", version: version.number }, function (data) {
+        if (data == "updated")
+            window.location.reload();
+        else if (window.location.pathname === "/")
+            $("#versionInfo").text($("#versionInfo").text().replace("{vNum}", version.number).replace("{vDate}", version.date))
+    });
 }
 
 function translatePage() {
@@ -95,12 +107,8 @@ function fixScale(element) {
         const parent_padding = parseInt(parent_styles.getPropertyValue('padding-left')) + parseInt(parent_styles.getPropertyValue('padding-right'));
         while(element.offsetWidth + parent_padding >= parent_width && size > 0)
         {
-            if (element.tagName === "H2")
-                console.log(element.offsetWidth + parent_padding + ", " + parent_width);
-            element.style.fontSize = size + "px"
-            size -= 1
-            if (element.tagName === "H2")
-                console.log(element.offsetWidth + parent_padding);
+            element.style.fontSize = size + "px";
+            size -= 1;
         }
         $(element).css("white-space", "");
     }
@@ -141,7 +149,7 @@ function getLanguage() {
 }
 
 function getAvailableLangs(path) {
-    if (path.includes("resources") && !path.includes("community"))
+    if (path.includes("resources") && !path.includes("community") && !path.includes("patches"))
         return ["uk"];
     return [];
 }

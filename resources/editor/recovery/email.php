@@ -19,11 +19,11 @@
 
         $bodyText = "$user, reset your JoJo D&D editor password using the link below.\r\n";
         $bodyText .= "https://www.jojodnd.com/resources/editor/recovery/?code=" . $code . "\r\n\n";
-        $bodyText .= "If you did not request a password reset, please ignore this email. Do not share your recovery link with anyone. Your recovery link is valid for 1 hour.";
+        $bodyText .= "If you did not submit a recovery request, please ignore this email. Do not share your recovery link with anyone. Your recovery link is valid for 1 hour.";
 
         $bodyHtml = "<h2>$user, reset your JoJo D&D editor password using the link below.</h2>";
         $bodyHtml .= "https://www.jojodnd.com/resources/editor/recovery/?code=" . $code . "<br><br>";
-        $bodyHtml .= "<small><i>If you did not request a password reset, please ignore this email. Do not share your recovery link with anyone. Your recovery link is valid for 1 hour.</i></small>";
+        $bodyHtml .= "<small><i>If you did not submit a recovery request, please ignore this email. Do not share your recovery link with anyone. Your recovery link is valid for 1 hour.</i></small>";
 
         $mail = new PHPMailer(true);
 
