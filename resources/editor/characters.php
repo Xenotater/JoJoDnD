@@ -55,25 +55,27 @@
             $characters = array();
 
             if (empty($_POST["search"]))
-                $query = "%";
+                $query = "";
+            else if ($user == "admin")
+                $query = "WHERE name LIKE '%" . $_POST["search"] . "%' OR username LIKE '%" . $_POST["search"] . "%' ";
             else
-                $query = $_POST["search"];
+                $query = "AND name LIKE '%" . $_POST["search"] . "%' ";
 
             $limit = 11;
             $f_offset = $_POST["f_offset"];
             $c_offset = $_POST["c_offset"];
 
             if ($user != "admin") {
-                $result = $mysqli->query("SELECT id, name FROM folders WHERE username = '$user'AND name LIKE '%$query%' AND parent_id = '$folder' LIMIT $limit OFFSET $f_offset");
+                $result = $mysqli->query("SELECT id, name FROM folders WHERE username = '$user' " . $query . "AND parent_id = '$folder' LIMIT $limit OFFSET $f_offset");
                 while ($row = $result->fetch_assoc())
                     $folders[] = array("ID"=>$row["id"], "Name"=>$row["name"]);
                 $limit -= count($folders);
             }
 
             if ($user == "admin")
-                $result = $mysqli->query("SELECT id, username, name, img FROM characters WHERE name LIKE '%$query%' OR username LIKE '%$query%' LIMIT 11 OFFSET " . $c_offset);
+                $result = $mysqli->query("SELECT id, username, name, img FROM characters " . $query . "LIMIT 11 OFFSET " . $c_offset);
             else if ($limit > 0)
-                $result = $mysqli->query("SELECT id, username, name, img FROM characters WHERE username = '$user' AND name LIKE '%$query%' AND folder_id = $folder LIMIT $limit OFFSET " . $c_offset);
+                $result = $mysqli->query("SELECT id, username, name, img FROM characters WHERE username = '$user' " . $query . "AND folder_id = $folder LIMIT $limit OFFSET " . $c_offset);
             while ($row = $result->fetch_assoc()) {
                 $characters[] = array("ID"=>$row["id"], "Username"=>$row["username"], "Name"=>$row["name"], "Image"=>$row["img"]);
             }
