@@ -258,7 +258,7 @@ function updateCharacters() {
             $.post("characters.php", { action: "count", search: query, folder: folder }, function(count) {
                 count = parseInt(count);
                 let current = Math.floor(totalOffset/11) + 1, max = Math.floor(count/11) + 1;
-                if (count % 11 == 0)
+                if (count != 0 && count % 11 == 0)
                     max--;
 
                 $("#pageCount").html(current + " / " + max);

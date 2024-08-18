@@ -11,6 +11,11 @@ if ($_POST["action"] == "move") {
             $isFold = $_POST["isFolder"];
             $goBack = $_POST["goBack"];
 
+            if ($user == "admin") {
+                echo "The admin may not use this operation.";
+                exit;
+            }
+
             if ($isFold == "true" && $id == "0") {
                 echo "The root folder may not be moved.";
                 exit;
@@ -74,6 +79,7 @@ if ($_POST["action"] == "move") {
                         else
                             echo "Your folder was moved!";
                     }
+                    $result->close();
                 } else {
                     $mysqli->query("UPDATE characters SET folder_id = '$newId' WHERE username = '$user' AND id = '$id'");
 
@@ -82,7 +88,6 @@ if ($_POST["action"] == "move") {
                     else
                         echo "Your character was moved!";
                 }
-                $result->close();
             }
             $mysqli->close();
         } else
