@@ -278,6 +278,7 @@ function updateCharacters() {
                     $("#folderpath").hide();
             });    
         translateElement($("#err")[0]);
+        updateCardImages();
     });
     $("#characters").append("<div class='loading'></div>");
     translateElement($("#search")[0]);
@@ -292,6 +293,15 @@ function updateFolderpath() {
     last = $("#folderpath").children().last();
     last.text(last.text().slice(0, -1))
     $("#folderpath").show();
+}
+
+function updateCardImages() {
+    $(".character").each(function (i, char) {
+        let id = $(char).attr("id").replace("char", "");
+        $.post("image.php", { action: "image", id: id }, function (data) {
+            $("#char" + id + " img").attr("src", data);
+        });
+    });
 }
 
 function logOut() {

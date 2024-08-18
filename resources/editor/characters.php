@@ -73,11 +73,11 @@
             }
 
             if ($user == "admin")
-                $result = $mysqli->query("SELECT id, username, name, img FROM characters " . $query . "LIMIT 11 OFFSET " . $c_offset);
+                $result = $mysqli->query("SELECT id, username, name FROM characters " . $query . "LIMIT 11 OFFSET " . $c_offset);
             else if ($limit > 0)
-                $result = $mysqli->query("SELECT id, username, name, img FROM characters WHERE username = '$user' " . $query . "AND folder_id = $folder LIMIT $limit OFFSET " . $c_offset);
+                $result = $mysqli->query("SELECT id, username, name FROM characters WHERE username = '$user' " . $query . "AND folder_id = $folder LIMIT $limit OFFSET " . $c_offset);
             while ($row = $result->fetch_assoc()) {
-                $characters[] = array("ID"=>$row["id"], "Username"=>$row["username"], "Name"=>$row["name"], "Image"=>$row["img"]);
+                $characters[] = array("ID"=>$row["id"], "Username"=>$row["username"], "Name"=>$row["name"]);
             }
             $result->close();
             $mysqli->close();
@@ -105,14 +105,12 @@
             <i class='bi bi-three-dots-vertical' id='opt<?php echo $id; ?>'></i><div class='drop' id='drop<?php echo $id; ?>'>
             <a href='#'>Rename</a><a href='#'>Move</a><a href='#'>Duplicate</a><a href='#'>Delete</a></div>
             <div class='loadBox'>
-            <?php if ($characters[$i]["Image"] == "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=")
-                $characters[$i]["Image"] = "../Assets/.default.webp";
-            if ($user == "admin") { ?>
-                <img class='charImgA' src='<?php echo htmlspecialchars($characters[$i]["Image"]); ?>' alt='charImg'>
+            <?php if ($user == "admin") { ?>
+                <img class='charImgA' src='../Assets/.default.webp' alt='charImg'>
                 <p class='charInfo'><?php echo htmlspecialchars($characters[$i]["Username"]); ?><br><?php echo htmlspecialchars($characters[$i]["Name"]); ?></p>
             <?php }
             else { ?>
-                <img class='charImg' src='<?php echo htmlspecialchars($characters[$i]["Image"]); ?>' alt='charImg'>
+                <img class='charImg' src='../Assets/.default.webp' alt='charImg'>
                 <p class='charName'><?php echo htmlspecialchars($characters[$i]["Name"]); ?></p>
             <?php } ?>
             </div></div>
