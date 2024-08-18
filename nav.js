@@ -1,6 +1,9 @@
+var version = {number: "1.12.1.5", date: "8/8/24"}
 var translateData = {};
 
 $(document).ready(function () {
+    checkForUpdate();
+
     let langParam = new URL(window.location.href).searchParams.get("lang");
 
     if (langParam != null)
@@ -33,6 +36,15 @@ function getNav() {
 
 function isAdEnabled(path) {
     return !(path.includes("recovery") || path.includes("privacy"))
+}
+
+function checkForUpdate() {
+    $.post("/update.php", { action: "update", version: version.number }, function (data) {
+        if (data == "updated")
+            window.location.reload();
+        else if (window.location.pathname === "/")
+            $("#versionInfo").text($("#versionInfo").text().replace("{vNum}", version.number).replace("{vDate}", version.date))
+    });
 }
 
 function translatePage() {
