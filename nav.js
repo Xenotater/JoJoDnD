@@ -1,4 +1,4 @@
-var version = {number: "1.12.1.7", date: "8/22/24"}
+var version = {number: "1.12.1.8", date: "8/22/24"}
 var translateData = {};
 
 $(document).ready(function () {
@@ -39,12 +39,14 @@ function isAdEnabled(path) {
 }
 
 function checkForUpdate() {
-    $.post("/update.php", { action: "update", version: version.number }, function (data) {
-        if (data == "updated")
-            window.location.reload();
-        else if (window.location.pathname === "/")
-            $("#versionInfo").text($("#versionInfo").text().replace("{vNum}", version.number).replace("{vDate}", version.date))
-    });
+    if (sessionStorage.getItem("attemptedUpdate"));
+        $.post("/update.php", { action: "update", version: version.number }, function (data) {
+            if (data == "updated")
+                window.location.reload(true);
+            else if (window.location.pathname === "/")
+                $("#versionInfo").text($("#versionInfo").text().replace("{vNum}", version.number).replace("{vDate}", version.date))
+            sessionStorage.setItem("attemptedUpdate", true);
+        });
 }
 
 function translatePage() {
