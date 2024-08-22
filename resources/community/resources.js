@@ -41,7 +41,7 @@ function updateResources(resources) {
     
     if (r.versions) {
       newText += "<div class='card hasVersions'>";
-      newText += "<div class='versionSelector'>";
+      newText += "<div class='contextMenu versionSelector'>";
       for (let i=0; i<r.versions.length; i++)
         newText += "<a target='_blank' href='" + r.versions[i].link + "' class='version'>" + r.versions[i].name + "</a>";
       newText += "</div>";

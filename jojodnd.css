@@ -472,3 +472,23 @@ input:checked + .slider.horizontal:before {
     left: 4px;
     bottom: 2px;;
 }
+
+.contextMenu {
+    display: none;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 3px;
+    background-color: mediumpurple;
+    text-align: left;
+    padding: 4px;
+}
+
+.contextMenu * {
+    border-bottom: 1px dashed purple;
+    color: black;
+    display: block;
+}
+
+.contextMenu *:last-child {
+    border: none;
+}

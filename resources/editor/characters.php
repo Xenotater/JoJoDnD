@@ -89,7 +89,7 @@
         <div id='chars'>
         <?php for ($i = 0; $i < count($folders); $i++) { $id = $folders[$i]["ID"] ?>
             <div class='charCard folder' id='fold<?php echo $id; ?>'>
-                <i class='bi bi-three-dots-vertical' id='fold-opt<?php echo $id; ?>'></i><div class='drop' id='fold-drop<?php echo $id; ?>'>
+                <i class='bi bi-three-dots-vertical' id='fold-opt<?php echo $id; ?>'></i><div class='contextMenu drop' id='fold-drop<?php echo $id; ?>'>
                 <a href='#'>Rename</a><a href='#'>Move</a><a href='#'>Duplicate</a><a href='#'>Delete</a></div>
                 <div class='foldLoadBox'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder-fill charImg folderImg" viewBox="0 0 16 16">
@@ -102,7 +102,7 @@
         <?php for ($i = 0; $i < count($characters); $i++) {
             $id = htmlspecialchars($characters[$i]["ID"]); ?>
             <div class='charCard character' id='char<?php echo $id; ?>'>
-            <i class='bi bi-three-dots-vertical' id='opt<?php echo $id; ?>'></i><div class='drop' id='drop<?php echo $id; ?>'>
+            <i class='bi bi-three-dots-vertical' id='opt<?php echo $id; ?>'></i><div class='contextMenu drop' id='drop<?php echo $id; ?>'>
             <a href='#'>Rename</a><a href='#'>Move</a><a href='#'>Duplicate</a><a href='#'>Delete</a></div>
             <div class='loadBox'>
             <?php if ($user == "admin") { ?>

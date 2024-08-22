@@ -412,30 +412,16 @@
 }
 
 .drop {
-    display: none;
-    position: absolute;
     top: 40px;
     right: 8px;
-    text-align: left;
-    border: 2px solid black;
-    border-radius: 3px;
-    background-color: mediumpurple;
-}
-
-.drop a {
-    width: 100%;
-    height: auto;
-    color: black;
-    text-decoration: none;
-    display: block;
-}
-
-.drop a:hover {
-    background-color: rgb(118, 87, 180);
 }
 
 .drop a:last-child {
     color: darkred;
+}
+
+.drop a:last-child:hover {
+    color: crimson;
 }
 
 #confirm-window {
