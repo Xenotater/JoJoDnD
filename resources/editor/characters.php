@@ -115,4 +115,4 @@
             <?php } ?>
             </div></div>
         <?php } ?>
-        <div class='center' id='newChar'><h2><b><i class='bi bi-plus-square'></i></b></h2></div></div>
+        <div class='center' id='newItem'><div class='contextMenu' id='newItemMenu'><a id='newChar' href='#'>New Character</a><a id='newFold' href='#'>New Folder</a></div><h2><b><i class='bi bi-plus-square'></i></b></h2></div></div>

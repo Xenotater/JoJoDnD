@@ -105,8 +105,8 @@ $(document).ready(function () {
     });
 
     $(document).mouseup(function (e) {
-        if (!$(".drop").is(e.target) && $(".drop").has(e.target).length === 0)
-            $(".drop").css("display", "none");
+        if (!$(".contextMenu").is(e.target) && $(".contextMenu").has(e.target).length === 0)
+            $(".contextMenu").css("display", "none");
     });
 
     $("body").on("click", ".drop", function (e) {
@@ -152,6 +152,10 @@ $(document).ready(function () {
         }
     });
 
+    $("body").on("click", "#newItem", function() {
+        $("#newItemMenu").css("display", "unset");
+    });
+
     $("body").on("click", "#newChar", function() {
         $("#popLoad").remove();
         $("#pages")[0].reset();
@@ -160,6 +164,14 @@ $(document).ready(function () {
         charID = -1;
         charFolder = folder;
         respond("New character created!");
+    });
+
+    $("body").on("click", "#newFold", function() {
+        $.post("newFold.php", {action: "new", folder: folder}, function(data) {
+            if (data)
+                respond(data);
+            updateCharacters();
+        });
     });
 
     $("body").on("mouseenter", ".arrow", function() {
@@ -249,13 +261,9 @@ function updateCharacters() {
         $("#characters").append(data);
         $("#char" + charID).addClass("curChar");
 
-        let totalOffset = offsetF.at(-1) + offsetC.at(-1);
-        if (totalOffset >= 11)
-            $("#prevPage").css("display", "inline-block");
-        else
-            $("#prevPage").css("display", "none");
-        
-        if (loggedIn)
+        if (loggedIn) {
+            let totalOffset = offsetF.at(-1) + offsetC.at(-1);
+
             $.post("characters.php", { action: "count", search: query, folder: folder }, function(count) {
                 count = parseInt(count);
                 let current = Math.floor(totalOffset/11) + 1, max = Math.floor(count/11) + 1;
@@ -263,10 +271,16 @@ function updateCharacters() {
                     max--;
 
                 $("#pageCount").html(current + " / " + max);
+
                 if (count >= 11 && count - totalOffset > 11)
                     $("#nextPage").css("display", "inline-block");
                 else
                     $("#nextPage").css("display", "none")
+                        
+                if (totalOffset >= 11)
+                    $("#prevPage").css("display", "inline-block");
+                else
+                    $("#prevPage").css("display", "none");
 
                 if (getLanguage() != "en") {
                     let greeting = $("#greeting"); user = greeting.text().split("'")[0];
@@ -277,9 +291,11 @@ function updateCharacters() {
                     updateFolderpath();
                 else
                     $("#folderpath").hide();
-            });    
-        translateElement($("#err")[0]);
-        updateCardImages();
+            });
+            $("#load-window .simplebar-content-wrapper").animate({scrollTop: 0}, 200)
+            translateElement($("#err")[0]);
+            updateCardImages();
+        }
     });
     $("#characters").append("<div class='loading'></div>");
     translateElement($("#search")[0]);
@@ -416,7 +432,7 @@ function saveChar() {
             folder = 0;
             folderpath.splice(1, Infinity);
         }
-        if (data.includes("!"))
+        if (data.includes("!") && result[3] != "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=")
             images[charID] = result[3];
         respond(data.replace(/[0-9]+$/, ""));
         updateCharacters();

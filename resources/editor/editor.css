@@ -362,7 +362,7 @@
     position: relative;
 }
 
-.charCard:hover, #newChar:hover {
+.charCard:hover, #newItem:hover {
     box-shadow: -3px 3px 3px 3px black;
 }
 
@@ -424,6 +424,11 @@
     color: crimson;
 }
 
+#newItemMenu {
+    top: 4px;
+    right: 4px;
+}
+
 #confirm-window {
     position: relative;
     margin-left: auto;
@@ -439,7 +444,7 @@
     margin-bottom: 1rem;
 }
 
-#newChar {
+#newItem {
     position: relative;
     height: 250px;
     width: 200px;
@@ -449,7 +454,7 @@
     margin: 12px;
 }
 
-#newChar i {
+#newItem i {
     position: absolute;
     top: calc(50% - 16px);
     left: calc(50% - 16px);
