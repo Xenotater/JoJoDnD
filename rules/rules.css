@@ -16,3 +16,7 @@ section#last {
 ol li {
     float: none;
 }
+
+ul.spaced>li:not(:last-child) {
+    margin-bottom: 8px;
+}
