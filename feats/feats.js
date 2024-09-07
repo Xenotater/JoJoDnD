@@ -17,7 +17,6 @@ $(document).ready(function () {
         if (f == "Epic_Feat") {
             showEpics = true;
             $("#epic-switch").prop("checked", true);
-            f = "Extreme_Motivation";
             updateList();
         }
         updateURL();
@@ -26,7 +25,7 @@ $(document).ready(function () {
 
     $("#display").on("click", "a.in-page", function() {
         f= $(this).html().replace(/[ -]/g, "_").replace(/'/g, "");
-        if (!(fData[f].prereq?.includes("Epic") ^ !showEpics)) {
+        if (f == "Epic_Feat" || !(fData[f].prereq?.includes("Epic") ^ !showEpics)) {
             showEpics = !showEpics;
             $("#epic-switch").prop("checked", showEpics);
             updateList();
@@ -38,7 +37,7 @@ $(document).ready(function () {
     $("#epic-switch").change(function() {
         showEpics = !showEpics;
         if (showEpics)
-            f = "Extreme_Motivation";
+            f = "Epic_Feat";
         else
             f = "Act_Modification";
         updateURL();
@@ -91,7 +90,7 @@ function getData(q) {
         fData = data;
         if (fData[f] == null)
             f = "Act_Modification";
-        if (fData[f].prereq?.includes("Epic")) {
+        if (fData[f].prereq?.includes("Epic") || f == "Epic_Feat") {
             showEpics = true;
             $("#epic-switch").prop("checked", true);
         }
@@ -116,7 +115,7 @@ function updateList() {
         feats.reverse();
     for (let i = 0; i < feats.length; i++) {
         let feat = fData[feats[i]];
-        if (!(feat.prereq?.includes("Epic") ^ showEpics)) //xand
+        if (!(feat.prereq?.includes("Epic") ^ showEpics) || feats[i] == "Epic_Feat") //xand
             $("#list-table tbody").append("<tr class='list-link' id='" + feat.name.replace(/[ -]/g, "_").replace(/'/g, "") + "'><td>" + feat.name + "</td></tr>");
     }
     $("#" + f).addClass("listCurrent");
