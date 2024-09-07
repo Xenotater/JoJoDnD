@@ -46,7 +46,8 @@
                     "Unarmed Strikes deal Radiant damage"
                 ],
                 "linkFeatures": [
-                    "Healing Hands"
+                    "Healing Hands",
+                    "Spiritual Ripple (Variant Rule)"
                 ]
             },
             "2": {
@@ -74,7 +75,6 @@
             },
             "4": {
                 "linkFeatures": [
-                    "Spiritual Ripple (Variant Rule)",
                     "Rippling Weapon"
                 ],
                 "featFeatures": [
@@ -249,7 +249,7 @@
             {
                 "name": "Rules of Stands",
                 "content": [
-                    "<ul><li>A single person can only have one Stand (Hive Stands are the same Stand, just split up into much smaller parts)<\/li><li>Whatever damage is inflicted upon the Stand or the User is also dealt to the other<\/li><li>Only Stand Users can sense Stands<\/li><li>Stand Users can interact and speak with spirits or ghosts<\/li><li>Only Stands can defeat Stands, physical objects simply pass through or bounce off of all Stands except Enhancement or Independent types<\/li><li>If the User is knocked unconscious and the Stand is not a Revenge-Type, the Stand and it's Ability will disappear until resummoned by the User when conscious<\/li><li>Stand Energy is only consumed if the Ability actually affects something<\/li><li>If a Stand User fights a Non-Stand User, the Stand User gets Advantage on all attacks using their Stand<\/li><li>If a Stand User is Surprised and does not have their Stand active, they may not use it to defend themselves.<\/li><li>Unless otherwise specified, a Stand may only be summoned/dispelled within 2m of its User. Remote-Types are not restricted in this way, instead summoning within 15m of whatever triggered them.<\/li><\/ul>"
+                    "<ul><li>A single person can only have one Stand (Hive Stands are the same Stand, just split up into much smaller parts)<\/li><li>Whatever damage is inflicted upon the Stand or the User is also dealt to the other<\/li><li>Only Stand Users can sense Stands<\/li><li>Stand Users can interact and speak with spirits or ghosts<\/li><li>Only Stands can defeat Stands, physical objects simply pass through or bounce off of all Stands except Enhancement or Independent types<\/li><li>If the User is knocked unconscious and the Stand is not a Revenge-Type, the Stand and it's Ability will disappear until resummoned by the User when conscious<\/li><li>Stand Energy is only consumed if the Ability actually affects something<\/li><li>If a Stand User fights a Non-Stand User, the Stand User gets Advantage on all attacks using their Stand<\/li><li>If a Stand User is Surprised and does not have their Stand active, they may not use it to defend themselves.<\/li><li>Unless otherwise specified, a Stand may only be summoned\/dispelled within 2m of its User. Remote-Types are not restricted in this way, instead summoning within 15m of whatever triggered them.<\/li><\/ul>"
                 ]
             },
             {
@@ -805,9 +805,13 @@
                     },
                     "7": {
                         "linkFeatures": [
-                            "Juggernaut",
+                            " Armored Stand",
                             "OR",
-                            "Armored Stand"
+                            "Juggernaut",
+                            "OR"
+                        ],
+                        "featFeatures": [                            
+                            "Specialized Stand Senses"
                         ]
                     },
                     "8": {
@@ -963,6 +967,19 @@
                         "linkFeatures": [
                             "Self-Acclimation",
                             "Distant Defense"
+                        ],
+                        "featFeatures": [
+                            "Object Stand",
+                            "OR",
+                            "Phenomenon Stand",
+                            "OR",
+                            "Sentient Stand",
+                            "OR",
+                            "Shared Stand",
+                            "OR",
+                            "Suit Stand",
+                            "OR",
+                            "Uncontrollable Stand"
                         ]
                     },
                     "3": {
@@ -1020,9 +1037,7 @@
                     },
                     "11": {
                         "otherFeatures": [
-                            "Choose another Class Feature from Level 4, Level 5, or Level 7",
-                            "Attack Dice increases to 1d6",
-                            "<a href='\/abilities\/?focus=Ranged_Attack'>Ranged Attack<\/a> dice and range are doubled"
+                            "Choose another Class Feature from Level 2, Level 4, Level 5, or Level 7, Attack Dice increases to 1d6, <a href='\/abilities\/?focus=Ranged_Attack'>Ranged Attack<\/a> dice and range are doubled"
                         ]
                     },
                     "12": {
@@ -1075,7 +1090,7 @@
                     },
                     "19": {
                         "otherFeatures": [
-                            "Choose another Class Feature from Level 4, Level 5, Level 7, Level 14, Level 16, or Level 18"
+                            "Choose another Class Feature from Level 2, Level 4, Level 5, Level 7, Level 14, Level 16, or Level 18"
                         ]
                     },
                     "20": {
@@ -1548,7 +1563,8 @@
                 ],
                 "desc": "Independent-Type Stands are quite interesting, and are one of the more rare Stand Types in JoJo's Bizarre Adventure. These Stands are odd because they do not actually have a User, instead in control of themselves. They have the same sort of Attributes that regular Stands do and must follow most of the same rules. However, the Stand is still made up of physical matter, and thus is similar to an Enhancement type Stand in that they can be damaged physically by Non-Stand damage types.",
                 "notes": [
-                    "Some Independent Stands did in fact have a User at some point, or might even still have a User. They are not linked together though, as damaging the Stand does no harm to the User and vice versa. However, if a person does or did have an Independent-Type Stand they are still able to sense Stands and Ghosts, just like a normal Stand User would."
+                    "Some Independent Stands did in fact have a User at some point, or might even still have a User. They are not linked together though, as damaging the Stand does no harm to the User and vice versa. However, if a person does or did have an Independent-Type Stand they are still able to sense Stands and Ghosts, just like a normal Stand User would.",
+                    "Even if there is no User, Independent Stands still have the 6 regular Ability Scores for the sake of determining other stats and mental Checks/Saves. They can also still be hit 'directly' whether they do or don't have a separate User."
                 ],
                 "hDice": "1d10",
                 "dcName": "Stand DC",
@@ -2184,12 +2200,12 @@
         "dcName": "Spin DC",
         "dc": "8 + Dex + Proficiency Bonus",
         "notes": [
-            "All attacks made using Spheres imbued with the Spin deal Force damage, unless otherwise stated."
+            "All attacks made using Spheres imbued with the Spin deal Force damage and have the Concealed (+5) and Thrown attributes, unless otherwise stated."
         ],
         "extra": [
             {
                 "name": "The Golden Ratio",
-                "desc": "A Spin User must have a reference of a 9:16 ratio in order to use the Spin. A 9:16 ratio is found somewhere in almost every uninjured creature, except Humans. The ratio may also be found in something artificial, such as a piece of paper or a tattoo, so long as it is made to be a 9:16 ratio."
+                "desc": "A Spin User must have a natural (not artifical) reference of a 9:16 ratio in order to use the Spin. A 9:16 ratio is found somewhere in almost every uninjured creature, except Humans."
             },
             {
                 "name": "Materials",
@@ -2260,7 +2276,8 @@
             "1": {
                 "linkFeatures": [
                     "Forced Motion",
-                    "Spherical Spin"
+                    "Spherical Spin",
+                    "Spiritual Spin (Variant Rule)"
                 ]
             },
             "2": {
@@ -2282,8 +2299,11 @@
             },
             "4": {
                 "linkFeatures": [
-                    "Spiritual Spin (Variant Rule)",
+                    "Medicinal Spin",
+                    "OR",
                     "Muscle Contraction",
+                    "OR",
+                    "Satellite Spin",
                     "OR",
                     "Tendon Twister",
                     "OR"
@@ -2295,7 +2315,10 @@
             "5": {
                 "linkFeatures": [
                     "Custom Spin Technique",
-                    "Harden Flesh"
+                    "Harden Flesh",
+                    "Projectile Boost",
+                    "OR",
+                    "Sendo Spin"
                 ]
             },
             "6": {
@@ -2316,13 +2339,11 @@
                 ]
             },
             "8": {
-                "linkFeatures": [
-                    "Projectile Boost",
-                    "OR",
-                    "Sendo Spin"
-                ],
                 "ability": [
                     "Ability Score Improvement"
+                ],
+                "otherFeatures": [
+                    "Choose another Class Feature from Level 4, or Level 5."
                 ]
             },
             "9": {
@@ -2334,7 +2355,7 @@
             },
             "10": {
                 "otherFeatures": [
-                    "Choose another Class Feature from Level 4, Level 8, or Level 9"
+                    "Choose another Class Feature from Level 4, Level 5,  or Level 9"
                 ],
                 "ability": [
                     "Ability Score Improvement"
@@ -2346,10 +2367,8 @@
                 ]
             },
             "12": {
-                "linkFeatures": [
-                    "Medicinal Spin",
-                    "OR",
-                    "Satellite Spin"
+                "otherFeatures": [
+                    "Choose another Class Feature from Level 4, Level 5, or Level 9."
                 ]
             },
             "13": {
@@ -2370,11 +2389,14 @@
                     "Create Mirage",
                     "OR",
                     "Expose Weakness"
+                ],
+                "featFeatures": [
+                    "Trained Combatant"
                 ]
             },
             "16": {
                 "otherFeatures": [
-                    "Choose another Class Feature from Level 4, Level 8, or Level 9, Level 12, or Level 15"
+                    "Choose another Class Feature from Level 4, Level 5, Level 9, or Level 15"
                 ]
             },
             "17": {
@@ -2389,12 +2411,12 @@
             },
             "18": {
                 "otherFeatures": [
-                    "Choose another Class Feature from Level 4, Level 8, or Level 9, Level 12, Level 15, or Level 17"
+                    "Choose another Class Feature from Level 4, Level 5, Level 9, Level 15, or Level 17"
                 ]
             },
             "19": {
-                "featFeatures": [
-                    "Trained Combatant"
+                "otherFeatures": [
+                    "Choose another Class Feature from Level 4, Level 5, Level 9, Level 15, or Level 17."
                 ]
             },
             "20": {
@@ -2449,7 +2471,8 @@
                 "level": {
                     "1": {
                         "linkFeatures": [
-                            "Steady Aim"
+                            "Steady Aim",
+                            "Supernatural Item (Variant Rule)"
                         ],
                         "featFeatures": [
                             "Weapon Feat"
@@ -2469,9 +2492,6 @@
                         ]
                     },
                     "4": {
-                        "linkFeatures": [
-                            "Supernatural Item (Variant Rule)"
-                        ],
                         "featFeatures": [
                             "Catlike Agility",
                             "Deadly Accuracy",
@@ -2599,7 +2619,8 @@
                 "level": {
                     "1": {
                         "linkFeatures": [
-                            "Encouragement Dice"
+                            "Encouragement Dice",
+                            "Supernatural Item (Variant Rule)"
                         ],
                         "featFeatures": [
                             "Weapon Feat"
@@ -2619,23 +2640,25 @@
                         ]
                     },
                     "4": {
-                        "linkFeatures": [
-                            "Supernatural Item (Variant Rule)"
-                        ],
                         "featFeatures": [
                             "Clever Disguise",
                             "Commentator",
                             "OR",
                             "Exemplar",
                             "OR",
+                            "Heckler",
+                            "OR",
                             "Tanky"
                         ]
                     },
                     "5": {
                         "featFeatures": [
+                            "Trained Combatant",
                             "Jack of All Trades",
                             "OR",
                             "Menacing Aura",
+                            "OR",
+                            "Powerful Presence",
                             "OR",
                             "Stroke of Luck"
                         ]
@@ -2647,7 +2670,6 @@
                     },
                     "7": {
                         "featFeatures": [
-                            "Trained Combatant",
                             "Guerilla Fighter",
                             "OR",
                             "Skirmisher"
@@ -2749,7 +2771,8 @@
                 "level": {
                     "1": {
                         "linkFeatures": [
-                            "Scholarly Combatant"
+                            "Scholarly Combatant",
+                            "Supernatural Item (Variant Rule)"
                         ],
                         "featFeatures": [
                             "Weapon Feat"
@@ -2770,20 +2793,23 @@
                     },
                     "4": {
                         "linkFeatures": [
-                            "Supernatural Item (Variant Rule)",
                             "Field Study"
                         ],
                         "featFeatures": [
                             "Guerilla Fighter",
                             "OR",
-                            "Jack of All Trades"
+                            "Jack of All Trades",
+                            "OR",
+                            "Sharp Mind"
                         ]
                     },
                     "5": {
                         "featFeatures": [
                             "Natural Talent",
                             "OR",
-                            "Practical Experience"
+                            "Practical Experience",
+                            "OR",
+                            "Tactician"
                         ]
                     },
                     "6": {
@@ -2897,7 +2923,8 @@
                 "level": {
                     "1": {
                         "linkFeatures": [
-                            "Damage Minimum"
+                            "Damage Minimum",
+                            "Supernatural Item (Variant Rule)"
                         ],
                         "featFeatures": [
                             "Weapon Feat"
@@ -2915,9 +2942,6 @@
                         ]
                     },
                     "4": {
-                        "linkFeatures": [
-                            "Supernatural Item (Variant Rule)"
-                        ],
                         "featFeatures": [
                             "Adrenaline Rush",
                             "OR",
@@ -3067,7 +3091,8 @@
                 "level": {
                     "1": {
                         "linkFeatures": [
-                            "Artisan's Specialty"
+                            "Artisan's Specialty",
+                            "Supernatural Item (Variant Rule)"
                         ],
                         "featFeatures": [
                             "Weapon Feat"
@@ -3088,7 +3113,6 @@
                     },
                     "4": {
                         "linkFeatures": [
-                            "Supernatural Item (Variant Rule)",
                             "Artisan's Resurgence"
                         ],
                         "featFeatures": [
@@ -3260,7 +3284,8 @@
                 "level": {
                     "1": {
                         "linkFeatures": [
-                            "Bullish Brawn"
+                            "Bullish Brawn",
+                            "Supernatural Item (Variant Rule)"
                         ],
                         "featFeatures": [
                             "Weapon Feat"
@@ -3279,7 +3304,6 @@
                     },
                     "4": {
                         "linkFeatures": [
-                            "Supernatural Item (Variant Rule)",
                             "Rejuvenation"
                         ],
                         "featFeatures": [
@@ -3291,6 +3315,8 @@
                     "5": {
                         "featFeatures": [
                             "Trained Combatant",
+                            "Feel No Pain",
+                            "OR",
                             "Quick on your Feet",
                             "OR",
                             "Scarflesh",
@@ -3413,7 +3439,8 @@
                 "level": {
                     "1": {
                         "linkFeatures": [
-                            "Survivalist"
+                            "Survivalist",
+                            "Supernatural Item (Variant Rule)"
                         ],
                         "featFeatures": [
                             "Weapon Feat"
@@ -3434,13 +3461,16 @@
                     },
                     "4": {
                         "linkFeatures": [
-                            "Supernatural Item (Variant Rule)",
                             "Ranger's Recovery"
                         ],
                         "featFeatures": [
+                            "Additional Sense",
+                            "OR",
                             "Assassin",
                             "OR",
                             "Familiar Bond",
+                            "OR",
+                            "Focus",
                             "OR",
                             "Pressure Point Manipulator"
                         ]
@@ -3448,6 +3478,8 @@
                     "5": {
                         "featFeatures": [
                             "Trained Combatant",
+                            "Aura of Awareness",
+                            "OR",
                             "Catlike Agility",
                             "OR",
                             "Guerilla Fighter",
