@@ -59,6 +59,7 @@ function getData() {
         $.getJSON("modular.json", function(data) {
             modData = data;
             updateDisplay();
+            handleHashScroll();
         });
     });
 
@@ -178,7 +179,8 @@ function updateDisplay() {
     $(".listCurrent").removeClass("listCurrent");
     $("#" + c).addClass("listCurrent");
 
-    updateLevelupTable();
+    if (clss.level != null)
+        updateLevelupTable();
 }
 
 function updateLevelupTable() {
@@ -252,4 +254,9 @@ function calcPB(level) {
         return 2;
     else
         return Math.ceil(level / 4) + 1;
+}
+
+function handleHashScroll() {
+    if (window.location.hash)
+        $("html, body").animate({scrollTop: parseInt($(window.location.hash).offset().top + 88)}, 500);
 }
