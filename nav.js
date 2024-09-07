@@ -137,7 +137,7 @@ function setLangParam() {
     let search = window.location.search.replace(/^\?/, "").replace(/&?lang=[a-z]{2}/, "");
     if (search.length > 0)
         search += "&";
-    window.history.replaceState(null, "", '?' + search + 'lang=' + getLanguage());
+    window.history.replaceState(null, "", '?' + search + 'lang=' + getLanguage() + window.location.hash);
 }
 
 function getLanguage() {
