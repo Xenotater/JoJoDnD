@@ -20,6 +20,7 @@ $(document).ready(function () {
 
     getNav();
     translatePage();
+    handleHashScroll();
 });
 
 function getNav() {
@@ -154,4 +155,10 @@ function getAvailableLangs(path) {
     if (path.includes("resources") && !path.includes("community") && !path.includes("patches"))
         return ["uk"];
     return [];
+}
+
+function handleHashScroll(offset = 88) {
+    console.log($(window.location.hash).offset().top + offset);
+    if (window.location.hash)
+        $("html, body").animate({scrollTop: parseInt($(window.location.hash).offset().top + offset)}, 500);
 }

@@ -74,6 +74,7 @@ function getData(q) {
             $("#search").val(q);
             search(q);
         }
+        handleHashScroll();
     });
 
     $("#weapon-list").html("<div class='loading'></div>");
@@ -171,7 +172,7 @@ function hint(attr) { //this whole thing should be replaced by json..
             return("This weapon makes a loud sound which can be heard up to 0.5km away.<br>It also jams if a natural 1 is rolled while using it.<br>This weapon's ammunition doesn't function when wet.");
         case "Reload":
             return("This weapon can be used " + ammo + " times before needing to be reloaded.<br>Reloading takes a full Attack.");
-       case "Burst":
+        case "Burst":
             return("This weapon consumes " + ammo + " of it's ammo each time it is fired.")
         case "Concealed":
             return("This weapon grants " + bonus + " to any Check made to conceal it.");
@@ -182,7 +183,7 @@ function hint(attr) { //this whole thing should be replaced by json..
         case "Timer":
             return("A timer may be set on this weapon, detonating it once the timer runs out. The timer may be set for up to 12 hours.");
         case "Radius":
-            return("This weapon forces all creatures within " + dist + " of the target to make a Dexterity Saving Throw, taking half damage on success and full damage on failure.");
+            return("This weapon forces all creatures within " + dist + " of the target to make a Dexterity Saving Throw, taking half damage on success and full damage on failure. The projectile or charge is destroyed after use.");
         case "Siege":
             return ("This weapon deals double damage to objects.");
         case "Reliable":
@@ -215,6 +216,8 @@ function hint(attr) { //this whole thing should be replaced by json..
             return("When you have this weapon equipped, you may also use other weapons or objects in the same hand or perform actions such as Shove or Grapple as though your hand was free.<br>This weapon's attributes and damage do not apply at the same time as another in the same hand.");
         case "Limited Hand":
             return("When you have this weapon equipped, you may also use other Light weapons, tiny objects, or Shove and Grapple as though your hand was free.<br>This weapon's attributes and damage do not apply at the same time as another in the same hand.");
+        case "Fist":
+            return("If you would deal more damage with your Unarmed Strikes than with this weapon, you may instead use the damage from your Unarmed Strikes.");
         default:
             return("Error: This attribute doesn't have a definition. Please alert the site administrator.");     
     }
@@ -251,21 +254,24 @@ function sort() {
 }
 
 function diceParse(s) {
-    var val = s.match(/^.d.+ /);
-    var add = s.match(/^.d.+ \+ [0-9]+/);
+    const dice = s.split(/(?<= [A-z]+) \+ /)
+    let avg = 0;
 
-    if (add != null)
-        add = parseInt(add[0].substring(add[0].indexOf("+") + 2, add[0].length));
-    else add = 0;
+    for (let i=0; i<dice.length; i++) {
+        let val = dice[i].match(/^\d+d\d+/);
+        let add = dice[i].match(/(?<=^\d+d\d+ ?\+ ?)[0-9]+/);
 
-    if (val != null) {
-        num = val[0].substring(0, val[0].indexOf('d'));
-        die = val[0].substring(val[0].indexOf('d') + 1, val[0].indexOf(' '));
-        var avg = num * ((die/2) + 0.5) + add;
-        return avg;
+        if (isNaN(add))
+            add = 0;
+        
+        if (val != null) {
+            num = val[0].substring(0, val[0].indexOf('d'));
+            die = val[0].substring(val[0].indexOf('d') + 1);
+            avg += num * ((die/2) + 0.5) + parseInt(add);
+        }
     }
-    else
-        return 0;
+
+    return avg;
 }
 
 function search(query) {

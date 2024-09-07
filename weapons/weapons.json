@@ -19,6 +19,7 @@
             "name": "Brass Knuckles",
             "attr": [
                 "Concealed (+10)",
+                "Fist",
                 "Light",
                 "Limited Hand"
             ],
@@ -142,7 +143,7 @@
             "spec": "None",
             "stat": "DC: 10",
             "prereq": "None",
-            "dmg": "4d6 Thunder"
+            "dmg": "3d6 Fire"
         },
         {
             "name": "Grenade",
@@ -292,7 +293,7 @@
             ],
             "type": "Martial",
             "spec": "Shotgun",
-            "stat": "Dex",
+            "stat": "Dex\/Con",
             "prereq": "Con 13+",
             "dmg": "2d10 Piercing"
         },
@@ -865,6 +866,7 @@
             "attr": [
                 "AC Bonus (+1)",
                 "Concealed (+2)",
+                "Fist",
                 "Light",
                 "Open Hand",
                 "Siege"
@@ -921,7 +923,8 @@
                 "Firearm",
                 "Light",
                 "Point Blank",
-                "Ranged (10\/20)"
+                "Ranged (10\/20)",
+                "Reload (x1)"
             ],
             "type": "Simple",
             "spec": "Sidearm",
@@ -955,6 +958,7 @@
             "name": "Spiked Gauntlet",
             "attr": [
                 "AC Bonus (+1)",
+                "Fist",
                 "Light",
                 "Open Hand"
             ],
@@ -994,6 +998,7 @@
             "name": "Hand Wraps",
             "attr": [
                 "Concealed (+10)",
+                "Fist",
                 "Light",
                 "Open Hand"
             ],
@@ -1024,6 +1029,135 @@
             ],
             "type": "Martial",
             "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning"
+        },
+        {
+            "name": "Molotov Cocktail",
+            "attr": [
+                "Radius (2m)",
+                "Thrown (10\/20)"
+            ],
+            "type": "Explosive",
+            "spec": "None",
+            "stat": "DC 15",
+            "prereq": "None",
+            "dmg": "4d6 Fire"
+        },
+        {
+            "name": "Brick \/ Big Rock",
+            "attr": [
+                "Siege",
+                "Thrown (5\/15)",
+                "Versatile (1d8)"
+            ],
+            "type": "Improvised",
+            "spec": "Melee\/Thrown",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning"
+        },
+        {
+            "name": "Container of Hot Liquid",
+            "attr": [
+                "Ambush",
+                "Radius (1m)",
+                "Thrown (5\/15)"
+            ],
+            "type": "Improvised",
+            "spec": "Thrown",
+            "stat": "DC 12",
+            "prereq": "None",
+            "dmg": "1d4+2 Fire + 1d4+2 Bludgeoning"
+        },
+        {
+            "name": "Chain",
+            "attr": [
+                "Reach",
+                "Thrown (5\/15)",
+                "Two-Handed"
+            ],
+            "type": "Improvised",
+            "spec": "Melee\/Thrown",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning"
+        },
+        {
+            "name": "Chair \/ Stool",
+            "attr": [
+                "Thrown (5\/15)",
+                "Two-Handed"
+            ],
+            "type": "Improvised",
+            "spec": "Melee\/Thrown",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d8 Bludgeoning"
+        },
+        {
+            "name": "Flashlight",
+            "attr": [
+                "Ambush",
+                "Concealed (+5)",
+                "Light",
+                "Thrown (5\/10)"
+            ],
+            "type": "Improvised",
+            "spec": "Melee\/Thrown",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning"
+        },
+        {
+            "name": "Glass Bottle",
+            "attr": [
+                "Ambush",
+                "Concealed (+5)",
+                "Light",
+                "Thrown (10\/20)"
+            ],
+            "type": "Improvised",
+            "spec": "Melee\/Thrown",
+            "stat": "Str\/Dex",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning (Piercing if broken)"
+        },
+        {
+            "name": "Makeshift Flail",
+            "attr": [
+                "Limited Hand"
+            ],
+            "type": "Improvised",
+            "spec": "Melee",
+            "stat": "Str\/Dex",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning"
+        },
+        {
+            "name": "Pen \/ Screwdriver",
+            "attr": [
+                "Ambush",
+                "Concealed (+8)",
+                "Light",
+                "Limited Hand"
+            ],
+            "type": "Improvised",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d6 Piercing"
+        },
+        {
+            "name": "Stick",
+            "attr": [
+                "Concealed (+8)",
+                "Thrown (5\/15)",
+                "Versatile (1d8)"
+            ],
+            "type": "Improvised",
+            "spec": "Melee\/Thrown",
             "stat": "Str",
             "prereq": "None",
             "dmg": "1d6 Bludgeoning"

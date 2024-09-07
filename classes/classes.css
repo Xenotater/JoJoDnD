@@ -38,7 +38,7 @@
     float: right;
 }
 
-.display-img img {
+#display-img img {
     max-width: 100%;
 }
 

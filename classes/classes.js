@@ -59,7 +59,7 @@ function getData() {
         $.getJSON("modular.json", function(data) {
             modData = data;
             updateDisplay();
-            handleHashScroll();
+            checkScroll();
         });
     });
 
@@ -96,7 +96,7 @@ function updateDisplay() {
     if ($("#" + c).hasClass("non-super"))
         clss = cData["Non-Supernatural"].types[c];
 
-    newContent += "<h2 class='display-title'>" + clss.name + "</h2><div class='display-img'><img src='Assets/" + c + ".webp' alt='" + c + "'></div><p class='center'>";
+    newContent += "<h2 id='display-title'>" + clss.name + "</h2><div id='display-img'><img src='Assets/" + c + ".webp' alt='" + c + "'></div><p class='center'>";
     if (clss.exampleOf != null) {
         newContent += "<small><b>Examples of " + clss.exampleOf + ": </b><i>";
         for (let i = 0; i < clss.examples.length; i++) {
@@ -256,7 +256,11 @@ function calcPB(level) {
         return Math.ceil(level / 4) + 1;
 }
 
-function handleHashScroll() {
-    if (window.location.hash)
-        $("html, body").animate({scrollTop: parseInt($(window.location.hash).offset().top + 88)}, 500);
+function checkScroll() {
+    if (window.location.hash) {
+        if ($("#display-img img")[0].complete)
+            handleHashScroll(-120);
+        else if ($("#display-img img")[0].complete != undefined)
+            setTimeout(checkScroll, 100);
+    }
 }
