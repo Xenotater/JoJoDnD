@@ -378,6 +378,9 @@
         {
             "linkFeatures": [
                 "Spin Feature"
+            ],
+            "featFeatures": [
+                "Trained Combatant"
             ]
         },
         {
@@ -399,8 +402,8 @@
             ]
         },
         {
-            "featFeatures": [
-                "Trained Combatant"
+            "linkFeatures": [
+                "Spin Feature"
             ]
         },
         {
@@ -492,7 +495,7 @@
                 "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
             ],
             "linkFeatures": [
-                "Special Ability (2 SE)"
+                "Special Ability"
             ]
         },
         {
@@ -614,7 +617,7 @@
         },
         {
             "linkFeatures": [
-                "Special Ability (2 SE)"
+                "Special Ability"
             ],
             "otherFeatures": [
                 "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
@@ -731,7 +734,7 @@
         },
         {
             "linkFeatures": [
-                "Special Ability (2 SE)"
+                "Special Ability"
             ],
             "otherFeatures": [
                 "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
@@ -812,7 +815,7 @@
         },
         {
             "linkFeatures": [
-                "Special Ability (2 SE)"
+                "Special Ability"
             ]
         },
         {
@@ -962,7 +965,7 @@
         },
         {
             "linkFeatures": [
-                "Special Ability (2 SE)"
+                "Special Ability"
             ],
             "otherFeatures": [
                 "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
@@ -1075,7 +1078,7 @@
         },
         {
             "linkFeatures": [
-                "Special Ability (2 SE)"
+                "Special Ability"
             ],
             "otherFeatures": [
                 "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
@@ -1190,7 +1193,7 @@
         },
         {
             "linkFeatures": [
-                "Special Ability (2 SE)"
+                "Special Ability"
             ],
             "otherFeatures": [
                 "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
@@ -1302,7 +1305,7 @@
         },
         {
             "linkFeatures": [
-                "Special Ability (2 SE)"
+                "Special Ability"
             ],
             "otherFeatures": [
                 "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
@@ -1659,7 +1662,7 @@
             "featFeatures": [
                 "Familiar Bond",
                 "OR",
-                "Paranoia"
+                "Ever Vigilant"
             ]
         },
         {
@@ -2081,7 +2084,7 @@
                 "Ranger Fighting Style"
             ],
             "featFeatures": [
-                "Paranoia"
+                "Ever Vigilant"
             ]
         },
         {
@@ -2146,7 +2149,7 @@
             "featFeatures": [
                 "Light Sleeper",
                 "OR",
-                "Trap Detection"
+                "Trapper"
             ]
         },
         {

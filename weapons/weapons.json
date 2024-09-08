@@ -39,7 +39,7 @@
             ],
             "type": "Explosive",
             "spec": "None",
-            "stat": "DC: 10",
+            "stat": "DC 10",
             "prereq": "Int 13+",
             "dmg": "5d6 Thunder"
         },
@@ -115,7 +115,7 @@
             ],
             "type": "Explosive",
             "spec": "None",
-            "stat": "DC: 15",
+            "stat": "DC 15",
             "prereq": "None",
             "dmg": "4d6 Thunder"
         },
@@ -141,7 +141,7 @@
             ],
             "type": "Explosive",
             "spec": "None",
-            "stat": "DC: 10",
+            "stat": "DC 10",
             "prereq": "None",
             "dmg": "3d6 Fire"
         },
@@ -153,7 +153,7 @@
             ],
             "type": "Explosive",
             "spec": "None",
-            "stat": "DC: 15",
+            "stat": "DC 15",
             "prereq": "None",
             "dmg": "3d6 Thunder"
         },
@@ -170,7 +170,7 @@
             ],
             "type": "Explosive",
             "spec": "Heavy",
-            "stat": "DC: 25",
+            "stat": "DC 25",
             "prereq": "Str 13+",
             "dmg": "3d6 Thunder"
         },
@@ -323,7 +323,7 @@
             ],
             "type": "Explosive",
             "spec": "Heavy",
-            "stat": "DC: 15",
+            "stat": "DC 15",
             "prereq": "None",
             "dmg": "5d6 Thunder"
         },

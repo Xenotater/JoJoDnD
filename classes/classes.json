@@ -266,7 +266,7 @@
             {
                 "name": "Attacking",
                 "content": [
-                    "Your Stand's normal melee attacks (typically punches) are determined similarly to regular attacks. Roll a d20 and add the Power or Precision Mod of your Stand and your Proficiency Bonus to determine if the attack hits. The amount of damage dealt is based off of your Stand's Attack Dice plus your Power (NOT Precision) Mod.<\/p>",
+                    "Your Stand's normal Melee Attacks (typically punches) are determined similarly to regular attacks. Roll a d20 and add the Power or Precision Mod of your Stand and your Proficiency Bonus to determine if the attack hits. The amount of damage dealt is based off of your Stand's Attack Dice plus your Power (NOT Precision) Mod.<\/p>",
                     "<p>For User attacks, roll a d20 and add your Strength or Dexterity Mod, whichever is higher. Every Unarmed Attack deals 1d4 + Str damage. <b>Regular physical attacks DO NOT AFFECT STANDS<\/b> (except for Enhancement or Independent Types).<\/p>",
                     "<p>Speed is also very important. The total Speed Score of your Stand divided by 50 is one more Attack that the Stand or the User may perform each round, with a minimum of one and a maximum of ten. If Non-Stand Users want to have multiple Attacks per round, they may take the <a href='\/feats\/?focus=Trained_Combatant'>Trained Combatant<\/a> Feat."
                 ]
@@ -298,7 +298,7 @@
                 "content": [
                     "<p><b>Get Creative: <\/b>Stand Abilities have endless possibilities, able to do anything from cooking supernaturally good food to being able to stop time itself. The rules below should generally apply to most Stand Abilities, but you should work with your DM to create the perfect custom Ability for your Stand.",
                     "<p><b>General Rules: <\/b>Abilities that heal or deal damage should follow the dice guidelines below, and these dice should increase every other Level (for example, at Level 3 1dx becomes 2dx). Abilities that require a Saving Throw should use the following Stand DC: 8 + Cha + Proficiency Bonus.<\/p>",
-                    "<ul><li><b>No Dice: <\/b> Should be an Ability that buffs\/debuffs someone very little, or some sort of utility. Not combat-viable directly, but should be able to be used creatively in combat.<\/li><li><b>d4: <\/b>Group effects, healing\/damage that affects a group of people. Can have a secondary effect if it is just a single target Ability.<\/li><li><b>d6: <\/b>An Ability that affects multiple targets and requires a Saving Throw, dealing no damage on  success, or ranged healing for a single target. Can also be touch healing that gives an additional effect.<\/li><li><b>d8: <\/b>Damage that may be added to a Stand's punch or touch on a hit and does not require a Saving Throw. Can also be a ranged attack that requires a Saving Throw with half damage on success. Can be touch healing that takes a single Attack or Bonus Action to perform.<\/li><li><b>d10: <\/b>Damage that may be added to a Stand's punch or touch and requires a Saving Throw, dealing no damage on success. Can be touch healing that takes an Action to perform. Can be a ranged attack that requires a Saving Throw, dealing no damage on success. Can be a single-target melee attack that requires a Saving Throw, dealing half damage on success.<\/li><li><b>d12: <\/b>Can be a touch healing Ability that takes an Action as well as another type of Action (Reaction, Bonus Action, Movement Action). Can be a single-target melee attack that requires a Saving Throw, dealing no damage on success.<\/li><\/ul>",
+                    "<ul><li><b>No Dice: <\/b> Should be an Ability that buffs\/debuffs someone very little, or some sort of utility. Not combat-viable directly, but should be able to be used creatively in combat.<\/li><li><b>d4: <\/b>Group effects, healing\/damage that affects a group of people. Can have a secondary effect if it is just a single target Ability.<\/li><li><b>d6: <\/b>An Ability that affects multiple targets and requires a Saving Throw, dealing no damage on  success, or ranged healing for a single target. Can also be touch healing that gives an additional effect.<\/li><li><b>d8: <\/b>Damage that may be added to a Stand's punch or touch on a hit and does not require a Saving Throw. Can also be a ranged attack that requires a Saving Throw with half damage on success. Can be touch healing that takes a single Attack or Bonus Action to perform.<\/li><li><b>d10: <\/b>Damage that may be added to a Stand's punch or touch and requires a Saving Throw, dealing no damage on success. Can be touch healing that takes an Action to perform. Can be a ranged attack that requires a Saving Throw, dealing no damage on success. Can be a single-target Melee Attack that requires a Saving Throw, dealing half damage on success.<\/li><li><b>d12: <\/b>Can be a touch healing Ability that takes an Action as well as another type of Action (Reaction, Bonus Action, Movement Action). Can be a single-target Melee Attack that requires a Saving Throw, dealing no damage on success.<\/li><\/ul>",
                     "<p><small><b>Note: <\/b><i>The damage cap for these scaling dice is normally 10dx, but this does not have to be the case. Characters or enemies may be able to go far past Level 20, and therefore, would be able to deal massive amounts of Damage using them. Your DM may decide that Abilities past that may increase in the same fashion as before (an additional dice for every odd Level), or that 10dx should be the limit for balance.<\/i><\/small><\/p>"
                 ]
             },
@@ -456,7 +456,7 @@
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
                         ],
                         "linkFeatures": [
-                            "Special Ability (2 SE)"
+                            "Special Ability"
                         ]
                     },
                     "16": {
@@ -465,7 +465,7 @@
                             "OR"
                         ],
                         "featFeatures": [
-                            "Defensive Stance"
+                            "Defensive Agility"
                         ]
                     },
                     "17": {
@@ -656,7 +656,7 @@
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
                         ],
                         "linkFeatures": [
-                            "Special Ability (2 SE)"
+                            "Special Ability"
                         ]
                     },
                     "16": {
@@ -665,7 +665,7 @@
                             "OR"
                         ],
                         "featFeatures": [
-                            "Defensive Stance"
+                            "Defensive Agility"
                         ]
                     },
                     "17": {
@@ -860,7 +860,7 @@
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
                         ],
                         "linkFeatures": [
-                            "Special Ability (2 SE)"
+                            "Special Ability"
                         ]
                     },
                     "16": {
@@ -1027,7 +1027,7 @@
                     },
                     "9": {
                         "linkFeatures": [
-                            "Special Ability (2 SE)"
+                            "Special Ability"
                         ]
                     },
                     "10": {
@@ -1266,7 +1266,7 @@
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
                         ],
                         "linkFeatures": [
-                            "Special Ability (2 SE)"
+                            "Special Ability"
                         ]
                     },
                     "16": {
@@ -1481,7 +1481,7 @@
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
                         ],
                         "linkFeatures": [
-                            "Special Ability (2 SE)"
+                            "Special Ability"
                         ]
                     },
                     "16": {
@@ -1677,7 +1677,7 @@
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
                         ],
                         "linkFeatures": [
-                            "Special Ability (2 SE)"
+                            "Special Ability"
                         ]
                     },
                     "16": {
@@ -1698,7 +1698,7 @@
                             "OR"
                         ],
                         "featFeatures": [
-                            "Defensive Stance"
+                            "Defensive Agility"
                         ]
                     },
                     "19": {
@@ -1762,7 +1762,7 @@
                 "desc": "It is said that Stands reflect their Users. Hive-Type Stand Users are those that idolize the idea of individuals working as a team. Their Stands are formed of many much smaller Sub-Stands, each one with only a fragment of the power of a full Stand. These smaller parts may act in tandem or each one separately. Because of this, Hive Stands have around the same strength as a normal Stand, but they all have great range.",
                 "notes": [
                     "Keep an eye on your health. The amount of Instances available for you to use is determined by the percentage of health you are at. If you are at 50% Health, you only have 50% of your Hive Stand available for use. When you are at 0 Hit Points, you may still have a maximum of 1 Stand Instance that functions, but it is recalled, and cannot act in any way. Your amount of Stand Instances only drops to 0 when you die.",
-                    "Your attacks may take the form of regular Stand melee attacks, or Swarm Attacks (defined below). When attacking normally, you have Disadvantage if using less than half of your total instances."
+                    "Your attacks may take the form of regular Stand Melee Attacks, or Swarm Attacks (defined below). When attacking normally, you have Disadvantage if using less than half of your total instances."
                 ],
                 "hDice": "1d8",
                 "dcName": "Stand DC",
@@ -1884,7 +1884,7 @@
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
                         ],
                         "linkFeatures": [
-                            "Special Ability (2 SE)"
+                            "Special Ability"
                         ]
                     },
                     "16": {
@@ -2135,7 +2135,7 @@
                         "featFeatures": [
                             "Calculating",
                             "OR",
-                            "Defensive Stance"
+                            "Defensive Agility"
                         ]
                     },
                     "19": {
@@ -2205,7 +2205,7 @@
         "extra": [
             {
                 "name": "The Golden Ratio",
-                "desc": "A Spin User must have a natural (not artifical) reference of a 9:16 ratio in order to use the Spin. A 9:16 ratio is found somewhere in almost every uninjured creature, except Humans."
+                "desc": "A Spin User must have a natural (not artificial) reference of a 9:16 ratio in order to use the Spin. A 9:16 ratio is found somewhere in almost every uninjured creature, except Humans."
             },
             {
                 "name": "Materials",
@@ -2343,7 +2343,7 @@
                     "Ability Score Improvement"
                 ],
                 "otherFeatures": [
-                    "Choose another Class Feature from Level 4, or Level 5."
+                    "Choose another Class Feature from Level 4, or Level 5"
                 ]
             },
             "9": {
@@ -2368,7 +2368,7 @@
             },
             "12": {
                 "otherFeatures": [
-                    "Choose another Class Feature from Level 4, Level 5, or Level 9."
+                    "Choose another Class Feature from Level 4, Level 5, or Level 9"
                 ]
             },
             "13": {
@@ -2416,7 +2416,7 @@
             },
             "19": {
                 "otherFeatures": [
-                    "Choose another Class Feature from Level 4, Level 5, Level 9, Level 15, or Level 17."
+                    "Choose another Class Feature from Level 4, Level 5, Level 9, Level 15, or Level 17"
                 ]
             },
             "20": {
@@ -2496,7 +2496,7 @@
                             "Catlike Agility",
                             "Deadly Accuracy",
                             "OR",
-                            "Defensive Stance"
+                            "Defensive Agility"
                         ]
                     },
                     "5": {
@@ -2547,7 +2547,7 @@
                         "featFeatures": [
                             "Headhunter",
                             "OR",
-                            "Paranoia"
+                            "Ever Vigilant"
                         ]
                     },
                     "12": {
@@ -2736,9 +2736,9 @@
                     },
                     "17": {
                         "featFeatures": [
-                            "Paranoia",
+                            "Ever Vigilant",
                             "OR",
-                            "Trap Detection"
+                            "Trapper"
                         ],
                         "ability": [
                             "Ability Score Improvement"
@@ -2834,7 +2834,7 @@
                         "featFeatures": [
                             "Interpreter",
                             "OR",
-                            "Trap Detection"
+                            "Trapper"
                         ]
                     },
                     "10": {
@@ -2861,7 +2861,7 @@
                         "featFeatures": [
                             "Familiar Bond",
                             "OR",
-                            "Paranoia"
+                            "Ever Vigilant"
                         ],
                         "ability": [
                             "Ability Score Improvement"
@@ -2958,7 +2958,7 @@
                     },
                     "5": {
                         "featFeatures": [
-                            "Defensive Stance",
+                            "Defensive Agility",
                             "OR",
                             "Quick on your Feet",
                             "OR",
@@ -3125,7 +3125,7 @@
                     },
                     "5": {
                         "featFeatures": [
-                            "Defensive Stance",
+                            "Defensive Agility",
                             "OR",
                             "Quick on your Feet",
                             "OR",
@@ -3181,9 +3181,9 @@
                             "OR",
                             "Interpreter",
                             "OR",
-                            "Trap Detection",
+                            "Trapper",
                             "OR",
-                            "Paranoia"
+                            "Ever Vigilant"
                         ]
                     },
                     "12": {
@@ -3307,7 +3307,7 @@
                             "Rejuvenation"
                         ],
                         "featFeatures": [
-                            "Defensive Stance",
+                            "Defensive Agility",
                             "OR",
                             "Whirlwind Attacker"
                         ]
@@ -3451,7 +3451,7 @@
                             "Ranger Fighting Style"
                         ],
                         "featFeatures": [
-                            "Paranoia"
+                            "Ever Vigilant"
                         ]
                     },
                     "3": {
@@ -3544,7 +3544,7 @@
                         "featFeatures": [
                             "Light Sleeper",
                             "OR",
-                            "Trap Detection"
+                            "Trapper"
                         ]
                     },
                     "14": {
@@ -3583,7 +3583,7 @@
                     },
                     "19": {
                         "featFeatures": [
-                            "Defensive Stance",
+                            "Defensive Agility",
                             "OR",
                             "Duelist's Agility",
                             "OR",

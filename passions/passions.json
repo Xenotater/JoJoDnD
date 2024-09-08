@@ -143,7 +143,7 @@
     "Hospitality_Worker": {
         "name": "Hospitality Worker",
         "stats": "Cha +2, Int +1",
-        "desc": "A person who makes their living serving people, using their using their mind and their social skills to help them.",
+        "desc": "A person who makes their living serving people, using their mind and their social skills to help them.",
         "examples": [
             "Waitstaff",
             "Receptionists",

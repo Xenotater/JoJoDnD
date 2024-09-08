@@ -133,7 +133,7 @@
           },
           "15": {
             "pro": 5,
-            "feats": 2,
+            "feats": 3,
             "dice": 4,
             "features": ["Superior Mobility", "OR", "Superior Saves"]
           },
@@ -725,7 +725,7 @@
         "name": "Natural Skirmisher",
         "desc": [
           "Using natural mobility and speed, your Familiar has the ability to land a couple hits and leave before they can be hit themselves.",
-          "Whenever your Familiar attempts to make a melee attack against a creature, they cannot be targeted by Opportunity Attacks from that creature until the end of your Familiar's next Turn."
+          "Whenever your Familiar attempts to make a Melee Attack against a creature, they cannot be targeted by Opportunity Attacks from that creature until the end of your Familiar's next Turn."
         ]
       },
       "Treasure_Hunter": {
