@@ -966,7 +966,8 @@
                     "2": {
                         "linkFeatures": [
                             "Self-Acclimation",
-                            "Distant Defense"
+                            "Distant Defense",
+                            "OR"
                         ],
                         "featFeatures": [
                             "Object Stand",
