@@ -234,7 +234,7 @@ h1, h2, h3, th, .th {
     margin-top: 2rem;
 }
 
-.display-title {
+.display-title, #display-title {
     text-decoration: underline;
     color: rgb(231, 188, 44);
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -242,14 +242,14 @@ h1, h2, h3, th, .th {
     margin-bottom: 1.5rem;
 }
 
-.display-img {
+.display-img, #display-img {
     max-height: 400px;
     overflow: hidden;
     text-align: center;
     margin-bottom: .5rem;
 }
 
-.display-img img {
+.display-img img, #display-img img {
     max-height: inherit;
     border: 3px solid purple;
     border-radius: 30px;
