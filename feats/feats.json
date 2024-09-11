@@ -1000,7 +1000,7 @@
         ],
         "effects": [
             "Your Proficiency Bonus increases by 1, as such so do any effects that scale by your Proficiency Bonus except for the number of Feats you have.",
-            "In addition, any negative effects that would scale off your Proficiency Bonus (<a class='in-page'>Elementalist</a>: Acid, <a class='in-page'>Enfeebler</a>, <a class='in-page'>Piercer</a>'s armor reduction, etc.) scale off of the PB you would normally have instead of the increased version from this Feat.",
+            "In addition, any negative effects targeting you that would scale off your Proficiency Bonus (such as <a class='in-page'>Enfeebler</a>) use the PB you would normally have instead of the increased version from this Feat.",
             "You may take this Feat multiple times if desired."
         ],
         "prereq": "Wis 13+"
