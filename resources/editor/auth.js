@@ -424,18 +424,21 @@ function respond(text) {
 }
 
 function saveChar() {
-    let result = exportData("save");
+    checkLoggedIn();
+
+    let result = exportData("save");    
     $.post("save.php", { action: "save", id: charID, name: result[0], form: result[1], acts: result[2], img: result[3], img2: result[4], folder: charFolder }, function(data) {
-        if (data.match(/[0-9]+$/))
-            charID = parseInt(data.match(/[0-9]+$/)[0]);
-        if (data.includes("You do not own this folder")) {
-            folder = 0;
-            folderpath.splice(1, Infinity);
+        if (loggedIn) {
+            if (data.match(/[0-9]+$/))
+                charID = parseInt(data.match(/[0-9]+$/)[0]);
+            if (data.includes("You do not own this folder")) {
+                folder = 0;
+                folderpath.splice(1, Infinity);
+            }
+            if (data.includes("!") && result[3] != "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=")
+                images[charID] = result[3];
         }
-        if (data.includes("!") && result[3] != "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=")
-            images[charID] = result[3];
         respond(data.replace(/[0-9]+$/, ""));
-        updateCharacters();
     });
 }
 

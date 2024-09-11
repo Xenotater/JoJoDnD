@@ -158,7 +158,6 @@ function getAvailableLangs(path) {
 }
 
 function handleHashScroll(offset = 88) {
-    console.log($(window.location.hash).offset().top + offset);
     if (window.location.hash)
         $("html, body").animate({scrollTop: parseInt($(window.location.hash).offset().top + offset)}, 500);
 }
