@@ -1,5 +1,5 @@
 window.jsPDF = window.jspdf.jsPDF;
-var pages = [true,true,true];
+var pages = [true,true,true,false];
 
 $(document).ready(function () {
     $(".pageSelect").change(function() {
@@ -14,14 +14,18 @@ $(document).ready(function () {
             pages[num-1] = true;
         }
 
-        if (pages[0] && (pages[1] || pages[2]))
+        if (pages[0] && (pages[1] || pages[2] || pages[3]))
             $("#div1").show();
         else
             $("#div1").hide();
-        if (pages[1] && pages[2])
+        if (pages[1] && (pages[2] || pages[3]))
             $("#div2").show();
         else
             $("#div2").hide();
+        if (pages[2] && pages[3])
+            $("#div3").show();
+        else
+            $("#div3").hide();
 
         if (!pages[0])
             $("#statflip-switch").hide();
@@ -35,10 +39,19 @@ $(document).ready(function () {
             $("#multi").css("display", "inline-block");
             $("#multi").focus();
         }
-        if ($(this).val() == "act")
-            $("#act-num").css("display", "inline-block");
-        else
-            $("#act-num").css("display", "none");
+        if ($(this).val() == "act"){
+            $("#actPageOption").show();
+            $("#page4").show();
+            if (pages[2])
+                $("#div3").show();
+            pages[3] = true;
+        }
+        else{
+            $("#actPageOption").hide();
+            $("#page4").hide();
+            $("#div3").hide();
+            pages[3] = false;
+        }
     });
 
     $("#multi").on("keyup", function(e) { //numerous ways to get back to the dropdown

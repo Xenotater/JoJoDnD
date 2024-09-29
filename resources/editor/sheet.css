@@ -419,3 +419,59 @@ textarea {
 #meta {
     display: none;
 }
+
+.actInfo {
+    margin-bottom: 16px;
+}
+
+.actInfo .bigBox {
+    height: 40px;
+    font-size: 20px;
+}
+
+.actInfo .lilBox {
+    height: 25px;
+    font-size: 14px;
+}
+
+.actAbilityInfo, .actArray {
+    height: 199px;
+}
+
+.actHeader {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    text-decoration: underline;
+}
+
+.actHeader select {
+    height: 40px;
+    padding-left: 8px;
+}
+
+.actHeader h3 {
+    margin: 0;
+}
+
+.actStat {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4px;
+}
+
+.act4BasedBox {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap;
+}
+
+.act4BasedBox select {
+    width: inherit;
+}
+
+.actArray {
+    display: flex;
+    align-items: center;
+}

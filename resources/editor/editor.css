@@ -490,10 +490,14 @@
     font-size: 20px;
 }
 
-#statflip-switch {
+#toggles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
     position: absolute;
     left: 50px;
-    top: 515px;
+    top: 400px;
 }
 
 .lilLbl {
@@ -518,10 +522,16 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+#actPageOption, #page4, #div3 {
+    display: none;
+}
   
 @media (max-width: 1199px) {
-    #statflip-switch {
+    #toggles {
         position: unset;
+        flex-direction: row;
+        align-items: flex-end;
         margin-bottom: 8px;
     }
 

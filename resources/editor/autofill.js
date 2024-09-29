@@ -1,7 +1,7 @@
 var scores = { "str": 0, "dex": 0, "con": 0, "int": 0, "wis": 0, "cha": 0 };
 var actScores = [[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0]];
 var act = 0;
-var chart;
+var charts = {};
 
 $(document).ready(function () {
     if ($("#autofill").is(":checked")) {
@@ -35,22 +35,35 @@ $(document).ready(function () {
         });
     }
 
-    createChart();
+    createChart("#sArrayChart", "stand");
+    createChart("#act1ArrayChart", "act1");
+    createChart("#act2ArrayChart", "act2");
+    createChart("#act3ArrayChart", "act3");
+    createChart("#act4ArrayChart", "act4");
 
     $(".bigBox, .lilBox").keyup(function() {
-        updateChart();
+        if ($(this).hasClass("act1-score") || $(this).hasClass("act1-mod"))
+            updateChart("#act1ArrayChart", "act1");
+        else if ($(this).hasClass("act2-score") || $(this).hasClass("act2-mod"))
+            updateChart("#act2ArrayChart", "act2");
+        else if ($(this).hasClass("act3-score") || $(this).hasClass("act3-mod"))
+            updateChart("#act3ArrayChart", "act3");
+        else if ($(this).hasClass("act4-score") || $(this).hasClass("act4-mod"))
+            updateChart("#act4ArrayChart", "act4");
+        else
+            updateChart("#sArrayChart", "stand")
     });
 
     
-    $("#act-num").on("change", function() {
-        if ($(this).val() > 3)
-            $(this).val(3);
-        if ($(this).val() < 0)
-            $(this).val(0);
-        saveAct();
-        loadAct($(this).val());
-        updateChart();
-    });
+    // $("#act-num").on("change", function() {
+    //     if ($(this).val() > 3)
+    //         $(this).val(3);
+    //     if ($(this).val() < 0)
+    //         $(this).val(0);
+    //     saveAct();
+    //     loadAct($(this).val());
+    //     updateChart();
+    // });
 });
 
 function detectChange(object) {
@@ -59,6 +72,9 @@ function detectChange(object) {
     if ($(object).hasClass("scales")) {
         scale(object);
     }
+
+    if (!$("#autofill").is(":checked"))
+        return;
 
     if ($(object).hasClass("numbers")) {
         $(object).val($(object).val().replace(/[^0-9\-]/g, ""));
@@ -229,7 +245,7 @@ function updateStandScore(stat, diff) {
     updateSpeed();
     updateSAC();
     updateAtks();
-    updateChart();
+    updateChart("#sArrayChart", chart);
 }
 
 function updateStandMod(stat) {
@@ -468,13 +484,13 @@ function saveScores() {
     saveScore($("#cha-score"));
 }
 
-function createChart() {
-    chart = new Chart($("#sArrayChart")[0], {
+function createChart(target, targetChart) {
+    charts[targetChart] = new Chart($(target)[0], {
         type: 'radar',
         data: {
             labels: ['Power', 'Speed', 'Range', 'Durability', 'Precision', 'Potential'],
             datasets: [{
-                data: getChartData(),
+                data: [0,0,0,0,0,0],
                 fill: true,
                 backgroundColor: 'rgba(255, 0, 0, 0.3)',
                 borderColor: 'rgba(255, 0, 0, 0.7)',
@@ -494,7 +510,7 @@ function createChart() {
                         beginAtZero: true,
                         stepSize: 20,
                         font: {
-                            size: 8
+                            size: target.includes("act") ? 5 : 8
                         }
                     }
                 }
@@ -506,19 +522,20 @@ function createChart() {
             }
         }
     });
-    updateChart();
+    updateChart(target, targetChart);
 }
 
-function updateChart() {
-    $("#sArrayChart").show();
-    let data = getChartData();
+function updateChart(target, targetChart) {
+    console.log(targetChart);
+    $(target).show();
+    let data = target.includes("act") ? getActChartData(target.replace("ArrayChart", "")) : getChartData();
     let set = new Set(data);
     if (set.size == 1 && set.has(0)) {
-        $("#sArrayChart").hide();
+        $(target).hide();
     }
     else {
-        chart.data.datasets[0].data = data;
-        chart.update();
+        charts[targetChart].data.datasets[0].data = data;
+        charts[targetChart].update();
     }
 }
 
@@ -530,6 +547,18 @@ function getChartData() {
     data.push(getIntVal($("#Scon-score")));
     data.push(getIntVal($("#Sdex-score")));
     data.push(getIntVal($("#Scha-score")));
+    return data;
+}
+
+function getActChartData(num) {
+    let data = [];
+    data.push(getIntVal($(`${num}-pwr-score`)));
+    data.push(getIntVal($(`${num}-pre-score`)));
+    data.push(getIntVal($(`${num}-dur-score`)));
+    data.push(getIntVal($(`${num}-rng-score`)));
+    data.push(getIntVal($(`${num}-spd-score`)));
+    data.push(getIntVal($(`${num}-nrg-score`)));
+    console.log(data);
     return data;
 }
 
