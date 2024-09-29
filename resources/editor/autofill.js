@@ -1,6 +1,6 @@
 var scores = { "str": 0, "dex": 0, "con": 0, "int": 0, "wis": 0, "cha": 0 };
 var actScores = [[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0]];
-var act = 0;
+var act = 1;
 var charts = {};
 
 $(document).ready(function () {
@@ -23,6 +23,10 @@ $(document).ready(function () {
             if (e.key === "Enter" || e.keyCode === 13) {
                 detectChange(this);
             }
+        });
+
+        $("select").on("change", function () {
+            detectChange(this);
         });
 
         $(".savecheck").change(function () {
@@ -55,15 +59,17 @@ $(document).ready(function () {
     });
 
     
-    // $("#act-num").on("change", function() {
-    //     if ($(this).val() > 3)
-    //         $(this).val(3);
-    //     if ($(this).val() < 0)
-    //         $(this).val(0);
-    //     saveAct();
-    //     loadAct($(this).val());
-    //     updateChart();
-    // });
+    $("#act-num").on("change", function() {
+        if ($(this).val() > 4)
+            $(this).val(4);
+        if ($(this).val() < 0)
+            $(this).val(0);
+        if ($("#autofill").is(":checked")) {
+            loadAct($(this).val());
+            if (getChartData().every(item => item == 0))
+                updateAllStandScores();
+        }
+    });
 });
 
 function detectChange(object) {
@@ -109,6 +115,26 @@ function detectChange(object) {
 
     if (id == "statflip") {
         return;
+    }
+
+    if (id === "act4Base") {
+        for (let i=0; i<6; i++) {
+            $($(".act4-score")[i]).val("");
+            $($(".act4-mod")[i]).val("");
+        }
+        updateActAllScores(4);
+    }
+
+    if (id.match(/act\dType/)) {
+        console.log('hit');
+        let target = id.replace("Type", "");
+        if (Array.from($(`.${target}-score`)).every(item => $(item).val() == ""))
+            updateActAllScores(target.replace("act", ""));
+    }
+
+    if (object.classList.toString().match(/.*act\d-score.*/)) {
+        data = id.replace("-score", "").split("-");
+        updateActMod(data[0], data[1])
     }
 
     switch (id.replace("-score", "").replace("-mod", "")) {
@@ -185,6 +211,8 @@ function updateMod(stat) {
 
 function updateStandScore(stat, diff) {
     var cls = $("#class").val();
+    console.log(cls)
+    console.log(diff);
     var multipliers = { "str": 0, "dex": 0, "con": 0, "int": 0, "wis": 0, "cha": 0 };
 
     switch (cls) {
@@ -213,39 +241,77 @@ function updateStandScore(stat, diff) {
             multipliers = { "str": 3, "dex": 2, "con": 3, "int": 8, "wis": 3, "cha": 3 };
             break;
         case "act":
-            switch ($("#act-num").val()) {
-                case "0":
-                    multipliers = { "str": 0, "dex": 0, "con": 1, "int": 1, "wis": 0, "cha": 0 };
-                    break;
-                case "1":
-                    multipliers = { "str": 2, "dex": 3, "con": 3, "int": 8, "wis": 3, "cha": 3 };
-                    break;
-                case "2":
-                    multipliers = { "str": 2, "dex": 3, "con": 3, "int": 3, "wis": 3, "cha": 5 };
-                    break;
-                case "3":
-                    multipliers = { "str": 4, "dex": 3, "con": 4, "int": 1, "wis": 4, "cha": 2 };
-                    break;
-            }
             break;
         default:
             break;
     }
 
     if (cls != "oth") {
-        diff *= multipliers[stat];
         target = $("#S" + stat + "-score");
         var val = parseInt(target.val());
         if (isNaN(val))
             val = 0;
-        target.val(val + diff);
+        target.val(val + diff * multipliers[stat]);
         updateStandMod(stat);
     }
     updateDC();
     updateSpeed();
     updateSAC();
     updateAtks();
-    updateChart("#sArrayChart", chart);
+    updateChart("#sArrayChart", "stand");
+    
+    if (cls === "act")
+        updateAllActScore(stat, diff);
+}
+
+function updateAllActScore(stat, diff) {
+    console.log(`stat: ${stat}, diff: ${diff}`);
+    for (let i=1; i<5; i++) {
+        updateActScore(i, stat, diff);
+    }
+    loadAct(act);
+}
+
+function updateActScore(num, stat, diff) {
+    let multipliers = getActMultipliers(num);
+    target = $(`#act${num}-${stat}-score`);
+    var val = parseInt(target.val());
+    if (isNaN(val))
+        val = 0;
+    target.val(val + diff * multipliers[stat]);
+    if (target.val() == 0)
+        target.val("");
+    updateActMod(`act${num}`, stat);
+    updateChart(`#act${num}ArrayChart`, `act${num}`);
+}
+
+function getActMultipliers(num) {
+    let multipliers = { "str": 0, "dex": 0, "con": 0, "int": 0, "wis": 0, "cha": 0 };
+    let type = parseInt(num) === 4 ? $(`#${($("#act4Base").val())}Type`).val() : $(`#act${num}Type`).val();
+
+    switch (type) {
+        case "close":
+            multipliers = { "str": 3, "dex": 3, "con": 3, "int": 1, "wis": 4, "cha": 2 };
+            break;
+        case "long":
+            multipliers = { "str": 3, "dex": 3, "con": 3, "int": 8, "wis": 3, "cha": 3 };
+            break;
+        case "ability":
+            multipliers = { "str": 1, "dex": 2, "con": 1, "int": 3, "wis": 3, "cha": 5 };
+            break;
+        case "remote":
+            multipliers = { "str": 3, "dex": 2, "con": 3, "int": 4, "wis": 3, "cha": 2 };
+            break;
+        default:
+            break;
+    }
+
+    if (parseInt(num) === 4) {
+        for (let key of Object.keys(multipliers))
+            multipliers[key] *= 2;
+    }
+
+    return multipliers;
 }
 
 function updateStandMod(stat) {
@@ -434,27 +500,39 @@ function updateName(id) {
     }
 }
 
-function saveAct() {
-    actScores[act][0] = parseInt($("#Sstr-score").val()) || 0;
-    actScores[act][1] = parseInt($("#Sdex-score").val()) || 0;
-    actScores[act][2] = parseInt($("#Scon-score").val()) || 0;
-    actScores[act][3] = parseInt($("#Sint-score").val()) || 0;
-    actScores[act][4] = parseInt($("#Swis-score").val()) || 0;
-    actScores[act][5] = parseInt($("#Scha-score").val()) || 0;
+function saveAct(num) {
+    $(`#act${num}-str-score`).val($("#Sstr-score").val());
+    $(`#act${num}-dex-score`).val($("#Sdex-score").val());
+    $(`#act${num}-con-score`).val($("#Scon-score").val());
+    $(`#act${num}-int-score`).val($("#Sint-score").val());
+    $(`#act${num}-wis-score`).val($("#Swis-score").val());
+    $(`#act${num}-cha-score`).val($("#Scha-score").val());
+
+    $(`#act${num}-str-mod`).val($("#Sstr-mod").val());
+    $(`#act${num}-dex-mod`).val($("#Sdex-mod").val());
+    $(`#act${num}-con-mod`).val($("#Scon-mod").val());
+    $(`#act${num}-int-mod`).val($("#Sint-mod").val());
+    $(`#act${num}-wis-mod`).val($("#Swis-mod").val());
+    $(`#act${num}-cha-mod`).val($("#Scha-mod").val());
+
+    updateChart(`#act${num}ArrayChart`, `act${num}`);
 }
 
 function loadAct(newAct) {
     act = newAct;
-    $("#Sstr-score").val(actScores[act][0]);
-    $("#Sdex-score").val(actScores[act][1]);
-    $("#Scon-score").val(actScores[act][2]);
-    $("#Sint-score").val(actScores[act][3]);
-    $("#Swis-score").val(actScores[act][4]);
-    $("#Scha-score").val(actScores[act][5]);
-
-    if (actScores[act].every(item => item === 0))
-        updateAllStandScores();
-    updateAllStandMods();
+    $("#Sstr-score").val($(`#act${act}-str-score`).val());
+    $("#Sdex-score").val($(`#act${act}-dex-score`).val());
+    $("#Scon-score").val($(`#act${act}-con-score`).val());
+    $("#Sint-score").val($(`#act${act}-int-score`).val());
+    $("#Swis-score").val($(`#act${act}-wis-score`).val());
+    $("#Scha-score").val($(`#act${act}-cha-score`).val());
+    
+    $("#Sstr-mod").val($(`#act${act}-str-mod`).val());
+    $("#Sdex-mod").val($(`#act${act}-dex-mod`).val());
+    $("#Scon-mod").val($(`#act${act}-con-mod`).val());
+    $("#Sint-mod").val($(`#act${act}-int-mod`).val());
+    $("#Swis-mod").val($(`#act${act}-wis-mod`).val());
+    $("#Scha-mod").val($(`#act${act}-cha-mod`).val());
 }
 
 function updateAllStandScores() {
@@ -526,7 +604,6 @@ function createChart(target, targetChart) {
 }
 
 function updateChart(target, targetChart) {
-    console.log(targetChart);
     $(target).show();
     let data = target.includes("act") ? getActChartData(target.replace("ArrayChart", "")) : getChartData();
     let set = new Set(data);
@@ -552,17 +629,36 @@ function getChartData() {
 
 function getActChartData(num) {
     let data = [];
-    data.push(getIntVal($(`${num}-pwr-score`)));
-    data.push(getIntVal($(`${num}-pre-score`)));
-    data.push(getIntVal($(`${num}-dur-score`)));
-    data.push(getIntVal($(`${num}-rng-score`)));
-    data.push(getIntVal($(`${num}-spd-score`)));
-    data.push(getIntVal($(`${num}-nrg-score`)));
-    console.log(data);
+    data.push(getIntVal($(`${num}-str-score`)));
+    data.push(getIntVal($(`${num}-wis-score`)));
+    data.push(getIntVal($(`${num}-int-score`)));
+    data.push(getIntVal($(`${num}-con-score`)));
+    data.push(getIntVal($(`${num}-dex-score`)));
+    data.push(getIntVal($(`${num}-cha-score`)));
     return data;
 }
 
 function getIntVal(elem) {
     let val = parseInt(elem.val());
     return isNaN(val) ? 0 : val;
+}
+
+function updateActMod(act, stat) {
+    let target = $(`#${act}-${stat}-mod`);
+    let score = getIntVal($(`#${act}-${stat}-score`));
+
+    if (score == 0)
+        target.val("");
+    else
+        target.val(Math.floor(score / 10));
+    fixMod(target);
+}
+
+function updateActAllScores(num) {
+    updateActScore(num, "str", scores.str);
+    updateActScore(num, "dex", scores.dex);
+    updateActScore(num, "con", scores.con);
+    updateActScore(num, "int", scores.int);
+    updateActScore(num, "wis", scores.wis);
+    updateActScore(num, "cha", scores.cha);
 }

@@ -45,12 +45,14 @@ $(document).ready(function () {
             if (pages[2])
                 $("#div3").show();
             pages[3] = true;
+            $("#act-num").show();
         }
         else{
             $("#actPageOption").hide();
             $("#page4").hide();
             $("#div3").hide();
             pages[3] = false;
+            $("#act-num").hide();
         }
     });
 

@@ -442,7 +442,6 @@ textarea {
     display: flex;
     align-items: center;
     margin-top: 8px;
-    text-decoration: underline;
 }
 
 .actHeader select {
@@ -452,6 +451,7 @@ textarea {
 
 .actHeader h3 {
     margin: 0;
+    text-decoration: underline;
 }
 
 .actStat {
@@ -467,7 +467,7 @@ textarea {
     white-space: nowrap;
 }
 
-.act4BasedBox select {
+.act4BasedBox * {
     width: inherit;
 }
 
