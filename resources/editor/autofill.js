@@ -1,5 +1,4 @@
 var scores = { "str": 0, "dex": 0, "con": 0, "int": 0, "wis": 0, "cha": 0 };
-var actScores = [[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0]];
 var act = 1;
 var charts = {};
 
@@ -8,12 +7,6 @@ $(document).ready(function () {
         $(".stat-score").on("focus", function () {
             saveScore(this);
         });
-
-        // $(".stat-score").on("keyup", function(e) {
-        //     if (e.key === "Enter" || e.keyCode === 13) {
-        //             saveScore(this);
-        //     }
-        // });
 
         $("input").on("blur", function () {
             detectChange(this);
@@ -126,7 +119,6 @@ function detectChange(object) {
     }
 
     if (id.match(/act\dType/)) {
-        console.log('hit');
         let target = id.replace("Type", "");
         if (Array.from($(`.${target}-score`)).every(item => $(item).val() == ""))
             updateActAllScores(target.replace("act", ""));
@@ -211,8 +203,6 @@ function updateMod(stat) {
 
 function updateStandScore(stat, diff) {
     var cls = $("#class").val();
-    console.log(cls)
-    console.log(diff);
     var multipliers = { "str": 0, "dex": 0, "con": 0, "int": 0, "wis": 0, "cha": 0 };
 
     switch (cls) {
@@ -265,7 +255,6 @@ function updateStandScore(stat, diff) {
 }
 
 function updateAllActScore(stat, diff) {
-    console.log(`stat: ${stat}, diff: ${diff}`);
     for (let i=1; i<5; i++) {
         updateActScore(i, stat, diff);
     }

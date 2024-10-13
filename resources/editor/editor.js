@@ -1,57 +1,46 @@
 window.jsPDF = window.jspdf.jsPDF;
-var pages = [true,true,true,false];
 
 $(document).ready(function () {
     $(".pageSelect").change(function() {
         var num = parseInt($(this).val().replace("p", ""));
+        var total = $(".pageSelect").length;
 
-        if (pages[num-1]) {
-            $("#page"+num).hide();
-            pages[num-1] = false;
+        if ($("#class").val() !== "act" && num === 3)
+            num += 1;
+
+        $($(".page")[num-1]).toggle();
+
+        for (let i=1; i<total; i++) {
+            if (pageOn(i) && anyPageOn(i+1, total))
+                $("#div" + i).show();
+            else
+                $("#div" + i).hide();
         }
-        else {
-            $("#page"+num).show();
-            pages[num-1] = true;
-        }
-
-        if (pages[0] && (pages[1] || pages[2] || pages[3]))
-            $("#div1").show();
-        else
-            $("#div1").hide();
-        if (pages[1] && (pages[2] || pages[3]))
-            $("#div2").show();
-        else
-            $("#div2").hide();
-        if (pages[2] && pages[3])
-            $("#div3").show();
-        else
-            $("#div3").hide();
-
-        if (!pages[0])
-            $("#statflip-switch").hide();
-        else
-            $("#statflip-switch").show();
     })
 
     $("#class").change(function() {
+        var totalPages = $(".pageSelect").length;
+
         if ($(this).val() == "multi") {
             $(this).css("display", "none");
             $("#multi").css("display", "inline-block");
             $("#multi").focus();
         }
         if ($(this).val() == "act"){
-            $("#actPageOption").show();
-            $("#page4").show();
-            if (pages[2])
+            $("#p4selector").show();
+            $(".pageSelect")[3].checked = $(".pageSelect")[2].checked;
+            $(".pageSelect")[2].checked = true;
+            $("#page3").show();
+            if (anyPageOn(4, totalPages))
                 $("#div3").show();
-            pages[3] = true;
             $("#act-num").show();
         }
         else{
-            $("#actPageOption").hide();
-            $("#page4").hide();
+            $("#p4selector").hide();
+            $(".pageSelect")[2].checked = $(".pageSelect")[3].checked;
+            $(".pageSelect")[3].checked = false;
+            $("#page3").hide();
             $("#div3").hide();
-            pages[3] = false;
             $("#act-num").hide();
         }
     });
@@ -161,6 +150,18 @@ $(document).ready(function () {
         flipStats(false);
     });
 });
+
+function pageOn(num) {
+    return $(".pageSelect")[num-1].checked;
+}
+
+function anyPageOn(start, end) {
+    for (let i=start; i<=end; i++) {
+        if (pageOn(i))
+            return true;
+    }
+    return false;
+}
 
 function imgOn(isMain) {
     let imgId = "#char-img", idAdd = "";
