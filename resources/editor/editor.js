@@ -1,6 +1,8 @@
 window.jsPDF = window.jspdf.jsPDF;
 
 $(document).ready(function () {
+    applyLangSpecificStyles();
+
     $(".pageSelect").change(function() {
         var num = parseInt($(this).val().replace("p", ""));
         var total = $(".pageSelect").length;
@@ -150,6 +152,16 @@ $(document).ready(function () {
         flipStats(false);
     });
 });
+
+function applyLangSpecificStyles() {
+    switch(getLanguage()) {
+        case "uk":
+            $("#act-num").css("left", "105px");
+        case "en":
+        default:
+            return;
+    }
+}
 
 function pageOn(num) {
     return $(".pageSelect")[num-1].checked;
