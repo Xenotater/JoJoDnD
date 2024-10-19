@@ -427,7 +427,7 @@ function saveChar() {
     checkLoggedIn();
 
     let result = exportData("save");    
-    $.post("save.php", { action: "save", id: charID, name: result[0], form: result[1], acts: result[2], img: result[3], img2: result[4], folder: charFolder }, function(data) {
+    $.post("save.php", { action: "save", id: charID, name: result[0], form: result[1], img: result[2], img2: result[3], folder: charFolder }, function(data) {
         if (loggedIn) {
             if (data.match(/[0-9]+$/))
                 charID = parseInt(data.match(/[0-9]+$/)[0]);

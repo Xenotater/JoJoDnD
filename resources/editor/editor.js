@@ -21,30 +21,12 @@ $(document).ready(function () {
     })
 
     $("#class").change(function() {
-        var totalPages = $(".pageSelect").length;
-
         if ($(this).val() == "multi") {
             $(this).css("display", "none");
             $("#multi").css("display", "inline-block");
             $("#multi").focus();
         }
-        if ($(this).val() == "act"){
-            $("#p4selector").show();
-            $(".pageSelect")[3].checked = $(".pageSelect")[2].checked;
-            $(".pageSelect")[2].checked = true;
-            $("#page3").show();
-            if (anyPageOn(4, totalPages))
-                $("#div3").show();
-            $("#act-num").show();
-        }
-        else{
-            $("#p4selector").hide();
-            $(".pageSelect")[2].checked = $(".pageSelect")[3].checked;
-            $(".pageSelect")[3].checked = false;
-            $("#page3").hide();
-            $("#div3").hide();
-            $("#act-num").hide();
-        }
+        toggleAct($(this).val() == "act");
     });
 
     $("#multi").on("keyup", function(e) { //numerous ways to get back to the dropdown
@@ -280,10 +262,8 @@ function filter(node) {
 }
 
 function exportData(mode) {
-    saveAct();
     var data = {};
     data["form"] = JSON.stringify($("#pages").serializeArray());
-    data["acts"] = JSON.stringify(actScores);
     data["img"] = $("#char-img").attr("src");
     data["img2"] = $("#stand-img").attr("src");
     var file = new Blob([JSON.stringify(data)], {type: "text/plain"});
@@ -297,7 +277,7 @@ function exportData(mode) {
     if (mode == "export")
         saveAs(file, name + "_data.json");
     else if (mode == "save")
-        return [name, data["form"], data["acts"], data["img"], data["img2"]];
+        return [name, data["form"], data["img"], data["img2"]];
 }
 
 //thanks to kflorence for creating a deserialize plugin https://stackoverflow.com/a/8918929
@@ -307,9 +287,16 @@ function importData(data) {
     $("#pages").deserialize(JSON.parse(data["form"]));
     
     if (data["acts"]) {
-        actScores = JSON.parse(data["acts"]);
-        if ($("#class").val() == "act")
-            loadAct(0);
+        let actScores = JSON.parse(data["acts"]);
+        for (let act=0; act<4; act++) {
+            $(`#act${act+1}-str-score`).val(actScores[act][0]);
+            $(`#act${act+1}-dex-score`).val(actScores[act][1]);
+            $(`#act${act+1}-con-score`).val(actScores[act][2]);
+            $(`#act${act+1}-int-score`).val(actScores[act][3]);
+            $(`#act${act+1}-wis-score`).val(actScores[act][4]);
+            $(`#act${act+1}-cha-score`).val(actScores[act][5]);
+            updateActAllMods(act+1);
+        }
     }
     saveScores();
     
@@ -353,13 +340,19 @@ function importData(data) {
         $("#class").css("display", "inline-block");
     }
 
-    if ($("#class").val() == "act")
-        $("#act-num").css("display", "inline-block");
+    if ($("#class").val() === "act") {
+        toggleAct(true);
+        loadAct(1);
+    }
     else
-        $("#act-num").css("display", "none");
+        toggleAct(false);
 
     checkMeta();
-    updateChart();
+    updateChart("#sArrayChart", "stand");
+    updateChart("#act1ArrayChart", "act1");
+    updateChart("#act2ArrayChart", "act2");
+    updateChart("#act3ArrayChart", "act3");
+    updateChart("#act4ArrayChart", "act4");
 }
 
 function scale(object) {
@@ -393,55 +386,33 @@ function shouldScale(object) {
 function flipStats(initial) {
     let mod = [0,0,0,0,0,0];
     let score = [0,0,0,0,0,0];
-    $(".stat-mod").each(function(i) {
-        $(this).attr("id", $(this).attr("id").replace("mod", "temp"));
-        $(this).attr("name", $(this).attr("id").replace("mod", "temp"));
-        $(this).removeClass("stat-mod");
-        $(this).addClass("stat-temp");
-        mod[i] = $(this).val();
-    });
-    $(".stat-score").each(function(i) {
-        $(this).attr("id", $(this).attr("id").replace("score", "mod"));
-        $(this).attr("name", $(this).attr("id").replace("score", "mod"));
-        $(this).removeClass("stat-score");
-        $(this).addClass("stat-mod");
-        score[i] = $(this).val();
-        if (!initial)
-            $(this).val(mod[i]);
-    });
-    $(".stat-temp").each(function(i) {
-        $(this).attr("id", $(this).attr("id").replace("temp", "score"));
-        $(this).attr("name", $(this).attr("id").replace("temp", "score"));
-        $(this).removeClass("stat-temp");
-        $(this).addClass("stat-score");
-        if (!initial)
-            $(this).val(score[i]);
-    });
+    let targets = ["stat", "stand", "act1", "act2", "act3", "act4"];
 
-    $(".stand-mod").each(function(i) {
-        $(this).attr("id", $(this).attr("id").replace("mod", "temp"));
-        $(this).attr("name", $(this).attr("id").replace("mod", "temp"));
-        $(this).removeClass("stand-mod");
-        $(this).addClass("stand-temp");
-        mod[i] = $(this).val();
-    });
-    $(".stand-score").each(function(i) {
-        $(this).attr("id", $(this).attr("id").replace("score", "mod"));
-        $(this).attr("name", $(this).attr("id").replace("score", "mod"));
-        $(this).removeClass("stand-score");
-        $(this).addClass("stand-mod");
-        score[i] = $(this).val();
-        if (!initial)
+    for (let t=0; t<targets.length; t++) {
+        $(`.${targets[t]}-mod`).each(function(i) {
+            $(this).attr("id", $(this).attr("id").replace("mod", "temp"));
+            $(this).attr("name", $(this).attr("id").replace("mod", "temp"));
+            $(this).removeClass(`${targets[t]}-mod`);
+            $(this).addClass(`${targets[t]}-temp`);
+            mod[i] = $(this).val();
+        });
+        $(`.${targets[t]}-score`).each(function(i) {
+            $(this).attr("id", $(this).attr("id").replace("score", "mod"));
+            $(this).attr("name", $(this).attr("id").replace("score", "mod"));
+            $(this).removeClass(`${targets[t]}-score`);
+            $(this).addClass(`${targets[t]}-mod`);
+            score[i] = $(this).val();
             $(this).val(mod[i]);
-    });
-    $(".stand-temp").each(function(i) {
-        $(this).attr("id", $(this).attr("id").replace("temp", "score"));
-        $(this).attr("name", $(this).attr("id").replace("temp", "score"));
-        $(this).removeClass("stand-temp");
-        $(this).addClass("stand-score");
-        if (!initial)
+        });
+        $(`.${targets[t]}-temp`).each(function(i) {
+            $(this).attr("id", $(this).attr("id").replace("temp", "score"));
+            $(this).attr("name", $(this).attr("id").replace("temp", "score"));
+            $(this).removeClass(`${targets[t]}-temp`);
+            $(this).addClass(`${targets[t]}-score`);
             $(this).val(score[i]);
-    });
+        });
+    
+    };
 
     if (!initial) {
         let meta = parseInt($("#meta").val());
@@ -450,6 +421,27 @@ function flipStats(initial) {
         else
             meta++;
         $("#meta").val(meta);
+    }
+}
+
+function toggleAct(enabled) {
+    var totalPages = $(".pageSelect").length;
+    if (enabled) {
+        $("#p4selector").show();
+        $(".pageSelect")[3].checked = $(".pageSelect")[2].checked;
+        $(".pageSelect")[2].checked = true;
+        $("#page3").show();
+        if (anyPageOn(4, totalPages))
+            $("#div3").show();
+        $("#act-num").show();
+    }
+    else {
+        $("#p4selector").hide();
+        $(".pageSelect")[2].checked = $(".pageSelect")[3].checked;
+        $(".pageSelect")[3].checked = false;
+        $("#page3").hide();
+        $("#div3").hide();
+        $("#act-num").hide();
     }
 }
 

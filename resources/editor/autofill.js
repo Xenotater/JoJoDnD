@@ -39,15 +39,15 @@ $(document).ready(function () {
     createChart("#act4ArrayChart", "act4");
 
     $(".bigBox, .lilBox").keyup(function() {
-        if ($(this).hasClass("act1-score") || $(this).hasClass("act1-mod"))
+        if ($(this).hasClass("act1-score") || $(this).hasClass("act1-mod") || act === 1)
             updateChart("#act1ArrayChart", "act1");
-        else if ($(this).hasClass("act2-score") || $(this).hasClass("act2-mod"))
+        else if ($(this).hasClass("act2-score") || $(this).hasClass("act2-mod") || act === 3)
             updateChart("#act2ArrayChart", "act2");
-        else if ($(this).hasClass("act3-score") || $(this).hasClass("act3-mod"))
+        else if ($(this).hasClass("act3-score") || $(this).hasClass("act3-mod") || act === 2)
             updateChart("#act3ArrayChart", "act3");
-        else if ($(this).hasClass("act4-score") || $(this).hasClass("act4-mod"))
+        else if ($(this).hasClass("act4-score") || $(this).hasClass("act4-mod") || act === 4)
             updateChart("#act4ArrayChart", "act4");
-        else
+        if ($(this).hasClass("stand-score") || $(this).hasClass("stand-mod"))
             updateChart("#sArrayChart", "stand")
     });
 
@@ -95,11 +95,20 @@ function detectChange(object) {
     }
 
     if ($(object).hasClass("stand-score")) {
-        updateStandMod(id.replace("S", "").replace("-score", ""));
+        let stat = id.replace("S", "").replace("-score", "");
+        updateStandMod(stat);
+        if ($("#class").val() === "act"){
+            $(`#act${act}-${stat}-score`).val($(object).val())
+            updateActMod(`act${act}`, stat);
+            updateChart(`#act${act}ArrayChart`, `act${act}`);
+        }
     }
 
     if ($(object).hasClass("stand-mod")) {
+        let stat = id.replace("S", "").replace("-mod", "");
         fixMod(object);
+        if ($("#class").val() === "act")
+            $(`#act${act}-${stat}-mod`).val($(object).val())
     }
 
     if (id == "name" || id == "Uname" || id == "Fname") {
@@ -489,24 +498,6 @@ function updateName(id) {
     }
 }
 
-function saveAct(num) {
-    $(`#act${num}-str-score`).val($("#Sstr-score").val());
-    $(`#act${num}-dex-score`).val($("#Sdex-score").val());
-    $(`#act${num}-con-score`).val($("#Scon-score").val());
-    $(`#act${num}-int-score`).val($("#Sint-score").val());
-    $(`#act${num}-wis-score`).val($("#Swis-score").val());
-    $(`#act${num}-cha-score`).val($("#Scha-score").val());
-
-    $(`#act${num}-str-mod`).val($("#Sstr-mod").val());
-    $(`#act${num}-dex-mod`).val($("#Sdex-mod").val());
-    $(`#act${num}-con-mod`).val($("#Scon-mod").val());
-    $(`#act${num}-int-mod`).val($("#Sint-mod").val());
-    $(`#act${num}-wis-mod`).val($("#Swis-mod").val());
-    $(`#act${num}-cha-mod`).val($("#Scha-mod").val());
-
-    updateChart(`#act${num}ArrayChart`, `act${num}`);
-}
-
 function loadAct(newAct) {
     act = newAct;
     $("#Sstr-score").val($(`#act${act}-str-score`).val());
@@ -522,6 +513,8 @@ function loadAct(newAct) {
     $("#Sint-mod").val($(`#act${act}-int-mod`).val());
     $("#Swis-mod").val($(`#act${act}-wis-mod`).val());
     $("#Scha-mod").val($(`#act${act}-cha-mod`).val());
+    
+    updateChart("#sArrayChart", "stand");
 }
 
 function updateAllStandScores() {
@@ -650,4 +643,13 @@ function updateActAllScores(num) {
     updateActScore(num, "int", scores.int);
     updateActScore(num, "wis", scores.wis);
     updateActScore(num, "cha", scores.cha);
+}
+
+function updateActAllMods(num) {
+    updateActMod(`act${num}`, "str");
+    updateActMod(`act${num}`, "dex");
+    updateActMod(`act${num}`, "con");
+    updateActMod(`act${num}`, "int");
+    updateActMod(`act${num}`, "wis");
+    updateActMod(`act${num}`, "cha");
 }
