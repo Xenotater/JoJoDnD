@@ -88,13 +88,11 @@ $(document).ready(function () {
         updateCharacters();
     });
 
-    $("body").on("keypress", "#search", function(e) {
-        if (e.which == 13) {
-            query = $("#search").val();
-            offsetF = [0];
-            offsetC = [0];
-            updateCharacters();
-        }
+    $("body").on("search", "#search", function() {
+        query = $("#search").val();
+        offsetF = [0];
+        offsetC = [0];
+        updateCharacters();
     });
 
     $("body").on("click", ".bi-three-dots-vertical", function () {
@@ -299,6 +297,8 @@ function updateCharacters() {
     });
     $("#characters").append("<div class='loading'></div>");
     translateElement($("#search")[0]);
+    if (query)
+        $("#search").val(query);
 }
 
 function updateFolderpath() {
