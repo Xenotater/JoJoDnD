@@ -38,6 +38,7 @@
         </script>
 
         <script async src="nav.js"></script>
+        <script async src="main.js"></script>
     </head>
     
     <body>
@@ -68,17 +69,36 @@
                         <!-- external media icons from respective sources and used within each entity's branding guidelines -->
                         <div class="row center">
                             <div class="col-sm-6">
-                                <a href="https://discord.gg/nmgSjPW8xs" target="_blank">
-                                    <img src="Assets/discord.webp" alt="discord" class="socialButton img-fluid">
+                                <a id="discordEmbed" class="socialButton" href="https://discord.gg/nmgSjPW8xs" target="_blank">
+                                    <div class="socialHead">
+                                        <span class="socialPrompt">Join Our Community Discord!</span>
+                                        <img class="socialLogo" src="Assets/discord-icon.webp" alt="discord">
+                                    </div>
+                                    <div class="socialBody">
+                                        <img class="socialIcon" src="Assets/smallbg.webp" alt="JoJoDnD Discord">
+                                        <div class="socialInfo">
+                                            <span class="socialName">JoJo's Bizarre Tabletop Game</span>
+                                            <span class="socialMembers"></span>
+                                        </div>
+                                    </div>
                                 </a>
                             </div>
                             <div class="col-sm-6">
-                                <a href="https://www.reddit.com/r/jojodnd/" target="_blank"> 
-                                    <img src="Assets/reddit.webp" alt="reddit" class="socialButton img-fluid">
+                                <a id="redditEmbed" class=socialButton href="https://www.reddit.com/r/jojodnd/" target="_blank">
+                                    <div class="socialHead">
+                                        <span class="socialPrompt">Visit Our Subreddit!</span>
+                                        <img class="socialLogo" src="Assets/reddit-icon.webp" alt="reddit">
+                                    </div>
+                                    <div class="socialBody">
+                                        <img class="socialIcon" src="Assets/smallbg.webp" alt="JoJoDnD Reddit">
+                                        <div class="socialInfo">
+                                            <span class="socialName">r/jojodnd</span>
+                                            <span class="socialMembers"></span>
+                                        </div>
+                                    </div>
                                 </a>
                             </div>
                         </div>
-
                         <p>You can also contact us through <a href="/resources/#contact">this form</a>.</p>
 
                         <p id="credit"><small>JoJo's Bizarre Adventure was created by Hirohiko Araki and Dungeons & Dragons was created by Wizards of the Coast</small></p>

@@ -33,18 +33,21 @@ p {
 }
 
 .socialButton {
-    padding: .5rem;
+    display: block;
+    padding: 5px;
     border: 2px solid black;
     border-radius: 15px;
     box-shadow: 3px 3px 10px black;
     background-color: rgb(35, 39, 42);
     width: 300px;
-    height: 97px;
+    height: 104px;
+    margin: auto;
     margin-bottom: 1rem;
+    text-decoration: none;
 }
 
 .socialButton:hover {
-    background-color: rgb(42, 45, 48);
+    background-color: rgb(30, 34, 37);
     box-shadow: 5px 5px 10px black;
 }
 
@@ -62,4 +65,50 @@ p {
 
 #footer p {
     margin-bottom: 0;
+}
+
+.socialHead {
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: bold;
+    color: slateblue;
+    margin-bottom: 5px;
+}
+
+.socialLogo {
+    width: auto;
+    height: 20px;
+}
+
+.socialBody {
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
+    gap: 10px;
+}
+
+.socialName {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: bold;
+    color: mediumpurple;
+}
+
+.socialInfo {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.socialIcon {
+    width: auto;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.socialMembers {
+    color: darkgray;
+    font-size: 12px;
 }
