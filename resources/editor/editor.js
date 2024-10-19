@@ -196,36 +196,25 @@ function resetImg(isMain) {
 }
 
 //PDF generation assisted by https://www.freakyjolly.com/html2canvas-multipage-pdf-tutorial/
-function generatePDF(name) {
-    var pdf;
-    var p1 = $("#p1").is(":checked"), p2 = $("#p2").is(":checked"), p3 = $("#p3").is(":checked");
-    domtoimage.toPng(document.querySelector("#page1"),{ filter:filter }).then(function (imgData) {
-        pdf = new jsPDF('p', 'in', 'letter');
-        if (p1)
-            pdf.addImage(imgData, 'PNG', 0, 0, 8.5, 11);
+async function generatePDF (name) {
+    let pdf = new jsPDF('p', 'in', 'letter');
+    let totalPages = $(".pageSelect").length;
+    let firstPageFilled = false;
 
-        setTimeout(function() {
-            domtoimage.toPng(document.querySelector("#page2")).then(function (imgData) {
-                if (p1 && p2)
-                    pdf.addPage('letter');
-                if (p2)
-                    pdf.addImage(imgData, 'PNG', 0, 0, 8.5, 11);
+    for (let p=0; p<totalPages; p++) {
+        if (pageOn(p+1)) {
+            if (p === 2 && $("#class").val() !== 'act')
+                p = 3;
+            if (firstPageFilled)
+                pdf.addPage('letter');
+            let img = await domtoimage.toPng($(".page")[p],{ filter:filter });
+            pdf.addImage(img, 'PNG', 0, 0, 8.5, 11);
+            firstPageFilled = true;
+        }
+    }
 
-                setTimeout(function() {
-                    domtoimage.toPng(document.querySelector("#page3")).then(function (imgData) {
-                        if ((p1 || p2) && p3)
-                            pdf.addPage('letter');
-                        if (p3)
-                            pdf.addImage(imgData, 'PNG', 0, 0, 8.5, 11);
-                
-                        setTimeout(function() {
-                            pdf.save(name + ".pdf");
-                        }, 0);
-                    });
-                }, 0);
-            });
-        }, 0);
-    });
+    if (firstPageFilled)
+        pdf.save(name + '.pdf');
 }
 
 //filter to enable checkboxes & selects from https://github.com/tsayen/dom-to-image/issues/117#issuecomment-299462325
