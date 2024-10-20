@@ -1100,7 +1100,7 @@
             "You have gained the ability to effectively deflect ranged attacks. If you can already do that, you gain a superior block that allows you to deflect Melee Attacks as well."
         ],
         "effects": [
-            "If you do not have <a href=/abilities?focus=Block_Projectile'>Block Projectile</a>, you gain it.",
+            "If you do not have <a href='/abilities?focus=Block_Projectile'>Block Projectile</a>, you gain it.",
             "If you already have Block Projectile, it is upgraded in the following ways:<ul><li>You may use this Ability to block any Attack that requires your attacker to make an Attack Roll against you, so long as your Stand is hit or your Stand is within 2 meters of you.</li><li>When reducing damage, in addition to your Attack dice + Precision and Speed Modifiers, you may also add your Durability Modifier to the result.</li><li>Leftover points after the damage has been negated can be used against additional Attacks, but the rest of the points must go to reducing the same type (melee vs ranged) of Attack. Alternatively, you may take half of the remaining points after the damage and add it to your Stand Damage Reduction until the top of Initiative rolls around again.</li><\/ul>",
            "If you do not have Block Projectile, you may take this Feat twice to gain the upgraded version."
         ],
