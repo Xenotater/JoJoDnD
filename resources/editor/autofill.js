@@ -39,7 +39,6 @@ $(document).ready(function () {
 
     $(".actType").click(function() {
         previousActType = $(this).val();
-        console.log(previousActType);
     })
 
     createChart("#sArrayChart", "stand");
@@ -300,7 +299,7 @@ function updateActScore(num, stat, diff) {
 
 function getActMultipliers(num) {
     let multipliers = { "str": 0, "dex": 0, "con": 0, "int": 0, "wis": 0, "cha": 0 };
-    let type = parseInt(num) === 4 ? $(`#${($("#act4Base").val())}Type`).val() : $(`#act${num}Type`).val();
+    let type =$(`#act${num}Type`).val();
 
     switch (type) {
         case "close":
@@ -670,11 +669,15 @@ function updateActAllMods(num) {
 }
 
 function recalculateAct4() {  
-    for (let i=0; i<6; i++) {
-        $($(".act4-score")[i]).val("");
-        $($(".act4-mod")[i]).val("");
-    }
-    updateActAllScores(4);
+    let base = $("#act4Base").val();
+    $("#act4-str-score").val(parseInt($(`#${base}-str-score`).val()) * 2);
+    $("#act4-dex-score").val(parseInt($(`#${base}-dex-score`).val()) * 2);
+    $("#act4-con-score").val(parseInt($(`#${base}-con-score`).val()) * 2);
+    $("#act4-int-score").val(parseInt($(`#${base}-int-score`).val()) * 2);
+    $("#act4-wis-score").val(parseInt($(`#${base}-wis-score`).val()) * 2);
+    $("#act4-cha-score").val(parseInt($(`#${base}-cha-score`).val()) * 2);
+    updateActAllMods(4);
+    updateChart("#act4ArrayChart", "act4");
 }
 
 function recalculateMultipliers() {
@@ -689,7 +692,6 @@ function recalculateMultipliers() {
 
 function recalculateActMultipliers(num) {
     let newType = $(`#act${num}Type`).val();
-    console.log("act: " + num + " prev: " + previousActType + " new: " + newType);
     $(`#act${num}Type`).val(previousActType);
     updateActAllScores(num, -1);
     $(`#act${num}Type`).val(newType);
