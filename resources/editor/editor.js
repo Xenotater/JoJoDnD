@@ -136,12 +136,17 @@ $(document).ready(function () {
 });
 
 function applyLangSpecificStyles() {
-    switch(getLanguage()) {
-        case "uk":
-            $("#act-num").css("left", "105px");
-        case "en":
-        default:
-            return;
+    try {
+        switch(getLanguage()) {
+            case "uk":
+                $("#act-num").css("left", "105px");
+            case "en":
+            default:
+                return;
+        }
+    }
+    catch {
+        setTimeout(applyLangSpecificStyles, 3000); //maybe not a good idea but like... just wait a few seconds for nav.js to load?
     }
 }
 
@@ -420,6 +425,8 @@ function toggleAct(enabled) {
         $(".pageSelect")[3].checked = $(".pageSelect")[2].checked;
         $(".pageSelect")[2].checked = true;
         $("#page3").show();
+        if (anyPageOn(1, 2))
+            $("#div2").show();
         if (anyPageOn(4, totalPages))
             $("#div3").show();
         $("#act-num").show();

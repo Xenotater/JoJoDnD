@@ -1,6 +1,7 @@
 var scores = { "str": 0, "dex": 0, "con": 0, "int": 0, "wis": 0, "cha": 0 };
 var act = 1;
 var charts = {};
+var previousClass = "", previousActType = "";
 
 $(document).ready(function () {
     if ($("#autofill").is(":checked")) {
@@ -8,18 +9,18 @@ $(document).ready(function () {
             saveScore(this);
         });
 
-        $("input").on("blur", function () {
-            detectChange(this);
+        $("input").on("blur", function (e) {
+            detectChange(this, e);
         });
 
         $("input").on("keyup", function (e) {
             if (e.key === "Enter" || e.keyCode === 13) {
-                detectChange(this);
+                detectChange(this, e);
             }
         });
 
-        $("select").on("change", function () {
-            detectChange(this);
+        $("select").on("change", function (e) {
+            detectChange(this, e);
         });
 
         $(".savecheck").change(function () {
@@ -31,6 +32,15 @@ $(document).ready(function () {
             updateAllSkills();
         });
     }
+
+    $("#class").click(function() {
+        previousClass = $(this).val();
+    });
+
+    $(".actType").click(function() {
+        previousActType = $(this).val();
+        console.log(previousActType);
+    })
 
     createChart("#sArrayChart", "stand");
     createChart("#act1ArrayChart", "act1");
@@ -65,7 +75,8 @@ $(document).ready(function () {
     });
 });
 
-function detectChange(object) {
+function detectChange(object, event) {
+    //console.log(event);
     var id = $(object).attr("id");
 
     if ($(object).hasClass("scales")) {
@@ -119,12 +130,16 @@ function detectChange(object) {
         return;
     }
 
+    if (id == "class") {
+        recalculateMultipliers();
+    }
+
+    if (id.match(/act\dType/)) {
+        recalculateActMultipliers(id.replace("Type", "").replace("act", ""));
+    }
+
     if (id === "act4Base") {
-        for (let i=0; i<6; i++) {
-            $($(".act4-score")[i]).val("");
-            $($(".act4-mod")[i]).val("");
-        }
-        updateActAllScores(4);
+        recalculateAct4();
     }
 
     if (id.match(/act\dType/)) {
@@ -517,13 +532,13 @@ function loadAct(newAct) {
     updateChart("#sArrayChart", "stand");
 }
 
-function updateAllStandScores() {
-    updateStandScore("str", scores.str);
-    updateStandScore("dex", scores.dex);
-    updateStandScore("con", scores.con);
-    updateStandScore("int", scores.int);
-    updateStandScore("wis", scores.wis);
-    updateStandScore("cha", scores.cha);
+function updateAllStandScores(mult = 1) {
+    updateStandScore("str", scores.str * mult);
+    updateStandScore("dex", scores.dex * mult);
+    updateStandScore("con", scores.con * mult);
+    updateStandScore("int", scores.int * mult);
+    updateStandScore("wis", scores.wis * mult);
+    updateStandScore("cha", scores.cha * mult);
 }
 
 function updateAllStandMods() {
@@ -636,13 +651,13 @@ function updateActMod(act, stat) {
     fixMod(target);
 }
 
-function updateActAllScores(num) {
-    updateActScore(num, "str", scores.str);
-    updateActScore(num, "dex", scores.dex);
-    updateActScore(num, "con", scores.con);
-    updateActScore(num, "int", scores.int);
-    updateActScore(num, "wis", scores.wis);
-    updateActScore(num, "cha", scores.cha);
+function updateActAllScores(num, mult = 1) {
+    updateActScore(num, "str", scores.str * mult);
+    updateActScore(num, "dex", scores.dex * mult);
+    updateActScore(num, "con", scores.con * mult);
+    updateActScore(num, "int", scores.int * mult);
+    updateActScore(num, "wis", scores.wis * mult);
+    updateActScore(num, "cha", scores.cha * mult);
 }
 
 function updateActAllMods(num) {
@@ -652,4 +667,32 @@ function updateActAllMods(num) {
     updateActMod(`act${num}`, "int");
     updateActMod(`act${num}`, "wis");
     updateActMod(`act${num}`, "cha");
+}
+
+function recalculateAct4() {  
+    for (let i=0; i<6; i++) {
+        $($(".act4-score")[i]).val("");
+        $($(".act4-mod")[i]).val("");
+    }
+    updateActAllScores(4);
+}
+
+function recalculateMultipliers() {
+    let newClass = $("#class").val();
+    if (newClass === "act")
+        return;
+    $("#class").val(previousClass);
+    updateAllStandScores(-1);
+    $("#class").val(newClass);
+    updateAllStandScores();
+}
+
+function recalculateActMultipliers(num) {
+    let newType = $(`#act${num}Type`).val();
+    console.log("act: " + num + " prev: " + previousActType + " new: " + newType);
+    $(`#act${num}Type`).val(previousActType);
+    updateActAllScores(num, -1);
+    $(`#act${num}Type`).val(newType);
+    updateActAllScores(num);
+    recalculateAct4();
 }
