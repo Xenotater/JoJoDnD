@@ -5,19 +5,10 @@ $(document).ready(function () {
 
     $(".pageSelect").change(function() {
         var num = parseInt($(this).val().replace("p", ""));
-        var total = $(".pageSelect").length;
-
         if ($("#class").val() !== "act" && num === 3)
             num += 1;
-
-        $($(".page")[num-1]).toggle();
-
-        for (let i=1; i<total; i++) {
-            if (pageOn(i) && anyPageOn(i+1, total))
-                $("#div" + i).show();
-            else
-                $("#div" + i).hide();
-        }
+        togglePage(num);
+        fixDivs();
     })
 
     $("#class").change(function() {
@@ -276,6 +267,8 @@ function exportData(mode) {
 
 //thanks to kflorence for creating a deserialize plugin https://stackoverflow.com/a/8918929
 function importData(data) {
+    let previousClass = $("#class").val(); //need to know if the last class was act for page displays
+
     $("#multi").val(""); //ensure older data w/o this field still load properly
     $("#pages")[0].reset();
     $("#pages").deserialize(JSON.parse(data["form"]));
@@ -338,8 +331,9 @@ function importData(data) {
         toggleAct(true);
         loadAct(1);
     }
-    else
+    else if (previousClass === "act") {
         toggleAct(false);
+    }
 
     checkMeta();
     updateChart("#sArrayChart", "stand");
@@ -347,6 +341,7 @@ function importData(data) {
     updateChart("#act2ArrayChart", "act2");
     updateChart("#act3ArrayChart", "act3");
     updateChart("#act4ArrayChart", "act4");
+    showAllPages();
 }
 
 function scale(object) {
@@ -418,8 +413,48 @@ function flipStats(initial) {
     }
 }
 
+function togglePage(num, force = false) {
+    let page = $(`#page${num}`);
+    if (force)
+        page.toggle();
+    else {
+        let isPageOn = pageOn(num);
+        if ($("#class").val() !== "act") { //this is gross and I don't like it but I've dug this hole
+            if (num === 4)
+                isPageOn = pageOn(3);
+            else if (num === 3)
+                isPageOn = pageOn(4);
+        }
+        isPageOn ? page.show() : page.hide();
+    }
+}
+
+function fixDivs() {
+    let total = $(".pageSelect").length;
+
+    for (let i=1; i<total; i++) {
+        if (pageOn(i) && anyPageOn(i+1, total))
+            $("#div" + i).show();
+        else
+            $("#div" + i).hide();
+    }
+}
+
+function showAllPages() {
+    let total = $(".pageSelect").length;
+
+    for (let i=1; i<=total; i++) {
+        $(`#p${i}`)[0].checked = true;
+        if ($("#class").val() != "act" && i === 4)
+            $(`#p${i}`)[0].checked = false;
+        togglePage(i);
+    }
+
+    fixDivs();
+}
+
 function toggleAct(enabled) {
-    var totalPages = $(".pageSelect").length;
+    let totalPages = $(".pageSelect").length;
     if (enabled) {
         $("#p4selector").show();
         $(".pageSelect")[3].checked = $(".pageSelect")[2].checked;
