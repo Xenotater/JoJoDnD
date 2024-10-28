@@ -125,8 +125,6 @@ if ($_POST["action"] != "nav") {
     if ($_POST["ads"] == "true") {
         echo
         '<div class="header-ad">
-                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282768297104356"
-                    crossorigin="anonymous"></script>
                         <!-- In-Page Ad -->
                         <ins class="adsbygoogle"
                             style="display:block"
