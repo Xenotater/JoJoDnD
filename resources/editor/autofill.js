@@ -24,7 +24,7 @@ $(document).ready(function () {
         });
 
         $(".savecheck").change(function () {
-            var stat = $(this).attr("id").replace("-save", "");
+            let stat = $(this).attr("id").replace("-save", "");
             updateSave(stat);
         });
 
@@ -76,7 +76,7 @@ $(document).ready(function () {
 
 function detectChange(object, event) {
     //console.log(event);
-    var id = $(object).attr("id");
+    let id = $(object).attr("id");
 
     if ($(object).hasClass("scales")) {
         scale(object);
@@ -90,7 +90,7 @@ function detectChange(object, event) {
     }
 
     if ($(object).hasClass("stat-score")) {
-        var stat = id.replace("-score", "");
+        let stat = id.replace("-score", "");
         updateMod(stat);
         updateSave(stat);
         updateSkills(stat);
@@ -98,7 +98,7 @@ function detectChange(object, event) {
     }
 
     if ($(object).hasClass("stat-mod")) {
-        var stat = id.replace("-mod", "");
+        let stat = id.replace("-mod", "");
         updateSave(stat);
         updateSkills(stat);
         fixMod(object);
@@ -200,22 +200,22 @@ function detectChange(object, event) {
 }
 
 function fixMod(object) {
-    var val = $(object).val();
+    let val = $(object).val();
     if (val > 0)
         $(object).val("+" + val);
 }
 
 function saveScore(object) {
-    var score = $(object).val();
+    let score = $(object).val();
     if (score == "")
         score = 0;
     scores[$(object).attr("id").replace("-score", "")] = parseInt(score);
 }
 
 function updateMod(stat) {
-    var score = parseInt($("#" + stat + "-score").val());
+    let score = parseInt($("#" + stat + "-score").val());
     if (!isNaN(score)) {
-        var mod = Math.floor((score - 10) / 2);
+        let mod = Math.floor((score - 10) / 2);
         if (mod > 0)
             $("#" + stat + "-mod").val("+" + mod);
         else
@@ -225,8 +225,8 @@ function updateMod(stat) {
 }
 
 function updateStandScore(stat, diff) {
-    var cls = $("#class").val();
-    var multipliers = { "str": 0, "dex": 0, "con": 0, "int": 0, "wis": 0, "cha": 0 };
+    let cls = $("#class").val();
+    let multipliers = { "str": 0, "dex": 0, "con": 0, "int": 0, "wis": 0, "cha": 0 };
 
     switch (cls) {
         case "pow":
@@ -261,7 +261,7 @@ function updateStandScore(stat, diff) {
 
     if (cls != "oth") {
         target = $("#S" + stat + "-score");
-        var val = parseInt(target.val());
+        let val = parseInt(target.val());
         if (isNaN(val))
             val = 0;
         target.val(val + diff * multipliers[stat]);
@@ -287,7 +287,7 @@ function updateAllActScore(stat, diff) {
 function updateActScore(num, stat, diff) {
     let multipliers = getActMultipliers(num);
     target = $(`#act${num}-${stat}-score`);
-    var val = parseInt(target.val());
+    let val = parseInt(target.val());
     if (isNaN(val))
         val = 0;
     target.val(val + diff * multipliers[stat]);
@@ -327,9 +327,9 @@ function getActMultipliers(num) {
 }
 
 function updateStandMod(stat) {
-    var score = $("#S" + stat + "-score").val();
+    let score = $("#S" + stat + "-score").val();
     if (score != "") {
-        var mod = Math.floor((score / 10));
+        let mod = Math.floor((score / 10));
         if (mod > 0)
             $("#S" + stat + "-mod").val("+" + mod);
         else
@@ -338,7 +338,7 @@ function updateStandMod(stat) {
 }
 
 function updateInitiative() {
-    var mod = parseInt($("#dex-mod").val()) + parseInt($("#wis-mod").val());
+    let mod = parseInt($("#dex-mod").val()) + parseInt($("#wis-mod").val());
     if (isNaN(mod))
         mod = "";
     if (mod > 0)
@@ -348,7 +348,7 @@ function updateInitiative() {
 }
 
 function updateBonus() {
-    var bonus = Math.floor(($("#level").val() - 1) / 4) + 2;
+    let bonus = Math.floor(($("#level").val() - 1) / 4) + 2;
     if (bonus > 6)
         bonus = 6;
     if (bonus < 2)
@@ -361,8 +361,8 @@ function updateBonus() {
 }
 
 function updateAC() {
-    var dex = parseInt($("#dex-mod").val()), con = parseInt($("#con-mod").val()), wis = parseInt($("#wis-mod").val());
-    var ac = 10 + dex + con + wis - Math.min(dex, con, wis);
+    let dex = parseInt($("#dex-mod").val()), con = parseInt($("#con-mod").val()), wis = parseInt($("#wis-mod").val());
+    let ac = 10 + dex + con + wis - Math.min(dex, con, wis);
     if (isNaN(ac))
         ac = "";
     $("#ac").val(ac);
@@ -370,24 +370,24 @@ function updateAC() {
 }
 
 function updateSAC() {
-    var pre = parseInt($("#Sdex-mod").val()), dur = parseInt($("#Scon-mod").val()), spd = parseInt($("#Swis-mod").val());
-    var sac = 10 + pre + dur + spd;
+    let pre = parseInt($("#Sdex-mod").val()), dur = parseInt($("#Scon-mod").val()), spd = parseInt($("#Swis-mod").val());
+    let sac = 10 + pre + dur + spd;
     if (isNaN(sac))
         sac = "";
     $("#sac").val(sac);
 }
 
 function updateHAC() {
-    var hac = parseInt($("#ac").val()) + parseInt($("#bonus").val());
+    let hac = parseInt($("#ac").val()) + parseInt($("#bonus").val());
     if (isNaN(hac))
         hac = "";
     $("#hac").val(hac);
 }
 
 function updateSave(stat) {
-    var mod = parseInt($("#" + stat + "-mod").val());
-    var bonus = parseInt($("#bonus").val());
-    var val = "";
+    let mod = parseInt($("#" + stat + "-mod").val());
+    let bonus = parseInt($("#bonus").val());
+    let val = "";
 
     if (!isNaN(mod) && !isNaN(bonus)) {
         val = mod;
@@ -409,14 +409,14 @@ function updateAllSaves() {
 
 function updateSkills(stat) {
     $("." + stat + "-skill").each(function () {
-        var skill = $(this).attr("id").replace(/-bonus[0-2]?/, "");
-        var mod = parseInt($("#" + stat + "-mod").val());
-        var bonus = parseInt($("#bonus").val());
-        var val = "";
+        let skill = $(this).attr("id").replace(/-bonus[0-2]?/, "");
+        let mod = parseInt($("#" + stat + "-mod").val());
+        let bonus = parseInt($("#bonus").val());
+        let val = "";
 
         if (!isNaN(mod) && !isNaN(bonus)) {
             val = mod;
-            var select = $("#" + skill).find(":selected").text();
+            let select = $("#" + skill).find(":selected").text();
             if (select == translateText("P"))
                 val += bonus;
             else if (select == translateText("E"))
@@ -442,7 +442,7 @@ function updateAllSkills() {
 }
 
 function updateSpeed() {
-    var speed = parseInt($("#Swis-mod").val()) * 2;
+    let speed = parseInt($("#Swis-mod").val()) * 2;
     if (isNaN(speed))
         speed = "";
     if (speed < 10)
@@ -451,23 +451,23 @@ function updateSpeed() {
 }
 
 function updateDC() {
-    var dc = 8 + parseInt($("#bonus").val()) + parseInt($("#cha-mod").val());
+    let dc = 8 + parseInt($("#bonus").val()) + parseInt($("#cha-mod").val());
     if (isNaN(dc))
         dc = "";
     $("#dc").val(dc);
 }
 
 function updatePassive() {
-    var val = 10 + parseInt($("#perc-bonus").val());
+    let val = 10 + parseInt($("#perc-bonus").val());
     if (isNaN(val))
         val = "";
     $("#percep").val(val);
 }
 
 function updateProfs() {
-    var mod = parseInt($("#int-mod").val());
-    var bonus = parseInt($("#bonus").val());
-    var total = 3 + mod + bonus;
+    let mod = parseInt($("#int-mod").val());
+    let bonus = parseInt($("#bonus").val());
+    let total = 3 + mod + bonus;
     if (isNaN(total) || total < 1)
         $("#skillcnt").html("");
     else
@@ -475,16 +475,16 @@ function updateProfs() {
 }
 
 function updateAtks() {
-    var score = Math.floor($("#Swis-score").val() / 50) + 1;
+    let score = Math.floor($("#Swis-score").val() / 50) + 1;
     if (isNaN(score))
         score = 1;
     $("#atks").val(score);
 }
 
 function updateFeats() {
-    var level = $("#level").val();
+    let level = $("#level").val();
     if (!isNaN(level)) {
-        var feats = "";
+        let feats = "";
         if (level > 20)
             feats = 6;
         else if (level < 1)

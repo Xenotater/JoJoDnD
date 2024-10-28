@@ -4,7 +4,7 @@ $(document).ready(function () {
     applyLangSpecificStyles();
 
     $(".pageSelect").change(function() {
-        var num = parseInt($(this).val().replace("p", ""));
+        let num = parseInt($(this).val().replace("p", ""));
         if ($("#class").val() !== "act" && num === 3)
             num += 1;
         togglePage(num);
@@ -70,9 +70,9 @@ $(document).ready(function () {
 
     //img upload render assisted by https://medium.com/@iamcodefoxx/how-to-upload-and-preview-an-image-with-javascript-749b92711b91
     $("#img-input").change(function() {
-        var reader = new FileReader();
+        let reader = new FileReader();
         reader.addEventListener("load", () => {
-            var upload = reader.result;
+            let upload = reader.result;
             $("#char-img").attr("src", upload);
             $("#char-img").css("display", "unset");
             $("#image").css("background-color", "black");
@@ -83,9 +83,9 @@ $(document).ready(function () {
     });
     
     $("#img-input2").change(function() {
-        var reader = new FileReader();
+        let reader = new FileReader();
         reader.addEventListener("load", () => {
-            var upload = reader.result;
+            let upload = reader.result;
             $("#stand-img").attr("src", upload);
             $("#stand-img").css("display", "unset");
             $("#sImage").css("background-color", "black");
@@ -96,7 +96,7 @@ $(document).ready(function () {
     });
 
     $("#dl-btn").click(function() {
-        var name;
+        let name;
         if ($("#name").val().length > 0)
             name = $("#name").val().replace(/ /g, "_");
         else
@@ -109,9 +109,9 @@ $(document).ready(function () {
     });
 
     $("#import").change(function() {
-        var reader = new FileReader();
+        let reader = new FileReader();
         reader.addEventListener("load", () => {
-            var data = JSON.parse(reader.result);
+            let data = JSON.parse(reader.result);
             importData(data);
         });
         reader.readAsText(this.files[0]);
@@ -224,11 +224,11 @@ function filter(node) {
         }
         }
         else if(node.tagName==="SELECT" && node.selectedIdx!=-1){
-            var options = node.childNodes; // Assumption!
-            var optionCount = 0;
-            var selectedIdx = node.selectedIndex;
-            for(var i=0; i<options.length; i++){
-                var option = options[i]; // Maybe not an option
+            let options = node.childNodes; // Assumption!
+            let optionCount = 0;
+            let selectedIdx = node.selectedIndex;
+            for(let i=0; i<options.length; i++){
+                let option = options[i]; // Maybe not an option
                 if(option.tagName==="OPTION"){
                 if(optionCount === selectedIdx)
                 {
@@ -247,13 +247,13 @@ function filter(node) {
 }
 
 function exportData(mode) {
-    var data = {};
+    let data = {};
     data["form"] = JSON.stringify($("#pages").serializeArray());
     data["img"] = $("#char-img").attr("src");
     data["img2"] = $("#stand-img").attr("src");
-    var file = new Blob([JSON.stringify(data)], {type: "text/plain"});
+    let file = new Blob([JSON.stringify(data)], {type: "text/plain"});
 
-    var name;
+    let name;
     if ($("#name").val().length > 0)
         name = $("#name").val().replace(/ /g, "_").toLowerCase();
     else
@@ -345,7 +345,7 @@ function importData(data) {
 }
 
 function scale(object) {
-    var val = $(object).width() / $(object).val().length, upper = 12, lower = 8;
+    let val = $(object).width() / $(object).val().length, upper = 12, lower = 8;
     if ($(object).attr("type") == "text") {
         upper = 16;
         lower = 12;
