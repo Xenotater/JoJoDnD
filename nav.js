@@ -21,6 +21,7 @@ $(document).ready(function () {
     getNav();
     translatePage();
     handleHashScroll();
+    appendGTM();
 });
 
 function getNav() {
@@ -160,4 +161,9 @@ function getAvailableLangs(path) {
 function handleHashScroll(offset = 88) {
     if (window.location.hash)
         $("html, body").animate({scrollTop: parseInt($(window.location.hash).offset().top + offset)}, 500);
+}
+
+function appendGTM() {
+    $("head").append("<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W4X4DX7H');</script>");
+    $("body").prepend("<noscript><iframe src='https://www.googletagmanager.com/ns.html?id=GTM-W4X4DX7H'height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>");
 }
