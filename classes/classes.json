@@ -69,6 +69,7 @@
                     "Ability Score Improvement"
                 ],
                 "linkFeatures": [
+                    "Custom Ripple Technique",
                     "Slowed Aging",
                     "Ripple Possession"
                 ]
@@ -88,7 +89,6 @@
             },
             "5": {
                 "linkFeatures": [
-                    "Custom Ripple Technique",
                     "Ripple Regeneration",
                     "Ripple Perception"
                 ],
@@ -249,7 +249,7 @@
             {
                 "name": "Rules of Stands",
                 "content": [
-                    "<ul><li>A single person can only have one Stand (Hive Stands are the same Stand, just split up into much smaller parts)<\/li><li>Whatever damage is inflicted upon the Stand or the User is also dealt to the other<\/li><li>Only Stand Users can sense Stands<\/li><li>Stand Users can interact and speak with spirits or ghosts<\/li><li>Only Stands can defeat Stands, physical objects simply pass through or bounce off of all Stands except Enhancement or Independent types<\/li><li>If the User is knocked unconscious and the Stand is not a Revenge-Type, the Stand and it's Ability will disappear until resummoned by the User when conscious<\/li><li>Stand Energy is only consumed if the Ability actually affects something<\/li><li>If a Stand User fights a Non-Stand User, the Stand User gets Advantage on all attacks using their Stand<\/li><li>If a Stand User is Surprised and does not have their Stand active, they may not use it to defend themselves.<\/li><li>Unless otherwise specified, a Stand may only be summoned\/dispelled within 2m of its User. Remote-Types are not restricted in this way, instead summoning within 15m of whatever triggered them.<\/li><\/ul>"
+                    "<ul><li>A single person can only have one Stand (Hive Stands are the same Stand, just split up into much smaller parts)<\/li><li>Whatever damage is inflicted upon the Stand or the User is also dealt to the other<\/li><li>Only Stand Users can sense Stands<\/li><li>Stand Users can interact and speak with spirits or ghosts<\/li><li>Only Stands can defeat Stands, physical objects simply pass through or bounce off of all Stands except Enhancement or Independent types<\/li><li>If a Stand User fights a Non-Stand User, the Stand User gets Advantage on all attacks using their Stand<\/li><li>If a Stand User is Surprised and does not have their Stand active, they may not use it to defend themselves.<\/li><li>Unless otherwise specified, a Stand may only be summoned\/dispelled within 2m of its User. Remote-Types are not restricted in this way, instead summoning within 15m of whatever triggered them.<\/li><li>If the User is knocked unconscious and the Stand is not a Revenge-Type, the Stand and it's Ability will disappear until resummoned by the User when conscious<\/li><li>Stand Energy is only consumed if the Ability actually affects something<\/li><li>If a Stand has a passive Ability (rather than an active one that's triggered once and has an instantaneous effect), it's often far-reaching and indiscriminate, affecting everyone within range whether friend or foe. The User may (but does not have to) be an exception and be the only one immune to the Ability's effects.<\/li><\/ul>"
                 ]
             },
             {
@@ -275,13 +275,14 @@
                 "name": "Stand AC",
                 "content": [
                     "<p>Your Stand AC is equal to 10 plus your Durability, Precision, and Speed Modifiers. When your Stand is within 2 Meters of you your Stand can protect you from attacks using its AC. Like normal, if an Attack Roll is less than your AC it misses. However, if the Attack Roll is between your Stand AC and your own AC it hits your Stand instead, allowing you to apply your Stand's Damage Reduction. Additionally, if the damage type is Non-Stand, it simply bounces off of your Stand or phases through it. An Attack Roll higher than your Stand AC is a direct hit to the User.<\/p>",
+                    "<p>You may use your Stand to protect someone other than yourself as well. Should you choose to do so, the target may benefit from your Stand's AC rather than you. They will still take damage on a Direct Hit, but if your Stand AC is hit you (or your Stand) will take the damage instead. Your Stand may also assist this other person with physical Checks and Saves. <b>While your Stand is protecting someone else, it is not protecting you.</b></p>",
                     "<p><small><b>Note: <\/b><i>Enhancement\/Independant Stands are able to be affected by all damage types, rather than just Stand damage. Independent-Types also have both a regular AND Stand AC for the sake of Damage Reduction, despite not technically having a User.<\/i><\/small><\/p>"
                 ]
             },
             {
                 "name": "Skill Checks and Saving Throws",
                 "content": [
-                    "<p>Your Stand may assist you with physical Skill Checks and Saving Throws, using Power, Precision, and Durability in place of Strength, Dexterity, and Constitution respectively. However, your Stand's Damage Reduction cannot be applied to damage taken from the effects of a Saving Throw, unless the Stand is being targeted on its own separate from the user.<\/p>",
+                    "<p>Your Stand may assist you with physical Skill Checks and Saving Throws, using Power, Precision, and Durability in place of Strength, Dexterity, and Constitution respectively. If your Stand is able to assist you with a physical Saving Throw, you may apply its Damage Reduction to any damage received regardless of whether you succeed or fail.<\/p>",
                     "<p>Stands do not have mental stats, and as such may not assist with Intelligence, Wisdom, or Charisma Checks and Saves. Independent-Type Stands may use their own actual mental stats.<\/p>"
                 ]
             },
@@ -768,6 +769,9 @@
                         "linkFeatures": [
                             "Programmed Stand",
                             "Stand Marking"
+                        ],
+                        "featFeatures": [
+                            "Equalizer"
                         ]
                     },
                     "2": {
@@ -810,7 +814,7 @@
                             "Juggernaut",
                             "OR"
                         ],
-                        "featFeatures": [                            
+                        "featFeatures": [
                             "Specialized Stand Senses"
                         ]
                     },
@@ -1363,13 +1367,10 @@
                         "name": "Grudge Points",
                         "content": [
                             "<p>A Revenge-Type Stand User has a maximum of 5 total Grudge Points, and starts with 0.<\/p><p>A Single Grudge Point may be gained either of the following ways:<\/p>",
-                            "<ul><li>You see someone who has previously wronged you, and you consider to be an enemy.<\/li>",
-                            "<li>You are injured or slighted in some way (taking direct damage, someone's actions frustrate or anger you considerably, etc)<\/li><\/ul>",
+                            "<ul><li>You see someone who has previously wronged you, and you consider to be an enemy.<\/li><li>You are injured, targeted by an attack or negative effect, or slighted in some other way (taking direct damage, receiving a warning shot, someone's actions frustrate or anger you considerably, etc)<\/li><\/ul>",
                             "<p>You may spend Grudge Points in the following ways:<\/p>",
-                            "<ul><li>1 Point: You may use the Attack Action on your Turn, summon your Stand to assist you with a single Skill Check, use your Stand Ability once, or summon it to take hits and assist you with Saving Throws, until the start of your next Turn.<\/li>",
-                            "<li>3 Points: You may summon your Stand in its entirety for one Turn.<\/li>",
-                            "<li>5 Points: You may summon your Stand in its entirety for an amount of Turns equal to your level in Revenge-Type (minimum of 2).<\/li><\/ul>",
-                            "If you do not gain any more Grudge Points on a given Turn, your remaining Grudge Points persist for an amount of Turns equal to your level in Revenge-Type, or until spent (minimum of 2)."
+                            "<ul><li>1 Point: You may use the Attack Action on your Turn, summon your Stand to assist you with a single Skill Check, use your Stand Ability once, or summon it to take hits and assist you with Saving Throws, until the start of your next Turn.<\/li><li>3 Points: You may summon your Stand in its entirety for one Turn.<\/li><li>5 Points: You may summon your Stand in its entirety for an amount of Turns equal to your level in Revenge-Type (minimum of 2).<\/li><\/ul>",
+                            "If you do not gain any additional Grudge Points on a given Turn, your remaining Grudge Points persist for an amount of Turns equal to your level in Revenge-Type (minimum of 2), or until spent."
                         ]
                     }
                 ],
@@ -1388,6 +1389,9 @@
                         "linkFeatures": [
                             "Detached Senses",
                             "Feat of Power"
+                        ],
+                        "featFeatures": [
+                            "Equalizer"
                         ]
                     },
                     "2": {
@@ -1565,7 +1569,7 @@
                 "desc": "Independent-Type Stands are quite interesting, and are one of the more rare Stand Types in JoJo's Bizarre Adventure. These Stands are odd because they do not actually have a User, instead in control of themselves. They have the same sort of Attributes that regular Stands do and must follow most of the same rules. However, the Stand is still made up of physical matter, and thus is similar to an Enhancement type Stand in that they can be damaged physically by Non-Stand damage types.",
                 "notes": [
                     "Some Independent Stands did in fact have a User at some point, or might even still have a User. They are not linked together though, as damaging the Stand does no harm to the User and vice versa. However, if a person does or did have an Independent-Type Stand they are still able to sense Stands and Ghosts, just like a normal Stand User would.",
-                    "Even if there is no User, Independent Stands still have the 6 regular Ability Scores for the sake of determining other stats and mental Checks/Saves. They can also still be hit 'directly' whether they do or don't have a separate User."
+                    "Even if there is no User, Independent Stands still have the 6 regular Ability Scores for the sake of determining other stats and mental Checks\/Saves. They can also still be hit 'directly' whether they do or don't have a separate User."
                 ],
                 "hDice": "1d10",
                 "dcName": "Stand DC",
@@ -1762,8 +1766,8 @@
                 ],
                 "desc": "It is said that Stands reflect their Users. Hive-Type Stand Users are those that idolize the idea of individuals working as a team. Their Stands are formed of many much smaller Sub-Stands, each one with only a fragment of the power of a full Stand. These smaller parts may act in tandem or each one separately. Because of this, Hive Stands have around the same strength as a normal Stand, but they all have great range.",
                 "notes": [
-                    "Keep an eye on your health. The amount of Instances available for you to use is determined by the percentage of health you are at. If you are at 50% Health, you only have 50% of your Hive Stand available for use. When you are at 0 Hit Points, you may still have a maximum of 1 Stand Instance that functions, but it is recalled, and cannot act in any way. Your amount of Stand Instances only drops to 0 when you die.",
-                    "Your attacks may take the form of regular Stand Melee Attacks, or Swarm Attacks (defined below). When attacking normally, you have Disadvantage if using less than half of your total instances."
+                    "Keep an eye on your health. The amount of Instances available for you to use is determined by the percentage of health you are at. If you are at 50% Health, you only have 50% of your Hive Stand available for use. When defending with half of your total instances or less you still get your full Stand AC but may only use half of your Stand's Damage Reduction. When you are at 0 Hit Points, you may still have 1 Stand Instance that functions, but it is recalled, and cannot act in any way. Your amount of Stand Instances only drops to 0 when you die.",
+                    "Your attacks may take the form of regular Stand Melee Attacks, or Swarm Attacks (defined below). When attacking normally, you have Disadvantage if using less than half of your current (not total) instances."
                 ],
                 "hDice": "1d8",
                 "dcName": "Stand DC",
@@ -1776,10 +1780,11 @@
                     {
                         "name": "Swarm Attacks",
                         "content": [
-                            "<p>Choose one of the three following saving throws: Strength, Dexterity, or Constitution. When you make a Melee Attack using your Stand, rather than making an Attack Roll, your target must make a Saving Throw of the chosen type with a DC of 8 + Proficiency Bonus + Power Modifier. Your Stand must be within Melee Range of the target in order to make a Swarm Attack. When you make a Swarm Attack, you may choose between the following options:<\/p>",
+                            "<p>Choose one of the three following saving throws: Strength, Dexterity, or Constitution. When you make a Melee Attack using your Stand, rather than making an Attack Roll, your target must make a Saving Throw of the chosen type with a DC of 8 + Proficiency Bonus + either your Strength or Dexterity Modifier (NOT Power or Precision). Your Stand must be within Melee Range of the target in order to make a Swarm Attack. When you make a Swarm Attack, you may choose between the following options:<\/p>",
                             "<p><ul><li>Precise Swarm: 1d6 + Power Modifier damage (this damage increases to 2d6 at Level 11). Your opponent takes full damage if they fail the Saving Throw, or half if they succeed.<\/li>",
                             "<li>Violent Swarm: 1d10 + Power Modifier damage (this damage increases to 2d10 at Level 11). Your opponent takes full damage if they fail the Saving Throw, or none if they succeed.<\/li><\/ul><\/p>",
-                            "<p>This Ability's damage can be a type that you and your DM agree fits for your Stand. When you attack using less than half of the total instances of your Stand, your target has Advantage on the Saving Throw.<\/p>"
+                            "<p>This Ability's damage can be a type that you and your DM agree fits for your Stand. When you attack using less than half of the current (not total) instances of your Stand, your target has Advantage on the Saving Throw.<\/p>",
+                            "<p>Stand stats cannot be used to resist Swarm Attacks, and thus their Damage Reduction may not be applied."
                         ]
                     }
                 ],
@@ -2289,6 +2294,7 @@
             },
             "3": {
                 "linkFeatures": [
+                    "Custom Spin Technique",
                     "Return to Sender"
                 ],
                 "featFeatures": [
@@ -2315,7 +2321,6 @@
             },
             "5": {
                 "linkFeatures": [
-                    "Custom Spin Technique",
                     "Harden Flesh",
                     "Projectile Boost",
                     "OR",
@@ -2490,6 +2495,9 @@
                     "3": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Signature Move"
                         ]
                     },
                     "4": {
@@ -2638,6 +2646,9 @@
                     "3": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Signature Move"
                         ]
                     },
                     "4": {
@@ -2790,6 +2801,9 @@
                     "3": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Signature Move"
                         ]
                     },
                     "4": {
@@ -2940,6 +2954,9 @@
                     "3": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Signature Move"
                         ]
                     },
                     "4": {
@@ -3110,6 +3127,9 @@
                     "3": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Signature Move"
                         ]
                     },
                     "4": {
@@ -3301,6 +3321,9 @@
                     "3": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Signature Move"
                         ]
                     },
                     "4": {
@@ -3458,6 +3481,9 @@
                     "3": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Signature Move"
                         ]
                     },
                     "4": {
