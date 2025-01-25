@@ -1766,8 +1766,7 @@
                 ],
                 "desc": "It is said that Stands reflect their Users. Hive-Type Stand Users are those that idolize the idea of individuals working as a team. Their Stands are formed of many much smaller Sub-Stands, each one with only a fragment of the power of a full Stand. These smaller parts may act in tandem or each one separately. Because of this, Hive Stands have around the same strength as a normal Stand, but they all have great range.",
                 "notes": [
-                    "Keep an eye on your health. The amount of Instances available for you to use is determined by the percentage of health you are at. If you are at 50% Health, you only have 50% of your Hive Stand available for use. When defending with half of your total instances or less you still get your full Stand AC but may only use half of your Stand's Damage Reduction. When you are at 0 Hit Points, you may still have 1 Stand Instance that functions, but it is recalled, and cannot act in any way. Your amount of Stand Instances only drops to 0 when you die.",
-                    "Your attacks may take the form of regular Stand Melee Attacks, or Swarm Attacks (defined below). When attacking normally, you have Disadvantage if using less than half of your current (not total) instances."
+                    "Keep an eye on your health. The amount of Instances available for you to use is determined by the percentage of health you are at. If you are at 50% Health, you only have 50% of your Hive Stand available for use. When defending with half of your current (not total) instances or less you still get your full Stand AC but may only use half of your Stand's Damage Reduction. When you are at 0 Hit Points, you may still have 1 Stand Instance that functions, but it is recalled, and cannot act in any way. Your amount of Stand Instances only drops to 0 when you die."
                 ],
                 "hDice": "1d8",
                 "dcName": "Stand DC",
@@ -1780,11 +1779,12 @@
                     {
                         "name": "Swarm Attacks",
                         "content": [
-                            "<p>Choose one of the three following saving throws: Strength, Dexterity, or Constitution. When you make a Melee Attack using your Stand, rather than making an Attack Roll, your target must make a Saving Throw of the chosen type with a DC of 8 + Proficiency Bonus + either your Strength or Dexterity Modifier (NOT Power or Precision). Your Stand must be within Melee Range of the target in order to make a Swarm Attack. When you make a Swarm Attack, you may choose between the following options:<\/p>",
+                            "<p>While you may still make regular Stand Melee Attacks using your Stand's Attack Dice, you may also choose to instead use an Attack to force a target within Melee Range of at least 2 of your Stand Instances to make a Saving Throw against a Swarm Attack.",
+                            "<p>Choose one of the three following Saving Throws: Strength, Dexterity, or Constitution. Your target must make a Saving Throw of the chosen type (NOT using their Stand stats) with a DC of 8 + Proficiency Bonus + either your Strength or Dexterity Modifier (NOT Power or Precision). When you make a Swarm Attack, you may choose between the following options:<\/p>",
                             "<p><ul><li>Precise Swarm: 1d6 + Power Modifier damage (this damage increases to 2d6 at Level 11). Your opponent takes full damage if they fail the Saving Throw, or half if they succeed.<\/li>",
                             "<li>Violent Swarm: 1d10 + Power Modifier damage (this damage increases to 2d10 at Level 11). Your opponent takes full damage if they fail the Saving Throw, or none if they succeed.<\/li><\/ul><\/p>",
                             "<p>This Ability's damage can be a type that you and your DM agree fits for your Stand. When you attack using less than half of the current (not total) instances of your Stand, your target has Advantage on the Saving Throw.<\/p>",
-                            "<p>Stand stats cannot be used to resist Swarm Attacks, and thus their Damage Reduction may not be applied."
+                            "<p>Because Stand stats cannot be used for the Save, Stand Damage Reduction cannot be applied to the damage taken from Swarm Attacks."
                         ]
                     }
                 ],
