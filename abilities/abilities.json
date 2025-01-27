@@ -714,7 +714,8 @@
             "Act"
         ],
         "desc": [
-            "You have very strong abilities, but it's very tiring to try to use them repeatedly. Luckily, you've learned through practice how to pace yourself and replenish your energy. As an Action you may regain an amount of Stand Energy equal to your Proficiency Bonus."
+            "You have very strong abilities, but it's very tiring to try to use them repeatedly. Luckily, you've learned through practice how to pace yourself and replenish your energy",
+            "As part of a Dodge you regain an amount of Stand Energy equal to your Proficiency Bonus or your Charisma Modifier (whichever is higher), instead of the usual 1."
         ]
     },
     "Stand_Leap": {
