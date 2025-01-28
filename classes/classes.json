@@ -283,7 +283,7 @@
                 "name": "Skill Checks and Saving Throws",
                 "content": [
                     "<p>Your Stand may assist you with physical Skill Checks and Saving Throws, using Power, Precision, and Durability in place of Strength, Dexterity, and Constitution respectively. If your Stand is able to assist you with a physical Saving Throw, you may apply its Damage Reduction to any damage received regardless of whether you succeed or fail.<\/p>",
-                    "<p>Stands do not have mental stats, and as such may not assist with Intelligence, Wisdom, or Charisma Checks and Saves. Independent-Type Stands may use their own actual mental stats.<\/p>"
+                    "<p>Stands do not have mental stats, and as such may not assist with Intelligence, Wisdom, or Charisma Checks and Saves. Independent-Types and Sentient Stands  Stands may use their own actual mental stats.<\/p>"
                 ]
             },
             {
