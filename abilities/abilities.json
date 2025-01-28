@@ -56,7 +56,7 @@
             "Stand Abilities are something integral to the existence of Stands, and it's a huge part of what makes JoJo's Bizarre Adventure such a fun, varied, and unique experience.",
             "A general rule of thumb is that the more specific your Stand Ability is, the more powerful it is. However, the more general it is, the more versatile it can be.",
             "Examples of Abilities are <a href='https:\/\/jojowiki.com\/Anubis' target='_blank'>Anubis<\/a>'s Possession, <a href='https:\/\/jojowiki.com\/Hermit_Purple' target='_blank'>Hermit Purple<\/a>'s Spirit Photos, or <a href='https:\/\/jojowiki.com\/White_Album' target='_blank'>White Album<\/a>'s Ability to freeze.",
-            "A Custom Ability might also be a passive Ability that may be activated or deactivated at will.",
+            "A Custom Ability might also be a passive Ability that may be activated or deactivated at will. These are often far-reaching and indiscriminate, affecting everyone within range whether friend or foe. The User may (but does not have to) be an exception and be the only one immune to the Ability's effects.",
             "Activating a passive Ability costs 2 Stand Energy (if your maximum SE is 1 you may spend 1 to activate it once) and is usually done as a Bonus Action. You can deactivate it at no cost as a Free Action."
         ]
     },
@@ -175,7 +175,8 @@
         ],
         "desc": [
             "<b>Prerequisite: <a class='in-page'>Immense Range<\/a><\/b>",
-            "Your Stand's Range and any points that go into your Stand's Range Score by an additional x10."
+            "Your Stand's Range and any points that go into your Stand's Range Score are multiplied by an additional x10.",
+            "This effect is multiplicative, meaning if you already had a x10 multiplier this Ability would give you a x100 multiplier, etc."
         ]
     },
     "Improved_Slippery": {
@@ -323,7 +324,7 @@
             "These are powers that use the same concept of the regular <a class='in-page'>Custom Ability<\/a>, but taken to a whole new level. These abilities have immense strength, but at a higher cost (usually twice the Stand Energy).",
             "Special Abilities are usually 1 bracket of Die stronger than the Ability would be normally (d4 would become d6, d6 would become d8, etc.). They also take more time to perform. Usually, but not always, taking a Full Action to perform.",
             "Examples of Special Abilities are <a href='https:\/\/jojowiki.com\/The_World' target='_blank'>The World<\/a>'s The World, <a href='https:\/\/jojowiki.com\/Justice' target='_blank'>Justice<\/a>'s Illusions, or <a href='https:\/\/jojowiki.com\/Weather_Report_(Stand)' target='_blank'>Weather Report<\/a>'s Heavy Weather.",
-            "A Special Ability might also be a passive Ability that functions independently of activation, or one that may be activated or deactivated at will.",
+            "A Special Ability might also be a passive Ability that functions independently of activation, or one that may be activated or deactivated at will. These are often far-reaching and indiscriminate, affecting everyone within range whether friend or foe. The User may (but does not have to) be an exception and be the only one immune to the Ability's effects.",
             "Activating a passive Ability costs 4 Stand Energy (if your maximum SE is less than 4 you may spend it all to activate it once) and is usually done as a Bonus Action. You can deactivate it at no cost as a Free Action."
         ]
     },
@@ -714,7 +715,7 @@
             "Act"
         ],
         "desc": [
-            "You have very strong abilities, but it's very tiring to try to use them repeatedly. Luckily, you've learned through practice how to pace yourself and replenish your energy",
+            "You have very strong abilities, but it's very tiring to try to use them repeatedly. Luckily, you've learned through practice how to pace yourself and replenish your energy.",
             "As part of a Dodge you regain an amount of Stand Energy equal to your Proficiency Bonus or your Charisma Modifier (whichever is higher), instead of the usual 1."
         ]
     },
@@ -2089,7 +2090,7 @@
         "name": "Ranger's Recovery",
         "desc": [
             "When you take a Short or Long Rest you gain an amount of Temporary Hit Points equal to your Wisdom Modifier + Level in Ranger. This Temp HP stacks with other forms of Temp HP, but not itself.",
-            "As an Attack or Bonus Action, you may use a Hit Die, to gain the Temp HP effect alongside the normal healing from spending Hit Dice. You may do this an amount of times equal to your Wisdom Modifier per Long Rest."
+            "As an Attack or Bonus Action, you may use a Hit Die to gain the Temp HP effect above alongside the normal healing from spending Hit Dice. You may do this an amount of times equal to your Wisdom Modifier per Long Rest without actually spending a Hit Die, but further uses will consume your Hit Dice."
         ],
         "classes": [
             "Rgr"
