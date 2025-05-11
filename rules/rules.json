@@ -1,0 +1,145 @@
+{
+  "tabs": [
+    {
+      "title": "Basics",
+      "content": {
+        "sections": [
+          {
+            "heading": "Dice",
+            "items": [
+              {
+                "subheading": "Dice Notation",
+                "details": ""
+              },
+              {
+                "subheading": "Required Dice",
+                "details": ""
+              }
+            ]
+          },
+          {
+            "heading": "Ability Scores",
+            "items": [
+              {
+                "subheading": "",
+                "details": ""
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "title": "The Turn",
+      "content": {
+        "sections": [
+          {
+            "heading": "",
+            "items": [
+              {
+                "subheading": "",
+                "details": ""
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "title": "Damage & Conditions",
+      "content": {
+        "sections": [
+          {
+            "heading": "",
+            "items": [
+              {
+                "subheading": "",
+                "details": ""
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "title": "Combat",
+      "content": {
+        "sections": [
+          {
+            "heading": "",
+            "items": [
+              {
+                "subheading": "",
+                "details": ""
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "title": "Characters",
+      "content": {
+        "sections": [
+          {
+            "heading": "",
+            "items": [
+              {
+                "subheading": "",
+                "details": ""
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "title": "Environment",
+      "content": {
+        "sections": [
+          {
+            "heading": "",
+            "items": [
+              {
+                "subheading": "",
+                "details": ""
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "title": "Misc. Rules",
+      "content": {
+        "sections": [
+          {
+            "heading": "",
+            "items": [
+              {
+                "subheading": "",
+                "details": ""
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "title": "DM Tips",
+      "content": {
+        "sections": [
+          {
+            "heading": "",
+            "items": [
+              {
+                "subheading": "",
+                "details": ""
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
