@@ -2,7 +2,7 @@
     position: relative;
     z-index: 1;
     padding: 24px 64px;
-    height: 1000px;
+    min-height: 1000px;
 }
 
 #tabsColumn {
@@ -66,8 +66,23 @@
     max-width: 100px;
 }
 
-.display-heading {
+.display-title {
     margin-top: 0;
+}
+
+#display h5 {
+    margin-top: 1em;
+    margin-bottom: 0;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#display p {
+    margin: 0;
+}
+
+.indent {
+    text-indent: 2em;
 }
 
 @media (max-width: 1400px) {

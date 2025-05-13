@@ -2,144 +2,285 @@
   "tabs": [
     {
       "title": "Basics",
-      "content": {
-        "sections": [
+      "sections": [
+        {
+        "heading": "Dice",
+        "items": [
           {
-            "heading": "Dice",
-            "items": [
-              {
-                "subheading": "Dice Notation",
-                "details": ""
-              },
-              {
-                "subheading": "Required Dice",
-                "details": ""
-              }
+            "subheading": "Dice Notation",
+            "details": [
+              "To quickly note what dice are to be rolled, the notation <u>n</u>d<u>x</u> is commonly used, where <u>n</u> represents the number of dice to be rolled and <u>x</u> represents how many sides each die should have. For example, if the notation \"3d6\" refers to rolling 3 six-sided dice."
             ]
           },
           {
-            "heading": "Ability Scores",
-            "items": [
-              {
-                "subheading": "",
-                "details": ""
-              }
+            "subheading": "Required Dice",
+            "details": [
+              "To properly play using this system, you will need a variety of dice. If unavailable, an online dice roller can also be used. The required dice are: d4, d6, d8, d10, d12, d20, and Percentage Dice.",
+              "Percentage Dice can take a few different forms: a d10 with two digits on each side (00-90) or a large 100-sided die (d100). The d100 may be rolled as normal, but the special d10 must be rolled alongside a normal d10 to get the last digit of the result. The minimum roll is 1, so keep in mind that a 0 on the d10 represents 10, and 00 + 0 should be 100."
             ]
           }
         ]
-      }
+        },
+        {
+          "heading": "Ability Scores",
+          "items": [
+            {
+              "subheading": "Ability Scores",
+              "details": [
+                "Ability Scores measure the basic physical and mental aspects of your character. Are they strong? Wise? Tough? These values reflect those generalized attributes. You may also see them commonly called \"stats\" or \"scores\".",
+                "For most Humans, the lowest an Ability Score can naturally be is 6, and the maximum is 20. However, there are ways to increase a Score further through means such as <a href='/abilities?focus=Undead_Nature'>Undeath</a>, <a href='/classes?focus=Ripple'>The Ripple</a>, and the <a href='/feats?focus=Superhuman'>Superhuman</a> Feat."
+              ],
+              "compactDetails": [
+                "<b>Strength (Str):</b> A measure of your ability to lift, move, or perform other feats of physical might. A character with high Strength can lift large rocks, throw a ball a great distance, and have an easier time dealing with effects that would restrict their movement.",
+                "<b>Dexterity (Dex):</b> A measure of your ability to dodge, move swiftly, sneak, balance, and perform delicate tasks. A character with high Dexterity can sneak effectively, walk on a tightrope, pickpocket, and have an easier time dealing with effects that would deal damage in an area like explosives.",
+                "<b>Constitution (Con):</b> A measure of your ability to take hits, shrug off harmful toxins, and exert yourself for long periods. A character with high Constitution can take more damage before going down, run for many kilometers with ease, survive more easily in extreme climates, and have an easier time dealing with toxins and effects that cause decay.",
+                "<b>Intelligence (Int):</b> A measure of your ability to recall information, think critically, and deduce information. A character with high Intelligence can recall specific and relevant information, solve a puzzle or mystery, and have an easier time dealing with effects that change their perception or involve illusions or psychic abilities.",
+                "<b>Wisdom (Wis)</b> A measure of your ability to perceive, think creatively, and use practical problem solving skills. A character with high Wisdom can detect someone's movement from several rooms away, think of using a bedsheet as a makeshift rope, track a person or animal, and have an easier time dealing with effects related to someone's willpower.",
+                "<b>Charisma (Cha)</b> A measure of your ability to socially influence others through charm, wit, and a few well-placed words. A character with high Charisma can persuade someone to do them a favor, intimidate someone out of a fight, tell a convincing lie, hold the attention of a group, and have an easier time dealing with effects that would possess or influence them."
+              ]
+            },
+            {
+              "subheading": "Ability Modifiers",
+              "details": [
+                "While an Ability Score is the raw number representing one of your character's basic attributes, the vast majority of mechanics will utilize the Modifier instead to add to your d20 rolls. The Score is simply used to calculate the Modifier.",
+                "The formula to determine your Modifier from the corresponding Score is (x-10)/2 rounded down. For example, a character with 15 Strength would have a Modifier of +2 (15-10 = 5, 5/2 = ~2)."
+              ]
+            },
+            {
+              "subheading": "Stand Ability Scores and Modifiers",
+              "details": [
+                "<a href='/classes?focus=Stands'>Stands</a> also have their own attributes, determined by the Ability Scores of their User and which type of Stand they are.",
+                "Unlike regular characters, Stands gain points upon Levelling-Up which may be spread between their Ability Scores as desired to increase them.",
+                "Stand Ability Modifiers are still calculated using these scores, but use a simpler formula of x/10 rounded down."
+              ],
+              "compactDetails": [
+                "<b>Power (Pow):</b> A measure of your Stand's strength. Affects how hard your Stand hits.",
+                "<b>Precision (Pre):</b> A measure of your Stand's dexterity. Affects how easy your Stand is to hit.",
+                "<b>Durability (Dur):</b> A measure of your Stand's constitution. Affects how easy your Stand is to hit and how much damage it can mitigate.",
+                "<b>Range (Rng):</b> A measure of how far your Stand can travel from its User.",
+                "<b>Speed (Spd):</b> A measure of how quickly your Stand can move and act. Affects how many attacks your Stand can perform at once.",
+                "<b>Stand Energy (SE):</b> A measure of how much energy your Stand has for its powers. Affects how many times your Stand can use its Ability before tiring."
+              ]
+            },
+            {
+              "subheading": "Proficiency Bonus and Levels of Proficiency",
+              "details": [
+                "Proficiency Bonus (PB) scales with your total Level and provides a flat bonus (alongside the associated Ability Modifier) to any Attack, Skill Check, or Saving Throw rolls that you're Proficient in. Proficiency has 3 defined levels, Proficiency, Expertise, and Mastery, with each level adding the bonus for an additional time. Going past Mastery is possible and the bonus continues adding addtional times.",
+                "Any time you gain Proficiency in something you're already Proficient in to some degree, your Level of Proficiency increases (Proficiency to Expertise, Expertise to Mastery, etc).",
+                "You gain Proficiencies from your <a href='/passions'>Passion</a> or certain <a href='/feats'>Feats</a>, and you also gain an amount equal to your Intelligence Modifier (minimum 0). When gaining Proficiencies from your Passion or Int Mod, the options include: 1 Skill Proficiency, 2 sets of tools, 3 instruments, or 3 languages.",
+                "Tool, language, and instrument Proficiencies are less likely to directly benefit rolls you make, but still note that you are capable of using those things correctly and effectively."
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Skill Checks",
+          "items": [
+            {
+              "subheading": "Types of Skill Checks",
+              "details": [
+                "Skill Checks are rolls your Dungeon Master may ask you to make to determine how effectively you're able to accomplish a specific action. Which Ability Score you add to the roll and whether or not you're Proficient in it depends on the type of Check asked for.",
+                "To perform a Skill Check, roll a d20 and add (or subtract, if applicable) the corresponding Ability Modifier as well as your Proficiency Bonus if you're Proficient in that type of Check. Your DM will determine if you succeed or not, depending on the roll."
+              ],
+              "compactDetails": [
+                "<b>Acrobatics:</b> Uses Dexterity. Used to perform precise movement in the air, balancing abilities, and can be used to contest a Grapple/Shove.",
+                "<b>Athletics:</b> Uses Strength or Wisdom. Strength is used to perform athletic activities that require a sudden burst of strength, such as jumping, climbing, swimming, lifting, pushing, or Grappling/Shoving. Wisdom is used to determine the result of Speed Duels.",
+                "<b>Bluff:</b> Uses Charisma. Used for deception, bluffing, or other methods of making people believe or think something untrue.",
+                "<b>Care:</b> Uses Wisdom or Charisma. Used for the handling and proper care of animals, children, wounded or elderly people, etc. Wisdom is typically used when dealing with animals, while Charisma is typically used for people.",
+                "<b>Diplomacy:</b> Uses Charisma. Used to influence other people into thinking or understanding things in a certain, but not necessarily untrue, way.",
+                "<b>Finesse:</b> Uses Dexterity. Used to perform careful and precise movements, including sleight of hand, pickpocketing, and other small, delicate movements.",
+                "<b>Grit:</b> Uses Constitution. Used to determine pain tolerance, the ability to exert yourself for long periods, and the ability to handle large amounts of potentially toxic substances.",
+                "<b>Intimidate:</b> Uses Strength or Charisma. Used to threaten or coerce other people with the threat of physical force, or something else they'd be afraid of.",
+                "<b>Investigation:</b> Uses Intelligence. Used for puzzle solving and analyzing clues, though it doesn't necessarily help you find something, it can help you know if something is relevant or not.",
+                "<b>Medicine:</b> Uses Intelligence or Wisdom. Used to figure out things that require medical knowledge, tend to a wounded creature, and help a downed ally to recover 1 Hit Point.",
+                "<b>Knowledge:</b> Uses Intelligence. Used to recall historical information, as well as general information.",
+                "<b>Perception:</b> Uses Wisdom. Used to find hidden creatures or objects and detect small sensory details.",
+                "<b>Presence:</b> Uses Charisma. Used to blend in or stand out in social spaces as desired, seeming like you belong somewhere, and holding an audience's attention.",
+                "<b>Science:</b> Uses Intelligence. Used to recall scientific knowledge and understanding, as well as scientific procedure.",
+                "<b>Sneak:</b> Uses Dexterity. Used to move silently and stay hidden.",
+                "<b>Supernatural:</b> Uses Intelligence or Wisdom. Intelligence is used for recalling information regarding religious, spiritual, or otherwise supernatural occurrences, events, and rituals. Wisdom is used to figure out the cause or effect of an observed supernatural ability.",
+                "<b>Survival:</b> Uses Intelligence or Wisdom. Intelligence is used for recalling information about the functions of nature, such as determining safe or valuable plants. Wisdom is used to track things, create traps, or navigate an unknown region.",
+                "<b>Vibe:</b> Uses Wisdom or Charisma. Used to find out if someone is hiding something, or if they have ulterior motives. Failed Checks don't give false information, just no information."
+              ]
+            },
+            {
+              "subheading": "Passive Perception and Passive Skills",
+              "details": [
+                "Passive Perception is a way to judge how perceptive your character is without directly rolling a check. It particularly applies when your character isn't paying close attention, instead picking up on something strange or unusual without specifically looking for it. Passive Perception is equal to 10 + your Perception Skill Bonus.",
+                "Depending on the setting or playstyle, your DM may be interested in your character's ability for other Passive Skills. For example, in a Mystery campaign, your DM may want to know the players' Passive Investigation. Regardless, the value is 10 + that Skill's bonus."
+              ]
+
+            },
+            {
+              "subheading": "D&D 5e Skill Conversions",
+              "details": [
+                "This system was originally based on Dungeons & Dragons 5th edition, so the following exists as a guide to allow older characters to be converted to the new Skills"
+              ],
+              "compactDetails": [
+                "<b>Animal Handling</b> becomes <b>Care</b>",
+                "<b>Arcana</b> becomes <b>Supernatural</b>",
+                "<b>Deception</b> becomes <b>Bluff</b>",
+                "<b>History</b> becomes <b>Knowledge</b>",
+                "<b>Insight</b> becomes <b>Vibe</b>",
+                "<b>Intimidation</b> becomes <b>Intimidate</b>",
+                "<b>Nature</b> becomes <b>Survival</b>",
+                "<b>Performance</b> becomes <b>Presence</b>",
+                "<b>Persuasion</b> becomes <b>Diplomacy</b>",
+                "<b>Religion</b> becomes <b>Supernatural</b>",
+                "<b>Sleight of Hand</b> becomes <b>Finesse</b>",
+                "<b>Stealth</b> becomes <b>Sneak</b>"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Tools",
+          "items": [
+            {
+              "subheading": "Types of Tools",
+              "details": [
+                "These items may be acquired and gained Proficiency in through various means. Using them may allow you to make specific Skill Checks related to their use or give you a bonus to certain specific Checks."
+              ],
+              "compactDetails": [
+                "<b>Artist's Tools</b> are used to create or analyze various forms of artistry, and may specifically be one of the following: a Filmmaker's Camera, Glassmaker's Tools, Jeweler's Tools, Painter's Supplies, Potter's Tools, Sculptor's Tools, Weaver's Tools, Woodcrafter's Tools, or Writer's Tools.",
+                "<b>Blacksmith's Tools</b> may be used to maintain metallic weapons or create a basic tool or trinket from metal.",
+                "<b>Chemist's Tools</b> may be used to create basic chemical compounds, identify a chemical, store a small amount of a strange substance, or create chemical reactions.",
+                "<b>Chef's Utensils</b> may be used to create a variety of meals, dice something finely, identify ingredients in a dish, or experiment to find a new dish.",
+                "<b>Diviner's Tools</b> may be used to predict the future, often in ways that don't make sense without context until the moment of truth.",
+                "<b>Engineer's Tools</b> may be used to move something heavy, measure a precise amount of distance, or to repair certain structures or machines that have been damaged.",
+                "<b>Fletcher's Tools</b> may be used to create and maintain weapons and ammunition made out of wood and natural materials, including bows, crossbows, atlatls, spears, clubs, and darts.",
+                "<b>Gunsmith's Tools</b> may be used to create and maintain firearms, to identify a shell casing, to create gunpowder, or create ammunition for such weapons.",
+                "<b>Herbalism Kits</b> may be used to identify and treat the symptoms of a poison or disease, or identify plants and their potential medicinal purposes.",
+                "<b>Thieves' Tools</b> may be used to pick a lock, hotwire an engine, or grab something small precisely."
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "title": "The Turn",
-      "content": {
-        "sections": [
-          {
-            "heading": "",
-            "items": [
-              {
-                "subheading": "",
-                "details": ""
-              }
-            ]
-          }
-        ]
-      }
+      "sections": [
+        {
+          "heading": "",
+          "items": [
+            {
+              "subheading": "",
+              "details": [
+
+              ]
+            },
+            {
+              "subheading": "",
+              "details": [
+                
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "title": "Damage & Conditions",
-      "content": {
-        "sections": [
-          {
-            "heading": "",
-            "items": [
-              {
-                "subheading": "",
-                "details": ""
-              }
-            ]
-          }
-        ]
-      }
+      "sections": [
+        {
+          "heading": "",
+          "items": [
+            {
+              "subheading": "",
+              "details": [
+
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "title": "Combat",
-      "content": {
-        "sections": [
-          {
-            "heading": "",
-            "items": [
-              {
-                "subheading": "",
-                "details": ""
-              }
-            ]
-          }
-        ]
-      }
+      "sections": [
+        {
+          "heading": "",
+          "items": [
+            {
+              "subheading": "",
+              "details": [
+
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "title": "Characters",
-      "content": {
-        "sections": [
-          {
-            "heading": "",
-            "items": [
-              {
-                "subheading": "",
-                "details": ""
-              }
-            ]
-          }
-        ]
-      }
+      "sections": [
+        {
+          "heading": "",
+          "items": [
+            {
+              "subheading": "",
+              "details": [
+
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "title": "Environment",
-      "content": {
-        "sections": [
-          {
-            "heading": "",
-            "items": [
-              {
-                "subheading": "",
-                "details": ""
-              }
-            ]
-          }
-        ]
-      }
+      "sections": [
+        {
+          "heading": "",
+          "items": [
+            {
+              "subheading": "",
+              "details": [
+
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "title": "Misc. Rules",
-      "content": {
-        "sections": [
-          {
-            "heading": "",
-            "items": [
-              {
-                "subheading": "",
-                "details": ""
-              }
-            ]
-          }
-        ]
-      }
+      "sections": [
+        {
+          "heading": "",
+          "items": [
+            {
+              "subheading": "",
+              "details": [
+
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "title": "DM Tips",
-      "content": {
-        "sections": [
-          {
-            "heading": "",
-            "items": [
-              {
-                "subheading": "",
-                "details": ""
-              }
-            ]
-          }
-        ]
-      }
+      "sections": [
+        {
+          "heading": "",
+          "items": [
+            {
+              "subheading": "",
+              "details": [
+
+              ]
+            },
+            {
+              "subheading": "",
+              "details": [
+                
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

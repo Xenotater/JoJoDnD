@@ -47,9 +47,22 @@ function fillTabs() {
 function updateDisplay() {
   $("#display").html("");
 
-  let rulesSection = getRuleSection(r);
-  let newContent = `<h2 class='display-heading center'>${rulesSection.title}</h2>`;
-  newContent += `<p>${JSON.stringify(rulesSection)}</p>`
+  let ruleCategory = getRuleSection(r);
+  let newContent = `<h2 class='display-title center'>${ruleCategory.title}</h2>`;
+  for (section of ruleCategory.sections) {
+    newContent += `<h3 class='display-heading'>${section.heading}</h3>`;
+    for (subsection of section.items) {
+      newContent += `<h5>${subsection.subheading}</h5>`
+      for (detail of subsection.details)
+        newContent += `<p class='indent'>${detail}</p>`;
+      if (subsection.compactDetails) {
+        newContent += `<p>`;
+        for (detail of subsection.compactDetails)
+          newContent += detail + "<br>";
+        newContent += "</p>";
+      }
+    }
+  }
 
   $("#display").html(newContent);
   $(".currentTab").removeClass("currentTab");
