@@ -181,9 +181,9 @@
           "heading": "Taking your Turn",
           "items": [
             {
-              "subheading": "When to take Turns",
+              "subheading": "When to Take Turns",
               "details": [
-                "Generally during roleplay actions can be taken relatively freely. However, during combat or other time-sensitive segments, gameplay becomes turn-based, with characters actions and environmental changes happening one at a time.",
+                "Generally, during roleplay, actions can be taken relatively freely. However, during combat or other time-sensitive segments, gameplay becomes turn-based, with characters actions and environmental changes happening one at a time.",
                 "For the sake of timing and flavor, a Turn is generally assumed to take 5 seconds in-world, with each character acting at once in that time. This means 1 minute takes 12 turns, etc."
               ]
             },
@@ -191,13 +191,13 @@
               "subheading": "Initiative",
               "details": [
                 "Turn order is determined by an Initiative roll, a special Skill Check made by all characters at the start of combat. A d20 is rolled, then the Dexterity and Wisdom Modifiers are added to the result. Turns proceed in order from highest Initiative to lowest. For ties between a player and an NPC, the player should typically go first. For ties between players, they may decide who goes first.",
-                "The start of each round of Turns is called the Top of Initiative. Many per-round effects such as Stand Damage Reduction, regeneration, and more reset or occur at the Top of Initiative."
+                "The start of each round of Turns is called the Top of Initiative. Many per-round effects, such as Stand Damage Reduction, regeneration, and more, reset or occur at the Top of Initiative."
               ]
             },
             {
               "subheading": "Parts of the Turn",
               "details": [
-                "Each Turn has several distinct parts, each of which can be used up to 1 time per round unless otherwise specified. This is typically referred to as your \"Action Economy\""
+                "Each Turn has several distinct parts, each of which can be used up to 1 time per round unless otherwise specified. This is typically referred to as your \"Action Economy\"."
               ],
               "compactDetails": [
                 "<b>Action:</b> The largest part of your Turn, typically the main focus of what you're doing for the round.",
@@ -219,12 +219,12 @@
                 "Each of these actions costs your <u>Action</u>. You may only use one per Turn unless otherwise specified."
               ],
               "compactDetails": [
-                "<b>Attack:</b> Allows you to use an Attack action. If you Attack you may not use other Actions, but you may have several Attacks per Action.",
+                "<b>Attack:</b> Allows you to use an Attack action. If you do so, you may not use other Actions, but you may have several Attacks per Action.",
                 "<b>Dash:</b> Allows you to Move an additional amount of meters equal to your Movement Speed.",
                 "<b>Disengage:</b> Prevents enemies from taking Opportunity Attacks when you exit their Melee Range until the start of your next Turn.",
-                "<b>Dodge:</b> Grants one of the following defensive effects until the start of your next Turn. If you're a Stand User you also gain 1 Stand Energy doing this.<ul class='sublist'><li>Gives enemies Disadvantage on Attack Rolls against you and gives you Advantage on all Saving Throws and contested Skill Checks against you that weren't initated by you.</li><li>Halves damage taken from all sources.</li></ul>",
+                "<b>Dodge:</b> Grants one of the following defensive effects until the start of your next Turn. If you're a Stand User, you also gain 1 Stand Energy doing this.<ul class='sublist'><li>Gives enemies Disadvantage on Attack Rolls against you and gives you Advantage on all Saving Throws and contested Skill Checks against you that weren't initiated by you.</li><li>Halves the damage you take from all sources.</li></ul>",
                 "<b>Help:</b> Grants an ally within 1 meter Advantage on their next Skill Check or Attack Roll. Also removes 1 level of Fear or the effects of Taunt.",
-                "<b>Hide:</b> When in a suitable place for hiding (a dark area, behind an object, camouflaged, etc), you may make a Sneak Check against any enemies that are aware of you, which they can contest with a Perception Check. Targets that fail the contest lose track of your location.",
+                "<b>Hide:</b> When in a suitable hiding place (a dark area, behind an object, camouflaged, etc), you may make a Sneak Check against any enemies that are aware of you, which they can contest with a Perception Check. Targets that fail the contest lose track of your location.",
                 "<b>Revive:</b> When within 1 meter of a Downed ally, you may make a DC 10 Medicine Check, bringing the ally back up to 1 Hit Point on success. You may instead choose to stabilize them on success, keeping them at 0 Hit Points but preventing them from having to make any Death Saves.",
                 "<b>Skill Check:</b> Allows you to make any Skill Check to interact with your environment."
               ]
@@ -232,14 +232,14 @@
             {
               "subheading": "Attack",
               "details": [
-                "When taking the Attack Action, your attack can take the form of any of the following. By default, only one Attack may be made per Action, but there are ways to get more Attacks such as being a <a href='/classes?focus=Stands>Stand User</a> or taking the <a href='/feats?focus=Trained_Combatant'>Trained Combatant</a> Feat."
+                "When taking the Attack Action, your attack can take the form of any of the following. By default, only one Attack may be made per Action, but there are ways to get more Attacks, such as being a <a href='/classes?focus=Stands'>Stand User</a> or taking the <a href='/feats?focus=Trained_Combatant'>Trained Combatant</a> Feat."
               ],
               "compactDetails": [
                 "<b>Attack:</b> Allows you to make a single Attack Roll against a target, rolling damage if it hits them. Whether or not an Attack Roll hits is determined by the target's Armor Class, which is explained in the <a href='/rules?focus=Combat'>Combat</a> section.",
                 "<b>Grapple/Shove:</b> When in Melee Range of a target, you may make an Athletics (Str/Pow) Check, forcing the target to contest using either Athletics (Str/Pow) or Acrobatics (Dex/Pre), their preference. If the target fails the contest, they suffer the effects of your Grapple or Shove. A Shove can either push the target back 1 meter or knock them Prone. A Grapple requires one of your hands to hold the target and inflicts them with the Grappled Condition. Prone and Grappled are explained more in the <a href='/rules/?focus=Damage%20%26%20Conditions'>Damage & Conditions</a> section.",
                 "<b>Speed Duel:</b> When attempting to take a non-weapon object off of someone, or do something else faster than someone like reaching a location first, or even just to measure awareness and reaction time between two people, you may initiate a Speed Duel, which takes the form of a contested Athletics (Wis/Spd) check. The winner is considered 'faster', keeping in mind that the initiator loses a tie.",
-                "<b>Taunt:</b> When within 10 meters of a target who you can communicate with, you may initiate a Grit (NOT Dur) or Presence Check agaisnt them, which can be contested by either of those Skills as well, their preference. If the target fails the contest, they become Taunted towards you, forcing them to try and target you with a negative effect or damage. The effects of Taunted is explained more in the <a href='/rules/?focus=Damage%20%26%20Conditions'>Damage & Conditions</a> section.",
-                "<b>Extra Bonus Action:</b> You may expend half of your total Attacks to gain an additional Bonus Action for this Turn. If you use this to make Attack Rolls during your extra Bonus Action, you may not make more rolls than the number of Attacks you spent to gain that Bonus Action."
+                "<b>Taunt:</b> When within 10 meters of a target whom you can communicate with, you may initiate a Grit (NOT Dur) or Presence Check against them, which can be contested by either of those Skills as well, at their preference. If the target fails the contest, they become Taunted towards you, forcing them to try and target you with a negative effect or damage. The effects of Taunted are explained more in the <a href='/rules/?focus=Damage%20%26%20Conditions'>Damage & Conditions</a> section.",
+                "<b>Extra Bonus Action:</b> You may expend half of your total Attacks to gain an additional Bonus Action for this Turn. If you use this to make Attack Rolls during this extra Bonus Action, you may not make more rolls than the number of Attacks you spent to gain that Bonus Action."
               ]
             },
             {
@@ -269,7 +269,7 @@
               ],
               "compactDetails": [
                 "<b>Move:</b> For every 1 meter of Movement Speed spent, you may move 1 meter.",
-                "<b>Jump:</b> Each meter moved while jumping costs 1 meter of Movement Speed. You must Move at least 2m in the direction you're jumping to gain the benefits of a \"running start\". Without a running start, the maximum distance of your Jump is halved. There are two types of Jumps that may be performed.<ul class='sublist'><li>High Jump: Allows you to jump vertically an amount of meters equal to your Strengh Modifier (minimum 1).</li><li>Long Jump: Allows you to jump horizontally an amount of meters equal to double your Strength Modifier (minimum 2).</li></ul>",
+                "<b>Jump:</b> Each meter moved while jumping costs 1 meter of Movement Speed. You must Move at least 2m in the direction you're jumping to gain the benefits of a \"running start\". Without a running start, the maximum distance of your Jump is halved. Two types of Jumps may be performed.<ul class='sublist'><li>High Jump: Allows you to jump vertically an amount of meters equal to your Strength Modifier (minimum 1).</li><li>Long Jump: Allows you to jump horizontally an amount of meters equal to double your Strength Modifier (minimum 2).</li></ul>",
                 "<b>Get Up:</b> You may expend half of your total Movement Speed to remove the Prone Condition from yourself. You may not do so if you have less than half of your Movement Speed remaining."
               ]
             },
@@ -287,10 +287,10 @@
             {
               "subheading": "Other",
               "details": [
-                "These actions aren't necessarily common parts of your Action Economy, and function in unique ways."
+                "These actions aren't necessarily common parts of your Action Economy and function in unique ways."
               ],
               "compactDetails": [
-                "<b>Hold Turn:</b> Allows you to choose to take your Turn later in the round than your Initiative roll would normally have you act. Specifically, you may choose one of your allies to act after their Turn. When taking this action, you may choose whether or not to take this order for just this round, or the entire encounter.",
+                "<b>Hold Turn:</b> Allows you to choose to take your Turn later in the round than your Initiative roll would normally have you act. Specifically, you may choose one of your allies to act after their Turn. When taking this action, you may choose whether or not to take this order for just this round or the entire encounter.",
                 "<b>Ready:</b> Allows you to choose a predetermined <u>Action</u> to take at a later point, instead of on your Turn, in response to something happening. When the trigger occurs, you may then expend your <u>Reaction</u> to execute the <u>Action</u> you specified.",
                 "<b>Use an Object:</b> The Economy consumed to use an object greatly depends on what kind of object is being used, and how. Complicated objects may take a full <u>Action</u> to use, while less complicated ones may only take a single <u>Attack</u> or <u>Bonus Action</u>."
               ]
