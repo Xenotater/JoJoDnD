@@ -14,7 +14,7 @@ $(document).ready(function() {
 });
 
 function updateURL() {
-    window.history.replaceState(null, "", '?focus=' + r);
+    window.history.replaceState(null, "", '?focus=' + encodeURIComponent(r));
 }
 
 function getData() {
@@ -51,15 +51,17 @@ function updateDisplay() {
   let newContent = `<h2 class='display-title center'>${ruleCategory.title}</h2>`;
   for (section of ruleCategory.sections) {
     newContent += `<h3 class='display-heading'>${section.heading}</h3>`;
+    if (section.description)
+      newContent += `<div>${section.description}</div>`
     for (subsection of section.items) {
       newContent += `<h5>${subsection.subheading}</h5>`
       for (detail of subsection.details)
-        newContent += `<p class='indent'>${detail}</p>`;
+        newContent += `<div class='indent'>${detail}</div>`;
       if (subsection.compactDetails) {
-        newContent += `<p>`;
+        newContent += `<div>`;
         for (detail of subsection.compactDetails)
           newContent += detail + "<br>";
-        newContent += "</p>";
+        newContent += "</div>";
       }
     }
   }

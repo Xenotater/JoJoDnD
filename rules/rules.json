@@ -4,22 +4,22 @@
       "title": "Basics",
       "sections": [
         {
-        "heading": "Dice",
-        "items": [
-          {
-            "subheading": "Dice Notation",
-            "details": [
-              "To quickly note what dice are to be rolled, the notation <u>n</u>d<u>x</u> is commonly used, where <u>n</u> represents the number of dice to be rolled and <u>x</u> represents how many sides each die should have. For example, if the notation \"3d6\" refers to rolling 3 six-sided dice."
-            ]
-          },
-          {
-            "subheading": "Required Dice",
-            "details": [
-              "To properly play using this system, you will need a variety of dice. If unavailable, an online dice roller can also be used. The required dice are: d4, d6, d8, d10, d12, d20, and Percentage Dice.",
-              "Percentage Dice can take a few different forms: a d10 with two digits on each side (00-90) or a large 100-sided die (d100). The d100 may be rolled as normal, but the special d10 must be rolled alongside a normal d10 to get the last digit of the result. The minimum roll is 1, so keep in mind that a 0 on the d10 represents 10, and 00 + 0 should be 100."
-            ]
-          }
-        ]
+          "heading": "Dice",
+          "items": [
+            {
+              "subheading": "Dice Notation",
+              "details": [
+                "To quickly note what dice are to be rolled, the notation <u>n</u>d<u>x</u> is commonly used, where <u>n</u> represents the number of dice to be rolled and <u>x</u> represents how many sides each die should have. For example, if the notation \"3d6\" refers to rolling 3 six-sided dice."
+              ]
+            },
+            {
+              "subheading": "Required Dice",
+              "details": [
+                "To properly play using this system, you will need a variety of dice. If unavailable, an online dice roller can also be used. The required dice are: d4, d6, d8, d10, d12, d20, and Percentage Dice.",
+                "Percentage Dice can take a few different forms: a d10 with two digits on each side (00-90) or a large 100-sided die (d100). The d100 may be rolled as normal, but the special d10 must be rolled alongside a normal d10 to get the last digit of the result. The minimum roll is 1, so keep in mind that a 0 on the d10 represents 10, and 00 + 0 should be 100."
+              ]
+            }
+          ]
         },
         {
           "heading": "Ability Scores",
@@ -104,14 +104,6 @@
               ]
             },
             {
-              "subheading": "Passive Perception and Passive Skills",
-              "details": [
-                "Passive Perception is a way to judge how perceptive your character is without directly rolling a check. It particularly applies when your character isn't paying close attention, instead picking up on something strange or unusual without specifically looking for it. Passive Perception is equal to 10 + your Perception Skill Bonus.",
-                "Depending on the setting or playstyle, your DM may be interested in your character's ability for other Passive Skills. For example, in a Mystery campaign, your DM may want to know the players' Passive Investigation. Regardless, the value is 10 + that Skill's bonus."
-              ]
-
-            },
-            {
               "subheading": "D&D 5e Skill Conversions",
               "details": [
                 "This system was originally based on Dungeons & Dragons 5th edition, so the following exists as a guide to allow older characters to be converted to the new Skills"
@@ -129,6 +121,30 @@
                 "<b>Religion</b> becomes <b>Supernatural</b>",
                 "<b>Sleight of Hand</b> becomes <b>Finesse</b>",
                 "<b>Stealth</b> becomes <b>Sneak</b>"
+              ]
+            },
+            {
+              "subheading": "Difficulty Class and Contested Checks",
+              "details": [
+                "When making a Skill Check, you will be rolling against one of two things: the Difficulty Class of the Check, or a contested roll.",
+                "Most Skill Checks have a Difficulty Class, or DC, either already set or decided by your Dungeon Master. The higher the DC is, the harder the Check will be to succeed. Rolling below a Check's DC results in failure.",
+                "Contested Skill Checks occur when two characters make Skill Checks against eachother. The initiator's result can be viewed as the 'DC' for the contestor to beat. This means a tie results in the initiator of the contest failing.",
+                "Some DMs or situations may treat the results as binary, while others may have varying degrees of success and failure. Additonally, some DMs may take \"Natural 1s\" and \"Natural 20s\" into account, resulting in a particularly spectacular success or failure if you roll a 1 or a 20 on the d20 respectively."
+              ]
+            },
+            {
+              "subheading": "Advantage and Disadvantage",
+              "details": [
+                "Having Advantage on a roll allows you to roll two d20s instead of one and take the higher result. Advantage can stack, but grants a +2 bonus to the roll instead of granting another additional roll attempt.",
+                "Disadvantage works opposite to Advantage, forcing you to take the lower result of two d20 rolls and granting a -2 bonus for each additional stack",
+                "Advantage and Disadvantage cancel eachother out, so if, for example, you have 2 sources of Advantage and 1 source of Disadvantage, you'd effectively have regular Advantage."
+              ]
+            },
+            {
+              "subheading": "Passive Perception and Passive Skills",
+              "details": [
+                "Passive Perception is a way to judge how perceptive your character is without directly rolling a check. It particularly applies when your character isn't paying close attention, instead picking up on something strange or unusual without specifically looking for it. Passive Perception is equal to 10 + your Perception Skill Bonus.",
+                "Depending on the setting or playstyle, your DM may be interested in your character's ability for other Passive Skills. For example, in a Mystery campaign, your DM may want to know the players' Passive Investigation. Regardless, the value is 10 + that Skill's bonus."
               ]
             }
           ]
@@ -162,18 +178,121 @@
       "title": "The Turn",
       "sections": [
         {
-          "heading": "",
+          "heading": "Taking your Turn",
           "items": [
             {
-              "subheading": "",
+              "subheading": "When to take Turns",
               "details": [
-
+                "Generally during roleplay actions can be taken relatively freely. However, during combat or other time-sensitive segments, gameplay becomes turn-based, with characters actions and environmental changes happening one at a time.",
+                "For the sake of timing and flavor, a Turn is generally assumed to take 5 seconds in-world, with each character acting at once in that time. This means 1 minute takes 12 turns, etc."
               ]
             },
             {
-              "subheading": "",
+              "subheading": "Initiative",
               "details": [
-                
+                "Turn order is determined by an Initiative roll, a special Skill Check made by all characters at the start of combat. A d20 is rolled, then the Dexterity and Wisdom Modifiers are added to the result. Turns proceed in order from highest Initiative to lowest. For ties between a player and an NPC, the player should typically go first. For ties between players, they may decide who goes first.",
+                "The start of each round of Turns is called the Top of Initiative. Many per-round effects such as Stand Damage Reduction, regeneration, and more reset or occur at the Top of Initiative."
+              ]
+            },
+            {
+              "subheading": "Parts of the Turn",
+              "details": [
+                "Each Turn has several distinct parts, each of which can be used up to 1 time per round unless otherwise specified. This is typically referred to as your \"Action Economy\""
+              ],
+              "compactDetails": [
+                "<b>Action:</b> The largest part of your Turn, typically the main focus of what you're doing for the round.",
+                "<b>Bonus Action:</b> A slightly smaller action, ability, or technique that can be used or activated quickly.",
+                "<b>Movement:</b> The amount of movement you can make in one Turn. By default, a Human has 10 meters of Movement Speed that can be used in a Turn. Stands have their own Movement Speed as well, which can be used separately from their User's Movement.",
+                "<b>Reaction:</b> An action that can be taken outside of your Turn in response to something else happening to or around you. You may still only take one Reaction per round, and get it back at the start of your next Turn when used.",
+                "<b>Free Action:</b> Something that takes practically no focus or time to perform, like talking. Unlike other parts of the Turn, Free Actions can be used as many times as desired."
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Combat Actions",
+          "description": "These actions may be taken by anyone in Combat as one of the specified parts of their Turn.",
+          "items": [
+            {
+              "subheading": "Action",
+              "details": [
+                "Each of these actions costs your <u>Action</u>. You may only use one per Turn unless otherwise specified."
+              ],
+              "compactDetails": [
+                "<b>Attack:</b> Allows you to use an Attack action. If you Attack you may not use other Actions, but you may have several Attacks per Action.",
+                "<b>Dash:</b> Allows you to Move an additional amount of meters equal to your Movement Speed.",
+                "<b>Disengage:</b> Prevents enemies from taking Opportunity Attacks when you exit their Melee Range until the start of your next Turn.",
+                "<b>Dodge:</b> Grants one of the following defensive effects until the start of your next Turn. If you're a Stand User you also gain 1 Stand Energy doing this.<ul class='sublist'><li>Gives enemies Disadvantage on Attack Rolls against you and gives you Advantage on all Saving Throws and contested Skill Checks against you that weren't initated by you.</li><li>Halves damage taken from all sources.</li></ul>",
+                "<b>Help:</b> Grants an ally within 1 meter Advantage on their next Skill Check or Attack Roll. Also removes 1 level of Fear or the effects of Taunt.",
+                "<b>Hide:</b> When in a suitable place for hiding (a dark area, behind an object, camouflaged, etc), you may make a Sneak Check against any enemies that are aware of you, which they can contest with a Perception Check. Targets that fail the contest lose track of your location.",
+                "<b>Revive:</b> When within 1 meter of a Downed ally, you may make a DC 10 Medicine Check, bringing the ally back up to 1 Hit Point on success. You may instead choose to stabilize them on success, keeping them at 0 Hit Points but preventing them from having to make any Death Saves.",
+                "<b>Skill Check:</b> Allows you to make any Skill Check to interact with your environment."
+              ]
+            },
+            {
+              "subheading": "Attack",
+              "details": [
+                "When taking the Attack Action, your attack can take the form of any of the following. By default, only one Attack may be made per Action, but there are ways to get more Attacks such as being a <a href='/classes?focus=Stands>Stand User</a> or taking the <a href='/feats?focus=Trained_Combatant'>Trained Combatant</a> Feat."
+              ],
+              "compactDetails": [
+                "<b>Attack:</b> Allows you to make a single Attack Roll against a target, rolling damage if it hits them. Whether or not an Attack Roll hits is determined by the target's Armor Class, which is explained in the <a href='/rules?focus=Combat'>Combat</a> section.",
+                "<b>Grapple/Shove:</b> When in Melee Range of a target, you may make an Athletics (Str/Pow) Check, forcing the target to contest using either Athletics (Str/Pow) or Acrobatics (Dex/Pre), their preference. If the target fails the contest, they suffer the effects of your Grapple or Shove. A Shove can either push the target back 1 meter or knock them Prone. A Grapple requires one of your hands to hold the target and inflicts them with the Grappled Condition. Prone and Grappled are explained more in the <a href='/rules/?focus=Damage%20%26%20Conditions'>Damage & Conditions</a> section.",
+                "<b>Speed Duel:</b> When attempting to take a non-weapon object off of someone, or do something else faster than someone like reaching a location first, or even just to measure awareness and reaction time between two people, you may initiate a Speed Duel, which takes the form of a contested Athletics (Wis/Spd) check. The winner is considered 'faster', keeping in mind that the initiator loses a tie.",
+                "<b>Taunt:</b> When within 10 meters of a target who you can communicate with, you may initiate a Grit (NOT Dur) or Presence Check agaisnt them, which can be contested by either of those Skills as well, their preference. If the target fails the contest, they become Taunted towards you, forcing them to try and target you with a negative effect or damage. The effects of Taunted is explained more in the <a href='/rules/?focus=Damage%20%26%20Conditions'>Damage & Conditions</a> section.",
+                "<b>Extra Bonus Action:</b> You may expend half of your total Attacks to gain an additional Bonus Action for this Turn. If you use this to make Attack Rolls during your extra Bonus Action, you may not make more rolls than the number of Attacks you spent to gain that Bonus Action."
+              ]
+            },
+            {
+              "subheading": "Bonus Action",
+              "details": [
+                "Each of these actions costs your <u>Bonus Action</u>. You may only use one per Turn unless otherwise specified."
+              ],
+              "compactDetails": [
+                "<b>Dual Wield:</b> After making at least one Attack with a weapon in one hand, you may use a weapon with the Light property to make another Attack. This applies to Unarmed Strikes, but not Stand Attacks.",
+                "<b>Hasty Skill Check:</b> Allows you to make any Skill Check with Disadvantage. If you use this action multiple times through any means, you gain an additional stack of Disadvantage for each use."
+              ]
+            },
+            {
+              "subheading": "Reaction",
+              "details": [
+                "Each of these actions costs your <u>Reaction</u>. These may occur outside of your Turn. You may only use one per Turn unless otherwise specified."
+              ],
+              "compactDetails": [
+                "<b>Identify:</b> In response to observing a supernatural phenomenon, you may make a Supernatural Check to learn some (but not necessarily all) information on the cause of it on success.",
+                "<b>Opportunity Attack:</b> In response to a hostile enemy you can observe exiting your Melee Range, you may make a single Melee Attack, Grapple, or Shove against them."
+              ]
+            },
+            {
+              "subheading": "Movement",
+              "details": [
+                "Each of these actions costs some amount of your Movement Speed. You may use any combination of these at any point during your Turn until you run out of Movement Speed."
+              ],
+              "compactDetails": [
+                "<b>Move:</b> For every 1 meter of Movement Speed spent, you may move 1 meter.",
+                "<b>Jump:</b> Each meter moved while jumping costs 1 meter of Movement Speed. You must Move at least 2m in the direction you're jumping to gain the benefits of a \"running start\". Without a running start, the maximum distance of your Jump is halved. There are two types of Jumps that may be performed.<ul class='sublist'><li>High Jump: Allows you to jump vertically an amount of meters equal to your Strengh Modifier (minimum 1).</li><li>Long Jump: Allows you to jump horizontally an amount of meters equal to double your Strength Modifier (minimum 2).</li></ul>",
+                "<b>Get Up:</b> You may expend half of your total Movement Speed to remove the Prone Condition from yourself. You may not do so if you have less than half of your Movement Speed remaining."
+              ]
+            },
+            {
+              "subheading": "Free Action",
+              "details": [
+                "Each of these actions costs no part of your Action Economy, and they may be used as many times as you'd like."
+              ],
+              "compactDetails": [
+                "<b>Talking:</b> You can talk as much and as often as you'd like, off or on your Turn. You may not make any Skill Checks (such as Diplomacy) while doing so, however.",
+                "<b>Drop:</b> Allows you to fall Prone at will, or drop any object, weapon, or Grappled target you're holding.",
+                "<b>Object Interaction:</b> Allows you to pick up an object off the ground, push an item on the ground up to 5m away, draw or stow up to two weapons or up to five weapons with the Thrown property. Unlike other Free Actions, you may only use this action once per Turn. When drawing or stowing weapons specifically, you may also do so freely at the Top of Initiative without consuming your Object Interaction."
+              ]
+            },
+            {
+              "subheading": "Other",
+              "details": [
+                "These actions aren't necessarily common parts of your Action Economy, and function in unique ways."
+              ],
+              "compactDetails": [
+                "<b>Hold Turn:</b> Allows you to choose to take your Turn later in the round than your Initiative roll would normally have you act. Specifically, you may choose one of your allies to act after their Turn. When taking this action, you may choose whether or not to take this order for just this round, or the entire encounter.",
+                "<b>Ready:</b> Allows you to choose a predetermined <u>Action</u> to take at a later point, instead of on your Turn, in response to something happening. When the trigger occurs, you may then expend your <u>Reaction</u> to execute the <u>Action</u> you specified.",
+                "<b>Use an Object:</b> The Economy consumed to use an object greatly depends on what kind of object is being used, and how. Complicated objects may take a full <u>Action</u> to use, while less complicated ones may only take a single <u>Attack</u> or <u>Bonus Action</u>."
               ]
             }
           ]
@@ -188,9 +307,7 @@
           "items": [
             {
               "subheading": "",
-              "details": [
-
-              ]
+              "details": []
             }
           ]
         }
@@ -204,9 +321,7 @@
           "items": [
             {
               "subheading": "",
-              "details": [
-
-              ]
+              "details": []
             }
           ]
         }
@@ -220,9 +335,7 @@
           "items": [
             {
               "subheading": "",
-              "details": [
-
-              ]
+              "details": []
             }
           ]
         }
@@ -236,9 +349,7 @@
           "items": [
             {
               "subheading": "",
-              "details": [
-
-              ]
+              "details": []
             }
           ]
         }
@@ -252,9 +363,7 @@
           "items": [
             {
               "subheading": "",
-              "details": [
-
-              ]
+              "details": []
             }
           ]
         }
@@ -268,15 +377,11 @@
           "items": [
             {
               "subheading": "",
-              "details": [
-
-              ]
+              "details": []
             },
             {
               "subheading": "",
-              "details": [
-                
-              ]
+              "details": []
             }
           ]
         }

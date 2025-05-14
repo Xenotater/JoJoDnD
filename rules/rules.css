@@ -85,6 +85,11 @@
     text-indent: 2em;
 }
 
+.sublist {
+    display: inline-block;
+    margin: 0;
+}
+
 @media (max-width: 1400px) {
     .rulesTab {
         left: 25px;
