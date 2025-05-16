@@ -219,7 +219,7 @@
                 "Each of these actions costs your <u>Action</u>. You may only use one per Turn unless otherwise specified."
               ],
               "compactDetails": [
-                "<b>Attack:</b> Allows you to use an Attack action. If you do so, you may not use other Actions, but you may have several Attacks per Action.",
+                "<b>Attack:</b> Allows you to use an Attack action. Doing so locks you into using your full Action to attack, but you may have several Attacks per Action.",
                 "<b>Dash:</b> Allows you to Move an additional amount of meters equal to your Movement Speed.",
                 "<b>Disengage:</b> Prevents enemies from taking Opportunity Attacks when you exit their Melee Range until the start of your next Turn.",
                 "<b>Dodge:</b> Grants one of the following defensive effects until the start of your next Turn. If you're a Stand User, you also gain 1 Stand Energy doing this.<ul class='sublist'><li>Gives enemies Disadvantage on Attack Rolls against you and gives you Advantage on all Saving Throws and contested Skill Checks against you that weren't initiated by you.</li><li>Halves the damage you take from all sources.</li></ul>",
@@ -239,7 +239,7 @@
                 "<b>Grapple/Shove:</b> When in Melee Range of a target, you may make an Athletics (Str/Pow) Check, forcing the target to contest using either Athletics (Str/Pow) or Acrobatics (Dex/Pre), their preference. If the target fails the contest, they suffer the effects of your Grapple or Shove. A Shove can either push the target back 1 meter or knock them Prone. A Grapple requires one of your hands to hold the target and inflicts them with the Grappled Condition. Prone and Grappled are explained more in the <a href='?focus=Damage%20%26%20Conditions'>Damage & Conditions</a> section.",
                 "<b>Speed Duel:</b> When attempting to take a non-weapon object off of someone, or do something else faster than someone like reaching a location first, or even just to measure awareness and reaction time between two people, you may initiate a Speed Duel, which takes the form of a contested Athletics (Wis/Spd) check. The winner is considered 'faster', keeping in mind that the initiator loses a tie.",
                 "<b>Taunt:</b> When within 10 meters of a target whom you can communicate with, you may initiate a Grit (NOT Dur) or Presence Check against them, which can be contested by either of those Skills as well, at their preference. If the target fails the contest, they become Taunted towards you, forcing them to try and target you with a negative effect or damage. The effects of Taunted are explained more in the <a href='/?focus=Damage%20%26%20Conditions'>Damage & Conditions</a> section.",
-                "<b>Extra Bonus Action:</b> You may expend half of your total Attacks to gain an additional Bonus Action for this Turn. If you use this to make Attack Rolls during this extra Bonus Action, you may not make more rolls than the number of Attacks you spent to gain that Bonus Action."
+                "<b>Extra Bonus Action:</b> You may expend half of your total Attacks (rounded up) or to gain an additional Bonus Action for this Turn. You may also spend all of your Attacks (even if you only have 1) to gain an additional 2 Bonus Actions. If you use this to make Attack Rolls during this extra Bonus Action, you may not make more rolls than the number of Attacks you spent to gain that Bonus Action."
               ]
             },
             {
