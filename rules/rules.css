@@ -90,6 +90,10 @@
     margin: 0;
 }
 
+.compact {
+    margin-top: 4px;
+}
+
 @media (max-width: 1400px) {
     .rulesTab {
         left: 25px;

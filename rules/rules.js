@@ -41,7 +41,7 @@ function fillTabs() {
 
   $("#tabsColumn").html(newContent);
   $(".currentTab").removeClass("currentTab");
-  $("#" + r).addClass("currentTab");
+  $("#" + r.replace(/[^A-z]/g, "")).addClass("currentTab");
 }
 
 function updateDisplay() {
@@ -58,7 +58,7 @@ function updateDisplay() {
       for (detail of subsection.details)
         newContent += `<div class='indent'>${detail}</div>`;
       if (subsection.compactDetails) {
-        newContent += `<div>`;
+        newContent += `<div class='compact'>`;
         for (detail of subsection.compactDetails)
           newContent += detail + "<br>";
         newContent += "</div>";
