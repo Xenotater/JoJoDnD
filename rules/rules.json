@@ -413,20 +413,88 @@
       "title": "Combat",
       "sections": [
         {
-          "heading": "",
+          "heading": "Attacking",
           "items": [
             {
-              "subheading": "",
-              "details": []
+              "subheading": "Armor Class",
+              "details": [
+                "Armor Class (AC) is the value that must be met by an Attack Roll in order to hit a target, similar to a Skill Check's Difficult Class. Rolls that are equal to or higher than the target's AC result in a hit that deals damage, while rolls lower than the AC miss and deal no damage. Because standard armor is not common in the world of JoJo's (or in modern settings in general), every character has built-in Unarmored Defense, resulting in an AC equal to 10 + two of either your Dex, Con, or Wis Mods.",
+                "<a href='/classes?focus=Stands'>Stands</a> also have their own Armor Class (Stand AC), which determines whther an Attack Roll hits the Stand (a \"Stand Hit\"), the User (a \"Direct Hit\"), or misses. if the Stand is on its own and not protecting anyone, the Stand AC acts like normal AC and results in either a hit or a miss. If it is protecting someone within 2m though, landing a blow between the Stand AC and the AC of the creature being protected results in a Stand Hit, which allows the damage to be reduced by Stand Damage Reduction (DR) before passing the remaining damage to the User. Only hitting above both ACs results in a Direct Hit that can't be reduced and redirected. Keep in mind that most Stands cannot be damage by mundane weapons, so those will only deal any damage at all on a Direct Hit. Stand AC and DR are explained further on the <a href='/classes?focus=Stands'>Stands</a> page.",
+                "Head Armor Class (Head AC) applies to <a href='/abilities?focus=Undead_Nature'>Undead</a> creatures. These creatures have a separate HP pool for their head, which is harder to hit but destroying their head specifically is the only way to actually kill them. Hits below their Head AC only damage their body, but hits that meet their head AC can damage either their head or their body. Their head can also be damaged instead of their body if they're forced to make a Saving Throw and fail by an amount equal to or higher than their Proficiency Bonus."
+              ]
+            },
+            {
+              "subheading": "Attack Rolls",
+              "details": [
+                "In order to damage something, an Attack Roll must be made. To do so, roll a d20 and add the relevant Modifier (usually specified by the weapon being used) and your Proficiency Bonus if applicable. If the result is equal to or higher than your target's AC, the Attack lands and deals damage. Otherwise, it's a miss and deals no damage. For example, a character with a +3 PB and +4 Str making an Unarmed Strike would roll a d20 and add +7 to the roll, possibly resulting in 12+7=19, which would hit anything with an AC of 19 or lower.",
+                "By default you only get 1 Attack per Action (see <a href='?focus=The_Turn'>The Turn</a>), but you may get more through the <a href='/feats?focus=Trained_Combatant'>Trained Combatant</a> Feat or for each 50 Speed your <a href='/classes?focus=Stands'>Stand</a> has. The maximum number of Attacks per Action for every character is 10."
+              ]
+            },
+            {
+              "subheading": "Critical Hits and Misses",
+              "details": [
+                "When making an Attack Roll, you can potentially roll a \"Natural 1\" or \"Natural 20\", which occurs when you roll the lowest or highest possible value on the d20 before adding any Modifiers. Natural 20s result in a guaranteed hit regardless of the target's AC and also deals double damage. Natural 1s on the other hand result in a guaranteed miss regardless of the target's AC.",
+                "It's possible to have <a href='/abilities'>Abilities</a> or <a href='/feats'>Feats</a> that increase your Critical Hit Range. These can stack with eachother as well, further lowering the natural roll that would result in a Critical Hit. For example, if you have both <a href='/feats?focus=Rifle_Specialization'>Rifle Specialization</a> and <a href='/abilities?focus=Focused_Hatred'>Focused Hatred</a>, you can Crit on any roll that's naturally 17 or higher."
+              ]
+            },
+            {
+              "subheading": "Non-Lethal Damage",
+              "details": [
+                "When dealing damage to a creature, you may choose to deal Non-Lethal damage. If this damage reduces them to 0 HP still makes them Downed, but keeps them Stable so that they don't have to roll any Death Saves. This essentially knocks them unconscious, rather than mortally wounding or killing them."
+              ]
             }
           ]
         },
         {
-          "heading": "Attacking",
+          "heading": "Types of Attacks",
           "items": [
             {
-              "subheading": "Non-Lethal Damage",
-              "details": []
+              "subheading": "Unarmed Strikes",
+              "details": [
+                "Unarmed Strikes are as simple as hitting something with your bare hands or feet, typically punches or kicks. You are considered Proficient in Unarmed Strikes by default. Unarmed Attack Rolls can be made with either Strength or Dexterity, and deal 1d4 + Str (NOT Dex) Mod Bludgeoning damage. These \"weapons\" are considered to have the Open Hand, Light, and Fist <a href='/weapons#attributes-list'>attributes</a>."
+              ]
+            },
+            {
+              "subheading": "Weapon Attacks",
+              "details": [
+                "When dealing damage using a <a href='/weapons'>weapon</a>, the Modifiers added to the Attack Roll and damage amount and type deal are dependent on what kind of weapon it is. You may have Proficiency in a type of weapon, allowing you to add your PB to the Attack Roll as well. For example, a character with <a href='/feats/?focus=Simple_Weapon_Focus'>Simple Weapon Focus</a> with a Club (a Simple-Type weapon), +2 PB, and +3 Str, would have +5 to the Attack Roll and would deal 1d6+3 Bludgeoning damage.",
+                "Every weapon has a Type and a Specialization, which determines whether or not you have Proficiency in it and can also allow you to do more with the weapon if you have the matching <a href='/feats'>Feats</a>.",
+                "Every weapon has a number of distinct <a href='/weapons#attribute-list'>attributes</a>. These attributes can affect how you use a weapon or the additional effects it has on a hit. Be sure to read what all of your weapon's attributes do so you know how to use it.",
+                "Some weapons have prerequisites, which you must meet in order to use. You may attempt to use a weapon that you don't meet the prerequisite for, but Attack Rolls made with it will have Disadvantage."
+              ]
+            },
+            {
+              "subheading": "Improvised Weapons",
+              "details": [
+                "Objects that aren't traditional 'weapons' can still be picked up and used to hit people of course. Doing so results in an Improvised Weapon Attack, which uses Strength for Attack Rolls and deals 1d4 + Str Mod damage. These \"weapons\" are considered to have the Thrown (5/15) <a href='/weapons#attributes-list'>attribute</a> and Melee/Thrown Specialization unless otherwise specified.",
+                "Some improvised weapons may have different damage values and attributes, examples of which can be found on the <a href='/weapons'>Weapons</a> page."
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Positioning and Measurement",
+          "items": [
+            {
+              "subheading": "Measuring with Metric",
+              "details": [
+                "For the sake of keeping calculations simple (and reflecting JoJo's canon), this system uses the Metric System for measurement. This means measuring distance in Meters, mass in Kilograms, and temperature in Celsius.",
+                "Distances are typically measured and tracked on a grid system using either hexagons or squares, or even just a ruler. It is common for a battlemap to be used, especially for combat, to keep track of where everyone and everything is. It doesn't matter what method is used, so long as it remains consistent for combat purposes.",
+                "When moving diagonally an a square grid, 1 diagonal square is considered 1m while 2 diagonal squares are considered 3m. For example, moving 5 diagonal units on a square grid should be considered to cost 7m. This simplification is intended to avoid doing complex trigonometry mid-combat, while still being close enough to the correct distance at reasonable scales. This is not an issue with hex grids."
+              ]
+            },
+            {
+              "subheading": "Area of Effect Shapes",
+              "details": [
+                "Some attacks or effects are large enough that they hit an entire area, rather than a single target. These areas of effect can have a number of different shapes, depending on the source. The Point of Origin for these shapes must be within the range defined by the source of the effect. If the Point of Origin is on the edge of the created shape (not a Cube or Sphere), the character that initiated the effect may decide whether or not that point is hit by the effect."
+              ],
+              "compactDetails": [
+                "<b>Cone:</b> A Cone extends forward from its Point of Origin. The width of a Cone at the end is always equal to its length. For example, a 5m Cone would extend 5m from its Point of Origin with the width gradually increasing until it ends with the curve of a circle with a 5m diameter.",
+                "<b>Cube:</b> A Cube extends outward from its Point of Origin in six perpindicular directions. The Point of Origin is always in the exact center of the shape, and all sides of the shape are equal in size. For example, a 5m Cube would extend 2.5m upwards, downwards, forwards, backwards, left, and right of its Point of Origin.",
+                "<b>Cylinder:</b> A Cylinder is composed of two parallel circles and the area between them like a tube. The Point of Origin is always in the center of one of the circles. For example, a 5m Cylinder could extend in a circle with a 2.5m radius around its Point of Origin, as well as 5m upwards from that circle.",
+                "<b>Line:</b> A Line extends forward from its Point of Origin. If the width of the Line is not defined, it can be assumed to be 1m. For example, a 5m Line would extend 5m from its Point of Origin and include any area within 0.5m on either side of the Line.",
+                "<b>Sphere:</b> A Sphere extends outward from its Point of Origin equally in all directions. The Point of Origin is always in the exact center of the shape. For example, a 5m sphere Sphere would extend 2.5m in all directions around its Point of Origin."
+              ]
             }
           ]
         }
