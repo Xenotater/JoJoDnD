@@ -440,7 +440,7 @@
             {
               "subheading": "Surprise Attacks",
               "details": [
-                "If you manage to catch a foe unaware, you may be able to perform a Surprise Attack. This Attack Roll has Advantage and guarantees you go first in Initiative order without the need for an Initiative Roll. You may either choose to take a full Surprise Turn, or perform only 1 Attack and allow your allies to also make 1 Attack each before beginning the normal round at the Top of Initiative."
+                "If you manage to catch a foe unaware, you may be able to perform a Surprise Attack. This Attack Roll has Advantage and guarantees you go first in Initiative order without the need for an Initiative Roll. You may either choose to take a full Surprise Turn for yourself, or perform only 1 Attack and allow your allies to also make 1 Attack each before beginning the normal round at the Top of Initiative."
               ]
             },
             {
@@ -463,8 +463,8 @@
             {
               "subheading": "Weapon Attacks",
               "details": [
-                "When dealing damage using a <a href='/weapons'>weapon</a>, the Modifiers added to the Attack Roll and damage amount and type dealt are dependent on what kind of weapon it is. You may have Proficiency in a type of weapon, allowing you to add your PB to the Attack Roll as well. For example, a character with <a href='/feats/?focus=Simple_Weapon_Focus'>Simple Weapon Focus</a> with a Club (a Simple-Type weapon), +2 PB, and +3 Str, would have +5 to the Attack Roll and would deal 1d6+3 Bludgeoning damage.",
-                "Every weapon has a Type and a Specialization, which determines whether or not you have Proficiency in it and can also allow you to do more with the weapon if you have the matching <a href='/feats'>Feats</a>.",
+                "When dealing damage using a <a href='/weapons'>weapon</a>, the Modifiers added to the Attack Roll and damage amount and type dealt are dependent on what kind of weapon it is. You may have Proficiency in a type of weapon, allowing you to add your PB to the Attack Roll as well. For example, a character with <a href='/feats/?focus=Professional_Weapon_Training'>Professional Weapon Training</a> (gives Simple and Martial Proficiency) with a Club (a Simple-Type weapon), +2 PB, and +3 Str, would have +5 to the Attack Roll and would deal 1d6+3 Bludgeoning damage.",
+                "Every weapon has a Type and a Specialization, which determines whether or not you have Proficiency in it and can also allow you to do more with the weapon if you have the matching <a href='/feats/?focus=Weapon_Feat'>Feats</a>.",
                 "Every weapon has several distinct <a href='/weapons#attribute-list'>attributes</a>. These attributes can affect how you use a weapon or the additional effects it has on a hit. Be sure to read what all of your weapon's attributes do, so you know how to use it.",
                 "Some weapons have prerequisites that must be met to be able to use them. You may attempt to use a weapon for which you don't meet the prerequisite, but Attack Rolls made with it will have Disadvantage."
               ]
