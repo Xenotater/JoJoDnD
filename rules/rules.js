@@ -52,15 +52,21 @@ function updateDisplay() {
   for (section of ruleCategory.sections) {
     newContent += `<h3 class='display-heading'>${section.heading}</h3>`;
     if (section.description)
-      newContent += `<div>${section.description}</div>`
+      newContent += `<div>${section.description}</div>`;
     for (subsection of section.items) {
-      newContent += `<h5>${subsection.subheading}</h5>`
+      newContent += `<h5>${subsection.subheading}</h5>`;
       for (detail of subsection.details)
         newContent += `<div class='indent'>${detail}</div>`;
       if (subsection.compactDetails) {
-        newContent += `<div class='compact'>`;
+        newContent += "<div class='compact'>";
         for (detail of subsection.compactDetails)
           newContent += detail + "<br>";
+        newContent += "</div>";
+      }
+      if (subsection.other) {
+        newContent += "<div class='otherWrapper'>";
+        for (other of subsection.other)
+          newContent += other;
         newContent += "</div>";
       }
     }

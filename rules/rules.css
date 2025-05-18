@@ -72,7 +72,7 @@
 
 #display h5 {
     margin-top: 1em;
-    margin-bottom: 0;
+    margin-bottom: 8px;
     font-weight: bold;
     text-decoration: underline;
 }
@@ -83,6 +83,7 @@
 
 .indent {
     text-indent: 2em;
+    margin-bottom: 4px;
 }
 
 .sublist {
@@ -92,6 +93,55 @@
 
 .compact {
     margin-top: 4px;
+}
+
+#display .otherWrapper p {
+    margin-bottom: 16px;
+}
+
+.otherWrapper [data-simplebar] {
+    display: block;
+}
+
+.simplebar-placeholder {
+    display: none; /* not sure why this is acting weird */
+}
+
+.otherWrapper:has(.expTable) {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.otherWrapper table {
+    margin-top: 8px;
+}
+
+.table th {
+    background-color: darkgray;
+    border: 1px solid black;
+}
+
+.table td {
+    border: 1px solid black;
+}
+
+.expTable {
+    width: 35%;
+}
+
+.expTable th {
+    background-color: gold;
+    border: 1px solid black;
+}
+
+.expTable td {
+    background-color: palegreen;
+    border: 1px solid black;
+}
+
+.middle {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (max-width: 1400px) {

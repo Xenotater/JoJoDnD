@@ -4,6 +4,24 @@
       "title": "Basics",
       "sections": [
         {
+          "heading": "Roles",
+          "items": [
+            {
+              "subheading": "Players",
+              "details": [
+                "When playing this tabletop game, you'll take on the role of a Player. Players interact with the world of the game, generally playing as a single character and doing anything within the rules to accomplish goals set by themselves, the backstory they've created, or the greater story of the campaign. Players don't have to worry about setting up the world design, but are encouraged to be creative, clever, or funny with how they create their character and interact with the world around them."
+              ]
+            },
+            {
+              "subheading": "The Dungeon Master",
+              "details": [
+                "At least one person will NOT be a player, however. This person is the Dungeon Master (DM), who is in charge of everything that happens during the game. The DM will create the world and the greater story as they build a unique campaign for the players to play in. The DM will generally be in control of all Non-Player Characters (NPCs), which will exist to make the world feel lived-in, guide the players along the story, or serve as antagonists along the path.",
+                "Additionally, the DM is in charge of interpreting and enforcing the rules of the game. The DM should usually try to avoid removing players' agency, but should still remind them of how rules and mechanics work as necessary. The DM may also tweak rules or make up their own as they see fit, a practice that is generally called \"Homebrew\", but should generally remain consistent in the function of rules throughout the campaign."
+              ]
+            }
+          ]
+        },
+        {
           "heading": "Dice",
           "items": [
             {
@@ -141,6 +159,13 @@
               ]
             },
             {
+              "subheading": "Inspiration",
+              "details": [
+                "Inspiration is a consumable attribute that allows you to reroll any d20 roll that you didn't like the result of. The Modifiers added don't change, and you must keep the new roll or spend another point of Inspiration to roll again. There is no limit to how many points of Inspiration you can have, and you can give points to another character when you die or over the course of a Short or Long Rest.",
+                "Your DM should give out Inspiration relatively often, between 1-3 times per session per character. Inspiration is typically given as a reward for clever use of the environment, or creative roleplay or gameplay."
+              ]
+            },
+            {
               "subheading": "Passive Perception and Passive Skills",
               "details": [
                 "Passive Perception is a way to judge how perceptive your character is without directly rolling a check. It particularly applies when your character isn't paying close attention, instead picking up on something strange or unusual without specifically looking for it. Passive Perception is equal to 10 + your Perception Skill Bonus.",
@@ -168,6 +193,182 @@
                 "<b>Gunsmith's Tools</b> may be used to create and maintain firearms, to identify a shell casing, to create gunpowder, or create ammunition for such weapons.",
                 "<b>Herbalism Kits</b> may be used to identify and treat the symptoms of a poison or disease, or identify plants and their potential medicinal purposes.",
                 "<b>Thieves' Tools</b> may be used to pick a lock, hotwire an engine, or grab something small precisely."
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Miscellaneous",
+          "items": [
+            {
+              "subheading": "Limited Resources",
+              "details": [
+                "Any consumable resource is not consumed if it has no effect for any reason. This does not apply to physical resources like material or ammunition, but game resources like energy, dice, charges, etc. The Action Economy related to it is still consumed, but the resource itself isn't."
+              ]
+            },
+            {
+              "subheading": "Doubling/Halving Effects",
+              "details": [
+                "Effects that multiply a value do not stack multiplicatively, but instead additively. For example, two doubling effects (+100%) would result in an overall 3x multiplier (+200%), and A doubling effect (+100%) and a tripling effect (+200%) would result in an overall 4x multiplier (+300%), etc. This does NOT apply to calculations for Ability Scores, which allow multiplicative stacking as expected."
+              ]
+            },
+            {
+              "subheading": "Rounding",
+              "details": [
+                "Unless otherwise specified, <b>ALWAYS round down</b>. For example, half of 5 should be 2."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Characters",
+      "sections": [
+        {
+          "heading": "Character Traits",
+          "items": [
+            {
+              "subheading": "Passions",
+              "details": [
+                "A character's <a href='/passions'>Passion</a> determines their background and specialties. It grants a bonus to several Ability Scores, several Skill Proficiencies, and determines Saving Throw Proficiencies. Keep an eye on the bonuses gained from your Passion as you Level-Up, as additional Skill Proficiencies scale with your Proficiency Bonus."
+              ]
+            },
+            {
+              "subheading": "Creatures Types and Races",
+              "details": [
+                "The vast majority of characters in JoJo's are Human, which is treated as a baseline. Humans do not gain any particular abilities, but lack the weaknesses other <a href='/races'>Races</a> might have as well.",
+                "Each specific Race fits into a more generalized Creature Type, listed below:"
+              ],
+              "compactDetails": [
+                "<b>Beast</b> (<a href='/races?focus=Animal'>Animals</a>)",
+                "<b>Construct</b> (<a href='/races?focus=Cyborg'>Cyborgs</a>, Robots, Synthetic Beings)",
+                "<b>Ghost</b> (<a href='/races?focus=Ghost'>Ghosts</a>, Spirits)",
+                "<b>Humanoid</b> (<a href='/races?focus=Human'>Humans</a>, <a href='/races?focus=Rock_Human'>Rock Humans</a>, <a href='/races?focus=Pillar_Man'>Pillar Men</a>)",
+                "<b>Stand</b> (<a href='/classes?focus=Stands'>Stands</a>, <a href='/races?focus=Living_Stand'>Living Stands</a>)",
+                "<b>Monstrosity</b> (<a href='/races?focus=Abomination'>Abominations</a>, <a href='/races?focus=Living_Chimera'>Living Chimera</a>, <a href='/races?focus=Ultimate_Being'>Ultimate Beings</a>",
+                "<b>Plant</b> (Plants)",
+                "<b>Undead</b> (<a href='/races?focus=Zombie'>Zombies</a>, <a href='/races?focus=Ghoul'>Ghouls</a>, <a href='/races?focus=Vampire'>Vampires</a>, <a href='/races?focus=Undead_Chimera'>Undead Chimera</a>, <a href='/races?focus=Enhanced_Pillar_Man'>Enhanced Pillar Men</a>)"
+              ]
+            },
+            {
+              "subheading": "Classes",
+              "details": [
+                "Your <a href='/classes'>Class</a> is what determines the way your character fights, granting specific abilities and techniques called Class Features each time you gain a Level in one. Every Class has 20 defined Levels that grant Class Features. It is possible to go above Level 20 in a Class, but further Levels do not provide additional Class Features."
+              ]
+            },
+            {
+              "subheading": "Level",
+              "details": [
+                "Your Level determines how experienced you are in combat. Characters with a higher Level know more abilities and techniques and tend to be more effective with them than characters with a lower Level. Most games restrict players to Level 20 at the highest, but may involve higher Level enemies (bosses, etc.) to provide extra challenge and balance.",
+                "It's generally recommended that all players Level-Up together so they stay the same Level as each other."
+              ]
+            },
+            {
+              "subheading": "Multiclassing",
+              "details": [
+                "Multiclassing allows a character to take Levels in multiple <a href='/classes'>Classes</a> at once, rather than just one. For instance, a <a href='/classes?focus=Stands'>Stand User</a> may choose to also utilize <a href='/classes?focus=Ripple'>The Ripple</a>.",
+                "When a Multiclassed character gains a Level, they must choose which Class to gain a Level in (and get Features and a Hit Die from). Your Proficiency Bonus and number of <a href='/feats'>Feats</a> are based on your total Level, not individual Class Level.",
+                "Having Levels in a <a href='/races'>Race</a> (such as <a href='/races?focus=Vampire'>Vampire</a> does NOT count as Multiclassing. Race Levels are separate from Class Levels and have different Level-Up conditions.",
+                "Keep in mind that a character may only have one Stand. Like all Classes, you may not have multiple instances of the Stand User Class. However, you may have a Multi-Type Stand instead, which has traits and Features of multiple different Stand Types. Multi-Typing is explained more on the <a href='/classes?focus=Stands'>Stands</a> page."
+              ]
+            },
+            {
+              "subheading": "Abilities",
+              "details": [
+                "<a href='/abilities'>Abilities</a> are the core Features available to a <a href='/classes'>Class</a>. Compared to <a href='/feats'>Feats</a>, Abilities tend to be more specific and restricted, and are only able to be gained by Levelling-Up in a Class that has access to them."
+              ]
+            },
+            {
+              "subheading": "Feats",
+              "details": [
+                "<a href='/feats'>Feats</a> are more general, typically not <a href='/classes'>Class</a>-specific Features that give you access to special techniques and bonuses. You always have an amount of Feats equal to your Proficiency Bonus, and can take any that you meet the prerequisite for. Sometimes you may gain a Feat while Levelling-Up in a Class. Feats gained through Levelling-Up do not count against the number you may have based on your PB.",
+                "You may switch out your PB-based Feats anytime you Level-Up.",
+                "If you have an <a href='/classes?focus=Act'>Act-Type Stand</a> or <a href='/classes?focus=Stands'>Substand</a>, you may use any Feats you have that you meet the prerequisite for with that Stand. Feats are not form-specific, unlike the <a href='/abilities'>Abilities</a> you gain with these Stands."
+              ]
+            },
+            {
+              "subheading": "Size",
+              "details": [
+                "Creatures can have many various sizes that fit into a few defined Size Categories for the sake of certain mechanics. For example, you can only Grapple or Shove a creature that is one Category larger than you or smaller, and you can move through the space of creatures the same Size as you or smaller as Difficult Terrain."
+              ],
+              "compactDetails": [
+                "<b>Tiny</b> creatures tend to be around 70cm or shorter, weigh around 3.5kg or less, and control a 1x1 meter space.",
+                "<b>Small</b> creatures tend to be around 120cm or shorter, weigh around 30kg or less, and control a 1x1 meter space.",
+                "<b>Medium</b> creatures tend to be around 2.5m or shorter, weigh around 225kg or less, and control a 1x1 meter space. The vast majority of adult Humanoids are Medium creatures.",
+                "<b>Large</b> creatures tend to be around 5m or shorter, weigh around 1800kg or less, and control a 2x2 meter space.",
+                "<b>Huge</b> creatures tend to be around 10m or shorter, weigh around 15000kg or less, and control a 3x3 meter space.",
+                "<b>Gargantuan</b> creatures tend to be around 10m or taller, weigh around 15000kg or more, and control a 4x4 meter space."
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Creating a Character",
+          "items": [
+            {
+              "subheading": "Determining Starting Stats",
+              "details": [
+                "When a character is first created, their Ability Scores need to be determined. There are several ways to do this, such as Point Buy, Standard Array, or rolling dice. Point Buy and Standard Array are systems commonly used for Dungeons and Dragons 5th edition, and will suffice here. When rolling dice, there are several common ways to do so, such as 3d6, 4d6 drop the lowest, etc. Which method you use is generally up to the preference of your Dungeon Master."
+              ]
+            },
+            {
+              "subheading": "Character Creation Checklist",
+              "details": [
+                "Characters have many unique traits and attributes, even at Level 1, so it's important that they are built correctly.",
+                "If desired, you can use our <a href='/resources/Assets/JoJo_Char_Sheet.pdf' target='_blank'>custom character sheets</a> or create one online using our <a href='/resources/editor/' target='_blank'>editor</a>."
+              ],
+              "other": [
+                "Characters should be built roughly in this order:",
+                "<ol class='sublist'><li>Roll and assign Stats using your DM's preferred method</li><li>Choose your character's <a href='/passions'>Passion</a> and Proficiencies (including Proficiencies from your Intelligence Modifier)</li><li>If your character isn't Human, note the Features of their Race</li><li>Choose a number of <a href='/feats'>Feats</a> equal to your character's Proficiency Bonus</li><li>Choose which Class(es) your character will be playing and note the Features gained from it at your starting Level</li><li>Determine your characters Hit Points, Armor Class, and other smaller stats based on your previous choices</li><li>Talk to your DM regarding your Starting Equipment, the setting, and your character's backstory</li><li>If your character is a <a href='/classes?focus=Stands'>Stand User</a>, determine your Stand's stats as well and figure out how you want its Ability to function</li></ol>"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Levelling-Up",
+          "items": [
+            {
+              "subheading": "Milestone Levelling",
+              "details": [
+                "The simplest way to handle Levels is to have players Level-Up when they reach specific points (milestones) in the story of the campaign. Players still earn rewards like items, money, favors, status, etc., from doing extra quests and defeating enemies, but more quests and combat won't necessarily allow them to Level-Up faster. This will generally encourage players to make consistent progress in the campaign story."
+              ]
+            },
+            {
+              "subheading": "Experience Levelling",
+              "details": [
+                "Experience (Exp) is a point value that determines when a character can Level-Up, rather than relying on reaching story milestones. Experience can be gained from several sources, including as a reward for completing quests or objectives, or defeating an enemy.",
+                "It is important to be careful with Experience gain, as having it too readily available may result in players going on unnecessary side-quests to say, kill every rat in the city, just for Experience, or generally become higher Level than they're meant to be for combat balance. It may be advised for the Dungeon Master to set a Level cap, allowing players to gain more Exp but not Levelling-Up until they hit a requisite milestone, finding a happy medium between the two methods of Levelling.",
+                "The chart below shows the total Exp needed to reach a corresponding Level, as well as the corresponding Proficiency Bonus at that Level."
+              ],
+              "other": [
+                "<table class='expTable table table-striped'><thead><tr><th>Exp</th><th>Level</th><th>PB</th></tr><thead><tbody><tr><td>0</td><td>1</td><td>+2</td></tr><tr><td>300</td><td>2</td><td>+2</td></tr><tr><td>900</td><td>3</td><td>+2</td></tr><tr><td>2,700</td><td>4</td><td>+2</td></tr><tr><td>6,500</td><td>5</td><td>+3</td></tr><tr><td>14,000</td><td>6</td><td>+3</td></tr><tr><td>23,000</td><td>7</td><td>+3</td></tr><tr><td>34,000</td><td>8</td><td>+3</td></tr><tr><td>48,000</td><td>9</td><td>+4</td></tr><tr><td>64,000</td><td>10</td><td>+4</td></tr></tbody></table>",
+                "<table class='expTable table table-striped'><thead><tr><th>Exp</th><th>Level</th><th>PB</th></tr><thead><tbody><tr><td>85,000</td><td>11</td><td>+4</td></tr><tr><td>100,000</td><td>12</td><td>+4</td></tr><tr><td>120,000</td><td>13</td><td>+5</td></tr><tr><td>140,000</td><td>14</td><td>+5</td></tr><tr><td>165,000</td><td>15</td><td>+5</td></tr><tr><td>195,000</td><td>16</td><td>+5</td></tr><tr><td>225,000</td><td>17</td><td>+6</td></tr><tr><td>265,000</td><td>18</td><td>+6</td></tr><tr><td>305,000</td><td>19</td><td>+6</td></tr><tr><td>355,000</td><td>20</td><td>+6</td></tr></tbody></table>"
+              ]
+            },
+            {
+              "subheading": "Level-Up Checklist",
+              "details": [],
+              "other": [
+                "<ol class='sublist'><li>If Multiclassing, choose which <a href='/classes'>Class</a> to gain a Level in.</li><li>Gain 1 Hit Die and roll it to increase Hit Points.</li><li>If a <a href='/classes?focus=Stands'>Stand User</a>, increase Stand Ability Scores.</li><li>Check if your PB increases at this Level.</li><li>Check if any of your <a href='/abilities'>Abilities</a> and <a href='/feats'>Feats</a> scale in some way with your Level.</li><li>Gain new Abilities or Feats from the Level-Up table for your Class.</li></ol>"
+              ]
+            },
+            {
+              "subheading": "Reading the Level-Up Table",
+              "details": [
+                "When you Level-Up, you'll gain several Features (typically in the form of <a href='/abilities'>Abilities</a> and <a href='/feats'>Feats</a>) from your <a href='/classes'>Class</a> (or possibly your <a href='/races'>Race</a>), according to that Class's Level-Up table."
+              ],
+              "compactDetails": [
+                "The symbol \"|\" is used to visually separate gained features. You'll gain both things separated by the pipe symbol.",
+                "The word \"OR\" is used to indicate that you'll have to pick between two or more features to gain.",
+                "The phrase \"Choose another Class Feature from Level...\" allows you to choose another Feature that you didn't take at a previous Level that had an \"OR\" choice. If the Feature specifies that it can be taken multiple times, you may take one you've taken before.",
+                "The phrase \"Variant Rule\" indicates that a Feature can only be gained with permission from your Dungeon Master. Variant Rules tend to push the bounds of what is canon for gameplay purposes, and your DM may decide if they do or don't want to use them."
+              ]
+            },
+            {
+              "subheading": "Modular Classes",
+              "details": [
+                "Your Dungeon Master may desire to use Modular characters, rather than using the normal Level-Up tables. Modular characters still gain Class Features when Levelling-Up, but will often instead gain the \"{Classname} Feature\" <a href='/abilities'>Ability</a>. This special Ability allows you to choose from any of the Features associated with a Class, so long as you meet any listed prerequisites. If the Feature specifies that it can be taken multiple times, you may take one you've taken before."
               ]
             }
           ]
@@ -236,7 +437,7 @@
               ],
               "compactDetails": [
                 "<b>Attack:</b> Allows you to make a single Attack Roll against a target, rolling damage if it hits them. Whether or not an Attack Roll hits is determined by the target's Armor Class, which is explained in the <a href='/rules?focus=Combat'>Combat</a> section.",
-                "<b>Grapple/Shove:</b> When in Melee Range of a target, you may make an Athletics (Str/Pow) Check, forcing the target to contest using either Athletics (Str/Pow) or Acrobatics (Dex/Pre), their preference. If the target fails the contest, they suffer the effects of your Grapple or Shove. A Shove can either push the target back 1 meter or knock them Prone. A Grapple requires one of your hands to hold the target and inflicts them with the Grappled Condition. Prone and Grappled are explained more in the <a href='?focus=Damage%20%26%20Conditions'>Damage & Conditions</a> section.",
+                "<b>Grapple/Shove:</b> When in Melee Range of a target, you may make an Athletics (Str/Pow) Check, forcing the target to contest using either Athletics (Str/Pow) or Acrobatics (Dex/Pre), their preference. If the target fails the contest, they suffer the effects of your Grapple or Shove. A Shove can either push the target back 1 meter or knock them Prone. A Grapple requires one of your hands to hold the target and inflicts them with the Grappled Condition. You cannot Grapple or Shove a creature that is more than one Size Category larger than you. Size Categories are explained more in the <a href='/rules/?focus=Misc.%20Rules'>Miscellaneous</a> section. Prone and Grappled are explained more in the <a href='?focus=Damage%20%26%20Conditions'>Damage & Conditions</a> section.",
                 "<b>Speed Duel:</b> When attempting to take a non-weapon object off of someone, or do something else faster than someone like reaching a location first, or even just to measure awareness and reaction time between two people, you may initiate a Speed Duel, which takes the form of a contested Athletics (Wis/Spd) check. The winner is considered 'faster', keeping in mind that the initiator loses a tie.",
                 "<b>Taunt:</b> When within 10 meters of a target whom you can communicate with, you may initiate a Grit (NOT Dur) or Presence Check against them, which can be contested by either of those Skills as well, at their preference. If the target fails the contest, they become Taunted towards you, forcing them to try and target you with a negative effect or damage. The effects of Taunted are explained more in the <a href='/?focus=Damage%20%26%20Conditions'>Damage & Conditions</a> section.",
                 "<b>Extra Bonus Action:</b> You may expend half of your total Attacks (rounded up) or to gain an additional Bonus Action for this Turn. You may also spend all of your Attacks (even if you only have 1) to gain an additional 2 Bonus Actions. If you use this to make Attack Rolls during this extra Bonus Action, you may not make more rolls than the number of Attacks you spent to gain that Bonus Action."
@@ -406,6 +607,25 @@
               ]
             }
           ]
+        },
+        {
+          "heading": "Recovery",
+          "items": [
+            {
+              "subheading": "Resting",
+              "details": [
+                "Characters need time to recover and heal from previous encounters. Two ways of Resting allow your party to regain precious resources and health."
+              ],
+              "compactDetails": [
+                "<b>Short Rests</b> consist of a relatively short break, allowing the party to catch their breath and tend to their wounds. It takes far less time than a Long Rest, but does not result in a full restoration.",
+                "Short Rests normally take 1 hour. However, your DM may decide to shorten them further, to 10-20 minutes or even nearly instant, to encourage their use, in which case the DM may also choose to limit the number of short rests that can be taken in a day.",
+                "Short Rests allow you to spend and roll your Hit Dice, the quantity and quality of which are determined by your Level and Class, respectively, to regain an amount of HP equal to the result of the roll plus your Constitution Modifier for each die. Instead of healing, you may choose to spend your Hit Dice to remove Exhaustion, removing 1 level for spending half of your Hit Dice, or 2 levels for spending all of them. You'll also regain any <a href='/abilities'>Abilities</a> or <a href='/feats'>Feats</a> that state their usage is recovered on a Short Rest.",
+                "<b>Long Rests</b> are essentially settling in for the night, taking around 8 hours to relax, wind down, and get a good night's rest, fully restoring your party.",
+                "Long Rests may be taken without sleeping, and you may still gain the benefits from it, but no levels of Exhaustion are removed during it, and you must make a DC 10 Constitution (NOT Durability) Saving Throw, taking a level of Exhaustion on failure.",
+                "Long Rests restore all of your character's expended resources, including all Hit Points, Hit Dice, usage of your limited <a href='/abilities'>Abilities</a> or <a href='/feats'>Feats</a>, etc."
+              ]
+            }
+          ]
         }
       ]
     },
@@ -514,42 +734,92 @@
       ]
     },
     {
-      "title": "Characters",
-      "sections": [
-        {
-          "heading": "",
-          "items": [
-            {
-              "subheading": "",
-              "details": []
-            }
-          ]
-        }
-      ]
-    },
-    {
       "title": "Environment",
       "sections": [
         {
-          "heading": "",
+          "heading": "Environmental Effects",
           "items": [
             {
-              "subheading": "",
-              "details": []
+              "subheading": "Difficult Terrain",
+              "details": [
+                "Any obstacle that would reduce your ability to easily move through it is considered Difficult Terrain. Moving across Difficult Terrain costs double Movement Speed, so 2m of Movement Speed for every meter moved. Some Difficult Terrain may be even harder to move through, scaling the cost further. To indicate this, you may see notation such as \"Difficult Terrain (x3)\", which costs triple Movement Speed, etc."
+              ]
+            },
+            {
+              "subheading": "Light and Darkness",
+              "details": [
+                "Areas may have varying degrees of brightness throughout them, which could potentially restrict the able to see within the area. There are varying levels of brightness used to describe these conditions:"
+              ],
+              "compactDetails": [
+                "<b>Bright Light:</b> Everything is clearly illuminated by light, making it easy to see. Checks to perceive using sight may be made normally.",
+                "<b>Dim Light:</b> Things are more difficult to see and make out, with smaller light sources being used to see into surrounding darkness. Checks to perceive using sight may be made with Disadvantage.",
+                "<b>Darkness:</b> It is impossible to see anything, as the area is completely enveloped in darkness. Checks to perceive using sight may not be made at all, and creatures in the area are considered to have the Blinded <a href='?focus=Damage%20%26%20Conditions'>Condition</a> unless they are immune to it or have Darkvision.",
+                "<b>Obscured Space:</b> It is impossible to see anything, as the area is completely enveloped in some form of obscurity, such as smoke, fog, or blindingly bright light. Checks to perceive using sight may not be made at all, and creatures in the area are considered to have the Blinded <a href='?focus=Damage%20%26%20Conditions'>Condition</a> unless they are immune to it."
+              ]
+            },
+            {
+              "subheading": "Deep Water",
+              "details": [
+                "Creatures in Deep Water have Disadvantage on Melee Attacks that don't deal Piercing damage and cannot use Ranged/Thrown weapons that don't deal Piercing damage at all. Ranged/Thrown weapons that deal Piercing damage may be used, but attempting to use their Long Range inflicts double Disadvantage. Creatures with a Swimming Speed may ignore the Melee Attack restriction and may use Piercing Ranged/Thrown weapons at Long Range without doubling the Disadvantage.",
+                "Everything in Deep Water takes half damage from Fire, and creatuers have Disadvantage on Saving Throws against Lightning and Thunder Damage, as well as AOE effects of <a href='/classes?focus=Ripple'>The Ripple</a>."
+              ]
+            },
+            {
+              "subheading": "Improvising Effects and Damage",
+              "details": [
+                "Sometimes environmental effects or damage might have to be improvised based on the unique nature of the environment in question. The effects of the environment can have a wide variety, but the following guide may be used to determine damage dealt by it.",
+                "Damage should scale based on the Severity of the environmental effect as well as the character's Level (via their Proficiency Bonus). Players will often be able to make a Save or Skill Check to attempt to either take no damage or half damage instead."
+              ],
+              "other": [
+                "Severity Examples:<br>",
+                "<ul class='sublist'><li>Inconvenience: You trip into a thorny bush.</li><li>Setback: You fall into a pit of broken glass.</li><li>Dangerous: You fall into a pit of sharp spikes.</li><li>Deadly: You fall into a pit of sharp spikes coated with potent venom.</li></ul>",
+                "<div data-simplebar><table class='table table-striped'><thead><tr><th>PB (Level)</th><th>Inconvenience</th><th>Setback</th><th>Dangerous</th><th>Deadly</th></tr></thead><tbody><tr><td>+2 (Level 1-4)</td><td>4 (1d6)</td><td>9 (2d8)</td><td>16 (3d10)</td><td>26 (4d12)</td></tr><tr><td>+3 (Level 5-8)</td><td>7 (2d6)</td><td>18 (4d8)</td><td>33 (6d10)</td><td>52 (8d12)</td></tr><tr><td>+4 (Level 9-12)</td><td>11 (3d6)</td><td>27 (6d8)</td><td>49 (9d10)</td><td>78 (12d12)</td></tr><tr><td>+5 (Level 13-16)</td><td>14 (4d6)</td><td>36 (8d8)</td><td>66 (12d10)</td><td>104 (16d12)</td></tr><tr><td>+6 (Level 17+)</td><td>18 (5d6)</td><td>45 (10d8)</td><td>82 (15d10)</td><td>130 (20d12)</td></tr></tbody></table></div>"
+              ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "title": "Misc. Rules",
-      "sections": [
+        },
         {
-          "heading": "",
+          "heading": "Interacting with the World",
           "items": [
             {
-              "subheading": "",
-              "details": []
+              "subheading": "Occupying Space",
+              "details": [
+                "While a character is positioned in a square meter space on the game map, that doesn't necessarily mean they phsyically take up that full square's space, but rather that they control that space. A character cannot move through another creature's controlled space unless they're allied, allowed to do so, and the same Size Category or smaller than the creature already in that space. Moving through another creature's space like this counts as moving through Difficult Terrain. Size Categories are explained more in the <a href='/rules/?focus=Misc.%20Rules'>Miscellaneous</a> section."
+              ]
+            },
+            {
+              "subheading": "Movement Options",
+              "details": [
+                "Every creature has a Movement Speed which allows them to walk that amount of meters. However, some creatures may also have another kind of Movement Speed, and may instead choose to spend their Movement Speed to move in that manner. Movement Speed can be split up as desired, but always uses the same proportion compared to normally walking. For example, a creature with 10m Movement Speed and 5m Burrowing Speed could choose to walk 10m, burrow 5m, or walk 6m and burrow 2m, etc."
+              ],
+              "compactDetails": [
+                "<b>Burrowing:</b> A character without a specified Burrowing Speed cannot burrow. Burrowing Speed can be used to travel through mud, dirt, and other relatively soft materials by digging into and through it. Stone, concrete, and other harder materials can also be burrowed through, but count as Difficult Terrain.",
+                "<b>Climbing:</b> A character without a specified Climbing Speed can still climb, but doing so counts as moving through Difficult Terrain. Climbing Speed can be used to vertically scale surfaces, but requires those surfaces to have sufficient footholds and supports to do so.",
+                "<b>Flying:</b> A character without a specified Flying Speed cannot fly. Flying Speed can be used to freely move through the air, but requires continuous movement to do so unless the ability to hover is specified.",
+                "<b>Swimming:</b> A character without a specified Swimming Speed can still swim, but doing so counts as moving through Difficult Terrain. Swimming Speed can be used to freely move through or across water."
+              ]
+            },
+            {
+              "subheading": "Cover",
+              "details": [
+                "By strategically positioning yourself behind an object in your environment, you can gain Cover from attacks. There are three stages of Cover that grant increasing levels of protection, which takes the form of a bonus to your AC and Dexterity Saving Throws. Half Cover grants +2, Three-Quarters Cover grants +5, and Full Cover prevents you from being targeted entirely.",
+                "Cover only works if the object granting it is between you and your attacker, generally only protecting you in a single direction."
+              ]
+            },
+            {
+              "subheading": "Falling",
+              "details": [
+                "For every 3 meters a creature falls, they take 1d6 Bludgeoning damage (maximum 20d6) when hit the ground. Upon hitting the ground, they must make a Dexterity Saving Throw with a DC of 10 + the number of d6s of fall damage they would take. On failure they take the full damage and fall Prone, but on success they only take half damage and do not fall Prone.",
+                "Falling occurs at a speed of 150 meters per Turn. This means that falling more than 150m results in taking more than one Turn to hit the ground. While falling, you may not use any Movement, unless you have a Flying Speed, but may otherwise act normally."
+              ]
+            },
+            {
+              "subheading": "Drowning or Suffocating",
+              "details": [
+                "Without air, you can survive for an amount of rounds equal to your Constitution Modifier (minimum 1) without penalty. Past that, at the end of each Turn, you must make a Constitution Saving Throw with a DC of 10 + the number of total turns you've gone without air. On failure, you gain 1 level of Exhaustion, or 2 if you fail by 10 or more. Exhaustion gained in this way does not stack with other sources, and if you have other levels the higher one determines the applied effects. Once you are able to breathe again, any Exhaustion gained in this way is removed.",
+                "While unable to breathe, <a href='/classes?focus=Ripple'>Ripple Users</a> may not regain spent Ripple Points, and lose 1 RP at the end of each Turn without air.",
+                "Constructs and <a href='/abilities?focus=Undead_Nature'>Undead</a> do not need to be able to breathe unless they also have a living component (such as <a href='/races?focus=Cyborg'>Cyborgs</a>, and are thus immune to the above effects."
+              ]
             }
           ]
         }
@@ -562,12 +832,15 @@
           "heading": "",
           "items": [
             {
-              "subheading": "",
-              "details": []
-            },
-            {
-              "subheading": "",
-              "details": []
+              "subheading": "Basic Tips for Being a Dungeon Master",
+              "details": [],
+              "other": [
+                "<p>Being a Dungeon Master for this game can be quite challenging and time-consuming, but also quite rewarding. You will have to create all the Non-Player Characters (NPCs), as well as the entire world, story, and all environments, yourself.</p>",
+                "<p>You'll need to keep the rules in mind and be sure to remind players how mechanics are supposed to work when they try to do something, but avoid removing their agency. You may tweak or create rules as you need, but try to remain consistent and fair.</p>",
+                "<p>Most characters have some sort of unique technique or ability that is unique to them and in line with their theme and powers. When creating an ability for a character, you'll need to find a balance of strength and versatility. The stronger an ability is, the more limited it should be, and the more versatile an ability is, the weaker it should be.</p>",
+                "<p>Another thing to keep in mind is the importance of Inspiration. Inspiration should be given out as a reward for good and engaging roleplay, or creative use of their abilities or environment. Ideally, each player should receive 1-3 points of Inspiration per session. If you want to keep Inspiration equal, you can choose to instead give everyone in the party a point whenever the party does something cool, rather than focusing on individuals.</p>",
+                "<p>For more advice on being a DM for this system, you can check out our full DM Guide: {COMING SOON}</p>"
+              ]
             }
           ]
         }
