@@ -330,29 +330,12 @@
             "You may use this Feat an amount of times equal to half your Proficiency Bonus (rounded down) per Long Rest."
         ]
     },
-    "Natural_Talent": {
-        "name": "Natural Talent",
-        "desc": "Through a combination of experience and natural-born talent you have gotten very good at certain tasks.",
-        "effects": [
-            "Choose up to Two Skills, Artisan's Tools, instruments, languages, or any individual weapon that you are Proficient in and gain Expertise in them.",
-            "You may take this Feat multiple times if desired."
-        ]
-    },
     "Ever_Vigilant": {
         "name": "Ever Vigilant",
         "desc": "You've been aware of them for a while now. You don't know who, but you know that they've been after you for so long, and you've been evading them for what seems like forever.",
         "effects": [
             "You may add your Proficiency Bonus to your Initiative Bonus. In addition, allies within 5 meters who can see or hear you gain a bonus to their Initiative equal to half your Proficiency Bonus.",
             "Enemies that attempt to surprise you get Disadvantage instead of Advantage on their Surprise Attack. Additionally, you may use your Stand to defend against Surprise Attacks if you have one."
-        ]
-    },
-    "Perfected_Craft": {
-        "name": "Perfected Craft",
-        "desc": "You've spent countless hours training a specific skill, and it's clear that effort paid off.",
-        "effects": [
-            "You may choose to gain Mastery in a Skill, Artisan's Tools, instrument, language, or any individual weapon that you have Expertise in, allowing you to add your Proficiency Bonus to it 3 times.",
-            "This may also continue to higher levels of Mastery, if you choose something you already had Mastery in.",
-            "You may take this Feat multiple times if desired."
         ]
     },
     "Sidearm_Specialization": {

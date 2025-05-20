@@ -17,7 +17,7 @@
         "hDice": "1d10",
         "dcName": "Ripple DC",
         "dc": "8 + Con + Proficiency Bonus",
-        "desc": "The Ripple is an energy that travels through the blood and is powered by breathing. A sacred art, it can be used for both healing and destruction. It is extremely effective against Undead, and it can be used against corporeal objects to manipulate them. The Ripple works similarly to electricity, in that it is able to travel through liquids, metals, and most biomass incredibly well.",
+        "desc": "The Ripple is an energy that travels through the blood and is powered by breathing. A sacred art, it can be used for both healing and destruction. It is extremely effective against <a href='/abilities?focus=Undead_Nature'>Undead</a>, and it can be used against corporeal objects to manipulate them. The Ripple works similarly to electricity, in that it is able to travel through liquids, metals, and most biomass incredibly well.",
         "extra": [
             {
                 "name": "Honed Body",
@@ -33,11 +33,11 @@
             },
             {
                 "name": "Undead's Bane",
-                "desc": "Any Radiant Damage you deal is doubled against Undead."
+                "desc": "Any damage dealt by The Ripple is doubled against Undead, and <a href='/races?focus=Pillar_Man'>Pillar Men</a> take extra damage equal to their Level."
             }
         ],
         "notes": [
-            "When unable to breathe, Ripple Users are not able to regain Ripple Points."
+            "When unable to breathe, Ripple Users are not able to regain Ripple Points and lose one Point per Turn."
         ],
         "theme": "sun",
         "level": {
@@ -249,7 +249,7 @@
             {
                 "name": "Rules of Stands",
                 "content": [
-                    "<ul><li>A single person can only have one Stand (Hive Stands are the same Stand, just split up into much smaller parts)<\/li><li>Whatever damage is inflicted upon the Stand or the User is also dealt to the other<\/li><li>Only Stand Users can sense Stands<\/li><li>Stand Users can interact and speak with spirits or ghosts<\/li><li>Only Stands can defeat Stands, physical objects simply pass through or bounce off of all Stands except Enhancement or Independent types<\/li><li>If a Stand User fights a Non-Stand User, the Stand User gets Advantage on all attacks using their Stand<\/li><li>If a Stand User is Surprised and does not have their Stand active, they may not use it to defend themselves.<\/li><li>Unless otherwise specified, a Stand may only be summoned\/dispelled within 2m of its User. Remote-Types are not restricted in this way, instead summoning within 15m of whatever triggered them.<\/li><li>If the User is knocked unconscious and the Stand is not a Revenge-Type, the Stand and it's Ability will disappear until resummoned by the User when conscious<\/li><li>Stand Energy is only consumed if the Ability actually affects something<\/li><\/ul>"
+                    "<ul><li>All Stands have the \"Stand\" creature type.</li><li>A single person can only have one Stand (Hive Stands are the same Stand, just split up into much smaller parts)<\/li><li>Whatever damage is inflicted upon the Stand or the User is also dealt to the other<\/li><li>Only Stand Users can sense Stands<\/li><li>Stand Users can interact and speak with spirits or ghosts<\/li><li>Only Stands can defeat Stands, physical objects simply pass through or bounce off of all Stands except Enhancement or Independent types<\/li><li>If a Stand User fights a Non-Stand User, the Stand User gets Advantage on all attacks using their Stand<\/li><li>If a Stand User is Surprised and does not have their Stand active, they may not use it to defend themselves.<\/li><li>Unless otherwise specified, a Stand may only be summoned\/dispelled within 2m of its User. Remote-Types are not restricted in this way, instead summoning within 15m of whatever triggered them.<\/li><li>If the User is knocked unconscious and the Stand is not a Revenge-Type, the Stand and it's Ability will disappear until resummoned by the User when conscious<\/li><li>Stand Energy is only consumed if the Ability actually affects something<\/li><\/ul>"
                 ]
             },
             {
@@ -346,7 +346,7 @@
                     "1d12",
                     "2d10"
                 ],
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats. You may choose to take the average roll instead (5 + Level), but must do so before rolling. Your Stand's Range may not be increased past 20 (2 meters).",
+                "levelUp": "Every Level-Up, you will gain a number of points to put into any of your Stand's Ability Scores. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level you're becoming</li></ul>Your Stand's <u>Range</u> may not be increased past 20 (2 meters).",
                 "mults": [
                     4,
                     3,
@@ -547,7 +547,7 @@
                     "1d6",
                     "2d6"
                 ],
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except for Power or Durability. You may choose to take the average roll instead (5 + Level), but must do so before rolling. Your Power and Durability may not be increased past their initial values.",
+                "levelUp": "Every Level-Up, you will gain a number of points to put into any of your Stand's Ability Scores, except for <u>Power</u> and <u>Durability</u>. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level you're becoming</li></ul>Your Stand's <u>Power</u> and <u>Durability</u> may not be increased past their initial values.",
                 "mults": [
                     3,
                     3,
@@ -751,7 +751,7 @@
                     "1d10",
                     "2d8"
                 ],
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except Precision. You may choose to take the average roll instead (5 + Level), but must do so before rolling. Your Precision may not be increased past it's initial value.",
+                "levelUp": "Every Level-Up, you will gain a number of points to put into any of your Stand's Ability Scores, except for <u>Precision</u>. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level you're becoming</li></ul>Your Stand's <u>Precision</u> may not be increased past its initial values.",
                 "mults": [
                     3,
                     2,
@@ -761,7 +761,7 @@
                     2
                 ],
                 "notes": [
-                    "These Stands cannot be controlled by their Users, the only power their User has over them is to send them out or recall them. These Stands can only perform one predetermined action."
+                    "These Stands cannot be controlled by their Users and only perform one predetermined action, the only power their User has over them is to send them out or recall them. They still use their User's Initiative position, but have a separate Turn."
                 ],
                 "theme": "hStar",
                 "level": {
@@ -950,7 +950,7 @@
                     "1d4",
                     "1d6"
                 ],
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except Power or Durability. You may choose to take the average roll instead (5 + Level), but must do so before rolling. Your Stand's Power and Durability may not be increased past their initial values.",
+                "levelUp": "Every Level-Up, you will gain a number of points to put into any of your Stand's Ability Scores, except for <u>Power</u> and <u>Durability</u>. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level you're becoming</li></ul>Your Stand's <u>Power</u> and <u>Durability</u> may not be increased past their initial values.",
                 "mults": [
                     1,
                     3,
@@ -1163,7 +1163,7 @@
                     "1d10",
                     "2d8"
                 ],
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats. You may choose to take the average roll instead (5 + Level), but must do so before rolling.",
+                "levelUp": "Every Level-Up, you will gain a number of points to put into any of your Stand's Ability Scores. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level you're becoming</li></ul>",
                 "mults": [
                     3,
                     3,
@@ -1373,7 +1373,7 @@
                         ]
                     }
                 ],
-                "levelUp": "Every Level-Up, You may roll 3d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats. You may choose to take the average roll instead (8 + Level), but must do so before rolling.",
+                "levelUp": "Every Level-Up, you will gain a number of points to put into any of your Stand's Ability Scores. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +13</li><li>Classic Progression: 3d4 (or 8) + Level you're becoming</li></ul>",
                 "mults": [
                     4,
                     3,
@@ -1567,7 +1567,7 @@
                 ],
                 "desc": "Independent-Type Stands are quite interesting, and are one of the more rare Stand Types in JoJo's Bizarre Adventure. These Stands are odd because they do not actually have a User, instead in control of themselves. They have the same sort of Attributes that regular Stands do and must follow most of the same rules. However, the Stand is still made up of physical matter, and thus is similar to an Enhancement type Stand in that they can be damaged physically by Non-Stand damage types.",
                 "notes": [
-                    "Some Independent Stands did in fact have a User at some point, or might even still have a User. They are not linked together though, as damaging the Stand does no harm to the User and vice versa. However, if a person does or did have an Independent-Type Stand they are still able to sense Stands and Ghosts, just like a normal Stand User would.",
+                    "Some Independent Stands did in fact have a User at some point, or might even still have a User. They are not linked together though, as damaging the Stand does no harm to the User and vice versa. However, if a person does or did have an Independent-Type Stand they are still able to sense Stands and Ghosts, just like a normal Stand User would. Independent Stands with a User still roll Initiative and take their Turn separately.",
                     "Even if there is no User, Independent Stands still have the 6 regular Ability Scores for the sake of determining other stats and mental Checks\/Saves. They can also still be hit 'directly' whether they do or don't have a separate User."
                 ],
                 "hDice": "1d10",
@@ -1577,7 +1577,7 @@
                     "1d8",
                     "2d6"
                 ],
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except Range. You may choose to take the average roll instead (5 + Level), but must do so before rolling. Your Stand's Range may not be increased past 0.",
+                "levelUp": "Every Level-Up, you will gain a number of points to put into any of your Stand's Ability Scores, except for <u>Range</u>. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level you're becoming</li></ul>Your Stand's <u>Range</u> may not be increased past 0.",
                 "mults": [
                     3,
                     3,
@@ -1788,7 +1788,7 @@
                         ]
                     }
                 ],
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats. You may choose to take the average roll instead (5 + Level), but must do so before rolling.",
+                "levelUp": "Every Level-Up, you will gain a number of points to put into any of your Stand's Ability Scores. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level you're becoming</li></ul>",
                 "mults": [
                     3,
                     2,
@@ -1998,7 +1998,7 @@
                 "hDice": "1d8",
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except those mentioned in each Act. You may choose to take the average roll instead (5 + Level), but must do so before rolling. You put all of the points into each Act, so if for example you roll to get 15 points, each Act of your Stand gets 15 points to increase stats with. When you gain a new Act, you may roll the dice to retroactively increase the stats of the new Stand.",
+                "levelUp": "Every Level-Up, you will gain a number of points to put into any of your Stand's Ability Scores, except those restricted by each Act's Type. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level you're becoming</li></ul>You put all of the points into each Act. When you gain a new Act, you may retroactively increase the stats of it to match its Level.",
                 "theme": "echoes",
                 "level": {
                     "1": {

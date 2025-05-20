@@ -169,7 +169,7 @@ function hint(attr) { //this whole thing should be replaced by json..
         case "Ranged":
             return("This weapon can fire up to " + range[0] + "m, or as far as " + range[1] + "m with Disadvantage.<br>Firing within melee imposes Disadvantage.");
         case "Firearm":
-            return("This weapon makes a loud sound which can be heard up to 0.5km away.<br>It also jams if a natural 1 is rolled while using it.<br>This weapon's ammunition doesn't function when wet.");
+            return("This weapon makes a loud sound which can be heard up to 0.5km away.<br>It also jams if a natural 1 is rolled while using it, requiring an Attack to un-jam the weapon before it may be fired again.<br>This weapon's ammunition doesn't function when wet.");
         case "Reload":
             return("This weapon can be used " + ammo + " times before needing to be reloaded.<br>Reloading takes a full Attack.");
         case "Burst":

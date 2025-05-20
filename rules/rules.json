@@ -86,6 +86,7 @@
                 "Proficiency Bonus (PB) scales with your total Level and provides a flat bonus (alongside the associated Ability Modifier) to any Attack, Skill Check, or Saving Throw rolls that you're Proficient in. Proficiency has 3 defined levels, Proficiency, Expertise, and Mastery, with each level adding the bonus for an additional time. Going past Mastery is possible and the bonus continues adding addtional times.",
                 "Any time you gain Proficiency in something you're already Proficient in to some degree, your Level of Proficiency increases (Proficiency to Expertise, Expertise to Mastery, etc).",
                 "You gain Proficiencies from your <a href='/passions'>Passion</a> or certain <a href='/feats'>Feats</a>, and you also gain an amount equal to your Intelligence Modifier (minimum 0). When gaining Proficiencies from your Passion or Int Mod, the options include: 1 Skill Proficiency, 2 sets of tools, 3 instruments, or 3 languages.",
+                "You may choose to spend two Proficiencies gained from your Passion or Int Mod to become Proficient in a <a href='/weapons'>weapon</a> Type or Specialization, allowing you to add your PB to Attack Rolls made with that kind of weapon. This is explained more in the <a href='?focus=Combat'>Combat</a> section.",
                 "Tool, language, and instrument Proficiencies are less likely to directly benefit rolls you make, but still note that you are capable of using those things correctly and effectively."
               ]
             }
@@ -110,7 +111,7 @@
                 "<b>Grit:</b> Uses Constitution. Used to determine pain tolerance, the ability to exert yourself for long periods, and the ability to handle large amounts of potentially toxic substances.",
                 "<b>Intimidate:</b> Uses Strength or Charisma. Used to threaten or coerce other people with the threat of physical force, or something else they'd be afraid of.",
                 "<b>Investigation:</b> Uses Intelligence. Used for puzzle solving and analyzing clues, though it doesn't necessarily help you find something, it can help you know if something is relevant or not.",
-                "<b>Medicine:</b> Uses Intelligence or Wisdom. Used to figure out things that require medical knowledge, tend to a wounded creature, and help a downed ally to recover 1 Hit Point.",
+                "<b>Medicine:</b> Uses Intelligence or Wisdom. Used to figure out things that require medical knowledge, tend to a wounded creature, and help a Downed creature to become Stable or recover 1 Hit Point.",
                 "<b>Knowledge:</b> Uses Intelligence. Used to recall historical information, as well as general information.",
                 "<b>Perception:</b> Uses Wisdom. Used to find hidden creatures or objects and detect small sensory details.",
                 "<b>Presence:</b> Uses Charisma. Used to blend in or stand out in social spaces as desired, seeming like you belong somewhere, and holding an audience's attention.",
@@ -201,6 +202,13 @@
           "heading": "Miscellaneous",
           "items": [
             {
+              "subheading": "Ranged Effects",
+              "details": [
+                "Some mechanics, such as ranged weapons, senses, and other wide-area effects, may have specific ranges that they're most effective in. This is often notated in the form \"SR/LR\", where SR and LR are the Short and Long Ranges of the effect, respectively. When targeting the Short Range, Checks and Attack Rolls may be made normally. However, when targeting the Long Range, Checks and Attack Rolls are made with Disadvantage.",
+                "For example, when firing a pistol, which has the Ranged (20/60) attribute, you can fire at anything within its Short Range of 20m normally, or anything within 20-60m with Disadvantage."
+              ]
+            },
+            {
               "subheading": "Limited Resources",
               "details": [
                 "Any consumable resource is not consumed if it has no effect for any reason. This does not apply to physical resources like material or ammunition, but game resources like energy, dice, charges, etc. The Action Economy related to it is still consumed, but the resource itself isn't."
@@ -237,17 +245,17 @@
             {
               "subheading": "Creatures Types and Races",
               "details": [
-                "The vast majority of characters in JoJo's are Human, which is treated as a baseline. Humans do not gain any particular abilities, but lack the weaknesses other <a href='/races'>Races</a> might have as well.",
+                "The vast majority of characters in JoJo's are Human, which is treated as a baseline. However, there are numerous other more exotic <a href='/races'>Races</a> that have unique abilities.",
                 "Each specific Race fits into a more generalized Creature Type, listed below:"
               ],
               "compactDetails": [
-                "<b>Beast</b> (<a href='/races?focus=Animal'>Animals</a>)",
+                "<b>Beast</b> (<a href='/races?focus=Animal'>Animals / Rock Animals</a>)",
                 "<b>Construct</b> (<a href='/races?focus=Cyborg'>Cyborgs</a>, Robots, Synthetic Beings)",
                 "<b>Ghost</b> (<a href='/races?focus=Ghost'>Ghosts</a>, Spirits)",
                 "<b>Humanoid</b> (<a href='/races?focus=Human'>Humans</a>, <a href='/races?focus=Rock_Human'>Rock Humans</a>, <a href='/races?focus=Pillar_Man'>Pillar Men</a>)",
                 "<b>Stand</b> (<a href='/classes?focus=Stands'>Stands</a>, <a href='/races?focus=Living_Stand'>Living Stands</a>)",
                 "<b>Monstrosity</b> (<a href='/races?focus=Abomination'>Abominations</a>, <a href='/races?focus=Living_Chimera'>Living Chimera</a>, <a href='/races?focus=Ultimate_Being'>Ultimate Beings</a>",
-                "<b>Plant</b> (Plants)",
+                "<b>Plant</b> (<a href='/races?focus=Plant'>Plants</a>)",
                 "<b>Undead</b> (<a href='/races?focus=Zombie'>Zombies</a>, <a href='/races?focus=Ghoul'>Ghouls</a>, <a href='/races?focus=Vampire'>Vampires</a>, <a href='/races?focus=Undead_Chimera'>Undead Chimera</a>, <a href='/races?focus=Enhanced_Pillar_Man'>Enhanced Pillar Men</a>)"
               ]
             },
@@ -270,7 +278,7 @@
                 "Multiclassing allows a character to take Levels in multiple <a href='/classes'>Classes</a> at once, rather than just one. For instance, a <a href='/classes?focus=Stands'>Stand User</a> may choose to also utilize <a href='/classes?focus=Ripple'>The Ripple</a>.",
                 "When a Multiclassed character gains a Level, they must choose which Class to gain a Level in (and get Features and a Hit Die from). Your Proficiency Bonus and number of <a href='/feats'>Feats</a> are based on your total Level, not individual Class Level.",
                 "Having Levels in a <a href='/races'>Race</a> (such as <a href='/races?focus=Vampire'>Vampire</a> does NOT count as Multiclassing. Race Levels are separate from Class Levels and have different Level-Up conditions.",
-                "Keep in mind that a character may only have one Stand. Like all Classes, you may not have multiple instances of the Stand User Class. However, you may have a Multi-Type Stand instead, which has traits and Features of multiple different Stand Types. Multi-Typing is explained more on the <a href='/classes?focus=Stands'>Stands</a> page."
+                "Keep in mind that a character may only have one Stand. Like all Classes, you may not have multiple instances of the Stand User Class. However, you may have a differently-typed Substand instead, or even a Multi-Type Stand, which has traits and Features of multiple different Stand Types. Substands and Multi-Typing are explained more on the <a href='/classes?focus=Stands'>Stands</a> page."
               ]
             },
             {
@@ -298,7 +306,7 @@
                 "<b>Medium</b> creatures tend to be around 2.5m or shorter, weigh around 225kg or less, and control a 1x1 meter space. The vast majority of adult Humanoids are Medium creatures.",
                 "<b>Large</b> creatures tend to be around 5m or shorter, weigh around 1800kg or less, and control a 2x2 meter space.",
                 "<b>Huge</b> creatures tend to be around 10m or shorter, weigh around 15000kg or less, and control a 3x3 meter space.",
-                "<b>Gargantuan</b> creatures tend to be around 10m or taller, weigh around 15000kg or more, and control a 4x4 meter space."
+                "<b>Gargantuan</b> creatures tend to be around 10m or taller, weigh around 15000kg or more, and control a 4x4 meter space or bigger."
               ]
             }
           ]
@@ -320,7 +328,7 @@
               ],
               "other": [
                 "Characters should be built roughly in this order:",
-                "<ol class='sublist'><li>Roll and assign Stats using your DM's preferred method</li><li>Choose your character's <a href='/passions'>Passion</a> and Proficiencies (including Proficiencies from your Intelligence Modifier)</li><li>If your character isn't Human, note the Features of their Race</li><li>Choose a number of <a href='/feats'>Feats</a> equal to your character's Proficiency Bonus</li><li>Choose which Class(es) your character will be playing and note the Features gained from it at your starting Level</li><li>Determine your characters Hit Points, Armor Class, and other smaller stats based on your previous choices</li><li>Talk to your DM regarding your Starting Equipment, the setting, and your character's backstory</li><li>If your character is a <a href='/classes?focus=Stands'>Stand User</a>, determine your Stand's stats as well and figure out how you want its Ability to function</li></ol>"
+                "<ol class='sublist'><li>Roll and assign Stats using your DM's preferred method</li><li>Choose your character's <a href='/passions'>Passion</a> and Proficiencies (including Proficiencies from your Intelligence Modifier)</li><li>Note the Features of your character's Race</li><li>Choose a number of <a href='/feats'>Feats</a> equal to your character's Proficiency Bonus</li><li>Choose which Class(es) your character will be playing and note the Features gained from it at your starting Level</li><li>Determine your characters Hit Points, Armor Class, and other smaller stats based on your previous choices</li><li>Talk to your DM regarding your Starting Equipment, the setting, and your character's backstory</li><li>If your character is a <a href='/classes?focus=Stands'>Stand User</a>, determine your Stand's stats as well and figure out how you want its Ability to function</li></ol>"
               ]
             }
           ]
@@ -440,7 +448,7 @@
                 "<b>Grapple/Shove:</b> When in Melee Range of a target, you may make an Athletics (Str/Pow) Check, forcing the target to contest using either Athletics (Str/Pow) or Acrobatics (Dex/Pre), their preference. If the target fails the contest, they suffer the effects of your Grapple or Shove. A Shove can either push the target back 1 meter or knock them Prone. A Grapple requires one of your hands to hold the target and inflicts them with the Grappled Condition. You cannot Grapple or Shove a creature that is more than one Size Category larger than you. Size Categories are explained more in the <a href='/rules/?focus=Misc.%20Rules'>Miscellaneous</a> section. Prone and Grappled are explained more in the <a href='?focus=Damage%20%26%20Conditions'>Damage & Conditions</a> section.",
                 "<b>Speed Duel:</b> When attempting to take a non-weapon object off of someone, or do something else faster than someone like reaching a location first, or even just to measure awareness and reaction time between two people, you may initiate a Speed Duel, which takes the form of a contested Athletics (Wis/Spd) check. The winner is considered 'faster', keeping in mind that the initiator loses a tie.",
                 "<b>Taunt:</b> When within 10 meters of a target whom you can communicate with, you may initiate a Grit (NOT Dur) or Presence Check against them, which can be contested by either of those Skills as well, at their preference. If the target fails the contest, they become Taunted towards you, forcing them to try and target you with a negative effect or damage. The effects of Taunted are explained more in the <a href='/?focus=Damage%20%26%20Conditions'>Damage & Conditions</a> section.",
-                "<b>Extra Bonus Action:</b> You may expend half of your total Attacks (rounded up) or to gain an additional Bonus Action for this Turn. You may also spend all of your Attacks (even if you only have 1) to gain an additional 2 Bonus Actions. If you use this to make Attack Rolls during this extra Bonus Action, you may not make more rolls than the number of Attacks you spent to gain that Bonus Action."
+                "<b>Extra Bonus Action:</b> You may expend half of your total Attacks (rounded up) to gain an additional Bonus Action for this Turn. You may also spend all of your Attacks (even if you only have 1) to gain an additional 2 Bonus Actions. If you use this to make Attack Rolls during this extra Bonus Action, you may not make more rolls than the number of Attacks you spent to gain that Bonus Action."
               ]
             },
             {
@@ -538,7 +546,7 @@
                 "<b>Piercing</b> damage is typically dealt by sharp-tipped weapons, projectiles, and anything that stabs targets. Examples include guns, arrows, spears, and spike traps.",
                 "<b>Poison</b> damage is typically dealt by abilities or substances that cause bodily harm and illness. Examples include diseases, toxins, <a href='https://www.jojowiki.com/Ratt'>Ratt</a>, <a href='https://www.jojowiki.com/Green_Day'>Green Day</a>, and <a href='https://www.jojowiki.com/Brain_Storm'>Brain Storm</a>. Non-Living creatures, such as Constructs and <a href='/abilities?focus=Undead_Nature'>Undead</a>, are immune to Poison damage.",
                 "<b>Psychic</b> damage is typically dealt by abilities or effects that cause mental stress and target someone's mind directly. Examples include immense confusion or panic, <a href='https://www.jojowiki.com/Lovers'>The Lovers</a>, and <a href='https://www.jojowiki.com/Echoes#ACT1:_Sound_Generation'>Echoes Act 1</a>",
-                "<b>Radiant</b> damage is typically dealt by abilities or effects that involve light or focused energy. Examples include lasers, UV rays from the Sun, and <a href='/classes?focus=Ripple'>The Ripple</a>. <a href='/abilities?focus=Undead_Nature'>Undead</a> are particularly Vulnerable to Radiant damage.",
+                "<b>Radiant</b> damage is typically dealt by abilities or effects that involve light or focused energy. Examples include lasers, UV rays from the Sun, and <a href='/classes?focus=Ripple'>The Ripple</a>.",
                 "<b>Slashing</b> damage is typically dealt by bladed weapons, sharp edges, and anything that slices targets. Examples include swords, knives, and claws.",
                 "<b>Thunder</b> damage is typically dealt by abilities or effects that involve loud sounds or shockwaves. Examples include explosive blasts, <a href='https://www.jojowiki.com/Sheer_Heart_Attack'>Sheer Heart Attack</a>, and <a href='https://www.jojowiki.com/Oasis'>Oasis'</a> underground attack."
               ]
@@ -586,7 +594,7 @@
               ],
               "compactDetails": [
                 "<b>Blinded:</b> The afflicted cannot see, failing any sight-based Skill Check. Attack Rolls against Blinded targets have a +4 bonus, and Blinded creatures have a -4 penalty on Melee Attack Rolls. When making a ranged/thrown weapon Attack, a Blinded creature may only target creatures in its Short Range and has a -4 penalty to the Attack Roll. Blinded creatures also have a -4 penalty to Perception Checks. Creatures with skill in some other sense (such as <a href='/abilities?focus=Ripple_Perception'>Ripple Perception</a> or <a href='/feats?focus=Additional_Sense'>Additional Sense</a>) are immune to the penalties of Blindness if they're able to use it to detect what they're aiming or looking for.",
-                "<b>Charmed:</b> The afflicted cannot attack the charmer or target them with any harmful effects. The charmer has a +4 bonus on any Check to socially interact with the creature. The charmer may make a single free Charisma Check against one or more creatures Charmed by them each turn. A Charmed creature cannot be ordered to do anything that would obviously cause them bodily harm.",
+                "<b>Charmed:</b> The afflicted cannot attack the charmer or target them with any harmful effects. The charmer has a +4 bonus on any Check to socially interact with the creature. The charmer may make a single Charisma Check against one or more creatures Charmed by them each turn as a Free Action. A Charmed creature cannot be ordered to do anything that would obviously cause them bodily harm.",
                 "<b>Confusion:</b> The afflicted has a -4 penalty to all mental Checks, Saves, and all Attack Rolls. In addition, they cannot perceive anything over 10 + Perception Bonus meters away from them, automatically failing Perception Checks past that. The -4 penalty does not apply to Saves to remove Confusion.",
                 "<b>Deafened:</b> The afflicted cannot hear, failing any sound-based Skill Check. They have a -2 penalty to Perception Checks. If a Deafened creature is Flanked, Flanking creatures gain an additional +4 to their Attack Rolls, rather than the typical +2. Flanking is explained more in the <a href='?focus=Combat'>Combat</a> section.",
                 "<b>Downed:</b> When someone's HP is reduced to 0, they become Downed. The afflicted becomes Incapacitated and Prone until they are tended to or healed in some way. They drop anything they were holding and may not take actions or perceive anything. Unless they were Downed through a Non-Lethal Strike, the afflicted must begin rolling Death Saving Throws on each of their Turns. Death Saves always have a DC of 10 and a +0 Modifier, but can benefit from effects such as <a href='/feats?focus=Aura_of_Awareness'>Aura of Awareness</a>. After three successes, they become Stable, no longer needing to make Death Saves unless they're damaged again while still at 0 HP. After three failed Saves, the afflicted dies. A Downed (but not dead) creature may be revived and lose this Condition through any source of healing, or someone using the Revive action to either Stabilize them (but keep them Downed) or bring them back to 1 HP. If a creature is damaged at any time while Downed, they must make a Death Save, even if they were Stable. Downed creatures that are Stable may benefit from Resting when able. Resting is explained more in the <a href='?focus=Misc.%20Rules'>Miscellaneous</a> section.",
@@ -619,7 +627,7 @@
               "compactDetails": [
                 "<b>Short Rests</b> consist of a relatively short break, allowing the party to catch their breath and tend to their wounds. It takes far less time than a Long Rest, but does not result in a full restoration.",
                 "Short Rests normally take 1 hour. However, your DM may decide to shorten them further, to 10-20 minutes or even nearly instant, to encourage their use, in which case the DM may also choose to limit the number of short rests that can be taken in a day.",
-                "Short Rests allow you to spend and roll your Hit Dice, the quantity and quality of which are determined by your Level and Class, respectively, to regain an amount of HP equal to the result of the roll plus your Constitution Modifier for each die. Instead of healing, you may choose to spend your Hit Dice to remove Exhaustion, removing 1 level for spending half of your Hit Dice, or 2 levels for spending all of them. You'll also regain any <a href='/abilities'>Abilities</a> or <a href='/feats'>Feats</a> that state their usage is recovered on a Short Rest.",
+                "Short Rests allow you to spend and roll your Hit Dice, the quantity and quality of which are determined by your Level and Class, respectively, to regain an amount of HP equal to the result of the roll plus your Constitution Modifier for each die. Instead of healing, you may choose to spend your Hit Dice to remove Exhaustion, removing 1 level for spending half of your total Hit Dice, or 2 levels for spending all of them. You'll also regain any <a href='/abilities'>Abilities</a> or <a href='/feats'>Feats</a> that state their usage is recovered on a Short Rest.",
                 "<b>Long Rests</b> are essentially settling in for the night, taking around 8 hours to relax, wind down, and get a good night's rest, fully restoring your party.",
                 "Long Rests may be taken without sleeping, and you may still gain the benefits from it, but no levels of Exhaustion are removed during it, and you must make a DC 10 Constitution (NOT Durability) Saving Throw, taking a level of Exhaustion on failure.",
                 "Long Rests restore all of your character's expended resources, including all Hit Points, Hit Dice, usage of your limited <a href='/abilities'>Abilities</a> or <a href='/feats'>Feats</a>, etc."
@@ -694,6 +702,13 @@
               "details": [
                 "Objects that aren't traditional 'weapons' can still be picked up and used to hit people, of course. Doing so results in an Improvised Weapon Attack, which uses Strength for Attack Rolls and deals 1d4 + Str Mod damage. These \"weapons\" are considered to have the Thrown (5/15) <a href='/weapons#attributes-list'>attribute</a> and Melee/Thrown Specialization unless otherwise specified.",
                 "Some improvised weapons may have different damage values and attributes, examples of which can be found on the <a href='/weapons'>Weapons</a> page."
+              ]
+            },
+            {
+              "subheading": "Natural Weapons",
+              "details": [
+                "Beasts and similar creatures have weapons built into their anatomy, such as claws, fangs, spikes, or a tail. Attack Rolls with these weapons can be made with either Strength or Dexterity, but only use Strength as the damage Modifier.",
+                "Natural weapons count as Unarmed Strikes for the sake of interactions that would enhance one's Unarmed Strikes (<a href='/classes?focus=Ripple'>The Ripple</a>, <a href='/feats?focus=Martial_Arts'>Martial Arts</a>, etc)."
               ]
             }
           ]
@@ -818,7 +833,7 @@
               "details": [
                 "Without air, you can survive for an amount of rounds equal to your Constitution Modifier (minimum 1) without penalty. Past that, at the end of each Turn, you must make a Constitution Saving Throw with a DC of 10 + the number of total turns you've gone without air. On failure, you gain 1 level of Exhaustion, or 2 if you fail by 10 or more. Exhaustion gained in this way does not stack with other sources, and if you have other levels the higher one determines the applied effects. Once you are able to breathe again, any Exhaustion gained in this way is removed.",
                 "While unable to breathe, <a href='/classes?focus=Ripple'>Ripple Users</a> may not regain spent Ripple Points, and lose 1 RP at the end of each Turn without air.",
-                "Constructs and <a href='/abilities?focus=Undead_Nature'>Undead</a> do not need to be able to breathe unless they also have a living component (such as <a href='/races?focus=Cyborg'>Cyborgs</a>, and are thus immune to the above effects."
+                "Constructs and <a href='/abilities?focus=Undead_Nature'>Undead</a> do not need to be able to breathe unless they also have a living component (such as <a href='/races?focus=Cyborg'>Cyborgs</a>), and are thus immune to the above effects."
               ]
             }
           ]
