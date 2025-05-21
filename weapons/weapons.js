@@ -246,8 +246,13 @@ function sort() {
         if (y == "None" || y.includes("DC"))
             y = "A";
         if (sortType == "dmg") {
-            x = diceParse(x);
-            y = diceParse(y);
+            let dieX = diceParse(x), dieY = diceParse(y);
+            x = dieX.max;
+            y = dieY.max;
+            if (x == y) {
+                x = dieX.avg;
+                y = dieY.avg;
+            }
         }
         return ((x < y) ? -1 : ((x > y) ? 1 : 0));
     });
@@ -255,23 +260,24 @@ function sort() {
 
 function diceParse(s) {
     const dice = s.split(/(?<= [A-z]+) \+ /)
-    let avg = 0;
+    let max = 0, avg = 0;
 
     for (let i=0; i<dice.length; i++) {
         let val = dice[i].match(/^\d+d\d+/);
         let add = dice[i].match(/(?<=^\d+d\d+ ?\+ ?)[0-9]+/);
 
-        if (isNaN(add))
+        if (!add)
             add = 0;
         
         if (val != null) {
             num = val[0].substring(0, val[0].indexOf('d'));
             die = val[0].substring(val[0].indexOf('d') + 1);
             avg += num * ((die/2) + 0.5) + parseInt(add);
+            max += num * die + parseInt(add);
         }
     }
 
-    return avg;
+    return {max: max, avg: avg};
 }
 
 function search(query) {
