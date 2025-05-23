@@ -224,6 +224,12 @@ h1, h2, h3, th, .th {
     background-color: rgb(99, 67, 161);
 }
 
+.list-label {
+    background-color: #7e65b2;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
 #display {
     padding: 1.5rem;
 }

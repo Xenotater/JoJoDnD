@@ -15,7 +15,7 @@
             "name": "Academic Studies",
             "desc": "You have Proficiency in two of the following: Grit, Investigation, Knowledge, Science or Supernatural."
         },
-        "alt": "Proficiency in three additional languages or Expertise in a skill that you're already Proficient in."
+        "alt": "Proficiency in three additional languages, or two tools."
     },
     "Artist": {
         "name": "Artist",
@@ -34,7 +34,7 @@
             "name": "Artist's Soul",
             "desc": "You have Proficiency in two of the following: Finesse, Medicine, Perception, or Presence."
         },
-        "alt": "Proficiency in two sets of tools, three instruments, or Expertise in a skill, tool, or instrument that you're already Proficient in."
+        "alt": "Proficiency in two sets of tools, or three instruments."
     },
     "Athlete": {
         "name": "Athlete",
@@ -51,7 +51,7 @@
             "name": "Athletic Experience",
             "desc": "You have Proficiency in two of the following: Athletics, Acrobatics, Finesse, Grit, Medicine, or Presence."
         },
-        "alt": "Expertise in a skill that you're already Proficient in."
+        "alt": "Proficiency in the other physical Saving Throw (Str, Dex, Con) that you did not pick."
     },
     "Con_Artist": {
         "name": "Con Artist",
@@ -69,7 +69,7 @@
             "name": "Award-Winning Smile",
             "desc": "You have Proficiency in two of the following: Bluff, Finesse, Supernatural, or Vibe."
         },
-        "alt": "Proficiency in two sets of tools or Expertise in a skill that you're already Proficient in."
+        "alt": "Proficiency in two sets of tools."
     },
     "Hard_Laborer": {
         "name": "Hard Laborer",
@@ -86,7 +86,7 @@
             "name": "Grit",
             "desc": "You have Proficiency in two of the following: Athletics, Care, Grit, or Intimidate."
         },
-        "alt": "Proficiency in three additional languages, two sets of artisan tools, or Expertise in a skill that you're already Proficient in."
+        "alt": "Proficiency in three additional languages, or two sets of artisan tools."
     },
     "Leader": {
         "name": "Leader",
@@ -103,7 +103,7 @@
             "name": "Leadership Experience",
             "desc": "You have Proficiency in two of the following: Bluff, Diplomacy, Perception, Presence, Supernatural, or Vibe."
         },
-        "alt": "Expertise in a skill that you're already Proficient in."
+        "alt": "Proficiency in the other mental Saving Throw (Int, Wis, Cha) you didn't pick."
     },
     "Performer": {
         "name": "Performer",
@@ -120,7 +120,7 @@
             "name": "Crowd Pleaser",
             "desc": "You have Proficiency in two of the following: Acrobatics, Bluff, Diplomacy, or Presence."
         },
-        "alt": "Proficiency in two sets of tools, three instruments, or Expertise in a skill, tool, or instrument that you're already Proficient in."
+        "alt": "Proficiency in two sets of tools, or three instruments."
     },
     "Medical_Expert": {
         "name": "Medical Expert",
@@ -138,7 +138,7 @@
             "name": "Medical Experience",
             "desc": "You have Proficiency in two of the following: Care, Finesse, Investigation, or Medicine."
         },
-        "alt": "Proficiency in two sets of tools or Expertise in a skill that you're already Proficient in."
+        "alt": "Proficiency in two sets of tools."
     },
     "Hospitality_Worker": {
         "name": "Hospitality Worker",
@@ -155,7 +155,7 @@
             "name": "People Person",
             "desc": "You have Proficiency in two of the following: Diplomacy, Investigation, Perception, or Vibe."
         },
-        "alt": "Proficiency in three additional languages, two sets of artisan tools, or Expertise in a skill that you're already Proficient in."
+        "alt": "Proficiency in three additional languages, or two sets of artisan tools."
     },
     "Student": {
         "name": "Student",
@@ -169,7 +169,7 @@
         "ability": "You get +2 to one stat of your choice, +1 to three stats of your choice, and -1 to two stats of your choice.",
         "custom": {
             "name": "Constant Improvement",
-            "desc": "You have Proficiency in a number of Skills of your choice equal to 3 + your Proficiency Bonus."
+            "desc": "You have Proficiency in three Skills of your choice."
         },
         "alt": "Proficiency in three additional languages, two sets of tools, or three instruments."
     },
@@ -189,7 +189,7 @@
             "name": "Will to Thrive",
             "desc": "You have Proficiency in two of the following: Care, Grit, Perception, Survival, or Vibe."
         },
-        "alt": "Proficiency in two sets of tools or Expertise in a skill that you're already Proficient in."
+        "alt": "Proficiency in two sets of tools."
     },
     "Thief": {
         "name": "Thief",
@@ -204,7 +204,7 @@
             "name": "Street Smarts",
             "desc": "You have Proficiency in two of the following: Bluff, Finesse, Intimidate, Perception, or Sneak."
         },
-        "alt": "Proficiency in two sets of tools or Expertise in a skill that you're already Proficient in."
+        "alt": "Proficiency in two sets of tools."
     },
     "Trained_Laborer": {
         "name": "Trained Laborer",
@@ -219,7 +219,7 @@
             "name": "Labor Experience",
             "desc": "You have Proficiency in two of the following: Athletics, Finesse, Grit, Investigation, or Science."
         },
-        "alt": "Proficiency in two sets of tools or Expertise in a skill that you're already Proficient in."
+        "alt": "Proficiency in two sets of tools."
     },
     "Warrior": {
         "name": "Warrior",
@@ -235,7 +235,7 @@
             "name": "Soldier's Discipline",
             "desc": "You have Proficiency in two of the following: Athletics, Acrobatics, Grit, Perception, Sneak."
         },
-        "alt": "Proficiency in Simple weapons or three weapons of your choice, or Expertise in a skill or weapon that you're already Proficient in."
+        "alt": "Proficiency in any weapon Type or Specialization."
     },
     "Chef": {
         "name": "Chef",
@@ -251,7 +251,7 @@
             "name": "Culinary Experience",
             "desc": "You have Proficiency in two of the following: Athletics, Finesse, Grit, Perception, or Survival."
         },
-        "alt": "Proficiency in two sets of tools, or Expertise in a skill\/tool that you're already Proficient in."
+        "alt": "Proficiency in two sets of tools."
     },
     "Scientist": {
         "name": "Scientist",
@@ -266,9 +266,9 @@
         "saves": "You are Proficient in Dexterity and Intelligence Saving Throws.",
         "custom": {
             "name": "Scientific Research",
-            "desc": "You have Proficiency in two of the following:   Finesse, Investigation, Knowledge, Medicine, Science, or Supernatural."
+            "desc": "You have Proficiency in two of the following: Finesse, Investigation, Knowledge, Medicine, Science, or Supernatural."
         },
-        "alt": "Proficiency in two sets of tools of your choice or Expertise in a skill\/tool that you're already Proficient in."
+        "alt": "Proficiency in two sets of tools."
     },
     "Weightlifter": {
         "name": "Weightlifter",
@@ -284,6 +284,6 @@
             "name": "Powerful Performance",
             "desc": "You have Proficiency in two of the following: Athletics, Acrobatics, Grit, Intimidate, Medicine, or Presence."
         },
-        "alt": "Expertise in a skill that you're already Proficient in."
+        "alt": "Proficiency in two sets of tools."
     }
 }

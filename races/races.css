@@ -38,6 +38,11 @@
     background-color: rgb(109, 37, 53);
 }
 
+.sub-divider {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 @media (max-width: 875px){ 
     #list {
         position: unset;
