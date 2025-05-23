@@ -530,6 +530,13 @@
               ]
             },
             {
+              "subheading": "Receiving Damage",
+              "details": [
+                "When you take any damage, your Hit Points are reduced by the amount taken. If you have any Temporary Hit Points, you may choose to reduce them first instead.",
+                "There is an order to damage calculations. If anything would add or subtract from the damage, that occurs <b>before</b> any multiplication or division. After this, Stand Damage Reduction, Damage Negation, and <a href='/feats?focus=Scarflesh'>Scarflesh</a> can apply."
+              ]
+            },
+            {
               "subheading": "Damage Types",
               "details": [
                 "Damage can come in a number of different forms, and different characters may be more Vulnerable, Resistant, or even Immune to different types of damage.",

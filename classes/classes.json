@@ -346,7 +346,7 @@
                     "1d12",
                     "2d10"
                 ],
-                "levelUp": "Every Level-Up, you will gain a number of points to put into any of your Stand's Ability Scores. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level you're becoming</li></ul>Your Stand's <u>Range</u> may not be increased past 20 (2 meters).",
+                "levelUp": "Every Level-Up in this Class, you will gain a number of points to put into any of your Stand's Ability Scores. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level of Stand User you're becoming</li></ul>Your Stand's <u>Range</u> may not be increased past 20 (2 meters).",
                 "mults": [
                     4,
                     3,
@@ -547,7 +547,7 @@
                     "1d6",
                     "2d6"
                 ],
-                "levelUp": "Every Level-Up, you will gain a number of points to put into any of your Stand's Ability Scores, except for <u>Power</u> and <u>Durability</u>. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level you're becoming</li></ul>Your Stand's <u>Power</u> and <u>Durability</u> may not be increased past their initial values.",
+                "levelUp": "Every Level-Up in this Class, you will gain a number of points to put into any of your Stand's Ability Scores, except for <u>Power</u> and <u>Durability</u>. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level of Stand User you're becoming</li></ul>Your Stand's <u>Power</u> and <u>Durability</u> may not be increased past their initial values.",
                 "mults": [
                     3,
                     3,
@@ -751,7 +751,7 @@
                     "1d10",
                     "2d8"
                 ],
-                "levelUp": "Every Level-Up, you will gain a number of points to put into any of your Stand's Ability Scores, except for <u>Precision</u>. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level you're becoming</li></ul>Your Stand's <u>Precision</u> may not be increased past its initial values.",
+                "levelUp": "Every Level-Up in this Class, you will gain a number of points to put into any of your Stand's Ability Scores, except for <u>Precision</u>. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level of Stand User you're becoming</li></ul>Your Stand's <u>Precision</u> may not be increased past its initial values.",
                 "mults": [
                     3,
                     2,
@@ -950,7 +950,7 @@
                     "1d4",
                     "1d6"
                 ],
-                "levelUp": "Every Level-Up, you will gain a number of points to put into any of your Stand's Ability Scores, except for <u>Power</u> and <u>Durability</u>. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level you're becoming</li></ul>Your Stand's <u>Power</u> and <u>Durability</u> may not be increased past their initial values.",
+                "levelUp": "Every Level-Up in this Class, you will gain a number of points to put into any of your Stand's Ability Scores, except for <u>Power</u> and <u>Durability</u>. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level of Stand User you're becoming</li></ul>Your Stand's <u>Power</u> and <u>Durability</u> may not be increased past their initial values.",
                 "mults": [
                     1,
                     3,
@@ -1163,7 +1163,7 @@
                     "1d10",
                     "2d8"
                 ],
-                "levelUp": "Every Level-Up, you will gain a number of points to put into any of your Stand's Ability Scores. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level you're becoming</li></ul>",
+                "levelUp": "Every Level-Up in this Class, you will gain a number of points to put into any of your Stand's Ability Scores. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level of Stand User you're becoming</li></ul>",
                 "mults": [
                     3,
                     3,
@@ -1373,7 +1373,7 @@
                         ]
                     }
                 ],
-                "levelUp": "Every Level-Up, you will gain a number of points to put into any of your Stand's Ability Scores. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +13</li><li>Classic Progression: 3d4 (or 8) + Level you're becoming</li></ul>",
+                "levelUp": "Every Level-Up in this Class, you will gain a number of points to put into any of your Stand's Ability Scores. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +13</li><li>Classic Progression: 3d4 (or 8) + Level of Stand User you're becoming</li></ul>",
                 "mults": [
                     4,
                     3,
@@ -1577,7 +1577,7 @@
                     "1d8",
                     "2d6"
                 ],
-                "levelUp": "Every Level-Up, you will gain a number of points to put into any of your Stand's Ability Scores, except for <u>Range</u>. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level you're becoming</li></ul>Your Stand's <u>Range</u> may not be increased past 0.",
+                "levelUp": "Every Level-Up in this Class, you will gain a number of points to put into any of your Stand's Ability Scores, except for <u>Range</u>. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level of Stand User you're becoming</li></ul>Your Stand's <u>Range</u> may not be increased past 0.",
                 "mults": [
                     3,
                     3,
@@ -1788,7 +1788,7 @@
                         ]
                     }
                 ],
-                "levelUp": "Every Level-Up, you will gain a number of points to put into any of your Stand's Ability Scores. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level you're becoming</li></ul>",
+                "levelUp": "Every Level-Up in this Class, you will gain a number of points to put into any of your Stand's Ability Scores. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level of Stand User you're becoming</li></ul>",
                 "mults": [
                     3,
                     2,
@@ -1998,7 +1998,7 @@
                 "hDice": "1d8",
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
-                "levelUp": "Every Level-Up, you will gain a number of points to put into any of your Stand's Ability Scores, except those restricted by each Act's Type. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level you're becoming</li></ul>You put all of the points into each Act. When you gain a new Act, you may retroactively increase the stats of it to match its Level.",
+                "levelUp": "Every Level-Up in this Class, you will gain a number of points to put into any of your Stand's Ability Scores, except those restricted by each Act's Type. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level of Stand User you're becoming</li></ul>You put all of the points into each Act. When you gain a new Act, you may retroactively increase the stats of it to match its Level.",
                 "theme": "echoes",
                 "level": {
                     "1": {
