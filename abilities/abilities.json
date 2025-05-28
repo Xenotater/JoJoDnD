@@ -279,7 +279,7 @@
         ],
         "desc": [
             "You've spent so much time manipulating certain elements that you've gained Immunity to one damage type. This Immunity should relate to your Stand Ability in some way. For example, <a href='https:\/\/jojowiki.com\/Ghiaccio' target='_blank'>Ghiaccio<\/a>'s Cold Immunity. You also gain Immunity to that type's Stand counterpart.",
-            "<a href='\/races\/?focus=Pillar_Man'>Pillar Men<\/a>, and <a href='\/abilities\/?focus=Undead_Nature'>Undead<\/a> of all kinds cannot choose Radiant as the damage type for which they are immune."
+            "<a href='\/races\/?focus=Pillar_Man'>Pillar Men<\/a>, and Undead of all kinds cannot choose Radiant as the damage type for which they are immune."
         ]
     },
     "Silent_Movement": {
