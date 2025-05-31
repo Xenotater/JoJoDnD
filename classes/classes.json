@@ -17,7 +17,7 @@
         "hDice": "1d10",
         "dcName": "Ripple DC",
         "dc": "8 + Con + Proficiency Bonus",
-        "desc": "The Ripple is an energy that travels through the blood and is powered by breathing. A sacred art, it can be used for both healing and destruction. It is extremely effective against <a href='/abilities?focus=Undead_Nature'>Undead</a>, and it can be used against corporeal objects to manipulate them. The Ripple works similarly to electricity, in that it is able to travel through liquids, metals, and most biomass incredibly well.",
+        "desc": "The Ripple is an energy that travels through the blood and is powered by breathing. A sacred art, it can be used for both healing and destruction. It is extremely effective against Undead, and it can be used against corporeal objects to manipulate them. The Ripple works similarly to electricity, in that it is able to travel through liquids, metals, and most biomass incredibly well.",
         "extra": [
             {
                 "name": "Honed Body",
@@ -47,7 +47,11 @@
                 ],
                 "linkFeatures": [
                     "Healing Hands",
-                    "Spiritual Ripple (Variant Rule)"
+                    "Spiritual Ripple (Variant Rule)",
+                    "Sunshield"
+                ],
+                "featFeatures": [
+                    "Equalizer"
                 ]
             },
             "2": {
@@ -116,7 +120,7 @@
             },
             "8": {
                 "linkFeatures": [
-                    "Scarlet Overdrive",
+                    "Elemental Overdrive",
                     "OR",
                     "Sendo Overdrive"
                 ],
@@ -275,7 +279,7 @@
                 "name": "Stand AC",
                 "content": [
                     "<p>Your Stand AC is equal to 10 plus your Durability, Precision, and Speed Modifiers. When your Stand is within 2 Meters of you your Stand can protect you from attacks using its AC. Like normal, if an Attack Roll is less than your AC it misses. However, if the Attack Roll is between your Stand AC and your own AC it hits your Stand instead, allowing you to apply your Stand's Damage Reduction. Additionally, if the damage type is Non-Stand, it simply bounces off of your Stand or phases through it. An Attack Roll higher than your Stand AC is a direct hit to the User.<\/p>",
-                    "<p>You may use your Stand to protect someone other than yourself as well. Should you choose to do so, the target may benefit from your Stand's AC rather than you. They will still take damage on a Direct Hit, but if your Stand AC is hit you (or your Stand) will take the damage instead. Your Stand may also assist this other person with physical Checks and Saves. <b>While your Stand is protecting someone else, it is not protecting you.</b></p>",
+                    "<p>You may use your Stand to protect someone other than yourself as well. Should you choose to do so, the target may benefit from your Stand's AC rather than you. They will still take damage on a Direct Hit, but if your Stand AC is hit you (or your Stand) will take the damage instead. Your Stand may also assist this other person with physical Checks and Saves. <b>While your Stand is protecting someone else, it is not protecting you.<\/b><\/p>",
                     "<p><small><b>Note: <\/b><i>Enhancement\/Independant Stands are able to be affected by all damage types, rather than just Stand damage. Independent-Types also have both a regular AND Stand AC for the sake of Damage Reduction, despite not technically having a User.<\/i><\/small><\/p>"
                 ]
             },
@@ -299,7 +303,7 @@
                 "content": [
                     "<p><b>Get Creative: <\/b>Stand Abilities have endless possibilities, able to do anything from cooking supernaturally good food to being able to stop time itself. The rules below should generally apply to most Stand Abilities, but you should work with your DM to create the perfect custom Ability for your Stand.",
                     "<p><b>General Rules: <\/b>Abilities that heal or deal damage should follow the dice guidelines below, and these dice should increase every other Level (for example, at Level 3 1dx becomes 2dx). Abilities that require a Saving Throw should use the following Stand DC: 8 + Cha + Proficiency Bonus.<\/p>",
-                    "<ul><li><b>No Dice: <\/b>May be an Ability that buffs\/debuffs someone or some sort of utility. These Abilities are generally lower powered but reliable. The strength of the effect may still scale with Ability Dice. For example you may have an Ability which buffs an ally's d20 rolls, granting a +2(n) bonus where n is your number of Ability dice (so +2 at Level 1 and +20 at Level 20 etc).<\/li><li><b>d4: <\/b>May be an Ability that can affect multiple targets at once from a distance. It may do one, but not multiple, of the following:<ul class='sublist'><li>Increase the die used from a d4 to a higher die such as a d10/d12 if a condition is met. If using the increased die a Saving Throw is required for the targets and they take half damage or are unaffected on success.</li><li>Apply a powerful secondary effect in certain circumstances.</li><li>Choose which targets are affected by a negative effect in range, rather than all creatures being affected.</li></ul>If you afflict a group with both damage AND a negative effect the targets may attempt a Saving Throw to shrug off the effect but still take full damage.<\/li><li><b>d6: <\/b>May be an Ability that deals guaranteed damage to groups of people in range without requiring a Saving Throw, or used to heal or buff/debuff multiple targets. May also have a situational secondary effect in addition to healing/damage, or a stronger single buff/debuff effect, if it only affects a single target.<\/li><li><b>d8: <\/b>May be an Ability that requires a Saving Throw to deal damage to multiple targets and dealing half on a success, or instead adding guaranteed damage to a successful Melee Attack. May instead be multi-target healing or buffing/debuffing within a short range (like 10m) or a single-target effect from a greater distance.<\/li><li><b>d10: <\/b>May be an Ability that requires a Saving Throw to deal damage to multiple targets and dealing none on success, or to deal damage to a single target and dealing half on success. May instead apply healing or a buff/debuff to a single target within Melee Range.<\/li><li><b>d12: <\/b>May be an Ability that requires a Saving Throw to deal damage to a single target within 5m, dealing none on success. May instead be a Melee Range heal that requires a full Action, situational and short debuff or, buff with a downside.<\/li><\/ul>",
+                    "<ul><li><b>No Dice: <\/b>May be an Ability that buffs\/debuffs someone or some sort of utility. These Abilities are generally lower powered but reliable. The strength of the effect may still scale with Ability Dice. For example you may have an Ability which buffs an ally's d20 rolls, granting a +2(n) bonus where n is your number of Ability dice (so +2 at Level 1 and +20 at Level 20 etc).<\/li><li><b>d4: <\/b>May be an Ability that can affect multiple targets at once from a distance. It may do one, but not multiple, of the following:<ul class='sublist'><li>Increase the die used from a d4 to a higher die such as a d10\/d12 if a condition is met. If using the increased die a Saving Throw is required for the targets and they take half damage or are unaffected on success.<\/li><li>Apply a powerful secondary effect in certain circumstances.<\/li><li>Choose which targets are affected by a negative effect in range, rather than all creatures being affected.<\/li><\/ul>If you afflict a group with both damage AND a negative effect the targets may attempt a Saving Throw to shrug off the effect but still take full damage.<\/li><li><b>d6: <\/b>May be an Ability that deals guaranteed damage to groups of people in range without requiring a Saving Throw, or used to heal or buff\/debuff multiple targets. May also have a situational secondary effect in addition to healing\/damage, or a stronger single buff\/debuff effect, if it only affects a single target.<\/li><li><b>d8: <\/b>May be an Ability that requires a Saving Throw to deal damage to multiple targets and dealing half on a success, or instead adding guaranteed damage to a successful Melee Attack. May instead be multi-target healing or buffing\/debuffing within a short range (like 10m) or a single-target effect from a greater distance.<\/li><li><b>d10: <\/b>May be an Ability that requires a Saving Throw to deal damage to multiple targets and dealing none on success, or to deal damage to a single target and dealing half on success. May instead apply healing or a buff\/debuff to a single target within Melee Range.<\/li><li><b>d12: <\/b>May be an Ability that requires a Saving Throw to deal damage to a single target within 5m, dealing none on success. May instead be a Melee Range heal that requires a full Action, situational and short debuff or, buff with a downside.<\/li><\/ul>",
                     "<p><small><b>Note: <\/b><i>The damage cap for these scaling dice is normally 10dx, but this does not have to be the case. Characters or enemies may be able to go far past Level 20, and therefore, would be able to deal massive amounts of Damage using them. Your DM may decide that Abilities past that may increase in the same fashion as before (an additional dice for every odd Level), or that 10dx should be the limit for balance.<\/i><\/small><\/p>"
                 ]
             },
@@ -419,6 +423,9 @@
                     "10": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Special Ability"
                         ]
                     },
                     "11": {
@@ -455,9 +462,6 @@
                     "15": {
                         "otherFeatures": [
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
-                        ],
-                        "linkFeatures": [
-                            "Special Ability"
                         ]
                     },
                     "16": {
@@ -576,7 +580,11 @@
                         "linkFeatures": [
                             "Custom Ability",
                             "Stand Pickpocketing",
-                            "Distant Defense"
+                            "Distant Defense",
+                            "OR"
+                        ],
+                        "featFeatures": [
+                            "Close-Range Deflection"
                         ]
                     },
                     "3": {
@@ -627,6 +635,9 @@
                     "10": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Special Ability"
                         ]
                     },
                     "11": {
@@ -655,9 +666,6 @@
                     "15": {
                         "otherFeatures": [
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
-                        ],
-                        "linkFeatures": [
-                            "Special Ability"
                         ]
                     },
                     "16": {
@@ -761,7 +769,7 @@
                     2
                 ],
                 "notes": [
-                    "These Stands cannot be controlled by their Users and only perform one predetermined action, the only power their User has over them is to send them out or recall them. They still use their User's Initiative position, but have a separate Turn."
+                    "These Stands cannot be controlled by their Users, the only power their User has over them is to send them out or recall them. These Stands still use their User's Initiative position, but have a separate Turn where they can only perform one predetermined action."
                 ],
                 "theme": "hStar",
                 "level": {
@@ -835,6 +843,9 @@
                     "10": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Special Ability"
                         ]
                     },
                     "11": {
@@ -862,9 +873,6 @@
                     "15": {
                         "otherFeatures": [
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
-                        ],
-                        "linkFeatures": [
-                            "Special Ability"
                         ]
                     },
                     "16": {
@@ -968,7 +976,6 @@
                     },
                     "2": {
                         "linkFeatures": [
-                            "Self-Acclimation",
                             "Distant Defense",
                             "OR"
                         ],
@@ -984,6 +991,9 @@
                             "Suit Stand",
                             "OR",
                             "Uncontrollable Stand"
+                        ],
+                        "otherFeatures": [
+                            "<a href='\/abilities?focus=Self_Acclimation'>Self-Acclimation<\/a> OR <a href='\/feats?focus=Resilient'>Resilient<\/a>"
                         ]
                     },
                     "3": {
@@ -1010,6 +1020,9 @@
                     "6": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Special Ability"
                         ]
                     },
                     "7": {
@@ -1030,13 +1043,16 @@
                         ]
                     },
                     "9": {
-                        "linkFeatures": [
-                            "Special Ability"
+                        "otherFeatures": [
+                            "Choose another Class Feature from Level 2, Level 4, Level 5, or Level 7"
                         ]
                     },
                     "10": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Ultimate Ability"
                         ]
                     },
                     "11": {
@@ -1066,9 +1082,6 @@
                     "15": {
                         "otherFeatures": [
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
-                        ],
-                        "linkFeatures": [
-                            "Ultimate Stand Ability"
                         ]
                     },
                     "16": {
@@ -1235,6 +1248,9 @@
                     "10": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Special Ability"
                         ]
                     },
                     "11": {
@@ -1268,9 +1284,6 @@
                     "15": {
                         "otherFeatures": [
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
-                        ],
-                        "linkFeatures": [
-                            "Special Ability"
                         ]
                     },
                     "16": {
@@ -1299,7 +1312,9 @@
                     },
                     "20": {
                         "linkFeatures": [
-                            "Condensed Material"
+                            "Condensed Material",
+                            "OR",
+                            "Fleeting Invulnerability"
                         ],
                         "otherFeatures": [
                             "<a href='\/artifacts\/?focus=Heaven'>Heaven Calls<\/a>"
@@ -1454,6 +1469,9 @@
                     "10": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Special Ability"
                         ]
                     },
                     "11": {
@@ -1483,9 +1501,6 @@
                     "15": {
                         "otherFeatures": [
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
-                        ],
-                        "linkFeatures": [
-                            "Special Ability"
                         ]
                     },
                     "16": {
@@ -1651,6 +1666,9 @@
                     "10": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Special Ability"
                         ]
                     },
                     "11": {
@@ -1679,9 +1697,6 @@
                     "15": {
                         "otherFeatures": [
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
-                        ],
-                        "linkFeatures": [
-                            "Special Ability"
                         ]
                     },
                     "16": {
@@ -1861,6 +1876,9 @@
                     "10": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Special Ability"
                         ]
                     },
                     "11": {
@@ -1888,9 +1906,6 @@
                     "15": {
                         "otherFeatures": [
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
-                        ],
-                        "linkFeatures": [
-                            "Special Ability"
                         ]
                     },
                     "16": {
@@ -1987,7 +2002,7 @@
                             "<table class='table table-striped minor'><thead><tr><th>Stat<\/th><th>Multiplier<\/tr><\/thead><tbody><tr><td>Power<\/td><td>Str x3<\/td><\/tr><tr><td>Precision<\/td><td>Dex x3<\/td><\/tr><tr><td>Durability<\/td><td>Con x3<\/td><\/tr><tr><td>Range<\/td><td>Int x1<\/td><\/tr><tr><td>Speed<\/td><td>Wis x4<\/td><\/tr><tr><td>Stand Energy<\/td><td>Cha x2<\/td><\/tr><\/tbody><\/table><\/div>",
                             "<div class='actType'><b>Long-Range<\/b><span>You gain: <a href='\/abilities\/?focus=Slippery'>Slippery<\/a> and <a href='\/abilities\/?focus=Distant_Defense'>Distant Defense<\/a> and either <a href='\/abilities\/?focus=Detached_Senses'>Detached Senses<\/a> and <a href='\/abilities\/?focus=Doubled_Range'>Doubled Range<\/a> OR <a href='\/abilities\/?focus=Immense_Resistance'>Immense Resistance<\/a> and <a href='\/abilities\/?focus=Tanky'>Tanky<\/a><\/span><span>Note: You may not increase your Power or Durability when Leveling Up.<\/span><span>Attack Dice: 1d8 (2d6 past Level 11)<\/span><b>Ability Score Multipliers<\/b>",
                             "<table class='table table-striped minor'><thead><tr><th>Stat<\/th><th>Multiplier<\/tr><\/thead><tbody><tr><td>Power<\/td><td>Str x3<\/td><\/tr><tr><td>Precision<\/td><td>Dex x3<\/td><\/tr><tr><td>Durability<\/td><td>Con x3<\/td><\/tr><tr><td>Range<\/td><td>Int x8<\/td><\/tr><tr><td>Speed<\/td><td>Wis x3<\/td><\/tr><tr><td>Stand Energy<\/td><td>Cha x3<\/td><\/tr><\/tbody><\/table><\/div>",
-                            "<div class='actType'><b>Ability-Focused<\/b><span>You gain: <a href='\/abilities\/?focus=Self_Acclimation'>Self Acclimation<\/a> and <a href='\/abilities\/?focus=Distant_Defense'>Distant Defense<\/a><\/span><span>Note: You may not increase your Power or Durability when Leveling Up.<\/span><span>Attack Dice: 1d4 (1d6 past Level 11)<\/span><b>Ability Score Multipliers<\/b>",
+                            "<div class='actType'><b>Ability-Focused<\/b><span>You gain: <a href='\/abilities\/?focus=Self_Acclimation'>Self-Acclimation<\/a> and <a href='\/abilities\/?focus=Distant_Defense'>Distant Defense<\/a><\/span><span>Note: You may not increase your Power or Durability when Leveling Up.<\/span><span>Attack Dice: 1d4 (1d6 past Level 11)<\/span><b>Ability Score Multipliers<\/b>",
                             "<table class='table table-striped minor'><thead><tr><th>Stat<\/th><th>Multiplier<\/tr><\/thead><tbody><tr><td>Power<\/td><td>Str x1<\/td><\/tr><tr><td>Precision<\/td><td>Dex x2<\/td><\/tr><tr><td>Durability<\/td><td>Con x1<\/td><\/tr><tr><td>Range<\/td><td>Int x3<\/td><\/tr><tr><td>Speed<\/td><td>Wis x3<\/td><\/tr><tr><td>Stand Energy<\/td><td>Cha x5<\/td><\/tr><\/tbody><\/table><\/div>",
                             "<div class='actType'><b>Remote-Focused<\/b><span>You gain: <a href='\/abilities\/?focus=Programmed_Stand'>Programmed Stand<\/a> and <a href='\/abilities\/?focus=Stand_Marking'>Stand Marking<\/a><\/span><span>Note: You may not increase your Precision when Leveling Up. If someone activates your Remote trigger, you may switch to your Remote-Focused Act as a Reaction.<\/span><span>Attack Dice: 1d10 (2d8 past Level 11)<\/span><b>Ability Score Multipliers<\/b>",
                             "<table class='table table-striped minor'><thead><tr><th>Stat<\/th><th>Multiplier<\/tr><\/thead><tbody><tr><td>Power<\/td><td>Str x3<\/td><\/tr><tr><td>Precision<\/td><td>Dex x2<\/td><\/tr><tr><td>Durability<\/td><td>Con x3<\/td><\/tr><tr><td>Range<\/td><td>Int x4<\/td><\/tr><tr><td>Speed<\/td><td>Wis x3<\/td><\/tr><tr><td>Stand Energy<\/td><td>Cha x2<\/td><\/tr><\/tbody><\/table><\/div>",
@@ -2284,6 +2299,12 @@
                     "Forced Motion",
                     "Spherical Spin",
                     "Spiritual Spin (Variant Rule)"
+                ],
+                "featFeatures": [
+                    "Equalizer"
+                ],
+                "otherFeatures": [
+                    "Gain Proficiency in Attack Rolls using the Spin"
                 ]
             },
             "2": {
@@ -2337,11 +2358,11 @@
                 ]
             },
             "7": {
-                "linkFeatures": [
-                    "Spin Expertise"
-                ],
                 "featFeatures": [
                     "Trained Combatant"
+                ],
+                "otherFeatures": [
+                    "Gain Proficiency in Attack Rolls using the Spin again"
                 ]
             },
             "8": {
@@ -2386,8 +2407,8 @@
                 ]
             },
             "14": {
-                "linkFeatures": [
-                    "Spin Mastery"
+                "otherFeatures": [
+                    "Gain Proficiency in Attack Rolls using the Spin again"
                 ]
             },
             "15": {
@@ -2481,6 +2502,7 @@
                             "Supernatural Item (Variant Rule)"
                         ],
                         "featFeatures": [
+                            "Equalizer",
                             "Weapon Feat"
                         ]
                     },
@@ -2539,9 +2561,9 @@
                     },
                     "9": {
                         "featFeatures": [
-                            "Natural Talent",
+                            "Practical Experience",
                             "OR",
-                            "Practical Experience"
+                            "Sharp Mind"
                         ]
                     },
                     "10": {
@@ -2632,6 +2654,7 @@
                             "Supernatural Item (Variant Rule)"
                         ],
                         "featFeatures": [
+                            "Equalizer",
                             "Weapon Feat"
                         ]
                     },
@@ -2694,7 +2717,7 @@
                     },
                     "9": {
                         "featFeatures": [
-                            "Natural Talent",
+                            "Jack of All Trades",
                             "OR",
                             "Practical Experience"
                         ]
@@ -2787,6 +2810,7 @@
                             "Supernatural Item (Variant Rule)"
                         ],
                         "featFeatures": [
+                            "Equalizer",
                             "Weapon Feat"
                         ]
                     },
@@ -2820,7 +2844,7 @@
                     },
                     "5": {
                         "featFeatures": [
-                            "Natural Talent",
+                            "Quick on your Feet",
                             "OR",
                             "Practical Experience",
                             "OR",
@@ -2835,6 +2859,8 @@
                     "7": {
                         "featFeatures": [
                             "Trained Combatant",
+                            "Combat Medic",
+                            "OR",
                             "Consistent Skills",
                             "OR",
                             "Unstoppable Willpower"
@@ -2862,9 +2888,9 @@
                             "Aura of Knowledge"
                         ],
                         "featFeatures": [
-                            "Natural Talent",
+                            "Focus",
                             "OR",
-                            "Perfected Craft"
+                            "Menacing Aura"
                         ]
                     },
                     "12": {
@@ -2903,7 +2929,7 @@
                     },
                     "17": {
                         "featFeatures": [
-                            "Perfected Craft",
+                            "Additional Sense",
                             "OR",
                             "Practical Experience"
                         ],
@@ -2942,6 +2968,7 @@
                             "Supernatural Item (Variant Rule)"
                         ],
                         "featFeatures": [
+                            "Equalizer",
                             "Weapon Feat"
                         ]
                     },
@@ -3113,6 +3140,7 @@
                             "Supernatural Item (Variant Rule)"
                         ],
                         "featFeatures": [
+                            "Equalizer",
                             "Weapon Feat"
                         ]
                     },
@@ -3121,7 +3149,7 @@
                             "Artisan Fighting Style"
                         ],
                         "featFeatures": [
-                            "Natural Talent"
+                            "Practical Experience"
                         ]
                     },
                     "3": {
@@ -3139,7 +3167,7 @@
                         "featFeatures": [
                             "Catlike Agility",
                             "OR",
-                            "Practical Experience",
+                            "Resilient",
                             "OR",
                             "Skirmisher"
                         ]
@@ -3183,9 +3211,7 @@
                         "featFeatures": [
                             "Jack of All Trades",
                             "OR",
-                            "Natural Talent",
-                            "OR",
-                            "Perfected Craft"
+                            "Sharp Mind"
                         ]
                     },
                     "10": {
@@ -3258,9 +3284,9 @@
                     },
                     "19": {
                         "featFeatures": [
-                            "Motivated",
+                            "Aura of Awareness",
                             "OR",
-                            "Perfected Craft"
+                            "Motivated"
                         ]
                     },
                     "20": {
@@ -3309,6 +3335,7 @@
                             "Supernatural Item (Variant Rule)"
                         ],
                         "featFeatures": [
+                            "Equalizer",
                             "Weapon Feat"
                         ]
                     },
@@ -3344,6 +3371,8 @@
                             "Quick on your Feet",
                             "OR",
                             "Scarflesh",
+                            "OR",
+                            "Swift Recovery",
                             "OR",
                             "Tanky"
                         ]
@@ -3443,7 +3472,7 @@
                     },
                     "19": {
                         "featFeatures": [
-                            "Natural Talent",
+                            "Jack of All Trades",
                             "OR",
                             "Practical Experience"
                         ]
@@ -3467,6 +3496,7 @@
                             "Supernatural Item (Variant Rule)"
                         ],
                         "featFeatures": [
+                            "Equalizer",
                             "Weapon Feat"
                         ]
                     },
@@ -3511,7 +3541,9 @@
                             "OR",
                             "Guerilla Fighter",
                             "OR",
-                            "Skirmisher"
+                            "Skirmisher",
+                            "OR",
+                            "Swift Recovery"
                         ]
                     },
                     "6": {
@@ -3539,7 +3571,7 @@
                         "featFeatures": [
                             "Deadly Accuracy",
                             "OR",
-                            "Natural Talent",
+                            "Jack of All Trades",
                             "OR",
                             "Quick on your Feet"
                         ]

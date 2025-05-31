@@ -27,7 +27,7 @@
         "name": "Creature Size",
         "content": [
           "<p>A Familiar's size determines its Movement Speed, AC bonus (applies to Stand AC as well), and Hit Dice.</p>",
-          "<div id='sizes'><div class='size-card' id='tiny'><b>Tiny:</b><br>Hit Dice: 1d4<br>Movement: 5m OR<br>0m and 5m Flying/Swimming<br>Additional AC: +4<br>Natural Weapon Dice: 1d4</div>",
+          "<div id='sizes'><div class='size-card' id='tiny'><b>Tiny:</b><br>Hit Dice: 1d4<br>Movement: 5m OR<br>1m and 5m Flying/Swimming<br>Additional AC: +4<br>Natural Weapon Dice: 1d4</div>",
           "<div class='size-card' id='small'><b>Small:</b><br>Hit Dice: 1d6<br>Movement: 8m OR<br>2m and 8m Flying/Swimming<br>Additional AC: +2<br>Natural Weapon Dice: 1d6</div>",
           "<div class='size-card' id='med'><b>Medium:</b><br>Hit Dice: 1d8<br>Movement: 10m OR<br>3m and 10m Flying/Swimming<br>Additional AC: +1<br>Natural Weapon Dice: 1d8</div>",
           "<div class='size-card' id='large'><b>Large:</b><br>Hit Dice: 1d10<br>Movement: 12m OR<br>5m and 12m Swimming<br>Additional AC: +0<br>Natural Weapon Dice: 1d10</div></div>"
@@ -136,7 +136,7 @@
             "pro": 5,
             "feats": 3,
             "dice": 4,
-            "features": ["Superior Mobility", "OR", "Superior Saves"]
+            "features": ["Superior Mobility", "OR", "Better Saves"]
           },
           "16": {
             "pro": 5,
@@ -259,7 +259,7 @@
             "pro": 5,
             "feats": 3,
             "dice": 4,
-            "features": ["Superior Mobility", "OR", "Superior Saves"]
+            "features": ["Superior Mobility", "OR", "Better Saves"]
           },
           "16": {
             "pro": 5,
@@ -382,7 +382,7 @@
             "pro": 5,
             "feats": 3,
             "dice": 4,
-            "features": ["Unrelenting", "OR", "Superior Saves"]
+            "features": ["Unrelenting", "OR", "Better Saves"]
           },
           "16": {
             "pro": 5,
@@ -505,7 +505,7 @@
             "pro": 5,
             "feats": 3,
             "dice": 4,
-            "features": ["Superior Skills", "OR", "Superior Saves"]
+            "features": ["Better Skills", "OR", "Better Saves"]
           },
           "16": {
             "pro": 5,
@@ -544,6 +544,16 @@
         "desc": ["Your Familiar has Advantage on any Saving Throw against any effect that would reduce their Movement Speed, or restrict their mobility, as well as Advantage on Strength (Athletics) or Dexterity (Acrobatics) Checks to avoid the Grappled or Restrained Conditions."],
         "classes": ["Nimble"]
       },
+      "Better_Saves": {
+        "name": "Better Saves",
+        "desc": ["Your Familiar gains Proficiency in an additional Saving Throw of your choice."],
+        "classes": ["Guardian", "Nimble", "Stalwart", "Tracker"]
+      },
+      "Better_Skills": {
+        "name": "Better Skills",
+        "desc": ["Your Familiar may gain an additional two Skill Proficiencies of your choice."],
+        "classes": ["Tracker"]
+      },
       "Blinding_Attack": {
         "name": "Blinding Attack",
         "desc": ["As an Action your Familiar may make a single Natural Weapon attack. If this attack lands, the opponent must make a Constitution Saving Throw, or be Blinded until the start of their next Turn. Anyone who is surprised by your Familiar has Disadvantage on the Save."],
@@ -572,7 +582,7 @@
       "Natural_Tracker": {
         "name": "Natural Tracker",
         "desc": [
-          "Your Familiar gains Proficiency in the Survival Skill. If they are already Proficient in Survival, they instead gain Expertise. Also, your Familiar may make Investigation Checks using their Wisdom, rather than their Intelligence.",
+          "Your Familiar gains Proficiency in the Survival Skill. Additionally, your Familiar may make Investigation Checks using their Wisdom, rather than their Intelligence.",
           "Additionally, your Familiar has a +4 bonus to any Check made with the intent of looking for food, water, or shelter."
         ],
         "classes": ["Tracker"]
@@ -653,16 +663,6 @@
         "desc": ["You gain an additional Natural Weapon die when attacking. For example, if your Natural Weapons die is 1d8, it becomes 2d8."],
         "classes": ["Guardian", "Nimble", "Stalwart", "Tracker"]
       },
-      "Superior_Saves": {
-        "name": "Superior Saves",
-        "desc": ["Your Familiar gains Proficiency in an additional Saving Throw of your choice. Alternatively, you may choose the Primary Stat of your Familiars class and gain Expertise in the use of that Saving Throw."],
-        "classes": ["Guardian", "Nimble", "Stalwart", "Tracker"]
-      },
-      "Superior_Skills": {
-        "name": "Superior Skills",
-        "desc": ["Your Familiar may gain an additional two Skill Proficiencies of your choice. Alternatively, you may choose a Skill that your familiar is already Proficient in and give them Expertise in it."],
-        "classes": ["Tracker"]
-      },
       "Unrelenting": {
         "name": "Unrelenting",
         "desc": ["Once per Long Rest, your Familiar may remove one level of Exhaustion as an Action."],
@@ -702,7 +702,10 @@
       },
       "Extra_Sense": {
         "name": "Extra Sense",
-        "desc": ["Your Familiar gains one of the following additional senses:<ul class='sublist'><li>Echolocation: Your Familiar gains 10 meters of Blindsense. They gain an additional 10m if there is noise being made in the area. They may make the noise themselves as well but this grants a -4 penalty to Sneak Checks. Your Familiar must be able to hear to use this.</li><li>Soulsense: Your Familiar gains 10 meters of Soulsense, which allows them to sense the souls of living creatures, including Stands and ghosts. They gain a +10 Bonus to Perception Checks using this sense. This sense is not restricted by walls or barriers, and it may be used to determine if a soul has been in a location within the last minute. Undead and Constructs cannot be sensed this way.</li><li>Tremorsense: Your Familiar gains 10 meters of Tremorsense, allowing them to sense vibrations around them so long as they are connected to some kind of surface to feel the vibrations through. Your Familiar must be able to use its natural sense of touch to use this.</li></ul>"]
+        "desc": [
+          "Your Familiar gains one of the following additional senses:<ul class='sublist'><li>Echolocation: Your Familiar gains 10/20 meters of Blindsense. If there is noise being made in the area, they may use the Long Range of this sense without Disadvantage. They may make the noise themselves as well but this grants a -4 penalty to Sneak Checks. Your Familiar must be able to hear to use this.</li><li>Soulsense: Your Familiar gains 10/20 meters of Soulsense, which allows them to sense the souls of living creatures, including Stands and ghosts. They gain a +10 Bonus to Perception Checks using this sense in the Short Range, and a +5 Bonus in the Long Range. This sense is not restricted by walls or barriers, and it may be used to determine if a soul has been in a location within the Short Range within the last minute. Undead and Constructs cannot be sensed this way.</li><li>Tremorsense: Your Familiar gains 10/20 meters of Tremorsense, allowing them to sense vibrations around them. They must be connected to some kind of surface to feel the vibrations through in order to sense up to the Long Range. They may sense past Total Cover using this, so long as they are touching the Cover itself. Your Familiar must be able to use its natural sense of touch to use this.</li></ul>",
+          "Your Familiar may take this Feat multiple times if desired, either gaining another sense or increasing the Range of an existing one by the described amount."
+        ]
       },
       "Giants_Wrath": {
         "name": "Giant's Wrath",

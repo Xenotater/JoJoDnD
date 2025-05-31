@@ -181,6 +181,15 @@ h1, h2, h3, th, .th {
     color: black;
 }
 
+.table-generic th {
+    background-color: darkgray;
+    border: 1px solid black;
+}
+
+.table-generic td {
+    border: 1px solid black;
+}
+
 #list {
     position: sticky;
     top: calc(90px + 2rem);
@@ -499,4 +508,8 @@ input:checked + .slider.horizontal:before {
 
 .contextMenu *:last-child {
     border: none;
+}
+
+.para {
+    margin-bottom: 16px;
 }
