@@ -3,7 +3,7 @@
         "name": "Adrenaline Rush",
         "desc": "The body has a remarkable tendency to keep itself alive in tough situations, and your body is even better at doing so.",
         "effects": [
-            "As a Bonus Action, you may gain Advantage on all Strength, Dexterity, and Constitution Saving Throws until the beginning of your next Turn. You also gain an amount of temporary Hit Points equal to your Level which remain until your next Short or Long Rest.",
+            "As a Bonus Action, you may gain Advantage on all Strength, Dexterity, and Constitution Saving Throws until the beginning of your next Turn. You also heal an amount of Hit Points equal to your Level and gain the same amount of Temp HP which remains until your next Short or Long Rest.",
             "You can use this Feat an amount of times equal to your Strength Modifier per Long Rest.",
             "You regain half your uses (rounded down) on a Short Rest."
         ],
@@ -61,7 +61,7 @@
         "effects": [
             "As an Action, you may create a disguise for yourself. While disguised in this way, you have Advantage on passing yourself off as someone other than yourself.",
             "Any attempts to determine your true identity are made with Disadvantage while the disguise is intact.",
-            "Additionally, you gain Proficiency in the use of a disguise kit."
+            "Additionally, you gain Proficiency in Bluff and the use of a disguise kit."
         ]
     },
     "Whirlwind_Attacker": {
@@ -97,8 +97,9 @@
         "name": "Consistent Accuracy",
         "desc": "You're very skilled at judging distance and accurately striking your target.",
         "effects": [
-            "Whenever you make a ranged weapon attack, thrown weapon attack, a Stand's <a href='\/abilities\/?focus=Ranged_Attack'>Ranged Attack<\/a>, or balls for use with <a href='\/classes\/?focus=Spin'>The Spin<\/a>, before you hear if the result hits your target or not you may choose to make the roll of the attack 10, and then add all of your typical modifiers. You may use this ability once per Short or Long Rest.",
-            "Additionally, whenever you have Advantage on one of the types of ranged attacks mentioned above, you may roll 3 dice rather than 2, and take the highest of the result."
+            "Whenever you make an Attack with a Ranged weapon, Thrown weapon, a Stand's <a href='\/abilities\/?focus=Ranged_Attack'>Ranged Attack<\/a>, or a Sphere with <a href='\/classes\/?focus=Spin'>The Spin<\/a>, before you hear if the result hits your target or not you may choose to make the roll of the attack 10, and then add all of your typical modifiers. You may use this ability once per Short or Long Rest.",
+            "Whenever you have Advantage on one of the types of Attacks mentioned above, you may roll 3 dice rather than 2, and take the highest of the result.",
+            "Whenever you have Disadvantage on one of the types of Attacks mentioned above, you may choose to ignore one instance of the Disadvantage."
         ]
     },
     "Consistent_Skills": {
@@ -112,10 +113,9 @@
         "name": "Deadly Accuracy",
         "desc": "Your aim is steady and true, and you know exactly where to fire to maximize damage.",
         "effects": [
-            "When making an Attack with a Ranged or Thrown weapon you may choose to use a full Action to attack. If you choose to do this, you can add your Attack Roll's Bonus twice.",
+            "When making an Attack with a Ranged or Thrown weapon (or <a href='\/abilities?focus=Ranged_Attack'>Ranged Attack<\/a>) you may choose to use a full Action to attack. If you choose to do this, you can add your Attack Roll's Bonus twice.",
             "Upon a successful Hit, you may roll double the Damage Dice and also roll them all twice and take the higher result.",
-            "This Feat may be activated even when you use the ability that gives you Advantage on a Sniper Rifle.",
-            "When used with <a href='\/abilities\/?focus=Ranged_Attack'>Ranged Attack<\/a> this Feat instead only allows you to add the Attack Roll bonus twice and reroll the Damage Dice for the Focused version."
+            "This Feat may be activated even when you use the ability that gives you Advantage on a Sniper Rifle."
         ],
         "prereq": "Dex 13+"
     },
@@ -124,7 +124,8 @@
         "desc": "You've handled your fair-share of explosives, and know how to do so safely.",
         "effects": [
             "You gain Proficiency in the use of explosives. This means when you detonate an explosive weapon, the DC for the Saving Throw increases by your Proficiency Bonus.",
-            "Additionally, you gain a +4 bonus to any Check made to disarm or set up an explosive device, as well as any Saves made against explosives."
+            "Additionally, you gain a +4 bonus to any Check made to disarm or set up an explosive device, as well as any Saves made against explosives.",
+            "You may take this Feat multiple times if desired. Each additional instance increases the DC and Check\/Save bonus by +2."
         ]
     },
     "Energy_Imbuement": {
@@ -138,7 +139,7 @@
             "You become Proficient in the use of the imbued object, if you weren't already.",
             "If the object is destroyed, it does not damage the User in any way and it regenerates mass at a rate of 1kg\/hour.",
             "If the object is a Ranged Weapon then you may refill its ammo to maximum capacity as a single Attack at the cost of 1 Stand Energy.",
-            "If the weapon is non-explosive and its maximum ammo capacity is less than 5, you still get 5 'shots' before needing to expend Stand Energy again.",
+            "If the weapon is non-explosive and its maximum ammo capacity is less than 5, you still get 5 'shots' before needing to expend Stand Energy again. Thrown weapons also work for this, summoning one in each free hand and the others elsewhere on your person.",
             "You may take this Feat multiple times if desired."
         ],
         "prereq": "<a href='\/classes\/?focus=Stands'>Stand User<\/a>"
@@ -174,7 +175,7 @@
         "desc": "Some people have a gift that allows them to see Fate's inner workings. This allows them to see the future in a very specific way that isn't very helpful until the time of the divination comes to pass.",
         "effects": [
             "You have an amount of d4s equal to your Intelligence or Wisdom Modifier (minimum of 0) plus your Proficiency Bonus that you may spend as a Reaction to add or subtract the rolled value to any d20 roll witnessed by your character (self, allies, or enemies).",
-            "Since this applies to the raw roll, it may cause any rolls at 1 to become a Critical Miss or any rolls at 20 to become a Critical Hit. The minimum and maximum of 1 and 20 respectively still apply for the raw roll.",
+            "Since this applies to the raw roll, it may cause any rolls at 1 to become a Critical Miss or any rolls at 20 to become a Critical Hit. The minimum and maximum of 1 and 20 respectively still apply for the raw roll, so if your d4(s) would create a result of 0 it becomes 1 etc.",
             "You're able to use multiple d4s on one roll, but must declare how many you will use beforehand.",
             "You regain an amount of these d4s equal to half your Proficiency Bonus on a Short Rest, and all of them on a Long Rest."
         ]
@@ -606,7 +607,7 @@
         "desc": "Your Familiar is quite special, and through its strong fighting spirit, has developed a <a href='\/classes?focus=Stands'>Stand<\/a> of its own.",
         "effects": [
             "In order for your Familiar to have a Stand, <b>both of you must have this Feat<\/b>.",
-            "Your Familiar now uses Stand features rather than the ones normally gained by Familiars. They may also use Familiar Feats or regular Feats.",
+            "Your Familiar now uses Stand features rather than the ones normally gained by Familiars. They may also use Familiar Feats or regular Feats, and has an amount of Feats equal to their Proficiency Bonus like a regular character.",
             "They still roll Familiar stats for determining Ability Scores, they keep their size and they use the Familiar's scaling Ability dice."
         ]
     },
@@ -781,8 +782,8 @@
         "name": "Berserker",
         "desc": "Either by entering a trance, or through sheer adrenaline and rage, you have found a way to tap into a primal rage locked within you. You are able to use it to great destructive effect, at risk of pushing yourself far past your limits.",
         "effects": [
-            "As a Free Action at the start of your Turn, you may go Berserk. This lasts until you choose to exit this state or for an amount of Turns equal to twice your Proficiency Bonus, so long as you either make a Skill Check using Strength (including Grapple and Shove) or at least one Attack Roll using Strength on your Turn. When you going Berserk, you gain the following traits<ul>",
-            "While Berserk, your Strength Modifier increases by an amount equal to your Proficiency Bonus. If you have a Stand, your Stand's Power increases by the same amount.",
+            "As a Free Action, you may go Berserk. This lasts until you choose to exit this state or for an amount of Turns equal to twice your Proficiency Bonus, so long as you either make a Skill Check using Strength (including Grapple and Shove) or at least one Attack Roll using Strength on your Turn. When you going Berserk, you gain the following traits<ul>",
+            "While Berserk, your Strength Modifier increases by an amount equal to your Proficiency Bonus. If you have a Stand, your Stand's Power Modifier increases by the same amount.",
             "Your Melee Attacks gain the <a href='\/weapons#attributes-list'>Siege<\/a> Attribute.",
             "You gain Resistance to Piercing, Slashing, and Fire damage (so long as you are not Vulnerable).",
             "You do not go unconscious when you hit 0 HP, but you still make Death Saves as normal until healed. If you fail all three Death Saves, you die as normal. Getting hit by anything still results in a failed Death Save.",
@@ -803,7 +804,7 @@
         "name": "Burst",
         "desc": "You may push yourself beyond your limits, at a cost.",
         "effects": [
-            "Once per Short Rest you may gain one of the following benefits:<ul><li>Whenever you take the Attack Action, you may make an additional amount of Attacks equal to half of your Proficiency Bonus.<\/li><li>You gain an additional Bonus Action and Reaction this Turn.<\/li><li>You may Dash, Disengage, or Dodge as a single Attack or Bonus Action.<\/li><li>Your Movement Speed is doubled.<\/li><\/ul> When you use this Ability, you take an amount of necrotic damage equal to your Level that cannot be reduced or negated. This damage cannot drop you below 1 HP."
+            "Once per Short or Long Rest you may gain one of the following benefits:<ul><li>Whenever you take the Attack Action, you may make an additional amount of Attacks equal to half of your Proficiency Bonus.<\/li><li>You gain an additional Bonus Action and Reaction this Turn.<\/li><li>You may Dash, Disengage, or Dodge as a single Attack or Bonus Action.<\/li><li>Your Movement Speed is doubled.<\/li><\/ul> When you use this Ability, you take an amount of necrotic damage equal to your Level that cannot be reduced or negated. This damage cannot drop you below 1 HP."
         ]
     },
     "Class_Initiate": {
@@ -938,7 +939,7 @@
             "Through Training, you have gained the ability to utilize some kind of additional sense, or greatly enhance an existing one."
         ],
         "effects": [
-            "You may gain or enhance one of the following senses:<ul class='sublist'><li><u>Echolocation<\/u>: You gain 10\/20 meters of Blindsense. If there is noise being made in the area, you may use the Long Range of this sense without Disadvantage. Alternatively, you may make a slight noise yourself, granting a -4 penalty to Sneak Checks. You must be able to hear to  use this.<\/li><li><u>Enhanced Existing Sense<\/u>: One of your regular five senses (sight, smell, touch, hearing, taste) is greatly enhanced. You gain Proficiency in Perception, or Expertise if you were already Proficient. Additionally, when you make a Check using your chosen sense you get a +5 bonus to that Check, which may also apply to your Passive Perception using that sense.<\/li><li><u>Soulsense:<\/u> You gain 10\/20 meters of Soulsense, which allows you to sense the souls of living creatures, including Stands and ghosts. This grants you a +10 bonus to Perception Checks within the short range of your sense, and a +5 within the long range. This sense is not restricted by walls or barriers, and you may also use it to determine if a soul has been in a location in your short range within the last minute. You cannot sense Undead creatures or soulless Constructs in this way.<\/li><li><u>Tremorsense<\/u>: You gain 10\/20 meters of Tremorsense, allowing you to sense vibrations around you. In order to perceive something within the long range you must be connected to some kind of surface to feel the vibrations through. You must be able to use your natural sense of touch. You may feel past Total Cover, so long as you are touching the Cover itself.<\/li><li><u>Night Vision<\/u>: You gain 15\/30 meters of Darkvision, allowing you to see clearly in Darkness up to the Short Range or with Disadvantage up to the Long Range. If you have a light source, the effective range of it is doubled for you as well.<\/li><\/ul>",
+            "You may gain or enhance one of the following senses:<ul class='sublist'><li><u>Echolocation<\/u>: You gain 10\/20 meters of Blindsense. If there is noise being made in the area, you may use the Long Range of this sense without Disadvantage. Alternatively, you may make a slight noise yourself, granting a -4 penalty to Sneak Checks. You must be able to hear to  use this.<\/li><li><u>Enhanced Existing Sense<\/u>: One of your regular five senses (sight, smell, touch, hearing, taste) is greatly enhanced. You gain Proficiency in Perception. Additionally, when you make a Check using your chosen sense you get a +5 bonus to that Check, which may also apply to your Passive Perception using that sense.<\/li><li><u>Soulsense:<\/u> You gain 10\/20 meters of Soulsense, which allows you to sense the souls of living creatures, including Stands and ghosts. This grants you a +10 bonus to Perception Checks within the short range of your sense, and a +5 within the long range. This sense is not restricted by walls or barriers, and you may also use it to determine if a soul has been in a location in your short range within the last minute. You cannot sense Undead creatures or soulless Constructs in this way.<\/li><li><u>Tremorsense<\/u>: You gain 10\/20 meters of Tremorsense, allowing you to sense vibrations around you. In order to perceive something within the long range you must be connected to some kind of surface to feel the vibrations through. You must be able to use your natural sense of touch. You may feel past Total Cover, so long as you are touching the Cover itself.<\/li><li><u>Night Vision<\/u>: You gain 15\/30 meters of Darkvision, allowing you to see clearly in Darkness up to the Short Range or with Disadvantage up to the Long Range. If you have a light source, the effective range of it is doubled for you as well.<\/li><\/ul>",
             "If you already have one of these senses, your range of it increases by the given amount.",
             "You may take this Feat multiple times if desired, gaining a different sense or enhancing an existing one by increasing its range like above."
         ],
@@ -961,7 +962,7 @@
         ],
         "effects": [
             "If you do not have <a href='\/abilities?focus=Stand_Leap'>Stand Leap<\/a>, you gain it.",
-            "If you do have Stand Leap already, it is upgraded in the following ways:<ul calss='sublist'><li>You no longer have to spend your Reaction to negate the fall damage from it.<\/li><li>If you're falling and wish to grab something within 2m to catch yourself, you may do so as a Reaction.<\/li><li>You may choose to spend 2m of Movement rather than the usual 5 in order to Stand Leap up to half your Power Modifier in any direction.<\/li><li>You may move through another creature's space while using Stand Leap by succeeding an Acrobatics Check which the other creature may contest with Athletics (Strength) or Grit. If you fail, you may end the Leap early at the space in front of the creature, or keep moving and allow them to take an Opportunity Attack against you.<\/li><li>You may choose to get up from the Prone condition without expending any Movement Speed as a Reaction.<\/li><\/ul>",
+            "If you do have Stand Leap already, it is upgraded in the following ways:<ul calss='sublist'><li>You no longer have to spend your Reaction to negate the fall damage from it.<\/li><li>If you're falling and wish to grab something within 2m to catch yourself, you may do so as a Reaction.<\/li><li>You may choose to spend 2m of Movement rather than the usual 5 in order to Stand Leap up to half your Power Modifier in any direction.<\/li><li>You may move through another creature's space while using Stand Leap by succeeding an Acrobatics Check which the other creature may contest with Athletics (Strength) or Grit. If you fail, you may end the Leap early at the space in front of the creature, or keep moving and allow them to take an Opportunity Attack against you. If the creature is an ally or willing to allow you, you do not need to make a Check.<\/li><li>You may choose to get up from the Prone condition without expending any Movement Speed as a Reaction.<\/li><\/ul>",
             "You may take this feat a second time in order to gain the upgraded version of Stand Leap if you didn't have it before."
         ],
         "prereq": "<a href='\/classes?focus=Power'>Power-Type<\/a>, <a href='\/classes?focus=Revenge'>Revenge-Type<\/a>, Close-Range <a href='\/classes?focus=Act'>Act-Type<\/a>, or <a href='\/abilities?focus=Immense_Power'>Immense Power<\/a>"
@@ -1116,7 +1117,7 @@
             "If you already have Block Projectile, it is upgraded in the following ways:<ul><li>You may use this Ability to block any Attack that requires your attacker to make an Attack Roll against you, so long as your Stand is hit or your Stand is within 2 meters of you.<\/li><li>When reducing damage, in addition to your Attack dice + Precision and Speed Modifiers, you may also add your Durability Modifier to the result.<\/li><li>Leftover points after the damage has been negated can be used against additional Attacks, but the rest of the points must go to reducing the same type (melee vs ranged) of Attack. Alternatively, you may take half of the remaining points after the damage and add it to your Stand Damage Reduction until the top of Initiative rolls around again.<\/li><\/ul>",
             "If you do not have Block Projectile, you may take this Feat twice to gain the upgraded version."
         ],
-        "prereq": "<a href='\/classes?focus=Power'>Power-Type<\/a>, <a href='\/classes?focus=Revenge'>Revenge-Type<\/a>, Close-Range <a href='\/classes?focus=Act'>Act-Type<\/a>, or <a href='\/abilities?focus=Immense_Power'>Immense Power<\/a>"
+        "prereq": "<a href='\/classes?focus=Power'>Power-Type<\/a>, <a href='\/classes?focus=Ranged'>Ranged-Type<\/a>, <a href='\/classes?focus=Revenge'>Revenge-Type<\/a>, Close-Range <a href='\/classes?focus=Act'>Act-Type<\/a>, or <a href='\/abilities?focus=Immense_Power'>Immense Power<\/a>"
     },
     "Feel_No_Pain": {
         "name": "Feel No Pain",
@@ -1175,7 +1176,8 @@
             "So long as you are Proficient in the use of a weapon, you are able to damage Stand Users with it while they're being protected by their Stand, even if that weapon would normally be unable to harm Stands.",
             "This does not allow you to actually harm Stands directly with mundane weapons, you will still be unable to harm a Stand that's separated from its User. This only allows Stand Hits (between the User AC and Stand AC) with a regular weapon to deal damage to the User, rather than being deflected without a Direct Hit.",
             "Damage dealt this way can still be reduced through the use of Stand Damage Reduction.",
-            "This does not apply any special properties to the weapon, object, or projectile itself, it can only do this when wielded by you against a protected Stand User."
+            "This does not apply any special properties to the weapon, object, or projectile itself, it can only do this when wielded by you against a protected Stand User.",
+            "When making a Contested Skill Check (Grapple\/Shove, Speed Duel, etc.) against a Stand User that has their Stand assisting them, you can force them to make the Check using their own Stats instead of their Stand's, so long as you're Proficient in the Skill being used and also not using any Stand Stats."
         ]
     },
     "Substand_Expert": {
