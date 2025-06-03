@@ -53,8 +53,8 @@
                 "<b>Dexterity (Dex):</b> A measure of your ability to dodge, move swiftly, sneak, balance, and perform delicate tasks. A character with high Dexterity can sneak effectively, walk on a tightrope, pickpocket, and have an easier time dealing with effects that would deal damage in an area like explosives.",
                 "<b>Constitution (Con):</b> A measure of your ability to take hits, shrug off harmful toxins, and exert yourself for long periods. A character with high Constitution can take more damage before going down, run for many kilometers with ease, survive more easily in extreme climates, and have an easier time dealing with toxins and effects that cause decay.",
                 "<b>Intelligence (Int):</b> A measure of your ability to recall information, think critically, and deduce information. A character with high Intelligence can recall specific and relevant information, solve a puzzle or mystery, and have an easier time dealing with effects that change their perception or involve illusions or psychic abilities.",
-                "<b>Wisdom (Wis)</b> A measure of your ability to perceive, think creatively, and use practical problem solving skills. A character with high Wisdom can detect someone's movement from several rooms away, think of using a bedsheet as a makeshift rope, track a person or animal, and have an easier time dealing with effects related to someone's willpower.",
-                "<b>Charisma (Cha)</b> A measure of your ability to socially influence others through charm, wit, and a few well-placed words. A character with high Charisma can persuade someone to do them a favor, intimidate someone out of a fight, tell a convincing lie, hold the attention of a group, and have an easier time dealing with effects that would possess or influence them."
+                "<b>Wisdom (Wis):</b> A measure of your ability to perceive, think creatively, and use practical problem solving skills. A character with high Wisdom can detect someone's movement from several rooms away, think of using a bedsheet as a makeshift rope, track a person or animal, and have an easier time dealing with effects related to someone's willpower.",
+                "<b>Charisma (Cha):</b> A measure of your ability to socially influence others through charm, wit, and a few well-placed words. A character with high Charisma can persuade someone to do them a favor, intimidate someone out of a fight, tell a convincing lie, hold the attention of a group, and have an easier time dealing with effects that would possess or influence them."
               ]
             },
             {
@@ -83,7 +83,7 @@
             {
               "subheading": "Proficiency Bonus and Levels of Proficiency",
               "details": [
-                "Proficiency Bonus (PB) scales with your total Level and provides a flat bonus (alongside the associated Ability Modifier) to any Attack, Skill Check, or Saving Throw rolls that you're Proficient in. Proficiency has 3 defined levels, Proficiency, Expertise, and Mastery, with each level adding the bonus for an additional time. Going past Mastery is possible and the bonus continues adding addtional times.",
+                "Proficiency Bonus (PB) scales with your total Level and provides a flat bonus (alongside the associated Ability Modifier) to any Attack, Skill Check, or Saving Throw rolls that you're Proficient in. Proficiency has 3 defined levels, Proficiency, Expertise, and Mastery, with each level adding the bonus for an additional time. Going past Mastery is possible and the bonus continues adding additional times.",
                 "Any time you gain Proficiency in something you're already Proficient in to some degree, your Level of Proficiency increases (Proficiency to Expertise, Expertise to Mastery, etc).",
                 "You gain Proficiencies from your <a href='/passions'>Passion</a> or certain <a href='/feats'>Feats</a>, and you also gain an amount equal to your Intelligence Modifier (minimum 0). When gaining Proficiencies from your Passion or Int Mod, the options include: 1 Skill Proficiency, 2 sets of tools, 3 instruments, or 3 languages.",
                 "You may choose to spend two Proficiencies gained from your Passion or Int Mod to become Proficient in a <a href='/weapons'>weapon</a> Type or Specialization, allowing you to add your PB to Attack Rolls made with that kind of weapon. This is explained more in the <a href='?focus=Combat'>Combat</a> section.",
@@ -147,8 +147,8 @@
               "details": [
                 "When making a Skill Check, you will be rolling against one of two things: the Difficulty Class of the Check, or a contested roll.",
                 "Most Skill Checks have a Difficulty Class, or DC, either already set or decided by your Dungeon Master. The higher the DC is, the harder the Check will be to succeed. Rolling below a Check's DC results in failure.",
-                "Contested Skill Checks occur when two characters make Skill Checks against eachother. The initiator's result can be viewed as the 'DC' for the contestor to beat. This means a tie results in the initiator of the contest failing.",
-                "Some DMs or situations may treat the results as binary, while others may have varying degrees of success and failure. Additonally, some DMs may take \"Natural 1s\" and \"Natural 20s\" into account, resulting in a particularly spectacular failure or success if you roll a 1 or a 20 on the d20 respectively."
+                "Contested Skill Checks occur when two characters make Skill Checks against each other. The initiator's result can be viewed as the 'DC' for the contestor to beat. This means a tie results in the initiator of the contest failing.",
+                "Some DMs or situations may treat the results as binary, while others may have varying degrees of success and failure. Additionally, some DMs may take \"Natural 1s\" and \"Natural 20s\" into account, resulting in a particularly spectacular failure or success if you roll a 1 or a 20 on the d20 respectively."
               ]
             },
             {
@@ -156,7 +156,7 @@
               "details": [
                 "Having Advantage on a roll allows you to roll two d20s instead of one and take the higher result. Advantage can stack, but grants a +2 bonus to the roll instead of granting another additional roll attempt.",
                 "Disadvantage works opposite to Advantage, forcing you to take the lower result of two d20 rolls and granting a -2 bonus for each additional stack",
-                "Advantage and Disadvantage cancel eachother out, so if, for example, you have 2 sources of Advantage and 1 source of Disadvantage, you'd effectively have regular Advantage."
+                "Advantage and Disadvantage cancel each other out, so if, for example, you have 2 sources of Advantage and 1 source of Disadvantage, you'd effectively have regular Advantage."
               ]
             },
             {
@@ -243,7 +243,7 @@
               ]
             },
             {
-              "subheading": "Creatures Types and Races",
+              "subheading": "Creature Types and Races",
               "details": [
                 "The vast majority of characters in JoJo's are Human, which is treated as a baseline. However, there are numerous other more exotic <a href='/races'>Races</a> that have unique abilities.",
                 "Each specific Race fits into a more generalized Creature Type, listed below:"
@@ -301,12 +301,12 @@
                 "Creatures can have many various sizes that fit into a few defined Size Categories for the sake of certain mechanics. For example, you can only Grapple or Shove a creature that is one Category larger than you or smaller, and you can move through the space of creatures the same Size as you or smaller as Difficult Terrain."
               ],
               "compactDetails": [
-                "<b>Tiny</b> creatures tend to be around 70cm or shorter, weigh around 3.5kg or less, and control a 1x1 meter space.",
-                "<b>Small</b> creatures tend to be around 120cm or shorter, weigh around 30kg or less, and control a 1x1 meter space.",
-                "<b>Medium</b> creatures tend to be around 2.5m or shorter, weigh around 225kg or less, and control a 1x1 meter space. The vast majority of adult Humanoids are Medium creatures.",
-                "<b>Large</b> creatures tend to be around 5m or shorter, weigh around 1800kg or less, and control a 2x2 meter space.",
-                "<b>Huge</b> creatures tend to be around 10m or shorter, weigh around 15000kg or less, and control a 3x3 meter space.",
-                "<b>Gargantuan</b> creatures tend to be around 10m or taller, weigh around 15000kg or more, and control a 4x4 meter space or bigger."
+                "<b>Tiny</b> creatures tend to be around 70cm or shorter, weigh around 3.5 kg or less, and control a 1x1 meter space.",
+                "<b>Small</b> creatures tend to be around 120cm or shorter, weigh around 30 kg or less, and control a 1x1 meter space.",
+                "<b>Medium</b> creatures tend to be around 2.5m or shorter, weigh around 225 kg or less, and control a 1x1 meter space. The vast majority of adult Humanoids are Medium creatures.",
+                "<b>Large</b> creatures tend to be around 5m or shorter, weigh around 1800 kg or less, and control a 2x2 meter space.",
+                "<b>Huge</b> creatures tend to be around 10m or shorter, weigh around 15000 kg or less, and control a 3x3 meter space.",
+                "<b>Gargantuan</b> creatures tend to be around 10m or taller, weigh around 15000 kg or more, and control a 4x4 meter space or bigger."
               ]
             }
           ]
@@ -346,7 +346,7 @@
               "subheading": "Experience Levelling",
               "details": [
                 "Experience (Exp) is a point value that determines when a character can Level-Up, rather than relying on reaching story milestones. Experience can be gained from several sources, including as a reward for completing quests or objectives, or defeating an enemy.",
-                "It is important to be careful with Experience gain, as having it too readily available may result in players going on unnecessary side-quests to say, kill every rat in the city, just for Experience, or generally become higher Level than they're meant to be for combat balance. It may be advised for the Dungeon Master to set a Level cap, allowing players to gain more Exp but not Levelling-Up until they hit a requisite milestone, finding a happy medium between the two methods of Levelling.",
+                "It is important to be careful with Experience gain, as having it too readily available may result in players going on unnecessary side-quests to, for example, kill every rat in the city, just for Experience, or generally become higher Level than they're meant to be for combat balance. It may be advised for the Dungeon Master to set a Level cap, allowing players to gain more Exp but not Levelling-Up until they hit a requisite milestone, finding a happy medium between the two methods of Levelling.",
                 "The chart below shows the total Exp needed to reach a corresponding Level, as well as the corresponding Proficiency Bonus at that Level."
               ],
               "other": [
@@ -411,7 +411,7 @@
               "compactDetails": [
                 "<b>Action:</b> The largest part of your Turn, typically the main focus of what you're doing for the round.",
                 "<b>Bonus Action:</b> A slightly smaller action, ability, or technique that can be used or activated quickly.",
-                "<b>Movement:</b> The amount of movement you can make in one Turn. By default, a Human has 10 meters of Movement Speed that can be used in a Turn. Stands have their own Movement Speed as well, which can be used separately from their User's Movement.",
+                "<b>Movement:</b> The amount you can move in one Turn. By default, a Human has 10 meters of Movement Speed that can be used in a Turn. Stands have their own Movement Speed as well, which can be used separately from their User's Movement.",
                 "<b>Reaction:</b> An action that can be taken outside of your Turn in response to something else happening to or around you. You may still only take one Reaction per round, and get it back at the start of your next Turn when used.",
                 "<b>Free Action:</b> Something that takes practically no focus or time to perform, like talking. Unlike other parts of the Turn, Free Actions can be used as many times as desired."
               ]
@@ -432,7 +432,7 @@
                 "<b>Dash:</b> Allows you to Move an additional amount of meters equal to your Movement Speed.",
                 "<b>Disengage:</b> Prevents enemies from taking Opportunity Attacks when you exit their Melee Range until the start of your next Turn.",
                 "<b>Dodge:</b> Grants one of the following defensive effects until the start of your next Turn. If you're a Stand User, you also gain 1 Stand Energy doing this.<ul class='sublist'><li>Gives enemies Disadvantage on Attack Rolls against you and gives you Advantage on all Saving Throws and contested Skill Checks against you that weren't initiated by you.</li><li>Halves the damage you take from all sources.</li></ul>",
-                "<b>Help:</b> Grants an ally within 1 meter Advantage on their next Skill Check or Attack Roll. Also removes 1 level of Fear or the effects of Taunt.",
+                "<b>Help:</b> Grants an ally within 1 meter Advantage on their next Skill Check or Attack Roll. Also removes 1 level of Fear and the effects of Taunt.",
                 "<b>Hide:</b> When in a suitable hiding place (a dark area, behind an object, camouflaged, etc), you may make a Sneak Check against any enemies that are aware of you, which they can contest with a Perception Check. Targets that fail the contest lose track of your location.",
                 "<b>Revive:</b> When within 1 meter of a Downed ally, you may make a DC 10 Medicine Check, bringing the ally back up to 1 Hit Point on success. You may instead choose to stabilize them on success, keeping them at 0 Hit Points but preventing them from having to make any Death Saves.",
                 "<b>Skill Check:</b> Allows you to make any Skill Check to interact with your environment."
@@ -517,8 +517,8 @@
             {
               "subheading": "Hit Points",
               "details": [
-                "Hit Points (HP) are a measure of how much willpower your character has to fight. When you take damage, your total HP will be reduced by a certain amount. There are no penalties for having low HP, but if you fall to 0, you gain the Downed Condition and will be unable to continue fighting until healed or revived. You cannot have an HP value below 0 (except Undead in certain situations).",
-                "Your total HP amount is determined by a combination of your <a href='/classes'>Classes'</a> Hit Dice and your Constitution Modifier. At Level 1, you use the max value of your Hit Die and add your Con Mod. Each Level-Up will have you roll your Hit Die (or take the average roll) and add your Con Mod to the result to gain more max HP. For example, a character with a d8 Hit Die and a +2 Con would start with 10 HP, then upon Levelling-Up would add 1d8+2 (or 5+2) HP to their maximum.",
+                "Hit Points (HP) are a measure of how much willpower your character has to fight. When you take damage, your total HP will be reduced by the amount of damage dealt to you. There are no penalties for having low HP, but if you fall to 0, you gain the Downed Condition and will be unable to continue fighting until healed or revived. You cannot have an HP value below 0 (except Undead in certain situations).",
+                "Your Maximum HP amount is determined by a combination of your <a href='/classes'>Classes'</a> Hit Dice and your Constitution Modifier. At Level 1, you use the max value of your Hit Die and add your Con Mod. Each Level-Up will have you roll your Hit Die (or take the average roll) and add your Con Mod to the result to gain more max HP. For example, a character with a d8 Hit Die and a +2 Con would start with 10 HP, then upon Levelling-Up would add 1d8+2 (or 5+2) HP to their maximum.",
                 "<a href='/classes?focus=Stands'>Stands</a> typically share an HP pool with their User. Some Types may have a separate pool, though, in which case their separate pool would be the same size as their Users."
               ]
             },
@@ -559,17 +559,17 @@
               ]
             },
             {
-              "subheading": "Stand Damage",
-              "details": [
-                "Typically, <a href='/classes?focus=Stands'>Stands</a> are immune to mundane damage, you can't simply stab one with a knife as it will go right through them. However, when Stands deal damage, it is generally a special type of damage that <i>is</i> capable of affecting other Stands. This is often referred to as the \"Stand\" counterpart of each damage type, like Stand Piercing, for example.",
-                "As an optional rule, your DM may choose to allow other <a href='/classes'>Classes</a> to damage Stands for the sake of balance."
-              ]
-            },
-            {
               "subheading": "Resistances, Immunities, and Vulnerabilities",
               "details": [
                 "Some characters are particularly weak or strong against certain types of damage. There are several ways to achieve this, depending on what <a href='/classes'>Class</a>, <a href='/abilities'>Abilities</a>, and <a href='/feats'>Feats</a> your character has. <b>Vulnerability</b> to a damage type causes you to take double the damage dealt to you, while <b>Resistance</b> causes you to take half. <b>Immunity</b> to a type causes you to take no damage from it at all.",
                 "These attributes may not stack with each other. You may not be doubly Resistant to a type of damage, nor may you use a Resistance to cancel out a Vulnerability."
+              ]
+            },
+            {
+              "subheading": "Stand Damage",
+              "details": [
+                "Typically, <a href='/classes?focus=Stands'>Stands</a> are immune to mundane damage, you can't simply stab one with a knife as it will go right through them. However, when Stands deal damage, it is generally a special type of damage that <i>is</i> capable of affecting other Stands. This is often referred to as the \"Stand\" counterpart of each damage type, like Stand Piercing, for example.",
+                "As an optional rule, your DM may choose to allow other <a href='/classes'>Classes</a> to damage Stands for the sake of balance."
               ]
             }
           ]
@@ -770,7 +770,7 @@
             {
               "subheading": "Light and Darkness",
               "details": [
-                "Areas may have varying degrees of brightness throughout them, which could potentially restrict the able to see within the area. There are varying levels of brightness used to describe these conditions:"
+                "Areas may have varying degrees of brightness throughout them, which could potentially restrict the ability to see within the area. There are varying levels of brightness used to describe these conditions:"
               ],
               "compactDetails": [
                 "<b>Bright Light:</b> Everything is clearly illuminated by light, making it easy to see. Checks to perceive using sight may be made normally.",
@@ -783,7 +783,7 @@
               "subheading": "Deep Water",
               "details": [
                 "Creatures in Deep Water have Disadvantage on Melee Attacks that don't deal Piercing damage and cannot use Ranged/Thrown weapons that don't deal Piercing damage at all. Ranged/Thrown weapons that deal Piercing damage may be used, but attempting to use their Long Range inflicts double Disadvantage. Creatures with a Swimming Speed may ignore the Melee Attack restriction and may use Piercing Ranged/Thrown weapons at Long Range without doubling the Disadvantage.",
-                "Everything in Deep Water takes half damage from Fire, and creatuers have Disadvantage on Saving Throws against Lightning and Thunder Damage, as well as AOE effects of <a href='/classes?focus=Ripple'>The Ripple</a>."
+                "Everything in Deep Water takes half damage from Fire, and creatures have Disadvantage on Saving Throws against Lightning and Thunder Damage, as well as AOE effects of <a href='/classes?focus=Ripple'>The Ripple</a>."
               ]
             },
             {
@@ -806,7 +806,7 @@
             {
               "subheading": "Occupying Space",
               "details": [
-                "While a character is positioned in a square meter space on the game map, that doesn't necessarily mean they phsyically take up that full square's space, but rather that they control that space. A character cannot move through another creature's controlled space unless they're allied, allowed to do so, and the same Size Category or smaller than the creature already in that space. Moving through another creature's space like this counts as moving through Difficult Terrain. Size Categories are explained more in the <a href='/rules/?focus=Misc.%20Rules'>Miscellaneous</a> section."
+                "While a character is positioned in a square meter space on the game map, that doesn't necessarily mean they physically take up that full square's space, but rather that they control that space. A character cannot move through another creature's controlled space unless they're allied, allowed to do so, and the same Size Category or smaller than the creature already in that space. Moving through another creature's space like this counts as moving through Difficult Terrain. Size Categories are explained more in the <a href='/rules/?focus=Misc.%20Rules'>Miscellaneous</a> section."
               ]
             },
             {

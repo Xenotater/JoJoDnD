@@ -718,7 +718,7 @@
         "name": "Keen Senses",
         "desc": [
           "Through superior sensory organs and patience, your Familiar has learned to trust a couple of their senses in particular, and hone them.",
-          "Choose two of the five senses (sight, hearing, smell, touch, taste). Your Familiar gains a +4 bonus to Perception Checks using those senses."
+          "Choose two of the five senses (sight, hearing, smell, touch, taste). Your Familiar gains a +4 bonus to Perception Checks and Passive Perception using those senses."
         ]
       },
       "Naturally_Sheltered": {

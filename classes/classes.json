@@ -21,7 +21,7 @@
         "extra": [
             {
                 "name": "Honed Body",
-                "desc": "Ripple Users' bodies are much better honed than the bodies of most Humans. Rather than a maximum of 20 in each Ability Score, Ripple users have a maximum of 24 for their Strength, Dexterity, and Constitution"
+                "desc": "Ripple Users' bodies are much better honed than the bodies of most Humans. Rather than a maximum of 20 in each Ability Score, Ripple users have a maximum of 24 for their Strength, Dexterity, and Constitution."
             },
             {
                 "name": "Ripple Conductors",
@@ -29,15 +29,12 @@
             },
             {
                 "name": "Ripple Points",
-                "desc": "Each Ripple User has an amount of Ripple Points equal to their Level in Ripple. If a Ripple User is able to comfortably breathe, they gain 1 Ripple Point at the top of initiative"
+                "desc": "Each Ripple User has an amount of Ripple Points equal to their Level in Ripple. If a Ripple User is able to comfortably breathe, they gain 1 Ripple Point at the top of Initiative. When unable to breathe, Ripple Users are not able to regain Ripple Points and lose one Point per Turn."
             },
             {
                 "name": "Undead's Bane",
                 "desc": "Any damage dealt by The Ripple is doubled against Undead, and <a href='/races?focus=Pillar_Man'>Pillar Men</a> take extra damage equal to their Level."
             }
-        ],
-        "notes": [
-            "When unable to breathe, Ripple Users are not able to regain Ripple Points and lose one Point per Turn."
         ],
         "theme": "sun",
         "level": {
@@ -253,7 +250,7 @@
             {
                 "name": "Rules of Stands",
                 "content": [
-                    "<ul><li>All Stands have the \"Stand\" creature type.</li><li>A single person can only have one Stand (Hive Stands are the same Stand, just split up into much smaller parts)<\/li><li>Whatever damage is inflicted upon the Stand or the User is also dealt to the other<\/li><li>Only Stand Users can sense Stands<\/li><li>Stand Users can interact and speak with spirits or ghosts<\/li><li>Only Stands can defeat Stands, physical objects simply pass through or bounce off of all Stands except Enhancement or Independent types<\/li><li>If a Stand User fights a Non-Stand User, the Stand User gets Advantage on all attacks using their Stand<\/li><li>If a Stand User is Surprised and does not have their Stand active, they may not use it to defend themselves.<\/li><li>Unless otherwise specified, a Stand may only be summoned\/dispelled within 2m of its User. Remote-Types are not restricted in this way, instead summoning within 15m of whatever triggered them.<\/li><li>If the User is knocked unconscious and the Stand is not a Revenge-Type, the Stand and it's Ability will disappear until resummoned by the User when conscious<\/li><li>Stand Energy is only consumed if the Ability actually affects something<\/li><\/ul>"
+                    "<ul><li>All Stands have the \"Stand\" Creature Type.</li><li>A single person can only have one Stand (Hive Stands are the same Stand, just split up into much smaller parts)<\/li><li>Whatever damage is inflicted upon the Stand or the User is also dealt to the other<\/li><li>Only Stand Users can sense Stands<\/li><li>Stand Users can interact and speak with spirits or ghosts<\/li><li>Only Stands can defeat Stands, physical objects simply pass through or bounce off of all Stands except Enhancement or Independent types<\/li><li>If a Stand User fights a Non-Stand User, the Stand User gets Advantage on all attacks using their Stand<\/li><li>If a Stand User is Surprised and does not have their Stand active, they may not use it to defend themselves.<\/li><li>Unless otherwise specified, a Stand may only be summoned\/dispelled within 2m of its User. Remote-Types are not restricted in this way, instead summoning within 15m of whatever triggered them.<\/li><li>If the User is knocked unconscious and the Stand is not a Revenge-Type, the Stand and it's Ability will disappear until resummoned by the User when conscious<\/li><li>Stand Energy is only consumed if the Ability actually affects something<\/li><\/ul>"
                 ]
             },
             {
@@ -439,7 +436,7 @@
                             "OR"
                         ],
                         "featFeatures": [
-                            "Stand Breaker",
+                            "Guard Breaker",
                             "OR",
                             "Whirlwind Attacker",
                             "OR",
@@ -548,7 +545,7 @@
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
                 "aDice": [
-                    "1d6",
+                    "1d8",
                     "2d6"
                 ],
                 "levelUp": "Every Level-Up in this Class, you will gain a number of points to put into any of your Stand's Ability Scores, except for <u>Power</u> and <u>Durability</u>. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level of Stand User you're becoming</li></ul>Your Stand's <u>Power</u> and <u>Durability</u> may not be increased past their initial values.",
@@ -955,8 +952,8 @@
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
                 "aDice": [
-                    "1d4",
-                    "1d6"
+                    "1d6",
+                    "1d8"
                 ],
                 "levelUp": "Every Level-Up in this Class, you will gain a number of points to put into any of your Stand's Ability Scores, except for <u>Power</u> and <u>Durability</u>. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level of Stand User you're becoming</li></ul>Your Stand's <u>Power</u> and <u>Durability</u> may not be increased past their initial values.",
                 "mults": [
@@ -1052,7 +1049,7 @@
                             "Ability Score Improvement"
                         ],
                         "linkFeatures": [
-                            "Ultimate Ability"
+                            "Ultimate Stand Ability"
                         ]
                     },
                     "11": {
@@ -1450,7 +1447,7 @@
                             "OR"
                         ],
                         "featFeatures": [
-                            "Stand Breaker",
+                            "Guard Breaker",
                             "OR",
                             "Berserker"
                         ]
@@ -3024,7 +3021,7 @@
                     },
                     "7": {
                         "featFeatures": [
-                            "Stand Breaker",
+                            "Guard Breaker",
                             "OR",
                             "Specialized Save",
                             "OR",

@@ -63,7 +63,7 @@ function updateDisplay() {
     if (passion.alt != null) box2Text += " Alternatively, you may choose to forgo one of these Proficiencies to instead gain " + passion.alt;
     box2Text += "</p><p><b><u>Additional Proficiencies:</u></b> You gain an additional amount of Proficiencies of your choice equal to ";
     if (p != "Student")
-        box2Text += "1+ "
+        box2Text += "1 + "
     box2Text += "your Proficiency Bonus.</p>"
     
     $("#box1").html(box1Text);

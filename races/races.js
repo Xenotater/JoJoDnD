@@ -51,7 +51,7 @@ function updateDisplay() {
     }
     newContent += "<h4 class='display-heading'>Description</h4><p>" + race.desc + "</p>";
     if (race.playing != null)
-        newContent += "<h4 class='display-heading'>Playing a " + race.name + "</h4><p>" + race.playing + "</p>";
+        newContent += "<h4 class='display-heading'>Playing a" + (/[AEIOU]/.test(race.name[0])?"n ":" ") + race.name + "</h4><p>" + race.playing + "</p>";
     if (race.note != null)
         newContent += "<p><small><b>Note: </b><i>" + race.note + "</i></small></p>";
     if (race.changes != null)
@@ -116,7 +116,7 @@ function updateDisplay() {
             }
             newContent += "<h4 class='display-heading'>Description</h4><p>" + subrace.desc + "</p>";
             if (subrace.playing != null)
-                newContent += "<h4 class='display-heading'>Playing a " + subrace.name + "</h4><p>" + subrace.playing + "</p>";
+                newContent += "<h4 class='display-heading'>Playing a" + (/[AEIOU]/.test(subrace.name[0])?"n ":" ") + subrace.name + "</h4><p>" + subrace.playing + "</p>";
             if (subrace.note != null)
                 newContent += "<p><small><b>Note: </b><i>" + subrace.note + "</i></small></p>";
             if (subrace.changes != null)

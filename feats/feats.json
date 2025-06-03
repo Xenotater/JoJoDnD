@@ -253,7 +253,7 @@
         "desc": "You've spent a lot of time around other people, both those that you know very well as well as strangers.",
         "effects": [
             "You gain a +4 bonus to all Bluff, Diplomacy, and Presence Checks on all non-hostile creatures that you've met within the past 24 hours.",
-            "Award-Winning Smile: You can spend a charge to increase the +4 bonus to a +6, but still have to meet the conditions. Alternatively, you may spend a charge apply the bonus to someone you already know or a recently met hostile creature. You can use Award-Winning Smile an amount of times equal to your Charisma Modifier per Short or Long Rest."
+            "Award-Winning Smile: You can spend a charge to increase the +4 bonus to a +6, but still have to meet the conditions. Alternatively, you may spend a charge to apply the bonus to someone you already know or a recently met hostile creature. You can use Award-Winning Smile an amount of times equal to your Charisma Modifier per Short or Long Rest."
         ],
         "prereq": "Cha 13+ or <a href='\/passions\/?focus=Con_Artist'>Con Artist<\/a>"
     },
@@ -331,14 +331,6 @@
             "You may use this Feat an amount of times equal to half your Proficiency Bonus (rounded down) per Long Rest."
         ]
     },
-    "Natural_Talent": {
-        "name": "Natural Talent",
-        "desc": "Through a combination of experience and natural-born talent you have gotten very good at certain tasks.",
-        "effects": [
-            "Choose up to Two Skills, Artisan's Tools, instruments, languages, or any individual weapon that you are Proficient in and gain Expertise in them.",
-            "You may take this Feat multiple times if desired."
-        ]
-    },
     "Ever_Vigilant": {
         "name": "Ever Vigilant",
         "desc": "You've been aware of them for a while now. You don't know who, but you know that they've been after you for so long, and you've been evading them for what seems like forever.",
@@ -347,22 +339,13 @@
             "Enemies that attempt to surprise you get Disadvantage instead of Advantage on their Surprise Attack. Additionally, you may use your Stand to defend against Surprise Attacks if you have one."
         ]
     },
-    "Perfected_Craft": {
-        "name": "Perfected Craft",
-        "desc": "You've spent countless hours training a specific skill, and it's clear that effort paid off.",
-        "effects": [
-            "You may choose to gain Mastery in a Skill, Artisan's Tools, instrument, language, or any individual weapon that you have Expertise in, allowing you to add your Proficiency Bonus to it 3 times.",
-            "This may also continue to higher levels of Mastery, if you choose something you already had Mastery in.",
-            "You may take this Feat multiple times if desired."
-        ]
-    },
     "Sidearm_Specialization": {
         "name": "Sidearm Specialization",
         "desc": "Through knowledge and training, you have gained the ability to use sidearms to remarkable effect.",
         "effects": [
             "You gain Proficiency in the use of any weapon with the \"Sidearm\" Specialization.",
             "You may reload sidearms as a free action.",
-            "Trickshot: Once per turn when you Attack with a Sidearm in its Short Range, you may use one of the following effects<ul><li>Destructive Shot: Your Attack\u2019s damage gains the <a href='\/weapons#attributes-list'>Siege<\/a> Attribute. You always hit and deal damage if it is an object or structure.<\/li><li>Killshot: Cannot be used on targets in Cover. You may roll your Damage Dice twice, taking the higher total damage result. If you miss, you still deal the damage from the Damage Dice, but don\u2019t add your Modifiers.<\/li><li>Ricochet: Your Attack ignores Half and three-quarters Cover. If you miss the Attack Roll, you may still deal damage from your Modifiers, but not roll your Damage Dice.<\/li><\/ul>"
+            "Trickshot: Once per turn when you Attack with a Sidearm in its Short Range, you may use one of the following effects<ul><li>Destructive Shot: Your Attack's damage gains the <a href='\/weapons#attributes-list'>Siege<\/a> Attribute. You always hit and deal damage if it is an object or structure.<\/li><li>Killshot: Cannot be used on targets in Cover. You may roll your Damage Dice twice, taking the higher total damage result. If you miss, you still deal the damage from the Damage Dice, but don't add your Modifiers.<\/li><li>Ricochet: Your Attack ignores Half and three-quarters Cover. If you miss the Attack Roll, you may still deal damage from your Modifiers, but not roll your Damage Dice.<\/li><\/ul>"
         ]
     },
     "Practical_Experience": {
@@ -378,7 +361,7 @@
         "name": "Pressure Point Manipulator",
         "desc": "Through time spent studying the Human body you've found the best way to hinder movement, cause immense pain, and defeat foes with little force.",
         "effects": [
-            "As an Attack, you may force a foe in your (or your Stand's) melee range to make a Constitution (or Durability) Saving Throw against a DC of 8 + Proficiency Bonus + your Wisdom Modifier. If they fail the Saving Throw, you may remove function from one of their four limbs, with the following effects:<ul class='sublist'><li>Arms: The target loses function in one arm entirety, causing it to hang limply from their shoulder. This prevents them from using weapons that require two hands, and gives them Disadvantage on Athletics Checks and Strength Saves.<\/li><li>Legs: The target loses function in one leg entirely, causing it to go numb and hang limply. If they have one paralyzed leg their Movement Speed is cut in half, and if they have two paralyzed legs their Movement Speed drops to 0 and they fall Prone. A target with a paralyzed leg will have Disadvantage on all Acrobatics Checks and Dexterity Saves. <\/ul><\/li>",
+            "As an Attack, you may force a foe in your (or your Stand's) Melee Range to make a Constitution (or Durability) Saving Throw against a DC of 8 + Proficiency Bonus + your Wisdom Modifier. If they fail the Saving Throw, you may remove function from one of their four limbs, with the following effects:<ul class='sublist'><li>Arms: The target loses function in one arm entirety, causing it to hang limply from their shoulder. This prevents them from using weapons that require two hands, and gives them Disadvantage on Athletics Checks and Strength Saves.<\/li><li>Legs: The target loses function in one leg entirely, causing it to go numb and hang limply. If they have one paralyzed leg their Movement Speed is cut in half, and if they have two paralyzed legs their Movement Speed drops to 0 and they fall Prone. A target with a paralyzed leg will have Disadvantage on all Acrobatics Checks and Dexterity Saves. <\/ul><\/li>",
             "At the end of the target's Turn, they make the Constitution Saving Throw again, regaining control of a single limb of their choice that has been paralyzed on success. The effect lasts for a minute, or until they make enough Saves to remove the effect. Alternatively, the target (if they have at least one functional hand) or an ally of theirs can make a Medicine Check against your DC, removing paralysis from all affected limbs on success and regaining control over a single limb of their choice on failure.",
             "<a href='\/abilities\/?focus=Medicinal_Spin'>Medicinal Spin<\/a> can remove the effect from a single paralyzed limb, and <a href='\/abilities\/?focus=Forced_Motion'>Forced Motion<\/a> still works on a paralyzed limb."
         ]
@@ -417,7 +400,7 @@
         "effects": [
             "You gain Damage Reduction equal to twice your Constitution Modifier at the top of Initiative every round.",
             "This Damage Reduction doesn't conflict with Stand Damage Reduction, and unlike Stand DR, applies on any hit.",
-            "In addition, effects that would deal additional damage to Stand DR (<a class='in-page'>Piercer<\/a>, <a class='in-page'>Stand Breaker<\/a>, etc) do not apply to Scarflesh's Damage Reduction.",
+            "In addition, effects that would deal additional damage to Stand DR (<a class='in-page'>Piercer<\/a>, <a class='in-page'>Guard Breaker<\/a>, etc) do not apply to Scarflesh's Damage Reduction.",
             "You may take this Feat multiple times, gaining additional Scarflesh equal to 2x Con Mod for each additional instance."
         ]
     },
@@ -622,9 +605,9 @@
             "<b>Ranged-Type:<\/b><ul><li>Your Stand may move independently still, so long as it is connected to you or another \"host\" at the end of your Turn.<\/li><li>Any host wearing the Stand benefits from its AC even when unconscious, can use <a href='\/abilities?focus=Slippery'>Slippery<\/a>, and can use the Stand's stats for Checks, Saves, and Attacks even if this would normally be disallowed.<\/li><li>You may increase your Stand's Durability when Leveling-Up, and your base Durability multiplier becomes x4.<\/li><li>Gain <a href='\/abilities?focus=Confident_Provocation'>Confident Provocation<\/a><\/li><li>You may choose to gain <a href='\/abilities?focus=Anchored_Stand'>Anchored Stand<\/a> if desired.<\/li><\/ul>",
             "<b>Remote-Type:<\/b><ul><li>Your Stand may move independently still, so long as it is connected to you or another \"host\" at the end of your Turn.<\/li><Li>The Stand may attempt to envelop unwilling hosts with a Grapple Check. At the beginning of the unwilling host's Turns they must make a Strength Saving Throw against your Stand DC, remaining Grappled on success but becoming fully Restrained on failure. The debuff from being Restrained does not apply to this particular Save. The unwilling host may attempt to break free from the Stand as an Action, reattempting the Grapple Check contest.<\/li><li>If you have <a href='\/abilities?focus=Detached_Stand'>Detached Stand<\/a> your Stand does not have its own health pool specifically when protecting yourself.<\/li><li>Remote Suit Stands are capable of protecting allies as well as yourself, but remain most focused on completing their <a href='\/abilities?focus=Programmed_Stand'>Programmed Objective<\/a><\/li><li>You may increase your Stand's Precision when Leveling-Up, and your base Precision multiplier becomes x4.<\/li><li>Gain <a href='\/abilities?focus=Confident_Provocation'>Confident Provocation<\/a><\/li><li>You may choose to gain <a href='\/abilities?focus=Anchored_Stand'>Anchored Stand<\/a> if desired.<\/li><\/ul>",
             "<b>Ability-Type:<\/b><ul><li>Range is reduced to 0 and cannot be increased.<\/li><li>Gain either <a href='\/abilities?focus=Defensive_Ability'>Defensive Ability<\/a> or <a href='\/abilities?focus=Mobile_Ability'>Mobile Ability<\/a>. You may activate both of these as a Bonus Action rather than an Attack if desired.<\/li><li>You may increase your Stand's Durability when Leveling-Up, and your base Durability multiplier becomes x3.<\/li><li>Your Ability-Type Hit Die increases to a d8. This may retroactively give you 1 additional Hit Point per Level.<\/li><li>Gain <a href='\/abilities?focus=Confident_Provocation'>Confident Provocation<\/a><\/li><li>You may choose to gain <a href='\/abilities?focus=Anchored_Stand'>Anchored Stand<\/a> if desired.<\/li><\/ul>",
-            "<b>Enhancement-Type:<\/b><ul><li>Range is reduced to 0 and cannot be increased.<\/li><li>As a Reaction you can regain up to half your total Damage Reduction, not exceeding your maximum.<\/li><li>Once per Turn as a Free Action, if you received damage that would deal extra against you or your Damage Reduction (such as that from Vulnerabilities, <a href='\/feats?focus=Stand_Breaker'>Stand Breaker<\/a>, or <a href='feats?focus=Piercer'>Piercer<\/a>) it only does the normal amount of damage instead.<\/li><\/ul>",
+            "<b>Enhancement-Type:<\/b><ul><li>Range is reduced to 0 and cannot be increased.<\/li><li>As a Reaction you can regain up to half your total Damage Reduction, not exceeding your maximum.<\/li><li>Once per Turn as a Free Action, if you received damage that would deal extra against you or your Damage Reduction (such as that from Vulnerabilities, <a href='\/feats?focus=Guard_Breaker'>Guard Breaker<\/a>, or <a href='feats?focus=Piercer'>Piercer<\/a>) it only does the normal amount of damage instead.<\/li><\/ul>",
             "<b>Revenge-Type:<\/b> <ul><li>Range is reduced to 0 and cannot be increased.<\/li><li>When using <a href='\/abilities?focus=Confident_Provocation'>Confident Provocation<\/a> you may force enemies within 5m to make a Wisdom Saving Throw against your Stand DC, in addition to that Ability's normal effects. On failure they MUST target you with at least one Attack or negative effect on their Turn. Additionally the first Attack or negative effect they attempt to inflict on their turn must be targeting you, even if they succeeded the Save.<\/li><li>When targeted with an Attack or negative effect you may spend a Grudge Point to Retaliate against your aggressor as a Reaction, so long as they're within Melee Range or you have a weapon that can hit them. Retaliation takes the form of a single Attack using your Stand's stats, even if it's not summoned. Furthermore the Critical Hit range of this Attack increases by 2.  If you miss this Attack you may spend a Grudge point to keep this Crit range increase and stack it with your next Retaliation Attack, though it resets once you hit one or if the combat ends.<\/li><li>You may choose to gain <a href='\/abilities?focus=Anchored_Stand'>Anchored Stand<\/a> if desired.<\/li><\/ul>",
-            "<b>Independent-Type:<\/b><ul><li>The Stand does not have its own health pool specifically when protecting a separate User, but does if on its own.<\/li><li>Independent Suit Stands can protect allies, but are fully capable of moving and existing on their own without requiring a \"host\" to wear it.<\/li><li>The Stand may attempt to envelop unwilling hosts with a Grapple Check. At the beginning of the unwilling host's Turns they must make a Strength Saving Throw against its Stand DC, remaining Grappled on success but becoming fully Restrained on failure. The debuff from being Restrained does not apply to this particular Save. The unwilling host may attempt to break free from the Stand as an Action, reattempting the Grapple Check contest.<\/li><li>Once per Turn as a Free Action, if the Stand received damage that would deal extra against it or its Damage Reduction (such as that from Vulnerabilities, <a href='\/feats?focus=Stand_Breaker'>Stand Breaker<\/a>, or <a href='feats?focus=Piercer'>Piercer<\/a>) it only does the normal amount of damage instead.<\/li><\/ul>",
+            "<b>Independent-Type:<\/b><ul><li>The Stand does not have its own health pool specifically when protecting a separate User, but does if on its own.<\/li><li>Independent Suit Stands can protect allies, but are fully capable of moving and existing on their own without requiring a \"host\" to wear it.<\/li><li>The Stand may attempt to envelop unwilling hosts with a Grapple Check. At the beginning of the unwilling host's Turns they must make a Strength Saving Throw against its Stand DC, remaining Grappled on success but becoming fully Restrained on failure. The debuff from being Restrained does not apply to this particular Save. The unwilling host may attempt to break free from the Stand as an Action, reattempting the Grapple Check contest.<\/li><li>Once per Turn as a Free Action, if the Stand received damage that would deal extra against it or its Damage Reduction (such as that from Vulnerabilities, <a href='\/feats?focus=Guard_Breaker'>Guard Breaker<\/a>, or <a href='feats?focus=Piercer'>Piercer<\/a>) it only does the normal amount of damage instead.<\/li><\/ul>",
             "<b>Hive-Type:<\/b><ul><li>Your Stand's Instances may move independently still, so long as they are connected to you or another \"host\" at the end of your Turn.<\/li><li>Gain either <a href='\/abilities?focus=Defensive_Wave'>Defensive Wave<\/a> or <a href='\/abilities?focus=Mobile_Wave'>Mobile Wave<\/a>. Allied hosts may use these Abilities or have them used on them, but each can only be active on one host per Turn.<\/li><li>Gain <a href='\/abilities?focus=Confident_Provocation'>Confident Provocation<\/a><\/li><li>You may choose to gain <a href='\/abilities?focus=Anchored_Stand'>Anchored Stand<\/a> if desired.<\/li><\/ul>",
             "<b>Act-Type:<\/b> Gains the effects of Suit Stand relative to the Type of each Act:<ul><li>Close-Range gains the effects of a Power Suit Stand.<\/li><li>Long-Range gains the effects of a Ranged Suit Stand.<\/li><li>Ability-Focused gains the effects of an Ability Suit Stand (except the Hit Die increase).<\/li><li>Remote-Focused gains the effects of a Remote Suit Stand.<\/li><\/ul>",
             "<b>Multi-Type:<\/b> Choose one of your types to gain the effects of."
@@ -804,7 +787,8 @@
         "name": "Burst",
         "desc": "You may push yourself beyond your limits, at a cost.",
         "effects": [
-            "Once per Short or Long Rest you may gain one of the following benefits:<ul><li>Whenever you take the Attack Action, you may make an additional amount of Attacks equal to half of your Proficiency Bonus.<\/li><li>You gain an additional Bonus Action and Reaction this Turn.<\/li><li>You may Dash, Disengage, or Dodge as a single Attack or Bonus Action.<\/li><li>Your Movement Speed is doubled.<\/li><\/ul> When you use this Ability, you take an amount of necrotic damage equal to your Level that cannot be reduced or negated. This damage cannot drop you below 1 HP."
+            "Once per Short or Long Rest you may gain one of the following benefits:<ul><li>Whenever you take the Attack Action, you may make an additional amount of Attacks equal to half of your Proficiency Bonus.<\/li><li>You gain an additional Bonus Action and Reaction this Turn.<\/li><li>You may Dash, Disengage, or Dodge as a single Attack or Bonus Action.<\/li><li>Your Movement Speed is doubled.<\/li><\/ul>",
+            "When you use this Ability, you take an amount of necrotic damage equal to your Level that cannot be reduced or negated. This damage cannot drop you below 1 HP."
         ]
     },
     "Class_Initiate": {
@@ -866,7 +850,7 @@
         "name": "Sentinel",
         "desc": "You have a remarkable ability to keep your friends close, and your enemies closer.",
         "effects": [
-            "Whenever someone exits your melee range without Disengaging, you may make an Opportunity Attack or a Grapple Check as a Free Action. If someone does Disengage, you may still make an Opportunity Attack or Grapple Check, but it costs your Reaction to do so.",
+            "Whenever someone exits your Melee Range without Disengaging, you may make an Opportunity Attack or a Grapple Check as a Free Action. If someone does Disengage, you may still make an Opportunity Attack or Grapple Check, but it costs your Reaction to do so.",
             "Whenever an ally within 2 meters takes damage, you may use your Reaction to interpose yourself, switching your and your ally's positions and causing you to take the damage instead. The type of hit is the same on you (if your ally was hit with a Stand Hit, it counts as a Stand hit for you as well), but you may apply Resistance\/Immunity as normal to the damage if you have it."
         ]
     },
@@ -892,11 +876,11 @@
     "Guard_Breaker": {
         "name": "Guard Breaker",
         "desc": [
-            "You have the ability to break an opponent's guard, making them more vulnerable to determintal effects and\/or damage. "
+            "You have the ability to break an opponent's guard, making them more vulnerable to detrimental effects and\/or damage. "
         ],
         "effects": [
             "When you hit an enemy with a Melee Attack, you may attempt to break their guard by either spending your Action, or two Attacks to perform a Guard Break. ",
-            "Guard Break: You force a target to make a Constitution (NOT Durability) Saving Throw with a DC of 8 + 2x PB. If they succeed the Save, they gain a single effect from the list below. If they fail, they gain two effects from the list. Effects last until the end of your target\u2019s next Turn.<ul><li>They gain the Staggered Condition.<\/li><li>Their Movement Speed is reduced by half of their total.<\/li><li>Any damage taken is increased by <u>their<\/u> PB.<\/li><li>They have Disadvantage on all Contested Skill Checks.<\/li>"
+            "Guard Break: You force a target to make a Constitution (NOT Durability) Saving Throw with a DC of 8 + 2x PB. If they succeed the Save, they gain a single effect from the list below. If they fail, they gain two effects from the list. Effects last until the end of your target's next Turn.<ul><li>They gain the Staggered Condition.<\/li><li>Their Movement Speed is reduced by half of their total.<\/li><li>Any damage taken is increased by <u>their<\/u> PB.<\/li><li>They have Disadvantage on all Contested Skill Checks.<\/li>"
         ]
     },
     "Weapon_Attribute_Specialist": {
@@ -917,9 +901,9 @@
             "Light: You may use a non-light weapon in one hand, so long as you have a light weapon in the other.",
             "Limited Hand: Weapons or objects equipped no longer have to be Light, they just have to be one-handed weapons or small objects.",
             "Open Hand: You have a +4 bonus to Checks made to Shove or maintain a Grapple you have on someone.",
-            "Point Blank: If this weapon is fired within melee range, it is considered a Melee Attack.",
+            "Point Blank: If this weapon is fired within Melee Range, it is considered a Melee Attack.",
             "Radius: If the weapon has less than 5m of radius by default, it gains 1 additional meter. If it has more than 5 meters of radius by default, it gains 2 additional meters.",
-            "Ranged: When you miss with a ranged weapon Attack at less than half of your short range, you may use your Reaction to reroll the Attack Roll.",
+            "Ranged: When you miss with a ranged weapon Attack at less than half of it Short Range, you may use your Reaction to reroll the Attack Roll.",
             "Reach: This weapon can attack targets from up to 3 meters away.",
             "Reliable: If you roll a Nat 1, you may reroll the Attack Roll, keeping the new result.",
             "Reload: You may also reload as a Bonus Action.",
@@ -939,7 +923,7 @@
             "Through Training, you have gained the ability to utilize some kind of additional sense, or greatly enhance an existing one."
         ],
         "effects": [
-            "You may gain or enhance one of the following senses:<ul class='sublist'><li><u>Echolocation<\/u>: You gain 10\/20 meters of Blindsense. If there is noise being made in the area, you may use the Long Range of this sense without Disadvantage. Alternatively, you may make a slight noise yourself, granting a -4 penalty to Sneak Checks. You must be able to hear to  use this.<\/li><li><u>Enhanced Existing Sense<\/u>: One of your regular five senses (sight, smell, touch, hearing, taste) is greatly enhanced. You gain Proficiency in Perception. Additionally, when you make a Check using your chosen sense you get a +5 bonus to that Check, which may also apply to your Passive Perception using that sense.<\/li><li><u>Soulsense:<\/u> You gain 10\/20 meters of Soulsense, which allows you to sense the souls of living creatures, including Stands and ghosts. This grants you a +10 bonus to Perception Checks within the short range of your sense, and a +5 within the long range. This sense is not restricted by walls or barriers, and you may also use it to determine if a soul has been in a location in your short range within the last minute. You cannot sense Undead creatures or soulless Constructs in this way.<\/li><li><u>Tremorsense<\/u>: You gain 10\/20 meters of Tremorsense, allowing you to sense vibrations around you. In order to perceive something within the long range you must be connected to some kind of surface to feel the vibrations through. You must be able to use your natural sense of touch. You may feel past Total Cover, so long as you are touching the Cover itself.<\/li><li><u>Night Vision<\/u>: You gain 15\/30 meters of Darkvision, allowing you to see clearly in Darkness up to the Short Range or with Disadvantage up to the Long Range. If you have a light source, the effective range of it is doubled for you as well.<\/li><\/ul>",
+            "You may gain or enhance one of the following senses:<ul class='sublist'><li><u>Echolocation<\/u>: You gain 10\/20 meters of Blindsense. If there is noise being made in the area, you may use the Long Range of this sense without Disadvantage. Alternatively, you may make a slight noise yourself, granting a -4 penalty to Sneak Checks. You must be able to hear to  use this.<\/li><li><u>Enhanced Existing Sense<\/u>: One of your regular five senses (sight, smell, touch, hearing, taste) is greatly enhanced. You gain Proficiency in Perception. Additionally, when you make a Check using your chosen sense you get a +5 bonus to that Check, which may also apply to your Passive Perception using that sense.<\/li><li><u>Soulsense:<\/u> You gain 10\/20 meters of Soulsense, which allows you to sense the souls of living creatures, including Stands and ghosts. This grants you a +10 bonus to Perception Checks within the Short Range of your sense, and a +5 within the Long Range. This sense is not restricted by walls or barriers, and you may also use it to determine if a soul has been in a location in your Short Range within the last minute. You cannot sense Undead creatures or soulless Constructs in this way.<\/li><li><u>Tremorsense<\/u>: You gain 10\/20 meters of Tremorsense, allowing you to sense vibrations around you. In order to perceive something within the Long Range you must be connected to some kind of surface to feel the vibrations through. You must be able to use your natural sense of touch. You may feel past Total Cover, so long as you are touching the Cover itself.<\/li><li><u>Night Vision<\/u>: You gain 15\/30 meters of Darkvision, allowing you to see clearly in Darkness up to the Short Range or with Disadvantage up to the Long Range. If you have a light source, the effective range of it is doubled for you as well.<\/li><\/ul>",
             "If you already have one of these senses, your range of it increases by the given amount.",
             "You may take this Feat multiple times if desired, gaining a different sense or enhancing an existing one by increasing its range like above."
         ],
@@ -965,7 +949,7 @@
             "If you do have Stand Leap already, it is upgraded in the following ways:<ul calss='sublist'><li>You no longer have to spend your Reaction to negate the fall damage from it.<\/li><li>If you're falling and wish to grab something within 2m to catch yourself, you may do so as a Reaction.<\/li><li>You may choose to spend 2m of Movement rather than the usual 5 in order to Stand Leap up to half your Power Modifier in any direction.<\/li><li>You may move through another creature's space while using Stand Leap by succeeding an Acrobatics Check which the other creature may contest with Athletics (Strength) or Grit. If you fail, you may end the Leap early at the space in front of the creature, or keep moving and allow them to take an Opportunity Attack against you. If the creature is an ally or willing to allow you, you do not need to make a Check.<\/li><li>You may choose to get up from the Prone condition without expending any Movement Speed as a Reaction.<\/li><\/ul>",
             "You may take this feat a second time in order to gain the upgraded version of Stand Leap if you didn't have it before."
         ],
-        "prereq": "<a href='\/classes?focus=Power'>Power-Type<\/a>, <a href='\/classes?focus=Revenge'>Revenge-Type<\/a>, Close-Range <a href='\/classes?focus=Act'>Act-Type<\/a>, or <a href='\/abilities?focus=Immense_Power'>Immense Power<\/a>"
+        "prereq": "<a href='\/classes?focus=Power'>Power-Type<\/a>, <a href='\/classes?focus=Ranged'>Ranged-Type<\/a>, <a href='\/classes?focus=Revenge'>Revenge-Type<\/a>, Close-Range <a href='\/classes?focus=Act'>Act-Type<\/a>, or <a href='\/abilities?focus=Immense_Power'>Immense Power<\/a>"
     },
     "Confident_Support": {
         "name": "Confident Support",
@@ -1191,10 +1175,10 @@
         ],
         "prereq": "Must have a <a href='\/classes?focus=Stands#Substands'>Substand<\/a>"
     },
-    "Bestial_Cunning": {
-        "name": "Bestial Cunning",
+    "Beastial_Cunning": {
+        "name": "Beastial Cunning",
         "desc": [
-            "Most animals lack the itellect and force of personality you display. "
+            "Most animals lack the intellect and force of personality you display. "
         ],
         "effects": [
             "Your Intelligence and Charisma are no longer limited to 10 at most, instead having a maximum of 20. If your Intelligence or Charisma Scores are lower than 12, they are increased to 12.  ",
@@ -1222,7 +1206,8 @@
             "Whenever you gain HP and\/or Temp HP from any source, you may choose to give some or all of it to any allies within 5 meters so long as they can see or hear you.",
             "If you are Undead, HP gained from your regeneration cannot be shared with someone unless they are also Undead, and if applied to Head HP, it heals\/gives half HP\/Temp HP.",
             "You also gain a limited resource to restore HP. As a Bonus Action, you gain an amount of Temp HP equal to your Level + Charisma Modifier. You have an amount of uses of this equal to your Charisma Modifier per Long Rest, regaining half your total uses on a Short Rest.",
-            "If you take this Feat a second time:<ul><li>Any time an ally within range gains HP and\/or Temp HP from any source, you can take some of it from them if they agree to it. Your range with this ability becomes 10 meters.<\/li><li>The ability to gain Temp HP is now has uses equal to Charisma Modifier per Short Rest.<\/li><\/ul>Each additional time you take the Feat past the second, you gain 2 more uses of the Temp HP regain ability, and the range for sharing HP and Temp HP extends by 5 meters."
+            "If you take this Feat a second time:<ul><li>Any time an ally within range gains HP and\/or Temp HP from any source, you can take some of it from them if they agree to it. Your range with this ability becomes 10 meters.<\/li><li>The ability to gain Temp HP now has uses equal to Charisma Modifier per Short Rest.<\/li><\/ul>",
+            "Each additional time you take the Feat past the second, you gain 2 more uses of the Temp HP regain ability, and the range for sharing HP and Temp HP extends by 5 meters."
         ]
     },
     "Stand_Attacker": {
@@ -1233,7 +1218,7 @@
         "effects": [
             "You gain Proficiency in the use of Stand Melee Attacks (you are considered Proficient by default, so this becomes Expertise). ",
             "Stand Haymaker: You may spend 2 Attacks or a full Action to perform a Stand Haymaker. You have Advantage on the Attack Roll, and if it hits, you take the maximum roll of the Attack Dice (but not on any additional dice added, those are rolled normally).",
-            "At the start of your Turn, you can declare that you\u2019ll be using all of your Attacks in your Action on Stand Attacks. This prevents you from using your Attacks on anything other than Stand Attacks, but allows you to make one additional Stand Attack as a Bonus Action. You can use any of your Attacks and\/or the Bonus Action Stand Attack as part of a Stand Haymaker."
+            "At the start of your Turn, you can declare that you'll be using all of your Attacks in your Action on Stand Attacks. This prevents you from using your Attacks on anything other than Stand Attacks, but allows you to make one additional Stand Attack as a Bonus Action. You can use any of your Attacks and\/or the Bonus Action Stand Attack as part of a Stand Haymaker."
         ],
         "prereq": "<a href='\/classes\/?focus=Stands'>Stand User<\/a>"
     },
@@ -1255,7 +1240,7 @@
         ],
         "effects": [
             "When you Grapple\/Shove an opponent (or are Grappled\/Shoved), you may make your Athletics Checks with Dexterity\/Precision instead of Strength.",
-            "When you have a creature Grappled, you may spend two Attacks or an Action in order to give a Grappled creature the Restrained Condition. At the end of the Restrained creature\u2019s Turns, they can make a Strength Saving Throw to escape against a DC of 8 + Athletics Bonus (Str or Dex), escaping the Restrained Condtion on a successful Save, but not the Grapple. The Strength Saving throw penalty does not apply when trying to break the Grapple. The Restrained creature may also use its Action to make the Strength Saving Throw again.",
+            "When you have a creature Grappled, you may spend two Attacks or an Action in order to give a Grappled creature the Restrained Condition. At the end of the Restrained creature's Turns, they can make a Strength Saving Throw to escape against a DC of 8 + Athletics Bonus (Str or Dex), escaping the Restrained Condition on a successful Save, but not the Grapple. The Strength Saving throw penalty does not apply when trying to break the Grapple. The Restrained creature may also use its Action to make the Strength Saving Throw again.",
             "You can attempt to escape a Grapple (or the Restrained Condition caused by this Feat) as an Attack or Bonus Action rather than full Action. ",
             "If you Grapple\/Shove a <a href='\/classes?focus=Stands'>Stand User<\/a>, you may force them to use their User Stats instead of their Stand Stats so long as you also do not use Stand Stats. "
         ],
