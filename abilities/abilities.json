@@ -1024,24 +1024,6 @@
             "In order to create a Sphere you must have a decently sized chunk of material in your hand, roughly the amount needed to form a baseball. As an Action you may spin the material in your hand, shaving off the excess material and creating a Sphere suitable for use with the Spin."
         ]
     },
-    "Spin_Expertise": {
-        "name": "Spin Expertise",
-        "classes": [
-            "Spin"
-        ],
-        "desc": [
-            "You gain Expertise in the use of Spheres thrown with the Spin."
-        ]
-    },
-    "Spin_Mastery": {
-        "name": "Spin Mastery",
-        "classes": [
-            "Spin"
-        ],
-        "desc": [
-            "You gain Mastery in the use of Spheres thrown with the Spin."
-        ]
-    },
     "Spin_Fighting_Style": {
         "name": "Spin Fighting Style",
         "classes": [
