@@ -59,6 +59,7 @@ function getData() {
         $.getJSON("modular.json", function(data) {
             modData = data;
             updateDisplay();
+            checkScroll();
         });
     });
 
@@ -95,7 +96,7 @@ function updateDisplay() {
     if ($("#" + c).hasClass("non-super"))
         clss = cData["Non-Supernatural"].types[c];
 
-    newContent += "<h2 class='display-title'>" + clss.name + "</h2><div class='display-img'><img src='Assets/" + c + ".webp' alt='" + c + "'></div><p class='center'>";
+    newContent += "<h2 id='display-title'>" + clss.name + "</h2><div id='display-img'><img src='Assets/" + c + ".webp' alt='" + c + "'></div><p class='center'>";
     if (clss.exampleOf != null) {
         newContent += "<small><b>Examples of " + clss.exampleOf + ": </b><i>";
         for (let i = 0; i < clss.examples.length; i++) {
@@ -178,7 +179,8 @@ function updateDisplay() {
     $(".listCurrent").removeClass("listCurrent");
     $("#" + c).addClass("listCurrent");
 
-    updateLevelupTable();
+    if (clss.level != null)
+        updateLevelupTable();
 }
 
 function updateLevelupTable() {
@@ -202,7 +204,7 @@ function updateLevelupTable() {
             }
         if (l.linkFeatures != null)
             for (let j = 0; j < l.linkFeatures.length; j++) {
-                if (l.linkFeatures[j] != "OR") {
+                if (l.linkFeatures[j] != "OR" && l.linkFeatures[j] != "and") {
                     var f = l.linkFeatures[j];
                     if (f.includes("(")) {
                         f = l.linkFeatures[j].split(" (");
@@ -211,21 +213,21 @@ function updateLevelupTable() {
                     }
                     else
                         newContent += "<a href='/abilities/?focus=" + f.replace(/[ -]/g, "_").replace("'", "") + "'>" + f + "</a>"
-                    if ((j != l.linkFeatures.length-1 || l.featFeatures != null ||l.ability != null) && l.linkFeatures[j+1] != "OR")
+                    if ((j != l.linkFeatures.length-1 || l.featFeatures != null ||l.ability != null) && (l.linkFeatures[j+1] != "OR" && l.linkFeatures[j+1] != "and"))
                         newContent += " | ";
                 }
                 else
-                    newContent += " OR ";
+                    newContent += " " + l.linkFeatures[j] + " ";
             }
         if (l.featFeatures != null)
             for (let j = 0; j < l.featFeatures.length; j++) {
-                if (l.featFeatures[j] != "OR") {
+                if (l.featFeatures[j] != "OR" && l.featFeatures[j] != "and") {
                     newContent += "<a href='/feats/?focus=" + l.featFeatures[j].replace(/[']/g, "").replace(/[ -]/g, "_") + "'>" + l.featFeatures[j] + "</a>";
-                    if ((j != l.featFeatures.length-1 || l.ability != null) && l.featFeatures[j+1] != "OR")
+                    if ((j != l.featFeatures.length-1 || l.ability != null) && (l.featFeatures[j+1] != "OR" && l.featFeatures[j+1] != "and"))
                         newContent += " | ";
                 }
                 else
-                    newContent += " OR ";
+                    newContent += " " + l.featFeatures[j] + " ";
             }
         if (l.ability != null)
             for (let j = 0; j < l.ability.length; j++) {
@@ -252,4 +254,13 @@ function calcPB(level) {
         return 2;
     else
         return Math.ceil(level / 4) + 1;
+}
+
+function checkScroll() {
+    if (window.location.hash) {
+        if ($("#display-img img")[0].complete)
+            handleHashScroll(-120);
+        else if ($("#display-img img")[0].complete != undefined)
+            setTimeout(checkScroll, 100);
+    }
 }

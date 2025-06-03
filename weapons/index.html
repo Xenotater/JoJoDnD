@@ -18,25 +18,6 @@
         <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script async src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
-
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-EQW3R4RE6P"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-EQW3R4RE6P');
-        </script>
-
-        <!-- Adsense -->
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282768297104356" crossorigin="anonymous">
-            (adsbygoogle = window.adsbygoogle || []).push({
-                google_ad_client: "ca-pub-4282768297104356",
-                enable_page_level_ads: true,
-                overlays: {bottom: true}
-            });
-        </script>
         
         <script async src="../nav.js"></script>
         <script async src="weapons.js"></script>
@@ -80,6 +61,9 @@
                         <b>Ambush</b>: This weapon always crits when attacking a Surprised target.
                     </li>
                     <li>
+                        <b>Bayonet</b>: You may attach a dagger to the front of the rifle, allowing the weapon to be used in melee with the stats of a longspear.
+                    </li>
+                    <li>
                         <b>Bulky</b>: This weapon must be braced using a Bonus Action in order to attack with it. Once braced, you remain braced until you move.
                     </li>
                     <li>
@@ -89,25 +73,34 @@
                         <b>Concealed</b>: This weapon grants a bonus to any Check made to conceal it.
                     </li>
                     <li>
-                        <b>Conductive</b>: Energy currents, such as electricity or Ripple, may be run through this weapon."
+                        <b>Conductive</b>: Energy currents, such as electricity or Ripple, may be run through this weapon without harming the wielder.
                     </li>
                     <li>
-                        <b>Firearm</b>: This weapon makes a loud sound which can be heard up to 0.5km away. It also jams if a natural 1 is rolled while using it. This weapon's ammunition doesn't function when wet.
+                        <b>Firearm</b>: This weapon makes a loud sound which can be heard up to 0.5km away. It also jams if a Natural 1 is rolled while using it, requiring an Attack to un-jam the weapon before it may be fired again. This weapon's ammunition doesn't function when wet.
                     </li>
                     <li>
-                        <b>Flame</b>: When a targeted creature or object takes fire damage from this weapon, it is set ablaze (assuming the target is flammable).
+                        <b>Fist</b>: If you would deal more damage with your Unarmed Strikes than with this weapon, you may instead use the damage from your Unarmed Strikes.
                     </li>
                     <li>
-                        <b>Hunker</b>: While holding this item, if you've not moved this turn, you may gain Cover as a Bonus Action until the start of your turn, though this also reduces your Movement Speed to 0.
+                        <b>Flame</b>: When a targeted creature or object takes Fire damage from this weapon, it is set ablaze (assuming the target is flammable).
+                    </li>
+                    <li>
+                        <b>Hunker</b>: While holding this item, if you've not moved this turn, you may gain Cover in one direction as a Bonus Action until the start of your turn, though this also reduces your Movement Speed to 0.
                     </li>
                     <li>
                         <b>Light</b>: This weapon is light and easy to handle, allowing you to make an additional attack using another Light weapon in your other hand as a Bonus Action.
                     </li>
                     <li>
+                        <b>Limited Hand</b>: When you have this weapon equipped, you may also use other Light weapons, tiny objects, or Shove and Grapple as though your hand was free. This weapon's attributes and damage do not apply at the same time as another in the same hand.
+                    </li>
+                    <li>
+                        <b>Open Hand</b>: When you have this weapon equipped, you may also use other weapons or objects in the same hand or perform actions such as Shove or Grapple as though your hand was free. This weapon's attributes and damage do not apply at the same time as another in the same hand.
+                    </li>
+                    <li>
                         <b>Point Blank</b>: This weapon does not impose Disadvantage if fired within melee.
                     </li>
                     <li>
-                        <b>Radius</b>: This weapon forces all creatures within a certain radius of the target to make a Dexterity Saving Throw, taking half damage on success and full damage on failure.
+                        <b>Radius</b>: This weapon forces all creatures within a certain radius of the target to make a Dexterity Saving Throw, taking half damage on success and full damage on failure. The projectile or charge is destroyed after use.
                     </li>
                     <li>
                         <b>Ranged</b>: This weapon can fire up to its Short Range, or as far as its Long Range with Disadvantage. Firing within melee imposes Disadvantage.
@@ -116,7 +109,7 @@
                         <b>Reach</b>: This weapon can attack targets from an additional meter away.
                     </li>
                     <li>
-                        <b>Reliable</b>: This weapon does not jam if you roll a natural 1.
+                        <b>Reliable</b>: This weapon does not jam if you roll a Natural 1.
                     </li>
                     <li>
                         <b>Reload</b>: This weapon can be used a limited amount of times before needing to be reloaded. Reloading takes a full Attack.
@@ -134,16 +127,13 @@
                         <b>Timer</b>: A timer may be set on this weapon, detonating it once the timer runs out. The timer may be set for up to 12 hours.
                     </li>
                     <li>
-                        <b>Thrown</b>: This weapon can be thrown up to its Short Range, or as far as its Long Range with Disadvantage. Once thrown, this weapon must be picked up in order to be used again (unless it is an explosive, in which case it is destroyed).
+                        <b>Thrown</b>: This weapon can be thrown up to its Short Range, or as far as its Long Range with Disadvantage. Once thrown, this weapon must be picked up in order to be used again (unless it is an Explosive, in which case it is destroyed).
                     </li>
                     <li>
-                        <b>Two-Handed</b>: This weapon requires two hands to wield, and is difficult to holster or conceal.<br>May be carried (but not used) with one hand if desired.
+                        <b>Two-Handed</b>: This weapon requires two hands to wield, and is difficult to holster or conceal. May be carried (but not used) with one hand if desired.
                     </li>
                     <li>
-                        <b>Bayonet</b>: You may attach a dagger to the front of the rifle, allowing the weapon to be used in melee with the stats of a longspear.
-                    </li>
-                    <li>
-                        <b>Open Hand</b>: When you have this weapon equipped, you may also hold other weapons or objects in the same hand or perform actions such as Shove or Grapple as though your hand was free.
+                        <b>Versatile</b>: This weapon may be wielded with one or two hands. If two hands are used, it deals more damage.
                     </li>
                 </ul>
             </div>

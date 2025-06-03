@@ -1,7 +1,7 @@
-var f, fData, feats, reverse = false;
+var f, fData, feats, reverse = false, showEpics = false;
 
 $(document).ready(function () {
-    var url = new URL(window.location.href);
+    let url = new URL(window.location.href);
     f = url.searchParams.get("focus");
     q = url.searchParams.get("search");
 
@@ -14,15 +14,34 @@ $(document).ready(function () {
 
     $("#list").on("click", ".list-link", function () {
         f = $(this).attr("id");
-        if (f == "Epic_Feat")
-            search("Epic Feat");
+        if (f == "Epic_Feat") {
+            showEpics = true;
+            $("#epic-switch").prop("checked", true);
+            updateList();
+        }
         updateURL();
         updateDisplay();
     });
 
     $("#display").on("click", "a.in-page", function() {
         f= $(this).html().replace(/[ -]/g, "_").replace(/'/g, "");
+        if (f == "Epic_Feat" || !(fData[f].prereq?.includes("Epic") ^ !showEpics)) {
+            showEpics = !showEpics;
+            $("#epic-switch").prop("checked", showEpics);
+            updateList();
+        }
         updateURL();
+        updateDisplay();
+    });
+
+    $("#epic-switch").change(function() {
+        showEpics = !showEpics;
+        if (showEpics)
+            f = "Epic_Feat";
+        else
+            f = "Act_Modification";
+        updateURL();
+        updateList();
         updateDisplay();
     });
 
@@ -32,8 +51,8 @@ $(document).ready(function () {
     });
 
     $(".sorter").click(function() {
-        var btn = $(this);
-        var id = btn.attr("id");
+        let btn = $(this);
+        let id = btn.attr("id");
 
         if (id == "Down") {
             if (btn.hasClass("bi-caret-down")) {
@@ -59,7 +78,7 @@ $(document).ready(function () {
 });
 
 function updateURL() {
-    var query = $("#search").val();
+    let query = $("#search").val();
     if (query != "")
         window.history.replaceState(null, "", '?focus=' + f + '&search=' + query);
     else
@@ -71,9 +90,11 @@ function getData(q) {
         fData = data;
         if (fData[f] == null)
             f = "Act_Modification";
+        if (fData[f].prereq?.includes("Epic") || f == "Epic_Feat") {
+            showEpics = true;
+            $("#epic-switch").prop("checked", true);
+        }
         feats = Object.keys(fData);
-        if (f == "Epic Feat" || (fData[f].prereq != null && fData[f].prereq.includes("Epic")))
-            search("Epic Feat");
         updateList();
         updateDisplay();
 
@@ -88,22 +109,21 @@ function getData(q) {
 }
 
 function updateList() {
-    var showEpic = $("#search").val().includes("Epic");
     $("#list-table tbody").html("");
     feats.sort();
     if (reverse)
         feats.reverse();
     for (let i = 0; i < feats.length; i++) {
         let feat = fData[feats[i]];
-        if (feat.prereq == null || !feat.prereq.includes("Epic Feat") || showEpic)
+        if (!(feat.prereq?.includes("Epic") ^ showEpics) || feats[i] == "Epic_Feat") //xand
             $("#list-table tbody").append("<tr class='list-link' id='" + feat.name.replace(/[ -]/g, "_").replace(/'/g, "") + "'><td>" + feat.name + "</td></tr>");
     }
     $("#" + f).addClass("listCurrent");
 }
 
 function updateDisplay() {
-    var feat = fData[f];
-    var newContent = "";
+    let feat = fData[f];
+    let newContent = "";
 
     newContent += "<h2 class='display-title'>" + feat.name + "</h2>";
     if (feat.prereq != null)
@@ -121,7 +141,7 @@ function updateDisplay() {
 }
 
 function search(query) {
-    var not = false;
+    let not = false;
     feats = [];
     
     if (query.match(/^NOT */)) {
@@ -129,10 +149,10 @@ function search(query) {
         query = query.replace(/^NOT */, "");
     }
 
-    for (var key in fData) {
-        var matched = false;
-        for (var key2 in fData[key]) {
-            var attr= "";
+    for (let key in fData) {
+        let matched = false;
+        for (let key2 in fData[key]) {
+            let attr= "";
             attr += fData[key][key2];
             if (attr.toLowerCase().includes(query.toLowerCase()))
                 matched = true;

@@ -16,25 +16,6 @@
 
         <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-EQW3R4RE6P"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-EQW3R4RE6P');
-        </script>
-        
-        <!-- Adsense -->
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282768297104356" crossorigin="anonymous">
-            (adsbygoogle = window.adsbygoogle || []).push({
-                google_ad_client: "ca-pub-4282768297104356",
-                enable_page_level_ads: true,
-                overlays: {bottom: true}
-            });
-        </script>
         
         <script async src="../nav.js"></script>
         <script async src="resourses.js"></script>
@@ -48,21 +29,21 @@
                 <div class="col-12 content center">
                     <h4>PDF Version:</h4>
                     <p>
-                        The PDF version of the module, for those who prefer a physical or offline format with everything in one place.
-                        <br>If desired, you can also find older versions of the module <a href='Assets/PDFs'>here</a>. 
+                        The PDF version of the system, for those who prefer a physical or offline format with everything in one place.
+                        <br>If desired, you can also find older versions of the system <a href='Assets/PDFs'>here</a>. 
                     </p>
                     <div class="links">
-                        <span class="file-label">JoJo_D&D_v1.12.0.pdf</span>
-                        <a href="Assets/PDFs/JoJo_D&D_v1.12.0.pdf" class="file-btn" target="_blank">View <i class="bi bi-eye"></i></a>
-                        <a href="Assets/PDFs/JoJo_D&D_v1.12.0.pdf" class="file-btn" download>Download <i class="bi bi-download"></i></a>
+                        <span class="file-label">JoJo_D&D_v1.13.0.pdf</span>
+                        <a href="Assets/PDFs/JoJo_D&D_v1.13.0.pdf" class="file-btn" target="_blank">View <i class="bi bi-eye"></i></a>
+                        <a href="Assets/PDFs/JoJo_D&D_v1.13.0.pdf" class="file-btn" download>Download <i class="bi bi-download"></i></a>
                     </div>
                     <div class="divider"></div>
                     <h4>Character Sheets:</h4>
                     <p>Print off one of our custom character sheets, or use our online character editor!</p>
                     <div class="links">
                         <span class="file-label">JoJo_Char_Sheet.pdf</span>
-                        <a href="Assets/JoJo_Char_Sheet.pdf" class="file-btn" target="_blank">View <i class="bi bi-eye"></i></a>
-                        <a href="Assets/JoJo_Char_Sheet.pdf" class="file-btn" download>Download <i class="bi bi-download"></i></a>
+                        <a id="viewSheet" href="Assets/JoJo_Char_Sheet.pdf" class="file-btn" target="_blank">View <i class="bi bi-eye"></i></a>
+                        <a id="downloadSheet" href="Assets/JoJo_Char_Sheet.pdf" class="file-btn" download>Download <i class="bi bi-download"></i></a>
                     </div>
                     <div id="editor">
                         <a href="editor/" id="edit-btn">Create Your Own <i class="bi bi-file-earmark-plus"></i></a>
@@ -72,13 +53,17 @@
                     <p>Check out some of the awesome resources and homebrew made by members of our community!</p>
                     <a href="community/" id="com-btn">Explore & Collaborate <i class="bi bi-people"></i></a>
                     <div class="divider"></div>
+                    <h4>Patch Notes</h4>
+                    <p>We're constantly working to improve this system, taking suggestions and making updates every few months or so. Check here to keep up with the changes we make!</p>
+                    <a href="patches/" id="patch-btn">Patch Notes <i class="bi bi-card-list"></i></a>
+                    <div class="divider"></div>
                     <h4>Campaign Example:</h4>
-                    <p>Check out our podcast "Tabletop Travesty" where we've played a campaign using this module named "The Bystanders":</p>
+                    <p>Check out our podcast "Tabletop Travesty" where we've played a campaign using this system named "The Bystanders":</p>
                     <div class="row center">
                         <!-- Embed code from Spotify and Youtube  -->
                         <div class="col-lg-6" id="spotify">
                             <div id="spot-wrapper">
-                                <iframe src="https://open.spotify.com/embed/show/47EOvQl31q7QOst7SLidep?utm_source=generator&amp;t=0" width="561" height="232" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/44ZYj9hjlzvxTpdsWsJ4sc?utm_source=generator&theme=0" width="561" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                             </div>
                         </div>
                         <div class="col-lg-6" id="youtube">
@@ -104,8 +89,6 @@
                             <input type="submit" id="send">
                         </div>
                     </form>
-                    <div class="divider"></div>
-                    <h5>Admin Login: <i class="bi bi-box-arrow-in-right" id="login-btn"></i></h5>
                 </div>
             </div>
         </div>

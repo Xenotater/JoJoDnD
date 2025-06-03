@@ -1,0 +1,872 @@
+{
+  "tabs": [
+    {
+      "title": "Basics",
+      "sections": [
+        {
+          "heading": "Roles",
+          "items": [
+            {
+              "subheading": "Players",
+              "details": [
+                "When playing this tabletop game, you'll take on the role of a Player. Players interact with the world of the game, generally playing as a single character and doing anything within the rules to accomplish goals set by themselves, the backstory they've created, or the greater story of the campaign. Players don't have to worry about setting up the world design, but are encouraged to be creative, clever, or funny with how they create their character and interact with the world around them."
+              ]
+            },
+            {
+              "subheading": "The Dungeon Master",
+              "details": [
+                "At least one person will NOT be a player, however. This person is the Dungeon Master (DM), who is in charge of everything that happens during the game. The DM will create the world and the greater story as they build a unique campaign for the players to play in. The DM will generally be in control of all Non-Player Characters (NPCs), which will exist to make the world feel lived-in, guide the players along the story, or serve as antagonists along the path.",
+                "Additionally, the DM is in charge of interpreting and enforcing the rules of the game. The DM should usually try to avoid removing players' agency, but should still remind them of how rules and mechanics work as necessary. The DM may also tweak rules or make up their own as they see fit, a practice that is generally called \"Homebrew\", but should generally remain consistent in the function of rules throughout the campaign."
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Dice",
+          "items": [
+            {
+              "subheading": "Dice Notation",
+              "details": [
+                "To quickly note what dice are to be rolled, the notation <u>n</u>d<u>x</u> is commonly used, where <u>n</u> represents the number of dice to be rolled and <u>x</u> represents how many sides each die should have. For example, if the notation \"3d6\" refers to rolling 3 six-sided dice."
+              ]
+            },
+            {
+              "subheading": "Required Dice",
+              "details": [
+                "To properly play using this system, you will need a variety of dice. If unavailable, an online dice roller can also be used. The required dice are: d4, d6, d8, d10, d12, d20, and Percentage Dice.",
+                "Percentage Dice can take a few different forms: a d10 with two digits on each side (00-90) or a large 100-sided die (d100). The d100 may be rolled as normal, but the special d10 must be rolled alongside a normal d10 to get the last digit of the result. The minimum roll is 1, so keep in mind that a 0 on the d10 represents 10, and 00 + 0 should be 100."
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Ability Scores",
+          "items": [
+            {
+              "subheading": "Ability Scores",
+              "details": [
+                "Ability Scores measure the basic physical and mental aspects of your character. Are they strong? Wise? Tough? These values reflect those generalized attributes. You may also see them commonly called \"stats\" or \"scores\".",
+                "For most Humans, the lowest an Ability Score can naturally be is 6, and the maximum is 20. However, there are ways to increase a Score further through means such as <a href='/abilities?focus=Undead_Nature'>Undeath</a>, <a href='/classes?focus=Ripple'>The Ripple</a>, and the <a href='/feats?focus=Superhuman'>Superhuman</a> Feat."
+              ],
+              "compactDetails": [
+                "<b>Strength (Str):</b> A measure of your ability to lift, move, or perform other feats of physical might. A character with high Strength can lift large rocks, throw a ball a great distance, and have an easier time dealing with effects that would restrict their movement.",
+                "<b>Dexterity (Dex):</b> A measure of your ability to dodge, move swiftly, sneak, balance, and perform delicate tasks. A character with high Dexterity can sneak effectively, walk on a tightrope, pickpocket, and have an easier time dealing with effects that would deal damage in an area like explosives.",
+                "<b>Constitution (Con):</b> A measure of your ability to take hits, shrug off harmful toxins, and exert yourself for long periods. A character with high Constitution can take more damage before going down, run for many kilometers with ease, survive more easily in extreme climates, and have an easier time dealing with toxins and effects that cause decay.",
+                "<b>Intelligence (Int):</b> A measure of your ability to recall information, think critically, and deduce information. A character with high Intelligence can recall specific and relevant information, solve a puzzle or mystery, and have an easier time dealing with effects that change their perception or involve illusions or psychic abilities.",
+                "<b>Wisdom (Wis):</b> A measure of your ability to perceive, think creatively, and use practical problem solving skills. A character with high Wisdom can detect someone's movement from several rooms away, think of using a bedsheet as a makeshift rope, track a person or animal, and have an easier time dealing with effects related to someone's willpower.",
+                "<b>Charisma (Cha):</b> A measure of your ability to socially influence others through charm, wit, and a few well-placed words. A character with high Charisma can persuade someone to do them a favor, intimidate someone out of a fight, tell a convincing lie, hold the attention of a group, and have an easier time dealing with effects that would Possess or influence them."
+              ]
+            },
+            {
+              "subheading": "Ability Modifiers",
+              "details": [
+                "While an Ability Score is the raw number representing one of your character's basic attributes, the vast majority of mechanics will utilize the Modifier instead to add to your d20 rolls. The Score is simply used to calculate the Modifier.",
+                "The formula to determine your Modifier (Mod) from the corresponding Score is (x-10)/2 rounded down. For example, a character with 15 Strength would have a Modifier of +2 (15-10 = 5, 5/2 = ~2)."
+              ]
+            },
+            {
+              "subheading": "Stand Ability Scores and Modifiers",
+              "details": [
+                "<a href='/classes?focus=Stands'>Stands</a> also have their own attributes, determined by the Ability Scores of their User and which type of Stand they are.",
+                "Unlike regular characters, Stands gain points upon Levelling-Up which may be spread between their Ability Scores as desired to increase them.",
+                "Stand Ability Modifiers are still calculated using these scores, but use a simpler formula of x/10 rounded down."
+              ],
+              "compactDetails": [
+                "<b>Power (Pow):</b> A measure of your Stand's strength. Affects how hard your Stand hits.",
+                "<b>Precision (Pre):</b> A measure of your Stand's dexterity. Affects how easy your Stand is to hit.",
+                "<b>Durability (Dur):</b> A measure of your Stand's constitution. Affects how easy your Stand is to hit and how much damage it can mitigate.",
+                "<b>Range (Rng):</b> A measure of how far your Stand can travel from its User.",
+                "<b>Speed (Spd):</b> A measure of how quickly your Stand can move and act. Affects how many attacks your Stand can perform at once.",
+                "<b>Stand Energy (SE):</b> A measure of how much energy your Stand has for its powers. Affects how many times your Stand can use its Ability before tiring."
+              ]
+            },
+            {
+              "subheading": "Proficiency Bonus and Levels of Proficiency",
+              "details": [
+                "Proficiency Bonus (PB) scales with your total Level and provides a flat bonus (alongside the associated Ability Modifier) to any Attack, Skill Check, or Saving Throw rolls that you're Proficient in. Proficiency has 3 defined levels, Proficiency, Expertise, and Mastery, with each level adding the bonus for an additional time. Going past Mastery is possible and the bonus continues adding additional times.",
+                "Any time you gain Proficiency in something you're already Proficient in to some degree, your Level of Proficiency increases (Proficiency to Expertise, Expertise to Mastery, etc).",
+                "You gain Proficiencies from your <a href='/passions'>Passion</a> or certain <a href='/feats'>Feats</a>, and you also gain an amount equal to your Intelligence Modifier (minimum 0). When gaining Proficiencies from your Passion or Int Mod, the options include: 1 Skill Proficiency, 2 sets of tools, 3 instruments, or 3 languages.",
+                "You may choose to spend two Proficiencies gained from your Passion or Int Mod to become Proficient in a <a href='/weapons'>weapon</a> Type or Specialization, allowing you to add your PB to Attack Rolls made with that kind of weapon. This is explained more in the <a href='?focus=Combat'>Combat</a> section.",
+                "Tool, language, and instrument Proficiencies are less likely to directly benefit rolls you make, but still note that you are capable of using those things correctly and effectively."
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Skill Checks",
+          "items": [
+            {
+              "subheading": "Types of Skill Checks",
+              "details": [
+                "Skill Checks are rolls your Dungeon Master may ask you to make to determine how effectively you're able to accomplish a specific action. Which Ability Score you add to the roll and whether or not you're Proficient in it depends on the type of Check asked for.",
+                "To perform a Skill Check, roll a d20 and add (or subtract, if applicable) the corresponding Ability Modifier as well as your Proficiency Bonus if you're Proficient in that type of Check. Your DM will determine if you succeed or not, depending on the roll."
+              ],
+              "compactDetails": [
+                "<b>Acrobatics:</b> Uses Dexterity. Used to perform precise movement in the air, balancing abilities, and can be used to Contest a Grapple/Shove.",
+                "<b>Athletics:</b> Uses Strength or Wisdom. Strength is used to perform athletic activities that require a sudden burst of strength, such as jumping, climbing, swimming, lifting, pushing, or Grappling/Shoving. Wisdom is used to determine the result of Speed Duels.",
+                "<b>Bluff:</b> Uses Charisma. Used for deception, bluffing, or other methods of making people believe or think something untrue.",
+                "<b>Care:</b> Uses Wisdom or Charisma. Used for the handling and proper care of animals, children, wounded or elderly people, etc. Wisdom is typically used when dealing with animals, while Charisma is typically used for people.",
+                "<b>Diplomacy:</b> Uses Charisma. Used to influence other people into thinking or understanding things in a certain, but not necessarily untrue, way.",
+                "<b>Finesse:</b> Uses Dexterity. Used to perform careful and precise movements, including sleight of hand, pickpocketing, and other small, delicate movements.",
+                "<b>Grit:</b> Uses Constitution. Used to determine pain tolerance, the ability to exert yourself for long periods, and the ability to handle large amounts of potentially toxic substances.",
+                "<b>Intimidate:</b> Uses Strength or Charisma. Used to threaten or coerce other people with the threat of physical force, or something else they'd be afraid of.",
+                "<b>Investigation:</b> Uses Intelligence. Used for puzzle solving and analyzing clues, though it doesn't necessarily help you find something, it can help you know if something is relevant or not.",
+                "<b>Medicine:</b> Uses Intelligence or Wisdom. Used to figure out things that require medical knowledge, tend to a wounded creature, and help a Downed creature to become Stable or recover 1 Hit Point.",
+                "<b>Knowledge:</b> Uses Intelligence. Used to recall historical information, as well as general information.",
+                "<b>Perception:</b> Uses Wisdom. Used to find hidden creatures or objects and detect small sensory details.",
+                "<b>Presence:</b> Uses Charisma. Used to blend in or stand out in social spaces as desired, seeming like you belong somewhere, and holding an audience's attention.",
+                "<b>Science:</b> Uses Intelligence. Used to recall scientific knowledge and understanding, as well as scientific procedure.",
+                "<b>Sneak:</b> Uses Dexterity. Used to move silently and stay hidden.",
+                "<b>Supernatural:</b> Uses Intelligence or Wisdom. Intelligence is used for recalling information regarding religious, spiritual, or otherwise supernatural occurrences, events, and rituals. Wisdom is used to figure out the cause or effect of an observed supernatural ability.",
+                "<b>Survival:</b> Uses Intelligence or Wisdom. Intelligence is used for recalling information about the functions of nature, such as determining safe or valuable plants. Wisdom is used to track things, create traps, or navigate an unknown region.",
+                "<b>Vibe:</b> Uses Wisdom or Charisma. Used to find out if someone is hiding something, or if they have ulterior motives. Failed Checks don't give false information, just no information."
+              ]
+            },
+            {
+              "subheading": "D&D 5e Skill Conversions",
+              "details": [
+                "This system was originally based on Dungeons & Dragons 5th edition, so the following exists as a guide to allow older characters to be converted to the new Skills"
+              ],
+              "compactDetails": [
+                "<b>Animal Handling</b> becomes <b>Care</b>",
+                "<b>Arcana</b> becomes <b>Supernatural</b>",
+                "<b>Deception</b> becomes <b>Bluff</b>",
+                "<b>History</b> becomes <b>Knowledge</b>",
+                "<b>Insight</b> becomes <b>Vibe</b>",
+                "<b>Intimidation</b> becomes <b>Intimidate</b>",
+                "<b>Nature</b> becomes <b>Survival</b>",
+                "<b>Performance</b> becomes <b>Presence</b>",
+                "<b>Persuasion</b> becomes <b>Diplomacy</b>",
+                "<b>Religion</b> becomes <b>Supernatural</b>",
+                "<b>Sleight of Hand</b> becomes <b>Finesse</b>",
+                "<b>Stealth</b> becomes <b>Sneak</b>"
+              ]
+            },
+            {
+              "subheading": "Difficulty Class and Contested Checks",
+              "details": [
+                "When making a Skill Check, you will be rolling against one of two things: the Difficulty Class of the Check, or a Contested roll.",
+                "Most Skill Checks have a Difficulty Class, or DC, either already set or decided by your Dungeon Master. The higher the DC is, the harder the Check will be to succeed. Rolling below a Check's DC results in failure.",
+                "Contested Skill Checks occur when two characters make Skill Checks against each other. The initiator's result can be viewed as the 'DC' for the Contestor to beat. This means a tie results in the initiator of the Contest failing.",
+                "Some DMs or situations may treat the results as binary, while others may have varying degrees of success and failure. Additionally, some DMs may take \"Natural 1s\" and \"Natural 20s\" into account, resulting in a particularly spectacular failure or success if you roll a 1 or a 20 on the d20 respectively."
+              ]
+            },
+            {
+              "subheading": "Advantage and Disadvantage",
+              "details": [
+                "Having Advantage on a roll allows you to roll two d20s instead of one and take the higher result. Advantage can stack, but grants a +2 bonus to the roll instead of granting another additional roll attempt.",
+                "Disadvantage works opposite to Advantage, forcing you to take the lower result of two d20 rolls and granting a -2 bonus for each additional stack",
+                "Advantage and Disadvantage cancel each other out, so if, for example, you have 2 sources of Advantage and 1 source of Disadvantage, you'd effectively have regular Advantage."
+              ]
+            },
+            {
+              "subheading": "Inspiration",
+              "details": [
+                "Inspiration is a consumable attribute that allows you to reroll any d20 roll that you didn't like the result of. The Modifiers added don't change, and you must keep the new roll or spend another point of Inspiration to roll again. There is no limit to how many points of Inspiration you can have, and you can give points to another character when you die or over the course of a Short or Long Rest.",
+                "Your DM should give out Inspiration relatively often, between 1-3 times per session per character. Inspiration is typically given as a reward for clever use of the environment, or creative roleplay or gameplay."
+              ]
+            },
+            {
+              "subheading": "Passive Perception and Passive Skills",
+              "details": [
+                "Passive Perception is a way to judge how perceptive your character is without directly rolling a check. It particularly applies when your character isn't paying close attention, instead picking up on something strange or unusual without specifically looking for it. Passive Perception is equal to 10 + your Perception Skill Bonus.",
+                "Depending on the setting or playstyle, your DM may be interested in your character's ability for other Passive Skills. For example, in a Mystery campaign, your DM may want to know the players' Passive Investigation. Regardless, the value is 10 + that Skill's bonus."
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Tools",
+          "items": [
+            {
+              "subheading": "Types of Tools",
+              "details": [
+                "These items may be acquired and gained Proficiency in through various means. Using them may allow you to make specific Skill Checks related to their use or give you a bonus to certain specific Checks."
+              ],
+              "compactDetails": [
+                "<b>Artist's Tools</b> are used to create or analyze various forms of artistry, and may specifically be one of the following: a Filmmaker's Camera, Glassmaker's Tools, Jeweler's Tools, Painter's Supplies, Potter's Tools, Sculptor's Tools, Weaver's Tools, Woodcrafter's Tools, or Writer's Tools.",
+                "<b>Blacksmith's Tools</b> may be used to maintain metallic weapons or create a basic tool or trinket from metal.",
+                "<b>Chemist's Tools</b> may be used to create basic chemical compounds, identify a chemical, store a small amount of a strange substance, or create chemical reactions.",
+                "<b>Chef's Utensils</b> may be used to create a variety of meals, dice something finely, identify ingredients in a dish, or experiment to find a new dish.",
+                "<b>Diviner's Tools</b> may be used to predict the future, often in ways that don't make sense without context until the moment of truth.",
+                "<b>Engineer's Tools</b> may be used to move something heavy, measure a precise amount of distance, or to repair certain structures or machines that have been damaged.",
+                "<b>Fletcher's Tools</b> may be used to create and maintain weapons and ammunition made out of wood and natural materials, including bows, crossbows, atlatls, spears, clubs, and darts.",
+                "<b>Gunsmith's Tools</b> may be used to create and maintain firearms, to identify a shell casing, to create gunpowder, or create ammunition for such weapons.",
+                "<b>Herbalism Kits</b> may be used to identify and treat the symptoms of a poison or disease, or identify plants and their potential medicinal purposes.",
+                "<b>Thieves' Tools</b> may be used to pick a lock, hotwire an engine, or grab something small precisely."
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Miscellaneous",
+          "items": [
+            {
+              "subheading": "Ranged Effects",
+              "details": [
+                "Some mechanics, such as ranged weapons, senses, and other wide-area effects, may have specific ranges that they're most effective in. This is often notated in the form \"SR/LR\", where SR and LR are the Short and Long Ranges of the effect, respectively. When targeting the Short Range, Checks and Attack Rolls may be made normally. However, when targeting the Long Range, Checks and Attack Rolls are made with Disadvantage.",
+                "For example, when firing a pistol, which has the Ranged (20/60) attribute, you can fire at anything within its Short Range of 20m normally, or anything within 20-60m with Disadvantage."
+              ]
+            },
+            {
+              "subheading": "Limited Resources",
+              "details": [
+                "Any consumable resource is not consumed if it has no effect for any reason. This does not apply to physical resources like material or ammunition, but game resources like energy, dice, charges, etc. The Action Economy related to it is still consumed, but the resource itself isn't."
+              ]
+            },
+            {
+              "subheading": "Doubling/Halving Effects",
+              "details": [
+                "Effects that multiply a value do not stack multiplicatively, but instead additively. For example, two doubling effects (+100%) would result in an overall 3x multiplier (+200%), and A doubling effect (+100%) and a tripling effect (+200%) would result in an overall 4x multiplier (+300%), etc. This does NOT apply to calculations for Ability Scores, which allow multiplicative stacking as expected."
+              ]
+            },
+            {
+              "subheading": "Rounding",
+              "details": [
+                "Unless otherwise specified, <b>ALWAYS round down</b>. For example, half of 5 should be 2."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Characters",
+      "sections": [
+        {
+          "heading": "Character Traits",
+          "items": [
+            {
+              "subheading": "Passions",
+              "details": [
+                "A character's <a href='/passions'>Passion</a> determines their background and specialties. It grants a bonus to several Ability Scores, several Skill Proficiencies, and determines Saving Throw Proficiencies. Keep an eye on the bonuses gained from your Passion as you Level-Up, as additional Skill Proficiencies scale with your Proficiency Bonus."
+              ]
+            },
+            {
+              "subheading": "Creature Types and Races",
+              "details": [
+                "The vast majority of characters in JoJo's are Human, which is treated as a baseline. However, there are numerous other more exotic <a href='/races'>Races</a> that have unique abilities.",
+                "Each specific Race fits into a more generalized Creature Type, listed below:"
+              ],
+              "compactDetails": [
+                "<b>Beast</b> (<a href='/races?focus=Animal'>Animals / Rock Animals</a>)",
+                "<b>Construct</b> (<a href='/races?focus=Cyborg'>Cyborgs</a>, Robots, Synthetic Beings)",
+                "<b>Ghost</b> (<a href='/races?focus=Ghost'>Ghosts</a>, Spirits)",
+                "<b>Humanoid</b> (<a href='/races?focus=Human'>Humans</a>, <a href='/races?focus=Rock_Human'>Rock Humans</a>, <a href='/races?focus=Pillar_Man'>Pillar Men</a>)",
+                "<b>Stand</b> (<a href='/classes?focus=Stands'>Stands</a>, <a href='/races?focus=Living_Stand'>Living Stands</a>)",
+                "<b>Monstrosity</b> (<a href='/races?focus=Abomination'>Abominations</a>, <a href='/races?focus=Living_Chimera'>Living Chimera</a>, <a href='/races?focus=Ultimate_Being'>Ultimate Beings</a>",
+                "<b>Plant</b> (<a href='/races?focus=Plant'>Plants</a>)",
+                "<b>Undead</b> (<a href='/races?focus=Zombie'>Zombies</a>, <a href='/races?focus=Ghoul'>Ghouls</a>, <a href='/races?focus=Vampire'>Vampires</a>, <a href='/races?focus=Undead_Chimera'>Undead Chimera</a>, <a href='/races?focus=Enhanced_Pillar_Man'>Enhanced Pillar Men</a>)"
+              ]
+            },
+            {
+              "subheading": "Classes",
+              "details": [
+                "Your <a href='/classes'>Class</a> is what determines the way your character fights, granting specific abilities and techniques called Class Features each time you gain a Level in one. Every Class has 20 defined Levels that grant Class Features. It is possible to go above Level 20 in a Class, but further Levels do not provide additional Class Features."
+              ]
+            },
+            {
+              "subheading": "Level",
+              "details": [
+                "Your Level determines how experienced you are in combat. Characters with a higher Level know more abilities and techniques and tend to be more effective with them than characters with a lower Level. Most games restrict players to Level 20 at the highest, but may involve higher Level enemies (bosses, etc.) to provide extra challenge and balance.",
+                "It's generally recommended that all players Level-Up together so they stay the same Level as each other."
+              ]
+            },
+            {
+              "subheading": "Multiclassing",
+              "details": [
+                "Multiclassing allows a character to take Levels in multiple <a href='/classes'>Classes</a> at once, rather than just one. For instance, a <a href='/classes?focus=Stands'>Stand User</a> may choose to also utilize <a href='/classes?focus=Ripple'>The Ripple</a>.",
+                "When a Multiclassed character gains a Level, they must choose which Class to gain a Level in (and get Features and a Hit Die from). Your Proficiency Bonus and number of <a href='/feats'>Feats</a> are based on your total Level, not individual Class Level.",
+                "Having Levels in a <a href='/races'>Race</a> (such as <a href='/races?focus=Vampire'>Vampire</a> does NOT count as Multiclassing. Race Levels are separate from Class Levels and have different Level-Up conditions.",
+                "Keep in mind that a character may only have one Stand. Like all Classes, you may not have multiple instances of the Stand User Class. However, you may have a differently-typed Substand instead, or even a Multi-Type Stand, which has traits and Features of multiple different Stand Types. Substands and Multi-Typing are explained more on the <a href='/classes?focus=Stands'>Stands</a> page."
+              ]
+            },
+            {
+              "subheading": "Abilities",
+              "details": [
+                "<a href='/abilities'>Abilities</a> are the core Features available to a <a href='/classes'>Class</a>. Compared to <a href='/feats'>Feats</a>, Abilities tend to be more specific and restricted, and are only able to be gained by Levelling-Up in a Class that has access to them."
+              ]
+            },
+            {
+              "subheading": "Feats",
+              "details": [
+                "<a href='/feats'>Feats</a> are more general, typically not <a href='/classes'>Class</a>-specific Features that give you access to special techniques and bonuses. You always have an amount of Feats equal to your Proficiency Bonus, and can take any that you meet the prerequisite for. Sometimes you may gain a Feat while Levelling-Up in a Class. Feats gained through Levelling-Up do not count against the number you may have based on your PB.",
+                "You may switch out your PB-based Feats anytime you Level-Up.",
+                "If you have an <a href='/classes?focus=Act'>Act-Type Stand</a> or <a href='/classes?focus=Stands'>Substand</a>, you may use any Feats you have that you meet the prerequisite for with that Stand. Feats are not form-specific, unlike the <a href='/abilities'>Abilities</a> you gain with these Stands."
+              ]
+            },
+            {
+              "subheading": "Size",
+              "details": [
+                "Creatures can have many various Sizes that fit into a few defined Size Categories for the sake of certain mechanics. For example, you can only Grapple or Shove a creature that is one Category larger than you or smaller, and you can move through the space of creatures the same Size as you or smaller as Difficult Terrain."
+              ],
+              "compactDetails": [
+                "<b>Tiny</b> creatures tend to be around 70cm or shorter, weigh around 3.5 kg or less, and control a 1x1 meter space.",
+                "<b>Small</b> creatures tend to be around 120cm or shorter, weigh around 30 kg or less, and control a 1x1 meter space.",
+                "<b>Medium</b> creatures tend to be around 2.5m or shorter, weigh around 225 kg or less, and control a 1x1 meter space. The vast majority of adult Humanoids are Medium creatures.",
+                "<b>Large</b> creatures tend to be around 5m or shorter, weigh around 1800 kg or less, and control a 2x2 meter space.",
+                "<b>Huge</b> creatures tend to be around 10m or shorter, weigh around 15000 kg or less, and control a 3x3 meter space.",
+                "<b>Gargantuan</b> creatures tend to be around 10m or taller, weigh around 15000 kg or more, and control a 4x4 meter space or bigger."
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Creating a Character",
+          "items": [
+            {
+              "subheading": "Determining Starting Stats",
+              "details": [
+                "When a character is first created, their Ability Scores need to be determined. There are several ways to do this, such as Point Buy, Standard Array, or rolling dice. Point Buy and Standard Array are systems commonly used for Dungeons and Dragons 5th edition, and will suffice here. When rolling dice, there are several common ways to do so, such as 3d6, 4d6 drop the lowest, etc. Which method you use is generally up to the preference of your Dungeon Master."
+              ]
+            },
+            {
+              "subheading": "Character Creation Checklist",
+              "details": [
+                "Characters have many unique traits and attributes, even at Level 1, so it's important that they are built correctly.",
+                "If desired, you can use our <a href='/resources/Assets/JoJo_Char_Sheet.pdf' target='_blank'>custom character sheets</a> or create one online using our <a href='/resources/editor/' target='_blank'>editor</a>."
+              ],
+              "other": [
+                "Characters should be built roughly in this order:",
+                "<ol class='sublist'><li>Roll and assign Stats using your DM's preferred method</li><li>Choose your character's <a href='/passions'>Passion</a> and Proficiencies (including Proficiencies from your Intelligence Modifier)</li><li>Note the Features of your character's Race</li><li>Choose a number of <a href='/feats'>Feats</a> equal to your character's Proficiency Bonus</li><li>Choose which Class(es) your character will be playing and note the Features gained from it at your starting Level</li><li>Determine your characters Hit Points, Armor Class, and other smaller stats based on your previous choices</li><li>Talk to your DM regarding your Starting Equipment, the setting, and your character's backstory</li><li>If your character is a <a href='/classes?focus=Stands'>Stand User</a>, determine your Stand's stats as well and figure out how you want its Ability to function</li></ol>"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Levelling-Up",
+          "items": [
+            {
+              "subheading": "Milestone Levelling",
+              "details": [
+                "The simplest way to handle Levels is to have players Level-Up when they reach specific points (milestones) in the story of the campaign. Players still earn rewards like items, money, favors, status, etc., from doing extra quests and defeating enemies, but more quests and combat won't necessarily allow them to Level-Up faster. This will generally encourage players to make consistent progress in the campaign story."
+              ]
+            },
+            {
+              "subheading": "Experience Levelling",
+              "details": [
+                "Experience (Exp) is a point value that determines when a character can Level-Up, rather than relying on reaching story milestones. Experience can be gained from several sources, including as a reward for completing quests or objectives, or defeating an enemy.",
+                "It is important to be careful with Experience gain, as having it too readily available may result in players going on unnecessary side-quests to, for example, kill every rat in the city, just for Experience, or generally become higher Level than they're meant to be for combat balance. It may be advised for the Dungeon Master to set a Level cap, allowing players to gain more Exp but not Levelling-Up until they hit a requisite milestone, finding a happy medium between the two methods of Levelling.",
+                "The chart below shows the total Exp needed to reach a corresponding Level, as well as the corresponding Proficiency Bonus at that Level."
+              ],
+              "other": [
+                "<table class='expTable table table-striped'><thead><tr><th>Exp</th><th>Level</th><th>PB</th></tr><thead><tbody><tr><td>0</td><td>1</td><td>+2</td></tr><tr><td>300</td><td>2</td><td>+2</td></tr><tr><td>900</td><td>3</td><td>+2</td></tr><tr><td>2,700</td><td>4</td><td>+2</td></tr><tr><td>6,500</td><td>5</td><td>+3</td></tr><tr><td>14,000</td><td>6</td><td>+3</td></tr><tr><td>23,000</td><td>7</td><td>+3</td></tr><tr><td>34,000</td><td>8</td><td>+3</td></tr><tr><td>48,000</td><td>9</td><td>+4</td></tr><tr><td>64,000</td><td>10</td><td>+4</td></tr></tbody></table>",
+                "<table class='expTable table table-striped'><thead><tr><th>Exp</th><th>Level</th><th>PB</th></tr><thead><tbody><tr><td>85,000</td><td>11</td><td>+4</td></tr><tr><td>100,000</td><td>12</td><td>+4</td></tr><tr><td>120,000</td><td>13</td><td>+5</td></tr><tr><td>140,000</td><td>14</td><td>+5</td></tr><tr><td>165,000</td><td>15</td><td>+5</td></tr><tr><td>195,000</td><td>16</td><td>+5</td></tr><tr><td>225,000</td><td>17</td><td>+6</td></tr><tr><td>265,000</td><td>18</td><td>+6</td></tr><tr><td>305,000</td><td>19</td><td>+6</td></tr><tr><td>355,000</td><td>20</td><td>+6</td></tr></tbody></table>"
+              ]
+            },
+            {
+              "subheading": "Level-Up Checklist",
+              "details": [],
+              "other": [
+                "<ol class='sublist'><li>If Multiclassing, choose which <a href='/classes'>Class</a> to gain a Level in.</li><li>Gain 1 Hit Die and roll it to increase Hit Points.</li><li>If a <a href='/classes?focus=Stands'>Stand User</a>, increase Stand Ability Scores.</li><li>Check if your PB increases at this Level.</li><li>Check if any of your <a href='/abilities'>Abilities</a> and <a href='/feats'>Feats</a> scale in some way with your Level.</li><li>Gain new Abilities or Feats from the Level-Up table for your Class.</li></ol>"
+              ]
+            },
+            {
+              "subheading": "Reading the Level-Up Table",
+              "details": [
+                "When you Level-Up, you'll gain several Features (typically in the form of <a href='/abilities'>Abilities</a> and <a href='/feats'>Feats</a>) from your <a href='/classes'>Class</a> (or possibly your <a href='/races'>Race</a>), according to that Class's Level-Up table."
+              ],
+              "compactDetails": [
+                "The symbol \"|\" is used to visually separate gained features. You'll gain both things separated by the pipe symbol.",
+                "The word \"OR\" is used to indicate that you'll have to pick between two or more features to gain.",
+                "The phrase \"Choose another Class Feature from Level...\" allows you to choose another Feature that you didn't take at a previous Level that had an \"OR\" choice. If the Feature specifies that it can be taken multiple times, you may take one you've taken before.",
+                "The phrase \"Variant Rule\" indicates that a Feature can only be gained with permission from your Dungeon Master. Variant Rules tend to push the bounds of what is canon for gameplay purposes, and your DM may decide if they do or don't want to use them."
+              ]
+            },
+            {
+              "subheading": "Modular Classes",
+              "details": [
+                "Your Dungeon Master may desire to use Modular characters, rather than using the normal Level-Up tables. Modular characters still gain Class Features when Levelling-Up, but will often instead gain the \"{Classname} Feature\" <a href='/abilities'>Ability</a>. This special Ability allows you to choose from any of the Features associated with a Class, so long as you meet any listed prerequisites. If the Feature specifies that it can be taken multiple times, you may take one you've taken before."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Turn",
+      "sections": [
+        {
+          "heading": "Taking your Turn",
+          "items": [
+            {
+              "subheading": "When to Take Turns",
+              "details": [
+                "Generally, during roleplay, actions can be taken relatively freely. However, during combat or other time-sensitive segments, gameplay becomes turn-based, with characters actions and environmental changes happening one at a time.",
+                "For the sake of timing and flavor, a Turn is generally assumed to take 5 seconds in-world, with each character acting at once in that time. This means 1 minute takes 12 turns, etc."
+              ]
+            },
+            {
+              "subheading": "Initiative",
+              "details": [
+                "Turn order is determined by an Initiative roll, a special Skill Check made by all characters at the start of combat. A d20 is rolled, then the Dexterity and Wisdom Modifiers are added to the result. Turns proceed in order from highest Initiative to lowest. For ties between a player and an NPC, the player should typically go first. For ties between players, they may decide who goes first.",
+                "The start of each round of Turns is called the Top of Initiative. Many per-round effects, such as Stand Damage Reduction, regeneration, and more, reset or occur at the Top of Initiative."
+              ]
+            },
+            {
+              "subheading": "Parts of the Turn",
+              "details": [
+                "Each Turn has several distinct parts, each of which can be used up to 1 time per round unless otherwise specified. This is typically referred to as your \"Action Economy\"."
+              ],
+              "compactDetails": [
+                "<b>Action:</b> The largest part of your Turn, typically the main focus of what you're doing for the round.",
+                "<b>Bonus Action:</b> A slightly smaller action, ability, or technique that can be used or activated quickly.",
+                "<b>Movement:</b> The amount you can move in one Turn. By default, a Human has 10 meters of Movement Speed that can be used in a Turn. Stands have their own Movement Speed as well, which can be used separately from their User's Movement.",
+                "<b>Reaction:</b> An action that can be taken outside of your Turn in response to something else happening to or around you. You may still only take one Reaction per round, and get it back at the start of your next Turn when used.",
+                "<b>Free Action:</b> Something that takes practically no focus or time to perform, like talking. Unlike other parts of the Turn, Free Actions can be used as many times as desired."
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Combat Actions",
+          "description": "These actions may be taken by anyone in Combat as one of the specified parts of their Turn.",
+          "items": [
+            {
+              "subheading": "Action",
+              "details": [
+                "Each of these actions costs your <u>Action</u>. You may only use one per Turn unless otherwise specified."
+              ],
+              "compactDetails": [
+                "<b>Attack:</b> Allows you to use an Attack action. Doing so locks you into using your full Action to attack, but you may have several Attacks per Action.",
+                "<b>Dash:</b> Allows you to Move an additional amount of meters equal to your Movement Speed.",
+                "<b>Disengage:</b> Prevents enemies from taking Opportunity Attacks when you exit their Melee Range until the start of your next Turn.",
+                "<b>Dodge:</b> Grants one of the following defensive effects until the start of your next Turn. If you're a Stand User, you also gain 1 Stand Energy doing this.<ul class='sublist'><li>Gives enemies Disadvantage on Attack Rolls against you and gives you Advantage on all Saving Throws and Contested Skill Checks against you that weren't initiated by you.</li><li>Halves the damage you take from all sources.</li></ul>",
+                "<b>Help:</b> Grants an ally within 1 meter Advantage on their next Skill Check or Attack Roll. Also removes 1 level of Fear and the effects of Taunt.",
+                "<b>Hide:</b> When in a suitable hiding place (a dark area, behind an object, camouflaged, etc), you may make a Sneak Check against any enemies that are aware of you, which they can Contest with a Perception Check. Targets that fail the Contest lose track of your location.",
+                "<b>Revive:</b> When within 1 meter of a Downed ally, you may make a DC 10 Medicine Check, bringing the ally back up to 1 Hit Point on success. You may instead choose to stabilize them on success, keeping them at 0 Hit Points but preventing them from having to make any Death Saves.",
+                "<b>Skill Check:</b> Allows you to make any Skill Check to interact with your environment."
+              ]
+            },
+            {
+              "subheading": "Attack",
+              "details": [
+                "When taking the Attack Action, your attack can take the form of any of the following. By default, only one Attack may be made per Action, but there are ways to get more Attacks, such as being a <a href='/classes?focus=Stands'>Stand User</a> or taking the <a href='/feats?focus=Trained_Combatant'>Trained Combatant</a> Feat."
+              ],
+              "compactDetails": [
+                "<b>Attack:</b> Allows you to make a single Attack Roll against a target, rolling damage if it hits them. Whether or not an Attack Roll hits is determined by the target's Armor Class, which is explained in the <a href='/rules?focus=Combat'>Combat</a> section.",
+                "<b>Grapple/Shove:</b> When in Melee Range of a target, you may make an Athletics (Str/Pow) Check, forcing the target to Contest using either Athletics (Str/Pow) or Acrobatics (Dex/Pre), their preference. If the target fails the Contest, they suffer the effects of your Grapple or Shove. A Shove can either push the target back 1 meter or knock them Prone. A Grapple requires one of your hands to hold the target and inflicts them with the Grappled Condition. You cannot Grapple or Shove a creature that is more than one Size Category larger than you. Size Categories are explained more in the <a href='/rules/?focus=Misc.%20Rules'>Miscellaneous</a> section. Prone and Grappled are explained more in the <a href='?focus=Damage%20%26%20Conditions'>Damage & Conditions</a> section.",
+                "<b>Speed Duel:</b> When attempting to take a non-weapon object off of someone, or do something else faster than someone like reaching a location first, or even just to measure awareness and reaction time between two people, you may initiate a Speed Duel, which takes the form of a Contested Athletics (Wis/Spd) check. The winner is considered 'faster', keeping in mind that the initiator loses a tie.",
+                "<b>Taunt:</b> When within 10 meters of a target whom you can communicate with, you may initiate a Grit (NOT Dur) or Presence Check against them, which can be Contested by either of those Skills as well, at their preference. If the target fails the Contest, they become Taunted towards you, forcing them to try and target you with a negative effect or damage. The effects of Taunted are explained more in the <a href='/?focus=Damage%20%26%20Conditions'>Damage & Conditions</a> section.",
+                "<b>Extra Bonus Action:</b> You may expend half of your total Attacks (rounded up) to gain an additional Bonus Action for this Turn. You may also spend all of your Attacks (even if you only have 1) to gain an additional 2 Bonus Actions. If you use this to make Attack Rolls during this extra Bonus Action, you may not make more rolls than the number of Attacks you spent to gain that Bonus Action."
+              ]
+            },
+            {
+              "subheading": "Bonus Action",
+              "details": [
+                "Each of these actions costs your <u>Bonus Action</u>. You may only use one per Turn unless otherwise specified."
+              ],
+              "compactDetails": [
+                "<b>Dual Wield:</b> After making at least one Attack with a weapon in one hand, you may use a weapon with the Light property to make another Attack. This applies to Unarmed Strikes, but not Stand Attacks.",
+                "<b>Hasty Skill Check:</b> Allows you to make any Skill Check with Disadvantage. If you use this action multiple times through any means, you gain an additional stack of Disadvantage for each use."
+              ]
+            },
+            {
+              "subheading": "Reaction",
+              "details": [
+                "Each of these actions costs your <u>Reaction</u>. These may occur outside of your Turn. You may only use one per Turn unless otherwise specified."
+              ],
+              "compactDetails": [
+                "<b>Identify:</b> In response to observing a supernatural phenomenon, you may make a Supernatural Check to learn some (but not necessarily all) information on the cause of it on success.",
+                "<b>Opportunity Attack:</b> In response to a hostile enemy you can observe exiting your Melee Range, you may make a single Melee Attack, Grapple, or Shove against them."
+              ]
+            },
+            {
+              "subheading": "Movement",
+              "details": [
+                "Each of these actions costs some amount of your Movement Speed. You may use any combination of these at any point during your Turn until you run out of Movement Speed."
+              ],
+              "compactDetails": [
+                "<b>Move:</b> For every 1 meter of Movement Speed spent, you may move 1 meter.",
+                "<b>Jump:</b> Each meter moved while jumping costs 1 meter of Movement Speed. You must Move at least 2m in the direction you're jumping to gain the benefits of a \"running start\". Without a running start, the maximum distance of your Jump is halved. Two types of Jumps may be performed.<ul class='sublist'><li>High Jump: Allows you to jump vertically an amount of meters equal to your Strength Modifier (minimum 1).</li><li>Long Jump: Allows you to jump horizontally an amount of meters equal to double your Strength Modifier (minimum 2).</li></ul>",
+                "<b>Get Up:</b> You may expend half of your total Movement Speed to remove the Prone Condition from yourself. You may not do so if you have less than half of your Movement Speed remaining."
+              ]
+            },
+            {
+              "subheading": "Free Action",
+              "details": [
+                "Each of these actions costs no part of your Action Economy, and they may be used as many times as you'd like."
+              ],
+              "compactDetails": [
+                "<b>Talking:</b> You can talk as much and as often as you'd like, off or on your Turn. You may not make any Skill Checks (such as Diplomacy) while doing so, however.",
+                "<b>Drop:</b> Allows you to fall Prone at will, or drop any object, weapon, or Grappled target you're holding.",
+                "<b>Object Interaction:</b> Allows you to pick up an object off the ground, push an item on the ground up to 5m away, draw or stow up to two weapons or up to five weapons with the Thrown property. Unlike other Free Actions, you may only use this action once per Turn. When drawing or stowing weapons specifically, you may also do so freely at the Top of Initiative without consuming your Object Interaction."
+              ]
+            },
+            {
+              "subheading": "Other",
+              "details": [
+                "These actions aren't necessarily common parts of your Action Economy and function in unique ways."
+              ],
+              "compactDetails": [
+                "<b>Hold Turn:</b> Allows you to choose to take your Turn later in the round than your Initiative roll would normally have you act. Specifically, you may choose one of your allies to act after their Turn. When taking this action, you may choose whether or not to take this order for just this round or the entire encounter.",
+                "<b>Ready:</b> Allows you to choose a predetermined <u>Action</u> to take at a later point, instead of on your Turn, in response to something happening. When the trigger occurs, you may then expend your <u>Reaction</u> to execute the <u>Action</u> you specified.",
+                "<b>Use an Object:</b> The Economy consumed to use an object greatly depends on what kind of object is being used, and how. Complicated objects may take a full <u>Action</u> to use, while less complicated ones may only take a single <u>Attack</u> or <u>Bonus Action</u>."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Damage & Conditions",
+      "sections": [
+        {
+          "heading": "Taking Damage",
+          "items": [
+            {
+              "subheading": "Hit Points",
+              "details": [
+                "Hit Points (HP) are a measure of how much willpower your character has to fight. When you take damage, your total HP will be reduced by the amount of damage dealt to you. There are no penalties for having low HP, but if you fall to 0, you gain the Downed Condition and will be unable to continue fighting until healed or revived. You cannot have an HP value below 0 (except Undead in certain situations).",
+                "Your Maximum HP amount is determined by a combination of your <a href='/classes'>Classes'</a> Hit Dice and your Constitution Modifier. At Level 1, you use the max value of your Hit Die and add your Con Mod. Each Level-Up will have you roll your Hit Die (or take the average roll) and add your Con Mod to the result to gain more Max HP. For example, a character with a d8 Hit Die and a +2 Con would start with 10 HP, then upon Levelling-Up would add 1d8+2 (or 5+2) HP to their maximum.",
+                "<a href='/classes?focus=Stands'>Stands</a> typically share an HP pool with their User. Some Types may have a separate pool, though, in which case their separate pool would be the same size as their Users."
+              ]
+            },
+            {
+              "subheading": "Temporary Hit Points",
+              "details": [
+                "Temporary Hit Points (Temp HP) are extra Hit Points that can stack on top of your HP as a separate, temporary pool. Temp HP cannot be healed and cannot revive a Downed character, but can be decreased instead of your main HP pool when taking damage.",
+                "Temp HP does not stack with itself unless otherwise specified, but you may choose to take the higher value when gaining new Temp HP. For example, if you have 5 Temp HP remaining and gain 8 Temp HP, you may choose to increase your Temp HP to 8."
+              ]
+            },
+            {
+              "subheading": "Receiving Damage",
+              "details": [
+                "When you take any damage, your Hit Points are reduced by the amount taken. If you have any Temporary Hit Points, you may choose to reduce them first instead.",
+                "There is an order to damage calculations. If anything would add or subtract from the damage, that occurs <b>before</b> any multiplication or division. After this, Stand Damage Reduction, Damage Negation, and <a href='/feats?focus=Scarflesh'>Scarflesh</a> can apply."
+              ]
+            },
+            {
+              "subheading": "Damage Types",
+              "details": [
+                "Damage can come in a number of different forms, and different characters may be more Vulnerable, Resistant, or even Immune to different types of damage.",
+                "It should be noted that three types of damage are considered to be \"physical\": Bludgeoning, Piercing, and Slashing. The others are all considered to be \"elemental\"."
+              ],
+              "compactDetails": [
+                "<b>Acid</b> damage is typically dealt by abilities or substances that eat away at most materials. Examples include sulfuric acid, <a href='https://www.jojowiki.com/Yellow_Temperance'>Yellow Temperance</a>, and <a href='https://www.jojowiki.com/Yo-Yo_Ma'>Yo-Yo Ma</a>.",
+                "<b>Bludgeoning</b> damage is typically dealt by blunt weapons, strikes, and anything that pummels targets. Examples include punches, clubs, and falling rocks.",
+                "<b>Cold</b> damage is typically dealt by abilities, substances, or weather conditions that significantly lower temperature. Examples include snow, <a href='/abilities/?focus=Freezing_Touch'>Vampiric Freezing</a>, <a href='https://www.jojowiki.com/Horus'>Horus</a>, and <a href='https://www.jojowiki.com/White_Album'>White Album</a>.",
+                "<b>Fire</b> damage is typically dealt by abilities or substances that significantly raise temperature. Examples include bonfires, plasma, <a href='https://www.jojowiki.com/ACDC'>ACDC's</a> blood, <a href=\"https://www.jojowiki.com/Magician's_Red\">Magician's Red</a>, and <a href='https://www.jojowiki.com/Speed_King'>Speed King</a>.",
+                "<b>Force</b> damage is typically dealt by abilities or effects that involve pure energy or manipulate space-time. Examples include black holes, disintegration, <a href='https://www.jojowiki.com/Cream'>Cream</a>, <a href='https://www.jojowiki.com/The_Hand'>The Hand</a>, <a href='https://www.jojowiki.com/Killer_Queen'>Killer Queen</a>, and <a href='/classes?focus=Spin'>The Spin</a>.",
+                "<b>Lightning</b> damage is typically dealt by abilities or effects that involve electricity. Examples include power lines, lightning, and <a href='https://www.jojowiki.com/Red_Hot_Chili_Pepper'>Red Hot Chili Pepper</a>.",
+                "<b>Necrotic</b> damage is typically dealt by abilities or substances that cause rapid decay and death. Examples include necrosis, radiation, draining life force, <a href='https://www.jojowiki.com/Highway_Star'>Highway Star</a>, and <a href='https://www.jojowiki.com/Purple_Haze'>Purple Haze</a>.",
+                "<b>Piercing</b> damage is typically dealt by sharp-tipped weapons, projectiles, and anything that stabs targets. Examples include guns, arrows, spears, and spike traps.",
+                "<b>Poison</b> damage is typically dealt by abilities or substances that cause bodily harm and illness. Examples include diseases, toxins, <a href='https://www.jojowiki.com/Ratt'>Ratt</a>, <a href='https://www.jojowiki.com/Green_Day'>Green Day</a>, and <a href='https://www.jojowiki.com/Brain_Storm'>Brain Storm</a>. Non-Living creatures, such as Constructs and Undead, are immune to Poison damage.",
+                "<b>Psychic</b> damage is typically dealt by abilities or effects that cause mental stress and target someone's mind directly. Examples include immense confusion or panic, <a href='https://www.jojowiki.com/Lovers'>The Lovers</a>, and <a href='https://www.jojowiki.com/Echoes#ACT1:_Sound_Generation'>Echoes Act 1</a>",
+                "<b>Radiant</b> damage is typically dealt by abilities or effects that involve light or focused energy. Examples include lasers, UV rays from the Sun, and <a href='/classes?focus=Ripple'>The Ripple</a>.",
+                "<b>Slashing</b> damage is typically dealt by bladed weapons, sharp edges, and anything that slices targets. Examples include swords, knives, and claws.",
+                "<b>Thunder</b> damage is typically dealt by abilities or effects that involve loud sounds or shockwaves. Examples include explosive blasts, <a href='https://www.jojowiki.com/Sheer_Heart_Attack'>Sheer Heart Attack</a>, and <a href='https://www.jojowiki.com/Oasis'>Oasis'</a> underground attack."
+              ]
+            },
+            {
+              "subheading": "Resistances, Immunities, and Vulnerabilities",
+              "details": [
+                "Some characters are particularly weak or strong against certain types of damage. There are several ways to achieve this, depending on what <a href='/classes'>Class</a>, <a href='/abilities'>Abilities</a>, and <a href='/feats'>Feats</a> your character has. <b>Vulnerability</b> to a damage type causes you to take double the damage dealt to you, while <b>Resistance</b> causes you to take half. <b>Immunity</b> to a type causes you to take no damage from it at all.",
+                "These attributes may not stack with each other. You may not be doubly Resistant to a type of damage, nor may you use a Resistance to cancel out a Vulnerability."
+              ]
+            },
+            {
+              "subheading": "Stand Damage",
+              "details": [
+                "Typically, <a href='/classes?focus=Stands'>Stands</a> are immune to mundane damage, you can't simply stab one with a knife as it will go right through them. However, when Stands deal damage, it is generally a special type of damage that <i>is</i> capable of affecting other Stands. This is often referred to as the \"Stand\" counterpart of each damage type, like Stand Piercing, for example.",
+                "As an optional rule, your DM may choose to allow other <a href='/classes'>Classes</a> to damage Stands for the sake of balance."
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Negative Effects",
+          "items": [
+            {
+              "subheading": "Saving Throws",
+              "details": [
+                "Many negative effects can be avoided or resisted if you're prepared for them and manage to react well, by bracing yourself or dodging, etc. To save yourself from a harmful effect, you may be able to attempt a Saving Throw.",
+                "Saving Throws are similar to Skill Checks. To make one, you'll roll a d20 and add the relevant Modifier (Str Mod for Strength Saves, etc.) in an attempt to meet the Difficulty Class (DC) of the Save. Succeeding the Save generally results in either not being affected or being affected to a lesser extent, while failing results in suffering the full effect.",
+                "You may have proficiency in certain Saving Throws depending on your <a href='/passion'>Passion</a> or <a href='/feats'>Feats</a>, in which case, you may add your Proficiency Bonus to those kinds of Saving Throws.",
+                "Some DMs or situations may treat the results as binary, while others may have varying degrees of success and failure. Additionally, some DMs may take \"Natural 1s\" and \"Natural 20s\" into account, resulting in a particularly spectacular failure (like taking double damage) or success (like taking no damage when it would be half) if you roll a 1 or a 20 on the d20, respectively."
+              ],
+              "compactDetails": [
+                "<b>Strength Saves</b> are typically made in response to effects that involve pushing, pulling, or standing your ground. Examples of things that may require a Strength Save include a ceiling collapsing on you, <a href='https://www.jojowiki.com/Bastet'>Bastet</a>, <a href='https://www.jojowiki.com/The Hand'>The Hand</a>, <a href='https://www.jojowiki.com/Echoes#ACT3:_3_Freeze'>Echoes Act 3</a>, and <a href='https://www.jojowiki.com/Awaking_III_Leaves'>Awaking III Leaves</a>.",
+                "<b>Dexterity Saves</b> are typically made in response to effects that involve dodging and area of effect attacks. Examples of things that may require a Dexterity Save include a rain of arrows, an explosion, <a href='https://www.jojowiki.com/Sheer_Heart_Attack'>Sheer Heart Attack</a>, <a href='https://www.jojowiki.com/Planet_Waves'>Planet Waves</a>, and <a href='https://www.jojowiki.com/Boku_no_Rhythm_wo_Kiitekure'>Boku no Rhythm wo Kiitekure</a>.",
+                "<b>Constitution Saves</b> are typically made in response to effects that involve withstanding something. Examples of things that may require a Constitution Save include poison or disease, exposure to the elements, exhaustion, <a href='https://www.jojowiki.com/Sun'>The Sun</a>, <a href='https://www.jojowiki.com/Purple_Haze'>Purple Haze</a>, <a href='https://www.jojowiki.com/White_Album'>White Album</a>, and <a href='https://www.jojowiki.com/Scary_Monsters'>Scary Monsters</a>.",
+                "<b>Intelligence Saves</b> are typically made in response to effects that involve memory and perception. Examples of things that may require an Intelligence Save include memory manipulation, illusions, <a href=\"https://www.jojowiki.com/Heaven's_Door\">Heaven's Door</a>, <a href='https://www.jojowiki.com/Jail_House_Rock'>Jail House Rock</a>, <a href='https://www.jojowiki.com/California_King_Bed'>California King Bed</a>, and <a href='https://www.jojowiki.com/Paper_Moon_King'>Paper Moon King</a>.",
+                "<b>Wisdom Saves</b> are typically made in response to effects that involve willpower and control. Examples of things that may require a Wisdom Save include Fright, Charm, <a href='https://www.jojowiki.com/The_Lock'>The Lock</a>, <a href='https://www.jojowiki.com/Echoes#ACT1:_Sound_Generation'>Echoes Act 1</a>, <a href='https://www.jojowiki.com/Enigma'>Enigma</a>, and <a href='https://www.jojowiki.com/Survivor'>Survivor</a>.",
+                "<b>Charisma Saves</b> are typically made in response to effects that involve one's sense of self. Examples of things that may require a Charisma Save include Possession, <a href='https://www.jojowiki.com/Anubis'>Anubis</a>, <a href='https://www.jojowiki.com/Osiris'>Osiris</a>, <a href='https://www.jojowiki.com/Atum'>Atum</a>, and <a href='https://www.jojowiki.com/Civil_War'>Civil War</a>."
+              ]
+            },
+            {
+              "subheading": "Conditions",
+              "details": [
+                "Some attacks, abilities, or hazards may do more than just damage you. In some cases, they can inflict you with a negative effect called a Condition. Conditions can be caused in various ways and involve unique interactions or challenges to be overcome. However, most Conditions can be mitigated or shaken off in some way."
+              ],
+              "compactDetails": [
+                "<b>Blinded:</b> The afflicted cannot see, failing any sight-based Skill Check. Attack Rolls against Blinded targets have a +4 bonus, and Blinded creatures have a -4 penalty on Melee Attack Rolls. When making a ranged/thrown weapon Attack, a Blinded creature may only target creatures in its Short Range and has a -4 penalty to the Attack Roll. Blinded creatures also have a -4 penalty to Perception Checks. Creatures with skill in some other sense (such as <a href='/abilities?focus=Ripple_Perception'>Ripple Perception</a> or <a href='/feats?focus=Additional_Sense'>Additional Sense</a>) are immune to the penalties of Blindness if they're able to use it to detect what they're aiming or looking for.",
+                "<b>Charmed:</b> The afflicted cannot attack the charmer or target them with any harmful effects. The charmer has a +4 bonus on any Check to socially interact with the creature. The charmer may make a single Charisma Check against one or more creatures Charmed by them each turn as a Free Action. A Charmed creature cannot be ordered to do anything that would obviously cause them bodily harm.",
+                "<b>Confusion:</b> The afflicted has a -4 penalty to all mental Checks, Saves, and all Attack Rolls. In addition, they cannot perceive anything over 10 + Perception Bonus meters away from them, automatically failing Perception Checks past that. The -4 penalty does not apply to Saves to remove Confusion.",
+                "<b>Deafened:</b> The afflicted cannot hear, failing any sound-based Skill Check. They have a -2 penalty to Perception Checks. If a Deafened creature is Flanked, Flanking creatures gain an additional +4 to their Attack Rolls, rather than the typical +2. Flanking is explained more in the <a href='?focus=Combat'>Combat</a> section.",
+                "<b>Downed:</b> When someone's HP is reduced to 0, they become Downed. The afflicted becomes Incapacitated and Prone until they are tended to or healed in some way. They drop anything they were holding and may not take actions or perceive anything. Unless they were Downed through a Non-Lethal Strike, the afflicted must begin rolling Death Saving Throws on each of their Turns. Death Saves always have a DC of 10 and a +0 Modifier, but can benefit from effects such as <a href='/feats?focus=Aura_of_Awareness'>Aura of Awareness</a>. After three successes, they become Stable, no longer needing to make Death Saves unless they're damaged again while still at 0 HP. After three failed Saves, the afflicted dies. A Downed (but not dead) creature may be revived and lose this Condition through any source of healing, or someone using the Revive action to either Stabilize them (but keep them Downed) or bring them back to 1 HP. If a creature is damaged at any time while Downed, they must make a Death Save, even if they were Stable. Downed creatures that are Stable may benefit from Resting when able. Resting is explained more in the <a href='?focus=Misc.%20Rules'>Miscellaneous</a> section.",
+                "<b>Exhausted:</b> There are 6 levels of Exhaustion that a creature may be afflicted with. Each level grants a scaling -2 penalty to all d20 rolls. At level 4, the creature's Movement Speed is halved. At level 5, their Maximum HP is halved. At level 6, the creature is immediately Downed and must begin making Death Saves. If a creature with 6 levels of Exhaustion becomes Stable, they remain in a comatose state until they can remove a level of Exhaustion. An amount of Exhaustion levels equal to half your Constitution Modifier (minimum of 1) is removed at the end of each Long Rest. 1 level of Exhaustion may be removed during a Short Rest if the afflicted spends half of their total Hit Dice to do so. Resting is explained more in the <a href='?focus=Misc.%20Rules'>Miscellaneous</a> section. Exhaustion is typically resisted through Constitution Saves.",
+                "<b>Frightened:</b> The afflicted has experienced something scary that they'd rather avoid. A creature may typically resist becoming Frightened through Wisdom Saves. The effect differs depending on how much they failed the Save by:<ul class='sublist'><li>Fear (Failed by < 5): The afflicted has a -2 penalty to all d20 rolls while they can see or hear the source of their Fear.</li><li>Terror (Failed by 5+): The afflicted has a -4 penalty to all d20 rolls while they can see or hear the source of their Terror. Additionally, they can only willingly move closer to the source by an amount equal to half of their Movement Speed each Turn, unless they spend an Attack to move up to their full Movement Speed.</li><li>Panic (Failed by 10+): The afflicted has a -6 penalty to all d20 rolls while they can see or hear the source of their Panic. Additionally, they must use at least half of their Movement Speed to move away from the source each Turn, unless they spend an Attack to stand their ground or spend 2 or their full Action to move up to half their Movement Speed towards the source.</li></ul>A Frightened creature may spend their full Action or have an ally use the Help Action on them to reduce their Fright level by 1, removing the condition completely if at the lowest level (Fear).",
+                "<b>Grappled:</b> The afflicted is physically held by another creature. Their Movement Speed is reduced to 0, and they can be easily dragged along, allowing the grappler to move at half their Movement Speed while keeping the target Grappled. The grappler gains a +2 bonus to Attack Rolls against the Grappled creature. Grappled is typically resisted through Strength Saves and Checks or Dexterity Checks.",
+                "<b>Hypnotized:</b> The afflicted will do whatever they're ordered to do, performing these tasks to the best of their ability. They cannot follow orders that would cause them bodily harm, but do not have control over their faculties otherwise. Hypnotized creatures can perform complicated tasks like social encounters and critical thinking, appearing normal to strangers, but those familiar with the creature will know something is wrong. Hypnotized is typically resisted through Charisma Saves.",
+                "<b>Incapacitated:</b> The afflicted cannot act in any way.",
+                "<b>Invisible:</b> The afflicted cannot be seen visually, though they still have a thermal signature and will make noise when moving or interacting with objects. They have a +4 bonus to all Sneak Checks and a +2 bonus to Attack Rolls, and Attack Rolls against them have a -2 penalty. A creature that has another way of sensing an Invisible creature, such as Tremorsense, thermal vision, Blindsense, Truesight, etc., is unaffected by these penalties and bonuses when perceiving them.",
+                "<b>Overwhelmed:</b> The afflicted cannot gain buffs, bonuses, or temp HP from any source and has a -2 penalty to all Saving Throws. The -2 penalty does not apply to Saves to remove Overwhelmed. Overwhelmed is typically resisted through Intelligence Saves.",
+                "<b>Petrified:</b> The afflicted is transformed into a solid and inanimate substance, increasing their weight tenfold and stopping the aging process. They are considered Incapacitated, Restrained, and are unaware of their surroundings. They are also immune to all poison and disease, suspending (but not removing) any existing ailments. They are also considered Resistant to all damage.",
+                "<b>Poisoned:</b> The afflicted takes an amount of Poison damage equal to their Level at the beginning of each of their Turns. This damage cannot reduce the afflicted to less than half their Max HP. They also have a -4 penalty to all physical Checks, Saves, and Attack Rolls. Poisoned is typically resisted through Constitution Saves.",
+                "<b>Possessed:</b> The afflicted has a spirit or other force controlling their body and will do exactly what is ordered of them, performing these tasks to the best of their ability. They cannot perform complicated tasks like social encounters or critical thinking. Possession is typically more intense than Hypnosis, but over a shorter period of time. Possession is typically resisted through Charisma Saves.",
+                "<b>Prone:</b> The afflicted is collapsed on the ground. Melee Attacks against them have Advantage, and Ranged Attacks against them have Disadvantage. A Prone creature may spend half its Movement Speed to stand up and remove this Condition on their turn. Prone is typically resisted through Strength Saves and Checks or Dexterity Checks.",
+                "<b>Restrained:</b> The afflicted is held or bound in some way. Their Movement Speed becomes 0, and they may not benefit from any bonuses to their Movement Speed. Attack Rolls against Restrained creatures have a +2 bonus, and they have a -2 penalty to all Attack Rolls. Additionally, Restrained creatures have a -4 penalty to Strength and Dexterity Saving Throws. Restrained is typically resisted through Strength Saves.",
+                "<b>Staggered:</b> The afflicted has lost their footing. They have a -2 penalty to all Saving Throws, as well as Acrobatics and Athletics Checks made to avoid being Grappled or Shoved. Additionally, creatures targeting a Staggered creature have their Critical range increased by 1 (for example, allowing a 19 to act as a Critical Hit). The -2 penalty does not apply to Saves to remove Staggered.",
+                "<b>Stunned:</b> The afflicted has lost their focus, and their actions are restricted. When taking their turn, they must choose to either use their Action or Bonus Action, as well as have either half their Movement or their Reaction available. If the Stunned creature chooses to use their Action to Attack, they may only use up to half their number of Attacks, with a minimum of 1. The creature may still use any Free Actions they have available. A Stunned creature also has a -2 penalty to all Attack Rolls and a -4 penalty to all Strength and Dexterity Saving Throws. Creatures targeting a Stunned creature gain a +2 bonus to their Attack Rolls."
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Recovery",
+          "items": [
+            {
+              "subheading": "Resting",
+              "details": [
+                "Characters need time to recover and heal from previous encounters. Two ways of Resting allow your party to regain precious resources and health."
+              ],
+              "compactDetails": [
+                "<b>Short Rests</b> consist of a relatively short break, allowing the party to catch their breath and tend to their wounds. It takes far less time than a Long Rest, but does not result in a full restoration.",
+                "Short Rests normally take 1 hour. However, your DM may decide to shorten them further, to 10-20 minutes or even nearly instant, to encourage their use, in which case the DM may also choose to limit the number of short rests that can be taken in a day.",
+                "Short Rests allow you to spend and roll your Hit Dice, the quantity and quality of which are determined by your Level and Class, respectively, to regain an amount of HP equal to the result of the roll plus your Constitution Modifier for each die. Instead of healing, you may choose to spend your Hit Dice to remove Exhaustion, removing 1 level for spending half of your total Hit Dice, or 2 levels for spending all of them. You'll also regain any <a href='/abilities'>Abilities</a> or <a href='/feats'>Feats</a> that state their usage is recovered on a Short Rest.",
+                "<b>Long Rests</b> are essentially settling in for the night, taking around 8 hours to relax, wind down, and get a good night's rest, fully restoring your party.",
+                "Long Rests may be taken without sleeping, and you may still gain the benefits from it, but no levels of Exhaustion are removed during it, and you must make a DC 10 Constitution (NOT Durability) Saving Throw, taking a level of Exhaustion on failure.",
+                "Long Rests restore all of your character's expended resources, including all Hit Points, Hit Dice, usage of your limited <a href='/abilities'>Abilities</a> or <a href='/feats'>Feats</a>, etc."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Combat",
+      "sections": [
+        {
+          "heading": "Attacking",
+          "items": [
+            {
+              "subheading": "Armor Class",
+              "details": [
+                "Armor Class (AC) is the value that must be met by an Attack Roll to hit a target, similar to a Skill Check's Difficulty Class. Rolls that are equal to or higher than the target's AC result in a hit that deals damage, while rolls lower than the AC miss and deal no damage. Because standard armor is not common in the world of JoJo's (or in modern settings in general), every character has built-in Unarmored Defense, resulting in an AC equal to 10 + two of either your Dex, Con, or Wis Mods.",
+                "<a href='/classes?focus=Stands'>Stands</a> also have their own Armor Class (Stand AC), which determines whether an Attack Roll hits the Stand (a \"Stand Hit\"), the User (a \"Direct Hit\"), or misses. If the Stand is on its own and not protecting anyone, the Stand AC acts like a normal AC and results in either a hit or a miss. If it is protecting someone within 2m, though, landing a blow between the Stand AC and the AC of the creature being protected results in a Stand Hit, which allows the damage to be reduced by Stand Damage Reduction (DR) before passing the remaining damage to the User. Only hitting above both ACs results in a Direct Hit that can't be reduced and redirected. Keep in mind that most Stands cannot be damaged by mundane weapons, so those will only deal any damage at all on a Direct Hit. Stand AC and DR are explained further on the <a href='/classes?focus=Stands'>Stands</a> page.",
+                "Head Armor Class (Head AC) applies to Undead creatures. These creatures have a separate HP pool for their head, which is harder to hit, but destroying their head specifically is the only way to actually kill them. Hits below their Head AC only damage their body, but hits that meet their head AC can damage either their head or their body. Their head can also be damaged instead of their body if they're forced to make a Saving Throw and fail by an amount equal to or higher than their Proficiency Bonus."
+              ]
+            },
+            {
+              "subheading": "Attack Rolls",
+              "details": [
+                "In order to damage something, an Attack Roll must be made. To do so, roll a d20 and add the relevant Modifier (usually specified by the weapon being used) and your Proficiency Bonus if applicable. If the result is equal to or higher than your target's AC, the Attack lands and deals damage. Otherwise, it's a miss and deals no damage. For example, a character with a +3 PB and +4 Str making an Unarmed Strike would roll a d20 and add +7 to the roll, possibly resulting in 12+7=19, which would hit anything with an AC of 19 or lower.",
+                "By default, you only get 1 Attack per Action (see <a href='?focus=The_Turn'>The Turn</a>), but you may get more through the <a href='/feats?focus=Trained_Combatant'>Trained Combatant</a> Feat or for each 50 Speed your <a href='/classes?focus=Stands'>Stand</a> has. The maximum number of Attacks per Action for every character is 10."
+              ]
+            },
+            {
+              "subheading": "Critical Hits and Misses",
+              "details": [
+                "When making an Attack Roll, you can potentially roll a \"Natural 1\" or \"Natural 20\", which occurs when you roll the lowest or highest possible value on the d20 before adding any Modifiers. Natural 20s result in a guaranteed hit regardless of the target's AC and also deal double damage. Natural 1s, on the other hand, result in a guaranteed miss regardless of the target's AC.",
+                "It's possible to have <a href='/abilities'>Abilities</a> or <a href='/feats'>Feats</a> that increase your Critical Hit Range. These can stack with each other as well, further lowering the natural roll that would result in a Critical Hit. For example, if you have both <a href='/feats?focus=Rifle_Specialization'>Rifle Specialization</a> and <a href='/abilities?focus=Focused_Hatred'>Focused Hatred</a>, you can Crit on any roll that's naturally 17 or higher."
+              ]
+            },
+            {
+              "subheading": "Surprise Attacks",
+              "details": [
+                "If you manage to catch a foe unaware, you may be able to perform a Surprise Attack. This Attack Roll has Advantage and guarantees you go first in Initiative order without the need for an Initiative Roll. You may either choose to take a full Surprise Turn for yourself, or perform only 1 Attack and allow your allies to also make 1 Attack each before beginning the normal round at the Top of Initiative."
+              ]
+            },
+            {
+              "subheading": "Non-Lethal Damage",
+              "details": [
+                "When dealing damage to a creature, you may choose to deal Non-Lethal damage. If this damage reduces them to 0 HP still makes them Downed, but keeps them Stable so that they don't have to roll any Death Saves. This essentially knocks them unconscious, rather than mortally wounding or killing them."
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Types of Attacks",
+          "items": [
+            {
+              "subheading": "Unarmed Strikes",
+              "details": [
+                "Unarmed Strikes are as simple as hitting something with your bare hands or feet, typically punches or kicks. You are considered Proficient in Unarmed Strikes by default. Unarmed Attack Rolls can be made with either Strength or Dexterity, and deal 1d4 + Str (NOT Dex) Mod Bludgeoning damage. These \"weapons\" are considered to have the Open Hand, Light, and Fist <a href='/weapons#attributes-list'>attributes</a>."
+              ]
+            },
+            {
+              "subheading": "Weapon Attacks",
+              "details": [
+                "When dealing damage using a <a href='/weapons'>weapon</a>, the Modifiers added to the Attack Roll and damage amount and type dealt are dependent on what kind of weapon it is. You may have Proficiency in a type of weapon, allowing you to add your PB to the Attack Roll as well. For example, a character with <a href='/feats/?focus=Professional_Weapon_Training'>Professional Weapon Training</a> (gives Simple and Martial Proficiency) with a Club (a Simple-Type weapon), +2 PB, and +3 Str, would have +5 to the Attack Roll and would deal 1d6+3 Bludgeoning damage.",
+                "Every weapon has a Type and a Specialization, which determines whether or not you have Proficiency in it and can also allow you to do more with the weapon if you have the matching <a href='/feats/?focus=Weapon_Feat'>Feats</a>.",
+                "Every weapon has several distinct <a href='/weapons#attribute-list'>attributes</a>. These attributes can affect how you use a weapon or the additional effects it has on a hit. Be sure to read what all of your weapon's attributes do, so you know how to use it.",
+                "Some weapons have prerequisites that must be met to be able to use them. You may attempt to use a weapon for which you don't meet the prerequisite, but Attack Rolls made with it will have Disadvantage."
+              ]
+            },
+            {
+              "subheading": "Improvised Weapons",
+              "details": [
+                "Objects that aren't traditional 'weapons' can still be picked up and used to hit people, of course. Doing so results in an Improvised Weapon Attack, which uses Strength for Attack Rolls and deals 1d4 + Str Mod damage. These \"weapons\" are considered to have the Thrown (5/15) <a href='/weapons#attributes-list'>attribute</a> and Melee/Thrown Specialization unless otherwise specified.",
+                "Some Improvised Weapons may have different damage values and attributes, examples of which can be found on the <a href='/weapons'>Weapons</a> page."
+              ]
+            },
+            {
+              "subheading": "Natural Weapons",
+              "details": [
+                "Beasts and similar creatures have weapons built into their anatomy, such as claws, fangs, spikes, or a tail. Attack Rolls with these weapons can be made with either Strength or Dexterity, but only use Strength as the damage Modifier.",
+                "Natural weapons count as Unarmed Strikes for the sake of interactions that would enhance one's Unarmed Strikes (<a href='/classes?focus=Ripple'>The Ripple</a>, <a href='/feats?focus=Martial_Arts'>Martial Arts</a>, etc)."
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Positioning and Measurement",
+          "items": [
+            {
+              "subheading": "Flanking",
+              "details": [
+                "When you and an ally are on opposite sides of a target in Melee Range, you and the ally both gain a +2 bonus to Melee Attack Rolls against that target.",
+                "You cannot Flank with your own <a href='/classes?focus=Stands'>Stand</a> unless it is a truly separate entity from you (<a href='/classes?focus=Remote'>Remote-Types</a>, <a href='/classes?focus=Independent'>Independent-Types</a>, and <a href='/feats?focus=Sentient_Stand'>Sentient</a> or <a href='/feats?focus=Uncontrollable_Stand'>Uncontrollable</a> Stands)."
+              ]
+            },
+            {
+              "subheading": "Measuring with Metric",
+              "details": [
+                "For the sake of keeping calculations simple (and reflecting JoJo's canon), this system uses the Metric System for measurement. This means measuring distance in Meters, mass in Kilograms, and temperature in Celsius.",
+                "Distances are typically measured and tracked on a grid system using either hexagons or squares, or even just a ruler. It is common for a battlemap to be used, especially for combat, to keep track of where everyone and everything is. It doesn't matter what method is used, so long as it remains consistent for combat purposes.",
+                "When moving diagonally an a square grid, 1 diagonal square is considered 1m while 2 diagonal squares are considered 3m. For example, moving 5 diagonal units on a square grid should be considered to cost 7m. This simplification is intended to avoid doing complex trigonometry mid-combat, while still being close enough to the correct distance at reasonable scales. This is not an issue with hex grids."
+              ]
+            },
+            {
+              "subheading": "Area of Effect Shapes",
+              "details": [
+                "Some attacks or effects are large enough that they hit an entire area, rather than a single target. These areas of effect can have several different shapes, depending on the source. The Point of Origin for these shapes must be within the range defined by the source of the effect. If the Point of Origin is on the edge of the created shape (not a Cube or Sphere), the character that initiated the effect may decide whether or not that point is hit by the effect."
+              ],
+              "compactDetails": [
+                "<b>Cone:</b> A Cone extends forward from its Point of Origin. The width of a Cone at the end is always equal to its length. For example, a 5m Cone would extend 5m from its Point of Origin, with the width gradually increasing until it ends with the curve of a circle with a 5m diameter.",
+                "<b>Cube:</b> A Cube extends outward from its Point of Origin in six perpendicular directions. The Point of Origin is always in the exact center of the shape, and all sides of the shape are equal in size. For example, a 5m Cube would extend 2.5m upwards, downwards, forwards, backwards, left, and right of its Point of Origin.",
+                "<b>Cylinder:</b> A Cylinder is composed of two parallel circles and the area between them, like a tube. The Point of Origin is always in the center of one of the circles. For example, a 5m Cylinder could extend in a circle with a 2.5m radius around its Point of Origin, as well as 5m upwards from that circle.",
+                "<b>Line:</b> A Line extends forward from its Point of Origin. If the width of the Line is not defined, it can be assumed to be 1m. For example, a 5m Line would extend 5m from its Point of Origin and include any area within 0.5m on either side of the Line.",
+                "<b>Sphere:</b> A Sphere extends outward from its Point of Origin equally in all directions. The Point of Origin is always in the exact center of the shape. For example, a 5m Sphere would extend 2.5m in all directions around its Point of Origin."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Environment",
+      "sections": [
+        {
+          "heading": "Environmental Effects",
+          "items": [
+            {
+              "subheading": "Difficult Terrain",
+              "details": [
+                "Any obstacle that would reduce your ability to easily move through it is considered Difficult Terrain. Moving across Difficult Terrain costs double Movement Speed, so 2m of Movement Speed for every meter moved. Some Difficult Terrain may be even harder to move through, scaling the cost further. To indicate this, you may see notation such as \"Difficult Terrain (x3)\", which costs triple Movement Speed, etc."
+              ]
+            },
+            {
+              "subheading": "Light and Darkness",
+              "details": [
+                "Areas may have varying degrees of brightness throughout them, which could potentially restrict the ability to see within the area. There are varying levels of brightness used to describe these conditions:"
+              ],
+              "compactDetails": [
+                "<b>Bright Light:</b> Everything is clearly illuminated by light, making it easy to see. Checks to perceive using sight may be made normally.",
+                "<b>Dim Light:</b> Things are more difficult to see and make out, with smaller light sources being used to see into surrounding darkness. Checks to perceive using sight may be made with Disadvantage.",
+                "<b>Darkness:</b> It is impossible to see anything, as the area is completely enveloped in darkness. Checks to perceive using sight may not be made at all, and creatures in the area are considered to have the Blinded <a href='?focus=Damage%20%26%20Conditions'>Condition</a> unless they are immune to it or have Darkvision.",
+                "<b>Obscured Space:</b> It is impossible to see anything, as the area is completely enveloped in some form of obscurity, such as smoke, fog, or blindingly bright light. Checks to perceive using sight may not be made at all, and creatures in the area are considered to have the Blinded <a href='?focus=Damage%20%26%20Conditions'>Condition</a> unless they are immune to it."
+              ]
+            },
+            {
+              "subheading": "Deep Water",
+              "details": [
+                "Creatures in Deep Water have Disadvantage on Melee Attacks that don't deal Piercing damage and cannot use Ranged/Thrown weapons that don't deal Piercing damage at all. Ranged/Thrown weapons that deal Piercing damage may be used, but attempting to use their Long Range inflicts double Disadvantage. Creatures with a Swimming Speed may ignore the Melee Attack restriction and may use Piercing Ranged/Thrown weapons at Long Range without doubling the Disadvantage.",
+                "Everything in Deep Water takes half damage from Fire, and creatures have Disadvantage on Saving Throws against Lightning and Thunder Damage, as well as AOE effects of <a href='/classes?focus=Ripple'>The Ripple</a>."
+              ]
+            },
+            {
+              "subheading": "Improvising Effects and Damage",
+              "details": [
+                "Sometimes environmental effects or damage might have to be improvised based on the unique nature of the environment in question. The effects of the environment can have a wide variety, but the following guide may be used to determine damage dealt by it.",
+                "Damage should scale based on the Severity of the environmental effect as well as the character's Level (via their Proficiency Bonus). Players will often be able to make a Save or Skill Check to attempt to either take no damage or half damage instead."
+              ],
+              "other": [
+                "Severity Examples:<br>",
+                "<ul class='sublist'><li>Inconvenience: You trip into a thorny bush.</li><li>Setback: You fall into a pit of broken glass.</li><li>Dangerous: You fall into a pit of sharp spikes.</li><li>Deadly: You fall into a pit of sharp spikes coated with potent venom.</li></ul>",
+                "<div data-simplebar><table class='table table-striped'><thead><tr><th>PB (Level)</th><th>Inconvenience</th><th>Setback</th><th>Dangerous</th><th>Deadly</th></tr></thead><tbody><tr><td>+2 (Level 1-4)</td><td>4 (1d6)</td><td>9 (2d8)</td><td>16 (3d10)</td><td>26 (4d12)</td></tr><tr><td>+3 (Level 5-8)</td><td>7 (2d6)</td><td>18 (4d8)</td><td>33 (6d10)</td><td>52 (8d12)</td></tr><tr><td>+4 (Level 9-12)</td><td>11 (3d6)</td><td>27 (6d8)</td><td>49 (9d10)</td><td>78 (12d12)</td></tr><tr><td>+5 (Level 13-16)</td><td>14 (4d6)</td><td>36 (8d8)</td><td>66 (12d10)</td><td>104 (16d12)</td></tr><tr><td>+6 (Level 17+)</td><td>18 (5d6)</td><td>45 (10d8)</td><td>82 (15d10)</td><td>130 (20d12)</td></tr></tbody></table></div>"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Interacting with the World",
+          "items": [
+            {
+              "subheading": "Occupying Space",
+              "details": [
+                "While a character is positioned in a square meter space on the game map, that doesn't necessarily mean they physically take up that full square's space, but rather that they control that space. A character cannot move through another creature's controlled space unless they're allied, allowed to do so, and the same Size Category or smaller than the creature already in that space. Moving through another creature's space like this counts as moving through Difficult Terrain. Size Categories are explained more in the <a href='/rules/?focus=Misc.%20Rules'>Miscellaneous</a> section."
+              ]
+            },
+            {
+              "subheading": "Movement Options",
+              "details": [
+                "Every creature has a Movement Speed which allows them to walk that amount of meters. However, some creatures may also have another kind of Movement Speed, and may instead choose to spend their Movement Speed to move in that manner. Movement Speed can be split up as desired, but always uses the same proportion compared to normally walking. For example, a creature with 10m Movement Speed and 5m Burrowing Speed could choose to walk 10m, burrow 5m, or walk 6m and burrow 2m, etc."
+              ],
+              "compactDetails": [
+                "<b>Burrowing:</b> A character without a specified Burrowing Speed cannot burrow. Burrowing Speed can be used to travel through mud, dirt, and other relatively soft materials by digging into and through it. Stone, concrete, and other harder materials can also be burrowed through, but count as Difficult Terrain.",
+                "<b>Climbing:</b> A character without a specified Climbing Speed can still climb, but doing so counts as moving through Difficult Terrain. Climbing Speed can be used to vertically scale surfaces, but requires those surfaces to have sufficient footholds and supports to do so.",
+                "<b>Flying:</b> A character without a specified Flying Speed cannot fly. Flying Speed can be used to freely move through the air, but requires continuous movement to do so unless the ability to hover is specified.",
+                "<b>Swimming:</b> A character without a specified Swimming Speed can still swim, but doing so counts as moving through Difficult Terrain. Swimming Speed can be used to freely move through or across water."
+              ]
+            },
+            {
+              "subheading": "Cover",
+              "details": [
+                "By strategically positioning yourself behind an object in your environment, you can gain Cover from attacks. There are three stages of Cover that grant increasing levels of protection, which takes the form of a bonus to your AC and Dexterity Saving Throws. Half Cover grants +2, Three-Quarters Cover grants +5, and Full Cover prevents you from being targeted entirely.",
+                "Cover only works if the object granting it is between you and your attacker, generally only protecting you in a single direction."
+              ]
+            },
+            {
+              "subheading": "Falling",
+              "details": [
+                "For every 3 meters a creature falls, they take 1d6 Bludgeoning damage (maximum 20d6) when hit the ground. Upon hitting the ground, they must make a Dexterity Saving Throw with a DC of 10 + the number of d6s of fall damage they would take. On failure they take the full damage and fall Prone, but on success they only take half damage and do not fall Prone.",
+                "Falling occurs at a speed of 150 meters per Turn. This means that falling more than 150m results in taking more than one Turn to hit the ground. While falling, you may not use any Movement, unless you have a Flying Speed, but may otherwise act normally."
+              ]
+            },
+            {
+              "subheading": "Drowning or Suffocating",
+              "details": [
+                "Without air, you can survive for an amount of rounds equal to your Constitution Modifier (minimum 1) without penalty. Past that, at the end of each Turn, you must make a Constitution Saving Throw with a DC of 10 + the number of total turns you've gone without air. On failure, you gain 1 level of Exhaustion, or 2 if you fail by 10 or more. Exhaustion gained in this way does not stack with other sources, and if you have other levels the higher one determines the applied effects. Once you are able to breathe again, any Exhaustion gained in this way is removed.",
+                "While unable to breathe, <a href='/classes?focus=Ripple'>Ripple Users</a> may not regain spent Ripple Points, and lose 1 RP at the end of each Turn without air.",
+                "Constructs and Undead do not need to be able to breathe unless they also have a living component (such as <a href='/races?focus=Cyborg'>Cyborgs</a>), and are thus immune to the above effects."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "DM Tips",
+      "sections": [
+        {
+          "heading": "",
+          "items": [
+            {
+              "subheading": "Basic Tips for Being a Dungeon Master",
+              "details": [],
+              "other": [
+                "<p>Being a Dungeon Master for this game can be quite challenging and time-consuming, but also quite rewarding. You will have to create all the Non-Player Characters (NPCs), as well as the entire world, story, and all environments, yourself.</p>",
+                "<p>You'll need to keep the rules in mind and be sure to remind players how mechanics are supposed to work when they try to do something, but avoid removing their agency. You may tweak or create rules as you need, but try to remain consistent and fair.</p>",
+                "<p>Most characters have some sort of unique technique or ability that is unique to them and in line with their theme and powers. When creating an ability for a character, you'll need to find a balance of strength and versatility. The stronger an ability is, the more limited it should be, and the more versatile an ability is, the weaker it should be.</p>",
+                "<p>Another thing to keep in mind is the importance of Inspiration. Inspiration should be given out as a reward for good and engaging roleplay, or creative use of their abilities or environment. Ideally, each player should receive 1-3 points of Inspiration per session. If you want to keep Inspiration equal, you can choose to instead give everyone in the party a point whenever the party does something cool, rather than focusing on individuals.</p>",
+                "<p>For more advice on being a DM for this system, you can check out our full DM Guide: {COMING SOON}</p>"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

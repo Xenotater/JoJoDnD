@@ -1,18 +1,247 @@
-.content {
+#display {
+    position: relative;
+    z-index: 1;
+    padding: 24px 64px;
+    min-height: 1000px;
+}
+
+#tabsColumn {
+    margin-top: 70px;
+}
+
+.rulesTab {
+    position: relative;
+    left: 75px;
+    height: 50px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    border: 1px black solid;
+    border-left: none;
+    margin: 5px 0;
+    background-color: mediumpurple;
+    clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
+    z-index: 0;
+    font-weight: bold;
+}
+
+.rulesTab::before {
+    content: "";
+    height: 52px;
+    width: 25px;
+    background-color: black;
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+    margin-right: 12px;
+}
+
+.rulesTab::after {
+    position: absolute;
+    right: 0;
+    content: "";
+    height: 52px;
+    width: 25px;
+    background-color: black;
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 100% 50%, 0% 0%);
+}
+
+.rulesTab:hover {
+    left: 25px;
+    z-index: 2;
+    background-color: rgb(132, 97, 202);
+    cursor: pointer;
+}
+
+.currentTab {
+    left: 25px;
+    z-index: 2;
+    background-color: rgb(115, 80, 185);
+}
+
+.currentTab:hover {
+    background-color: rgb(115, 80, 185);
+    cursor: initial
+}
+
+.rulesTab span {
+    max-width: 100px;
+}
+
+.display-title {
     margin-top: 0;
-    padding: 1rem;
-    border-radius: 50px;
 }
 
-section {
-    border-bottom: 2px dashed purple;
-    margin: 10px;
+#display h5 {
+    margin-top: 1em;
+    margin-bottom: 8px;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
-section#last {
-    border-bottom: none;
+#display p {
+    margin: 0;
 }
 
-ol li {
-    float: none;
+.indent {
+    text-indent: 2em;
+    margin-bottom: 4px;
+}
+
+.sublist {
+    display: inline-block;
+    margin: 0;
+}
+
+.compact {
+    margin-top: 4px;
+}
+
+#display .otherWrapper p {
+    margin-bottom: 16px;
+}
+
+.otherWrapper [data-simplebar] {
+    display: block;
+}
+
+.simplebar-placeholder {
+    display: none; /* not sure why this is acting weird */
+}
+
+.otherWrapper:has(.expTable) {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.otherWrapper table {
+    margin-top: 8px;
+}
+
+.table th {
+    background-color: darkgray;
+    border: 1px solid black;
+}
+
+.table td {
+    border: 1px solid black;
+}
+
+.expTable {
+    width: 35%;
+}
+
+.expTable th {
+    background-color: gold;
+    border: 1px solid black;
+}
+
+.expTable td {
+    background-color: palegreen;
+    border: 1px solid black;
+}
+
+.middle {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1400px) {
+    .rulesTab {
+        left: 25px;
+    }
+
+    .rulesTab:hover, .currentTab {
+        left: -25px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .rulesTab {
+        left: 15px;
+    }
+
+    .rulesTab:hover, .currentTab {
+        left: -25px;
+    }
+}
+
+@media (max-width: 991px) {
+    .rulesTab {
+        left: -25px;
+        width: 200px;
+        clip-path: polygon(88% 0, 100% 50%, 88% 100%, 0% 100%, 12% 50%, 0% 0%);
+    }
+
+    .rulesTab:hover, .currentTab {
+        left: -45px;
+    }
+}
+
+@media (max-width: 767px) {
+    .rulesTab {
+        left: -55px;
+    }
+
+    .rulesTab:hover, .currentTab {
+        left: -70px;
+    }
+
+    #display {
+        padding: 32px;
+        padding-left: 45px;
+    }
+}
+
+@media (max-width: 650px) {
+    .row:has(#tabsColumn) {
+        position: relative;
+    }
+
+    #tabsColumn {
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        display: flex;
+        margin-top: 0;
+        border: 5px solid purple;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .col-10 {
+        width: 100%;
+    }
+
+    #display {
+        margin-top: 0;
+        padding-top: 75px;
+    }
+
+    .rulesTab {
+        width: 12.5%;
+        clip-path: none;
+        left: 0 !important;
+        border-top: none;
+        border-bottom: none;
+        margin: 0;
+        padding: 5px;
+        font-size: 12px;
+        width: fit-content;
+    }
+
+    .rulesTab::before, .rulesTab::after {
+        border: none;
+        clip-path: none;
+        width: 0;
+        height: 0;
+        margin: 0;
+    }
+
+    .rulesTab:first-child {
+        border-left: none;
+        border-radius: 15px 0 0 0;
+    }
+
+    .rulesTab:last-child {
+        border-right: none;
+        border-radius: 0 15px 0 0;
+    }
 }

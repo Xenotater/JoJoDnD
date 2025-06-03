@@ -18,67 +18,68 @@
         <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-EQW3R4RE6P"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-EQW3R4RE6P');
-        </script>
-
-        <!-- Adsense -->
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282768297104356" crossorigin="anonymous">
-            (adsbygoogle = window.adsbygoogle || []).push({
-                google_ad_client: "ca-pub-4282768297104356",
-                enable_page_level_ads: true,
-                overlays: {bottom: true}
-            });
-        </script>
-
         <script async src="nav.js"></script>
+        <script async src="main.js"></script>
     </head>
     
     <body>
         <div id="header"></div>
         <div class="container">
             <img src="Assets/logo.webp" alt="jojodnd" id="logo" class="img-fluid">
-            <h1>A Module for Dungeons & Dragons 5th Edition based upon JoJo's Bizarre Adventure</h1>
+            <h1>A Tabletop Game based upon JoJo's Bizarre Adventure</h1>
 
             <div class="divider"></div>
 
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <h3>Including Stand Users, Vampires, Pillar Men, and more, this extensive module for D&D 5th Edition allows the creation of your very own Bizarre Adventure!</h3>
-                        <h4>Use the tabs at the top of the page to navigate the module's resources and create a world filled with characters with any of the races and abilities from JoJo's.</h4>
-                        <h4>New to the module? Start with the <a href="/rules">Rules</a> page!</h4>
+                        <h3>Including Stand Users, Vampires, Pillar Men, and more, this extensive D&D-inspired system allows the creation of your very own Bizarre Adventure!</h3>
+                        <h4>Use the tabs at the top of the page to navigate the system's resources and create a world filled with characters with any of the races and abilities from JoJo's.</h4>
+                        <h4>New to the styles? Start with the <a href="/rules">Rules</a> page!</h4>
                         <div class="divider"></div>
                         <p><u>Written by Maggy Bledsoe</u>, playtested by Hayden C., Kyler Froman, Donovan Hord, Thalia Huebner, and Ty Ostrander, edited by Kyler Froman and Carol C.</p>
                         <p>
-                            Huge thanks to our supporters: PsychicPieDragon, Coconut, and sam man<br>
+                            Huge thanks to our supporters: PsychicPieDragon, Coconut, sam man, Crumplysaucer, Girt Dog, Nefarious Pooch, and DCC_Jeephunk<br>
                             Want to support us? Check out our <a href="https://www.patreon.com/user/posts?u=122316948"><b>Patreon!</b></a>
                         </p>
 
-                        <p><b>Character Sheets</b>, <b>Campaign Examples</b>, and the <b>PDF Version</b> of the module can be found on the <a href="/resources">Resources</a> page.</p>
+                        <p><b>Character Sheets</b>, <b>Campaign Examples</b>, and the <b>PDF Version</b> of the system can be found on the <a href="/resources">Resources</a> page.</p>
 
                         <p>If you have any questions, comments, or want to join our community, check out our Discord and Subreddit:</p>
 
                         <!-- external media icons from respective sources and used within each entity's branding guidelines -->
                         <div class="row center">
                             <div class="col-sm-6">
-                                <a href="https://discord.gg/nmgSjPW8xs" target="_blank">
-                                    <img src="Assets/discord.webp" alt="discord" class="socialButton img-fluid">
+                                <a id="discordEmbed" class="socialButton" href="https://discord.gg/nmgSjPW8xs" target="_blank">
+                                    <div class="socialHead">
+                                        <span class="socialPrompt">Join Our Community Discord!</span>
+                                        <img class="socialLogo" src="Assets/discord-icon.webp" alt="discord">
+                                    </div>
+                                    <div class="socialBody">
+                                        <img class="socialIcon" src="Assets/smallbg.webp" alt="JoJoDnD Discord">
+                                        <div class="socialInfo">
+                                            <span class="socialName">JoJo's Bizarre Tabletop Game</span>
+                                            <span class="socialMembers"></span>
+                                        </div>
+                                    </div>
                                 </a>
                             </div>
                             <div class="col-sm-6">
-                                <a href="https://www.reddit.com/r/jojodnd/" target="_blank"> 
-                                    <img src="Assets/reddit.webp" alt="reddit" class="socialButton img-fluid">
+                                <a id="redditEmbed" class=socialButton href="https://www.reddit.com/r/jojodnd/" target="_blank">
+                                    <div class="socialHead">
+                                        <span class="socialPrompt">Visit Our Subreddit!</span>
+                                        <img class="socialLogo" src="Assets/reddit-icon.webp" alt="reddit">
+                                    </div>
+                                    <div class="socialBody">
+                                        <img class="socialIcon" src="Assets/smallbg.webp" alt="JoJoDnD Reddit">
+                                        <div class="socialInfo">
+                                            <span class="socialName">r/jojodnd</span>
+                                            <span class="socialMembers"></span>
+                                        </div>
+                                    </div>
                                 </a>
                             </div>
                         </div>
-
                         <p>You can also contact us through <a href="/resources/#contact">this form</a>.</p>
 
                         <p id="credit"><small>JoJo's Bizarre Adventure was created by Hirohiko Araki and Dungeons & Dragons was created by Wizards of the Coast</small></p>
@@ -89,7 +90,7 @@
             <div class="divider"></div> 
 
             <address id="footer">
-                <p>Site last updated to version 1.12.0.1 on 6/2/24 by Kyler Froman</p>
+                <p id="versionInfo">Site last updated to version {vNum} on {vDate} by Kyler Froman</p>
                 <a href="mailto:xenotater@gmail.com">xenotater@gmail.com</a> | <a href="/resources/privacy">Privacy Policy</a>
             </address>
         </div>

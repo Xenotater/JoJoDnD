@@ -21,7 +21,7 @@
         "extra": [
             {
                 "name": "Honed Body",
-                "desc": "Ripple Users' bodies are much better honed than the bodies of most Humans. Rather than a maximum of 20 in each Ability Score, Ripple users have a maximum of 24 for their Strength, Dexterity, and Constitution"
+                "desc": "Ripple Users' bodies are much better honed than the bodies of most Humans. Rather than a maximum of 20 in each Ability Score, Ripple users have a maximum of 24 for their Strength, Dexterity, and Constitution."
             },
             {
                 "name": "Ripple Conductors",
@@ -29,15 +29,12 @@
             },
             {
                 "name": "Ripple Points",
-                "desc": "Each Ripple User has an amount of Ripple Points equal to their Level in Ripple. If a Ripple User is able to comfortably breathe, they gain 1 Ripple Point at the top of initiative"
+                "desc": "Each Ripple User has an amount of Ripple Points equal to their Level in Ripple. If a Ripple User is able to comfortably breathe, they gain 1 Ripple Point at the top of Initiative. When unable to breathe, Ripple Users are not able to regain Ripple Points and lose one Point per Turn."
             },
             {
                 "name": "Undead's Bane",
-                "desc": "Any Radiant Damage you deal is doubled against Undead."
+                "desc": "Any damage dealt by The Ripple is doubled against Undead, and <a href='/races?focus=Pillar_Man'>Pillar Men</a> take extra damage equal to their Level."
             }
-        ],
-        "notes": [
-            "When unable to breathe, Ripple Users are not able to regain Ripple Points."
         ],
         "theme": "sun",
         "level": {
@@ -46,7 +43,12 @@
                     "Unarmed Strikes deal Radiant damage"
                 ],
                 "linkFeatures": [
-                    "Healing Hands"
+                    "Healing Hands",
+                    "Spiritual Ripple (Variant Rule)",
+                    "Sunshield"
+                ],
+                "featFeatures": [
+                    "Equalizer"
                 ]
             },
             "2": {
@@ -68,13 +70,13 @@
                     "Ability Score Improvement"
                 ],
                 "linkFeatures": [
+                    "Custom Ripple Technique",
                     "Slowed Aging",
                     "Ripple Possession"
                 ]
             },
             "4": {
                 "linkFeatures": [
-                    "Spiritual Ripple (Variant Rule)",
                     "Rippling Weapon"
                 ],
                 "featFeatures": [
@@ -88,7 +90,6 @@
             },
             "5": {
                 "linkFeatures": [
-                    "Custom Ripple Technique",
                     "Ripple Regeneration",
                     "Ripple Perception"
                 ],
@@ -116,7 +117,7 @@
             },
             "8": {
                 "linkFeatures": [
-                    "Scarlet Overdrive",
+                    "Elemental Overdrive",
                     "OR",
                     "Sendo Overdrive"
                 ],
@@ -249,7 +250,7 @@
             {
                 "name": "Rules of Stands",
                 "content": [
-                    "<ul><li>A single person can only have one Stand (Hive Stands are the same Stand, just split up into much smaller parts)<\/li><li>Whatever damage is inflicted upon the Stand or the User is also dealt to the other<\/li><li>Only Stand Users can sense Stands<\/li><li>Stand Users can interact and speak with spirits or ghosts<\/li><li>Only Stands can defeat Stands, physical objects simply pass through or bounce off of all Stands except Enhancement or Independent types<\/li><li>If the User is knocked unconscious and the Stand is not a Revenge-Type, the Stand and it's Ability will disappear until resummoned by the User when conscious<\/li><li>Stand Energy is only consumed if the Ability actually affects something<\/li><li>If a Stand User fights a Non-Stand User, the Stand User gets Advantage on all attacks using their Stand<\/li><li>If a Stand User is Surprised and does not have their Stand active, they may not use it to defend themselves.<\/li><\/ul>"
+                    "<ul><li>All Stands have the \"Stand\" Creature Type.</li><li>A single person can only have one Stand (Hive Stands are the same Stand, just split up into much smaller parts)<\/li><li>Whatever damage is inflicted upon the Stand or the User is also dealt to the other<\/li><li>Only Stand Users can sense Stands<\/li><li>Stand Users can interact and speak with spirits or ghosts<\/li><li>Only Stands can defeat Stands, physical objects simply pass through or bounce off of all Stands except Enhancement or Independent types<\/li><li>If a Stand User fights a Non-Stand User, the Stand User gets Advantage on all attacks using their Stand<\/li><li>If a Stand User is Surprised and does not have their Stand active, they may not use it to defend themselves.<\/li><li>Unless otherwise specified, a Stand may only be summoned\/dispelled within 2m of its User. Remote-Types are not restricted in this way, instead summoning within 15m of whatever triggered them.<\/li><li>If the User is knocked unconscious and the Stand is not a Revenge-Type, the Stand and it's Ability will disappear until resummoned by the User when conscious<\/li><li>Stand Energy is only consumed if the Ability actually affects something<\/li><\/ul>"
                 ]
             },
             {
@@ -257,7 +258,7 @@
                 "content": [
                     "<p class='center label'><b>Ability Conversion Chart:<\/b><\/p><table class='table table-striped minor'><thead><tr><th>Ability<\/th><th>Stand Ability<\/th><\/tr><\/thead><tbody><tr><td>Strength<\/td><td>Power<\/td><\/tr><tr><td>Dexterity<\/td><td>Precision<\/td><\/tr><tr><td>Constitution<\/td><td>Durability<\/td><\/tr><tr><td>Intelligence<\/td><td>Range<\/td><\/tr><tr><td>Wisdom<\/td><td>Speed<\/td><\/tr><tr><td>Charisma<\/td><td>Stand Energy<\/td><\/tr><\/tbody><\/table>",
                     "<p><b>Stand Stat Modifiers: <\/b>Stand stats are based on the User's stats. To get the Modifiers for these Stats, simply divide their Score by 10.<\/p>",
-                    "<p><b>Damage Reduction: <\/b>Stands have natural resistance against damage, determined by their Durability Mod. Your Stand can resist that many points of damage per round. For example, a Stand with a 100 Durability would be able to resist 10 points of damage per round, and a Stand with 40 would only be able to resist 4. Physical attacks that hit Stands deal no damage, unless specifically stated otherwise. The only types of damage that may deal damage to Stands is damage dealt by Stands, or the Abilities of Stands. It should be noted that if the User is in the radius of a Saving Throw, Damage Reduction cannot be applied to any damage inflicted. Your Stand's Damage Reduction resets at the top of each round of Initiative.<\/p>",
+                    "<p><b>Damage Reduction: <\/b>Stands have natural resistance against damage, determined by their Durability Mod. Your Stand can resist that many points of damage per round. For example, a Stand with a 100 Durability would be able to resist 10 points of damage per round, and a Stand with 40 would only be able to resist 4. Physical attacks that hit Stands deal no damage, unless specifically stated otherwise. The only types of damage that may deal damage to Stands is damage dealt by Stands, or the Abilities of Stands. It should be noted that if the User is in the radius of a Saving Throw, Damage Reduction cannot be applied to any damage inflicted unless it is a Physical Save that the Stand is able to assist with. Your Stand's Damage Reduction resets at the top of each round of Initiative.<\/p>",
                     "<p><b>Stand Movement: <\/b>Stands have a Movement Speed equal to twice their Stand's Speed Mod in meters, or a Movement Speed equal to their User, whichever is higher. Stands and Users each have a separate Movement Action. Independant-Type Stands can only move the base 10 Meters that a regular Human can, unless they have a specific Ability that allows them to increase it.<\/p>",
                     "<p><b>Stand Range: <\/b>Your Stand may move a number of meters away from you equal to its Range Mod, with a minimum of 1m.<\/p>",
                     "<p><b>Abilities and Stand Energy: <\/b>The amount of Energy your Stand has is based on their Stand Energy Mod. Normal Abilities typically cost 1 point and Special Abilities generally cost more depending on the Stand type. However, the cost may vary depending on how strong the Ability is at the DMs discretion, for example the Ability to stop time might cost double the normal cost. Stand Energy always fully replenishes when outside of combat. 1 Stand Energy is also replenished when you take the dodge action.<\/p>"
@@ -266,7 +267,7 @@
             {
                 "name": "Attacking",
                 "content": [
-                    "Your Stand's normal melee attacks (typically punches) are determined similarly to regular attacks. Roll a d20 and add the Power or Precision Mod of your Stand and your Proficiency Bonus to determine if the attack hits. The amount of damage dealt is based off of your Stand's Attack Dice plus your Power (NOT Precision) Mod.<\/p>",
+                    "Your Stand's normal Melee Attacks (typically punches) are determined similarly to regular attacks. Roll a d20 and add the Power or Precision Mod of your Stand and your Proficiency Bonus to determine if the attack hits. The amount of damage dealt is based off of your Stand's Attack Dice plus your Power (NOT Precision) Mod.<\/p>",
                     "<p>For User attacks, roll a d20 and add your Strength or Dexterity Mod, whichever is higher. Every Unarmed Attack deals 1d4 + Str damage. <b>Regular physical attacks DO NOT AFFECT STANDS<\/b> (except for Enhancement or Independent Types).<\/p>",
                     "<p>Speed is also very important. The total Speed Score of your Stand divided by 50 is one more Attack that the Stand or the User may perform each round, with a minimum of one and a maximum of ten. If Non-Stand Users want to have multiple Attacks per round, they may take the <a href='\/feats\/?focus=Trained_Combatant'>Trained Combatant<\/a> Feat."
                 ]
@@ -274,15 +275,16 @@
             {
                 "name": "Stand AC",
                 "content": [
-                    "<p>Your Stand AC is equal to 8 plus your Durability, Precision, and Speed Modifiers. When your Stand is within 2 Meters of you your Stand can protect you from attacks using its AC. Like normal, if an Attack Roll is less than your AC it misses. However, if the Attack Roll is between your Stand AC and your own AC it hits your Stand instead, allowing you to apply your Stand's Damage Reduction. Additionally, if the damage type is Non-Stand, it simply bounces off of your Stand or phases through it. An Attack Roll higher than your Stand AC is a direct hit to the User.<\/p>",
+                    "<p>Your Stand AC is equal to 10 plus your Durability, Precision, and Speed Modifiers. When your Stand is within 2 Meters of you your Stand can protect you from attacks using its AC. Like normal, if an Attack Roll is less than your AC it misses. However, if the Attack Roll is between your Stand AC and your own AC it hits your Stand instead, allowing you to apply your Stand's Damage Reduction. Additionally, if the damage type is Non-Stand, it simply bounces off of your Stand or phases through it. An Attack Roll higher than your Stand AC is a direct hit to the User.<\/p>",
+                    "<p>You may use your Stand to protect someone other than yourself as well. Should you choose to do so, the target may benefit from your Stand's AC rather than you. They will still take damage on a Direct Hit, but if your Stand AC is hit you (or your Stand) will take the damage instead. Your Stand may also assist this other person with physical Checks and Saves. <b>While your Stand is protecting someone else, it is not protecting you.<\/b><\/p>",
                     "<p><small><b>Note: <\/b><i>Enhancement\/Independant Stands are able to be affected by all damage types, rather than just Stand damage. Independent-Types also have both a regular AND Stand AC for the sake of Damage Reduction, despite not technically having a User.<\/i><\/small><\/p>"
                 ]
             },
             {
                 "name": "Skill Checks and Saving Throws",
                 "content": [
-                    "<p>Your Stand may assist you with physical Skill Checks and Saving Throws, using Power, Precision, and Durability in place of Strength, Dexterity, and Constitution respectively. However, your Stand's Damage Reduction cannot be applied to damage taken from the effects of a Saving Throw, unless the Stand is being targeted on its own separate from the user.<\/p>",
-                    "<p>Stands do not have mental stats, and as such may not assist with Intelligence, Wisdom, or Charisma Checks and Saves. Independent-Type Stands may use their own actual mental stats.<\/p>"
+                    "<p>Your Stand may assist you with physical Skill Checks and Saving Throws, using Power, Precision, and Durability in place of Strength, Dexterity, and Constitution respectively. If your Stand is able to assist you with a physical Saving Throw, you may apply its Damage Reduction to any damage received regardless of whether you succeed or fail.<\/p>",
+                    "<p>Stands do not have mental stats, and as such may not assist with Intelligence, Wisdom, or Charisma Checks and Saves. Independent-Types and Sentient Stands  Stands may use their own actual mental stats.<\/p>"
                 ]
             },
             {
@@ -290,7 +292,7 @@
                 "content": [
                     "<p>There are 9 different Stand Types which each function very differently from eachother. You may either choose one of these 9, or roll a d100 and choose from the table below:<\/p>",
                     "<table class='table table-striped minor'><thead><tr><th>Result<\/th><th>Stand Type<\/th><\/tr><\/thead><tbody><tr><td>1-35<\/td><td>Power<\/td><\/tr><tr><td>36-49<\/td><td>Ranged<\/td><\/tr><tr><td>50-69<\/td><td>Enhancement<\/td><\/tr><tr><td>70-79<\/td><td>Remote<\/td><\/tr><tr><td>80-89<\/td><td>Ability<\/td><\/tr><tr><td>90-93<\/td><td>Independent<\/td><\/tr><tr><td>94-97<\/td><td>Hive<\/td><\/tr><tr><td>98-99<\/td><td>Revenge<\/td><\/tr><tr><td>100<\/td><td>Act<\/td><\/tr><\/tbody><\/table>",
-                    "<p><b>Multi-Type Stands: <\/b>Some Stands have attributes of several different types of Stand. For these Stand's Stats, take the average of each stat multiplier for the two respective types and use those multipliers, rounded down, when figuring out your initial Stand stats. Furthermore, if there are any limitations on a Stand type's stat increases still apply. For example, if a Stand is both a Power\/Enhancement-Type you cannot have a Range stat above 20, even if the initial average would be higher. You also take the lower of the Attack Dice if you are using two types of Stands, and you get an equal amount of each Hit Dice, alternating each Level and starting with the lower one. For Class Features, you get all of the Level 1 Features, but must choose which type's Features to take for each subsequent Level.<\/p>"
+                    "<p id='multi-type'><b>Multi-Type Stands: <\/b>Some Stands have attributes of several different types of Stand. For these Stand's Stats, take the average of each stat multiplier for the two respective types and use those multipliers, rounded down, when figuring out your initial Stand stats. Furthermore, if there are any limitations on a Stand type's stat increases still apply. For example, if a Stand is both a Power\/Enhancement-Type you cannot have a Range stat above 20, even if the initial average would be higher. You also take the lower of the Attack Dice if you are using two types of Stands, and you get an equal amount of each Hit Dice, alternating each Level and starting with the lower one. For Class Features, you get all of the Level 1 Features, but must choose which type's Features to take for each subsequent Level.<\/p>"
                 ]
             },
             {
@@ -298,14 +300,14 @@
                 "content": [
                     "<p><b>Get Creative: <\/b>Stand Abilities have endless possibilities, able to do anything from cooking supernaturally good food to being able to stop time itself. The rules below should generally apply to most Stand Abilities, but you should work with your DM to create the perfect custom Ability for your Stand.",
                     "<p><b>General Rules: <\/b>Abilities that heal or deal damage should follow the dice guidelines below, and these dice should increase every other Level (for example, at Level 3 1dx becomes 2dx). Abilities that require a Saving Throw should use the following Stand DC: 8 + Cha + Proficiency Bonus.<\/p>",
-                    "<ul><li><b>No Dice: <\/b> Should be an Ability that buffs\/debuffs someone very little, or some sort of utility. Not combat-viable directly, but should be able to be used creatively in combat.<\/li><li><b>d4: <\/b>Group effects, healing\/damage that affects a group of people. Can have a secondary effect if it is just a single target Ability.<\/li><li><b>d6: <\/b>An Ability that affects multiple targets and requires a Saving Throw, dealing no damage on  success, or ranged healing for a single target. Can also be touch healing that gives an additional effect.<\/li><li><b>d8: <\/b>Damage that may be added to a Stand's punch or touch on a hit and does not require a Saving Throw. Can also be a ranged attack that requires a Saving Throw with half damage on success. Can be touch healing that takes a single Attack or Bonus Action to perform.<\/li><li><b>d10: <\/b>Damage that may be added to a Stand's punch or touch and requires a Saving Throw, dealing no damage on success. Can be touch healing that takes an Action to perform. Can be a ranged attack that requires a Saving Throw, dealing no damage on success. Can be a single-target melee attack that requires a Saving Throw, dealing half damage on success.<\/li><li><b>d12: <\/b>Can be a touch healing Ability that takes an Action as well as another type of Action (Reaction, Bonus Action, Movement Action). Can be a single-target melee attack that requires a Saving Throw, dealing no damage on success.<\/li><\/ul>",
+                    "<ul><li><b>No Dice: <\/b>May be an Ability that buffs\/debuffs someone or some sort of utility. These Abilities are generally lower powered but reliable. The strength of the effect may still scale with Ability Dice. For example you may have an Ability which buffs an ally's d20 rolls, granting a +2(n) bonus where n is your number of Ability dice (so +2 at Level 1 and +20 at Level 20 etc).<\/li><li><b>d4: <\/b>May be an Ability that can affect multiple targets at once from a distance. It may do one, but not multiple, of the following:<ul class='sublist'><li>Increase the die used from a d4 to a higher die such as a d10\/d12 if a condition is met. If using the increased die a Saving Throw is required for the targets and they take half damage or are unaffected on success.<\/li><li>Apply a powerful secondary effect in certain circumstances.<\/li><li>Choose which targets are affected by a negative effect in range, rather than all creatures being affected.<\/li><\/ul>If you afflict a group with both damage AND a negative effect the targets may attempt a Saving Throw to shrug off the effect but still take full damage.<\/li><li><b>d6: <\/b>May be an Ability that deals guaranteed damage to groups of people in range without requiring a Saving Throw, or used to heal or buff\/debuff multiple targets. May also have a situational secondary effect in addition to healing\/damage, or a stronger single buff\/debuff effect, if it only affects a single target.<\/li><li><b>d8: <\/b>May be an Ability that requires a Saving Throw to deal damage to multiple targets and dealing half on a success, or instead adding guaranteed damage to a successful Melee Attack. May instead be multi-target healing or buffing\/debuffing within a short range (like 10m) or a single-target effect from a greater distance.<\/li><li><b>d10: <\/b>May be an Ability that requires a Saving Throw to deal damage to multiple targets and dealing none on success, or to deal damage to a single target and dealing half on success. May instead apply healing or a buff\/debuff to a single target within Melee Range.<\/li><li><b>d12: <\/b>May be an Ability that requires a Saving Throw to deal damage to a single target within 5m, dealing none on success. May instead be a Melee Range heal that requires a full Action, situational and short debuff or, buff with a downside.<\/li><\/ul>",
                     "<p><small><b>Note: <\/b><i>The damage cap for these scaling dice is normally 10dx, but this does not have to be the case. Characters or enemies may be able to go far past Level 20, and therefore, would be able to deal massive amounts of Damage using them. Your DM may decide that Abilities past that may increase in the same fashion as before (an additional dice for every odd Level), or that 10dx should be the limit for balance.<\/i><\/small><\/p>"
                 ]
             },
             {
                 "name": "Substands",
                 "content": [
-                    "<p><small><b>Examples of Substands:<\/b> <a href='https:\/\/jojowiki.com\/Sheer_Heart_Attack' target='_blank'>Killer Queen's Sheer Heart Attack<\/a> and <a href='https:\/\/jojowiki.com\/King_Crimson#Epitaph'>King Crimson's Epitaph<\/a><\/small><\/p>",
+                    "<p id='Substands'><small><b>Examples of Substands:<\/b> <a href='https:\/\/jojowiki.com\/Sheer_Heart_Attack' target='_blank'>Killer Queen's Sheer Heart Attack<\/a> and <a href='https:\/\/jojowiki.com\/King_Crimson#Epitaph'>King Crimson's Epitaph<\/a><\/small><\/p>",
                     "<p>Substands are extremely rare types of Stands that form under extreme conditions. These sorts of Stands typically occur when there is a great mental divide within the Stand User, or when a Stand User undergoes a massive amount of development very quickly. When you get the trait <a href='\/abilities?focus=Special_Ability'>Special Ability<\/a>, rather than giving yourself a Special Ability, you may give yourself a Substand. Substands use the same rules as regular stands, and Level-Up and gain points to their stats in the exact same way that your primary Stand does, but it may be a different type of Stand with its own Ability.<\/p>",
                     "<p>You may switch between your Stand and Substand as a Bonus Action when both your Stand is within 2 meters of you. When you summon your Stand, it defaults to the Stand you most recently summoned, though you can switch this with a Bonus Action at any time.<\/p>",
                     "<p>If one Stand has more Stand Energy than the other and you switch to the one with less, the amount of Stand Energy available is reduced to that maximum of the other Stand and remains at that amount until combat ends. For example a primary Stand with 12\/12 maximum energy switching to a Substand with 7 max Energy brings the Stand's energy to 7. Even if you switch back to the primary Stand without spending any Energy, the primary Stand now has 7\/12 Energy remaining. Energy spent in either form takes away from the same Stand Energy pool.<\/p>",
@@ -345,7 +347,7 @@
                     "1d12",
                     "2d10"
                 ],
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats. You may choose to take the average roll instead (5 + Level), but must do so before rolling. Your Stand's Range may not be increased past 20 (2 meters).",
+                "levelUp": "Every Level-Up in this Class, you will gain a number of points to put into any of your Stand's Ability Scores. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level of Stand User you're becoming</li></ul>Your Stand's <u>Range</u> may not be increased past 20 (2 meters).",
                 "mults": [
                     4,
                     3,
@@ -418,6 +420,9 @@
                     "10": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Special Ability"
                         ]
                     },
                     "11": {
@@ -431,7 +436,7 @@
                             "OR"
                         ],
                         "featFeatures": [
-                            "Stand Breaker",
+                            "Guard Breaker",
                             "OR",
                             "Whirlwind Attacker",
                             "OR",
@@ -454,9 +459,6 @@
                     "15": {
                         "otherFeatures": [
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
-                        ],
-                        "linkFeatures": [
-                            "Special Ability (2 SE)"
                         ]
                     },
                     "16": {
@@ -465,7 +467,7 @@
                             "OR"
                         ],
                         "featFeatures": [
-                            "Defensive Stance"
+                            "Defensive Agility"
                         ]
                     },
                     "17": {
@@ -543,10 +545,10 @@
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
                 "aDice": [
-                    "1d6",
+                    "1d8",
                     "2d6"
                 ],
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except for Power or Durability. You may choose to take the average roll instead (5 + Level), but must do so before rolling. Your Power and Durability may not be increased past their initial values.",
+                "levelUp": "Every Level-Up in this Class, you will gain a number of points to put into any of your Stand's Ability Scores, except for <u>Power</u> and <u>Durability</u>. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level of Stand User you're becoming</li></ul>Your Stand's <u>Power</u> and <u>Durability</u> may not be increased past their initial values.",
                 "mults": [
                     3,
                     3,
@@ -561,14 +563,25 @@
                         "linkFeatures": [
                             "Slippery",
                             "Detached Senses",
+                            "and",
+                            "Doubled Range",
                             "OR",
-                            "Immense Resistance"
+                            "Immense Resistance",
+                            "and"
+                        ],
+                        "featFeatures": [
+                            "Tanky"
                         ]
                     },
                     "2": {
                         "linkFeatures": [
                             "Custom Ability",
-                            "Stand Pickpocketing"
+                            "Stand Pickpocketing",
+                            "Distant Defense",
+                            "OR"
+                        ],
+                        "featFeatures": [
+                            "Close-Range Deflection"
                         ]
                     },
                     "3": {
@@ -619,6 +632,9 @@
                     "10": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Special Ability"
                         ]
                     },
                     "11": {
@@ -647,9 +663,6 @@
                     "15": {
                         "otherFeatures": [
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
-                        ],
-                        "linkFeatures": [
-                            "Special Ability (2 SE)"
                         ]
                     },
                     "16": {
@@ -658,7 +671,7 @@
                             "OR"
                         ],
                         "featFeatures": [
-                            "Defensive Stance"
+                            "Defensive Agility"
                         ]
                     },
                     "17": {
@@ -743,7 +756,7 @@
                     "1d10",
                     "2d8"
                 ],
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except Precision. You may choose to take the average roll instead (5 + Level), but must do so before rolling. Your Precision may not be increased past it's initial value.",
+                "levelUp": "Every Level-Up in this Class, you will gain a number of points to put into any of your Stand's Ability Scores, except for <u>Precision</u>. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level of Stand User you're becoming</li></ul>Your Stand's <u>Precision</u> may not be increased past its initial values.",
                 "mults": [
                     3,
                     2,
@@ -753,7 +766,7 @@
                     2
                 ],
                 "notes": [
-                    "These Stands cannot be controlled by their Users, the only power their User has over them is to send them out or recall them. These Stands can only perform one predetermined action."
+                    "These Stands cannot be controlled by their Users, the only power their User has over them is to send them out or recall them. These Stands still use their User's Initiative position, but have a separate Turn where they can only perform one predetermined action."
                 ],
                 "theme": "hStar",
                 "level": {
@@ -761,6 +774,9 @@
                         "linkFeatures": [
                             "Programmed Stand",
                             "Stand Marking"
+                        ],
+                        "featFeatures": [
+                            "Equalizer"
                         ]
                     },
                     "2": {
@@ -798,9 +814,13 @@
                     },
                     "7": {
                         "linkFeatures": [
-                            "Juggernaut",
+                            "Armored Stand",
                             "OR",
-                            "Armored Stand"
+                            "Juggernaut",
+                            "OR"
+                        ],
+                        "featFeatures": [
+                            "Specialized Stand Senses"
                         ]
                     },
                     "8": {
@@ -809,11 +829,9 @@
                         ]
                     },
                     "9": {
-                        "linkFeatures": [
-                            "Two Modes",
-                            "OR"
-                        ],
                         "featFeatures": [
+                            "Two Modes",
+                            "OR",
                             "Tanky",
                             "OR",
                             "Scarflesh"
@@ -822,6 +840,9 @@
                     "10": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Special Ability"
                         ]
                     },
                     "11": {
@@ -849,9 +870,6 @@
                     "15": {
                         "otherFeatures": [
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
-                        ],
-                        "linkFeatures": [
-                            "Special Ability (2 SE)"
                         ]
                     },
                     "16": {
@@ -921,23 +939,23 @@
                 "exampleOf": "Ability Stands",
                 "examples": [
                     "Hermit Purple",
-                    "Earth Wind and Fire (?)",
-                    "White Album"
+                    "White Album",
+                    "Man in the Mirror"
                 ],
                 "links": [
                     "Hermit_Purple",
-                    "Earth_Wind_and_Fire",
-                    "White_Album"
+                    "White_Album",
+                    "Man_in_the_Mirror"
                 ],
                 "desc": "Many Stands are able to physically manifest themselves clearly and powerfully, but most Ability-Type Stands do not function in the same way. Some Ability Stands are not visible or tangible unless specifically made so by their User. While these Stands have very little in the way of physical power, their masterful use of their Abilities are able to make them more than handy in the fight. ",
                 "hDice": "1d6",
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
                 "aDice": [
-                    "1d4",
-                    "1d6"
+                    "1d6",
+                    "1d8"
                 ],
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except Power or Durability. You may choose to take the average roll instead (5 + Level), but must do so before rolling. Your Stand's Power and Durability may not be increased past their initial values.",
+                "levelUp": "Every Level-Up in this Class, you will gain a number of points to put into any of your Stand's Ability Scores, except for <u>Power</u> and <u>Durability</u>. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level of Stand User you're becoming</li></ul>Your Stand's <u>Power</u> and <u>Durability</u> may not be increased past their initial values.",
                 "mults": [
                     1,
                     3,
@@ -955,7 +973,24 @@
                     },
                     "2": {
                         "linkFeatures": [
-                            "Self-Acclimation"
+                            "Distant Defense",
+                            "OR"
+                        ],
+                        "featFeatures": [
+                            "Object Stand",
+                            "OR",
+                            "Phenomenon Stand",
+                            "OR",
+                            "Sentient Stand",
+                            "OR",
+                            "Shared Stand",
+                            "OR",
+                            "Suit Stand",
+                            "OR",
+                            "Uncontrollable Stand"
+                        ],
+                        "otherFeatures": [
+                            "<a href='\/abilities?focus=Self_Acclimation'>Self-Acclimation<\/a> OR <a href='\/feats?focus=Resilient'>Resilient<\/a>"
                         ]
                     },
                     "3": {
@@ -982,6 +1017,9 @@
                     "6": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Special Ability"
                         ]
                     },
                     "7": {
@@ -989,7 +1027,11 @@
                             "Stand Energy Recharge",
                             "Defensive Ability",
                             "OR",
-                            "Mobile Ability"
+                            "Mobile Ability",
+                            "OR"
+                        ],
+                        "featFeatures": [
+                            "Resource Regeneration"
                         ]
                     },
                     "8": {
@@ -998,20 +1040,21 @@
                         ]
                     },
                     "9": {
-                        "linkFeatures": [
-                            "Special Ability (2 SE)"
+                        "otherFeatures": [
+                            "Choose another Class Feature from Level 2, Level 4, Level 5, or Level 7"
                         ]
                     },
                     "10": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Ultimate Stand Ability"
                         ]
                     },
                     "11": {
                         "otherFeatures": [
-                            "Choose another Class Feature from Level 4, Level 5, or Level 7",
-                            "Attack Dice increases to 1d6",
-                            "<a href='\/abilities\/?focus=Ranged_Attack'>Ranged Attack<\/a> dice and range are doubled"
+                            "Choose another Class Feature from Level 2, Level 4, Level 5, or Level 7, Attack Dice increases to 1d6, <a href='\/abilities\/?focus=Ranged_Attack'>Ranged Attack<\/a> dice and range are doubled"
                         ]
                     },
                     "12": {
@@ -1036,9 +1079,6 @@
                     "15": {
                         "otherFeatures": [
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
-                        ],
-                        "linkFeatures": [
-                            "Ultimate Stand Ability"
                         ]
                     },
                     "16": {
@@ -1064,7 +1104,7 @@
                     },
                     "19": {
                         "otherFeatures": [
-                            "Choose another Class Feature from Level 4, Level 5, Level 7, Level 14, Level 16, or Level 18"
+                            "Choose another Class Feature from Level 2, Level 4, Level 5, Level 7, Level 14, Level 16, or Level 18"
                         ]
                     },
                     "20": {
@@ -1133,7 +1173,7 @@
                     "1d10",
                     "2d8"
                 ],
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats. You may choose to take the average roll instead (5 + Level), but must do so before rolling.",
+                "levelUp": "Every Level-Up in this Class, you will gain a number of points to put into any of your Stand's Ability Scores. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level of Stand User you're becoming</li></ul>",
                 "mults": [
                     3,
                     3,
@@ -1205,6 +1245,9 @@
                     "10": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Special Ability"
                         ]
                     },
                     "11": {
@@ -1238,9 +1281,6 @@
                     "15": {
                         "otherFeatures": [
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
-                        ],
-                        "linkFeatures": [
-                            "Special Ability (2 SE)"
                         ]
                     },
                     "16": {
@@ -1269,7 +1309,9 @@
                     },
                     "20": {
                         "linkFeatures": [
-                            "Condensed Material"
+                            "Condensed Material",
+                            "OR",
+                            "Fleeting Invulnerability"
                         ],
                         "otherFeatures": [
                             "<a href='\/artifacts\/?focus=Heaven'>Heaven Calls<\/a>"
@@ -1336,17 +1378,14 @@
                         "name": "Grudge Points",
                         "content": [
                             "<p>A Revenge-Type Stand User has a maximum of 5 total Grudge Points, and starts with 0.<\/p><p>A Single Grudge Point may be gained either of the following ways:<\/p>",
-                            "<ul><li>You see someone who has previously wronged you, and you consider to be an enemy.<\/li>",
-                            "<li>You are injured or slighted in some way (taking direct damage, someone's actions frustrate or anger you considerably, etc)<\/li><\/ul>",
+                            "<ul><li>You see someone who has previously wronged you, and you consider to be an enemy.<\/li><li>You are injured, targeted by an attack or negative effect, or slighted in some other way (taking direct damage, receiving a warning shot, someone's actions frustrate or anger you considerably, etc)<\/li><\/ul>",
                             "<p>You may spend Grudge Points in the following ways:<\/p>",
-                            "<ul><li>1 Point: You may use the Attack Action on your Turn, summon your Stand to assist you with a single Skill Check, use your Stand Ability once, or summon it to take hits and assist you with Saving Throws, until the start of your next Turn.<\/li>",
-                            "<li>3 Points: You may summon your Stand in its entirety for one Turn.<\/li>",
-                            "<li>5 Points: You may summon your Stand in its entirety for an amount of Turns equal to your level in Revenge-Type (minimum of 2).<\/li><\/ul>",
-                            "If you do not gain any more Grudge Points on a given Turn, your remaining Grudge Points persist for an amount of Turns equal to your level in Revenge-Type, or until spent (minimum of 2)."
+                            "<ul><li>1 Point: You may use the Attack Action on your Turn, summon your Stand to assist you with a single Skill Check, use your Stand Ability once, or summon it to take hits and assist you with Saving Throws, until the start of your next Turn.<\/li><li>3 Points: You may summon your Stand in its entirety for one Turn.<\/li><li>5 Points: You may summon your Stand in its entirety for an amount of Turns equal to your level in Revenge-Type (minimum of 2).<\/li><\/ul>",
+                            "If you do not gain any additional Grudge Points on a given Turn, your remaining Grudge Points persist for an amount of Turns equal to your level in Revenge-Type (minimum of 2), or until spent."
                         ]
                     }
                 ],
-                "levelUp": "Every Level-Up, You may roll 3d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats. You may choose to take the average roll instead (8 + Level), but must do so before rolling.",
+                "levelUp": "Every Level-Up in this Class, you will gain a number of points to put into any of your Stand's Ability Scores. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +13</li><li>Classic Progression: 3d4 (or 8) + Level of Stand User you're becoming</li></ul>",
                 "mults": [
                     4,
                     3,
@@ -1361,6 +1400,9 @@
                         "linkFeatures": [
                             "Detached Senses",
                             "Feat of Power"
+                        ],
+                        "featFeatures": [
+                            "Equalizer"
                         ]
                     },
                     "2": {
@@ -1405,7 +1447,7 @@
                             "OR"
                         ],
                         "featFeatures": [
-                            "Stand Breaker",
+                            "Guard Breaker",
                             "OR",
                             "Berserker"
                         ]
@@ -1424,6 +1466,9 @@
                     "10": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Special Ability"
                         ]
                     },
                     "11": {
@@ -1453,9 +1498,6 @@
                     "15": {
                         "otherFeatures": [
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
-                        ],
-                        "linkFeatures": [
-                            "Special Ability (2 SE)"
                         ]
                     },
                     "16": {
@@ -1535,9 +1577,10 @@
                     "Superfly",
                     "Foo_Fighters"
                 ],
-                "desc": "Independent-Type Stands are quite interesting, and are one of the more rare Stand Types in JoJo's Bizarre Adventure. These Stands are odd because they do not actually have a User, instead in control of themselves. They have the same sort of Attributes that regular Stands do and must follow most of the same rules. However, the Stand is still made up of physical matter, and thus is similar to an Enhancement type Stand in that they can be damaged physically by Non-Stand damage types.",
+                "desc": "Independent-Type Stands are quite interesting, and are one of the more rare Stand Types in JoJo's Bizarre Adventure. These Stands are odd because they do not actually have a User, instead in control of themselves. They have the same sort of attributes that regular Stands do and must follow most of the same rules. However, the Stand is still made up of physical matter, and thus is similar to an Enhancement type Stand in that they can be damaged physically by Non-Stand damage types.",
                 "notes": [
-                    "Some Independent Stands did in fact have a User at some point, or might even still have a User. They are not linked together though, as damaging the Stand does no harm to the User and vice versa. However, if a person does or did have an Independent-Type Stand they are still able to sense Stands and Ghosts, just like a normal Stand User would."
+                    "Some Independent Stands did in fact have a User at some point, or might even still have a User. They are not linked together though, as damaging the Stand does no harm to the User and vice versa. However, if a person does or did have an Independent-Type Stand they are still able to sense Stands and Ghosts, just like a normal Stand User would. Independent Stands with a User still roll Initiative and take their Turn separately.",
+                    "Even if there is no User, Independent Stands still have the 6 regular Ability Scores for the sake of determining other stats and mental Checks\/Saves. They can also still be hit 'directly' whether they do or don't have a separate User."
                 ],
                 "hDice": "1d10",
                 "dcName": "Stand DC",
@@ -1546,7 +1589,7 @@
                     "1d8",
                     "2d6"
                 ],
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except Range. You may choose to take the average roll instead (5 + Level), but must do so before rolling. Your Stand's Range may not be increased past 0.",
+                "levelUp": "Every Level-Up in this Class, you will gain a number of points to put into any of your Stand's Ability Scores, except for <u>Range</u>. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level of Stand User you're becoming</li></ul>Your Stand's <u>Range</u> may not be increased past 0.",
                 "mults": [
                     3,
                     3,
@@ -1620,6 +1663,9 @@
                     "10": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Special Ability"
                         ]
                     },
                     "11": {
@@ -1648,9 +1694,6 @@
                     "15": {
                         "otherFeatures": [
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
-                        ],
-                        "linkFeatures": [
-                            "Special Ability (2 SE)"
                         ]
                     },
                     "16": {
@@ -1671,7 +1714,7 @@
                             "OR"
                         ],
                         "featFeatures": [
-                            "Defensive Stance"
+                            "Defensive Agility"
                         ]
                     },
                     "19": {
@@ -1734,8 +1777,8 @@
                 ],
                 "desc": "It is said that Stands reflect their Users. Hive-Type Stand Users are those that idolize the idea of individuals working as a team. Their Stands are formed of many much smaller Sub-Stands, each one with only a fragment of the power of a full Stand. These smaller parts may act in tandem or each one separately. Because of this, Hive Stands have around the same strength as a normal Stand, but they all have great range.",
                 "notes": [
-                    "Keep an eye on your health. The amount of Instances available for you to use is determined by the percentage of health you are at. If you are at 50% Health, you only have 50% of your Hive Stand available for use. When you are at 0 Hit Points, you may still have a maximum of 1 Stand Instance that functions, but it is recalled, and cannot act in any way. Your amount of Stand Instances only drops to 0 when you die.",
-                    "Your attacks may take the form of regular Stand melee attacks, or Swarm Attacks (defined below). When attacking normally, you have Disadvantage if using less than half of your total instances."
+                    "Keep an eye on your health. The amount of Instances available for you to use is determined by the percentage of health you are at. If you are at 50% Health, you only have 50% of your Hive Stand available for use. When defending with half of your current (not total) Instances or less you still get your full Stand AC but may only use half of your Stand's Damage Reduction. When you are at 0 Hit Points, you may still have 1 Stand Instance that functions, but it is recalled, and cannot act in any way. Your amount of Stand Instances only drops to 0 when you die.",
+                    "Your attacks may take the form of regular Stand Melee Attacks, or Swarm Attacks (defined below). When attacking normally, you have Disadvantage if using less than half of your current (not total) Instances."
                 ],
                 "hDice": "1d8",
                 "dcName": "Stand DC",
@@ -1748,14 +1791,16 @@
                     {
                         "name": "Swarm Attacks",
                         "content": [
-                            "<p>Choose one of the three following saving throws: Strength, Dexterity, or Constitution. When you make a Melee Attack using your Stand, rather than making an Attack Roll, your target must make a Saving Throw of the chosen type with a DC of 8 + Proficiency Bonus + Power Modifier. Your Stand must be within Melee Range of the target in order to make a Swarm Attack. When you make a Swarm Attack, you may choose between the following options:<\/p>",
+                            "<p id='Swarm_Attacks'>While you may still make regular Stand Melee Attacks using your Stand's Attack Dice, you may also choose to instead use an Attack to force a target within Melee Range of at least 2 of your Stand Instances to make a Saving Throw against a Swarm Attack.",
+                            "<p>Choose one of the three following Saving Throws: Strength, Dexterity, or Constitution. Your target must make a Saving Throw of the chosen type (NOT using their Stand stats) with a DC of 8 + Proficiency Bonus + either your Strength or Dexterity Modifier (NOT Power or Precision). When you make a Swarm Attack, you may choose between the following options:<\/p>",
                             "<p><ul><li>Precise Swarm: 1d6 + Power Modifier damage (this damage increases to 2d6 at Level 11). Your opponent takes full damage if they fail the Saving Throw, or half if they succeed.<\/li>",
                             "<li>Violent Swarm: 1d10 + Power Modifier damage (this damage increases to 2d10 at Level 11). Your opponent takes full damage if they fail the Saving Throw, or none if they succeed.<\/li><\/ul><\/p>",
-                            "<p>This Ability's damage can be a type that you and your DM agree fits for your Stand. When you attack using less than half of the total instances of your Stand, your target has Advantage on the Saving Throw.<\/p>"
+                            "<p>This Ability's damage can be a type that you and your DM agree fits for your Stand. When you attack using less than half of the current (not total) instances of your Stand, your target has Advantage on the Saving Throw.<\/p>",
+                            "<p>Because Stand stats cannot be used for the Save, Stand Damage Reduction cannot be applied to the damage taken from Swarm Attacks."
                         ]
                     }
                 ],
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's Stats. You may choose to take the average roll instead (5 + Level), but must do so before rolling.",
+                "levelUp": "Every Level-Up in this Class, you will gain a number of points to put into any of your Stand's Ability Scores. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level of Stand User you're becoming</li></ul>",
                 "mults": [
                     3,
                     2,
@@ -1818,12 +1863,19 @@
                         "linkFeatures": [
                             "Defensive Wave",
                             "OR",
-                            "Mobile Wave"
+                            "Mobile Wave",
+                            "OR"
+                        ],
+                        "featFeatures": [
+                            "Resource Regeneration"
                         ]
                     },
                     "10": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Special Ability"
                         ]
                     },
                     "11": {
@@ -1851,9 +1903,6 @@
                     "15": {
                         "otherFeatures": [
                             "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
-                        ],
-                        "linkFeatures": [
-                            "Special Ability (2 SE)"
                         ]
                     },
                     "16": {
@@ -1948,9 +1997,9 @@
                             "<div id='actTypes'>",
                             "<div class='actType'><b>Close-Range<\/b><span>You gain: <a href='\/abilities\/?focus=Feat_of_Power'>Feat of Power<\/a> and <a href='\/abilities\/?focus=Confident_Provocation'>Confident Provocation<\/a><\/span><span>Note: Your Range Score may not go above 20<\/span><span>Attack Dice: 1d10 (2d8 past Level 11)<\/span><b>Ability Score Multipliers<\/b>",
                             "<table class='table table-striped minor'><thead><tr><th>Stat<\/th><th>Multiplier<\/tr><\/thead><tbody><tr><td>Power<\/td><td>Str x3<\/td><\/tr><tr><td>Precision<\/td><td>Dex x3<\/td><\/tr><tr><td>Durability<\/td><td>Con x3<\/td><\/tr><tr><td>Range<\/td><td>Int x1<\/td><\/tr><tr><td>Speed<\/td><td>Wis x4<\/td><\/tr><tr><td>Stand Energy<\/td><td>Cha x2<\/td><\/tr><\/tbody><\/table><\/div>",
-                            "<div class='actType'><b>Long-Range<\/b><span>You gain: <a href='\/abilities\/?focus=Slippery'>Slippery<\/a> and either <a href='\/abilities\/?focus=Detached_Senses'>Detached Senses<\/a> OR <a href='\/abilities\/?focus=Immense_Resistance'>Immense Resistance<\/a><\/span><span>Note: You may not increase your Power or Durability when Leveling Up.<\/span><span>Attack Dice: 1d8 (2d6 past Level 11)<\/span><b>Ability Score Multipliers<\/b>",
+                            "<div class='actType'><b>Long-Range<\/b><span>You gain: <a href='\/abilities\/?focus=Slippery'>Slippery<\/a> and <a href='\/abilities\/?focus=Distant_Defense'>Distant Defense<\/a> and either <a href='\/abilities\/?focus=Detached_Senses'>Detached Senses<\/a> and <a href='\/abilities\/?focus=Doubled_Range'>Doubled Range<\/a> OR <a href='\/abilities\/?focus=Immense_Resistance'>Immense Resistance<\/a> and <a href='\/abilities\/?focus=Tanky'>Tanky<\/a><\/span><span>Note: You may not increase your Power or Durability when Leveling Up.<\/span><span>Attack Dice: 1d8 (2d6 past Level 11)<\/span><b>Ability Score Multipliers<\/b>",
                             "<table class='table table-striped minor'><thead><tr><th>Stat<\/th><th>Multiplier<\/tr><\/thead><tbody><tr><td>Power<\/td><td>Str x3<\/td><\/tr><tr><td>Precision<\/td><td>Dex x3<\/td><\/tr><tr><td>Durability<\/td><td>Con x3<\/td><\/tr><tr><td>Range<\/td><td>Int x8<\/td><\/tr><tr><td>Speed<\/td><td>Wis x3<\/td><\/tr><tr><td>Stand Energy<\/td><td>Cha x3<\/td><\/tr><\/tbody><\/table><\/div>",
-                            "<div class='actType'><b>Ability-Focused<\/b><span>You gain: <a href='\/abilities\/?focus=Self_Acclimation'>Self Acclimation<\/a><\/span><span>Note: You may not increase your Power or Durability when Leveling Up.<\/span><span>Attack Dice: 1d4 (1d6 past Level 11)<\/span><b>Ability Score Multipliers<\/b>",
+                            "<div class='actType'><b>Ability-Focused<\/b><span>You gain: <a href='\/abilities\/?focus=Self_Acclimation'>Self-Acclimation<\/a> and <a href='\/abilities\/?focus=Distant_Defense'>Distant Defense<\/a><\/span><span>Note: You may not increase your Power or Durability when Leveling Up.<\/span><span>Attack Dice: 1d4 (1d6 past Level 11)<\/span><b>Ability Score Multipliers<\/b>",
                             "<table class='table table-striped minor'><thead><tr><th>Stat<\/th><th>Multiplier<\/tr><\/thead><tbody><tr><td>Power<\/td><td>Str x1<\/td><\/tr><tr><td>Precision<\/td><td>Dex x2<\/td><\/tr><tr><td>Durability<\/td><td>Con x1<\/td><\/tr><tr><td>Range<\/td><td>Int x3<\/td><\/tr><tr><td>Speed<\/td><td>Wis x3<\/td><\/tr><tr><td>Stand Energy<\/td><td>Cha x5<\/td><\/tr><\/tbody><\/table><\/div>",
                             "<div class='actType'><b>Remote-Focused<\/b><span>You gain: <a href='\/abilities\/?focus=Programmed_Stand'>Programmed Stand<\/a> and <a href='\/abilities\/?focus=Stand_Marking'>Stand Marking<\/a><\/span><span>Note: You may not increase your Precision when Leveling Up. If someone activates your Remote trigger, you may switch to your Remote-Focused Act as a Reaction.<\/span><span>Attack Dice: 1d10 (2d8 past Level 11)<\/span><b>Ability Score Multipliers<\/b>",
                             "<table class='table table-striped minor'><thead><tr><th>Stat<\/th><th>Multiplier<\/tr><\/thead><tbody><tr><td>Power<\/td><td>Str x3<\/td><\/tr><tr><td>Precision<\/td><td>Dex x2<\/td><\/tr><tr><td>Durability<\/td><td>Con x3<\/td><\/tr><tr><td>Range<\/td><td>Int x4<\/td><\/tr><tr><td>Speed<\/td><td>Wis x3<\/td><\/tr><tr><td>Stand Energy<\/td><td>Cha x2<\/td><\/tr><\/tbody><\/table><\/div>",
@@ -1961,7 +2010,7 @@
                 "hDice": "1d8",
                 "dcName": "Stand DC",
                 "dc": "8 + Cha + Proficiency Bonus",
-                "levelUp": "Every Level-Up, You may roll 2d4 + Level (the one you're becoming) and put that number of points into any of your Stand's stats except those mentioned in each Act. You may choose to take the average roll instead (5 + Level), but must do so before rolling. You put all of the points into each Act, so if for example you roll to get 15 points, each Act of your Stand gets 15 points to increase stats with. When you gain a new Act, you may roll the dice to retroactively increase the stats of the new Stand.",
+                "levelUp": "Every Level-Up in this Class, you will gain a number of points to put into any of your Stand's Ability Scores, except those restricted by each Act's Type. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level of Stand User you're becoming</li></ul>You put all of the points into each Act. When you gain a new Act, you may retroactively increase the stats of it to match its Level.",
                 "theme": "echoes",
                 "level": {
                     "1": {
@@ -1974,12 +2023,12 @@
                             "Act 1 (Long Range)",
                             "Custom Ability (Act 1)",
                             "Act Modifier",
+                            "OR",
+                            "Oblivious Facade",
                             "OR"
                         ],
                         "featFeatures": [
-                            "Clever Disguise",
-                            "OR",
-                            "Oblivious Facade"
+                            "Clever Disguise"
                         ]
                     },
                     "3": {
@@ -2030,7 +2079,11 @@
                             "OR",
                             "Defensive Ability (Act 2)",
                             "OR",
-                            "Mobile Ability (Act 2)"
+                            "Mobile Ability (Act 2)",
+                            "OR"
+                        ],
+                        "featFeatures": [
+                            "Resource Regeneration"
                         ]
                     },
                     "10": {
@@ -2100,7 +2153,7 @@
                         "featFeatures": [
                             "Calculating",
                             "OR",
-                            "Defensive Stance"
+                            "Defensive Agility"
                         ]
                     },
                     "19": {
@@ -2165,16 +2218,16 @@
         "dcName": "Spin DC",
         "dc": "8 + Dex + Proficiency Bonus",
         "notes": [
-            "All attacks made using Spheres imbued with the Spin deal Force damage, unless otherwise stated."
+            "All attacks made using Spheres imbued with the Spin deal Force damage and have the Concealed (+5) and Thrown attributes, unless otherwise stated."
         ],
         "extra": [
             {
                 "name": "The Golden Ratio",
-                "desc": "A Spin User must have a reference of a 9:16 ratio in order to use the Spin. A 9:16 ratio is found somewhere in almost every uninjured creature, except Humans. The ratio may also be found in something artificial, such as a piece of paper or a tattoo, so long as it is made to be a 9:16 ratio."
+                "desc": "A Spin User must have a natural (not artificial) reference of a 9:16 ratio in order to use the Spin. A 9:16 ratio is found somewhere in almost every uninjured creature, except Humans."
             },
             {
                 "name": "Materials",
-                "desc": "The following materials may be used to form spheres to use the Spin with. Objects that are not perfectly spherical may be Spun and thrown, but your Attack and Damage Rolls, as well as Range are all cut in half.",
+                "desc": "The following materials may be used to form Spheres to use the Spin with. Objects that are not perfectly spherical may be Spun and thrown, but your Attack and Damage Rolls, as well as Range are all cut in half.",
                 "table": {
                     "class": "minor widen",
                     "head": [
@@ -2194,7 +2247,7 @@
                             "Wood",
                             "40\/80m",
                             "xd8 Slashing",
-                            "The Wooden Sphere will splinter and shatter upon contact, causing splinters to fly off in all directions up to 5 meters from the point of the Sphere's impact. Those within 5 meters must make a Dex Save against your Spin DC (if targets are in the Long Range of this sphere, they have Advantage on this Save), taking full damage on a failed Save or half as much on a success. When used, this Sphere destroys itself."
+                            "The Wooden Sphere will splinter and shatter upon contact, causing splinters to fly off in all directions up to 5 meters from the point of the Sphere's impact. Those within 5 meters must make a Dex Save against your Spin DC (if targets are in the Long Range of this Sphere, they have Advantage on this Save), taking full damage on a failed Save or half as much on a success. When used, this Sphere destroys itself."
                         ],
                         [
                             "Rubber",
@@ -2241,7 +2294,14 @@
             "1": {
                 "linkFeatures": [
                     "Forced Motion",
-                    "Spherical Spin"
+                    "Spherical Spin",
+                    "Spiritual Spin (Variant Rule)"
+                ],
+                "featFeatures": [
+                    "Equalizer"
+                ],
+                "otherFeatures": [
+                    "Gain Proficiency in Attack Rolls using the Spin"
                 ]
             },
             "2": {
@@ -2252,6 +2312,7 @@
             },
             "3": {
                 "linkFeatures": [
+                    "Custom Spin Technique",
                     "Return to Sender"
                 ],
                 "featFeatures": [
@@ -2263,8 +2324,11 @@
             },
             "4": {
                 "linkFeatures": [
-                    "Spiritual Spin (Variant Rule)",
+                    "Medicinal Spin",
+                    "OR",
                     "Muscle Contraction",
+                    "OR",
+                    "Satellite Spin",
                     "OR",
                     "Tendon Twister",
                     "OR"
@@ -2275,8 +2339,10 @@
             },
             "5": {
                 "linkFeatures": [
-                    "Custom Spin Technique",
-                    "Harden Flesh"
+                    "Harden Flesh",
+                    "Projectile Boost",
+                    "OR",
+                    "Sendo Spin"
                 ]
             },
             "6": {
@@ -2289,21 +2355,19 @@
                 ]
             },
             "7": {
-                "linkFeatures": [
-                    "Spin Expertise"
-                ],
                 "featFeatures": [
                     "Trained Combatant"
+                ],
+                "otherFeatures": [
+                    "Gain Proficiency in Attack Rolls using the Spin again"
                 ]
             },
             "8": {
-                "linkFeatures": [
-                    "Projectile Boost",
-                    "OR",
-                    "Sendo Spin"
-                ],
                 "ability": [
                     "Ability Score Improvement"
+                ],
+                "otherFeatures": [
+                    "Choose another Class Feature from Level 4, or Level 5"
                 ]
             },
             "9": {
@@ -2315,7 +2379,7 @@
             },
             "10": {
                 "otherFeatures": [
-                    "Choose another Class Feature from Level 4, Level 8, or Level 9"
+                    "Choose another Class Feature from Level 4, Level 5,  or Level 9"
                 ],
                 "ability": [
                     "Ability Score Improvement"
@@ -2327,10 +2391,8 @@
                 ]
             },
             "12": {
-                "linkFeatures": [
-                    "Medicinal Spin",
-                    "OR",
-                    "Satellite Spin"
+                "otherFeatures": [
+                    "Choose another Class Feature from Level 4, Level 5, or Level 9"
                 ]
             },
             "13": {
@@ -2342,8 +2404,8 @@
                 ]
             },
             "14": {
-                "linkFeatures": [
-                    "Spin Mastery"
+                "otherFeatures": [
+                    "Gain Proficiency in Attack Rolls using the Spin again"
                 ]
             },
             "15": {
@@ -2351,11 +2413,14 @@
                     "Create Mirage",
                     "OR",
                     "Expose Weakness"
+                ],
+                "featFeatures": [
+                    "Trained Combatant"
                 ]
             },
             "16": {
                 "otherFeatures": [
-                    "Choose another Class Feature from Level 4, Level 8, or Level 9, Level 12, or Level 15"
+                    "Choose another Class Feature from Level 4, Level 5, Level 9, or Level 15"
                 ]
             },
             "17": {
@@ -2370,12 +2435,12 @@
             },
             "18": {
                 "otherFeatures": [
-                    "Choose another Class Feature from Level 4, Level 8, or Level 9, Level 12, Level 15, or Level 17"
+                    "Choose another Class Feature from Level 4, Level 5, Level 9, Level 15, or Level 17"
                 ]
             },
             "19": {
-                "featFeatures": [
-                    "Trained Combatant"
+                "otherFeatures": [
+                    "Choose another Class Feature from Level 4, Level 5, Level 9, Level 15, or Level 17"
                 ]
             },
             "20": {
@@ -2430,9 +2495,11 @@
                 "level": {
                     "1": {
                         "linkFeatures": [
-                            "Steady Aim"
+                            "Steady Aim",
+                            "Supernatural Item (Variant Rule)"
                         ],
                         "featFeatures": [
+                            "Equalizer",
                             "Weapon Feat"
                         ]
                     },
@@ -2447,17 +2514,17 @@
                     "3": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Signature Move"
                         ]
                     },
                     "4": {
-                        "linkFeatures": [
-                            "Supernatural Item (Variant Rule)"
-                        ],
                         "featFeatures": [
                             "Catlike Agility",
                             "Deadly Accuracy",
                             "OR",
-                            "Defensive Stance"
+                            "Defensive Agility"
                         ]
                     },
                     "5": {
@@ -2491,9 +2558,9 @@
                     },
                     "9": {
                         "featFeatures": [
-                            "Natural Talent",
+                            "Practical Experience",
                             "OR",
-                            "Practical Experience"
+                            "Sharp Mind"
                         ]
                     },
                     "10": {
@@ -2508,7 +2575,7 @@
                         "featFeatures": [
                             "Headhunter",
                             "OR",
-                            "Paranoia"
+                            "Ever Vigilant"
                         ]
                     },
                     "12": {
@@ -2580,9 +2647,11 @@
                 "level": {
                     "1": {
                         "linkFeatures": [
-                            "Encouragement Dice"
+                            "Encouragement Dice",
+                            "Supernatural Item (Variant Rule)"
                         ],
                         "featFeatures": [
+                            "Equalizer",
                             "Weapon Feat"
                         ]
                     },
@@ -2597,26 +2666,31 @@
                     "3": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Signature Move"
                         ]
                     },
                     "4": {
-                        "linkFeatures": [
-                            "Supernatural Item (Variant Rule)"
-                        ],
                         "featFeatures": [
                             "Clever Disguise",
                             "Commentator",
                             "OR",
                             "Exemplar",
                             "OR",
+                            "Heckler",
+                            "OR",
                             "Tanky"
                         ]
                     },
                     "5": {
                         "featFeatures": [
+                            "Trained Combatant",
                             "Jack of All Trades",
                             "OR",
                             "Menacing Aura",
+                            "OR",
+                            "Powerful Presence",
                             "OR",
                             "Stroke of Luck"
                         ]
@@ -2628,7 +2702,6 @@
                     },
                     "7": {
                         "featFeatures": [
-                            "Trained Combatant",
                             "Guerilla Fighter",
                             "OR",
                             "Skirmisher"
@@ -2641,7 +2714,7 @@
                     },
                     "9": {
                         "featFeatures": [
-                            "Natural Talent",
+                            "Jack of All Trades",
                             "OR",
                             "Practical Experience"
                         ]
@@ -2695,9 +2768,9 @@
                     },
                     "17": {
                         "featFeatures": [
-                            "Paranoia",
+                            "Ever Vigilant",
                             "OR",
-                            "Trap Detection"
+                            "Trapper"
                         ],
                         "ability": [
                             "Ability Score Improvement"
@@ -2730,9 +2803,11 @@
                 "level": {
                     "1": {
                         "linkFeatures": [
-                            "Scholarly Combatant"
+                            "Scholarly Combatant",
+                            "Supernatural Item (Variant Rule)"
                         ],
                         "featFeatures": [
+                            "Equalizer",
                             "Weapon Feat"
                         ]
                     },
@@ -2747,24 +2822,30 @@
                     "3": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Signature Move"
                         ]
                     },
                     "4": {
                         "linkFeatures": [
-                            "Supernatural Item (Variant Rule)",
                             "Field Study"
                         ],
                         "featFeatures": [
                             "Guerilla Fighter",
                             "OR",
-                            "Jack of All Trades"
+                            "Jack of All Trades",
+                            "OR",
+                            "Sharp Mind"
                         ]
                     },
                     "5": {
                         "featFeatures": [
-                            "Natural Talent",
+                            "Quick on your Feet",
                             "OR",
-                            "Practical Experience"
+                            "Practical Experience",
+                            "OR",
+                            "Tactician"
                         ]
                     },
                     "6": {
@@ -2775,6 +2856,8 @@
                     "7": {
                         "featFeatures": [
                             "Trained Combatant",
+                            "Combat Medic",
+                            "OR",
                             "Consistent Skills",
                             "OR",
                             "Unstoppable Willpower"
@@ -2789,7 +2872,7 @@
                         "featFeatures": [
                             "Interpreter",
                             "OR",
-                            "Trap Detection"
+                            "Trapper"
                         ]
                     },
                     "10": {
@@ -2802,9 +2885,9 @@
                             "Aura of Knowledge"
                         ],
                         "featFeatures": [
-                            "Natural Talent",
+                            "Focus",
                             "OR",
-                            "Perfected Craft"
+                            "Menacing Aura"
                         ]
                     },
                     "12": {
@@ -2816,7 +2899,7 @@
                         "featFeatures": [
                             "Familiar Bond",
                             "OR",
-                            "Paranoia"
+                            "Ever Vigilant"
                         ],
                         "ability": [
                             "Ability Score Improvement"
@@ -2843,7 +2926,7 @@
                     },
                     "17": {
                         "featFeatures": [
-                            "Perfected Craft",
+                            "Additional Sense",
                             "OR",
                             "Practical Experience"
                         ],
@@ -2878,9 +2961,11 @@
                 "level": {
                     "1": {
                         "linkFeatures": [
-                            "Damage Minimum"
+                            "Damage Minimum",
+                            "Supernatural Item (Variant Rule)"
                         ],
                         "featFeatures": [
+                            "Equalizer",
                             "Weapon Feat"
                         ]
                     },
@@ -2893,12 +2978,12 @@
                     "3": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Signature Move"
                         ]
                     },
                     "4": {
-                        "linkFeatures": [
-                            "Supernatural Item (Variant Rule)"
-                        ],
                         "featFeatures": [
                             "Adrenaline Rush",
                             "OR",
@@ -2915,7 +3000,7 @@
                     },
                     "5": {
                         "featFeatures": [
-                            "Defensive Stance",
+                            "Defensive Agility",
                             "OR",
                             "Quick on your Feet",
                             "OR",
@@ -2936,7 +3021,7 @@
                     },
                     "7": {
                         "featFeatures": [
-                            "Stand Breaker",
+                            "Guard Breaker",
                             "OR",
                             "Specialized Save",
                             "OR",
@@ -3048,9 +3133,11 @@
                 "level": {
                     "1": {
                         "linkFeatures": [
-                            "Artisan's Specialty"
+                            "Artisan's Specialty",
+                            "Supernatural Item (Variant Rule)"
                         ],
                         "featFeatures": [
+                            "Equalizer",
                             "Weapon Feat"
                         ]
                     },
@@ -3059,30 +3146,32 @@
                             "Artisan Fighting Style"
                         ],
                         "featFeatures": [
-                            "Natural Talent"
+                            "Practical Experience"
                         ]
                     },
                     "3": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Signature Move"
                         ]
                     },
                     "4": {
                         "linkFeatures": [
-                            "Supernatural Item (Variant Rule)",
                             "Artisan's Resurgence"
                         ],
                         "featFeatures": [
                             "Catlike Agility",
                             "OR",
-                            "Practical Experience",
+                            "Resilient",
                             "OR",
                             "Skirmisher"
                         ]
                     },
                     "5": {
                         "featFeatures": [
-                            "Defensive Stance",
+                            "Defensive Agility",
                             "OR",
                             "Quick on your Feet",
                             "OR",
@@ -3119,9 +3208,7 @@
                         "featFeatures": [
                             "Jack of All Trades",
                             "OR",
-                            "Natural Talent",
-                            "OR",
-                            "Perfected Craft"
+                            "Sharp Mind"
                         ]
                     },
                     "10": {
@@ -3138,9 +3225,9 @@
                             "OR",
                             "Interpreter",
                             "OR",
-                            "Trap Detection",
+                            "Trapper",
                             "OR",
-                            "Paranoia"
+                            "Ever Vigilant"
                         ]
                     },
                     "12": {
@@ -3194,9 +3281,9 @@
                     },
                     "19": {
                         "featFeatures": [
-                            "Motivated",
+                            "Aura of Awareness",
                             "OR",
-                            "Perfected Craft"
+                            "Motivated"
                         ]
                     },
                     "20": {
@@ -3241,9 +3328,11 @@
                 "level": {
                     "1": {
                         "linkFeatures": [
-                            "Bullish Brawn"
+                            "Bullish Brawn",
+                            "Supernatural Item (Variant Rule)"
                         ],
                         "featFeatures": [
+                            "Equalizer",
                             "Weapon Feat"
                         ]
                     },
@@ -3256,15 +3345,17 @@
                     "3": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Signature Move"
                         ]
                     },
                     "4": {
                         "linkFeatures": [
-                            "Supernatural Item (Variant Rule)",
                             "Rejuvenation"
                         ],
                         "featFeatures": [
-                            "Defensive Stance",
+                            "Defensive Agility",
                             "OR",
                             "Whirlwind Attacker"
                         ]
@@ -3272,9 +3363,13 @@
                     "5": {
                         "featFeatures": [
                             "Trained Combatant",
+                            "Feel No Pain",
+                            "OR",
                             "Quick on your Feet",
                             "OR",
                             "Scarflesh",
+                            "OR",
+                            "Swift Recovery",
                             "OR",
                             "Tanky"
                         ]
@@ -3374,7 +3469,7 @@
                     },
                     "19": {
                         "featFeatures": [
-                            "Natural Talent",
+                            "Jack of All Trades",
                             "OR",
                             "Practical Experience"
                         ]
@@ -3394,9 +3489,11 @@
                 "level": {
                     "1": {
                         "linkFeatures": [
-                            "Survivalist"
+                            "Survivalist",
+                            "Supernatural Item (Variant Rule)"
                         ],
                         "featFeatures": [
+                            "Equalizer",
                             "Weapon Feat"
                         ]
                     },
@@ -3405,23 +3502,29 @@
                             "Ranger Fighting Style"
                         ],
                         "featFeatures": [
-                            "Paranoia"
+                            "Ever Vigilant"
                         ]
                     },
                     "3": {
                         "ability": [
                             "Ability Score Improvement"
+                        ],
+                        "linkFeatures": [
+                            "Signature Move"
                         ]
                     },
                     "4": {
                         "linkFeatures": [
-                            "Supernatural Item (Variant Rule)",
                             "Ranger's Recovery"
                         ],
                         "featFeatures": [
+                            "Additional Sense",
+                            "OR",
                             "Assassin",
                             "OR",
                             "Familiar Bond",
+                            "OR",
+                            "Focus",
                             "OR",
                             "Pressure Point Manipulator"
                         ]
@@ -3429,11 +3532,15 @@
                     "5": {
                         "featFeatures": [
                             "Trained Combatant",
+                            "Aura of Awareness",
+                            "OR",
                             "Catlike Agility",
                             "OR",
                             "Guerilla Fighter",
                             "OR",
-                            "Skirmisher"
+                            "Skirmisher",
+                            "OR",
+                            "Swift Recovery"
                         ]
                     },
                     "6": {
@@ -3461,7 +3568,7 @@
                         "featFeatures": [
                             "Deadly Accuracy",
                             "OR",
-                            "Natural Talent",
+                            "Jack of All Trades",
                             "OR",
                             "Quick on your Feet"
                         ]
@@ -3493,7 +3600,7 @@
                         "featFeatures": [
                             "Light Sleeper",
                             "OR",
-                            "Trap Detection"
+                            "Trapper"
                         ]
                     },
                     "14": {
@@ -3532,7 +3639,7 @@
                     },
                     "19": {
                         "featFeatures": [
-                            "Defensive Stance",
+                            "Defensive Agility",
                             "OR",
                             "Duelist's Agility",
                             "OR",

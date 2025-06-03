@@ -1,32 +1,14 @@
 window.jsPDF = window.jspdf.jsPDF;
-var pages = [true,true,true];
 
 $(document).ready(function () {
+    applyLangSpecificStyles();
+
     $(".pageSelect").change(function() {
-        var num = parseInt($(this).val().replace("p", ""));
-
-        if (pages[num-1]) {
-            $("#page"+num).hide();
-            pages[num-1] = false;
-        }
-        else {
-            $("#page"+num).show();
-            pages[num-1] = true;
-        }
-
-        if (pages[0] && (pages[1] || pages[2]))
-            $("#div1").show();
-        else
-            $("#div1").hide();
-        if (pages[1] && pages[2])
-            $("#div2").show();
-        else
-            $("#div2").hide();
-
-        if (!pages[0])
-            $("#statflip-switch").hide();
-        else
-            $("#statflip-switch").show();
+        let num = parseInt($(this).val().replace("p", ""));
+        if ($("#class").val() !== "act" && num === 3)
+            num += 1;
+        togglePage(num);
+        fixDivs();
     })
 
     $("#class").change(function() {
@@ -35,10 +17,7 @@ $(document).ready(function () {
             $("#multi").css("display", "inline-block");
             $("#multi").focus();
         }
-        if ($(this).val() == "act")
-            $("#act-num").css("display", "inline-block");
-        else
-            $("#act-num").css("display", "none");
+        toggleAct($(this).val() == "act");
     });
 
     $("#multi").on("keyup", function(e) { //numerous ways to get back to the dropdown
@@ -91,9 +70,9 @@ $(document).ready(function () {
 
     //img upload render assisted by https://medium.com/@iamcodefoxx/how-to-upload-and-preview-an-image-with-javascript-749b92711b91
     $("#img-input").change(function() {
-        var reader = new FileReader();
+        let reader = new FileReader();
         reader.addEventListener("load", () => {
-            var upload = reader.result;
+            let upload = reader.result;
             $("#char-img").attr("src", upload);
             $("#char-img").css("display", "unset");
             $("#image").css("background-color", "black");
@@ -104,9 +83,9 @@ $(document).ready(function () {
     });
     
     $("#img-input2").change(function() {
-        var reader = new FileReader();
+        let reader = new FileReader();
         reader.addEventListener("load", () => {
-            var upload = reader.result;
+            let upload = reader.result;
             $("#stand-img").attr("src", upload);
             $("#stand-img").css("display", "unset");
             $("#sImage").css("background-color", "black");
@@ -117,7 +96,7 @@ $(document).ready(function () {
     });
 
     $("#dl-btn").click(function() {
-        var name;
+        let name;
         if ($("#name").val().length > 0)
             name = $("#name").val().replace(/ /g, "_");
         else
@@ -130,9 +109,9 @@ $(document).ready(function () {
     });
 
     $("#import").change(function() {
-        var reader = new FileReader();
+        let reader = new FileReader();
         reader.addEventListener("load", () => {
-            var data = JSON.parse(reader.result);
+            let data = JSON.parse(reader.result);
             importData(data);
         });
         reader.readAsText(this.files[0]);
@@ -146,6 +125,33 @@ $(document).ready(function () {
         flipStats(false);
     });
 });
+
+function applyLangSpecificStyles() {
+    try {
+        switch(getLanguage()) {
+            case "uk":
+                $("#act-num").css("left", "105px");
+            case "en":
+            default:
+                return;
+        }
+    }
+    catch {
+        setTimeout(applyLangSpecificStyles, 3000); //maybe not a good idea but like... just wait a few seconds for nav.js to load?
+    }
+}
+
+function pageOn(num) {
+    return $(".pageSelect")[num-1].checked;
+}
+
+function anyPageOn(start, end) {
+    for (let i=start; i<=end; i++) {
+        if (pageOn(i))
+            return true;
+    }
+    return false;
+}
 
 function imgOn(isMain) {
     let imgId = "#char-img", idAdd = "";
@@ -186,36 +192,25 @@ function resetImg(isMain) {
 }
 
 //PDF generation assisted by https://www.freakyjolly.com/html2canvas-multipage-pdf-tutorial/
-function generatePDF(name) {
-    var pdf;
-    var p1 = $("#p1").is(":checked"), p2 = $("#p2").is(":checked"), p3 = $("#p3").is(":checked");
-    domtoimage.toPng(document.querySelector("#page1"),{ filter:filter }).then(function (imgData) {
-        pdf = new jsPDF('p', 'in', 'letter');
-        if (p1)
-            pdf.addImage(imgData, 'PNG', 0, 0, 8.5, 11);
+async function generatePDF (name) {
+    let pdf = new jsPDF('p', 'in', 'letter');
+    let totalPages = $(".pageSelect").length;
+    let firstPageFilled = false;
 
-        setTimeout(function() {
-            domtoimage.toPng(document.querySelector("#page2")).then(function (imgData) {
-                if (p1 && p2)
-                    pdf.addPage('letter');
-                if (p2)
-                    pdf.addImage(imgData, 'PNG', 0, 0, 8.5, 11);
+    for (let p=0; p<totalPages; p++) {
+        if (pageOn(p+1)) {
+            if (p === 2 && $("#class").val() !== 'act')
+                p = 3;
+            if (firstPageFilled)
+                pdf.addPage('letter');
+            let img = await domtoimage.toPng($(".page")[p],{ filter:filter });
+            pdf.addImage(img, 'PNG', 0, 0, 8.5, 11);
+            firstPageFilled = true;
+        }
+    }
 
-                setTimeout(function() {
-                    domtoimage.toPng(document.querySelector("#page3")).then(function (imgData) {
-                        if ((p1 || p2) && p3)
-                            pdf.addPage('letter');
-                        if (p3)
-                            pdf.addImage(imgData, 'PNG', 0, 0, 8.5, 11);
-                
-                        setTimeout(function() {
-                            pdf.save(name + ".pdf");
-                        }, 0);
-                    });
-                }, 0);
-            });
-        }, 0);
-    });
+    if (firstPageFilled)
+        pdf.save(name + '.pdf');
 }
 
 //filter to enable checkboxes & selects from https://github.com/tsayen/dom-to-image/issues/117#issuecomment-299462325
@@ -229,11 +224,11 @@ function filter(node) {
         }
         }
         else if(node.tagName==="SELECT" && node.selectedIdx!=-1){
-            var options = node.childNodes; // Assumption!
-            var optionCount = 0;
-            var selectedIdx = node.selectedIndex;
-            for(var i=0; i<options.length; i++){
-                var option = options[i]; // Maybe not an option
+            let options = node.childNodes; // Assumption!
+            let optionCount = 0;
+            let selectedIdx = node.selectedIndex;
+            for(let i=0; i<options.length; i++){
+                let option = options[i]; // Maybe not an option
                 if(option.tagName==="OPTION"){
                 if(optionCount === selectedIdx)
                 {
@@ -252,15 +247,13 @@ function filter(node) {
 }
 
 function exportData(mode) {
-    saveAct();
-    var data = {};
+    let data = {};
     data["form"] = JSON.stringify($("#pages").serializeArray());
-    data["acts"] = JSON.stringify(actScores);
     data["img"] = $("#char-img").attr("src");
     data["img2"] = $("#stand-img").attr("src");
-    var file = new Blob([JSON.stringify(data)], {type: "text/plain"});
+    let file = new Blob([JSON.stringify(data)], {type: "text/plain"});
 
-    var name;
+    let name;
     if ($("#name").val().length > 0)
         name = $("#name").val().replace(/ /g, "_").toLowerCase();
     else
@@ -269,19 +262,28 @@ function exportData(mode) {
     if (mode == "export")
         saveAs(file, name + "_data.json");
     else if (mode == "save")
-        return [name, data["form"], data["acts"], data["img"], data["img2"]];
+        return [name, data["form"], data["img"], data["img2"]];
 }
 
 //thanks to kflorence for creating a deserialize plugin https://stackoverflow.com/a/8918929
 function importData(data) {
+    let previousClass = $("#class").val(); //need to know if the last class was act for page displays
+
     $("#multi").val(""); //ensure older data w/o this field still load properly
     $("#pages")[0].reset();
     $("#pages").deserialize(JSON.parse(data["form"]));
     
     if (data["acts"]) {
-        actScores = JSON.parse(data["acts"]);
-        if ($("#class").val() == "act")
-            loadAct(0);
+        let actScores = JSON.parse(data["acts"]);
+        for (let act=0; act<4; act++) {
+            $(`#act${act+1}-str-score`).val(actScores[act][0]);
+            $(`#act${act+1}-dex-score`).val(actScores[act][1]);
+            $(`#act${act+1}-con-score`).val(actScores[act][2]);
+            $(`#act${act+1}-int-score`).val(actScores[act][3]);
+            $(`#act${act+1}-wis-score`).val(actScores[act][4]);
+            $(`#act${act+1}-cha-score`).val(actScores[act][5]);
+            updateActAllMods(act+1);
+        }
     }
     saveScores();
     
@@ -325,17 +327,25 @@ function importData(data) {
         $("#class").css("display", "inline-block");
     }
 
-    if ($("#class").val() == "act")
-        $("#act-num").css("display", "inline-block");
-    else
-        $("#act-num").css("display", "none");
+    if ($("#class").val() === "act") {
+        toggleAct(true);
+        loadAct(1);
+    }
+    else if (previousClass === "act") {
+        toggleAct(false);
+    }
 
     checkMeta();
-    updateChart();
+    updateChart("#sArrayChart", "stand");
+    updateChart("#act1ArrayChart", "act1");
+    updateChart("#act2ArrayChart", "act2");
+    updateChart("#act3ArrayChart", "act3");
+    updateChart("#act4ArrayChart", "act4");
+    showAllPages();
 }
 
 function scale(object) {
-    var val = $(object).width() / $(object).val().length, upper = 12, lower = 8;
+    let val = $(object).width() / $(object).val().length, upper = 12, lower = 8;
     if ($(object).attr("type") == "text") {
         upper = 16;
         lower = 12;
@@ -349,60 +359,49 @@ function scale(object) {
         $(object).css("font-size", "12px");
 }
 
+function shouldScale(object) {
+    const disallowedIds = ["desc"];
+    const disallowedClasses = ["skillstat", "skilllbl"];
+    const disallowedParentIds = ["stats"];
 
+    if (disallowedIds.includes(object?.id) || disallowedParentIds.includes(object.parentElement?.id))
+        return false;
+
+    let isAllowed = true;
+    object.classList.forEach(cls => {if (disallowedClasses.includes(cls)) isAllowed = false;});
+    return isAllowed;
+}
 
 function flipStats(initial) {
     let mod = [0,0,0,0,0,0];
     let score = [0,0,0,0,0,0];
-    $(".stat-mod").each(function(i) {
-        $(this).attr("id", $(this).attr("id").replace("mod", "temp"));
-        $(this).attr("name", $(this).attr("id").replace("mod", "temp"));
-        $(this).removeClass("stat-mod");
-        $(this).addClass("stat-temp");
-        mod[i] = $(this).val();
-    });
-    $(".stat-score").each(function(i) {
-        $(this).attr("id", $(this).attr("id").replace("score", "mod"));
-        $(this).attr("name", $(this).attr("id").replace("score", "mod"));
-        $(this).removeClass("stat-score");
-        $(this).addClass("stat-mod");
-        score[i] = $(this).val();
-        if (!initial)
-            $(this).val(mod[i]);
-    });
-    $(".stat-temp").each(function(i) {
-        $(this).attr("id", $(this).attr("id").replace("temp", "score"));
-        $(this).attr("name", $(this).attr("id").replace("temp", "score"));
-        $(this).removeClass("stat-temp");
-        $(this).addClass("stat-score");
-        if (!initial)
-            $(this).val(score[i]);
-    });
+    let targets = ["stat", "stand", "act1", "act2", "act3", "act4"];
 
-    $(".stand-mod").each(function(i) {
-        $(this).attr("id", $(this).attr("id").replace("mod", "temp"));
-        $(this).attr("name", $(this).attr("id").replace("mod", "temp"));
-        $(this).removeClass("stand-mod");
-        $(this).addClass("stand-temp");
-        mod[i] = $(this).val();
-    });
-    $(".stand-score").each(function(i) {
-        $(this).attr("id", $(this).attr("id").replace("score", "mod"));
-        $(this).attr("name", $(this).attr("id").replace("score", "mod"));
-        $(this).removeClass("stand-score");
-        $(this).addClass("stand-mod");
-        score[i] = $(this).val();
-        if (!initial)
+    for (let t=0; t<targets.length; t++) {
+        $(`.${targets[t]}-mod`).each(function(i) {
+            $(this).attr("id", $(this).attr("id").replace("mod", "temp"));
+            $(this).attr("name", $(this).attr("id").replace("mod", "temp"));
+            $(this).removeClass(`${targets[t]}-mod`);
+            $(this).addClass(`${targets[t]}-temp`);
+            mod[i] = $(this).val();
+        });
+        $(`.${targets[t]}-score`).each(function(i) {
+            $(this).attr("id", $(this).attr("id").replace("score", "mod"));
+            $(this).attr("name", $(this).attr("id").replace("score", "mod"));
+            $(this).removeClass(`${targets[t]}-score`);
+            $(this).addClass(`${targets[t]}-mod`);
+            score[i] = $(this).val();
             $(this).val(mod[i]);
-    });
-    $(".stand-temp").each(function(i) {
-        $(this).attr("id", $(this).attr("id").replace("temp", "score"));
-        $(this).attr("name", $(this).attr("id").replace("temp", "score"));
-        $(this).removeClass("stand-temp");
-        $(this).addClass("stand-score");
-        if (!initial)
+        });
+        $(`.${targets[t]}-temp`).each(function(i) {
+            $(this).attr("id", $(this).attr("id").replace("temp", "score"));
+            $(this).attr("name", $(this).attr("id").replace("temp", "score"));
+            $(this).removeClass(`${targets[t]}-temp`);
+            $(this).addClass(`${targets[t]}-score`);
             $(this).val(score[i]);
-    });
+        });
+    
+    };
 
     if (!initial) {
         let meta = parseInt($("#meta").val());
@@ -411,6 +410,69 @@ function flipStats(initial) {
         else
             meta++;
         $("#meta").val(meta);
+    }
+}
+
+function togglePage(num, force = false) {
+    let page = $(`#page${num}`);
+    if (force)
+        page.toggle();
+    else {
+        let isPageOn = pageOn(num);
+        if ($("#class").val() !== "act") { //this is gross and I don't like it but I've dug this hole
+            if (num === 4)
+                isPageOn = pageOn(3);
+            else if (num === 3)
+                isPageOn = pageOn(4);
+        }
+        isPageOn ? page.show() : page.hide();
+    }
+}
+
+function fixDivs() {
+    let total = $(".pageSelect").length;
+
+    for (let i=1; i<total; i++) {
+        if (pageOn(i) && anyPageOn(i+1, total))
+            $("#div" + i).show();
+        else
+            $("#div" + i).hide();
+    }
+}
+
+function showAllPages() {
+    let total = $(".pageSelect").length;
+
+    for (let i=1; i<=total; i++) {
+        $(`#p${i}`)[0].checked = true;
+        if ($("#class").val() != "act" && i === 4)
+            $(`#p${i}`)[0].checked = false;
+        togglePage(i);
+    }
+
+    fixDivs();
+}
+
+function toggleAct(enabled) {
+    let totalPages = $(".pageSelect").length;
+    if (enabled) {
+        $("#p4selector").show();
+        $(".pageSelect")[3].checked = $(".pageSelect")[2].checked;
+        $(".pageSelect")[2].checked = true;
+        $("#page3").show();
+        if (anyPageOn(1, 2))
+            $("#div2").show();
+        if (anyPageOn(4, totalPages))
+            $("#div3").show();
+        $("#act-num").show();
+    }
+    else {
+        $("#p4selector").hide();
+        $(".pageSelect")[2].checked = $(".pageSelect")[3].checked;
+        $(".pageSelect")[3].checked = false;
+        $("#page3").hide();
+        $("#div3").hide();
+        $("#act-num").hide();
     }
 }
 

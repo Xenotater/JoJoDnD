@@ -74,6 +74,7 @@ function getData(q) {
             $("#search").val(q);
             search(q);
         }
+        handleHashScroll();
     });
 
     $("#weapon-list").html("<div class='loading'></div>");
@@ -162,16 +163,16 @@ function hint(attr) { //this whole thing should be replaced by json..
             return("This weapon requires two hands to wield, and is difficult to holster or conceal.<br>May be carried (but not used) with one hand if desired.");
         case "Thrown":
             if (range[0] != range[1])
-                return("This weapon can be thrown up to " + range[0] + "m, or as far as " + range[1] + "m with Disadvantage.<br>Once thrown, this weapon must be picked up in order to be used again (unless it is an explosive, in which case it is destroyed).");
+                return("This weapon can be thrown up to " + range[0] + "m, or as far as " + range[1] + "m with Disadvantage.<br>Once thrown, this weapon must be picked up in order to be used again (unless it is an Explosive, in which case it is destroyed).");
             else
-                return("This weapon can be thrown up to " + range[0] + "m.<br>Once thrown, this weapon must be picked up in order to be used again (unless it is an explosive, in which case it is destroyed).")
+                return("This weapon can be thrown up to " + range[0] + "m.<br>Once thrown, this weapon must be picked up in order to be used again (unless it is an Explosive, in which case it is destroyed).")
         case "Ranged":
             return("This weapon can fire up to " + range[0] + "m, or as far as " + range[1] + "m with Disadvantage.<br>Firing within melee imposes Disadvantage.");
         case "Firearm":
-            return("This weapon makes a loud sound which can be heard up to 0.5km away.<br>It also jams if a natural 1 is rolled while using it.<br>This weapon's ammunition doesn't function when wet.");
+            return("This weapon makes a loud sound which can be heard up to 0.5km away.<br>It also jams if a Natural 1 is rolled while using it, requiring an Attack to un-jam the weapon before it may be fired again.<br>This weapon's ammunition doesn't function when wet.");
         case "Reload":
             return("This weapon can be used " + ammo + " times before needing to be reloaded.<br>Reloading takes a full Attack.");
-       case "Burst":
+        case "Burst":
             return("This weapon consumes " + ammo + " of it's ammo each time it is fired.")
         case "Concealed":
             return("This weapon grants " + bonus + " to any Check made to conceal it.");
@@ -182,11 +183,11 @@ function hint(attr) { //this whole thing should be replaced by json..
         case "Timer":
             return("A timer may be set on this weapon, detonating it once the timer runs out. The timer may be set for up to 12 hours.");
         case "Radius":
-            return("This weapon forces all creatures within " + dist + " of the target to make a Dexterity Saving Throw, taking half damage on success and full damage on failure.");
+            return("This weapon forces all creatures within " + dist + " of the target to make a Dexterity Saving Throw, taking half damage on success and full damage on failure. The projectile or charge is destroyed after use.");
         case "Siege":
             return ("This weapon deals double damage to objects.");
         case "Reliable":
-            return("This weapon does not jam if you roll a natural 1.");
+            return("This weapon does not jam if you roll a Natural 1.");
         case "Point Blank":
             return("This weapon does not impose Disadvantage if fired within melee.");
         case "Ambush":
@@ -196,7 +197,7 @@ function hint(attr) { //this whole thing should be replaced by json..
         case "Complex":
             return("This weapon takes a total of three Attacks to reload.");
         case "Flame":
-            return("When a targeted creature or object takes fire damage from this weapon, it is set ablaze (assuming the target is flammable).");
+            return("When a targeted creature or object takes Fire damage from this weapon, it is set ablaze (assuming the target is flammable).");
         case "Versatile":
             return("This weapon may be wielded with one or two hands. If two hands are used, it's damage becomes " + bonus + ".");
         case "Return":
@@ -204,15 +205,19 @@ function hint(attr) { //this whole thing should be replaced by json..
         case "AC Bonus":
             return("This weapon grants " + bonus + " to your AC while it is equipped.");
         case "Hunker":
-            return("While holding this item, if you've not moved this turn, you may gain " + cover + " Cover as a Bonus Action until the start of your turn, though this also reduces your Movement Speed to 0.")
+            return("While holding this item, if you've not moved this turn, you may gain " + cover + " Cover in one direction as a Bonus Action until the start of your turn, though this also reduces your Movement Speed to 0.");
         case "Reach":
             return("This weapon can attack targets from an additional meter away.");
         case "Conductive":
-            return("Energy currents, such as electricity or Ripple, may be run through this weapon.");
+            return("Energy currents, such as electricity or Ripple, may be run through this weapon without harming the wielder.");
         case "Bayonet":
             return("You may attach a dagger to the front of the rifle, allowing the weapon to be used in melee with the stats of a longspear.");
         case "Open Hand":
-            return("When you have this weapon equipped, you may also hold other weapons or objects in the same hand or perform actions such as Shove or Grapple as though your hand was free.")
+            return("When you have this weapon equipped, you may also use other weapons or objects in the same hand or perform actions such as Shove or Grapple as though your hand was free.<br>This weapon's attributes and damage do not apply at the same time as another in the same hand.");
+        case "Limited Hand":
+            return("When you have this weapon equipped, you may also use other Light weapons, tiny objects, or Shove and Grapple as though your hand was free.<br>This weapon's attributes and damage do not apply at the same time as another in the same hand.");
+        case "Fist":
+            return("If you would deal more damage with your Unarmed Strikes than with this weapon, you may instead use the damage from your Unarmed Strikes.");
         default:
             return("Error: This attribute doesn't have a definition. Please alert the site administrator.");     
     }
@@ -221,7 +226,7 @@ function hint(attr) { //this whole thing should be replaced by json..
 function popUp(text, posX, posY) {
     $("#popUp").remove(); //just in case
     $("body").append("<div class='content' id='popUp'><p>" + text + "</p></div>");
-    $("#popUp").css("left", posX + 25);
+    $("#popUp").css("left", posX - 100);
 
     //ensure popUp doesn't go past navbar
     if (posY - $("#popUp").outerHeight() > $("nav").position().top + 88)
@@ -229,7 +234,7 @@ function popUp(text, posX, posY) {
     else
         posY -= .5 * $("#popUp").outerHeight();
 
-    $("#popUp").css("top", posY - 25);
+    $("#popUp").css("top", posY - 50);
 }
 
 //sort-by-key from https://stackoverflow.com/questions/8175093/simple-function-to-sort-an-array-of-objects
@@ -241,29 +246,38 @@ function sort() {
         if (y == "None" || y.includes("DC"))
             y = "A";
         if (sortType == "dmg") {
-            x = diceParse(x);
-            y = diceParse(y);
+            let dieX = diceParse(x), dieY = diceParse(y);
+            x = dieX.max;
+            y = dieY.max;
+            if (x == y) {
+                x = dieX.avg;
+                y = dieY.avg;
+            }
         }
         return ((x < y) ? -1 : ((x > y) ? 1 : 0));
     });
 }
 
 function diceParse(s) {
-    var val = s.match(/^.d.+ /);
-    var add = s.match(/^.d.+ \+ [0-9]+/);
+    const dice = s.split(/(?<= [A-z]+) \+ /)
+    let max = 0, avg = 0;
 
-    if (add != null)
-        add = parseInt(add[0].substring(add[0].indexOf("+") + 2, add[0].length));
-    else add = 0;
+    for (let i=0; i<dice.length; i++) {
+        let val = dice[i].match(/^\d+d\d+/);
+        let add = dice[i].match(/(?<=^\d+d\d+ ?\+ ?)[0-9]+/);
 
-    if (val != null) {
-        num = val[0].substring(0, val[0].indexOf('d'));
-        die = val[0].substring(val[0].indexOf('d') + 1, val[0].indexOf(' '));
-        var avg = num * ((die/2) + 0.5) + add;
-        return avg;
+        if (!add)
+            add = 0;
+        
+        if (val != null) {
+            num = val[0].substring(0, val[0].indexOf('d'));
+            die = val[0].substring(val[0].indexOf('d') + 1);
+            avg += num * ((die/2) + 0.5) + parseInt(add);
+            max += num * die + parseInt(add);
+        }
     }
-    else
-        return 0;
+
+    return {max: max, avg: avg};
 }
 
 function search(query) {

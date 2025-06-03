@@ -31,7 +31,7 @@
                     if ($e->getCode() == 1062)
                         echo "<h5 id='login-failure'>An account with this username or email already exists.</h5>";
                     else
-                        echo "<h5 id='login-failure'>Something went wrong, please contact the site administrator.</h5><p>{$e}</p>";
+                        echo "<h5 id='login-failure'>An error occurred, please contact the site administrator.</h5><p>{$e}</p>";
                 
                     $mysqli->close();
                     exit;
@@ -63,7 +63,7 @@
             if ($e->getCode() == 1062)
                 echo "<h5 id='login-failure'>An account with this email already exists.</h5>";
             else
-                echo "<h5 id='login-failure'>Something went wrong, please contact the site administrator.</h5><p>{$e}</p>";
+                echo "<h5 id='login-failure'>An error occurred, please contact the site administrator.</h5><p>{$e}</p>";
         
             $mysqli->close();
             exit;

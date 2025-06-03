@@ -10,7 +10,7 @@
           "<p>In order to obtain a Familiar, you must take the <a href='/feats/?focus=Familiar_Bond'>Familiar Bond</a> Feat.</p>",
           "<p>There is a simple order to follow for creating your new Familiar:</p>",
           "<ol><li>Roll their stats</li>",
-          "<li>Choose their size</li>",
+          "<li>Choose their Size</li>",
           "<li>Choose their <a class='in-page' id='Guardian-link'>Class</a></li>",
           "<li>Choose their <a class='in-page' id='Always_Alert-link'>Feats</a></li></ol>",
           "<small><i><b>Note:</b> Familiars use their own Classes and Feats, which are found on this page. Other Classes and Feats are not balanced or designed for Familiars.</i></small>"
@@ -26,8 +26,8 @@
       {
         "name": "Creature Size",
         "content": [
-          "<p>A Familiar's size determines its Movement Speed, AC bonus, and Hit Dice.</p>",
-          "<div id='sizes'><div class='size-card' id='tiny'><b>Tiny:</b><br>Hit Dice: 1d4<br>Movement: 5m OR<br>0m and 5m Flying/Swimming<br>Additional AC: +4<br>Natural Weapon Dice: 1d4</div>",
+          "<p>A Familiar's Size determines its Movement Speed, AC bonus (applies to Stand AC as well), and Hit Dice.</p>",
+          "<div id='sizes'><div class='size-card' id='tiny'><b>Tiny:</b><br>Hit Dice: 1d4<br>Movement: 5m OR<br>1m and 5m Flying/Swimming<br>Additional AC: +4<br>Natural Weapon Dice: 1d4</div>",
           "<div class='size-card' id='small'><b>Small:</b><br>Hit Dice: 1d6<br>Movement: 8m OR<br>2m and 8m Flying/Swimming<br>Additional AC: +2<br>Natural Weapon Dice: 1d6</div>",
           "<div class='size-card' id='med'><b>Medium:</b><br>Hit Dice: 1d8<br>Movement: 10m OR<br>3m and 10m Flying/Swimming<br>Additional AC: +1<br>Natural Weapon Dice: 1d8</div>",
           "<div class='size-card' id='large'><b>Large:</b><br>Hit Dice: 1d10<br>Movement: 12m OR<br>5m and 12m Swimming<br>Additional AC: +0<br>Natural Weapon Dice: 1d10</div></div>"
@@ -39,7 +39,8 @@
           "<p>Your Familiar will have a number of <a class='in-page' id='Always_Alert-link'>Familiar Feats</a> equal to half of the <a href='/Feats'>Feats</a> that you have, rounded up. For example, if you have 3 Feats, your Familiar has 2.</p>",
           "<p>In order for your Familiar to awaken a Stand, both of you must take the <a href='/feats/?focus=Familiar_Fighting_Spirit'>Familiar Fighting Spirit</a> Feat.</p>",
           "<p>Your Familiar will follow your lead in combat, taking their Turn in Initiative directly after yours.</p>",
-          "<p>Your Familiar will Level-Up alongside you, and will always be the same Level as you.</p>"
+          "<p>Your Familiar will Level-Up alongside you, and will always be the same Level as you.</p>",
+          "<p>If your Familiar is Downed it does not have to make Death Saves but may simply remain unconscious at 0 hp. Familiars cannot be truly killed unless its owner is killed.</p>"
         ]
       }
     ],
@@ -48,9 +49,9 @@
         "name": "The Guardian",
         "img": "Assets/wolf.webp",
         "desc": "Guardians are courageous and disciplined creatures. Using their powerful natural weapons they assist and protect others, and can shake off fear even in the most stressful of situations.",
-        "profs": "Acrobatics, Athletics, Intimidate, Perception, and Survival",
+        "profs": "Athletics, Care, Grit, Intimidate, Perception, Survival and Vibe",
         "profNum": 2,
-        "adProfs": 2,
+        "adProfs": 3,
         "prime": "Strength",
         "levels": {
           "1": {
@@ -123,7 +124,8 @@
           "13": {
             "pro": 5,
             "feats": 3,
-            "dice": 4
+            "dice": 4,
+            "other": "Ability Score Improvement"
           },
           "14": {
             "pro": 5,
@@ -132,9 +134,9 @@
           },
           "15": {
             "pro": 5,
-            "feats": 2,
+            "feats": 3,
             "dice": 4,
-            "features": ["Superior Mobility", "OR", "Superior Saves"]
+            "features": ["Superior Mobility", "OR", "Better Saves"]
           },
           "16": {
             "pro": 5,
@@ -155,7 +157,8 @@
           "19": {
             "pro": 6,
             "feats": 3,
-            "dice": 5
+            "dice": 5,
+            "other": "Ability Score Improvement"
           },
           "20": {
             "pro": 6,
@@ -171,7 +174,7 @@
         "desc": "Nimbles are animals that specialize in stealth, quiet movement, and delicate operations. They are able to handle fragile objects and execute precise maneuvers, allowing them to slip through the most cunning of traps.",
         "profs": "Acrobatics, Vibe, Investigation, Perception, Finesse, Sneak, and Survival",
         "profNum": 2,
-        "adProfs": 2,
+        "adProfs": 3,
         "prime": "Dexterity",
         "levels": {
           "1": {
@@ -244,7 +247,8 @@
           "13": {
             "pro": 5,
             "feats": 3,
-            "dice": 4
+            "dice": 4,
+            "other": "Ability Score Improvement"
           },
           "14": {
             "pro": 5,
@@ -255,7 +259,7 @@
             "pro": 5,
             "feats": 3,
             "dice": 4,
-            "features": ["Superior Mobility", "OR", "Superior Saves"]
+            "features": ["Superior Mobility", "OR", "Better Saves"]
           },
           "16": {
             "pro": 5,
@@ -276,7 +280,8 @@
           "19": {
             "pro": 6,
             "feats": 3,
-            "dice": 5
+            "dice": 5,
+            "other": "Ability Score Improvement"
           },
           "20": {
             "pro": 6,
@@ -290,9 +295,9 @@
         "name": "The Stalwart",
         "img": "Assets/horse2.webp",
         "desc": "Stalwarts are creatures who are loyal, durable, and reliable. They are able to shrug off exhaustion and damage that would kill another member of their species.",
-        "profs": "Care, Athletics, Knowledge, Intimidate, Perception, and Survival",
+        "profs": "Athletics, Care, Grit, Intimidate, Knowledge, Perception, and Survival",
         "profNum": 2,
-        "adProfs": 2,
+        "adProfs": 3,
         "prime": "Constitution",
         "levels": {
           "1": {
@@ -365,7 +370,8 @@
           "13": {
             "pro": 5,
             "feats": 3,
-            "dice": 4
+            "dice": 4,
+            "other": "Ability Score Improvement"
           },
           "14": {
             "pro": 5,
@@ -376,7 +382,7 @@
             "pro": 5,
             "feats": 3,
             "dice": 4,
-            "features": ["Unrelenting", "OR", "Superior Saves"]
+            "features": ["Unrelenting", "OR", "Better Saves"]
           },
           "16": {
             "pro": 5,
@@ -397,7 +403,8 @@
           "19": {
             "pro": 6,
             "feats": 3,
-            "dice": 5
+            "dice": 5,
+            "other": "Ability Score Improvement"
           },
           "20": {
             "pro": 6,
@@ -411,9 +418,9 @@
         "name": "The Tracker",
         "img": "Assets/rat.webp",
         "desc": "Trackers are creatures that use their superior senses and natural knowledge to navigate difficult situations. They can track, find food and shelter easily, and are exceptionally perceptive.",
-        "profs": "Acrobatics, Care, Knowledge, Vibe, Intimidate, Investigation, Medicine, and Survival",
+        "profs": "Acrobatics, Care, Intimidate, Investigation, Knowledge, Medicine, Survival, and Vibe",
         "profNum": 3,
-        "adProfs": 2,
+        "adProfs": 3,
         "prime": "Wisdom",
         "levels": {
           "1": {
@@ -486,7 +493,8 @@
           "13": {
             "pro": 5,
             "feats": 3,
-            "dice": 4
+            "dice": 4,
+            "other": "Ability Score Improvement"
           },
           "14": {
             "pro": 5,
@@ -497,7 +505,7 @@
             "pro": 5,
             "feats": 3,
             "dice": 4,
-            "features": ["Superior Skills", "OR", "Superior Saves"]
+            "features": ["Better Skills", "OR", "Better Saves"]
           },
           "16": {
             "pro": 5,
@@ -518,7 +526,8 @@
           "19": {
             "pro": 6,
             "feats": 3,
-            "dice": 5
+            "dice": 5,
+            "other": "Ability Score Improvement"
           },
           "20": {
             "pro": 6,
@@ -535,6 +544,16 @@
         "desc": ["Your Familiar has Advantage on any Saving Throw against any effect that would reduce their Movement Speed, or restrict their mobility, as well as Advantage on Strength (Athletics) or Dexterity (Acrobatics) Checks to avoid the Grappled or Restrained Conditions."],
         "classes": ["Nimble"]
       },
+      "Better_Saves": {
+        "name": "Better Saves",
+        "desc": ["Your Familiar gains Proficiency in an additional Saving Throw of your choice."],
+        "classes": ["Guardian", "Nimble", "Stalwart", "Tracker"]
+      },
+      "Better_Skills": {
+        "name": "Better Skills",
+        "desc": ["Your Familiar may gain an additional two Skill Proficiencies of your choice."],
+        "classes": ["Tracker"]
+      },
       "Blinding_Attack": {
         "name": "Blinding Attack",
         "desc": ["As an Action your Familiar may make a single Natural Weapon attack. If this attack lands, the opponent must make a Constitution Saving Throw, or be Blinded until the start of their next Turn. Anyone who is surprised by your Familiar has Disadvantage on the Save."],
@@ -542,7 +561,7 @@
       },
       "Bravery": {
         "name": "Bravery",
-        "desc": ["Your Familiar has Advantage on any Saving Throw against the Frightened Condition."],
+        "desc": ["Your Familiar has a +4 bonus to any Saving Throw against the Frightened Condition."],
         "classes": ["Guardian"]
       },
       "Extra_Attack": {
@@ -552,7 +571,7 @@
       },
       "Finesse_Attack": {
         "name": "Finesse Attack",
-        "desc": ["Whenever your Familiar makes an attack using their Natural Weapons, they may use Dexterity for their Attack and Damage Rolls, rather than Strength. Additionally, once per Turn, if you land Finesse Attack on a Surprised enemy or an enemy that you have Advantage against, you deal an additional die of damage."],
+        "desc": ["Whenever your Familiar makes an attack using their Natural Weapons, they may use Dexterity for their Attack and Damage Rolls, rather than Strength. Additionally, once per Turn, if your Familiar lands a Finesse Attack on a Surprised enemy or an enemy that it has Advantage against or at least a +4 bonus against from the environment or Conditions, you deal an additional die of damage."],
         "classes": ["Guardian", "Nimble", "Tracker"]
       },
       "Hardy": {
@@ -563,8 +582,8 @@
       "Natural_Tracker": {
         "name": "Natural Tracker",
         "desc": [
-          "Your Familiar gains Proficiency in the Survival Skill. If they are already Proficient in Survival, they instead gain Expertise. Also, your Familiar may make Investigation Checks using their Wisdom, rather than their Intelligence.",
-          "Additionally, your Familiar has Advantage on any Check made with the intent of looking for food, water, or shelter."
+          "Your Familiar gains Proficiency in the Survival Skill. Additionally, your Familiar may make Investigation Checks using their Wisdom, rather than their Intelligence.",
+          "Additionally, your Familiar has a +4 bonus to any Check made with the intent of looking for food, water, or shelter."
         ],
         "classes": ["Tracker"]
       },
@@ -577,8 +596,8 @@
         "name": "Pounce Attack",
         "desc": [
           "As an Action, your Familiar may leap onto a foe. You may jump double its normal jump distance in a high jump or long jump. Alternatively, if your Familiar has a Flying Speed, it may simply fly into them.",
-          "If the jump reaches the target, your Familiar may make a Natural Weapon attack. If the opponent fulfilled one of the following conditions, they must make a Strength Saving throw in addition to the damage of the attack if it hits:",
-          "<ul><li>They are Surprised</li><li>Your Familiar has Advantage on the Attack Roll against them</li><li>They are engaged with one of your allies in melee combat</li></ul>",
+          "If the jump reaches the target, your Familiar may make a Natural Weapon attack. If the opponent fulfilled one of the following conditions, they must make a Strength Saving throw in addition to the damage of the Attack if it hits:",
+          "<ul><li>They are Surprised</li><li>Your Familiar has Advantage on the Attack Roll against them</li><li>Your Familiar has at least a +4 bonus to the Attack Roll from the environment or Conditions</li><li>They are engaged with one of your allies in melee combat</li></ul>",
           "If they fail, they cannot take Reactions until the start of their next Turn."
         ],
         "classes": ["Nimble", "Tracker"]
@@ -597,13 +616,14 @@
         "name": "Shove Attack",
         "desc": [
           "When your Familiar lands an attack on a creature that creature must make a Strength Saving Throw. If they fail, your Familiar may choose to knock them prone or push them back an amount of meters equal to their Strength Modifier.",
-          "Your Familiar may only use a Shove Attack once per Turn and only against creatures one size category above theirs or smaller."
+          "Additionally, if the target hits a wall, they take an amount of d4s of damage equal to your Familiar's Proficiency Bonus for each meter they could not be shoved.",
+          "Your Familiar may only use a Shove Attack once per Turn and only against creatures one Size Category above theirs or smaller."
         ],
         "classes": ["Stalwart"]
       },
       "Siege_Attack": {
         "name": "Siege Attack",
-        "desc": ["As an Action, your Familiar may make a single Natural Weapon attack on a creature or object, dealing double damage to any objects targeted."],
+        "desc": ["Your Familiar's Natural Weapon gains the <a href='/weapons'>Siege</a> attribute."],
         "classes": ["Guardian", "Stalwart"]
       },
       "Superior_Agility": {
@@ -613,7 +633,11 @@
       },
       "Superior_Bravery": {
         "name": "Superior Bravery",
-        "desc": ["Your Familiar is immune to the Frightened Condition. This replaces the <a class='in-page' id='Bravery-link'>Bravery</a> Feature."],
+        "desc": [
+          "Your Familiar is immune to the Frightened Condition.",
+          "Additionally, any d20 roll penalties your Familiar suffers from the environment or Conditions are halved.",
+          "This replaces the <a class='in-page' id='Bravery-link'>Bravery</a> Feature."
+        ],
         "classes": ["Guardian"]
       },
       "Superior_Hardy": {
@@ -631,23 +655,13 @@
       },
       "Superior_Natural_Tracker": {
         "name": "Superior Natural Tracker",
-        "desc": ["In addition to the benefits of Natural Tracker, your Familiar also gains Advantage on any Investigation or Survival Checks for tracking down any creature that has passed through your current location an hour ago or sooner."],
+        "desc": ["In addition to the benefits of Natural Tracker, your Familiar also gains a +4 bonus to any Investigation or Survival Checks for tracking down any creature that has passed through your current location an hour ago or sooner."],
         "classes": ["Tracker"]
       },
       "Superior_Natural_Weapons": {
         "name": "Superior Natural Weapons",
         "desc": ["You gain an additional Natural Weapon die when attacking. For example, if your Natural Weapons die is 1d8, it becomes 2d8."],
         "classes": ["Guardian", "Nimble", "Stalwart", "Tracker"]
-      },
-      "Superior_Saves": {
-        "name": "Superior Saves",
-        "desc": ["Your Familiar gains Proficiency in an additional Saving Throw of your choice. Alternatively, you may choose the Primary Stat of your Familiars class and gain Expertise in the use of that Saving Throw."],
-        "classes": ["Guardian", "Nimble", "Stalwart", "Tracker"]
-      },
-      "Superior_Skills": {
-        "name": "Superior Skills",
-        "desc": ["Your Familiar may gain an additional two Skill Proficiencies of your choice. Alternatively, you may choose a Skill that your familiar is already Proficient in and give them Expertise in it."],
-        "classes": ["Tracker"]
       },
       "Unrelenting": {
         "name": "Unrelenting",
@@ -662,13 +676,13 @@
       },
       "Animal_Instincts": {
         "name": "Animal Instincts",
-        "desc": ["Your Familiar has Advantage on any Vibe Checks made against a creature that they've just met for the first time. Additionally, they grant Advantage to their partner's Initiative rolls."]
+        "desc": ["Your Familiar has a +4 bonus to any Vibe Checks made against a creature that they've just met for the first time. Additionally, they grant a +4 bonus to your Initiative rolls."]
       },
       "Camouflage": {
         "name": "Camouflage",
         "desc": [
           "Through clever hiding or a natural ability to change their appearance, your Familiar may hide themselves in a remarkably effective way.",
-          "As an Action, your Familiar may blend in with their surroundings. As long as they do not use any of their Movement Speed or make any Attack Rolls, they gain Advantage on all Sneak and Finesse Checks."
+          "As an Action, your Familiar may blend in with their surroundings. As long as they do not use any of their Movement Speed or make any Attack Rolls, they gain a +8 bonus to all Sneak Checks."
         ]
       },
       "Climber": {
@@ -679,17 +693,24 @@
         "name": "Dwarf's Escape",
         "desc": [
           "<b><u>Prerequisite:</u> Must be a Familiar of Tiny or Small Size</b>",
-          "Your familiar may Dodge or Hide as a Bonus Action."
+          "Your Familiar may Dash, Disengage, or Hide as a Bonus Action."
         ]
       },
       "Excavator": {
         "name": "Excavator",
         "desc": ["Your Familiar gains a Burrow Speed equal to half of their Movement Speed, or Flying/Swimming Speed if that is their highest Movement Speed."]
       },
+      "Extra_Sense": {
+        "name": "Extra Sense",
+        "desc": [
+          "Your Familiar gains one of the following additional senses:<ul class='sublist'><li>Echolocation: Your Familiar gains 10/20 meters of Blindsense. If there is noise being made in the area, they may use the Long Range of this sense without Disadvantage. They may make the noise themselves as well but this grants a -4 penalty to Sneak Checks. Your Familiar must be able to hear to use this.</li><li>Soulsense: Your Familiar gains 10/20 meters of Soulsense, which allows them to sense the souls of living creatures, including Stands and ghosts. They gain a +10 bonus to Perception Checks using this sense in the Short Range, and a +5 bonus in the Long Range. This sense is not restricted by walls or barriers, and it may be used to determine if a soul has been in a location within the Short Range within the last minute. Undead and Constructs cannot be sensed this way.</li><li>Tremorsense: Your Familiar gains 10/20 meters of Tremorsense, allowing them to sense vibrations around them. They must be connected to some kind of surface to feel the vibrations through in order to sense up to the Long Range. They may sense past Total Cover using this, so long as they are touching the Cover itself. Your Familiar must be able to use its natural sense of touch to use this.</li><li>Night Vision: Your Familiar gains 15/30 meters of Darkvision, allowing them to see clearly in Darkness up to the Short Range or with Disadvantage up to the Long Range. If they have a light source, the effective range of it is doubled for them as well.</li></ul>",
+          "Your Familiar may take this Feat multiple times if desired, either gaining another sense or increasing the Range of an existing one by the described amount."
+        ]
+      },
       "Giants_Wrath": {
         "name": "Giant's Wrath",
         "desc": [
-          "<b><u>Prerequisite:</u> Must be a familiar of Medium or Large size.</b>",
+          "<b><u>Prerequisite:</u> Must be a Familiar of Medium or Large Size.</b>",
           "Your Familiar deals an additional die of damage when they attack using their Natural Weapons."
         ]
       },
@@ -697,29 +718,29 @@
         "name": "Keen Senses",
         "desc": [
           "Through superior sensory organs and patience, your Familiar has learned to trust a couple of their senses in particular, and hone them.",
-          "Choose two of the five senses (sight, hearing, smell, touch, taste). Whenever your Familiar makes a Perception Check using one of those two senses, they have Advantage."
+          "Choose two of the five senses (sight, hearing, smell, touch, taste). Your Familiar gains a +4 bonus to Perception Checks and Passive Perception using those senses."
         ]
       },
       "Naturally_Sheltered": {
         "name": "Naturally Sheltered",
         "desc": [
           "Your Familiar is naturally protected from the elements, due to their thick hide or adaptive behaviors.",
-          "When your Familiar stays in the same place, they are considered to be housed comfortably. If your familiar is Large, they do not need to spend time setting up their shelter. If they are Medium, they must spend 1 minute setting up a shelter. If they are Small, they must spend 5 minutes setting up a shelter. If they are Tiny, they must spend 10 minutes setting up a shelter.",
-          "Additionally, your familiar may comfortably shelter a single creature of a size category that is smaller than them, up to three creatures that are two size categories smaller, and up to seven creatures that are three size categories smaller than them."
+          "When your Familiar stays in the same place, they are considered to be housed comfortably. If your Familiar is Large, they do not need to spend time setting up their shelter. If they are Medium, they must spend 1 minute setting up a shelter. If they are Small, they must spend 5 minutes setting up a shelter. If they are Tiny, they must spend 10 minutes setting up a shelter.",
+          "Additionally, your Familiar may comfortably shelter a single creature of a Size Category that is smaller than them, up to three creatures that are two Size categories smaller, and up to seven creatures that are three Size categories smaller than them."
         ]
       },
       "Natural_Skirmisher": {
         "name": "Natural Skirmisher",
         "desc": [
           "Using natural mobility and speed, your Familiar has the ability to land a couple hits and leave before they can be hit themselves.",
-          "Whenever your Familiar attempts to make a melee attack against a creature, they cannot be targeted by Opportunity Attacks from that creature until the end of your Familiar's next Turn."
+          "Whenever your Familiar attempts to make a Melee Attack against a creature, they cannot be targeted by Opportunity Attacks from that creature until the end of your Familiar's next Turn."
         ]
       },
       "Treasure_Hunter": {
         "name": "Treasure Hunter",
         "desc": [
           "Your Familiar has an eye for shiny objects, and likes to find and collect them.",
-          "Your Familiar has Advantage on any Skill Check made to find shiny and visually interesting objects. This includes everything from natural crystals to coins, as well as shards of glass or bits of scrap metal."
+          "Your Familiar has a +5 bonus to any Skill Check made to find shiny and visually interesting objects. This may relate to finding things such as gold coins, silver, metal scraps, natural crystals, cut gems, or shards of glass."
         ]
       }
     }

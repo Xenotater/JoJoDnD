@@ -128,7 +128,7 @@ function updateDisplay() {
 
     newContent += "<h2 class='display-title'>" + abil.name + "</h2>";
     for (let i = 0; i < abil.desc.length; i++)
-        newContent += "<p>" + abil.desc[i] + "</p>";
+        newContent += "<div class='para'>" + abil.desc[i] + "</div>";
     newContent += "<h4 class='display-heading'>Given To</h4><ul id='given'>";
     newContent += parseTypes(abil.classes);
     newContent += "</ul>";
@@ -256,12 +256,52 @@ function parseTypes(classes) {
                     page = "races";
                     lnk = "Rock_Human";
                     break;
+                case "Anim":
+                    cls = "Animals";
+                    page = "races";
+                    lnk = "AnimalRock_Animal";
+                    break;
+                case "RkAnim":
+                    cls = "Rock Animals";
+                    page = "races";
+                    lnk = "AnimalRock_Animal";
+                    break;
+                case "Cyb":
+                    cls = "Cyborgs";
+                    page = "races";
+                    lnk = "Cyborg";
+                    break;
+                case "Gst":
+                    cls = "Ghosts";
+                    page = "races";
+                    lnk = "Ghost";
+                    break;
+                case "Chim":
+                    cls = "Living Chimera";
+                    page = "races";
+                    lnk = "Living_Chimera";
+                    break;
+                case "UnChim":
+                    cls = "Undead Chimera";
+                    page = "races";
+                    lnk = "Undead_Chimera";
+                    break;
+                case "Stand":
+                    cls = "Living Stands";
+                    page = "races";
+                    lnk = "Living_Stand";
+                    break;
+                case "Plant":
+                    cls = "Plants";
+                    page = "races";
+                    lnk = "Plant";
+                    break;
                 case "Corpse":
                     cls = "Holy Corpse Holders";
                     page = "artifacts";
                     lnk = "Holy_Corpse_Parts";
                     break;
-                case "Heav":
+                case "Heaven":
                     cls = "Heaven Stands";
                     page = "artifacts";
                     lnk = "Heaven";

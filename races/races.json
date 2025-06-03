@@ -2,7 +2,7 @@
     "Human": {
         "name": "Human",
         "desc": "The most common and basic race in the world of JoJo's, Humans are fairly uninteresting. They gain no special abilities like other races do, but they have boundless potential. Though they may start out quite ordinary, they're able to become a <a href='\/classes?focus=Stands'>Stand User<\/a>, <a href='\/classes?focus=Ripple'>Ripple User<\/a>, <a href='\/classes?focus=Spin'>Spin User<\/a>, or even a <a href='\/races?focus=Vampire'>Vampire<\/a> if the right conditions are met.",
-        "playing": "Humans gain no special features, abilities, or attributes from their race. Extra <a href='\/feats'>Feats<\/a> are granted based on level, and stat bonuses and Proficiencies are granted by <a href='\/passions'>Passions<\/a>."
+        "playing": "Humans gain a single Feat of their choice, so long as they meet the prerequisites for it. This Feat does not count against the number of Feats gained from your Proficiency Bonus<br><br>Your Creature Type is Humanoid, your Movement Speed is 10m, and your Size Category is Small or Medium."
     },
     "Zombie": {
         "name": "Zombie",
@@ -17,7 +17,7 @@
             "Page,_Jones,_Plant,_and_Bornnam"
         ],
         "desc": "A Zombie is created whenever a Vampire takes blood out of a living Human, or brings a shriveled corpse back from the dead. Zombies are creatures with great strength and durability, but almost total weakness to UV light. Most Zombies are slaves to their masters, but some Zombies may survive and live after their Master has left them in some way, mostly of their own free will but still slaves to their hunger for living flesh.",
-        "playing": "Zombies are powerful Undead creatures, but they have several weaknesses and shortcomings, and they are the weakest type of Undead. Once a creature becomes a Zombie, they have reached their full potential, and may no longer grow or develop. <br><br>While able to speak coherently, their insatiable hunger for flesh and violence will likely overtake them too much to do much else. Most Zombies will spend their time thinking about horrific and creative new ways to enact violence, or actually committing said violence.<br><br>Zombies have very little willpower of their own, and will obey commands with very little question from a greater Undead, such as a Vampire, or even a powerful Ghoul. A Zombie who had a <a href='\/classes\/?focus=Stands'>Stand<\/a> in life will be unable to use it, as their insatiable hunger and lack of reason overcomes the fighting spirit needed to keep a Stand in control.",
+        "playing": "Zombies are powerful Undead creatures, but they have several weaknesses and shortcomings, and they are the weakest type of Undead. Once a creature becomes a Zombie, they have reached their full potential, and may no longer grow or develop. <br><br>While able to speak coherently, their insatiable hunger for flesh and violence will likely overtake them too much to do much else. Most Zombies will spend their time thinking about horrific and creative new ways to enact violence, or actually committing said violence.<br><br>Zombies have very little willpower of their own, and will obey commands with very little question from a greater Undead, such as a Vampire, or even a powerful Ghoul. A Zombie who had a <a href='\/classes\/?focus=Stands'>Stand<\/a> in life will be unable to use it, as their insatiable hunger and lack of reason overcomes the fighting spirit needed to keep a Stand in control.<br><br>Your Creature Type is Undead, your Movement Speed is 10m, and your Size Category is the same as you had in life or one Category larger.",
         "changes": "When you become a Zombie, you retain any and all abilities possessed when you were Human. However, they may not develop or grow beyond their current capacity. Zombies retain any Non-Supernatural Levels, Proficiencies, and additional skills they had in life, but they cannot learn any new skills or gain any additional Class Levels.",
         "feats": [
             "Undead Nature",
@@ -42,7 +42,7 @@
             "Adams"
         ],
         "desc": "A Ghoul is very similar to a Zombie, in that it is created when a Vampire steals the blood out of a living Human. However, rather than simply leaving a shriveled corpse, the Vampire replaces some of the taken blood with a small amount of Vampiric Essence (Ghouls may also be created from corpses, even if there are very little remains left of the corpse). This causes the Ghoul to undergo only minor changes as opposed to its Zombie counterpart, even able to pass as Human with little to no trouble at all.<br><br>Ghouls are able to retain some semblance of their willpower, even if it has been twisted to some dark end. A Ghoul may not be able to control their hunger for flesh, but they may exhibit little quirks or mannerisms that they had in life including certain ideals, just manifested in corrupted ways. A Ghoul that strongly believed in fair combat, for example, may choose to fight specific Humans they believe to be worthy opponents head-on, rather than ambushing anything that moves from the shadows.",
-        "playing": "When you become a Ghoul, you retain any and all abilities possessed when you were Human. While you may not further develop these skills, you may still use your <a href='\/classes\/?focus=Stands'>Stand<\/a> if you had one. Ghouls retain any Levels, Proficiencies, and additional skills they had in life, but they cannot learn any new skills or Levels, Proficiencies, or additional skills aside from Levels in Ghoul.<br><br>Ghouls must consume life in order to survive. As an Action, you may make physical contact with a willing or Incapacitated creature in some way (hitting, biting, stabbing with your hand, etc.) and drain up to 2 energy from them. You may safely take up to 2 energy from a person before they fall unconscious, and up to 4 before they die. Most humanoids are worth 10 energy, and animals give 1\/5th the energy that Humans do (for example, an animal who is the same mass as you would give you 2 energy).<br><br>Leveling up requires a certain total amount of energy, which is not consumed upon Level-Up. You may not lose Levels in Ghoul, even if your energy dips below the prerequisite after you Level-Up.",
+        "playing": "When you become a Ghoul, you retain any and all abilities possessed when you were Human. While you may not further develop these skills, you may still use your <a href='\/classes\/?focus=Stands'>Stand<\/a> if you had one. Ghouls retain any Levels, Proficiencies, and additional skills they had in life, but they cannot learn any new skills or Levels, Proficiencies, or additional skills aside from Levels in Ghoul.<br><br>Ghouls must consume life in order to survive. As an Action, you may make physical contact with a willing or Incapacitated creature in some way (hitting, biting, stabbing with your hand, etc.) and drain up to 2 energy from them. You may safely take up to 2 energy from a person before they fall unconscious, and up to 4 before they die. Most Humanoids are worth 10 energy, and animals give 1\/5th the energy that Humans do (for example, an animal who is the same mass as you would give you 2 energy).<br><br>Leveling up requires a certain total amount of energy, which is not consumed upon Level-Up. You may not lose Levels in Ghoul, even if your energy dips below the prerequisite after you Level-Up<br><br>Your Creature Type is Undead, and your Size Category is the same as you had in life or one Category larger.",
         "changes": "Your Levels all stay the same, but you also become a Level 1 Ghoul on top of your already gathered abilities. You may not gain any more non-Ghoul Levels, regardless of Experience gained. Your Strength and Constitution increase by 4, your Dexterity increases by 2, and your Intelligence, Wisdom, and Charisma all stay the same. Ghouls heal at roughly twice the rate that they would normally in life. Ghouls need to eat either their entire body weight in Human parts, or five times their body weight from animals, per week in order to continue surviving.",
         "theme": "tarkus",
         "levels": 5,
@@ -96,7 +96,7 @@
             "Vanilla_Ice"
         ],
         "desc": "Vampires are Humans that were able to find a <a href='\/artifacts\/?focus=Stone_Mask'>Stone Mask<\/a>, and awaken the true potential of the Human mind. When the front of the mask is exposed to blood, spikes shoot out from the mask, then retract after around 5 seconds. This kills anyone wearing the mask, and transforms them into a Vampire. When you become a Vampire, you retain all memories, skills, and abilities that you had in life, in addition to gaining later ones further down the line. Vampires are a lot stronger than Humans, Zombies, or even Ghouls. Vampires have a wide array of powerful <a href='\/abilities\/?focus=Vampirification&search=Vamp'>Abilities<\/a>, but this power comes at a cost, as all things do. Vampires must consume the blood of the living in order to survive, as well as become stronger.",
-        "playing": "Vampires are extremely powerful, but they have a huge weakness. Because Vampires are Undead, any exposure to sunlight or <a href='\/classes\/?focus=Ripple'>The Ripple<\/a> disintegrates the flesh itself.<br><br>Vampires must consume life in order to survive. As an Action, you may make physical contact with a willing or Incapacitated creature in some way (hitting, biting, stabbing with your hand, etc.) and drain up to 2 energy from them. You may safely take up to 2 energy from a person before they fall unconscious, and up to 4 before they die. Most humanoids are worth 10 energy, and animals give 1\/5th the energy that Humans do (for example, an animal who is the same mass as you would give you 2 energy). Vampires may consume other Undead life as well, gaining half of the energy that Undead had.<br><br>Leveling up requires a certain total amount of energy, which is not consumed upon Level-Up. You may not lose Levels in Vampire, even if your energy dips below the prerequisite after you Level-Up. Levels of Vampire <b>do not classify as Multiclassing<\/b>. You can Level-Up as an Undead independent of your Class, as long as you meet the energy requirements to do so.",
+        "playing": "Vampires are extremely powerful, but they have a huge weakness. Because Vampires are Undead, any exposure to sunlight or <a href='\/classes\/?focus=Ripple'>The Ripple<\/a> disintegrates the flesh itself.<br><br>Vampires must consume life in order to survive. As an Action, you may make physical contact with a willing or Incapacitated creature in some way (hitting, biting, stabbing with your hand, etc.) and drain up to 2 energy from them. You may safely take up to 2 energy from a person before they fall unconscious, and up to 4 before they die. Most Humanoids are worth 10 energy, and animals give 1\/5th the energy that Humans do (for example, an animal who is the same mass as you would give you 2 energy). Vampires may consume other Undead life as well, gaining half of the energy that Undead had.<br><br>Humans who have had a non-lethal amount of energy drained may recover from it, especially if they receive medical attention. For each energy you drain from a Human, they gain 1 + the amount of energy taken levels of Exhaustion. Each hour, the target may make a Grit Check or a Constitution Saving Throw, with each having a DC of 10 + the amount of energy taken. Penalties from Exhaustion do not apply to this Save\/Check. Succeeding reduces the level of Exhaustion by 1, and succeeding by 10 or more reduces it by 2. Exhaustion may also be removed through normal means, such as spending half their total hit dice on a Short Rest or taking a Long Rest. Getting a blood transfusion grants an additional bonus equal to their Proficiency Bonus when making the Save\/Check. Getting additional nutrients (such as a heartier diet) would grant a bonus half PB. <a href='\/classes?focus=Ripple'>Ripple<\/a> Users and <a href='\/classes?focus=Spin'>Spin<\/a> Users can instead make the Save\/Check every minute, or allow allies to do so as long as they use <a href='\/abilities?focus=Healing_Hands'>Healing Hands<\/a>\/<a href='\/abilities?focus=Medicinal_Spin'>Medicinal Spin<\/a> on themselves or the target.<br><br>Leveling up requires a certain total amount of energy, which is not consumed upon Level-Up. You may not lose Levels in Vampire, even if your energy dips below the prerequisite after you Level-Up. Levels of Vampire <b>do not classify as Multiclassing<\/b>. You can Level-Up as an Undead independent of your Class, as long as you meet the energy requirements to do so.<br><br>Your Creature Type is Undead, and your Size Category is the same as you had in life or one Category larger.",
         "note": "Vampires are not weakened by artifacts like holy symbols, Holy Water, or a stake to the heart. Sunlight and <a href='\/classes\/?focus=Ripple'>The Ripple<\/a> are their primary weakness.",
         "note2": "Your Vampiric DC is 8 + Proficiency Bonus + Charisma Modifier",
         "theme": "dio",
@@ -133,6 +133,7 @@
             "5": {
                 "energy": 80,
                 "feats": [
+                    "Custom Bodily Ability",
                     "Greater Undead Senses"
                 ]
             },
@@ -158,7 +159,8 @@
                 "energy": 160,
                 "feats": [
                     "Flesh Grafting",
-                    "Spider Climb"
+                    "Spider Climb",
+                    "Flight (Variant Rule)"
                 ]
             },
             "10": {
@@ -239,12 +241,14 @@
         "links": [
             "Unnamed_Characters\/Part_2#Pillar_Men_Clan"
         ],
-        "desc": "An ancient race of people, they lived extremely long lives and were very strong, but they were weak to the sun. Although it was originally thought that all of the Pillar Men were killed by Cars, that is not really the case.<\/p><p>Some might have escaped and lived out long lives, or another extinction event occurred. Regardless, somehow, Pillar Men DNA got mixed up with some Human DNA, and passed down through the generations, lying dormant. Within some Humans, the DNA of the Pillar Men lie, waiting to be activated. It may be activated through some sort of Trauma, or through lifestyle changes that mirror how the Pillar Men lived thousands of years ago.<\/p><p>Through eating only living or freshly killed creatures, avoiding sunlight, and adopting a nocturnal schedule, the DNA may be unlocked. However, once unlocked, it takes over, and the changes made cannot be reverted or reversed. To unlock it, you must have the Pillar Men DNA within your genome. It also takes 2 weeks of living the way that the Pillar Men did to unlock the genes, and to force them to take over.<\/p><p>Pillar Men is not really accurate, as there were also Pillar Women and Children. As such, Pillar Men is a misnomer, and you may be any gender, but still be classified as a \u201cPillar Man\u201d.",
+        "desc": "An ancient race of people, they lived extremely long lives and were very strong, but they were weak to the sun. Although it was originally thought that all of the Pillar Men were killed by Cars, that is not really the case.<\/p><p>Some might have escaped and lived out long lives, or another extinction event occurred. Regardless, somehow, Pillar Men DNA got mixed up with some Human DNA, and passed down through the generations, lying dormant. Within some Humans, the DNA of the Pillar Men lie, waiting to be activated. It may be activated through some sort of Trauma, or through lifestyle changes that mirror how the Pillar Men lived thousands of years ago.<\/p><p>Through eating only living or freshly killed creatures and plants, avoiding sunlight, and adopting a nocturnal schedule, the DNA may be unlocked. However, once unlocked, it takes over, and the changes made cannot be reverted or reversed. To unlock it, you must have the Pillar Men DNA within your genome. It also takes 2 weeks of living the way that the Pillar Men did to unlock the genes, and to force them to take over.<\/p><p>Pillar Men is not really accurate, as there were also Pillar Women and Children. As such, Pillar Men is a misnomer, and you may be any gender, but still be classified as a \u201cPillar Man\u201d.",
         "note": "Despite their weakness to sunlight and their enhanced physical characteristics, they are not Undead. Pillar Men can still be killed in the same way that a conventional Humanwould be, they are simply more resilient. This also means any <a href='\/abilities?search=undead'>Ability<\/a> or <a href='\/feats?search=undead'>Feat<\/a> that refers to Undead does not include Pillar Men.",
-        "changes": "As a Pillar Man, you must eat a lot more to survive. You still eat food in the same way that a Humandoes, but your diet changes slightly. You must eat either living animals, or animals that were living an hour before you initially consumed them. You may cook your food, but you get the same amount of nutrients eating flesh either cooked or raw. Every part of an animal gives you nutrients, and as such, you may eat the entirety of the animal, including the bones. You may also eat fruit and vegetables, but they do not give you nutrients, nor do they sate your hunger. Humans need to eat around 2000 calories to stay healthy, and properly nourished, and Pillar Men need roughly 10000 calories to stay healthy. You also gain an aversion to UV light. When you are in direct sunlight, you take 1d4 Radiant Damage at the start of each of your Turns, for every Turn when you are in direct sunlight. You now age a lot slower than you would normally. Humans only live to around 70, but Pillar Men live to around 200 years old. Your Strength, Dexterity, and Constitution increase by 2.",
+        "changes": "As a Pillar Man, you must eat a lot more to survive. You still eat food in the same way that a Human does, but your diet changes slightly. You must eat either living animals or plants, or animals or plants that were living an hour before you initially consumed them. You may cook your food, but you get the same amount of nutrients eating food either cooked or raw. Every part of an animal and plant gives you nutrients, and as such, you may eat the entirety of a creature, including the bones and rind, without any ill effect, even if such things would be toxic. Humans need to eat around 2000 calories to stay healthy, and properly nourished, and Pillar Men need roughly 10000 calories to stay healthy. You also now age a lot slower than you would normally. Humans only live to around 70, but Pillar Men live to around 200 years old.",
         "feats": [
+            "Pillar Man Physique",
             "Primal Charm"
-        ]
+        ],
+        "playing": "Your Creature Type is Humanoid, your Movement Speed is 10m, and your Size Category is Small or Medium.  You gain an aversion to UV light. When exposed to direct sunlight, you immediately take an amount of Radiant damage equal to your Class Level and take it again at the start of each of your Turns while you are in direct sunlight. When exposed to Ripple or attempting to use a Ripple Technique, you take the same damage. You cannot use <a href='/abilities?focus=Slowed_Aging'>Slowed Aging</a>, <a href='/abilities?focus=Ripple_Regeneration'>Ripple Regeneration</a>, or <a href='/abilities?focus=Ripple_Perception'>Ripple Perception</a> at all."
     },
     "Enhanced_Pillar_Man": {
         "name": "Enhanced Pillar Man",
@@ -261,7 +265,7 @@
             "Kars"
         ],
         "desc": "Thousands of years ago, a genius named Cars created the <a href='\/artifacts\/?focus=Stone_Mask'>Stone Mask<\/a> and tested it on himself, with the eventual goal of conquering the Sun, and being able to bask in its glow. The Stone Mask was an important step into this process. While it did not give him, nor his Pillar Men brethren any resistance to The Sun, it made them much, much stronger. The only drawback was that in order to sustain this new power, they had to consume massive amounts of energy.",
-        "playing": "Enhanced Pillar Men are some of the strongest creatures ever to walk The Earth, with strength, speed, and intelligence that rivals every other animal. However, in order to sustain this power, you must absorb immense amounts of energy from animals. Not only that, but when you become an Enhanced Pillar Man, your weakness to UV Light and <a href='\/classes\/?focus=Ripple'>The Ripple<\/a> actually becomes more acute.<br><br>EPMs must consume life in order to survive. As an Action, you may make physical contact with a willing or Incapacitated creature in some way (hitting, biting, stabbing with your hand, etc.) and drain up to 5 energy from them. You may safely take up to 2 energy from a person before they fall unconscious, and up to 4 before they die. Most humanoids are worth 10 energy, and animals give 1\/5th the energy that Humans do (for example, an animal who is the same mass as you would give you 2 energy). EMPs may consume other Undead life as well, gaining all of the energy that Undead had.<br><br>Leveling up requires a certain total amount of energy, which is not consumed upon Level-Up. You may not lose Levels in EPM, even if your energy dips below the prerequisite after you Level-Up. Levels of EPM <b>do not classify as Multiclassing<\/b>. You can Level-Up as an Undead independent of your Class, as long as you meet the energy requirements to do so.",
+        "playing": "Enhanced Pillar Men are some of the strongest creatures ever to walk The Earth, with strength, speed, and intelligence that rivals every other animal. However, in order to sustain this power, you must absorb immense amounts of energy from animals. Not only that, but when you become an Enhanced Pillar Man, your weakness to UV Light and <a href='\/classes\/?focus=Ripple'>The Ripple<\/a> actually becomes more acute.<br><br>EPMs must consume life in order to survive. As an Action, you may make physical contact with a willing or Incapacitated creature in some way (hitting, biting, stabbing with your hand, etc.) and drain up to 5 energy from them. You may safely take up to 2 energy from a person before they fall unconscious, and up to 4 before they die. Most Humanoids are worth 10 energy, and animals give 1\/5th the energy that Humans do (for example, an animal who is the same mass as you would give you 2 energy). EMPs may consume other Undead life as well, gaining all of the energy that Undead had.<br><br>Humans who have had a non-lethal amount of energy drained may recover from it, especially if they receive medical attention. For each energy you drain from a Human, they gain 1 + the amount of energy taken levels of Exhaustion. Each hour, the target may make a Grit Check or a Constitution Saving Throw, with each having a DC of 10 + the amount of energy taken. Penalties from Exhaustion do not apply to this Save\/Check. Succeeding reduces the level of Exhaustion by 1, and succeeding by 10 or more reduces it by 2. Exhaustion may also be removed through normal means, such as spending half their total hit dice on a Short Rest or taking a Long Rest. Getting a blood transfusion grants an additional bonus equal to their Proficiency Bonus when making the Save\/Check. Getting additional nutrients (such as a heartier diet) would grant a bonus half PB. <a href='\/classes?focus=Ripple'>Ripple<\/a> Users and <a href='\/classes?focus=Spin'>Spin<\/a> Users can instead make the Save\/Check every minute, or allow allies to do so as long as they use <a href='\/abilities?focus=Healing_Hands'>Healing Hands<\/a>\/<a href='\/abilities?focus=Medicinal_Spin'>Medicinal Spin<\/a> on themselves or the target.<br><br>Leveling up requires a certain total amount of energy, which is not consumed upon Level-Up. You may not lose Levels in EPM, even if your energy dips below the prerequisite after you Level-Up. Levels of EPM <b>do not classify as Multiclassing<\/b>. You can Level-Up as an Undead independent of your Class, as long as you meet the energy requirements to do so<br><br>Your Creature Type is Undead, and your Size Category is the same as you had in life or one Category larger.",
         "note": "Because of their higher energy needs, it's common for an Enhanced Pillar Man to create or hunt down and consume Vampires.",
         "note2": "Enhanced Pillar Men are an enhanced version of the Pillar Men, and as such get the same stat increases and racial Features as Pillar Men.",
         "theme": "santana",
@@ -298,6 +302,7 @@
             "5": {
                 "energy": 200,
                 "feats": [
+                    "Custom Bodily Ability",
                     "Greater Undead Senses"
                 ]
             },
@@ -311,7 +316,8 @@
                 "energy": 300,
                 "feats": [
                     "Flesh Grafting",
-                    "Spider Climb"
+                    "Spider Climb",
+                    "Flight (Variant Rule)"
                 ]
             },
             "8": {
@@ -383,7 +389,7 @@
             "19": {
                 "energy": 900,
                 "feats": [
-                    "Specialized EPM Ability"
+                    "Enhanced Bodily Ability"
                 ]
             },
             "20": {
@@ -407,7 +413,8 @@
         "feats": [
             "Immortality",
             "Lifeweaver"
-        ]
+        ],
+        "playing": "Your Creature type is Monstrosity and your Size Category is variable since you are able to change it at will."
     },
     "Abomination": {
         "name": "Abomination",
@@ -417,8 +424,9 @@
         "links": [
             "Mansaku_Nijimura"
         ],
-        "desc": "Abominations are Humans who have had a <a href='\/abilities\/?focus=Flesh_Bud'>Flesh Bud<\/a> implanted into their brains by a Vampire that's been destroyed. The Flesh Bud goes haywire, permanently changing the function of the once humanoid body. Extremely aggressive tumors rapidly grow within a matter of minutes after the death of the Vampire that had planted the Flesh Bud, taking over almost every cell in the body. This makes the skin Turn a mossy shade of green, and makes the previously normal Human completely unrecognizable. It also invades the mind, making your mental functions drop to around the levels of a dog.",
-        "changes": "Your Intelligence, Wisdom, and Charisma all Drop to 3. Your Strength and Dexterity both drop by 5, and you lose all Abilities, Feats, and anything else you've learned.  Your max HP remains whatever it was before your transformation or becomes 200, whichever is higher. Your Class becomes Abomination Level 1. You may not gain Experience Points nor Level-Up, and you lose all sense of humanity or sentience. You also become effectively immortal, healing 50 Hit Points at the top of the Initiative order every Turn. If you drop to 0 Health Points, you go comatose. However, in order to actually die you must reach the inverse of your maximum HP. Only then will you not regenerate, and finally be destroyed."
+        "desc": "Abominations are Humans who have had a <a href='\/abilities\/?focus=Flesh_Bud'>Flesh Bud<\/a> implanted into their brains by a Vampire that's been destroyed. The Flesh Bud goes haywire, permanently changing the function of the once Humanoid body. Extremely aggressive tumors rapidly grow within a matter of minutes after the death of the Vampire that had planted the Flesh Bud, taking over almost every cell in the body. This makes the skin Turn a mossy shade of green, and makes the previously normal Human completely unrecognizable. It also invades the mind, making your mental functions drop to around the levels of a particularly dim-witted dog.",
+        "changes": "Your Intelligence, Wisdom, and Charisma all Drop to 3. Your Strength and Dexterity both drop by 5, and you lose all Abilities, Feats, and anything else you've learned.  Your Max HP remains whatever it was before your transformation or becomes 200, whichever is higher. Your Class becomes Abomination Level 1. You may not gain Experience Points nor Level-Up, and you lose all sense of humanity or sentience. You also become effectively immortal, healing 50 Hit Points at the top of the Initiative order every Turn. If you drop to 0 Health Points, you go comatose. However, in order to actually die you must reach the inverse of your Maximum HP. Only then will you not regenerate, and finally be destroyed.",
+        "playing": "Your Creature Type is Monstrosity and your Size Category is one Size smaller than what you had in life. "
     },
     "Rock_Human": {
         "name": "Rock Human",
@@ -432,13 +440,156 @@
             "Tamaki_Damo",
             "Aisho_Dainenjiyama"
         ],
-        "desc": "Rock Humans are an elusive evolutionary cousin of Humans, but with a few key differences. For starters, Rock Humans usually live for around 240 years, and are silicone, rather than carbon based. Rock Humans must hibernate relatively often in periods of 1-3 months, but after hibernating they don't need to sleep for two months. While hibernating, a layer of stone covers their flesh and all processes except for breathing and some brain function cease. While in hibernation, they can survive high temperatures up to 950 C and low temperatures bottoming at around -240 C. The only way to kill a hibernating Rock Human is to either break through their rocky shell, or to suffocate them. Rock Humans can eat any organic matter without issue, either raw or cooked. However, if the organic matter has little nutritional value, more of it must be consumed. For some unknown reason, all Rock Humans are deathly allergic to mangos. Rocks Humans are more solitary compared to humans, tending to live on the outside of Human towns or countries, or simply preferring to live in the wild.",
-        "note": "While extremely rare, some animals share the same traits as Rock Humans, including possessing a <a href='\/classes\/?focus=Stands'>Stand<\/a>.",
+        "desc": "Rock Humans are an elusive evolutionary cousin of Humans, but with a few key differences. For starters, Rock Humans usually live for around 240 years, and are silicone, rather than carbon based. Rock Humans must hibernate relatively often in periods of 1-3 months, but after hibernating they don't need to sleep for two months. While hibernating, a layer of stone covers their flesh and all processes except for breathing and some brain function cease. While in hibernation, they can survive high temperatures up to 950 C and low temperatures bottoming at around -240 C. The only way to kill a hibernating Rock Human is to either break through their rocky shell, or to suffocate them. Rock Humans can eat any organic matter without issue, either raw or cooked. However, if the organic matter has little nutritional value, more of it must be consumed. For some unknown reason, all Rock Humans are deathly allergic to mangos. Rocks Humans are more solitary compared to Humans, tending to live on the outside of Human towns or countries, or simply preferring to live in the wild.",
         "feats": [
             "Stoneflesh",
             "Stone Cold Willpower",
             "Mysterious Disappearance",
             "Natural Armor"
+        ],
+        "playing": "Your Creature Type is Humanoid, your Movement Speed is 10m, and your Size Category is Small or Medium."
+    },
+    "AnimalRock_Animal": {
+        "name": "Animal\/Rock Animal",
+        "desc": "Animals can also be capable combatants and wielders of supernatural powers, even if they are less common than Humans with similar powers.",
+        "examples": [
+            "Iggy",
+            "Pet Shop",
+            "Iwasuke",
+            "Doremifasolati Do"
+        ],
+        "links": [
+            "Iggy",
+            "Pet_Shop",
+            "Iwasuke",
+            "Doremifasolati_Do"
+        ],
+        "playing": "Your Creature Type is Beast. You are also subject to the following restrictions and benefits: <ul class='sublist'><li>Your Intelligence and Charisma are limited to a maximum of 10.<\/li><li>You are unable to communicate in detail with Humanoids, but can still convey basic ideas and concepts.<br>You have Disadvantage on any Diplomacy Check made against a Humanoid. You can communicate with other Beasts without issue (language simply referred to as Beast for shorthand).<\/li><\/ul><br><b>Size Category<\/b><br>You may choose your Size Category from one of the following options: <ul class='sublist'><li>Tiny:<ul><li>Controlled Space: 1x1<\/li><li>Natural Weapon Dice: 1d4<\/li><li>Movement: 5m OR 1m and 5m Flying\/Swimming<\/li><li>Maximum Physical Stats: 18<\/li><\/ul><\/li><li>Small:<ul><li>Controlled Space: 1x1<\/li><li>Natural Weapon Dice: 1d6<\/li><li>Movement: 8m OR 2m and 8m Flying\/Swimming<\/li><li>Maximum Physical Stats: 20<\/li><\/ul><\/li><li>Medium:<ul><li>Controlled Space: 1x1<\/li><li>Natural Weapon Dice: 1d8<\/li><li>Movement: 10m OR 3m and 10m Flying\/Swimming<\/li><li>Maximum Physical Stats: 20<\/li><\/ul><\/li><li>Large:<ul><li>Controlled Space: 2x2<\/li><li>Natural Weapon Dice: 1d10<\/li><li>Movement: 12m OR 5m and 12m Swimming<\/li><li>Maximum Physical Stats: 22<\/li><\/ul><\/li><li>Huge:<ul><li>Controlled Space: 3x3<\/li><li>Natural Weapon Dice: 1d12<\/li><li>Movement: 15m OR 8m and 15m Swimming<\/li><li>Maximum Physical Stats: 24<\/li><\/ul><\/li><\/ul>You gain an amount of Features or Feats granted by the <a href='/familiars'>Familiar system</a> equal to half your Proficiency Bonus (rounded up) so long as you meet their prerequisite(s). When taking Features, you cannot take a Superior version of a Feature unless you already have the regular Feature, and you cannot gain <a href='/familiars?focus=Perfected_Primary_Stat'>Perfected Primary Stat</a>. Huge creatures are considered Large for the sake of effects gained in this way.<br>Rock Animals don't get Features or Feats from the Familiar system. Instead, they get <a href='/abilities?focus=Stoneflesh'>Stoneflesh</a>, <a href='/abilities?focus=Mysterious_Disappearance'>Mysterious Disappearance</a>, and <a href='/abilities?focus=Natural_Armor'>Natural Armor</a> as Racial Features. They get all other Features and follow the same rules that normal animals follow."
+    },
+    "Cyborg": {
+        "name": "Cyborg",
+        "desc": "Parts of your body have been replaced with machinery. Flesh and metal work in harmony to keep you going.",
+        "examples": [
+            "Joseph Joestar",
+            "Stroheim"
+        ],
+        "links": [
+            "Joseph_Joestar",
+            "Rudol_von_Stroheim"
+        ],
+        "playing": "Your Creature Type is both Construct and whatever Type you originally had. Likewise, your Size Category is the same as you were before becoming a Cyborg. Undead creatures cannot be Cyborgs, as their natural regeneration causes their body to slowly grow back over their implants. You have 10m of Walking Movement Speed.",
+        "feats": [
+            "Bionic Enhancements",
+            "Sacrifice Bionics"
+        ]
+    },
+    "Ghost": {
+        "name": "Ghost",
+        "desc": "You died, but managed to stick around somehow. Whether through a single minded focus, an unjust killing, or an issue left unresolved, your soul is still tied to this mortal realm.",
+        "playing": "Your Creature Type is Ghost and whatever Type you had before Death (except Undead) and your Size Category is the same as you had in life.",
+        "links": [
+            "Reimi_Sugimoto",
+            "Yoshihiro_Kira",
+            "Bruno_Bucciarati"
+        ],
+        "examples": [
+            "Reimi Sugimoto",
+            "Yoshihiro Kira",
+            "Bruno Bucciarati"
+        ],
+        "subraces": [
+            {
+                "name": "Bound",
+                "desc": "Bound ghosts are forever tied to a particular item or place. They are unable to change what binds them to this realm, but their power is much greater when closer to their Anchor.",
+                "feats": [
+                    "Bound Powers",
+                    "Intangible Form",
+                    "Stationary Haunt"
+                ]
+            },
+            {
+                "name": "Poltergeist",
+                "desc": "Poltergeists are intangible Ghosts able to interact more reliably with the physical realm, as though they still had a physical body.",
+                "feats": [
+                    "Poltergeist Powers",
+                    "Intangible Form",
+                    "Mobile Haunt"
+                ]
+            },
+            {
+                "name": "Puppeteer",
+                "desc": "Puppeteers can take over living beings, turning them into vessels which the spirit can control to perform their bidding.",
+                "feats": [
+                    "Puppeteer Powers",
+                    "Intangible Form",
+                    "Mobile Haunt"
+                ],
+                "playing": "Your Movement Speed is equal to your Puppet's while you Possess them. If they have any special kinds of Movement (Flight, Burrowing, etc.), you may use them as well."
+            },
+            {
+                "name": "Revenant",
+                "desc": "Revenants are Ghosts that possess their own Corpse. Their connection to the mortal coil is unstable, with the body deteriorating without proper maintenance. They know their time is limited, but have to hold on until they complete their unfinished business.",
+                "feats": [
+                    "Revenant Powers",
+                    "Stationary Haunt"
+                ],
+                "playing": "You have the same Movement Speed(s) and Size Category as you had in life. "
+            }
+        ]
+    },
+    "Living_Chimera": {
+        "name": "Living Chimera",
+        "desc": "You are a strange experiment, a combination of living beings given true life once again, with seperate components working in harmony to create something new.",
+        "playing": "Your Creature Type is Monstrosity in addition to whatever Type(s) your parts were taken from.",
+        "feats": [
+            "Chimeric Nature",
+            "Chimera Pools"
+        ]
+    },
+    "Living_Stand": {
+        "name": "Living Stand",
+        "desc": "Through the power of <a href='/classes?focus=Stands'>Stands</a>, you exist as a being both composed of the tangible and the fighting spirit that makes up a Stand. Whether given life or through having outlived your Stand User, you now wander, finding your own purpose in life.",
+        "examples": [
+            "Stray Cat",
+            "Notorious B.I.G"
+        ],
+        "links": [
+            "Stray_Cat",
+            "Notorious_B.I.G"
+        ],
+        "feats": [
+            "Living Stand Nature",
+            "Stand Pools"
+        ],
+        "playing": "Your Creature type is Stand and an additional type of your choice."
+    },
+    "Plant": {
+        "name": "Plant",
+        "desc": "Through some supernatural means, you have gained agency over your own destiny, even while existing as a largely inert plant.",
+        "playing": "Your Creature Type is Plant.",
+        "examples": [
+            "Great Tree of Sugar Mountain",
+            "Les Feuilles"
+        ],
+        "links": [
+            "Great_Tree_of_Sugar_Mountain",
+            "Les_Feuilles"
+        ],
+        "feats": [
+            "Rooted Defense",
+            "Supernatural Roots"
+        ]
+    },
+    "Undead_Chimera": {
+        "name": "Undead Chimera",
+        "desc": "Undead Chimeras are twisted beings, the raw hunger of Undeath motivating your assembled parts to seek out living flesh and power. You are inherently less stable than a Living Chimera, but are given great power in your glorious Undeath.",
+        "playing": "Your Creature Type is Undead in addition to whatever Type(s) your parts were taken from.",
+        "feats": [
+            "Chimeric Nature",
+            "Chimera Pools",
+            "Chimeric Undeath",
+            "Inferior Lifesteal",
+            "Undead Nature"
         ]
     }
 }

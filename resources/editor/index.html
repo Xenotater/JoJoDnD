@@ -24,25 +24,6 @@
         <script async src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
-
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-EQW3R4RE6P"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-EQW3R4RE6P');
-        </script>
-
-        <!-- Adsense -->
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282768297104356" crossorigin="anonymous">
-            (adsbygoogle = window.adsbygoogle || []).push({
-                google_ad_client: "ca-pub-4282768297104356",
-                enable_page_level_ads: true,
-                overlays: {bottom: true}
-            });
-        </script>
         
         <script async src="/nav.js"></script>
         <script async src="autofill.js"></script>
@@ -57,11 +38,11 @@
             <div class="content">
                 <div id="controls" class="row">
                     <div class="col-2">
-                        <button id="login" class="header-btn"><i class="bi bi-door-open"></i><br>Login</button>
+                        <button id="login" class="header-btn"><i class="bi bi-door-open"></i><br><span data-translation-key="loginBtn" id="loginText">Login</span></button>
                     </div>
                     <div class="col-3">
-                        <button id="load" class="header-btn"><i class="bi bi-folder2-open"></i><br>Load</button>
-                        <button id="save" class="header-btn"><i class="bi bi-bookmark"></i><br>Save</button>
+                        <button id="load" class="header-btn"><i class="bi bi-folder2-open"></i><br><span data-translation-key="loadBtn">Load</span></button>
+                        <button id="save" class="header-btn"><i class="bi bi-bookmark"></i><br><span data-translation-key="saveBtn">Save</span></button>
                     </div>
                     <div class="col-1" id="options">
                         <label for="p1">Page 1</label>
@@ -70,37 +51,50 @@
                         <input type="checkbox" id="p2" class="pageSelect option" value="p2" checked><br>
                         <label for="p3">Page 3</label>
                         <input type="checkbox" id="p3" class="pageSelect option" value="p3" checked><br>
-                        <label for="autofill">Autofill</label>
-                        <input type="checkbox" id="autofill" class="option" value="autofill" checked>
+                        <div id="p4selector">
+                            <label for="p4">Page 4</label>
+                            <input type="checkbox" id="p4" class="pageSelect option" value="p4"><br>
+                        </div>
                     </div>
                     <div class="col-3">
                         <input type="file" id="import">
-                        <button id="import-btn" class="header-btn"><i class="bi bi-upload"></i><br>Import</button>
-                        <button id="export-btn" class="header-btn"><i class="bi bi-download"></i><br>Export</button>
+                        <button id="import-btn" class="header-btn"><i class="bi bi-upload"></i><br><span data-translation-key="importBtn">Import</span></button>
+                        <button id="export-btn" class="header-btn"><i class="bi bi-download"></i><br><span data-translation-key="exportBtn">Export</span></button>
                     </div>
                     <div class="col-3">
-                        <button id="dl-btn" class="header-btn"><i class="bi bi-filetype-pdf"></i><br>Download PDF</button><br>
+                        <button id="dl-btn" class="header-btn"><i class="bi bi-filetype-pdf"></i><br><span data-translation-key="pdfBtn">Download PDF</span></button><br>
                     </div>
                 </div>
-                <p id="desc">Fill out desired values or leave them blank, then select which pages you'd like to keep and press the download button.</p>
+                <p id="desc" data-translation-key="Instructions">Fill out desired values or leave them blank, then select which pages you'd like to keep and press the download button.</p>
                 <div data-simplebar>
                     <form id="pages">
-                        <div id="statflip-switch">
-                            <label class="lilLbl">Mod on Top</label>
-                            <label class="bigLbl">Score on Top</label><br>
-                            <label class="switch">
-                                <input type="checkbox" id="statflip">
-                                <span class="slider round"></span>
-                            </label><br>
-                            <label class="lilLbl">Score on Top</label>
-                            <label class="bigLbl">Mod on Top</label>
+                        <div id="toggles">
+                            <div id="autofill-switch">
+                                <label>Autofill</label><br>
+                                <label class="switch">
+                                    <input type="checkbox" id="autofill" value="autofill" checked>
+                                    <span class="slider round"></span>
+                                </label><br>
+                            </div>
+                            <div id="statflip-switch">
+                                <label class="lilLbl">Mod on Top</label>
+                                <label class="bigLbl">Score on Top</label><br>
+                                <label class="switch">
+                                    <input type="checkbox" id="statflip">
+                                    <span class="slider round"></span>
+                                </label><br>
+                                <label class="lilLbl">Score on Top</label>
+                                <label class="bigLbl">Mod on Top</label>
+                            </div>
                         </div>
                         <div class="center">
                             <div class="page" id="page1">
                                 <input type="number" id="meta" name="meta" value="0">
-                                <div class="heading">
+                                <div class="heading flex-heading">
                                     <img src="/Assets/icon.webp" alt="JoJo D&D" id="logo">
-                                    <span id="title"><b>JoJo's Bizarre Tabletop Game</b></span>
+                                    <div id="titleBox">
+                                        <h2 id="title">JoJo's Bizarre Tabletop Game</h2>
+                                    </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-6">
@@ -126,7 +120,7 @@
                                         <!-- <input type="text" class="scales" id="class" name="class"> -->
                                         <select class="box" id="class" name="class">
                                             <option value="oth"></option>
-                                            <option value="pow">Power</option>
+                                            <option value="pow" data-translation-key="PowerType">Power</option>
                                             <option value="rng">Ranged</option>
                                             <option value="rmt">Remote</option>
                                             <option value="abl">Ability</option>
@@ -137,13 +131,16 @@
                                             <option value="act">Act</option>
                                             <option value="rip">Ripple</option>
                                             <option value="spin">Spin</option>
-                                            <option value="brl">Brawler</option>
-                                            <option value="knt">Knight</option>
-                                            <option value="sld">Soldier</option>
-                                            <option value="snp">Sniper</option>
+                                            <option value="art">Artisan</option>
+                                            <option value="ass">Assassin</option>
+                                            <option value="con">Consul</option>
+                                            <option value="heav">Heavyweight</option>
+                                            <option value="ran">Ranger</option>
+                                            <option value="sch">Scholar</option>
+                                            <option value="war">Warrior</option>
                                             <option value="multi">Other/Multiclass</option>
                                         </select>
-                                        <input type="number" id="act-num" min="0" max="3" value="0">
+                                        <input type="number" id="act-num" min="1" max="4" value="1">
                                         <input type="text" class="box scales" id="multi" name="multi">
                                         <input type="text" class="numbers" id="level" name="level">
                                     </div>
@@ -156,7 +153,7 @@
                                         <input type="text" class="numbers" id="dc" name="dc">
                                     </div>
                                     <div class="col-2">
-                                        <span class="label">Death Saves</label>
+                                        <span class="label">Death Saves</span>
                                         <div class="box" id="win">
                                             <input type="text" class="numbers" id="won"><br>
                                             <span class="label">Won</span>
@@ -170,7 +167,7 @@
                                 <div class="row">
                                     <div class="col-6">
                                         <div id="savebox">
-                                            <span class="label">Saving Throws</span>
+                                            <span class="label">Saves</span>
                                             <div class="box" id="saves">
                                                 <div id="not-prof">
                                                     <div id="stats">
@@ -300,6 +297,16 @@
                                                         <span class="skilllbl">Invest</span><span class="skillstat">(int)</span>
                                                     </li>
                                                     <li>
+                                                        <select class="skillcheck" id="his" name="his">
+                                                            <option value=""></option>
+                                                            <option value="p">P</option>
+                                                            <option value="e">E</option>
+                                                            <option value="m">M</option>
+                                                        </select>
+                                                        <input type="text" class="numbers skill-bonus int-skill single-stat" id="his-bonus" name="his-bonus">
+                                                        <span class="skilllbl">Know</span><span class="skillstat">(int)</span>
+                                                    </li>
+                                                    <li>
                                                         <select class="skillcheck" id="medi" name="medi">
                                                             <option value=""></option>
                                                             <option value="p">P</option>
@@ -309,16 +316,6 @@
                                                         <input type="text" class="numbers skill-bonus int-skill" id="medi-bonus0" name="medi-bonus0">
                                                         <input type="text" class="numbers skill-bonus wis-skill" id="medi-bonus" name="medi-bonus">
                                                         <span class="skilllbl">Medic</span><span class="skillstat">(int/wis)</span>
-                                                    </li>
-                                                    <li>
-                                                        <select class="skillcheck" id="his" name="his">
-                                                            <option value=""></option>
-                                                            <option value="p">P</option>
-                                                            <option value="e">E</option>
-                                                            <option value="m">M</option>
-                                                        </select>
-                                                        <input type="text" class="numbers skill-bonus int-skill single-stat" id="his-bonus" name="his-bonus">
-                                                        <span class="skilllbl">Know</span><span class="skillstat">(int)</span>
                                                     </li>
                                                     <li>
                                                         <select class="skillcheck" id="perc" name="perc">
@@ -545,7 +542,7 @@
                         <div class="center">
                             <div class="page" id="page2">
                                 <div class="heading">
-                                    <h2><b>JoJo D&D Ability Sheet</b></h2>
+                                    <h2>JoJo D&D Ability Sheet</h2>
                                 </div>
                                 <div class="row">
                                     <div class="col-6">
@@ -626,7 +623,267 @@
                         <div class="center">
                             <div class="page" id="page3">
                                 <div class="heading">
-                                    <h2><b>JoJo D&D Flavor Sheet</b></h2>
+                                    <h2>JoJo D&D Act-Type Sheet</h2>
+                                </div>
+                                <div class="actInfo">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <span class="label">Ability Info</span>
+                                            <div class="box actAbilityInfo">
+                                                <textarea name="act1AbilityInfo"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row actHeader">
+                                                <h3 class="col-4">Act 1</h3>
+                                                <div class="col-8">
+                                                    <select class="box actType" id="act1Type" name="act1Type">
+                                                        <option value="close">Close-Range</option>
+                                                        <option value="long" selected>Long-Range</option>
+                                                        <option value="ability">Ability-Focused</option>
+                                                        <option value="remote">Remote-Focused</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 actStat">
+                                                    <label for="act1-str-mod">Power</label>
+                                                    <input type="text" class="act1-mod bigBox numbers" id="act1-str-mod" name="act1-str-mod">
+                                                    <input type="text" class="numbers act1-score lilBox" id="act1-str-score" name="act1-str-score">
+                                                </div>
+                                                <div class="col-4 actStat">
+                                                    <label for="act1-dex-mod">Precision</label>
+                                                    <input type="text" class="act1-mod bigBox numbers" id="act1-dex-mod" name="act1-dex-mod">
+                                                    <input type="text" class="numbers act1-score lilBox" id="act1-dex-score" name="act1-dex-score">
+                                                </div>
+                                                <div class="col-4 actStat">
+                                                    <label for="act1-con-mod">Durability</label>
+                                                    <input type="text" class="act1-mod bigBox numbers" id="act1-con-mod" name="act1-con-mod">
+                                                    <input type="text" class="numbers act1-score lilBox" id="act1-con-score" name="act1-con-score">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 actStat">
+                                                    <label for="act1-int-mod">Range</label>
+                                                    <input type="text" class="act1-mod bigBox numbers" id="act1-int-mod" name="act1-int-mod">
+                                                    <input type="text" class="numbers act1-score lilBox" id="act1-int-score" name="act1-int-score">
+                                                </div>
+                                                <div class="col-4 actStat">
+                                                    <label for="act1-wis-mod">Speed</label>
+                                                    <input type="text" class="act1-mod bigBox numbers" id="act1-wis-mod" name="act1-wis-mod">
+                                                    <input type="text" class="numbers act1-score lilBox" id="act1-wis-score" name="act1-wis-score">
+                                                </div>
+                                                <div class="col-4 actStat">
+                                                    <label for="act1-cha-mod">Stand Energy</label>
+                                                    <input type="text" class="act1-mod bigBox numbers" id="act1-cha-mod" name="act1-cha-mod">
+                                                    <input type="text" class="numbers act1-score lilBox" id="act1-cha-score" name="act1-cha-score">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <label for="act1ArrayBox">Stat Array</label>
+                                            <div id="act1ArrayBox" class="box actArray">
+                                                <canvas id="act1ArrayChart"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="actInfo">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <span class="label">Ability Info</span>
+                                            <div class="box actAbilityInfo">
+                                                <textarea name="act2AbilityInfo"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row actHeader">
+                                                <h3 class="col-4">Act 2</h3>
+                                                <div class="col-8">
+                                                    <select class="box actType" id="act2Type" name="act2Type">
+                                                        <option value="close">Close-Range</option>
+                                                        <option value="long">Long-Range</option>
+                                                        <option value="ability" selected>Ability-Focused</option>
+                                                        <option value="remote">Remote-Focused</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 actStat">
+                                                    <label for="act2-str-mod">Power</label>
+                                                    <input type="text" class="act2-mod bigBox numbers" id="act2-str-mod" name="act2-str-mod">
+                                                    <input type="text" class="numbers act2-score lilBox" id="act2-str-score" name="act2-str-score">
+                                                </div>
+                                                <div class="col-4 actStat">
+                                                    <label for="act2-dex-mod">Precision</label>
+                                                    <input type="text" class="act2-mod bigBox numbers" id="act2-dex-mod" name="act2-dex-mod">
+                                                    <input type="text" class="numbers act2-score lilBox" id="act2-dex-score" name="act2-dex-score">
+                                                </div>
+                                                <div class="col-4 actStat">
+                                                    <label for="act2-con-mod">Durability</label>
+                                                    <input type="text" class="act2-mod bigBox numbers" id="act2-con-mod" name="act2-con-mod">
+                                                    <input type="text" class="numbers act2-score lilBox" id="act2-con-score" name="act2-con-score">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 actStat">
+                                                    <label for="act2-int-mod">Range</label>
+                                                    <input type="text" class="act2-mod bigBox numbers" id="act2-int-mod" name="act2-int-mod">
+                                                    <input type="text" class="numbers act2-score lilBox" id="act2-int-score" name="act2-int-score">
+                                                </div>
+                                                <div class="col-4 actStat">
+                                                    <label for="act2-wis-mod">Speed</label>
+                                                    <input type="text" class="act2-mod bigBox numbers" id="act2-wis-mod" name="act2-wis-mod">
+                                                    <input type="text" class="numbers act2-score lilBox" id="act2-wis-score" name="act2-wis-score">
+                                                </div>
+                                                <div class="col-4 actStat">
+                                                    <label for="act2-cha-mod">Stand Energy</label>
+                                                    <input type="text" class="act2-mod bigBox numbers" id="act2-cha-mod" name="act2-cha-mod">
+                                                    <input type="text" class="numbers act2-score lilBox" id="act2-cha-score" name="act2-cha-score">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <label for="act2ArrayBox">Stat Array</label>
+                                            <div id="act2ArrayBox" class="box actArray">
+                                                <canvas id="act2ArrayChart"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="actInfo">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <span class="label">Ability Info</span>
+                                            <div class="box actAbilityInfo">
+                                                <textarea name="act3AbilityInfo"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row actHeader">
+                                                <h3 class="col-4">Act 3</h3>
+                                                <div class="col-8">
+                                                    <select class="box actType" id="act3Type" name="act3Type">
+                                                        <option value="close" selected>Close-Range</option>
+                                                        <option value="long">Long-Range</option>
+                                                        <option value="ability">Ability-Focused</option>
+                                                        <option value="remote">Remote-Focused</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 actStat">
+                                                    <label for="act3-str-mod">Power</label>
+                                                    <input type="text" class="act3-mod bigBox numbers" id="act3-str-mod" name="act3-str-mod">
+                                                    <input type="text" class="numbers act3-score lilBox" id="act3-str-score" name="act3-str-score">
+                                                </div>
+                                                <div class="col-4 actStat">
+                                                    <label for="act3-dex-mod">Precision</label>
+                                                    <input type="text" class="act3-mod bigBox numbers" id="act3-dex-mod" name="act3-dex-mod">
+                                                    <input type="text" class="numbers act3-score lilBox" id="act3-dex-score" name="act3-dex-score">
+                                                </div>
+                                                <div class="col-4 actStat">
+                                                    <label for="act3-con-mod">Durability</label>
+                                                    <input type="text" class="act3-mod bigBox numbers" id="act3-con-mod" name="act3-con-mod">
+                                                    <input type="text" class="numbers act3-score lilBox" id="act3-con-score" name="act3-con-score">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 actStat">
+                                                    <label for="act3-int-mod">Range</label>
+                                                    <input type="text" class="act3-mod bigBox numbers" id="act3-int-mod" name="act3-int-mod">
+                                                    <input type="text" class="numbers act3-score lilBox" id="act3-int-score" name="act3-int-score">
+                                                </div>
+                                                <div class="col-4 actStat">
+                                                    <label for="act3-wis-mod">Speed</label>
+                                                    <input type="text" class="act3-mod bigBox numbers" id="act3-wis-mod" name="act3-wis-mod">
+                                                    <input type="text" class="numbers act3-score lilBox" id="act3-wis-score" name="act3-wis-score">
+                                                </div>
+                                                <div class="col-4 actStat">
+                                                    <label for="act3-cha-mod">Stand Energy</label>
+                                                    <input type="text" class="act3-mod bigBox numbers" id="act3-cha-mod" name="act3-cha-mod">
+                                                    <input type="text" class="numbers act3-score lilBox" id="act3-cha-score" name="act3-cha-score">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <label for="act3ArrayBox">Stat Array</label>
+                                            <div id="act3ArrayBox" class="box actArray">
+                                                <canvas id="act3ArrayChart"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="actInfo">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <span class="label">Ability Info</span>
+                                            <div class="box actAbilityInfo">
+                                                <textarea name="act4AbilityInfo"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row actHeader">
+                                                <h3 class="col-4">Act 4</h3>
+                                                <div class="col-8 act4BasedBox">
+                                                    <span>Based on: </span>
+                                                    <select class="box col-8" id="act4Base" name="act4Base">
+                                                        <option value="act1">Act 1</option>
+                                                        <option value="act2">Act 2</option>
+                                                        <option value="act3" selected>Act 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 actStat">
+                                                    <label for="act4-str-mod">Power</label>
+                                                    <input type="text" class="act4-mod bigBox numbers" id="act4-str-mod" name="act4-str-mod">
+                                                    <input type="text" class="numbers act4-score lilBox" id="act4-str-score" name="act4-str-score">
+                                                </div>
+                                                <div class="col-4 actStat">
+                                                    <label for="act4-dex-mod">Precision</label>
+                                                    <input type="text" class="act4-mod bigBox numbers" id="act4-dex-mod" name="act4-dex-mod">
+                                                    <input type="text" class="numbers act4-score lilBox" id="act4-dex-score" name="act4-dex-score">
+                                                </div>
+                                                <div class="col-4 actStat">
+                                                    <label for="act4-con-mod">Durability</label>
+                                                    <input type="text" class="act4-mod bigBox numbers" id="act4-con-mod" name="act4-con-mod">
+                                                    <input type="text" class="numbers act4-score lilBox" id="act4-con-score" name="act4-con-score">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 actStat">
+                                                    <label for="act4-int-mod">Range</label>
+                                                    <input type="text" class="act4-mod bigBox numbers" id="act4-int-mod" name="act4-int-mod">
+                                                    <input type="text" class="numbers act4-score lilBox" id="act4-int-score" name="act4-int-score">
+                                                </div>
+                                                <div class="col-4 actStat">
+                                                    <label for="act4-wis-mod">Speed</label>
+                                                    <input type="text" class="act4-mod bigBox numbers" id="act4-wis-mod" name="act4-wis-mod">
+                                                    <input type="text" class="numbers act4-score lilBox" id="act4-wis-score" name="act4-wis-score">
+                                                </div>
+                                                <div class="col-4 actStat">
+                                                    <label for="act4-cha-mod">Stand Energy</label>
+                                                    <input type="text" class="act4-mod bigBox numbers" id="act4-cha-mod" name="act4-cha-mod">
+                                                    <input type="text" class="numbers act4-score lilBox" id="act4-cha-score" name="act4-cha-score">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <label for="act4ArrayBox">Stat Array</label>
+                                            <div id="act4ArrayBox" class="box actArray">
+                                                <canvas id="act4ArrayChart"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider" id="div3"></div>
+                        <div class="center">
+                            <div class="page" id="page4">
+                                <div class="heading">
+                                    <h2>JoJo D&D Flavor Sheet</h2>
                                 </div>
                                 <div class="row">
                                     <div class="col-6">

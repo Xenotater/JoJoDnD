@@ -19,7 +19,9 @@
             "name": "Brass Knuckles",
             "attr": [
                 "Concealed (+10)",
-                "Light"
+                "Fist",
+                "Light",
+                "Limited Hand"
             ],
             "type": "Simple",
             "spec": "Melee",
@@ -37,7 +39,7 @@
             ],
             "type": "Explosive",
             "spec": "None",
-            "stat": "DC: 10",
+            "stat": "DC 10",
             "prereq": "Int 13+",
             "dmg": "5d6 Thunder"
         },
@@ -46,6 +48,7 @@
             "attr": [
                 "Concealed (+8)",
                 "Light",
+                "Limited Hand",
                 "Thrown (5\/15)"
             ],
             "type": "Simple",
@@ -112,7 +115,7 @@
             ],
             "type": "Explosive",
             "spec": "None",
-            "stat": "DC: 15",
+            "stat": "DC 15",
             "prereq": "None",
             "dmg": "4d6 Thunder"
         },
@@ -138,9 +141,9 @@
             ],
             "type": "Explosive",
             "spec": "None",
-            "stat": "DC: 10",
+            "stat": "DC 10",
             "prereq": "None",
-            "dmg": "4d6 Thunder"
+            "dmg": "3d6 Fire"
         },
         {
             "name": "Grenade",
@@ -150,7 +153,7 @@
             ],
             "type": "Explosive",
             "spec": "None",
-            "stat": "DC: 15",
+            "stat": "DC 15",
             "prereq": "None",
             "dmg": "3d6 Thunder"
         },
@@ -167,7 +170,7 @@
             ],
             "type": "Explosive",
             "spec": "Heavy",
-            "stat": "DC: 25",
+            "stat": "DC 25",
             "prereq": "Str 13+",
             "dmg": "3d6 Thunder"
         },
@@ -290,7 +293,7 @@
             ],
             "type": "Martial",
             "spec": "Shotgun",
-            "stat": "Dex",
+            "stat": "Dex\/Con",
             "prereq": "Con 13+",
             "dmg": "2d10 Piercing"
         },
@@ -320,7 +323,7 @@
             ],
             "type": "Explosive",
             "spec": "Heavy",
-            "stat": "DC: 15",
+            "stat": "DC 15",
             "prereq": "None",
             "dmg": "5d6 Thunder"
         },
@@ -440,7 +443,8 @@
             "name": "Buckler",
             "attr": [
                 "AC Bonus (+1)",
-                "Light"
+                "Light",
+                "Limited Hand"
             ],
             "type": "Martial",
             "spec": "Melee\/Shield",
@@ -558,6 +562,7 @@
             "name": "Sling",
             "attr": [
                 "Concealed (+8)",
+                "Limited Hand",
                 "Ranged (40\/120)"
             ],
             "type": "Simple",
@@ -621,6 +626,7 @@
             "name": "Quarterstaff",
             "attr": [
                 "Concealed (+5)",
+                "Reach",
                 "Versatile (1d10)"
             ],
             "type": "Simple",
@@ -660,6 +666,7 @@
                 "Ambush",
                 "Concealed (+10)",
                 "Light",
+                "Limited Hand",
                 "Thrown (10\/20)"
             ],
             "type": "Simple",
@@ -749,14 +756,14 @@
             "attr": [
                 "Concealed (+2)",
                 "Reach",
-                "Versatile (1d8)",
+                "Versatile (1d10)",
                 "Conductive"
             ],
             "type": "Martial",
             "spec": "Heavy\/Melee",
             "stat": "Str\/Dex\/Int",
             "prereq": "Artisan (Engineer)",
-            "dmg": "1d8 Bludgeoning\/Slashing\/Piecing"
+            "dmg": "1d8 Bludgeoning\/Slashing\/Piercing"
         },
         {
             "name": "Mechanic's Tools",
@@ -768,7 +775,7 @@
             "spec": "Heavy\/Melee",
             "stat": "Str\/Int",
             "prereq": "Artisan (Engineer)",
-            "dmg": "1d12 Bludgeoning\/Slashing"
+            "dmg": "1d10 Bludgeoning\/Slashing"
         },
         {
             "name": "Battle Axe",
@@ -857,7 +864,9 @@
         {
             "name": "Gauntlet",
             "attr": [
+                "AC Bonus (+1)",
                 "Concealed (+2)",
+                "Fist",
                 "Light",
                 "Open Hand",
                 "Siege"
@@ -866,7 +875,7 @@
             "spec": "Melee",
             "stat": "Str",
             "prereq": "None",
-            "dmg": "1d8 Bludgeoning"
+            "dmg": "1d6 Bludgeoning"
         },
         {
             "name": "Lance",
@@ -898,7 +907,8 @@
                 "Complex",
                 "Firearm",
                 "Ranged (15\/30)",
-                "Reload (x1)"
+                "Reload (x1)",
+                "Two-Handed"
             ],
             "type": "Simple",
             "spec": "Rifle",
@@ -913,7 +923,8 @@
                 "Firearm",
                 "Light",
                 "Point Blank",
-                "Ranged (10\/20)"
+                "Ranged (10\/20)",
+                "Reload (x1)"
             ],
             "type": "Simple",
             "spec": "Sidearm",
@@ -946,6 +957,8 @@
         {
             "name": "Spiked Gauntlet",
             "attr": [
+                "AC Bonus (+1)",
+                "Fist",
                 "Light",
                 "Open Hand"
             ],
@@ -953,7 +966,7 @@
             "spec": "Melee",
             "stat": "Str",
             "prereq": "None",
-            "dmg": "1d10 Piercing"
+            "dmg": "1d8 Piercing"
         },
         {
             "name": "Throwing Hammer",
@@ -980,6 +993,174 @@
             "stat": "Str\/Dex",
             "prereq": "Dex 13+",
             "dmg": "1d6 Slashing"
+        },
+        {
+            "name": "Hand Wraps",
+            "attr": [
+                "Concealed (+10)",
+                "Fist",
+                "Light",
+                "Open Hand"
+            ],
+            "type": "Simple",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning"
+        },
+        {
+            "name": "Meteor Hammer",
+            "attr": [
+                "Reach",
+                "Two-Handed"
+            ],
+            "type": "Martial",
+            "spec": "Melee",
+            "stat": "Str\/Dex",
+            "prereq": "Dex 13+",
+            "dmg": "1d8 Bludgeoning"
+        },
+        {
+            "name": "Tonfa",
+            "attr": [
+                "AC Bonus (+1)",
+                "Ambush",
+                "Light"
+            ],
+            "type": "Martial",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning"
+        },
+        {
+            "name": "Molotov Cocktail",
+            "attr": [
+                "Radius (2m)",
+                "Thrown (10\/20)"
+            ],
+            "type": "Explosive",
+            "spec": "None",
+            "stat": "DC 15",
+            "prereq": "None",
+            "dmg": "4d6 Fire"
+        },
+        {
+            "name": "Brick \/ Big Rock",
+            "attr": [
+                "Siege",
+                "Thrown (5\/15)",
+                "Versatile (1d8)"
+            ],
+            "type": "Improvised",
+            "spec": "Melee\/Thrown",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning"
+        },
+        {
+            "name": "Container of Hot Liquid",
+            "attr": [
+                "Ambush",
+                "Radius (1m)",
+                "Thrown (5\/15)"
+            ],
+            "type": "Improvised",
+            "spec": "Thrown",
+            "stat": "DC 12",
+            "prereq": "None",
+            "dmg": "1d4+2 Fire + 1d4+2 Bludgeoning"
+        },
+        {
+            "name": "Chain",
+            "attr": [
+                "Reach",
+                "Thrown (5\/15)",
+                "Two-Handed"
+            ],
+            "type": "Improvised",
+            "spec": "Melee\/Thrown",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning"
+        },
+        {
+            "name": "Chair \/ Stool",
+            "attr": [
+                "Thrown (5\/15)",
+                "Two-Handed"
+            ],
+            "type": "Improvised",
+            "spec": "Melee\/Thrown",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d8 Bludgeoning"
+        },
+        {
+            "name": "Flashlight",
+            "attr": [
+                "Ambush",
+                "Concealed (+5)",
+                "Light",
+                "Thrown (5\/10)"
+            ],
+            "type": "Improvised",
+            "spec": "Melee\/Thrown",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning"
+        },
+        {
+            "name": "Glass Bottle",
+            "attr": [
+                "Ambush",
+                "Concealed (+5)",
+                "Light",
+                "Thrown (10\/20)"
+            ],
+            "type": "Improvised",
+            "spec": "Melee\/Thrown",
+            "stat": "Str\/Dex",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning (Piercing if broken)"
+        },
+        {
+            "name": "Makeshift Flail",
+            "attr": [
+                "Limited Hand"
+            ],
+            "type": "Improvised",
+            "spec": "Melee",
+            "stat": "Str\/Dex",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning"
+        },
+        {
+            "name": "Pen \/ Screwdriver",
+            "attr": [
+                "Ambush",
+                "Concealed (+8)",
+                "Light",
+                "Limited Hand"
+            ],
+            "type": "Improvised",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d6 Piercing"
+        },
+        {
+            "name": "Stick",
+            "attr": [
+                "Concealed (+8)",
+                "Thrown (5\/15)",
+                "Versatile (1d8)"
+            ],
+            "type": "Improvised",
+            "spec": "Melee\/Thrown",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning"
         }
     ]
 }

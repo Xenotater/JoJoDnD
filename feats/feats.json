@@ -3,8 +3,9 @@
         "name": "Adrenaline Rush",
         "desc": "The body has a remarkable tendency to keep itself alive in tough situations, and your body is even better at doing so.",
         "effects": [
-            "A a Bonus Action, you may gain Advantage on all Strength, Dexterity, and Constitution Saving Throws until the beginning of your next Turn. You also gain an amount of temporary Hit Points equal to your Level which remain until your next Short or Long Rest.",
-            "You can use this Feat an amount of times equal to your Strength Modifier per Long Rest."
+            "As a Bonus Action, you may gain Advantage on all Strength, Dexterity, and Constitution Saving Throws until the beginning of your next Turn. You also heal an amount of Hit Points equal to your Level and gain the same amount of Temp HP which remains until your next Short or Long Rest.",
+            "You can use this Feat an amount of times equal to your Strength Modifier per Long Rest.",
+            "You regain half your uses (rounded down) on a Short Rest."
         ],
         "prereq": "Str 13+ or <a href='\/passions\/?focus=Hard_Laborer'>Hard Laborer<\/a>"
     },
@@ -12,11 +13,11 @@
         "name": "Art of Distraction",
         "desc": "People are easy to fool, this is something that you've learned over years of experience.",
         "effects": [
-            "You're able to trap a helpless person within a conversation by spending your Action each Turn and rolling a Presence Check against a single, non-hostile target's Wisdom saving throw. While keeping this individual distracted in this way, their movement speed is reduced to 0, and their Passive Perception and Perception Checks are now restricted to a value of 10 at most.",
-            "You may keep a person trapped in this conversational purgatory for up to an amount of time equal to 30 minutes times your Proficiency Bonus, until you stop spending your Action or they succeed on their save, or something very obviously out of the ordinary happens in a way that you can't explain.",
+            "You're able to trap a helpless person within a conversation by spending your Action each Turn and rolling a Presence Check against a single, non-hostile target's Charisma Saving Throw. While keeping this individual distracted in this way, their movement speed is reduced to 0, and their Passive Perception and Perception Checks are now restricted to a value of 10 at most.",
+            "You may keep a person trapped in this conversational purgatory for up to an amount of time equal to 30 minutes times your Proficiency Bonus, until you stop spending your Action or they succeed on their Save, or something very obviously out of the ordinary happens in a way that you can't explain.",
             "Additionally, you have figured out a way to enthrall several people by using your Action each Turn to keep an amount of non-hostile people equal to your Charisma Modifier focused on what you're doing for up to an hour. Anyone caught in this effect has Disadvantage on all Perception Checks, and has a -5 penalty to their Passive Perception."
         ],
-        "prereq": "Proficiency in Presence Checks or <a href='\/classes?focus=Consul'>Consul<\/a> Level 1+"
+        "prereq": "Proficiency in Presence Checks or <a href='\/classes?focus=Consul'>Consul<\/a>"
     },
     "Blended_Fighting": {
         "name": "Blended Fighting",
@@ -24,13 +25,17 @@
         "effects": [
             "When you make at least one Attack using your Stand you as the User may also make an amount of Attacks equal to half your Proficiency Bonus as a Bonus Action. These Attacks may be made with a Weapon, Unarmed Strike, or any other Action that counts as a singular Attack (such as a Grapple). This Attack must use your own Stats, not your Stand's."
         ],
-        "prereq": "<a href='\/classes\/?focus=Stands'>Stand User<\/a> Level 1+"
+        "prereq": "<a href='\/classes\/?focus=Stands'>Stand User<\/a>"
     },
     "Brutality": {
         "name": "Brutality",
-        "desc": "You've seen a lot of combat and have learned not to hold back.",
+        "desc": [
+            "You are able to push yourself beyond your limits, expending significant energy to deal devastating physical or mental blows to your enemies."
+        ],
         "effects": [
-            "When you drop an enemy to 0 HP, you may spend another Attack to kill them instantly. Whether you choose to kill them or not, you may make a free Intimidate Check against an amount of enemies equal to your Proficiency Bonus within a 15 meter radius. They contest with a Wisdom Saving Throw, and if they roll lower they become Frightened of you until the end of their next Turn."
+            "Once per Short or Long Rest, whenever you hit an enemy with a Melee or Thrown weapon, you may choose to deal some damage to yourself in order to further harm or demoralize your target in one of the following ways. The DC for any of these effects is 8 + double your Proficiency Bonus.<ul><li><b>Brutal Swing:<\/b> Increase the damage dealt by that blow by an amount of d10s equal to your Proficiency Bonus.<\/li><li><b>Brutal Stare:<\/b> After the blow, stare down any single hostile creature that can see you and force them to make a Charisma Saving Throw. On failure, they take an amount of d6s of Psychic damage equal to your Proficiency Bonus and gain the Staggered Condition until the end of your next Turn. On success, they still take half the damage but do not become Staggered.<\/li><li><b>Brutal Display:<\/b> Make a brutal display with your blow with the intent to terrify those that witness it, forcing an amount of witnesses of your choice up to your Proficiency Bonus to make a Wisdom Saving Throw. On failure, they gain the Frightened Condition until the end of your next turn. If any of the affected were already Frightened, their level of Fright goes up by 1, or by 2 if they failed by 5 or more.<\/li><\/ul>",
+            "Using one of the above effects inflicts an amount of Necrotic damage to yourself equal to your Level. This damage cannot be reduced or negated in any way and cannot damage you below 1 Hit Point.",
+            "When you drop an enemy to 0 Hit Points or take damage from a hostile creature that would reduce your HP to half its maximum or less, you may regain the use of this Feat if it was expended."
         ]
     },
     "Calculating": {
@@ -46,7 +51,7 @@
         "desc": "Your reflexes are faster than that of the average person.",
         "effects": [
             "Once per Short Rest, you may Dodge as a Bonus Action.",
-            "Additionally, while Dodging through any means, you may reduce incoming damage by half until the start of your next Turn."
+            "Additionally, while Dodging through any means, you may either:<ul><li>When using the Advantage\/Disadvantage option, you get 2x Advantage, and enemies get 2x Disadvantage.<\/li><li>When using the option that reduces damage, it is reduced by 3x instead of 2x.<\/li><\/ul>"
         ],
         "prereq": "Dex 13+ or <a href='\/passions\/?focus=Artist'>Artist<\/a>"
     },
@@ -56,14 +61,14 @@
         "effects": [
             "As an Action, you may create a disguise for yourself. While disguised in this way, you have Advantage on passing yourself off as someone other than yourself.",
             "Any attempts to determine your true identity are made with Disadvantage while the disguise is intact.",
-            "Additionally, you gain Proficiency in the use of a disguise kit."
+            "Additionally, you gain Proficiency in Bluff and the use of a disguise kit."
         ]
     },
     "Whirlwind_Attacker": {
         "name": "Whirlwind Attacker",
         "desc": "You know how to create and take advantage of opportunities.",
         "effects": [
-            "When you drop an enemy to 0 HP, you may make another melee attack for free on a nearby target. This Feat may tie into itself.",
+            "When you drop an enemy to 0 HP, you may make another Melee Attack for free on a nearby target. This Feat may tie into itself.",
             "Additionally, as either two Attacks or an Action, you may force every hostile creature within a meter of you to make a Dexterity (NOT Precision) Saving Throw against a DC of 8 + Proficiency Bonus + Strength Modifier. If they fail the Save you deal an amount of damage equal to your unarmed strike, the melee weapon you are holding, or your Stand's attack damage. If they succeed, they still take half damage."
         ]
     },
@@ -71,25 +76,30 @@
         "name": "Combat Medic",
         "desc": "Your medical knowledge is priceless on the battlefield.",
         "effects": [
-            "You may make Medicine Checks as a Bonus Actions.",
-            "If you have a first aid kit or something similar you may make a DC 15 Medicine Check as an Action upon a creature that you can touch. On success, the creature may spend an amount of Hit Dice equal to their Proficiency Bonus to heal that amount plus your Level."
+            "You may make Medicine Checks as an Attack or Bonus Action.",
+            "You have a pool of d6s called Combat Medic (CM) Dice that you may expend to help others, given an amount equal to your Medicine Skill bonus (Int or Wis). You regain all CM Dice on a Long Rest, and half of them (rounded down) on a Short Rest.",
+            "You may spend CM Dice to heal an ally when you make a Medicine Check on them, healing a d6 plus your Medicine bonus per CM Die spent.",
+            "Additionally, when you make a Medicine Check on a Downed ally, they may roll an amount of Hit Dice equal to their Proficiency Bonus to heal rather than just being brought back to 1 HP, and they may get up from Prone for free.",
+            "You may take this Feat multiple times if desired. The second copy turns your CM Dice into d8s and brings any 1s or 2s rolled up to 3s. Further copies increase the CM Dice to d10s or d12s and raise the minimum roll by 1."
         ],
-        "prereq": "Int 13+ or <a href='\/passions\/?focus=Medical_Expert'>Medical Expert<\/a>"
+        "prereq": "Int 13+, Wis 13+, or <a href='\/passions\/?focus=Medical_Expert'>Medical Expert<\/a>"
     },
     "Commentator": {
         "name": "Commentator",
         "desc": "You're able to follow what's happening in combat and describe it for others.",
         "effects": [
             "As a Reaction, you may use the Help Action on an ally within 10 meters. However, your character must narrate what they are doing (Like <a href=\"https:\/\/jojowiki.com\/Robert_E._O._Speedwagon\" target=\"_blank\">Speedwagon<\/a>). When using the Help Action in this way, it may be used to reroll a Skill Check, Attack, or Saving Throw.",
-            "You may do this an amount of times equal to your Charisma Modifier per Long Rest."
+            "You may do this an amount of times equal to your Charisma Modifier per Long Rest.",
+            "You regain half your uses (rounded down) on a Short Rest."
         ]
     },
     "Consistent_Accuracy": {
         "name": "Consistent Accuracy",
         "desc": "You're very skilled at judging distance and accurately striking your target.",
         "effects": [
-            "Whenever you make a ranged weapon attack, thrown weapon attack, a Stand's <a href='\/abilities\/?focus=Ranged_Attack'>Ranged Attack<\/a>, or balls for use with <a href='\/classes\/?focus=Spin'>The Spin<\/a>, before you hear if the result hits your target or not you may choose to make the roll of the attack 10, and then add all of your typical modifiers. You may use this ability once per Short or Long Rest.",
-            "Additionally, whenever you have Advantage on one of the types of ranged attacks mentioned above, you may roll 3 dice rather than 2, and take the highest of the result."
+            "Whenever you make an Attack with a Ranged weapon, Thrown weapon, a Stand's <a href='\/abilities\/?focus=Ranged_Attack'>Ranged Attack<\/a>, or a Sphere with <a href='\/classes\/?focus=Spin'>The Spin<\/a>, before you hear if the result hits your target or not you may choose to make the roll of the attack 10, and then add all of your typical modifiers. You may use this ability once per Short or Long Rest.",
+            "Whenever you have Advantage on one of the types of Attacks mentioned above, you may roll 3 dice rather than 2, and take the highest of the result.",
+            "Whenever you have Disadvantage on one of the types of Attacks mentioned above, you may choose to ignore one instance of the Disadvantage."
         ]
     },
     "Consistent_Skills": {
@@ -103,10 +113,9 @@
         "name": "Deadly Accuracy",
         "desc": "Your aim is steady and true, and you know exactly where to fire to maximize damage.",
         "effects": [
-            "When making an Attack with a Ranged or Thrown weapon you may choose to use a full Action to attack. If you choose to do this, you can add your Attack Roll's Bonus twice.",
-            "Upon a successful Hit, you may roll double the Damage Dice that you would roll normally, and you may reroll any of them, keeping the new result.",
-            "This Feat may be activated even when you use the ability that gives you Advantage on a Sniper Rifle.",
-            "When used with <a href='\/abilities\/?focus=Ranged_Attack'>Ranged Attack<\/a> this Feat instead only allows you to reroll the Damage Dice."
+            "When making an Attack with a Ranged or Thrown weapon (or <a href='\/abilities?focus=Ranged_Attack'>Ranged Attack<\/a>) you may choose to use a full Action to attack. If you choose to do this, you can add your Attack Roll's Bonus twice.",
+            "Upon a successful Hit, you may roll double the Damage Dice and also roll them all twice and take the higher result.",
+            "This Feat may be activated even when you use the ability that gives you Advantage on a Sniper Rifle."
         ],
         "prereq": "Dex 13+"
     },
@@ -114,25 +123,26 @@
         "name": "Demolitionist",
         "desc": "You've handled your fair-share of explosives, and know how to do so safely.",
         "effects": [
-            "You gain Proficiency in the use of Explosives.",
-            "When you detonate an Explosive weapon, the DC for the save increases by your Proficiency Bonus.",
-            "Additionally, you gain Advantage on any Check made to disarm or set up an explosive device, as well as Saving Throws made against them."
+            "You gain Proficiency in the use of Explosives. This means when you detonate an Explosive weapon, the DC for the Saving Throw increases by your Proficiency Bonus.",
+            "Additionally, you gain a +4 bonus to any Check made to disarm or set up an explosive device, as well as any Saves made against explosives.",
+            "You may take this Feat multiple times if desired. Each additional instance increases the DC and Check\/Save bonus by +2."
         ]
     },
     "Energy_Imbuement": {
         "name": "Energy Imbuement",
-        "desc": "Some Stand Users are able to extend just a little bit of energy into a physical object, making it a permanent part of their Stand.",
+        "desc": [
+            "Some Stand Users are able to extend just a little bit of energy into a physical object, incorporating in into their Stand."
+        ],
         "effects": [
-            "You may make an object a permanent part of your Stand by imbuing it with Stand Energy for 8 hours.",
+            "You may make an object a semi-permanent part of your Stand by imbuing it with Stand Energy for 8 hours.",
             "The object now deals Stand damage and gains the same resistance that the rest of your Stand has.",
             "You become Proficient in the use of the imbued object, if you weren't already.",
             "If the object is destroyed, it does not damage the User in any way and it regenerates mass at a rate of 1kg\/hour.",
             "If the object is a Ranged Weapon then you may refill its ammo to maximum capacity as a single Attack at the cost of 1 Stand Energy.",
-            "If the weapon is non-explosive and its maximum ammo capacity is less than 5, you still get 5 'shots' before needing to expend Stand Energy again.",
-            "This Feat may not be replaced once the object is permanently imbued.",
+            "If the weapon is non-Explosive and its maximum ammo capacity is less than 5, you still get 5 'shots' before needing to expend Stand Energy again. Thrown weapons also work for this, summoning one in each free hand and the others elsewhere on your person.",
             "You may take this Feat multiple times if desired."
         ],
-        "prereq": "<a href='\/classes\/?focus=Stands'>Stand User<\/a> Level 1+"
+        "prereq": "<a href='\/classes\/?focus=Stands'>Stand User<\/a>"
     },
     "Enhanced_Stand_Senses": {
         "name": "Enhanced Stand Senses",
@@ -147,7 +157,7 @@
         "name": "Specialized Save",
         "desc": "You're quick on your feet and know how to navigate a battlefield.",
         "effects": [
-            "Choose one of your six Ability Scores. When you fail a Saving Throw using that Ability Score against anything that deals damage,you only take half damage, and if you succeed you take none.",
+            "Choose two of your six Ability Scores. When you fail a Saving Throw using that Ability Score against anything that deals damage you only take half, and take none if you succeed.",
             "You may take this Feat multiple times if desired."
         ]
     },
@@ -156,16 +166,18 @@
         "desc": "You're an inspiring person that leads by example and you serve as a model for others to look up to.",
         "effects": [
             "At any time, you may give 1 point of Inspiration to anyone you can see or hear as a Free Action.",
-            "You may give out Inspiration 3 times per Long Rest.",
-            "Inspiration gained in this way may not be given to other players, can only be gained in this way once per Long Rest per person, and expires if not used by the end of the next Long Rest."
+            "You may give out an amount of points of Inspiration equal to your Proficiency Bonus per Long Rest.",
+            "If you give a point of Inspiration to someone using this Feat, they may use a Free Action to give it to someone they can see or hear. You can only use a single point of Inspiration from the same Exemplar each Long Rest, but if you give your point of Inspiration to someone else you can gain another one. The Inspiration expires if not used by the end of the next Long Rest."
         ]
     },
     "Fortune_Teller": {
         "name": "Fortune Teller",
         "desc": "Some people have a gift that allows them to see Fate's inner workings. This allows them to see the future in a very specific way that isn't very helpful until the time of the divination comes to pass.",
         "effects": [
-            "At the end of each Long Rest, roll 2d20 and write the result of each roll down. At any point, you may replace a d20 roll for an ally, yourself, or an enemy with one of the d20 rolls written down. Once you have used a number, it cannot be used again.",
-            "You have an amount of d4s equal to your Proficiency Bonus that you may spend as a Reaction to add or subtract the rolled value to an ally or enemy's d20 roll, able to use several d4s in the same Reaction. You regain half of your total d4s on a Short Rest, and all of them on a Long Rest."
+            "You have an amount of d4s equal to your Intelligence or Wisdom Modifier (minimum of 0) plus your Proficiency Bonus that you may spend as a Reaction to add or subtract the rolled value to any d20 roll witnessed by your character (self, allies, or enemies).",
+            "Since this applies to the raw roll, it may cause any rolls at 1 to become a Critical Miss or any rolls at 20 to become a Critical Hit. The minimum and maximum of 1 and 20 respectively still apply for the raw roll, so if your d4(s) would create a result of 0 it becomes 1 etc.",
+            "You're able to use multiple d4s on one roll, but must declare how many you will use beforehand.",
+            "You regain an amount of these d4s equal to half your Proficiency Bonus on a Short Rest, and all of them on a Long Rest."
         ]
     },
     "Guardians_Wrath": {
@@ -173,9 +185,9 @@
         "desc": "You're passionate about protecting those close to you and will lash out at those who bring them harm.",
         "effects": [
             "Whenever someone you consider to be a close ally or friend fulfills one of the conditions where Grudge Points are gained, you gain a Grudge Point.",
-            "You may only have one ally at a time where these conditions are met on, and you may change which one you have selected as a Bonus Action."
+            "You may only have one ally at a time that this applies to, and you may change which one you have selected as a Free Action, but must do so on your Turn."
         ],
-        "prereq": "<a href='\/classes\/?focus=Revenge'>Revenge-Type User<\/a> Level 1+"
+        "prereq": "<a href='\/classes\/?focus=Revenge'>Revenge-Type User<\/a>"
     },
     "Guerilla_Fighter": {
         "name": "Guerilla Fighter",
@@ -190,15 +202,14 @@
         "name": "Headhunter",
         "desc": "You've fought the Undead many times before, and you know their tricks and how to best defeat them.",
         "effects": [
-            "You may add your Proficiency Bonus an additional time for any Attack Roll made against an <a href='\/abilities\/?focus=Undead_Nature'>Undead Creature's<\/a> Head.",
-            "You gain Advantage on any Saving Throws against effects inflicted by an Undead Creature."
+            "You may add your Proficiency Bonus an additional time for any Attack Roll made against an Undead creature. This bonus also applies when making Contested Skill Checks or Saving Throws caused by Undead."
         ]
     },
     "Heart_of_Lies": {
         "name": "Heart of Lies",
         "desc": "You've defeated countless enemies and overcome all challenges presented to you, dropping every foe in your way.",
         "effects": [
-            "When one of your attacks kills an enemy, roll a d4. If you roll a 4, you gain 1 point of Inspiration."
+            "When an enemy dies and you have damaged it at least once, roll a d4. If you roll a 3 or 4, you gain a point of Inspiration."
         ],
         "prereq": "Cannot have Heart of Truth"
     },
@@ -206,7 +217,7 @@
         "name": "Heart of Truth",
         "desc": "You've gone through a lot in life. You've witnessed struggle, pain, and possibly even death itself. You've seen the absolute worst of Humanity. and that is why it is of absolute importance that you achieve your goals.",
         "effects": [
-            "Whenever you or an ally within 5 meters of you uses a point of Inspiration, you may roll a d4. If you roll a 4, they regain the point of Inspiration spent."
+            "Whenever you or an ally within 5 meters of you uses a point of Inspiration, you may roll a d4. If you roll a 3 or 4, the spent point is regained."
         ],
         "prereq": "Cannot have Heart of Lies"
     },
@@ -215,8 +226,8 @@
         "desc": "You rest efficiently, and can sleep through almost anything.",
         "effects": [
             "You only need to sleep for 4 hours to gain the benefits of a Long Rest. The rest of the time may be spent doing light activities.",
-            "You may take a 5 minute nap to gain the benefits of a full Short Rest. Additionally, you may either restore 2 expended Hit Dice or regain one use of an Ability that would normally be restored on a Long Rest.",
-            "You may take a nap like this equal to half of your Proficiency Bonus rounded down each Long Rest."
+            "You may take a 5 minute nap to gain the benefits of a full Short Rest. Additionally, you may either restore 2 expended Hit Dice or regain one use of an Ability that would normally be restored on a Long Rest. You may take a nap like this a number of times equal to half of your Proficiency Bonus (rounded down) each Long Rest.",
+            "It takes 4 failed Death Saves to kill you rather than 3. If you have failed at least 1 Death Save you gain a +2 to further Death Saves."
         ],
         "prereq": "Cannot have Light Sleeper."
     },
@@ -224,16 +235,16 @@
         "name": "Heavy Specialization",
         "desc": "Through all of the time you've spent lugging around and using heavy equipment you've realized how to deal the most damage using these powerful, heavy weapons.",
         "effects": [
-            "You gain Proficiency in the use of any weapon with the \"Heavy\" specialization type.",
-            "When bracing with a Heavy weapon, you gain +2 AC until the beginning of your next Turn.",
-            "If you are already Proficient in the use of a Heavy weapon, you gain Expertise in it."
+            "You gain Proficiency in the use of any weapon with the \"Heavy\" Specialization.",
+            "When bracing with a Heavy weapon, you gain Half Cover until the beginning of your next Turn.",
+            "Once per Turn, when you deal damage with a Heavy weapon, if you roll below the Modifier you use for the weapon on any of your damage dice, it is increased to be that value. For example, if you had a Halberd (1d12) and a +3 to your Strength, you could not roll lower than a 3 on the d12."
         ]
     },
     "Assassin": {
         "name": "Assassin",
         "desc": "You've spent a lot of time in the shadows and know how to strike from them.",
         "effects": [
-            "Whenever you use an attack or weapon with the Ambush property and have Advantage on the attack or an ally is within melee with your target, you deal an additional amount of d8s of damage equal to your Proficiency Bonus (which are doubled if the opponent is Surprised).",
+            "Whenever you use a weapon with the Ambush property and have Advantage or at least a +4 bonus on the Attack from the environment or Conditions or an ally is within melee with your target, you deal an additional amount of d8s of damage equal to your Proficiency Bonus (which are doubled if the opponent is Surprised).",
             "You may only apply this additional damage once per round."
         ]
     },
@@ -241,7 +252,8 @@
         "name": "Immediate Connection",
         "desc": "You've spent a lot of time around other people, both those that you know very well as well as strangers.",
         "effects": [
-            "You gain Advantage on all Bluff and Diplomacy Checks on all non-hostile people that you've met within the past 24 hours."
+            "You gain a +4 bonus to all Bluff, Diplomacy, and Presence Checks on all non-hostile creatures that you've met within the past 24 hours.",
+            "Award-Winning Smile: You can spend a charge to increase the +4 bonus to a +6, but still have to meet the conditions. Alternatively, you may spend a charge to apply the bonus to someone you already know or a recently met hostile creature. You can use Award-Winning Smile an amount of times equal to your Charisma Modifier per Short or Long Rest."
         ],
         "prereq": "Cha 13+ or <a href='\/passions\/?focus=Con_Artist'>Con Artist<\/a>"
     },
@@ -249,8 +261,8 @@
         "name": "Immense Impact",
         "desc": "You're used to utilizing momentum to attack your foes with a powerful attack, hitting them immediately and head-on.",
         "effects": [
-            "This first Attack you make after moving in a straight line towards your target deals extra damage equal to the amount of meters moved before attacking this Turn. The maximum additional damage you may deal with this attack is equal to your level.",
-            "You may also perform a Charge Attack, allowing you to make one free melee attack after moving in a straight line. You may use this ability once per Turn."
+            "The first time you deal damage with a Melee Attack after moving in a straight line towards your target deals extra damage equal to the amount of meters moved before attacking this Turn. The maximum additional damage you may deal with this attack is equal to your Level or your Strength Score, whichever is higher.",
+            "You may also perform a Charge Attack, allowing you to make one free Melee Attack after moving in a straight line. You may use this ability once per Turn."
         ]
     },
     "Interpreter": {
@@ -258,36 +270,37 @@
         "desc": "Through time spent learning languages you have gotten much better at learning new ones as well as decoding unknown languages.",
         "effects": [
             "You learn an additional 4 languages of your choice.",
-            "You are also able to quickly teach people who are unfamiliar with a language that you know basic words, symbols, and cultural norms that are particularly relevant over the course of a Long Rest. Even if they cannot comprehend the language fluently, they are able to use basic communication to gesture towards simple ideas, concepts, or ask for someone who speaks a language that they know.",
+            "You are also able to quickly teach people who are unfamiliar with a language that you know any basic words, symbols, and cultural norms that are particularly relevant over the course of a Long Rest. Even if they cannot comprehend the language fluently, they are able to use basic communication to gesture towards simple ideas, concepts, or ask for someone who speaks a language that they know. Alternatively, you may teach them the basics of a coded communication method that you know.",
             "Additionally, you have advantage on any Skill Check to attempt to comprehend an unknown language."
         ],
         "prereq": "Int 13+ or <a href='\/passions\/?focus=Hospitality_Worker'>Hospitality Worker<\/a>"
     },
     "Improvised_Healing": {
         "name": "Improvised Healing",
-        "desc": "You've spent a lot of time out in the wild, simply trying to survive in an unforgiving environment.",
-        "effects": [
-            "As part of a Short Rest you may make a Survival check. For every 5 points that you roll on the Skill Check, you may perform one of the following actions on an additional friendly creature (5 or above for 1 creature, 10 for 2, etc). The actions you can perform include:",
-            "1: Restore an amount of Hit Points to them equal to your Level.",
-            "2: Allow an ally afflicted with a disease or poison to make a Saving Throw against it with Advantage. If the Saving Throw is successful, the effect ends.",
-            "3: You may create a makeshift first aid kit. You may have a maximum amount of these equal to your Proficiency Bonus. You may use one as an Action, which allows you to make a Medicine Check with Advantage. In addition, the target gains an amount of temporary Hit Points equal to half your Level, which remain until they are used or until the end of their next Short Rest."
+        "desc": [
+            "You've spent a lot of time out in the wild, simply trying to survive in an unforgiving environment."
         ],
-        "prereq": "Wis 13+ or <a href='\/passions\/?focus=Survivalist'>Survivalist<\/a>"
+        "effects": [
+            "At the end of a Long Rest you may create improvised medkits. These medkits may be used to fight a lingering Condition or effect or they can be used to heal. You may have at most an amount of medkits equal to your Intelligence or Wisdom Modifier + PB, and may recreate half of the total kits on a Short Rest (not exceeding your maximum).",
+            "You do not have to be the one to use the medkit, but your stats determine the strength of the effects.",
+            "Anyone can use the medkit as an Attack, and the one applying the medkit may choose its effect when it is used:<ul><li>Heal: Each medkit heals an amount of HP equal to your Survival bonus (Int or Wis) plus an amount of d6s equal to half the target's Level (minimum of 1).<\/li><li>Lessen Lingering Effect: A medkit may be used to lessen the severity of a lingering effect or Condition. If the effect requires a Saving Throw, for the next minute if the bonus to the Save is lower than your Survival bonus (Int or Wis) you may add your Survival bonus. Additionally, if the target is suffering from any effect that reduces d20 rolls, the penalty may be halved for the next minute.<\/li><\/ul>"
+        ],
+        "prereq": "Int 13+, Wis 13+ or <a href='\/passions\/?focus=Survivalist'>Survivalist<\/a>"
     },
     "Jack_of_All_Trades": {
         "name": "Jack of All Trades",
         "desc": "You're decently skilled at just about everything.",
         "effects": [
-            "You may add half of your Proficiency Bonus (rounded down) to all Skill Checks that you do not have Proficiency or Expertise in."
+            "You may add half of your Proficiency Bonus (rounded down) to all Skill Checks and Saving Throws that you do not have Proficiency in.",
+            "You may take this Feat twice. Doing so allows you to add half your Proficiency Bonus (rounded down) to all skills and saving throws, not just those you don't have Proficiency in."
         ]
     },
     "Level_Headed": {
         "name": "Level-Headed",
         "desc": "Your level head allows you to get out of most situations using your experience and clever mind.",
         "effects": [
-            "When making a Wisdom or Charisma Saving Throw, you may instead choose to make an Intelligence Saving Throw.",
-            "Additionally, when you make a Wisdom or Charisma Skill Check, you may replace the Ability Score used with Intelligence.",
-            "You may use this Feat for Skill Checks once per Short Rest."
+            "Whenever you make a mental Saving Throw (Int, Wis, Cha), you may choose to make them as Intelligence Saving Throws, using your Intelligence Save Bonus for the roll instead.",
+            "Twice per Short or Long Rest, you may either reroll a failed mental Saving Throw or add your Intelligence Modifier to any mental Skill Check as a Free Action."
         ],
         "prereq": "Int 13+ or <a href='\/passions\/?focus=Academic'>Academic<\/a>"
     },
@@ -296,7 +309,7 @@
         "desc": "You regain consciousness fairly quickly.",
         "effects": [
             "While sleeping, you may use your Passive Perception as you would while conscious.",
-            "You only need to succeed 2 Death Saves to become Stable, and upon becoming Stable you may expend an amount of Hit Dice equal to your Proficiency Bonus to regain HP.",
+            "You only need to succeed 2 Death Saves to become Stable, and upon becoming Stable you may expend an amount of Hit Dice up to your Proficiency Bonus to regain HP.",
             "You may also expend Hit Dice when being revived via an ally's Medicine Check."
         ],
         "prereq": "Cannot have Heavy Sleeper"
@@ -305,8 +318,9 @@
         "name": "Menacing Aura",
         "desc": "You radiate threatening energy.",
         "effects": [
-            "You may make an Intimidate Check as a Bonus Action twice per Short Rest.",
-            "Once per Turn, when you make an Intimidate Check, you may choose an amount of creatures within 15 meters equal to your Proficiency Bonus. These creatures must contest the result of your Intimidate check with a Wisdom Saving Throw, becoming Frightened until the end of their next Turn on a failed Save."
+            "You may make Intimidate Checks as Bonus Actions. Whenever you make Intimidate Checks, you may force an amount of targets equal to your Proficiency Bonus within 10 meters to make a Wisdom Saving Throw against a DC equal to 8 + your Intimidate Bonus. You have to have a way to communicate with your targets to use this Feat. If the target fails the Save they gain the Frightened Condition until the end of their turn, with the amount they failed the save by determining the severity of the Condition.",
+            "If a creature has already been forced to make a Save against your Menacing Aura, they get a +4 bonus to further Menacing Aura Saves for the next minute.",
+            "If you use this against a target that's already Frightened, you may increase their level of Fear by 1 if they fail the Save, or by 2 if they fail the Save by 5 or more."
         ]
     },
     "Motivated": {
@@ -317,49 +331,37 @@
             "You may use this Feat an amount of times equal to half your Proficiency Bonus (rounded down) per Long Rest."
         ]
     },
-    "Natural_Talent": {
-        "name": "Natural Talent",
-        "desc": "Through a combination of experience and natural-born talent you have gotten very good at certain tasks.",
-        "effects": [
-            "Choose up to Two Skills, Artisan's Tools, instruments, languages, or any individual weapon that you are Proficient in and gain Expertise in them.",
-            "You may take this Feat multiple times if desired."
-        ]
-    },
-    "Paranoia": {
-        "name": "Paranoia",
+    "Ever_Vigilant": {
+        "name": "Ever Vigilant",
         "desc": "You've been aware of them for a while now. You don't know who, but you know that they've been after you for so long, and you've been evading them for what seems like forever.",
         "effects": [
-            "You may add your Proficiency Bonus to your Initiative Bonus, and enemies that attempt to surprise you get Disadvantage instead of Advantage on their Surprise Attack. Additionally, you may use your Stand to defend against Surprise Attacks if you have one."
-        ]
-    },
-    "Perfected_Craft": {
-        "name": "Perfected Craft",
-        "desc": "You've spent countless hours training a specific skill, and it's clear that effort paid off.",
-        "effects": [
-            "You may choose to gain Mastery in a Skill, Artisan's Tools, instrument, language, or any individual weapon that you have Expertise in, allowing you to add your Proficiency Bonus to it 3 times."
+            "You may add your Proficiency Bonus to your Initiative Bonus. In addition, allies within 5 meters who can see or hear you gain a bonus to their Initiative equal to half your Proficiency Bonus.",
+            "Enemies that attempt to surprise you get Disadvantage instead of Advantage on their Surprise Attack. Additionally, you may use your Stand to defend against Surprise Attacks if you have one."
         ]
     },
     "Sidearm_Specialization": {
         "name": "Sidearm Specialization",
         "desc": "Through knowledge and training, you have gained the ability to use sidearms to remarkable effect.",
         "effects": [
-            "You gain Proficiency in the use of any weapon with the \"Sidearm\" specialization type.",
+            "You gain Proficiency in the use of any weapon with the \"Sidearm\" Specialization.",
             "You may reload sidearms as a free action.",
-            "If you are already Proficient in the use of a Sidearm, you gain Expertise in it."
+            "Trickshot: Once per turn when you Attack with a Sidearm in its Short Range, you may use one of the following effects<ul><li>Destructive Shot: Your Attack's damage gains the <a href='\/weapons#attributes-list'>Siege<\/a> attribute. You always hit and deal damage if it is an object or structure.<\/li><li>Killshot: Cannot be used on targets in Cover. You may roll your Damage Dice twice, taking the higher total damage result. If you miss, you still deal the damage from the Damage Dice, but don't add your Modifiers.<\/li><li>Ricochet: Your Attack ignores Half and three-quarters Cover. If you miss the Attack Roll, you may still deal damage from your Modifiers, but not roll your Damage Dice.<\/li><\/ul>"
         ]
     },
     "Practical_Experience": {
         "name": "Practical Experience",
         "desc": "Experience happens to be a great teacher, and you've learned a lot.",
         "effects": [
-            "You may gain Proficiency in any four artisan's tools, instruments, languages, individual weapons, or Skills of your choice."
+            "You may gain Proficiency in any four artisan's tools, instruments, languages, or Skills of your choice.",
+            "You can spend two of the above Proficiencies to instead gain Proficiency in any Weapon Type or Specialization.",
+            "You may take this Feat multiple times if desired."
         ]
     },
     "Pressure_Point_Manipulator": {
         "name": "Pressure Point Manipulator",
         "desc": "Through time spent studying the Human body you've found the best way to hinder movement, cause immense pain, and defeat foes with little force.",
         "effects": [
-            "As an Attack, you may force a foe in your (or your Stand's) melee range to make a Constitution (or Durability) Saving Throw against a DC of 8 + Proficiency Bonus + your Wisdom Modifier. If they fail the Saving Throw, you may remove function from one of their four limbs, with the following effects:<ul class='sublist'><li>Arms: The target loses function in one arm entirety, causing it to hang limply from their shoulder. This prevents them from using weapons that require two hands, and gives them Disadvantage on Athletics Checks and Strength Saves.<\/li><li>Legs: The target loses function in one leg entirely, causing it to go numb and hang limply. If they have one paralyzed leg their Movement Speed is cut in half, and if they have two paralyzed legs their Movement Speed drops to 0 and they fall Prone. A target with a paralyzed leg will have Disadvantage on all Acrobatics Checks and Dexterity Saves. <\/ul><\/li>",
+            "As an Attack, you may force a foe in your (or your Stand's) Melee Range to make a Constitution (or Durability) Saving Throw against a DC of 8 + Proficiency Bonus + your Wisdom Modifier. If they fail the Saving Throw, you may remove function from one of their four limbs, with the following effects:<ul class='sublist'><li>Arms: The target loses function in one arm entirety, causing it to hang limply from their shoulder. This prevents them from using weapons that require two hands, and gives them Disadvantage on Athletics Checks and Strength Saves.<\/li><li>Legs: The target loses function in one leg entirely, causing it to go numb and hang limply. If they have one paralyzed leg their Movement Speed is cut in half, and if they have two paralyzed legs their Movement Speed drops to 0 and they fall Prone. A target with a paralyzed leg will have Disadvantage on all Acrobatics Checks and Dexterity Saves. <\/ul><\/li>",
             "At the end of the target's Turn, they make the Constitution Saving Throw again, regaining control of a single limb of their choice that has been paralyzed on success. The effect lasts for a minute, or until they make enough Saves to remove the effect. Alternatively, the target (if they have at least one functional hand) or an ally of theirs can make a Medicine Check against your DC, removing paralysis from all affected limbs on success and regaining control over a single limb of their choice on failure.",
             "<a href='\/abilities\/?focus=Medicinal_Spin'>Medicinal Spin<\/a> can remove the effect from a single paralyzed limb, and <a href='\/abilities\/?focus=Forced_Motion'>Forced Motion<\/a> still works on a paralyzed limb."
         ]
@@ -368,18 +370,17 @@
         "name": "Quick on your Feet",
         "desc": "You're used to getting out of difficult situations using your wit.",
         "effects": [
-            "You may gain Expertise in a Saving Throw that you're already Proficient in.",
-            "You may gain Proficiency in two Saving Throws of your choice."
+            "You gain Proficiency in three Saving Throws of your choice.",
+            "You may take this Feat multiple times if desired."
         ]
     },
     "Rifle_Specialization": {
         "name": "Rifle Specialization",
         "desc": "Through training and patience, you have gained the ability to accurately use rifles.",
         "effects": [
-            "You gain Proficiency in the use of any weapon with the \"Rifle\" specialization type.",
+            "You gain Proficiency in the use of any weapon with the \"Rifle\" Specialization.",
             "When you roll a 19 on an Attack Roll with a Rifle, it is counted as a Critical hit just as if you had rolled a 20.",
-            "While using a Rifle, you may attack at Long Range without imposing Disadvantage.",
-            "If you are already Proficient in the use of a Rifle, you gain Expertise in it."
+            "While using a Rifle, you may attack at Long Range without imposing Disadvantage."
         ]
     },
     "Resilient": {
@@ -389,6 +390,7 @@
             "You and your Stand may choose to either become resistant to Piercing, Slashing, or Bludgeoning damage, or become resistant to any other three damage types of your choice.",
             "You also become resistant to the Stand counterpart of the chosen type(s).",
             "If you have a Damage Vulnerability, you may not use a Resistance to cancel it out.",
+            "If you are Undead, you may take this Feat to gain Resistance to Radiant Damage, but only conditionally. For example, you may become Resistant to the sun and UV light, but not The Ripple, or vice versa.",
             "You may take this Feat multiple times if desired."
         ]
     },
@@ -397,23 +399,29 @@
         "desc": "You've gone through a lot of physical trauma, and your body has learned to adapt accordingly. Scar tissue is beginning to build up on your skin, as well as internally.",
         "effects": [
             "You gain Damage Reduction equal to twice your Constitution Modifier at the top of Initiative every round.",
-            "This Damage Reduction doesn't conflict with Stand Damage Reduction, and unlike Stand DR, applies on any hit."
+            "This Damage Reduction doesn't conflict with Stand Damage Reduction, and unlike Stand DR, applies on any hit.",
+            "In addition, effects that would deal additional damage to Stand DR (<a class='in-page'>Piercer<\/a>, <a class='in-page'>Guard Breaker<\/a>, etc) do not apply to Scarflesh's Damage Reduction.",
+            "You may take this Feat multiple times, gaining additional Scarflesh equal to 2x Con Mod for each additional instance."
         ]
     },
     "Sentient_Stand": {
         "name": "Sentient Stand",
-        "prereq": "Cannot have <a href='\/abilities?focus=Detached_Senses'>Detached Senses<\/a>.",
-        "desc": "You and your Stand have two separate minds and personalities, and your Stand may act independently from you. Your Stand might even have different strengths and weaknesses from you. Examples of this include: <a href='https://jojowiki.com/Echoes#ACT3:_3_Freeze'>Echoes Act 3</a>, <a href='https://jojowiki.com/Sex_Pistols'>Sex Pistols</a>, <a href='https://jojowiki.com/Spice_Girl'>Spice Girl</a>, <a href='https://jojowiki.com/Whitesnake'>Whitesnake</a>.",
+        "desc": "You and your Stand have two separate minds and personalities, and your Stand may act independently from you. Your Stand might even have different strengths and weaknesses from you. Examples of this include: <a href='https:\/\/jojowiki.com\/Echoes#ACT3:_3_Freeze'>Echoes Act 3<\/a>, <a href='https:\/\/jojowiki.com\/Sex_Pistols'>Sex Pistols<\/a>, <a href='https:\/\/jojowiki.com\/Spice_Girl'>Spice Girl<\/a>, <a href='https:\/\/jojowiki.com\/Whitesnake'>Whitesnake<\/a>.",
         "effects": [
-            "In order for you and your Stand to communicate, you must be within line of sight of each other, or have some other method of communication like walkie-talkies or a phone call.",
+            "In order for you and your Stand to communicate, you must be within line of sight of each other, or have some other method of communication like walkie-talkies or a phone call, or some form of coded communication to relay information back and forth. While your Stand is within 2 meters, you and your Stand do not have to communicate verbally to relay information.",
+            "If you and your Stand are unable to communicate with each other, the Stand will either do its best to complete the last objective it was given or make its own decision on how to best proceed.",
+            "You and your Stand still share a Turn and Action Economy (aside from separate Movement) for gameplay purposes.",
             "You and your Stand may have different mental stats (Intelligence, Wisdom, and Charisma) and Proficiencies from you. The mental stats may be shuffled around, but the values must remain the same. For example, a user might have 8 Intelligence, 19 Wisdom, and 14 Charisma while the Stand has 19 Intelligence, 14 Wisdom, and 8 Charisma.",
-            "When Levelling-Up your Stand, you may not put points into these mental stats. However when the User gains an Ability Score Improvement and puts points into their mental values, the Stands increase as well. For example if the User above decided to put 2 more points into their Intelligence increasing it to 10, the Stand's Charisma would also increase to 10."
+            "Your Stand's Range, Speed, and Stand Energy are determined by its mental stats, not yours. Things that would be determined by a mental stat for the Stand (like Stand Stats and Stand DC) use the Stand's mental stats instead of the User's.",
+            "When Levelling-Up your Stand, you may not put points into these mental stats. However when the User gains an Ability Score Improvement and puts points into their mental values, the Stands increase as well. For example if the User above decided to put 2 more points into their Intelligence increasing it to 10, the Stand's Charisma would also increase to 10.",
+            "If you have Detached Senses, you are not able to sense through your Stand as a User. That said, you still generally know where your Stand is, and your Stand gets a +4 bonus to any Perception Checks, as well as their Passive Perception, so long as the Stand is being used to sense.",
+            "Once per Turn your Stand may act on its own to perform one of the following actions:<ul><li>As a Reaction, your Stand may protect you from an Attack or assist with a Saving Throw or Contesting Skill Check (Grapple, Speed Duel, etc.) that it would normally not be able to help with, as long as it's within 2m of you. This could protect you from a surprise attack, or grant you assistance on a roll that would normally disallow Stand stats to be used (like defending against a <a href='\/classes?focus=Hive#Swarm_Attacks'>Swarm Attack<\/a> for example).<\/li><li>When you or an ally fails a Skill Check if your Stand is within 2m the check may be reattempted with the Stand's stats instead.<\/li><li>When you fail a Saving Throw or Contesting Skill Check (Grapple, Speed Duel, etc.) your Stand may make the Save\/Check as well to determine if it suffers the result, rather than instantly being affected alongside you. If your Stand succeeds a Save\/Check in this way they do not suffer ANY negative effects, even if the Save\/Check would normally still do something on success.<\/li><\/ul>"
         ]
     },
     "Shared_Stand": {
         "name": "Shared Stand",
         "prereq": "Others affected by this Feat must not have a Stand of their own and must also take this Feat.",
-        "desc": "Your Stand is uniquely able to be shared amongst several people with whom you share an extremely close bond, be it familial, friendly, or romantic. Examples of this include: <a href='https://jojowiki.com/Ratt'>Ratt</a>, <a href='https://jojowiki.com/TATOO_YOU!'>Tattoo You!</a>, <a href='https://jojowiki.com/Scary_Monsters'>Scary Monsters</a>, <a href='https://jojowiki.com/Cat_Size'>Cat Size</a>.",
+        "desc": "Your Stand is uniquely able to be shared amongst several people with whom you share an extremely close bond, be it familial, friendly, or romantic. Examples of this include: <a href='https:\/\/jojowiki.com\/Ratt'>Ratt<\/a>, <a href='https:\/\/jojowiki.com\/TATOO_YOU!'>Tattoo You!<\/a>, <a href='https:\/\/jojowiki.com\/Scary_Monsters'>Scary Monsters<\/a>, <a href='https:\/\/jojowiki.com\/Cat_Size'>Cat Size<\/a>.",
         "effects": [
             "Several people are able to use your Stand's Ability at once. However, your Stand gets a multiplier reduction of 2 for its physical stats, to a minimum of x1. For example, a Power-Type which would typically have a x4, x3, and x3 for its physical stats would only get x2, x1, and x1 to Power, Precision, and Durability respectively.",
             "Everyone affected by this Feat becomes a Stand User equal in Level, Stand-stats, and Ability to you. They may still have their own stats, Proficiencies, and Feats that differ from yours however.",
@@ -425,8 +433,7 @@
         "desc": "Through knowledge and training, you have gained the ability to use simple weapons to remarkable effect.",
         "effects": [
             "You gain Proficiency in the use of Simple weapons.",
-            "You may add your Proficiency to the damage dealt by a melee weapon, or a second time to the Attack Roll for a Ranged weapon.",
-            "If you are already Proficient in the use of a Simple weapon, you gain Expertise in it."
+            "You may add your Proficiency to the damage dealt by a Simple melee weapon, or a second time to the Attack Roll for a Simple ranged weapon."
         ]
     },
     "Skirmisher": {
@@ -434,7 +441,7 @@
         "desc": "You focus on being light and mobile in combat, often sporadically attacking or making moves from a distance to harass the enemy.",
         "effects": [
             "You may Disengage as a Bonus Action.",
-            "When you hit a creature with a melee attack, you may choose to make it so they cannot use reactions until the end of their next Turn instead of dealing damage.",
+            "When you hit a creature with a Melee Attack, you may choose to make it so they cannot use reactions until the end of their next Turn instead of dealing damage.",
             "You gain Advantage on any Saving Throw or Ability Check that would attempt to restrict your movement (grappling, restraining, paralyzing, etc)."
         ]
     },
@@ -461,7 +468,7 @@
     },
     "Superhuman": {
         "name": "Superhuman",
-        "desc": "People usually have limits on how strong or smart they can get, but this is not always the case. You've found a way to push yourself past human limits.",
+        "desc": "People usually have limits on how strong or smart they can get, but this is not always the case. You've found a way to push yourself past Human limits.",
         "effects": [
             "Pick one of your six Ability Scores. You may increase that Score by 2, as well as the cap of that Score by 2.",
             "You may take this Feat multiple times if desired."
@@ -473,6 +480,7 @@
         "effects": [
             "Each Level, you gain an additional 2 Hit Points.",
             "This also applies retroactively, giving you twice your current Level additional HP.",
+            "Additionally, you gain <a href='\/abilities?focus=Confident_Provocation'>Confident Provocation<\/a> if you didn't have it already.",
             "You may take this Feat multiple times if desired."
         ]
     },
@@ -480,9 +488,9 @@
         "name": "Tavern Brawler",
         "desc": "Through experience and tussles, you've gained the ability to make objects from your environment into effective weaponry.",
         "effects": [
-            "You gain Proficiency in the use of Improvised weapons.",
-            "When making a melee attack on your Turn, you may either make another attack with an Improvised weapon or Grapple\/Shove your target as a Bonus Action.",
-            "If you are already Proficient in the use of an Improvised weapon, you gain Expertise in it."
+            "You gain Proficiency in the use of Improvised Weapon Attacks and Unarmed Strikes (you are Proficient in Unarmed Strikes by default, so this becomes Expertise).",
+            "When making a Melee\/Thrown weapon Attack on your Turn, you may either make another  Improvised Weapon Attack or make a Contested Skill Check (Grapple\/Shove, Speed Duel, Taunt, etc.) as a Bonus Action.",
+            "If the Damage Die you use for an Improvised Weapon would be less than your Unarmed Dice, it is raised to equal it."
         ]
     },
     "Trained_Combatant": {
@@ -490,37 +498,38 @@
         "desc": "You're well-trained in combat, and really know how to overwhelm an opponent.",
         "effects": [
             "When you take the Attack Action, you may perform an additional Attack.",
-            "You may take this Feat up to 3 times, granting a maximum of four Attacks per Action.",
-            "<a href='\/classes?focus=Stands'>Stand Users<\/a> that take this Feat still have a maximum number of 10 Attacks allowed between those granted by this Feat and by their Speed Modifier.",
-            "Those with Levels in <a href='\/classes?focus=Ripple'>Ripple<\/a>, <a href='\/classes?focus=Warrior'>Warrior<\/a>, or are <a href='\/abilities?focus=Undead_Nature'>Undead<\/a> have a maximum of 10 attacks rather than 4."
+            "Each instance of Trained Combatant also gives you an additional +2 bonus to any Speed Duels you make.",
+            "You have a maximum of 10 Attacks. If you have 10 Attacks you may still take this Feat, but only gain the bonus to your Speed Duels. "
         ]
     },
-    "Trap_Detection": {
-        "name": "Trap Detection",
-        "desc": "You've gone through your fair share of dangerous situations. Over time, you've built up an awareness of Traps and the ability to better sense danger.",
+    "Trapper": {
+        "name": "Trapper",
+        "desc": [
+            "Over time, you've built up the ability to create, detect, and disarm traps swiftly and effectively."
+        ],
         "effects": [
-            "Whenever you come within 5 meters of a hidden entrance or trap, you become aware of its existence. You also gain Advantage on any Checks relating to seeing the purpose and function of the trap or disarming the trap."
+            "Setting Traps: Traps have a specific physical trigger that must be activated by the target (opening a door\/drawer, stepping on a wire\/plate, turning on a switch, etc). The target must make a physical Saving Throw (Str, Dex, Con) against a DC of 8 + your Survival Bonus. Setting up a trap requires some basic materials, counting as a Skill Check that you make as an Action, despite not having to make a Skill Check (specified for the sake of effects like <a href='\/abilities?focus='Field_Study'>Field Study<\/a> and <a href='\/abilities?focus='Sharp_Mind'>Sharp Mind<\/a>). You have a few options for the negative effect of the trap:<ul><li>Precise: Affects a smaller range, but is more powerful. It affects a single target or all targets within a 2 meter cone, cube, or sphere and deals an amount of damage equal to nd12 + your Survival Bonus where n is your Proficiency Bonus to those who fail the Saving Throw. This also has the <a href='\/weapons#attributes-list'>Siege<\/a> attribute, dealing double damage to objects and structures. Those who succeed the Save do not take damage.<\/li><li>Reliable: Affects a smaller range, but is more reliable. It affects a single target or all targets within a 2 meter cone, cube, or sphere and deals an amount of damage equal to nd8 + your Survival Bonus where n is your Proficiency Bonus to those who fail the Saving Throw. Those who succeed the Save take half damage.<\/li><li>Devastating: Affects a larger range. It affects all targets within a 5 meter cone, cube, or sphere and deals an amount of damage equal to nd8 + your Survival Bonus where n is your Proficiency Bonus to those who fail the Saving Throw. Those who succeed the Save take no damage.<\/li><li>Miscellaneous: Performs a specific action. This can include anything including turning a recording device on, setting off fire alarms or sprinklers, starting a machine, opening a window's blinds, tipping a large vat, etc. These effects are varied but do not deal damage by themselves, even if they may indirectly cause damage.<\/li><\/ul>",
+            "Detecting\/Disarming Traps: Whenever you come within 5 meters of a hidden entrance or trap, you become aware of its existence. You also gain a +4 bonus to any Skill Check relating to seeing the purpose and function of the trap or disarming it, and a +4 bonus to any Saving Throws against traps."
         ]
     },
     "Thrown_Weapon_Specialization": {
         "name": "Thrown Weapon Specialization",
         "desc": "You've spent a lot of time throwing all sorts of objects from darts to tomahawks and more.",
         "effects": [
-            "You gain Proficiency in the use of any weapon with the \"Thrown\" specialization type.",
+            "You gain Proficiency in the use of any weapon with the \"Thrown\" Specialization, including Improvised Weapons that are thrown.",
             "You may draw a Thrown weapon as a free action.",
-            "Additionally, you may throw two of the same Thrown or Improvised weapons as a single Attack. You cannot do this with Spheres imbued with Spin.",
-            "If you are already Proficient in the use of a Thrown weapon, you gain Expertise in it."
+            "Additionally, you may throw two of the same Thrown or Improvised Weapons as a single Attack so long as they are within the weapon's Short Range. You cannot do this with Spheres imbued with <a href='\/classes?focus=Spin'>Spin<\/a>."
         ]
     },
     "Martial_Arts": {
         "name": "Martial Arts",
         "desc": "Through knowledge and training you have become remarkably effective in unarmed combat.",
         "effects": [
-            "You gain Proficiency in the use of Improvised weapons, Proficiency in the use of fist weapons such as brass knuckles and gauntlets, and Expertise in Unarmed Strikes and melee Stand attacks.",
-            "When making an Unarmed Strike, you deal 1d10 damage instead of 1d4.",
-            "When making an Athletics Check to Grapple or Shove a target, you may use either Dexterity or Strength.",
-            "Additionally, you may spend a full Action to Grapple a target and cause them to be Restrained if successful. As long as you continue to use your full Action and don't move each Turn, the target will continue to be Restrained.",
-            "If you are already Proficient in the use of an Improvised weapon, you gain Expertise in it."
+            "You gain the following :<ul><li>Proficiency in Improvised Weapons.<\/li><li>Proficiency in Melee Stand Attacks and Unarmed Strikes (you are Proficient in both of these by default, so this becomes Expertise). ",
+            "If your Proficiency with Fist weapons is less than your Proficiency in Unarmed, it is increased to meet it. For example, if you have Expertise in Unarmed, you also have Expertise in Fist weapons.<\/li><\/ul>",
+            "If your Unarmed Dice is less than 1d10, it is increased to become 1d10. If your Unarmed Dice is 1d10 or more, you instead get a flat +2 to Unarmed Damage Rolls. ",
+            "You may make Unarmed Strikes, Improvised Weapon Attacks, and Damage Rolls that would be made with Strength, using Dexterity instead.",
+            "Unarmed Barrage: You unleash a flurry of unarmed blows. Everyone in a 2 meter cone must make a Dexterity (NOT Precision) Saving Throw, with a DC of 8 + PB + Str\/Dex Mod. You may use this ability once per turn, increasing the damage dealt on a failed Save by your Unarmed Dice + your Str\/Dex (NOT Pow\/Pre) Modifier for each Attack spent. Those who succeed the Save still take half damage."
         ]
     },
     "Unstoppable_Willpower": {
@@ -548,27 +557,25 @@
         "name": "Professional Weapon Training",
         "desc": "You're well-practiced and can be deadly with just about any weapon you pick up.",
         "effects": [
-            "You gain Proficiency in the use of both Simple and Martial weapons.",
-            "If you are already Proficient in the use of a Simple or Martial weapon, you gain Expertise in it."
+            "You gain Proficiency in the use of Simple, Martial, and Improvised Weapons."
         ]
     },
     "Shotgun_Specialization": {
         "name": "Shotgun Specialization",
         "desc": "Through knowledge and training, you have gained the ability to use shotguns to remarkable effect.",
         "effects": [
-            "You gain Proficiency in the use of any weapon with the \"Shotgun\" specialization type.",
-            "When you hit a creature that is large or smaller with a shotgun blast at short range or closer, you may choose to halve the damage dealt and force them to make a Strength Saving Throw. The DC for this Save is 8 + Con + Proficiency, and if they fail they are knocked Prone.",
-            "If you are already Proficient in the use of a Shotgun, you gain Expertise in it."
+            "You gain Proficiency in the use of any weapon with the \"Shotgun\" Specialization.",
+            "When you hit a creature with a Shotgun at Short Range or closer, you may choose to halve the damage dealt and force them to make a Strength\/Constitution (your choice) Saving Throw. The DC for this Save is 8 + Con + PB, and if they fail they are knocked Prone. Creatures a Size larger than you or smaller make the Save normally, creatures two Size Categories or higher have Advantage. ",
+            "If you use a Shotgun against an object or structure, you always hit without needing to make an Attack Roll."
         ]
     },
     "Melee_Weapon_Specialization": {
         "name": "Melee Weapon Specialization",
         "desc": "Through knowledge and training, you have gained the ability to use melee weapons to remarkable effect.",
         "effects": [
-            "You gain Proficiency in the use of any weapon with the \"Melee\" specialization type. Does not give you expertise in unarmed strikes, but you do gain proficiency in the use of Fist and Gauntlet weapons, as well as Improvised Weapons, so long as you do not throw them.",
+            "You gain Proficiency in the use of any weapon with the \"Melee\" Specialization. This does not give you Expertise in Unarmed Strikes, but you do gain Proficiency in the use of Fist and Gauntlet weapons, as well as Improvised Weapons, so long as you do not throw them.",
             "When dealing damage using a Melee weapon, you may reroll any number of Damage Dice of your choice. You must keep the new roll, and you can only do this once per Turn.",
-            "Additionally, if you are hit by a melee attack while wielding a Melee weapon, you may use your Reaction to add your Proficiency Bonus to your AC until the beginning of your next Turn.",
-            "If you are already Proficient in the use of a Melee weapon, you gain Expertise in it."
+            "Additionally, if you are hit by a Melee Attack while wielding a Melee weapon, you may use your Reaction to add your Proficiency Bonus to your AC until the beginning of your next Turn."
         ]
     },
     "Familiar_Bond": {
@@ -583,27 +590,35 @@
         "desc": "Your Familiar is quite special, and through its strong fighting spirit, has developed a <a href='\/classes?focus=Stands'>Stand<\/a> of its own.",
         "effects": [
             "In order for your Familiar to have a Stand, <b>both of you must have this Feat<\/b>.",
-            "Your Familiar now uses Stand features rather than the ones normally gained by Familiars.",
-            "They still roll Familiar stats for determining Ability Scores, they keep their size, may only use Familiar Feats, and they use the Familiar's scaling Ability dice."
+            "Your Familiar now uses Stand features rather than the ones normally gained by Familiars. They may also use Familiar Feats or regular Feats, and has an amount of Feats equal to their Proficiency Bonus like a regular character.",
+            "They still roll Familiar stats for determining Ability Scores, they keep their Size and they use the Familiar's scaling Ability dice."
         ]
     },
     "Suit_Stand": {
         "name": "Suit Stand",
-        "desc": "Your Stand takes the physical form of a suit that covers you almost, if not completely. Examples of this include: <a href='https://jojowiki.com/Yellow_Temperance'>Yellow Temperance</a>, <a href='https://jojowiki.com/White_Album'>White Album</a>, <a href='https://jojowiki.com/Oasis'>Oasis</a>, <a href='https://jojowiki.com/20th_Century_BOY'>20th Century Boy</a>",
-        "effects": [
-            "Your Stand's Range stat becomes 0, and it cannot be increased in any manner.",
-            "Your Stand becomes bound in reality as a more tangible object. Therefore, when summoned it has a physical form that surrounds parts of or the entire User and is visible, even to those without a Stand. It is also now able to be affected by Non-Stand damage types.",
-            "You are now able to increase any stat (except Range) that your Stand has that you would normally be unable to increase. For example, an Ability-Type Suit Stand User could increase their Power and Durability past their initial values.",
-            "Additionally, your Stand gets a multiplier boost of 2 for its physical stats. For example, a Power-Type which would typically have x4, x3, x3 for Power, Precision, Durability would get boosted to x6, x5, and x5 respectively as a Suit Stand.",
-            "You also gain <a href='\/abilities\/?focus=Anchored_Stand'>Anchored Stand<\/a> if you don't already have it."
+        "desc": [
+            "Your Stand takes the physical form of a suit that covers you almost, if not completely. How this manifests is different depending on your Stand Type. Examples of this include: <a href='https:\/\/jojowiki.com\/Yellow_Temperance'>Yellow Temperance<\/a>, <a href='https:\/\/jojowiki.com\/White_Album'>White Album<\/a>, <a href='https:\/\/jojowiki.com\/Oasis'>Oasis<\/a>, <a href='https:\/\/jojowiki.com\/20th_Century_BOY'>20th Century Boy<\/a>."
         ],
-        "prereq": "<a href='\/classes\/?focus=Stands'>Stand User<\/a> Level 1+"
+        "effects": [
+            "When a creature wears a Suit Stand, they may use their normal Movement Speed or the Stand's Movement Speed, whichever is higher. When attached to a creature, the Stand cannot use its own Movement, only the wearer can. ",
+            "<b>Power-Type:<\/b><ul><li>Range is reduced to 0 and cannot be increased.<\/li><li>Once per Turn, if you fail a physical Saving Throw or Contesting Skill Check (Grapple, Speed Duel, etc.) you may choose to reroll it with a bonus equal to your Proficiency Bonus as a Free Action.<\/li><li>If you suffer a Critical Hit you may force your attacker to reroll their Attack as a Reaction, so long as they are within your Melee Range.<\/li><li>You may choose to gain <a href='\/abilities?focus=Anchored_Stand'>Anchored Stand<\/a> if desired.<\/li><\/ul>",
+            "<b>Ranged-Type:<\/b><ul><li>Your Stand may move independently still, so long as it is connected to you or another \"host\" at the end of your Turn.<\/li><li>Any host wearing the Stand benefits from its AC even when unconscious, can use <a href='\/abilities?focus=Slippery'>Slippery<\/a>, and can use the Stand's stats for Checks, Saves, and Attacks even if this would normally be disallowed.<\/li><li>You may increase your Stand's Durability when Leveling-Up, and your base Durability multiplier becomes x4.<\/li><li>Gain <a href='\/abilities?focus=Confident_Provocation'>Confident Provocation<\/a><\/li><li>You may choose to gain <a href='\/abilities?focus=Anchored_Stand'>Anchored Stand<\/a> if desired.<\/li><\/ul>",
+            "<b>Remote-Type:<\/b><ul><li>Your Stand may move independently still, so long as it is connected to you or another \"host\" at the end of your Turn.<\/li><Li>The Stand may attempt to envelop unwilling hosts with a Grapple Check. At the beginning of the unwilling host's Turns they must make a Strength Saving Throw against your Stand DC, remaining Grappled on success but becoming fully Restrained on failure. The debuff from being Restrained does not apply to this particular Save. The unwilling host may attempt to break free from the Stand as an Action, reattempting the Grapple Check Contest.<\/li><li>If you have <a href='\/abilities?focus=Detached_Stand'>Detached Stand<\/a> your Stand does not have its own health pool specifically when protecting yourself.<\/li><li>Remote Suit Stands are capable of protecting allies as well as yourself, but remain most focused on completing their <a href='\/abilities?focus=Programmed_Stand'>Programmed Objective<\/a><\/li><li>You may increase your Stand's Precision when Leveling-Up, and your base Precision multiplier becomes x4.<\/li><li>Gain <a href='\/abilities?focus=Confident_Provocation'>Confident Provocation<\/a><\/li><li>You may choose to gain <a href='\/abilities?focus=Anchored_Stand'>Anchored Stand<\/a> if desired.<\/li><\/ul>",
+            "<b>Ability-Type:<\/b><ul><li>Range is reduced to 0 and cannot be increased.<\/li><li>Gain either <a href='\/abilities?focus=Defensive_Ability'>Defensive Ability<\/a> or <a href='\/abilities?focus=Mobile_Ability'>Mobile Ability<\/a>. You may activate both of these as a Bonus Action rather than an Attack if desired.<\/li><li>You may increase your Stand's Durability when Leveling-Up, and your base Durability multiplier becomes x3.<\/li><li>Your Ability-Type Hit Die increases to a d8. This may retroactively give you 1 additional Hit Point per Level.<\/li><li>Gain <a href='\/abilities?focus=Confident_Provocation'>Confident Provocation<\/a><\/li><li>You may choose to gain <a href='\/abilities?focus=Anchored_Stand'>Anchored Stand<\/a> if desired.<\/li><\/ul>",
+            "<b>Enhancement-Type:<\/b><ul><li>Range is reduced to 0 and cannot be increased.<\/li><li>As a Reaction you can regain up to half your total Damage Reduction, not exceeding your maximum.<\/li><li>Once per Turn as a Free Action, if you received damage that would deal extra against you or your Damage Reduction (such as that from Vulnerabilities, <a href='\/feats?focus=Guard_Breaker'>Guard Breaker<\/a>, or <a href='feats?focus=Piercer'>Piercer<\/a>) it only does the normal amount of damage instead.<\/li><\/ul>",
+            "<b>Revenge-Type:<\/b> <ul><li>Range is reduced to 0 and cannot be increased.<\/li><li>When using <a href='\/abilities?focus=Confident_Provocation'>Confident Provocation<\/a> you may force enemies within 5m to make a Wisdom Saving Throw against your Stand DC, in addition to that Ability's normal effects. On failure they MUST target you with at least one Attack or negative effect on their Turn. Additionally the first Attack or negative effect they attempt to inflict on their turn must be targeting you, even if they succeeded the Save.<\/li><li>When targeted with an Attack or negative effect you may spend a Grudge Point to Retaliate against your aggressor as a Reaction, so long as they're within Melee Range or you have a weapon that can hit them. Retaliation takes the form of a single Attack using your Stand's stats, even if it's not summoned. Furthermore the Critical Hit range of this Attack increases by 2.  If you miss this Attack you may spend a Grudge point to keep this Crit range increase and stack it with your next Retaliation Attack, though it resets once you hit one or if the combat ends.<\/li><li>You may choose to gain <a href='\/abilities?focus=Anchored_Stand'>Anchored Stand<\/a> if desired.<\/li><\/ul>",
+            "<b>Independent-Type:<\/b><ul><li>The Stand does not have its own health pool specifically when protecting a separate User, but does if on its own.<\/li><li>Independent Suit Stands can protect allies, but are fully capable of moving and existing on their own without requiring a \"host\" to wear it.<\/li><li>The Stand may attempt to envelop unwilling hosts with a Grapple Check. At the beginning of the unwilling host's Turns they must make a Strength Saving Throw against its Stand DC, remaining Grappled on success but becoming fully Restrained on failure. The debuff from being Restrained does not apply to this particular Save. The unwilling host may attempt to break free from the Stand as an Action, reattempting the Grapple Check Contest.<\/li><li>Once per Turn as a Free Action, if the Stand received damage that would deal extra against it or its Damage Reduction (such as that from Vulnerabilities, <a href='\/feats?focus=Guard_Breaker'>Guard Breaker<\/a>, or <a href='feats?focus=Piercer'>Piercer<\/a>) it only does the normal amount of damage instead.<\/li><\/ul>",
+            "<b>Hive-Type:<\/b><ul><li>Your Stand's Instances may move independently still, so long as they are connected to you or another \"host\" at the end of your Turn.<\/li><li>Gain either <a href='\/abilities?focus=Defensive_Wave'>Defensive Wave<\/a> or <a href='\/abilities?focus=Mobile_Wave'>Mobile Wave<\/a>. Allied hosts may use these Abilities or have them used on them, but each can only be active on one host per Turn.<\/li><li>Gain <a href='\/abilities?focus=Confident_Provocation'>Confident Provocation<\/a><\/li><li>You may choose to gain <a href='\/abilities?focus=Anchored_Stand'>Anchored Stand<\/a> if desired.<\/li><\/ul>",
+            "<b>Act-Type:<\/b> Gains the effects of Suit Stand relative to the Type of each Act:<ul><li>Close-Range gains the effects of a Power Suit Stand.<\/li><li>Long-Range gains the effects of a Ranged Suit Stand.<\/li><li>Ability-Focused gains the effects of an Ability Suit Stand (except the Hit Die increase).<\/li><li>Remote-Focused gains the effects of a Remote Suit Stand.<\/li><\/ul>",
+            "<b>Multi-Type:<\/b> Choose one of your types to gain the effects of."
+        ],
+        "prereq": "<a href='\/classes\/?focus=Stands'>Stand User<\/a>"
     },
     "Weapon_Feat": {
         "name": "Weapon Feat",
         "desc": "<b>THIS IS NOT A FEAT<\/b>, this is a category of Feats.",
         "effects": [
-            "Please select a Feat from the list below. You may not gain the same Feat from this list twice, unless otherwise specified.<ul class='sublist'><li><a class='in-page'>Demolitionist<\/a><\/li><li><a class='in-page'>Heavy Specialization<\/a><\/li><li><a class='in-page'>Martial Arts<\/a><\/li><li><a class='in-page'>Melee Focus</a><\/li><li><a class='in-page'>Melee Weapon Specialization<\/a><\/li><li><a class='in-page'>Professional Weapon Training<\/a><\/li><li><a class='in-page'>Rifle Specialization<\/a><\/li><li><a class='in-page'>Shield Proficiency<\/a><\/li><li><a class='in-page'>Shotgun Specialization<\/a><\/li><li><a class='in-page'>Sidearm Specialization<\/a><\/li><li><a class='in-page'>Simple Weapon Focus<\/a><\/li><li><a class='in-page'>Tavern Brawler<\/a><\/li><li><a class='in-page'>Thrown Weapon Specialization<\/a><\/li><\/ul>"
+            "Please select a Feat from the list below. You may not gain the same Feat from this list twice, unless otherwise specified.<ul class='sublist'><li><a class='in-page'>Demolitionist<\/a><\/li><li><a class='in-page'>Heavy Specialization<\/a><\/li><li><a class='in-page'>Martial Arts<\/a><\/li><li><a class='in-page'>Melee Focus<\/a><\/li><li><a class='in-page'>Melee Weapon Specialization<\/a><\/li><li><a class='in-page'>Professional Weapon Training<\/a><\/li><li><a class='in-page'>Rifle Specialization<\/a><\/li><li><a class='in-page'>Shield Proficiency<\/a><\/li><li><a class='in-page'>Shotgun Specialization<\/a><\/li><li><a class='in-page'>Sidearm Specialization<\/a><\/li><li><a class='in-page'>Simple Weapon Focus<\/a><\/li><li><a class='in-page'>Stand Attacker<\/a><\/li><li><a class='in-page'>Tavern Brawler<\/a><\/li><li><a class='in-page'>Thrown Weapon Specialization<\/a><\/li><li><a class='in-page'>Wrestler<\/a><\/li><\/ul>"
         ]
     },
     "Epic_Feat": {
@@ -641,7 +656,7 @@
         "effects": [
             "You regain 3 Ripple Points at the start of your Turn if you are able to comfortably breathe, rather than just regaining 1."
         ],
-        "prereq": "<a href='\/classes?focus=Ripple'>Ripple<\/a> Level 1+, <a class='in-page'>Epic Feat<\/a> allowed by your DM"
+        "prereq": "<a href='\/classes?focus=Ripple'>Ripple<\/a>, <a class='in-page'>Epic Feat<\/a> allowed by your DM"
     },
     "Skill_Master": {
         "name": "Skill Master",
@@ -689,12 +704,14 @@
         ],
         "prereq": "<a class='in-page'>Epic Feat<\/a> allowed by your DM"
     },
-    "Defensive_Stance": {
-        "name": "Defensive Stance",
+    "Defensive_Agility": {
+        "name": "Defensive Agility",
         "desc": "You enter a more defensive stance, allowing you to redirect most of the energy from powerful blows, rather than focusing on avoiding damage.",
         "effects": [
-            "When taking the Dodge Action, you may choose to take a quarter (rounded down) damage from enemy attacks instead of the normal effect of Dodge."
-        ]
+            "Once per Short Rest, you may Dodge as a Bonus Action.",
+            "When taking the Dodge Action through any means, you may choose both options instead of having to pick one. "
+        ],
+        "prereq": "Dex 13+"
     },
     "Duelists_Agility": {
         "name": "Duelist's Agility",
@@ -717,12 +734,12 @@
     },
     "Massive_Stand": {
         "name": "Massive Stand",
-        "desc": "Through training and experimentation, you have discovered that you may increase a Stand's size, so long as you have enough material to do so and it is relatively close to you. Examples of this include: <a href='https://jojowiki.com/Wheel_of_Fortune'>Wheel of Fortune</a>, <a href='https://jojowiki.com/Strength'>Strength</a>, <a href='https://jojowiki.com/High_Priestess'>High Priestess</a>, <a href='https://jojowiki.com/Super_Fly'>Superfly</a>",
+        "desc": "Through training and experimentation, you have discovered that you may increase a Stand's Size, so long as you have enough material to do so and it is relatively close to you. Examples of this include: <a href='https:\/\/jojowiki.com\/Wheel_of_Fortune'>Wheel of Fortune<\/a>, <a href='https:\/\/jojowiki.com\/Strength'>Strength<\/a>, <a href='https:\/\/jojowiki.com\/High_Priestess'>High Priestess<\/a>, <a href='https:\/\/jojowiki.com\/Super_Fly'>Superfly<\/a>",
         "effects": [
-            "Your Stand is able to increase by one size category, so long as you have enough material for your Stand to anchor onto. Each size category increase requires an amount of material equivalent to twice your Stand's current mass of material. You may estimate this or ask your DM to estimate it, no need to do volume and density math to figure it out.",
-            "You may take this Feat up to three times, increasing by another size category (and doubling the required material mass) for each one.",
-            "For each category increase, your Stand must be closer to you. For one category, it must be within half of its Range, a quarter for two, and an eighth for three.",
-            "Due to the increase in size, your Stand gains the following benefits:<ul class='sublist><li>Each category increases your Stand's Range score by an additional multiplier (for example, x2 becomes x3, and so on).<\/li><li>Your Stand's Attack dice increase, giving an additional 1d10 before Level 11 or an additional 2d8 after, per category increase.<\/li><li>Your Stand's melee Attacks, as well as Grapples and Shoves have a sweeping effect, causing them to hit everyone within a 1m cone rather than a single target. The radius of this cone increases by 1m for each category increase. You only need to make one Attack Roll or Athletics check against the ACs of all targets in range. You may have an amount of creatures at least one size category smaller than you Grappled equal to 1 + the number of Massive Stand Feats taken in each hand.<\/li><li>Your Stand has more lifting and carrying capacity relative to its new size.<\/li><li>Your Stand gains an additional amount of Damage Reduction equal to its Durability Modifier for each additional category increase.<\/ul>"
+            "Your Stand is able to increase by one Size Category, so long as you have enough material for your Stand to anchor onto. Each Category increase requires an amount of material equivalent to twice your Stand's current mass of material. You may estimate this or ask your DM to estimate it, no need to do volume and density math to figure it out.",
+            "You may take this Feat up to three times, increasing by another Size Category (and doubling the required material mass) for each one.",
+            "For each Category increase, your Stand must be closer to you. For one Category, it must be within half of its Range, a quarter for two, and an eighth for three.",
+            "Due to the increase in Size, your Stand gains the following benefits:<ul class='sublist><li>Each Category increases your Stand's Range score by an additional multiplier (for example, x2 becomes x3, and so on).<\/li><li>Your Stand's Attack dice increase, allowing you to roll double your Attack Dice per Category increase (Doubling\/Halving rule does apply here).<\/li><li>Your Stand's Melee Attacks, as well as Grapples and Shoves have a sweeping effect, causing them to hit everyone within a 2m cone rather than a single target. The radius of this cone increases by 1m for each Category increase. You only need to make one Attack Roll or Athletics Check against the ACs of all targets in range. You may have an amount of creatures at least one Size smaller than you Grappled equal to 2 + 2x the number of Massive Stand Feats you have taken.<\/li><li>Your Stand has more lifting and carrying capacity relative to its new Size.<\/li><li>Your Stand gains an additional amount of Damage Reduction equal to its Durability Modifier for each additional Category increase.<\/li><\/ul>"
         ],
         "prereq": "<a href='\/abilities\/?focus=Anchored_Stand'>Anchored Stand<\/a>"
     },
@@ -736,49 +753,50 @@
     },
     "Uncontrollable_Stand": {
         "name": "Uncontrollable Stand",
-        "desc": "Your Stand is incredibly powerful, but not very reliable, which may result in unwanted or expected collateral damage. Examples of this include: <a href='https://jojowiki.com/Purple_Haze'>Purple Haze</a>, <a href='https://jojowiki.com/Survivor'>Survivor</a>, <a href='https://jojowiki.com/Bohemian_Rhapsody'>Bohemian Rhapsody</a>.",
+        "desc": "Your Stand is incredibly powerful, but not very reliable, which may result in unwanted or expected collateral damage. Examples of this include: <a href='https:\/\/jojowiki.com\/Purple_Haze'>Purple Haze<\/a>, <a href='https:\/\/jojowiki.com\/Survivor'>Survivor<\/a>, <a href='https:\/\/jojowiki.com\/Bohemian_Rhapsody'>Bohemian Rhapsody<\/a>.",
         "effects": [
             "Your Stand is massively powerful, but is interested in pursuing its own motives, sometimes being willing to harm allies or the user to do so. The only control the user has over their Stand is to have them summoned or not.",
             "Functionally, the Stand will generally do what you suggest it to and you can influence its actions, but its behavior is ultimately determined by the DM.",
-            "In addition, your Stand gains two of the following benefits:<ul class='sublist'><li>Your Stands Custom Ability massively increases in potency. For example, if your Stand uses scaling dice, you gain an additional amount of Ability Dice equal to your Proficiency Bonus. Alternatively, you may speak to your DM about increasing the potency of your Stands Ability in some other way, similar to <a href='\/abilities\/Enhanced_Custom_Ability'>Enhanced Custom Ability<\/a>.<\/li><li>Your Range becomes irrelevant, and affects everyone or everything on the planet.<\/li><li>Your Stand Energy becomes 0, and your Stands Abilities may be used without cost.<\/li><li>Two of your Stands stats of your choice are doubled, as well as all of the points you put into those stats later.<\/li><li>Your Stand DC increases by an amount equal to your Proficiency Bonus.<\/li><\/ul>"
+            "In addition, your Stand gains two of the following benefits:<ul class='sublist'><li>Your Stands Custom Ability massively increases in potency. For example, if your Stand uses scaling dice, you gain an additional amount of Ability Dice equal to your Proficiency Bonus. Alternatively, you may speak to your DM about increasing the potency of your Stands Ability in some other way, similar to <a href='\/abilities?focus=Enhanced_Custom_Ability'>Enhanced Custom Ability<\/a>.<\/li><li>Your Range becomes irrelevant, and affects everyone or everything on the planet.<\/li><li>Your Stand Energy becomes 0, and your Stands Abilities may be used without cost.<\/li><li>Two of your Stands stats of your choice are doubled, as well as all of the points you put into those stats later.<\/li><li>Your Stand DC increases by an amount equal to your Proficiency Bonus.<\/li><\/ul>"
         ],
-        "prereq": "<a href='\/classes\/?focus=Stands'>Stand User<\/a> Level 1+, Cannot be a Remote-Type or Independent-Type Stand User"
+        "prereq": "<a href='\/classes\/?focus=Stands'>Stand User<\/a>, Cannot be a Remote-Type or Independent-Type Stand User"
     },
     "Berserker": {
         "name": "Berserker",
         "desc": "Either by entering a trance, or through sheer adrenaline and rage, you have found a way to tap into a primal rage locked within you. You are able to use it to great destructive effect, at risk of pushing yourself far past your limits.",
         "effects": [
-            "As a Free Action at the start of your Turn, you may go Berserk. This lasts until you choose to exit this state or for an amount of Turns equal to your Proficiency Bonus, so long as you either make a Skill Check using Strength (including Grapple and Shove) or at least one Attack Roll using Strength on your Turn. When you going Berserk, you gain the following traits<ul>",
-            "While Berserk, your Strength Modifier increases by an amount equal to your Proficiency Bonus. If you have a Stand, your Stand's Power increases by the same amount.",
-            "Your melee Attacks gain the Siege attribute.",
+            "As a Free Action, you may go Berserk. This lasts until you choose to exit this state or for an amount of Turns equal to twice your Proficiency Bonus, so long as you either make a Skill Check using Strength (including Grapple and Shove) or at least one Attack Roll using Strength on your Turn. When you going Berserk, you gain the following traits<ul>",
+            "While Berserk, your Strength Modifier increases by an amount equal to your Proficiency Bonus. If you have a Stand, your Stand's Power Modifier increases by the same amount.",
+            "Your Melee Attacks gain the <a href='\/weapons#attributes-list'>Siege<\/a> attribute.",
             "You gain Resistance to Piercing, Slashing, and Fire damage (so long as you are not Vulnerable).",
             "You do not go unconscious when you hit 0 HP, but you still make Death Saves as normal until healed. If you fail all three Death Saves, you die as normal. Getting hit by anything still results in a failed Death Save.",
-            "Your mental faculties are unable to keep up while your body is in this accelerated state. Your sense of reason is reduced, replaced by a boiling rage that screams at you to destroy everyone and everything in your path. You have Disadvantage on all Intelligence, Wisdom, and Charisma Saving Throws, as well as all Charisma Checks except Intimidate.<\/ul>",
+            "Your mental faculties are unable to keep up while your body is in this accelerated state. Your sense of reason is reduced, replaced by a boiling rage that screams at you to destroy everyone and everything in your path. You have Disadvantage on all Intelligence, Wisdom, and Charisma Saving Throws, as well as all Intelligence and Charisma Checks except Intimidate.<\/ul>",
             "You may only go Berserk twice per Long Rest, but may take a level of Exhaustion in order to do so more than twice."
         ],
-        "prereq": "13+ Str and 13+ Con"
+        "prereq": "Str 13+ and Con 13+"
     },
     "Act_Modification": {
         "name": "Act Modification",
         "desc": "Allows you to gain a slightly modified Act Stand.",
         "effects": [
-            "Allows you to take an Act Modifier whenever it appears as a Class Feature."
+            "Allows you to take an <a href='\/abilities\/?focus=Act_Modifier'>Act Modifier<\/a> whenever it appears as a Class Feature."
         ],
-        "prereq": "<a href='/classes/?focus=Act'>Act-Type</a> Level 1+"
+        "prereq": "<a href='\/classes\/?focus=Act'>Act-Type<\/a>"
     },
     "Burst": {
         "name": "Burst",
         "desc": "You may push yourself beyond your limits, at a cost.",
         "effects": [
-            "Once per Short Rest you may gain one of the following benefits:<ul><li>Whenever you take the Attack Action, you may make an additional amount of Attacks equal to half of your Proficiency Bonus.<\/li><li>You gain an additional Bonus Action and Reaction this Turn.<\/li><li>You may Dash, Disengage, or Dodge as a single Attack or Bonus Action.<\/li><li>Your Movement Speed is doubled.<\/li><\/ul> When you use this Ability, you take an amount of necrotic damage equal to your Level that cannot be reduced or negated. This damage cannot drop you below 1 HP."
+            "Once per Short or Long Rest you may gain one of the following benefits:<ul><li>Whenever you take the Attack Action, you may make an additional amount of Attacks equal to half of your Proficiency Bonus.<\/li><li>You gain an additional Bonus Action and Reaction this Turn.<\/li><li>You may Dash, Disengage, or Dodge as a single Attack or Bonus Action.<\/li><li>Your Movement Speed is doubled.<\/li><\/ul>",
+            "When you use this Ability, you take an amount of Necrotic damage equal to your Level that cannot be reduced or negated. This damage cannot drop you below 1 HP."
         ]
     },
     "Class_Initiate": {
         "name": "Class Initiate",
         "desc": "You've learned a few skills from others, allowing you to fight in a different way.",
         "effects": [
-            "<b>This Feat consumes 2 Feat slots, rather than 1</b>",
-            "Pick a Stand-Type, Ripple, Spin, or a Non-Supernatural <a href='/classes'>Class</a>. You are treated as if you have an amount of Levels in the Class equal to your Proficiency Bonus. You gain all of the Class Features that you would at that Level, but you do not gain additional health, Ability Score Increases (although you do gain the physical stat increases from Ripple), and your Proficiency Bonus does not increase.",
+            "<b>This Feat consumes 2 Feat slots, rather than 1<\/b>",
+            "Pick a Stand-Type, Ripple, Spin, or a Non-Supernatural <a href='\/classes'>Class<\/a>. You are treated as if you have an amount of Levels in the Class equal to your Proficiency Bonus. You gain all of the Class Features that you would at that Level, but you do not gain additional health, Ability Score Increases (although you do gain the physical stat increases from Ripple), and your Proficiency Bonus does not increase.",
             "If you already have Levels in Stand User, either from this Feat or your regular Levels, you cannot use this Feat to gain Levels in a different type of Stand.",
             "Initiate Levels count towards any Abilities or Feats that have a Class prerequisite.",
             "You may take this Feat multiple times. Should you choose to do so, you may choose to gain an amount of Levels equal to your Proficiency Bonus in either the same or a different Class. You cannot have more Levels in an Initiate Class than you have in your regular Class."
@@ -786,10 +804,10 @@
     },
     "Crusher": {
         "name": "Crusher",
-        "desc":"You are skilled at hitting things hard. Whether that's using a rock, a mace, or your fist, you understand the principle that hitting harder is always possible.",
+        "desc": "You are skilled at hitting things hard. Whether that's using a rock, a mace, or your fist, you understand the principle that hitting harder is always possible.",
         "effects": [
-            "Whenever you deal bludgeoning damage you may choose to deal only half damage with the Attack, forcing your target to make a Save against a DC of 8 + twice your Proficiency Bonus. You choose one of the following options:<ul><li>The target is forced to make a Strength Save. If they fail, they are pushed back an amount of meters equal to half your Proficiency Bonus. If your target hits a wall, for every meter they could not be Shoved they take a number of d6s of Bludgeoning damage equal to your Proficiency Bonus.<\/li><li>The target is forced to make a Constitution save, losing half of their Movement Speed on a failed Save. If this effect is applied twice, their Movement drops to 0. If they fail this Save again while their Movement Speed is 0, they instead fall Prone.</li><\/ul>",
-            "Those who have Resistance to bludgeoning damage have Advantage on the Saves, and those who have Immunity are immune to these effects as well."
+            "Whenever you deal Bludgeoning damage you may choose to deal only half damage with the Attack, forcing your target to make a Saving Throw against a DC of 8 + twice your Proficiency Bonus. You choose one of the following options:<ul><li>The target is forced to make a Strength (NOT Power) Save. If they fail, they are pushed back an amount of meters equal to half your Proficiency Bonus. If your target hits a wall, for every meter they could not be Shoved they take a number of d6s of Bludgeoning damage equal to your Proficiency Bonus.<\/li><li>The target is forced to make a Constitution (NOT Durability) Save, losing half of their Movement Speed on a failed Save. If this effect is applied twice, their Movement drops to 0. If they fail this Save again while their Movement Speed is 0, they instead fall Prone.<\/li><\/ul>",
+            "Those who have Vulnerability to Bludgeoning have Disadvantage on the Saving Throws, those who have Resistances have Advantage on the Saves, and those who have Immunity are immune to these effects entirely."
         ]
     },
     "Dark_Determination": {
@@ -805,35 +823,34 @@
         "name": "Melee Focus",
         "desc": "Your approach to combat is through melee combat, preferring to solve most combat situations up close and personal.",
         "effects": [
-            "You gain Proficiency in the use of any weapon with the 'Melee' specialization type. This does not give you Expertise in Unarmed Strikes, but you do gain Proficiency in the use of fist and gauntlet weapons, as well as improvised weapons so long as you do not throw them.",
-            "Power Attack: You may choose to sacrifice accuracy for damage. When you make a melee Attack you may choose to subtract an amount from your Attack Rolls equal to your Proficiency Bonus. For each time you subtract your Proficiency Bonus (Maximum of 3 times), you deal an additional amount of damage equal to double your Proficiency Bonus. You must declare how much you are subtracting before making the Attack Roll.",
-            "Once per Turn if you miss a melee Attack, you may reroll it. You may not use this Ability if you are using Power Attack.",
-            "If you are already Proficient in the use of a melee weapon, you gain Expertise in it."
+            "You gain Proficiency in the use of any weapon with the 'Melee' Specialization, as well as Unarmed Strikes and Improvised Weapons so long as you use them to make Melee (not Thrown) Attacks. ",
+            "Power Attack: You may choose to sacrifice accuracy for damage. When you make a Melee Attack you may choose to subtract an amount from your Attack Rolls equal to your Proficiency Bonus. For each time you subtract your Proficiency Bonus (maximum of 3 times), you deal an additional amount of damage equal to how much was subtracted from the Attack Roll. You must declare how much you are subtracting before making the Attack Roll.",
+            "Once per Turn if you miss a Melee Attack, you may reroll it. You may not use this Ability if you are using Power Attack."
         ]
     },
     "Object_Stand": {
         "name": "Object Stand",
-        "desc": "You must wield your Stand in order to use it, as it is bound to an object. However, in this form they get additional powers and abilities. Examples of this include: <a href='https://jojowiki.com/Emperor'>Emperor</a>, <a href='https://jojowiki.com/Anubis'>Anubis</a>, <a href='https://jojowiki.com/Beach_Boy'>Beach Boy</a>, <a href='https://jojowiki.com/Cream_Starter'>Cream Starter</a>.",
+        "desc": "You must wield your Stand in order to use it, as it is bound to an object. However, in this form they get additional powers and abilities. Examples of this include: <a href='https:\/\/jojowiki.com\/Emperor'>Emperor<\/a>, <a href='https:\/\/jojowiki.com\/Anubis'>Anubis<\/a>, <a href='https:\/\/jojowiki.com\/Beach_Boy'>Beach Boy<\/a>, <a href='https:\/\/jojowiki.com\/Cream_Starter'>Cream Starter<\/a>.",
         "effects": [
-            "Your Stand takes the form of an object. If you have <a href='/abilities/?focus=Anchored_Stand'>Anchored Stand</a> it is a physical object that anyone can see. If you do not have Anchored Stand, only Stand users can see it.",
-            "Your Stand becomes an object that you must wield in order to use. You may still use your Damage Reduction and Stand AC as normal, but you cannot send your Stand out to act on its own. You may use your Stand stats to make certain physical Checks and Saving Throws, so long as it would make sense for it to do so (A Stand user with a gun Stand may be able to shoot open the lock on a door, but wouldn't be able to push a boulder up a hill).",
-            "In addition, your Stand gains one of the following benefits: <ul><li>Your Stand's <a href='/abilities/?focus=Custom_Ability'>Custom Ability</a> massively increases in potency. For example, if your Stand uses scaling dice, you gain an additional amount of Ability Dice equal to your Proficiency Bonus. Alternatively, you may speak to your DM about increasing the potency of your Stands Ability in some other way, similar to <a href='/abilities/?focus=Enhanced_Custom_Ability'>Enhanced Custom Ability</a>. However, your Stand's physical stats (Strength, Precision, Durability) all drop to 0.<\/li><li>Your Stand gets a multiplier boost of 2 in any three Ability Scores of your choice. For example, an <a href='/classes/?focus=Ability'>Ability-Type</a> would normally have a x4, x3, and x5 for Range, Speed, and Stand Energy respectively, but if they wanted to increase them, Range would become x6, Speed would become x5, and Stand Energy would become x7.</li><li>Your Stand becomes a powerful weapon capable of dealing great damage. The weapon functions in a similar manner to a weapon affected by the <a class='in-page'>Energy Imbuement</a> Feat. If the weapon's Damage Dice is lower than your Stand's Attack Dice, the weapon's Damage Dice are increased to match. In addition, the physical Ability Score used to use the weapon (choose one if the weapon uses multiple stats) no longer has a limit, even if the Stand would normally limit it, and it always uses the Stand's stats. However, you must choose one other Ability Score which now cannot increase past its initial value (cannot be used for Ability Scores that already can't be increased, or <a href='/classes/?focus=Power'>Power-Type</a>'s max range of 20). Attacks with the weapon count as both Attacks from the Stand and User for the sake of Feats like <a class='in-page'>Blended Fighting</a>."
+            "Your Stand takes the form of an object. If you have <a href='\/abilities\/?focus=Anchored_Stand'>Anchored Stand<\/a> it is a physical object that anyone can see. If you do not have Anchored Stand, only Stand users can see it.",
+            "Your Stand becomes an object that you must wield in order to use. You may still use your Damage Reduction and Stand AC as normal, but you cannot send your Stand out to act on its own. Your stand can use its normal Abilities, so long as there is an allied creature wielding it. You may use your Stand stats to make certain physical Checks and Saving Throws, so long as it would make sense for it to do so (A Stand user with a gun Stand may be able to shoot open the lock on a door, but wouldn't be able to push a boulder up a hill).",
+            "In addition, your Stand gains one of the following benefits: <ul><li>Your Stand's <a href='\/abilities\/?focus=Custom_Ability'>Custom Ability<\/a> massively increases in potency. For example, if your Stand uses scaling dice, you gain an additional amount of Ability Dice equal to your Proficiency Bonus. Alternatively, you may speak to your DM about increasing the potency of your Stands Ability in some other way, similar to <a href='\/abilities\/?focus=Enhanced_Custom_Ability'>Enhanced Custom Ability<\/a>. However, your Stand's physical stats (Power, Precision, Durability) all drop to 0.<\/li><li>Your Stand gets a multiplier boost of 2 in any three Ability Scores of your choice. For example, an <a href='\/classes\/?focus=Ability'>Ability-Type<\/a> would normally have a x4, x3, and x5 for Range, Speed, and Stand Energy respectively, but if they wanted to increase them, Range would become x6, Speed would become x5, and Stand Energy would become x7.<\/li><li>Your Stand becomes a powerful weapon capable of dealing great damage. The weapon functions in a similar manner to a weapon affected by the <a class='in-page'>Energy Imbuement<\/a> Feat. If the weapon's Damage Dice is lower than your Stand's Attack Dice, the weapon's Damage Dice are increased to match. The weapon deals Stand Damage. In addition, the physical Ability Score used to use the weapon (choose one if the weapon uses multiple stats) is always one of the Stand's physical stats and no longer has a limit, even if the Stand's Type would normally limit it. However, if a Stand Stat limit is broken like this you must choose one other Ability Score which now cannot increase past its initial value (cannot choose Ability Scores that are already limited, or <a href='\/classes\/?focus=Power'>Power-Type<\/a>'s max Range of 20). Attacks with the weapon count as both Attacks from the Stand and User for the sake of Feats like <a class='in-page'>Blended Fighting<\/a>."
         ],
-        "prereq": "<a href='\/classes\/?focus=Stands'>Stand User<\/a> Level 1+"
+        "prereq": "<a href='\/classes\/?focus=Stands'>Stand User<\/a>"
     },
     "Piercer": {
         "name": "Piercer",
         "desc": "You may use piercing projectiles or strikes to break through armor and deal precise, devastating hits.",
         "effects": [
-            "Once per Turn when you deal piercing damage you may force your target to make a Save against a DC of 8 + twice your Proficiency Bonus. You choose one of the following options:<ul><li>You deal a precise strike or loose a well-placed projectile. You may add your Proficiency Bonus an additional time to your Attack Roll. If you hit above the target's regular AC by 5 or more, you roll double the Damage Dice.<\/li><li>You deal double damage against Stand Damage Reduction.</li><li>You may force the target to make a Dexterity (Not Precision) Saving Throw. If they fail it, they either:<ul><li>Have their normal AC reduced by an amount equal to your Proficiency Bonus until the start of your next Turn.<\/li><li>Have their Stand AC cut in half until the start of your next Turn.<\/li><\/ul></ul>",
-            "Those who have Resistance to piercing damage have Advantage on the Saves, and those who have Immunity are immune to these effects as well."
+            "When you deal Piercing damage, you may choose to spend another Attack to inflict an additional effect. If you are dealing damage using something that takes your entire Action rather than an Attack, you may do this for free. Any Saving Throws involved are made against a DC of 8 + twice your Proficiency Bonus.<ul><li>Your target makes a Constitution (NOT Durability) Saving Throw. If they succeed, you deal normal damage. If they fail, you may deal damage to their HP directly, bypassing any damage blocking effects including Temp HP, <a class='in-page'>Scarflesh<\/a>, Stand DR, and any effect that would reduce damage to 0 (<a href='\/abilities?focus=Bionic_Enhancements'>Bionic Enhancements<\/a>, <a href='\/abilities?focus=Revenant_Powers'>Revenant Powers<\/a>, and <a href='\/abilities?focus=Fleeting_Invulnerability'>Fleeting Invulnerability<\/a>). However, any Resistances, Vulnerabilities, and Immunities all function normally.<\/li><li>Your target makes a Dexterity (NOT Precision) Saving Throw. If they fail, their AC is reduced by an amount equal to your Proficiency Bonus and their Stand AC is cut in half until the start of your next Turn.<\/li><li>Your target makes a Dexterity (NOT Precision) Saving Throw. If they fail, they gain a penalty to any Saving Throws and Contested Skill Checks equal to your Proficiency Bonus until the start of your next Turn.<\/li><\/ul>",
+            "Those who have Vulnerability to Piercing have Disadvantage on the Saving Throws, those who have Resistances have Advantage on the Saves, and those who have Immunity are immune to these effects entirely."
         ]
     },
     "Sentinel": {
         "name": "Sentinel",
         "desc": "You have a remarkable ability to keep your friends close, and your enemies closer.",
         "effects": [
-            "Whenever someone exits your melee range without Disengaging, you may make an Opportunity Attack or a Grapple Check as a Free Action. If someone does Disengage, you may still make an Opportunity Attack or Grapple Check, but it costs your Reaction to do so.",
+            "Whenever someone exits your Melee Range without Disengaging, you may make an Opportunity Attack or a Grapple Check as a Free Action. If someone does Disengage, you may still make an Opportunity Attack or Grapple Check, but it costs your Reaction to do so.",
             "Whenever an ally within 2 meters takes damage, you may use your Reaction to interpose yourself, switching your and your ally's positions and causing you to take the damage instead. The type of hit is the same on you (if your ally was hit with a Stand Hit, it counts as a Stand hit for you as well), but you may apply Resistance\/Immunity as normal to the damage if you have it."
         ]
     },
@@ -841,38 +858,36 @@
         "name": "Slasher",
         "desc": "You have the ability to deal grevious wounds using slashing attacks.",
         "effects": [
-            "As a Bonus Action, you may make a single Attack, so long as that Attack deals slashing damage. When you land this Attack, you force your target to make a Save against a DC of 8 + twice your Proficiency Bonus. You choose one of the following options:<ul><li>The target is forced to make a Con Save. If they fail, the next time an enemy deals damage to them before the start of your next Turn, it is doubled.</li><li>If you roll a 1 on any of the Damage Dice for this Attack, reroll them, keeping the new result. Furthermore, if you roll the maximum amount on any Damage Dice, you roll another Damage Die of the same die size you rolled max on (neither of the reroll abilities apply to additional dice gained in this way).<\/li><\/ul>",
-            "Those who have Resistance to slashing damage have Advantage on the Saves, and those who have Immunity are immune to these effects as well."
+            "As a Bonus Action, you may make a single Attack, so long as that Attack deals Slashing damage. When you land this Attack, you force your target to make a Save against a DC of 8 + twice your Proficiency Bonus. You choose one of the following options:<ul><li>The target is forced to make a Constitution (NOT Durability) Save. If they fail, the next time an enemy deals damage to them before the start of your next Turn, it is doubled.<\/li><li>If you roll a 1 on any of the Damage Dice for this Attack, reroll them, keeping the new result. Furthermore, if you roll the maximum amount on any Damage Dice, you roll another Damage Die of the same die size you rolled max on (neither of the reroll abilities apply to additional dice gained in this way).<\/li><\/ul>",
+            "Those who have Vulnerability to Slashing have Disadvantage on the Saving Throws, those who have Resistances have Advantage on the Saves, and those who have Immunity are immune to these effects entirely."
         ]
     },
     "Specialized_Stand_Senses": {
         "name": "Specialized Stand Senses",
-        "desc": "Your Stand's ability to sense becomes limited, but its Range and damage increase. Examples of this include: <a href='https://jojowiki.com/Aerosmith'>Aerosmith</a>, <a href='https://jojowiki.com/Beach_Boy'>Beach Boy</a>, <a href='https://jojowiki.com/Manhattan_Transfer'>Manhattan Transfer</a>",
+        "desc": "Your Stand's ability to sense becomes limited, but its Range and damage increase. Examples of this include: <a href='https:\/\/jojowiki.com\/Aerosmith'>Aerosmith<\/a>, <a href='https:\/\/jojowiki.com\/Beach_Boy'>Beach Boy<\/a>, <a href='https:\/\/jojowiki.com\/Manhattan_Transfer'>Manhattan Transfer<\/a>",
         "effects": [
-            "Your Stand's ability to sense at a distance is limited. Rather than being able to be completely aware of their surroundings as though they were there in person, the Stand has the ability to detect something very specific. That specific ability may be something like:<ul><li>You can only see the air currents moving through the air.</li><li>You can only see movement.</li><li>You can only see heat signatures.</li><li>You can detect subtle vibrations, such as a heartbeat, but only when the Stand is close by.</li><\/ul>",
+            "Your Stand's ability to sense at a distance is limited. Rather than being able to be completely aware of their surroundings as though they were there in person, the Stand has the ability to detect something very specific. That specific ability may be something like:<ul><li>You can only see the air currents moving through the air.<\/li><li>You can only see movement.<\/li><li>You can only see heat signatures.<\/li><li>You can detect subtle vibrations, such as a heartbeat, but only when the Stand is close by.<\/li><\/ul>",
             "Your Stand is able to avoid obvious structures such as cars or buildings, but other than that it can only sense through the specific parameters set. Any Perception Checks to find what your Stand is able to detect are made with Advantage, but you cannot perceive anything other than what your Stand is made to detect.",
-            "You roll double the amount of dice for any Stand Attacks or Ranged Attacks you make.",
+            "You roll double the amount of Damage Dice for any Melee Stand Attacks, Stand weapon Attacks, <a href='\/classes?focus=Hive'>Hive Swarm Attacks<\/a>, or <a href='\/abilities?focus=Ranged_Attack'>Ranged Attack<\/a>s you make, even if the Attack Dice your Stand uses would be higher from something like Ripple\/Undead. Features like Rippling Weapon scale off your normal Dice, not the increased ones from this Feat. This bonus does not apply to <a href='\/classes?focus=Spin'>Spin<\/a> or your Stand Ability Dice.",
             "Your Stand's Range is doubled, and any points you put into it are also doubled."
         ],
-        "prereq": "<a href='/abilities/?focus=Detached_Senses'>Detached Senses</a>, cannot be <a href='/classes/?focus=Power'>Power-Type</a> or <a href='/classes/?focus=Act'>Close-Range Act-Type</a>."
+        "prereq": "<a href='\/abilities\/?focus=Detached_Senses'>Detached Senses<\/a>, cannot be <a href='\/classes\/?focus=Power'>Power-Type<\/a> or <a href='\/classes\/?focus=Act'>Close-Range Act-Type<\/a>."
     },
-    "Stand_Breaker": {
-        "name": "Stand Breaker",
-        "desc": "You have the ability to break the guard of Stand users, cutting through their Damage Reduction and punishing them should it run out.",
+    "Guard_Breaker": {
+        "name": "Guard Breaker",
+        "desc": [
+            "You have the ability to break an opponent's guard, making them more vulnerable to detrimental effects and\/or damage. "
+        ],
         "effects": [
-            "Once per Turn when you or your Stand deal damage with a melee Attack, you may choose to deal double damage to Stand Damage Reduction. If the Attack breaks through the last of their Damage Reduction, they're out of Damage Reduction for the round, or if their Stand is not protecting them, you may force them to make a Constitution Saving Throw against a DC of 8 + twice your Proficiency Bonus. If they fail the Save, you may cause one of the following to happen:<ul><li>They fall prone",
-            "They are pushed back one or two meters (your choice)",
-            "They drop one of the items they are holding",
-            "The next attack against them has Advantage",
-            "The next Strength, Dexterity, or Constitution Saving Throw they make is with Disadvantage.</li><\/ul>",
-            "If you land a Direct Hit while the Stand still has DR and the Stand is protecting the user, this Feat does not apply, unless you choose to make it a Stand Hit instead. This Feat also does not apply if your target does not have a Stand."
+            "When you hit an enemy with a Melee Attack, you may attempt to break their guard by either spending your Action, or two Attacks to perform a Guard Break. ",
+            "Guard Break: You force a target to make a Constitution (NOT Durability) Saving Throw with a DC of 8 + 2x PB. If they succeed the Save, they gain a single effect from the list below. If they fail, they gain two effects from the list. Effects last until the end of your target's next Turn.<ul><li>They gain the Staggered Condition.<\/li><li>Their Movement Speed is reduced by half of their total.<\/li><li>Any damage taken is increased by <u>their<\/u> PB.<\/li><li>They have Disadvantage on all Contested Skill Checks.<\/li>"
         ]
     },
     "Weapon_Attribute_Specialist": {
         "name": "Weapon Attribute Specialist",
         "desc": "You have the capability to bring about the best in certain weapons.",
         "effects": [
-            "Choose up to 5 of the following <a href='/weapons'>weapon</a> attributes. Whenever you use a weapon with one of those properties, you gain additional buffs.<ul><li>AC Bonus: Gives an additional +1 to AC.",
+            "Choose up to 5 of the following <a href='\/weapons'>weapon<\/a> attributes. Whenever you use a weapon with one of those properties, you gain additional buffs.<ul><li>AC Bonus: Gives an additional +1 to AC.",
             "Ambush: Your target counts as Surprised, so long as you move before them in Initiative on the first turn of combat.",
             "Bayonet: Bayonet damage increased to 1d10. Versatile increased to 1d12.",
             "Bulky: You may move up to half your Movement Speed each Turn when Braced.",
@@ -880,13 +895,15 @@
             "Concealed: You may add your Proficiency Bonus in addition to other modifiers to any Check made to conceal a weapon with this property.",
             "Conductive: When you make an Attack channeling electricity or Ripple, you may choose to have the physical damage of the weapon be lightning or radiant, depending on what you're channeling.",
             "Firearm: Does not jam if a Natural 1 is rolled.",
+            "Fist: Whenever you make an Attack with a Fist weapon as a Bonus Action through any kind of Dual Wielding (normal or fighting style), you get an additional Attack that must be used as an Unarmed Strike or Fist weapon Attack.",
             "Flame: Fire damage is doubled against flammable objects.",
             "Hunker: You may move up to half your Movement Speed each Turn when gaining Cover from Hunker (can only be used if you have the Movement Speed available to do so).",
             "Light: You may use a non-light weapon in one hand, so long as you have a light weapon in the other.",
-            "Open Hand: You have Advantage on Checks made to Shove or maintain a Grapple you have on someone.",
-            "Point Blank: If this weapon is fired within melee range, it is considered a melee Attack.",
+            "Limited Hand: Weapons or objects equipped no longer have to be Light, they just have to be one-handed weapons or small objects.",
+            "Open Hand: You have a +4 bonus to Checks made to Shove or maintain a Grapple you have on someone.",
+            "Point Blank: If this weapon is fired within Melee Range, it is considered a Melee Attack.",
             "Radius: If the weapon has less than 5m of radius by default, it gains 1 additional meter. If it has more than 5 meters of radius by default, it gains 2 additional meters.",
-            "Ranged: When you miss with a ranged weapon Attack at less than half of your short range, you may use your Reaction to reroll the Attack Roll.",
+            "Ranged: When you miss with a ranged weapon Attack at less than half of it Short Range, you may use your Reaction to reroll the Attack Roll.",
             "Reach: This weapon can attack targets from up to 3 meters away.",
             "Reliable: If you roll a Nat 1, you may reroll the Attack Roll, keeping the new result.",
             "Reload: You may also reload as a Bonus Action.",
@@ -895,8 +912,338 @@
             "Siege: This weapon deals triple damage to objects.",
             "Timer: The timer may be set for up to 24 hours.",
             "Thrown: The Short and Long Range of thrown weapons increases by 5 meters.",
-            "Two-Handed: When Attacking with a Two-Handed weapon, reroll any 1s, 2s, or 3s rolled on damage dice. You must keep the new result.</li><\/ul>",
+            "Two-Handed: When Attacking with a Two-Handed weapon, reroll any 1s, 2s, or 3s rolled on damage dice. You must keep the new result.",
+            "Versatile: When using one hand you may reroll any 1s rolled on the Damage Dice. When using two hands you may reroll any 1s or 2s on the Damage Dice. You must keep the new result in either case.<\/li><\/ul>",
             "You may take this Feat additional times if desired."
         ]
+    },
+    "Additional_Sense": {
+        "name": "Additional Sense",
+        "desc": [
+            "Through Training, you have gained the ability to utilize some kind of additional sense, or greatly enhance an existing one."
+        ],
+        "effects": [
+            "You may gain or enhance one of the following senses:<ul class='sublist'><li><u>Echolocation<\/u>: You gain 10\/20 meters of Blindsense. If there is noise being made in the area, you may use the Long Range of this sense without Disadvantage. Alternatively, you may make a slight noise yourself, granting a -4 penalty to Sneak Checks. You must be able to hear to  use this.<\/li><li><u>Enhanced Existing Sense<\/u>: One of your regular five senses (sight, smell, touch, hearing, taste) is greatly enhanced. You gain Proficiency in Perception. Additionally, when you make a Check using your chosen sense you get a +5 bonus to that Check, which may also apply to your Passive Perception using that sense.<\/li><li><u>Soulsense:<\/u> You gain 10\/20 meters of Soulsense, which allows you to sense the souls of living creatures, including Stands and ghosts. This grants you a +10 bonus to Perception Checks within the Short Range of your sense, and a +5 within the Long Range. This sense is not restricted by walls or barriers, and you may also use it to determine if a soul has been in a location in your Short Range within the last minute. You cannot sense Undead creatures or soulless Constructs in this way.<\/li><li><u>Tremorsense<\/u>: You gain 10\/20 meters of Tremorsense, allowing you to sense vibrations around you. In order to perceive something within the Long Range you must be connected to some kind of surface to feel the vibrations through. You must be able to use your natural sense of touch. You may feel past Total Cover, so long as you are touching the Cover itself.<\/li><li><u>Night Vision<\/u>: You gain 15\/30 meters of Darkvision, allowing you to see clearly in Darkness up to the Short Range or with Disadvantage up to the Long Range. If you have a light source, the effective range of it is doubled for you as well.<\/li><\/ul>",
+            "If you already have one of these senses, your range of it increases by the given amount.",
+            "You may take this Feat multiple times if desired, gaining a different sense or enhancing an existing one by increasing its range like above."
+        ],
+        "prereq": "Wis 13+ or Proficiency in Perception Checks"
+    },
+    "Aura_of_Awareness": {
+        "name": "Aura of Awareness",
+        "desc": [
+            "You have a special sort of sense that warns you and allies within range of incoming danger."
+        ],
+        "effects": [
+            "You and any allies that can see or hear you within 5m gain a bonus to Saving Throws, Perception Checks, and their Passive Perception equal to your Wisdom Modifier (minimum of +1)."
+        ],
+        "prereq": "Wis 13+ or <a href='\/passions?focus=Leader'>Leader<\/a>"
+    },
+    "Close_Range_Mobility": {
+        "name": "Close-Range Mobility",
+        "desc": [
+            "Despite being focused on close-range combat, your Stand is surprisingly mobile."
+        ],
+        "effects": [
+            "If you do not have <a href='\/abilities?focus=Stand_Leap'>Stand Leap<\/a>, you gain it.",
+            "If you do have Stand Leap already, it is upgraded in the following ways:<ul calss='sublist'><li>You no longer have to spend your Reaction to negate the fall damage from it.<\/li><li>If you're falling and wish to grab something within 2m to catch yourself, you may do so as a Reaction.<\/li><li>You may choose to spend 2m of Movement rather than the usual 5 in order to Stand Leap up to half your Power Modifier in any direction.<\/li><li>You may move through another creature's space while using Stand Leap by succeeding an Acrobatics Check which the other creature may Contest with Athletics (Strength) or Grit. If you fail, you may end the Leap early at the space in front of the creature, or keep moving and allow them to take an Opportunity Attack against you. If the creature is an ally or willing to allow you, you do not need to make a Check.<\/li><li>You may choose to get up from the Prone condition without expending any Movement Speed as a Reaction.<\/li><\/ul>",
+            "You may take this feat a second time in order to gain the upgraded version of Stand Leap if you didn't have it before."
+        ],
+        "prereq": "<a href='\/classes?focus=Power'>Power-Type<\/a>, <a href='\/classes?focus=Ranged'>Ranged-Type<\/a>, <a href='\/classes?focus=Revenge'>Revenge-Type<\/a>, Close-Range <a href='\/classes?focus=Act'>Act-Type<\/a>, or <a href='\/abilities?focus=Immense_Power'>Immense Power<\/a>"
+    },
+    "Confident_Support": {
+        "name": "Confident Support",
+        "desc": [
+            "You are particularly skilled in supporting and encouraging your allies."
+        ],
+        "effects": [
+            "Whenever you give a bonus to yourself or an ally using dice that may add to a d20 result (<a href='\/abilities?focus=Encouragement_Dice'>Encouragement Dice<\/a>, <a href='\/feats?focus=Fortune_Teller'>Fortune Teller<\/a>, <a href='\/feats?focus=Tactician'>Tactician<\/a>, etc.), the target may reroll any 1s or 2s on the bonus dice.",
+            "If you give a flat bonus to yourself or an ally in some way (<a href='\/feats?focus=Aura_of_Awareness'>Aura of Awareness<\/a>, <a href='\/abilities?focus=Aura_of_Knowledge'<\/a>Aura of Knowledge<\/a>, etc.), you may grant an additional amount equal to half the amount rounded down. For instance, a +4 bonus becomes a +6 bonus etc.",
+            "If you grant an ally Advantage, you may grant them an additional +2 bonus on top of any stacks of Advantage they may have."
+        ],
+        "prereq": "Cha 13+"
+    },
+    "Elementalist": {
+        "name": "Elementalist",
+        "desc": [
+            "You've become a master of a certain element, knowing how to use it to the most optimal effect."
+        ],
+        "effects": [
+            "When you deal damage of a specific non-physical type you may spend a use of this Feat to trigger an additional effect. If you hit multiple targets, you must spend a use of this Feat for each one you wish to affect.",
+            "Lingering effects last for 1 minute, and the Saving Throw to shrug off the effect is made at the end of the afflicted's Turns. Targets can only be afflicted with one instance of each lingering effect at once.",
+            "All Saving Throws have a DC of 8 + Proficiency Bonus x 2.",
+            "Choose an amount of damage types from the following equal to half your Proficiency Bonus to specialize in:<ul class='sublist'><li><u>Acid<\/u><ul class='sublist'><li>Acid Splash (instant): Make an additional Attack Roll or force an additional target within 2m of your original to make another Saving Throw. If the Attack lands or the Save is failed, they take the same amount of damage as the original Attack inflicted. You may spend two uses to instead hit the original target again.<\/li><li>Armor Strip (lingering): Force your target to make a Constitution (NOT Durability) Saving Throw. On a failure the target's AC is reduced by an amount equal to your Proficiency Bonus and their Stand AC is halved.<\/li><\/ul><\/li><li><u>Cold<\/u><ul class='sublist'><li>Creeping Ice (instant): Force your target to make a Constitution (NOT Durability) Saving Throw. On a failure the target's Movement Speed is dropped to 0 until the beginning of your next Turn. The target may choose to move despite this, but will take an amount of Cold damage equal to twice their Level if they do.<\/li><li>Bitter Cold (lingering): Force your target to make a Constitution (NOT Durability) Saving Throw. On a failure the target's Movement Speed is halved.<\/li><\/ul><\/li><li><u>Fire<\/u><ul class='sublist'><li>Immolation (instant): You may reroll any Fire damage dealt if the result is less than or equal to 1 plus half your Proficiency Bonus (rounded down). If the damage is a flat amount rather than determined by a dice roll, you may increase it to an amount equal to twice your Level if it was less than that.<\/li><li>Burning (lingering): Force your target to make a Dexterity (NOT Precision) Saving Throw. On a failure they must remake the same Save at the end of each Turn or take an amount of Fire damage equal to their Level.<\/li><\/ul><\/li><li><u>Force<\/u><ul class='sublist'><li>Reliable Force (instant): The Force damage dealt ignores Resistance and Immunity. If the target was not Resistant or Immune, they take an additional amount of Force damage equal to twice your Level.<\/li><li>Grievous Wound (lingering): Force your target to make a Constitution (NOT Durability) Saving Throw. On a failure the target gains 1 temporary level of Exhaustion which wears off when this lingering effect ends. You may spend an additional use to give them 2 levels of Exhaustion instead.<\/li><\/ul><\/li><li><u>Lightning<\/u><ul class='sublist'><li>Chain Lightning (instant): If the original Attack was against a single target, you may make an additional Attack Roll or force an additional target within 2m of your original to make another Saving Throw. If the Attack lands or the Save is failed, they take half the damage the original Attack inflicted. If there is a conductive surface within 5m of your original target, you can have the half damage Attack or Save apply to your original target instead.<\/li><li>Electric Stun (lingering): Force your target to make a Constitution (NOT Durability) Saving Throw. On a failure the target gains the Stunned Condition.<\/li><\/ul><\/li><li><u>Necrotic<\/u><ul class='sublist'><li>Lifedrain (instant): Half of the damage dealt is given back to you either as healing or Temp HP.<\/li><li>Spreading Rot (lingering): Force your target to make a Constitution (NOT Durability) Saving Throw. On a failure, the target gains the Decay Condition.<\/li><\/ul><\/li><li><u>Poison<\/u><ul class='sublist'><li>Induced Nausea (instant): Force your target to make a Wisdom Saving Throw. On a failure the target falls Prone.<\/li><li>Persistent Poison: Force your target to make a Constitution (NOT Durability) Saving Throw. On  a failure the target gains the Poisoned Condition.<\/li><\/ul><\/li><li><u>Psychic<\/u><ul class='sublist'><li>Mindblank (instant): Force your target to make an Intelligence Saving Throw. On a failure the target loses any buffs or Temp HP they had.<\/li><li>Sensory Overload (lingering): Force your target to make an Intelligence Saving Throw. On a failure the target gains the Overwhelmed Condition.<\/li><\/ul><\/li><li><u>Radiant<\/u><ul class='sublist'><li>Blinding Light (instant): Force your target to make a Dexterity (NOT Precision) Saving Throw. On a failure the target gains the Blindness Condition.<\/li><li>Searing Rays (lingering): Force your target to make a Dexterity (NOT Precision) Saving Throw. On a failure the target gains the Staggered Condition. If your target a creature that is already Staggered, you may force them to make either a Strength (NOT Power) or Constitution (NOT Durability) Saving Throw. On a failure the target also gains either the Prone or Stunned Conditions, respective to the type of Save.<\/li><\/ul><\/li><li><u>Thunder<\/u><ul class='sublist'><li>Blasted Away (instant): Force your target to make a Strength (NOT Power) Saving Throw. On a failure the target is thrown away from the damage source  an amount of meters equal to half your Proficiency Bonus. If your target hits a wall they take an amount of d6s of Bludgeoning damage equal to your Proficiency Bonus for every meter they could not be thrown.<\/li><li>Concussed (lingering): Force your target to make a Constitution (NOT Durability) Saving Throw. On a failure the target gains the Confusion and Deafened Conditions.<\/li><\/ul><\/li><\/ul>",
+            "Those who have Vulnerability to your chosen element have Disadvantage on the Saving Throws, those who have Resistances have Advantage on the Saves, and those who have Immunity are immune to the effects entirely.",
+            "You have an amount of uses of this Feat equal to twice your Proficiency Bonus per Long Rest.",
+            "You regain an amount of uses equal to your Proficiency Bonus on a Short Rest.",
+            "You may take this Feat multiple times if desired, gaining an additional amount of uses equal to your Proficiency Bonus, an additional amount of recharge on Short Rest equal to half your PB, and the ability to specialize in an additional ",
+            " number of damage types equal to your PB."
+        ]
+    },
+    "Enfeebler": {
+        "name": "Enfeebler",
+        "desc": [
+            "You know how to weaken your enemies in just the right way."
+        ],
+        "effects": [
+            "Whenever a target succeeds a Saving Throw that you forced them to make you may use your Reaction to subtract an amount equal to their Proficiency Bonus from the result, potentially causing them to fail the Save.",
+            "Twice per Short\/Long Rest when you use your Reaction to subtract from an enemy's Save, you can make it so everyone who made the Save has their Proficiency Bonus subtracted from the result rather than just a single target. Alternatively, when you use your Reaction, you may have a single enemy make the Save and subtract twice their PB instead.",
+            "If the target still succeeds the Save, you keep your Reaction but cannot use this Feat against that target again until your next Turn."
+        ]
+    },
+    "Extra_Experience": {
+        "name": "Extra Experience",
+        "desc": [
+            "You're a particularly experienced individual, better than most at many things."
+        ],
+        "effects": [
+            "Your Proficiency Bonus increases by 1, as such so do any effects that scale by your Proficiency Bonus except for the number of Feats you or your Familiar have.",
+            "Any negative effects targeting you that would scale off your Proficiency Bonus (such as <a class='in-page'>Enfeebler<\/a>) use the PB you would normally have instead of the increased version from this Feat.",
+            "You may take this Feat multiple times if desired."
+        ],
+        "prereq": "Wis 13+"
+    },
+    "Focus": {
+        "name": "Focus",
+        "desc": [
+            "You're able to clear your mind and focus clearly on the task at hand."
+        ],
+        "effects": [
+            "You gain a resource called Focus, which allows you to give yourself a +1 bonus to a Skill Check, Saving Throw, or Attack Roll that you're Proficient in. You may choose how much Focus to add after the result of the roll, but before your DM tells you if you succeed or failed.",
+            "The amount of Focus you have is equal to your Wisdom Modifier (minimum of 1) x Proficiency Bonus.",
+            "You regain an amount of Focus equal to your Wisdom Modifier on a Short Rest, and regain it all on a Long Rest."
+        ]
+    },
+    "Heckler": {
+        "name": "Heckler",
+        "desc": [
+            "You know how to use your words in order to demoralize your enemy."
+        ],
+        "effects": [
+            "You may perform one of the following as an Attack on a single target that you can communicate with. These effects have a DC of 8 + Proficiency Bonus + Charisma Modifier. When you force a target to make a Saving Throw of a certain type with this Feat (Int, Wis, Cha), you cannot force that same target to make the same type of Saving Throw again in the same Turn (unless they have made each of the three already).<ul class='sublist'><li>Your target is forced to make an Intelligence Saving Throw, gaining the Overwhelmed Condition on failure.<\/li><li>Your target is forced to make a Wisdom Saving Throw, gaining the Confused Condition on failure.<\/li><li>Your target is forced to make a Charisma Saving Throw, gaining the Staggered Condition on failure.<\/li><\/ul>",
+            "An afflicted target may repeat the Saving Throw at the end of each of their turns, and the effect ends after a successful Save or 1 minute.",
+            "You may inflict several of these Conditions on a single target, and they must make a separate Save for each one.",
+            "Additionally, you are able to further demoralize foes that are already suffering these mental effects. As an Attack, you may force a foe that is already Overwhelmed, Confused, or Staggered to make a mental Saving Throw of your choice (though it may not be the same type of Save as one you've already forced on them this Turn using this Feat). On failure the target takes nd8 + Charisma Modifier of Psychic damage where n is half your Level (rounded down, minimum 1). On success the target still takes half damage."
+        ]
+    },
+    "Overheal": {
+        "name": "Overheal",
+        "desc": [
+            "You know the ins and outs of how the body heals itself, and are able to use that knowledge to heal yourself and others more effectively."
+        ],
+        "effects": [
+            "An amount of times equal to your Intelligence or Wisdom Modifier per Long Rest you may choose to Overheal. Doing so allows you or an ally you're healing to gain Temp HP when healed above the target's typical HP maximum. This Temp HP lasts until it is used, or your next Short Rest, and may stack alongside other forms of Temp HP (but not itself).",
+            "If the target is not at or close to their Maximum HP, you may instead choose to heal an additional amount equal to your Level, but this may not create Temp HP."
+        ]
+    },
+    "Powerful_Presence": {
+        "name": "Powerful Presence",
+        "desc": [
+            "You radiate a strong presence that draws attention and respect."
+        ],
+        "effects": [
+            "Any effects requiring a Saving Throw have a DC of 8 + your Presence bonus.",
+            "As an Attack, you may force a non-hostile creature that can see or hear you within 10m to make a Charisma Saving Throw, becoming Charmed by you for the next hour on a failure. They may repeat the Save if an ally uses an Action to shake them out of it or if they take any damage. The effect is dispelled if the target becomes hostile somehow. If a target succeeds on one of these Saves they gain a +4 against further attempts for the next minute.",
+            "Alternatively, you may force a hostile creature that can see or hear you within 10m to make a Charisma Saving Throw, gaining a penalty equal to your Charisma Modifier to all Attacks, Skill Checks, and Saving throws made while they can still see or hear you within 10m on a failure. They may repeat the Save at the end of their Turns (the penalty does not apply to this Save), with the effect ending after a success or 1 minute."
+        ],
+        "prereq": "Cha 13+ or <a href='\/passions?focus=Weightlifter'>Weightlifter<\/a>"
+    },
+    "Resource_Regeneration": {
+        "name": "Resource Regeneration",
+        "desc": [
+            "You regain resources and energy extremely quickly."
+        ],
+        "effects": [
+            "You gain one of the benefits below depending on your Class:<ul class='sublist'><li><u>Stand User<\/u>: You regain 1 Stand Energy at the top of Initiative. When you take the Dodge Action, you regain 2 SE rather than 1.<\/li><li><u>Ripple User<\/u>: If you are able to comfortably breathe, you regain 2 Ripple Points at the top of Initiative. When you use an Ability that costs more than 2 RP you may reduce its cost by 1.<\/li><li><u>Artisan<\/u>: You regain an amount of Artisan Charges equal to your Proficiency Bonus on a Short Rest. Additionally, after taking a Short or Long Rest you get 1 free Artisan Charge.<\/li><li><u>Consul<\/u>: You regain an amount of Encouragement Dice equal to your Proficiency Bonus on a Short Rest. Additionally, when you spend at least 1 Encouragement Die you may add the effect of a single Encouragement Die as healing or support on Skill Checks, so long as they do not already have a Die to add to Skill Checks.<\/li><\/ul>",
+            "You may take this Feat multiple times, choosing a different option each time so long as you meet the Class prerequisites for the additional option(s) you take."
+        ],
+        "prereq": "<a href='\/classes?focus=Stands'>Stand User<\/a>, <a href='\/classes?focus=Ripple'>Ripple User<\/a>, <a href='\/classes?focus=Artisan'>Artisan<\/a>, or <a href='\/classes?focus=Consul'>Consul<\/a>"
+    },
+    "Sharp_Mind": {
+        "name": "Sharp Mind",
+        "desc": [
+            "You have a particularly sharp wit, able to think on your feet and come to the correct conclusions quickly."
+        ],
+        "effects": [
+            "You may make a Skill Check that would normally be made as an Action as a single Attack instead. You may do this an amount of times equal to your Intelligence Modifier per Short or Long Rest.",
+            "If you have <a href='\/abilities?focus=Field_Study'>Field Study<\/a>, you may spend a use to make an additional Skill Check for free when you use the above effect. If you spend multiple uses, you can gain multiple additional Skill Checks."
+        ]
+    },
+    "Tactician": {
+        "name": "Tactician",
+        "desc": [
+            "You have a tactical mind, able to quickly assess your situation and environment to help you and your allies make the most optimal choices."
+        ],
+        "effects": [
+            "You gain a resource known as Tactician Dice, getting an amount of d8s equal to your Intelligence Modifier. You regain all spent Tactician Dice on a Short or Long Rest. You may use these dice to perform one of the following effects. Any effects that require a Saving Throw use a DC of 8 + Intelligence Modifier + Proficiency Bonus.<ul class='sublist'><li>Ally's Strike: As a Reaction you may direct an ally to make a single Attack, adding 1d8 to the Attack Roll. If the Attack lands, it deals additional damage equal to your Intelligence Modifier.<\/li><li>Ambassador: When you or an ally within 5m makes a Charisma Skill Check you may swap the Charisma Modifier bonus to instead use your Intelligence Modifier and add 1d8 to the result.<\/li><li>Assessment: When you or an ally within 5m makes a Skill Check to gather information in some way (Investigation, Medicine, Knowledge, Perception, Science, Supernatural, Survival, Vibe), you may spend a Reaction to add 1d8 plus half your Intelligence Modifier to the roll if it fails, potentially resulting in a success.<\/li><li>Reposition: As a Reaction you may direct an ally within 5m to reposition themselves, letting them move an amount of meters equal to 1d8 plus half your Intelligence Modifier. Opportunity Attacks may still be made against this ally, but with a -4 penalty.<\/li><\/ul>",
+            "You may take this Feat multiple times. If you take the Feat twice, your Tactician Dice become 1d12 instead of 1d8 and you gain 2 more dice per Short or Long Rest. Furthermore, if you do not like the result rolled on one of your Tactician Dice, you can spend another to reroll it as a Free Action, but you must keep the new result. Each time you take this Feat past the 2nd, you gain an additional 2 Tactician Dice."
+        ]
+    },
+    "Two_Modes": {
+        "name": "Two Modes",
+        "desc": [
+            "Interestingly, you have somehow gained power over your Stand, despite how incredibly volatile Remote Stands can be."
+        ],
+        "effects": [
+            "At any time, as an Attack, you may switch to or from Ranged Mode.",
+            "In Ranged Mode, Remote Stands may function as any other Stand does, in that they may be controlled by the User's will, and can follow specific commands. However, while in Ranged Mode, you may not use your Stand Ability. If your Stand has Stand Marking active, that also deactivates upon changing to Ranged Mode.",
+            "Your Stand's stats do not change upon switching modes."
+        ],
+        "prereq": "<a href='\/abilities?focus=Programmed_Stand'>Programmed Stand<\/a>"
+    },
+    "Close_Range_Deflection": {
+        "name": "Close-Range Deflection",
+        "desc": [
+            "You have gained the ability to effectively deflect ranged attacks. If you can already do that, you gain a superior block that allows you to deflect Melee Attacks as well."
+        ],
+        "effects": [
+            "If you do not have <a href='\/abilities?focus=Block_Projectile'>Block Projectile<\/a>, you gain it.",
+            "If you already have Block Projectile, it is upgraded in the following ways:<ul><li>You may use this Ability to block any Attack that requires your attacker to make an Attack Roll against you, so long as your Stand is hit or your Stand is within 2 meters of you.<\/li><li>When reducing damage, in addition to your Attack dice + Precision and Speed Modifiers, you may also add your Durability Modifier to the result.<\/li><li>Leftover points after the damage has been negated can be used against additional Attacks, but the rest of the points must go to reducing the same type (melee vs ranged) of Attack. Alternatively, you may take half of the remaining points after the damage and add it to your Stand Damage Reduction until the top of Initiative rolls around again.<\/li><\/ul>",
+            "If you do not have Block Projectile, you may take this Feat twice to gain the upgraded version."
+        ],
+        "prereq": "<a href='\/classes?focus=Power'>Power-Type<\/a>, <a href='\/classes?focus=Ranged'>Ranged-Type<\/a>, <a href='\/classes?focus=Revenge'>Revenge-Type<\/a>, Close-Range <a href='\/classes?focus=Act'>Act-Type<\/a>, or <a href='\/abilities?focus=Immense_Power'>Immense Power<\/a>"
+    },
+    "Feel_No_Pain": {
+        "name": "Feel No Pain",
+        "desc": [
+            "You have an incredibly high pain tolerance. You may use this in addition to your experience to tank powerful blows with ease."
+        ],
+        "effects": [
+            "Whenever you take damage you may spend your Reaction to make a Grit Check (Con or Dur) to properly tank a blow. This allows you to reduce the damage taken by an amount equal to what you rolled on the Grit Check + your Level.",
+            "If the amount you're able to reduce is higher than the total damage taken, the extra points become Temporary Hit Points. This Temp HP may stack with other sources of Temp HP <b>including itself<\/b> and lasts for up to a minute or until used.",
+            "You may use this Feat twice per Short or Long Rest.",
+            "You may take this Feat additional times. Each time you do so you gain two additional uses per Short\/Long Rest."
+        ],
+        "prereq": "Con 13+ or Proficiency in Grit Checks"
+    },
+    "Human_Resolve": {
+        "name": "Human Resolve",
+        "desc": [
+            "You embody the indomitable Human spirit, allowing you to push through failures and hardships. "
+        ],
+        "effects": [
+            "As a Reaction, once per Short or Long Rest, when you fail a d20 roll you can choose to roll again, adding twice your Proficiency Bonus (on top of other modifiers) to the roll's result."
+        ],
+        "prereq": "<a href='\/races?focus=Human'>Human<\/a>"
+    },
+    "Phenomenon_Stand": {
+        "name": "Phenomenon Stand",
+        "desc": [
+            "Your Stand's physical manifestation greatly weakens in exchange for a massive increase in your ability's potency."
+        ],
+        "effects": [
+            "Your Stand's physical stats (Power, Precision, Durability) all drop to 0 and cannot be increased in any manner. The physical manifestation of your Stand either becomes non-existant or so physically frail that it barely exists tangibly.",
+            "You gain <a href='\/abilities?focus=Enhanced_Custom_Ability'>Enhanced Custom Ability<\/a>. If you already have Enhanced Custom Ability you get to choose an additional option from it.",
+            "Your Range, Speed, and Stand Energy stats all get a multiplier boost of 3. For example, an Ability-Type with a x4 for Int, x3 for Wis, and x5 for Cha would be boosted to x7, x6, and x8 respectively.",
+            "To determine Stand AC, you may instead use 10 + Speed Modifier + Stand Energy Modifier. In addition, you may use Speed or Stand Energy to determine your Stand DR instead of Durability."
+        ],
+        "prereq": "<a href='\/classes?focus=Stands'>Stand User<\/a>"
+    },
+    "Combination_Ability": {
+        "name": "Combination Ability",
+        "desc": [
+            "You gain a special ability or technique that combines aspects of your Classes' abilities at once."
+        ],
+        "effects": [
+            "You gain a new ability unique to your character that takes aspects from two or more Classes that you have Levels in. If you later gain a Level in a new Class you may choose whether or not to also incorporate it into this ability.",
+            "You may use this Combination Ability an amount of times equal to your Proficiency Bonus per Short or Long Rest.",
+            "You may take this Feat multiple times if desired, granting an additional and different Combination Ability so long as the Class combination is different. For instance if your first Combination Ability uses <a href='\/classes?focus=Ripple'>Ripple<\/a> and <a href='\/classes?focus=Spin'>Spin<\/a>, your second cannot use only those same two again. The second could use Ripple, Spin, AND <a href='\/classes?focus=Heavyweight'>Heavyweight<\/a> though, or just Ripple and Heavyweight, etc."
+        ],
+        "prereq": "Levels in any 2 or more <a href='\/classes'>Classes<\/a> OR Levels in a Race such as <a href='\/races?focus=Vampire'>Vampire<\/a> or <a href='\/races?focus=Enhanced_Pillar_Man'>Enhanced Pillar Man<\/a> and another Class"
+    },
+    "Equalizer": {
+        "name": "Equalizer",
+        "desc": [
+            "You know how to fight Stand Users, and can effectively put pressure on them with regular weapons, even while their Stand is protecting them."
+        ],
+        "effects": [
+            "So long as you are Proficient in the use of a weapon, you are able to damage Stand Users with it while they're being protected by their Stand, even if that weapon would normally be unable to harm Stands.",
+            "This does not allow you to actually harm Stands directly with mundane weapons, you will still be unable to harm a Stand that's separated from its User. This only allows Stand Hits (between the User AC and Stand AC) with a regular weapon to deal damage to the User, rather than being deflected without a Direct Hit.",
+            "Damage dealt this way can still be reduced through the use of Stand Damage Reduction.",
+            "This does not apply any special properties to the weapon, object, or projectile itself, it can only do this when wielded by you against a protected Stand User.",
+            "When making a Contested Skill Check (Grapple\/Shove, Speed Duel, etc.) against a Stand User that has their Stand assisting them, you can force them to make the Check using their own Stats instead of their Stand's, so long as you're Proficient in the Skill being used and also not using any Stand Stats."
+        ]
+    },
+    "Substand_Expert": {
+        "name": "Substand Expert",
+        "desc": [
+            "Your soul has been fragmented in some way, allowing you to technically wield two Stands at once. You've specially trained this unique ability, allowing you to wield the power of one Stand even while the other is summoned."
+        ],
+        "effects": [
+            "Once per Turn, you may do one of the following with the Stand you do not have currently summoned:<ul><li>Make a single Attack<\/li><li>Use a single Ability<\/li><li>Have the Stand assist you with a single Skill Check or Saving Throw<\/li><li>Have the Stand protect you from a single Attack with its Stand AC<\/li><\/ul>These actions still consume whatever Action Economy they normally would.",
+            "You may use this Feat an amount of times equal to half your Proficiency Bonus (rounded down) per Short or Long Rest. If you are out of uses and wish to use it more times, you may do so by taking a level of Exhaustion for each additional use."
+        ],
+        "prereq": "Must have a <a href='\/classes?focus=Stands#Substands'>Substand<\/a>"
+    },
+    "Beastial_Cunning": {
+        "name": "Beastial Cunning",
+        "desc": [
+            "Most animals lack the intellect and force of personality you display. "
+        ],
+        "effects": [
+            "Your Intelligence and Charisma are no longer limited to 10 at most, instead having a maximum of 20. If your Intelligence or Charisma Scores are lower than 12, they are increased to 12.  ",
+            "\tIn addition, you no longer make Diplomacy Checks against Humanoids with Disadvantage. You can communicate more complicated ideas to Humans and beings of similar intelligence, but need some extra medium to do so (a translator, chalkboard, etc)."
+        ],
+        "prereq": "<a href='\/races?focus=AnimalRock_Animal'>Animal\/Rock Animal<\/a>"
+    },
+    "Familiar_Synergy": {
+        "name": "Familiar Synergy",
+        "desc": [
+            "Both you and your Familiar have created a special move, one that allows you to both utilize your strengths in harmony. "
+        ],
+        "effects": [
+            "You gain an ability unique to you and your Familiar, showcasing your teamwork and trust. You may use this ability an amount of times equal to your PB per Short Rest. ",
+            "You may take this Feat multiple times to gain additional abilities involving you and your Familiar working together. "
+        ],
+        "prereq": "<a class='in-page'>Familiar Bond<\/a>"
+    },
+    "Rallying_Cry": {
+        "name": "Rallying Cry",
+        "desc": [
+            "You have the ability to uplift people in their darkest hour, being the light that guides your allies away from stormy shores. "
+        ],
+        "effects": [
+            "Whenever you gain HP and\/or Temp HP from any source, you may choose to give some or all of it to any allies within 5 meters so long as they can see or hear you.",
+            "If you are Undead, HP gained from your regeneration cannot be shared with someone unless they are also Undead, and if applied to Head HP, it heals\/gives half HP\/Temp HP.",
+            "You also gain a limited resource to restore HP. As a Bonus Action, you gain an amount of Temp HP equal to your Level + Charisma Modifier. You have an amount of uses of this equal to your Charisma Modifier per Long Rest, regaining half your total uses on a Short Rest.",
+            "If you take this Feat a second time:<ul><li>Any time an ally within range gains HP and\/or Temp HP from any source, you can take some of it from them if they agree to it. Your range with this ability becomes 10 meters.<\/li><li>The ability to gain Temp HP now has uses equal to Charisma Modifier per Short Rest.<\/li><\/ul>",
+            "Each additional time you take the Feat past the second, you gain 2 more uses of the Temp HP regain ability, and the range for sharing HP and Temp HP extends by 5 meters."
+        ]
+    },
+    "Stand_Attacker": {
+        "name": "Stand Attacker",
+        "desc": [
+            "Your Stand is remarkable in melee, able to deliver blows with both strength and elegance. "
+        ],
+        "effects": [
+            "You gain Proficiency in the use of Stand Melee Attacks (you are considered Proficient by default, so this becomes Expertise). ",
+            "Stand Haymaker: You may spend 2 Attacks or a full Action to perform a Stand Haymaker. You have Advantage on the Attack Roll, and if it hits, you take the maximum roll of the Attack Dice (but not on any additional dice added, those are rolled normally).",
+            "At the start of your Turn, you can declare that you'll be using all of your Attacks in your Action on Stand Attacks. This prevents you from using your Attacks on anything other than Stand Attacks, but allows you to make one additional Stand Attack as a Bonus Action. You can use any of your Attacks and\/or the Bonus Action Stand Attack as part of a Stand Haymaker."
+        ],
+        "prereq": "<a href='\/classes\/?focus=Stands'>Stand User<\/a>"
+    },
+    "Swift_Recovery": {
+        "name": "Swift Recovery",
+        "desc": [
+            "You have a remarkable ability to recover quickly."
+        ],
+        "effects": [
+            "You have a pool of Recovery, with an amount of Hit Points in it equal to your Level x your Constitution Modifier (minimum of 1). You may spend your Recovery to heal yourself as an Attack, and may spend as much Recovery as you want at once.",
+            "You regain all of your Recovery on a Short or Long Rest. ",
+            "You may take this Feat multiple times if desired. Each additional instance increases your Recovery pool by an amount equal to your Level x Constitution Modifier."
+        ]
+    },
+    "Wrestler": {
+        "name": "Wrestler",
+        "desc": [
+            "You are experienced, able to throw your weight around and redirect your opponent's with equal prowess."
+        ],
+        "effects": [
+            "When you Grapple\/Shove an opponent (or are Grappled\/Shoved), you may make your Athletics Checks with Dexterity\/Precision instead of Strength.",
+            "When you have a creature Grappled, you may spend two Attacks or an Action in order to give a Grappled creature the Restrained Condition. At the end of the Restrained creature's Turns, they can make a Strength Saving Throw to escape against a DC of 8 + Athletics Bonus (Str or Dex), escaping the Restrained Condition on a successful Save, but not the Grapple. The Strength Saving throw penalty does not apply when trying to break the Grapple. The Restrained creature may also use its Action to make the Strength Saving Throw again.",
+            "You can attempt to escape a Grapple (or the Restrained Condition caused by this Feat) as an Attack or Bonus Action rather than full Action. ",
+            "If you Grapple\/Shove a <a href='\/classes?focus=Stands'>Stand User<\/a>, you may force them to use their User Stats instead of their Stand Stats so long as you also do not use Stand Stats. "
+        ],
+        "prereq": "Proficiency in Athletics Checks"
     }
 }

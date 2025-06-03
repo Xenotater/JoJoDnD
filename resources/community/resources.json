@@ -11,8 +11,21 @@
       "title": "5e-Style Sheets",
       "img": "Assets/5E Sheets/5e_sheets.webp",
       "desc": "5e-style character sheets for JoJo D&D. Created by karltonmarx.",
-      "link": "Assets/5E Sheets/5E_JoJo_CharacterSheet.pdf",
-      "alt": "5e-Style Sheets"
+      "alt": "5e-Style Sheets",
+      "versions": [
+        {
+          "name": "Fillable 5e Sheet",
+          "link": "Assets/5E Sheets/5E_JoJo_CharacterSheet_updated.pdf"
+        },
+        {
+          "name": "Nonfillable 5e Sheet",
+          "link": "Assets/5E Sheets/5E_JoJo_CharacterSheet_nonfillable.pdf"
+        },
+        {
+          "name": "Autofill 5e Sheet",
+          "link": "Assets/5E Sheets/5E_JoJo_CharacterSheet_auto.pdf"
+        }
+      ]
     },
     {
       "title": "Mage's Bizarre Revamp",
@@ -39,7 +52,7 @@
       "title": "JoJo D&D Baseball",
       "img": "Assets/Baseball/baseball.webp",
       "desc": "A homebrew to play JoJo-themed baseball within the JoJo D&D module. Created by sandman.",
-      "link": "https://docs.google.com/document/d/1uaivKIFgslFGANCBY204VNsvwf500k_sDuYOrYULgKw/edit",
+      "link": "Assets/Baseball/JoJoDND_Baseball.pdf",
       "alt": "JoJo Baseball"
     },
     {
@@ -57,7 +70,125 @@
       "alt": "sandman's Ultimate Tracker"
     },
     {
-      "title": "Feature Yours Here!",
+      "title": "Bare Bones Sheets",
+      "img": "Assets/Bare Bones/sandman3.webp",
+      "desc": "A bare-bones version of the character sheets. Created by sandman.",
+      "alt": "sandman's Sheet",
+      "versions": [
+        {
+          "name": "Regular",
+          "link": "https://docs.google.com/document/d/150yYFt5-Et7NQp9FCLhqaGuGgdiUUEVdNIb6tzjBLfo/edit?usp=sharing"
+        },
+        {
+          "name": "Act",
+          "link": "https://docs.google.com/document/d/1hEe8xJTv36ddLtMqyNLJSEobY5hW3mIAR7URohV4PUc/edit?usp=sharing"
+        },
+        {
+          "name": "Non-Stand",
+          "link": "https://docs.google.com/document/d/1IF127vL6aelw0fbMu-V2UeO-Z2IBNHMSls1L-LWW2Pw/edit?usp=sharing"
+        }
+      ]
+    },
+    {
+      "title": "The Chained",
+      "img": "Assets/The Chained/chained.webp",
+      "desc": "A Stand Typing designed for villians, antagonists, and more evil characters. Created by Sammick.",
+      "link": "https://docs.google.com/document/d/1Tbma06ljPwse427HB9AHm0QSb10c-1bVgkmxeC7i9No/edit?usp=sharing",
+      "alt": "The Chained"
+    },
+    {
+      "title": "The Ballista",
+      "img": "Assets/The Ballista/ballista.webp",
+      "desc": "A Stand Typing that is physically powerful with long range, but also a bit more fragile and slower. Created by Sammick.",
+      "link": "https://docs.google.com/document/d/1fFWTpAJ-vrfM-HwPJPlAvmXHqPSEMACfwr7ukgnH5Vw/edit?usp=drivesdk",
+      "alt": "The Ballista"
+    },
+    {
+      "title": "Level Helper",
+      "img": "Assets/Level Helper/helper.webp",
+      "desc": "A table of level based stuff like Proficiency Bonuses, Ability Dice, and more. Created by Sammick.",
+      "link": "https://docs.google.com/spreadsheets/d/1rAwnVnnurLVH13rcwskcD9VhfLYgQ34blORD_N8bWIA/edit?usp=sharing",
+      "alt": "Helper"
+    },
+    {
+      "title": "Moon Ripple",
+      "img": "Assets/Moon Ripple/straizo.webp",
+      "desc": "A way to use Ripple as Undead without ending up like Straizo. Created by mimi.",
+      "link": "https://docs.google.com/document/d/11Bvp6yDt_WzeX_BckJcOBmPoekvJXYzfpc7xGKIzuFE/edit",
+      "alt": "Straizo Ripple"
+    },
+    {
+      "title": "The Moonwalk",
+      "img": "Assets/The Moonwalk/moonwalk.webp",
+      "desc": "A martial art that allows a user to manipulate their own center of gravity in amazing ways. Created by Vesper_Tera.",
+      "link": "https://docs.google.com/document/d/1e5gDkBQI_zUza7P74-Y-Kt85XakbUbIGz1seLKgllCk/edit?usp=drivesdk",
+      "alt": "Moonwalker"
+    },
+    {
+      "title": "Phenomenon Type",
+      "img": "Assets/Phenomenon Type/phenomenon.webp",
+      "desc": "A Stand Typing that lacks an apparition in exchange for more enhanced abilities. Created by sandman.",
+      "link": "https://docs.google.com/document/d/1z77pg2ScApRX4TUPimrq54xg8MqVW-4aw6AxFFWbEhI/edit",
+      "alt": "Phenomenon Stand"
+    },
+    {
+      "title": "More Class-Based Feats",
+      "img": "Assets/Class Feats/classFeats.webp",
+      "desc": "A document that adds more Feats for specific Stand types and Classes. Created by sandman.",
+      "link": "https://docs.google.com/document/d/1Yke3x7P4WsolByPbt-i-ahOdKQAhQgX8smATc8J0HkU/edit?usp=sharing",
+      "alt": "Class Feats"
+    },
+    {
+      "title": "Fodder Undead System",
+      "img": "Assets/Fodder Undead/fodderUndead.webp",
+      "desc": "A faster way to make lesser undead for hack and slash style encounters. Created by sandman.",
+      "link": "https://sandman9700.github.io/jojodnd-fodder-undead",
+      "alt": "Fodder Undead"
+    },
+    {
+      "title": "The Powerhouse",
+      "img": "Assets/The Powerhouse/powerhouse.webp",
+      "desc": "A stand built to be physically unstoppable at the cost of nearly no development potential. Created by Sammick.",
+      "link": "https://docs.google.com/document/d/1cOMwQvtzTq9W1Wp2zrZ4mcYrivlGINlXnB2hQcNiuJ8/edit#heading=h.i0u1y3gt0ooa",
+      "alt": "Powerhouse Stand"
+    },
+    {
+      "title": "The Gorgon",
+      "img": "Assets/The Gorgon/priestess.webp",
+      "desc": "A solution to the mystery of what if Rock Humans were vampires? Created by Huggable Muffin.",
+      "link": "https://docs.google.com/document/d/14pTpVasY3YnqnzHvlHmgW-CxBDITl0hQHDrBo_D4IW4/edit?usp=sharing",
+      "alt": "Gorgon"
+    },
+    {
+      "title": "Tabletop Sim Sheet",
+      "img": "Assets/TTS Sheet/sheet.webp",
+      "desc": "A digital version of the JoJo D&D character sheet for use in Tabeltop Simulator. Created by Bruhlow.",
+      "link": "https://steamcommunity.com/sharedfiles/filedetails/?id=3333443351",
+      "alt": "TTS Sheet"
+    },
+    {
+      "title": "Alternate Evolutions",
+      "img": "Assets/Alternate Evolutions/evolution.webp",
+      "desc": "Alternate Stand Evolutions for Stands to grow in ways beyond the standard ways. Created by Sammick.",
+      "link": "https://docs.google.com/document/d/1mU8PGW3CQaeJsBmgUY1aAQknkZKDAXGImAsVkBhnwIc/edit?tab=t.0#heading=h.u3jyomu1gp6y",
+      "alt": "Evolution"
+    },
+    {
+      "title": "Form Shift Stand",
+      "img": "Assets/Form Shift/shift.webp",
+      "desc": "A Feat for Stands that can switch between multiple different forms rather than being bound to one. Created by Sammick.",
+      "link": "https://docs.google.com/document/d/1OpD4XuNdWAqRFiOUKB905DzeK_Ewbsv95XPWtvdW15g/edit?tab=t.0#heading=h.ip3xixal62vi",
+      "alt": "Form Shift"
+    },
+    {
+      "title": "Fodder Stand Users",
+      "img": "Assets/Fodder Stands/discs.webp",
+      "desc": "Pre-made stat blocks for lesser, unimportant stand users. Created by SlickNinja125.",
+      "link": "https://docs.google.com/document/d/1omXrnXWNo5dext_r2stuV1ygNwgId75LEZlv-UqQDpc/edit?usp=drivesdk",
+      "alt": "Fodder Stand Disks"
+    },
+    {
+      "title": "​Feature Yours Here!",
       "img": "Assets/jotaro.webp",
       "desc": "Want your work featured here? Reach out to Kyler (Xenotater) through our Community Discord.",
       "link": "https://discord.gg/nmgSjPW8xs",

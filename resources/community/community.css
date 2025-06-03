@@ -49,3 +49,12 @@
   font-size: 16px;
   border-top: 2px solid black;
 }
+
+.versionSelector {
+  border-radius: 5px;
+  right: 4px;
+  bottom: 4px;
+  text-align: center;
+  flex-direction: column;
+  gap: 4px;
+}

@@ -1,7 +1,7 @@
 var scores = { "str": 0, "dex": 0, "con": 0, "int": 0, "wis": 0, "cha": 0 };
-var actScores = [[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0]];
-var act = 0;
-var chart;
+var act = 1;
+var charts = {};
+var previousClass = "", previousActType = "";
 
 $(document).ready(function () {
     if ($("#autofill").is(":checked")) {
@@ -9,66 +9,88 @@ $(document).ready(function () {
             saveScore(this);
         });
 
-        // $(".stat-score").on("keyup", function(e) {
-        //     if (e.key === "Enter" || e.keyCode === 13) {
-        //             saveScore(this);
-        //     }
-        // });
-
-        $("input").on("blur", function () {
-            detectChange(this);
+        $("input").on("blur", function (e) {
+            detectChange(this, e);
         });
 
         $("input").on("keyup", function (e) {
             if (e.key === "Enter" || e.keyCode === 13) {
-                detectChange(this);
+                detectChange(this, e);
             }
         });
 
+        $("select").on("change", function (e) {
+            detectChange(this, e);
+        });
+
         $(".savecheck").change(function () {
-            var stat = $(this).attr("id").replace("-save", "");
+            let stat = $(this).attr("id").replace("-save", "");
             updateSave(stat);
         });
 
         $(".skillcheck").change(function () {
-            var skill = $(this).attr("id");
-            var classes = $("#" + skill + "-bonus").attr('class').split(/\s+/);
-            var stat = classes[2].replace("-skill", "");
-            updateSkills(stat);
+            updateAllSkills();
         });
     }
 
-    createChart();
+    $("#class").click(function() {
+        previousClass = $(this).val();
+    });
+
+    $(".actType").click(function() {
+        previousActType = $(this).val();
+    })
+
+    createChart("#sArrayChart", "stand");
+    createChart("#act1ArrayChart", "act1");
+    createChart("#act2ArrayChart", "act2");
+    createChart("#act3ArrayChart", "act3");
+    createChart("#act4ArrayChart", "act4");
 
     $(".bigBox, .lilBox").keyup(function() {
-        updateChart();
+        if ($(this).hasClass("act1-score") || $(this).hasClass("act1-mod") || act === 1)
+            updateChart("#act1ArrayChart", "act1");
+        else if ($(this).hasClass("act2-score") || $(this).hasClass("act2-mod") || act === 3)
+            updateChart("#act2ArrayChart", "act2");
+        else if ($(this).hasClass("act3-score") || $(this).hasClass("act3-mod") || act === 2)
+            updateChart("#act3ArrayChart", "act3");
+        else if ($(this).hasClass("act4-score") || $(this).hasClass("act4-mod") || act === 4)
+            updateChart("#act4ArrayChart", "act4");
+        if ($(this).hasClass("stand-score") || $(this).hasClass("stand-mod"))
+            updateChart("#sArrayChart", "stand")
     });
 
     
     $("#act-num").on("change", function() {
-        if ($(this).val() > 3)
-            $(this).val(3);
+        if ($(this).val() > 4)
+            $(this).val(4);
         if ($(this).val() < 0)
             $(this).val(0);
-        saveAct();
-        loadAct($(this).val());
-        updateChart();
+        if ($("#autofill").is(":checked")) {
+            loadAct($(this).val());
+            if (getChartData().every(item => item == 0))
+                updateAllStandScores();
+        }
     });
 });
 
-function detectChange(object) {
-    var id = $(object).attr("id");
+function detectChange(object, event) {
+    //console.log(event);
+    let id = $(object).attr("id");
 
     if ($(object).hasClass("scales")) {
         scale(object);
     }
+
+    if (!$("#autofill").is(":checked"))
+        return;
 
     if ($(object).hasClass("numbers")) {
         $(object).val($(object).val().replace(/[^0-9\-]/g, ""));
     }
 
     if ($(object).hasClass("stat-score")) {
-        var stat = id.replace("-score", "");
+        let stat = id.replace("-score", "");
         updateMod(stat);
         updateSave(stat);
         updateSkills(stat);
@@ -76,18 +98,27 @@ function detectChange(object) {
     }
 
     if ($(object).hasClass("stat-mod")) {
-        var stat = id.replace("-mod", "");
+        let stat = id.replace("-mod", "");
         updateSave(stat);
         updateSkills(stat);
         fixMod(object);
     }
 
     if ($(object).hasClass("stand-score")) {
-        updateStandMod(id.replace("S", "").replace("-score", ""));
+        let stat = id.replace("S", "").replace("-score", "");
+        updateStandMod(stat);
+        if ($("#class").val() === "act"){
+            $(`#act${act}-${stat}-score`).val($(object).val())
+            updateActMod(`act${act}`, stat);
+            updateChart(`#act${act}ArrayChart`, `act${act}`);
+        }
     }
 
     if ($(object).hasClass("stand-mod")) {
+        let stat = id.replace("S", "").replace("-mod", "");
         fixMod(object);
+        if ($("#class").val() === "act")
+            $(`#act${act}-${stat}-mod`).val($(object).val())
     }
 
     if (id == "name" || id == "Uname" || id == "Fname") {
@@ -96,6 +127,29 @@ function detectChange(object) {
 
     if (id == "statflip") {
         return;
+    }
+
+    if (id == "class") {
+        recalculateMultipliers();
+    }
+
+    if (id.match(/act\dType/)) {
+        recalculateActMultipliers(id.replace("Type", "").replace("act", ""));
+    }
+
+    if (id === "act4Base") {
+        recalculateAct4();
+    }
+
+    if (id.match(/act\dType/)) {
+        let target = id.replace("Type", "");
+        if (Array.from($(`.${target}-score`)).every(item => $(item).val() == ""))
+            updateActAllScores(target.replace("act", ""));
+    }
+
+    if (object.classList.toString().match(/.*act\d-score.*/)) {
+        data = id.replace("-score", "").split("-");
+        updateActMod(data[0], data[1])
     }
 
     switch (id.replace("-score", "").replace("-mod", "")) {
@@ -146,22 +200,22 @@ function detectChange(object) {
 }
 
 function fixMod(object) {
-    var val = $(object).val();
+    let val = $(object).val();
     if (val > 0)
         $(object).val("+" + val);
 }
 
 function saveScore(object) {
-    var score = $(object).val();
+    let score = $(object).val();
     if (score == "")
         score = 0;
     scores[$(object).attr("id").replace("-score", "")] = parseInt(score);
 }
 
 function updateMod(stat) {
-    var score = parseInt($("#" + stat + "-score").val());
+    let score = parseInt($("#" + stat + "-score").val());
     if (!isNaN(score)) {
-        var mod = Math.floor((score - 10) / 2);
+        let mod = Math.floor((score - 10) / 2);
         if (mod > 0)
             $("#" + stat + "-mod").val("+" + mod);
         else
@@ -171,8 +225,8 @@ function updateMod(stat) {
 }
 
 function updateStandScore(stat, diff) {
-    var cls = $("#class").val();
-    var multipliers = { "str": 0, "dex": 0, "con": 0, "int": 0, "wis": 0, "cha": 0 };
+    let cls = $("#class").val();
+    let multipliers = { "str": 0, "dex": 0, "con": 0, "int": 0, "wis": 0, "cha": 0 };
 
     switch (cls) {
         case "pow":
@@ -200,45 +254,82 @@ function updateStandScore(stat, diff) {
             multipliers = { "str": 3, "dex": 2, "con": 3, "int": 8, "wis": 3, "cha": 3 };
             break;
         case "act":
-            switch ($("#act-num").val()) {
-                case "0":
-                    multipliers = { "str": 0, "dex": 0, "con": 1, "int": 1, "wis": 0, "cha": 0 };
-                    break;
-                case "1":
-                    multipliers = { "str": 2, "dex": 3, "con": 3, "int": 8, "wis": 3, "cha": 3 };
-                    break;
-                case "2":
-                    multipliers = { "str": 2, "dex": 3, "con": 3, "int": 3, "wis": 3, "cha": 5 };
-                    break;
-                case "3":
-                    multipliers = { "str": 4, "dex": 3, "con": 4, "int": 1, "wis": 4, "cha": 2 };
-                    break;
-            }
             break;
         default:
             break;
     }
 
     if (cls != "oth") {
-        diff *= multipliers[stat];
         target = $("#S" + stat + "-score");
-        var val = parseInt(target.val());
+        let val = parseInt(target.val());
         if (isNaN(val))
             val = 0;
-        target.val(val + diff);
+        target.val(val + diff * multipliers[stat]);
         updateStandMod(stat);
     }
     updateDC();
     updateSpeed();
     updateSAC();
     updateAtks();
-    updateChart();
+    updateChart("#sArrayChart", "stand");
+    
+    if (cls === "act")
+        updateAllActScore(stat, diff);
+}
+
+function updateAllActScore(stat, diff) {
+    for (let i=1; i<5; i++) {
+        updateActScore(i, stat, diff);
+    }
+    loadAct(act);
+}
+
+function updateActScore(num, stat, diff) {
+    let multipliers = getActMultipliers(num);
+    target = $(`#act${num}-${stat}-score`);
+    let val = parseInt(target.val());
+    if (isNaN(val))
+        val = 0;
+    target.val(val + diff * multipliers[stat]);
+    if (target.val() == 0)
+        target.val("");
+    updateActMod(`act${num}`, stat);
+    updateChart(`#act${num}ArrayChart`, `act${num}`);
+}
+
+function getActMultipliers(num) {
+    let multipliers = { "str": 0, "dex": 0, "con": 0, "int": 0, "wis": 0, "cha": 0 };
+    let type =$(`#act${num}Type`).val();
+
+    switch (type) {
+        case "close":
+            multipliers = { "str": 3, "dex": 3, "con": 3, "int": 1, "wis": 4, "cha": 2 };
+            break;
+        case "long":
+            multipliers = { "str": 3, "dex": 3, "con": 3, "int": 8, "wis": 3, "cha": 3 };
+            break;
+        case "ability":
+            multipliers = { "str": 1, "dex": 2, "con": 1, "int": 3, "wis": 3, "cha": 5 };
+            break;
+        case "remote":
+            multipliers = { "str": 3, "dex": 2, "con": 3, "int": 4, "wis": 3, "cha": 2 };
+            break;
+        default:
+            break;
+    }
+
+    if (parseInt(num) === 4) {
+        for (let key of Object.keys(multipliers))
+            multipliers[key] *= 2;
+    }
+
+    return multipliers;
 }
 
 function updateStandMod(stat) {
-    var score = $("#S" + stat + "-score").val();
+    let score = $("#S" + stat + "-score").val();
     if (score != "") {
-        var mod = Math.floor((score / 10));
+        let mod = Math.floor((score / 10));
         if (mod > 0)
             $("#S" + stat + "-mod").val("+" + mod);
         else
@@ -247,7 +338,7 @@ function updateStandMod(stat) {
 }
 
 function updateInitiative() {
-    var mod = parseInt($("#dex-mod").val()) + parseInt($("#wis-mod").val());
+    let mod = parseInt($("#dex-mod").val()) + parseInt($("#wis-mod").val());
     if (isNaN(mod))
         mod = "";
     if (mod > 0)
@@ -257,7 +348,7 @@ function updateInitiative() {
 }
 
 function updateBonus() {
-    var bonus = Math.floor(($("#level").val() - 1) / 4) + 2;
+    let bonus = Math.floor(($("#level").val() - 1) / 4) + 2;
     if (bonus > 6)
         bonus = 6;
     if (bonus < 2)
@@ -270,8 +361,8 @@ function updateBonus() {
 }
 
 function updateAC() {
-    var dex = parseInt($("#dex-mod").val()), con = parseInt($("#con-mod").val()), wis = parseInt($("#wis-mod").val());
-    var ac = 10 + dex + con + wis - Math.min(dex, con, wis);
+    let dex = parseInt($("#dex-mod").val()), con = parseInt($("#con-mod").val()), wis = parseInt($("#wis-mod").val());
+    let ac = 10 + dex + con + wis - Math.min(dex, con, wis);
     if (isNaN(ac))
         ac = "";
     $("#ac").val(ac);
@@ -279,24 +370,24 @@ function updateAC() {
 }
 
 function updateSAC() {
-    var pre = parseInt($("#Sdex-mod").val()), dur = parseInt($("#Scon-mod").val()), spd = parseInt($("#Swis-mod").val());
-    var sac = 10 + pre + dur + spd;
+    let pre = parseInt($("#Sdex-mod").val()), dur = parseInt($("#Scon-mod").val()), spd = parseInt($("#Swis-mod").val());
+    let sac = 10 + pre + dur + spd;
     if (isNaN(sac))
         sac = "";
     $("#sac").val(sac);
 }
 
 function updateHAC() {
-    var hac = parseInt($("#ac").val()) + parseInt($("#bonus").val());
+    let hac = parseInt($("#ac").val()) + parseInt($("#bonus").val());
     if (isNaN(hac))
         hac = "";
     $("#hac").val(hac);
 }
 
 function updateSave(stat) {
-    var mod = parseInt($("#" + stat + "-mod").val());
-    var bonus = parseInt($("#bonus").val());
-    var val = "";
+    let mod = parseInt($("#" + stat + "-mod").val());
+    let bonus = parseInt($("#bonus").val());
+    let val = "";
 
     if (!isNaN(mod) && !isNaN(bonus)) {
         val = mod;
@@ -318,19 +409,19 @@ function updateAllSaves() {
 
 function updateSkills(stat) {
     $("." + stat + "-skill").each(function () {
-        var skill = $(this).attr("id").replace("-bonus", "");
-        var mod = parseInt($("#" + stat + "-mod").val());
-        var bonus = parseInt($("#bonus").val());
-        var val = "";
+        let skill = $(this).attr("id").replace(/-bonus[0-2]?/, "");
+        let mod = parseInt($("#" + stat + "-mod").val());
+        let bonus = parseInt($("#bonus").val());
+        let val = "";
 
         if (!isNaN(mod) && !isNaN(bonus)) {
             val = mod;
-            var select = $("#" + skill).find(":selected").text();
-            if (select == "P")
+            let select = $("#" + skill).find(":selected").text();
+            if (select == translateText("P"))
                 val += bonus;
-            else if (select == "E")
+            else if (select == translateText("E"))
                 val += bonus * 2;
-            else if (select == "M")
+            else if (select == translateText("M"))
                 val += bonus * 3;
         }
 
@@ -351,7 +442,7 @@ function updateAllSkills() {
 }
 
 function updateSpeed() {
-    var speed = parseInt($("#Swis-mod").val()) * 2;
+    let speed = parseInt($("#Swis-mod").val()) * 2;
     if (isNaN(speed))
         speed = "";
     if (speed < 10)
@@ -360,38 +451,40 @@ function updateSpeed() {
 }
 
 function updateDC() {
-    var dc = 8 + parseInt($("#bonus").val()) + parseInt($("#cha-mod").val());
+    let dc = 8 + parseInt($("#bonus").val()) + parseInt($("#cha-mod").val());
     if (isNaN(dc))
         dc = "";
     $("#dc").val(dc);
 }
 
 function updatePassive() {
-    var val = 10 + parseInt($("#perc-bonus").val());
+    let val = 10 + parseInt($("#perc-bonus").val());
     if (isNaN(val))
         val = "";
     $("#percep").val(val);
 }
 
 function updateProfs() {
-    var mod = parseInt($("#int-mod").val());
-    if (isNaN(mod) || mod < 1)
+    let mod = parseInt($("#int-mod").val());
+    let bonus = parseInt($("#bonus").val());
+    let total = 3 + mod + bonus;
+    if (isNaN(total) || total < 1)
         $("#skillcnt").html("");
     else
-        $("#skillcnt").html(" (+" + mod + ")");
+        $("#skillcnt").html(" (+" + total + ")");
 }
 
 function updateAtks() {
-    var score = Math.floor($("#Swis-score").val() / 50) + 1;
+    let score = Math.floor($("#Swis-score").val() / 50) + 1;
     if (isNaN(score))
         score = 1;
     $("#atks").val(score);
 }
 
 function updateFeats() {
-    var level = $("#level").val();
+    let level = $("#level").val();
     if (!isNaN(level)) {
-        var feats = "";
+        let feats = "";
         if (level > 20)
             feats = 6;
         else if (level < 1)
@@ -419,36 +512,32 @@ function updateName(id) {
     }
 }
 
-function saveAct() {
-    actScores[act][0] = parseInt($("#Sstr-score").val()) || 0;
-    actScores[act][1] = parseInt($("#Sdex-score").val()) || 0;
-    actScores[act][2] = parseInt($("#Scon-score").val()) || 0;
-    actScores[act][3] = parseInt($("#Sint-score").val()) || 0;
-    actScores[act][4] = parseInt($("#Swis-score").val()) || 0;
-    actScores[act][5] = parseInt($("#Scha-score").val()) || 0;
-}
-
 function loadAct(newAct) {
     act = newAct;
-    $("#Sstr-score").val(actScores[act][0]);
-    $("#Sdex-score").val(actScores[act][1]);
-    $("#Scon-score").val(actScores[act][2]);
-    $("#Sint-score").val(actScores[act][3]);
-    $("#Swis-score").val(actScores[act][4]);
-    $("#Scha-score").val(actScores[act][5]);
-
-    if (actScores[act].every(item => item === 0))
-        updateAllStandScores();
-    updateAllStandMods();
+    $("#Sstr-score").val($(`#act${act}-str-score`).val());
+    $("#Sdex-score").val($(`#act${act}-dex-score`).val());
+    $("#Scon-score").val($(`#act${act}-con-score`).val());
+    $("#Sint-score").val($(`#act${act}-int-score`).val());
+    $("#Swis-score").val($(`#act${act}-wis-score`).val());
+    $("#Scha-score").val($(`#act${act}-cha-score`).val());
+    
+    $("#Sstr-mod").val($(`#act${act}-str-mod`).val());
+    $("#Sdex-mod").val($(`#act${act}-dex-mod`).val());
+    $("#Scon-mod").val($(`#act${act}-con-mod`).val());
+    $("#Sint-mod").val($(`#act${act}-int-mod`).val());
+    $("#Swis-mod").val($(`#act${act}-wis-mod`).val());
+    $("#Scha-mod").val($(`#act${act}-cha-mod`).val());
+    
+    updateChart("#sArrayChart", "stand");
 }
 
-function updateAllStandScores() {
-    updateStandScore("str", scores.str);
-    updateStandScore("dex", scores.dex);
-    updateStandScore("con", scores.con);
-    updateStandScore("int", scores.int);
-    updateStandScore("wis", scores.wis);
-    updateStandScore("cha", scores.cha);
+function updateAllStandScores(mult = 1) {
+    updateStandScore("str", scores.str * mult);
+    updateStandScore("dex", scores.dex * mult);
+    updateStandScore("con", scores.con * mult);
+    updateStandScore("int", scores.int * mult);
+    updateStandScore("wis", scores.wis * mult);
+    updateStandScore("cha", scores.cha * mult);
 }
 
 function updateAllStandMods() {
@@ -469,13 +558,13 @@ function saveScores() {
     saveScore($("#cha-score"));
 }
 
-function createChart() {
-    chart = new Chart($("#sArrayChart")[0], {
+function createChart(target, targetChart) {
+    charts[targetChart] = new Chart($(target)[0], {
         type: 'radar',
         data: {
             labels: ['Power', 'Speed', 'Range', 'Durability', 'Precision', 'Potential'],
             datasets: [{
-                data: getChartData(),
+                data: [0,0,0,0,0,0],
                 fill: true,
                 backgroundColor: 'rgba(255, 0, 0, 0.3)',
                 borderColor: 'rgba(255, 0, 0, 0.7)',
@@ -495,7 +584,7 @@ function createChart() {
                         beginAtZero: true,
                         stepSize: 20,
                         font: {
-                            size: 8
+                            size: target.includes("act") ? 5 : 8
                         }
                     }
                 }
@@ -507,19 +596,19 @@ function createChart() {
             }
         }
     });
-    updateChart();
+    updateChart(target, targetChart);
 }
 
-function updateChart() {
-    $("#sArrayChart").show();
-    let data = getChartData();
+function updateChart(target, targetChart) {
+    $(target).show();
+    let data = target.includes("act") ? getActChartData(target.replace("ArrayChart", "")) : getChartData();
     let set = new Set(data);
     if (set.size == 1 && set.has(0)) {
-        $("#sArrayChart").hide();
+        $(target).hide();
     }
     else {
-        chart.data.datasets[0].data = data;
-        chart.update();
+        charts[targetChart].data.datasets[0].data = data;
+        charts[targetChart].update();
     }
 }
 
@@ -534,7 +623,78 @@ function getChartData() {
     return data;
 }
 
+function getActChartData(num) {
+    let data = [];
+    data.push(getIntVal($(`${num}-str-score`)));
+    data.push(getIntVal($(`${num}-wis-score`)));
+    data.push(getIntVal($(`${num}-int-score`)));
+    data.push(getIntVal($(`${num}-con-score`)));
+    data.push(getIntVal($(`${num}-dex-score`)));
+    data.push(getIntVal($(`${num}-cha-score`)));
+    return data;
+}
+
 function getIntVal(elem) {
     let val = parseInt(elem.val());
     return isNaN(val) ? 0 : val;
+}
+
+function updateActMod(act, stat) {
+    let target = $(`#${act}-${stat}-mod`);
+    let score = getIntVal($(`#${act}-${stat}-score`));
+
+    if (score == 0)
+        target.val("");
+    else
+        target.val(Math.floor(score / 10));
+    fixMod(target);
+}
+
+function updateActAllScores(num, mult = 1) {
+    updateActScore(num, "str", scores.str * mult);
+    updateActScore(num, "dex", scores.dex * mult);
+    updateActScore(num, "con", scores.con * mult);
+    updateActScore(num, "int", scores.int * mult);
+    updateActScore(num, "wis", scores.wis * mult);
+    updateActScore(num, "cha", scores.cha * mult);
+}
+
+function updateActAllMods(num) {
+    updateActMod(`act${num}`, "str");
+    updateActMod(`act${num}`, "dex");
+    updateActMod(`act${num}`, "con");
+    updateActMod(`act${num}`, "int");
+    updateActMod(`act${num}`, "wis");
+    updateActMod(`act${num}`, "cha");
+}
+
+function recalculateAct4() {  
+    let base = $("#act4Base").val();
+    $("#act4-str-score").val(parseInt($(`#${base}-str-score`).val()) * 2);
+    $("#act4-dex-score").val(parseInt($(`#${base}-dex-score`).val()) * 2);
+    $("#act4-con-score").val(parseInt($(`#${base}-con-score`).val()) * 2);
+    $("#act4-int-score").val(parseInt($(`#${base}-int-score`).val()) * 2);
+    $("#act4-wis-score").val(parseInt($(`#${base}-wis-score`).val()) * 2);
+    $("#act4-cha-score").val(parseInt($(`#${base}-cha-score`).val()) * 2);
+    updateActAllMods(4);
+    updateChart("#act4ArrayChart", "act4");
+}
+
+function recalculateMultipliers() {
+    let newClass = $("#class").val();
+    if (newClass === "act")
+        return;
+    $("#class").val(previousClass);
+    updateAllStandScores(-1);
+    $("#class").val(newClass);
+    updateAllStandScores();
+}
+
+function recalculateActMultipliers(num) {
+    let newType = $(`#act${num}Type`).val();
+    $(`#act${num}Type`).val(previousActType);
+    updateActAllScores(num, -1);
+    $(`#act${num}Type`).val(newType);
+    updateActAllScores(num);
+    recalculateAct4();
 }

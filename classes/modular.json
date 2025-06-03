@@ -126,7 +126,12 @@
     "Ripple": [
         {
             "linkFeatures": [
-                "Healing Hands"
+                "Healing Hands",
+                "Spiritual Ripple (Variant Rule)",
+                "Sunshield"
+            ],
+            "featFeatures": [
+                "Equalizer"
             ],
             "otherFeatures": [
                 "Unarmed Strikes deal Radiant damage"
@@ -145,6 +150,7 @@
         },
         {
             "linkFeatures": [
+                "Custom Ripple Technique",
                 "Slowed Aging",
                 "Ripple Possession"
             ],
@@ -157,7 +163,6 @@
         },
         {
             "linkFeatures": [
-                "Spiritual Ripple (Variant Rule)",
                 "Rippling Weapon",
                 "Ripple Feature"
             ],
@@ -167,7 +172,6 @@
         },
         {
             "linkFeatures": [
-                "Custom Ripple Technique",
                 "Ripple Regeneration",
                 "Ripple Perception"
             ],
@@ -285,7 +289,14 @@
         {
             "linkFeatures": [
                 "Forced Motion",
-                "Spherical Spin"
+                "Spherical Spin",
+                "Spiritual Spin (Variant Rule)"
+            ],
+            "featFeatures": [
+                "Equalizer"
+            ],
+            "otherFeatures": [
+                "Gain Proficiency in Attack Rolls using the Spin"
             ]
         },
         {
@@ -296,6 +307,7 @@
         },
         {
             "linkFeatures": [
+                "Custom Spin Technique",
                 "Return to Sender",
                 "Spin Feature"
             ],
@@ -305,13 +317,12 @@
         },
         {
             "linkFeatures": [
-                "Spiritual Spin (Variant Rule)",
                 "Spin Feature"
             ]
         },
         {
             "linkFeatures": [
-                "Custom Spin Technique",
+                "Spin Feature",
                 "Spin Feature"
             ]
         },
@@ -320,6 +331,7 @@
                 "Ability Score Improvement"
             ],
             "linkFeatures": [
+                "Spin Feature",
                 "Spin Feature"
             ]
         },
@@ -327,8 +339,8 @@
             "featFeatures": [
                 "Trained Combatant"
             ],
-            "linkFeatures": [
-                "Spin Expertise"
+            "otherFeatures": [
+                "Gain Proficiency in Attack Rolls using the Spin again"
             ]
         },
         {
@@ -371,13 +383,16 @@
             ]
         },
         {
-            "linkFeatures": [
-                "Spin Mastery"
+            "otherFeatures": [
+                "Gain Proficiency in Attack Rolls using the Spin again"
             ]
         },
         {
             "linkFeatures": [
                 "Spin Feature"
+            ],
+            "featFeatures": [
+                "Trained Combatant"
             ]
         },
         {
@@ -399,8 +414,8 @@
             ]
         },
         {
-            "featFeatures": [
-                "Trained Combatant"
+            "linkFeatures": [
+                "Spin Feature"
             ]
         },
         {
@@ -460,6 +475,9 @@
             ]
         },
         {
+            "linkFeatures": [
+                "Special Ability"
+            ],
             "ability": [
                 "Ability Score Improvement"
             ]
@@ -490,9 +508,6 @@
         {
             "otherFeatures": [
                 "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
-            ],
-            "linkFeatures": [
-                "Special Ability (2 SE)"
             ]
         },
         {
@@ -529,14 +544,23 @@
             "linkFeatures": [
                 "Slippery",
                 "Detached Senses",
+                "and",
+                "Doubled Range",
                 "OR",
-                "Immense Resistance"
+                "Immense Resistance",
+                "and",
+                "Tanky"
             ]
         },
         {
             "linkFeatures": [
                 "Custom Ability",
-                "Stand Pickpocketing"
+                "Stand Pickpocketing",
+                "Distant Defense",
+                "OR"
+            ],
+            "featFeatures": [
+                "Close-Range Deflection"
             ]
         },
         {
@@ -583,6 +607,9 @@
             ]
         },
         {
+            "linkFeatures": [
+                "Special Ability"
+            ],
             "ability": [
                 "Ability Score Improvement"
             ]
@@ -608,9 +635,6 @@
             ]
         },
         {
-            "linkFeatures": [
-                "Special Ability (2 SE)"
-            ],
             "otherFeatures": [
                 "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
             ]
@@ -651,6 +675,9 @@
             "linkFeatures": [
                 "Programmed Stand",
                 "Stand Marking"
+            ],
+            "featFeatures": [
+                "Equalizer"
             ]
         },
         {
@@ -700,6 +727,9 @@
             ]
         },
         {
+            "linkFeatures": [
+                "Special Ability"
+            ],
             "ability": [
                 "Ability Score Improvement"
             ]
@@ -725,9 +755,6 @@
             ]
         },
         {
-            "linkFeatures": [
-                "Special Ability (2 SE)"
-            ],
             "otherFeatures": [
                 "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
             ]
@@ -769,7 +796,8 @@
         },
         {
             "linkFeatures": [
-                "Self-Acclimation"
+                "Ability Feature",
+                "Ability Feature"
             ]
         },
         {
@@ -788,6 +816,9 @@
             ]
         },
         {
+            "linkFeatures": [
+                "Special Ability"
+            ],
             "ability": [
                 "Ability Score Improvement"
             ]
@@ -805,10 +836,13 @@
         },
         {
             "linkFeatures": [
-                "Special Ability (2 SE)"
+                "Ability Feature"
             ]
         },
         {
+            "linkFeatures": [
+                "Ultimate Stand Ability"
+            ],
             "ability": [
                 "Ability Score Improvement"
             ]
@@ -818,7 +852,7 @@
                 "Ability Feature"
             ],
             "otherFeatures": [
-                "Attack Dice increases to 2d6, <a href='\/abilities\/?focus=Ranged_Attack'>Ranged Attack<\/a> dice and range are doubled"
+                "Attack Dice increases to 1d8, <a href='\/abilities\/?focus=Ranged_Attack'>Ranged Attack<\/a> dice and range are doubled"
             ]
         },
         {
@@ -837,9 +871,6 @@
             ]
         },
         {
-            "linkFeatures": [
-                "Ultimate Stand Ability"
-            ],
             "otherFeatures": [
                 "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
             ]
@@ -929,6 +960,9 @@
             ]
         },
         {
+            "linkFeatures": [
+                "Special Ability"
+            ],
             "ability": [
                 "Ability Score Improvement"
             ]
@@ -954,9 +988,6 @@
             ]
         },
         {
-            "linkFeatures": [
-                "Special Ability (2 SE)"
-            ],
             "otherFeatures": [
                 "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
             ]
@@ -983,7 +1014,9 @@
         },
         {
             "linkFeatures": [
-                "Condensed Material"
+                "Condensed Material",
+                "OR",
+                "Fleeting Invulnerability"
             ],
             "otherFeatures": [
                 "<a href='\/artifacts\/?focus=Heaven'>Heaven Calls<\/a>"
@@ -995,6 +1028,9 @@
             "linkFeatures": [
                 "Detached Senses",
                 "Feat of Power"
+            ],
+            "featFeatures": [
+                "Equalizer"
             ]
         },
         {
@@ -1042,6 +1078,9 @@
             ]
         },
         {
+            "linkFeatures": [
+                "Special Ability"
+            ],
             "ability": [
                 "Ability Score Improvement"
             ]
@@ -1067,9 +1106,6 @@
             ]
         },
         {
-            "linkFeatures": [
-                "Special Ability (2 SE)"
-            ],
             "otherFeatures": [
                 "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
             ]
@@ -1157,6 +1193,9 @@
             ]
         },
         {
+            "linkFeatures": [
+                "Special Ability"
+            ],
             "ability": [
                 "Ability Score Improvement"
             ]
@@ -1182,9 +1221,6 @@
             ]
         },
         {
-            "linkFeatures": [
-                "Special Ability (2 SE)"
-            ],
             "otherFeatures": [
                 "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
             ]
@@ -1269,6 +1305,9 @@
             ]
         },
         {
+            "linkFeatures": [
+                "Special Ability"
+            ],
             "ability": [
                 "Ability Score Improvement"
             ]
@@ -1294,9 +1333,6 @@
             ]
         },
         {
-            "linkFeatures": [
-                "Special Ability (2 SE)"
-            ],
             "otherFeatures": [
                 "<a href='\/artifacts\/?focus=Stand_Arrow'>The Requiem Quietly Plays<\/a>"
             ]
@@ -1334,7 +1370,11 @@
         {
             "linkFeatures": [
                 "Steady Aim",
-                "Assassin Feature"
+                "Assassin Feature",
+                "Supernatural Item (Variant Rule)"
+            ],
+            "featFeatures": [
+                "Equalizer"
             ]
         },
         {
@@ -1348,11 +1388,13 @@
         {
             "ability": [
                 "Ability Score Improvement"
+            ],
+            "linkFeatures": [
+                "Signature Move"
             ]
         },
         {
             "linkFeatures": [
-                "Supernatural Item (Variant Rule)",
                 "Assassin Feature"
             ],
             "featFeatures": [
@@ -1456,7 +1498,11 @@
         {
             "linkFeatures": [
                 "Encouragement Dice",
-                "Consul Feature"
+                "Consul Feature",
+                "Supernatural Item (Variant Rule)"
+            ],
+            "featFeatures": [
+                "Equalizer"
             ]
         },
         {
@@ -1470,11 +1516,13 @@
         {
             "ability": [
                 "Ability Score Improvement"
+            ],
+            "linkFeatures": [
+                "Signature Move"
             ]
         },
         {
             "linkFeatures": [
-                "Supernatural Item (Variant Rule)",
                 "Consul Feature"
             ],
             "featFeatures": [
@@ -1578,7 +1626,11 @@
         {
             "linkFeatures": [
                 "Scholarly Combatant",
-                "Scholar Feature"
+                "Scholar Feature",
+                "Supernatural Item (Variant Rule)"
+            ],
+            "featFeatures": [
+                "Equalizer"
             ]
         },
         {
@@ -1592,11 +1644,13 @@
         {
             "ability": [
                 "Ability Score Improvement"
+            ],
+            "linkFeatures": [
+                "Signature Move"
             ]
         },
         {
             "linkFeatures": [
-                "Supernatural Item (Variant Rule)",
                 "Field Study",
                 "Scholar Feature"
             ]
@@ -1652,7 +1706,7 @@
             "featFeatures": [
                 "Familiar Bond",
                 "OR",
-                "Paranoia"
+                "Ever Vigilant"
             ]
         },
         {
@@ -1698,7 +1752,11 @@
         {
             "linkFeatures": [
                 "Damage Minimum",
-                "Warrior Feature"
+                "Warrior Feature",
+                "Supernatural Item (Variant Rule)"
+            ],
+            "featFeatures": [
+                "Equalizer"
             ]
         },
         {
@@ -1710,11 +1768,13 @@
         {
             "ability": [
                 "Ability Score Improvement"
+            ],
+            "linkFeatures": [
+                "Signature Move"
             ]
         },
         {
             "linkFeatures": [
-                "Supernatural Item (Variant Rule)",
                 "Warrior Feature"
             ],
             "featFeatures": [
@@ -1827,12 +1887,16 @@
         {
             "linkFeatures": [
                 "Artisan's Specialty",
-                "Artisan Feature"
+                "Artisan Feature",
+                "Supernatural Item (Variant Rule)"
+            ],
+            "featFeatures": [
+                "Equalizer"
             ]
         },
         {
             "featFeatures": [
-                "Natural Talent"
+                "Practical Experience"
             ],
             "linkFeatures": [
                 "Artisan Fighting Style"
@@ -1841,11 +1905,13 @@
         {
             "ability": [
                 "Ability Score Improvement"
+            ],
+            "linkFeatures": [
+                "Signature Move"
             ]
         },
         {
             "linkFeatures": [
-                "Supernatural Item (Variant Rule)",
                 "Artisan's Resurgence",
                 "Artisan Feature"
             ]
@@ -1947,7 +2013,11 @@
         {
             "linkFeatures": [
                 "Bullish Brawn",
-                "Heavyweight Feature"
+                "Heavyweight Feature",
+                "Supernatural Item (Variant Rule)"
+            ],
+            "featFeatures": [
+                "Equalizer"
             ]
         },
         {
@@ -1959,11 +2029,13 @@
         {
             "ability": [
                 "Ability Score Improvement"
+            ],
+            "linkFeatures": [
+                "Signature Move"
             ]
         },
         {
             "linkFeatures": [
-                "Supernatural Item (Variant Rule)",
                 "Rejuvenation",
                 "Heavyweight Feature"
             ]
@@ -2065,7 +2137,11 @@
         {
             "linkFeatures": [
                 "Survivalist",
-                "Ranger Feature"
+                "Ranger Feature",
+                "Supernatural Item (Variant Rule)"
+            ],
+            "featFeatures": [
+                "Equalizer"
             ]
         },
         {
@@ -2073,17 +2149,19 @@
                 "Ranger Fighting Style"
             ],
             "featFeatures": [
-                "Paranoia"
+                "Ever Vigilant"
             ]
         },
         {
             "ability": [
                 "Ability Score Improvement"
+            ],
+            "linkFeatures": [
+                "Signature Move"
             ]
         },
         {
             "linkFeatures": [
-                "Supernatural Item (Variant Rule)",
                 "Ranger's Recovery",
                 "Ranger Feature"
             ]
@@ -2139,7 +2217,7 @@
             "featFeatures": [
                 "Light Sleeper",
                 "OR",
-                "Trap Detection"
+                "Trapper"
             ]
         },
         {
