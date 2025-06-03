@@ -10,7 +10,7 @@
           "<p>In order to obtain a Familiar, you must take the <a href='/feats/?focus=Familiar_Bond'>Familiar Bond</a> Feat.</p>",
           "<p>There is a simple order to follow for creating your new Familiar:</p>",
           "<ol><li>Roll their stats</li>",
-          "<li>Choose their size</li>",
+          "<li>Choose their Size</li>",
           "<li>Choose their <a class='in-page' id='Guardian-link'>Class</a></li>",
           "<li>Choose their <a class='in-page' id='Always_Alert-link'>Feats</a></li></ol>",
           "<small><i><b>Note:</b> Familiars use their own Classes and Feats, which are found on this page. Other Classes and Feats are not balanced or designed for Familiars.</i></small>"
@@ -26,7 +26,7 @@
       {
         "name": "Creature Size",
         "content": [
-          "<p>A Familiar's size determines its Movement Speed, AC bonus (applies to Stand AC as well), and Hit Dice.</p>",
+          "<p>A Familiar's Size determines its Movement Speed, AC bonus (applies to Stand AC as well), and Hit Dice.</p>",
           "<div id='sizes'><div class='size-card' id='tiny'><b>Tiny:</b><br>Hit Dice: 1d4<br>Movement: 5m OR<br>1m and 5m Flying/Swimming<br>Additional AC: +4<br>Natural Weapon Dice: 1d4</div>",
           "<div class='size-card' id='small'><b>Small:</b><br>Hit Dice: 1d6<br>Movement: 8m OR<br>2m and 8m Flying/Swimming<br>Additional AC: +2<br>Natural Weapon Dice: 1d6</div>",
           "<div class='size-card' id='med'><b>Medium:</b><br>Hit Dice: 1d8<br>Movement: 10m OR<br>3m and 10m Flying/Swimming<br>Additional AC: +1<br>Natural Weapon Dice: 1d8</div>",
@@ -617,7 +617,7 @@
         "desc": [
           "When your Familiar lands an attack on a creature that creature must make a Strength Saving Throw. If they fail, your Familiar may choose to knock them prone or push them back an amount of meters equal to their Strength Modifier.",
           "Additionally, if the target hits a wall, they take an amount of d4s of damage equal to your Familiar's Proficiency Bonus for each meter they could not be shoved.",
-          "Your Familiar may only use a Shove Attack once per Turn and only against creatures one size category above theirs or smaller."
+          "Your Familiar may only use a Shove Attack once per Turn and only against creatures one Size Category above theirs or smaller."
         ],
         "classes": ["Stalwart"]
       },
@@ -703,14 +703,14 @@
       "Extra_Sense": {
         "name": "Extra Sense",
         "desc": [
-          "Your Familiar gains one of the following additional senses:<ul class='sublist'><li>Echolocation: Your Familiar gains 10/20 meters of Blindsense. If there is noise being made in the area, they may use the Long Range of this sense without Disadvantage. They may make the noise themselves as well but this grants a -4 penalty to Sneak Checks. Your Familiar must be able to hear to use this.</li><li>Soulsense: Your Familiar gains 10/20 meters of Soulsense, which allows them to sense the souls of living creatures, including Stands and ghosts. They gain a +10 Bonus to Perception Checks using this sense in the Short Range, and a +5 Bonus in the Long Range. This sense is not restricted by walls or barriers, and it may be used to determine if a soul has been in a location within the Short Range within the last minute. Undead and Constructs cannot be sensed this way.</li><li>Tremorsense: Your Familiar gains 10/20 meters of Tremorsense, allowing them to sense vibrations around them. They must be connected to some kind of surface to feel the vibrations through in order to sense up to the Long Range. They may sense past Total Cover using this, so long as they are touching the Cover itself. Your Familiar must be able to use its natural sense of touch to use this.</li><li>Night Vision: Your Familiar gains 15/30 meters of Darkvision, allowing them to see clearly in Darkness up to the Short Range or with Disadvantage up to the Long Range. If they have a light source, the effective range of it is doubled for them as well.</li></ul>",
+          "Your Familiar gains one of the following additional senses:<ul class='sublist'><li>Echolocation: Your Familiar gains 10/20 meters of Blindsense. If there is noise being made in the area, they may use the Long Range of this sense without Disadvantage. They may make the noise themselves as well but this grants a -4 penalty to Sneak Checks. Your Familiar must be able to hear to use this.</li><li>Soulsense: Your Familiar gains 10/20 meters of Soulsense, which allows them to sense the souls of living creatures, including Stands and ghosts. They gain a +10 bonus to Perception Checks using this sense in the Short Range, and a +5 bonus in the Long Range. This sense is not restricted by walls or barriers, and it may be used to determine if a soul has been in a location within the Short Range within the last minute. Undead and Constructs cannot be sensed this way.</li><li>Tremorsense: Your Familiar gains 10/20 meters of Tremorsense, allowing them to sense vibrations around them. They must be connected to some kind of surface to feel the vibrations through in order to sense up to the Long Range. They may sense past Total Cover using this, so long as they are touching the Cover itself. Your Familiar must be able to use its natural sense of touch to use this.</li><li>Night Vision: Your Familiar gains 15/30 meters of Darkvision, allowing them to see clearly in Darkness up to the Short Range or with Disadvantage up to the Long Range. If they have a light source, the effective range of it is doubled for them as well.</li></ul>",
           "Your Familiar may take this Feat multiple times if desired, either gaining another sense or increasing the Range of an existing one by the described amount."
         ]
       },
       "Giants_Wrath": {
         "name": "Giant's Wrath",
         "desc": [
-          "<b><u>Prerequisite:</u> Must be a familiar of Medium or Large size.</b>",
+          "<b><u>Prerequisite:</u> Must be a Familiar of Medium or Large Size.</b>",
           "Your Familiar deals an additional die of damage when they attack using their Natural Weapons."
         ]
       },
@@ -725,8 +725,8 @@
         "name": "Naturally Sheltered",
         "desc": [
           "Your Familiar is naturally protected from the elements, due to their thick hide or adaptive behaviors.",
-          "When your Familiar stays in the same place, they are considered to be housed comfortably. If your familiar is Large, they do not need to spend time setting up their shelter. If they are Medium, they must spend 1 minute setting up a shelter. If they are Small, they must spend 5 minutes setting up a shelter. If they are Tiny, they must spend 10 minutes setting up a shelter.",
-          "Additionally, your familiar may comfortably shelter a single creature of a size category that is smaller than them, up to three creatures that are two size categories smaller, and up to seven creatures that are three size categories smaller than them."
+          "When your Familiar stays in the same place, they are considered to be housed comfortably. If your Familiar is Large, they do not need to spend time setting up their shelter. If they are Medium, they must spend 1 minute setting up a shelter. If they are Small, they must spend 5 minutes setting up a shelter. If they are Tiny, they must spend 10 minutes setting up a shelter.",
+          "Additionally, your Familiar may comfortably shelter a single creature of a Size Category that is smaller than them, up to three creatures that are two Size categories smaller, and up to seven creatures that are three Size categories smaller than them."
         ]
       },
       "Natural_Skirmisher": {

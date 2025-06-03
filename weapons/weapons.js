@@ -163,13 +163,13 @@ function hint(attr) { //this whole thing should be replaced by json..
             return("This weapon requires two hands to wield, and is difficult to holster or conceal.<br>May be carried (but not used) with one hand if desired.");
         case "Thrown":
             if (range[0] != range[1])
-                return("This weapon can be thrown up to " + range[0] + "m, or as far as " + range[1] + "m with Disadvantage.<br>Once thrown, this weapon must be picked up in order to be used again (unless it is an explosive, in which case it is destroyed).");
+                return("This weapon can be thrown up to " + range[0] + "m, or as far as " + range[1] + "m with Disadvantage.<br>Once thrown, this weapon must be picked up in order to be used again (unless it is an Explosive, in which case it is destroyed).");
             else
-                return("This weapon can be thrown up to " + range[0] + "m.<br>Once thrown, this weapon must be picked up in order to be used again (unless it is an explosive, in which case it is destroyed).")
+                return("This weapon can be thrown up to " + range[0] + "m.<br>Once thrown, this weapon must be picked up in order to be used again (unless it is an Explosive, in which case it is destroyed).")
         case "Ranged":
             return("This weapon can fire up to " + range[0] + "m, or as far as " + range[1] + "m with Disadvantage.<br>Firing within melee imposes Disadvantage.");
         case "Firearm":
-            return("This weapon makes a loud sound which can be heard up to 0.5km away.<br>It also jams if a natural 1 is rolled while using it, requiring an Attack to un-jam the weapon before it may be fired again.<br>This weapon's ammunition doesn't function when wet.");
+            return("This weapon makes a loud sound which can be heard up to 0.5km away.<br>It also jams if a Natural 1 is rolled while using it, requiring an Attack to un-jam the weapon before it may be fired again.<br>This weapon's ammunition doesn't function when wet.");
         case "Reload":
             return("This weapon can be used " + ammo + " times before needing to be reloaded.<br>Reloading takes a full Attack.");
         case "Burst":
@@ -187,7 +187,7 @@ function hint(attr) { //this whole thing should be replaced by json..
         case "Siege":
             return ("This weapon deals double damage to objects.");
         case "Reliable":
-            return("This weapon does not jam if you roll a natural 1.");
+            return("This weapon does not jam if you roll a Natural 1.");
         case "Point Blank":
             return("This weapon does not impose Disadvantage if fired within melee.");
         case "Ambush":
@@ -197,7 +197,7 @@ function hint(attr) { //this whole thing should be replaced by json..
         case "Complex":
             return("This weapon takes a total of three Attacks to reload.");
         case "Flame":
-            return("When a targeted creature or object takes fire damage from this weapon, it is set ablaze (assuming the target is flammable).");
+            return("When a targeted creature or object takes Fire damage from this weapon, it is set ablaze (assuming the target is flammable).");
         case "Versatile":
             return("This weapon may be wielded with one or two hands. If two hands are used, it's damage becomes " + bonus + ".");
         case "Return":

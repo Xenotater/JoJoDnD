@@ -1577,7 +1577,7 @@
                     "Superfly",
                     "Foo_Fighters"
                 ],
-                "desc": "Independent-Type Stands are quite interesting, and are one of the more rare Stand Types in JoJo's Bizarre Adventure. These Stands are odd because they do not actually have a User, instead in control of themselves. They have the same sort of Attributes that regular Stands do and must follow most of the same rules. However, the Stand is still made up of physical matter, and thus is similar to an Enhancement type Stand in that they can be damaged physically by Non-Stand damage types.",
+                "desc": "Independent-Type Stands are quite interesting, and are one of the more rare Stand Types in JoJo's Bizarre Adventure. These Stands are odd because they do not actually have a User, instead in control of themselves. They have the same sort of attributes that regular Stands do and must follow most of the same rules. However, the Stand is still made up of physical matter, and thus is similar to an Enhancement type Stand in that they can be damaged physically by Non-Stand damage types.",
                 "notes": [
                     "Some Independent Stands did in fact have a User at some point, or might even still have a User. They are not linked together though, as damaging the Stand does no harm to the User and vice versa. However, if a person does or did have an Independent-Type Stand they are still able to sense Stands and Ghosts, just like a normal Stand User would. Independent Stands with a User still roll Initiative and take their Turn separately.",
                     "Even if there is no User, Independent Stands still have the 6 regular Ability Scores for the sake of determining other stats and mental Checks\/Saves. They can also still be hit 'directly' whether they do or don't have a separate User."
@@ -2227,7 +2227,7 @@
             },
             {
                 "name": "Materials",
-                "desc": "The following materials may be used to form spheres to use the Spin with. Objects that are not perfectly spherical may be Spun and thrown, but your Attack and Damage Rolls, as well as Range are all cut in half.",
+                "desc": "The following materials may be used to form Spheres to use the Spin with. Objects that are not perfectly spherical may be Spun and thrown, but your Attack and Damage Rolls, as well as Range are all cut in half.",
                 "table": {
                     "class": "minor widen",
                     "head": [
@@ -2247,7 +2247,7 @@
                             "Wood",
                             "40\/80m",
                             "xd8 Slashing",
-                            "The Wooden Sphere will splinter and shatter upon contact, causing splinters to fly off in all directions up to 5 meters from the point of the Sphere's impact. Those within 5 meters must make a Dex Save against your Spin DC (if targets are in the Long Range of this sphere, they have Advantage on this Save), taking full damage on a failed Save or half as much on a success. When used, this Sphere destroys itself."
+                            "The Wooden Sphere will splinter and shatter upon contact, causing splinters to fly off in all directions up to 5 meters from the point of the Sphere's impact. Those within 5 meters must make a Dex Save against your Spin DC (if targets are in the Long Range of this Sphere, they have Advantage on this Save), taking full damage on a failed Save or half as much on a success. When used, this Sphere destroys itself."
                         ],
                         [
                             "Rubber",
