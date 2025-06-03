@@ -2023,12 +2023,12 @@
                             "Act 1 (Long Range)",
                             "Custom Ability (Act 1)",
                             "Act Modifier",
+                            "OR",
+                            "Oblivious Facade",
                             "OR"
                         ],
                         "featFeatures": [
-                            "Clever Disguise",
-                            "OR",
-                            "Oblivious Facade"
+                            "Clever Disguise"
                         ]
                     },
                     "3": {

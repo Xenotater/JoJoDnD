@@ -1,12 +1,4 @@
 $(document).ready(function() {
-    $("#login-btn").click(function() {
-        popUp();
-    });
-
-    $("body").on("click", "#closeLogin", function() {
-        closePopUp();
-    });
-
     $("body").on("click", "#closeResponse", function() {
         closeResponse();
     });
@@ -40,22 +32,6 @@ $(document).ready(function() {
         $("#downloadSheet").attr("href", "Assets/translations/JoJo_Char_Sheet_" + getLanguage().toUpperCase() + ".pdf");
     }
 });
-
-function popUp() {
-    var newText = "<div id='popUp' class='center'><i id='closeLogin' class='bi bi-x-lg'></i>";
-    newText += "<div class='content' id='login-window'>";
-    newText += "<h2>Admin Login</h2>";
-    newText += "<form id='login-form'>";
-    newText += "<label for='user'>Username: </label><input type='text' id='user' name='user' required><br>";
-    newText += "<label for='pass'>Password: </label><input type='password' id='pass' name='pass' required><br>";
-    newText += "<input type='submit' value='Login' id='login'>"
-    newText += "</form></div></div>";
-    $("body").append(newText);
-}
-
-function closePopUp() {
-    $("#popUp").remove();
-}
 
 function respond(text) {
     closeResponse();
