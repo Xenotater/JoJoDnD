@@ -10,7 +10,7 @@
   $_SESSION["checkedUpdate"] = true;
 
   $version = $_POST["version"];
-  $latest = "1.13.0.1";
+  $latest = "1.13.0.2";
 
   if ($version != $latest) {
     header("Clear-Site-Data: \"cache\"");
