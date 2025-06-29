@@ -797,6 +797,7 @@
         "effects": [
             "<b>This Feat consumes 2 Feat slots, rather than 1<\/b>",
             "Pick a Stand-Type, Ripple, Spin, or a Non-Supernatural <a href='\/classes'>Class<\/a>. You are treated as if you have an amount of Levels in the Class equal to your Proficiency Bonus. You gain all of the Class Features that you would at that Level, but you do not gain additional health, Ability Score Increases (although you do gain the physical stat increases from Ripple), and your Proficiency Bonus does not increase.",
+            "You may not put Initiate Levels into the Class that you currently have the most Levels in.",
             "If you already have Levels in Stand User, either from this Feat or your regular Levels, you cannot use this Feat to gain Levels in a different type of Stand.",
             "Initiate Levels count towards any Abilities or Feats that have a Class prerequisite.",
             "You may take this Feat multiple times. Should you choose to do so, you may choose to gain an amount of Levels equal to your Proficiency Bonus in either the same or a different Class. You cannot have more Levels in an Initiate Class than you have in your regular Class."
@@ -1240,7 +1241,7 @@
         ],
         "effects": [
             "When you Grapple\/Shove an opponent (or are Grappled\/Shoved), you may make your Athletics Checks with Dexterity\/Precision instead of Strength.",
-            "When you have a creature Grappled, you may spend two Attacks or an Action in order to give a Grappled creature the Restrained Condition. At the end of the Restrained creature's Turns, they can make a Strength Saving Throw to escape against a DC of 8 + Athletics Bonus (Str or Dex), escaping the Restrained Condition on a successful Save, but not the Grapple. The Strength Saving throw penalty does not apply when trying to break the Grapple. The Restrained creature may also use its Action to make the Strength Saving Throw again.",
+            "When you have a creature Grappled, you may spend two Attacks or an Action in order to give a Grappled creature the Restrained Condition, which they'll have to escape first before attempting to escape the Grapple. At the end of the Restrained creature's Turns, they can make a Strength Saving Throw to escape against a DC of 8 + Athletics Bonus (Str or Dex), escaping the Restrained Condition on a successful Save, but not the Grapple. The Strength Saving throw penalty does not apply to this Save. The Restrained creature may also use its Action to make the Strength Saving Throw again.",
             "You can attempt to escape a Grapple (or the Restrained Condition caused by this Feat) as an Attack or Bonus Action rather than full Action. ",
             "If you Grapple\/Shove a <a href='\/classes?focus=Stands'>Stand User<\/a>, you may force them to use their User Stats instead of their Stand Stats so long as you also do not use Stand Stats. "
         ],
