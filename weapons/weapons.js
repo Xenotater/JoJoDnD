@@ -197,7 +197,7 @@ function hint(attr) { //this whole thing should be replaced by json..
         case "Complex":
             return("This weapon takes a total of three Attacks to reload.");
         case "Flame":
-            return("When a targeted creature or object takes Fire damage from this weapon, it is set ablaze (assuming the target is flammable).");
+            return("When an object not being worn or carried takes Fire damage from this weapon, it is set ablaze (assuming the target is flammable), allowing the fire to spread further from there.");
         case "Versatile":
             return("This weapon may be wielded with one or two hands. If two hands are used, it's damage becomes " + bonus + ".");
         case "Return":
