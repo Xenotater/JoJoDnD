@@ -1,0 +1,9 @@
+.border-img {
+    border: 2px solid purple;
+    border-radius: 15px;
+}
+
+.popout-img {
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}

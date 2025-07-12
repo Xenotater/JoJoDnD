@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --background: mediumslateblue;
+  --foreground: mediumpurple;
+  --border: purple;
+  --headerHeight: 100px;
+  --fullContentHeight: calc(100vh - var(--headerHeight));
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: black;
+  background: var(--background);
+  font-family: var(--font-playfair), 'Times New Roman', Times, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: purple;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: revert;
+}
+
+h1, h2 {
+  font-family: var(--font-playfair-display), 'Times New Roman', Times, serif;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* font override classes */
+.font-playfair {
+  font-family: var(--font-playfair), 'Times New Roman', Times, serif !important;
+}
+
+.font-playfair-display {
+  font-family: var(--font-playfair-display), 'Times New Roman', Times, serif !important;
+}
+
+.contentWrapper {
+  max-width: 95%;
+  margin: auto;
+  padding: 1rem;
+}
+
+.content {
+  padding: 1rem;
+  background-color: var(--foreground);
+  border: 5px solid purple;
+  border-radius: 10px;
+}
