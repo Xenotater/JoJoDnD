@@ -26,7 +26,8 @@ body {
   box-sizing: border-box;
 }
 
-a {
+a:not([class]) {
+  cursor: pointer;
   color: purple;
 }
 
@@ -60,4 +61,15 @@ h1, h2 {
   background-color: var(--foreground);
   border: 5px solid purple;
   border-radius: 10px;
+}
+
+@theme {
+  --color-jj-purple-1: purple;
+  --color-jj-purple-2: rgb(115, 0, 115);
+  --color-jj-purple-3: rgb(100, 0, 100);
+  --color-jj-purple-4: rgb(90, 0, 90);
+  --color-jj-mpurple-1: mediumpurple;
+  --color-jj-mpurple-2: rgb(132, 97, 202);
+  --color-jj-mpurple-3: rgb(115, 80, 185);
+  --color-jj-mpurple-4: rgb(99, 67, 161);
 }

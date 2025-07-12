@@ -1,0 +1,34 @@
+.header {
+  position: sticky;
+  top: 0;
+  background-color: purple;
+  border-bottom: 1px solid white;
+}
+
+.collapsed {
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  width: 250px;
+}
+
+.collapsed::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 100px;
+  width: 38.5px;
+  clip-path: polygon(100% 0, 98% 0, 0% 100%, 100% 100%);
+  background-color: white;
+}
+
+.mobileMenu {
+  background-color: purple;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  max-height: 45vh;
+  width: fit-content;
+  overflow-y: scroll;
+}
+
+.mobileMenuItem:not(:last-child) {
+  border-bottom: 2px dashed black;  
+}

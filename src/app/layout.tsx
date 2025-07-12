@@ -14,8 +14,11 @@ const pfDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "JoJo D&D",
-  description: "A JJBA Tabletop Game",
+  title:  {
+    template: "%s | JoJo D&D",
+    default: "JoJo D&D"
+  },
+  description: "A Tabletop Game based on JoJo's Bizarre Adventure",
 };
 
 export default function RootLayout({
