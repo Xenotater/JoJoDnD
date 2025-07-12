@@ -18,7 +18,7 @@ export default memo(function Header() {
 
   return (
     <div>
-      <div className={`${styles.header} ${isCollapsed ? styles.collapsed : ""} sticky top-[0] flex justify-between h-25`}>
+      <div className={`${styles.header} ${isCollapsed ? styles.collapsed : ""} fixed top-0 flex justify-between w-full h-25`}>
         <div className="flex items-center gap-2">
           <Link href="/"><Image src="/logo/icon.webp" alt="icon" width={216} height={90}/></Link>
           {isDesktopWidth && !isCollapsed &&
