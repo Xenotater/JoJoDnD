@@ -53,6 +53,7 @@ h1, h2 {
 .contentWrapper {
   max-width: 95%;
   margin: auto;
+  margin-top: var(--headerHeight);
   padding: 1rem;
 }
 
