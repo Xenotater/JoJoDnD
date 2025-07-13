@@ -1,0 +1,17 @@
+.socialEmbedBase {
+  display: block;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px black;
+  background-color: rgb(35, 39, 42);
+  width: 300px;
+  height: 104px;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.socialEmbedBase:hover {
+    background-color: rgb(30, 34, 37);
+    box-shadow: 5px 5px 10px black;
+}
