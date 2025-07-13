@@ -1,6 +1,6 @@
 import mysql from 'mysql2/promise';
 import { NextResponse } from 'next/server';
-import { logDBQuery } from './logging.utility';
+import { logDBQuery, logError } from './logging.utility';
 
 const connectParams = {
   host: 'localhost',
@@ -27,8 +27,7 @@ export async function doDBQuery(query: string, log: boolean = true) {
     return NextResponse.json(results, {status: 200});
   }
   catch (err) {
-    console.log("DB ERROR:");
-    console.log(err);
+    logError("DB ERROR: " + (err as Error).message);
     return NextResponse.json({error: err}, {status: 500})
   }
 }
