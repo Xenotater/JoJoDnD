@@ -5,20 +5,25 @@ import Image from "next/image";
 import { memo, useEffect, useState } from "react";
 import { BsCaretRightFill, BsCaretLeftFill, BsList } from "react-icons/bs";
 import DesktopHeaderList from "./Desktop/DesktopHeaderList";
+import MobileHeaderList from "./Mobile/MobileHeaderList";
+import { usePathname } from "next/navigation";
+
 
 import styles from "./Header.module.css";
-import MobileHeaderList from "./Mobile/MobileHeaderList";
-
 export default memo(function Header() {
   const [isDesktopWidth, setIsDesktopWidth] = useState(false);
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const path = usePathname();
   
   useEffect(() => {
     const handleResize = () => setIsDesktopWidth(window.innerWidth >= 1024);
     handleResize();
     window.addEventListener("resize", handleResize);
   }, []);
+
+  //close mobile menu on navigation if open
+  useEffect(() => setIsMenuOpen(false), [path]);
 
   return (
     <div>
