@@ -1,6 +1,6 @@
 .header {
   background-color: purple;
-  border-bottom: 1px solid white;
+  border-bottom: 2px solid white;
 }
 
 .collapsed {
@@ -22,7 +22,7 @@
   background-color: purple;
   border-bottom: 1px solid white;
   border-left: 1px solid white;
-  max-height: 45vh;
+  max-height: 42vh;
   width: fit-content;
   overflow-y: scroll;
 }

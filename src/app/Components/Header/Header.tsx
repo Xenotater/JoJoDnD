@@ -13,14 +13,18 @@ export default memo(function Header() {
   const [isDesktopWidth, setIsDesktopWidth] = useState(false);
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  useEffect(() => setIsDesktopWidth(window.innerWidth >= 1024), []);
+  
+  useEffect(() => {
+    const handleResize = () => setIsDesktopWidth(window.innerWidth >= 1024);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div>
-      <div className={`${styles.header} ${isCollapsed ? styles.collapsed : ""} fixed top-0 flex justify-between w-full h-25`}>
+      <div className={`${styles.header} ${isCollapsed ? styles.collapsed : ""} fixed top-0 z-100 flex justify-between w-full ${isDesktopWidth ? "h-25" : "h-18"}`}>
         <div className="flex items-center gap-2">
-          <Link href="/"><Image src="/logo/icon.webp" alt="icon" width={216} height={90}/></Link>
+          <Link href="/"><Image src="/logo/icon.webp" alt="icon" width={isDesktopWidth ? 216 : 144} height={isDesktopWidth ? 90 : 60}/></Link>
           {isDesktopWidth && !isCollapsed &&
             <DesktopHeaderList/>
           }

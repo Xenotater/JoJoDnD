@@ -1,13 +1,6 @@
-export default function RulesPage() {
-  return (
-    <div>
-      <h1>Rules</h1>
-      <p>Rules page placeholder</p>
-    </div>
-  )
-}
+import { redirect } from "next/navigation"
 
-export const metadata = {
-  title: "Rules",
-  description: "Basic rules for JoJo's Bizarre Tabletop Game"
+//rules stub page, no content, redirect to subcategory page
+export default function RulesPage() {
+  redirect("/rules/basics");
 }

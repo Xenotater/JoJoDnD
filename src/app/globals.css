@@ -56,6 +56,9 @@ h1, h2 {
 }
 
 .contentWrapper {
+  display: flex;
+  justify-content: center;
+  height: calc(100vh - var(--headerHeight));
   max-width: 95%;
   margin: auto;
   margin-top: var(--headerHeight);
@@ -65,7 +68,7 @@ h1, h2 {
 .content {
   padding: 1rem;
   background-color: var(--foreground);
-  border: 5px solid purple;
+  border: 5px solid var(--border);
   border-radius: 10px;
 }
 
@@ -78,4 +81,10 @@ h1, h2 {
   --color-jj-mpurple-2: rgb(132, 97, 202);
   --color-jj-mpurple-3: rgb(115, 80, 185);
   --color-jj-mpurple-4: rgb(99, 67, 161);
+}
+
+@media (max-width: 1024) {
+  :root {
+    --headerHeight: 72px;
+  }
 }

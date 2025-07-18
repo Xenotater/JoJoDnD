@@ -1,0 +1,29 @@
+.rulesTab {
+  right: calc(150px - 14vw); /* approx. stays where desired */
+  transition: right .125s ease-in-out;
+  border: 1px solid black;
+  clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0% 100%, 12.5% 50%, 0% 0%);
+}
+
+.rulesTab::before {
+    content: "";
+    height: 52px;
+    width: 28px;
+    background-color: black;
+    clip-path: polygon(100% 50%, -2% 0, -2% 100%);
+}
+
+.rulesTab::after {
+    position: absolute;
+    right: 0;
+    content: "";
+    height: 52px;
+    width: 24px;
+    background-color: black;
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 100% 50%, 0% 0%);
+}
+
+.rulesTab.selectedTab, .rulesTab:hover {
+  right: calc(175px - 14vw);
+  transition: right .125s ease-in-out;
+}

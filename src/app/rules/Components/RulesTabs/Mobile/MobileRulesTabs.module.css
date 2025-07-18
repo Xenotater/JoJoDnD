@@ -1,0 +1,74 @@
+.rulesTab {
+  border: 1px solid black;
+  writing-mode: vertical-rl;
+  overflow: hidden;
+  max-height: 1000px;
+  transition: max-height 2s cubic-bezier(0, 1, 0, 1);
+  clip-path: polygon(100% 0, 100% calc(100% - 15px), 50% 100%, 0 calc(100% - 15px), 0 0, 50% 15px);
+}
+
+.rulesTab::before {
+  content: "";
+  width: 35px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: -1px;
+  background-color: black;
+  clip-path: polygon(100% 0, 50% 15px, 0 0);
+}
+
+.rulesTab::after {
+  content: "";
+  width: 35px;
+  height: 15px;
+  position: absolute;
+  bottom: 0;
+  left: -1px;
+  background-color: black;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 50% 100%, 100% 0);
+}
+
+.rulesTab:not([class*="selectedTab"]) {
+  max-height: 70px;
+  transition: max-height 1s ease-in-out;
+}
+
+.rulesTab:not([class*="selectedTab"]):hover {
+  max-height: 1000px;
+  transition: max-height 1s ease-in-out;
+}
+
+.selectedTab, .selectedTab[class*="hoverFix"]:hover {
+  max-height: 80px;
+  transition: max-height 1s ease-in-out;
+}
+
+.selectedTab:hover {
+  max-height: 1000px;
+  transition: max-height 1s ease-in-out;
+}
+
+.selectedTab .tabText::after, .selectedTab[class*="hoverFix"] .tabText:hover::after {
+  content: "";
+  width: 35px;
+  height: 20px;
+  position: absolute;
+  bottom: 0;
+  left: -1px;
+  background: linear-gradient(transparent, var(--color-jj-mpurple-3));
+}
+
+.rulesTab:not([class*="selectedTab"]) .tabText::before {
+  content: "";
+  width: 35px;
+  height: 20px;
+  position: absolute;
+  top: 40px;
+  left: -1px;
+  background: linear-gradient(transparent, var(--color-jj-mpurple-1));
+}
+
+.selectedTab .tabText:hover::after, .rulesTab .tabText:hover::before {
+  content: unset;
+}
