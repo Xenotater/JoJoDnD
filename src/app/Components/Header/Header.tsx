@@ -17,7 +17,13 @@ export default memo(function Header() {
   const path = usePathname();
   
   useEffect(() => {
-    const handleResize = () => setIsDesktopWidth(window.innerWidth >= 1024);
+    const handleResize = () => {
+      setIsDesktopWidth(window.innerWidth >= 1024);
+      if (window.innerWidth < 1024)
+        setIsCollapsed(false);
+      else
+        setIsMenuOpen(false);
+    };
     handleResize();
     window.addEventListener("resize", handleResize);
   }, []);
