@@ -10,23 +10,20 @@ import { usePathname } from "next/navigation";
 
 
 import styles from "./Header.module.css";
+import { useResize } from "@/app/Hooks/useResize";
 export default memo(function Header() {
-  const [isDesktopWidth, setIsDesktopWidth] = useState(false);
+  const [isDesktopWidth, setIsDesktopWidth] = useState(true);
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const path = usePathname();
   
-  useEffect(() => {
-    const handleResize = () => {
-      setIsDesktopWidth(window.innerWidth >= 1024);
-      if (window.innerWidth < 1024)
-        setIsCollapsed(false);
-      else
-        setIsMenuOpen(false);
-    };
-    handleResize();
-    window.addEventListener("resize", handleResize);
-  }, []);
+  useResize(() => {
+    setIsDesktopWidth(window.innerWidth >= 1024);
+    if (window.innerWidth < 1024)
+      setIsCollapsed(false);
+    else
+      setIsMenuOpen(false);
+  });
 
   //close mobile menu on navigation if open
   useEffect(() => setIsMenuOpen(false), [path]);

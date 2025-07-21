@@ -16,7 +16,9 @@ export default function RulesLayout({
 			<PageTitle title="Rules of the Game"/>
 			<div className="flex w-full flex-wrap min-h-[80%] content-start">
 				<RulesTabs/>
-				<div className="content grow z-1 min-w-[85%] min-h-[70vh]"><div className="p-8 pt-2">{children}</div></div>
+				<div className="content grow z-1 w-[85%] min-h-[70vh]">
+					{children}
+				</div>
 			</div>
 		</div>
 	)

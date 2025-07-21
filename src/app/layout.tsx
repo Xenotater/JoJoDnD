@@ -33,7 +33,7 @@ export default function RootLayout({
         <Header/>
       </header>
         <div className="contentWrapper">
-          {children}
+          <div className="w-full max-w-[95vw] m-auto">{children}</div>
         </div>
       </body>
     </html>

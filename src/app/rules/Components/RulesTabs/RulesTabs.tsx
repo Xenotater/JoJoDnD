@@ -1,21 +1,18 @@
 "use client";
 
-import { MouseEvent, TouchEvent, useEffect, useState } from "react";
+import { TouchEvent, useState } from "react";
 
 import {tabs} from '@/../public/data/rules.json';
 import DesktopRulesTabItem from "./Desktop/DesktopRulesTabItem";
 import MobileRulesTabItem from "./Mobile/MobileRulesTabItem";
 import { redirect, usePathname } from "next/navigation";
+import { useResize } from "@/app/Hooks/useResize";
 
 export default function RulesTabs() {
-  const [isDesktopWidth, setIsDesktopWidth] = useState(false);
+  const [isDesktopWidth, setIsDesktopWidth] = useState(true);
   const path = usePathname();
   
-  useEffect(() => {
-    const handleResize = () => setIsDesktopWidth(window.innerWidth >= 1024);
-    handleResize();
-    window.addEventListener("resize", handleResize);
-  }, []);
+  useResize(() => setIsDesktopWidth(window.innerWidth >= 1024));
 
   const tabList = tabs.map((t) => {
     const selected = decodeURIComponent(path).includes(t.title.toLowerCase());
