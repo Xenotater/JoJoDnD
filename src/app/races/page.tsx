@@ -4,7 +4,7 @@ export default function RacesPage() {
       <h1>Races</h1>
       <p>Races page placeholder</p>
     </div>
-  )
+  );
 }
 
 export const metadata = {

@@ -18,5 +18,5 @@ export default function DesktopHeaderItem({item}: {item: HeaderItem}) {
       <Image src={`/nav/${item.icon}.webp`} alt={item.icon} width={screenWidth > shrinkWidth ? 50 : 45} height={screenWidth > shrinkWidth ? 50 : 45}/>
       <span className={screenWidth > shrinkWidth ? "text-xl" : "text-md"}>{item.name}</span>
     </Link>
-  )
+  );
 }

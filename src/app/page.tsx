@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Divider from "./Components/Divider/Divider";
+import Divider from "./Components/Layout/Divider/Divider";
 import Link from "next/link";
 import PatreonList from "./Components/PatreonList/PatreonList";
 import DiscordEmbed from "./Components/SocialEmbeds/DiscordEmbed/DiscordEmbed";
@@ -15,9 +15,9 @@ export default function Home() {
         <Divider/>
       </div>
       <div className="content">
-        <h2>Including Stand Users, Vampires, Pillar Men, and more, this extensive D&D-inspired system allows you to create your very own Bizarre Adventure!</h2>
-        <h3>Use the tabs at the top of the page to navigate the system&apos;s resources and create a world filled with characters with any of the races and abilities from JoJo&apos;s.</h3>
-        <h3>New to the system? Start with the <Link href='/rules'>Rules</Link>.</h3>
+        <h2 className="text-2xl">Including Stand Users, Vampires, Pillar Men, and more, this extensive D&D-inspired system allows you to create your very own Bizarre Adventure!</h2>
+        <h5>Use the tabs at the top of the page to navigate the system&apos;s resources and create a world filled with characters with any of the races and abilities from JoJo&apos;s.</h5>
+        <h5>New to the system? Start with the <Link href='/rules'>Rules</Link>.</h5>
         <Divider/>
         <div className="flex flex-col gap-2">
           <p><u>Created by Maggy Bledsoe</u>, playtested by Hayden C., Kyler Froman, Donovan Hord, Thalia Huebner, and Ty Ostrander.</p>

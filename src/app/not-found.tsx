@@ -9,5 +9,5 @@ export default function NotFound() {
         <br></br>If you think this is an error, contact an administrator.
       </h3>
     </div>
-  )
+  );
 }

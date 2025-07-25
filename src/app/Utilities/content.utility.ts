@@ -1,4 +1,4 @@
-import {tabs} from '@/../public/data/rules.json';
+import {tabs} from "@/../public/data/rules.json";
 
 export function getRulesContent() {
   return tabs;

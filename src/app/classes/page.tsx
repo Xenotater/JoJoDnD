@@ -4,7 +4,7 @@ export default function ClassesPage() {
       <h1>Classes</h1>
       <p>Classes page placeholder</p>
     </div>
-  )
+  );
 }
 
 export const metadata = {

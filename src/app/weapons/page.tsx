@@ -4,7 +4,7 @@ export default function WeaponsPage() {
       <h1>Weapons</h1>
       <p>Weapons page placeholder</p>
     </div>
-  )
+  );
 }
 
 export const metadata = {

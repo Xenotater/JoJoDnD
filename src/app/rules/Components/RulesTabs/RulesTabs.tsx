@@ -2,7 +2,7 @@
 
 import { TouchEvent, useState } from "react";
 
-import {tabs} from '@/../public/data/rules.json';
+import {tabs} from "@/../public/data/rules.json";
 import DesktopRulesTabItem from "./Desktop/DesktopRulesTabItem";
 import MobileRulesTabItem from "./Mobile/MobileRulesTabItem";
 import { redirect, usePathname } from "next/navigation";

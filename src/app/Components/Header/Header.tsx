@@ -51,5 +51,5 @@ export default memo(function Header() {
         <MobileHeaderList/>
       }
     </div>
-  )
+  );
 })

@@ -4,7 +4,7 @@ export default function FamiliarsPage() {
       <h1>Familiars</h1>
       <p>Familiars page placeholder</p>
     </div>
-  )
+  );
 }
 
 export const metadata = {

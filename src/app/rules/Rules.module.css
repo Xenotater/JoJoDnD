@@ -1,0 +1,24 @@
+.rulesContentWrapper div:has(> div > table[class*="expTable"]) {
+  display: flex;
+  justify-content: space-around;
+}
+.rulesContentWrapper table[class*="expTable"] {
+  width: 60%;
+  min-width: 200px;
+  margin: 1rem auto 1rem auto;
+}
+.rulesContentWrapper table[class*="expTable"] thead {
+  background-color: yellow;
+}
+.rulesContentWrapper table[class*="expTable"] td {
+  background-color: lightgreen;
+}
+.rulesContentWrapper table[class*="expTable"] th, .rulesContentWrapper table[class*="expTable"] td {
+  border: 1px solid black;
+}
+
+@media (max-width: 1023) {
+  .rulesContentWrapper div:has(> div > table[class*="expTable"]) {
+    flex-wrap: wrap;
+  }
+}

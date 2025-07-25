@@ -14,5 +14,5 @@ export default async function RedditEmbed() {
       members={redditInfo.data.subscribers} active={redditInfo.data.active_user_count}
       icon={redditInfo.data.community_icon.replace(/\?.*/, "")}
     />
-  )
+  );
 }

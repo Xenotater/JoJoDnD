@@ -1,5 +1,7 @@
-import RulesTabs from './Components/RulesTabs/RulesTabs'
-import PageTitle from '../Components/PageTitle/PageTitle'
+import RulesTabs from "./Components/RulesTabs/RulesTabs";
+import PageTitle from "../Components/Layout/Typography/PageTitle";
+
+import styles from "./Rules.module.css";
 
 export const metadata = {
   title: "Rules",
@@ -16,10 +18,10 @@ export default function RulesLayout({
 			<PageTitle title="Rules of the Game"/>
 			<div className="flex w-full flex-wrap min-h-[80%] content-start">
 				<RulesTabs/>
-				<div className="content grow z-1 w-[85%] min-h-[70vh]">
+				<div className={`${styles.rulesContentWrapper} content grow z-1 w-[85%] min-h-[70vh]`}>
 					{children}
 				</div>
 			</div>
 		</div>
-	)
+	);
 }

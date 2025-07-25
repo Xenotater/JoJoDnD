@@ -6,5 +6,5 @@ export default function DesktopHeaderList() {
     <div className="flex h-full">
       {headerItems.map((item) => <DesktopHeaderItem key={item.name} item={item}/>)}
     </div>
-  )
+  );
 }

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { doGetPatrons } from "./patreon.utility"
+import { doGetPatrons } from "./patreon.utility";
 
 export default async function PatreonList() {
   const list = await doGetPatrons();
@@ -12,5 +12,5 @@ export default async function PatreonList() {
       <br/>
       Want to support us? Check out our <Link  href="https://www.patreon.com/user/posts?u=122316948">Patreon</Link>!
     </p>
-  )
+  );
 }

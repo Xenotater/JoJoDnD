@@ -13,5 +13,5 @@ export default function MobileHeaderItem({item}: {item: HeaderItem}) {
       <Image src={`/nav/${item.icon}.webp`} alt={item.icon} width={25} height={25}/>
       <span className="text-2xl">{item.name}</span>
     </Link>
-  )
+  );
 }

@@ -45,5 +45,5 @@ export default function PreviewLink(props: LinkProps & {children: React.ReactNod
         </DisplayModal>
       }
     </>
-  )
+  );
 }

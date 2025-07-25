@@ -4,7 +4,7 @@ export default function FeatsPage() {
       <h1>Feats</h1>
       <p>Feats page placeholder</p>
     </div>
-  )
+  );
 }
 
 export const metadata = {

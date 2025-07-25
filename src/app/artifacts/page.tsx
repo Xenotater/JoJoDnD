@@ -4,7 +4,7 @@ export default function ArtifactsPage() {
       <h1>Artifacts</h1>
       <p>Artifacts page placeholder</p>
     </div>
-  )
+  );
 }
 
 export const metadata = {

@@ -14,5 +14,5 @@ export default async function DiscordEmbed() {
       members={discordInfo.approximate_member_count} active={discordInfo.approximate_presence_count}
       icon={`https://cdn.discordapp.com/icons/${discordInfo.guild.id}/${discordInfo.guild.icon}.gif`}
     />
-  )
+  );
 }
