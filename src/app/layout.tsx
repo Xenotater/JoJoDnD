@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Playfair, Playfair_Display } from "next/font/google";
+import { Outfit, Playfair } from "next/font/google";
 import "./globals.css";
 import Header from "./Components/Header/Header";
 
-const pf = Playfair({
+const playfair = Playfair({
   variable: "--font-playfair",
   subsets: ["latin"],
 });
 
-const pfDisplay = Playfair_Display({
-  variable: "--font-playfair-display",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
 });
 
@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${pf.variable} ${pfDisplay.variable}`}>
+      <body className={`${playfair.variable} ${outfit.variable}`}>
       <header>
         <Header/>
       </header>

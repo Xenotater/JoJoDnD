@@ -2,7 +2,7 @@ import FancyDivider from "../Divider/FancyDivider";
 
 export default function PageTitle({title}: {title: string}) {
   return (
-    <div className="flex flex-col items-center w-full mb-4">
+    <div className="flex flex-col items-center w-full mb-4 text-center">
       <h1>{title}</h1>
       <FancyDivider/>
     </div>

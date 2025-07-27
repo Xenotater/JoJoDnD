@@ -32,9 +32,8 @@ body {
 .font-playfair {
   font-family: var(--font-playfair), 'Times New Roman', Times, serif !important;
 }
-
-.font-playfair-display {
-  font-family: var(--font-playfair-display), 'Times New Roman', Times, serif !important;
+.font-outfit {
+  font-family: var(--font-outfit), 'Arial', Arial, Helvetica, sans-serif !important;
 }
 
 .contentWrapper {
@@ -75,19 +74,17 @@ body {
 
 @layer base {
   h1 {
-    font-size: var(--text-4xl);
-    font-family: var(--font-playfair-display), 'Times New Roman', Times, serif;
+    font-size: var(--text-5xl);
     font-weight: bold;
     margin-bottom: 1rem;
   }
   h2 {
-    font-size: var(--text-3xl);
-    font-family: var(--font-playfair-display), 'Times New Roman', Times, serif;
+    font-size: var(--text-4xl);
     font-weight: bold;
     margin-bottom: 1rem;
   }
   h3 {
-    font-size: var(--text-2xl);
+    font-size: var(--text-3xl);
   }
   h4 {
     font-size: var(--text-xl);

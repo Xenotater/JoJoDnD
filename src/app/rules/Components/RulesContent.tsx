@@ -14,7 +14,7 @@ export default function RulesContent({data}: {data: RulesTabData | undefined}) {
             <ContentHeading as="h3" className="mb-2 mt-6"><b>{section.heading}</b></ContentHeading>
             {section.items.map((item, i) => (
               <div key={item.subheading + i}>
-                <h3 className="underline mt-2"><b>{item.subheading}</b></h3>
+                <h4 className="underline mt-2"><b>{item.subheading}</b></h4>
                 {item.details.map((detail, i) => (
                   <p className="indent-4" key={item.subheading + "-detail-" + i} dangerouslySetInnerHTML={{__html: detail}}/>
                 ))}
