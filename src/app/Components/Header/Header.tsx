@@ -16,6 +16,15 @@ export default memo(function Header() {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const path = usePathname();
+
+  //content space gets bigger when header is collapsed
+  const handleCollapse = () => {
+    if (!isCollapsed)
+      document.querySelector(".contentWrapper")?.setAttribute("style", "margin-top: 0; height: 100vh;");
+    else
+      document.querySelector(".contentWrapper")?.removeAttribute("style");
+    setIsCollapsed(!isCollapsed);
+  };
   
   useResize(() => {
     setIsDesktopWidth(window.innerWidth >= 1024);
@@ -38,7 +47,7 @@ export default memo(function Header() {
           }
         </div>
         {isDesktopWidth ?
-          <div className={`cursor-pointer h-min text-white absolute ${isCollapsed ? "top-[4] right-[16]" : "top-[8] right-[8]"}`} onClick={() => setIsCollapsed(!isCollapsed)}>
+          <div className={`cursor-pointer h-min text-white absolute ${isCollapsed ? "top-[4] right-[16]" : "top-[8] right-[8]"}`} onClick={() => handleCollapse()}>
             {isCollapsed ? <BsCaretRightFill size={"2rem"}/> : <BsCaretLeftFill size="2rem"/>}
           </div>
           :

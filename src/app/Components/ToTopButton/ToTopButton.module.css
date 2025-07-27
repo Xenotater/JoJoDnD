@@ -1,0 +1,16 @@
+.topButton {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: var(--color-jj-mpurple-1);
+  padding: 0.25rem;
+  box-shadow: 2px 2px 5px black;
+  cursor: pointer;
+}
+
+.topButton:hover {
+  background-color: var(--color-jj-mpurple-2);
+  bottom: 2.25rem;
+}
