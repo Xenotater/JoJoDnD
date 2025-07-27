@@ -34,7 +34,7 @@ export default function ToTopButton() {
     <>
       {scrollCheck.current &&
       <button className={styles.topButton} onClick={() => getContentWrapper()?.scroll({top: 0, behavior: "smooth"})}>
-        <BsArrowUp size={"2rem"}/>
+        <BsArrowUp/>
       </button>
       }
     </>

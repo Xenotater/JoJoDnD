@@ -1,5 +1,6 @@
 .topButton {
   position: fixed;
+  z-index: 100;
   bottom: 2rem;
   left: 2rem;
   border: 2px solid black;
@@ -8,9 +9,23 @@
   padding: 0.25rem;
   box-shadow: 2px 2px 5px black;
   cursor: pointer;
+  font-size: var(--text-4xl);
 }
 
 .topButton:hover {
   background-color: var(--color-jj-mpurple-2);
   bottom: 2.25rem;
+}
+
+@media (max-width: 1023) {
+  .topButton {
+    bottom: 1.25rem;
+    left: 1.25rem;
+    box-shadow: 1px 1px 3px black;
+    font-size: var(--text-2xl);
+  }
+
+  .topButton:hover {
+    bottom: 1.25rem;
+  }
 }
