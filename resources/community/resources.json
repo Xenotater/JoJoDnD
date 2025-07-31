@@ -188,6 +188,25 @@
       "alt": "Fodder Stand Disks"
     },
     {
+      "title": "Shame's JJBTT Sheet",
+      "img": "Assets/Shames Sheets/Shame_Sheet.webp",
+      "desc": "An alternate stylized character sheet. Created by Shame.",
+      "versions": [
+        {
+          "name": "Standard Sheet",
+          "link": "Assets/Shames Sheets/Shame_Sheet_Standard.pdf"
+        },
+        {
+          "name": "Stat-Scale Sheet",
+          "link": "Assets/Shames Sheets/Shame_Sheet_Stat_Scale.pdf"
+        },
+        {
+          "name": "Simplified Sheet",
+          "link": "Assets/Shames Sheets/Shame_Sheet_Simplified.pdf"
+        }
+      ]
+    },
+    {
       "title": "​Feature Yours Here!",
       "img": "Assets/jotaro.webp",
       "desc": "Want your work featured here? Reach out to Kyler (Xenotater) through our Community Discord.",
