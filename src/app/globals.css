@@ -48,13 +48,6 @@ body {
   
 }
 
-.content {
-  padding: 1rem;
-  background-color: var(--foreground);
-  border: 5px solid var(--border);
-  border-radius: 10px;
-}
-
 @theme {
   --color-jj-purple-1: purple;
   --color-jj-purple-2: rgb(115, 0, 115);
@@ -64,6 +57,8 @@ body {
   --color-jj-mpurple-2: rgb(132, 97, 202);
   --color-jj-mpurple-3: rgb(115, 80, 185);
   --color-jj-mpurple-4: rgb(99, 67, 161);
+  --color-jj-grayple-1: rgb(127, 99, 184);
+  --color-jj-grayple-2: rgb(113, 87, 163);
 }
 
 @media (max-width: 1023) {
@@ -109,6 +104,24 @@ body {
     color: rgb(124, 0, 124);
   }
 
+  button {
+    border: 1px solid black;
+    padding: 0 0.5rem;
+    cursor: pointer;
+  }
+
+  button:hover {
+    box-shadow: 1px 1px 3px 1px black;
+    background-color: var(--color-jj-mpurple-2);
+  }
+
+  .content {
+    padding: 1rem;
+    background-color: var(--foreground);
+    border: 5px solid var(--border);
+    border-radius: 10px;
+  }
+
   .content table[class*="table-striped"] {
     width: 100%;
     border-collapse: collapse;
@@ -126,5 +139,9 @@ body {
   .content table[class*="table-striped"] td {
     padding: 4px;
     font-size: var(--text-lg);
+  }
+
+  .hideScroll {
+    scrollbar-width: none;
   }
 }

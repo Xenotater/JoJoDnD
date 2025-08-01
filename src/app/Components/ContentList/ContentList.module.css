@@ -1,0 +1,36 @@
+.list .listHead > div {
+  border: none;
+  border-top: 2px solid black;
+}
+
+.list .listHead {
+  border-bottom: 2px solid var(--border);
+}
+
+.list .listHead > div > div:not(:last-child) {
+  border-right: 1px solid black;
+}
+
+.list .listBody {
+  height: calc(100% - var(--headHeight));
+}
+
+.list .listBody > div:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+
+.list .listBody .subItems > div {
+  background-color: var(--color-jj-grayple-1);
+}
+
+.list .listBody .subItems > div:hover {
+  background-color: var(--color-jj-grayple-2);
+}
+
+.list .listBody .subItems > div:not(:last-child) {
+  border-bottom: 1px dashed black;
+}
+
+.subItems > div > div {
+  padding-left: calc(0.5rem + 0.5rem * var(--depth));
+}

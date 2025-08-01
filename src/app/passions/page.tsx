@@ -1,10 +1,10 @@
+import { redirect } from "next/navigation";
+import { getFirstItem } from "../Utilities/content.utility";
+import { PassionData } from "../Models/Passions.model";
+
+//passions stub page, no content, redirect to subcategory page
 export default function PassionsPage() {
-  return (
-    <div>
-      <h1>Passions</h1>
-      <p>Passions page placeholder</p>
-    </div>
-  );
+  redirect("/passions/" + encodeURIComponent((getFirstItem("Passions") as PassionData).name.toLowerCase()));
 }
 
 export const metadata = {
