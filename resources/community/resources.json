@@ -92,21 +92,21 @@
     {
       "title": "The Chained",
       "img": "Assets/The Chained/chained.webp",
-      "desc": "A Stand Typing designed for villians, antagonists, and more evil characters. Created by Sammick.",
+      "desc": "A Stand Typing designed for villians, antagonists, and more evil characters. Created by Is Samwise?.",
       "link": "https://docs.google.com/document/d/1Tbma06ljPwse427HB9AHm0QSb10c-1bVgkmxeC7i9No/edit?usp=sharing",
       "alt": "The Chained"
     },
     {
       "title": "The Ballista",
       "img": "Assets/The Ballista/ballista.webp",
-      "desc": "A Stand Typing that is physically powerful with long range, but also a bit more fragile and slower. Created by Sammick.",
+      "desc": "A Stand Typing that is physically powerful with long range, but also a bit more fragile and slower. Created by Is Samwise?.",
       "link": "https://docs.google.com/document/d/1fFWTpAJ-vrfM-HwPJPlAvmXHqPSEMACfwr7ukgnH5Vw/edit?usp=drivesdk",
       "alt": "The Ballista"
     },
     {
       "title": "Level Helper",
       "img": "Assets/Level Helper/helper.webp",
-      "desc": "A table of level based stuff like Proficiency Bonuses, Ability Dice, and more. Created by Sammick.",
+      "desc": "A table of level based stuff like Proficiency Bonuses, Ability Dice, and more. Created by Is Samwise?.",
       "link": "https://docs.google.com/spreadsheets/d/1rAwnVnnurLVH13rcwskcD9VhfLYgQ34blORD_N8bWIA/edit?usp=sharing",
       "alt": "Helper"
     },
@@ -148,7 +148,7 @@
     {
       "title": "The Powerhouse",
       "img": "Assets/The Powerhouse/powerhouse.webp",
-      "desc": "A stand built to be physically unstoppable at the cost of nearly no development potential. Created by Sammick.",
+      "desc": "A stand built to be physically unstoppable at the cost of nearly no development potential. Created by Is Samwise?.",
       "link": "https://docs.google.com/document/d/1cOMwQvtzTq9W1Wp2zrZ4mcYrivlGINlXnB2hQcNiuJ8/edit#heading=h.i0u1y3gt0ooa",
       "alt": "Powerhouse Stand"
     },
@@ -169,14 +169,14 @@
     {
       "title": "Alternate Evolutions",
       "img": "Assets/Alternate Evolutions/evolution.webp",
-      "desc": "Alternate Stand Evolutions for Stands to grow in ways beyond the standard ways. Created by Sammick.",
+      "desc": "Alternate Stand Evolutions for Stands to grow in ways beyond the standard ways. Created by Is Samwise?.",
       "link": "https://docs.google.com/document/d/1mU8PGW3CQaeJsBmgUY1aAQknkZKDAXGImAsVkBhnwIc/edit?tab=t.0#heading=h.u3jyomu1gp6y",
       "alt": "Evolution"
     },
     {
       "title": "Form Shift Stand",
       "img": "Assets/Form Shift/shift.webp",
-      "desc": "A Feat for Stands that can switch between multiple different forms rather than being bound to one. Created by Sammick.",
+      "desc": "A Feat for Stands that can switch between multiple different forms rather than being bound to one. Created by Is Samwise?.",
       "link": "https://docs.google.com/document/d/1OpD4XuNdWAqRFiOUKB905DzeK_Ewbsv95XPWtvdW15g/edit?tab=t.0#heading=h.ip3xixal62vi",
       "alt": "Form Shift"
     },
@@ -205,6 +205,13 @@
           "link": "Assets/Shames Sheets/Shame_Sheet_Simplified.pdf"
         }
       ]
+    },
+    {
+      "title": "Power Type Rework",
+      "img": "Assets/Reworked Power Type/rework.webp",
+      "desc": "A reworked version of the Power-Type Class. Created by Is Samwise? and Edin.",
+      "link": "https://docs.google.com/document/d/15h8Mc6toSAwPq2a7Yoe-pKaOvbDcfthyO5VxwDsEQLY/edit?usp=sharing",
+      "alt": "Reworked Power Stand"
     },
     {
       "title": "​Feature Yours Here!",
