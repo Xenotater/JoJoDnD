@@ -148,7 +148,7 @@
     {
       "title": "The Powerhouse",
       "img": "Assets/The Powerhouse/powerhouse.webp",
-      "desc": "A stand built to be physically unstoppable at the cost of nearly no development potential. Created by Is Samwise?.",
+      "desc": "A Stand built to be physically unstoppable at the cost of nearly no development potential. Created by Is Samwise?.",
       "link": "https://docs.google.com/document/d/1cOMwQvtzTq9W1Wp2zrZ4mcYrivlGINlXnB2hQcNiuJ8/edit#heading=h.i0u1y3gt0ooa",
       "alt": "Powerhouse Stand"
     },
@@ -183,7 +183,7 @@
     {
       "title": "Fodder Stand Users",
       "img": "Assets/Fodder Stands/discs.webp",
-      "desc": "Pre-made stat blocks for lesser, unimportant stand users. Created by SlickNinja125.",
+      "desc": "Pre-made stat blocks for lesser, unimportant Stand users. Created by SlickNinja125.",
       "link": "https://docs.google.com/document/d/1omXrnXWNo5dext_r2stuV1ygNwgId75LEZlv-UqQDpc/edit?usp=drivesdk",
       "alt": "Fodder Stand Disks"
     },
@@ -212,6 +212,13 @@
       "desc": "A reworked version of the Power-Type Class. Created by Is Samwise? and Edin.",
       "link": "https://docs.google.com/document/d/15h8Mc6toSAwPq2a7Yoe-pKaOvbDcfthyO5VxwDsEQLY/edit?usp=sharing",
       "alt": "Reworked Power Stand"
+    },
+    {
+      "title": "Speed Type",
+      "img": "Assets/Speed Type/chariot.webp",
+      "desc": "Dangerous close-up fighters focused on speed and precision rather than raw power. Created by Lynxeon.",
+      "link": "https://docs.google.com/document/d/1-Z8jvHVGphwjulp7x1ACeVZojGl-7GZ1x7Dy_UwWef4/edit?usp=drivesdk",
+      "alt": "Speed-Type Silver Chariot"
     },
     {
       "title": "​Feature Yours Here!",
