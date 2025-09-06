@@ -3,7 +3,7 @@
 import ContentListItem from "./ContentListItem";
 
 import styles from "./ContentList.module.css";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { BsCaretDown, BsCaretDownFill, BsCaretUp, BsCaretUpFill, BsFilter, BsSearch } from "react-icons/bs";
 import ContentFilterModal from "./ContentFilterModal";
 import { getTags } from "@/app/Utilities/content.utility";
@@ -31,8 +31,9 @@ interface ContentListOptions {
   filter?: boolean;
 }
 
-//TODO: filter modal UI, keyboard navigation
+//TODO: split filter logic toggles per category, keyboard navigation
 export default function ContentList({content, title, options}: {content: ContentListData[], title: string, options?: ContentListOptions}) {
+  const listRef = useRef<HTMLDivElement>(null);
   const [contentList, setContentList] = useState(structuredClone(content));
   const [includeList, setIncludeList] = useState(new Set<string>());
   const [excludeList, setExcludeList] = useState(new Set<string>());
@@ -130,6 +131,32 @@ export default function ContentList({content, title, options}: {content: Content
     return filtered;
   }
 
+  useEffect(() => {
+    const listElem = listRef.current;
+    console.log(listElem);
+
+    if(listElem) {
+      const handleKeypress = (e: KeyboardEvent) => {
+        if (e.repeat)
+          return;
+        if (e.key == "ArrowDown" || e.key == "ArrowRight") {
+          e.preventDefault();
+          ((e.target as HTMLDivElement)?.nextSibling as HTMLDivElement)?.click();
+        }
+        if (e.key == "ArrowUp" || e.key == "ArrowLeft") {
+          e.preventDefault();
+          ((e.target as HTMLDivElement)?.previousSibling as HTMLDivElement)?.click();
+        }
+      };
+
+      listElem.addEventListener("keydown", handleKeypress);
+
+      return () => {
+        listElem.removeEventListener("keydown", handleKeypress);
+      }
+    }
+  }, []);
+
   return (
     <div
       style={{"--height": `${options?.height ?? ""}`, "--width": `${options?.width ?? ""}`, "--headHeight": `${options?.search ? "106px" : "76px"}`} as React.CSSProperties}
@@ -166,7 +193,7 @@ export default function ContentList({content, title, options}: {content: Content
           </div>
         }
       </div>
-      <div className={`${styles.listBody} relative overflow-y-scroll hideScroll`}>
+      <div ref={listRef} className={`${styles.listBody} relative overflow-y-scroll hideScroll`}>
         {contentList.map((c) => (
           <ContentListItem key={`list-row-${c.name}`} content={c} colWidths={options?.columns?.flatMap((c) => c.width ?? "auto")}/>
         ))}

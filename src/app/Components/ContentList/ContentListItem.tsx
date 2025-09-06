@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { KeyboardEvent, useEffect, useState } from "react";
 import { ContentListData } from "./ContentList";
 import { redirect, usePathname } from "next/navigation";
 
@@ -20,6 +20,7 @@ export default function ContentListItem({content, colWidths, depth}: {content: C
       const elem = document.querySelector(`[data-key="${content.name}"]`) as HTMLElement;
       const parent = document.querySelector(`.overflow-y-scroll:has([data-key="${content.name}"])`);
       parent?.scrollTo({top: elem?.offsetTop - 35, behavior: "smooth"});
+      elem.focus();
     }
   })
 
@@ -30,12 +31,17 @@ export default function ContentListItem({content, colWidths, depth}: {content: C
       redirect("/passions/" + encodeURIComponent(content.name.toLowerCase()));
   }
 
+  const handleKeyDown = (e: KeyboardEvent<HTMLDivElement>) => {
+    if (e.key == "Enter")     
+      handleClick();
+  }
+
   if (content.isFiltered)
     return <></>;
 
   return (
     <>
-      <div data-key={content.name} onClick={() => handleClick()}
+      <div data-key={content.name} onClick={() => handleClick()} onKeyDown={(e) => handleKeyDown(e)} tabIndex={0}
         className={`relative flex ${isLink ? "cursor-pointer" : ""} ${isSelected ? "font-bold bg-jj-mpurple-3 hover:bg-jj-mpurple-4" : "hover:bg-jj-mpurple-2"}`}
       >
         <div style={{"--colWidth": `${colWidths ? colWidths[0] : ""}`, "--depth": `${depth ? depth : ""}`} as React.CSSProperties} className={`${colWidths ? "w-(--colWidth)" : "w-fit"} p-1`}>{content.name}</div>
