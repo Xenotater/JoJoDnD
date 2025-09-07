@@ -3,8 +3,9 @@
 import { MouseEvent, useState } from "react";
 import DisplayModal from "./DisplayModal";
 import RulesContent from "@/app/rules/Components/RulesContent";
-import { getRuleContent } from "@/app/Utilities/content.utility";
+import { getPassionData, getRuleContent } from "@/app/Utilities/content.utility";
 import Link, { LinkProps } from "next/link";
+import PassionsContent from "@/app/passions/Components/PassionsContent";
 
 export default function PreviewLink(props: LinkProps & {children: React.ReactNode}) {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -15,9 +16,11 @@ export default function PreviewLink(props: LinkProps & {children: React.ReactNod
     const path = props.href?.toString().split("/");
     switch(path[1]) {
       case "rules":
-        return <RulesContent data={getRuleContent(decodeURIComponent(path[2]))}/>
+        return <RulesContent data={getRuleContent(decodeURIComponent(path[2]))}/>;
+      case "passions":
+        return <PassionsContent data={getPassionData(decodeURIComponent(path[2]))}/>;
       default:
-        return <div className="h-full"><h2>Error</h2><p>Content not found. Please contact an administrator.</p></div>
+        return <div className="h-full"><h2>Error</h2><p>Content not found. Please contact an administrator.</p></div>;
     }
   }
 

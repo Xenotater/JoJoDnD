@@ -1,12 +1,12 @@
 .divider {
-  width: 100%;
+  width: auto;
   height: 0;
   border-bottom: 2px dashed purple;
   margin: 1rem 0;
 }
 
 .verticalDivider {
-  height: 100%;
+  height: auto;
   width: 0;
   border-right: 2px dashed purple;
   margin: 0 1rem;

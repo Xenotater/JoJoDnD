@@ -1,4 +1,5 @@
 import ContentHeading from "@/app/Components/Layout/Typography/ContentHeading";
+import HTMLInclusiveText from "@/app/Components/Display/HTMLInclusiveText";
 import { RulesTabData } from "@/app/Models/Rules.model";
 
 export default function RulesContent({data}: {data: RulesTabData | undefined}) {
@@ -16,19 +17,19 @@ export default function RulesContent({data}: {data: RulesTabData | undefined}) {
               <div key={item.subheading + i}>
                 <h4 className="underline mt-2"><b>{item.subheading}</b></h4>
                 {item.details.map((detail, i) => (
-                  <p className="indent-4" key={item.subheading + "-detail-" + i} dangerouslySetInnerHTML={{__html: detail}}/>
+                  <HTMLInclusiveText as="p" className="indent-4" key={item.subheading + "-detail-" + i} text={detail}/>
                 ))}
                 {item.compactDetails && 
                   <div className="mt-2">
                     {item.compactDetails.map((compact, i) => (
-                      <p className="leading-4 mb-1" key={item.subheading + "-compact-" + i} dangerouslySetInnerHTML={{__html: compact}}/>
+                      <HTMLInclusiveText as="p" className="leading-4 mb-1" key={item.subheading + "-compact-" + i} text={compact}/>
                     ))}
                   </div>
                 }
                 {item.other &&
                   <div> 
                     {item.other.map((other, i) => (
-                      <div className="w-full" key={item.subheading + "-other-" + i} dangerouslySetInnerHTML={{__html: other}}/>
+                      <HTMLInclusiveText as="div" className="w-full" key={item.subheading + "-other-" + i} text={other}/>
                     ))}
                   </div>
                 }
