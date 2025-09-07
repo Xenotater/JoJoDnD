@@ -10,9 +10,7 @@ export default function HTMLInclusiveText({text, as, className}: {text: string, 
         content.map((c, i) => {
           if (i % 2 == 1)
           {
-            console.log(c);
             const url = c.replace(/(^.*href='|'>.*)/g, "");
-            console.log(url);
             const label = c.replace(/(^.*'>)/, "");
             return <PreviewLink key={`preview-${i}`} href={url}>{label}</PreviewLink>;
           }

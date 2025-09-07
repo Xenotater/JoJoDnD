@@ -7,6 +7,8 @@ import { useEffect, useRef, useState } from "react";
 import { BsCaretDown, BsCaretDownFill, BsCaretUp, BsCaretUpFill, BsFilter, BsSearch } from "react-icons/bs";
 import ContentFilterModal from "./ContentFilterModal";
 import { getTags } from "@/app/Utilities/content.utility";
+import { usePathname } from "next/navigation";
+import { toTitleCase } from "@/app/Utilities/misc.utility";
 
 export interface ContentListData {
   name: string;
@@ -33,6 +35,7 @@ interface ContentListOptions {
 
 //TODO: split filter logic toggles per category, keyboard navigation
 export default function ContentList({content, title, options}: {content: ContentListData[], title: string, options?: ContentListOptions}) {
+  const path = usePathname();
   const listRef = useRef<HTMLDivElement>(null);
   const [contentList, setContentList] = useState(structuredClone(content));
   const [includeList, setIncludeList] = useState(new Set<string>());
@@ -133,19 +136,28 @@ export default function ContentList({content, title, options}: {content: Content
 
   useEffect(() => {
     const listElem = listRef.current;
-    console.log(listElem);
+    const selectedElem = document.querySelector(`[data-key='${toTitleCase(decodeURIComponent(path.split("/")[2]))}']`);
 
     if(listElem) {
+
       const handleKeypress = (e: KeyboardEvent) => {
         if (e.repeat)
           return;
         if (e.key == "ArrowDown" || e.key == "ArrowRight") {
           e.preventDefault();
-          ((e.target as HTMLDivElement)?.nextSibling as HTMLDivElement)?.click();
+          const items = listElem.querySelectorAll("[data-nav='true']")
+          items.forEach((item, i) => {
+            if (item == selectedElem && i < items.length)
+              (items[i+1] as HTMLElement).click();
+          });
         }
         if (e.key == "ArrowUp" || e.key == "ArrowLeft") {
           e.preventDefault();
-          ((e.target as HTMLDivElement)?.previousSibling as HTMLDivElement)?.click();
+          const items = listElem.querySelectorAll("[data-nav='true']")
+          items.forEach((item, i) => {
+            if (item == selectedElem && i > 0)
+              (items[i-1] as HTMLElement).click();
+          });
         }
       };
 
@@ -155,7 +167,7 @@ export default function ContentList({content, title, options}: {content: Content
         listElem.removeEventListener("keydown", handleKeypress);
       }
     }
-  }, []);
+  }, [path]);
 
   return (
     <div
