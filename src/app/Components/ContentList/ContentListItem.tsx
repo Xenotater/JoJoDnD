@@ -28,7 +28,7 @@ export default function ContentListItem({content, colWidths, depth}: {content: C
     if (hasSubItems && (isSelected || !isLink))
       setIsExpanded(!isExpanded);
     if (isLink)
-      redirect("/passions/" + encodeURIComponent(content.name.toLowerCase()));
+      redirect(`/${path.split("/")[1]}/${encodeURIComponent(content.name.toLowerCase())}`);
   }
 
   const handleKeyDown = (e: KeyboardEvent<HTMLDivElement>) => {

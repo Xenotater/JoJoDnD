@@ -1,9 +1,11 @@
 import {tabs} from "@/../public/data/rules.json";
 import {passions, tags as passionTags} from "@/../public/data/passions.json";
+import {races} from "@/../public/data/races.json";
 import { ContentTags } from "../Models/Misc.model";
 
 export type dataTypes = "Rules"
-  | "Passions";
+  | "Passions"
+  | "Races";
 
 const getData = (type: dataTypes): unknown[] => {
   switch(type) {
@@ -11,6 +13,8 @@ const getData = (type: dataTypes): unknown[] => {
       return tabs;
     case "Passions":
       return passions;
+    case "Races":
+      return races;
     default:
       return [undefined];
   }
@@ -39,4 +43,8 @@ export function getFirstItem(type: dataTypes) {
 
 export function getPassionData(passion: string) {
   return passions.find((p) => p.name.toLowerCase() == passion.toLowerCase());
+}
+
+export function getRaceData(race: string) {
+  return races.find((r) => r.name.toLowerCase() == race.toLowerCase());
 }

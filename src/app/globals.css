@@ -90,7 +90,7 @@ body {
 
   .list-disc, .list-decimal {
     padding-left: 2rem;
-    display: inline-block;
+    display: block;
     margin: 0;
   }
 

@@ -7,5 +7,7 @@ interface FancyImageProps extends ImageProps {
 }
 
 export function FancyImage(props: FancyImageProps) {
-	return <Image className={`${styles[`${props.type}-img`]} ${props.className}`} src={props.src} alt={props.alt} width={props.width} height={props.height} />
+	return <Image className={`${styles[`${props.type}Img`]} ${props.className}
+	${props.className?.includes("w-") ? "" : "w-auto"} ${props.className?.includes("h-") ? "" : "h-auto"}`}
+	src={props.src} alt={props.alt} width={0} height={0} sizes="100vw"/>
 }

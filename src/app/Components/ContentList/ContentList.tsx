@@ -147,7 +147,7 @@ export default function ContentList({content, title, options}: {content: Content
           e.preventDefault();
           const items = listElem.querySelectorAll("[data-nav='true']")
           items.forEach((item, i) => {
-            if (item == selectedElem && i < items.length)
+            if (item == selectedElem && i < items.length - 1)
               (items[i+1] as HTMLElement).click();
           });
         }
@@ -174,9 +174,9 @@ export default function ContentList({content, title, options}: {content: Content
       style={{"--height": `${options?.height ?? ""}`, "--width": `${options?.width ?? ""}`, "--headHeight": `${options?.search ? "106px" : "76px"}`} as React.CSSProperties}
       className={`
         ${styles.list}
-        content flex flex-col p-0 max-w-[90vw] max-h-[40vh]
+        content flex flex-col p-0 max-w-[90vw] w-full
         ${options?.height ? `h-(--height)` : ""}
-        ${options?.width ? `w-(--width)` : "w-fit"}
+        ${options?.width ? `md:w-(--width)` : "md:w-fit"}
       `}
     >
       <div className={styles.listHead}>

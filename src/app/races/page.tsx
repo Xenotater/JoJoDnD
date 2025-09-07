@@ -1,10 +1,10 @@
-export default function RacesPage() {
-  return (
-    <div>
-      <h1>Races</h1>
-      <p>Races page placeholder</p>
-    </div>
-  );
+import { RaceData } from "@/app/Models/Races.model";
+import { getFirstItem } from "@/app/Utilities/content.utility";
+import { redirect } from "next/navigation";
+
+//races stub page, no content, redirect to subcategory page
+export default function PassionsPage() {
+  redirect("/races/" + encodeURIComponent((getFirstItem("Races") as RaceData).name.toLowerCase()));
 }
 
 export const metadata = {
