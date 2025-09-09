@@ -17,7 +17,7 @@ export default function RacesContent({data}: {data: RaceData | undefined}) {
           <span className="text-center">
             <b>Examples of {(data.name + 's').replace(/Mans$/g, "Men")}: </b>
             {data.examples.map((e, i) => (
-              <><a key={`example-${i}`} href={`https://jojowiki.com/${data.links![i]}`} target={"_blank"}><i>{e}</i></a>{i < data.examples!.length - 1 && ", "}</>
+              <span key={`example-${i}`} ><a href={`https://jojowiki.com/${data.links![i]}`} target={"_blank"}><i>{e}</i></a>{i < data.examples!.length - 1 && ", "}</span>
             ))}
           </span>
         }
