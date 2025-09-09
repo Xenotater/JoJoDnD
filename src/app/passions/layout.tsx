@@ -25,7 +25,7 @@ export default function PassionsLayout({
         <p>JoJo&apos;s Bizarre Adventure typically takes place in a modern world filled almost completely with Humans. Passions add variety when building a character.</p>
       </div>
       <div className="flex flex-wrap md:flex-nowrap gap-4">
-        <div className="shrink-0">
+        <div className="shrink-0 w-full">
           <ContentList content={listContent} title="Passions" options={{columns:[{name: "Passion", width: "47%", sort: true}, {name: "Ability", width: "53%", sort: true}], height: "400px", width: "350px", filter: true, search: true}}/>
         </div>
         {children}

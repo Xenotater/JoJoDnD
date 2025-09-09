@@ -174,7 +174,7 @@ export default function ContentList({content, title, options}: {content: Content
       style={{"--height": `${options?.height ?? ""}`, "--width": `${options?.width ?? ""}`, "--headHeight": `${options?.search ? "106px" : "76px"}`} as React.CSSProperties}
       className={`
         ${styles.list}
-        content flex flex-col p-0 max-w-[90vw] w-full
+        content flex flex-col p-0 w-full
         ${options?.height ? `h-(--height)` : ""}
         ${options?.width ? `md:w-(--width)` : "md:w-fit"}
       `}
