@@ -3,6 +3,7 @@ import PreviewLink from "@/app/Components/Display/PreviewLink";
 import { FancyImage } from "@/app/Components/FancyImage/FancyImage";
 import ContentHeading from "@/app/Components/Layout/Typography/ContentHeading";
 import { RaceData } from "@/app/Models/Races.model";
+import LevelTable from "@/app/Components/LevelTable/LevelTable";
 
 export default function RacesContent({data}: {data: RaceData | undefined}) {
   if (!data)
@@ -53,6 +54,20 @@ export default function RacesContent({data}: {data: RaceData | undefined}) {
       }
       {data.note2 &&
         <p><small><b>Note:</b> <HTMLInclusiveText as="i" text={data.note2}/></small></p>
+      }
+      {data.levels &&
+        <div>
+          <ContentHeading as="h3">Levelling Up</ContentHeading>
+          <LevelTable showProf={false} headBg={data.theme} beforeLabels={["Energy Required"]} levels={
+            data.levels.map((l) => ({
+              beforeEx: [l.energy.toString()],
+              features: {
+                feats: l.feats,
+                other: l.special
+              }
+            }))}
+          />
+        </div>
       }
     </div>
   )

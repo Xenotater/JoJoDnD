@@ -1,0 +1,12 @@
+.levelTable {
+  border: 3px solid purple;
+}
+
+.levelTable th, .levelTable td {
+  padding: 4px 12px;
+  border: 1px solid purple;
+}
+
+.levelTable td {
+  background-color: lightgray;
+}
