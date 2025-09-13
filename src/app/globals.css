@@ -136,6 +136,7 @@ body {
   }
 
   .content {
+    max-width: 90vw;
     padding: 1rem;
     background-color: var(--foreground);
     border: 5px solid var(--border);

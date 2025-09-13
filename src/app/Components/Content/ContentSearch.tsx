@@ -89,7 +89,7 @@ export default function ContentSearch({headerCollapsed}: {headerCollapsed: boole
   };
 
   return (
-    <div className={`flex flex-col md:flex-row-reverse fixed ${headerCollapsed ? "top-0" : "top-(--headerHeight)"} right-[12px] z-999`} onMouseLeave={() => setSelected(undefined)}>
+    <div className={`flex flex-col md:flex-row-reverse fixed ${headerCollapsed ? "top-0" : "top-(--headerHeight)"} right-[calc(50%-150px)] md:right-[12px] z-999`} onMouseLeave={() => setSelected(undefined)}>
       <div className="flex flex-col">
         <search className={"relative w-[300px] border-2 border-t-0 border-(--border) p-0.5 bg-(--foreground)"}>
           <BsSearch className="absolute m-1"/>
