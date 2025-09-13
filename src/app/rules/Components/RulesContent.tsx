@@ -12,10 +12,10 @@ export default function RulesContent({data}: {data: RulesTabData | undefined}) {
         <ContentHeading className="text-center underline mb-0">{data.title}</ContentHeading>
         {data.sections.map((section, i) => (
           <div key={section.heading + i}>
-            <ContentHeading as="h3" className="mb-2 mt-6"><b>{section.heading}</b></ContentHeading>
+            <ContentHeading as="h3" id={section.heading.replaceAll(/[^A-z]/g, "")} className="mb-2 mt-6"><b>{section.heading}</b></ContentHeading>
             {section.items.map((item, i) => (
               <div key={item.subheading + i}>
-                <h4 className="underline mt-2"><b>{item.subheading}</b></h4>
+                <h4 id={item.subheading.replaceAll(/[^A-z]/g, "")} className="underline mt-2"><b>{item.subheading}</b></h4>
                 {item.details.map((detail, i) => (
                   <HTMLInclusiveText as="p" className="indent-4" key={item.subheading + "-detail-" + i} text={detail}/>
                 ))}

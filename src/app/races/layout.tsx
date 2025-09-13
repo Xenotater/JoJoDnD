@@ -1,4 +1,4 @@
-import ContentList, { ContentListData } from "../Components/ContentList/ContentList"
+import ContentList, { ContentListData } from "../Components/Content/ContentList/ContentList"
 import PageTitle from "../Components/Layout/Typography/PageTitle"
 import {races} from "@/../public/data/races.json";
 

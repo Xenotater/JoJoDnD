@@ -3,7 +3,7 @@
 import { ContentTags } from "@/app/Models/Misc.model"
 import { useEffect, useRef, useState } from "react";
 import { BsCheck } from "react-icons/bs";
-import Divider from "../Layout/Divider/Divider";
+import Divider from "../../Layout/Divider/Divider";
 
 type ContentFilterModalProps = {
   tags: ContentTags[];

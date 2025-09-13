@@ -26,6 +26,8 @@ body {
 
 * {
   box-sizing: border-box;
+  scrollbar-color: lightgray transparent;
+  scrollbar-width: thin;
 }
 
 /* font override classes */
@@ -43,9 +45,6 @@ body {
   margin-top: var(--headerHeight);
   padding: 1rem;
   overflow-y: scroll;
-  scrollbar-color: lightgray transparent;
-  scrollbar-width: thin;
-  
 }
 
 @theme {

@@ -1,0 +1,118 @@
+"use client";
+
+//TODO: add other data types here
+import {tabs} from "@/../public/data/rules.json";
+import {passions} from "@/../public/data/passions.json";
+import {races} from "@/../public/data/races.json";
+
+import { useEffect, useRef, useState } from "react";
+import DisplayModal from "../Display/DisplayModal";
+import GenericContentComponent from "./GenericContentComponent";
+import { BsSearch } from "react-icons/bs";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+export interface SearchResult {
+  name: string;
+  page: string;
+  link: string;
+}
+
+export default function ContentSearch({headerCollapsed}: {headerCollapsed: boolean}) {
+  const path = usePathname();
+  const [search, setSearch] = useState("");
+  const [results, setResults] = useState<SearchResult[]>([]);
+  const [selected, setSelected] = useState<SearchResult | undefined>(undefined);
+  const modalRef = useRef<HTMLDivElement>(null);
+  
+  const [allContent] = useState(() => {
+    const contentList: SearchResult[] = [];
+
+    tabs.forEach((tab) => {
+      contentList.push({
+        name: tab.title,
+        page: "Rules",
+        link: `/rules/${tab.title}`
+      });
+      tab.sections.forEach((section) => {
+        if (section.heading)
+        section.items.forEach((item) => {
+          contentList.push({
+            name: item.subheading,
+            page: `Rules`,
+            link: `/rules/${tab.title}/#${item.subheading.replaceAll(/[^A-z]/g, "")}`
+          });
+        });
+      });
+    });
+
+    passions.forEach((passion) => {
+      contentList.push({
+        name: passion.name,
+        page: "Passions",
+        link: `/passions/${passion.name}`
+      });
+    });
+
+    races.forEach((race) => {
+      contentList.push({
+        name: race.name,
+        page: "Races",
+        link: `/races/${race.name}`
+      });
+    });
+
+    return contentList;
+  });
+
+  useEffect(() => {
+    setSelected(undefined);
+    setSearch("");
+  }, [path])
+
+  useEffect(() => {
+    modalRef.current?.children[0].scrollTo(0, 0);
+    if (selected && selected.link.includes("#"))
+      modalRef.current?.querySelector(selected.link.replace(/^.*#/, "#"))?.scrollIntoView();
+  }, [selected])
+
+  useEffect(() => getResults(), [search]);
+
+  const getResults = () => {
+    setResults([]);
+    if (!search) return;
+    const result = [...allContent].filter((item) => {
+      const pattern = new RegExp(`.*${search.toLowerCase()}.*`, "g");
+      return  pattern.test(item.name.toLowerCase()) || pattern.test(item.page.toLowerCase());
+    });
+    setResults(result);
+  };
+
+  return (
+    <div className={`flex flex-col md:flex-row-reverse fixed ${headerCollapsed ? "top-0" : "top-(--headerHeight)"} right-[12px] z-999`} onMouseLeave={() => setSelected(undefined)}>
+      <div className="flex flex-col">
+        <search className={"relative w-[300px] border-2 border-t-0 border-(--border) p-0.5 bg-(--foreground)"}>
+          <BsSearch className="absolute m-1"/>
+          <input type="search" className="w-full pl-7 pb-0.5" value={search} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearch(e.target.value)}
+              onBlur={(e) => {if (!e.relatedTarget?.classList.contains("result")) setResults([])}} onFocus={() => getResults()}/>
+        </search>
+        {search && results.length > 0 &&
+          <div className="flex flex-col w-[300px] max-h-[40vh] overflow-y-scroll border-2 border-t-0 border-(--border) bg-(--foreground) shadow-black shadow-md">
+            {results.map((r, i) => (
+              <Link href={r.link} key={`result-${i}`} tabIndex={0} className="result flex justify-between gap-8 not-first:border-t hover:bg-jj-mpurple-2 focus:bg-jj-mpurple-2 p-0.5"
+                  onMouseEnter={() => setSelected(r)} onFocus={() => setSelected(r)} onBlur={() => setSelected(undefined)}>
+                <span className="pl-2">{r.name}</span>
+                <span className="text-jj-purple-3 pr-2"><i>{r.page}</i></span>
+              </Link>
+            ))}
+          </div>
+        }
+      </div>
+      {results.length > 0 && selected &&
+        <DisplayModal ref={modalRef} className="static max-h-[calc(40vh+28px)] max-w-[300px]">
+          <GenericContentComponent page={selected.page.toLowerCase()} item={selected.link.split(/[\/\#\?]/)[2]}/>
+        </DisplayModal>
+      }
+    </div>
+  )
+}

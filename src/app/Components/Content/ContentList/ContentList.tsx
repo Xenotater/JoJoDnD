@@ -170,7 +170,7 @@ export default function ContentList({content, title, options}: {content: Content
   }, [path]);
 
   return (
-    <div
+    <div ref={listRef}
       style={{"--height": `${options?.height ?? ""}`, "--width": `${options?.width ?? ""}`, "--headHeight": `${options?.search ? "106px" : "76px"}`} as React.CSSProperties}
       className={`
         ${styles.list}
@@ -205,7 +205,7 @@ export default function ContentList({content, title, options}: {content: Content
           </div>
         }
       </div>
-      <div ref={listRef} className={`${styles.listBody} relative overflow-y-scroll hideScroll`}>
+      <div className={`${styles.listBody} relative overflow-y-scroll hideScroll`}>
         {contentList.map((c) => (
           <ContentListItem key={`list-row-${c.name}`} content={c} colWidths={options?.columns?.flatMap((c) => c.width ?? "auto")}/>
         ))}

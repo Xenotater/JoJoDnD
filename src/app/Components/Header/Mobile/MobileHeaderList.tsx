@@ -4,7 +4,7 @@ import MobileHeaderItem from "./MobileHeaderItem";
 
 export default function MobileHeaderList() {
   return (
-    <div className={`${styles.mobileMenu} flex flex-col absolute top-18 right-0 z-100`}>
+    <div className={`${styles.mobileMenu} flex flex-col absolute top-18 right-0 z-1000`}>
         {headerItems.map((item) => <MobileHeaderItem key={item.name} item={item}/>)}
     </div>
   );

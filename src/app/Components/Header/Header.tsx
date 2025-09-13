@@ -11,6 +11,7 @@ import { usePathname } from "next/navigation";
 
 import styles from "./Header.module.css";
 import { useResize } from "@/app/Hooks/useResize";
+import ContentSearch from "../Content/ContentSearch";
 export default memo(function Header() {
   const [isDesktopWidth, setIsDesktopWidth] = useState(true);
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -38,8 +39,8 @@ export default memo(function Header() {
   useEffect(() => setIsMenuOpen(false), [path]);
 
   return (
-    <div>
-      <div className={`${styles.header} ${isCollapsed ? styles.collapsed : ""} fixed top-0 z-100 flex justify-between w-full ${isDesktopWidth ? "h-25" : "h-18"}`}>
+    <div id="siteHeader" className="z-999">
+      <div className={`${styles.header} ${isCollapsed ? styles.collapsed : ""} fixed top-0 flex justify-between w-full ${isDesktopWidth ? "h-25" : "h-18"}`}>
         <div className="flex items-center gap-2">
           <Link href="/"><Image src="/logo/icon.webp" alt="icon" width={isDesktopWidth ? 216 : 144} height={isDesktopWidth ? 90 : 60}/></Link>
           {isDesktopWidth && !isCollapsed &&
@@ -59,6 +60,7 @@ export default memo(function Header() {
       {isMenuOpen &&
         <MobileHeaderList/>
       }
+      <ContentSearch headerCollapsed={isCollapsed}/>
     </div>
   );
 })

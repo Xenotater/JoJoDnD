@@ -20,7 +20,8 @@ export default function ContentListItem({content, colWidths, depth}: {content: C
       const elem = document.querySelector(`[data-key="${content.name}"]`) as HTMLElement;
       const parent = document.querySelector(`.overflow-y-scroll:has([data-key="${content.name}"])`);
       parent?.scrollTo({top: elem?.offsetTop - 35, behavior: "smooth"});
-      elem.focus();
+      if(document.activeElement?.tagName != "INPUT")
+        elem.focus();
     }
   })
 
