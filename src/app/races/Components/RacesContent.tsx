@@ -4,8 +4,13 @@ import { FancyImage } from "@/app/Components/FancyImage/FancyImage";
 import ContentHeading from "@/app/Components/Layout/Typography/ContentHeading";
 import { RaceData } from "@/app/Models/Races.model";
 import LevelTable from "@/app/Components/LevelTable/LevelTable";
+import Divider from "@/app/Components/Layout/Divider/Divider";
 
 export default function RacesContent({data}: {data: RaceData | undefined}) {
+  const cleanName = (name: string) => {
+    return name.replaceAll("/", "").replaceAll(/ +/g, "_");
+  }
+
   if (!data)
     return <div className="h-full"><h2>Error</h2><p>Content not found. Please contact an administrator.</p></div>
 
@@ -13,7 +18,7 @@ export default function RacesContent({data}: {data: RaceData | undefined}) {
     <div className="w-full h-full flex flex-col gap-4 mb-4">
       <ContentHeading className="underline">{data.name}</ContentHeading>
       <div className="flex flex-col items-center">
-        <FancyImage className="mb-2 max-w-[80%] w-auto" src={`/races/${data.name.replaceAll("/", "").replaceAll(/ +/g, "_")}.webp`} type={"border"} alt={data.name}/>
+        <FancyImage type="border" className="mb-2 max-w-[80%] w-auto" src={`/races/${cleanName(data.name)}.webp`} alt={data.name}/>
         {data.examples && data.links && data.links.length == data.examples.length &&
           <span className="text-center">
             <b>Examples of {(data.name + 's').replace(/Mans$/g, "Men")}: </b>
@@ -68,6 +73,31 @@ export default function RacesContent({data}: {data: RaceData | undefined}) {
             }))}
           />
         </div>
+      }
+      {data.subraces &&
+        data.subraces.map((subrace) => (
+          <div key={subrace.name} className="flex flex-col gap-4">
+            <Divider/>
+            <div className="flex flex-col items-center w-full">
+              <FancyImage type="border" className="mb-2 max-w-[80%] w-auto" src={`/races/${cleanName(data.name)}_${cleanName(subrace.name)}.webp`} alt={subrace.name}/>
+              <ContentHeading className="underline mb-0">{subrace.name}</ContentHeading>
+            </div>
+            <div>
+              <ContentHeading as="h3">Description</ContentHeading>
+              <HTMLInclusiveText as="p" text={subrace.desc}/>
+            </div>
+            {subrace.feats &&
+              <div>
+              <ContentHeading as="h3">Racial Features</ContentHeading>
+                <ul className="list-disc">
+                  {subrace.feats.map((feat) => (
+                    <li key={feat}><PreviewLink href={`/abilities/${encodeURIComponent(feat)}`}>{feat}</PreviewLink></li>
+                  ))}
+                </ul>
+              </div>
+            }
+          </div>
+        ))
       }
     </div>
   )
