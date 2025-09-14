@@ -99,7 +99,7 @@ export default function ContentSearch({headerCollapsed, className}: {headerColla
         {search && results.length > 0 &&
           <div className="flex flex-col max-h-[40vh] overflow-y-scroll border-2 border-t-0 border-(--border) bg-(--foreground) shadow-black shadow-md">
             {results.map((r, i) => (
-              <Link href={r.link} key={`result-${i}`} tabIndex={0} className="result flex flex-col md:flex-row justify-between md:gap-8 not-first:border-t hover:bg-jj-mpurple-2 focus:bg-jj-mpurple-2 p-0.5 hyphens-auto"
+              <Link href={r.link} key={`result-${i}`} tabIndex={0} className="result flex flex-col md:flex-row justify-between md:gap-8 not-first:border-t hover:bg-jj-mpurple-2 focus:bg-jj-mpurple-2 p-0.5"
                   onMouseEnter={() => setSelected(r)} onFocus={() => setSelected(r)} onBlur={() => setSelected(undefined)}>
                 <span className="pl-2">{r.name}</span>
                 <span className="text-jj-purple-3 pl-2 md:pl-0 md:pr-2"><i>{r.page}</i></span>
