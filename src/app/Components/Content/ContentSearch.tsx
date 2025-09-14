@@ -18,7 +18,7 @@ export interface SearchResult {
   link: string;
 }
 
-export default function ContentSearch({headerCollapsed}: {headerCollapsed: boolean}) {
+export default function ContentSearch({headerCollapsed, className}: {headerCollapsed: boolean, className?: string}) {
   const path = usePathname();
   const [search, setSearch] = useState("");
   const [results, setResults] = useState<SearchResult[]>([]);
@@ -89,27 +89,27 @@ export default function ContentSearch({headerCollapsed}: {headerCollapsed: boole
   };
 
   return (
-    <div className={`flex flex-col md:flex-row-reverse fixed ${headerCollapsed ? "top-0" : "top-(--headerHeight)"} right-[calc(50%-150px)] md:right-[12px] z-999`} onMouseLeave={() => setSelected(undefined)}>
-      <div className="flex flex-col">
-        <search className={"relative w-[300px] border-2 border-t-0 border-(--border) p-0.5 bg-(--foreground)"}>
+    <div className={`${className} flex flex-col md:flex-row-reverse fixed ${headerCollapsed ? "top-0" : "top-(--headerHeight)"} right-[calc(50%-150px)] md:right-[12px] z-999`} onMouseLeave={() => setSelected(undefined)}>
+      <div className="flex flex-col w-full">
+        <search className={"relative min-w-[100%] md:min-w-[50%] border-2 border-t-0 border-(--border) p-0.5 bg-(--foreground)"}>
           <BsSearch className="absolute m-1"/>
           <input type="search" className="w-full pl-7 pb-0.5" value={search} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearch(e.target.value)}
               onBlur={(e) => {if (!e.relatedTarget?.classList.contains("result")) setResults([])}} onFocus={() => getResults()}/>
         </search>
         {search && results.length > 0 &&
-          <div className="flex flex-col w-[300px] max-h-[40vh] overflow-y-scroll border-2 border-t-0 border-(--border) bg-(--foreground) shadow-black shadow-md">
+          <div className="flex flex-col min-w-[100%] md:min-w-[50%] max-h-[40vh] overflow-y-scroll border-2 border-t-0 border-(--border) bg-(--foreground) shadow-black shadow-md">
             {results.map((r, i) => (
-              <Link href={r.link} key={`result-${i}`} tabIndex={0} className="result flex justify-between gap-8 not-first:border-t hover:bg-jj-mpurple-2 focus:bg-jj-mpurple-2 p-0.5"
+              <Link href={r.link} key={`result-${i}`} tabIndex={0} className="result flex flex-col md:flex-row justify-between md:gap-8 not-first:border-t hover:bg-jj-mpurple-2 focus:bg-jj-mpurple-2 p-0.5 hyphens-auto"
                   onMouseEnter={() => setSelected(r)} onFocus={() => setSelected(r)} onBlur={() => setSelected(undefined)}>
                 <span className="pl-2">{r.name}</span>
-                <span className="text-jj-purple-3 pr-2"><i>{r.page}</i></span>
+                <span className="text-jj-purple-3 pl-2 md:pl-0 md:pr-2"><i>{r.page}</i></span>
               </Link>
             ))}
           </div>
         }
       </div>
       {results.length > 0 && selected &&
-        <DisplayModal ref={modalRef} className="static max-h-[calc(40vh+28px)] max-w-[300px]">
+        <DisplayModal ref={modalRef} hideMobile className="static max-h-[calc(40vh+28px)] max-w-[100%]">
           <GenericContentComponent page={selected.page.toLowerCase()} item={selected.link.split(/[\/\#\?]/)[2]}/>
         </DisplayModal>
       }

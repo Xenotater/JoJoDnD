@@ -47,7 +47,7 @@ export default function PreviewLink(props: LinkProps & {children: React.ReactNod
       </Link>
       {isModalOpen &&
         createPortal(
-          <DisplayModal ref={modalRef} hideMobile={true}><GenericContentComponent page={path[1]} item={decodeURIComponent(path[2])}/></DisplayModal>,
+          <DisplayModal ref={modalRef} hideMobile><GenericContentComponent page={path[1]} item={decodeURIComponent(path[2])}/></DisplayModal>,
           document.querySelector("#siteHeader")!
         )
       }
