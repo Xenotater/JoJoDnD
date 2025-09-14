@@ -26,6 +26,9 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+:not([class*="hideScroll"]) {
   scrollbar-color: lightgray transparent;
   scrollbar-width: thin;
 }
