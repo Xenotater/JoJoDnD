@@ -3,16 +3,18 @@
 import ContentListItem from "./ContentListItem";
 
 import styles from "./ContentList.module.css";
-import { useEffect, useRef, useState } from "react";
+import { JSX, useEffect, useRef, useState } from "react";
 import { BsCaretDown, BsCaretDownFill, BsCaretUp, BsCaretUpFill, BsFilter, BsSearch } from "react-icons/bs";
 import ContentFilterModal from "./ContentFilterModal";
-import { getTags } from "@/app/Utilities/content.utility";
 import { usePathname } from "next/navigation";
 import { toTitleCase } from "@/app/Utilities/misc.utility";
+import Tooltip from "../../Layout/Typography/Tooltip";
+import cloneDeep from "lodash/cloneDeep";
+import { ContentTags } from "@/app/Models/Misc.model";
 
 export interface ContentListData {
   name: string;
-  other?: string[];
+  other?: JSX.Element[] | string[];
   subContent?: ContentListData[];
   isExpanded?: boolean;
   isLink?: boolean;
@@ -25,19 +27,20 @@ interface ContentListOptions {
   height?: string;
   columns?: {
       name: string;
+      tooltip?: string;
       width?: string;
       sort?: boolean;
-      sortFn?: (a: string, b: string) => number;
+      sortFn?: (a: unknown, b: unknown) => number;
     }[]
   search?:boolean;
   filter?: boolean;
 }
 
 //TODO: split filter logic toggles per category, keyboard navigation
-export default function ContentList({content, title, options}: {content: ContentListData[], title: string, options?: ContentListOptions}) {
+export default function ContentList({content, title, tags, options}: {content: ContentListData[], title?: string, tags?: ContentTags[], options?: ContentListOptions}) {
   const path = usePathname();
   const listRef = useRef<HTMLDivElement>(null);
-  const [contentList, setContentList] = useState(structuredClone(content));
+  const [contentList, setContentList] = useState(cloneDeep(content));
   const [includeList, setIncludeList] = useState(new Set<string>());
   const [excludeList, setExcludeList] = useState(new Set<string>());
   const [logic, setLogic] = useState<["OR"|"AND", "OR"|"AND"]>(["OR", "OR"]);
@@ -53,7 +56,7 @@ export default function ContentList({content, title, options}: {content: Content
   useEffect(() => checkFilterSort(), [includeList, excludeList, logic, search, sortedCol])
 
   const checkFilterSort = () => {
-    const copy = structuredClone(content), newList: ContentListData[] = [];
+    const copy = cloneDeep(content), newList: ContentListData[] = [];
     copy.forEach((item) => addFilteredItem(item, newList));
     if (sortedCol.length > 0)
       newList.sort((a, b) => itemSort(a, b));
@@ -66,8 +69,14 @@ export default function ContentList({content, title, options}: {content: Content
     const sortFn = options?.columns?.at(index)?.sortFn ?? ((a: string, b: string) => a > b ? 1 : -1);
     if (index == 0)
       return sortFn(a.name, b.name) * dirMult;
-    else
-      return sortFn(a.other!.at(index - 1)!, b.other!.at(index - 1)!) * dirMult;
+    else{
+      return sortFn(getText(a.other!.at(index - 1)!), getText(b.other!.at(index - 1)!)) * dirMult;
+  }}
+
+  const getText = (item: string | JSX.Element) => {
+    if (typeof item !== "string")
+      console.log(item.props.children);
+    return typeof item === "string" ? item : item.props.children;
   }
 
   const addFilteredItem = (item: ContentListData, list: ContentListData[], parent?: ContentListData) => {
@@ -175,15 +184,17 @@ export default function ContentList({content, title, options}: {content: Content
       className={`
         ${styles.list}
         content flex flex-col p-0 w-full
-        ${options?.height ? `h-(--height)` : ""}
+        ${options?.height ? `max-h-(--height)` : ""}
         ${options?.width ? `md:w-(--width)` : "md:w-fit"}
       `}
     >
       <div className={styles.listHead}>
-        <h3 className="font-bold text-center p-1">{title}</h3>
+        {title &&
+          <h3 className="font-bold text-center p-1">{title}</h3>
+        }
         {options?.search &&
           <div className="flex items-center text-lg">
-            {options?.filter && <div className="cursor-pointer flex items-center pl-1 pr-2" onClick={() => setIsModalOpen(true)}><BsFilter/>Filter</div>}
+            {options?.filter && tags && <div className="cursor-pointer flex items-center pl-1 pr-2" onClick={() => setIsModalOpen(true)}><BsFilter/>Filter</div>}
             <search className={`${options?.filter ? "border-l" : ""} grow-1 relative`}>
               <BsSearch className="absolute m-1"/>
               <input type="search" className="w-full pl-7" value={search} onChange={(e: React.ChangeEvent<HTMLInputElement>) => {setSearch(e.target.value);}}/>
@@ -194,7 +205,10 @@ export default function ContentList({content, title, options}: {content: Content
           <div className="flex">{options.columns.map((c, i) => (
             <div key={`list-col-lbl-${c.name}`} style={{"--colWidth": `${c.width ?? ""}`} as React.CSSProperties}
               className={`${c.width ? "w-(--colWidth)" : "grow-1"} p-1 text-center font-bold relative`}>
-              {c.name}
+              {c.tooltip ?
+                <Tooltip label={c.name}>{c.tooltip}</Tooltip>
+                : c.name
+              }
               {c.sort &&
                 <div className="absolute top-0 right-1 flex flex-col justify-between text-sm cursor-pointer">
                   <div onClick={() => setSortedCol([i, "up"])}>{sortedCol[0] == i && sortedCol[1] == "up" ? <BsCaretUpFill/> : <BsCaretUp/>}</div>
@@ -210,8 +224,8 @@ export default function ContentList({content, title, options}: {content: Content
           <ContentListItem key={`list-row-${c.name}`} content={c} colWidths={options?.columns?.flatMap((c) => c.width ?? "auto")}/>
         ))}
       </div>
-      {isModalOpen &&
-        <ContentFilterModal tags={getTags("Passions")} includes={includeList} excludes={excludeList} logic={logic}
+      {isModalOpen && tags &&
+        <ContentFilterModal tags={tags} includes={includeList} excludes={excludeList} logic={logic}
           setIncludes={setIncludeList} setExcludes={setExcludeList} setLogic={setLogic} closer={() => setIsModalOpen(false)}/>
       }
     </div>

@@ -3,8 +3,7 @@ import RacesContent from "@/app/races/Components/RacesContent";
 import RulesContent from "@/app/rules/Components/RulesContent";
 import { getPassionData, getRaceData, getRuleContent } from "@/app/Utilities/content.utility";
 
-export default function GenericContentComponent({page, item}: {page: string, item: string}) {  
-  console.log(`${page}, ${item}`)
+export default function GenericContentComponent({page, item}: {page: string, item: string}) { 
   const getContentComponent = () => {
     switch(page) {
       case "rules":

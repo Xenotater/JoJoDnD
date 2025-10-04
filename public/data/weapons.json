@@ -1,0 +1,1369 @@
+{
+    "tags": [
+        {
+            "category": "Attributes",
+            "tags": ["AC Bonus", "Ambush", "Bayonet", "Bulky", "Complex", "Concealed", "Conductive", "Firearm", "Fist", "Flame", "Hunker", "Light", "Limited Hand", "Open Hand", "Point Blank", "Radius", "Ranged", "Reach", "Reliable", "Reload", "Remote", "Return", "Siege", "Timer", "Throwable", "Two-Handed", "Versatile"]
+        },
+        {
+            "category": "Type",
+            "tags": ["Martial", "Simple", "Improvised", "Explosive"]
+        },
+        {
+            "category": "Specialization",
+            "tags": ["Melee", "Rifle", "Heavy", "Shotgun", "Sidearm", "Thrown", "Shield"]
+        },
+        {
+            "category": "Stat",
+            "tags": ["Str", "Dex", "Con", "Int", "DC"]
+        },
+        {
+            "category": "Prerequisite",
+            "tags": ["High Str", "High Dex", "High Con", "High Int", "Artisan", "Other"]
+        },
+        {
+            "category": "Damage Types",
+            "tags": ["Bludgeoning", "Slashing", "Piercing", "Radiant", "Thunder", "Fire", "No Damage"]
+        }
+    ],
+    "weapons": [
+        {
+            "name": "Assault Rifle",
+            "attr": [
+                "Bayonet",
+                "Firearm",
+                "Ranged (50\/150)",
+                "Reload (x6)",
+                "Two-Handed"
+            ],
+            "type": "Martial",
+            "spec": "Rifle",
+            "stat": "Dex",
+            "prereq": "Con 13+",
+            "dmg": "3d4 Piercing",
+            "tags": ["Bayonet", "Firearm", "Ranged", "Reload", "Two-Handed", "Martial", "Rifle", "Dex", "High Con", "Piercing"]
+        },
+        {
+            "name": "Brass Knuckles",
+            "attr": [
+                "Concealed (+10)",
+                "Fist",
+                "Light",
+                "Limited Hand"
+            ],
+            "type": "Simple",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d8 Bludgeoning",
+            "tags": ["Concealed", "Fist", "Light", "Limited Hand", "Simple", "Melee", "Str", "Bludgeoning"]
+        },
+        {
+            "name": "C-4",
+            "attr": [
+                "Radius (2m)",
+                "Remote",
+                "Siege",
+                "Timer"
+            ],
+            "type": "Explosive",
+            "spec": "None",
+            "stat": "DC 10",
+            "prereq": "Int 13+",
+            "dmg": "5d6 Thunder",
+            "tags": ["Radius", "Remote", "Siege", "Timer", "Explosive", "DC", "High Int", "Thunder"]
+        },
+        {
+            "name": "Clackers",
+            "attr": [
+                "Concealed (+8)",
+                "Light",
+                "Limited Hand",
+                "Throwable (5\/15)"
+            ],
+            "type": "Simple",
+            "spec": "Melee\/Thrown",
+            "stat": "Str\/Dex",
+            "prereq": "Dex 15+",
+            "dmg": "1d6 Bludgeoning",
+            "tags": ["Concealed", "Light", "Limited Hand", "Throwable", "Simple", "Melee", "Thrown", "Str", "Dex", "High Dex", "Bludgeoning"]
+        },
+        {
+            "name": "Dagger",
+            "attr": [
+                "Ambush",
+                "Concealed (+8)",
+                "Light",
+                "Throwable (5\/15)"
+            ],
+            "type": "Simple",
+            "spec": "Melee\/Thrown",
+            "stat": "Str\/Dex",
+            "prereq": "None",
+            "dmg": "1d6 Piercing\/Slashing",
+            "tags": ["Ambush", "Concealed", "Light", "Throwable", "Simple", "Melee", "Thrown", "Str", "Dex", "Piercing", "Slashing"]
+        },
+        {
+            "name": "Derringer",
+            "attr": [
+                "Ambush",
+                "Concealed (+5)",
+                "Firearm",
+                "Light",
+                "Point Blank",
+                "Ranged (10\/20)",
+                "Reliable",
+                "Reload (x4)"
+            ],
+            "type": "Simple",
+            "spec": "Sidearm",
+            "stat": "Dex",
+            "prereq": "None",
+            "dmg": "1d8 Piercing",
+            "tags": ["Ambush", "Concealed", "Firearm", "Light", "Point Blank", "Ranged", "Reliable", "Reload", "Simple", "Sidearm", "Dex", "Piercing"]
+        },
+        {
+            "name": "Double-Barreled Shotgun",
+            "attr": [
+                "Firearm",
+                "Point Blank",
+                "Ranged (20\/40)",
+                "Reload (x2)",
+                "Siege",
+                "Two-Handed"
+            ],
+            "type": "Simple",
+            "spec": "Shotgun",
+            "stat": "Con",
+            "prereq": "Con 15+",
+            "dmg": "2d12 Piercing",
+            "tags": ["Firearm", "Point Blank", "Ranged", "Reload", "Siege", "Two-Handed", "Simple", "Shotgun", "Con", "High Con", "Piercing"]
+        },
+        {
+            "name": "Dynamite Stick",
+            "attr": [
+                "Concealed (+3)",
+                "Radius (4m)",
+                "Throwable (15\/15)",
+                "Siege"
+            ],
+            "type": "Explosive",
+            "spec": "None",
+            "stat": "DC 15",
+            "prereq": "None",
+            "dmg": "4d6 Thunder",
+            "tags": ["Concealed", "Radius", "Throwable", "Siege", "Explosive", "DC", "Thunder"]
+        },
+        {
+            "name": "Flamethrower",
+            "attr": [
+                "Complex",
+                "Ranged (5\/15)",
+                "Reload (x12)",
+                "Flame"
+            ],
+            "type": "Martial",
+            "spec": "Heavy",
+            "stat": "Dex",
+            "prereq": "Str 13+",
+            "dmg": "3d6 Fire",
+            "tags": ["Complex", "Ranged", "Reload", "Flame", "Martial", "Heavy", "Dex", "High Str", "Fire"]
+        },
+        {
+            "name": "Gasoline Tank",
+            "attr": [
+                "Radius (10m)",
+                "Throwable (5\/5)"
+            ],
+            "type": "Explosive",
+            "spec": "None",
+            "stat": "DC 10",
+            "prereq": "None",
+            "dmg": "3d6 Fire",
+            "tags": ["Radius", "Throwable", "Explosive", "DC", "Fire"]
+        },
+        {
+            "name": "Grenade",
+            "attr": [
+                "Radius (10m)",
+                "Throwable (25\/25)"
+            ],
+            "type": "Explosive",
+            "spec": "None",
+            "stat": "DC 15",
+            "prereq": "None",
+            "dmg": "3d6 Thunder",
+            "tags": ["Radius", "Throwable", "Explosive", "DC", "Thunder"]
+        },
+        {
+            "name": "Guided Missle Launcher",
+            "attr": [
+                "Bulky",
+                "Complex",
+                "Firearm",
+                "Radius (3m)",
+                "Ranged (300\/900)",
+                "Reload (x1)",
+                "Siege"
+            ],
+            "type": "Explosive",
+            "spec": "Heavy",
+            "stat": "DC 25",
+            "prereq": "Str 13+",
+            "dmg": "3d6 Thunder",
+            "tags": ["Bulky", "Complex", "Firearm", "Radius", "Ranged", "Reload", "Siege", "Explosive", "Heavy", "DC", "High Str", "Thunder"]
+        },
+        {
+            "name": "Handcannon",
+            "attr": [
+                "Firearm",
+                "Ranged (20\/60)",
+                "Reliable",
+                "Reload (x6)",
+                "Point Blank"
+            ],
+            "type": "Martial",
+            "spec": "Sidearm",
+            "stat": "Dex",
+            "prereq": "Con 15+",
+            "dmg": "1d10 Piercing",
+            "tags": ["Firearm", "Ranged", "Reliable", "Reload", "Point Blank", "Martial", "Sidearm", "Dex", "High Con", "Piercing"]
+        },
+        {
+            "name": "Heavy Crossbow",
+            "attr": [
+                "Point Blank",
+                "Ranged (20\/60)",
+                "Reload (x1)",
+                "Two-Handed"
+            ],
+            "type": "Martial",
+            "spec": "Rifle",
+            "stat": "Dex",
+            "prereq": "Str 13+",
+            "dmg": "1d10 Piercing",
+            "tags": ["Point Blank", "Ranged", "Reload", "Two-Handed", "Martial", "Rifle", "Dex", "High Str", "Piercing"]
+        },
+        {
+            "name": "Light Crossbow",
+            "attr": [
+                "Point Blank",
+                "Ranged (10\/30)",
+                "Reload (x1)",
+                "Two-Handed"
+            ],
+            "type": "Simple",
+            "spec": "Rifle",
+            "stat": "Dex",
+            "prereq": "None",
+            "dmg": "1d8 Piercing",
+            "tags": ["Point Blank", "Ranged", "Reload", "Two-Handed", "Simple", "Rifle", "Dex", "Piercing"]
+        },
+        {
+            "name": "Machine Pistol",
+            "attr": [
+                "Concealed (+1)",
+                "Firearm",
+                "Light",
+                "Point Blank",
+                "Ranged (15\/45)",
+                "Reload (x4)"
+            ],
+            "type": "Martial",
+            "spec": "Sidearm",
+            "stat": "Dex",
+            "prereq": "None",
+            "dmg": "3d4 Piercing",
+            "tags": ["Concealed", "Firearm", "Light", "Point Blank", "Ranged", "Reload", "Martial", "Sidearm", "Dex", "Piercing"]
+        },
+        {
+            "name": "Marksman Rifle",
+            "attr": [
+                "Bayonet",
+                "Firearm",
+                "Ranged (200\/600)",
+                "Reload (x8)",
+                "Two-Handed"
+            ],
+            "type": "Martial",
+            "spec": "Rifle",
+            "stat": "Dex",
+            "prereq": "Dex 13+",
+            "dmg": "1d10 Piercing",
+            "tags": ["Bayonet", "Firearm", "Ranged", "Reload", "Two-Handed", "Martial", "Rifle", "Dex", "High Dex", "Piercing"]
+        },
+        {
+            "name": "Minigun",
+            "attr": [
+                "Bulky",
+                "Complex",
+                "Firearm",
+                "Ranged (30\/90)",
+                "Reload (x12)",
+                "Siege",
+                "Two-Handed"
+            ],
+            "type": "Martial",
+            "spec": "Heavy",
+            "stat": "Con",
+            "prereq": "Str 17+",
+            "dmg": "4d10 Piercing",
+            "tags": ["Bulky", "Complex", "Firearm", "Ranged", "Reload", "Siege", "Two-Handed", "Martial", "Heavy", "Con", "High Str", "Piercing"]
+        },
+        {
+            "name": "Pistol",
+            "attr": [
+                "Concealed (+2)",
+                "Firearm",
+                "Light",
+                "Point Blank",
+                "Ranged (20\/60)",
+                "Reload (x9)"
+            ],
+            "type": "Simple",
+            "spec": "Sidearm",
+            "stat": "Dex",
+            "prereq": "None",
+            "dmg": "1d8 Piercing",
+            "tags": ["Concealed", "Firearm", "Light", "Point Blank", "Ranged", "Reload", "Simple", "Sidearm", "Dex", "Piercing"]
+        },
+        {
+            "name": "Pump-Action Shotgun",
+            "attr": [
+                "Firearm",
+                "Point Blank",
+                "Ranged (30\/90)",
+                "Reload (x5)",
+                "Siege",
+                "Two-Handed"
+            ],
+            "type": "Martial",
+            "spec": "Shotgun",
+            "stat": "Dex\/Con",
+            "prereq": "Con 13+",
+            "dmg": "2d10 Piercing",
+            "tags": ["Firearm", "Point Blank", "Ranged", "Reload", "Siege", "Two-Handed", "Martial", "Shotgun", "Dex", "Con", "High Con", "Piercing"]
+        },
+        {
+            "name": "Revolver",
+            "attr": [
+                "Firearm",
+                "Point Blank",
+                "Ranged (20\/60)",
+                "Reliable",
+                "Reload (x6)"
+            ],
+            "type": "Simple",
+            "spec": "Sidearm",
+            "stat": "Dex",
+            "prereq": "None",
+            "dmg": "1d8 Piercing",
+            "tags": ["Firearm", "Point Blank", "Ranged", "Reliable", "Reload", "Simple", "Sidearm", "Dex", "Piercing"]
+        },
+        {
+            "name": "RPG",
+            "attr": [
+                "Firearm",
+                "Radius (5m)",
+                "Ranged (200\/600)",
+                "Reload (x1)",
+                "Siege"
+            ],
+            "type": "Explosive",
+            "spec": "Heavy",
+            "stat": "DC 15",
+            "prereq": "None",
+            "dmg": "5d6 Thunder",
+            "tags": ["Firearm", "Radius", "Ranged", "Reload", "Siege", "Explosive", "Heavy", "DC", "Thunder"]
+        },
+        {
+            "name": "Sawed-Off",
+            "attr": [
+                "Firearm",
+                "Light",
+                "Point Blank",
+                "Ranged (10\/30)",
+                "Reload (x2)",
+                "Siege"
+            ],
+            "type": "Simple",
+            "spec": "Shotgun",
+            "stat": "Con",
+            "prereq": "Con 13+",
+            "dmg": "1d12 Piercing",
+            "tags": ["Firearm", "Light", "Point Blank", "Ranged", "Reload", "Siege", "Simple", "Shotgun", "Con", "High Con", "Piercing"]
+        },
+        {
+            "name": "Sledgehammer",
+            "attr": [
+                "Siege",
+                "Two-Handed"
+            ],
+            "type": "Simple",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "3d4 Bludgeoning",
+            "tags": ["Siege", "Two-Handed", "Simple", "Melee", "Str", "Bludgeoning"]
+        },
+        {
+            "name": "SMG",
+            "attr": [
+                "Firearm",
+                "Point Blank",
+                "Ranged (25\/75)",
+                "Reload (x5)",
+                "Versatile (1d10)"
+            ],
+            "type": "Martial",
+            "spec": "Sidearm\/Rifle",
+            "stat": "Dex",
+            "prereq": "None",
+            "dmg": "1d8 Piercing",
+            "tags": ["Firearm", "Point Blank", "Ranged", "Reload", "Versatile", "Martial", "Sidearm", "Rifle", "Dex", "Piercing"]
+        },
+        {
+            "name": "Sniper Rifle",
+            "attr": [
+                "Ambush",
+                "Bulky",
+                "Firearm",
+                "Ranged (750\/1500)",
+                "Reload (x4)",
+                "Two-Handed"
+            ],
+            "type": "Martial",
+            "spec": "Rifle",
+            "stat": "Dex",
+            "prereq": "Int 15+",
+            "dmg": "1d12 Piercing",
+            "tags": ["Ambush", "Bulky", "Firearm", "Ranged", "Reload", "Two-Handed", "Martial", "Rifle", "Dex", "High Int", "Piercing"]
+        },
+        {
+            "name": "UV Cannon",
+            "attr": [
+                "Bulky",
+                "Ranged (10\/30)",
+                "Reload (x4)",
+                "Two-Handed"
+            ],
+            "type": "Martial",
+            "spec": "Heavy",
+            "stat": "Dex",
+            "prereq": "None",
+            "dmg": "5d12 Radiant (Undead Only)",
+            "tags": ["Bulky", "Ranged", "Reload", "Two-Handed", "Martial", "Heavy", "Dex", "Radiant"]
+        },
+        {
+            "name": "UV Flashlight",
+            "attr": [
+                "Concealed (+8)",
+                "Light",
+                "Point Blank",
+                "Ranged (3\/15)",
+                "Reload (x15)"
+            ],
+            "type": "Simple",
+            "spec": "None",
+            "stat": "Dex",
+            "prereq": "None",
+            "dmg": "4d6 Radiant (Undead Only)",
+            "tags": ["Concealed", "Light", "Point Blank", "Ranged", "Reload", "Simple", "Dex", "Radiant"]
+        },
+        {
+            "name": "Boomerang",
+            "attr": [
+                "Return",
+                "Ambush",
+                "Throwable (10\/30)"
+            ],
+            "type": "Martial",
+            "spec": "Melee\/Thrown",
+            "stat": "Str\/Dex",
+            "prereq": "None",
+            "dmg": "1d8 Bludgeoning",
+            "tags": ["Return", "Ambush", "Throwable", "Martial", "Melee", "Thrown", "Str", "Dex", "Bludgeoning"]
+        },
+        {
+            "name": "Atlatl and Dart",
+            "attr": [
+                "Ranged (15\/45)"
+            ],
+            "type": "Simple",
+            "spec": "Rifle\/Thrown",
+            "stat": "Str\/Dex",
+            "prereq": "None",
+            "dmg": "1d8 Piercing",
+            "tags": ["Ranged", "Simple", "Rifle", "Thrown", "Str", "Dex", "Piercing"]
+        },
+        {
+            "name": "Buckler",
+            "attr": [
+                "AC Bonus (+1)",
+                "Light",
+                "Limited Hand"
+            ],
+            "type": "Martial",
+            "spec": "Melee\/Shield",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d8 Bludgeoning",
+            "tags": ["AC Bonus", "Light", "Limited Hand", "Martial", "Melee", "Shield", "Str", "Bludgeoning"]
+        },
+        {
+            "name": "Greatsword",
+            "attr": [
+                "Two-Handed"
+            ],
+            "type": "Martial",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "4d4 Slashing",
+            "tags": ["Two-Handed", "Martial", "Melee", "Str", "Slashing"]
+        },
+        {
+            "name": "Halberd",
+            "attr": [
+                "Reach",
+                "Two-Handed"
+            ],
+            "type": "Martial",
+            "spec": "Heavy\/Melee",
+            "stat": "Str",
+            "prereq": "Str 13+",
+            "dmg": "1d12 Slashing",
+            "tags": ["Reach", "Two-Handed", "Martial", "Heavy", "Melee", "Str", "High Str", "Slashing"]
+        },
+        {
+            "name": "Hatchet",
+            "attr": [
+                "Light",
+                "Throwable (5\/15)"
+            ],
+            "type": "Simple",
+            "spec": "Melee\/Thrown",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d8 Slashing",
+            "tags": ["Light", "Throwable", "Simple", "Melee", "Thrown", "Str", "Slashing"]
+        },
+        {
+            "name": "Longbow",
+            "attr": [
+                "Ranged (50\/200)",
+                "Two-Handed"
+            ],
+            "type": "Martial",
+            "spec": "Rifle",
+            "stat": "Dex",
+            "prereq": "Str 15+",
+            "dmg": "1d10 Piercing",
+            "tags": ["Ranged", "Two-Handed", "Martial", "Rifle", "Dex", "High Str", "Piercing"]
+        },
+        {
+            "name": "Longspear",
+            "attr": [
+                "Reach",
+                "Versatile (1d10)"
+            ],
+            "type": "Martial",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d8 Piercing",
+            "tags": ["Reach", "Versatile", "Martial", "Melee", "Str", "Piercing"]
+        },
+        {
+            "name": "Longsword",
+            "attr": [
+                "Versatile (1d12)"
+            ],
+            "type": "Martial",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d10 Slashing",
+            "tags": ["Versatile", "Martial", "Melee", "Str", "Slashing"]
+        },
+        {
+            "name": "Shield",
+            "attr": [
+                "AC Bonus (+2)",
+                "Hunker (Half)"
+            ],
+            "type": "Martial",
+            "spec": "Shield",
+            "stat": "N\/A",
+            "prereq": "None",
+            "dmg": "N\/A",
+            "tags": ["AC Bonus", "Hunker", "Martial", "Shield", "No Damage"]
+        },
+        {
+            "name": "Shortbow",
+            "attr": [
+                "Ranged (20\/60)",
+                "Two-Handed"
+            ],
+            "type": "Simple",
+            "spec": "Sidearm",
+            "stat": "Dex",
+            "prereq": "None",
+            "dmg": "1d6 Piercing",
+            "tags": ["Ranged", "Two-Handed", "Simple", "Sidearm", "Dex", "Piercing"]
+        },
+        {
+            "name": "Shortspear",
+            "attr": [
+                "Throwable (5\/15)",
+                "Versatile (1d10)"
+            ],
+            "type": "Simple",
+            "spec": "Melee\/Thrown",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d8 Piercing",
+            "tags": ["Throwable", "Versatile", "Simple", "Melee", "Thrown", "Str", "Piercing"]
+        },
+        {
+            "name": "Sling",
+            "attr": [
+                "Concealed (+8)",
+                "Limited Hand",
+                "Ranged (40\/120)"
+            ],
+            "type": "Simple",
+            "spec": "Sidearm\/Thrown",
+            "stat": "Str\/Dex",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning",
+            "tags": ["Concealed", "Limited Hand", "Ranged", "Simple", "Sidearm", "Thrown", "Str", "Dex", "Bludgeoning"]
+        },
+        {
+            "name": "Tower Shield",
+            "attr": [
+                "AC Bonus (+3)",
+                "Hunker (Three-Quarters)"
+            ],
+            "type": "Martial",
+            "spec": "Shield\/Heavy",
+            "stat": "N\/A",
+            "prereq": "Shield Proficiency",
+            "dmg": "N\/A",
+            "tags": ["AC Bonus", "Hunker", "Martial", "Shield", "Heavy", "Other", "No Damage"]
+        },
+        {
+            "name": "Zweih\u00e4nder",
+            "attr": [
+                "Bulky",
+                "Reach",
+                "Two-Handed"
+            ],
+            "type": "Martial",
+            "spec": "Heavy\/Melee",
+            "stat": "Str",
+            "prereq": "Str 15+ AND Dex 15+",
+            "dmg": "3d8 Slashing",
+            "tags": ["Bulky", "Reach", "Two-Handed", "Martial", "Heavy", "Melee", "Str", "High Str", "High Con", "Slashing"]
+        },
+        {
+            "name": "Heavy Repeating Crossbow",
+            "attr": [
+                "Bulky",
+                "Point Blank",
+                "Ranged (20\/40)",
+                "Reload (x5)",
+                "Two-Handed"
+            ],
+            "type": "Martial",
+            "spec": "Heavy\/Rifle",
+            "stat": "Dex",
+            "prereq": "None",
+            "dmg": "1d10 Piercing",
+            "tags": ["Bulky", "Point Blank", "Ranged", "Reload", "Two-Handed", "Martial", "Heavy", "Rifle", "Dex", "Piercing"]
+        },
+        {
+            "name": "Mace",
+            "attr": [
+                "Siege"
+            ],
+            "type": "Simple",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d8 Bludgeoning\/Piercing",
+            "tags": ["Siege", "Melee", "Str", "Bludgeoning", "Piercing"]
+        },
+        {
+            "name": "Quarterstaff",
+            "attr": [
+                "Concealed (+5)",
+                "Reach",
+                "Versatile (1d10)"
+            ],
+            "type": "Simple",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d8 Bludgeoning",
+            "tags": ["Concealed", "Reach", "Versatile", "Simple", "Melee", "Str", "Bludgeoning"]
+        },
+        {
+            "name": "Rapier",
+            "attr": [
+                "Ambush"
+            ],
+            "type": "Martial",
+            "spec": "Melee",
+            "stat": "Str\/Dex",
+            "prereq": "None",
+            "dmg": "1d10 Piercing",
+            "tags": ["Ambush", "Martial", "Melee", "Str", "Dex", "Piercing"]
+        },
+        {
+            "name": "Repeating Crossbow",
+            "attr": [
+                "Point Blank",
+                "Ranged (15\/45)",
+                "Reload (x10)",
+                "Two-Handed"
+            ],
+            "type": "Simple",
+            "spec": "Rifle",
+            "stat": "Dex",
+            "prereq": "None",
+            "dmg": "1d6 Piercing",
+            "tags": ["Point Blank", "Ranged", "Reload", "Two-Handed", "Simple", "Rifle", "Dex", "Piercing"]
+        },
+        {
+            "name": "Throwing Dart",
+            "attr": [
+                "Ambush",
+                "Concealed (+10)",
+                "Light",
+                "Limited Hand",
+                "Throwable (10\/20)"
+            ],
+            "type": "Simple",
+            "spec": "Sidearm\/Thrown",
+            "stat": "Str\/Dex",
+            "prereq": "None",
+            "dmg": "1d6 Piercing",
+            "tags": ["Ambush", "Concealed", "Light", "Limited Hand", "Throwable", "Simple", "Sidearm", "Thrown", "Str", "Dex", "Piercing"]
+        },
+        {
+            "name": "Whip",
+            "attr": [
+                "Reach"
+            ],
+            "type": "Martial",
+            "spec": "Melee",
+            "stat": "Str\/Dex",
+            "prereq": "Dex 13+",
+            "dmg": "1d8 Slashing",
+            "tags": ["Reach", "Martial", "Melee", "Str", "Dex", "High Dex", "Slashing"]
+        },
+        {
+            "name": "Bec de Corbin",
+            "attr": [
+                "Reach",
+                "Two-Handed"
+            ],
+            "type": "Martial",
+            "spec": "Heavy\/Melee",
+            "stat": "Str",
+            "prereq": "Str 13+",
+            "dmg": "1d8 Bludgeoning\/Piercing\/Slashing",
+            "tags": ["Reach", "Two-Handed", "Heavy", "Melee", "Str", "High Str", "Bludgeoning", "Piercing", "Slashing"]
+        },
+        {
+            "name": "Club",
+            "attr": [
+                "Ambush",
+                "Concealed (+2)",
+                "Light"
+            ],
+            "type": "Simple",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning",
+            "tags": ["Ambush", "Concealed", "Light", "Simple", "Melee", "Str", "Bludgeoning"]
+        },
+        {
+            "name": "Greatclub",
+            "attr": [
+                "Reach",
+                "Two-Handed"
+            ],
+            "type": "Simple",
+            "spec": "Heavy\/Melee",
+            "stat": "Str",
+            "prereq": "Str 13+",
+            "dmg": "1d10 Bludgeoning",
+            "tags": ["Reach", "Two-Handed", "Simple", "Heavy", "Melee", "Str", "High Str", "Bludgeoning"]
+        },
+        {
+            "name": "Hand Crossbow",
+            "attr": [
+                "Ambush",
+                "Light",
+                "Point Blank",
+                "Ranged (15\/45)",
+                "Reload (x1)"
+            ],
+            "type": "Martial",
+            "spec": "Sidearm",
+            "stat": "Dex",
+            "prereq": "None",
+            "dmg": "1d6 Piercing",
+            "tags": ["Ambush", "Light", "Point Blank", "Ranged", "Reload", "Martial", "Sidearm", "Dex", "Piercing"]
+        },
+        {
+            "name": "Builder's Tools",
+            "attr": [
+                "Concealed (+3)",
+                "Siege",
+                "Versatile (1d10)"
+            ],
+            "type": "Simple",
+            "spec": "Melee",
+            "stat": "Str\/Int",
+            "prereq": "Artisan (Engineer)",
+            "dmg": "1d8 Piercing\/Slashing",
+            "tags": ["Concealed", "Siege", "Versatile", "Simple", "Melee", "Str", "Int", "Artisan", "Piercing", "Slashing"]
+        },
+        {
+            "name": "Electrician's Tools",
+            "attr": [
+                "Concealed (+2)",
+                "Reach",
+                "Versatile (1d10)",
+                "Conductive"
+            ],
+            "type": "Martial",
+            "spec": "Heavy\/Melee",
+            "stat": "Str\/Dex\/Int",
+            "prereq": "Artisan (Engineer)",
+            "dmg": "1d8 Bludgeoning\/Slashing\/Piercing",
+            "tags": ["Concealed", "Reach", "Versatile", "Conductive", "Martial", "Heavy", "Melee", "Str", "Dex", "Int", "Artisan", "Bludgeoning", "Piercing", "Slashing"]
+        },
+        {
+            "name": "Mechanic's Tools",
+            "attr": [
+                "AC Bonus (+2)",
+                "Two-Handed"
+            ],
+            "type": "Simple",
+            "spec": "Heavy\/Melee",
+            "stat": "Str\/Int",
+            "prereq": "Artisan (Engineer)",
+            "dmg": "1d10 Bludgeoning\/Slashing",
+            "tags": ["AC Bonus", "Two-Handed", "Simple", "Heavy", "Melee", "Str", "Int", "Artisan", "Bludgeoning", "Slashing"]
+        },
+        {
+            "name": "Battle Axe",
+            "attr": [
+                "Versatile (2d6)"
+            ],
+            "type": "Martial",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d10 Slashing",
+            "tags": ["Versatile", "Martial", "Melee", "Str", "Slashing"]
+        },
+        {
+            "name": "Blunderbuss",
+            "attr": [
+                "Complex",
+                "Firearm",
+                "Point Blank",
+                "Ranged (10\/20)",
+                "Reload (x1)",
+                "Siege",
+                "Two-Handed"
+            ],
+            "type": "Martial",
+            "spec": "Shotgun\/Heavy",
+            "stat": "Con",
+            "prereq": "Con 15+",
+            "dmg": "2d12 Piercing",
+            "tags": ["Complex", "Firearm", "Point Blank", "Ranged", "Reload", "Siege", "Two-Handed", "Martial", "Shotgun", "Heavy", "Con", "High Con", "Piercing"]
+        },
+        {
+            "name": "Bolt-Action Rifle",
+            "attr": [
+                "Bayonet",
+                "Firearm",
+                "Ranged (100\/300)",
+                "Reliable",
+                "Reload (x8)",
+                "Two-Handed"
+            ],
+            "type": "Simple",
+            "spec": "Rifle",
+            "stat": "Dex",
+            "prereq": "None",
+            "dmg": "1d10 Piercing",
+            "tags": ["Bayonet", "Firearm", "Ranged", "Reliable", "Reload", "Two-Handed", "Simple", "Rifle", "Dex", "Piercing"]
+        },
+        {
+            "name": "Carbine",
+            "attr": [
+                "Firearm",
+                "Point Blank",
+                "Ranged (50\/150)",
+                "Reload (x10)",
+                "Two-Handed"
+            ],
+            "type": "Simple",
+            "spec": "Rifle",
+            "stat": "Dex",
+            "prereq": "None",
+            "dmg": "1d8 Piercing",
+            "tags": ["Firearm", "Point Blank", "Ranged", "Reload", "Two-Handed", "Simple", "Rifle", "Dex", "Piercing"]
+        },
+        {
+            "name": "Chakram",
+            "attr": [
+                "Ambush",
+                "Return",
+                "Throwable (10\/30)"
+            ],
+            "type": "Martial",
+            "spec": "Melee\/Thrown",
+            "stat": "Str\/Dex",
+            "prereq": "None",
+            "dmg": "1d8 Slashing",
+            "tags": ["Ambush", "Return", "Throwable", "Martial", "Melee", "Thrown", "Str", "Dex", "Slashing"]
+        },
+        {
+            "name": "Fire Axe",
+            "attr": [
+                "Siege",
+                "Two-Handed"
+            ],
+            "type": "Simple",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d10 Slashing",
+            "tags": ["Siege", "Two-Handed", "Simple", "Melee", "Str", "Slashing"]
+        },
+        {
+            "name": "Gauntlet",
+            "attr": [
+                "AC Bonus (+1)",
+                "Concealed (+2)",
+                "Fist",
+                "Light",
+                "Open Hand",
+                "Siege"
+            ],
+            "type": "Simple",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning",
+            "tags": ["AC Bonus", "Concealed", "Fist", "Light", "Open Hand", "Siege", "Simple", "Melee", "Str", "Bludgeoning"]
+        },
+        {
+            "name": "Lance",
+            "attr": [
+                "Reach",
+                "Versatile (3d6)"
+            ],
+            "type": "Martial",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "Str 17+ or Mounted",
+            "dmg": "1d12 Piercing",
+            "tags": ["Reach", "Versatile", "Martial", "Melee", "Str", "High Str", "Other", "Piercing"]
+        },
+        {
+            "name": "Machete",
+            "attr": [
+                "Siege"
+            ],
+            "type": "Simple",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d8 Slashing",
+            "tags": ["Siege", "Simple", "Melee", "Str", "Slashing"]
+        },
+        {
+            "name": "Musket",
+            "attr": [
+                "Bayonet",
+                "Complex",
+                "Firearm",
+                "Ranged (15\/30)",
+                "Reload (x1)",
+                "Two-Handed"
+            ],
+            "type": "Simple",
+            "spec": "Rifle",
+            "stat": "Dex",
+            "prereq": "None",
+            "dmg": "2d6 Piercing",
+            "tags": ["Bayonet", "Complex", "Firearm", "Ranged", "Reload", "Two-Handed", "Simple", "Rifle", "Dex", "Piercing"]
+        },
+        {
+            "name": "Musket Pistol",
+            "attr": [
+                "Complex",
+                "Firearm",
+                "Light",
+                "Point Blank",
+                "Ranged (10\/20)",
+                "Reload (x1)"
+            ],
+            "type": "Simple",
+            "spec": "Sidearm",
+            "stat": "Dex",
+            "prereq": "None",
+            "dmg": "2d6 Piercing",
+            "tags": ["Complex", "Firearm", "Light", "Point Blank", "Ranged", "Reload", "Simple", "Sidearm", "Dex", "Piercing"]
+        },
+        {
+            "name": "Scimitar",
+            "attr": [
+                "Light"
+            ],
+            "type": "Martial",
+            "spec": "Melee",
+            "stat": "Str\/Dex",
+            "prereq": "None",
+            "dmg": "1d8 Slashing",
+            "tags": ["Light", "Martial", "Melee", "Str", "Dex", "Slashing"]
+        },
+        {
+            "name": "Shortsword",
+            "attr": [
+                "Light"
+            ],
+            "type": "Martial",
+            "spec": "Melee",
+            "stat": "Str\/Dex",
+            "prereq": "None",
+            "dmg": "1d8 Piercing",
+            "tags": ["Light", "Martial", "Melee", "Str", "Dex", "Piercing"]
+        },
+        {
+            "name": "Spiked Gauntlet",
+            "attr": [
+                "AC Bonus (+1)",
+                "Fist",
+                "Light",
+                "Open Hand"
+            ],
+            "type": "Simple",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d8 Piercing",
+            "tags": ["AC Bonus", "Fist", "Light", "Open Hand", "Simple", "Melee", "Str", "Piercing"]
+        },
+        {
+            "name": "Throwing Hammer",
+            "attr": [
+                "Light",
+                "Siege",
+                "Throwable (5\/15)"
+            ],
+            "type": "Simple",
+            "spec": "Melee\/Thrown",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d8 Bludgeoning",
+            "tags": ["Light", "Siege", "Throwable", "Simple", "Melee", "Thrown", "Str", "Bludgeoning"]
+        },
+        {
+            "name": "War Fan",
+            "attr": [
+                "AC Bonus (+1)",
+                "Concealed (+10)",
+                "Light"
+            ],
+            "type": "Martial",
+            "spec": "Melee",
+            "stat": "Str\/Dex",
+            "prereq": "Dex 13+",
+            "dmg": "1d6 Slashing",
+            "tags": ["AC Bonus", "Concealed", "Light", "Martial", "Melee", "Str", "Dex", "High Dex", "Slashing"]
+        },
+        {
+            "name": "Hand Wraps",
+            "attr": [
+                "Concealed (+10)",
+                "Fist",
+                "Light",
+                "Open Hand"
+            ],
+            "type": "Simple",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning",
+            "tags": ["Concealed", "Fist", "Open Hand", "Light", "Simple", "Melee", "Str", "Bludgeoning"]
+        },
+        {
+            "name": "Meteor Hammer",
+            "attr": [
+                "Reach",
+                "Two-Handed"
+            ],
+            "type": "Martial",
+            "spec": "Melee",
+            "stat": "Str\/Dex",
+            "prereq": "Dex 13+",
+            "dmg": "1d8 Bludgeoning",
+            "tags": ["Reach", "Two-Handed", "Martial", "Melee", "Str", "Dex", "High Dex", "Bludgeoning"]
+        },
+        {
+            "name": "Tonfa",
+            "attr": [
+                "AC Bonus (+1)",
+                "Ambush",
+                "Light"
+            ],
+            "type": "Martial",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning",
+            "tags": ["AC Bonus", "Ambush", "Light", "Martial", "Melee", "Str", "Bludgeoning"]
+        },
+        {
+            "name": "Molotov Cocktail",
+            "attr": [
+                "Radius (2m)",
+                "Throwable (10\/20)"
+            ],
+            "type": "Explosive",
+            "spec": "None",
+            "stat": "DC 15",
+            "prereq": "None",
+            "dmg": "4d6 Fire",
+            "tags": ["Radius", "Throwable", "Explosive", "DC", "Fire"]
+        },
+        {
+            "name": "Brick \/ Big Rock",
+            "attr": [
+                "Siege",
+                "Throwable (5\/15)",
+                "Versatile (1d8)"
+            ],
+            "type": "Improvised",
+            "spec": "Melee\/Thrown",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning",
+            "tags": ["Siege", "Throwable", "Versatile", "Improvised", "Melee", "Thrown", "Str", "Bludgeoning"]
+        },
+        {
+            "name": "Container of Hot Liquid",
+            "attr": [
+                "Ambush",
+                "Radius (1m)",
+                "Throwable (5\/15)"
+            ],
+            "type": "Improvised",
+            "spec": "Thrown",
+            "stat": "DC 12",
+            "prereq": "None",
+            "dmg": "1d4+2 Fire + 1d4+2 Bludgeoning",
+            "tags": ["Ambush", "Radius", "Throwable", "Improvised", "Thrown", "DC", "Fire", "Bludgeoning"]
+        },
+        {
+            "name": "Chain",
+            "attr": [
+                "Reach",
+                "Throwable (5\/15)",
+                "Two-Handed"
+            ],
+            "type": "Improvised",
+            "spec": "Melee\/Thrown",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning",
+            "tags": ["Reach", "Throwable", "Two-Handed", "Improvised", "Thrown", "Melee", "Str", "Bludgeoning"]
+        },
+        {
+            "name": "Chair \/ Stool",
+            "attr": [
+                "Throwable (5\/15)",
+                "Two-Handed"
+            ],
+            "type": "Improvised",
+            "spec": "Melee\/Thrown",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d8 Bludgeoning",
+            "tags": ["Throwable", "Two-Handed", "Improvised", "Melee", "Thrown", "Str", "Bludgeoning"]
+        },
+        {
+            "name": "Flashlight",
+            "attr": [
+                "Ambush",
+                "Concealed (+5)",
+                "Light",
+                "Throwable (5\/10)"
+            ],
+            "type": "Improvised",
+            "spec": "Melee\/Thrown",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning",
+            "tags": ["Ambush", "Concealed", "Light", "Throwable", "Improvised", "Melee", "Thrown", "Str", "Bludgeoning"]
+        },
+        {
+            "name": "Glass Bottle",
+            "attr": [
+                "Ambush",
+                "Concealed (+5)",
+                "Light",
+                "Throwable (10\/20)"
+            ],
+            "type": "Improvised",
+            "spec": "Melee\/Thrown",
+            "stat": "Str\/Dex",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning (Piercing if broken)",
+            "tags": ["Ambush", "Concealed", "Light", "Throwable", "Improvised", "Melee", "Thrown", "Str", "Dex", "Bludgeoning", "Piercing"]
+        },
+        {
+            "name": "Makeshift Flail",
+            "attr": [
+                "Limited Hand"
+            ],
+            "type": "Improvised",
+            "spec": "Melee",
+            "stat": "Str\/Dex",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning",
+            "tags": ["Limited Hand", "Improvised", "Melee", "Str", "Dex", "Bludgeoning"]
+        },
+        {
+            "name": "Pen \/ Screwdriver",
+            "attr": [
+                "Ambush",
+                "Concealed (+8)",
+                "Light",
+                "Limited Hand"
+            ],
+            "type": "Improvised",
+            "spec": "Melee",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d6 Piercing",
+            "tags": ["Ambush", "Concealed", "Light", "Limited Hand", "Improvised", "Melee", "Str", "Piercing"]
+        },
+        {
+            "name": "Stick",
+            "attr": [
+                "Concealed (+8)",
+                "Throwable (5\/15)",
+                "Versatile (1d8)"
+            ],
+            "type": "Improvised",
+            "spec": "Melee\/Thrown",
+            "stat": "Str",
+            "prereq": "None",
+            "dmg": "1d6 Bludgeoning",
+            "tags": ["Concealed", "Throwable", "Versatile", "Improvised", "Melee", "Thrown", "Str", "Bludgeoning"]
+        }
+    ],
+    "attributes": {
+        "AC Bonus": {
+            "desc": "This weapon grants a bonus to your AC while it is equipped.",
+            "tooltip": "This weapon grants {X} to your AC while it is equipped."
+        },
+        "Ambush": {
+            "desc": "This weapon always crits when attacking a Surprised target."
+        },
+        "Bayonet": {
+            "desc": "You may attach a dagger to the front of this weapon, allowing it to be used in melee with the stats of a longspear."
+        },
+        "Bulky": {
+            "desc": "This weapon must be braced using a Bonus Action in order to attack with it. Once braced, you remain braced until you move."
+        },
+        "Complex": {
+            "desc": "This weapon requires three Attacks to reload."
+        },
+        "Concealed": {
+            "desc": "This weapon grants a bonus to any Check made to conceal it.",
+            "tooltip": "This weapon grants {X} to any Check made to conceal it."
+        },
+        "Conductive": {
+            "desc": "Energy currents, such as electricity or the Ripple, may run through this weapon without harming the weilder."
+        },
+        "Firearm": {
+            "desc": "This weapon makes a loud sound which can be heard up to 0.5km away. It also jams if a Natural 1 is rolled while using it, requiring an Attack to un-jam the weapon before it may be fired again. This weapon's ammunition doesn't function when wet."
+        },
+        "Fist": {
+            "desc": "If you would deal more damage with your Unarmed Strikes than with this weapon, you may instead use the damage from your Unarmed Strikes."
+        },
+        "Flame": {
+            "desc": "When a flammable object not being worn or carried takes Fire damage from this weapon, it is set ablaze, allowing the fire to spread further from there."
+        },
+        "Hunker": {
+            "desc": "While holding this item, if you've not moved this Turn, you may reduce your Movement Speed to 0 and gain Cover in one direction as a Bonus Action until the start of your next Turn.",
+            "tooltip": "While holding this item, if you've not moved this Turn, you may reduce your Movement Speed to 0 and gain {X} Cover in one direction as a Bonus Action until the start of your next Turn."
+        },
+        "Light": {
+            "desc": "This weapon is light and easy to handle, allowing you to make an additional Attack using another Light weapon in your other hand as a Bonus Action."
+        },
+        "Limited Hand": {
+            "desc": "When you have this weapon equipped, you may also use other Light weapons, tiny objects, or Shove and Grapple as though your hand was free. This weapon's attributes and damage do not apply at the same time as another in the same hand."
+        },
+        "Open Hand": {
+            "desc": "When you have this weapon equipped, you may also use other weapons, objects, or Shove and Grapple as though your hand was free. This weapon's attributes and damage do not apply at the same time as another in the same hand."
+        },
+        "Point Blank": {
+            "desc": "This weapon does not impose Disadvantage if used within melee."
+        },
+        "Radius": {
+            "desc": "This weapon forces all creatures within a certain radius of the target to make a Dexterity Saving Throw, taking half damage on success and full damage on failure. This projectile or charge is destroyed after use.",
+            "tooltip": "This weapon forces all creatures within {X} of the target to make a Dexterity Saving Throw, taking half damage on success and full damage on failure. This projectile or charge is destroyed after use."
+        },
+        "Ranged": {
+            "desc": "This weapon can hit targets up to its Short Range, or as far as its Long Range with Disadvantage. Attacking within melee imposes Disadvantage.",
+            "tooltip": "This weapon can hit targets up to {X}m away, or as far as {Y}m with Disadvantage. Attacking within melee imposes Disadvantage."
+        },
+        "Reach": {
+            "desc": "This weapon can hit targets from an additional meter away."
+        },
+        "Reliable": {
+            "desc": "This weapon does not jam."
+        },
+        "Reload": {
+            "desc": "This weapon can be used a limited amount of times before needing to be reloaded. Reloading uses an Attack.",
+            "tooltip": "This weapon can be used {X} times before needing to be reloaded. Reloading uses an Attack."
+        },
+        "Remote": {
+            "desc": "This weapon can be triggered as a Bonus Action from up to 1km away."
+        },
+        "Return": {
+            "desc": "After throwing this weapopn, you may use your Reaction to catch it, putting it back in your inventory."
+        },
+        "Siege": {
+            "desc": "This weapon deals double damage to objects."
+        },
+        "Timer": {
+            "desc": "A timer may be set on this weapon, triggering it once the timer runs out. The timer may be set for up to 12 hours."
+        },
+        "Throwable": {
+            "desc": "This weapon can be thrown up to its Short Range, or as far as its Long Range with Disadvantage. Once thrown, this weapon must be picked up in order to be used again (unless it is an Explosive, in which case it is destroyed).",
+            "tooltip": "This weapon can be thrown up to {X}m away, or as far as {Y}m with Disadvantage. Once thrown, this weapon must be picked up in order to be used again (unless it is an Explosive, in which case it is destroyed)."
+        },
+        "Two-Handed": {
+            "desc": "This weapon requires two hands to wield, and is difficult to holster or conceal. It may be carried (but not used) with one hand if desired."
+        },
+        "Versatile": {
+            "desc": "This weapon may be wielded with one or two hands, dealing more damage if two hands are used.",
+            "tooltip": "This weapon may be wielded with one or two hands, dealing {X} damage if two hands are used."
+        }
+    }
+}

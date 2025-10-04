@@ -43,7 +43,7 @@ export default function ContentListItem({content, colWidths, depth}: {content: C
   return (
     <>
       <div data-key={content.name} data-nav={content.isLink ?? true} onClick={() => handleClick()} onKeyDown={(e) => handleKeyDown(e)} tabIndex={0}
-        className={`relative flex outline-none ${isLink ? "cursor-pointer" : ""} ${isSelected ? "font-bold bg-jj-mpurple-3 hover:bg-jj-mpurple-4 focus:bg-jj-mpurple-4" : "hover:bg-jj-mpurple-2 focus:bg-jj-mpurple-2"}`}
+        className={`relative flex outline-none ${isLink ? "cursor-pointer" : ""} ${isSelected ? "font-bold bg-jj-mpurple-3 hover:bg-jj-mpurple-4 focus:bg-jj-mpurple-4" : ""} ${isLink || hasSubItems ? "hover:bg-jj-mpurple-2 focus:bg-jj-mpurple-2" : ""}`}
       >
         <div style={{"--colWidth": `${colWidths ? colWidths[0] : ""}`, "--depth": `${depth ? depth : ""}`} as React.CSSProperties} className={`${colWidths ? "w-(--colWidth)" : "w-fit"} p-1`}>{content.name}</div>
         {content.other?.map((o, i) => (

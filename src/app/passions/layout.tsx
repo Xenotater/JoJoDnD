@@ -1,6 +1,6 @@
 import ContentList, { ContentListData } from "../Components/Content/ContentList/ContentList"
 import PageTitle from "../Components/Layout/Typography/PageTitle"
-import {passions} from "@/../public/data/passions.json";
+import {passions, tags} from "@/../public/data/passions.json";
 
 export default function PassionsLayout({
 	children,
@@ -26,7 +26,7 @@ export default function PassionsLayout({
       </div>
       <div className="flex flex-wrap md:flex-nowrap gap-4">
         <div className="shrink-0 w-full md:w-auto">
-          <ContentList content={listContent} title="Passions" options={{columns:[{name: "Passion", width: "47%", sort: true}, {name: "Ability", width: "53%", sort: true}], height: "400px", width: "350px", filter: true, search: true}}/>
+          <ContentList content={listContent} title="Passions" tags={tags} options={{columns:[{name: "Passion", width: "47%", sort: true}, {name: "Ability", width: "53%", sort: true}], height: "400px", width: "350px", filter: true, search: true}}/>
         </div>
         {children}
       </div>

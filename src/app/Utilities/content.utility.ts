@@ -1,7 +1,6 @@
 import {tabs} from "@/../public/data/rules.json";
-import {passions, tags as passionTags} from "@/../public/data/passions.json";
+import {passions} from "@/../public/data/passions.json";
 import {races} from "@/../public/data/races.json";
-import { ContentTags } from "../Models/Misc.model";
 
 export type dataTypes = "Rules"
   | "Passions"
@@ -17,15 +16,6 @@ const getData = (type: dataTypes): unknown[] => {
       return races;
     default:
       return [undefined];
-  }
-}
-
-export const getTags = (type: dataTypes): ContentTags[] => {
-  switch(type) {
-    case "Passions":
-      return passionTags;
-    default:
-      return [];
   }
 }
 
