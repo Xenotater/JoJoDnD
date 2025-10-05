@@ -14,7 +14,7 @@ import { ContentTags } from "@/app/Models/Misc.model";
 
 export interface ContentListData {
   name: string;
-  other?: JSX.Element[] | string[];
+  other?: (JSX.Element | string)[];
   subContent?: ContentListData[];
   isExpanded?: boolean;
   isLink?: boolean;
@@ -25,6 +25,7 @@ export interface ContentListData {
 interface ContentListOptions {
   width?: string;
   height?: string;
+  scrollWidth?: string;
   columns?: {
       name: string;
       tooltip?: string;
@@ -74,8 +75,6 @@ export default function ContentList({content, title, tags, options}: {content: C
   }}
 
   const getText = (item: string | JSX.Element) => {
-    if (typeof item !== "string")
-      console.log(item.props.children);
     return typeof item === "string" ? item : item.props.children;
   }
 
@@ -180,15 +179,16 @@ export default function ContentList({content, title, tags, options}: {content: C
 
   return (
     <div ref={listRef}
-      style={{"--height": `${options?.height ?? ""}`, "--width": `${options?.width ?? ""}`, "--headHeight": `${options?.search ? "106px" : "76px"}`} as React.CSSProperties}
+      style={{"--height": `${options?.height ?? ""}`, "--width": `${options?.width ?? ""}`, "--headHeight": `${options?.search ? "106px" : "76px"}`, "--scrollWidth": `${options?.scrollWidth ?? ""}`} as React.CSSProperties}
       className={`
         ${styles.list}
         content flex flex-col p-0 w-full
         ${options?.height ? `max-h-(--height)` : ""}
         ${options?.width ? `md:w-(--width)` : "md:w-fit"}
+        overflow-x-scroll hideScroll
       `}
     >
-      <div className={styles.listHead}>
+      <div className={`${styles.listHead} ${options?.scrollWidth ? `min-w-(--scrollWidth)` : ""}`}>
         {title &&
           <h3 className="font-bold text-center p-1">{title}</h3>
         }
@@ -219,7 +219,7 @@ export default function ContentList({content, title, tags, options}: {content: C
           </div>
         }
       </div>
-      <div className={`${styles.listBody} relative overflow-y-scroll hideScroll`}>
+      <div className={`${styles.listBody} relative overflow-y-scroll hideScroll ${options?.scrollWidth ? `min-w-(--scrollWidth)` : ""}`}>
         {contentList.map((c) => (
           <ContentListItem key={`list-row-${c.name}`} content={c} colWidths={options?.columns?.flatMap((c) => c.width ?? "auto")}/>
         ))}

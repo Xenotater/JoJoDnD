@@ -1,6 +1,7 @@
 import {tabs} from "@/../public/data/rules.json";
 import {passions} from "@/../public/data/passions.json";
 import {races} from "@/../public/data/races.json";
+import {weapons} from "@/../public/data/weapons.json";
 
 export type dataTypes = "Rules"
   | "Passions"
@@ -37,4 +38,8 @@ export function getPassionData(passion: string) {
 
 export function getRaceData(race: string) {
   return races.find((r) => r.name.toLowerCase() == race.toLowerCase());
+}
+
+export function getWeaponData(weapon: string) {
+  return weapons.find((w) => w.name.toLowerCase() == weapon.toLowerCase());
 }

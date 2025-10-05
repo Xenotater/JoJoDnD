@@ -1,10 +1,14 @@
 import PassionsContent from "@/app/passions/Components/PassionsContent";
 import RacesContent from "@/app/races/Components/RacesContent";
 import RulesContent from "@/app/rules/Components/RulesContent";
-import { getPassionData, getRaceData, getRuleContent } from "@/app/Utilities/content.utility";
+import { getPassionData, getRaceData, getRuleContent, getWeaponData } from "@/app/Utilities/content.utility";
+import AttributesList from "@/app/weapons/Components/AttributesList";
+import WeaponContentItem from "@/app/weapons/Components/WeaponContentItem";
 
 export default function GenericContentComponent({page, item}: {page: string, item: string}) { 
   const getContentComponent = () => {
+    if (page == "weapons" && item == "attributes")
+      page = "attributes"
     switch(page) {
       case "rules":
         return <RulesContent data={getRuleContent(item)}/>;
@@ -12,6 +16,10 @@ export default function GenericContentComponent({page, item}: {page: string, ite
         return <PassionsContent data={getPassionData(item)}/>;
       case "races":
         return <RacesContent data={getRaceData(item)}/>;
+      case "weapons":
+        return <WeaponContentItem data={getWeaponData(item)}/>;
+      case "attributes":
+        return <AttributesList/>
       default:
         return <div className="h-full"><h2>Error</h2><p>Content not found. Please contact an administrator.</p></div>;
     }

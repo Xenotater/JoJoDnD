@@ -4,6 +4,7 @@
 import {tabs} from "@/../public/data/rules.json";
 import {passions} from "@/../public/data/passions.json";
 import {races} from "@/../public/data/races.json";
+import {weapons} from "@/../public/data/weapons.json";
 
 import { useEffect, useRef, useState } from "react";
 import DisplayModal from "../Display/DisplayModal";
@@ -16,6 +17,7 @@ export interface SearchResult {
   name: string;
   page: string;
   link: string;
+  item?: string;
 }
 
 export default function ContentSearch({headerCollapsed, className}: {headerCollapsed: boolean, className?: string}) {
@@ -60,6 +62,22 @@ export default function ContentSearch({headerCollapsed, className}: {headerColla
         page: "Races",
         link: `/races/${encodeURIComponent(race.name)}`
       });
+    });
+    
+    weapons.forEach((weapon) => {
+      contentList.push({
+        name: weapon.name,
+        page: "Weapons",
+        link: `/weapons`,
+        item: weapon.name
+      });
+    });
+
+    contentList.push({
+      name: "Weapon Attributes",
+      page: "Weapons",
+      link: `/weapons#attributes`,
+      item: "attributes"
     });
 
     return contentList;
@@ -110,7 +128,7 @@ export default function ContentSearch({headerCollapsed, className}: {headerColla
       </div>
       {results.length > 0 && selected &&
         <DisplayModal ref={modalRef} hideMobile className="static max-h-[calc(40vh+28px)]">
-          <GenericContentComponent page={selected.page.toLowerCase()} item={decodeURIComponent(selected.link.split(/[\/\#\?]/)[2])}/>
+          <GenericContentComponent page={selected.page.toLowerCase()} item={selected.item ?? decodeURIComponent(selected.link.split(/[\/\#\?]/)[2])}/>
         </DisplayModal>
       }
     </div>

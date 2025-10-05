@@ -13,7 +13,6 @@ export default function WeaponList({listContent, tags}: {listContent: ContentLis
   }
 
   const weaponPropSort = (a: string, b: string) => {
-    console.log("comparing: " + `${a}, ${b}`);
     if (a == "None" || a.includes("DC"))
             a = "A";
     if (b == "None" || b.includes("DC"))
@@ -52,7 +51,7 @@ export default function WeaponList({listContent, tags}: {listContent: ContentLis
   }
 
   return (
-      <ContentList content={listContent} title="Weapons" tags={tags} options={{height: "750px", width: "100%", columns:[
+      <ContentList content={listContent} tags={tags} options={{height: "750px", width: "100%", scrollWidth: "1024px", columns:[
         {name: "Name", width: "15%", tooltip: "The name of the weapon.", sort: true},
         {name: "Attributes", width: "23%", tooltip: "The properties that the weapon has.", sort: true, sortFn: attributeSort as (a: unknown, b: unknown) => number},
         {name: "Type", width: "10%", tooltip:"The type of weapon for the purpose of Proficiencies.", sort: true},
