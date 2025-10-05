@@ -6,7 +6,7 @@ import styles from "./ContentList.module.css";
 import { JSX, useEffect, useRef, useState } from "react";
 import { BsCaretDown, BsCaretDownFill, BsCaretUp, BsCaretUpFill, BsFilter, BsSearch } from "react-icons/bs";
 import ContentFilterModal from "./ContentFilterModal";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { toTitleCase } from "@/app/Utilities/misc.utility";
 import Tooltip from "../../Layout/Typography/Tooltip";
 import cloneDeep from "lodash/cloneDeep";
@@ -40,13 +40,14 @@ interface ContentListOptions {
 //TODO: split filter logic toggles per category, keyboard navigation
 export default function ContentList({content, title, tags, options}: {content: ContentListData[], title?: string, tags?: ContentTags[], options?: ContentListOptions}) {
   const path = usePathname();
+  const params = useSearchParams();
   const listRef = useRef<HTMLDivElement>(null);
   const [contentList, setContentList] = useState(cloneDeep(content));
   const [includeList, setIncludeList] = useState(new Set<string>());
   const [excludeList, setExcludeList] = useState(new Set<string>());
   const [logic, setLogic] = useState<["OR"|"AND", "OR"|"AND"]>(["OR", "OR"]);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState(decodeURIComponent(params?.get("search") || ""));
   const [sortedCol, setSortedCol] = useState(options?.columns?.flatMap((c, i) => {
     if (c.sort)
       return [i, "up"];
@@ -54,9 +55,10 @@ export default function ContentList({content, title, tags, options}: {content: C
   }) ?? []);
 
   //re-apply filters and sort when any relevant settings change
-  useEffect(() => checkFilterSort(), [includeList, excludeList, logic, search, sortedCol])
+  useEffect(() => checkFilterSort(), [includeList, excludeList, logic, search, sortedCol, params])
 
   const checkFilterSort = () => {
+    window.history.replaceState(null, "", window.location.href.replace(/\?[^#]*/, "") + `${search ? `?search=${encodeURIComponent(search)}` : ""}`)
     const copy = cloneDeep(content), newList: ContentListData[] = [];
     copy.forEach((item) => addFilteredItem(item, newList));
     if (sortedCol.length > 0)

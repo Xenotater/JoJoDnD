@@ -2,9 +2,18 @@
 
 import ContentList, { ContentListData } from "@/app/Components/Content/ContentList/ContentList";
 import { ContentTags } from "@/app/Models/Misc.model";
-import { JSX } from "react";
+import { redirect, useParams } from "next/navigation";
+import { JSX, useEffect } from "react";
 
 export default function WeaponList({listContent, tags}: {listContent: ContentListData[], tags: ContentTags[]}) {
+  const params = useParams();
+
+  //get weapon search from hash and move to query
+  useEffect(() => {
+    const hash = window.location.hash.replace("#", "").replace(/\?[^#]*/, "");
+    if (hash && hash != "attributes")
+      redirect(window.location.href.replaceAll(/(\?|#).*$/g, "") + "?search=" + hash);
+  }, [params]);
 
   const attributeSort = (a: JSX.Element[], b: JSX.Element[]) => {
     // const attrA = a[0].props.children[0].props.label;      // is sorting by the first attribute alphabetically useful??
