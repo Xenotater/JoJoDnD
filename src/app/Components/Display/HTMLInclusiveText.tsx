@@ -1,24 +1,19 @@
 import PreviewLink from "./PreviewLink";
+import parse, {DOMNode, Element, domToReact} from "html-react-parser";
 
 export default function HTMLInclusiveText({text, as, className}: {text: string, as?: React.ElementType, className?: string}) {
   const Tag = as || "span";
-  const content = text.split(/<\/?preview>?/);
+
+  const content = parse(text, {
+    replace(elem) {
+      if (elem instanceof Element && elem.tagName == "preview") {
+        const url = elem.attribs["href"];
+        return <PreviewLink href={url}>{domToReact(elem.children as DOMNode[])}</PreviewLink>;
+      }
+    }
+  })
   
   return (
-    <Tag className={className}>
-      {
-        content.map((c, i) => {
-          if (i % 2 == 1)
-          {
-            const url = c.replace(/(^.*href='|'>.*)/g, "");
-            const label = c.replace(/(^.*'>)/, "");
-            return <PreviewLink key={`preview-${i}`} href={url}>{label}</PreviewLink>;
-          }
-          else
-            return <span key={`text-${i}`} dangerouslySetInnerHTML={{__html: c}}/>
-        })
-      }
-    </Tag>
-    
+    <Tag className={className}>{content}</Tag>
   )
 }
