@@ -44,8 +44,8 @@ export default function LevelTable(props: LevelTableProps) {
         </thead>
         <tbody>
           {props.levels.map((level, i) => (
-            <tr key={`level-${i}`}>
-              <td>{i}</td>
+            <tr key={`level-${i+1}`}>
+              <td>{i+1}</td>
               {(props.showProf ?? true) &&
                 <td>+{calcPB(i)}</td>
               }
@@ -55,7 +55,8 @@ export default function LevelTable(props: LevelTableProps) {
               <td>
                 {level.features.feats?.map((f, j) => (
                   <span key={`feat-${i}-${j}`}>
-                    {f != "OR" ? <PreviewLink href={`/feats/${encodeURIComponent(f)}`}>{f}</PreviewLink> : "OR"}
+                    {f != "OR" ? <PreviewLink href={`/feats/${encodeURIComponent(f.replace(/ \(.*\)$/, ""))}`}>{f.replace(/ \(.*\)$/, "")}</PreviewLink> : "OR"}
+                    {f.match(/ \(.*\)$/)}
                     {(j + 1 < level.features.feats!.length || level.features.abilities || level.features.other) &&
                       (f != "OR" && level.features.feats![j+1] != "OR" ? " | " : " ")
                     }
@@ -63,7 +64,8 @@ export default function LevelTable(props: LevelTableProps) {
                 ))}
                 {level.features.abilities?.map((f, j) => (
                   <span key={`ability-${i}-${j}`}>
-                    {f != "OR" ? <PreviewLink href={`/abilities/${encodeURIComponent(f)}`}>{f}</PreviewLink> : "OR"}
+                    {f != "OR" ? <PreviewLink href={`/abilities/${encodeURIComponent(f.replace(/ \(.*\)$/, ""))}`}>{f.replace(/ \(.*\)$/, "")}</PreviewLink> : "OR"}
+                    {f.match(/ \(.*\)$/)}
                     {(j + 1 < level.features.abilities!.length || level.features.other) &&
                       (f != "OR" && level.features.abilities![j+1] != "OR" ? " | " : " ")
                     }

@@ -67,7 +67,7 @@ export default function RacesContent({data}: {data: RaceData | undefined}) {
             data.levels.map((l) => ({
               beforeEx: [l.energy.toString()],
               features: {
-                feats: l.feats,
+                abilities: l.feats,
                 other: l.special
               }
             }))}

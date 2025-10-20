@@ -43,7 +43,7 @@ export default function ContentList({content, title, tags, options}: {content: C
   const params = useSearchParams();
   const listRef = useRef<HTMLDivElement>(null);
   const [contentList, setContentList] = useState(cloneDeep(content));
-  const [includeList, setIncludeList] = useState(new Set<string>());
+  const [includeList, setIncludeList] = useState(params.has("filter") ? new Set<string>(params?.get("filter")?.split(",")) : new Set<string>());
   const [excludeList, setExcludeList] = useState(new Set<string>());
   const [logic, setLogic] = useState<["OR"|"AND", "OR"|"AND"]>(["OR", "OR"]);
   const [isModalOpen, setIsModalOpen] = useState(false);
