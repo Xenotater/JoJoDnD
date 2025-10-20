@@ -22,7 +22,7 @@ export default function RulesContent({data}: {data: RulesTabData | undefined}) {
                 {item.compactDetails && 
                   <div className="mt-2">
                     {item.compactDetails.map((compact, i) => (
-                      <HTMLInclusiveText as="p" className="leading-4 mb-1" key={item.subheading + "-compact-" + i} text={compact}/>
+                      <HTMLInclusiveText as="div" className="leading-4 mb-1" key={item.subheading + "-compact-" + i} text={compact}/>
                     ))}
                   </div>
                 }
