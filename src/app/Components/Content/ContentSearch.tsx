@@ -4,6 +4,7 @@
 import {tabs} from "@/../public/data/rules.json";
 import {passions} from "@/../public/data/passions.json";
 import {races} from "@/../public/data/races.json";
+import {abilities} from "@/../public/data/abilities.json";
 import {weapons} from "@/../public/data/weapons.json";
 
 import { useEffect, useRef, useState } from "react";
@@ -60,6 +61,14 @@ export default function ContentSearch({headerCollapsed, className}: {headerColla
         name: race.name,
         page: "Races",
         link: `/races/${encodeURIComponent(race.name)}`
+      });
+    });
+
+    abilities.forEach((ability) => {
+      contentList.push({
+        name: ability.name,
+        page: "Abilities",
+        link: `/abilities/${encodeURIComponent(ability.name).replace("'", "%27")}`
       });
     });
     

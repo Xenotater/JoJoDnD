@@ -1,11 +1,13 @@
 import {tabs} from "@/../public/data/rules.json";
 import {passions} from "@/../public/data/passions.json";
 import {races} from "@/../public/data/races.json";
+import {abilities} from "@/../public/data/abilities.json";
 import {weapons} from "@/../public/data/weapons.json";
 
 export type dataTypes = "Rules"
   | "Passions"
-  | "Races";
+  | "Races"
+  | "Abilities";
 
 const getData = (type: dataTypes): unknown[] => {
   switch(type) {
@@ -15,6 +17,8 @@ const getData = (type: dataTypes): unknown[] => {
       return passions;
     case "Races":
       return races;
+    case "Abilities":
+      return abilities;
     default:
       return [undefined];
   }
@@ -28,8 +32,16 @@ export function getRuleContent(tabName: string) {
   return tabs.find((t) => t.title.toLowerCase() == tabName.toLowerCase())
 }
 
-export function getFirstItem(type: dataTypes) {
-  return getData(type)[0];
+export function getFirstItem(type: dataTypes, sortBy?: string) {
+  let data = getData(type);
+
+  if (sortBy)
+    try {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      data = data.sort((a: any, b: any) => a[sortBy as keyof typeof a] > b[sortBy as keyof typeof b] ? 1 : -1);
+    } catch {} //don't error if sorting fails
+
+  return data[0];
 }
 
 export function getPassionData(passion: string) {
@@ -38,6 +50,10 @@ export function getPassionData(passion: string) {
 
 export function getRaceData(race: string) {
   return races.find((r) => r.name.toLowerCase() == race.toLowerCase());
+}
+
+export function getAbilityData(ability: string) {
+  return abilities.find((a) => a.name.toLowerCase() == ability.toLowerCase());
 }
 
 export function getWeaponData(weapon: string) {
