@@ -146,7 +146,7 @@ export default function ContentList({content, title, tags, options}: {content: C
 
   useEffect(() => {
     const listElem = listRef.current;
-    const selectedElem = document.querySelector(`[data-key='${toTitleCase(decodeURIComponent(path.split("/")[2]))}']`);
+    const selectedElem = document.querySelector(`[data-key='${toTitleCase(decodeURIComponent(path.split("/")[2]).replace("'", ""))}']`);
 
     if(listElem) {
 

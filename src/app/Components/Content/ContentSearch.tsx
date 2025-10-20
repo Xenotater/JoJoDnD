@@ -87,8 +87,11 @@ export default function ContentSearch({headerCollapsed, className}: {headerColla
 
   useEffect(() => {
     modalRef.current?.children[0].scrollTo(0, 0);
-    if (selected && selected.link.includes("#"))
-      modalRef.current?.querySelector(selected.link.replace(/^.*#/, "#"))?.scrollIntoView();
+    if (selected && selected.link.includes("#")) {
+      try {
+        modalRef.current?.querySelector(selected.link.replace(/^.*#/, "#"))?.scrollIntoView();
+      } catch {} //don't error on bad queryselector
+    }
   }, [selected])
 
   useEffect(() => getResults(), [search]);
