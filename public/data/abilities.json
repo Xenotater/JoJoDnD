@@ -1,16 +1,16 @@
 {
   "tags": [
     {
-        "category": "Source Class or Race",
-        "tags": ["Power", "Ranged", "Remote", "Ability", "Enhancement", "Revenge", "Independent", "Hive", "Act", "Ripple", "Spin", "Artisan", "Assassin", "Consul", "Heavyweight", "Ranger", "Scholar", "Warrior", "Human", "Rock Human", "Pillar Man", "Cyborg", "Ghost", "Animal", "Rock Animal", "Living Chimera", "Living Stand", "Plant", "Abomination", "Zombie", "Ghoul", "Vampire", "Enhanced Pillar Man", "Undead Chimera", "Ultimate Being", "Requiem", "Heaven", "Corpse Holder"]
+      "category": "Source Class or Race",
+      "tags": ["Power", "Ranged", "Remote", "Ability", "Enhancement", "Revenge", "Independent", "Hive", "Act", "Ripple", "Spin", "Artisan", "Assassin", "Consul", "Heavyweight", "Ranger", "Scholar", "Warrior", "Human", "Rock Human", "Pillar Man", "Cyborg", "Ghost", "Animal", "Rock Animal", "Living Chimera", "Living Stand", "Plant", "Abomination", "Zombie", "Ghoul", "Vampire", "Enhanced Pillar Man", "Undead Chimera", "Ultimate Being", "Requiem", "Heaven", "Corpse Holder"]
     },
     {
-        "category": "Ability Type",
-        "tags": ["Passive", "Active", "Limited Uses", "Upgrade", "Has Prerequisite", "Multiple Options", "Stackable", "Parent Feature"]
+      "category": "Ability Type",
+      "tags": ["Passive", "Active", "Limited Uses", "Upgrade", "Has Prerequisite", "Multiple Options", "Stackable", "Parent Feature"]
     },
     {
-        "category": "General Effect",
-        "tags": ["Offense", "Heal", "Debuff", "Buff", "Defense", "Stat Change", "Varies", "Other", "Utility"]
+      "category": "General Effect",
+      "tags": ["Offense", "Heal", "Debuff", "Buff", "Defense", "Stat Change", "Varies", "Other", "Utility"]
     }
   ],
   "abilities": [
