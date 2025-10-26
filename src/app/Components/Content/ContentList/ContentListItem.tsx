@@ -6,19 +6,19 @@ import { redirect, usePathname } from "next/navigation";
 
 import styles from "./ContentList.module.css";
 import { BsCaretDownFill, BsCaretUpFill } from "react-icons/bs";
+import { toTitleCase } from "@/app/Utilities/misc.utility";
 
 export default function ContentListItem({content, colWidths, depth}: {content: ContentListData, colWidths?: string[], depth?: number}) {
-  const [isExpanded, setIsExpanded] = useState(content.isExpanded ?? false);
-  const path = usePathname();
-
+  const path = usePathname().toLowerCase();
+  const [isExpanded, setIsExpanded] = useState((content.isExpanded ?? false) || content.subContent?.find((sub) => decodeURIComponent(path).includes("/" + sub.name.toLowerCase())) != undefined);
   const isSelected = decodeURIComponent(path).includes("/" + content.name.toLowerCase());
   const isLink = content.isLink ?? true;
   const hasSubItems = content.subContent && content.subContent.length > 0;
 
   useEffect(() => {
     if (isSelected) {
-      const elem = document.querySelector(`[data-key="${content.name.replace("'", "")}"]`) as HTMLElement;
-      const parent = document.querySelector(`.overflow-y-scroll:has([data-key="${content.name.replace("'", "")}"])`);
+      const elem = document.querySelector(`[data-key="${toTitleCase(content.name.replace("'", ""))}"]`) as HTMLElement;
+      const parent = document.querySelector(`.overflow-y-scroll:has([data-key="${toTitleCase(content.name.replace("'", ""))}"])`);
       parent?.scrollTo({top: elem?.offsetTop - 35, behavior: "smooth"});
       if(document.activeElement?.tagName != "INPUT")
         elem.focus();
@@ -42,8 +42,8 @@ export default function ContentListItem({content, colWidths, depth}: {content: C
 
   return (
     <>
-      <div data-key={content.name.replace("'", "")} data-nav={content.isLink ?? true} onClick={() => handleClick()} onKeyDown={(e) => handleKeyDown(e)} tabIndex={0}
-        className={`relative flex outline-none ${isLink ? "cursor-pointer" : ""} ${isSelected ? "font-bold bg-jj-mpurple-3 hover:bg-jj-mpurple-4 focus:bg-jj-mpurple-4" : ""} ${isLink || hasSubItems ? "hover:bg-jj-mpurple-2 focus:bg-jj-mpurple-2" : ""}`}
+      <div data-key={toTitleCase(content.name.replace("'", ""))} data-nav={content.isLink ?? true} onClick={() => handleClick()} onKeyDown={(e) => handleKeyDown(e)} tabIndex={0}
+        className={`relative flex outline-none ${isLink ? "cursor-pointer" : ""} ${isSelected ? "font-bold bg-jj-mpurple-2 hover:bg-jj-mpurple-3 focus:bg-jj-mpurple-3" : ""} ${isLink || hasSubItems ? "hover:bg-jj-mpurple-2 focus:bg-jj-mpurple-2" : ""}`}
       >
         <div style={{"--colWidth": `${colWidths ? colWidths[0] : ""}`, "--depth": `${depth ? depth : ""}`} as React.CSSProperties} className={`${colWidths ? "w-(--colWidth)" : "w-fit"} p-1`}>{content.name}</div>
         {content.other?.map((o, i) => (

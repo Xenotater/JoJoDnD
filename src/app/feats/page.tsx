@@ -1,13 +1,14 @@
+import { redirect } from "next/navigation";
+import { getFirstItem } from "../Utilities/content.utility";
+import { FeatData } from "../Models/Feats.model";
+
+//feats stub page, no content, redirect to subcategory page
 export default function FeatsPage() {
-  return (
-    <div>
-      <h1>Feats</h1>
-      <p>Feats page placeholder</p>
-    </div>
-  );
+  redirect("/feats/" + encodeURIComponent((getFirstItem("Feats", "name") as FeatData).name.toLowerCase()));
 }
+
 
 export const metadata = {
   title: "Feats",
-  description: "Unique familiars for JoJo's Bizarre Tabletop Game"
+  description: "Unique feats for JoJo's Bizarre Tabletop Game"
 }

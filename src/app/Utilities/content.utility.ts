@@ -3,11 +3,18 @@ import {passions} from "@/../public/data/passions.json";
 import {races} from "@/../public/data/races.json";
 import {abilities} from "@/../public/data/abilities.json";
 import {weapons} from "@/../public/data/weapons.json";
+import {feats} from "@/../public/data/feats.json";
+import { PassionData } from "../Models/Passions.model";
+import { RaceData } from "../Models/Races.model";
+import { AbilityData } from "../Models/Abilities.model";
+import { FeatData } from "../Models/Feats.model";
+import { WeaponData } from "../Models/Weapons.model";
 
 export type dataTypes = "Rules"
   | "Passions"
   | "Races"
-  | "Abilities";
+  | "Abilities"
+  | "Feats";
 
 const getData = (type: dataTypes): unknown[] => {
   switch(type) {
@@ -19,6 +26,8 @@ const getData = (type: dataTypes): unknown[] => {
       return races;
     case "Abilities":
       return abilities;
+    case "Feats":
+      return feats;
     default:
       return [undefined];
   }
@@ -45,17 +54,21 @@ export function getFirstItem(type: dataTypes, sortBy?: string) {
 }
 
 export function getPassionData(passion: string) {
-  return passions.find((p) => p.name.toLowerCase() == passion.toLowerCase());
+  return passions.find((p) => p.name.toLowerCase() == passion.toLowerCase()) as PassionData;
 }
 
 export function getRaceData(race: string) {
-  return races.find((r) => r.name.toLowerCase() == race.toLowerCase());
+  return races.find((r) => r.name.toLowerCase() == race.toLowerCase()) as RaceData;
 }
 
 export function getAbilityData(ability: string) {
-  return abilities.find((a) => a.name.toLowerCase() == ability.toLowerCase());
+  return abilities.find((a) => a.name.toLowerCase() == ability.toLowerCase()) as AbilityData;
+}
+
+export function getFeatData(feat: string) {
+  return feats.find((f) => f.name.toLowerCase() == feat.toLowerCase()) as FeatData;
 }
 
 export function getWeaponData(weapon: string) {
-  return weapons.find((w) => w.name.toLowerCase() == weapon.toLowerCase());
+  return weapons.find((w) => w.name.toLowerCase() == weapon.toLowerCase()) as WeaponData;
 }

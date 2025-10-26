@@ -5,6 +5,7 @@ import {tabs} from "@/../public/data/rules.json";
 import {passions} from "@/../public/data/passions.json";
 import {races} from "@/../public/data/races.json";
 import {abilities} from "@/../public/data/abilities.json";
+import {feats} from "@/../public/data/feats.json";
 import {weapons} from "@/../public/data/weapons.json";
 
 import { useEffect, useRef, useState } from "react";
@@ -71,6 +72,21 @@ export default function ContentSearch({headerCollapsed, className}: {headerColla
         link: `/abilities/${encodeURIComponent(ability.name).replace("'", "%27")}`
       });
     });
+
+    feats.forEach((feat) => {
+      if (!feat.subFeats)
+        contentList.push({
+          name: feat.name,
+          page: "Feats",
+          link: `/feats/${encodeURIComponent(feat.name)}`
+        });
+      else
+        contentList.push({
+          name: feat.name,
+          page: "Feats",
+          link: `/feats/${feat.name}?filter=${feat.name.replace(/s$/, "")}`
+      })
+    })
     
     weapons.forEach((weapon) => {
       contentList.push({

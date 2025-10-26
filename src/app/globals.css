@@ -61,6 +61,8 @@ body {
   --color-jj-mpurple-4: rgb(99, 67, 161);
   --color-jj-grayple-1: rgb(127, 99, 184);
   --color-jj-grayple-2: rgb(113, 87, 163);
+  --color-jj-grayple-3: rgb(104, 84, 142);
+  --color-jj-grayple-4: rgb(99, 81, 131);
 }
 
 @media (max-width: 1023) {

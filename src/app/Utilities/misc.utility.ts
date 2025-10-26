@@ -1,5 +1,5 @@
 export function toTitleCase(str: string) {
-  const parts = str.split(" ");
+  const parts = str.split(/[ \-]/);
   parts.forEach((part, i) => {
     parts[i] = part.charAt(0).toUpperCase() + part.substring(1);
   })

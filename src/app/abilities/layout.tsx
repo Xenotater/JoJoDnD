@@ -1,6 +1,7 @@
 import ContentList, { ContentListData } from "../Components/Content/ContentList/ContentList"
 import PageTitle from "../Components/Layout/Typography/PageTitle"
 import {abilities, tags} from "@/../public/data/abilities.json";
+import { getAbilityData } from "../Utilities/content.utility";
 
 export default function AbilitiesLayout({
 	children,
@@ -10,11 +11,22 @@ export default function AbilitiesLayout({
 
   const listContent: ContentListData[] = [];
   for (const ability of abilities) {
-    listContent.push({
-      name: ability.name,
-      other: [ability.classes.join(", ")],
-      tags: ability.tags
-    });
+    if (!(ability.isSub ?? false))
+      listContent.push({
+        name: ability.name,
+        other: [ability.classes.join(", ")],
+        subContent: ability.subAbilities?.flatMap((a) => {
+          const subAbil = getAbilityData(a);
+          if (!subAbil) return [];
+          return {
+            name: subAbil.name,
+            other: [subAbil.classes.join(", ")],
+            tags: subAbil.tags
+          } as ContentListData;
+        }),
+        tags: ability.tags,
+        isExpanded: ability.expanded ?? true
+      });
   }
 
   return (

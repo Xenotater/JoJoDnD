@@ -1,8 +1,9 @@
 import AbilitiesContent from "@/app/abilities/Components/AbilitiesContent";
+import FeatsContent from "@/app/feats/Components/FeatsContent";
 import PassionsContent from "@/app/passions/Components/PassionsContent";
 import RacesContent from "@/app/races/Components/RacesContent";
 import RulesContent from "@/app/rules/Components/RulesContent";
-import { getAbilityData, getPassionData, getRaceData, getRuleContent, getWeaponData } from "@/app/Utilities/content.utility";
+import { getAbilityData, getFeatData, getPassionData, getRaceData, getRuleContent, getWeaponData } from "@/app/Utilities/content.utility";
 import AttributesList from "@/app/weapons/Components/AttributesList";
 import WeaponContentItem from "@/app/weapons/Components/WeaponContentItem";
 
@@ -19,6 +20,8 @@ export default function GenericContentComponent({page, item}: {page: string, ite
         return <RacesContent data={getRaceData(item)}/>;
       case "abilities":
         return <AbilitiesContent data={getAbilityData(item)}/>;
+      case "feats":
+        return <FeatsContent data={getFeatData(item)}/>;
       case "weapons":
         return <WeaponContentItem data={getWeaponData(item)}/>;
       case "attributes":

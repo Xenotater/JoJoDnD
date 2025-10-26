@@ -23,8 +23,12 @@
   background-color: var(--color-jj-grayple-1);
 }
 
-.list .listBody .subItems > div:hover {
+.list .listBody .subItems > div:hover, .list .listBody .subItems > div:focus, .list .listBody .subItems > div[class*='font-bold'] {
   background-color: var(--color-jj-grayple-2);
+}
+
+.list .listBody .subItems > div[class*='font-bold']:hover, .list .listBody .subItems > div[class*='font-bold']:focus {
+  background-color: var(--color-jj-grayple-3);
 }
 
 .list .listBody .subItems > div:not(:last-child) {

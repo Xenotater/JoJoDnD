@@ -53,6 +53,7 @@ export default function ContentList({content, title, tags, options}: {content: C
       return [i, "up"];
     return [];
   }) ?? []);
+  const colIsTitle = options && options.columns?.length == 1 && !title;
 
   //re-apply filters and sort when any relevant settings change
   useEffect(() => checkFilterSort(), [includeList, excludeList, logic, search, sortedCol, params])
@@ -206,15 +207,15 @@ export default function ContentList({content, title, tags, options}: {content: C
         {options?.columns && options.columns.length > 0 &&
           <div className="flex">{options.columns.map((c, i) => (
             <div key={`list-col-lbl-${c.name}`} style={{"--colWidth": `${c.width ?? ""}`} as React.CSSProperties}
-              className={`${c.width ? "w-(--colWidth)" : "grow-1"} p-1 text-center font-bold relative`}>
+              className={`${c.width ? "w-(--colWidth)" : "grow-1"} ${colIsTitle ? "text-3xl" : ""} p-1 text-center font-bold relative`}>
               {c.tooltip ?
                 <Tooltip label={c.name}>{c.tooltip}</Tooltip>
                 : c.name
               }
               {c.sort &&
                 <div className="absolute top-0 right-1 flex flex-col justify-between text-sm cursor-pointer">
-                  <div onClick={() => setSortedCol([i, "up"])}>{sortedCol[0] == i && sortedCol[1] == "up" ? <BsCaretUpFill/> : <BsCaretUp/>}</div>
-                  <div onClick={() => setSortedCol([i, "down"])}>{sortedCol[0] == i && sortedCol[1] == "down" ? <BsCaretDownFill/> : <BsCaretDown/>}</div>
+                  <div onClick={() => setSortedCol([i, "up"])}>{sortedCol[0] == i && sortedCol[1] == "up" ? <BsCaretUpFill size={colIsTitle ? "22px" : ""}/> : <BsCaretUp size={colIsTitle ? "22px" : ""}/>}</div>
+                  <div onClick={() => setSortedCol([i, "down"])}>{sortedCol[0] == i && sortedCol[1] == "down" ? <BsCaretDownFill size={colIsTitle ? "22px" : ""}/> : <BsCaretDown size={colIsTitle ? "22px" : ""}/>}</div>
                 </div>
               }
             </div>))}

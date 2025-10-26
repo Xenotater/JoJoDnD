@@ -10,7 +10,7 @@ export default async function AbilityPage(props: {params: Promise<{ability: stri
   const abilityData: AbilityData | undefined = getAbilityData(selectedAbility);
 
   if (!abilityData)
-    redirect("/abilities/" + (getFirstItem("Abilities") as AbilityData).name.toLowerCase());
+    redirect("/abilities/" + (getFirstItem("Abilities", "name") as AbilityData).name.toLowerCase());
 
   return (
     <div className="content grow h-min-[40vh]">
