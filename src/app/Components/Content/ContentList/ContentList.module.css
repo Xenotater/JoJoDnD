@@ -15,8 +15,20 @@
   height: calc(100% - var(--headHeight));
 }
 
-.list .listBody > div:not(:last-child) {
-  border-bottom: 1px solid black;
+.list div {
+  box-sizing: content-box;
+}
+
+.list .listBody:not(.borders) > div:not(:first-child) {
+  border-top: 1px solid black;
+}
+
+.list .listBody.borders > div:not(:first-child) > div {
+  border-top: 1px solid black;
+}
+
+.list .listBody.borders > div > div:not(:first-child) {
+  border-left: 1px solid black;
 }
 
 .list .listBody .subItems > div {

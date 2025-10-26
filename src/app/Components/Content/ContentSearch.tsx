@@ -7,6 +7,7 @@ import {races} from "@/../public/data/races.json";
 import {abilities} from "@/../public/data/abilities.json";
 import {feats} from "@/../public/data/feats.json";
 import {weapons} from "@/../public/data/weapons.json";
+import {artifacts} from "@/../public/data/artifacts.json";
 
 import { useEffect, useRef, useState } from "react";
 import DisplayModal from "../Display/DisplayModal";
@@ -94,6 +95,14 @@ export default function ContentSearch({headerCollapsed, className}: {headerColla
         name: weapon.name,
         page: "Weapons",
         link: `/weapons#${weapon.name}`,
+      });
+    });
+
+    artifacts.forEach((artifact) => {
+      contentList.push({
+        name: artifact.name,
+        page: "Artifacts",
+        link: `/artifacts/${encodeURIComponent(artifact.name)}`
       });
     });
 

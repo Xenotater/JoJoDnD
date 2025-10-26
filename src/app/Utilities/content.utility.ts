@@ -4,32 +4,38 @@ import {races} from "@/../public/data/races.json";
 import {abilities} from "@/../public/data/abilities.json";
 import {weapons} from "@/../public/data/weapons.json";
 import {feats} from "@/../public/data/feats.json";
+import {artifacts} from "@/../public/data/artifacts.json";
 import { PassionData } from "../Models/Passions.model";
 import { RaceData } from "../Models/Races.model";
 import { AbilityData } from "../Models/Abilities.model";
 import { FeatData } from "../Models/Feats.model";
 import { WeaponData } from "../Models/Weapons.model";
+import { ArtifactData } from "../Models/Artifacts.model";
+import { RulesTabData } from "../Models/Rules.model";
 
 export type dataTypes = "Rules"
   | "Passions"
   | "Races"
   | "Abilities"
-  | "Feats";
+  | "Feats"
+  | "Artifacts";
 
 const getData = (type: dataTypes): unknown[] => {
   switch(type) {
     case "Rules":
-      return tabs;
+      return tabs as RulesTabData[];
     case "Passions":
-      return passions;
+      return passions as PassionData[];
     case "Races":
-      return races;
+      return races as RaceData[];
     case "Abilities":
-      return abilities;
+      return abilities as AbilityData[];
     case "Feats":
-      return feats;
+      return feats as FeatData[];
+    case "Artifacts":
+      return artifacts as ArtifactData[];
     default:
-      return [undefined];
+      return [];
   }
 }
 
@@ -71,4 +77,8 @@ export function getFeatData(feat: string) {
 
 export function getWeaponData(weapon: string) {
   return weapons.find((w) => w.name.toLowerCase() == weapon.toLowerCase()) as WeaponData;
+}
+
+export function getArtifactData(artifact: string) {
+  return artifacts.find((a) => a.name.toLowerCase() == artifact.toLowerCase()) as ArtifactData;
 }

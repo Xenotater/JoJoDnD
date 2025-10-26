@@ -35,6 +35,7 @@ interface ContentListOptions {
     }[]
   search?:boolean;
   filter?: boolean;
+  borders?: boolean;
 }
 
 //TODO: split filter logic toggles per category, keyboard navigation
@@ -222,7 +223,7 @@ export default function ContentList({content, title, tags, options}: {content: C
           </div>
         }
       </div>
-      <div className={`${styles.listBody} relative overflow-y-scroll hideScroll ${options?.scrollWidth ? `min-w-(--scrollWidth)` : ""}`}>
+      <div className={`${styles.listBody} ${options?.borders ? styles.borders : ""} relative overflow-y-scroll hideScroll ${options?.scrollWidth ? `min-w-(--scrollWidth)` : ""}`}>
         {contentList.map((c) => (
           <ContentListItem key={`list-row-${c.name}`} content={c} colWidths={options?.columns?.flatMap((c) => c.width ?? "auto")}/>
         ))}
