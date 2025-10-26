@@ -8,16 +8,20 @@ export interface RaceData {
   changes?: string;
   feats?: string[];
   theme?: string;
-  levels?: {
-    energy: number;
-    feats?: string[];
-    special?: string[];
-  }[];
+  levels?: RaceLevel[];
   note?: string;
   note2?: string;
-  subraces?: {
-    name: string;
-    desc: string;
-    feats?: string[];
-  }[];
+  subraces?: SubRace[];
+}
+
+interface RaceLevel {
+  energy: number;
+  feats?: string[];
+  special?: string[];
+}
+
+interface SubRace {
+  name: string;
+  desc: string;
+  feats?: string[];
 }

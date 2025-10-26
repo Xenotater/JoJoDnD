@@ -21,6 +21,7 @@ export interface SearchResult {
   link: string;
 }
 
+//TODO: Allow keyboard navigation through search results
 export default function ContentSearch({headerCollapsed, className}: {headerCollapsed: boolean, className?: string}) {
   const path = usePathname();
   const [search, setSearch] = useState("");

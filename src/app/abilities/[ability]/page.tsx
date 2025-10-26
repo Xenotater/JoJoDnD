@@ -5,7 +5,7 @@ import { redirect } from "next/navigation";
 import { toTitleCase } from "@/app/Utilities/misc.utility";
 import AbilitiesContent from "../Components/AbilitiesContent";
 
-export default async function AbilityPage(props: {params: Promise<{ability: string}>}) {
+export default async function Ability(props: {params: Promise<{ability: string}>}) {
   const selectedAbility = decodeURIComponent((await props.params).ability);
   const abilityData: AbilityData | undefined = getAbilityData(selectedAbility);
 

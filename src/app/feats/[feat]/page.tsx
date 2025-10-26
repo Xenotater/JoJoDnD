@@ -5,7 +5,7 @@ import { redirect } from "next/navigation";
 import { toTitleCase } from "@/app/Utilities/misc.utility";
 import FeatsContent from "../Components/FeatsContent";
 
-export default async function FeatPage(props: {params: Promise<{feat: string}>}) {
+export default async function Feat(props: {params: Promise<{feat: string}>}) {
   const selectedFeat = decodeURIComponent((await props.params).feat);
   const featData: FeatData | undefined = getFeatData(selectedFeat);
 

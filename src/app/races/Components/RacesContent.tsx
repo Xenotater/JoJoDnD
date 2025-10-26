@@ -30,7 +30,7 @@ export default function RacesContent({data}: {data: RaceData | undefined}) {
       </div>
       <div>
         <ContentHeading as="h3">Description</ContentHeading>
-        <HTMLInclusiveText as="p" text={data.desc}/>
+        <HTMLInclusiveText as="div" text={data.desc}/>
       </div>
       {data.playing &&
         <div>
@@ -84,7 +84,7 @@ export default function RacesContent({data}: {data: RaceData | undefined}) {
             </div>
             <div>
               <ContentHeading as="h3">Description</ContentHeading>
-              <HTMLInclusiveText as="p" text={subrace.desc}/>
+              <HTMLInclusiveText as="div" text={subrace.desc}/>
             </div>
             {subrace.feats &&
               <div>

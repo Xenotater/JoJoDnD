@@ -3,7 +3,7 @@ import { getFirstItem } from "../Utilities/content.utility";
 import { FeatData } from "../Models/Feats.model";
 
 //feats stub page, no content, redirect to subcategory page
-export default function FeatsPage() {
+export default function FeatsStub() {
   redirect("/feats/" + encodeURIComponent((getFirstItem("Feats", "name") as FeatData).name.toLowerCase()));
 }
 
