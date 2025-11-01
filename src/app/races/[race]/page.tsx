@@ -21,5 +21,5 @@ export default async function Race(props: {params: Promise<{race: string}>}) {
 
 export async function generateMetadata(props: {params: Promise<{race: string}>}): Promise<Metadata> {
   const raceName = decodeURIComponent((await props.params).race);
-   return { title: toTitleCase(raceName) }
+  return { title: toTitleCase(raceName) }
 }

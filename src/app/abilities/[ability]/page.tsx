@@ -21,5 +21,5 @@ export default async function Ability(props: {params: Promise<{ability: string}>
 
 export async function generateMetadata(props: {params: Promise<{ability: string}>}): Promise<Metadata> {
   const abilityName = decodeURIComponent((await props.params).ability);
-   return { title: toTitleCase(abilityName) }
+  return { title: toTitleCase(abilityName) }
 }

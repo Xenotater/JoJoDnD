@@ -21,5 +21,5 @@ export default async function Passion(props: {params: Promise<{passion: string}>
 
 export async function generateMetadata(props: {params: Promise<{passion: string}>}): Promise<Metadata> {
   const passionName = decodeURIComponent((await props.params).passion);
-   return { title: toTitleCase(passionName) }
+  return { title: toTitleCase(passionName) }
 }

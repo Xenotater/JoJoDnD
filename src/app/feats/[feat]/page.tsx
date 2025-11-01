@@ -24,5 +24,5 @@ export default async function Feat(props: {params: Promise<{feat: string}>}) {
 
 export async function generateMetadata(props: {params: Promise<{feat: string}>}): Promise<Metadata> {
   const featName = decodeURIComponent((await props.params).feat);
-   return { title: toTitleCase(featName) }
+  return { title: toTitleCase(featName) }
 }
