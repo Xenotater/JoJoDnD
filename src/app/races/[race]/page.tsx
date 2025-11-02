@@ -13,7 +13,7 @@ export default async function Race(props: {params: Promise<{race: string}>}) {
     redirect("/races/" + (getFirstItem("Races") as RaceData).name.toLowerCase());
 
   return (
-    <div className="content grow h-min-[40vh]">
+    <div className="content grow min-h-[40vh]">
       <RacesContent data={raceData}/>
     </div>
   );

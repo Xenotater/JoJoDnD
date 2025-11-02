@@ -13,7 +13,7 @@ export default async function Ability(props: {params: Promise<{ability: string}>
     redirect("/abilities/" + (getFirstItem("Abilities", "name") as AbilityData).name.toLowerCase());
 
   return (
-    <div className="content grow h-min-[40vh]">
+    <div className="content grow min-h-[40vh]">
       <AbilitiesContent data={abilityData}/>
     </div>
   );

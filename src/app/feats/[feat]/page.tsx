@@ -16,7 +16,7 @@ export default async function Feat(props: {params: Promise<{feat: string}>}) {
     redirect("/feats/" + featData.subFeats[0]);
 
   return (
-    <div className="content grow h-min-[40vh]">
+    <div className="content grow min-h-[40vh]">
       <FeatsContent data={featData}/>
     </div>
   );

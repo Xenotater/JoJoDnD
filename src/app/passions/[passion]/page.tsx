@@ -13,7 +13,7 @@ export default async function Passion(props: {params: Promise<{passion: string}>
     redirect("/passions/" + (getFirstItem("Passions") as PassionData).name.toLowerCase());
 
   return (
-    <div className="content grow h-min-[40vh]">
+    <div className="content grow min-h-[40vh]">
       <PassionsContent data={passionData}/>
     </div>
   );
