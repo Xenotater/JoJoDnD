@@ -19,7 +19,7 @@ export default function FamiliarsLayout({
       name: c.name
     })),
     isLink: false,
-    isExpanded: false
+    isExpanded: true
   });
   listContent.push({
     name: "Features",
