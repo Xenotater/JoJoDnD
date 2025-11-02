@@ -25,11 +25,15 @@ export default function ContentListItem({content, colWidths, depth}: {content: C
     }
   })
 
+  useEffect (() => {
+    setIsExpanded((content.isExpanded ?? false) || content.subContent?.find((sub) => decodeURIComponent(path).includes("/" + sub.name.toLowerCase())) != undefined);
+  }, [path])
+
   const handleClick = () => {
     if (hasSubItems && (isSelected || !isLink))
       setIsExpanded(!isExpanded);
     if (isLink)
-      redirect(`/${path.split("/")[1]}/${encodeURIComponent(content.name.toLowerCase())}`);
+      redirect(`/${path.split("/")[1]}/${encodeURIComponent(content.altLink ? content.altLink : content.name.toLowerCase())}`);
   }
 
   const handleKeyDown = (e: KeyboardEvent<HTMLDivElement>) => {

@@ -18,6 +18,7 @@ export interface ContentListData {
   subContent?: ContentListData[];
   isExpanded?: boolean;
   isLink?: boolean;
+  altLink?: string;
   tags?: string[];
   isFiltered?: boolean;
 }

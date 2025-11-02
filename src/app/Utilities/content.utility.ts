@@ -1,9 +1,10 @@
 import {tabs} from "@/../public/data/rules.json";
 import {passions} from "@/../public/data/passions.json";
 import {races} from "@/../public/data/races.json";
+import {categories} from "@/../public/data/familiars.json";
 import {abilities} from "@/../public/data/abilities.json";
-import {weapons} from "@/../public/data/weapons.json";
 import {feats} from "@/../public/data/feats.json";
+import {weapons} from "@/../public/data/weapons.json";
 import {artifacts} from "@/../public/data/artifacts.json";
 import { PassionData } from "../Models/Passions.model";
 import { RaceData } from "../Models/Races.model";
@@ -12,6 +13,7 @@ import { FeatData } from "../Models/Feats.model";
 import { WeaponData } from "../Models/Weapons.model";
 import { ArtifactData } from "../Models/Artifacts.model";
 import { RulesTabData } from "../Models/Rules.model";
+import { FamiliarClass, FamiliarFeat, FamiliarFeature, FamiliarInfo } from "../Models/Familiars.model";
 
 export type dataTypes = "Rules"
   | "Passions"
@@ -81,4 +83,12 @@ export function getWeaponData(weapon: string) {
 
 export function getArtifactData(artifact: string) {
   return artifacts.find((a) => a.name.toLowerCase() == artifact.toLowerCase()) as ArtifactData;
+}
+
+export function getFamiliarData(item: string) {
+  if (!item || item == "Familiars")
+    return categories.info as FamiliarInfo;
+  return categories.classes.find((c) => c.name.toLowerCase() == item.toLowerCase()) as FamiliarClass
+  ?? categories.features.find((f) => f.name.toLowerCase() == item.toLowerCase()) as FamiliarFeature
+  ?? categories.feats.find((f) => f.name.toLowerCase() == item.toLowerCase()) as FamiliarFeat;
 }

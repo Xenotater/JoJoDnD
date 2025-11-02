@@ -37,10 +37,11 @@ export default function LevelTable(props: LevelTableProps) {
             {props.beforeLabels &&
               props.beforeLabels.map((l) => (<th key={`lbl-${l}`} className="w-0">{l}</th>))
             }
-            <th className="w-max">Features</th></tr>
+            <th className="w-max">Features</th>
             {props.afterLabels &&
               props.afterLabels.map((l) => (<th key={`lbl-${l}`} className="w-0">{l}</th>))
             }
+          </tr>
         </thead>
         <tbody>
           {props.levels.map((level, i) => (
@@ -72,7 +73,7 @@ export default function LevelTable(props: LevelTableProps) {
                   </span>
                 ))}
                 {level.features.other?.map((f, j) => (
-                  <HTMLInclusiveText as="span" key={`other-${i}-${j}`} text={f}/>
+                  <HTMLInclusiveText as="span" key={`other-${i}-${j}`} text={`${f}${j + 1 < level.features.other!.length ? " " : ""}`}/>
                 ))}
               </td>
               {props.afterLabels && props.afterLabels.map((l, j) => (
