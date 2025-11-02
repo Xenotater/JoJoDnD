@@ -1,5 +1,5 @@
 .rulesTab {
-  right: calc(150px - 14vw); /* approx. stays where desired */
+  right: calc(160px - 14vw); /* approx. stays where desired */
   transition: right .125s ease-in-out;
   border: 1px solid black;
   clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0% 100%, 12.5% 50%, 0% 0%);
