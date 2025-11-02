@@ -10,7 +10,7 @@
           "content": [
             "<p>In order to obtain a Familiar, you must take the <preview href='/feats/Familiar Bond'>Familiar Bond</preview> Feat.</p>",
             "<p>There is a simple order to follow for creating your new Familiar:</p>",
-            "<ol class='list-decimal'><li>Roll their stats</li><li>Choose their Size</li><li>Choose their <preview href='/familiars/classes'>Class</preview></li><li>Choose their <preview href='/familiars/feats'>Feats</preview></li></ol>",
+            "<ol class='list-decimal'><li>Roll their stats</li><li>Choose their Size</li><li>Choose their <a href='/familiars/classes'>Class</a></li><li>Choose their <a href='/familiars/feats'>Feats</a></li></ol>",
             "<small><i><b>Note:</b> Familiars use their own Classes and Feats, which are found on this page. Other Classes and Feats are not balanced or designed for Familiars.</i></small>"
           ]
         },
@@ -28,7 +28,7 @@
         {
           "name": "Additional Familiar Rules",
           "content": [
-            "<p>Your Familiar will have a number of <preview href='/familiars/feats'>Familiar Feats</preview> equal to half of the <a href='/Feats'>Feats</a> that you have, rounded up. For example, if you have 3 Feats, your Familiar has 2.</p>",
+            "<p>Your Familiar will have a number of <a href='/familiars/feats'>Familiar Feats</a> equal to half of the <a href='/Feats'>Feats</a> that you have, rounded up. For example, if you have 3 Feats, your Familiar has 2.</p>",
             "<p>In order for your Familiar to awaken a Stand, both of you must take the <preview href='/feats/Familiar Fighting Spirit'>Familiar Fighting Spirit</preview> Feat.</p>",
             "<p>Your Familiar will follow your lead in combat, taking their Turn in Initiative directly after yours.</p>",
             "<p>Your Familiar will Level-Up alongside you, and will always be the same Level as you.</p>",

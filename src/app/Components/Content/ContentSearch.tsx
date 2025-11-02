@@ -4,6 +4,7 @@
 import {tabs} from "@/../public/data/rules.json";
 import {passions} from "@/../public/data/passions.json";
 import {races} from "@/../public/data/races.json";
+import {categories} from "@/../public/data/familiars.json";
 import {abilities} from "@/../public/data/abilities.json";
 import {feats} from "@/../public/data/feats.json";
 import {weapons} from "@/../public/data/weapons.json";
@@ -64,6 +65,33 @@ export default function ContentSearch({headerCollapsed, className}: {headerColla
         name: race.name,
         page: "Races",
         link: `/races/${encodeURIComponent(race.name)}`
+      });
+    });
+
+    contentList.push({
+      name: "Familiars",
+      page: "Familiars",
+      link: "/familiars/"
+    });
+    categories.classes.forEach((familiarClass) => {
+      contentList.push({
+        name: familiarClass.name,
+        page: "Familiars",
+        link: `/familiars/${encodeURIComponent(familiarClass.name)}`
+      });
+    });
+    categories.features.forEach((familiarFeature) => {
+      contentList.push({
+        name: familiarFeature.name,
+        page: "Familiars",
+        link: `/familiars/${encodeURIComponent(familiarFeature.name)}`
+      });
+    });
+    categories.feats.forEach((familiarFeat) => {
+      contentList.push({
+        name: familiarFeat.name,
+        page: "Familiars",
+        link: `/familiars/${encodeURIComponent(familiarFeat.name)}`
       });
     });
 
