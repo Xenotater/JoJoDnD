@@ -122,7 +122,7 @@ export default function ContentSearch({headerCollapsed, className}: {headerColla
       contentList.push({
         name: weapon.name,
         page: "Weapons",
-        link: `/weapons#${weapon.name}`,
+        link: `/weapons#${encodeURIComponent(weapon.name)}`,
       });
     });
 

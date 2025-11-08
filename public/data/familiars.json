@@ -22,7 +22,7 @@
           "name": "Creature Size",
           "content": [
             "<p>A Familiar's Size determines its Movement Speed, AC bonus (applies to Stand AC as well), and Hit Dice.</p>",
-            "<div class='sizes'><div class='size-card'><b>Tiny:</b><br>Hit Dice: 1d4<br>Movement: 5m OR<br>1m and 5m Flying/Swimming<br>Additional AC: +4<br>Natural Weapon Dice: 1d4</div><div class='size-card'><b>Small:</b><br>Hit Dice: 1d6<br>Movement: 8m OR<br>2m and 8m Flying/Swimming<br>Additional AC: +2<br>Natural Weapon Dice: 1d6</div><div class='size-card'><b>Medium:</b><br>Hit Dice: 1d8<br>Movement: 10m OR<br>3m and 10m Flying/Swimming<br>Additional AC: +1<br>Natural Weapon Dice: 1d8</div><div class='size-card'><b>Large:</b><br>Hit Dice: 1d10<br>Movement: 12m OR<br>5m and 12m Swimming<br>Additional AC: +0<br>Natural Weapon Dice: 1d10</div></div>"
+            "<div class='sizes'><div class='flex flex-wrap justify-center'><div class='size-card'><b>Tiny:</b><br>Hit Dice: 1d4<br>Movement: 5m OR<br>1m and 5m Flying/Swimming<br>Additional AC: +4<br>Natural Weapon Dice: 1d4</div><div class='size-card'><b>Small:</b><br>Hit Dice: 1d6<br>Movement: 8m OR<br>2m and 8m Flying/Swimming<br>Additional AC: +2<br>Natural Weapon Dice: 1d6</div></div><div class='flex flex-wrap justify-center'><div class='size-card'><b>Medium:</b><br>Hit Dice: 1d8<br>Movement: 10m OR<br>3m and 10m Flying/Swimming<br>Additional AC: +1<br>Natural Weapon Dice: 1d8</div><div class='size-card'><b>Large:</b><br>Hit Dice: 1d10<br>Movement: 12m OR<br>5m and 12m Swimming<br>Additional AC: +0<br>Natural Weapon Dice: 1d10</div></div></div>"
           ]
         },
         {
