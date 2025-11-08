@@ -25,17 +25,13 @@ export interface ClassData {
     content: string[];
   }[];
   theme?: string;
-  levelTables: ClassLevelTable[];
+  levels: ClassLevelData[];
   otherCols: {
     name: string;
     level: string[] | number[];
   }
   subTypes?: ClassData[];
-}
-
-export interface ClassLevelTable {
-  name: string;
-  levels: ClassLevelData[];
+  variants?: ClassData[];
 }
 
 export interface ClassLevelData {

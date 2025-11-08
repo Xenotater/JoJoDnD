@@ -29,91 +29,94 @@
         }
       ],
       "theme": "sun",
-      "levelTables": [
+      "levels": [
         {
-          "name": "Standard",
-          "levels": [
-            {
-              "other": ["Unarmed Strikes deal Radiant damage"],
-              "abilities": ["Healing Hands", "Spiritual Ripple (Variant Rule)", "Sunshield"],
-              "feats": ["Equalizer"]
-            },
-            {
-              "abilities": ["Healing Ripple", "Liquid Solidification", "Ripple Fighting Style", "Confident Provocation"],
-              "stats": ["Increase Str, Dex, or Con Score by 1"]
-            },
-            {
-              "feats": ["Headhunter"],
-              "stats": ["Ability Score Improvement"],
-              "abilities": ["Custom Ripple Technique", "Slowed Aging", "Ripple Possession"]
-            },
-            {
-              "abilities": ["Rippling Weapon"],
-              "feats": ["Martial Arts", "OR", "Simple Weapon Focus"],
-              "stats": ["Increase Str, Dex, or Con Score by 1"]
-            },
-            {
-              "abilities": ["Ripple Regeneration", "Ripple Perception"],
-              "feats": ["Trained Combatant"]
-            },
-            {
-              "abilities": ["Ripple Pressure", "OR", "Sunlight Yellow Overdrive", "OR", "Zoom Punch"],
-              "stats": ["Ability Score Improvement", "Increase Str, Dex, or Con Score by 1"]
-            },
-            {
-              "abilities": ["Toxin Expulsion"]
-            },
-            {
-              "abilities": ["Elemental Overdrive", "OR", "Sendo Overdrive"],
-              "stats": ["Ability Score Improvement", "Increase Str, Dex, or Con Score by 1"]
-            },
-            {
-              "abilities": ["Conductor Shield"]
-            },
-            {
-              "other": ["Choose another Class Feature from Level 4, Level 6, or Level 8"],
-              "stats": ["Ability Score Improvement", "Increase Str, Dex, or Con Score by 1"]
-            },
-            {
-              "abilities": ["Enhanced Custom Ripple Technique"],
-              "feats": ["Trained Combatant"]
-            },
-            {
-              "abilities": ["Recovery Breathing"],
-              "stats": ["Increase Str, Dex, or Con Score by 1"]
-            },
-            {
-              "stats": ["Ability Score Improvement"]
-            },
-            {
-              "other": ["Choose another Class Feature from Level 4, Level 6, or Level 8"],
-              "stats": ["Increase Str, Dex, or Con Score by 1"]
-            },
-            {
-              "abilities": ["Deep Pass Overdrive"]
-            },
-            {
-              "feats": ["Trained Combatant"],
-              "stats": ["Increase Str, Dex, or Con Score by 1"]
-            },
-            {
-              "abilities": ["Life Magnetism"],
-              "stats": ["Ability Score Improvement"]
-            },
-            {
-              "stats": ["Increase Str, Dex, or Con Score by 1"]
-            },
-            {
-              "abilities": ["Improved Ripple Perception"]
-            },
-            {
-              "abilities": ["Perfected Ripple"],
-              "stats": ["Increase Str, Dex, or Con Score by 1"]
-            }
-          ]
+          "other": ["Unarmed Strikes deal Radiant damage"],
+          "abilities": ["Healing Hands", "Spiritual Ripple (Variant Rule)", "Sunshield"],
+          "feats": ["Equalizer"]
         },
         {
-          "name": "Modular",
+          "abilities": ["Healing Ripple", "Liquid Solidification", "Ripple Fighting Style", "Confident Provocation"],
+          "stats": ["Increase Str, Dex, or Con Score by 1"]
+        },
+        {
+          "feats": ["Headhunter"],
+          "stats": ["Ability Score Improvement"],
+          "abilities": ["Custom Ripple Technique", "Slowed Aging", "Ripple Possession"]
+        },
+        {
+          "abilities": ["Rippling Weapon"],
+          "feats": ["Martial Arts", "OR", "Simple Weapon Focus"],
+          "stats": ["Increase Str, Dex, or Con Score by 1"]
+        },
+        {
+          "abilities": ["Ripple Regeneration", "Ripple Perception"],
+          "feats": ["Trained Combatant"]
+        },
+        {
+          "abilities": ["Ripple Pressure", "OR", "Sunlight Yellow Overdrive", "OR", "Zoom Punch"],
+          "stats": ["Ability Score Improvement", "Increase Str, Dex, or Con Score by 1"]
+        },
+        {
+          "abilities": ["Toxin Expulsion"]
+        },
+        {
+          "abilities": ["Elemental Overdrive", "OR", "Sendo Overdrive"],
+          "stats": ["Ability Score Improvement", "Increase Str, Dex, or Con Score by 1"]
+        },
+        {
+          "abilities": ["Conductor Shield"]
+        },
+        {
+          "other": ["Choose another Class Feature from Level 4, Level 6, or Level 8"],
+          "stats": ["Ability Score Improvement", "Increase Str, Dex, or Con Score by 1"]
+        },
+        {
+          "abilities": ["Enhanced Custom Ripple Technique"],
+          "feats": ["Trained Combatant"]
+        },
+        {
+          "abilities": ["Recovery Breathing"],
+          "stats": ["Increase Str, Dex, or Con Score by 1"]
+        },
+        {
+          "stats": ["Ability Score Improvement"]
+        },
+        {
+          "other": ["Choose another Class Feature from Level 4, Level 6, or Level 8"],
+          "stats": ["Increase Str, Dex, or Con Score by 1"]
+        },
+        {
+          "abilities": ["Deep Pass Overdrive"]
+        },
+        {
+          "feats": ["Trained Combatant"],
+          "stats": ["Increase Str, Dex, or Con Score by 1"]
+        },
+        {
+          "abilities": ["Life Magnetism"],
+          "stats": ["Ability Score Improvement"]
+        },
+        {
+          "stats": ["Increase Str, Dex, or Con Score by 1"]
+        },
+        {
+          "abilities": ["Improved Ripple Perception"]
+        },
+        {
+          "abilities": ["Perfected Ripple"],
+          "stats": ["Increase Str, Dex, or Con Score by 1"]
+        }
+      ],
+      "otherCols": [
+        {
+          "name": "Unarmed Dice",
+          "level": ["2d6", "2d6", "2d6", "2d6", "2d8", "2d8", "2d8", "2d8", "2d8", "2d10", "2d10", "2d10", "2d10", "2d10", "2d12", "2d12", "2d12", "2d12", "2d12", "2d12"]
+        }
+      ],
+      "variants": [
+        {
+          "nameExt": "(Modular)",
           "levels": [
             {
               "abilities": ["Healing Hands", "Spiritual Ripple (Variant Rule)", "Sunshield"],
@@ -193,12 +196,6 @@
             }
           ]
         }
-      ],
-      "otherCols": [
-        {
-          "name": "Unarmed Dice",
-          "level": ["2d6", "2d6", "2d6", "2d6", "2d8", "2d8", "2d8", "2d8", "2d8", "2d10", "2d10", "2d10", "2d10", "2d10", "2d12", "2d12", "2d12", "2d12", "2d12", "2d12"]
-        }
       ]
     },
     {
@@ -208,7 +205,7 @@
         {
           "name": "Obtaining a Stand",
           "content": [
-            "<p>There are many ways to obtain a Stand. Very few people are lucky enough to be born with this power, passed down genetically. Some gain power when a relative gains a Stand as well, but this is a rare occurrence. In some cases, a relative that suddenly gains a Stand may also give their relatives a fever, putting them on the track to obtaining a Stand. One of the most common methods of obtaining a Stand comes from getting pierced by a <a href='/artifacts/?focus=Stand_Arrow'>Stand Arrow</a>.</p>"
+            "<p>There are many ways to obtain a Stand. Very few people are lucky enough to be born with this power, passed down genetically. Some gain power when a relative gains a Stand as well, but this is a rare occurrence. In some cases, a relative that suddenly gains a Stand may also give their relatives a fever, putting them on the track to obtaining a Stand. One of the most common methods of obtaining a Stand comes from getting pierced by a <preview href='/artifacts/Stand Arrow'>Stand Arrow</preview>.</p>"
           ]
         },
         {
@@ -233,7 +230,7 @@
           "content": [
             "Your Stand's normal Melee Attacks (typically punches) are determined similarly to regular attacks. Roll a d20 and add the Power or Precision Mod of your Stand and your Proficiency Bonus to determine if the attack hits. The amount of damage dealt is based off of your Stand's Attack Dice plus your Power (NOT Precision) Mod.</p>",
             "<p>For User attacks, roll a d20 and add your Strength or Dexterity Mod, whichever is higher. Every Unarmed Attack deals 1d4 + Str damage. <b>Regular physical attacks DO NOT AFFECT STANDS</b> (except for Enhancement or Independent Types).</p>",
-            "<p>Speed is also very important. The total Speed Score of your Stand divided by 50 is one more Attack that the Stand or the User may perform each round, with a minimum of one and a maximum of ten. If Non-Stand Users want to have multiple Attacks per round, they may take the <a href='/feats/?focus=Trained_Combatant'>Trained Combatant</a> Feat."
+            "<p>Speed is also very important. The total Speed Score of your Stand divided by 50 is one more Attack that the Stand or the User may perform each round, with a minimum of one and a maximum of ten. If Non-Stand Users want to have multiple Attacks per round, they may take the <preview href='/feats/Trained Combatant'>Trained Combatant</preview> Feat."
           ]
         },
         {
@@ -272,7 +269,7 @@
           "name": "Substands",
           "content": [
             "<p id='Substands'><small><b>Examples of Substands:</b> <a href='https://jojowiki.com/Sheer_Heart_Attack' target='_blank'>Killer Queen's Sheer Heart Attack</a> and <a href='https://jojowiki.com/King_Crimson#Epitaph'>King Crimson's Epitaph</a></small></p>",
-            "<p>Substands are extremely rare types of Stands that form under extreme conditions. These sorts of Stands typically occur when there is a great mental divide within the Stand User, or when a Stand User undergoes a massive amount of development very quickly. When you get the trait <a href='/abilities?focus=Special_Ability'>Special Ability</a>, rather than giving yourself a Special Ability, you may give yourself a Substand. Substands use the same rules as regular stands, and Level-Up and gain points to their stats in the exact same way that your primary Stand does, but it may be a different type of Stand with its own Ability.</p>",
+            "<p>Substands are extremely rare types of Stands that form under extreme conditions. These sorts of Stands typically occur when there is a great mental divide within the Stand User, or when a Stand User undergoes a massive amount of development very quickly. When you get the trait <preview href='/abilities/Special Ability'>Special Ability</preview>, rather than giving yourself a Special Ability, you may give yourself a Substand. Substands use the same rules as regular stands, and Level-Up and gain points to their stats in the exact same way that your primary Stand does, but it may be a different type of Stand with its own Ability.</p>",
             "<p>You may switch between your Stand and Substand as a Bonus Action when both your Stand is within 2 meters of you. When you summon your Stand, it defaults to the Stand you most recently summoned, though you can switch this with a Bonus Action at any time.</p>",
             "<p>If one Stand has more Stand Energy than the other and you switch to the one with less, the amount of Stand Energy available is reduced to that maximum of the other Stand and remains at that amount until combat ends. For example a primary Stand with 12/12 maximum energy switching to a Substand with 7 max Energy brings the Stand's energy to 7. Even if you switch back to the primary Stand without spending any Energy, the primary Stand now has 7/12 Energy remaining. Energy spent in either form takes away from the same Stand Energy pool.</p>",
             "<p>Upon initially gaining your Substand, your health will need to be recalculated to make up for your potential new focus on melee or a new powerful Ability. Your Hit Dice will function the same way as a Multi-Type Stand would, alternating between the two Hit Dice each Level-Up and starting with the lower one.</p>",
@@ -302,80 +299,77 @@
           "levelUp": "Every Level-Up in this Class, you will gain a number of points to put into any of your Stand's Ability Scores. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level of Stand User you're becoming</li></ul>Your Stand's <u>Range</u> may not be increased past 20 (2 meters).",
           "mults": [4, 3, 3, 1, 4, 2],
           "theme": "world",
-          "levelTables": [
+          "levels": [
             {
-              "name": "Standard",
-              "levels": [
-                {
-                  "abilities": ["Feat of Power"]
-                },
-                {
-                  "abilities": ["Custom Ability", "Confident Provocation"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Armored Stand", "OR", "Melee Barrage", "OR", "Detached Senses"]
-                },
-                {
-                  "feats": ["Blended Fighting", "OR", "Martial Arts", "OR", "Veteran Sprinter"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 4 or Level 5"],
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Stand Leap"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Block Projectile", "OR", "Devastating Critical"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"],
-                  "abilities": ["Special Ability"]
-                },
-                {
-                  "other": ["Attack Dice increases to 2d10"]
-                },
-                {
-                  "abilities": ["Siege Combat", "OR"],
-                  "feats": ["Guard Breaker", "OR", "Whirlwind Attacker", "OR", "Berserker"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 4, Level 5, Level 9, or Level 12"],
-                  "feats": ["Menacing Aura"]
-                },
-                {
-                  "other": ["<a href='/artifacts/?focus=Stand_Arrow'>The Requiem Quietly Plays</a>"]
-                },
-                {
-                  "abilities": ["Lethal Strike", "OR"],
-                  "feats": ["Defensive Agility"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Devastating Melee", "OR", "Rejuvenation"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 4, Level 5, Level 9, Level 12, Level 16, or Level 18"]
-                },
-                {
-                  "abilities": ["Blow for Blow"],
-                  "other": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
-                }
-              ]
+              "abilities": ["Feat of Power"]
             },
             {
-              "name": "Modular",
+              "abilities": ["Custom Ability", "Confident Provocation"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Armored Stand", "OR", "Melee Barrage", "OR", "Detached Senses"]
+            },
+            {
+              "feats": ["Blended Fighting", "OR", "Martial Arts", "OR", "Veteran Sprinter"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4 or Level 5"],
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Stand Leap"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Block Projectile", "OR", "Devastating Critical"]
+            },
+            {
+              "stats": ["Ability Score Improvement"],
+              "abilities": ["Special Ability"]
+            },
+            {
+              "other": ["Attack Dice increases to 2d10"]
+            },
+            {
+              "abilities": ["Siege Combat", "OR"],
+              "feats": ["Guard Breaker", "OR", "Whirlwind Attacker", "OR", "Berserker"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 5, Level 9, or Level 12"],
+              "feats": ["Menacing Aura"]
+            },
+            {
+              "other": ["<preview href='/artifacts/The Requiem Quietly Plays'>The Requiem Quietly Plays</preview>"]
+            },
+            {
+              "abilities": ["Lethal Strike", "OR"],
+              "feats": ["Defensive Agility"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Devastating Melee", "OR", "Rejuvenation"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 5, Level 9, Level 12, Level 16, or Level 18"]
+            },
+            {
+              "abilities": ["Blow for Blow"],
+              "other": ["<preview href='/artifacts/Heaven Calls'>Heaven Calls</preview>"]
+            }
+          ],
+          "variants": [
+            {
+              "nameExt": "Stand (Modular)",
               "levels": [
                 {
                   "abilities": ["Feat of Power"]
@@ -423,7 +417,7 @@
                   "abilities": ["Power Feature"]
                 },
                 {
-                  "other": ["<a href='/artifacts/?focus=Stand_Arrow'>The Requiem Quietly Plays</a>"]
+                  "other": ["<preview href='/artifacts/The Requiem Quietly Plays'>The Requiem Quietly Plays</preview>"]
                 },
                 {
                   "abilities": ["Power Feature"]
@@ -438,8 +432,71 @@
                   "abilities": ["Power Feature"]
                 },
                 {
-                  "other": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"],
+                  "other": ["<preview href='/artifacts/Heaven Calls'>Heaven Calls</preview>"],
                   "abilities": ["Blow for Blow"]
+                }
+              ]
+            },
+            {
+              "nameExt": "Stand (Abridged)",
+              "hDice": "1d12 + 3",
+              "aDice": ["2d8", "3d10"],
+              "levelUp": "Every Level-Up in this Class, you will gain a number of points to put into any of your Stand's Ability Scores. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +15</li><li>Classic Progression: 4d4 (or 10) + Level of Stand User you're becoming</li></ul>Your Stand's <u>Range</u> may not be increased past 20 (2 meters).",
+              "mults": [5, 4, 4, 2, 5, 3],
+              "levels": [
+                {
+                  "abilities": ["Feat of Power", "Custom Ability"]
+                },
+                {
+                  "abilities": ["Confident Provocation", "Armored Stand", "OR", "Detached Senses", "OR", "Melee Barrage"]
+                },
+                {
+                  "stats": ["Ability Score Improvement"],
+                  "abilities": ["Stand Leap"]
+                },
+                {
+                  "other": ["Choose another Class Feature from Level 2"]
+                },
+                {
+                  "abilities": ["Special Ability"]
+                },
+                {
+                  "stats": ["Ability Score Improvement"]
+                },
+                {},
+                {},
+                {
+                  "stats": ["Ability Score Improvement"],
+                  "feats": ["Close-Range Deflection", "OR", "Close-Range Mobility"]
+                },
+                {},
+                {
+                  "other": ["Attack Dice Increases to 3d10"]
+                },
+                {
+                  "stats": ["Ability Score Improvement"]
+                },
+                {},
+                {},
+                {
+                  "stats": ["Ability Score Improvement"],
+                  "other": ["<preview href='/artifacts/The Requiem Quietly Plays'>The Requiem Quietly Plays</preview>"]
+                },
+                {},
+                {},
+                {
+                  "stats": ["Ability Score Improvement"]
+                },
+                {},
+                {
+                  "abilities": ["Blow for Blow"],
+                  "other": ["<preview href='/artifacts/Heaven Calls'>Heaven Calls</preview>"]
+                }
+              ],
+              "otherCols": [
+                {
+                  "name": "Ability Dice",
+                  "level": ["1dx", "1dx", "2dx", "3dx", "3dx", "4dx", "5dx", "5dx", "6dx", "7dx", "7dx", "8dx", "9dx", "9dx", "10dx", "11dx", "11dx", "12dx", "13dx", "13dx"]
                 }
               ]
             }
@@ -466,81 +523,78 @@
           "levelUp": "Every Level-Up in this Class, you will gain a number of points to put into any of your Stand's Ability Scores, except for <u>Power</u> and <u>Durability</u>. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level of Stand User you're becoming</li></ul>Your Stand's <u>Power</u> and <u>Durability</u> may not be increased past their initial values.",
           "mults": [3, 3, 3, 10, 3, 3],
           "theme": "hiero",
-          "levelTables": [
+          "levels": [
             {
-              "name": "Standard",
-              "levels": [
-                {
-                  "abilities": ["Slippery", "Detached Senses", "and", "Doubled Range", "OR", "Immense Resistance", "and"],
-                  "feats": ["Tanky"]
-                },
-                {
-                  "abilities": ["Custom Ability", "Stand Pickpocketing", "Distant Defense", "OR"],
-                  "feats": ["Close-Range Deflection"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Immense Power", "OR", "Ranged Attack"]
-                },
-                {
-                  "other": ["<a href='/feats/?focus=Deadly_Accuracy'>Deadly Accuracy</a> OR <a href='/abilities/?focus=Melee_Barrage'>Melee Barrage</a>", "<a href='/abilities/?focus=Oblivious_Facade'>Oblivious Facade</a> OR <a href='/feats/?focus=Clever_Disguise'>Clever Disguise</a>"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Silent Movement", "OR", "Speedy Movement"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 4, Level 5, or Level 7"],
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Ambush Attacker", "OR", "Hot Pursuit"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"],
-                  "abilities": ["Special Ability"]
-                },
-                {
-                  "other": ["Attack Dice increases to 2d6", "<a href='/abilities/?focus=Ranged_Attack'>Ranged Attack</a> dice and range are doubled"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, or Level 9"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "feats": ["Assassin", "OR", "Enhanced Stand Senses"]
-                },
-                {
-                  "other": ["<a href='/artifacts/?focus=Stand_Arrow'>The Requiem Quietly Plays</a>"]
-                },
-                {
-                  "abilities": ["Improved Awareness", "OR"],
-                  "feats": ["Defensive Agility"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Immense Range", "OR"],
-                  "feats": ["Skirmisher"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 14, Level 16, or Level 18"]
-                },
-                {
-                  "abilities": ["Improved Slippery", "OR", "Perfected Tremorsense"],
-                  "other": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
-                }
-              ]
+              "abilities": ["Slippery", "Detached Senses", "and", "Doubled Range", "OR", "Immense Resistance", "and"],
+              "feats": ["Tanky"]
             },
             {
-              "name": "Modular",
+              "abilities": ["Custom Ability", "Stand Pickpocketing", "Distant Defense", "OR"],
+              "feats": ["Close-Range Deflection"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Immense Power", "OR", "Ranged Attack"]
+            },
+            {
+              "other": ["<preview href='/feats/Deadly Accuracy'>Deadly Accuracy</preview> OR <preview href='/abilities/Melee Barrage'>Melee Barrage</preview>", "<preview href='/abilities/Oblivious Facade'>Oblivious Facade</preview> OR <preview href='/feats/Clever Disguise'>Clever Disguise</preview>"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Silent Movement", "OR", "Speedy Movement"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 5, or Level 7"],
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Ambush Attacker", "OR", "Hot Pursuit"]
+            },
+            {
+              "stats": ["Ability Score Improvement"],
+              "abilities": ["Special Ability"]
+            },
+            {
+              "other": ["Attack Dice increases to 2d6", "<preview href='/abilities/Ranged Attack'>Ranged Attack</preview> dice and range are doubled"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, or Level 9"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "feats": ["Assassin", "OR", "Enhanced Stand Senses"]
+            },
+            {
+              "other": ["<preview href='/artifacts/The Requiem Quietly Plays'>The Requiem Quietly Plays</preview>"]
+            },
+            {
+              "abilities": ["Improved Awareness", "OR"],
+              "feats": ["Defensive Agility"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Immense Range", "OR"],
+              "feats": ["Skirmisher"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 14, Level 16, or Level 18"]
+            },
+            {
+              "abilities": ["Improved Slippery", "OR", "Perfected Tremorsense"],
+              "other": ["<preview href='/artifacts/Heaven Calls'>Heaven Calls</preview>"]
+            }
+          ],
+          "variants": [
+            {
+              "nameExt": "Stand (Modular)",
               "levels": [
                 {
                   "abilities": ["Slippery", "Detached Senses", "and", "Doubled Range", "OR", "Immense Resistance", "and", "Tanky"]
@@ -577,7 +631,7 @@
                   "stats": ["Ability Score Improvement"]
                 },
                 {
-                  "other": ["Attack Dice increases to 2d6, <a href='/abilities/?focus=Ranged_Attack'>Ranged Attack</a> dice and range are doubled"]
+                  "other": ["Attack Dice increases to 2d6, <preview href='/abilities/Ranged Attack'>Ranged Attack</preview> dice and range are doubled"]
                 },
                 {
                   "abilities": ["Ranged Feature"]
@@ -589,7 +643,7 @@
                   "abilities": ["Ranged Feature"]
                 },
                 {
-                  "other": ["<a href='/artifacts/?focus=Stand_Arrow'>The Requiem Quietly Plays</a>"]
+                  "other": ["<preview href='/artifacts/The Requiem Quietly Plays'>The Requiem Quietly Plays</preview>"]
                 },
                 {
                   "abilities": ["Ranged Feature"]
@@ -605,7 +659,7 @@
                 },
                 {
                   "abilities": ["Improved Slippery", "OR", "Perfected Tremorsense"],
-                  "other": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
+                  "other": ["<preview href='/artifacts/Heaven Calls'>Heaven Calls</preview>"]
                 }
               ]
             }
@@ -633,79 +687,76 @@
           "mults": [3, 2, 4, 5, 3, 2],
           "notes": ["These Stands cannot be controlled by their Users, the only power their User has over them is to send them out or recall them. These Stands still use their User's Initiative position, but have a separate Turn where they can only perform one predetermined action."],
           "theme": "hStar",
-          "levelTables": [
+          "levels": [
             {
-              "name": "Standard",
-              "levels": [
-                {
-                  "abilities": ["Programmed Stand", "Stand Marking"],
-                  "feats": ["Equalizer"]
-                },
-                {
-                  "abilities": ["Custom Ability", "Immense Range", "OR", "Immense Power"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"],
-                  "abilities": ["Oblivious Facade"]
-                },
-                {
-                  "abilities": ["Detached Stand", "OR", "Detached Senses"]
-                },
-                {
-                  "feats": ["Weapon Feat"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Armored Stand", "OR", "Juggernaut", "OR"],
-                  "feats": ["Specialized Stand Senses"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "feats": ["Two Modes", "OR", "Tanky", "OR", "Scarflesh"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"],
-                  "abilities": ["Special Ability"]
-                },
-                {
-                  "other": ["Attack Dice increases to 2d8"]
-                },
-                {
-                  "feats": ["Guerilla Fighter", "OR", "Melee Weapon Specialization"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, or Level 12"]
-                },
-                {
-                  "other": ["<a href='/artifacts/?focus=Stand_Arrow'>The Requiem Quietly Plays</a>"]
-                },
-                {
-                  "abilities": ["Improved Immense Range", "OR", "Self-Preservation"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Remote Ambusher", "OR", "Superior Momentum"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 12, Level 16, or Level 18"]
-                },
-                {
-                  "abilities": ["Zealous Focus"],
-                  "other": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
-                }
-              ]
+              "abilities": ["Programmed Stand", "Stand Marking"],
+              "feats": ["Equalizer"]
             },
             {
-              "name": "Modular",
+              "abilities": ["Custom Ability", "Immense Range", "OR", "Immense Power"]
+            },
+            {
+              "stats": ["Ability Score Improvement"],
+              "abilities": ["Oblivious Facade"]
+            },
+            {
+              "abilities": ["Detached Stand", "OR", "Detached Senses"]
+            },
+            {
+              "feats": ["Weapon Feat"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Armored Stand", "OR", "Juggernaut", "OR"],
+              "feats": ["Specialized Stand Senses"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "feats": ["Two Modes", "OR", "Tanky", "OR", "Scarflesh"]
+            },
+            {
+              "stats": ["Ability Score Improvement"],
+              "abilities": ["Special Ability"]
+            },
+            {
+              "other": ["Attack Dice increases to 2d8"]
+            },
+            {
+              "feats": ["Guerilla Fighter", "OR", "Melee Weapon Specialization"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, or Level 12"]
+            },
+            {
+              "other": ["<preview href='/artifacts/The Requiem Quietly Plays'>The Requiem Quietly Plays</preview>"]
+            },
+            {
+              "abilities": ["Improved Immense Range", "OR", "Self-Preservation"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Remote Ambusher", "OR", "Superior Momentum"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 12, Level 16, or Level 18"]
+            },
+            {
+              "abilities": ["Zealous Focus"],
+              "other": ["<preview href='/artifacts/Heaven Calls'>Heaven Calls</preview>"]
+            }
+          ],
+          "variants": [
+            {
+              "nameExt": "Stand (Modular)",
               "levels": [
                 {
                   "abilities": ["Programmed Stand", "Stand Marking"],
@@ -753,7 +804,7 @@
                   "abilities": ["Remote Feature"]
                 },
                 {
-                  "other": ["<a href='/artifacts/?focus=Stand_Arrow'>The Requiem Quietly Plays</a>"]
+                  "other": ["<preview href='/artifacts/The Requiem Quietly Plays'>The Requiem Quietly Plays</preview>"]
                 },
                 {
                   "abilities": ["Remote Feature"]
@@ -769,7 +820,7 @@
                 },
                 {
                   "abilities": ["Zealous Focus"],
-                  "other": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
+                  "other": ["<preview href='/artifacts/Heaven Calls'>Heaven Calls</preview>"]
                 }
               ]
             }
@@ -796,82 +847,80 @@
           "levelUp": "Every Level-Up in this Class, you will gain a number of points to put into any of your Stand's Ability Scores, except for <u>Power</u> and <u>Durability</u>. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level of Stand User you're becoming</li></ul>Your Stand's <u>Power</u> and <u>Durability</u> may not be increased past their initial values.",
           "mults": [1, 3, 1, 4, 3, 5],
           "theme": "album",
-          "levelTables": [
+          "levels": [
             {
-              "name": "Standard",
-              "levels": [
-                {
-                  "abilities": ["Custom Ability"]
-                },
-                {
-                  "abilities": ["Distant Defense", "OR"],
-                  "feats": ["Object Stand", "OR", "Phenomenon Stand", "OR", "Sentient Stand", "OR", "Shared Stand", "OR", "Suit Stand", "OR", "Uncontrollable Stand"],
-                  "other": ["<a href='/abilities?focus=Self_Acclimation'>Self-Acclimation</a> OR <a href='/feats?focus=Resilient'>Resilient</a>"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "feats": ["Weapon Feat"]
-                },
-                {
-                  "abilities": ["Ranged Attack", "OR", "Detached Senses", "OR"],
-                  "feats": ["Energy Imbuement"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"],
-                  "abilities": ["Special Ability"]
-                },
-                {
-                  "abilities": ["Stand Energy Recharge", "Defensive Ability", "OR", "Mobile Ability", "OR"],
-                  "feats": ["Resource Regeneration"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 2, Level 4, Level 5, or Level 7"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"],
-                  "abilities": ["Ultimate Stand Ability"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 2, Level 4, Level 5, or Level 7, Attack Dice increases to 1d6, <a href='/abilities/?focus=Ranged_Attack'>Ranged Attack</a> dice and range are doubled"]
-                },
-                {
-                  "abilities": ["Enhanced Custom Ability"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Slippery", "OR"],
-                  "feats": ["Tanky"]
-                },
-                {
-                  "other": ["<a href='/artifacts/?focus=Stand_Arrow'>The Requiem Quietly Plays</a>"]
-                },
-                {
-                  "feats": ["Calculating", "OR", "Quick on your Feet"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Subtle Assistance", "OR"],
-                  "feats": ["Menacing Aura"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 2, Level 4, Level 5, Level 7, Level 14, Level 16, or Level 18"]
-                },
-                {
-                  "abilities": ["Second Nature"],
-                  "other": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
-                }
-              ]
+              "abilities": ["Custom Ability"]
             },
             {
+              "abilities": ["Distant Defense", "OR"],
+              "feats": ["Object Stand", "OR", "Phenomenon Stand", "OR", "Sentient Stand", "OR", "Shared Stand", "OR", "Suit Stand", "OR", "Uncontrollable Stand"],
+              "other": ["<preview href='/abilities/Self-Acclimation'>Self-Acclimation</preview> OR <preview href='/feats/Resilient'>Resilient</preview>"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "feats": ["Weapon Feat"]
+            },
+            {
+              "abilities": ["Ranged Attack", "OR", "Detached Senses", "OR"],
+              "feats": ["Energy Imbuement"]
+            },
+            {
+              "stats": ["Ability Score Improvement"],
+              "abilities": ["Special Ability"]
+            },
+            {
+              "abilities": ["Stand Energy Recharge", "Defensive Ability", "OR", "Mobile Ability", "OR"],
+              "feats": ["Resource Regeneration"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 2, Level 4, Level 5, or Level 7"]
+            },
+            {
+              "stats": ["Ability Score Improvement"],
+              "abilities": ["Ultimate Stand Ability"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 2, Level 4, Level 5, or Level 7, Attack Dice increases to 1d6, <preview href='/abilities/Ranged Attack'>Ranged Attack</preview> dice and range are doubled"]
+            },
+            {
+              "abilities": ["Enhanced Custom Ability"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Slippery", "OR"],
+              "feats": ["Tanky"]
+            },
+            {
+              "other": ["<preview href='/artifacts/The Requiem Quietly Plays'>The Requiem Quietly Plays</preview>"]
+            },
+            {
+              "feats": ["Calculating", "OR", "Quick on your Feet"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Subtle Assistance", "OR"],
+              "feats": ["Menacing Aura"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 2, Level 4, Level 5, Level 7, Level 14, Level 16, or Level 18"]
+            },
+            {
+              "abilities": ["Second Nature"],
+              "other": ["<preview href='/artifacts/Heaven Calls'>Heaven Calls</preview>"]
+            }
+          ],
+          "variants": [
+            {
+              "nameExt": "Stand (Modular)",
               "name": "Modular",
               "levels": [
                 {
@@ -908,7 +957,7 @@
                 },
                 {
                   "abilities": ["Ability Feature"],
-                  "other": ["Attack Dice increases to 1d8, <a href='/abilities/?focus=Ranged_Attack'>Ranged Attack</a> dice and range are doubled"]
+                  "other": ["Attack Dice increases to 1d8, <preview href='/abilities/Ranged Attack'>Ranged Attack</preview> dice and range are doubled"]
                 },
                 {
                   "abilities": ["Ability Feature"]
@@ -920,7 +969,7 @@
                   "abilities": ["Ability Feature"]
                 },
                 {
-                  "other": ["<a href='/artifacts/?focus=Stand_Arrow'>The Requiem Quietly Plays</a>"]
+                  "other": ["<preview href='/artifacts/The Requiem Quietly Plays'>The Requiem Quietly Plays</preview>"]
                 },
                 {
                   "abilities": ["Ability Feature"]
@@ -936,7 +985,7 @@
                 },
                 {
                   "abilities": ["Second Nature"],
-                  "other": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
+                  "other": ["<preview href='/artifacts/Heaven Calls'>Heaven Calls</preview>"]
                 }
               ]
             }
@@ -964,78 +1013,75 @@
           "levelUp": "Every Level-Up in this Class, you will gain a number of points to put into any of your Stand's Ability Scores. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level of Stand User you're becoming</li></ul>",
           "mults": [3, 3, 5, 5, 3, 3],
           "theme": "love",
-          "levelTables": [
+          "levels": [
             {
-              "name": "Standard",
-              "levels": [
-                {
-                  "abilities": ["Anchored Stand", "Immense Resistance"]
-                },
-                {
-                  "abilities": ["Custom Ability", "Confident Provocation"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Detached Senses", "OR", "Armored Stand"]
-                },
-                {
-                  "abilities": ["Superior Control", "OR", "Immense Range"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Stand Marking", "Oblivious Facade", "OR"],
-                  "feats": ["Clever Disguise"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Camouflage", "OR", "Juggernaut"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"],
-                  "abilities": ["Special Ability"]
-                },
-                {
-                  "other": ["Attack Dice increases to 2d8"]
-                },
-                {
-                  "abilities": ["General Anchors", "OR", "Speedy Switch", "OR", "Siege Combat", "OR"],
-                  "feats": ["Massive Stand"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 5, Level 7, Level 9, or Level 12"]
-                },
-                {
-                  "other": ["<a href='/artifacts/?focus=Stand_Arrow'>The Requiem Quietly Plays</a>"]
-                },
-                {
-                  "feats": ["Resilient", "OR", "Anchored Immunity"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "feats": ["Guerilla Fighter", "OR", "Tanky"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 5, Level 7, Level 9, Level 12, Level 16, or Level 18"]
-                },
-                {
-                  "abilities": ["Condensed Material", "OR", "Fleeting Invulnerability"],
-                  "other": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
-                }
-              ]
+              "abilities": ["Anchored Stand", "Immense Resistance"]
             },
             {
-              "name": "Modular",
+              "abilities": ["Custom Ability", "Confident Provocation"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Detached Senses", "OR", "Armored Stand"]
+            },
+            {
+              "abilities": ["Superior Control", "OR", "Immense Range"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Stand Marking", "Oblivious Facade", "OR"],
+              "feats": ["Clever Disguise"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Camouflage", "OR", "Juggernaut"]
+            },
+            {
+              "stats": ["Ability Score Improvement"],
+              "abilities": ["Special Ability"]
+            },
+            {
+              "other": ["Attack Dice increases to 2d8"]
+            },
+            {
+              "abilities": ["General Anchors", "OR", "Speedy Switch", "OR", "Siege Combat", "OR"],
+              "feats": ["Massive Stand"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 5, Level 7, Level 9, or Level 12"]
+            },
+            {
+              "other": ["<preview href='/artifacts/The Requiem Quietly Plays'>The Requiem Quietly Plays</preview>"]
+            },
+            {
+              "feats": ["Resilient", "OR", "Anchored Immunity"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "feats": ["Guerilla Fighter", "OR", "Tanky"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 5, Level 7, Level 9, Level 12, Level 16, or Level 18"]
+            },
+            {
+              "abilities": ["Condensed Material", "OR", "Fleeting Invulnerability"],
+              "other": ["<preview href='/artifacts/Heaven Calls'>Heaven Calls</preview>"]
+            }
+          ],
+          "variants": [
+            {
+              "nameExt": "Stand (Modular)",
               "levels": [
                 {
                   "abilities": ["Anchored Stand", "Immense Resistance"]
@@ -1082,7 +1128,7 @@
                   "abilities": ["Enhancement Feature"]
                 },
                 {
-                  "other": ["<a href='/artifacts/?focus=Stand_Arrow'>The Requiem Quietly Plays</a>"]
+                  "other": ["<preview href='/artifacts/The Requiem Quietly Plays'>The Requiem Quietly Plays</preview>"]
                 },
                 {
                   "abilities": ["Enhancement Feature"]
@@ -1098,7 +1144,7 @@
                 },
                 {
                   "abilities": ["Condensed Material", "OR", "Fleeting Invulnerability"],
-                  "other": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
+                  "other": ["<preview href='/artifacts/Heaven Calls'>Heaven Calls</preview>"]
                 }
               ]
             }
@@ -1138,80 +1184,77 @@
           "levelUp": "Every Level-Up in this Class, you will gain a number of points to put into any of your Stand's Ability Scores. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +13</li><li>Classic Progression: 3d4 (or 8) + Level of Stand User you're becoming</li></ul>",
           "mults": [4, 3, 4, 5, 3, 3],
           "theme": "cat",
-          "levelTables": [
+          "levels": [
             {
-              "name": "Standard",
-              "levels": [
-                {
-                  "abilities": ["Detached Senses", "Feat of Power"],
-                  "feats": ["Equalizer"]
-                },
-                {
-                  "abilities": ["Custom Ability", "Stand Marking", "Confident Provocation"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "feats": ["Weapon Feat"]
-                },
-                {
-                  "abilities": ["Reckless Attack", "Oblivious Facade", "OR"],
-                  "feats": ["Menacing Aura"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Armored Stand", "OR", "Melee Barrage", "OR", "Rejuvenation", "OR"],
-                  "feats": ["Guard Breaker", "OR", "Berserker"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Focused Hatred", "Nemesis"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"],
-                  "abilities": ["Special Ability"]
-                },
-                {
-                  "other": ["Attack Dice increases to 2d10"]
-                },
-                {
-                  "abilities": ["Second Life", "OR", "Lasting Grudge", "OR", "Immense Range"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 5, Level 7, or Level 12"]
-                },
-                {
-                  "other": ["<a href='/artifacts/?focus=Stand_Arrow'>The Requiem Quietly Plays</a>"]
-                },
-                {
-                  "abilities": ["Devastating Critical", "OR", "Devastating Melee"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Superior Grudge", "OR"],
-                  "feats": ["Guardian's Wrath"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 5, Level 7, Level 12, Level 16, or Level 18"]
-                },
-                {
-                  "abilities": ["Hit List"],
-                  "other": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
-                }
-              ]
+              "abilities": ["Detached Senses", "Feat of Power"],
+              "feats": ["Equalizer"]
             },
             {
-              "name": "Modular",
+              "abilities": ["Custom Ability", "Stand Marking", "Confident Provocation"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "feats": ["Weapon Feat"]
+            },
+            {
+              "abilities": ["Reckless Attack", "Oblivious Facade", "OR"],
+              "feats": ["Menacing Aura"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Armored Stand", "OR", "Melee Barrage", "OR", "Rejuvenation", "OR"],
+              "feats": ["Guard Breaker", "OR", "Berserker"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Focused Hatred", "Nemesis"]
+            },
+            {
+              "stats": ["Ability Score Improvement"],
+              "abilities": ["Special Ability"]
+            },
+            {
+              "other": ["Attack Dice increases to 2d10"]
+            },
+            {
+              "abilities": ["Second Life", "OR", "Lasting Grudge", "OR", "Immense Range"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 5, Level 7, or Level 12"]
+            },
+            {
+              "other": ["<preview href='/artifacts/The Requiem Quietly Plays'>The Requiem Quietly Plays</preview>"]
+            },
+            {
+              "abilities": ["Devastating Critical", "OR", "Devastating Melee"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Superior Grudge", "OR"],
+              "feats": ["Guardian's Wrath"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 5, Level 7, Level 12, Level 16, or Level 18"]
+            },
+            {
+              "abilities": ["Hit List"],
+              "other": ["<preview href='/artifacts/Heaven Calls'>Heaven Calls</preview>"]
+            }
+          ],
+          "variants": [
+            {
+              "nameExt": "Stand (Modular)",
               "levels": [
                 {
                   "abilities": ["Detached Senses", "Feat of Power"],
@@ -1258,7 +1301,7 @@
                   "abilities": ["Revenge Feature"]
                 },
                 {
-                  "other": ["<a href='/artifacts/?focus=Stand_Arrow'>The Requiem Quietly Plays</a>"]
+                  "other": ["<preview href='/artifacts/The Requiem Quietly Plays'>The Requiem Quietly Plays</preview>"]
                 },
                 {
                   "abilities": ["Revenge Feature"]
@@ -1274,7 +1317,7 @@
                 },
                 {
                   "abilities": ["Hit List"],
-                  "other": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
+                  "other": ["<preview href='/artifacts/Heaven Calls'>Heaven Calls</preview>"]
                 }
               ]
             }
@@ -1305,79 +1348,76 @@
           "levelUp": "Every Level-Up in this Class, you will gain a number of points to put into any of your Stand's Ability Scores, except for <u>Range</u>. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level of Stand User you're becoming</li></ul>Your Stand's <u>Range</u> may not be increased past 0.",
           "mults": [3, 3, 4, 0, 3, 3],
           "theme": "ff",
-          "levelTables": [
+          "levels": [
             {
-              "name": "Standard",
-              "levels": [
-                {
-                  "abilities": ["Immense Resistance", "Anchored Stand"]
-                },
-                {
-                  "abilities": ["Custom Ability", "Confident Provocation"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Melee Barrage", "OR", "Ranged Attack", "OR"],
-                  "feats": ["Energy Imbuement"],
-                  "other": ["<a href='/abilities/?focus=Oblivious_Facade'>Oblivious Facade</a> OR <a href='/feats/?focus=Clever_Disguise'>Clever Disguise</a>"]
-                },
-                {
-                  "abilities": ["Armored Stand", "OR", "Self-Repair"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 4 or Level 5"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Camouflage", "OR", "Juggernaut"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"],
-                  "abilities": ["Special Ability"]
-                },
-                {
-                  "other": ["Attack Dice increases to 2d6", "<a href='/abilities/?focus=Ranged_Attack'>Ranged Attack</a> dice and range are doubled"]
-                },
-                {
-                  "abilities": ["Defensive Ability", "OR", "Mobile Ability"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 4, Level 5, Level 9, or Level 12"]
-                },
-                {
-                  "other": ["<a href='/artifacts/?focus=Stand_Arrow'>The Requiem Quietly Plays</a>"]
-                },
-                {
-                  "feats": ["Resilient", "OR", "Anchored Immunity"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Slippery", "OR"],
-                  "feats": ["Defensive Agility"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 4, Level 5, Level 9, Level 12, Level 16, or Level 18"]
-                },
-                {
-                  "abilities": ["Fleeting Invulnerability", "OR", "Regenerative Surge"],
-                  "other": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
-                }
-              ]
+              "abilities": ["Immense Resistance", "Anchored Stand"]
             },
             {
-              "name": "Modular",
+              "abilities": ["Custom Ability", "Confident Provocation"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Melee Barrage", "OR", "Ranged Attack", "OR"],
+              "feats": ["Energy Imbuement"],
+              "other": ["<preview href='/abilities/Oblivious Facade'>Oblivious Facade</preview> OR <preview href='/feats/Clever Disguise'>Clever Disguise</preview>"]
+            },
+            {
+              "abilities": ["Armored Stand", "OR", "Self-Repair"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4 or Level 5"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Camouflage", "OR", "Juggernaut"]
+            },
+            {
+              "stats": ["Ability Score Improvement"],
+              "abilities": ["Special Ability"]
+            },
+            {
+              "other": ["Attack Dice increases to 2d6", "<preview href='/abilities/Ranged Attack'>Ranged Attack</preview> dice and range are doubled"]
+            },
+            {
+              "abilities": ["Defensive Ability", "OR", "Mobile Ability"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 5, Level 9, or Level 12"]
+            },
+            {
+              "other": ["<preview href='/artifacts/The Requiem Quietly Plays'>The Requiem Quietly Plays</preview>"]
+            },
+            {
+              "feats": ["Resilient", "OR", "Anchored Immunity"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Slippery", "OR"],
+              "feats": ["Defensive Agility"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 5, Level 9, Level 12, Level 16, or Level 18"]
+            },
+            {
+              "abilities": ["Fleeting Invulnerability", "OR", "Regenerative Surge"],
+              "other": ["<preview href='/artifacts/Heaven Calls'>Heaven Calls</preview>"]
+            }
+          ],
+          "variants": [
+            {
+              "nameExt": "Stand (Modular)",
               "levels": [
                 {
                   "abilities": ["Immense Resistance", "Anchored Stand"]
@@ -1412,7 +1452,7 @@
                   "stats": ["Ability Score Improvement"]
                 },
                 {
-                  "other": ["Attack Dice increases to 2d6, <a href='/abilities/?focus=Ranged_Attack'>Ranged Attack</a> dice and range are doubled"]
+                  "other": ["Attack Dice increases to 2d6, <preview href='/abilities/Ranged Attack'>Ranged Attack</preview> dice and range are doubled"]
                 },
                 {
                   "abilities": ["Independent Feature"]
@@ -1424,7 +1464,7 @@
                   "abilities": ["Independent Feature"]
                 },
                 {
-                  "other": ["<a href='/artifacts/?focus=Stand_Arrow'>The Requiem Quietly Plays</a>"]
+                  "other": ["<preview href='/artifacts/The Requiem Quietly Plays'>The Requiem Quietly Plays</preview>"]
                 },
                 {
                   "abilities": ["Independent Feature"]
@@ -1440,7 +1480,7 @@
                 },
                 {
                   "abilities": ["Fleeting Invulnerability", "OR", "Regenerative Surge"],
-                  "other": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
+                  "other": ["<preview href='/artifacts/Heaven Calls'>Heaven Calls</preview>"]
                 }
               ]
             }
@@ -1484,79 +1524,76 @@
           "levelUp": "Every Level-Up in this Class, you will gain a number of points to put into any of your Stand's Ability Scores. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level of Stand User you're becoming</li></ul>",
           "mults": [3, 2, 3, 8, 3, 3],
           "theme": "bad",
-          "levelTables": [
+          "levels": [
             {
-              "name": "Standard",
-              "levels": [
-                {
-                  "abilities": ["Split Stand", "Immense Resistance", "OR", "Detached Senses"]
-                },
-                {
-                  "abilities": ["Custom Ability"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Stand Marking", "OR", "Hot Pursuit"]
-                },
-                {
-                  "abilities": ["Surrounding Swarm"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Stand Pickpocketing", "Immense Range", "OR", "Armored Stand"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Defensive Wave", "OR", "Mobile Wave", "OR"],
-                  "feats": ["Resource Regeneration"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"],
-                  "abilities": ["Special Ability"]
-                },
-                {
-                  "other": ["Swarm Attack Dice increases to 2dx"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 1, Level 4, Level 7, or Level 9"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Silent Movement", "OR", "Speedy Movement"]
-                },
-                {
-                  "other": ["<a href='/artifacts/?focus=Stand_Arrow'>The Requiem Quietly Plays</a>"]
-                },
-                {
-                  "abilities": ["Improved Immense Range", "OR"],
-                  "feats": ["Enhanced Stand Senses"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Improved Awareness", "OR"],
-                  "feats": ["Guerilla Fighter", "OR", "Skirmisher"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 1, Level 4, Level 7, Level 9, Level 14, Level 16, or Level 18"]
-                },
-                {
-                  "abilities": ["Great Recall"],
-                  "other": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
-                }
-              ]
+              "abilities": ["Split Stand", "Immense Resistance", "OR", "Detached Senses"]
             },
             {
-              "name": "Modular",
+              "abilities": ["Custom Ability"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Stand Marking", "OR", "Hot Pursuit"]
+            },
+            {
+              "abilities": ["Surrounding Swarm"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Stand Pickpocketing", "Immense Range", "OR", "Armored Stand"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Defensive Wave", "OR", "Mobile Wave", "OR"],
+              "feats": ["Resource Regeneration"]
+            },
+            {
+              "stats": ["Ability Score Improvement"],
+              "abilities": ["Special Ability"]
+            },
+            {
+              "other": ["Swarm Attack Dice increases to 2dx"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 1, Level 4, Level 7, or Level 9"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Silent Movement", "OR", "Speedy Movement"]
+            },
+            {
+              "other": ["<preview href='/artifacts/The Requiem Quietly Plays'>The Requiem Quietly Plays</preview>"]
+            },
+            {
+              "abilities": ["Improved Immense Range", "OR"],
+              "feats": ["Enhanced Stand Senses"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Improved Awareness", "OR"],
+              "feats": ["Guerilla Fighter", "OR", "Skirmisher"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 1, Level 4, Level 7, Level 9, Level 14, Level 16, or Level 18"]
+            },
+            {
+              "abilities": ["Great Recall"],
+              "other": ["<preview href='/artifacts/Heaven Calls'>Heaven Calls</preview>"]
+            }
+          ],
+          "variants": [
+            {
+              "nameExt": "Stand (Modular)",
               "levels": [
                 {
                   "abilities": ["Split Stand", "Hive Feature"]
@@ -1602,7 +1639,7 @@
                   "abilities": ["Hive Feature"]
                 },
                 {
-                  "other": ["<a href='/artifacts/?focus=Stand_Arrow'>The Requiem Quietly Plays</a>"]
+                  "other": ["<preview href='/artifacts/The Requiem Quietly Plays'>The Requiem Quietly Plays</preview>"]
                 },
                 {
                   "abilities": ["Hive Feature"]
@@ -1618,7 +1655,7 @@
                 },
                 {
                   "abilities": ["Great Recall"],
-                  "other": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
+                  "other": ["<preview href='/artifacts/Heaven Calls'>Heaven Calls</preview>"]
                 }
               ]
             }
@@ -1637,7 +1674,7 @@
           "exampleOf": "Act Stands",
           "examples": ["Echoes", "Tusk"],
           "links": ["Echoes", "Tusk"],
-          "desc": "It is said that Stands are a physical manifestation of one's fighting spirit. However, there are some that are exposed to a <a href='/artifacts'>Stand-Granting item</a> that do not possess a proper fighting spirit, but develop a Stand regardless due to  some (often benevolent) outside force. These Stand Users will grow and develop alongside their Stand. Despite starting out extremely weak, they eventually become some of the strongest, scariest, and most versatile Stand Users. They are forced to evolve their Stand once they have developed as a person, experienced combat several times, and when they are in a situation that puts them in despair.",
+          "desc": "It is said that Stands are a physical manifestation of one's fighting spirit. However, there are some that are exposed to a <preview href='/artifacts/Stand-Granting item'>Stand-Granting item</preview> that do not possess a proper fighting spirit, but develop a Stand regardless due to  some (often benevolent) outside force. These Stand Users will grow and develop alongside their Stand. Despite starting out extremely weak, they eventually become some of the strongest, scariest, and most versatile Stand Users. They are forced to evolve their Stand once they have developed as a person, experienced combat several times, and when they are in a situation that puts them in despair.",
           "notes": [
             "You may switch between your Acts as a Bonus Action once you have obtained them, all except for the Act 0 Stand. In order to evolve your Stand, you must have unlocked the next Act, and you must go through an event that your DM considers to be hopeless or desperate.",
             "When switching to an Act with a higher Stand Energy Modifier, your Stand Energy must remain at the lower value. For example, if your Act 2 Stand has 6 SE and you switch to Act 1 with a maximum of 10, your available Stand Energy remains at 6."
@@ -1648,13 +1685,13 @@
               "content": [
                 "<p>Each time you gain a new Act, you must choose what type it is from the following list. Your Act Type determines the Attack Dice, Ability Score Multipliers, and Class Features gained for that Act.</p>",
                 "<div id='actTypes'>",
-                "<div class='actType'><b>Close-Range</b><span>You gain: <a href='/abilities/?focus=Feat_of_Power'>Feat of Power</a> and <a href='/abilities/?focus=Confident_Provocation'>Confident Provocation</a></span><span>Note: Your Range Score may not go above 20</span><span>Attack Dice: 1d10 (2d8 past Level 11)</span><b>Ability Score Multipliers</b>",
+                "<div class='actType'><b>Close-Range</b><span>You gain: <preview href='/abilities/Feat of Power'>Feat of Power</preview> and <preview href='/abilities/Confident Provocation'>Confident Provocation</preview></span><span>Note: Your Range Score may not go above 20</span><span>Attack Dice: 1d10 (2d8 past Level 11)</span><b>Ability Score Multipliers</b>",
                 "<table class='table table-striped minor'><thead><tr><th>Stat</th><th>Multiplier</tr></thead><tbody><tr><td>Power</td><td>Str x3</td></tr><tr><td>Precision</td><td>Dex x3</td></tr><tr><td>Durability</td><td>Con x3</td></tr><tr><td>Range</td><td>Int x1</td></tr><tr><td>Speed</td><td>Wis x4</td></tr><tr><td>Stand Energy</td><td>Cha x2</td></tr></tbody></table></div>",
-                "<div class='actType'><b>Long-Range</b><span>You gain: <a href='/abilities/?focus=Slippery'>Slippery</a> and <a href='/abilities/?focus=Distant_Defense'>Distant Defense</a> and either <a href='/abilities/?focus=Detached_Senses'>Detached Senses</a> and <a href='/abilities/?focus=Doubled_Range'>Doubled Range</a> OR <a href='/abilities/?focus=Immense_Resistance'>Immense Resistance</a> and <a href='/abilities/?focus=Tanky'>Tanky</a></span><span>Note: You may not increase your Power or Durability when Leveling Up.</span><span>Attack Dice: 1d8 (2d6 past Level 11)</span><b>Ability Score Multipliers</b>",
+                "<div class='actType'><b>Long-Range</b><span>You gain: <preview href='/abilities/Slippery'>Slippery</preview> and <preview href='/abilities/Distant Defense'>Distant Defense</preview> and either <preview href='/abilities/Detached Senses'>Detached Senses</preview> and <preview href='/abilities/Doubled Range'>Doubled Range</preview> OR <preview href='/abilities/Immense Resistance'>Immense Resistance</preview> and <preview href='/abilities/Tanky'>Tanky</preview></span><span>Note: You may not increase your Power or Durability when Leveling Up.</span><span>Attack Dice: 1d8 (2d6 past Level 11)</span><b>Ability Score Multipliers</b>",
                 "<table class='table table-striped minor'><thead><tr><th>Stat</th><th>Multiplier</tr></thead><tbody><tr><td>Power</td><td>Str x3</td></tr><tr><td>Precision</td><td>Dex x3</td></tr><tr><td>Durability</td><td>Con x3</td></tr><tr><td>Range</td><td>Int x8</td></tr><tr><td>Speed</td><td>Wis x3</td></tr><tr><td>Stand Energy</td><td>Cha x3</td></tr></tbody></table></div>",
-                "<div class='actType'><b>Ability-Focused</b><span>You gain: <a href='/abilities/?focus=Self_Acclimation'>Self-Acclimation</a> and <a href='/abilities/?focus=Distant_Defense'>Distant Defense</a></span><span>Note: You may not increase your Power or Durability when Leveling Up.</span><span>Attack Dice: 1d4 (1d6 past Level 11)</span><b>Ability Score Multipliers</b>",
+                "<div class='actType'><b>Ability-Focused</b><span>You gain: <preview href='/abilities/Self-Acclimation'>Self-Acclimation</preview> and <preview href='/abilities/Distant Defense'>Distant Defense</preview></span><span>Note: You may not increase your Power or Durability when Leveling Up.</span><span>Attack Dice: 1d4 (1d6 past Level 11)</span><b>Ability Score Multipliers</b>",
                 "<table class='table table-striped minor'><thead><tr><th>Stat</th><th>Multiplier</tr></thead><tbody><tr><td>Power</td><td>Str x1</td></tr><tr><td>Precision</td><td>Dex x2</td></tr><tr><td>Durability</td><td>Con x1</td></tr><tr><td>Range</td><td>Int x3</td></tr><tr><td>Speed</td><td>Wis x3</td></tr><tr><td>Stand Energy</td><td>Cha x5</td></tr></tbody></table></div>",
-                "<div class='actType'><b>Remote-Focused</b><span>You gain: <a href='/abilities/?focus=Programmed_Stand'>Programmed Stand</a> and <a href='/abilities/?focus=Stand_Marking'>Stand Marking</a></span><span>Note: You may not increase your Precision when Leveling Up. If someone activates your Remote trigger, you may switch to your Remote-Focused Act as a Reaction.</span><span>Attack Dice: 1d10 (2d8 past Level 11)</span><b>Ability Score Multipliers</b>",
+                "<div class='actType'><b>Remote-Focused</b><span>You gain: <preview href='/abilities/Programmed Stand'>Programmed Stand</preview> and <preview href='/abilities/Stand Marking'>Stand Marking</preview></span><span>Note: You may not increase your Precision when Leveling Up. If someone activates your Remote trigger, you may switch to your Remote-Focused Act as a Reaction.</span><span>Attack Dice: 1d10 (2d8 past Level 11)</span><b>Ability Score Multipliers</b>",
                 "<table class='table table-striped minor'><thead><tr><th>Stat</th><th>Multiplier</tr></thead><tbody><tr><td>Power</td><td>Str x3</td></tr><tr><td>Precision</td><td>Dex x2</td></tr><tr><td>Durability</td><td>Con x3</td></tr><tr><td>Range</td><td>Int x4</td></tr><tr><td>Speed</td><td>Wis x3</td></tr><tr><td>Stand Energy</td><td>Cha x2</td></tr></tbody></table></div>",
                 "</div>"
               ]
@@ -1665,80 +1702,77 @@
           "dc": "8 + Cha + Proficiency Bonus",
           "levelUp": "Every Level-Up in this Class, you will gain a number of points to put into any of your Stand's Ability Scores, except those restricted by each Act's Type. The number of points you get depends on which of the modes of progression below your DM is using:<ul><li>Linear Progression: +10</li><li>Classic Progression: 2d4 (or 5) + Level of Stand User you're becoming</li></ul>You put all of the points into each Act. When you gain a new Act, you may retroactively increase the stats of it to match its Level.",
           "theme": "echoes",
-          "levelTables": [
+          "levels": [
             {
-              "name": "Standard",
-              "levels": [
-                {
-                  "abilities": ["Act 0"]
-                },
-                {
-                  "abilities": ["Act 1 (Long Range)", "Custom Ability (Act 1)", "Act Modifier", "OR", "Oblivious Facade", "OR"],
-                  "feats": ["Clever Disguise"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Stand Pickpocketing (Act 1)"]
-                },
-                {
-                  "abilities": ["Melee Barrage (Act 1)", "OR", "Act Modifier", "OR", "Ranged Attack (Act 1)", "OR"],
-                  "feats": ["Deadly Accuracy"]
-                },
-                {
-                  "abilities": ["Act 2 (Ability-Focused)", "Custom Ability (Act 2)"],
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Stand Energy Recharge (Act 2)"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Act Modifier", "OR", "Defensive Ability (Act 2)", "OR", "Mobile Ability (Act 2)", "OR"],
-                  "feats": ["Resource Regeneration"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Act 3 (Close-Range)", "Custom Ability (Act 3)"]
-                },
-                {
-                  "abilities": ["Armored Stand (Act 3)", "OR", "Melee Barrage (Act 3)", "OR", "Stand Leap (Act 3)"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Act Modifier", "OR", "Block Projectile (Act 3)", "OR", "Menacing Aura (Act 3)", "OR", "Siege Combat (Act 3)"]
-                },
-                {
-                  "other": ["<a href='/artifacts/?focus=Stand_Arrow'>The Requiem Quietly Plays</a>"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 5, Level 9, Level 12, or Level 14"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Act Modifier", "OR", "Immense Range (Act 1)", "OR", "Improved Awareness (Act 1)", "OR", "Subtle Assistance (Act 2)", "OR", "Devastating Melee (Act 3)", "OR"],
-                  "feats": ["Calculating", "OR", "Defensive Agility"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 5, Level 9, Level 12, Level 14, or Level 18"]
-                },
-                {
-                  "abilities": ["Instant Swap", "OR", "Act 4 (Variant Rule)"],
-                  "other": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
-                }
-              ]
+              "abilities": ["Act 0"]
             },
             {
-              "name": "Modular",
+              "abilities": ["Act 1 (Long Range)", "Custom Ability (Act 1)", "Act Modifier", "OR", "Oblivious Facade", "OR"],
+              "feats": ["Clever Disguise"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Stand Pickpocketing (Act 1)"]
+            },
+            {
+              "abilities": ["Melee Barrage (Act 1)", "OR", "Act Modifier", "OR", "Ranged Attack (Act 1)", "OR"],
+              "feats": ["Deadly Accuracy"]
+            },
+            {
+              "abilities": ["Act 2 (Ability-Focused)", "Custom Ability (Act 2)"],
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Stand Energy Recharge (Act 2)"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Act Modifier", "OR", "Defensive Ability (Act 2)", "OR", "Mobile Ability (Act 2)", "OR"],
+              "feats": ["Resource Regeneration"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Act 3 (Close-Range)", "Custom Ability (Act 3)"]
+            },
+            {
+              "abilities": ["Armored Stand (Act 3)", "OR", "Melee Barrage (Act 3)", "OR", "Stand Leap (Act 3)"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Act Modifier", "OR", "Block Projectile (Act 3)", "OR", "Menacing Aura (Act 3)", "OR", "Siege Combat (Act 3)"]
+            },
+            {
+              "other": ["<preview href='/artifacts/The Requiem Quietly Plays'>The Requiem Quietly Plays</preview>"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 5, Level 9, Level 12, or Level 14"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Act Modifier", "OR", "Immense Range (Act 1)", "OR", "Improved Awareness (Act 1)", "OR", "Subtle Assistance (Act 2)", "OR", "Devastating Melee (Act 3)", "OR"],
+              "feats": ["Calculating", "OR", "Defensive Agility"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 5, Level 9, Level 12, Level 14, or Level 18"]
+            },
+            {
+              "abilities": ["Instant Swap", "OR", "Act 4 (Variant Rule)"],
+              "other": ["<preview href='/artifacts/Heaven Calls'>Heaven Calls</preview>"]
+            }
+          ],
+          "variants": [
+            {
+              "nameExt": "Stand (Modular)",
               "levels": [
                 {
                   "abilities": ["Act 0"]
@@ -1784,7 +1818,7 @@
                   "abilities": ["Act Modifier", "OR", "Act Feature"]
                 },
                 {
-                  "other": ["<a href='/artifacts/?focus=Stand_Arrow'>The Requiem Quietly Plays</a>"]
+                  "other": ["<preview href='/artifacts/The Requiem Quietly Plays'>The Requiem Quietly Plays</preview>"]
                 },
                 {
                   "abilities": ["Act Feature"]
@@ -1800,7 +1834,7 @@
                 },
                 {
                   "abilities": ["Instant Swap", "OR", "Act 4 (Variant Rule)"],
-                  "other": ["<a href='/artifacts/?focus=Heaven'>Heaven Calls</a>"]
+                  "other": ["<preview href='/artifacts/Heaven Calls'>Heaven Calls</preview>"]
                 }
               ]
             }
@@ -1840,7 +1874,7 @@
                 "Satellite Sphere",
                 "20/40m",
                 "-",
-                "Can only be used if you have the <a href='/abilities?focus=Satellite_Spin'>Satellite Spin</a> Ability.This Sphere takes a full Action to throw. The Satellite Sphere is a metal ball covered in many smaller, marble-sized metal balls. At a point in the air that you determine, or on contact, those within 5 meters must make a Wisdom Saving Throw against your spin DC (if targets are in the Long Range, they have Advantage on this Save). On failure, targets are given Disadvantage on all Strength and Dexterity Attack Rolls and Skill Checks, getting to repeat the Wisdom save at the end of their turn. The effect ends on a success, or after 1 minute passes."
+                "Can only be used if you have the <preview href='/abilities/Satellite Spin'>Satellite Spin</preview> Ability.This Sphere takes a full Action to throw. The Satellite Sphere is a metal ball covered in many smaller, marble-sized metal balls. At a point in the air that you determine, or on contact, those within 5 meters must make a Wisdom Saving Throw against your spin DC (if targets are in the Long Range, they have Advantage on this Save). On failure, targets are given Disadvantage on all Strength and Dexterity Attack Rolls and Skill Checks, getting to repeat the Wisdom save at the end of their turn. The effect ends on a success, or after 1 minute passes."
               ],
               ["Wood", "40/80m", "xd8 Slashing", "The Wooden Sphere will splinter and shatter upon contact, causing splinters to fly off in all directions up to 5 meters from the point of the Sphere's impact. Those within 5 meters must make a Dex Save against your Spin DC (if targets are in the Long Range of this Sphere, they have Advantage on this Save), taking full damage on a failed Save or half as much on a success. When used, this Sphere destroys itself."],
               ["Rubber", "50/100m", "xd4 + Dex Force", "None"],
@@ -1854,86 +1888,83 @@
         }
       ],
       "theme": "gyro",
-      "levelTables": [
+      "levels": [
         {
-          "name": "Standard",
-          "levels": [
-            {
-              "abilities": ["Forced Motion", "Spherical Spin", "Spiritual Spin (Variant Rule)"],
-              "feats": ["Equalizer"],
-              "other": ["Gain Proficiency in Attack Rolls using the Spin"]
-            },
-            {
-              "abilities": ["Sculpt Sphere", "Spin Fighting Style"]
-            },
-            {
-              "abilities": ["Custom Spin Technique", "Return to Sender"],
-              "feats": ["Deadly Accuracy"],
-              "stats": ["Ability Score Improvement"]
-            },
-            {
-              "abilities": ["Medicinal Spin", "OR", "Muscle Contraction", "OR", "Satellite Spin", "OR", "Tendon Twister", "OR"],
-              "feats": ["Catlike Agility"]
-            },
-            {
-              "abilities": ["Harden Flesh", "Projectile Boost", "OR", "Sendo Spin"]
-            },
-            {
-              "abilities": ["Object Manipulation", "Wrist Memory"],
-              "stats": ["Ability Score Improvement"]
-            },
-            {
-              "feats": ["Trained Combatant"],
-              "other": ["Gain Proficiency in Attack Rolls using the Spin again"]
-            },
-            {
-              "stats": ["Ability Score Improvement"],
-              "other": ["Choose another Class Feature from Level 4, or Level 5"]
-            },
-            {
-              "abilities": ["Immense Friction", "OR", "Restraining Spin"]
-            },
-            {
-              "other": ["Choose another Class Feature from Level 4, Level 5,  or Level 9"],
-              "stats": ["Ability Score Improvement"]
-            },
-            {
-              "abilities": ["Enhanced Custom Spin Technique"]
-            },
-            {
-              "other": ["Choose another Class Feature from Level 4, Level 5, or Level 9"]
-            },
-            {
-              "abilities": ["Preparing For Infinity"],
-              "stats": ["Ability Score Improvement"]
-            },
-            {
-              "other": ["Gain Proficiency in Attack Rolls using the Spin again"]
-            },
-            {
-              "abilities": ["Create Mirage", "OR", "Expose Weakness"],
-              "feats": ["Trained Combatant"]
-            },
-            {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 9, or Level 15"]
-            },
-            {
-              "abilities": ["Deflect Distance Attack", "OR", "Self-Compression"],
-              "stats": ["Ability Score Improvement"]
-            },
-            {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 9, Level 15, or Level 17"]
-            },
-            {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 9, Level 15, or Level 17"]
-            },
-            {
-              "abilities": ["Perfected Spiral"]
-            }
-          ]
+          "abilities": ["Forced Motion", "Spherical Spin", "Spiritual Spin (Variant Rule)"],
+          "feats": ["Equalizer"],
+          "other": ["Gain Proficiency in Attack Rolls using the Spin"]
         },
         {
-          "name": "Modular",
+          "abilities": ["Sculpt Sphere", "Spin Fighting Style"]
+        },
+        {
+          "abilities": ["Custom Spin Technique", "Return to Sender"],
+          "feats": ["Deadly Accuracy"],
+          "stats": ["Ability Score Improvement"]
+        },
+        {
+          "abilities": ["Medicinal Spin", "OR", "Muscle Contraction", "OR", "Satellite Spin", "OR", "Tendon Twister", "OR"],
+          "feats": ["Catlike Agility"]
+        },
+        {
+          "abilities": ["Harden Flesh", "Projectile Boost", "OR", "Sendo Spin"]
+        },
+        {
+          "abilities": ["Object Manipulation", "Wrist Memory"],
+          "stats": ["Ability Score Improvement"]
+        },
+        {
+          "feats": ["Trained Combatant"],
+          "other": ["Gain Proficiency in Attack Rolls using the Spin again"]
+        },
+        {
+          "stats": ["Ability Score Improvement"],
+          "other": ["Choose another Class Feature from Level 4, or Level 5"]
+        },
+        {
+          "abilities": ["Immense Friction", "OR", "Restraining Spin"]
+        },
+        {
+          "other": ["Choose another Class Feature from Level 4, Level 5,  or Level 9"],
+          "stats": ["Ability Score Improvement"]
+        },
+        {
+          "abilities": ["Enhanced Custom Spin Technique"]
+        },
+        {
+          "other": ["Choose another Class Feature from Level 4, Level 5, or Level 9"]
+        },
+        {
+          "abilities": ["Preparing For Infinity"],
+          "stats": ["Ability Score Improvement"]
+        },
+        {
+          "other": ["Gain Proficiency in Attack Rolls using the Spin again"]
+        },
+        {
+          "abilities": ["Create Mirage", "OR", "Expose Weakness"],
+          "feats": ["Trained Combatant"]
+        },
+        {
+          "other": ["Choose another Class Feature from Level 4, Level 5, Level 9, or Level 15"]
+        },
+        {
+          "abilities": ["Deflect Distance Attack", "OR", "Self-Compression"],
+          "stats": ["Ability Score Improvement"]
+        },
+        {
+          "other": ["Choose another Class Feature from Level 4, Level 5, Level 9, Level 15, or Level 17"]
+        },
+        {
+          "other": ["Choose another Class Feature from Level 4, Level 5, Level 9, Level 15, or Level 17"]
+        },
+        {
+          "abilities": ["Perfected Spiral"]
+        }
+      ],
+      "variants": [
+        {
+          "nameExt": "(Modular)",
           "levels": [
             {
               "abilities": ["Forced Motion", "Spherical Spin", "Spiritual Spin (Variant Rule)"],
@@ -2021,7 +2052,7 @@
       "extra": [
         {
           "name": "Gaining a Stand",
-          "desc": "If a person in a Non-Supernatural Class gains a Stand, they may erase all of their <a href='/abilities'>Abilities</a>, <a href='/feats'>Feats</a>, and Proficiencies, and then convert them into the respective Stand Type that they obtain. For example, if a Level 5 Warrior gains a Power-Type Stand, they may opt to simply become a Level 5 Power-Type Stand User instead of multiclassing. When you become a Stand User your Max HP reverts to what it was originally, then you re-roll for every Level gained. However, you do not have to give up all of your Levels, and you may have Levels in both a Supernatural and Non-Supernatural Class. Any instances of Trained Combatant instead become a Feat of your choice if you have any Levels in Stand User."
+          "desc": "If a person in a Non-Supernatural Class gains a Stand, they may erase all of their <preview href='/abilities/Abilities'>Abilities</preview>, <preview href='/feats/Feats'>Feats</preview>, and Proficiencies, and then convert them into the respective Stand Type that they obtain. For example, if a Level 5 Warrior gains a Power-Type Stand, they may opt to simply become a Level 5 Power-Type Stand User instead of multiclassing. When you become a Stand User your Max HP reverts to what it was originally, then you re-roll for every Level gained. However, you do not have to give up all of your Levels, and you may have Levels in both a Supernatural and Non-Supernatural Class. Any instances of Trained Combatant instead become a Feat of your choice if you have any Levels in Stand User."
         }
       ],
       "subTypes": [
@@ -2030,80 +2061,77 @@
           "desc": "Assassins utilize the element of surprise to strike from the shadows, able to hit opponents precisely where it hurts the most. They have ways of avoiding damage through dodging, and are generally pretty tricky.",
           "hDice": "1d8",
           "theme": "basic",
-          "levelTables": [
+          "levels": [
             {
-              "name": "Standard",
-              "levels": [
-                {
-                  "abilities": ["Steady Aim", "Supernatural Item (Variant Rule)"],
-                  "feats": ["Equalizer", "Weapon Feat"]
-                },
-                {
-                  "abilities": ["Assassin Fighting Style"],
-                  "feats": ["Assassin"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"],
-                  "abilities": ["Signature Move"]
-                },
-                {
-                  "feats": ["Catlike Agility", "Deadly Accuracy", "OR", "Defensive Agility"]
-                },
-                {
-                  "feats": ["Trained Combatant", "Pressure Point Manipulator", "OR", "Duelist's Agility", "OR", "Impeccable Agility"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "feats": ["Guerilla Fighter", "OR", "Skirmisher", "OR", "Specialized Save"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "feats": ["Practical Experience", "OR", "Sharp Mind"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Expert Assassin"],
-                  "feats": ["Headhunter", "OR", "Ever Vigilant"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, or Level 11"]
-                },
-                {
-                  "feats": ["Clever Disguise", "OR", "Light Sleeper"],
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "feats": ["Familiar Bond", "OR", "Veteran Sprinter"]
-                },
-                {
-                  "feats": ["Trained Combatant"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 13, or Level 14"]
-                },
-                {
-                  "feats": ["Brutality", "OR", "Menacing Aura"],
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 13, Level 14, or Level 17"]
-                },
-                {
-                  "feats": ["Consistent Accuracy", "OR", "Weapon Feat"]
-                },
-                {
-                  "abilities": ["Reaping Strikes"]
-                }
-              ]
+              "abilities": ["Steady Aim", "Supernatural Item (Variant Rule)"],
+              "feats": ["Equalizer", "Weapon Feat"]
             },
             {
-              "name": "Modular",
+              "abilities": ["Assassin Fighting Style"],
+              "feats": ["Assassin"]
+            },
+            {
+              "stats": ["Ability Score Improvement"],
+              "abilities": ["Signature Move"]
+            },
+            {
+              "feats": ["Catlike Agility", "Deadly Accuracy", "OR", "Defensive Agility"]
+            },
+            {
+              "feats": ["Trained Combatant", "Pressure Point Manipulator", "OR", "Duelist's Agility", "OR", "Impeccable Agility"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "feats": ["Guerilla Fighter", "OR", "Skirmisher", "OR", "Specialized Save"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "feats": ["Practical Experience", "OR", "Sharp Mind"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Expert Assassin"],
+              "feats": ["Headhunter", "OR", "Ever Vigilant"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, or Level 11"]
+            },
+            {
+              "feats": ["Clever Disguise", "OR", "Light Sleeper"],
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "feats": ["Familiar Bond", "OR", "Veteran Sprinter"]
+            },
+            {
+              "feats": ["Trained Combatant"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 13, or Level 14"]
+            },
+            {
+              "feats": ["Brutality", "OR", "Menacing Aura"],
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 13, Level 14, or Level 17"]
+            },
+            {
+              "feats": ["Consistent Accuracy", "OR", "Weapon Feat"]
+            },
+            {
+              "abilities": ["Reaping Strikes"]
+            }
+          ],
+          "variants": [
+            {
+              "nameExt": "(Modular)",
               "levels": [
                 {
                   "abilities": ["Steady Aim", "Assassin Feature", "Supernatural Item (Variant Rule)"],
@@ -2181,80 +2209,77 @@
           "desc": "Consuls use their speech and unwavering confidence together to inspire themselves and allies. They can heal themselves and others, supporting allies and hindering enemies as well.",
           "hDice": "1d8",
           "theme": "basic",
-          "levelTables": [
+          "levels": [
             {
-              "name": "Standard",
-              "levels": [
-                {
-                  "abilities": ["Encouragement Dice", "Supernatural Item (Variant Rule)"],
-                  "feats": ["Equalizer", "Weapon Feat"]
-                },
-                {
-                  "abilities": ["Consul Fighting Style"],
-                  "feats": ["Art of Distraction"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"],
-                  "abilities": ["Signature Move"]
-                },
-                {
-                  "feats": ["Clever Disguise", "Commentator", "OR", "Exemplar", "OR", "Heckler", "OR", "Tanky"]
-                },
-                {
-                  "feats": ["Trained Combatant", "Jack of All Trades", "OR", "Menacing Aura", "OR", "Powerful Presence", "OR", "Stroke of Luck"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "feats": ["Guerilla Fighter", "OR", "Skirmisher"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "feats": ["Jack of All Trades", "OR", "Practical Experience"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Improved Encouragement Dice"],
-                  "feats": ["Headhunter", "OR", "Interpreter"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, or Level 11"]
-                },
-                {
-                  "feats": ["Light Sleeper", "OR", "Heavy Sleeper"],
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "feats": ["Quick on your Feet", "OR", "Specialized Save"]
-                },
-                {
-                  "feats": ["Trained Combatant"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, or Level 14"]
-                },
-                {
-                  "feats": ["Ever Vigilant", "OR", "Trapper"],
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 14, or Level 17"]
-                },
-                {
-                  "feats": ["Consistent Skills", "OR", "Motivated"]
-                },
-                {
-                  "abilities": ["Perfected Encouragement"]
-                }
-              ]
+              "abilities": ["Encouragement Dice", "Supernatural Item (Variant Rule)"],
+              "feats": ["Equalizer", "Weapon Feat"]
             },
             {
-              "name": "Modular",
+              "abilities": ["Consul Fighting Style"],
+              "feats": ["Art of Distraction"]
+            },
+            {
+              "stats": ["Ability Score Improvement"],
+              "abilities": ["Signature Move"]
+            },
+            {
+              "feats": ["Clever Disguise", "Commentator", "OR", "Exemplar", "OR", "Heckler", "OR", "Tanky"]
+            },
+            {
+              "feats": ["Trained Combatant", "Jack of All Trades", "OR", "Menacing Aura", "OR", "Powerful Presence", "OR", "Stroke of Luck"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "feats": ["Guerilla Fighter", "OR", "Skirmisher"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "feats": ["Jack of All Trades", "OR", "Practical Experience"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Improved Encouragement Dice"],
+              "feats": ["Headhunter", "OR", "Interpreter"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, or Level 11"]
+            },
+            {
+              "feats": ["Light Sleeper", "OR", "Heavy Sleeper"],
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "feats": ["Quick on your Feet", "OR", "Specialized Save"]
+            },
+            {
+              "feats": ["Trained Combatant"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, or Level 14"]
+            },
+            {
+              "feats": ["Ever Vigilant", "OR", "Trapper"],
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 14, or Level 17"]
+            },
+            {
+              "feats": ["Consistent Skills", "OR", "Motivated"]
+            },
+            {
+              "abilities": ["Perfected Encouragement"]
+            }
+          ],
+          "variants": [
+            {
+              "nameExt": "(Modular)",
               "levels": [
                 {
                   "abilities": ["Encouragement Dice", "Consul Feature", "Supernatural Item (Variant Rule)"],
@@ -2333,81 +2358,78 @@
           "desc": "Scholars use their extensive knowledge as a reference in tense situations, using their intelligence in unorthodox but clever ways to achieve their goals.",
           "hDice": "1d6",
           "theme": "basic",
-          "levelTables": [
+          "levels": [
             {
-              "name": "Standard",
-              "levels": [
-                {
-                  "abilities": ["Scholarly Combatant", "Supernatural Item (Variant Rule)"],
-                  "feats": ["Equalizer", "Weapon Feat"]
-                },
-                {
-                  "abilities": ["Scholar Fighting Style"],
-                  "feats": ["Level-Headed"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"],
-                  "abilities": ["Signature Move"]
-                },
-                {
-                  "abilities": ["Field Study"],
-                  "feats": ["Guerilla Fighter", "OR", "Jack of All Trades", "OR", "Sharp Mind"]
-                },
-                {
-                  "feats": ["Quick on your Feet", "OR", "Practical Experience", "OR", "Tactician"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "feats": ["Trained Combatant", "Combat Medic", "OR", "Consistent Skills", "OR", "Unstoppable Willpower"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "feats": ["Interpreter", "OR", "Trapper"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Aura of Knowledge"],
-                  "feats": ["Focus", "OR", "Menacing Aura"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, or Level 11"]
-                },
-                {
-                  "feats": ["Familiar Bond", "OR", "Ever Vigilant"],
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "feats": ["Fortune Teller", "OR", "Stroke of Luck", "OR", "Motivated"]
-                },
-                {
-                  "feats": ["Trained Combatant"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, or Level 13, or Level 14"]
-                },
-                {
-                  "feats": ["Additional Sense", "OR", "Practical Experience"],
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, or Level 13, Level 14, or Level 17"]
-                },
-                {
-                  "feats": ["Quick on your Feet", "OR", "Specialized Save"]
-                },
-                {
-                  "abilities": ["Paragon of Knowledge"]
-                }
-              ]
+              "abilities": ["Scholarly Combatant", "Supernatural Item (Variant Rule)"],
+              "feats": ["Equalizer", "Weapon Feat"]
             },
             {
-              "name": "Modular",
+              "abilities": ["Scholar Fighting Style"],
+              "feats": ["Level-Headed"]
+            },
+            {
+              "stats": ["Ability Score Improvement"],
+              "abilities": ["Signature Move"]
+            },
+            {
+              "abilities": ["Field Study"],
+              "feats": ["Guerilla Fighter", "OR", "Jack of All Trades", "OR", "Sharp Mind"]
+            },
+            {
+              "feats": ["Quick on your Feet", "OR", "Practical Experience", "OR", "Tactician"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "feats": ["Trained Combatant", "Combat Medic", "OR", "Consistent Skills", "OR", "Unstoppable Willpower"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "feats": ["Interpreter", "OR", "Trapper"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Aura of Knowledge"],
+              "feats": ["Focus", "OR", "Menacing Aura"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, or Level 11"]
+            },
+            {
+              "feats": ["Familiar Bond", "OR", "Ever Vigilant"],
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "feats": ["Fortune Teller", "OR", "Stroke of Luck", "OR", "Motivated"]
+            },
+            {
+              "feats": ["Trained Combatant"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, or Level 13, or Level 14"]
+            },
+            {
+              "feats": ["Additional Sense", "OR", "Practical Experience"],
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, or Level 13, Level 14, or Level 17"]
+            },
+            {
+              "feats": ["Quick on your Feet", "OR", "Specialized Save"]
+            },
+            {
+              "abilities": ["Paragon of Knowledge"]
+            }
+          ],
+          "variants": [
+            {
+              "nameExt": "(Modular)",
               "levels": [
                 {
                   "abilities": ["Scholarly Combatant", "Scholar Feature", "Supernatural Item (Variant Rule)"],
@@ -2484,82 +2506,79 @@
           "desc": "Warriors specialize in battling and the effective use of weaponry. They hit hard, can hold their own in melee, and know their weapons better than anyone.",
           "hDice": "1d10",
           "theme": "basic",
-          "levelTables": [
+          "levels": [
             {
-              "name": "Standard",
-              "levels": [
-                {
-                  "abilities": ["Damage Minimum", "Supernatural Item (Variant Rule)"],
-                  "feats": ["Equalizer", "Weapon Feat"]
-                },
-                {
-                  "abilities": ["Warrior Fighting Style", "Confident Provocation"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"],
-                  "abilities": ["Signature Move"]
-                },
-                {
-                  "feats": ["Adrenaline Rush", "OR", "Scarflesh", "OR", "Crusher", "OR", "Piercer", "OR", "Slasher", "OR", "Weapon Attribute Specialist"]
-                },
-                {
-                  "feats": ["Defensive Agility", "OR", "Quick on your Feet", "OR", "Tanky"],
-                  "abilities": ["Rejuvenation", "OR"],
-                  "other": ["<a href='/feats/?focus=Trained_Combatant'>Trained Combatant</a>"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "feats": ["Guard Breaker", "OR", "Specialized Save", "OR", "Veteran Sprinter", "OR", "Berserker", "OR", "Martial Arts", "OR", "Simple Weapon Focus", "OR", "Professional Weapon Training"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "feats": ["Trained Combatant"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "feats": ["Weapon Feat"],
-                  "abilities": ["Improved Fighting Style"]
-                },
-                {
-                  "feats": ["Catlike Agility", "OR", "Duelist's Agility", "OR", "Impeccable Agility"]
-                },
-                {
-                  "feats": ["Light Sleeper", "OR", "Heavy Sleeper"],
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "feats": ["Immense Impact", "OR", "Motivated", "OR", "Unstoppable Willpower"]
-                },
-                {
-                  "feats": ["Trained Combatant"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 11, Level 12, or Level 14"]
-                },
-                {
-                  "feats": ["Weapon Feat"],
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "feats": ["Resilient", "OR", "Tanky"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Weapon Aficionado"],
-                  "feats": ["Trained Combatant"]
-                }
-              ]
+              "abilities": ["Damage Minimum", "Supernatural Item (Variant Rule)"],
+              "feats": ["Equalizer", "Weapon Feat"]
             },
             {
-              "name": "Modular",
+              "abilities": ["Warrior Fighting Style", "Confident Provocation"]
+            },
+            {
+              "stats": ["Ability Score Improvement"],
+              "abilities": ["Signature Move"]
+            },
+            {
+              "feats": ["Adrenaline Rush", "OR", "Scarflesh", "OR", "Crusher", "OR", "Piercer", "OR", "Slasher", "OR", "Weapon Attribute Specialist"]
+            },
+            {
+              "feats": ["Defensive Agility", "OR", "Quick on your Feet", "OR", "Tanky"],
+              "abilities": ["Rejuvenation", "OR"],
+              "other": ["<preview href='/feats/Trained Combatant'>Trained Combatant</preview>"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "feats": ["Guard Breaker", "OR", "Specialized Save", "OR", "Veteran Sprinter", "OR", "Berserker", "OR", "Martial Arts", "OR", "Simple Weapon Focus", "OR", "Professional Weapon Training"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "feats": ["Trained Combatant"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "feats": ["Weapon Feat"],
+              "abilities": ["Improved Fighting Style"]
+            },
+            {
+              "feats": ["Catlike Agility", "OR", "Duelist's Agility", "OR", "Impeccable Agility"]
+            },
+            {
+              "feats": ["Light Sleeper", "OR", "Heavy Sleeper"],
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "feats": ["Immense Impact", "OR", "Motivated", "OR", "Unstoppable Willpower"]
+            },
+            {
+              "feats": ["Trained Combatant"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 11, Level 12, or Level 14"]
+            },
+            {
+              "feats": ["Weapon Feat"],
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "feats": ["Resilient", "OR", "Tanky"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Weapon Aficionado"],
+              "feats": ["Trained Combatant"]
+            }
+          ],
+          "variants": [
+            {
+              "nameExt": "(Modular)",
               "levels": [
                 {
                   "abilities": ["Damage Minimum", "Warrior Feature", "Supernatural Item (Variant Rule)"],
@@ -2635,81 +2654,78 @@
         {
           "name": "Artisan",
           "theme": "basic",
-          "levelTables": [
+          "levels": [
             {
-              "name": "Standard",
-              "levels": [
-                {
-                  "abilities": ["Artisan's Specialty", "Supernatural Item (Variant Rule)"],
-                  "feats": ["Equalizer", "Weapon Feat"]
-                },
-                {
-                  "abilities": ["Artisan Fighting Style"],
-                  "feats": ["Practical Experience"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"],
-                  "abilities": ["Signature Move"]
-                },
-                {
-                  "abilities": ["Artisan's Resurgence"],
-                  "feats": ["Catlike Agility", "OR", "Resilient", "OR", "Skirmisher"]
-                },
-                {
-                  "feats": ["Defensive Agility", "OR", "Quick on your Feet", "OR", "Tanky"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "feats": ["Trained Combatant", "Fortune Teller", "OR", "Level-Headed", "OR", "Menacing Aura", "OR", "Pressure Point Manipulator", "OR", "Unstoppable Willpower", "OR", "Veteran Sprinter"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "feats": ["Jack of All Trades", "OR", "Sharp Mind"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Improved Specialty"],
-                  "feats": ["Headhunter", "OR", "Interpreter", "OR", "Trapper", "OR", "Ever Vigilant"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"],
-                  "feats": ["Heavy Sleeper", "OR", "Light Sleeper"]
-                },
-                {
-                  "feats": ["Consistent Skills", "OR", "Specialized Save"]
-                },
-                {
-                  "feats": ["Trained Combatant"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, or Level 14"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"],
-                  "feats": ["Assassin", "OR", "Familiar Bond", "OR", "Resilient"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 14, or Level 17"]
-                },
-                {
-                  "feats": ["Aura of Awareness", "OR", "Motivated"]
-                },
-                {
-                  "abilities": ["Perfected Specialty"]
-                }
-              ]
+              "abilities": ["Artisan's Specialty", "Supernatural Item (Variant Rule)"],
+              "feats": ["Equalizer", "Weapon Feat"]
             },
             {
-              "name": "Modular",
+              "abilities": ["Artisan Fighting Style"],
+              "feats": ["Practical Experience"]
+            },
+            {
+              "stats": ["Ability Score Improvement"],
+              "abilities": ["Signature Move"]
+            },
+            {
+              "abilities": ["Artisan's Resurgence"],
+              "feats": ["Catlike Agility", "OR", "Resilient", "OR", "Skirmisher"]
+            },
+            {
+              "feats": ["Defensive Agility", "OR", "Quick on your Feet", "OR", "Tanky"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "feats": ["Trained Combatant", "Fortune Teller", "OR", "Level-Headed", "OR", "Menacing Aura", "OR", "Pressure Point Manipulator", "OR", "Unstoppable Willpower", "OR", "Veteran Sprinter"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "feats": ["Jack of All Trades", "OR", "Sharp Mind"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Improved Specialty"],
+              "feats": ["Headhunter", "OR", "Interpreter", "OR", "Trapper", "OR", "Ever Vigilant"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11"]
+            },
+            {
+              "stats": ["Ability Score Improvement"],
+              "feats": ["Heavy Sleeper", "OR", "Light Sleeper"]
+            },
+            {
+              "feats": ["Consistent Skills", "OR", "Specialized Save"]
+            },
+            {
+              "feats": ["Trained Combatant"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, or Level 14"]
+            },
+            {
+              "stats": ["Ability Score Improvement"],
+              "feats": ["Assassin", "OR", "Familiar Bond", "OR", "Resilient"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 14, or Level 17"]
+            },
+            {
+              "feats": ["Aura of Awareness", "OR", "Motivated"]
+            },
+            {
+              "abilities": ["Perfected Specialty"]
+            }
+          ],
+          "variants": [
+            {
+              "nameExt": "(Modular)",
               "levels": [
                 {
                   "abilities": ["Artisan's Specialty", "Artisan Feature", "Supernatural Item (Variant Rule)"],
@@ -2792,80 +2808,77 @@
         {
           "name": "Heavyweight",
           "theme": "basic",
-          "levelTables": [
+          "levels": [
             {
-              "name": "Standard",
-              "levels": [
-                {
-                  "abilities": ["Bullish Brawn", "Supernatural Item (Variant Rule)"],
-                  "feats": ["Equalizer", "Weapon Feat"]
-                },
-                {
-                  "abilities": ["Heavyweight Fighting Style", "Confident Provocation"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"],
-                  "abilities": ["Signature Move"]
-                },
-                {
-                  "abilities": ["Rejuvenation"],
-                  "feats": ["Defensive Agility", "OR", "Whirlwind Attacker"]
-                },
-                {
-                  "feats": ["Trained Combatant", "Feel No Pain", "OR", "Quick on your Feet", "OR", "Scarflesh", "OR", "Swift Recovery", "OR", "Tanky"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "feats": ["Heavy Specialization", "OR", "Shield Proficiency", "OR", "Tavern Brawler", "OR", "Specialized Save"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "feats": ["Trained Combatant", "Motivated", "OR", "Resilient", "OR", "Tanky"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Improved Rejuvenation"],
-                  "feats": ["Adrenaline Rush", "OR", "Berserker"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, or  Level 11"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"],
-                  "feats": ["Headhunter", "OR", "Heavy Sleeper"]
-                },
-                {
-                  "feats": ["Superhuman", "OR", "Unstoppable Willpower"]
-                },
-                {
-                  "feats": ["Trained Combatant"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 13, or Level 14"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"],
-                  "feats": ["Resilient", "OR", "Tanky"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 13, Level 14, or Level 17"]
-                },
-                {
-                  "feats": ["Jack of All Trades", "OR", "Practical Experience"]
-                },
-                {
-                  "abilities": ["Legendary Brawn"]
-                }
-              ]
+              "abilities": ["Bullish Brawn", "Supernatural Item (Variant Rule)"],
+              "feats": ["Equalizer", "Weapon Feat"]
             },
             {
-              "name": "Modular",
+              "abilities": ["Heavyweight Fighting Style", "Confident Provocation"]
+            },
+            {
+              "stats": ["Ability Score Improvement"],
+              "abilities": ["Signature Move"]
+            },
+            {
+              "abilities": ["Rejuvenation"],
+              "feats": ["Defensive Agility", "OR", "Whirlwind Attacker"]
+            },
+            {
+              "feats": ["Trained Combatant", "Feel No Pain", "OR", "Quick on your Feet", "OR", "Scarflesh", "OR", "Swift Recovery", "OR", "Tanky"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "feats": ["Heavy Specialization", "OR", "Shield Proficiency", "OR", "Tavern Brawler", "OR", "Specialized Save"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "feats": ["Trained Combatant", "Motivated", "OR", "Resilient", "OR", "Tanky"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Improved Rejuvenation"],
+              "feats": ["Adrenaline Rush", "OR", "Berserker"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, or  Level 11"]
+            },
+            {
+              "stats": ["Ability Score Improvement"],
+              "feats": ["Headhunter", "OR", "Heavy Sleeper"]
+            },
+            {
+              "feats": ["Superhuman", "OR", "Unstoppable Willpower"]
+            },
+            {
+              "feats": ["Trained Combatant"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 13, or Level 14"]
+            },
+            {
+              "stats": ["Ability Score Improvement"],
+              "feats": ["Resilient", "OR", "Tanky"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 13, Level 14, or Level 17"]
+            },
+            {
+              "feats": ["Jack of All Trades", "OR", "Practical Experience"]
+            },
+            {
+              "abilities": ["Legendary Brawn"]
+            }
+          ],
+          "variants": [
+            {
+              "nameExt": "(Modular)",
               "levels": [
                 {
                   "abilities": ["Bullish Brawn", "Heavyweight Feature", "Supernatural Item (Variant Rule)"],
@@ -2941,81 +2954,78 @@
         {
           "name": "Ranger",
           "theme": "basic",
-          "levelTables": [
+          "levels": [
             {
-              "name": "Standard",
-              "levels": [
-                {
-                  "abilities": ["Survivalist", "Supernatural Item (Variant Rule)"],
-                  "feats": ["Equalizer", "Weapon Feat"]
-                },
-                {
-                  "abilities": ["Ranger Fighting Style"],
-                  "feats": ["Ever Vigilant"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"],
-                  "abilities": ["Signature Move"]
-                },
-                {
-                  "abilities": ["Ranger's Recovery"],
-                  "feats": ["Additional Sense", "OR", "Assassin", "OR", "Familiar Bond", "OR", "Focus", "OR", "Pressure Point Manipulator"]
-                },
-                {
-                  "feats": ["Trained Combatant", "Aura of Awareness", "OR", "Catlike Agility", "OR", "Guerilla Fighter", "OR", "Skirmisher", "OR", "Swift Recovery"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "feats": ["Improvised Healing", "OR", "Rifle Specialization", "OR", "Professional Weapon Training", "OR", "Specialized Save"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "feats": ["Deadly Accuracy", "OR", "Jack of All Trades", "OR", "Quick on your Feet"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"]
-                },
-                {
-                  "abilities": ["Improved Survivalist"],
-                  "feats": ["Interpreter", "OR", "Headhunter"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, or Level 9"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"],
-                  "feats": ["Light Sleeper", "OR", "Trapper"]
-                },
-                {
-                  "feats": ["Familiar Fighting Spirit", "OR", "Immense Impact"]
-                },
-                {
-                  "feats": ["Trained Combatant"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 13, or Level 14"]
-                },
-                {
-                  "stats": ["Ability Score Improvement"],
-                  "feats": ["Consistent Skills", "OR", "Jack of All Trades", "OR", "Tanky"]
-                },
-                {
-                  "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 13, Level 14, or Level 17"]
-                },
-                {
-                  "feats": ["Defensive Agility", "OR", "Duelist's Agility", "OR", "Resilient"]
-                },
-                {
-                  "abilities": ["Perfected Survivalist"]
-                }
-              ]
+              "abilities": ["Survivalist", "Supernatural Item (Variant Rule)"],
+              "feats": ["Equalizer", "Weapon Feat"]
             },
             {
-              "name": "Modular",
+              "abilities": ["Ranger Fighting Style"],
+              "feats": ["Ever Vigilant"]
+            },
+            {
+              "stats": ["Ability Score Improvement"],
+              "abilities": ["Signature Move"]
+            },
+            {
+              "abilities": ["Ranger's Recovery"],
+              "feats": ["Additional Sense", "OR", "Assassin", "OR", "Familiar Bond", "OR", "Focus", "OR", "Pressure Point Manipulator"]
+            },
+            {
+              "feats": ["Trained Combatant", "Aura of Awareness", "OR", "Catlike Agility", "OR", "Guerilla Fighter", "OR", "Skirmisher", "OR", "Swift Recovery"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "feats": ["Improvised Healing", "OR", "Rifle Specialization", "OR", "Professional Weapon Training", "OR", "Specialized Save"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "feats": ["Deadly Accuracy", "OR", "Jack of All Trades", "OR", "Quick on your Feet"]
+            },
+            {
+              "stats": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Improved Survivalist"],
+              "feats": ["Interpreter", "OR", "Headhunter"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, or Level 9"]
+            },
+            {
+              "stats": ["Ability Score Improvement"],
+              "feats": ["Light Sleeper", "OR", "Trapper"]
+            },
+            {
+              "feats": ["Familiar Fighting Spirit", "OR", "Immense Impact"]
+            },
+            {
+              "feats": ["Trained Combatant"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 13, or Level 14"]
+            },
+            {
+              "stats": ["Ability Score Improvement"],
+              "feats": ["Consistent Skills", "OR", "Jack of All Trades", "OR", "Tanky"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 13, Level 14, or Level 17"]
+            },
+            {
+              "feats": ["Defensive Agility", "OR", "Duelist's Agility", "OR", "Resilient"]
+            },
+            {
+              "abilities": ["Perfected Survivalist"]
+            }
+          ],
+          "variants": [
+            {
+              "nameExt": "(Modular)",
               "levels": [
                 {
                   "abilities": ["Survivalist", "Ranger Feature", "Supernatural Item (Variant Rule)"],
