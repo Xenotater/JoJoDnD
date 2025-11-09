@@ -44,7 +44,7 @@ export default function AbilitiesContent({data}: {data: AbilityData | undefined}
     ["Rgr", <PreviewLink key="Rgr" href="/classes/Ranger">Rangers</PreviewLink>],
     ["Sch", <PreviewLink key="Sch" href="/classes/Scholar">Scholars</PreviewLink>],
     ["War", <PreviewLink key="War" href="/classes/Warrior">Warriors</PreviewLink>],
-    ["Req", <PreviewLink key="Req" href="/artifacts/Stand Arrow">Requiem Stands</PreviewLink>],
+    ["Req", <PreviewLink key="Req" href="/artifacts/Stand Arrow#requiem">Requiem Stands</PreviewLink>],
     ["Hvn", <PreviewLink key="Hvn" href="/artifacts/Heaven">Heaven Stands</PreviewLink>],
     ["Cor", <PreviewLink key="Cor" href="/artifacts/Holy Corpse Parts">Corpse Part Holders</PreviewLink>]
   ]);

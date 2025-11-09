@@ -26,9 +26,9 @@ export default function LevelTable(props: LevelTableProps) {
   }
 
   return (
-    <div className="max-w-[inherit] overflow-x-scroll">
+    <div className="max-w-[inherit] overflow-x-scroll hideScroll">
         <table className={`table-striped ${styles.levelTable} max-w-[inherit]`}>
-        <thead style={{"--bgColor": props.headBg} as React.CSSProperties} className={`bg-(--bgColor)`}>
+        <thead style={{"--bgColor": props.headBg} as React.CSSProperties} className={`bg-(--bgColor) text-xl`}>
           <tr>
             <th className="w-0">Level</th>
             {(props.showProf ?? true) &&
@@ -43,7 +43,7 @@ export default function LevelTable(props: LevelTableProps) {
             }
           </tr>
         </thead>
-        <tbody>
+        <tbody className="text-lg">
           {props.levels.map((level, i) => (
             <tr key={`level-${i+1}`}>
               <td>{i+1}</td>

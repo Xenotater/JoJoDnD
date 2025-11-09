@@ -10,6 +10,7 @@ export default function PreviewLink(props: LinkProps & {children: React.ReactNod
   const linkRef = useRef<HTMLAnchorElement>(null);
   const modalRef = useRef<HTMLDivElement>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [keepOpen, setKeepOpen] = useState(false);
   const path = props.href?.toString().split(/[\/\#\?]/);
 
   //steal scroll over this element to modal content
@@ -36,18 +37,30 @@ export default function PreviewLink(props: LinkProps & {children: React.ReactNod
     link?.addEventListener("wheel", handleScroll);
     
     return () => link?.removeEventListener("wheel", handleScroll);
-  })
+  });
+
+  //scroll to anchor if present
+  useEffect(() => {
+    modalRef.current?.children[0].scrollTo(0, 0);
+    if (props.href.toString().includes("#")) {
+      try {
+        modalRef.current?.querySelector(props.href.toString().replace(/^.*#/, "#"))?.scrollIntoView();
+      } catch {} //don't error on bad queryselector
+    }
+  }, [isModalOpen])
 
   return (
     <>
       <Link ref={linkRef} className={`${isModalOpen ? "text-jj-purple-1" : "text-jj-purple-4"} underline relative whitespace-nowrap`}
-        {...props} onMouseEnter={() => setIsModalOpen(true)} onMouseLeave={() => setIsModalOpen(false)}
+        {...props} onMouseEnter={() => setIsModalOpen(true)} onMouseLeave={() => {if (!keepOpen) setIsModalOpen(false)}}
       >
         {props.children}
       </Link>
       {isModalOpen &&
         createPortal(
-          <DisplayModal ref={modalRef} hideMobile><GenericContentComponent page={path[1]} item={decodeURIComponent(path[2])}/></DisplayModal>,
+          <DisplayModal ref={modalRef} hideMobile onMouseEnter={() => setKeepOpen(true)} onMouseLeave={() => {setKeepOpen(false); setIsModalOpen(false)}}>
+            <GenericContentComponent page={path[1]} item={decodeURIComponent(path[2])}/>
+          </DisplayModal>,
           document.querySelector("#siteHeader")!
         )
       }

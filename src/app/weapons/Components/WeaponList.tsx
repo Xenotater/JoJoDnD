@@ -60,7 +60,8 @@ export default function WeaponList({listContent, tags}: {listContent: ContentLis
   }
 
   return (
-      <ContentList content={listContent} tags={tags} options={{height: "750px", width: "100%", scrollWidth: "1024px", borders: true, columns:[
+      <div className="list-striped">
+        <ContentList content={listContent} tags={tags} options={{height: "750px", width: "100%", scrollWidth: "1024px", borders: true, columns:[
         {name: "Name", width: "15%", tooltip: "The name of the weapon.", sort: true},
         {name: "Attributes", width: "23%", tooltip: "The properties that the weapon has.", sort: true, sortFn: attributeSort as (a: unknown, b: unknown) => number},
         {name: "Type", width: "10%", tooltip:"The type of weapon for the purpose of Proficiencies.", sort: true},
@@ -68,5 +69,6 @@ export default function WeaponList({listContent, tags}: {listContent: ContentLis
         {name: "Stat/DC", width: "10%", tooltip: "The attack stat or DC of the weapon. The attack stat is added to both Attack AND damage Rolls. If the weapon has a DC, a Dex Save must be rolled and have damage is taken on success.", sort: true, sortFn: weaponPropSort as (a: unknown, b: unknown) => number},
         {name: "Prerequisite", width: "12%", tooltip: "The requirement that must be met in order to peroperly use the weapon.", sort: true, sortFn: weaponPropSort as (a: unknown, b: unknown) => number},
         {name: "Damage", width: "15%", tooltip: "The damage the weapon deals when it hits.", sort: true, sortFn: damageSort as (a: unknown, b: unknown) => number}], filter: true, search: true}}/>
+      </div>
   )
 }

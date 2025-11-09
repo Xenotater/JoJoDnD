@@ -43,6 +43,7 @@
       "effect": "When a living creature's skin is pierced by this Arrow they will develop a fever over the course of several days. The severity and duration of the fever is dependent upon the physical build, and fighting spirit of the exposed person/creature. For example, <a href='https://jojowiki.com/Jotaro_Kujo'>Jotaro Kujo</a> seemingly had no physical effects for almost no time at all, while <a href='https://jojowiki.com/Ermes_Costello'>Hermes Costello</a> was rendered comatose for almost a week. After recovering from this fever, the creature will awake to find themselves the User of a <preview href='/classes/Stand'>Stand</preview>.</p></p>However, some people do not possess enough will to properly control a Stand. These people will continue to suffer under the effects of the fever. They will feel very weak and become bedridden within a couple of days of exposure. Every day, someone under the effects of this disease (inability to control a Stand) must roll a Con Saving Throw with a DC of 5. If the creature succeeds, their condition remains stagnant, but if they fail the creature gains a -1 penalty to all d20 rolls, which stack with each failed Save. Those with proper medical care are given Advantage on the Saving Throw. For every penalty lower than -20, the creature gains a permanent point of Exhaustion as long as they continue to be affected by the disease.",
       "other": [
         {
+          "anchor": "requiem",
           "name": "Requiem",
           "content": [
             "<p>The Arrow also has a secondary effect, the Power of Requiem. In order to obtain the Power of Requiem, you must fulfill two requirements, as well as have possession of the arrow. You must first be a <preview href='/classes/Stand User'>Stand User</preview> who has brought your Stand close to its full potential, and one who is accustomed to using its power. Not only that, but you must have a specific resolve or goal that is immensely powerful and overtakes everything else in your life. If both of these requirements are met, the Arrow may choose you.</p>",
@@ -131,7 +132,7 @@
         {
           "name": "Detriments",
           "content": [
-            "<table class='table-striped table-borders bg-gray-300'><thead class='bg-fuchsia-400'><tr><th>Number Rolled</th><th>Part Turned To Stone</th><th>Effect</th></tr></thead><tbody>",
+            "<table class='table-striped table-borders bg-gray-300'><thead class='bg-fuchsia-400 text-lg'><tr><th>Number Rolled</th><th>Part Turned To Stone</th><th>Effect</th></tr></thead><tbody>",
             "<tr><td>1</td><td>Inner Heart Valve</td><td>1 Force damage at the start of each Turn (every 6 Seconds), this damage cannot be reduced or removed in any way.</td></tr>",
             "<tr><td>2</td><td>Inner Brain</td><td>Gain 5 Levels of Exhaustion and fall into a coma.</td></tr>",
             "<tr><td>3</td><td>Stomach</td><td>Food (other than the Locacaca Fruit) may no longer be digested, and stomach acid will begin to leak into the body after 6 hours.</td></tr>",

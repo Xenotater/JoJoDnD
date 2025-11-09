@@ -10,15 +10,6 @@
   width: 60%;
   min-width: 200px;
 }
-.rulesContentWrapper table[class*="expTable"] thead {
-  background-color: yellow;
-}
-.rulesContentWrapper table[class*="expTable"] td {
-  background-color: lightgreen;
-}
-.rulesContentWrapper table[class*="expTable"] th, .rulesContentWrapper table[class*="expTable"] td {
-  border: 1px solid black;
-}
 
 @media (max-width: 1023) {
   .rulesContentWrapper div:has(> div > table[class*="expTable"]) {

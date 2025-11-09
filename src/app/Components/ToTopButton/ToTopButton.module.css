@@ -2,7 +2,7 @@
   position: fixed;
   z-index: 100;
   bottom: 2rem;
-  left: 2rem;
+  right: 2rem;
   border: 2px solid black;
   border-radius: 50%;
   background-color: var(--color-jj-mpurple-1);
@@ -20,7 +20,7 @@
 @media (max-width: 1023) {
   .topButton {
     bottom: 1.25rem;
-    left: 1.25rem;
+    right: 1.25rem;
     box-shadow: 1px 1px 3px black;
     font-size: var(--text-2xl);
   }

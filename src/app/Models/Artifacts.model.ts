@@ -10,4 +10,5 @@ export interface ArtifactData {
 interface OtherContent {
   name: string;
   content: string[];
+  anchor?: string;
 }

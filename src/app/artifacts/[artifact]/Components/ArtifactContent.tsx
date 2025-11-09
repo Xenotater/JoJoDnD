@@ -35,7 +35,7 @@ export default function ArtifactContent({data}: {data: ArtifactData | undefined}
       }
       {data.other &&
         data.other.map((o) => (
-          <div key={`${data.name}-${o.name}`}>
+          <div key={`${data.name}-${o.name}`} id={o.anchor}>
             <ContentHeading as="h3">{o.name}</ContentHeading>
             <HTMLInclusiveText as="div" text={o.content.join("")}/>
           </div>
