@@ -1,13 +1,14 @@
-import AbilitiesContent from "@/app/abilities/Components/AbilitiesContent";
-import ArtifactContent from "@/app/artifacts/[artifact]/Components/ArtifactContent";
-import FamiliarsContent from "@/app/familiars/[item]/Components/FamiliarsContent";
-import FeatsContent from "@/app/feats/Components/FeatsContent";
+import RulesContent from "@/app/rules/Components/RulesContent";
 import PassionsContent from "@/app/passions/Components/PassionsContent";
 import RacesContent from "@/app/races/Components/RacesContent";
-import RulesContent from "@/app/rules/Components/RulesContent";
-import { getAbilityData, getArtifactData, getFamiliarData, getFeatData, getPassionData, getRaceData, getRuleContent, getWeaponData } from "@/app/Utilities/content.utility";
-import AttributesList from "@/app/weapons/Components/AttributesList";
+import ClassesContent from "@/app/classes/Components/ClassesContent";
+import FamiliarsContent from "@/app/familiars/[item]/Components/FamiliarsContent";
+import AbilitiesContent from "@/app/abilities/Components/AbilitiesContent";
+import FeatsContent from "@/app/feats/Components/FeatsContent";
 import WeaponContentItem from "@/app/weapons/Components/WeaponContentItem";
+import AttributesList from "@/app/weapons/Components/AttributesList";
+import ArtifactContent from "@/app/artifacts/[artifact]/Components/ArtifactContent";
+import { getAbilityData, getArtifactData, getClassData, getFamiliarData, getFeatData, getPassionData, getRaceData, getRuleContent, getWeaponData } from "@/app/Utilities/content.utility";
 
 export default function GenericContentComponent({page, item}: {page: string, item: string}) { 
   const getContentComponent = () => {
@@ -20,6 +21,8 @@ export default function GenericContentComponent({page, item}: {page: string, ite
         return <PassionsContent data={getPassionData(item)}/>;
       case "races":
         return <RacesContent data={getRaceData(item)}/>;
+      case "classes":
+        return <ClassesContent data={getClassData(item)}/>
       case "familiars":
         return <FamiliarsContent data={getFamiliarData(item)}/>;
       case "abilities":

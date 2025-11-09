@@ -24,7 +24,7 @@ export default function ClassesContent({data}: {data: ClassData | undefined}) {
         ...data,
         ...data.variants!.find((v) => v.nameExt!.match(/(?<=\().*(?=\))/)![0] == variant)
       });
-  }, [variant]);
+  }, [variant, data]);
 
   if (!data || !varData)
     return <div className="h-full"><h2>Error</h2><p>Content not found. Please contact an administrator.</p></div>

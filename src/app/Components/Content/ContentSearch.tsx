@@ -1,9 +1,9 @@
 "use client";
 
-//TODO: add other data types here
 import {tabs} from "@/../public/data/rules.json";
 import {passions} from "@/../public/data/passions.json";
 import {races} from "@/../public/data/races.json";
+import {classes} from "@/../public/data/classes.json";
 import {categories} from "@/../public/data/familiars.json";
 import {abilities} from "@/../public/data/abilities.json";
 import {feats} from "@/../public/data/feats.json";
@@ -65,6 +65,21 @@ export default function ContentSearch({headerCollapsed, className}: {headerColla
         name: race.name,
         page: "Races",
         link: `/races/${encodeURIComponent(race.name)}`
+      });
+    });
+
+    classes.forEach((cls) => {
+      contentList.push({
+        name: cls.name,
+        page: "Classes",
+        link: `/classes/${encodeURIComponent(cls.name)}`
+      });
+      cls.subTypes?.forEach((sub) => {
+        contentList.push({
+          name: sub.name,
+          page: "Classes",
+          link: `/classes/${encodeURIComponent(sub.name)}`
+        });
       });
     });
 
