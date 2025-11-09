@@ -133,6 +133,11 @@ export default function ContentSearch({headerCollapsed, className}: {headerColla
         link: `/artifacts/${encodeURIComponent(artifact.name)}`
       });
     });
+    contentList.push({
+      name: "Requiem",
+      page: "Artifacts",
+      link: "/artifacts/Stand Arrow#requiem"
+    });
 
     contentList.push({
       name: "Weapon Attributes",
@@ -170,7 +175,7 @@ export default function ContentSearch({headerCollapsed, className}: {headerColla
   };
 
   return (
-    <div className={`${className} flex flex-col md:flex-row-reverse justify-right fixed ${headerCollapsed ? "top-0" : "top-(--headerHeight)"} right-[calc(50%-150px)] md:right-[12px] z-999`} onMouseLeave={() => setSelected(undefined)}>
+    <div className={`${className} flex flex-col md:flex-row-reverse justify-right fixed ${headerCollapsed ? "top-0" : "top-(--headerHeight)"} right-[calc(50%-150px)] md:right-[12px] z-998`} onMouseLeave={() => setSelected(undefined)}>
       <div className="flex flex-col w-full max-w-[300px]">
         <search className={"relative border-2 border-t-0 border-(--border) p-0.5 bg-(--foreground)"}>
           <BsSearch className="absolute m-1"/>

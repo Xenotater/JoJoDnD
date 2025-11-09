@@ -56,7 +56,7 @@ export default function LevelTable(props: LevelTableProps) {
               <td>
                 {level.features.feats?.map((f, j) => (
                   <span key={`feat-${i}-${j}`}>
-                    {f != "OR" ? <PreviewLink href={`/feats/${encodeURIComponent(f.replace(/ \(.*\)$/, ""))}`}>{f.replace(/ \(.*\)$/, "")}</PreviewLink> : "OR"}
+                    {f != "OR" ? <PreviewLink href={`/feats/${encodeURIComponent(f.replace(/ \(.*\)$/, "")).replace("Weapon%20Feat", "Weapon%20Feats?filter=Weapon%20Feat")}`}>{f.replace(/ \(.*\)$/, "")}</PreviewLink> : "OR"}
                     {f.match(/ \(.*\)$/)}
                     {(j + 1 < level.features.feats!.length || level.features.abilities || level.features.other) &&
                       (f != "OR" && level.features.feats![j+1] != "OR" ? " | " : " ")

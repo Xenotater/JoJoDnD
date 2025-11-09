@@ -1,5 +1,3 @@
-import { TableData } from "./Misc.model";
-
 export interface ClassData {
   name: string;
   nameExt?: string;
@@ -18,25 +16,24 @@ export interface ClassData {
   extra?: {
     name: string;
     desc: string;
-    table?: TableData;
+    content?: string[];
   }[];
   other?: {
     name: string;
     content: string[];
   }[];
   theme?: string;
-  levels: ClassLevelData[];
-  otherCols: {
+  levels?: ClassLevelData[];
+  otherCols?: {
     name: string;
     level: string[] | number[];
-  }
+  }[];
   subTypes?: ClassData[];
   variants?: ClassData[];
 }
 
 export interface ClassLevelData {
-  abilities: string[];
-  feats: string[];
-  stats: string[];
-  other: string[];
+  abilities?: string[];
+  feats?: string[];
+  other?: string[];
 }

@@ -1,23 +1,26 @@
 import {tabs} from "@/../public/data/rules.json";
 import {passions} from "@/../public/data/passions.json";
 import {races} from "@/../public/data/races.json";
+import {classes} from "@/../public/data/classes.json";
 import {categories} from "@/../public/data/familiars.json";
 import {abilities} from "@/../public/data/abilities.json";
 import {feats} from "@/../public/data/feats.json";
 import {weapons} from "@/../public/data/weapons.json";
 import {artifacts} from "@/../public/data/artifacts.json";
+import { RulesTabData } from "../Models/Rules.model";
 import { PassionData } from "../Models/Passions.model";
 import { RaceData } from "../Models/Races.model";
+import { ClassData } from "../Models/Classes.model";
 import { AbilityData } from "../Models/Abilities.model";
 import { FeatData } from "../Models/Feats.model";
 import { WeaponData } from "../Models/Weapons.model";
 import { ArtifactData } from "../Models/Artifacts.model";
-import { RulesTabData } from "../Models/Rules.model";
 import { FamiliarClass, FamiliarFeat, FamiliarFeature, FamiliarInfo } from "../Models/Familiars.model";
 
 export type dataTypes = "Rules"
   | "Passions"
   | "Races"
+  | "Classes"
   | "Abilities"
   | "Feats"
   | "Artifacts";
@@ -30,6 +33,8 @@ const getData = (type: dataTypes): unknown[] => {
       return passions as PassionData[];
     case "Races":
       return races as RaceData[];
+    case "Classes":
+      return classes as ClassData[];
     case "Abilities":
       return abilities as AbilityData[];
     case "Feats":
@@ -67,6 +72,19 @@ export function getPassionData(passion: string) {
 
 export function getRaceData(race: string) {
   return races.find((r) => r.name.toLowerCase() == race.toLowerCase()) as RaceData;
+}
+
+export function getClassData(cls: string) {
+  const data = classes.find((c) => c.name.toLowerCase() == cls.toLowerCase()) as ClassData;
+  if (data)
+    return data;
+
+  for (const c of classes) {
+    const data = c.subTypes?.find((s) => s.name.toLowerCase() == cls.toLowerCase())
+    if (data)
+      return data as ClassData;
+  };
+  return undefined;
 }
 
 export function getAbilityData(ability: string) {

@@ -1,10 +1,8 @@
-export default function ClassesPage() {
-  return (
-    <div>
-      <h1>Classes</h1>
-      <p>Classes page placeholder</p>
-    </div>
-  );
+import { redirect } from "next/navigation";
+
+//races stub page, no content, redirect to subcategory page
+export default function ClassesStub() {
+  redirect("/classes/Stands");
 }
 
 export const metadata = {
