@@ -190,6 +190,7 @@
     {
       "title": "Shame's JJBTT Sheet",
       "img": "Assets/Shames Sheets/Shame_Sheet.webp",
+      "alt": "Shame's Sheet",
       "desc": "An alternate stylized character sheet. Created by Shame.",
       "versions": [
         {
@@ -219,6 +220,22 @@
       "desc": "Dangerous close-up fighters focused on speed and precision rather than raw power. Created by Lynxeon.",
       "link": "https://docs.google.com/document/d/1-Z8jvHVGphwjulp7x1ACeVZojGl-7GZ1x7Dy_UwWef4/edit?usp=drivesdk",
       "alt": "Speed-Type Silver Chariot"
+    },
+    {
+      "title": "JojoD&D5e Foundry Module",
+      "img": "Assets/Foundry Module/jojos.webp",
+      "desc": "A helper module for Foundry to support the JoJo D&D supplement. Created by Kirbo.exe.",
+      "alt": "JoJos Foundry",
+      "versions": [
+        {
+          "name": "Repository with Instructions",
+          "link": "https://github.com/lickutung34/JojoDnD5e-Foundry-Module"
+        },
+        {
+          "name": "Direct Download",
+          "link": "https://raw.githubusercontent.com/lickutung34/JojoDnD5e-Foundry-Module/refs/heads/main/jojodandd5e/module.json"
+        }
+      ]
     },
     {
       "title": "​Feature Yours Here!",
