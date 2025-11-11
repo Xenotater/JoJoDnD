@@ -19,17 +19,17 @@
 }
 
 .infoContent div[class*="size-card"]:nth-child(1) {
-  background-image: url("@/../public/familiars/bug.webp");
+  background-image: url("@/../public/images/familiars/bug.webp");
 }
 
 .infoContent div[class*="size-card"]:nth-child(2) {
-  background-image: url("@/../public/familiars/rabbit.webp");
+  background-image: url("@/../public/images/familiars/rabbit.webp");
 }
 
 .infoContent div[class*="size-card"]:nth-child(3) {
-  background-image: url("@/../public/familiars/dog.webp");
+  background-image: url("@/../public/images/familiars/dog.webp");
 }
 
 .infoContent div[class*="size-card"]:nth-child(4) {
-  background-image: url("@/../public/familiars/horse.webp");
+  background-image: url("@/../public/images/familiars/horse.webp");
 }

@@ -18,7 +18,7 @@ export default function RacesContent({data}: {data: RaceData | undefined}) {
     <div className="w-full h-full flex flex-col gap-4 mb-4">
       <ContentHeading className="underline">{data.name}</ContentHeading>
       <div className="flex flex-col items-center">
-        <FancyImage type="border" className="mb-2 max-w-[80%] max-h-[40vh] w-auto" src={`/races/${cleanName(data.name)}.webp`} alt={data.name}/>
+        <FancyImage type="border" className="mb-2 max-w-[80%] max-h-[40vh] w-auto" src={`/images/races/${cleanName(data.name)}.webp`} alt={data.name}/>
         {data.examples && data.links && data.links.length == data.examples.length &&
           <span className="text-center">
             <b>Examples of {(data.name + 's').replace(/Mans$/g, "Men")}: </b>
@@ -79,7 +79,7 @@ export default function RacesContent({data}: {data: RaceData | undefined}) {
           <div key={subrace.name} className="flex flex-col gap-4">
             <Divider/>
             <div className="flex flex-col items-center w-full">
-              <FancyImage type="border" className="mb-2 max-w-[80%] max-h-[40vh] w-auto" src={`/races/${cleanName(data.name)}_${cleanName(subrace.name)}.webp`} alt={subrace.name}/>
+              <FancyImage type="border" className="mb-2 max-w-[80%] max-h-[40vh] w-auto" src={`/images/races/${cleanName(data.name)}_${cleanName(subrace.name)}.webp`} alt={subrace.name}/>
               <ContentHeading className="underline mb-0">{subrace.name}</ContentHeading>
             </div>
             <div>

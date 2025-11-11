@@ -7,7 +7,7 @@ export default function FamiliarClassContent({data}: {data: FamiliarClass}) {
   return (
     <div className="w-full h-full flex flex-col gap-4 mb-4">
       <ContentHeading className="underline mb-0">{data.name}</ContentHeading>
-      <FancyImage type="border" className="max-w-[80%] max-h-[40vh] w-auto m-auto" src={`/familiars/${data.img}.webp`} alt={data.name}/>
+      <FancyImage type="border" className="max-w-[80%] max-h-[40vh] w-auto m-auto" src={`/images/familiars/${data.img}.webp`} alt={data.name}/>
       <div>
         <ContentHeading as="h3">Description</ContentHeading>
         <p>{data.desc}</p>

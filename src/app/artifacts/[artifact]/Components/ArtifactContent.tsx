@@ -15,7 +15,7 @@ export default function ArtifactContent({data}: {data: ArtifactData | undefined}
     <div className="w-full h-full flex flex-col gap-4 mb-4">
       <ContentHeading className="underline">{data.name}</ContentHeading>
       <div className="flex flex-col items-center">
-        <FancyImage type="border" className="mb-2 max-w-[80%] max-h-[40vh] w-auto" src={`/artifacts/${cleanName(data.name)}.webp`} alt={data.name}/>
+        <FancyImage type="border" className="mb-2 max-w-[80%] max-h-[40vh] w-auto" src={`/images/artifacts/${cleanName(data.name)}.webp`} alt={data.name}/>
         {data.lore &&
           <i className="text-center">{data.lore}</i>
         }

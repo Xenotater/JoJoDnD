@@ -15,7 +15,7 @@ export default function DesktopHeaderItem({item}: {item: HeaderItem}) {
 
   return (
     <Link className={`flex flex-col justify-end items-center gap-2 p-2 pb-0 text-sky-200 hover:text-sky-300  ${path.includes(item.link) ? "bg-jj-purple-3 hover:bg-jj-purple-4" : "hover:bg-jj-purple-2"}`} href={item.link}>
-      <Image src={`/nav/${item.icon}.webp`} alt={item.icon} width={screenWidth > shrinkWidth ? 50 : 45} height={screenWidth > shrinkWidth ? 50 : 45}/>
+      <Image src={`/images/nav/${item.icon}.webp`} alt={item.icon} width={screenWidth > shrinkWidth ? 50 : 45} height={screenWidth > shrinkWidth ? 50 : 45}/>
       <span className={screenWidth > shrinkWidth ? "text-xl" : "text-md"}>{item.name}</span>
     </Link>
   );

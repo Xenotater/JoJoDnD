@@ -10,7 +10,7 @@ export default function MobileHeaderItem({item}: {item: HeaderItem}) {
 
   return (
     <Link className={`${styles.mobileMenuItem} flex items-center gap-4 p-2 text-sky-200 hover:text-sky-300  ${path.includes(item.link) ? "bg-jj-purple-3 hover:bg-jj-purple-4" : "hover:bg-jj-purple-2"}`}  href={item.link}>
-      <Image src={`/nav/${item.icon}.webp`} alt={item.icon} width={25} height={25}/>
+      <Image src={`/images/nav/${item.icon}.webp`} alt={item.icon} width={25} height={25}/>
       <span className="text-2xl">{item.name}</span>
     </Link>
   );

@@ -45,7 +45,7 @@ export default function ClassesContent({data}: {data: ClassData | undefined}) {
         }
       </div>
       <div className="text-center">
-        <FancyImage type="border" className="m-auto mt-0 mb-2 max-w-[80%] max-h-[40vh] w-auto" src={`/classes/${varData.name}.webp`} alt={varData.name}/>
+        <FancyImage type="border" className="m-auto mt-0 mb-2 max-w-[80%] max-h-[40vh] w-auto" src={`/images/classes/${varData.name}.webp`} alt={varData.name}/>
         {varData.examples &&
           <p>
             <small><b>Examples of {varData.exampleOf}:</b>{" "}

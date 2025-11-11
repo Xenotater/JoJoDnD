@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div>
       <div className={styles.mainHeading}>
-        <Image src="/logo/logo.webp" alt="JoJoDnD Logo" width={600} height={250}/>
+        <Image src="/images/logo/logo.webp" alt="JoJoDnD Logo" width={600} height={250}/>
         <h1 className="text-center">A Tabletop Game based on JoJo&apos;s Bizarre Adventure</h1>
         <Divider/>
       </div>
