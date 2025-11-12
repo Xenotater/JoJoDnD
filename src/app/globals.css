@@ -134,15 +134,20 @@ body {
     color: var(--color-jj-purple-1);
   }
 
-  button {
+  button, a[class*="button"] {
     border: 1px solid black;
     padding: 0 0.5rem;
     cursor: pointer;
   }
 
-  button:hover {
+  button:hover, a[class*="button"]:hover {
     box-shadow: 1px 1px 3px 1px black;
     background-color: var(--color-jj-mpurple-2);
+  }
+
+  input, textarea {
+    border: 2px solid purple;
+    padding: 2px 8px;
   }
 
   .content {

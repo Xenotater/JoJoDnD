@@ -194,7 +194,7 @@ export default function ContentSearch({headerCollapsed, className}: {headerColla
       <div className="flex flex-col w-full max-w-[300px]">
         <search className={"relative border-2 border-t-0 border-(--border) p-0.5 bg-(--foreground)"}>
           <BsSearch className="absolute m-1"/>
-          <input type="search" className="w-full pl-7 pb-0.5" value={search} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearch(e.target.value)}
+          <input type="search" className="w-full pl-7 pb-0.5 border-0" value={search} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearch(e.target.value)}
               onBlur={(e) => {if (!e.relatedTarget?.classList.contains("result")) setResults([])}} onFocus={() => getResults()}/>
         </search>
         {search && results.length > 0 &&
