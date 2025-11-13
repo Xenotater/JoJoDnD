@@ -142,11 +142,11 @@ body {
 
   button:hover, a[class*="button"]:hover {
     box-shadow: 1px 1px 3px 1px black;
-    background-color: var(--color-jj-mpurple-2);
   }
 
-  input, textarea {
+  form input, form textarea {
     border: 2px solid purple;
+    background-color: lavender;
     padding: 2px 8px;
   }
 

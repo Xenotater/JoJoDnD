@@ -26,7 +26,7 @@ export default function ContactForm() {
           <input required value={formData.subject} onChange={(e) => setFormData({...formData, subject: e.target.value})} placeholder="Yare Yare..."/>
         </div>
         <textarea required value={formData.body} onChange={(e) => setFormData({...formData, body: e.target.value})} placeholder="(Your Comment/Suggestion/Issue)" className="w-full md:w-[85%] h-[30vh]"/>
-        <button type="submit" className="button text-2xl border-jj-purple-1 border-2">Submit</button>
+        <button type="submit" className="button text-2xl text-white bg-jj-purple-1 rounded-sm">Submit</button>
       </form>
     </div>
   );
