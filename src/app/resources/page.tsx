@@ -67,8 +67,8 @@ export default async function ResourcesPage() {
           <ContentHeading as="h3">Campaign Example</ContentHeading>
           <p>Check out our podcast &quot;Tabletop Travesty&quot; where we&apos;ve played a campaign using an early version of this system named &quot;The Bystanders&quot;:</p>
           <div className="w-full flex flex-col md:flex-row gap-4 items-center justify-evenly">
-            <iframe className="rounded-lg drop-shadow-black drop-shadow-xl w-full max-w-[560px] aspect-70/29" src="https://open.spotify.com/embed/episode/44ZYj9hjlzvxTpdsWsJ4sc?utm_source=generator&amp;theme=0" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"/>
-            <iframe className="rounded-lg drop-shadow-black drop-shadow-xl w-full max-w-[560px] aspect-16/9" src="https://www.youtube.com/embed/videoseries?list=PLndOd2vtwL7L00BUuNn3r4Gtkap7nu0PJ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""/>
+            <iframe className="rounded-lg drop-shadow-black drop-shadow-xl w-full md:w-[45%] max-w-[560px] h-[100px] sm:h-[232px] md:h-[152px] lg:h-[232px] hideScroll" src="https://open.spotify.com/embed/episode/44ZYj9hjlzvxTpdsWsJ4sc?utm_source=generator&amp;theme=0" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"/>
+            <iframe className="rounded-lg drop-shadow-black drop-shadow-xl w-full md:w-[45%] max-w-[560px] aspect-16/9" src="https://www.youtube.com/embed/videoseries?list=PLndOd2vtwL7L00BUuNn3r4Gtkap7nu0PJ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""/>
           </div>
         </div>
         <Divider/>
