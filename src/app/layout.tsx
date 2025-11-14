@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Outfit, Playfair } from "next/font/google";
+import { Playfair, Kameron } from "next/font/google";
 import "./globals.css";
 import Header from "./Components/Header/Header";
 
@@ -8,8 +8,8 @@ const playfair = Playfair({
   subsets: ["latin"],
 });
 
-const outfit = Outfit({
-  variable: "--font-outfit",
+const kameron = Kameron({
+  variable: "--font-kameron",
   subsets: ["latin"],
 });
 
@@ -31,7 +31,7 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body className={`${playfair.variable} ${outfit.variable}`}>
+      <body className={`${playfair.variable} ${kameron.variable}`}>
       <header>
         <Header/>
       </header>

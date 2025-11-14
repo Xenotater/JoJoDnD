@@ -21,7 +21,7 @@ export default async function ResourcesPage() {
           "If desired, you can also find older versions of the system <a href='/resources/patches'>here</a>."
         ]}>
           <div className="h-full flex flex-col justify-center items-center text-lg">
-            <b>{pdfName}</b>
+            <h4>{pdfName}</h4>
             <div className="flex">
               <a className="button flex gap-1 items-center rounded-l-sm bg-gray-200 hover:bg-gray-300" href={`/static/resources/PDFs/${pdfName}`} target="_blank">
                 <BsEye/>View
@@ -36,7 +36,7 @@ export default async function ResourcesPage() {
           "Print off one of our custom character sheets, or use our online character editor!",
         ]}>
           <div className="h-full flex flex-col justify-center items-center text-lg">
-            <b>JoJo_Char_Sheet.pdf</b>
+            <h4>JoJo_Char_Sheet.pdf</h4>
             <div className="flex">
               <a className="button flex gap-1 items-center rounded-l-sm bg-gray-200 hover:bg-gray-300" href={`/static/resources/JoJo_Char_Sheet.pdf`} target="_blank">
                 <BsEye/>View

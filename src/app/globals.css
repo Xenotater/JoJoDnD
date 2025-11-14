@@ -16,10 +16,14 @@ body {
   overflow: hidden;
 }
 
-body {
-  color: black;
-  background: var(--background);
+h1, h2, h3, h4, h5 {
   font-family: var(--font-playfair), 'Times New Roman', Times, serif;
+}
+
+body {
+  color: rgb(32, 32, 32);
+  background: var(--background);
+  font-family: var(--font-kameron), 'Times New Roman', Times, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -37,8 +41,8 @@ body {
 .font-playfair {
   font-family: var(--font-playfair), 'Times New Roman', Times, serif !important;
 }
-.font-outfit {
-  font-family: var(--font-outfit), 'Arial', Arial, Helvetica, sans-serif !important;
+.font-kameron {
+  font-family: var(--font-kameron), 'Times New Roman', Times, serif !important;
 }
 
 .contentWrapper {
@@ -91,6 +95,10 @@ body {
   }
   h5 {
     font-size: var(--text-lg);
+  }
+
+  b, svg, h1, h2, h3, h4, h5 {
+    color: black;
   }
 
   .list-disc, .list-decimal {

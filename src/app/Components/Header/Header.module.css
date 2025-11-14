@@ -4,7 +4,7 @@
 }
 
 .collapsed {
-  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 82% 100%, 0% 100%);
   width: 250px;
 }
 
@@ -13,8 +13,8 @@
   position: absolute;
   right: 0;
   height: 100px;
-  width: 38.5px;
-  clip-path: polygon(100% 0, 98% 0, 0% 100%, 100% 100%);
+  width: 47.5px;
+  clip-path: polygon(100% 0, 95% 0, 0% 100%, 100% 100%);
   background-color: white;
 }
 
