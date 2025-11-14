@@ -59,11 +59,11 @@ export default memo(function Header() {
       </div>
       {isMenuOpen &&
         <div className="flex fixed top-(--headerHeight) right-0 w-full justify-end z-999">
-          <ContentSearch className="hidden lg:static max-w-[300px] grow" headerCollapsed={false}/>
+          <ContentSearch className="static max-w-[300px] grow"/>
           <MobileHeaderList/>
         </div>
       }
-      <ContentSearch className="hidden lg:flex w-full" headerCollapsed={isCollapsed}/>
+      <ContentSearch className={`hidden ${isCollapsed ? "" : "lg:flex"} w-full`}/>
     </div>
   );
 })
