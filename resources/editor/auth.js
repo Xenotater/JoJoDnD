@@ -96,10 +96,9 @@ $(document).ready(function () {
     });
 
     $("body").on("click", ".bi-three-dots-vertical", function () {
-        if ($(this).attr("id").includes("fold"))
-            $("#fold-drop" + $(this).attr("id").replace("fold-opt", "")).css("display", "unset");
-        else
-            $("#drop" + $(this).attr("id").replace("opt", "")).css("display", "unset");
+        const element = $(this).attr("id").includes("fold") ? $("#fold-drop" + $(this).attr("id").replace("fold-opt", "")) : $("#drop" + $(this).attr("id").replace("opt", ""));
+        element.css("display", "unset");
+        translateElement(element[0]);
     });
 
     $(document).mouseup(function (e) {
@@ -550,7 +549,7 @@ function move(id, isFold, goBack) {
 }
 
 function del(id, isFold) {
-    if ($("#confDel").val() == "Delete") {
+    if ($("#confDel").val() == translateText("Delete")) {
         $.post("delete.php", { action: "del", id: id, isFolder: isFold }, function(data) {
             $("#popConf").remove();
             respond(data);

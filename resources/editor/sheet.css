@@ -59,7 +59,7 @@ select {
   }
 
 label, .label {
-    font-size: 12px;
+    font-size: 12.5px;
     white-space: nowrap;
 }
 
@@ -191,7 +191,7 @@ input {
 #atkslbl, #insplbl {
     width: 100px;
     float: left;
-    padding-top: 5px;
+    padding-top: 3px;
 }
 
 #insplbl {
