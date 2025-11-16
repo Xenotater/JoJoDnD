@@ -360,7 +360,7 @@ function scale(object) {
 }
 
 function shouldScale(object) {
-    const disallowedIds = ["desc"];
+    const disallowedIds = ["desc", "err"];
     const disallowedClasses = ["skillstat", "skilllbl"];
     const disallowedParentIds = ["stats"];
 

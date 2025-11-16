@@ -290,9 +290,9 @@ function updateCharacters() {
                     $("#folderpath").hide();
             });
             $("#load-window .simplebar-content-wrapper").animate({scrollTop: 0}, 200)
-            translateElement($("#err")[0]);
             updateCardImages();
         }
+        translateElement($("#err")[0]);
     });
     $("#characters").append("<div class='loading'></div>");
     translateElement($("#search")[0]);
