@@ -1,4 +1,4 @@
-var version = {number: "1.13.1.0", date: "7/7/2025"}
+var version = {number: "1.13.1.1", date: "11/15/2025"}
 var translateData = {};
 
 $(document).ready(function () {
