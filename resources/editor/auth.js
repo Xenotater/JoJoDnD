@@ -231,7 +231,6 @@ function checkLoggedIn() {
 }
 
 function postTranslate() {
-    console.log("done");
     translateElement($("#loginText")[0]); //just in case of a race condition issue
 }
 

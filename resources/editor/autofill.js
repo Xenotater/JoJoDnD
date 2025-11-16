@@ -41,11 +41,7 @@ $(document).ready(function () {
         previousActType = $(this).val();
     })
 
-    createChart("#sArrayChart", "stand");
-    createChart("#act1ArrayChart", "act1");
-    createChart("#act2ArrayChart", "act2");
-    createChart("#act3ArrayChart", "act3");
-    createChart("#act4ArrayChart", "act4");
+    initCharts();
 
     $(".bigBox, .lilBox").keyup(function() {
         if ($(this).hasClass("act1-score") || $(this).hasClass("act1-mod") || act === 1)
@@ -73,6 +69,18 @@ $(document).ready(function () {
         }
     });
 });
+
+function initCharts() {
+    if (getLanguage() == "en" || translateData != undefined) {
+        createChart("#sArrayChart", "stand");
+        createChart("#act1ArrayChart", "act1");
+        createChart("#act2ArrayChart", "act2");
+        createChart("#act3ArrayChart", "act3");
+        createChart("#act4ArrayChart", "act4");
+    }
+    else
+        setTimeout(initCharts, 100);
+}
 
 function detectChange(object, event) {
     //console.log(event);
@@ -562,7 +570,7 @@ function createChart(target, targetChart) {
     charts[targetChart] = new Chart($(target)[0], {
         type: 'radar',
         data: {
-            labels: ['Power', 'Speed', 'Range', 'Durability', 'Precision', 'Potential'],
+            labels: [translateText('Power'), translateText('Speed'), translateText('Range'), translateText('Durability'), translateText('Precision'), translateText('Potential')],
             datasets: [{
                 data: [0,0,0,0,0,0],
                 fill: true,
@@ -586,12 +594,17 @@ function createChart(target, targetChart) {
                         font: {
                             size: target.includes("act") ? 5 : 8
                         }
+                    },
+                    pointLabels: {
+                        font: {
+                            size: target.includes("act") ? 5 : 8
+                        }
                     }
                 }
             },
             plugins: {
                 legend: {
-                  display: false,
+                  display: false
                 }
             }
         }
