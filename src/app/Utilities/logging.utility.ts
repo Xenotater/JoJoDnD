@@ -1,5 +1,3 @@
-"use server";
-
 import { HTTP_METHOD } from "next/dist/server/web/http";
 
 export async function log(message: string) {

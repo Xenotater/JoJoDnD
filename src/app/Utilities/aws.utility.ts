@@ -1,5 +1,3 @@
-"use server";
-
 import {GetObjectCommand, NoSuchKey, PutObjectCommand, S3Client, S3ServiceException} from "@aws-sdk/client-s3";
 import { Readable } from "stream";
 import { logError, logRequest } from "./logging.utility";
@@ -27,6 +25,7 @@ export async function getS3File(filePath: string) {
       logError("Object not found: " + filePath);
     if (e instanceof S3ServiceException)
       logError("Error communicating with S3: " + e.message);
+    return null;
   }
 }
 
@@ -50,5 +49,6 @@ export async function postS3File(fileData: FormData, key: string = "", type?: st
   catch (e) {
     if (e instanceof S3ServiceException)
       logError("Error communicating with S3: " + e.message);
+    return null;
   }
 }

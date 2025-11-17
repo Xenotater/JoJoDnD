@@ -7,11 +7,12 @@ import { BsCaretRightFill, BsCaretLeftFill, BsList } from "react-icons/bs";
 import DesktopHeaderList from "./Desktop/DesktopHeaderList";
 import MobileHeaderList from "./Mobile/MobileHeaderList";
 import { usePathname } from "next/navigation";
+import { useResize } from "@/app/Hooks/useResize";
+import ContentSearch from "../Content/ContentSearch";
 
 
 import styles from "./Header.module.css";
-import { useResize } from "@/app/Hooks/useResize";
-import ContentSearch from "../Content/ContentSearch";
+
 export default memo(function Header() {
   const [isDesktopWidth, setIsDesktopWidth] = useState(true);
   const [isCollapsed, setIsCollapsed] = useState(false);

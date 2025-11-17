@@ -1,5 +1,3 @@
-"use server";
-
 import fs from "fs";
 
 export async function getLatestFileName(path: string, comparison: "Time" | "Version" = "Time") {

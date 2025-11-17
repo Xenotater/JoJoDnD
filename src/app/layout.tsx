@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Playfair, Kameron } from "next/font/google";
 import "./globals.css";
 import Header from "./Components/Header/Header";
+import { Suspense } from "react";
 
 const playfair = Playfair({
   variable: "--font-playfair",
@@ -36,7 +37,11 @@ export default function RootLayout({
         <Header/>
       </header>
         <div className="contentWrapper">
-          <div className="w-full min-h-full max-w-[90vw] m-auto">{children}</div>
+          <div className="w-full min-h-full max-w-[90vw] m-auto">
+            <Suspense fallback={<div className="w-full h-full content"><svg className="animate-spin"/></div>}>
+              {children}
+            </Suspense>
+          </div>
         </div>
       </body>
     </html>

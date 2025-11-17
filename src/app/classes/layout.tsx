@@ -37,7 +37,7 @@ export default function RacesLayout({
           <p>
             You may choose to gain levels in more than one of these Classes, but can only level up in one at a time. For example, you may become a Ripple User that also has a Stand, but you&apos;ll need to choose which Class to gain in for each Level-Up.
             <br/><PreviewLink href='/races'>Races</PreviewLink> with levels do not have this restriction, and their levels work differently. Check the respective Race page for details.
-            <br/>You may not multiclass into two different Stand Types, but may instead utilize Multi-Typing which is defined with the other <a href='/classes/Stands#multi-type'>Stand rules</a>.
+            <br/>You may not multiclass into two different Stand Types, but may instead utilize Multi-Typing which is defined with the other <PreviewLink href='/classes/Stands#multi-type'>Stand rules</PreviewLink>.
           </p>
         </div>
       </div>

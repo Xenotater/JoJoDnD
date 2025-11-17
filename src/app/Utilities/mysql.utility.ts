@@ -1,5 +1,3 @@
-"use server";
-
 import mysql from "mysql2/promise";
 import { NextResponse } from "next/server";
 import { logDBQuery, logError } from "./logging.utility";
@@ -16,6 +14,7 @@ export async function getDBConnection() {
   return await mysql.createConnection(connectParams);
 }
 
+//TODO: is this a security risk..? It shouldn't be exposed to the client
 export async function doDBQuery(query: string, log: boolean = true) {
   try {
     const connection = await getDBConnection();
