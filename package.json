@@ -1,6 +1,7 @@
 {
   "name": "jojodnd",
   "version": "1.13.1.1",
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
@@ -9,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.932.0",
     "@tailwindcss/postcss": "^4.1.11",
     "html-react-parser": "^5.2.7",
     "lodash": "^4.17.21",

@@ -1,3 +1,5 @@
+"use server";
+
 import mysql from "mysql2/promise";
 import { NextResponse } from "next/server";
 import { logDBQuery, logError } from "./logging.utility";
