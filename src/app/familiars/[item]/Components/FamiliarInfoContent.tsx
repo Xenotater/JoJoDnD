@@ -1,5 +1,5 @@
 import HTMLInclusiveText from "@/app/Components/Display/HTMLInclusiveText";
-import { FancyImage } from "@/app/Components/FancyImage/FancyImage";
+import { FancyImage } from "@/app/Components/Layout/FancyImage/FancyImage";
 import ContentHeading from "@/app/Components/Layout/Typography/ContentHeading";
 import { FamiliarInfo } from "@/app/Models/Familiars.model";
 

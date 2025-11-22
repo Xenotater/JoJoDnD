@@ -1,4 +1,4 @@
-import { FancyImage } from "@/app/Components/FancyImage/FancyImage";
+import { FancyImage } from "@/app/Components/Layout/FancyImage/FancyImage";
 import ContentHeading from "@/app/Components/Layout/Typography/ContentHeading";
 import LevelTable from "@/app/Components/LevelTable/LevelTable";
 import { FamiliarClass } from "@/app/Models/Familiars.model";

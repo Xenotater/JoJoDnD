@@ -1,4 +1,4 @@
-import { FancyImage } from "./Components/FancyImage/FancyImage";
+import { FancyImage } from "./Components/Layout/FancyImage/FancyImage";
 
 export default function NotFound() {
   return (

@@ -3,17 +3,12 @@
   z-index: 100;
   bottom: 2rem;
   right: 2rem;
-  border: 2px solid black;
-  border-radius: 50%;
-  background-color: var(--color-jj-mpurple-1);
   padding: 0.25rem;
   box-shadow: 2px 2px 5px black;
-  cursor: pointer;
   font-size: var(--text-4xl);
 }
 
 .topButton:hover {
-  background-color: var(--color-jj-mpurple-2);
   bottom: 2.25rem;
 }
 

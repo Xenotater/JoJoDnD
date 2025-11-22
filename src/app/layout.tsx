@@ -3,6 +3,7 @@ import { Playfair, Kameron } from "next/font/google";
 import "./globals.css";
 import Header from "./Components/Header/Header";
 import { Suspense } from "react";
+import ToTopButton from "./Components/Layout/ToTopButton/ToTopButton";
 
 const playfair = Playfair({
   variable: "--font-playfair",
@@ -42,6 +43,7 @@ export default function RootLayout({
               {children}
             </Suspense>
           </div>
+          <ToTopButton/>
         </div>
       </body>
     </html>

@@ -1,6 +1,6 @@
 import HTMLInclusiveText from "@/app/Components/Display/HTMLInclusiveText";
 import PreviewLink from "@/app/Components/Display/PreviewLink";
-import { FancyImage } from "@/app/Components/FancyImage/FancyImage";
+import { FancyImage } from "@/app/Components/Layout/FancyImage/FancyImage";
 import ContentHeading from "@/app/Components/Layout/Typography/ContentHeading";
 import { RaceData } from "@/app/Models/Races.model";
 import LevelTable from "@/app/Components/LevelTable/LevelTable";

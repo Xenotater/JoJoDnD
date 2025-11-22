@@ -4,7 +4,6 @@ import {weapons, attributes, tags} from "@/../public/data/weapons.json";
 import WeaponList from "./Components/WeaponList";
 import PreviewLink from "../Components/Display/PreviewLink";
 import AttributesList from "./Components/AttributesList";
-import ToTopButton from "../Components/ToTopButton/ToTopButton";
 import { ContentListData } from "../Components/Content/ContentList/ContentList";
 import Tooltip from "../Components/Layout/Typography/Tooltip";
 import HTMLInclusiveText from "../Components/Display/HTMLInclusiveText";
@@ -52,7 +51,6 @@ export default function WeaponsPage() {
       <div className="content">
         <AttributesList />
       </div>
-      <ToTopButton/>
     </div>
   );
 }

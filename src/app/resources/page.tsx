@@ -3,7 +3,7 @@ import PageTitle from "../Components/Layout/Typography/PageTitle";
 import ResourceItem from "./Components/ResourceItem";
 import { getLatestFileName } from "../Utilities/files.utility";
 import Link from "next/link";
-import ArrowButtonLink from "../Components/ArrowButtonLink/ArrowButtonLink";
+import ArrowButtonLink from "../Components/Layout/ArrowButtonLink/ArrowButtonLink";
 import ContentHeading from "../Components/Layout/Typography/ContentHeading";
 import Divider from "../Components/Layout/Divider/Divider";
 import ContactForm from "./Components/ContactForm";

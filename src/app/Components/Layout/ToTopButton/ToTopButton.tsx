@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { BsArrowUp } from "react-icons/bs";
 
 import styles from "./ToTopButton.module.css";
+import IconButton from "../IconButton/IconButton";
 
 export default function ToTopButton() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -33,9 +34,9 @@ export default function ToTopButton() {
   return (
     <>
       {scrollCheck.current &&
-      <button className={styles.topButton} onClick={() => getContentWrapper()?.scroll({top: 0, behavior: "smooth"})}>
+      <IconButton className={styles.topButton} onClick={() => getContentWrapper()?.scroll({top: 0, behavior: "smooth"})}>
         <BsArrowUp/>
-      </button>
+      </IconButton>
       }
     </>
   );

@@ -1,12 +1,11 @@
 "use client";
 
 import HTMLInclusiveText from "@/app/Components/Display/HTMLInclusiveText";
-import { FancyImage } from "@/app/Components/FancyImage/FancyImage";
+import { FancyImage } from "@/app/Components/Layout/FancyImage/FancyImage";
 import ContentHeading from "@/app/Components/Layout/Typography/ContentHeading";
 import { ClassData } from "@/app/Models/Classes.model";
 import LevelTable from "@/app/Components/LevelTable/LevelTable";
 import { useEffect, useState } from "react";
-import ToTopButton from "@/app/Components/ToTopButton/ToTopButton";
 
 export default function ClassesContent({data}: {data: ClassData | undefined}) {
   const [variant, setVariant] = useState("Standard");
@@ -149,7 +148,6 @@ export default function ClassesContent({data}: {data: ClassData | undefined}) {
             }))}/>
         </div>
       }
-      <ToTopButton/>
     </div>
   )
 }

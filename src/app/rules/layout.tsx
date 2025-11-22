@@ -1,6 +1,5 @@
 import RulesTabs from "./Components/RulesTabs/RulesTabs";
 import PageTitle from "../Components/Layout/Typography/PageTitle";
-import ToTopButton from "../Components/ToTopButton/ToTopButton";
 
 import styles from "./Rules.module.css";
 
@@ -23,7 +22,6 @@ export default function RulesLayout({
 					{children}
 				</div>
 			</div>
-			<ToTopButton/>
 		</div>
 	);
 }

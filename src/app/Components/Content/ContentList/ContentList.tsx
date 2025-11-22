@@ -37,6 +37,7 @@ interface ContentListOptions {
   search?:boolean;
   filter?: boolean;
   borders?: boolean;
+  sticky?: boolean;
 }
 
 //TODO: split filter logic toggles per category, keyboard navigation
@@ -191,6 +192,7 @@ export default function ContentList({content, title, tags, options}: {content: C
         ${options?.height ? `max-h-(--height)` : ""}
         ${options?.width ? `md:w-(--width)` : "md:w-fit"}
         overflow-x-scroll hideScroll
+        ${options?.sticky ?? true ? `sticky top-0` : ""}
       `}
     >
       <div className={`${styles.listHead} ${options?.scrollWidth ? `min-w-(--scrollWidth)` : ""}`}>
