@@ -1,6 +1,6 @@
 "use client";
 
-import { doGetResources } from "@/app/Actions/community.action";
+import { doCountResourcePages, doGetResources } from "@/app/Actions/community.action";
 import { CommunityResource, ResourceSort } from "@/app/Models/Resources.model";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -8,9 +8,10 @@ import CommunityResourceCard from "./CommunityResourceCard";
 import IconButton from "@/app/Components/Layout/IconButton/IconButton";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
-export default function CommunityResourceList({pages, bucketURL}: {pages: number, bucketURL: string}) {
+export default function CommunityResourceList({bucketURL}: {bucketURL: string}) {
   const [resources, setResources] = useState<CommunityResource[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
+  const [pages, setPages] = useState(1);
   const params = useSearchParams();
 
   const getResources = async (page: number, sort: ResourceSort, search: string) => {
@@ -21,6 +22,10 @@ export default function CommunityResourceList({pages, bucketURL}: {pages: number
     const newParams = new URLSearchParams(params.toString());
     newParams.set("page", `${page}`);
     window.history.pushState(null, "", window.location.href.replace(/\?[^#]*/, "") + `?${newParams}`);
+  }
+
+  const updatePageCount = async (search: string) => {
+    setPages(await doCountResourcePages(search) ?? 1);
   }
 
   useEffect(() => {
@@ -34,6 +39,7 @@ export default function CommunityResourceList({pages, bucketURL}: {pages: number
     else {
       getResources(page > pages ? pages : page, sort, search);
       setCurrentPage(page > pages ? pages : page);
+      updatePageCount(search);
     }
   }, [params]);
 
