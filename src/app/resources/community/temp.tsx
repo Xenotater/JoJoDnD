@@ -1,6 +1,6 @@
 "use client";
 
-import { FancyImage } from "@/app/Components/FancyImage/FancyImage";
+import { FancyImage } from "@/app/Components/Layout/FancyImage/FancyImage";
 import { postS3File } from "@/app/Utilities/aws.utility";
 import { useState } from "react";
 

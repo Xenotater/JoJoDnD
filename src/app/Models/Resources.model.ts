@@ -5,4 +5,7 @@ export interface CommunityResource {
   multiple: boolean;
   upvotes: number;
   status: string;
+  modified: Date;
 }
+
+export type ResourceSort = "A-Z" | "Top" | "New";

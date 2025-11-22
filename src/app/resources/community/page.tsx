@@ -1,15 +1,14 @@
-import { doCountResources, doGetResources, doGetResourcesPerPage } from "@/app/Actions/community.action";
+import { doCountResourcePages } from "@/app/Actions/community.action";
+import CommunityResourceList from "./Components/CommunityResourceList";
+import { getBucketURL } from "@/app/Utilities/aws.utility";
 
 export default async function CommunityResourcesPage() {
-  const page = 1;
-  const perPage = await doGetResourcesPerPage();
-  const total = await doCountResources() ?? 0;
-  const resources = await doGetResources(page);
+  const pages = await doCountResourcePages() ?? 1;
+  const bucketURL = await getBucketURL();
+  return <CommunityResourceList pages={pages} bucketURL={bucketURL}/>;
+}
 
-  return (
-    <div>
-      {resources?.map((r) => <div key={r.name}>{r.name}</div>)}
-      <span>{page}/{Math.ceil(total/perPage)}</span>
-    </div>
-  );
+export const metadata = {
+  title: "Community Resources",
+  description: "A variety of resources created by our awesome community!"
 }
