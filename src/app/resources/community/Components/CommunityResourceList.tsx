@@ -19,10 +19,11 @@ export default function CommunityResourceList({bucketURL}: {bucketURL: string}) 
   }
 
   const changePage = (page: number) => {
-    const newParams = new URLSearchParams(params.toString());
-    newParams.set("page", `${page}`);
-    window.history.pushState(null, "", window.location.href.replace(/\?[^#]*/, "") + `?${newParams}`);
-    updateStates();
+    if (page <= pages && page >= 1) {
+      const newParams = new URLSearchParams(params.toString());
+      newParams.set("page", `${page}`);
+      window.history.replaceState(null, "", window.location.href.replace(/\?[^#]*/, "") + `?${newParams}`);
+    }
   }
 
   const updateStates = async () => {
@@ -30,16 +31,17 @@ export default function CommunityResourceList({bucketURL}: {bucketURL: string}) 
     const sort = params.get("sort") as ResourceSort ?? "Top";
     const search = params.get("search") ?? "";
     const count = await doCountResourcePages(search) ?? 1;
+    let overwritePage = page;;
     if (page > count)
-      changePage(count);
+      overwritePage = count;
     else if (page < 1)
-      changePage(1);
-    else {
-      getResources(page, sort, search);
-    }
-    setCurrentPage(page);
+      overwritePage = 1;
+    getResources(overwritePage, sort, search);
+    setCurrentPage(overwritePage);
     setPages(count);
-  }
+    if (overwritePage != page)
+      changePage(overwritePage);
+}
 
   useEffect(() => {
     updateStates();
@@ -47,15 +49,19 @@ export default function CommunityResourceList({bucketURL}: {bucketURL: string}) 
 
   return (
     <div className="w-full h-full flex flex-col justify-between">
-      <div className="flex flex-wrap gap-4 justify-evenly">
-        {resources.map((r) => (<CommunityResourceCard key={r.name} data={r} bucketURL={bucketURL}/>))}
+      <div className="flex flex-wrap gap-4 2xl:gap-12 justify-evenly">
+          {resources.map((r) => (<div key={r.name} className="basis-full md:basis-1/3 lg:basis-1/4 xl:basis-1/5 flex justify-center">
+        <CommunityResourceCard data={r} bucketURL={bucketURL}/>
+      </div>))}
       </div>
       <div className="flex mt-4 items-center">
         {currentPage != 1 ?
           <IconButton onClick={() => changePage(currentPage - 1)}><BsArrowLeft/></IconButton>
           : <div className="w-[36px]"></div>
         }
-        <span className="grow text-center text-xl">{currentPage}/{pages}</span>
+        <span className="grow text-center text-xl">
+          <input type="number" max={pages} min={1} value={currentPage} onChange={(e) => changePage(parseInt(e.target.value) ?? 1)} dir="rtl" className="w-min"/>/{pages}
+          </span>
         {currentPage < pages ?
           <IconButton onClick={() => changePage(currentPage + 1)}><BsArrowRight/></IconButton>
           : <div className="w-[36px]"></div>

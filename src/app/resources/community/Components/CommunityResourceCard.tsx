@@ -26,11 +26,11 @@ export default function CommunityResourceCard({data, bucketURL}: {data: Communit
   }
 
   return (
-    <div className="basis-full md:basis-1/4 max-w-[300px] h-[360px] flex relative text-black">
+    <div className="max-w-[275px] h-[360px] flex relative text-black">
       <a href={data.variants ? undefined : data.link} target="_blank" onClick={data.variants ? () => setSubMenuOpen(true) : undefined}
           onKeyDown={(e) => {if (e.key == "Enter") setSubMenuOpen(!subMenuOpen)}} tabIndex={0}
           className={`h-full border-2 rounded-md bg-purple-600 hover:shadow-lg/50 cursor-pointer ${subMenuOpen ? "shadow-lg/50" : ""}`}>
-        <Textfit className="h-[10%] w-full flex items-center justify-center p-0.5">{data.name}</Textfit>
+        <Textfit className="h-[12%] w-full flex items-center justify-center p-0.5">{data.name}</Textfit>
         <div className="h-[50%] w-full relative border-t border-b">
           <Image src={`${bucketURL}CommunityResources/Images/${data.name.toLowerCase().replaceAll(" ", "-").replaceAll(/[^a-z0-9-_]/g, "")}.webp?v=${data.modified}`} alt={data.name} fill/>
         </div>

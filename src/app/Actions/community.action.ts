@@ -3,7 +3,7 @@
 import { CommunityResource, ResourceSort } from "../Models/Resources.model";
 import { doDBQuery } from "../Utilities/mysql.utility";
 
-const resourcesPerPage = 9; //TODO: re-evaluate
+const resourcesPerPage = 12; //TODO: re-evaluate
 
 export async function doGetResourcesPerPage() {
   return resourcesPerPage;

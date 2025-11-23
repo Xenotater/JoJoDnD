@@ -1,10 +1,10 @@
 "use client";
 
-import React, { ReactElement } from "react";
+import React, { JSX, ReactNode } from "react";
 import { useEffect, useRef } from "react";
 
 interface ModalProps {
-  children: ReactElement | ReactElement[];
+  children: ReactNode;
   className?: string;
   closeCallback: () => void;
   fullPage?: boolean
@@ -26,14 +26,16 @@ export default function Modal(props: ModalProps) {
   return (
     <>
       <div className={`fixed top-0 left-0 h-full w-full z-100 pointer-events-none ${props.className}`}>
-        {props.fullPage && ((props.children as ReactElement[]).length ?
-          <div ref={innerRef} className="pointer-events-auto">{props.children}</div>
-          : React.cloneElement(props.children as ReactElement, {ref: innerRef, className: "pointer-events-auto " + (props.children as ReactElement).props?.className}))
+        {props.fullPage && React.Children.map<ReactNode, ReactNode>(props.children, child => {
+          if (React.isValidElement(child))
+            return React.cloneElement(child as JSX.Element, {...(child.props as object), ref: innerRef, className: "pointer-events-auto " + (child.props as {className?: string}).className})
+        })
         }
       </div>
-      {!props.fullPage && ((props.children as ReactElement[]).length ?
-        <div ref={innerRef}>{props.children}</div>
-        : React.cloneElement(props.children as ReactElement, {ref: innerRef, className: "z-101 " + (props.children as ReactElement).props?.className}))
+      {!props.fullPage && React.Children.map<ReactNode, ReactNode>(props.children, child => {
+          if (React.isValidElement(child))
+            return React.cloneElement(child as JSX.Element, {...(child.props as object), ref: innerRef, className: "pointer-events-auto " + (child.props as {className?: string}).className})
+        })
       }
     </>
   );

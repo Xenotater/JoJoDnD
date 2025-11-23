@@ -36,7 +36,6 @@ export default function ClassesContent({data}: {data: ClassData | undefined}) {
           <select className="mt-1 border rounded-sm h-min p-2 bg-white" value={variant} onChange={(e) => setVariant(e.target.value)}>
             <option value="Standard">Standard</option>
             {data.variants.map((v) => {
-              console.log(v.nameExt);
               const vName = v.nameExt!.match(/(?<=\().*(?=\))/)![0];
               return <option key={`${data.name}-${vName}`}>{vName}</option>
             })}
