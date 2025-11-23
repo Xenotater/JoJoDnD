@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5 {
 }
 
 body {
-  color: rgb(32, 32, 32);
+  color: black;
   background: var(--background);
   font-family: var(--font-kameron), 'Times New Roman', Times, serif;
   -webkit-font-smoothing: antialiased;
@@ -95,10 +95,6 @@ body {
   }
   h5 {
     font-size: var(--text-lg);
-  }
-
-  b, svg, h1, h2, h3, h4, h5 {
-    color: black;
   }
 
   .list-disc, .list-decimal {

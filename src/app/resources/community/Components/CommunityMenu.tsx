@@ -36,20 +36,20 @@ export default function CommunityMenu() {
                 {loggedIn ? 
                   <>
                     <Link href="" className="flex gap-2 text-white items-center hover:underline">
-                      <BsPerson size={20} className="text-white"/><span>Account</span>
+                      <BsPerson size={20}/><span>Account</span>
                     </Link>
                     <Divider className="border-white mb-2 mt-2"/>
                     <Link href="" className="flex gap-2 text-white items-center hover:underline">
-                      <BsFileEarmark size={20} className="text-white"/><span>Your Resources</span>
+                      <BsFileEarmark size={20}/><span>Your Resources</span>
                     </Link>
                     <Divider className="border-white mb-2 mt-2"/>
                     <Link href="" className="flex gap-2 text-white items-center hover:underline">
-                      <BsFilePlus size={20} className="text-white"/><span>Submit New Resource</span>
+                      <BsFilePlus size={20}/><span>Submit New Resource</span>
                     </Link>
                   </>
                 : <>
                   <Link href="" className="flex gap-4 whitespace-normal w-[200px] items-center text-white hover:underline">
-                    <BsBoxArrowInRight size={28} className="text-white shrink-0"/><span>Sign in to manage and submit resources</span>
+                    <BsBoxArrowInRight size={28} className="shrink-0"/><span>Sign in to manage and submit resources</span>
                   </Link>
                 </>  
               }

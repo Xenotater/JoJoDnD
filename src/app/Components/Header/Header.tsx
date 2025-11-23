@@ -50,11 +50,11 @@ export default memo(function Header() {
         </div>
         {isDesktopWidth ?
           <div className={`cursor-pointer min-h text-white absolute ${isCollapsed ? "top-[4] right-[16]" : "top-[8] right-[8]"}`} onClick={() => handleCollapse()}>
-            {isCollapsed ? <BsCaretRightFill className="text-white" size={"2rem"}/> : <BsCaretLeftFill className="text-white" size="2rem"/>}
+            {isCollapsed ? <BsCaretRightFill size={"2rem"}/> : <BsCaretLeftFill size="2rem"/>}
           </div>
           :
           <div className="cursor-pointer min-h text-white self-center mr-4" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            <BsList className="text-white" size="3rem"/>
+            <BsList size="3rem"/>
           </div>
         }
       </div>

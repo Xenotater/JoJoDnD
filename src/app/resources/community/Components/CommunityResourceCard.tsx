@@ -26,7 +26,7 @@ export default function CommunityResourceCard({data, bucketURL}: {data: Communit
   }
 
   return (
-    <div className="max-w-[275px] h-[360px] flex relative text-black">
+    <div className="max-w-[275px] h-[360px] flex relative">
       <a href={data.variants ? undefined : data.link} target="_blank" onClick={data.variants ? () => setSubMenuOpen(true) : undefined}
           onKeyDown={(e) => {if (e.key == "Enter") setSubMenuOpen(!subMenuOpen)}} tabIndex={0}
           className={`h-full border-2 rounded-md bg-purple-600 hover:shadow-lg/50 cursor-pointer ${subMenuOpen ? "shadow-lg/50" : ""}`}>
