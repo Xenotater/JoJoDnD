@@ -2,6 +2,9 @@
   width: auto;
   height: 0;
   border-bottom: 2px dashed purple;
+}
+
+.divider:not([class*="mb-"]) {
   margin: 1rem 0;
 }
 
@@ -9,5 +12,9 @@
   height: auto;
   width: 0;
   border-right: 2px dashed purple;
+  margin: 0 1rem;
+}
+
+.verticalDivider:not([class*="mb-"]) {
   margin: 0 1rem;
 }

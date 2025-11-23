@@ -2,6 +2,7 @@ export interface CommunityResource {
   name: string;
   description: string;
   link: string;
+  variants: string;
   multiple: boolean;
   upvotes: number;
   status: string;

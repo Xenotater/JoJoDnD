@@ -9,10 +9,10 @@ import IconButton from "@/app/Components/Layout/IconButton/IconButton";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
 export default function CommunityResourceList({bucketURL}: {bucketURL: string}) {
-  const [resources, setResources] = useState<CommunityResource[]>([]);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [pages, setPages] = useState(1);
   const params = useSearchParams();
+  const [resources, setResources] = useState<CommunityResource[]>([]);
+  const [currentPage, setCurrentPage] = useState(parseInt(params.get("page") ?? "1"));
+  const [pages, setPages] = useState(1);
 
   const getResources = async (page: number, sort: ResourceSort, search: string) => {
     setResources(await doGetResources(page, sort, search) ?? []);
@@ -22,25 +22,27 @@ export default function CommunityResourceList({bucketURL}: {bucketURL: string}) 
     const newParams = new URLSearchParams(params.toString());
     newParams.set("page", `${page}`);
     window.history.pushState(null, "", window.location.href.replace(/\?[^#]*/, "") + `?${newParams}`);
+    updateStates();
   }
 
-  const updatePageCount = async (search: string) => {
-    setPages(await doCountResourcePages(search) ?? 1);
-  }
-
-  useEffect(() => {
+  const updateStates = async () => {
     const page = parseInt(params.get("page") ?? "1");
     const sort = params.get("sort") as ResourceSort ?? "Top";
     const search = params.get("search") ?? "";
-    if (page > pages)
-      changePage(pages);
+    const count = await doCountResourcePages(search) ?? 1;
+    if (page > count)
+      changePage(count);
     else if (page < 1)
       changePage(1);
     else {
-      getResources(page > pages ? pages : page, sort, search);
-      setCurrentPage(page > pages ? pages : page);
-      updatePageCount(search);
+      getResources(page, sort, search);
     }
+    setCurrentPage(page);
+    setPages(count);
+  }
+
+  useEffect(() => {
+    updateStates();
   }, [params]);
 
   return (
