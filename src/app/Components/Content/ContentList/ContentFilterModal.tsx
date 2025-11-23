@@ -1,9 +1,10 @@
 "use client";
 
 import { ContentTags } from "@/app/Models/Misc.model"
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { BsCheck } from "react-icons/bs";
 import Divider from "../../Layout/Divider/Divider";
+import Modal from "../../Layout/Modal/Modal";
 
 type ContentFilterModalProps = {
   tags: ContentTags[];
@@ -20,18 +21,6 @@ export default function ContentFilterModal(props: ContentFilterModalProps) {
   const [includedTags, setIncludedTags] = useState(structuredClone(props.includes)); //temp states for display
   const [excludedTags, setExcludedTags] = useState(structuredClone(props.excludes));
   const [tagLogic, setTagLogic] = useState(structuredClone(props.logic));
-  const innerRef = useRef(null), outerRef = useRef(null);
-
-  useEffect(() => {
-    const handleClick = (event: Event) => {
-      if (innerRef.current && !(innerRef.current as Element).contains(event.target as Node))
-        props.closer();
-    }
-
-    if (outerRef.current) {
-      (outerRef.current as Element).addEventListener("click", handleClick, true);
-    }
-  }, [innerRef, outerRef])
 
   const toggleTag = (tag: string) => { //toggle filter state: include -> exclude -> none
     const newInclude = structuredClone(includedTags), newExclude = structuredClone(excludedTags);
@@ -76,8 +65,8 @@ export default function ContentFilterModal(props: ContentFilterModalProps) {
   }
 
   return (
-    <div ref={outerRef} className="absolute top-0 left-0 h-[100vh] w-[100vw] bg-[rgba(69,69,69,.25)] flex z-100">
-      <div ref={innerRef} className="content flex flex-col justify-between min-h-[40vh] w-[90vw] lg:w-[65vw] max-h-[75vh] m-auto shadow-lg">
+    <Modal className="bg-[rgba(69,69,69,.25)] flex" closeCallback={props.closer} fullPage>
+      <div className="content flex flex-col justify-between min-h-[40vh] w-[90vw] lg:w-[65vw] max-h-[75vh] m-auto shadow-lg z-100">
         <div>
           <div className="flex flex-col lg:flex-row items-center justify-between gap-2">
             <h4 className="text-2xl leading-6">Filters</h4>
@@ -118,6 +107,6 @@ export default function ContentFilterModal(props: ContentFilterModalProps) {
           </div>
         </div>
       </div>
-    </div>
+    </Modal>
   );
 }

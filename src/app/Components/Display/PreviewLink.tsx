@@ -51,7 +51,7 @@ export default function PreviewLink(props: LinkProps & {children: React.ReactNod
 
   return (
     <>
-      <Link ref={linkRef} className={`${isModalOpen ? "text-jj-purple-1" : "text-jj-purple-4"} underline relative whitespace-nowrap`}
+      <Link ref={linkRef} className={`${isModalOpen ? "text-jj-purple-1" : "text-jj-purple-4"} underline whitespace-nowrap`}
         {...props} onMouseEnter={() => setIsModalOpen(true)} onMouseLeave={() => {if (!keepOpen) setIsModalOpen(false)}}
       >
         {props.children}
