@@ -148,10 +148,28 @@ body {
     box-shadow: 1px 1px 3px 1px black;
   }
 
-  form input, form textarea {
+  form input:not([type="file"]), form textarea {
     border: 2px solid purple;
     background-color: lavender;
     padding: 2px 8px;
+  }
+
+  input[type="file"] {
+  white-space: normal;
+  word-wrap: break-word; 
+}
+
+  input[type="file"]::file-selector-button {
+    background-color: lightgray;
+    border: 1px black solid;
+    border-radius: 3px;
+    padding: 0 4px;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+
+  input[type="file"]::file-selector-button:hover {
+    background-color: silver;
   }
 
   .content {

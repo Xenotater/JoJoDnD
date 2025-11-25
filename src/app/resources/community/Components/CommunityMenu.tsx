@@ -8,7 +8,7 @@ import { useState } from "react";
 import { BsBoxArrowInRight, BsFileEarmark, BsFilePlus, BsList, BsPerson } from "react-icons/bs";
 
 export default function CommunityMenu() {
-  const loggedIn = true; //TODO: auth solution
+  const loggedIn = false; //TODO: auth solution
   const [menuOpen, setMenuOpen] = useState(false);
   const [animate, setAnimate] = useState(false);
 
@@ -30,9 +30,9 @@ export default function CommunityMenu() {
           <BsList className="text-white" size="24"/>
         </IconButton>
         {menuOpen && 
-            <div className={`absolute top-[32px] left-[36px] z-1 transform transition duration-100 ${animate ? "scale-100" : "scale-0"}`}>
-              <div className="w-[36px] h-[44px] aspect-1/1 border-2 border-r-0 rotate-45 z-2 bg-jj-purple-1"/>
-              <div className="border-2 whitespace-nowrap z-1 absolute top-[19px] left-[14.5px] rounded-lg rounded-tl-4xl bg-jj-purple-1 p-2">
+            <div className={`absolute top-[42px] left-[16px] z-1 transform transition duration-100 ${animate ? "scale-100" : "scale-0"}`}>
+              <div className="w-[44px] h-[60px] aspect-1/1 border-2 border-t-0 z-2 bg-jj-purple-1"/>
+              <div className="border-2 whitespace-nowrap z-1 absolute top-[24px] rounded-lg rounded-tl-4xl bg-jj-purple-1 p-2 shadow-md/30">
                 {loggedIn ? 
                   <>
                     <Link href="" className="flex gap-2 text-white items-center hover:underline">

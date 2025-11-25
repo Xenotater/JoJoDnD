@@ -3,10 +3,10 @@ export interface CommunityResource {
   description: string;
   link: string;
   variants: string;
-  multiple: boolean;
-  upvotes: number;
-  status: string;
-  modified: Date;
+  upvotes?: number;
+  status?: string;
+  contact?: string;
+  modified?: Date;
 }
 
 export type ResourceSort = "A-Z" | "Top" | "New";

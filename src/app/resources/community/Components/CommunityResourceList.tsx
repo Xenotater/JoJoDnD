@@ -48,7 +48,7 @@ export default function CommunityResourceList({bucketURL}: {bucketURL: string}) 
   }, [params]);
 
   return (
-    <div className="w-full h-full flex flex-col justify-between">
+    <div className="w-full h-full min-h-[40vh] flex flex-col justify-between">
       <div className="flex flex-wrap gap-4 2xl:gap-12 justify-evenly">
           {resources.map((r) => (<div key={r.name} className="basis-full md:basis-1/3 lg:basis-1/4 xl:basis-1/5 flex justify-center">
         <CommunityResourceCard data={r} bucketURL={bucketURL}/>

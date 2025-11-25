@@ -9,11 +9,11 @@ export async function getBucketName() {
 }
 
 export async function getBucketURL() {
-  return `https://${await getBucketName()}.s3.us-east-1.amazonaws.com/`;
+  return `https://${await getBucketName()}.s3.us-east-1.amazonaws.com`;
 }
 
 export async function getS3File(filePath: string) {
-  logRequest(await getBucketURL() + filePath, "GET");
+  logRequest(await getBucketURL() + `/${filePath}`, "GET");
   try {
     return s3Client.send(new GetObjectCommand({
       Bucket: await getBucketName(),
@@ -36,7 +36,7 @@ export async function postS3File(fileData: FormData, key: string = "", type?: st
   stream.push(buffer);
   stream.push(null);
 
-  logRequest(await getBucketURL() + key, "POST", `file: ${file.name}`);
+  logRequest(await getBucketURL() + `/${key}`, "POST", `file: ${file.name}`);
   try {
     return await s3Client.send(new PutObjectCommand({
       Bucket: await getBucketName(),

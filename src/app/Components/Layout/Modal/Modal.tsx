@@ -24,14 +24,14 @@ export default function Modal(props: ModalProps) {
         props.closeCallback();
     }
 
-    document.body.addEventListener("click", handleClick, true);
+    document.body.addEventListener("mousedown", handleClick, true);
 
-    return (() => document.body.removeEventListener("click", handleClick, true));
+    return (() => document.body.removeEventListener("mousedown", handleClick, true));
   }, [])
   
   return (
     <>
-      <div className={`fixed top-0 left-0 h-full w-full z-100 pointer-events-none ${props.className}`}>
+      <div className={`fixed top-0 left-0 h-full w-full z-100 pointer-events-none ${props.fullPage ? "flex justify-center align-item-center pt-(--headerHeight)" : ""} ${props.className}`}>
         {props.fullPage && child}
       </div>
       {!props.fullPage && child}

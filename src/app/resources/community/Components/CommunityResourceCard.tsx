@@ -2,18 +2,18 @@
 
 import { CommunityResource } from "@/app/Models/Resources.model";
 import Image from "next/image";
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 import { BsHandThumbsUp, BsHandThumbsUpFill } from "react-icons/bs";
 import { Textfit } from "react-textfit";
 import ResourceVariantSublist from "./ResourceVariantSublist";
 
-export default function CommunityResourceCard({data, bucketURL}: {data: CommunityResource, bucketURL: string}) {
+export default function CommunityResourceCard({data, bucketURL, image}: {data: CommunityResource, bucketURL?: string, image?: ReactNode}) {
   const [userUpvoted, setUserUpvoted] = useState(false);
   const [subMenuOpen, setSubMenuOpen] = useState(false);
 
   const upvoteResource = () => {
     setUserUpvoted(!userUpvoted);
-    //server action
+    //server action (if bucketURL?)
   }
 
   const assembleSubItems = () => {
@@ -21,18 +21,20 @@ export default function CommunityResourceCard({data, bucketURL}: {data: Communit
     const names = data.variants.split("|");
     const items: {name: string, link: string}[] = [];
     for (let i = 0; i < names.length; i++)
-      items.push({name: names[i], link: links[i]});
+      items.push({name: names[i], link: links[i].replace("{bucketURL}", bucketURL ?? "")});
     return items;
   }
 
   return (
-    <div className="max-w-[275px] h-[360px] flex relative">
-      <a href={data.variants ? undefined : data.link} target="_blank" onClick={data.variants ? () => setSubMenuOpen(true) : undefined}
+    <div className="max-w-[275px] min-w-[230px] h-[360px] flex relative">
+      <a href={data.variants ? undefined : data.link.replace("{bucketURL}", bucketURL ?? "")} target="_blank" onClick={data.variants ? () => setSubMenuOpen(true) : undefined}
           onKeyDown={(e) => {if (e.key == "Enter") setSubMenuOpen(!subMenuOpen)}} tabIndex={0}
-          className={`h-full border-2 rounded-md bg-purple-600 hover:shadow-lg/50 cursor-pointer ${subMenuOpen ? "shadow-lg/50" : ""}`}>
-        <Textfit className="h-[12%] w-full flex items-center justify-center p-0.5">{data.name}</Textfit>
-        <div className="h-[50%] w-full relative border-t border-b">
-          <Image src={`${bucketURL}CommunityResources/Images/${data.name.toLowerCase().replaceAll(" ", "-").replaceAll(/[^a-z0-9-_]/g, "")}.webp?v=${data.modified}`} alt={data.name} fill/>
+          className={`h-full w-full border-2 rounded-md bg-violet-600 hover:shadow-lg/50 cursor-pointer ${subMenuOpen ? "shadow-lg/50" : ""}`}>
+        <Textfit className="h-[12%] w-full flex text-center items-center justify-center p-0.5">{data.name}</Textfit>
+        <div className="h-[50%] w-full relative border-t border-b bg-white">
+          {image ?? 
+            <Image src={`${bucketURL}/CommunityResources/Images/${data.name.toLowerCase().replaceAll(" ", "-").replaceAll(/[^a-z0-9-_]/g, "")}.webp?v=${data.modified}`} alt={data.name} fill/>
+          }
         </div>
         <p className="text-center p-2">{data.description}</p>
       </a>
