@@ -4,6 +4,7 @@ import { CommunityResource } from "@/app/Models/Resources.model";
 import { useState } from "react";
 import CommunityResourceCard from "./CommunityResourceCard";
 import Image from "next/image";
+import Tooltip from "@/app/Components/Layout/Typography/Tooltip";
 
 export default function NewResourceForm({closer}: {closer: () => void}) {
   const placeholderImage = "/images/misc/placeholder.webp";
@@ -21,6 +22,7 @@ export default function NewResourceForm({closer}: {closer: () => void}) {
   const [image, setImage] = useState(placeholderImage);
   const [type, setType] = useState<"Link" | "File" | "HTML" | "Other">("Link");
   const [credit, setCredit] = useState("");
+  const [variantCount, setVariantCount] = useState(1);
 
   const handleSubmit = () => {
     console.log(formData);
@@ -55,7 +57,7 @@ export default function NewResourceForm({closer}: {closer: () => void}) {
   
   return (
     <Modal fullPage closeCallback={() => setTimeout(closer, 1)}>
-      <form className="content md:w-[60vw] max-h-[85vh] m-auto flex flex-col gap-4 shadow-lg/80 overflow-y-scroll hideScroll" onSubmit={(e) => {e.preventDefault(); handleSubmit()}}>
+      <form className="content md:w-[75vw] max-h-[85vh] m-auto flex flex-col gap-4 shadow-lg/80 overflow-y-scroll hideScroll" onSubmit={(e) => {e.preventDefault(); handleSubmit()}}>
         <ContentHeading className="text-center mb-0">Submit New Resource</ContentHeading>
         <div className="flex flex-col max-w-[360px]">
           <label>Resource Name:</label>
@@ -67,25 +69,53 @@ export default function NewResourceForm({closer}: {closer: () => void}) {
           <span className={`absolute bottom-1 right-2 ${cleanDesc().length >= descLimit ? "text-red-600" : ""}`}>{cleanDesc().length}/{descLimit}</span>
         </div>
         <div className="flex flex-col md:flex-row gap-4 items-center md:items-start">
-          <div className="w-full flex flex-col gap-2">
+          <div className="grow flex flex-col gap-2">
             <div className="flex gap-2 items-center">
               <label>Image:</label>
-              <input type="file" accept="image/*" onChange={(e) => checkFileSize(e.target, () => previewImage(e.target))} required className="w-[100px] md:w-auto"/>
+              <input type="file" accept="image/*" onChange={(e) => checkFileSize(e.target, () => previewImage(e.target))} required className="w-[100px] md:w-[225px]"/>
             </div>
-            <div className="flex gap-2 items-center">
-              <label>Content Type:</label>
-              <select value={type} onChange={(e) => setType(e.target.value as "Link" | "File" | "HTML" | "Other")} className="border bg-white">
-                <option>Link</option>
-                <option>File</option>
-                <option>HTML</option>
-                <option>Other</option>
-              </select>
+            <div className="flex flex-col md:flex-row gap-4">
+              <div className="flex gap-2 items-center">
+                <label>Content Type:</label>
+                <select value={type} onChange={(e) => setType(e.target.value as "Link" | "File" | "HTML" | "Other")} className="border bg-white">
+                  <option>Link</option>
+                  <option>File</option>
+                  <option>HTML</option>
+                  <option>Other</option>
+                </select>
+              </div>
             </div>
             <div className="flex flex-col">
               <label>Content:</label>
-              {type == "Link" &&
-                <input value={formData.link} onChange={(e) => setFormData({...formData, link: e.target.value})} required/>
-              }
+              <div className="flex flex-col gap-2">
+                {Array.from({length: variantCount}).map((_, i) => (
+                  <div key={`variant-${i}`} className="flex flex-col lg:flex-row gap-1 lg:gap-2">
+                    {variantCount > 1 &&
+                      <div className="flex flex-col md:flex-row md:items-center md:gap-2 grow-1">
+                        <span>Name:</span>
+                        <input value={formData.variants.split("|")[i] ?? ""} onChange={(e) => setFormData(
+                          {...formData, variants: formData.variants.split("|").map((_, j) => j == i ? e.target.value : formData.variants.split("|")[j]).join("|")})} required className="w-full"/>
+                      </div>
+                    }
+                    {type == "Link" &&
+                      <div className="flex flex-col md:flex-row md:items-center md:gap-2 grow-100">
+                        {variantCount > 1 && <span>Link: </span>}
+                        <input value={formData.link.split("|")[i] ?? ""} onChange={(e) => setFormData(
+                          {...formData, link: formData.link.split("|").map((_, j) => j == i ? e.target.value : formData.link.split("|")[j]).join("|")})} required className="w-full"/>
+                      </div>
+                    }
+                  </div>
+                ))}
+              </div>
+              <span className="flex gap-1">
+                <a onClick={() => {setVariantCount(variantCount + 1); setFormData({...formData, link: formData.link + "|", variants: formData.variants + "|"})}}>Add Variant</a>
+                <Tooltip label="&#x1F6C8;" className="decoration-jj-mpurple-1 text-sm mr-2">
+                  Multiple versions of your resource can be offered to the user on click instead of direct navigation to one resource.
+                </Tooltip>
+                {variantCount > 1 &&
+                  <a onClick={() => {setVariantCount(variantCount - 1); setFormData({...formData, link: formData.link.replace(/\|[^\|]*$/, ""), variants: formData.variants.replace(/\|[^\|]*$/, "")})}}>Delete Last</a>
+                }
+              </span>
             </div>
             <div className="flex flex-col">
               <label>Credit Name:</label>

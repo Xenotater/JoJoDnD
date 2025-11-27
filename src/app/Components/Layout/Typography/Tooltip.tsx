@@ -2,7 +2,7 @@
 
 import { JSX, useState } from "react";
 
-export default function Tooltip(props: {label: string, children: JSX.Element | string}) {
+export default function Tooltip(props: {label: string, children: JSX.Element | string, className?: string}) {
   const [tooltipOpen, setTooltipOpen] = useState(false);
   const [tooltipPos, setTooltipPos] = useState([0, 0]);
 
@@ -16,7 +16,7 @@ export default function Tooltip(props: {label: string, children: JSX.Element | s
 
   return (
     <>
-      <span className="underline underline-offset-2 decoration-dashed decoration-1" onMouseEnter={(e) => {setTooltipOpen(true); updatePos(e.pageX, e.pageY)}}
+      <span className={`underline underline-offset-2 decoration-dashed decoration-1 ${props.className}`} onMouseEnter={(e) => {setTooltipOpen(true); updatePos(e.pageX, e.pageY)}}
           onMouseLeave={() => setTooltipOpen(false)} onClick={(e) => {setTooltipOpen(tooltipOpen); updatePos(e.pageX, e.pageY)}}>
             {props.label}
       </span>
