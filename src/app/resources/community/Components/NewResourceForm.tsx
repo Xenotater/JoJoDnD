@@ -23,6 +23,7 @@ export default function NewResourceForm({closer}: {closer: () => void}) {
   const [type, setType] = useState<"Link" | "File" | "HTML" | "Other">("Link");
   const [credit, setCredit] = useState("");
   const [variantCount, setVariantCount] = useState(1);
+  const [otherDetails, setOtherDetails] = useState("");
 
   const handleSubmit = () => {
     console.log(formData);
@@ -90,7 +91,7 @@ export default function NewResourceForm({closer}: {closer: () => void}) {
               <div className="flex flex-col gap-2">
                 {Array.from({length: variantCount}).map((_, i) => (
                   <div key={`variant-${i}`} className="flex flex-col lg:flex-row gap-1 lg:gap-2">
-                    {variantCount > 1 &&
+                    {variantCount > 1 && type != "HTML" && type != "Other" &&
                       <div className="flex flex-col md:flex-row md:items-center md:gap-2 grow-1">
                         <span>Name:</span>
                         <input value={formData.variants.split("|")[i] ?? ""} onChange={(e) => setFormData(
@@ -104,18 +105,44 @@ export default function NewResourceForm({closer}: {closer: () => void}) {
                           {...formData, link: formData.link.split("|").map((_, j) => j == i ? e.target.value : formData.link.split("|")[j]).join("|")})} required className="w-full"/>
                       </div>
                     }
+                    {type == "File" &&
+                      <div className="flex gap-2 items-center">
+                        <label>File:</label>
+                        <input type="file" onChange={(e) => checkFileSize(e.target)} required className="w-[100px] md:w-[225px]"/>
+                      </div>
+                    }
+                    {type == "HTML" &&
+                      <>
+                        <div className="flex gap-2 items-center">
+                          <Tooltip label="Main Page:">The main landing page for your static app, often &quot;index.html&quot;. This page should pull in other required assets using relative URLs. Dynamic apps, php, or other more complicated frameworks are not supported.</Tooltip>
+                          <input type="file" accept=".html" onChange={(e) => checkFileSize(e.target)} required className="w-[100px] md:w-[225px]"/>
+                        </div>
+                        <div className="flex gap-2 items-center">
+                          <Tooltip label="Other Assets:">Other assets (images, scripts, style sheets, etc) required by your static app. These should be pulled in by your main page using relative URLs.</Tooltip>
+                          <input type="file" onChange={(e) => checkFileSize(e.target)} multiple className="w-[100px] md:w-[225px]"/>
+                        </div>
+                      </>
+                    }
+                    {type == "Other" && 
+                      <div className="flex flex-col">
+                        <label>Please explain what the conent of your resource should be and we&apos;ll help get it working. Be sure to fill out the &quot;Contact&quot; field as well in case we have additional questions.</label>
+                        <textarea value={otherDetails} onChange={(e) => setOtherDetails(e.target.value)}></textarea>
+                      </div>
+                    }
                   </div>
                 ))}
               </div>
-              <span className="flex gap-1">
-                <a onClick={() => {setVariantCount(variantCount + 1); setFormData({...formData, link: formData.link + "|", variants: formData.variants + "|"})}}>Add Variant</a>
-                <Tooltip label="&#x1F6C8;" className="decoration-jj-mpurple-1 text-sm mr-2">
-                  Multiple versions of your resource can be offered to the user on click instead of direct navigation to one resource.
-                </Tooltip>
-                {variantCount > 1 &&
-                  <a onClick={() => {setVariantCount(variantCount - 1); setFormData({...formData, link: formData.link.replace(/\|[^\|]*$/, ""), variants: formData.variants.replace(/\|[^\|]*$/, "")})}}>Delete Last</a>
-                }
-              </span>
+              {type != "HTML" && type != "Other" &&
+                <span className="flex gap-1">
+                  <a onClick={() => {setVariantCount(variantCount + 1); setFormData({...formData, link: formData.link + "|", variants: formData.variants + "|"})}}>Add Variant</a>
+                  <Tooltip label="&#x1F6C8;" className="decoration-jj-mpurple-1 text-sm mr-2">
+                    Multiple versions of your resource can be offered to the user on click instead of direct navigation to one resource.
+                  </Tooltip>
+                  {variantCount > 1 &&
+                    <a onClick={() => {setVariantCount(variantCount - 1); setFormData({...formData, link: formData.link.replace(/\|[^\|]*$/, ""), variants: formData.variants.replace(/\|[^\|]*$/, "")})}}>Delete Last</a>
+                  }
+                </span>
+              }
             </div>
             <div className="flex flex-col">
               <label>Credit Name:</label>
@@ -128,7 +155,15 @@ export default function NewResourceForm({closer}: {closer: () => void}) {
               <input maxLength={255} value={formData.contact} onChange={(e) => setFormData({...formData, contact: e.target.value})}/>
             </div>
           </div>
-          <CommunityResourceCard data={formData} image={<Image src={image} alt="preview image" fill/>}/>
+          <div onClick={(e) => {
+              if (type != "Link") {
+                e.preventDefault();
+                alert("Non-Link resource content may not be previewed prior to submission.");
+              }
+              return;
+          }}>
+            <CommunityResourceCard data={formData} image={<Image src={image} alt="preview image" fill/>}/>
+          </div>
         </div>
         <div className="flex gap-4 justify-center">
           <button className="rounded-md text-2xl bg-gray-200" onClick={closer}>Cancel</button>
