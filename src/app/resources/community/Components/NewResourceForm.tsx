@@ -26,6 +26,10 @@ export default function NewResourceForm({closer}: {closer: () => void}) {
   const [otherDetails, setOtherDetails] = useState("");
 
   const handleSubmit = () => {
+    //TODO: Flesh out backend submission logic later
+    //don't populate variants for type != file or link
+    //for multiple files only process one at a time
+    //consider file quantity limit? Test size = 5MB as well
     console.log(formData);
   }
 
@@ -89,7 +93,7 @@ export default function NewResourceForm({closer}: {closer: () => void}) {
             <div className="flex flex-col">
               <label>Content:</label>
               <div className="flex flex-col gap-2">
-                {Array.from({length: variantCount}).map((_, i) => (
+                {Array.from({length: type == "Link" || type == "File" ? variantCount : 1}).map((_, i) => (
                   <div key={`variant-${i}`} className="flex flex-col lg:flex-row gap-1 lg:gap-2">
                     {variantCount > 1 && type != "HTML" && type != "Other" &&
                       <div className="flex flex-col md:flex-row md:items-center md:gap-2 grow-1">
