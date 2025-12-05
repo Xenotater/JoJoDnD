@@ -64,7 +64,7 @@ export default async function ResourcesPage() {
           </div>
         </ResourceItem>
         <div className="flex flex-col gap-2 mb-4 text-center">
-          <ContentHeading as="h3">Campaign Example</ContentHeading>
+          <ContentHeading as="h2" className="m-0 leading-[36px]">Campaign Example</ContentHeading>
           <p className="mb-2">Check out our podcast &quot;Tabletop Travesty&quot; where we&apos;ve played a campaign using an early version of this system named &quot;The Bystanders&quot;:</p>
           <div className="w-full flex flex-col md:flex-row gap-4 items-center justify-evenly">
             <div dir="rtl" className="rounded-lg drop-shadow-black drop-shadow-xl overflow-x-scroll hideScroll w-full md:w-[45%] max-w-[560px] h-[100px] sm:h-[232px] md:h-[152px] lg:h-[232px]">

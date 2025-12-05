@@ -56,14 +56,14 @@ export default function CommunityResourceList({bucketURL}: {bucketURL: string}) 
       </div>
       <div className="flex mt-4 items-center">
         {currentPage != 1 ?
-          <IconButton onClick={() => changePage(currentPage - 1)}><BsArrowLeft/></IconButton>
+          <IconButton onClick={() => changePage(currentPage - 1)} className="bg-jj-purple-1 text-white"><BsArrowLeft size={20}/></IconButton>
           : <div className="w-[36px]"></div>
         }
         <span className="grow text-center text-xl">
           <input type="number" max={pages} min={1} value={currentPage} onChange={(e) => changePage(parseInt(e.target.value) ?? 1)} dir="rtl" className="w-min"/>/{pages}
           </span>
         {currentPage < pages ?
-          <IconButton onClick={() => changePage(currentPage + 1)}><BsArrowRight/></IconButton>
+          <IconButton onClick={() => changePage(currentPage + 1)} className="bg-jj-purple-1 text-white"><BsArrowRight size={20}/></IconButton>
           : <div className="w-[36px]"></div>
         }
       </div>

@@ -9,7 +9,7 @@ export default function ContactForm() {
 
   return (
     <div className="w-full">
-      <ContentHeading as="h3" className="text-center md:mb-4">Contact Us</ContentHeading>
+      <ContentHeading as="h2" className="text-center">Contact Us</ContentHeading>
       <form className="w-full flex flex-col gap-4 md:items-center">
         <div className="flex flex-col md:flex-row gap-4">
           <div className="flex flex-col md:flex-row md:gap-2 md:items-center">

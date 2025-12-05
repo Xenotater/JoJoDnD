@@ -9,8 +9,8 @@ export default function ResourceItem({icon, title, desc, children, border}: {ico
       <div className="flex flex-col md:flex-row justify-between gap-2">
         <div className="h-full flex flex-col gap-2 md:flex-row md:gap-4 md:w-[70%] items-center">
           {icon}
-          <div className="flex flex-col pr-6">
-            <ContentHeading as="h3">{title}</ContentHeading>
+          <div className="flex flex-col pr-6 text-center md:text-left ">
+            <ContentHeading as="h2" className="md:m-0 leading-[36px]">{title}</ContentHeading>
             {desc.map((d, i) => (<HTMLInclusiveText as="span" key={`${title}-desc-${i}`} text={d}/>))}
           </div>
         </div>
