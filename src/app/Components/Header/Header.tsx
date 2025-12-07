@@ -30,8 +30,10 @@ export default memo(function Header() {
   
   useResize(() => {
     setIsDesktopWidth(window.innerWidth >= 1024);
-    if (window.innerWidth < 1024)
+    if (window.innerWidth < 1024) {
       setIsCollapsed(false);
+      document.querySelector(".contentWrapper")?.removeAttribute("style");
+    }
     else
       setIsMenuOpen(false);
   });
