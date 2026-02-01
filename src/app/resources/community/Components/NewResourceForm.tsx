@@ -10,6 +10,7 @@ export default function NewResourceForm({closer}: {closer: () => void}) {
   const placeholderImage = "/images/misc/placeholder.webp";
   const descLimit = 150;
   const maxFileSize = 5 * 1024 * 1024; //5 MB
+  const maxFileCount = 20;
   const [formData, setFormData] = useState<CommunityResource>({
     name: "",
     description:  "",
@@ -38,6 +39,10 @@ export default function NewResourceForm({closer}: {closer: () => void}) {
   }
 
   const checkFileSize = (fileInput: HTMLInputElement, callback?: () => void) => {
+    if (fileInput.files?.length ?? 0 > maxFileCount) {
+        alert("Max number of uploads is " + maxFileCount);
+        fileInput.value = "";
+    }
     for (const file of fileInput.files ?? []) {
       if (file.size > maxFileSize) {
         alert("Max allowed file size is " + maxFileSize / (1024 * 1024) + " MB.");
