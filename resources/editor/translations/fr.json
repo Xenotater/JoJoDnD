@@ -1,11 +1,12 @@
 {
+  "JoJo's Bizarre Tabletop Game": "JoJo's Bizarre Jeu De Rôle",
   "Character Name": "Nom du Personnage",
   "Hit Point Max": "Point De Vie Max",
   "Current Hit Points": "Point De Vie Actuelle",
   "Race & Passion": "Race Et Passion",
   "Class & Level": "Classe & Niveau",
   "Stand DC": "Stand C.D",
-  "Damage Reduction": "Réduction De Dégat",
+  "Damage Reduction": "Réduction De Dégats",
   "Death Saves": "Jet De Sauvegarde",
   "Won": "gagné",
   "Lost": "perdue",
@@ -37,7 +38,7 @@
   "Grit": "Ténacité",
   "Intimid": "Intimid",
   "Invest": "Invest",
-  "Know": "Connas",
+  "Know": "Connais",
   "Medic": "Médecine",
   "Percept": "Perception",
   "Pres": "Pressence",
@@ -72,6 +73,7 @@
   "Attacks Per Round:": "Attaques par tour:",
   "Inspiration:": "Inspiration:",
 
+  "JoJo D&D Ability Sheet": "JoJo — Fice D'aptitudes D&D",
   "Stand Name": "Nom du Stand",
   "Head HP": "PV Tête",
   "Head AC": "CA Tête",
@@ -85,8 +87,9 @@
   "Minions / Equipment": "Equipement De Serviteurs",
   "Other Notes and Features": "Autres remarques et caractéristiques",
 
-  "Character Image": "Image Du Personnage",
-  "Backstory": "Histoire Du Personnage",
+  "JoJo D&D Flavor Sheet": "JoJo D&D — Fiche Saveur",
+  "Character Image": "Image du Personnage",
+  "Backstory": "Histoire du Personnage",
   "Ideals": "Idéaux",
   "Flaws": "Défauts",
   "Weight": "Poid",
@@ -98,5 +101,8 @@
   "Voice": "Voix",
   "Personality": "Personalité",
   "Relationships": "Relation",
-  "Other Information": "Autre Information"
+  "Other Information": "Autre Information",
+  
+  "JoJo D&D Act-Type Sheet": "JoJo D&D — Aptitudes Type-Act",
+  "Based on: ": "Basé sur:"
 }
