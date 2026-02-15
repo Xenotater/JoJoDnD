@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import styles from "./page.module.css";
 import Divider from "./Components/Layout/Divider/Divider";
@@ -5,6 +6,7 @@ import Link from "next/link";
 import PatreonList from "./Components/PatreonList/PatreonList";
 import DiscordEmbed from "./Components/SocialEmbeds/DiscordEmbed/DiscordEmbed";
 import RedditEmbed from "./Components/SocialEmbeds/RedditEmbed/RedditEmbed";
+import AuthTest from "./Components/Auth/AuthTest";
 
 export default function Home() {
   return (
@@ -31,6 +33,7 @@ export default function Home() {
           <p>You can also contact us through <Link href='/resources/contact'>this form</Link>.</p>
           <small>Based upon JoJo&apos;s Bizarre Adventure created by Hirohiko Araki. Inspired by Dungeons and Dragons 5th edition by Wizards of the Coast.</small>
         </div>
+        <AuthTest/>
       </div>
     </div>
   );
