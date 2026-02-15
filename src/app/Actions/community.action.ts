@@ -9,19 +9,43 @@ export async function doGetResourcesPerPage() {
   return resourcesPerPage;
 }
 
-export async function doGetResources(page: number = 1, sort: ResourceSort = "Top", search?: string) {
+export async function doGetResources(page: number = 1, sort: ResourceSort = "Top", search = "") {
   const sortMap = {"A-Z" : "name ASC", "Top": "upvotes DESC", "New": "id DESC"}
-  const resp = await doDBQuery(`SELECT id, name, description, link, variants, upvotes FROM resources WHERE status='approved' ${search ? `AND name LIKE '%${search}%'` : ""} ORDER BY ${sortMap[sort]} LIMIT ${resourcesPerPage} OFFSET ${(page - 1) * resourcesPerPage}`, false);
+  const resp = await doDBQuery(`SELECT id, name, description, link, variants, upvotes FROM resources WHERE status='approved' AND name LIKE ? ORDER BY ${sortMap[sort]} LIMIT ? OFFSET ?`,
+    [`%${search}%`, resourcesPerPage.toString(), ((page - 1) * resourcesPerPage).toString()], false);
   if (resp.status == 200) {
     return (await resp.json()) as CommunityResource[];
   }
   return null;
 }
 
-export async function doCountResourcePages(search?: string, status = "approved") {
-  const resp = await doDBQuery(`SELECT COUNT(id) AS 'count' FROM resources  WHERE status LIKE '%${status}%' ${search ? `AND name LIKE '%${search}%'` : ""}`, false);
+export async function doCountResourcePages(search = "", status = "approved") {
+  const resp = await doDBQuery(`SELECT COUNT(id) AS 'count' FROM resources  WHERE status LIKE ? AND name LIKE ?`, [`%${status}%`, `%${search}%`], false);
   if (resp.status == 200) {
     return Math.ceil((await resp.json())[0].count as number / resourcesPerPage);
   }
   return null;
+}
+
+//TODO: replace username with from auth
+export async function doSubmitNewResource(data: CommunityResource) {
+  const userName = "TEMP";
+  const resp = await doDBQuery("INSERT INTO resources (username, name, description, link, variants, contact) VALUES (?, ?, ?, ?, ?, ?)",
+    [userName, data.name, data.description, data.link, data.variants ? data.variants : null, data.contact ? data.contact : null]);
+  return resp.status;
+}
+
+export async function doUpdateResource(newData: CommunityResource) {
+  const userName = "TEMP";
+  const currentData = await getResource(newData.name);
+  if (currentData && currentData.username == userName) {
+    //TODO: implement update
+  }
+}
+
+async function getResource(name: string) {
+  const resp = await doDBQuery(`SELECT * FROM resources WHERE name = ? LIMIT 1`, [name], false);
+  if (resp.status == 200)
+    return (await resp.json()) as CommunityResource;
+  return undefined;
 }

@@ -5,6 +5,7 @@ import { useState } from "react";
 import CommunityResourceCard from "./CommunityResourceCard";
 import Image from "next/image";
 import Tooltip from "@/app/Components/Layout/Typography/Tooltip";
+import { doSubmitNewResource } from "@/app/Actions/community.action";
 
 export default function NewResourceForm({closer}: {closer: () => void}) {
   const placeholderImage = "/images/misc/placeholder.webp";
@@ -21,17 +22,26 @@ export default function NewResourceForm({closer}: {closer: () => void}) {
     contact: "",
   });
   const [image, setImage] = useState(placeholderImage);
+  const [imageFile, setImageFile] = useState<File>();
   const [type, setType] = useState<"Link" | "File" | "HTML" | "Other">("Link");
   const [credit, setCredit] = useState("");
   const [variantCount, setVariantCount] = useState(1);
   const [otherDetails, setOtherDetails] = useState("");
+  const [mainFile, setMainFile] = useState<File>();
+  const [otherFiles, setOtherFiles] = useState<File[]>([]);
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     //TODO: Flesh out backend submission logic later
     //don't populate variants for type != file or link
     //for multiple files only process one at a time
     //consider file quantity limit? Test size = 5MB as well
+    console.log("submitting:");
     console.log(formData);
+    console.log(imageFile);
+    console.log(mainFile);
+    console.log(otherFiles);
+
+    console.log(await doSubmitNewResource(formData));
   }
 
   const cleanDesc = () => {
@@ -39,7 +49,7 @@ export default function NewResourceForm({closer}: {closer: () => void}) {
   }
 
   const checkFileSize = (fileInput: HTMLInputElement, callback?: () => void) => {
-    if (fileInput.files?.length ?? 0 > maxFileCount) {
+    if ((fileInput.files?.length ?? 0) > maxFileCount) {
         alert("Max number of uploads is " + maxFileCount);
         fileInput.value = "";
     }
@@ -57,7 +67,10 @@ export default function NewResourceForm({closer}: {closer: () => void}) {
     if (fileInput.files?.length == 1) {
       const reader = new FileReader();
       reader.readAsDataURL(fileInput.files[0]);
-      reader.onload = () => setImage(reader.result?.toString() ?? "/images/misc/placeholder.webp");
+      reader.onload = () => {
+        setImage(reader.result?.toString() ?? "/images/misc/placeholder.webp");
+        setImageFile(fileInput.files![0]);
+      };
       reader.onerror = () => {
         alert("Invalid file selected.");
         fileInput.value = "";
@@ -117,18 +130,23 @@ export default function NewResourceForm({closer}: {closer: () => void}) {
                     {type == "File" &&
                       <div className="flex gap-2 items-center">
                         <label>File:</label>
-                        <input type="file" onChange={(e) => checkFileSize(e.target)} required className="w-[100px] md:w-[225px]"/>
+                        <input type="file" onChange={(e) => checkFileSize(e.target, () => {
+                          if (!mainFile && e.target.files)
+                            setMainFile(e.target.files[0]);
+                          else if (e.target.files)
+                            setOtherFiles([...otherFiles, e.target.files[0]]);
+                        })} required className="w-[100px] md:w-[225px]"/>
                       </div>
                     }
                     {type == "HTML" &&
                       <>
                         <div className="flex gap-2 items-center">
                           <Tooltip label="Main Page:">The main landing page for your static app, often &quot;index.html&quot;. This page should pull in other required assets using relative URLs. Dynamic apps, php, or other more complicated frameworks are not supported.</Tooltip>
-                          <input type="file" accept=".html" onChange={(e) => checkFileSize(e.target)} required className="w-[100px] md:w-[225px]"/>
+                          <input type="file" accept=".html" onChange={(e) => checkFileSize(e.target, () => {if (e.target.files) setMainFile(e.target.files[0])})} required className="w-[100px] md:w-[225px]"/>
                         </div>
                         <div className="flex gap-2 items-center">
                           <Tooltip label="Other Assets:">Other assets (images, scripts, style sheets, etc) required by your static app. These should be pulled in by your main page using relative URLs.</Tooltip>
-                          <input type="file" onChange={(e) => checkFileSize(e.target)} multiple className="w-[100px] md:w-[225px]"/>
+                          <input type="file" onChange={(e) => checkFileSize(e.target, () => {if (e.target.files) setOtherFiles(Array.from(e.target.files))})} multiple className="w-[100px] md:w-[225px]"/>
                         </div>
                       </>
                     }

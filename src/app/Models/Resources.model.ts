@@ -7,6 +7,7 @@ export interface CommunityResource {
   status?: string;
   contact?: string;
   modified?: Date;
+  username?: string;
 }
 
 export type ResourceSort = "A-Z" | "Top" | "New";

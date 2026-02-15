@@ -20,7 +20,8 @@ export async function logResponse(response: Response) {
   log(`>>>>> Response Body: ${applyMasking(await (response.clone().text()))}`);
 }
 
-export async function logDBQuery(query: string) {
+export async function logDBQuery(query: string, values: (string | null)[] = []) {
+  query += ` [${values.toString()}]`;
   const hideBody = /.*pass(word)?.*/.test(query) || query.length > 255;
   log(`@@@@@ DB Query: ${hideBody ? query.replace(/(WHERE|VALUES).*$/, "") : query.replace(/pass(word)?='.*'/, "")}`);
 }

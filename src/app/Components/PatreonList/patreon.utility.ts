@@ -14,7 +14,7 @@ export interface patron {
 export async function doGetPatrons() {
   "use cache";
   cacheLife("days");
-  const response = await doDBQuery("SELECT * FROM patrons", false);
+  const response = await doDBQuery("SELECT * FROM patrons", [], false);
   if (response.status != 200)
     return [];
   //log("Patron Response: " + await response.clone().text());

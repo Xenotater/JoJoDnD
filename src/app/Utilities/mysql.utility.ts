@@ -15,14 +15,14 @@ export async function getDBConnection() {
 }
 
 //TODO: is this a security risk..? It shouldn't be exposed to the client
-export async function doDBQuery(query: string, log: boolean = true) {
+export async function doDBQuery(query: string, values: (string | null)[] = [], log: boolean = true) {
   try {
     const connection = await getDBConnection();
     
     await connection.connect();
     if (log)
-      logDBQuery(query);
-    const [results] = await connection.execute(query)
+      logDBQuery(query, values);
+    const [results] = await connection.execute(query, values);
     connection.end();
 
     return NextResponse.json(results, {status: 200});
