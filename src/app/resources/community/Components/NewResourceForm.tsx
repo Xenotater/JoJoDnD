@@ -42,6 +42,7 @@ export default function NewResourceForm({closer}: {closer: () => void}) {
     console.log(otherFiles);
 
     console.log(await doSubmitNewResource(formData));
+    closer();
   }
 
   const cleanDesc = () => {

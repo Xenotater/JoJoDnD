@@ -1,5 +1,6 @@
 "use server";
 
+import { getServerSession } from "next-auth";
 import { CommunityResource, ResourceSort } from "../Models/Resources.model";
 import { doDBQuery } from "../Utilities/mysql.utility";
 
@@ -27,18 +28,21 @@ export async function doCountResourcePages(search = "", status = "approved") {
   return null;
 }
 
-//TODO: replace username with from auth
 export async function doSubmitNewResource(data: CommunityResource) {
-  const userName = "TEMP";
+  const session = await getServerSession();
+  if (!session?.user?.name)
+    return 401;
   const resp = await doDBQuery("INSERT INTO resources (username, name, description, link, variants, contact) VALUES (?, ?, ?, ?, ?, ?)",
-    [userName, data.name, data.description, data.link, data.variants ? data.variants : null, data.contact ? data.contact : null]);
+    [session.user.name, data.name, data.description, data.link, data.variants ? data.variants : null, data.contact ? data.contact : null]);
   return resp.status;
 }
 
 export async function doUpdateResource(newData: CommunityResource) {
-  const userName = "TEMP";
+  const session = await getServerSession();
+  if (!session?.user?.name)
+    return 401;
   const currentData = await getResource(newData.name);
-  if (currentData && currentData.username == userName) {
+  if (currentData && currentData.username == session.user.name) {
     //TODO: implement update
   }
 }
