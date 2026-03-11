@@ -68,6 +68,13 @@ body {
   --color-jj-grayple-3: rgb(104, 84, 142);
   --color-jj-grayple-4: rgb(99, 81, 131);
   --breakpoint-xs: 30rem;
+
+  --animate-flash: flash 0.5s ease-in-out;
+
+  @keyframes flash {
+    from {filter: brightness(200%)}
+    to {filter: brightness(100%)}
+  }
 }
 
 @media (max-width: 1023) {

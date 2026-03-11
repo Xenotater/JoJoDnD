@@ -7,7 +7,6 @@ import ArrowButtonLink from "../Components/Layout/ArrowButtonLink/ArrowButtonLin
 import ContentHeading from "../Components/Layout/Typography/ContentHeading";
 import Divider from "../Components/Layout/Divider/Divider";
 import ContactForm from "./Components/ContactForm";
-import AuthTest from "../Components/Auth/AuthTest";
 
 export default async function ResourcesPage() {
   const pdfPath = "@/../public/static/resources/PDFs";
@@ -78,7 +77,6 @@ export default async function ResourcesPage() {
         </div>
         <Divider/>
         <ContactForm/>
-        <AuthTest/>
       </div>
     </div>
   );

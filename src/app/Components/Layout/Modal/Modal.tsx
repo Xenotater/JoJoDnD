@@ -7,7 +7,8 @@ interface ModalProps {
   children: ReactElement;
   className?: string;
   closeCallback: () => void;
-  fullPage?: boolean
+  fullPage?: boolean;
+  blur?: boolean;
 }
 
 export default function Modal(props: ModalProps) {
@@ -31,7 +32,7 @@ export default function Modal(props: ModalProps) {
   
   return (
     <>
-      <div className={`fixed top-0 left-0 h-full w-full z-100 pointer-events-none ${props.fullPage ? "flex justify-center align-item-center pt-(--headerHeight)" : ""} ${props.className}`}>
+      <div className={`fixed top-0 left-0 h-full w-full z-100 pointer-events-none ${props.fullPage ? "flex justify-center items-center pt-(--headerHeight)" : ""} ${props.blur ? "bg-white/30" : ""} ${props.className}`}>
         {props.fullPage && child}
       </div>
       {!props.fullPage && child}
