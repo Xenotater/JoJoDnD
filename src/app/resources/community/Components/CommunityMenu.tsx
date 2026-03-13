@@ -6,14 +6,14 @@ import Modal from "@/app/Components/Layout/Modal/Modal";
 import Link from "next/link";
 import { useState } from "react";
 import { BsBoxArrowInRight, BsFileEarmark, BsFilePlus, BsList, BsPerson } from "react-icons/bs";
-import NewResourceForm from "./NewResourceForm";
 import { useAuth } from "@/app/Components/Auth/AuthContext";
+import { useResourceManager } from "./ResourceManagementContext";
 
 export default function CommunityMenu() {
   const auth = useAuth();
+  const manager = useResourceManager();
   const [menuOpen, setMenuOpen] = useState(false);
   const [animate, setAnimate] = useState(false);
-  const [modalOpen, setModalOpen] = useState(false);
 
   const toggleMenu = (state = !menuOpen) => {
     if (state) {
@@ -42,11 +42,11 @@ export default function CommunityMenu() {
                       <BsPerson size={20}/><span>Account</span>
                     </Link>
                     <Divider className="border-white mb-2 mt-2"/>
-                    <Link href="" className="flex gap-2 text-white items-center hover:underline">
+                    <Link href="/resources/community/manage" onClick={() => toggleMenu(false)} className="flex gap-2 text-white items-center hover:underline">
                       <BsFileEarmark size={20}/><span>Your Resources</span>
                     </Link>
                     <Divider className="border-white mb-2 mt-2"/>
-                    <Link href="" onClick={() => {setMenuOpen(false); setModalOpen(true)}} className="flex gap-2 text-white items-center hover:underline">
+                    <Link href="" onClick={() => {setMenuOpen(false); manager.update()}} className="flex gap-2 text-white items-center hover:underline">
                       <BsFilePlus size={20}/><span>Submit New Resource</span>
                     </Link>
                   </>
@@ -58,9 +58,6 @@ export default function CommunityMenu() {
               }
               </div>
             </div>
-        }
-        {modalOpen &&
-          <NewResourceForm closer={() => setModalOpen(false)}/>
         }
       </div>
     </Modal>

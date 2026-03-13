@@ -2,17 +2,18 @@ import Modal from "@/app/Components/Layout/Modal/Modal";
 import ContentHeading from "@/app/Components/Layout/Typography/ContentHeading";
 import { CommunityResource } from "@/app/Models/Resources.model";
 import { useState } from "react";
-import CommunityResourceCard from "./CommunityResourceCard";
+import CommunityResourceCard from "./Card/CommunityResourceCard";
 import Image from "next/image";
 import Tooltip from "@/app/Components/Layout/Typography/Tooltip";
 import { doSubmitNewResource } from "@/app/Actions/community.action";
 
-export default function NewResourceForm({closer}: {closer: () => void}) {
+export default function UpdateResourceForm({closer, existingData}: {closer: () => void, existingData?: CommunityResource}) {
   const placeholderImage = "/images/misc/placeholder.webp";
   const descLimit = 150;
   const maxFileSize = 5 * 1024 * 1024; //5 MB
   const maxFileCount = 20;
-  const [formData, setFormData] = useState<CommunityResource>({
+  const [formData, setFormData] = useState<CommunityResource>(existingData ?? {
+    id: -1,
     name: "",
     description:  "",
     link:  "",
@@ -82,7 +83,7 @@ export default function NewResourceForm({closer}: {closer: () => void}) {
   return (
     <Modal fullPage closeCallback={() => setTimeout(closer, 1)}>
       <form className="content md:w-[75vw] max-h-[85vh] m-auto flex flex-col gap-4 shadow-lg/80 overflow-y-scroll hideScroll" onSubmit={(e) => {e.preventDefault(); handleSubmit()}}>
-        <ContentHeading className="text-center mb-0">Submit New Resource</ContentHeading>
+        <ContentHeading className="text-center mb-0">{existingData ? "Edit Resource" : "Submit New Resource"}</ContentHeading>
         <div className="flex flex-col max-w-[360px]">
           <label>Resource Name:</label>
           <input maxLength={50} value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})} required/>
@@ -193,6 +194,9 @@ export default function NewResourceForm({closer}: {closer: () => void}) {
             <CommunityResourceCard data={formData} image={<Image src={image} alt="preview image" fill/>}/>
           </div>
         </div>
+        {existingData &&
+          <span>Editing an existing resource will require reapproval before the changes become publically available.</span>
+        }
         <div className="flex gap-4 justify-center">
           <button className="rounded-md text-2xl bg-gray-200" onClick={closer}>Cancel</button>
           <button type="submit" className="text-2xl rounded-md bg-jj-purple-1 text-white">Submit</button>

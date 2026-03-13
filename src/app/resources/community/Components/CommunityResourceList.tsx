@@ -4,18 +4,18 @@ import { doCountResourcePages, doGetResources } from "@/app/Actions/community.ac
 import { CommunityResource, ResourceSort } from "@/app/Models/Resources.model";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import CommunityResourceCard from "./CommunityResourceCard";
+import CommunityResourceCard from "./Card/CommunityResourceCard";
 import IconButton from "@/app/Components/Layout/IconButton/IconButton";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
-export default function CommunityResourceList({bucketURL}: {bucketURL: string}) {
+export default function CommunityResourceList({bucketURL, user}: {bucketURL: string, user?: string}) {
   const params = useSearchParams();
   const [resources, setResources] = useState<CommunityResource[]>([]);
   const [currentPage, setCurrentPage] = useState(parseInt(params.get("page") ?? "1"));
   const [pages, setPages] = useState(1);
 
   const getResources = async (page: number, sort: ResourceSort, search: string) => {
-    setResources(await doGetResources(page, sort, search) ?? []);
+    setResources(await doGetResources(page, sort, search, user ?? "") ?? []);
   }
 
   const changePage = (page: number) => {
@@ -30,7 +30,7 @@ export default function CommunityResourceList({bucketURL}: {bucketURL: string}) 
     const page = parseInt(params.get("page") ?? "1");
     const sort = params.get("sort") as ResourceSort ?? "Top";
     const search = params.get("search") ?? "";
-    const count = await doCountResourcePages(search) ?? 1;
+    const count = await doCountResourcePages(search, user) ?? 1;
     let overwritePage = page;;
     if (page > count)
       overwritePage = count;
@@ -50,7 +50,7 @@ export default function CommunityResourceList({bucketURL}: {bucketURL: string}) 
   return (
     <div className="w-full h-full min-h-[40vh] flex flex-col justify-between">
       <div className="flex flex-wrap gap-4 2xl:gap-12 justify-evenly">
-          {resources.map((r) => (<div key={r.name} className="basis-full md:basis-1/3 lg:basis-1/4 xl:basis-1/5 flex justify-center">
+          {resources.map((r) => (<div key={r.id} className="basis-full md:basis-1/3 lg:basis-1/4 xl:basis-1/5 flex justify-center">
         <CommunityResourceCard data={r} bucketURL={bucketURL}/>
       </div>))}
       </div>

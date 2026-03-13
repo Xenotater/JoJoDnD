@@ -1,0 +1,19 @@
+.genericStatus {
+  background-color: lightgray;
+}
+
+.statusPending {
+  background-color: lightsalmon;
+}
+
+.statusApproved {
+  background-color: lightgreen;
+}
+
+.statusHidden {
+  background-color: gray;
+}
+
+.statusDenied {
+  background-color: lightcoral;
+}

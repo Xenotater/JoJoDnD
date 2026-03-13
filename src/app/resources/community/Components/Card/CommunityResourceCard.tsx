@@ -7,15 +7,21 @@ import { BsHandThumbsUp, BsHandThumbsUpFill } from "react-icons/bs";
 import { Textfit } from "react-textfit";
 import ResourceVariantSublist from "./ResourceVariantSublist";
 import { authExecute, useAuth } from "@/app/Components/Auth/AuthContext";
+import ResourceStatus from "./ResourceStatus";
+import ResourceManagementMenu from "./ResourceManagementMenu";
 
-export default function CommunityResourceCard({data, bucketURL, image}: {data: CommunityResource, bucketURL?: string, image?: ReactNode}) {
+export default function CommunityResourceCard({data, bucketURL, image,}: {data: CommunityResource, bucketURL?: string, image?: ReactNode}) {
   const [userUpvoted, setUserUpvoted] = useState(false);
   const [subMenuOpen, setSubMenuOpen] = useState(false);
+
   const auth = useAuth();
+  const belongsToUser = data.username == auth.session?.user?.name;
 
   const upvoteResource = () => authExecute(auth, () => {
-    setUserUpvoted(!userUpvoted);
-    //server action (if bucketURL?)
+    if (belongsToUser) {
+      setUserUpvoted(!userUpvoted);
+      //server action (if bucketURL?)
+    }
   });
 
   const assembleSubItems = () => {
@@ -41,9 +47,15 @@ export default function CommunityResourceCard({data, bucketURL, image}: {data: C
         <p className="text-center p-2">{data.description}</p>
       </a>
       <div className="absolute bottom-0 right-0 border-t border-l rounded-tl-md h-7 p-1 flex gap-1 cursor-pointer hover:shadow-sm/33 items-center hover:items-start" onClick={upvoteResource}>
-        {userUpvoted ? <BsHandThumbsUpFill fill="goldenrod" stroke="black" strokeWidth={1.5} className="self-center"/> : <BsHandThumbsUp/>}
+        {userUpvoted || belongsToUser ? <BsHandThumbsUpFill fill="goldenrod" stroke="black" strokeWidth={1.5} className="self-center"/> : <BsHandThumbsUp/>}
         <span className="self-center">{data.upvotes}</span>
       </div>
+      {belongsToUser &&
+        <>
+          <ResourceManagementMenu data={data}/>
+          <ResourceStatus status={data.status ?? "Unknown"}/>
+        </>
+      }
       {data.variants && subMenuOpen &&
         <ResourceVariantSublist parentName={data.name} items={assembleSubItems()} closer={() => setSubMenuOpen(false)}/>
       }
