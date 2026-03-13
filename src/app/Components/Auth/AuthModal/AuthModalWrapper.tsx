@@ -3,8 +3,7 @@
 import { useState } from "react";
 import Modal from "../../Layout/Modal/Modal";
 import LoginModalContent from "./LoginModalContent";
-
-export type AuthAction = "Log In" | "Log Out" | "Sign Up" | "Recovery";
+import { AuthAction } from "../AuthContextProvider";
 
 export default function AuthModalWrapper({initialAction, closeCallback} : {initialAction: AuthAction, closeCallback: () => void}) {
   const [currentFunction, setCurrentFunction] = useState<AuthAction>(initialAction);

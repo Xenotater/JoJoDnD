@@ -4,7 +4,7 @@ import { createContext, useContext, useState } from "react";
 import { CommunityResource } from "@/app/Models/Resources.model";
 import UpdateResourceForm from "./UpdateResourceForm";
 import { useRouter } from "next/navigation";
-import { doUpdateResourceStatus } from "@/app/Actions/community.action";
+import { doToggleResourceVisibility } from "@/app/Actions/community.action";
 
 export interface ResourceManager {
   update: (resource?: CommunityResource) => void;
@@ -25,7 +25,7 @@ export default function ResourceManagementContextProvider({children}: {children:
   return ( 
     <ResourceManagementContext value={{
       update: (resource?: CommunityResource) => {setExistingResource(resource); setUpdateOpen(true);},
-      toggleVisibility: (resource: CommunityResource) => {doUpdateResourceStatus(resource.id, resource.status == "Hidden" ? "Approved" : "Hidden"); router.refresh();},
+      toggleVisibility: (resource: CommunityResource) => {doToggleResourceVisibility(resource.id); router.refresh();},
       delete: (resource: CommunityResource) => {setExistingResource(resource); setDeleteOpen(true);}
     }}>
       {updateOpen &&

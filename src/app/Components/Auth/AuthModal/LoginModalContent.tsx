@@ -2,9 +2,9 @@
 
 import { signIn } from "next-auth/react";
 import ContentHeading from "../../Layout/Typography/ContentHeading";
-import { AuthAction } from "./AuthModalWrapper";
 import { useState } from "react";
 import { FaSpinner } from "react-icons/fa";
+import { AuthAction } from "../AuthContextProvider";
 
 export default function LoginModalContent({contentSwitchCallback, closeCallback}: {contentSwitchCallback: (newAction: AuthAction) => void, closeCallback: () => void}) {
   const [message, setMessage] = useState("");

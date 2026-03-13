@@ -6,8 +6,8 @@ import Modal from "@/app/Components/Layout/Modal/Modal";
 import Link from "next/link";
 import { useState } from "react";
 import { BsBoxArrowInRight, BsFileEarmark, BsFilePlus, BsList, BsPerson } from "react-icons/bs";
-import { useAuth } from "@/app/Components/Auth/AuthContext";
 import { useResourceManager } from "./ResourceManagementContext";
+import { useAuth } from "@/app/Components/Auth/AuthContextProvider";
 
 export default function CommunityMenu() {
   const auth = useAuth();
@@ -51,7 +51,7 @@ export default function CommunityMenu() {
                     </Link>
                   </>
                 : <>
-                  <Link href="" onClick={() => {setMenuOpen(false); auth.promptAction()}} className="flex gap-4 whitespace-normal w-[200px] items-center text-white hover:underline cursor-pointer">
+                  <Link href="" onClick={() => {setMenuOpen(false); auth.promptAction("Log In")}} className="flex gap-4 whitespace-normal w-[200px] items-center text-white hover:underline cursor-pointer">
                     <BsBoxArrowInRight size={28} className="shrink-0"/><span>Sign in to manage and submit resources</span>
                   </Link>
                 </>  

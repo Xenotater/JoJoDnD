@@ -6,18 +6,20 @@ import { ReactNode, useState } from "react";
 import { BsHandThumbsUp, BsHandThumbsUpFill } from "react-icons/bs";
 import { Textfit } from "react-textfit";
 import ResourceVariantSublist from "./ResourceVariantSublist";
-import { authExecute, useAuth } from "@/app/Components/Auth/AuthContext";
 import ResourceStatus from "./ResourceStatus";
 import ResourceManagementMenu from "./ResourceManagementMenu";
+import { useAuth } from "@/app/Components/Auth/AuthContextProvider";
+import { useSession } from "next-auth/react";
 
 export default function CommunityResourceCard({data, bucketURL, image,}: {data: CommunityResource, bucketURL?: string, image?: ReactNode}) {
   const [userUpvoted, setUserUpvoted] = useState(false);
   const [subMenuOpen, setSubMenuOpen] = useState(false);
 
   const auth = useAuth();
-  const belongsToUser = data.username == auth.session?.user?.name;
+  const {data: session} = useSession();
+  const belongsToUser = data.username == session?.user?.name;
 
-  const upvoteResource = () => authExecute(auth, () => {
+  const upvoteResource = () => auth.authExecute(() => {
     if (belongsToUser) {
       setUserUpvoted(!userUpvoted);
       //server action (if bucketURL?)

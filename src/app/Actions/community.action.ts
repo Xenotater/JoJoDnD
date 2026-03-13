@@ -50,17 +50,22 @@ export async function doUpdateResource(id: number, newData: CommunityResource) {
   }
 }
 
-export async function doUpdateResourceStatus(id: number, status: string) {
+export async function doToggleResourceVisibility(id: number) {
   const session = await getServerSession();
   if (!session?.user?.name)
     return 401;
-  const resp = await doDBQuery("UPDATE resources SET status = ? WHERE id = ?", [status, `${id}`]);
-  return resp.status;
+  const currentData = await getResource(`${id}`);
+  if (currentData && currentData.username == session.user.name) {
+    console.log("hit");
+    const resp = await doDBQuery("UPDATE resources SET status = ? WHERE id = ?", [currentData.status == "Hidden" ? "Approved" : currentData.status == "Approved" ? "Hidden" : currentData.status ?? "Unknown", `${id}`]);
+    return resp.status;
+  }
+  return 401;
 }
 
-async function getResource(name: string) {
-  const resp = await doDBQuery(`SELECT * FROM resources WHERE name = ? LIMIT 1`, [name], false);
+async function getResource(nameOrId: string) {
+  const resp = await doDBQuery(`SELECT * FROM resources WHERE name = ? OR id = ? LIMIT 1`, [nameOrId, nameOrId], false);
   if (resp.status == 200)
-    return (await resp.json()) as CommunityResource;
+    return (await resp.json())[0] as CommunityResource;
   return undefined;
 }
