@@ -5,6 +5,7 @@ import { CommunityResource } from "@/app/Models/Resources.model";
 import UpdateResourceForm from "./UpdateResourceForm";
 import { useRouter } from "next/navigation";
 import { doToggleResourceVisibility } from "@/app/Actions/community.action";
+import DeleteResourceModal from "./DeleteResourceModal";
 
 export interface ResourceManager {
   update: (resource?: CommunityResource) => void;
@@ -30,6 +31,9 @@ export default function ResourceManagementContextProvider({children}: {children:
     }}>
       {updateOpen &&
         <UpdateResourceForm closer={() => {setExistingResource(undefined); setUpdateOpen(false);}} existingData={existingResource}/>
+      }
+      {deleteOpen && existingResource &&
+        <DeleteResourceModal closer={() => {setExistingResource(undefined); setDeleteOpen(false);}} data={existingResource}/>
       }
       {children}
     </ResourceManagementContext>

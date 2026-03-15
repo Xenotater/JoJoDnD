@@ -11,10 +11,9 @@ import ResourceManagementMenu from "./ResourceManagementMenu";
 import { useAuth } from "@/app/Components/Auth/AuthContextProvider";
 import { useSession } from "next-auth/react";
 
-export default function CommunityResourceCard({data, bucketURL, image,}: {data: CommunityResource, bucketURL?: string, image?: ReactNode}) {
+export default function CommunityResourceCard({data, bucketURL, image, preview}: {data: CommunityResource, bucketURL?: string, image?: ReactNode, preview?: boolean}) {
   const [userUpvoted, setUserUpvoted] = useState(false);
   const [subMenuOpen, setSubMenuOpen] = useState(false);
-
   const auth = useAuth();
   const {data: session} = useSession();
   const belongsToUser = data.username == session?.user?.name;
@@ -52,7 +51,7 @@ export default function CommunityResourceCard({data, bucketURL, image,}: {data: 
         {userUpvoted || belongsToUser ? <BsHandThumbsUpFill fill="goldenrod" stroke="black" strokeWidth={1.5} className="self-center"/> : <BsHandThumbsUp/>}
         <span className="self-center">{data.upvotes}</span>
       </div>
-      {belongsToUser &&
+      {belongsToUser && !preview &&
         <>
           <ResourceManagementMenu data={data}/>
           <ResourceStatus status={data.status ?? "Unknown"}/>

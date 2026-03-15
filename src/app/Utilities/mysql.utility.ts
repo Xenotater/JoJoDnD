@@ -29,6 +29,11 @@ export async function doDBQuery(query: string, values: (string | null)[] = [], l
   }
   catch (err) {
     logError("DB ERROR: " + (err as Error).message);
-    return NextResponse.json({error: err}, {status: 500})
+    switch(err.errno) {
+      case 1062:
+        return NextResponse.json({error: err}, {status: 409})
+      default:
+        return NextResponse.json({error: err}, {status: 500})
+    }
   }
 }

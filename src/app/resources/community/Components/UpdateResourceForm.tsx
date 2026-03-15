@@ -1,11 +1,15 @@
+"use client";
+
 import Modal from "@/app/Components/Layout/Modal/Modal";
 import ContentHeading from "@/app/Components/Layout/Typography/ContentHeading";
 import { CommunityResource } from "@/app/Models/Resources.model";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CommunityResourceCard from "./Card/CommunityResourceCard";
 import Image from "next/image";
 import Tooltip from "@/app/Components/Layout/Typography/Tooltip";
-import { doSubmitNewResource } from "@/app/Actions/community.action";
+import { doClearFiles, doGetResourceImage, doSubmitNewResource, doUpdateResource, doUploadFile, doUploadFiles, doUploadImage } from "@/app/Actions/community.action";
+import { CiWarning } from "react-icons/ci";
+import { useRouter } from "next/navigation";
 
 export default function UpdateResourceForm({closer, existingData}: {closer: () => void, existingData?: CommunityResource}) {
   const placeholderImage = "/images/misc/placeholder.webp";
@@ -25,25 +29,68 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
   const [image, setImage] = useState(placeholderImage);
   const [imageFile, setImageFile] = useState<File>();
   const [type, setType] = useState<"Link" | "File" | "HTML" | "Other">("Link");
-  const [credit, setCredit] = useState("");
-  const [variantCount, setVariantCount] = useState(1);
+  const [credit, setCredit] = useState(existingData?.description.replace(/^.* Created by/, "").replace(/.$/, "") ?? "");
+  const [variantCount, setVariantCount] = useState(existingData?.variants.split("|").length ?? 1);
   const [otherDetails, setOtherDetails] = useState("");
   const [mainFile, setMainFile] = useState<File>();
-  const [otherFiles, setOtherFiles] = useState<File[]>([]);
+  const [otherFiles, setOtherFiles] = useState<Map<number, File>>(new Map([]));
+  const [alertMsg, setAlertMsg] = useState("");
+  const router = useRouter();
+
+  const updateImage = async () => {
+    if (existingData)
+      setImage(await doGetResourceImage(existingData));
+  }
+
+  useEffect(() => {
+    updateImage();
+  }, []);
+
+  useEffect(() => {
+    setAlertMsg("");
+  }, [image, imageFile, type, credit, variantCount, otherDetails, mainFile, otherFiles, formData]);
 
   const handleSubmit = async () => {
-    //TODO: Flesh out backend submission logic later
-    //don't populate variants for type != file or link
-    //for multiple files only process one at a time
-    //consider file quantity limit? Test size = 5MB as well
-    console.log("submitting:");
-    console.log(formData);
-    console.log(imageFile);
-    console.log(mainFile);
-    console.log(otherFiles);
+    setAlertMsg("");
+    const data = formData;
+    
+    //assemble file links
+    if (type == "File") {
+      const links: string[] = [];
+      otherFiles.forEach(async (f) => {
+        links.push(`{bucketURL}/CommunityResources/Resources/${formData.name.toLowerCase().replace(" ", "-")}/${f.name}`);
+      });
+      data.link = links.join("|");
+    }
+    else if (type == "HTML") {
+      data.link = `{bucketURL}/CommunityResources/Resources/${formData.name.toLowerCase().replace(" ", "-")}/${mainFile!.name}`;
+    }
 
-    console.log(await doSubmitNewResource(formData));
-    closer();
+    //update DB entry
+    const resp = existingData ? await doUpdateResource(existingData.id, formData) : await doSubmitNewResource(formData);
+
+    //upload image file
+    await doUploadImage(formData.name, imageFile!);
+
+    //upload other files
+    if (type == "File" || type == "HTML") {
+      if (type == "HTML" && mainFile)
+        await doUploadFile(formData.name, mainFile);
+      otherFiles.forEach(async (f) => {
+        await doUploadFile(formData.name, f);
+      });
+    }
+
+    if (resp == 200) {
+      router.refresh();
+      closer();
+    }
+    else {
+      if (resp == 409)
+        setAlertMsg("There is already a resource with this name, please choose a different one.");
+      else
+        setAlertMsg("An error ocurred. Please try again or contact an administrator if the issue persists.");
+    }
   }
 
   const cleanDesc = () => {
@@ -96,7 +143,7 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
         <div className="flex flex-col md:flex-row gap-4 items-center md:items-start">
           <div className="grow flex flex-col gap-2">
             <div className="flex gap-2 items-center">
-              <label>Image:</label>
+              <label>{existingData ? "New Image:" : "Image:"}</label>
               <input type="file" accept="image/*" onChange={(e) => checkFileSize(e.target, () => previewImage(e.target))} required className="w-[100px] md:w-[225px]"/>
             </div>
             <div className="flex flex-col md:flex-row gap-4">
@@ -131,12 +178,10 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
                     }
                     {type == "File" &&
                       <div className="flex gap-2 items-center">
-                        <label>File:</label>
+                        <label>{existingData ? "New File:" : "File:"}</label>
                         <input type="file" onChange={(e) => checkFileSize(e.target, () => {
-                          if (!mainFile && e.target.files)
-                            setMainFile(e.target.files[0]);
-                          else if (e.target.files)
-                            setOtherFiles([...otherFiles, e.target.files[0]]);
+                          if (e.target.files)
+                            setOtherFiles(otherFiles.set(i, e.target.files[0]));
                         })} required className="w-[100px] md:w-[225px]"/>
                       </div>
                     }
@@ -148,7 +193,7 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
                         </div>
                         <div className="flex gap-2 items-center">
                           <Tooltip label="Other Assets:">Other assets (images, scripts, style sheets, etc) required by your static app. These should be pulled in by your main page using relative URLs.</Tooltip>
-                          <input type="file" onChange={(e) => checkFileSize(e.target, () => {if (e.target.files) setOtherFiles(Array.from(e.target.files))})} multiple className="w-[100px] md:w-[225px]"/>
+                          <input type="file" onChange={(e) => checkFileSize(e.target, () => {if (e.target.files) setOtherFiles(new Map(Array.from(e.target.files).map((f, i) => [i, f])))})} multiple className="w-[100px] md:w-[225px]"/>
                         </div>
                       </>
                     }
@@ -191,16 +236,19 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
               }
               return;
           }}>
-            <CommunityResourceCard data={formData} image={<Image src={image} alt="preview image" fill/>}/>
+            <CommunityResourceCard data={formData} image={<Image src={image} alt="preview image" fill/>} preview/>
           </div>
         </div>
         {existingData &&
-          <span>Editing an existing resource will require reapproval before the changes become publically available.</span>
+          <p className="text-red-800 flex gap-1 justify-center"><CiWarning/>Editing an existing resource will require reapproval before the changes become publically available.</p>
         }
         <div className="flex gap-4 justify-center">
           <button className="rounded-md text-2xl bg-gray-200" onClick={closer}>Cancel</button>
           <button type="submit" className="text-2xl rounded-md bg-jj-purple-1 text-white">Submit</button>
         </div>
+        {alertMsg &&
+          <p className="text-red-800 flex gap-1 justify-center animate-flash">{alertMsg}</p>
+        }
       </form>
     </Modal>
   );

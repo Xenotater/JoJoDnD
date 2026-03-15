@@ -34,7 +34,7 @@ export default function ResourceManagementMenu({data}: {data: CommunityResource}
                 <a onClick={() => manager.toggleVisibility(data)} className="cursor-pointer underline ml-2 mr-2 hover:text-gray-800">Show</a>
               </>
             }
-            {data.status == "Hidden" || data.status == "Denied" &&
+            {(data.status != "Approved") &&
               <>
                 <Divider className="mt-1 mb-1"/>
                 <a onClick={() => manager.delete(data)} className="cursor-pointer underline ml-2 mr-2 hover:text-gray-800">Delete</a>
