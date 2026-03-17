@@ -27,7 +27,7 @@ export default function CommunityResourceCard({data, bucketURL, image, preview}:
 
   const assembleSubItems = () => {
     const links = data.link.split("|");
-    const names = data.variants.split("|");
+    const names = data.variants!.split("|");
     const items: {name: string, link: string}[] = [];
     for (let i = 0; i < names.length; i++)
       items.push({name: names[i], link: links[i].replace("{bucketURL}", bucketURL ?? "")});
@@ -38,7 +38,7 @@ export default function CommunityResourceCard({data, bucketURL, image, preview}:
     <div className="max-w-[275px] min-w-[230px] h-[360px] flex relative">
       <a href={data.variants ? undefined : data.link.replace("{bucketURL}", bucketURL ?? "")} target="_blank" onClick={data.variants ? () => setSubMenuOpen(true) : undefined}
           onKeyDown={(e) => {if (e.key == "Enter") setSubMenuOpen(!subMenuOpen)}} tabIndex={0}
-          className={`h-full w-full border-2 rounded-md bg-purple-700 hover:shadow-lg/50 cursor-pointer ${subMenuOpen ? "shadow-lg/50" : ""}`}>
+          className={`h-full w-full border-2 rounded-md bg-jj-vibrant-purple hover:shadow-lg/50 cursor-pointer ${subMenuOpen ? "shadow-lg/50" : ""}`}>
         <Textfit className="h-[12%] w-full flex text-center items-center justify-center p-0.5">{data.name}</Textfit>
         <div className="h-[50%] w-full relative border-t border-b bg-white">
           {image ?? 
@@ -57,7 +57,7 @@ export default function CommunityResourceCard({data, bucketURL, image, preview}:
           <ResourceStatus status={data.status ?? "Unknown"}/>
         </>
       }
-      {data.variants && subMenuOpen &&
+      {data.link && data.variants && subMenuOpen &&
         <ResourceVariantSublist parentName={data.name} items={assembleSubItems()} closer={() => setSubMenuOpen(false)}/>
       }
     </div>

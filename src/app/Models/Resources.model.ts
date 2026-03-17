@@ -3,7 +3,8 @@ export interface CommunityResource {
   name: string;
   description: string;
   link: string;
-  variants: string;
+  variants?: string;
+  meta?: string;
   upvotes?: number;
   status?: string;
   contact?: string;

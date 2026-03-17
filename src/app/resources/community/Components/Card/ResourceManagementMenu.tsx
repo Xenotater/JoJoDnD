@@ -14,7 +14,7 @@ export default function ResourceManagementMenu({data}: {data: CommunityResource}
   return (
     <>
       <div className="absolute top-[-8px] right-[-8px] flex items-center">
-        <div className="p-1.5 bg-purple-700 border rounded-[50%] cursor-pointer hover:shadow-sm/33 z-2">
+        <div className="p-1.5 bg-jj-purple-1 border rounded-[50%] cursor-pointer hover:shadow-sm/33 z-2">
           <BsGearFill size={20} color="white" onClick={() => setOpen(!open)}/>
         </div>
       </div>

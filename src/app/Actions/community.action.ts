@@ -3,7 +3,7 @@
 import { getServerSession } from "next-auth";
 import { CommunityResource, ResourceSort } from "../Models/Resources.model";
 import { doDBQuery } from "../Utilities/mysql.utility";
-import { clearFilesInFolder, delS3File, getBucketURL, postS3File } from "../Utilities/aws.utility";
+import { clearFilesInFolder, delS3File, getBucketURL, getS3File, listFilesInFolder, postS3File } from "../Utilities/aws.utility";
 
 const resourcesPerPage = 12; //TODO: re-evaluate
 
@@ -13,7 +13,7 @@ export async function doGetResourcesPerPage() {
 
 export async function doGetResources(page: number = 1, sort: ResourceSort = "Top", search = "", user = "") {
   const sortMap = {"A-Z" : "name ASC", "Top": "upvotes DESC", "New": "id DESC"}
-  const resp = await doDBQuery(`SELECT id, name, description, link, variants, upvotes, status, username FROM resources WHERE status LIKE ? AND username LIKE ? AND name LIKE ? ORDER BY ${sortMap[sort]} LIMIT ? OFFSET ?`,
+  const resp = await doDBQuery(`SELECT id, name, description, link, variants, meta, upvotes, status, username FROM resources WHERE status LIKE ? AND username LIKE ? AND name LIKE ? ORDER BY ${sortMap[sort]} LIMIT ? OFFSET ?`,
     [user ? "%" : "approved", `%${user}%`, `%${search}%`, resourcesPerPage.toString(), ((page - 1) * resourcesPerPage).toString()], false);
   if (resp.status == 200) {
     return (await resp.json()) as CommunityResource[];
@@ -38,6 +38,7 @@ export async function doSubmitNewResource(data: CommunityResource) {
   return resp.status;
 }
 
+//TODO: this is still untested
 export async function doUpdateResource(id: number, newData: CommunityResource) {
   const currentData = await getWithPermission(id);
   if (!currentData)
@@ -47,6 +48,11 @@ export async function doUpdateResource(id: number, newData: CommunityResource) {
   //After approval, replace original content with updated content and delete the clone
   //Only allow one clone of a resource. If one already exists (ie, the original has a "clones" column), update the clone.
   //Clear existing files in S3 before using new files
+  const resp = await doDBQuery("INSERT INTO resources (username, name, description, link, variants, meta, contact, clones) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) \
+    ON DUPLICATE KEY UPDATE username=VALUES(username), name=VALUES(name), description=VALUES(description), link=VALUES(link), variants=VALUES(variants), contact=VALUES(contact), clones=VALUES(clones)",
+    [currentData.username!, newData.name + " - Edited", newData.description, newData.link, newData.variants ?? null, newData.meta ?? null, newData.contact ?? null, `${id}`]);
+  console.log(resp);
+  return resp.status;
 }
 
 export async function doToggleResourceVisibility(id: number) {
@@ -76,10 +82,25 @@ export async function doUploadFile(resource: string, file: File) {
   return uploadFile(`CommunityResources/Resources/${currentData.name.toLowerCase().replace(" ", "-")}/${file.name}`, file);
 }
 
-async function uploadFile(path: string, file: File) {
-  const data = new FormData();
-  data.append("file", file);
-  return await postS3File(data, path);
+export async function doListResourceFiles(resource: string) {
+  const currentData = await getWithPermission(resource);
+  if (!currentData)
+    return null;
+  return await listFilesInFolder(`CommunityResources/Resources/${currentData.name.toLowerCase().replace(" ", "-")}`);
+}
+
+export async function doGetResourceFile(resource: string, key: string) {
+  const currentData = await getWithPermission(resource);
+  if (currentData && key.includes(`CommunityResources/Resources/${currentData.name.toLowerCase().replace(" ", "-")}/`)) {
+    const file = await getS3File(key);
+    const bytes = await file?.Body?.transformToByteArray();
+    if (bytes) {
+      const fileName = key.replace(`CommunityResources/Resources/${currentData.name.toLowerCase().replace(" ", "-")}/`, "");
+      const data = new File([new Uint8Array(bytes)], fileName, {type: file?.ContentType});
+      return {file: data, name: fileName};
+    }
+  }
+  return null;
 }
 
 export async function doDeleteResource(id: number) {
@@ -90,6 +111,12 @@ export async function doDeleteResource(id: number) {
   await clearFilesInFolder(`CommunityResources/Resources/${currentData.name.toLowerCase().replace(" ", "-")}`)
   const resp = await doDBQuery(`DELETE FROM resources WHERE id = ? LIMIT 1`, [`${id}`]);
   return resp.status;
+}
+
+async function uploadFile(path: string, file: File) {
+  const data = new FormData();
+  data.append("file", file);
+  return await postS3File(data, path);
 }
 
 async function getWithPermission(nameOrId: string | number) {

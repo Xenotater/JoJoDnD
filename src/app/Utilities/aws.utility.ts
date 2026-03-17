@@ -15,7 +15,7 @@ export async function getBucketURL() {
 export async function getS3File(filePath: string) {
   logRequest(await getBucketURL() + `/${filePath}`, "GET");
   try {
-    return s3Client.send(new GetObjectCommand({
+    return await s3Client.send(new GetObjectCommand({
       Bucket: await getBucketName(),
       Key: filePath
     }));
@@ -69,7 +69,9 @@ export async function delS3File(key: string) {
   }
 }
 
-export async function getFilesInFolder(path: string) {
+export async function listFilesInFolder(path: string) {
+  if (path.slice(-1) != '/')
+    path += '/';
   logRequest(await getBucketURL() + `/${path}`, "GET");
   try {
     return (await s3Client.send(new ListObjectsV2Command({
@@ -85,7 +87,7 @@ export async function getFilesInFolder(path: string) {
 }
 
 export async function clearFilesInFolder(path: string) {
-  const keys = (await getFilesInFolder(path))?.map((f) => ({Key: f})) ?? [];
+  const keys = (await listFilesInFolder(path))?.map((f) => ({Key: f})) ?? [];
   if (keys.length == 0)
     return null;
   logRequest(await getBucketURL() + `/${path}`, "DELETE");
