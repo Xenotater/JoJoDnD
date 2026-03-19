@@ -54,7 +54,7 @@ export default function CommunityResourceCard({data, bucketURL, image, preview}:
       {belongsToUser && !preview &&
         <>
           <ResourceManagementMenu data={data}/>
-          <ResourceStatus status={data.status ?? "Unknown"}/>
+          <ResourceStatus status={data.status ?? "Unknown"} inEdit={data.name.includes(" - Edited") /* technically a user could spoof this but this is just a tooltip display */}/>
         </>
       }
       {data.link && data.variants && subMenuOpen &&

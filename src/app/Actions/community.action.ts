@@ -50,7 +50,7 @@ export async function doUpdateResource(id: number, newData: CommunityResource) {
   //Clear existing files in S3 before using new files
   const resp = await doDBQuery("INSERT INTO resources (username, name, description, link, variants, meta, contact, clones) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) \
     ON DUPLICATE KEY UPDATE username=VALUES(username), name=VALUES(name), description=VALUES(description), link=VALUES(link), variants=VALUES(variants), contact=VALUES(contact), clones=VALUES(clones)",
-    [currentData.username!, newData.name + " - Edited", newData.description, newData.link, newData.variants ?? null, newData.meta ?? null, newData.contact ?? null, `${id}`]);
+    [currentData.username!, newData.name, newData.description, newData.link, newData.variants ?? null, newData.meta ?? null, newData.contact ?? null, `${["Approved", "Hidden"].includes(currentData.status ?? "") ? id : null}`]);
   console.log(resp);
   return resp.status;
 }

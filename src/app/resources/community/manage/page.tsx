@@ -14,7 +14,7 @@ export default async function ManageResourcesPage() {
   return (
     <div>
       <div className="text-lg text-center mt-14 mb-4 md:text-left md:max-w-[calc(100%-250px)] md:ml-16 md:mt-1 md:flex gap-4 items-center">
-        <a href="/resources/community" className="button rounded-md bg-jj-purple-1 text-white flex items-center gap-2 z-2"><BsArrowLeft/>Public List</a>
+        <a href="/resources/community" className="button rounded-md bg-jj-purple-1 text-white flex items-center gap-2 z-2 w-fit"><BsArrowLeft/>Public List</a>
         <p className="mt-4 md:m-0">Manage your resources:</p>
       </div>
       <CommunityResourceList bucketURL={bucketURL} user={session.user.name}/>

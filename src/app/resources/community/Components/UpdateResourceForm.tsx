@@ -17,7 +17,7 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
   const placeholderImage = "/images/misc/placeholder.webp";
   const descLimit = 150;
   const maxFileSize = 5 * 1024 * 1024; //5 MB
-  const maxFileCount = 20;
+  const maxFileCount = 10;
   const [formData, setFormData] = useState<CommunityResource>(existingData ?? {
     id: -1,
     name: "",
@@ -72,22 +72,32 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
 
   useEffect(() => {
     setAlertMsg("");
+    console.log("rerender?");
   }, [image, imageFile, type, credit, variantCount, otherDetails, files, formData]);
+
+  const openFileInput =  (index: number) => {
+    const input = document.querySelectorAll("input[type='file']")[index];
+    if (input)
+      (input as HTMLInputElement).click();
+  }
 
   const handleSubmit = async () => {
     setAlertMsg("");
-    const data = formData;
+    const data = {...formData};
+    
+    if (existingData && ["Approved", "Hidden"].includes(existingData.status ?? ""))
+      data.name = data.name + " - Edited";
     
     //assemble file links
     if (type == "File") {
       const links: string[] = [];
       files.forEach(async (f) => {
-        links.push(`{bucketURL}/CommunityResources/Resources/${formData.name.toLowerCase().replace(" ", "-")}/${f.name}`);
+        links.push(`{bucketURL}/CommunityResources/Resources/${data.name.toLowerCase().replace(" ", "-")}/${f.name}`);
       });
       data.link = links.join("|");
     }
     else if (type == "HTML") {
-      data.link = `{bucketURL}/CommunityResources/Resources/${formData.name.toLowerCase().replace(" ", "-")}/${files.get(-1)!.name}`;
+      data.link = `{bucketURL}/CommunityResources/Resources/${data.name.toLowerCase().replace(" ", "-")}/${files.get(-1)!.name}`;
     }
 
     if (type != "Link") {
@@ -97,17 +107,17 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
     }
 
     //update DB entry
-    const resp = existingData ? await doUpdateResource(existingData.id, formData) : await doSubmitNewResource(formData);
+    const resp = existingData ? await doUpdateResource(existingData.id, data) : await doSubmitNewResource(data);
 
     //upload image file
-    await doUploadImage(formData.name, imageFile!);
+    await doUploadImage(data.name, imageFile!);
 
     //upload other files
     if (type == "File" || type == "HTML") {
       if (type == "HTML" && files.has(-1))
-        await doUploadFile(formData.name, files.get(-1)!);
+        await doUploadFile(data.name, files.get(-1)!);
       files.forEach(async (f) => {
-        await doUploadFile(formData.name, f);
+        await doUploadFile(data.name, f);
       });
     }
 
@@ -171,10 +181,15 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
           <span className={`absolute bottom-1 right-2 ${cleanDesc().length >= descLimit ? "text-red-600" : ""}`}>{cleanDesc().length}/{descLimit}</span>
         </div>
         <div className="flex flex-col md:flex-row gap-4 items-center md:items-start">
-          <div className="grow flex flex-col gap-2">
+          <div className="grow w-full flex flex-col gap-2">
             <div className="flex gap-2 items-center">
-              <label>{existingData ? "New Image:" : "Image:"}</label>
-              <input type="file" accept="image/*" onChange={(e) => checkFileSize(e.target, () => previewImage(e.target))} required className="w-[100px] md:w-[225px]"/>
+              <label>Image:</label>
+              <b>{imageFile?.name ?? (existingData ? `${formData.name}.webp` : "No file chosen")}</b>
+              <button className="p-1 pt-0 pb-0 h-min text-nowrap bg-gray-300" onClick={(e) => {
+                e.preventDefault();
+                openFileInput(0);
+              }}>Choose File</button>
+              <input type="file" accept="image/*" onChange={(e) => checkFileSize(e.target, () => previewImage(e.target))} required className="hidden"/>
             </div>
             <div className="flex flex-col md:flex-row gap-4">
               <div className="flex gap-2 items-center">
@@ -208,24 +223,59 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
                     }
                     {type == "File" &&
                       <div className="flex gap-2 items-center">
-                        <label>{existingData && files.has(i) ? files.get(i)!.name : "File:" /* TODO: graceful UI to display existing file name and offer edit */}</label>
+                        <label>File:</label>
+                        <div className="md:w-[225px] flex gap-2 items-center">
+                          <b>{files.get(i)?.name ?? "No file chosen"}</b>
+                          <button className="p-1 pt-0 pb-0 h-min text-nowrap bg-gray-300" onClick={(e) => {
+                            e.preventDefault();
+                            openFileInput(i+1);
+                          }}>Choose File</button>
+                        </div>
                         <input type="file" onChange={(e) => checkFileSize(e.target, () => {
-                          if (e.target.files)
-                            setFiles(files.set(i, e.target.files[0]));
-                        })} required className="w-[100px] md:w-[225px]"/>
+                          if (e.target.files) {
+                            const newFiles = new Map(files);
+                            newFiles.set(i, e.target.files[0]);
+                            setFiles(newFiles);
+                          }
+                        })} required className="hidden"/>
                       </div>
                     }
                     {type == "HTML" &&
-                      <>
+                      <div className="flex flex-col gap-1">
                         <div className="flex gap-2 items-center">
                           <Tooltip label="Main Page:">The main landing page for your static app, often &quot;index.html&quot;. This page should pull in other required assets using relative URLs. Dynamic apps, php, or other more complicated frameworks are not supported.</Tooltip>
-                          <input type="file" accept=".html" onChange={(e) => checkFileSize(e.target, () => {if (e.target.files) setFiles(files.set(-1, e.target.files[0]))})} required className="w-[100px] md:w-[225px]"/>
+                          <div className="flex gap-2 items-center">
+                            <div className="flex gap-2 items-center">
+                              <b>{files.get(-1)?.name ?? "No file chosen"}</b>
+                              <button className="p-1 pt-0 pb-0 h-min text-nowrap bg-gray-300" onClick={(e) => {
+                                e.preventDefault();
+                                openFileInput(i+1);
+                              }}>Choose File</button>
+                            </div>
+                            <input type="file" accept=".html" onChange={(e) => checkFileSize(e.target, () => {if (e.target.files) setFiles(files.set(-1, e.target.files[0]))})} required className="hidden"/>
+                          </div>
                         </div>
                         <div className="flex gap-2 items-center">
                           <Tooltip label="Other Assets:">Other assets (images, scripts, style sheets, etc) required by your static app. These should be pulled in by your main page using relative URLs.</Tooltip>
-                          <input type="file" onChange={(e) => checkFileSize(e.target, () => {if (e.target.files) setFiles(new Map(Array.from(e.target.files).map((f, i) => [i, f])))})} multiple className="w-[100px] md:w-[225px]"/>
+                          <div className="flex gap-2 items-center">
+                            <div className="flex gap-2 items-center">
+                              <b>{files.size > 2 ?
+                                Array.from(files).map((f, j) => {
+                                  if (j > i) {
+                                    return `${f[1]?.name}${j < files.size - 1 ? ", " : ""}`
+                                  }
+                                })
+                                : "No files chosen"}
+                              </b>
+                              <button className="p-1 pt-0 pb-0 h-min text-nowrap bg-gray-300" onClick={(e) => {
+                                e.preventDefault();
+                                openFileInput(i+2);
+                              }}>Choose File</button>
+                            </div>
+                            <input type="file" onChange={(e) => checkFileSize(e.target, () => {if (e.target.files) setFiles(new Map(Array.from(e.target.files).map((f, i) => [i, f])))})} multiple className="hidden"/>
+                          </div>
                         </div>
-                      </>
+                      </div>
                     }
                     {type == "Other" && 
                       <div className="flex flex-col">
@@ -244,11 +294,11 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
                   </Tooltip>
                   {variantCount > 1 &&
                     <a onClick={() => {
-                      setVariantCount(variantCount - 1);
-                      const newFiles = files;
-                      files.delete(variantCount - 1);
+                      const newFiles = new Map(files);
+                      newFiles.delete(variantCount - 1);
                       setFiles(newFiles);
-                      setFormData({...formData, link: formData.link.replace(/\|[^\|]*$/, ""), variants: formData.variants?.replace(/\|[^\|]*$/, "")})
+                      setVariantCount(variantCount - 1);
+                      setFormData({...formData, link: formData.link.replace(/\|[^\|]*$/, ""), variants: formData.variants?.replace(/\|[^\|]*$/, "")});
                     }}>Delete Last</a>
                   }
                 </span>
