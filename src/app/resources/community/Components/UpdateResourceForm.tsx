@@ -3,7 +3,7 @@
 import Modal from "@/app/Components/Layout/Modal/Modal";
 import ContentHeading from "@/app/Components/Layout/Typography/ContentHeading";
 import { CommunityResource } from "@/app/Models/Resources.model";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import CommunityResourceCard from "./Card/CommunityResourceCard";
 import Image from "next/image";
 import Tooltip from "@/app/Components/Layout/Typography/Tooltip";
@@ -38,6 +38,7 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
   const [files, setFiles] = useState<Map<number, File>>(new Map([]));
   const [alertMsg, setAlertMsg] = useState("");
   const router = useRouter();
+  const alertRef = useRef<HTMLParagraphElement>(null);
 
   //TODO: analyze efficiency of this.. do we really need to fetch all files every time?
   const updateFiles = async () => {
@@ -74,6 +75,10 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
     setAlertMsg("");
   }, [image, imageFile, type, credit, variantCount, otherDetails, files, formData]);
 
+  useEffect(() => {
+    alertRef.current?.scrollIntoView();
+  }, [alertMsg])
+
   const openFileInput =  (index: number) => {
     const input = document.querySelectorAll("input[type='file']")[index];
     if (input)
@@ -83,6 +88,12 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
   const handleSubmit = async () => {
     setAlertMsg("");
     const data = {...formData};
+
+    if (files.size > maxFileCount) {
+      console.log("HIT");
+      setAlertMsg("Max number of uploads is " + maxFileCount);
+      return;
+    }
     
     //assemble file links
     if (type == "File") {
@@ -105,23 +116,23 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
     //update DB entry
     const resp = existingData ? await doUpdateResource(existingData.id, data) : await doSubmitNewResource(data);
 
-    //upload image file
-    if (imageFile) {
-      const imgData = new FormData();
-      imgData.append("file", imageFile);
-      await doUploadImage(data.name, imgData, existingData?.id);
-    }
-
-    //upload other files
-    if (type == "File" || type == "HTML") {
-      files.forEach(async (f) => {
-        const fData = new FormData();
-        fData.append("file", f);
-        await doUploadFile(data.name, fData, f.name, existingData?.id);
-      });
-    }
-
     if (resp == 200) {
+      //upload image file
+      if (imageFile) {
+        const imgData = new FormData();
+        imgData.append("file", imageFile);
+        await doUploadImage(data.name, imgData, existingData?.id);
+      }
+
+      //upload other files
+      if (type == "File" || type == "HTML") {
+        files.forEach(async (f) => {
+          const fData = new FormData();
+          fData.append("file", f);
+          await doUploadFile(data.name, fData, f.name, existingData?.id);
+        });
+      }
+
       router.refresh();
       closer();
     }
@@ -344,7 +355,7 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
           <button type="submit" className="text-2xl rounded-md bg-jj-purple-1 text-white">Submit</button>
         </div>
         {alertMsg &&
-          <p className="text-red-900 flex gap-1 justify-center animate-flash">{alertMsg}</p>
+          <p ref={alertRef} className="text-red-900 flex gap-1 justify-center animate-flash">{alertMsg}</p>
         }
       </form>
     </Modal>

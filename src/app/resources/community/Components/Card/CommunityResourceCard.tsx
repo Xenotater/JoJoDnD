@@ -10,7 +10,7 @@ import ResourceStatus from "./ResourceStatus";
 import ResourceManagementMenu from "./ResourceManagementMenu";
 import { useAuth } from "@/app/Components/Auth/AuthContextProvider";
 import { useSession } from "next-auth/react";
-import { approveNewResource, approveUpdatedResource, doDownvoteResource, doUpvoteResource } from "@/app/Actions/community.action";
+import { doDownvoteResource, doUpvoteResource } from "@/app/Actions/community.action";
 
 export default function CommunityResourceCard({data, userUpvotes, bucketURL, image, preview}: {data: CommunityResource, userUpvotes?: number[], bucketURL?: string, image?: ReactNode, preview?: boolean}) {
   const [userUpvoted, setUserUpvoted] = useState(false);
@@ -37,8 +37,6 @@ export default function CommunityResourceCard({data, userUpvotes, bucketURL, ima
         await doUpvoteResource(data.id);
         data.upvotes!++;
       }
-        //TODO: for debugging - remove
-        await approveUpdatedResource(92);
       setUserUpvoted(!userUpvoted);
     }
   });
