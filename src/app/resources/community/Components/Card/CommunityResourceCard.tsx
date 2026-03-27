@@ -2,7 +2,7 @@
 
 import { CommunityResource } from "@/app/Models/Resources.model";
 import Image from "next/image";
-import { ReactNode, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import { BsHandThumbsUp, BsHandThumbsUpFill } from "react-icons/bs";
 import { Textfit } from "react-textfit";
 import ResourceVariantSublist from "./ResourceVariantSublist";
@@ -10,18 +10,36 @@ import ResourceStatus from "./ResourceStatus";
 import ResourceManagementMenu from "./ResourceManagementMenu";
 import { useAuth } from "@/app/Components/Auth/AuthContextProvider";
 import { useSession } from "next-auth/react";
+import { approveNewResource, approveUpdatedResource, doDownvoteResource, doUpvoteResource } from "@/app/Actions/community.action";
 
-export default function CommunityResourceCard({data, bucketURL, image, preview}: {data: CommunityResource, bucketURL?: string, image?: ReactNode, preview?: boolean}) {
+export default function CommunityResourceCard({data, userUpvotes, bucketURL, image, preview}: {data: CommunityResource, userUpvotes?: number[], bucketURL?: string, image?: ReactNode, preview?: boolean}) {
   const [userUpvoted, setUserUpvoted] = useState(false);
   const [subMenuOpen, setSubMenuOpen] = useState(false);
+  const [imgSrcName, setImgSrcName] = useState(data.name.toLowerCase().replaceAll(" ", "-").replaceAll(/[^a-z0-9-_]/g, ""));
   const auth = useAuth();
   const {data: session} = useSession();
   const belongsToUser = data.username == session?.user?.name;
+  
+  
+  useEffect(() => {
+    setUserUpvoted(userUpvotes?.includes(data.id) ?? false);
+    if (data.clones && !/-edit$/.test(imgSrcName))
+      setImgSrcName(imgSrcName + "-edit");
+  }, [data, userUpvotes])
 
-  const upvoteResource = () => auth.authExecute(() => {
-    if (belongsToUser) {
+  const upvoteResource = () => auth.authExecute(async () => {
+    if (!belongsToUser) {
+      if (userUpvoted) {
+        await doDownvoteResource(data.id);
+        data.upvotes!--;
+      }
+      else {
+        await doUpvoteResource(data.id);
+        data.upvotes!++;
+      }
+        //TODO: for debugging - remove
+        await approveUpdatedResource(92);
       setUserUpvoted(!userUpvoted);
-      //server action (if bucketURL?)
     }
   });
 
@@ -42,7 +60,7 @@ export default function CommunityResourceCard({data, bucketURL, image, preview}:
         <Textfit className="h-[12%] w-full flex text-center items-center justify-center p-0.5">{data.name}</Textfit>
         <div className="h-[50%] w-full relative border-t border-b bg-white">
           {image ?? 
-            <Image src={`${bucketURL}/CommunityResources/Images/${data.name.toLowerCase().replaceAll(" ", "-").replaceAll(/[^a-z0-9-_]/g, "")}.webp?v=${data.modified}`} alt={data.name} fill/>
+            <Image src={`${bucketURL}/CommunityResources/Images/${imgSrcName}.webp?v=${data.modified_ts}`} alt={data.name} fill/>
           }
         </div>
         <p className="text-center p-2">{data.description}</p>
@@ -54,7 +72,7 @@ export default function CommunityResourceCard({data, bucketURL, image, preview}:
       {belongsToUser && !preview &&
         <>
           <ResourceManagementMenu data={data}/>
-          <ResourceStatus status={data.status ?? "Unknown"} inEdit={data.name.includes(" - Edited") /* technically a user could spoof this but this is just a tooltip display */}/>
+          <ResourceStatus status={data.status ?? "Unknown"}/>
         </>
       }
       {data.link && data.variants && subMenuOpen &&

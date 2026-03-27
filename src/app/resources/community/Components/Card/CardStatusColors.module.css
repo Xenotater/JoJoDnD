@@ -2,7 +2,7 @@
   background-color: lightgray;
 }
 
-.statusPending {
+.statusPending, .statusPendingEdit {
   background-color: lightsalmon;
 }
 

@@ -1,6 +1,6 @@
 "use client";
 
-import { doCountResourcePages, doGetResources } from "@/app/Actions/community.action";
+import { doCountResourcePages, doGetResources, doGetUserUpvotes } from "@/app/Actions/community.action";
 import { CommunityResource, ResourceSort } from "@/app/Models/Resources.model";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -13,6 +13,7 @@ export default function CommunityResourceList({bucketURL, user}: {bucketURL: str
   const [resources, setResources] = useState<CommunityResource[]>([]);
   const [currentPage, setCurrentPage] = useState(parseInt(params.get("page") ?? "1"));
   const [pages, setPages] = useState(1);
+  const [userUpvotes, setUserUpvotes] = useState<number[]>([]);
 
   const getResources = async (page: number, sort: ResourceSort, search: string) => {
     setResources(await doGetResources(page, sort, search, user ?? "") ?? []);
@@ -41,6 +42,7 @@ export default function CommunityResourceList({bucketURL, user}: {bucketURL: str
     setPages(count);
     if (overwritePage != page)
       changePage(overwritePage);
+    setUserUpvotes(await doGetUserUpvotes() ?? []);
 }
 
   useEffect(() => {
@@ -51,7 +53,7 @@ export default function CommunityResourceList({bucketURL, user}: {bucketURL: str
     <div className="w-full h-full min-h-[40vh] flex flex-col justify-between">
       <div className="flex flex-wrap gap-4 2xl:gap-12 justify-evenly">
           {resources.map((r) => (<div key={r.id} className="basis-full md:basis-1/3 lg:basis-1/4 xl:basis-1/5 flex justify-center">
-        <CommunityResourceCard data={r} bucketURL={bucketURL}/>
+        <CommunityResourceCard data={r} bucketURL={bucketURL} userUpvotes={userUpvotes}/>
       </div>))}
       </div>
       <div className="flex mt-4 items-center">

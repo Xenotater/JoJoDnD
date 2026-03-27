@@ -8,8 +8,10 @@ export interface CommunityResource {
   upvotes?: number;
   status?: string;
   contact?: string;
-  modified?: Date;
   username?: string;
+  modified_ts?: Date;
+  insert_ts?: Date;
+  clones: number;
 }
 
 export type ResourceSort = "A-Z" | "Top" | "New";

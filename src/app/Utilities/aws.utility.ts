@@ -1,4 +1,4 @@
-import { DeleteObjectCommand, DeleteObjectsCommand, GetObjectCommand, ListObjectsV2Command, NoSuchKey, PutObjectCommand, S3Client, S3ServiceException } from "@aws-sdk/client-s3";
+import { CopyObjectCommand, DeleteObjectCommand, DeleteObjectsCommand, GetObjectCommand, ListObjectsV2Command, NoSuchKey, PutObjectCommand, S3Client, S3ServiceException } from "@aws-sdk/client-s3";
 import { Readable } from "stream";
 import { logError, logRequest } from "./logging.utility";
 
@@ -36,7 +36,7 @@ export async function postS3File(fileData: FormData, key: string = "") {
   stream.push(buffer);
   stream.push(null);
 
-  logRequest(await getBucketURL() + `/${key}`, "POST", `file: ${file.name}`);
+  logRequest(await getBucketURL() + `/${key}`, "PUT", `file: ${file.name}`);
   try {
     return await s3Client.send(new PutObjectCommand({
       Bucket: await getBucketName(),
@@ -69,6 +69,32 @@ export async function delS3File(key: string) {
   }
 }
 
+export async function copyS3File(oldKey: string, newKey: string) {
+  logRequest(await getBucketURL() + `/${newKey}`, "PUT");
+  
+  try {
+    return await s3Client.send(new CopyObjectCommand({
+      Bucket: await getBucketName(),
+      CopySource: `/${await getBucketName()}/${oldKey}`,
+      Key: newKey
+    }));
+  }
+  catch (e) {
+    if (e instanceof S3ServiceException)
+      logError("Error communicating with S3: " + e.message);
+    return null;
+  }
+}
+
+export async function moveS3File(oldKey: string, newKey: string) {
+  await copyS3File(oldKey, newKey).then(async (resp) => {
+    if (resp)
+      return await delS3File(oldKey);
+    else
+      return null;
+  }).catch(() => {return null;});
+}
+
 export async function listFilesInFolder(path: string) {
   if (path.slice(-1) != '/')
     path += '/';
@@ -90,7 +116,7 @@ export async function clearFilesInFolder(path: string) {
   const keys = (await listFilesInFolder(path))?.map((f) => ({Key: f})) ?? [];
   if (keys.length == 0)
     return null;
-  logRequest(await getBucketURL() + `/${path}`, "DELETE");
+  logRequest(await getBucketURL() + `/${path}/`, "DELETE");
   try {
     return await s3Client.send(new DeleteObjectsCommand({
       Bucket: await getBucketName(),
@@ -104,4 +130,27 @@ export async function clearFilesInFolder(path: string) {
       logError("Error communicating with S3: " + e.message);
     return null;
   }
+}
+
+export async function copyFilesInFolder(oldPath: string, newPath: string) {
+  let success = true;
+  const keys = await listFilesInFolder(oldPath);
+  if (!keys || keys.length == 0)
+    return null;
+  logRequest(await getBucketURL() + `/${newPath}/`, "PUT");
+  for (const key of keys) {
+    const resp = await copyS3File(key, `${newPath}/${key.split("/").slice(-1)}`);
+    if (!resp)
+      success = false;
+  }
+  return success;
+}
+
+export async function moveFilesInFolder(oldPath: string, newPath: string) {
+  await copyFilesInFolder(oldPath, newPath).then(async (resp) => {
+    if (resp)
+      return await clearFilesInFolder(oldPath);
+    else
+      return null;
+  }).catch(() => {return null;});
 }

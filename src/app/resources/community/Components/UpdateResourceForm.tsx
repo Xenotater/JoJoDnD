@@ -27,6 +27,7 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
     upvotes: 0,
     status: "pending",
     contact: "",
+    clones: 0
   });
   const [image, setImage] = useState(placeholderImage);
   const [imageFile, setImageFile] = useState<File>();
@@ -44,12 +45,12 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
       setImage(await doGetResourceImage(existingData));
       if (["HTML", "File"].includes(existingData.meta ?? "")) {
         setFormData({...formData, link: ""});
-        const list = await doListResourceFiles(existingData.name);
+        const list = await doListResourceFiles(existingData.id);
         if (list) {
           const existingFiles = new Map<number, File>();
           let foundMain = 0;
           for (let i=0; i<list.length; i++) {
-            const resp = await doGetResourceFile(existingData.name, list[i]);
+            const resp = await doGetResourceFile(existingData.id, list[i]);
             if (resp) {
               if (existingData.meta == "HTML" && existingData.link.includes(resp.name)) {
                 existingFiles.set(-1, new File([resp.file], resp.name, {type: resp.file.type}));
@@ -60,7 +61,6 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
             }
           }
           setFiles(existingFiles);
-          console.log(existingFiles);
         }
       }
     }
@@ -72,7 +72,6 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
 
   useEffect(() => {
     setAlertMsg("");
-    console.log("rerender?");
   }, [image, imageFile, type, credit, variantCount, otherDetails, files, formData]);
 
   const openFileInput =  (index: number) => {
@@ -85,19 +84,16 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
     setAlertMsg("");
     const data = {...formData};
     
-    if (existingData && ["Approved", "Hidden"].includes(existingData.status ?? ""))
-      data.name = data.name + " - Edited";
-    
     //assemble file links
     if (type == "File") {
       const links: string[] = [];
       files.forEach(async (f) => {
-        links.push(`{bucketURL}/CommunityResources/Resources/${data.name.toLowerCase().replace(" ", "-")}/${f.name}`);
+        links.push(`{bucketURL}/CommunityResources/Resources/${data.name.toLowerCase().replaceAll(" ", "-")}/${f.name.replaceAll(" ", "")}`);
       });
       data.link = links.join("|");
     }
     else if (type == "HTML") {
-      data.link = `{bucketURL}/CommunityResources/Resources/${data.name.toLowerCase().replace(" ", "-")}/${files.get(-1)!.name}`;
+      data.link = `{bucketURL}/CommunityResources/Resources/${data.name.toLowerCase().replaceAll(" ", "-")}/${files.get(-1)!.name.replaceAll(" ", "")}`;
     }
 
     if (type != "Link") {
@@ -110,14 +106,18 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
     const resp = existingData ? await doUpdateResource(existingData.id, data) : await doSubmitNewResource(data);
 
     //upload image file
-    await doUploadImage(data.name, imageFile!);
+    if (imageFile) {
+      const imgData = new FormData();
+      imgData.append("file", imageFile);
+      await doUploadImage(data.name, imgData, existingData?.id);
+    }
 
     //upload other files
     if (type == "File" || type == "HTML") {
-      if (type == "HTML" && files.has(-1))
-        await doUploadFile(data.name, files.get(-1)!);
       files.forEach(async (f) => {
-        await doUploadFile(data.name, f);
+        const fData = new FormData();
+        fData.append("file", f);
+        await doUploadFile(data.name, fData, f.name, existingData?.id);
       });
     }
 
@@ -189,7 +189,7 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
                 e.preventDefault();
                 openFileInput(0);
               }}>Choose File</button>
-              <input type="file" accept="image/*" onChange={(e) => checkFileSize(e.target, () => previewImage(e.target))} required className="hidden"/>
+              <input type="file" accept="image/*" onChange={(e) => checkFileSize(e.target, () => previewImage(e.target))} required={!existingData} className="hidden"/>
             </div>
             <div className="flex flex-col md:flex-row gap-4">
               <div className="flex gap-2 items-center">
@@ -237,7 +237,7 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
                             newFiles.set(i, e.target.files[0]);
                             setFiles(newFiles);
                           }
-                        })} required className="hidden"/>
+                        })} required={!files.has(i)} className="hidden"/>
                       </div>
                     }
                     {type == "HTML" &&
@@ -252,7 +252,11 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
                                 openFileInput(i+1);
                               }}>Choose File</button>
                             </div>
-                            <input type="file" accept=".html" onChange={(e) => checkFileSize(e.target, () => {if (e.target.files) setFiles(files.set(-1, e.target.files[0]))})} required className="hidden"/>
+                            <input type="file" accept=".html" onChange={(e) => checkFileSize(e.target, () => {if (e.target.files) {
+                              const newFiles = new Map(files);
+                              newFiles.set(-1, e.target.files[0]);
+                              setFiles(newFiles);
+                            }})} required={!files.has(-1)} className="hidden"/>
                           </div>
                         </div>
                         <div className="flex gap-2 items-center">
@@ -260,9 +264,10 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
                           <div className="flex gap-2 items-center">
                             <div className="flex gap-2 items-center">
                               <b>{files.size > 2 ?
-                                Array.from(files).map((f, j) => {
-                                  if (j > i) {
-                                    return `${f[1]?.name}${j < files.size - 1 ? ", " : ""}`
+                                Array.from(files).map((f) => {
+                                  const j = f[0];
+                                  if (j >= 0) {
+                                    return `${f[1]?.name}${j < files.size - 2 ? ", " : ""}`
                                   }
                                 })
                                 : "No files chosen"}
@@ -270,9 +275,15 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
                               <button className="p-1 pt-0 pb-0 h-min text-nowrap bg-gray-300" onClick={(e) => {
                                 e.preventDefault();
                                 openFileInput(i+2);
-                              }}>Choose File</button>
+                              }}>Choose Files</button>
                             </div>
-                            <input type="file" onChange={(e) => checkFileSize(e.target, () => {if (e.target.files) setFiles(new Map(Array.from(e.target.files).map((f, i) => [i, f])))})} multiple className="hidden"/>
+                            <input type="file" onChange={(e) => checkFileSize(e.target, () => {if (e.target.files) {
+                              const newFiles = new Map();
+                              if (files.has(-1))
+                                newFiles.set(-1, files.get(-1));
+                              Array.from(e.target.files).map((f, i) => newFiles.set(i, f));
+                              setFiles(newFiles);
+                            }})} multiple className="hidden"/>
                           </div>
                         </div>
                       </div>
@@ -325,7 +336,7 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
             <CommunityResourceCard data={formData} image={<Image src={image} alt="preview image" fill/>} preview/>
           </div>
         </div>
-        {existingData &&
+        {existingData && existingData.status == "Approved" &&
           <p className="text-red-900 flex gap-1 justify-center"><CiWarning/>Editing an existing resource will require reapproval before the changes become publically available.</p>
         }
         <div className="flex gap-4 justify-center">
