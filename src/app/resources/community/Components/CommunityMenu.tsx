@@ -35,7 +35,7 @@ export default function CommunityMenu() {
         {menuOpen && 
             <div className={`absolute top-[42px] left-[16px] z-1 transform transition duration-100 ${animate ? "scale-100" : "scale-0"}`}>
               <div className="w-[44px] h-[60px] aspect-1/1 border-2 border-t-0 z-2 bg-jj-purple-1"/>
-              <div className="border-2 whitespace-nowrap z-1 absolute top-[24px] rounded-lg rounded-tl-4xl bg-jj-purple-1 p-2 shadow-md/30">
+              <div className="border-2 whitespace-nowrap z-1 absolute top-[20px] rounded-lg rounded-tl-4xl bg-jj-purple-1 p-2 shadow-md/30">
                 {auth.loggedIn ? 
                   <>
                     <Link href="/account" className="flex gap-2 text-white items-center hover:underline">
