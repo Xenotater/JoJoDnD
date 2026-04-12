@@ -1,0 +1,47 @@
+.toggleSwitch {
+  width: var(--width);
+  --height: calc(var(--width) * 0.5);
+  height: var(--height);
+  border-radius: calc(var(--height) + 4px);
+  border: 1px var(--border) solid;
+}
+
+.toggleSlider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--off);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: calc(var(--height) + 4px);
+}
+
+.toggleSlider:before {
+    position: absolute;
+    content: "";
+    height: calc(var(--height) - 6px);
+    width: calc(var(--height) - 6px);
+    left: 4px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.toggleSwitch input:checked + .toggleSlider {
+    background-color: var(--on);
+}
+
+.toggleSwitch input:focus + .toggleSlider {
+    box-shadow: 0 0 1px var(--on);
+}
+
+.toggleSwitch input:checked + .toggleSlider:before {
+    -webkit-transform: translateX(calc(var(--height) - 3px));
+    -ms-transform: translateX(calc(var(--height) - 3px));
+    transform: translateX(calc(var(--height) - 3px));
+}

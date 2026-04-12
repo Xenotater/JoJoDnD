@@ -206,6 +206,7 @@ async function getWithPermission(nameOrId: string | number, clones?: number) {
   const currentData = await getResource(`${nameOrId}`, clones);
   if (currentData && (currentData.username == session.user.name || session.user.role == "admin"))
     return currentData;
+  return null;
 }
 
 async function getResource(nameOrId: string, clones?: number) {
