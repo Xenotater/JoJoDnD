@@ -152,7 +152,7 @@ body {
     cursor: pointer;
   }
 
-  button:hover, a[class*="button"]:hover {
+  button:hover:not(:disabled), a[class*="button"]:hover {
     box-shadow: 1px 1px 3px 1px black;
   }
 

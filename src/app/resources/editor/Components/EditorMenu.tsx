@@ -41,7 +41,7 @@ export default function EditorMenu() {
         const form = JSON.parse(data.form).reduce(
           (obj: CharacterData, item: {name: string, value: string}) => ({[item.name]: item.value, ...obj}), {}
         ) as CharacterData;
-        manager.load({
+        manager.save({
           id: -1,
           name: form.name,
           username: session?.user.name ?? "",
@@ -111,7 +111,7 @@ export default function EditorMenu() {
                 <label className="text-lg">Autofill</label>
                 <div className="flex w-full justify-center items-center">
                   <span className="text-lg">off</span>
-                  <ToggleSwitch value={manager.settings.autofill} width={50} borderColor="black" onColor="mediumpurple" callback={() => manager.toggleAutofill()} className="mx-4"/>
+                  <ToggleSwitch value={manager.settings.autofill} width={50} borderColor="black" onColor="mediumpurple" callback={() => manager.updateSetting("autofill", !manager.settings.autofill)} className="mx-4"/>
                   <span className="text-lg">on</span>
                 </div>
               </div>
@@ -120,7 +120,7 @@ export default function EditorMenu() {
                 <label className="text-lg">Stats</label>
                 <div className="flex w-full justify-between items-center">
                   <span className="text-lg text-wrap w-[33%] text-center leading-none">score on top</span>
-                  <ToggleSwitch value={manager.settings.modOnTop} width={50} borderColor="black" onColor="mediumpurple" offColor="mediumpurple" callback={() => manager.toggleStatPos()} />
+                  <ToggleSwitch value={manager.settings.modOnTop} width={50} borderColor="black" onColor="mediumpurple" offColor="mediumpurple" callback={() => manager.updateSetting("modOnTop", !manager.settings.modOnTop)} />
                   <span className="text-lg text-wrap w-[33%] text-center leading-none">mod on top</span>
                 </div>
               </div>
