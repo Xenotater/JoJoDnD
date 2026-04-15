@@ -3,7 +3,7 @@
 import {createContext, useContext, useEffect, useState} from "react";
 import {Character, CharacterData} from "@/app/Models/Characters.model";
 import {useSession} from "next-auth/react";
-import LinkedList from "@/app/Models/LinkedList";
+import LinkedList from "@/app/Utilities/list.utility";
 import { cloneDeep } from "lodash";
 
 export interface CharacterManager {
@@ -71,18 +71,16 @@ export default function CharacterManagementContextProvider({children}: {children
   }, []);
 
   useEffect(() => {
-    console.log("updating settings");
     setSetting({...setting, allowRedo: step > 0, allowUndo: step < MAX_STEPS && step < saveStates.len - 1})
   }, [step, saveStates])
 
   const saveChanges = (char: Character) => {
     const newStates = cloneDeep(saveStates);
-    console.log("saving: " + char.data.name);
     sessionStorage.setItem("charData", JSON.stringify(char));
     newStates.insertAt({...char.data}, 0);
     if (step > 0) {
       for (let i = 0; i < step; i++)
-        newStates.removeAt(saveStates.len - 1);
+        newStates.removeAt(newStates.len - 1);
       setStep(0);
     }
     else {
@@ -90,7 +88,6 @@ export default function CharacterManagementContextProvider({children}: {children
         newStates.removeAt(newStates.len - 1);
     }
     setSaveStates(newStates);
-    console.log(newStates);
   };
 
   return (
@@ -104,7 +101,6 @@ export default function CharacterManagementContextProvider({children}: {children
           setLoadedCharacter({...loadedChar, data: newStates.getAt(0)!});
           setSaveStates(newStates);
           setStep(step + 1);
-          console.log(saveStates);
         },
         redo: () => {
           const newStates = cloneDeep(saveStates);
@@ -112,7 +108,6 @@ export default function CharacterManagementContextProvider({children}: {children
           setLoadedCharacter({...loadedChar, data: newStates.getAt(0)!});
           setSaveStates(newStates);
           setStep(step - 1);
-          console.log(saveStates);
         },
         save: (character: Character) => {
           setLoadedCharacter(character);

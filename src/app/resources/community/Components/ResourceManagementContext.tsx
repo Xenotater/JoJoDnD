@@ -3,7 +3,7 @@
 import { createContext, useContext, useState } from "react";
 import { CommunityResource } from "@/app/Models/Resources.model";
 import UpdateResourceForm from "./UpdateResourceForm";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { doToggleResourceVisibility } from "@/app/Actions/community.action";
 import DeleteResourceModal from "./DeleteResourceModal";
 
@@ -19,6 +19,8 @@ export const useResourceManager = () => useContext(ResourceManagementContext);
 
 export default function ResourceManagementContextProvider({children}: {children: React.ReactNode}) {
   const router = useRouter();
+  const pathname = usePathname();
+  const params = useSearchParams();
   const [updateOpen, setUpdateOpen] = useState(false);
   const [deleteOpen, setDeleteOpen] = useState(false);
   const [existingResource, setExistingResource] = useState<CommunityResource | undefined>();
@@ -26,7 +28,7 @@ export default function ResourceManagementContextProvider({children}: {children:
   return ( 
     <ResourceManagementContext value={{
       update: (resource?: CommunityResource) => {setExistingResource(resource); setUpdateOpen(true);},
-      toggleVisibility: (resource: CommunityResource) => {doToggleResourceVisibility(resource.id); router.refresh();},
+      toggleVisibility: (resource: CommunityResource) => {doToggleResourceVisibility(resource.id); router.replace(`${pathname}?${params.toString()}&success=true`);},
       delete: (resource: CommunityResource) => {setExistingResource(resource); setDeleteOpen(true);}
     }}>
       {updateOpen &&

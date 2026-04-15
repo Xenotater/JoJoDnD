@@ -4,20 +4,22 @@ import { doDeleteResource } from "@/app/Actions/community.action";
 import Modal from "@/app/Components/Layout/Modal/Modal";
 import ContentHeading from "@/app/Components/Layout/Typography/ContentHeading";
 import { CommunityResource } from "@/app/Models/Resources.model";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
 
 export default function DeleteResourceModal({data, closer}: {data: CommunityResource, closer: () => void}) {
   const [name, setName] = useState("");
   const [alert, setAlert] = useState("");
   const router = useRouter();
+  const pathname = usePathname();
+  const params = useSearchParams();
 
   const handleDelete = async () => {
     setAlert("");
     if (name == data.name) {
       const resp = await doDeleteResource(data.id);
       if (resp == 200){
-        router.refresh();
+        router.replace(`${pathname}?${params.toString()}&success=true`);
         closer();
       }
       else

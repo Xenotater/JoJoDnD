@@ -9,7 +9,7 @@ import Image from "next/image";
 import Tooltip from "@/app/Components/Layout/Typography/Tooltip";
 import { doGetResourceFile, doGetResourceImage, doListResourceFiles, doSubmitNewResource, doUpdateResource, doUploadFile, doUploadImage } from "@/app/Actions/community.action";
 import { CiWarning } from "react-icons/ci";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 type ResourceType = "Link" | "File" | "HTML" | "Other";
 
@@ -37,8 +37,10 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
   const [otherDetails, setOtherDetails] = useState("");
   const [files, setFiles] = useState<Map<number, File>>(new Map([]));
   const [alertMsg, setAlertMsg] = useState("");
-  const router = useRouter();
   const alertRef = useRef<HTMLParagraphElement>(null);
+  const router = useRouter();
+  const pathname = usePathname();
+  const params = useSearchParams();
 
   //TODO: analyze efficiency of this.. do we really need to fetch all files every time?
   const updateFiles = async () => {
@@ -90,7 +92,6 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
     const data = {...formData};
 
     if (files.size > maxFileCount) {
-      console.log("HIT");
       setAlertMsg("Max number of uploads is " + maxFileCount);
       return;
     }
@@ -133,7 +134,7 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
         });
       }
 
-      router.refresh();
+      router.replace(`${pathname}?${params.toString()}&success=true`)
       closer();
     }
     else {

@@ -1,7 +1,7 @@
 "use client";
 
 import ContentHeading from "@/app/Components/Layout/Typography/ContentHeading";
-import { ContactFormData } from "@/app/Utilities/contact.utility";
+import { ContactFormData } from "@/app/Actions/contact.action";
 import { useState } from "react";
 
 export default function ContactForm() {

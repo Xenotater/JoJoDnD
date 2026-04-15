@@ -28,8 +28,9 @@ export async function doDBQuery(query: string, values: (string | null)[] = [], l
     return NextResponse.json(results, {status: 200});
   }
   catch (err) {
-    logError("DB ERROR: " + (err as Error).message);
-    switch(err.errno) {
+    const error = err as {errno: number, message: string}
+    logError("DB ERROR: " + error.message);
+    switch(error.errno) {
       case 1062:
         return NextResponse.json({error: err}, {status: 409})
       default:

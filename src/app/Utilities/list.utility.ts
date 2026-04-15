@@ -103,6 +103,13 @@ export default class LinkedList<T> {
     return false;
   }
 
+  toArray() {
+    const arr = [];
+    for (let i = 0; i < this.len; i++)
+      arr.push(this.getAt(i));
+    return arr;
+  }
+
   constructor(elem?: T) {
     if (elem)
       this.append(elem);

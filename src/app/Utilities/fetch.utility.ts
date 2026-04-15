@@ -1,5 +1,3 @@
-"use server";
-
 import { CacheLife, cacheLife } from "next/dist/server/use-cache/cache-life";
 import { logRequest, logResponse } from "./logging.utility";
 import { cacheTag } from "next/dist/server/use-cache/cache-tag";

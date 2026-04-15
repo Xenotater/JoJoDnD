@@ -2,7 +2,7 @@
 
 import { doCountResourcePages, doGetResources, doGetUserUpvotes } from "@/app/Actions/community.action";
 import { CommunityResource, ResourceSort } from "@/app/Models/Resources.model";
-import { useSearchParams } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import CommunityResourceCard from "./Card/CommunityResourceCard";
 import IconButton from "@/app/Components/Layout/IconButton/IconButton";
@@ -10,6 +10,8 @@ import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
 export default function CommunityResourceList({bucketURL, user}: {bucketURL: string, user?: string}) {
   const params = useSearchParams();
+  const router = useRouter();
+  const pathname = usePathname();
   const [resources, setResources] = useState<CommunityResource[]>([]);
   const [currentPage, setCurrentPage] = useState(parseInt(params.get("page") ?? "1"));
   const [pages, setPages] = useState(1);
@@ -46,6 +48,8 @@ export default function CommunityResourceList({bucketURL, user}: {bucketURL: str
 }
 
   useEffect(() => {
+    if (params.has("success"))
+      router.replace(`${pathname}?${params.toString().replace(/&success=true/, "")}`);
     updateStates();
   }, [params]);
 

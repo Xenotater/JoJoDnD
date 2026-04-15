@@ -19,6 +19,7 @@ export default function AccountPage() {
   return (
     <div>
       <h2>Welcome {session?.user?.name}</h2>
+      <p>Role: {session?.user.role}</p>
       <button onClick={() => signOut()}>Log Out</button>
     </div>
   );
