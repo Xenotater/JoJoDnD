@@ -1,0 +1,13 @@
+.hidden {
+  display: none !important;
+}
+
+.inherit {
+  width: 100%;
+  height: 100%;
+  display: inherit;
+  flex-direction: inherit;
+  justify-content: inherit;
+  text-align: inherit;
+  align-items: inherit;
+}

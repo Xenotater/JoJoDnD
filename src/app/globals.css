@@ -16,10 +16,6 @@ body {
   overflow: hidden;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: var(--font-playfair), 'Times New Roman', Times, serif;
-}
-
 body {
   color: black;
   background: var(--background);
@@ -105,6 +101,10 @@ body {
     font-size: var(--text-lg);
   }
 
+  h1, h2, h3, h4, h5 {
+    font-family: var(--font-playfair), 'Times New Roman', Times, serif;
+  }
+
   .list-disc, .list-decimal {
     padding-left: 2rem;
     display: block;
@@ -163,9 +163,9 @@ body {
   }
 
   input[type="file"] {
-  white-space: normal;
-  word-wrap: break-word; 
-}
+    white-space: normal;
+    word-wrap: break-word; 
+  }
 
   input[type="file"]::file-selector-button {
     background-color: lightgray;

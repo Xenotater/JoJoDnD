@@ -124,6 +124,18 @@ export default function EditorMenu() {
                   <span className="text-lg text-wrap w-[33%] text-center leading-none">mod on top</span>
                 </div>
               </div>
+              <Divider className="border-white mb-2 mt-2" />
+              <div className="flex w-full flex-col items-center text-white">
+                <label className="text-lg">Sheet Style</label>
+                <select className="bg-white text-black" value={manager.settings.style} onChange={(e) => manager.updateSetting("style", e.target.value)}>
+                  <option value="Standard">
+                    Standard
+                  </option>
+                  <option value="5e">
+                    5e
+                  </option>
+                </select>
+              </div>
             </div>
           </div>
         )}

@@ -8,7 +8,7 @@ export default function CharacterEditorPage() {
       <div className="w-full">
         <PageTitle title="Character Sheet Editor"/>
         <div className="content relative h-full">
-          <div className="absolute top-0 left-0 pl-4 pt-4 w-full flex flex-col md:flex-row gap-2 md:gap-4 mb-4 md:items-center">
+          <div className="w-full flex flex-col md:flex-row gap-2 md:gap-4 mb-4 md:items-center">
             <CharacterManagementContextProvider>
               <EditorClient/>
             </CharacterManagementContextProvider>
