@@ -16,9 +16,13 @@ export default function SheetForm() {
   }, [loaded])
 
   const updateField = (name: string, value: unknown) => {
-    const newData = {...data, [name]: value};
-    setData(newData);
-    manager.save({...loaded, data: newData as CharacterData})
+    if (name.includes("img")) {
+      manager.save({...loaded, [name]: value});
+    }
+    else {
+      const newData = {...data, [name]: value};
+      manager.save({...loaded, data: newData as CharacterData})
+    }
   };
   
   return (

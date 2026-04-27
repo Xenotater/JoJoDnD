@@ -66,6 +66,8 @@ export interface CharacterData {
   'perf-bonus': string;
   sci: string;
   'sci-bonus': string;
+  steal: string;
+  'steal-bonus': string;
   arc: string;
   'arc-bonus': string;
   'arc-bonus2': string;

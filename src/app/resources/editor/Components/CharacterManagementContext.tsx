@@ -60,7 +60,7 @@ export default function CharacterManagementContextProvider({children}: {children
 
   const MAX_STEPS = 5; //TODO: reconsider this value
   const [step, setStep] = useState(0);
-  const [saveStates, setSaveStates] = useState(new LinkedList<CharacterData>());
+  const [saveStates, setSaveStates] = useState(new LinkedList<Character>());
 
   useEffect(() => {
     const storedChar = sessionStorage.getItem("charData");
@@ -77,7 +77,7 @@ export default function CharacterManagementContextProvider({children}: {children
   const saveChanges = (char: Character) => {
     const newStates = cloneDeep(saveStates);
     sessionStorage.setItem("charData", JSON.stringify(char));
-    newStates.insertAt({...char.data}, 0);
+    newStates.insertAt(char, 0);
     if (step > 0) {
       for (let i = 0; i < step; i++)
         newStates.removeAt(newStates.len - 1);
@@ -98,14 +98,14 @@ export default function CharacterManagementContextProvider({children}: {children
         undo: () => {
           const newStates = cloneDeep(saveStates);
           newStates.shiftRightBy(1);
-          setLoadedCharacter({...loadedChar, data: newStates.getAt(0)!});
+          setLoadedCharacter(newStates.getAt(0)!);
           setSaveStates(newStates);
           setStep(step + 1);
         },
         redo: () => {
           const newStates = cloneDeep(saveStates);
           newStates.shiftLeftBy(1);
-          setLoadedCharacter({...loadedChar, data: newStates.getAt(0)!});
+          setLoadedCharacter(newStates.getAt(0)!);
           setSaveStates(newStates);
           setStep(step - 1);
         },

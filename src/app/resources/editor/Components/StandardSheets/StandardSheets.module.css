@@ -1,14 +1,8 @@
 .bigInput {
-  border-width: 2px;
-  border-color: black;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  max-width: 100%;
   overflow: scroll;
   scrollbar-width: none;
+  border-color: black;
+  background-color: white;
 }
 
 @layer base {
@@ -17,5 +11,11 @@
   height: 60px;
   font-size: 24px;
   padding: 2px 8px;
+  border-width: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 100%;
   }
 }

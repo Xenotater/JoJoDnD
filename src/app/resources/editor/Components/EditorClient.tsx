@@ -6,10 +6,12 @@ import {MdRedo, MdUndo} from "react-icons/md";
 import {GrDocumentDownload} from "react-icons/gr";
 import SheetForm from "./SheetForm";
 import {useCharacterManager} from "./CharacterManagementContext";
+import { Chart, RadialLinearScale, PointElement, LineElement, Tooltip, Filler } from "chart.js";
 
 export default function EditorClient() {
   const manager = useCharacterManager();
-
+  Chart.register(RadialLinearScale, PointElement, LineElement, Tooltip, Filler);
+  
   return (
     <div className="w-full">
       <div className="w-full flex justify-between flex-wrap xs:flex-nowrap gap-2 xs:gap-[1px]">
