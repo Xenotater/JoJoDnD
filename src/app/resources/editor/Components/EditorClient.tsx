@@ -7,9 +7,11 @@ import {GrDocumentDownload} from "react-icons/gr";
 import SheetForm from "./SheetForm";
 import {useCharacterManager} from "./CharacterManagementContext";
 import { Chart, RadialLinearScale, PointElement, LineElement, Tooltip, Filler } from "chart.js";
+import { useTranslations } from "next-intl";
 
 export default function EditorClient() {
   const manager = useCharacterManager();
+  const t = useTranslations("Editor");
   Chart.register(RadialLinearScale, PointElement, LineElement, Tooltip, Filler);
   
   return (
@@ -19,7 +21,7 @@ export default function EditorClient() {
           <EditorMenu />
           <button className="flex gap-2 items-center bg-gray-300 grow max-w-[150px] text-3xl sm:text-2xl sm:grow-0 rounded border-2">
             <FaRegSave />
-            Save
+            {t("ui.save")}
           </button>
           <button className="flex gap-2 items-center bg-gray-300 rounded border-2 disabled:bg-gray-400 disabled:hover:cursor-not-allowed" disabled={!manager.settings.allowUndo} onClick={() => manager.undo()}>
             <MdUndo />
@@ -30,7 +32,7 @@ export default function EditorClient() {
         </div>
         <button className="flex gap-2 items-center bg-gray-300 rounded border-2 py-1 text-3xl xs:text-2xl md:mr-4 w-full xs:w-auto justify-center">
           <GrDocumentDownload />
-          Download
+            {t("ui.download")}
         </button>
       </div>
       <SheetForm />

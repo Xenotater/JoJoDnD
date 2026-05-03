@@ -10,19 +10,18 @@ import {HiOutlineUserGroup} from "react-icons/hi";
 import {useCharacterManager} from "./CharacterManagementContext";
 import {TbFileExport, TbFileImport} from "react-icons/tb";
 import ToggleSwitch from "@/app/Components/Layout/ToggleSwitch/ToggleSwitch";
-import { useAuth } from "@/app/Components/Auth/AuthContextProvider";
 import { Character, CharacterData } from "@/app/Models/Characters.model";
 import { useSession } from "next-auth/react";
+import { useTranslations } from "next-intl";
 
-//TODO: will a context be needed for current resource state?
 export default function EditorMenu() {
   const {data: session} = useSession();
-  const auth = useAuth();
   const manager = useCharacterManager();
   const [menuOpen, setMenuOpen] = useState(false);
   const [animate, setAnimate] = useState(false);
   const importRef = useRef<HTMLInputElement>(null);
   const exportRef = useRef<HTMLAnchorElement>(null);
+  const t = useTranslations("Editor");
 
   const toggleMenu = (state = !menuOpen) => {
     if (state) {
@@ -89,50 +88,50 @@ export default function EditorMenu() {
             <div className="border-2 whitespace-nowrap z-1 absolute top-[20px] rounded-lg rounded-tl-4xl bg-jj-purple-1 p-2 shadow-md/30 w-[200px]">
               <Link href="/account" className="flex gap-2 text-white items-center hover:underline">
                 <BsPerson size={24} />
-                <span>Account</span>
+                <span>{t("ui.account")}</span>
               </Link>
               <Divider className="border-white mb-2 mt-2" />
               <Link href="/resources/community/manage" onClick={() => toggleMenu(false)} className="flex gap-2 text-white items-center hover:underline">
                 <HiOutlineUserGroup size={24} />
-                <span>Characters</span>
+                <span>{t("ui.characters")}</span>
               </Link>
               <Divider className="border-white mb-2 mt-2" />
               <Link href="" onClick={() => {if (importRef.current) importRef.current.click()}} className="flex gap-2 text-white items-center hover:underline">
                 <TbFileImport size={24} />
-                <span>Import Data</span>
+                <span>{t("ui.import")}</span>
               </Link>
               <Divider className="border-white mb-2 mt-2" />
               <Link href="" onClick={() => handleExport()} className="flex gap-2 text-white items-center hover:underline">
                 <TbFileExport size={24} />
-                <span>Export Data</span>
+                <span>{t("ui.export")}</span>
               </Link>
               <Divider className="border-white mb-2 mt-2" />
               <div className="flex w-full flex-col items-center text-white">
-                <label className="text-lg">Autofill</label>
+                <label className="text-lg">{t("ui.autofill")}</label>
                 <div className="flex w-full justify-center items-center">
-                  <span className="text-lg">off</span>
+                  <span className="text-lg">{t("ui.off")}</span>
                   <ToggleSwitch value={manager.settings.autofill} width={50} borderColor="black" onColor="mediumpurple" callback={() => manager.updateSetting("autofill", !manager.settings.autofill)} className="mx-4"/>
-                  <span className="text-lg">on</span>
+                  <span className="text-lg">{t("ui.on")}</span>
                 </div>
               </div>
               <Divider className="border-white mb-2 mt-2" />
               <div className="flex w-full flex-col items-center text-white">
-                <label className="text-lg">Stats</label>
+                <label className="text-lg">{t("ui.stats")}</label>
                 <div className="flex w-full justify-between items-center">
-                  <span className="text-lg text-wrap w-[33%] text-center leading-none">score on top</span>
+                  <span className="text-lg text-wrap w-[33%] text-center leading-none">{t("ui.score")}</span>
                   <ToggleSwitch value={manager.settings.modOnTop} width={50} borderColor="black" onColor="mediumpurple" offColor="mediumpurple" callback={() => manager.updateSetting("modOnTop", !manager.settings.modOnTop)} />
-                  <span className="text-lg text-wrap w-[33%] text-center leading-none">mod on top</span>
+                  <span className="text-lg text-wrap w-[33%] text-center leading-none">{t("ui.mod")}</span>
                 </div>
               </div>
               <Divider className="border-white mb-2 mt-2" />
               <div className="flex w-full flex-col items-center text-white">
-                <label className="text-lg">Sheet Style</label>
+                <label className="text-lg">{t("ui.style")}</label>
                 <select className="bg-white text-black" value={manager.settings.style} onChange={(e) => manager.updateSetting("style", e.target.value)}>
                   <option value="Standard">
-                    Standard
+                    {t("ui.standard")}
                   </option>
                   <option value="5e">
-                    5e
+                    {t("ui.5e")}
                   </option>
                 </select>
               </div>
