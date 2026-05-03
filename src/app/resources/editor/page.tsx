@@ -1,12 +1,15 @@
 import PageTitle from "@/app/Components/Layout/Typography/PageTitle";
 import EditorClient from "./Components/EditorClient";
 import CharacterManagementContextProvider from "./Components/CharacterManagementContext";
+import { useTranslations } from "next-intl";
 
 export default function CharacterEditorPage() {
+  const t = useTranslations("Editor");
+
   return (
     <div className="w-full h-full mb-4 flex relative">
       <div className="w-full">
-        <PageTitle title="Character Sheet Editor"/>
+        <PageTitle title={t("title")}/>
         <div className="content relative h-full">
           <div className="w-full flex flex-col md:flex-row gap-2 md:gap-4 mb-4 md:items-center">
             <CharacterManagementContextProvider>

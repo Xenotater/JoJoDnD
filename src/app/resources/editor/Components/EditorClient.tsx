@@ -15,9 +15,9 @@ export default function EditorClient() {
   return (
     <div className="w-full">
       <div className="w-full flex justify-between flex-wrap xs:flex-nowrap gap-2 xs:gap-[1px]">
-        <div className="flex gap-[1px] text-2xl w-full max-w-[260px] justify-between shrink">
+        <div className="flex gap[1px] sm:gap-2 text-2xl w-full sm:max-w-[260px] justify-between shrink">
           <EditorMenu />
-          <button className="flex gap-2 items-center bg-gray-300 rounded border-2">
+          <button className="flex gap-2 items-center bg-gray-300 grow max-w-[150px] text-3xl sm:text-2xl sm:grow-0 rounded border-2">
             <FaRegSave />
             Save
           </button>
@@ -28,9 +28,9 @@ export default function EditorClient() {
             <MdRedo />
           </button>
         </div>
-        <button className="flex gap-2 items-center bg-gray-300 rounded border-2 text-3xl xs:text-2xl mr-4 w-full xs:w-auto justify-center">
-          Download
+        <button className="flex gap-2 items-center bg-gray-300 rounded border-2 py-1 text-3xl xs:text-2xl md:mr-4 w-full xs:w-auto justify-center">
           <GrDocumentDownload />
+          Download
         </button>
       </div>
       <SheetForm />

@@ -1,11 +1,11 @@
 import { BsArrowRight, BsCardList, BsDownload, BsEye, BsFileEarmarkPerson, BsFileEarmarkText, BsPeople } from "react-icons/bs";
-import PageTitle from "../Components/Layout/Typography/PageTitle";
+import PageTitle from "@/app/Components/Layout/Typography/PageTitle";
 import ResourceItem from "./Components/ResourceItem";
-import { getLatestFileName } from "../Utilities/files.utility";
+import { getLatestFileName } from "@/app/Utilities/files.utility";
 import Link from "next/link";
-import ArrowButtonLink from "../Components/Layout/ArrowButtonLink/ArrowButtonLink";
-import ContentHeading from "../Components/Layout/Typography/ContentHeading";
-import Divider from "../Components/Layout/Divider/Divider";
+import ArrowButtonLink from "@/app/Components/Layout/ArrowButtonLink/ArrowButtonLink";
+import ContentHeading from "@/app/Components/Layout/Typography/ContentHeading";
+import Divider from "@/app/Components/Layout/Divider/Divider";
 import ContactForm from "./Components/ContactForm";
 
 export default async function ResourcesPage() {

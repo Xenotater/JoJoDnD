@@ -12,6 +12,7 @@ import ContentSearch from "../Content/ContentSearch";
 
 
 import styles from "./Header.module.css";
+import LangSelector from "./LangSelector";
 
 export default memo(function Header() {
   const [isDesktopWidth, setIsDesktopWidth] = useState(true);
@@ -27,7 +28,7 @@ export default memo(function Header() {
       document.querySelector(".contentWrapper")?.removeAttribute("style");
     setIsCollapsed(!isCollapsed);
   };
-  
+
   useResize(() => {
     setIsDesktopWidth(window.innerWidth >= 1024);
     if (window.innerWidth < 1024) {
@@ -59,10 +60,16 @@ export default memo(function Header() {
             <BsList size="3rem"/>
           </div>
         }
+        {isDesktopWidth && !isCollapsed && 
+          <LangSelector className="absolute right-1 bottom-1 text-sky-200"/>
+        }
       </div>
       {isMenuOpen &&
         <div className="flex fixed top-(--headerHeight) right-0 w-full justify-end z-999">
-          <ContentSearch className="static max-w-[300px] grow"/>
+          <div className="flex flex-col h-min items-end">
+            <ContentSearch className="static max-w-[300px] grow"/>
+            <LangSelector className="text-sky-200 flex w-min border-1 border-r-0 border-white p-1 bg-jj-purple-1 shadow-md/30"/>
+          </div>
           <MobileHeaderList/>
         </div>
       }

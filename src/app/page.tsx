@@ -1,11 +1,11 @@
 
 import Image from "next/image";
 import styles from "./page.module.css";
-import Divider from "./Components/Layout/Divider/Divider";
+import Divider from "@/app/Components/Layout/Divider/Divider";
 import Link from "next/link";
-import PatreonList from "./Components/PatreonList/PatreonList";
-import DiscordEmbed from "./Components/SocialEmbeds/DiscordEmbed/DiscordEmbed";
-import RedditEmbed from "./Components/SocialEmbeds/RedditEmbed/RedditEmbed";
+import PatreonList from "@/app/Components/PatreonList/PatreonList";
+import DiscordEmbed from "@/app/Components/SocialEmbeds/DiscordEmbed/DiscordEmbed";
+import RedditEmbed from "@/app/Components/SocialEmbeds/RedditEmbed/RedditEmbed";
 
 export default function Home() {
   return (
