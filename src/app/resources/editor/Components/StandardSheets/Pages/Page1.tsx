@@ -7,11 +7,11 @@ import ScalingInput from "@/app/Components/Layout/ScalingInput/ScalingInput";
 
 import styles from "../StandardSheets.module.css";
 import SkillsAndSavesBox from "../Components/SkillsAndSavesBox";
-import { useTranslations } from "next-intl";
+import {useTranslations} from "next-intl";
 
 export default function StandardPage1({data, updateField}: {data: Partial<CharacterData>; updateField: (name: string, value: unknown) => void}) {
   const t = useTranslations("Editor");
-  const characterClasses = ["Power", "Ranged", "Remote", "Ability", "Enhancement", "Revenge", "Independent", "Hive", "Act", "Ripple", "Spin", "Artisan", "Assassin", "Consul", "Heavyweight", "Ranger", "Scholar", "Warrior", "Other/Multiclass"];
+  const characterClasses: Record<string, string> = {pow: "Power", rng: "Ranged", rmt: "Remote", abl: "Ability", enh: "Enhancement", rev: "Revenge", ind: "Independent", hive: "Hive", act: "Act", rip: "Ripple", spin: "Spin", art: "Artisan", ass: "Assassin", con: "Consul", heav: "Heavyweight", ran: "Ranger", sch: "Scholar", war: "Warrior", multi: "Other/Multiclass"};
 
   return (
     <div className="w-[8.5in] h-[11in] border-2 bg-white p-[32px]">
@@ -33,14 +33,17 @@ export default function StandardPage1({data, updateField}: {data: Partial<Charac
           <ScalingInput className={styles.bigInput} fontmax={24} value={data.race} onChange={(e) => updateField("race", e.target.value)} />
         </InputWrapper>
         <InputWrapper label={t("class")} className="col-span-3 min-w-0">
-          <div className={`${styles.bigInput} flex p-0`}>
+          <div className={`${styles.bigInput} flex p-0 relative`}>
             <select className="w-full h-full outline-0 shadow-none shrink-1 appearance-none pl-2 text-base" value={data.class} onChange={(e) => updateField("class", e.target.value)}>
-              {characterClasses.map((c) => (
-                <option key={c} value={c}>
-                  {t("classes." + c)}
+              {Object.entries(characterClasses).map((c) => (
+                <option key={c[0]} value={c[0]}>
+                  {t("classes." + c[1])}
                 </option>
               ))}
             </select>
+            {data.class == "act" &&
+              <input type="number" className="border-0 bg-white w-[30px] text-base absolute left-10 pl-0" defaultValue={1} min={1} max={4} value={data.selectedAct} onChange={(e) => updateField("selectedAct", e.target.value)} />
+            }
             <ScalingInput className="border-0 bg-white w-[50px] shrink-0 border-l-2 border-black h-full flex items-center justify-center" fontmax={24} value={data.level} onChange={(e) => updateField("level", e.target.value)} />
           </div>
         </InputWrapper>

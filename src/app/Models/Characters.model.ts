@@ -126,6 +126,7 @@ export interface CharacterData {
   Uatks: string;
   minions: string;
   Ufeats: string;
+  selectedAct: string;
   act1AbilityInfo: string;
   act1Type: string;
   'act1-str-mod': string;
@@ -169,7 +170,7 @@ export interface CharacterData {
   'act3-cha-mod': string;
   'act3-cha-score': string;
   act4AbilityInfo: string;
-  act4Type: string;
+  act4Base: string;
   'act4-str-mod': string;
   'act4-str-score': string;
   'act4-dex-mod': string;

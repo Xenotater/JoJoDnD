@@ -158,10 +158,10 @@
     "act2": "Act 2",
     "act3": "Act 3",
     "act4": "Act 4",
-    "close": "Close-Ranged",
-    "long": "Long-Ranged",
-    "aFocus": "Ability-Focused",
-    "rFocus": "Remote-Focused",
-    "based": "Based on:"
+    "actClose": "Close-Ranged",
+    "actLong": "Long-Ranged",
+    "actAbility": "Ability-Focused",
+    "actRemote": "Remote-Focused",
+    "actBased": "Based on:"
   }
 }
