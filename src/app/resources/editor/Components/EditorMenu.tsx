@@ -7,18 +7,22 @@ import Link from "next/link";
 import {useRef, useState} from "react";
 import {BsList, BsPerson} from "react-icons/bs";
 import {HiOutlineUserGroup} from "react-icons/hi";
-import {useCharacterManager} from "./CharacterManagementContext";
+import {useCharacterManager} from "./CharacterManagement/CharacterManagementContext";
 import {TbFileExport, TbFileImport} from "react-icons/tb";
 import ToggleSwitch from "@/app/Components/Layout/ToggleSwitch/ToggleSwitch";
 import { Character, CharacterData } from "@/app/Models/Characters.model";
 import { useSession } from "next-auth/react";
 import { useTranslations } from "next-intl";
+import CharactersModal from "./CharacterManagement/CharactersModal";
+import { useAuth } from "@/app/Components/Auth/AuthContextProvider";
 
 export default function EditorMenu() {
   const {data: session} = useSession();
+  const auth = useAuth();
   const manager = useCharacterManager();
   const [menuOpen, setMenuOpen] = useState(false);
   const [animate, setAnimate] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
   const importRef = useRef<HTMLInputElement>(null);
   const exportRef = useRef<HTMLAnchorElement>(null);
   const t = useTranslations("Editor");
@@ -91,7 +95,7 @@ export default function EditorMenu() {
                 <span>{t("ui.account")}</span>
               </Link>
               <Divider className="border-white mb-2 mt-2" />
-              <Link href="/resources/community/manage" onClick={() => toggleMenu(false)} className="flex gap-2 text-white items-center hover:underline">
+              <Link href="" onClick={() => auth.authExecute(() => {toggleMenu(false); setModalOpen(true)})} className="flex gap-2 text-white items-center hover:underline">
                 <HiOutlineUserGroup size={24} />
                 <span>{t("ui.characters")}</span>
               </Link>
@@ -140,6 +144,9 @@ export default function EditorMenu() {
         )}
         <input ref={importRef} type="file" accept="application/json" className="hidden" onChange={(e) => handleImport(e.target.files)}/>
         <a ref={exportRef} className="hidden"/>
+        {modalOpen &&
+          <CharactersModal closeCallback={() => setModalOpen(false)}/> 
+        }
       </div>
     </Modal>
   );

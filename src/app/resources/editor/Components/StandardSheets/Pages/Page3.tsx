@@ -6,7 +6,7 @@ import ScalingInput from "@/app/Components/Layout/ScalingInput/ScalingInput";
 
 import styles from "../StandardSheets.module.css";
 import ImageInput from "../Components/ImageInput";
-import {useCharacterManager} from "../../CharacterManagementContext";
+import {useCharacterManager} from "../../CharacterManagement/CharacterManagementContext";
 import { useTranslations } from "next-intl";
 
 export default function StandardPage3({data, updateField}: {data: Partial<CharacterData>; updateField: (name: string, value: unknown) => void}) {

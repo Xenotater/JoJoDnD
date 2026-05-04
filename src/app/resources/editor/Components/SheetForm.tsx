@@ -2,7 +2,7 @@
 
 import { CharacterData } from "@/app/Models/Characters.model";
 import { useEffect, useState } from "react";
-import { useCharacterManager } from "./CharacterManagementContext";
+import { useCharacterManager } from "./CharacterManagement/CharacterManagementContext";
 import StandardSheets from "./StandardSheets/StandardSheets";
 
 export default function SheetForm() {

@@ -8,7 +8,7 @@ import styles from "../StandardSheets.module.css";
 import ImageInput from "../Components/ImageInput";
 import StatArray from "../Components/StatArray";
 import {useEffect, useState} from "react";
-import {useCharacterManager} from "../../CharacterManagementContext";
+import {useCharacterManager} from "../../CharacterManagement/CharacterManagementContext";
 import { useTranslations } from "next-intl";
 
 export default function StandardPage2({data, updateField}: {data: Partial<CharacterData>; updateField: (name: string, value: unknown) => void}) {

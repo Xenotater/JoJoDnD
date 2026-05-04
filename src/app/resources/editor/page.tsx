@@ -1,10 +1,12 @@
 import PageTitle from "@/app/Components/Layout/Typography/PageTitle";
 import EditorClient from "./Components/EditorClient";
-import CharacterManagementContextProvider from "./Components/CharacterManagementContext";
-import { useTranslations } from "next-intl";
+import CharacterManagementContextProvider from "./Components/CharacterManagement/CharacterManagementContext";
+import { getBucketURL } from "@/app/Utilities/aws.utility";
+import { getTranslations } from "next-intl/server";
 
-export default function CharacterEditorPage() {
-  const t = useTranslations("Editor");
+export default async function CharacterEditorPage() {
+  const t = await getTranslations("Editor");
+  const bucketURL = await getBucketURL();
 
   return (
     <div className="w-full h-full mb-4 flex relative">
@@ -12,7 +14,7 @@ export default function CharacterEditorPage() {
         <PageTitle title={t("title")}/>
         <div className="content relative h-full">
           <div className="w-full flex flex-col md:flex-row gap-2 md:gap-4 mb-4 md:items-center">
-            <CharacterManagementContextProvider>
+            <CharacterManagementContextProvider bucketUrl={bucketURL}>
               <EditorClient/>
             </CharacterManagementContextProvider>
           </div>

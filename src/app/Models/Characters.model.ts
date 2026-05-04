@@ -205,3 +205,12 @@ export interface CharacterFolder {
   name: string;
   parent_id: number;
 }
+
+export interface SimpleCharacter {
+  id: number;
+  folder_id: number;
+  username: string;
+  name: string;
+}
+
+export type CharacterOrFolder = CharacterFolder & SimpleCharacter;

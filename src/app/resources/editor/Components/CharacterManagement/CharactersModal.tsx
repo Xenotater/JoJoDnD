@@ -1,0 +1,95 @@
+"use client";
+
+import Divider from "@/app/Components/Layout/Divider/Divider";
+import Modal from "@/app/Components/Layout/Modal/Modal";
+import {useTranslations} from "next-intl";
+import {BsArrowLeft, BsArrowRight, BsX} from "react-icons/bs";
+import {useEffect, useState} from "react";
+import {doCountCharacterPages, doGetCharacters} from "@/app/Actions/editor.action";
+import {CharacterOrFolder} from "@/app/Models/Characters.model";
+import IconButton from "@/app/Components/Layout/IconButton/IconButton";
+import CharacterInfoCard from "./CharacterInfoCard";
+import {useCharacterManager} from "./CharacterManagementContext";
+import LoadingSpinner from "@/app/Components/Layout/LoadingSpinner/LoadingSpinner";
+
+export default function CharactersModal({closeCallback}: {closeCallback: () => void}) {
+  const t = useTranslations("Editor.ui");
+  const manager = useCharacterManager();
+  const [characters, setCharacters] = useState<CharacterOrFolder[]>([]);
+  const [pages, setPages] = useState(1);
+  const [loading, setLoading] = useState(false);
+
+  const setCurrentPage = (page: number) => {
+    manager.updateSetting("currentPage", page);
+  };
+
+  const updateStates = async () => {
+    setLoading(true);
+
+    const search = manager.settings.search;
+    const currentPage = manager.settings.currentPage;
+    const count = (await doCountCharacterPages(search)) ?? 1;
+
+    let overwritePage = currentPage;
+    if (currentPage > count) overwritePage = count;
+    else if (currentPage < 1) overwritePage = 1;
+
+    setCharacters((await doGetCharacters(currentPage, search ?? "")) ?? []);
+    manager.updateSetting("currentPage", overwritePage);
+    setPages(count);
+
+    setLoading(false);
+  };
+
+  useEffect(() => {
+    updateStates();
+  }, [manager.settings.search, manager.settings.currentPage]);
+
+  return (
+    <Modal fullPage blur closeCallback={closeCallback}>
+      <div className="content shadow-lg/80 h-[75%] w-[80%] flex flex-col">
+        <div className="relative">
+          <input type="search" placeholder={t("search")} className="bg-white border-1 px-2" value={manager.settings.search} onChange={(e) => manager.updateSetting("search", e.target.value)} />
+          <BsX className="absolute top-[-16px] right-[-16px] text-red-800 text-[64px] hover:text-[72px] hover:top-[-20px] hover:right-[-20px] cursor-pointer" onClick={closeCallback} />
+        </div>
+        <Divider className="w-full" />
+        {loading ? (
+          <LoadingSpinner />
+        ) : (
+          <div className="h-[calc(100%-126px)] flex flex-wrap gap-4 2xl:gap-12 justify-evenly overflow-y-scroll">
+            {characters.map((c) => {
+              const prefix = c.parent_id != undefined ? "folder" : "character";
+              return (
+                <div key={prefix + c.id} className="basis-full md:basis-1/3 lg:basis-1/4 xl:basis-1/5 flex justify-center">
+                  <CharacterInfoCard data={c} />
+                </div>
+              );
+            })}
+          </div>
+        )}
+        <div className="w-full">
+          <Divider className="w-full mb-2" />
+          <div className="flex items-center">
+            {manager.settings.currentPage != 1 ? (
+              <IconButton onClick={() => setCurrentPage(manager.settings.currentPage - 1)} className="bg-jj-purple-1 text-white">
+                <BsArrowLeft size={20} />
+              </IconButton>
+            ) : (
+              <div className="w-[36px]"></div>
+            )}
+            <span className="grow text-center text-xl">
+              <input type="number" max={pages} min={1} value={manager.settings.currentPage} onChange={(e) => setCurrentPage(parseInt(e.target.value) ?? 1)} dir="rtl" className="w-min" />/{pages}
+            </span>
+            {manager.settings.currentPage < pages ? (
+              <IconButton onClick={() => setCurrentPage(manager.settings.currentPage + 1)} className="bg-jj-purple-1 text-white">
+                <BsArrowRight size={20} />
+              </IconButton>
+            ) : (
+              <div className="w-[36px]"></div>
+            )}
+          </div>
+        </div>
+      </div>
+    </Modal>
+  );
+}

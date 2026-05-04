@@ -9,8 +9,10 @@ import { cloneDeep } from "lodash";
 export interface CharacterManager {
   loadedCharacter: Character;
   settings: CharacterManagerSettings;
+  bucketUrl: string,
   undo: () => void;
   redo: () => void;
+  new: () => void;
   save: (character: Character) => void;
   rename: (character: Character) => void;
   move: (character: Character) => void;
@@ -24,13 +26,17 @@ interface CharacterManagerSettings {
   style: "Standard" | "5e";
   allowUndo: boolean;
   allowRedo: boolean;
+  currentPage: number;
+  search: string;
 }
 
 const CharacterManagementContext = createContext<CharacterManager>({
   loadedCharacter: {} as Character,
   settings: {} as CharacterManagerSettings,
+  bucketUrl: "",
   undo: () => {},
   redo: () => {},
+  new: () => {},
   save: () => {},
   rename: () => {},
   move: () => {},
@@ -40,23 +46,25 @@ const CharacterManagementContext = createContext<CharacterManager>({
 
 export const useCharacterManager = () => useContext(CharacterManagementContext);
 
-export default function CharacterManagementContextProvider({children}: {children: React.ReactNode}) {
+const blankCharacter = (user = ""): Character => ({
+    id: -1,
+    name: "",
+    username: user,
+    folder_id: 0,
+    img: "",
+    img2: "",
+    data: {} as CharacterData,
+  });
+
+export default function CharacterManagementContextProvider({bucketUrl, children}: {bucketUrl: string, children: React.ReactNode}) {
   const {data: session} = useSession();
 
   const [renameOpen, setRenameOpen] = useState(false);
   const [moveOpen, setMoveOpen] = useState(false);
   const [deleteOpen, setDeleteOpen] = useState(false);
   const [currentCharacter, setCurrentCharacter] = useState<Character | undefined>();
-  const [loadedChar, setLoadedCharacter] = useState<Character>({
-    id: -1,
-    name: "",
-    username: session?.user.name ?? "",
-    folder_id: 0,
-    img: "",
-    img2: "",
-    data: {} as CharacterData,
-  } as Character);
-  const [setting, setSetting] = useState<CharacterManagerSettings>({autofill: true, modOnTop: true, style: "Standard", allowUndo: false, allowRedo: false});
+  const [loadedChar, setLoadedCharacter] = useState<Character>(blankCharacter(session?.user.name ?? ""));
+  const [setting, setSetting] = useState<CharacterManagerSettings>({autofill: true, modOnTop: true, style: "Standard", allowUndo: false, allowRedo: false, currentPage: 1, search: ""});
 
   const MAX_STEPS = 5; //TODO: reconsider this value
   const [step, setStep] = useState(0);
@@ -95,6 +103,7 @@ export default function CharacterManagementContextProvider({children}: {children
       value={{
         loadedCharacter: loadedChar,
         settings: setting,
+        bucketUrl: bucketUrl,
         undo: () => {
           const newStates = cloneDeep(saveStates);
           newStates.shiftRightBy(1);
@@ -108,6 +117,11 @@ export default function CharacterManagementContextProvider({children}: {children
           setLoadedCharacter(newStates.getAt(0)!);
           setSaveStates(newStates);
           setStep(step - 1);
+        },
+        new: () => {
+          const newCharacter = blankCharacter(session?.user.name ?? "");
+          setLoadedCharacter(newCharacter);
+          saveChanges(newCharacter);
         },
         save: (character: Character) => {
           setLoadedCharacter(character);

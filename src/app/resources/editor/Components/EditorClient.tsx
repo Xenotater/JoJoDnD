@@ -5,7 +5,7 @@ import EditorMenu from "./EditorMenu";
 import {MdRedo, MdUndo} from "react-icons/md";
 import {GrDocumentDownload} from "react-icons/gr";
 import SheetForm from "./SheetForm";
-import {useCharacterManager} from "./CharacterManagementContext";
+import {useCharacterManager} from "./CharacterManagement/CharacterManagementContext";
 import { Chart, RadialLinearScale, PointElement, LineElement, Tooltip, Filler } from "chart.js";
 import { useTranslations } from "next-intl";
 
