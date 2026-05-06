@@ -74,16 +74,17 @@ export default function CharacterManagementContextProvider({bucketUrl, children}
     const storedChar = sessionStorage.getItem("charData");
     if (storedChar && storedChar != "undefined") {
       setLoadedCharacter(JSON.parse(storedChar));
-      saveChanges(JSON.parse(storedChar));
+      saveChanges(JSON.parse(storedChar), true);
     }
   }, []);
 
   useEffect(() => {
+    console.log(saveStates.len)
     setSetting({...setting, allowRedo: step > 0, allowUndo: step < MAX_STEPS && step < saveStates.len - 1})
   }, [step, saveStates])
 
-  const saveChanges = (char: Character) => {
-    if (JSON.stringify(char) == sessionStorage.getItem("charData"))
+  const saveChanges = (char: Character, force = false) => {
+    if (!force && JSON.stringify(char) == sessionStorage.getItem("charData"))
       return;
     const newStates = cloneDeep(saveStates);
     sessionStorage.setItem("charData", JSON.stringify(char));
