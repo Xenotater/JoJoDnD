@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { Textfit } from "react-textfit";
 
 import styles from "./ScalingInput.module.css";
+import Input from "../Controlled/Input";
 
 export default function ScalingInput(props: {className?: string, fontmin?: number, fontmax?: number} & React.InputHTMLAttributes<HTMLInputElement>) {
   const [editing, setEditing] = useState(false);
@@ -53,7 +54,7 @@ export default function ScalingInput(props: {className?: string, fontmin?: numbe
 
   return (
     <>
-      <input {...props} ref={inputRef} className={`${props.className} ${editing || hovering ? "" : styles.hidden}`}/>
+      <Input {...props} ref={inputRef} className={`${props.className} ${editing || hovering ? "" : styles.hidden}`}/>
       <div ref={textRef} tabIndex={0} className={`${props.className} ${editing || hovering ? styles.hidden : ""}`}>
         {!(editing || hovering) && 
           <Textfit className={styles.inherit} max={props.fontmax} min={props.fontmin}>{props.value}</Textfit>

@@ -39,7 +39,7 @@ export default function CommunityResourceCard({data, userUpvotes, bucketURL, ima
       }
       setUserUpvoted(!userUpvoted);
     }
-  });
+  }, false);
 
   const assembleSubItems = () => {
     const links = data.link.split("|");

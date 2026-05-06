@@ -66,7 +66,7 @@ export default function CharacterManagementContextProvider({bucketUrl, children}
   const [loadedChar, setLoadedCharacter] = useState<Character>(blankCharacter(session?.user.name ?? ""));
   const [setting, setSetting] = useState<CharacterManagerSettings>({autofill: true, modOnTop: true, style: "Standard", allowUndo: false, allowRedo: false, currentPage: 1, search: ""});
 
-  const MAX_STEPS = 5; //TODO: reconsider this value
+  const MAX_STEPS = 10; //TODO: reconsider this value
   const [step, setStep] = useState(0);
   const [saveStates, setSaveStates] = useState(new LinkedList<Character>());
 
@@ -83,6 +83,8 @@ export default function CharacterManagementContextProvider({bucketUrl, children}
   }, [step, saveStates])
 
   const saveChanges = (char: Character) => {
+    if (JSON.stringify(char) == sessionStorage.getItem("charData"))
+      return;
     const newStates = cloneDeep(saveStates);
     sessionStorage.setItem("charData", JSON.stringify(char));
     newStates.insertAt(char, 0);
@@ -120,6 +122,7 @@ export default function CharacterManagementContextProvider({bucketUrl, children}
         },
         new: () => {
           const newCharacter = blankCharacter(session?.user.name ?? "");
+          console.log(newCharacter);
           setLoadedCharacter(newCharacter);
           saveChanges(newCharacter);
         },

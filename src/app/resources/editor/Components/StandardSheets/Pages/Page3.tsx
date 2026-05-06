@@ -2,12 +2,13 @@
 
 import {CharacterData} from "@/app/Models/Characters.model";
 import InputWrapper from "../Components/InputWrapper";
-import ScalingInput from "@/app/Components/Layout/ScalingInput/ScalingInput";
+import ScalingInput from "@/app/Components/Layout/Forms/ScalingInput/ScalingInput";
 
 import styles from "../StandardSheets.module.css";
 import ImageInput from "../Components/ImageInput";
 import {useCharacterManager} from "../../CharacterManagement/CharacterManagementContext";
 import { useTranslations } from "next-intl";
+import Textarea from "@/app/Components/Layout/Forms/Controlled/Textarea";
 
 export default function StandardPage3({data, updateField}: {data: Partial<CharacterData>; updateField: (name: string, value: unknown) => void}) {
   const t = useTranslations("Editor");
@@ -31,50 +32,50 @@ export default function StandardPage3({data, updateField}: {data: Partial<Charac
           </div>
         </div>
         <InputWrapper label={t("name")} className="col-span-6 min-w-0">
-          <ScalingInput className={styles.bigInput} fontmax={24} value={data.name} onChange={(e) => updateField("name", e.target.value)} />
+          <ScalingInput className={styles.bigInput} fontmax={24} value={data.name} onBlur={(e) => updateField("name", e.target.value)} />
         </InputWrapper>
         <InputWrapper label={t("back")} className="col-span-6 min-w-0">
-          <textarea className={`${styles.bigInput} h-[144px] text-xs text-left leading-3 p-1 resize-none`} value={data.back} onChange={(e) => updateField("back", e.target.value)} />
+          <Textarea className={`${styles.bigInput} h-[144px] text-xs text-left leading-3 p-1 resize-none`} value={data.back} onBlur={(e) => updateField("back", e.target.value)} />
         </InputWrapper>
         <div className="col-span-6 min-w-0 flex">
           <div className="w-1/2">
             <p className="text-sm text-center">{t("ideal")}</p>
-            <textarea className={`${styles.bigInput} h-[100px] text-xs text-left leading-3 p-1 resize-none`} value={data.ideals} onChange={(e) => updateField("ideals", e.target.value)} />
+            <Textarea className={`${styles.bigInput} h-[100px] text-xs text-left leading-3 p-1 resize-none`} value={data.ideals} onBlur={(e) => updateField("ideals", e.target.value)} />
           </div>
           <div className="w-1/2">
             <p className="text-sm text-center">{t("flaw")}</p>
-            <textarea className={`${styles.bigInput} border-l-0 h-[100px] text-xs text-left leading-3 p-1 resize-none`} value={data.ideals} onChange={(e) => updateField("ideals", e.target.value)} />
+            <Textarea className={`${styles.bigInput} border-l-0 h-[100px] text-xs text-left leading-3 p-1 resize-none`} value={data.ideals} onBlur={(e) => updateField("ideals", e.target.value)} />
           </div>
         </div>
         <InputWrapper label={t("weight")} className="col-span-2 row-span-2 min-w-0">
-          <ScalingInput className={styles.bigInput} fontmax={24} value={data.weight} onChange={(e) => updateField("weight", e.target.value)} />
+          <ScalingInput className={styles.bigInput} fontmax={24} value={data.weight} onBlur={(e) => updateField("weight", e.target.value)} />
         </InputWrapper>
         <InputWrapper label={t("height")} className="col-span-2 row-span-2 min-w-0">
-          <ScalingInput className={styles.bigInput} fontmax={24} value={data.height} onChange={(e) => updateField("height", e.target.value)} />
+          <ScalingInput className={styles.bigInput} fontmax={24} value={data.height} onBlur={(e) => updateField("height", e.target.value)} />
         </InputWrapper>
         <InputWrapper label={t("age")} className="col-span-2 row-span-2 min-w-0">
-          <ScalingInput className={styles.bigInput} fontmax={24} value={data.age} onChange={(e) => updateField("age", e.target.value)} />
+          <ScalingInput className={styles.bigInput} fontmax={24} value={data.age} onBlur={(e) => updateField("age", e.target.value)} />
         </InputWrapper>
         <InputWrapper label={t("person")} className="col-span-6 row-span-3 min-w-0">
-          <textarea className={`${styles.bigInput} h-[104px] text-xs text-left leading-3 p-1 resize-none`} value={data.person} onChange={(e) => updateField("person", e.target.value)} />
+          <Textarea className={`${styles.bigInput} h-[104px] text-xs text-left leading-3 p-1 resize-none`} value={data.person} onBlur={(e) => updateField("person", e.target.value)} />
         </InputWrapper>
         <InputWrapper label={t("hair")} className="col-span-2 row-span-2 min-w-0">
-          <ScalingInput className={styles.bigInput} fontmax={24} value={data.hair} onChange={(e) => updateField("hair", e.target.value)} />
+          <ScalingInput className={styles.bigInput} fontmax={24} value={data.hair} onBlur={(e) => updateField("hair", e.target.value)} />
         </InputWrapper>
         <InputWrapper label={t("skin")} className="col-span-2 row-span-2 min-w-0">
-          <ScalingInput className={styles.bigInput} fontmax={24} value={data.skin} onChange={(e) => updateField("skin", e.target.value)} />
+          <ScalingInput className={styles.bigInput} fontmax={24} value={data.skin} onBlur={(e) => updateField("skin", e.target.value)} />
         </InputWrapper>
         <InputWrapper label={t("eye")} className="col-span-2 row-span-2 min-w-0">
-          <ScalingInput className={styles.bigInput} fontmax={24} value={data.eye} onChange={(e) => updateField("eye", e.target.value)} />
+          <ScalingInput className={styles.bigInput} fontmax={24} value={data.eye} onBlur={(e) => updateField("eye", e.target.value)} />
         </InputWrapper>
         <InputWrapper label={t("relate")} className="col-span-6 row-span-3 min-w-0">
-          <textarea className={`${styles.bigInput} h-[104px] text-xs text-left leading-3 p-1 resize-none`} value={data.relate} onChange={(e) => updateField("relate", e.target.value)} />
+          <Textarea className={`${styles.bigInput} h-[104px] text-xs text-left leading-3 p-1 resize-none`} value={data.relate} onBlur={(e) => updateField("relate", e.target.value)} />
         </InputWrapper>
         <InputWrapper label={t("voice")} className="col-span-6 row-span-2 min-w-0">
-          <ScalingInput className={styles.bigInput} fontmax={24} value={data.voice} onChange={(e) => updateField("voice", e.target.value)} />
+          <ScalingInput className={styles.bigInput} fontmax={24} value={data.voice} onBlur={(e) => updateField("voice", e.target.value)} />
         </InputWrapper>
         <InputWrapper label={t("info")} className="col-span-12 min-w-0">
-          <textarea className={`${styles.bigInput} h-[250px] text-xs text-left leading-3 p-1 resize-none`} value={data.info} onChange={(e) => updateField("info", e.target.value)} />
+          <Textarea className={`${styles.bigInput} h-[250px] text-xs text-left leading-3 p-1 resize-none`} value={data.info} onBlur={(e) => updateField("info", e.target.value)} />
         </InputWrapper>
       </div>
     </div>

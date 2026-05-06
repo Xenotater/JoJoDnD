@@ -6,7 +6,7 @@ import { useState } from "react";
 import { FaSpinner } from "react-icons/fa";
 import { AuthAction } from "../AuthContextProvider";
 
-export default function LoginModalContent({contentSwitchCallback, closeCallback}: {contentSwitchCallback: (newAction: AuthAction) => void, closeCallback: () => void}) {
+export default function LoginModalContent({contentSwitchCallback, closeCallback, successCallback}: {contentSwitchCallback: (newAction: AuthAction) => void, closeCallback: () => void, successCallback: () => void}) {
   const [message, setMessage] = useState("");
   const [success, setSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -21,8 +21,9 @@ export default function LoginModalContent({contentSwitchCallback, closeCallback}
         setLoading(false);
         if (response && response.ok) {
           setSuccess(true);
-          setMessage("Login Successful");
-          setTimeout(closeCallback, 500);
+          setMessage("Login Successful"); //TODO: Replace with toast
+          successCallback();
+          setTimeout(() => {closeCallback();}, 100);
         }
         else if (response && response.status == 401)
           setMessage("Invalid Credentials");

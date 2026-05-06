@@ -3,7 +3,7 @@
 import Divider from "@/app/Components/Layout/Divider/Divider";
 import Modal from "@/app/Components/Layout/Modal/Modal";
 import {useTranslations} from "next-intl";
-import {BsArrowLeft, BsArrowRight, BsX} from "react-icons/bs";
+import {BsArrowLeft, BsArrowRight, BsPlusSquare, BsX} from "react-icons/bs";
 import {useEffect, useState} from "react";
 import {doCountCharacterPages, doGetCharacters} from "@/app/Actions/editor.action";
 import {CharacterOrFolder} from "@/app/Models/Characters.model";
@@ -11,10 +11,12 @@ import IconButton from "@/app/Components/Layout/IconButton/IconButton";
 import CharacterInfoCard from "./CharacterInfoCard";
 import {useCharacterManager} from "./CharacterManagementContext";
 import LoadingSpinner from "@/app/Components/Layout/LoadingSpinner/LoadingSpinner";
+import {useSession} from "next-auth/react";
 
 export default function CharactersModal({closeCallback}: {closeCallback: () => void}) {
   const t = useTranslations("Editor.ui");
   const manager = useCharacterManager();
+  const {data: session} = useSession();
   const [characters, setCharacters] = useState<CharacterOrFolder[]>([]);
   const [pages, setPages] = useState(1);
   const [loading, setLoading] = useState(false);
@@ -53,20 +55,31 @@ export default function CharactersModal({closeCallback}: {closeCallback: () => v
           <BsX className="absolute top-[-16px] right-[-16px] text-red-800 text-[64px] hover:text-[72px] hover:top-[-20px] hover:right-[-20px] cursor-pointer" onClick={closeCallback} />
         </div>
         <Divider className="w-full" />
-        {loading ? (
-          <LoadingSpinner />
-        ) : (
-          <div className="h-[calc(100%-126px)] flex flex-wrap gap-4 2xl:gap-12 justify-evenly overflow-y-scroll">
-            {characters.map((c) => {
-              const prefix = c.parent_id != undefined ? "folder" : "character";
-              return (
-                <div key={prefix + c.id} className="basis-full md:basis-1/3 lg:basis-1/4 xl:basis-1/5 flex justify-center">
-                  <CharacterInfoCard data={c} />
+        <div className="h-[calc(100%-126px)] overflow-y-scroll">
+          <h2 className="text-center">{t("greeting", {name: session?.user.name ?? ""})}</h2>
+          {loading ? (
+            <LoadingSpinner />
+          ) : (
+            <div className="flex flex-wrap gap-4 2xl:gap-12 justify-center pb-6">
+              {characters.map((c) => {
+                const prefix = c.parent_id != undefined ? "folder" : "character";
+                return (
+                  <div key={prefix + c.id} className="basis-full md:basis-1/3 lg:basis-1/4 xl:basis-1/5 flex justify-center">
+                    <CharacterInfoCard data={c} />
+                  </div>
+                );
+              })}
+              <div className="basis-full md:basis-1/3 lg:basis-1/4 xl:basis-1/5 flex justify-center">
+                <div className="w-[204px] h-[250px] border-2 rounded-sm flex justify-center items-center hover:shadow-lg/66 cursor-pointer" onClick={() => {
+                  manager.new();
+                  closeCallback();
+                }}>
+                  <BsPlusSquare size={50}/>
                 </div>
-              );
-            })}
-          </div>
-        )}
+              </div>
+            </div>
+          )}
+        </div>
         <div className="w-full">
           <Divider className="w-full mb-2" />
           <div className="flex items-center">

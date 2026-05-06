@@ -29,7 +29,8 @@
       "style": "Sheet Style",
       "standard": "Standard",
       "5e": "5e",
-      "search": "Search"
+      "search": "Search",
+      "greeting": "{name}'s Characters"
     },
     "page1Title": "JoJo's Bizarre Tabletop Game",
     "name": "Character Name",
