@@ -10,6 +10,7 @@ import Tooltip from "@/app/Components/Layout/Typography/Tooltip";
 import { doGetResourceFile, doGetResourceImage, doListResourceFiles, doSubmitNewResource, doUpdateResource, doUploadFile, doUploadImage } from "@/app/Actions/community.action";
 import { CiWarning } from "react-icons/ci";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { fileToFormData } from "@/app/Utilities/misc.utility";
 
 type ResourceType = "Link" | "File" | "HTML" | "Other";
 
@@ -120,17 +121,13 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
     if (resp == 200) {
       //upload image file
       if (imageFile) {
-        const imgData = new FormData();
-        imgData.append("file", imageFile);
-        await doUploadImage(data.name, imgData, existingData?.id);
+        await doUploadImage(data.name, fileToFormData(imageFile), existingData?.id);
       }
 
       //upload other files
       if (type == "File" || type == "HTML") {
         files.forEach(async (f) => {
-          const fData = new FormData();
-          fData.append("file", f);
-          await doUploadFile(data.name, fData, f.name, existingData?.id);
+          await doUploadFile(data.name, fileToFormData(f), f.name, existingData?.id);
         });
       }
 

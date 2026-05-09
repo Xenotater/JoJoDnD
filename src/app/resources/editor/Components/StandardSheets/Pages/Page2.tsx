@@ -11,10 +11,12 @@ import {useEffect, useState} from "react";
 import {useCharacterManager} from "../../CharacterManagement/CharacterManagementContext";
 import { useTranslations } from "next-intl";
 import Textarea from "@/app/Components/Layout/Forms/Controlled/Textarea";
+import { useSession } from "next-auth/react";
 
 export default function StandardPage2({data, updateField}: {data: Partial<CharacterData>; updateField: (name: string, value: unknown) => void}) {
   const t = useTranslations("Editor");
   const manager = useCharacterManager();
+  const {data: session} = useSession();
   const [stats, setStats] = useState<Record<string, number>>({});
 
   useEffect(() => {
@@ -63,6 +65,7 @@ export default function StandardPage2({data, updateField}: {data: Partial<Charac
           <div className="h-[250px] w-[360px] border-2">
             <ImageInput
               img={manager.loadedCharacter.img2 ?? ""}
+              alt="Alternate Character Image"
               update={(img: string) => {
                 updateField("img2", img);
               }}

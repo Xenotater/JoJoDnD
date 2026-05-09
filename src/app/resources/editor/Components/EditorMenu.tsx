@@ -15,6 +15,7 @@ import { useSession } from "next-auth/react";
 import { useTranslations } from "next-intl";
 import CharactersModal from "./CharacterManagement/CharactersModal";
 import { useAuth } from "@/app/Components/Auth/AuthContextProvider";
+import { formToJson, jsonToForm } from "@/app/Utilities/misc.utility";
 
 export default function EditorMenu() {
   const {data: session} = useSession();
@@ -41,9 +42,7 @@ export default function EditorMenu() {
     if (files && files[0]) {
       try {
         const data = JSON.parse(await (files[0]).text()) as {form: string, img: string, img2: string};
-        const form = JSON.parse(data.form).reduce(
-          (obj: CharacterData, item: {name: string, value: string}) => ({[item.name]: item.value, ...obj}), {}
-        ) as CharacterData;
+        const form = formToJson<CharacterData>(JSON.parse(data.form));
         manager.save({
           id: -1,
           name: form.name,
@@ -69,7 +68,7 @@ export default function EditorMenu() {
       const link = exportRef.current;
 
       const char = manager.loadedCharacter;
-      const formData = Object.keys(char.data).map((k) => ({name: k, value: char.data[k as keyof CharacterData]}))
+      const formData = jsonToForm(char.data);
       const blob = new Blob([JSON.stringify({form: JSON.stringify(formData), img: char.img, img2: char.img2})]);
       const url = URL.createObjectURL(blob);
 

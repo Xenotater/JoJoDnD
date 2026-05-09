@@ -37,7 +37,7 @@ export default function StandardPage1({data, updateField}: {data: Partial<Charac
         </InputWrapper>
         <InputWrapper label={t("class")} className="col-span-3 min-w-0">
           <div className={`${styles.bigInput} flex p-0 relative`}>
-            <Select className="w-full h-full outline-0 shadow-none shrink-1 appearance-none pl-2 text-base" value={data.class} onChange={(e) => updateField("class", e.target.value)}>
+            <Select className="w-full h-full outline-0 shadow-none shrink-1 appearance-none pl-2 text-base" value={data.class ?? "pow"} onChange={(e) => updateField("class", e.target.value)}>
               {Object.entries(characterClasses).map((c) => (
                 <option key={c[0]} value={c[0]}>
                   {t("classes." + c[1])}

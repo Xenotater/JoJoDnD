@@ -23,7 +23,7 @@ export default function ProficiencySelect(props: DetailedHTMLProps<SelectHTMLAtt
   }, [props.value])
 
   return (
-    <Select {...props} value={value} defaultValue="" className={`text-[10px] text-center border-1 appearance-none ${props.className}`}>
+    <Select {...props} value={value ?? ""} className={`text-[10px] text-center border-1 appearance-none ${props.className}`}>
       <option value=""/>
       {Array.from({length: 11}).map((_, i) => {
         const mult = i == 0 ? "x.5" : `x${i}`;

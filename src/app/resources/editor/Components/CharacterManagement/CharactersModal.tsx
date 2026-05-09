@@ -12,6 +12,7 @@ import CharacterInfoCard from "./CharacterInfoCard";
 import {useCharacterManager} from "./CharacterManagementContext";
 import LoadingSpinner from "@/app/Components/Layout/LoadingSpinner/LoadingSpinner";
 import {useSession} from "next-auth/react";
+import CharacterFolderPath from "./CharacterFolderPath";
 
 export default function CharactersModal({closeCallback}: {closeCallback: () => void}) {
   const t = useTranslations("Editor.ui");
@@ -30,13 +31,14 @@ export default function CharactersModal({closeCallback}: {closeCallback: () => v
 
     const search = manager.settings.search;
     const currentPage = manager.settings.currentPage;
-    const count = (await doCountCharacterPages(search)) ?? 1;
+    const folder = manager.settings.folderPath.slice(-1)[0].id
+    const count = (await doCountCharacterPages(search, folder)) ?? 1;
 
     let overwritePage = currentPage;
     if (currentPage > count) overwritePage = count;
     else if (currentPage < 1) overwritePage = 1;
 
-    setCharacters((await doGetCharacters(currentPage, search ?? "")) ?? []);
+    setCharacters((await doGetCharacters(currentPage, search ?? "", folder)) ?? []);
     manager.updateSetting("currentPage", overwritePage);
     setPages(count);
 
@@ -45,7 +47,7 @@ export default function CharactersModal({closeCallback}: {closeCallback: () => v
 
   useEffect(() => {
     updateStates();
-  }, [manager.settings.search, manager.settings.currentPage]);
+  }, [manager.settings.search, manager.settings.currentPage, manager.settings.folderPath]);
 
   return (
     <Modal fullPage blur closeCallback={closeCallback}>
@@ -56,7 +58,10 @@ export default function CharactersModal({closeCallback}: {closeCallback: () => v
         </div>
         <Divider className="w-full" />
         <div className="h-[calc(100%-126px)] overflow-y-scroll">
-          <h2 className="text-center">{t("greeting", {name: session?.user.name ?? ""})}</h2>
+          <h2 className="text-center mb-2">{t("greeting", {name: session?.user.name ?? ""})}</h2>
+          {manager.settings.folderPath.length > 1 &&
+            <CharacterFolderPath/>
+          }
           {loading ? (
             <LoadingSpinner />
           ) : (
@@ -65,7 +70,7 @@ export default function CharactersModal({closeCallback}: {closeCallback: () => v
                 const prefix = c.parent_id != undefined ? "folder" : "character";
                 return (
                   <div key={prefix + c.id} className="basis-full md:basis-1/3 lg:basis-1/4 xl:basis-1/5 flex justify-center">
-                    <CharacterInfoCard data={c} />
+                    <CharacterInfoCard data={c} closeCallback={closeCallback} />
                   </div>
                 );
               })}

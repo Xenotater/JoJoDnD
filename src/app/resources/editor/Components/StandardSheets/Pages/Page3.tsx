@@ -25,6 +25,7 @@ export default function StandardPage3({data, updateField}: {data: Partial<Charac
           <div className="h-[360px] w-[360px] border-2">
             <ImageInput
               img={manager.loadedCharacter.img ?? ""}
+              alt="Character Image"
               update={(img: string) => {
                 updateField("img", img);
               }}

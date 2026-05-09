@@ -9,7 +9,7 @@ export type AuthAction = "None" | "Log In" | "Log Out" | "Sign Up" | "Recovery";
 export interface AuthController {
   loggedIn: boolean;
   promptAction: (action: AuthAction) => void;
-  authExecute: (callback: () => void, onSuccess: boolean) => void;
+  authExecute: (callback: () => void, onSuccess?: boolean) => void;
 }
 
 export const AuthContext = createContext<AuthController>({loggedIn: false, promptAction: () => {}, authExecute: () => {}});

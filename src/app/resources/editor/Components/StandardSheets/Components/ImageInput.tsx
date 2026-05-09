@@ -1,9 +1,10 @@
 import Image from "next/image";
-import {useRef, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 import {BsPencilSquare, BsPlusSquare, BsXSquare} from "react-icons/bs";
 
-export default function ImageInput({img, update}: {img: string; update: (img: string) => void}) {
+export default function ImageInput({img, alt, update, backup}: {img: string, alt: string, update: (img: string) => void, backup?: string}) {
   const [hover, setHover] = useState(false);
+  const [imgSrc, setImgSrc] = useState(img);
   const inputRef = useRef<HTMLInputElement>(null);
 
   const maxFileSize = 5 * 1024 * 1024; //5 MB
@@ -36,6 +37,10 @@ export default function ImageInput({img, update}: {img: string; update: (img: st
     }
   }
 
+  useEffect(() => {
+    setImgSrc(img);
+  }, [img]);
+
   const checkFileSize = (fileInput: HTMLInputElement, callback?: () => void) => {
     for (const file of fileInput.files ?? []) {
       if (file.size > maxFileSize) {
@@ -49,11 +54,11 @@ export default function ImageInput({img, update}: {img: string; update: (img: st
 
   return (
     <div className="relative w-full h-full">
-      {img && <Image src={img} alt="Alternate Character Image" fill={true} className="object-contain bg-black"/>}
+      {imgSrc && <Image src={imgSrc} onError={() => {if (backup) setImgSrc(backup)}} alt={alt} fill={true} className="object-contain bg-black"/>}
       <div className="absolute w-full h-full bg-transparent hover:bg-gray-100/33 content-none" onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
         {hover && (
           <div className="relative w-full h-full">
-            {img ? (
+            {imgSrc ? (
               <>
                 <BsXSquare className="cursor-pointer absolute top-2 right-2" size={30} onClick={removeImage} />
                 <div className="flex items-center justify-center w-full h-full">

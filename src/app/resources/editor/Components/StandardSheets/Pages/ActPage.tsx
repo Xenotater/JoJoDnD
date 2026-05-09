@@ -9,6 +9,7 @@ import {useTranslations} from "next-intl";
 import {useEffect, useState} from "react";
 import StatArray from "../Components/StatArray";
 import Textarea from "@/app/Components/Layout/Forms/Controlled/Textarea";
+import Select from "@/app/Components/Layout/Forms/Controlled/Select";
 
 export default function ActPage({data, updateField}: {data: Partial<CharacterData>; updateField: (name: string, value: unknown) => void}) {
   const t = useTranslations("Editor");
@@ -41,12 +42,12 @@ export default function ActPage({data, updateField}: {data: Partial<CharacterDat
         <div className="col-span-2">
           <h3 className="underline">{t("act1")}</h3>
         </div>
-        <select className="col-span-4 mt-2 px-2 border-2 appearance-none" defaultValue="long" value={data.act1Type} onBlur={(e) => updateField("act1Type", e.target.value)} >
+        <Select className="col-span-4 mt-2 px-2 border-2 appearance-none" value={data.act1Type ?? "long"} onBlur={(e) => updateField("act1Type", e.target.value)} >
           <option value="close">{t("actClose")}</option>
           <option value="long">{t("actLong")}</option>
           <option value="ability">{t("actAbility")}</option>
           <option value="remote">{t("actRemote")}</option>
-        </select>
+        </Select>
         <InputWrapper label={t("array")} className="col-span-3 row-span-3 min-w-0">
           <div className="h-[202px] w-[170] border-2 flex items-center justify-center">
             {stats[0] &&
@@ -84,12 +85,12 @@ export default function ActPage({data, updateField}: {data: Partial<CharacterDat
         <div className="col-span-2">
           <h3 className="underline">{t("act2")}</h3>
         </div>
-        <select className="col-span-4 mt-2 px-2 border-2 appearance-none" defaultValue="ability" value={data.act2Type} onBlur={(e) => updateField("act2Type", e.target.value)} >
+        <Select className="col-span-4 mt-2 px-2 border-2 appearance-none" value={data.act2Type ?? "ability"} onBlur={(e) => updateField("act2Type", e.target.value)} >
           <option value="close">{t("actClose")}</option>
           <option value="long">{t("actLong")}</option>
           <option value="ability">{t("actAbility")}</option>
           <option value="remote">{t("actRemote")}</option>
-        </select>
+        </Select>
         <InputWrapper label={t("array")} className="col-span-3 row-span-3 min-w-0">
           <div className="h-[202px] w-[170] border-2 flex items-center justify-center">
             {stats[1] &&
@@ -127,12 +128,12 @@ export default function ActPage({data, updateField}: {data: Partial<CharacterDat
         <div className="col-span-2">
           <h3 className="underline">{t("act3")}</h3>
         </div>
-        <select className="col-span-4 mt-2 px-2 border-2 appearance-none" defaultValue="close" value={data.act3Type} onBlur={(e) => updateField("act3Type", e.target.value)} >
+        <Select className="col-span-4 mt-2 px-2 border-2 appearance-none" value={data.act3Type ?? "close"} onBlur={(e) => updateField("act3Type", e.target.value)} >
           <option value="close">{t("actClose")}</option>
           <option value="long">{t("actLong")}</option>
           <option value="ability">{t("actAbility")}</option>
           <option value="remote">{t("actRemote")}</option>
-        </select>
+        </Select>
         <InputWrapper label={t("array")} className="col-span-3 row-span-3 min-w-0">
           <div className="h-[202px] w-[170] border-2 flex items-center justify-center">
             {stats[2] &&
@@ -172,11 +173,11 @@ export default function ActPage({data, updateField}: {data: Partial<CharacterDat
         </div>
         <label className="col-span-4 flex gap-2 items-baseline">
         <span>{t("actBased")}</span>
-        <select className="mt-2 px-2 border-2 appearance-none grow py-[2px]" value={data.act4Base} onBlur={(e) => updateField("act4Base", e.target.value)} >
+        <Select className="mt-2 px-2 border-2 appearance-none grow py-[2px]" value={data.act4Base} onBlur={(e) => updateField("act4Base", e.target.value)} >
           <option value="act1">{t("act1")}</option>
           <option value="act2">{t("act2")}</option>
           <option value="act3">{t("act3")}</option>
-        </select>
+        </Select>
         </label>
         <InputWrapper label={t("array")} className="col-span-3 row-span-3 min-w-0">
           <div className="h-[202px] w-[170] border-2 flex items-center justify-center">

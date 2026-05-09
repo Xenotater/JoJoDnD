@@ -1,7 +1,7 @@
 "use client";
 
 import {createContext, useContext, useEffect, useState} from "react";
-import {Character, CharacterData} from "@/app/Models/Characters.model";
+import {Character, CharacterData, CharacterFolder} from "@/app/Models/Characters.model";
 import {useSession} from "next-auth/react";
 import LinkedList from "@/app/Utilities/list.utility";
 import { cloneDeep } from "lodash";
@@ -13,7 +13,7 @@ export interface CharacterManager {
   undo: () => void;
   redo: () => void;
   new: () => void;
-  save: (character: Character) => void;
+  save: (character: Character, createState?: boolean) => void;
   rename: (character: Character) => void;
   move: (character: Character) => void;
   delete: (character: Character) => void;
@@ -28,6 +28,7 @@ interface CharacterManagerSettings {
   allowRedo: boolean;
   currentPage: number;
   search: string;
+  folderPath: CharacterFolder[];
 }
 
 const CharacterManagementContext = createContext<CharacterManager>({
@@ -64,7 +65,7 @@ export default function CharacterManagementContextProvider({bucketUrl, children}
   const [deleteOpen, setDeleteOpen] = useState(false);
   const [currentCharacter, setCurrentCharacter] = useState<Character | undefined>();
   const [loadedChar, setLoadedCharacter] = useState<Character>(blankCharacter(session?.user.name ?? ""));
-  const [setting, setSetting] = useState<CharacterManagerSettings>({autofill: true, modOnTop: true, style: "Standard", allowUndo: false, allowRedo: false, currentPage: 1, search: ""});
+  const [setting, setSetting] = useState<CharacterManagerSettings>({autofill: true, modOnTop: true, style: "Standard", allowUndo: false, allowRedo: false, currentPage: 1, search: "", folderPath: [{id: 0, username: "", name: "Root", "parent_id": 0}]});
 
   const MAX_STEPS = 10; //TODO: reconsider this value
   const [step, setStep] = useState(0);
@@ -79,10 +80,10 @@ export default function CharacterManagementContextProvider({bucketUrl, children}
   }, []);
 
   useEffect(() => {
-    console.log(saveStates.len)
     setSetting({...setting, allowRedo: step > 0, allowUndo: step < MAX_STEPS && step < saveStates.len - 1})
   }, [step, saveStates])
 
+  //TODO: Consider saving a list of changes, rather than the whole form state
   const saveChanges = (char: Character, force = false) => {
     if (!force && JSON.stringify(char) == sessionStorage.getItem("charData"))
       return;
@@ -123,13 +124,13 @@ export default function CharacterManagementContextProvider({bucketUrl, children}
         },
         new: () => {
           const newCharacter = blankCharacter(session?.user.name ?? "");
-          console.log(newCharacter);
           setLoadedCharacter(newCharacter);
           saveChanges(newCharacter);
         },
-        save: (character: Character) => {
+        save: (character: Character, createState = true) => {
           setLoadedCharacter(character);
-          saveChanges(character);
+          if (createState)
+            saveChanges(character);
         },
         rename: (character: Character) => {
           setCurrentCharacter(character);

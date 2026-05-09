@@ -6,6 +6,8 @@ export interface Character {
   folder_id: number;
   img?: string;
   img2?: string;
+  modified_ts?: Date;
+  insert_ts?: Date;
 }
 
 export interface CharacterData {
