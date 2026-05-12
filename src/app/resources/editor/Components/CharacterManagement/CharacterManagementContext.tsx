@@ -1,7 +1,7 @@
 "use client";
 
 import {createContext, useContext, useEffect, useState} from "react";
-import {Character, CharacterData, CharacterFolder} from "@/app/Models/Characters.model";
+import {Character, CharacterData, CharacterFolder, CharacterOrFolder, metaFlags} from "@/app/Models/Characters.model";
 import {useSession} from "next-auth/react";
 import LinkedList from "@/app/Utilities/list.utility";
 import { cloneDeep } from "lodash";
@@ -14,9 +14,9 @@ export interface CharacterManager {
   redo: () => void;
   new: () => void;
   save: (character: Character, createState?: boolean) => void;
-  rename: (character: Character) => void;
-  move: (character: Character) => void;
-  delete: (character: Character) => void;
+  rename: (item: CharacterOrFolder) => void;
+  move: (item: CharacterOrFolder) => void;
+  delete: (item: CharacterOrFolder) => void;
   updateSetting: (name: string, value: unknown) => void;
 }
 
@@ -63,7 +63,7 @@ export default function CharacterManagementContextProvider({bucketUrl, children}
   const [renameOpen, setRenameOpen] = useState(false);
   const [moveOpen, setMoveOpen] = useState(false);
   const [deleteOpen, setDeleteOpen] = useState(false);
-  const [currentCharacter, setCurrentCharacter] = useState<Character | undefined>();
+  const [currentItem, setCurrentItem] = useState<CharacterOrFolder | undefined>();
   const [loadedChar, setLoadedCharacter] = useState<Character>(blankCharacter(session?.user.name ?? ""));
   const [setting, setSetting] = useState<CharacterManagerSettings>({autofill: true, modOnTop: true, style: "Standard", allowUndo: false, allowRedo: false, currentPage: 1, search: "", folderPath: [{id: 0, username: "", name: "Root", "parent_id": 0}]});
 
@@ -81,7 +81,7 @@ export default function CharacterManagementContextProvider({bucketUrl, children}
 
   useEffect(() => {
     setSetting({...setting, allowRedo: step > 0, allowUndo: step < MAX_STEPS && step < saveStates.len - 1})
-  }, [step, saveStates])
+  }, [step, saveStates]);
 
   //TODO: Consider saving a list of changes, rather than the whole form state
   const saveChanges = (char: Character, force = false) => {
@@ -102,6 +102,24 @@ export default function CharacterManagementContextProvider({bucketUrl, children}
     setSaveStates(newStates);
   };
 
+  const updateSettingsFromMeta = (char: Character) => {
+    setSetting({...setting, 
+      modOnTop: !parseMeta(char, "scoreOnTop"),
+      autofill: !parseMeta(char, "autofillOff"),
+      style: parseMeta(char, "5eSheet") ? "5e" : "Standard",
+    });
+  }
+
+  const parseMeta = (char: Character, flagName: keyof typeof metaFlags) => {
+    return ((char.data.meta ?? 0) & metaFlags[flagName]) > 0;
+  }
+
+  const setMeta = (settings: CharacterManagerSettings) => {
+    const newChar = cloneDeep(loadedChar);
+    newChar.data.meta = (settings.modOnTop ? 0 : metaFlags.scoreOnTop) | (settings.autofill ? 0 : metaFlags.autofillOff) | (settings.style == "5e" ? metaFlags["5eSheet"] : 0);
+    setLoadedCharacter(newChar);
+  }
+
   return (
     <CharacterManagementContext
       value={{
@@ -112,6 +130,7 @@ export default function CharacterManagementContextProvider({bucketUrl, children}
           const newStates = cloneDeep(saveStates);
           newStates.shiftRightBy(1);
           setLoadedCharacter(newStates.getAt(0)!);
+          updateSettingsFromMeta(newStates.getAt(0)!);
           setSaveStates(newStates);
           setStep(step + 1);
         },
@@ -119,6 +138,7 @@ export default function CharacterManagementContextProvider({bucketUrl, children}
           const newStates = cloneDeep(saveStates);
           newStates.shiftLeftBy(1);
           setLoadedCharacter(newStates.getAt(0)!);
+          updateSettingsFromMeta(newStates.getAt(0)!);
           setSaveStates(newStates);
           setStep(step - 1);
         },
@@ -126,52 +146,57 @@ export default function CharacterManagementContextProvider({bucketUrl, children}
           const newCharacter = blankCharacter(session?.user.name ?? "");
           setLoadedCharacter(newCharacter);
           saveChanges(newCharacter);
+          updateSettingsFromMeta(newCharacter);
         },
         save: (character: Character, createState = true) => {
+          console.log("loaded: " + character.data.meta)
           setLoadedCharacter(character);
           if (createState)
             saveChanges(character);
+          updateSettingsFromMeta(character);
         },
-        rename: (character: Character) => {
-          setCurrentCharacter(character);
+        rename: (item: CharacterOrFolder) => {
+          setCurrentItem(item);
           setRenameOpen(true);
         },
-        move: (character: Character) => {
-          setCurrentCharacter(character);
+        move: (item: CharacterOrFolder) => {
+          setCurrentItem(item);
           setMoveOpen(true);
         },
-        delete: (character: Character) => {
-          setCurrentCharacter(character);
+        delete: (item: CharacterOrFolder) => {
+          setCurrentItem(item);
           setDeleteOpen(true);
         },
-        updateSetting: (name: string, value: unknown) => setSetting({...setting, [name]: value}),
-      }}
+        updateSetting: (name: string, value: unknown) => {
+          setSetting({...setting, [name]: value});
+          setMeta({...setting, [name]: value});
+        }}}
     >
       {renameOpen && (
         <RenameCharacterModal
           closer={() => {
-            setCurrentCharacter(undefined);
+            setCurrentItem(undefined);
             setRenameOpen(false);
           }}
-          data={currentCharacter}
+          data={currentItem}
         />
       )}
       {moveOpen && (
         <MoveCharacterModal
           closer={() => {
-            setCurrentCharacter(undefined);
+            setCurrentItem(undefined);
             setMoveOpen(false);
           }}
-          data={currentCharacter}
+          data={currentItem}
         />
       )}
       {deleteOpen && (
         <DeleteCharacterModal
           closer={() => {
-            setCurrentCharacter(undefined);
+            setCurrentItem(undefined);
             setDeleteOpen(false);
           }}
-          data={currentCharacter}
+          data={currentItem}
         />
       )}
       {children}

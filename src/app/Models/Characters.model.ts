@@ -11,7 +11,7 @@ export interface Character {
 }
 
 export interface CharacterData {
-  meta: string;
+  meta: number;
   name: string;
   maxHP: string;
   hp: string;
@@ -216,3 +216,9 @@ export interface SimpleCharacter {
 }
 
 export type CharacterOrFolder = CharacterFolder & SimpleCharacter;
+
+export const metaFlags = {
+  scoreOnTop: 1,
+  autofillOff: 2,
+  "5eSheet": 4,
+}

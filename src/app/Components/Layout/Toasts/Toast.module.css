@@ -1,0 +1,19 @@
+.toastGeneric {
+  border-color: var(--border);
+  background-color: var(--foreground);
+}
+
+.toastSuccess {
+  border-color: var(--color-green-800);
+  background-color: var(--color-green-200);
+}
+
+.toastError {
+  border-color: var(--color-red-800);
+  background-color: var(--color-red-300);
+}
+
+.toastInfo {
+  border-color: var(--color-sky-800);
+  background-color: var(--color-sky-200);
+}

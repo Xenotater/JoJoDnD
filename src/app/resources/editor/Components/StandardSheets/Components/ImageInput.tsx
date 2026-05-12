@@ -54,7 +54,7 @@ export default function ImageInput({img, alt, update, backup}: {img: string, alt
 
   return (
     <div className="relative w-full h-full">
-      {imgSrc && <Image src={imgSrc} onError={() => {if (backup) setImgSrc(backup)}} alt={alt} fill={true} className="object-contain bg-black"/>}
+      {imgSrc && <Image src={imgSrc} onError={() => {if (backup) setImgSrc(backup); else setImgSrc("")}} alt={alt} fill={true} className="object-contain bg-black"/>}
       <div className="absolute w-full h-full bg-transparent hover:bg-gray-100/33 content-none" onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
         {hover && (
           <div className="relative w-full h-full">

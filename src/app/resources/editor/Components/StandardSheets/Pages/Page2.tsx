@@ -20,15 +20,17 @@ export default function StandardPage2({data, updateField}: {data: Partial<Charac
   const [stats, setStats] = useState<Record<string, number>>({});
 
   useEffect(() => {
+    const suffix = manager.settings.modOnTop ? "score" : "mod";
+    
     setStats({
-      Power: parseInt(data["Sstr-score"] ?? "0"),
-      Speed: parseInt(data["Swis-score"] ?? "0"),
-      Range: parseInt(data["Sint-score"] ?? "0"),
-      Durability: parseInt(data["Scon-score"] ?? "0"),
-      Precision: parseInt(data["Sdex-score"] ?? "0"),
-      Potential: parseInt(data["Scha-score"] ?? "0"),
+      Power: parseInt(data[`Sstr-${suffix}`] ?? "0"),
+      Speed: parseInt(data[`Swis-${suffix}`] ?? "0"),
+      Range: parseInt(data[`Sint-${suffix}`] ?? "0"),
+      Durability: parseInt(data[`Scon-${suffix}`] ?? "0"),
+      Precision: parseInt(data[`Sdex-${suffix}`] ?? "0"),
+      Potential: parseInt(data[`Scha-${suffix}`] ?? "0"),
     });
-  }, [data]);
+  }, [data, manager.settings.modOnTop]);
 
   return (
     <div className="w-[8.5in] h-[11in] border-2 bg-white p-[32px]">

@@ -11,10 +11,16 @@ import ScalingInput from "@/app/Components/Layout/Forms/ScalingInput/ScalingInpu
 import Textarea from "@/app/Components/Layout/Forms/Controlled/Textarea";
 import Select from "@/app/Components/Layout/Forms/Controlled/Select";
 import Input from "@/app/Components/Layout/Forms/Controlled/Input";
+import {useEffect, useState} from "react";
 
 export default function StandardPage1({data, updateField}: {data: Partial<CharacterData>; updateField: (name: string, value: unknown) => void}) {
   const t = useTranslations("Editor");
-  const characterClasses: Record<string, string> = {pow: "Power", rng: "Ranged", rmt: "Remote", abl: "Ability", enh: "Enhancement", rev: "Revenge", ind: "Independent", hive: "Hive", act: "Act", rip: "Ripple", spin: "Spin", art: "Artisan", ass: "Assassin", con: "Consul", heav: "Heavyweight", ran: "Ranger", sch: "Scholar", war: "Warrior", multi: "Other/Multiclass"};
+  const characterClasses: Record<string, string> = {pow: "Power", rng: "Ranged", rmt: "Remote", abl: "Ability", enh: "Enhancement", rev: "Revenge", ind: "Independent", hive: "Hive", act: "Act", rip: "Ripple", spin: "Spin", art: "Artisan", ass: "Assassin", con: "Consul", heav: "Heavyweight", ran: "Ranger", sch: "Scholar", war: "Warrior", multi: "Other/Multiple"};
+  const [otherClass, setOtherClass] = useState(false);
+
+  useEffect(() => {
+    setOtherClass(data.class == "multi");
+  }, [data.class]);
 
   return (
     <div className="w-[8.5in] h-[11in] border-2 bg-white p-[32px]">
@@ -37,16 +43,25 @@ export default function StandardPage1({data, updateField}: {data: Partial<Charac
         </InputWrapper>
         <InputWrapper label={t("class")} className="col-span-3 min-w-0">
           <div className={`${styles.bigInput} flex p-0 relative`}>
-            <Select className="w-full h-full outline-0 shadow-none shrink-1 appearance-none pl-2 text-base" value={data.class ?? "pow"} onChange={(e) => updateField("class", e.target.value)}>
-              {Object.entries(characterClasses).map((c) => (
-                <option key={c[0]} value={c[0]}>
-                  {t("classes." + c[1])}
-                </option>
-              ))}
-            </Select>
-            {data.class == "act" &&
-              <Input type="number" className="border-0 bg-white w-[30px] text-base absolute left-10 pl-0" defaultValue={1} min={1} max={4} value={data.selectedAct} onBlur={(e) => updateField("SelectedAct", e.target.value)} />
-            }
+            {otherClass ? (
+              <ScalingInput
+                className="border-0 bg-white w-full h-full flex items-center"
+                value={data.multi ?? ""}
+                onBlur={(e) => {
+                  if (e.target.value == "") setOtherClass(false);
+                  updateField("multi", e.target.value);
+                }}
+              />
+            ) : (
+              <Select className="w-full h-full outline-0 shadow-none shrink-1 appearance-none pl-2 text-base" value={data.class ?? "pow"} onChange={(e) => updateField("class", e.target.value)}>
+                {Object.entries(characterClasses).map((c) => (
+                  <option key={c[0]} value={c[0]}>
+                    {t("classes." + c[1])}
+                  </option>
+                ))}
+              </Select>
+            )}
+            {data.class == "act" && <Input type="number" className="border-0 bg-white w-[30px] text-base absolute left-10 pl-0" defaultValue={1} min={1} max={4} value={data.selectedAct} onBlur={(e) => updateField("SelectedAct", e.target.value)} />}
             <ScalingInput className="border-0 bg-white w-[50px] shrink-0 border-l-2 border-black h-full flex items-center justify-center" fontmax={24} value={data.level} onBlur={(e) => updateField("level", e.target.value)} />
           </div>
         </InputWrapper>

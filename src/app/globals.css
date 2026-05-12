@@ -72,6 +72,12 @@ body {
     from {filter: brightness(200%)}
     to {filter: brightness(100%)}
   }
+
+  --animate-fade: fade 0.5s ease-in-out;
+  @keyframes fade {
+    from {filter: opacity(100%)}
+    to {filter: opacity(0%)}
+  }
 }
 
 @media (max-width: 1023) {
