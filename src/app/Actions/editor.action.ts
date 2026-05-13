@@ -3,9 +3,9 @@
 import {getServerSession} from "next-auth";
 import {doDBQuery} from "../Utilities/mysql.utility";
 import {authOptions} from "../api/auth/[...nextauth]/route";
-import {Character, CharacterData, CharacterOrFolder} from "../Models/Characters.model";
+import {Character, CharacterData, CharacterFolder, CharacterOrFolder} from "../Models/Characters.model";
 import {formToJson, jsonToForm} from "../Utilities/misc.utility";
-import {getBucketURL, postS3File} from "../Utilities/aws.utility";
+import {copyS3File, delS3File, getBucketURL, postS3File} from "../Utilities/aws.utility";
 
 export async function doGetCharacterData(id: number) {
   return await getWithPermission(id);
@@ -31,7 +31,7 @@ async function getCharacter(id: number) {
   return undefined;
 }
 
-export async function saveCharacterData(data: Character) {
+export async function doSaveCharacterData(data: Character) {
   const session = await getServerSession(authOptions);
   if (!session?.user?.name) return null;
   const existing = data.id != -1 ? await getCharacter(data.id) : null;
@@ -89,14 +89,212 @@ export async function doCountCharacterPages(search = "", folder?: number) {
   const resp = await doDBQuery(`SELECT COUNT(id) AS 'count' FROM folders WHERE username = ? AND name LIKE ? AND parent_id = ?`, [session.user.name, `%${search}%`, folder ? `${folder}` : "parent_id"], false);
   const resp2 = await doDBQuery(`SELECT COUNT(id) AS 'count' FROM characters WHERE username = ? AND name LIKE ? AND folder_id = ?`, [session.user.name, `%${search}%`, folder ? `${folder}` : "folder_id"], false);
   if (resp.status == 200 && resp2.status == 200) {
-    return Math.ceil(((((await resp.json())[0].count as number) + (await resp2.json())[0].count) as number) / charactersPerPage);
+    return Math.ceil(((((await resp.json())[0].count as number) + (await resp2.json())[0].count) as number) / charactersPerPage) || 1;
   }
   return null;
 }
 
-export async function uploadCharacterImage(fileData: FormData, id: number, isAlt = false) {
+export async function doUploadCharacterImage(fileData: FormData, id: number, isAlt = false) {
   const session = await getServerSession(authOptions);
   if (!session?.user?.name) return 401;
 
   return await postS3File(fileData, `Characters/${session.user.name}_${id}${isAlt ? "_alt" : ""}.webp`);
+}
+
+export async function doDuplicateCharacter(id: number, currentFolder = 0) {
+  const char = await getWithPermission(id);
+  if (!char)
+    return 401;
+  const resp = await doSaveCharacterData({...char, id: -1, folder_id: currentFolder});
+  if (resp != null) {
+    await copyS3File(`Characters/${char.username}_${char.id}.webp`, `Characters/${char.username}_${resp}.webp`, false);
+    await copyS3File(`Characters/${char.username}_${char.id}_alt.webp`, `Characters/${char.username}_${resp}_alt.webp`, false);
+  return 200;
+  }
+  return 500;
+}
+
+export async function doRenameCharacter(id: number, name: string) {
+  const char = await getWithPermission(id);
+  if (!char)
+    return 401;
+  const resp = doSaveCharacterData({...char, name});
+  return resp == null ? 500 : 200;
+}
+
+export async function doDeleteCharacter(id: number) {
+  const char = await getWithPermission(id);
+  if (!char)
+    return 401;
+  const resp = await doDBQuery(`DELETE FROM characters WHERE id = ? LIMIT 1`, [`${id}`]);
+  if (resp != null) {
+    await delS3File(`Characters/${char.username}_${char.id}.webp`, false);
+    await delS3File(`Characters/${char.username}_${char.id}_alt.webp`, false);
+  }
+  return resp.status;
+}
+
+export async function doMoveCharacter(id: number, currentFolder = 0, newPath = "", back = false) {
+  const char = await getWithPermission(id);
+  if (!char)
+    return 401;
+  if (back) {
+    if (char.folder_id == 0)
+      return 400;
+    const resp = await doDBQuery(`SELECT parent_id FROM folders WHERE id = ?`, [`${char.folder_id}`], false);
+    const newId = (await resp.json())[0];
+    const resp2 = await doSaveCharacterData({...char, folder_id: parseInt(newId)})
+    return resp2 == null ? 500 : 200;
+  }
+  else if (newPath) {
+    const existingFolder = await (await doDBQuery(`SELECT id FROM folders WHERE parent_id = ? AND name = ? LIMIT 1`, [`${currentFolder}`, newPath], false)).json() as {id: number}[];
+    if (!existingFolder) {
+      const resp = await doDBQuery(`INSERT INTO folders (name, username, parent_id) VALUES (?, ?, ?)`, [newPath, char.username, `${currentFolder}`]);
+      const newId = (await resp.json()).insertId;
+      const resp2 = await doSaveCharacterData({...char, folder_id: parseInt(newId)})
+      return resp2 == null ? 500 : 200;
+    }
+    else {
+      const resp = await doSaveCharacterData({...char, folder_id: parseInt(`${existingFolder[0].id}`)});
+      return resp == null ? 500 : 200;
+    }
+  }
+  return 400;
+}
+
+async function getFolderWithPermission(id: number) {
+  const session = await getServerSession(authOptions);
+  if (!session?.user?.name) return null;
+  const resp = await doDBQuery(`SELECT * FROM folders WHERE id = ? LIMIT 1`, [`${id}`]);
+  if (resp.status == 200) {
+    const folder = (await resp.json())[0] as CharacterFolder;
+    if (folder && (folder?.username == session.user.name || session.user.role == "admin")) return folder;
+  }
+  return null;
+}
+
+export async function doDuplicateFolder(id: number, currentFolder = 0, nested = false) {
+  if (id == 0)
+    return 422;
+  const folder = await getFolderWithPermission(id);
+  if (!folder)
+    return 401;
+  let suffix = "";
+  let copyFound = true;
+  while (!nested && copyFound) {
+    copyFound = false;
+    const nameCheck = await doDBQuery(`SELECT id FROM folders WHERE name = ? AND parent_id = ?`, [folder.name + suffix, `${currentFolder}`]);
+    if (nameCheck.status != 200)
+      return 500;
+    const duplicates = await nameCheck.json();
+    if (duplicates.length > 0) {
+      copyFound = true;
+      suffix += "-copy";
+    }
+  }
+  const resp = await doDBQuery(`INSERT INTO folders (name, username, parent_id) VALUES (?, ?, ?)`, [folder.name + suffix, folder.username, `${currentFolder}`]);
+  if (resp.status == 200) {
+    const newId = (await resp.json()).insertId;
+    let nestedStatus = 200;
+    const characterResp = await doDBQuery(`SELECT id FROM characters WHERE folder_id = ?`, [`${folder.id}`]);
+    if (characterResp.status == 200) {
+      const characters = await characterResp.json() as {id: number}[];
+      if (characters.length > 0) {
+        characters.forEach(async (c) => {
+          const resp = await doDuplicateCharacter(c.id, newId);
+          if (resp != 200 && nestedStatus != 207)
+            nestedStatus = 207;
+        })
+      }
+    }
+    const foldersResp = await doDBQuery(`SELECT id FROM folders WHERE parent_id = ?`, [`${folder.id}`], false);
+    if (foldersResp.status == 200) {
+      const folders = await foldersResp.json() as {id: number}[];
+      if (folders.length > 0) {
+        folders.forEach(async (f) => {
+          const resp = await doDuplicateFolder(f.id, newId, true);
+          if (resp != 200 && nestedStatus != 207)
+            nestedStatus = 207;
+        })
+      }
+    }
+    return nestedStatus;
+  }
+  return resp.status;
+}
+
+export async function doRenameFolder(id: number, name: string) {
+  if (id == 0)
+    return 422;
+  const folder = await getFolderWithPermission(id);
+  if (!folder)
+    return 401;
+  const resp = await doDBQuery(`UPDATE folders SET name = ? WHERE id = ?`, [name, `${folder.id}`], false);
+  return resp.status;
+}
+
+export async function doDeleteFolder(id: number) {
+  if (id == 0)
+    return 422;
+  const folder = await getFolderWithPermission(id);
+  if (!folder)
+    return 401;
+  const resp = await doDBQuery(`DELETE FROM folders WHERE id = ? LIMIT 1`, [`${folder.id}`]);
+  if (resp.status == 200) {
+    let nestedStatus = 200;
+    const characterResp = await doDBQuery(`SELECT id FROM characters WHERE folder_id = ?`, [`${folder.id}`]);
+    if (characterResp.status == 200) {
+      const characters = await characterResp.json() as {id: number}[];
+      if (characters.length > 0) {
+        characters.forEach(async (c) => {
+          const resp = await doDeleteCharacter(c.id);
+          if (resp != 200 && nestedStatus != 207)
+            nestedStatus = 207;
+        })
+      }
+    }
+    const foldersResp = await doDBQuery(`SELECT id FROM folders WHERE parent_id = ?`, [`${folder.id}`], false);
+    if (foldersResp.status == 200) {
+      const folders = await foldersResp.json() as {id: number}[];
+      if (folders.length > 0) {
+        folders.forEach(async (f) => {
+          const resp = await doDeleteFolder(f.id);
+          if (resp != 200 && nestedStatus != 207)
+            nestedStatus = 207;
+        })
+      }
+    }
+    return nestedStatus;
+  }
+  return resp.status;
+}
+
+export async function doMoveFolder(id: number, currentFolder = 0, newPath = "", back = false) {
+  if (id == 0)
+    return 422;
+  const folder = await getFolderWithPermission(id);
+  if (!folder)
+    return 401;
+  if (back) {
+    if (folder.parent_id == 0)
+      return 400;
+    const resp = await doDBQuery(`SELECT parent_id FROM folders WHERE id = ?`, [`${folder.parent_id}`], false);
+    const newId = (await resp.json())[0];
+    const resp2 = await doDBQuery(`UPDATE folders SET parent_id = ? WHERE id = ?`, [newId, `${folder.id}`], false);
+    return resp2.status;
+  }
+  else if (newPath) {
+    const existingFolder = await (await doDBQuery(`SELECT id FROM folders WHERE parent_id = ? AND name = ? LIMIT 1`, [`${currentFolder}`, newPath], false)).json() as number[];
+    if (!existingFolder) {
+      const resp = await doDBQuery(`INSERT INTO folders (name, username, parent_id) VALUES (?, ?, ?)`, [newPath, folder.username, `${currentFolder}`], false);
+      const newId = (await resp.json()).insertId;
+      const resp2 = await doDBQuery(`UPDATE folders SET parent_id = ? WHERE id = ?`, [newId, `${folder.id}`], false);
+      return resp2.status;
+    }
+    else {
+      const resp = await doDBQuery(`UPDATE folders SET parent_id = ? WHERE id = ?`, [`${existingFolder[0]}`, `${folder.id}`], false);
+      return resp.status;
+    }
+  }
+  return 400;
 }

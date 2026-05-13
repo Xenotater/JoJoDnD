@@ -217,6 +217,8 @@ export interface SimpleCharacter {
 
 export type CharacterOrFolder = CharacterFolder & SimpleCharacter;
 
+//meta flags for settings per-character
+//I feel like I'll regret using binary flags for the map of styles
 export const metaFlags = {
   scoreOnTop: 1,
   autofillOff: 2,

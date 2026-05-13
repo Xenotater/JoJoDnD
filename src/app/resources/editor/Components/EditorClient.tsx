@@ -8,7 +8,7 @@ import SheetForm from "./SheetForm";
 import {useCharacterManager} from "./CharacterManagement/CharacterManagementContext";
 import { Chart, RadialLinearScale, PointElement, LineElement, Tooltip, Filler } from "chart.js";
 import { useTranslations } from "next-intl";
-import { saveCharacterData, uploadCharacterImage } from "@/app/Actions/editor.action";
+import { doSaveCharacterData, doUploadCharacterImage } from "@/app/Actions/editor.action";
 import { base64ToFile, fileToFormData } from "@/app/Utilities/misc.utility";
 
 export default function EditorClient() {
@@ -18,12 +18,12 @@ export default function EditorClient() {
 
   const handleSave = async () => {
     const char = manager.loadedCharacter;
-    const newId = await saveCharacterData({...char, img: undefined, img2: undefined});
+    const newId = await doSaveCharacterData({...char, img: undefined, img2: undefined});
     manager.save({...char, id: newId}, false);
     if (char.img && /^data:/.test(char.img))
-      await uploadCharacterImage(fileToFormData(base64ToFile(char.img, `${char.name}`)), newId);
+      await doUploadCharacterImage(fileToFormData(base64ToFile(char.img, `${char.name}`)), newId);
     if (char.img2 && /^data:/.test(char.img2))
-      await uploadCharacterImage(fileToFormData(base64ToFile(char.img2, `${char.name}_alt`)), newId, true);
+      await doUploadCharacterImage(fileToFormData(base64ToFile(char.img2, `${char.name}_alt`)), newId, true);
   }
   
   return (

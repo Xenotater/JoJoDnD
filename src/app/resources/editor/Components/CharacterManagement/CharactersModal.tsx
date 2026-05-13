@@ -13,6 +13,7 @@ import {useCharacterManager} from "./CharacterManagementContext";
 import LoadingSpinner from "@/app/Components/Layout/LoadingSpinner/LoadingSpinner";
 import {useSession} from "next-auth/react";
 import CharacterFolderPath from "./CharacterFolderPath";
+import Input from "@/app/Components/Layout/Forms/Controlled/Input";
 
 export default function CharactersModal({closeCallback}: {closeCallback: () => void}) {
   const t = useTranslations("Editor.ui");
@@ -53,7 +54,7 @@ export default function CharactersModal({closeCallback}: {closeCallback: () => v
     <Modal fullPage blur closeCallback={closeCallback}>
       <div className="content shadow-lg/80 h-[75%] w-[80%] flex flex-col">
         <div className="relative">
-          <input type="search" placeholder={t("search")} className="bg-white border-1 px-2" value={manager.settings.search} onChange={(e) => manager.updateSetting("search", e.target.value)} />
+          <Input type="search" placeholder={t("search")} className="bg-white border-1 px-2" value={manager.settings.search} onBlur={(e) => manager.updateSetting("search", e.target.value)} />
           <BsX className="absolute top-[-16px] right-[-16px] text-red-800 text-[64px] hover:text-[72px] hover:top-[-20px] hover:right-[-20px] cursor-pointer" onClick={closeCallback} />
         </div>
         <Divider className="w-full" />
@@ -70,7 +71,7 @@ export default function CharactersModal({closeCallback}: {closeCallback: () => v
                 const prefix = c.parent_id != undefined ? "folder" : "character";
                 return (
                   <div key={prefix + c.id} className="basis-full md:basis-1/3 lg:basis-1/4 xl:basis-1/5 flex justify-center">
-                    <CharacterInfoCard data={c} closeCallback={closeCallback} />
+                    <CharacterInfoCard data={c} closeCallback={closeCallback} updateCallback={() => updateStates()}/>
                   </div>
                 );
               })}

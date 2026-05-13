@@ -53,7 +53,7 @@ export async function postS3File(fileData: FormData, key: string = "") {
   }
 }
 
-export async function delS3File(key: string) {
+export async function delS3File(key: string, logErr = true) {
   logRequest(await getBucketURL() + `/${key}`, "DELETE");
   
   try {
@@ -63,13 +63,13 @@ export async function delS3File(key: string) {
     }));
   }
   catch (e) {
-    if (e instanceof S3ServiceException)
+    if (e instanceof S3ServiceException && logErr)
       logError("Error communicating with S3: " + e.message);
     return null;
   }
 }
 
-export async function copyS3File(oldKey: string, newKey: string) {
+export async function copyS3File(oldKey: string, newKey: string, logErr = true) {
   logRequest(await getBucketURL() + `/${newKey}`, "PUT");
   
   try {
@@ -80,7 +80,7 @@ export async function copyS3File(oldKey: string, newKey: string) {
     }));
   }
   catch (e) {
-    if (e instanceof S3ServiceException)
+    if (e instanceof S3ServiceException && logErr)
       logError("Error communicating with S3: " + e.message);
     return null;
   }
