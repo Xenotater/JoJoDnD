@@ -142,13 +142,13 @@ export async function doMoveCharacter(id: number, currentFolder = 0, newPath = "
     if (char.folder_id == 0)
       return 400;
     const resp = await doDBQuery(`SELECT parent_id FROM folders WHERE id = ?`, [`${char.folder_id}`], false);
-    const newId = (await resp.json())[0];
+    const newId = (await resp.json())[0].parent_id;
     const resp2 = await doSaveCharacterData({...char, folder_id: parseInt(newId)})
     return resp2 == null ? 500 : 200;
   }
   else if (newPath) {
     const existingFolder = await (await doDBQuery(`SELECT id FROM folders WHERE parent_id = ? AND name = ? LIMIT 1`, [`${currentFolder}`, newPath], false)).json() as {id: number}[];
-    if (!existingFolder) {
+    if (existingFolder.length == 0) {
       const resp = await doDBQuery(`INSERT INTO folders (name, username, parent_id) VALUES (?, ?, ?)`, [newPath, char.username, `${currentFolder}`]);
       const newId = (await resp.json()).insertId;
       const resp2 = await doSaveCharacterData({...char, folder_id: parseInt(newId)})
@@ -229,6 +229,12 @@ export async function doRenameFolder(id: number, name: string) {
   const folder = await getFolderWithPermission(id);
   if (!folder)
     return 401;
+  const nameCheck = await doDBQuery(`SELECT id FROM folders WHERE name = ? AND parent_id = ?`, [name, `${folder.parent_id}`]);
+  if (nameCheck.status != 200)
+    return 500;
+  const duplicates = await nameCheck.json();
+  if (duplicates.length > 0)
+    return 209;
   const resp = await doDBQuery(`UPDATE folders SET name = ? WHERE id = ?`, [name, `${folder.id}`], false);
   return resp.status;
 }
@@ -284,17 +290,27 @@ export async function doMoveFolder(id: number, currentFolder = 0, newPath = "", 
     return resp2.status;
   }
   else if (newPath) {
-    const existingFolder = await (await doDBQuery(`SELECT id FROM folders WHERE parent_id = ? AND name = ? LIMIT 1`, [`${currentFolder}`, newPath], false)).json() as number[];
-    if (!existingFolder) {
+    const existingFolder = await (await doDBQuery(`SELECT id FROM folders WHERE parent_id = ? AND name = ? LIMIT 1`, [`${currentFolder}`, newPath], false)).json() as {id: number}[];
+    console.log("existing:");
+    console.log(existingFolder);
+    if (existingFolder.length == 0) {
       const resp = await doDBQuery(`INSERT INTO folders (name, username, parent_id) VALUES (?, ?, ?)`, [newPath, folder.username, `${currentFolder}`], false);
       const newId = (await resp.json()).insertId;
       const resp2 = await doDBQuery(`UPDATE folders SET parent_id = ? WHERE id = ?`, [newId, `${folder.id}`], false);
       return resp2.status;
     }
     else {
-      const resp = await doDBQuery(`UPDATE folders SET parent_id = ? WHERE id = ?`, [`${existingFolder[0]}`, `${folder.id}`], false);
+      const existingId = existingFolder[0].id;
+      const nameCheck = await doDBQuery(`SELECT id FROM folders WHERE name = ? AND parent_id = ?`, [folder.name, `${existingId}`]);
+      if (nameCheck.status != 200)
+        return 500;
+      const duplicates = await nameCheck.json();
+      if (duplicates.length > 0)
+        return 209;
+      const resp = await doDBQuery(`UPDATE folders SET parent_id = ? WHERE id = ?`, [`${existingId}`, `${folder.id}`], false);
       return resp.status;
     }
   }
   return 400;
 }
+//TODO: log weirder errors, like 422 and 207 here or from the client

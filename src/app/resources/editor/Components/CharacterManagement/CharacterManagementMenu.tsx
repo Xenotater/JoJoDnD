@@ -8,25 +8,26 @@ import { useCharacterManager } from "./CharacterManagementContext";
 import { CharacterOrFolder } from "@/app/Models/Characters.model";
 import { useToastController } from "@/app/Components/Layout/Toasts/ToastControllerProvider";
 import { doDuplicateCharacter, doDuplicateFolder } from "@/app/Actions/editor.action";
+import { useTranslations } from "next-intl";
 
 export default function CharacterManagementMenu({data, updateCallback}: {data: CharacterOrFolder, updateCallback: () => void}) {
   const manager = useCharacterManager();
   const toasts = useToastController();
+  const t = useTranslations("Editor.ui");
   const [open, setOpen] = useState(false);
   
   const handleDuplicate = async () => {
     const isFolder = data.parent_id != undefined;
-    const itemName = isFolder ? "Folder" : "Character";
     const resp = isFolder ? await doDuplicateFolder(data.id, data.parent_id) : await doDuplicateCharacter(data.id, data.folder_id);
     switch (resp) {
       case 200:
-        toasts.displayMessage(`Your ${itemName} has been duplicated`, {type: "Success"});
+        toasts.displayMessage(isFolder ? t("Folder.duplicated") : t("Character.duplicated"), {type: "Success"});
         break;
-      case 422:
-        toasts.displayMessage("The root folder cannot be duplicated", {type: "Error"});
+      case 207:
+        toasts.displayMessage(t("Folder.partialDuplicate"), {type: "Error"});
         break;
       default:
-        toasts.displayMessage("An error ocurred", {type: "Error"});
+        toasts.displayMessage(t("error"), {type: "Error"});
     }
     updateCallback();
   }

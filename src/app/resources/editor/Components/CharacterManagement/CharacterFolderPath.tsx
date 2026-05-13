@@ -17,7 +17,7 @@ export default function CharacterFolderPath() {
 
   return (
     <div className="w-full flex gap-2 justify-center items-center mb-2">
-      <BsArrowLeftCircle className="cursor-pointer hover:text-[25px] hover:mr-[-1px]" onClick={() => navigate(folders.length - 2)}/>
+      <BsArrowLeftCircle className="cursor-pointer text-[24px] hover:text-[25px] hover:mr-[-1px] hover:mb-[-1px]" onClick={() => navigate(folders.length - 2)}/>
       <div>
         {folders.map((f,i) => (
           <span key={`folder-${f.id}`}>

@@ -94,7 +94,7 @@ export default function EditorMenu() {
                 <span>{t("ui.account")}</span>
               </Link>
               <Divider className="border-white mb-2 mt-2" />
-              <Link href="" onClick={() => auth.authExecute(() => {toggleMenu(false); setModalOpen(true)})} className="flex gap-2 text-white items-center hover:underline">
+              <Link href="" onClick={() => auth.authExecute(() => {toggleMenu(false); manager.load()})} className="flex gap-2 text-white items-center hover:underline">
                 <HiOutlineUserGroup size={24} />
                 <span>{t("ui.characters")}</span>
               </Link>
@@ -143,9 +143,6 @@ export default function EditorMenu() {
         )}
         <input ref={importRef} type="file" accept="application/json" className="hidden" onChange={(e) => handleImport(e.target.files)}/>
         <a ref={exportRef} className="hidden"/>
-        {modalOpen &&
-          <CharactersModal closeCallback={() => setModalOpen(false)}/> 
-        }
       </div>
     </Modal>
   );

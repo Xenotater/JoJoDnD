@@ -14,6 +14,7 @@ import LoadingSpinner from "@/app/Components/Layout/LoadingSpinner/LoadingSpinne
 import {useSession} from "next-auth/react";
 import CharacterFolderPath from "./CharacterFolderPath";
 import Input from "@/app/Components/Layout/Forms/Controlled/Input";
+import CharacterManagementModal from "./CharacterManagementModal";
 
 export default function CharactersModal({closeCallback}: {closeCallback: () => void}) {
   const t = useTranslations("Editor.ui");
@@ -108,6 +109,17 @@ export default function CharactersModal({closeCallback}: {closeCallback: () => v
             )}
           </div>
         </div>
+        {manager.managementAction && manager.currentItem && (
+          <CharacterManagementModal
+            action={manager.managementAction}
+            closer={(success: boolean) => {
+              manager.clearAction();
+              if (success)
+                updateStates();
+            }}
+            data={manager.currentItem}
+          />
+        )}
       </div>
     </Modal>
   );

@@ -4,19 +4,25 @@ import {createContext, useContext, useEffect, useState} from "react";
 import {Character, CharacterData, CharacterFolder, CharacterOrFolder, metaFlags} from "@/app/Models/Characters.model";
 import {useSession} from "next-auth/react";
 import LinkedList from "@/app/Utilities/list.utility";
-import { cloneDeep } from "lodash";
+import { cloneDeep, uniqueId } from "lodash";
+import CharacterManagementModal from "./CharacterManagementModal";
+import CharactersModal from "./CharactersModal";
 
 export interface CharacterManager {
+  currentItem: CharacterOrFolder | undefined;
+  managementAction: "Rename" | "Move" | "Delete" | undefined;
   loadedCharacter: Character;
   settings: CharacterManagerSettings;
   bucketUrl: string,
   undo: () => void;
   redo: () => void;
+  load: () => void;
   new: () => void;
   save: (character: Character, createState?: boolean) => void;
   rename: (item: CharacterOrFolder) => void;
   move: (item: CharacterOrFolder) => void;
   delete: (item: CharacterOrFolder) => void;
+  clearAction: () => void;
   updateSetting: (name: string, value: unknown) => void;
 }
 
@@ -32,16 +38,20 @@ interface CharacterManagerSettings {
 }
 
 const CharacterManagementContext = createContext<CharacterManager>({
+  currentItem: undefined,
+  managementAction: undefined,
   loadedCharacter: {} as Character,
   settings: {} as CharacterManagerSettings,
   bucketUrl: "",
   undo: () => {},
   redo: () => {},
+  load: () => {},
   new: () => {},
   save: () => {},
   rename: () => {},
   move: () => {},
   delete: () => {},
+  clearAction: () => {},
   updateSetting: () => {},
 });
 
@@ -60,9 +70,8 @@ const blankCharacter = (user = ""): Character => ({
 export default function CharacterManagementContextProvider({bucketUrl, children}: {bucketUrl: string, children: React.ReactNode}) {
   const {data: session} = useSession();
 
-  const [renameOpen, setRenameOpen] = useState(false);
-  const [moveOpen, setMoveOpen] = useState(false);
-  const [deleteOpen, setDeleteOpen] = useState(false);
+  const [loadOpen, setLoadOpen] = useState(false);
+  const [managementAction, setManagementAction] = useState<"Rename" | "Move" | "Delete" | undefined>(undefined);
   const [currentItem, setCurrentItem] = useState<CharacterOrFolder | undefined>();
   const [loadedChar, setLoadedCharacter] = useState<Character>(blankCharacter(session?.user.name ?? ""));
   const [setting, setSetting] = useState<CharacterManagerSettings>({autofill: true, modOnTop: true, style: "Standard", allowUndo: false, allowRedo: false, currentPage: 1, search: "", folderPath: [{id: 0, username: "", name: "Root", "parent_id": 0}]});
@@ -123,6 +132,8 @@ export default function CharacterManagementContextProvider({bucketUrl, children}
   return (
     <CharacterManagementContext
       value={{
+        currentItem,
+        managementAction,
         loadedCharacter: loadedChar,
         settings: setting,
         bucketUrl: bucketUrl,
@@ -142,6 +153,9 @@ export default function CharacterManagementContextProvider({bucketUrl, children}
           setSaveStates(newStates);
           setStep(step - 1);
         },
+        load: () => {
+          setLoadOpen(true);
+        },
         new: () => {
           const newCharacter = blankCharacter(session?.user.name ?? "");
           setLoadedCharacter(newCharacter);
@@ -156,49 +170,30 @@ export default function CharacterManagementContextProvider({bucketUrl, children}
           updateSettingsFromMeta(character);
         },
         rename: (item: CharacterOrFolder) => {
+          console.log("rename")
           setCurrentItem(item);
-          setRenameOpen(true);
+          setManagementAction("Rename");
         },
         move: (item: CharacterOrFolder) => {
           setCurrentItem(item);
-          setMoveOpen(true);
+          setManagementAction("Move");
         },
         delete: (item: CharacterOrFolder) => {
           setCurrentItem(item);
-          setDeleteOpen(true);
+          setManagementAction("Delete");
+        },
+        clearAction: () => {
+          setCurrentItem(undefined);
+          setManagementAction(undefined);
         },
         updateSetting: (name: string, value: unknown) => {
           setSetting({...setting, [name]: value});
           setMeta({...setting, [name]: value});
         }}}
     >
-      {renameOpen && (
-        <RenameCharacterModal
-          closer={() => {
-            setCurrentItem(undefined);
-            setRenameOpen(false);
-          }}
-          data={currentItem}
-        />
-      )}
-      {moveOpen && (
-        <MoveCharacterModal
-          closer={() => {
-            setCurrentItem(undefined);
-            setMoveOpen(false);
-          }}
-          data={currentItem}
-        />
-      )}
-      {deleteOpen && (
-        <DeleteCharacterModal
-          closer={() => {
-            setCurrentItem(undefined);
-            setDeleteOpen(false);
-          }}
-          data={currentItem}
-        />
-      )}
+      {loadOpen &&
+      <CharactersModal closeCallback={() => setLoadOpen(false)}/>
+      }
       {children}
     </CharacterManagementContext>
   );

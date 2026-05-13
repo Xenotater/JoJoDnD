@@ -23,7 +23,7 @@ export interface ToastController {
   displayMessage: (message: string, options?: ToastOptions) => void;
 }
 
-const defaultDuration = 1000;
+const defaultDuration = 2000;
 
 const ToastControllerContext = createContext<ToastController>({displayMessage: () => {}});
 
@@ -67,7 +67,7 @@ export default function ToastControllerProvider ({children}: {children: React.Re
         addToast(message, options);
       }
     }}>
-      <div className="fixed bottom-4 left-4 flex flex-col gap-2">
+      <div className="fixed bottom-4 left-4 flex flex-col gap-2 z-1000">
         {toasts.map((t) => (
           <Toast key={`toast-${t.id}`} message={t.message} options={t.options} closing={t.closing} closeCallback={() => closeToast(t.id)}/>
         ))}
