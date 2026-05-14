@@ -4,8 +4,7 @@ import {createContext, useContext, useEffect, useState} from "react";
 import {Character, CharacterData, CharacterFolder, CharacterOrFolder, metaFlags} from "@/app/Models/Characters.model";
 import {useSession} from "next-auth/react";
 import LinkedList from "@/app/Utilities/list.utility";
-import { cloneDeep, uniqueId } from "lodash";
-import CharacterManagementModal from "./CharacterManagementModal";
+import { cloneDeep } from "lodash";
 import CharactersModal from "./CharactersModal";
 
 export interface CharacterManager {

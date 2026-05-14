@@ -48,7 +48,8 @@
         "moved": "Your folder was moved",
         "deleted": "Your folder was deleted",
         "duplicateFound": "A folder with that name already exists there",
-        "partialDuplicate": "Your folder was duplicated, but some contents failed to copy"
+        "partialDuplicate": "Your folder was duplicated, but some contents failed to copy",
+        "created": "New folder created"
       },
       "Character": {
         "renamePrompt": "New Character Name",
@@ -59,7 +60,8 @@
         "renamed": "Your character was renamed",
         "duplicated": "Your character was duplicated",
         "moved": "Your character was moved",
-        "deleted": "Your character was deleted"
+        "deleted": "Your character was deleted",
+        "created": "New character created"
       },
       "error": "An error occurred"
     },
