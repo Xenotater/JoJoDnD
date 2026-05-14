@@ -25,7 +25,7 @@ export default function CommunityResourceList({bucketURL, user}: {bucketURL: str
     if (page <= pages && page >= 1) {
       const newParams = new URLSearchParams(params.toString());
       newParams.set("page", `${page}`);
-      window.history.replaceState(null, "", window.location.href.replace(/\?[^#]*/, "") + `?${newParams}`);
+      router.replace(pathname + `?${newParams}`);
     }
   }
 

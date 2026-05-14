@@ -6,7 +6,7 @@ import styles from "./ContentList.module.css";
 import { JSX, useEffect, useRef, useState } from "react";
 import { BsCaretDown, BsCaretDownFill, BsCaretUp, BsCaretUpFill, BsFilter, BsSearch } from "react-icons/bs";
 import ContentFilterModal from "./ContentFilterModal";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { toTitleCase } from "@/app/Utilities/misc.utility";
 import Tooltip from "../../Layout/Typography/Tooltip";
 import cloneDeep from "lodash/cloneDeep";
@@ -44,6 +44,7 @@ interface ContentListOptions {
 export default function ContentList({content, title, tags, options}: {content: ContentListData[], title?: string, tags?: ContentTags[], options?: ContentListOptions}) {
   const path = usePathname();
   const params = useSearchParams();
+  const router = useRouter();
   const listRef = useRef<HTMLDivElement>(null);
   const [contentList, setContentList] = useState(cloneDeep(content));
   const [includeList, setIncludeList] = useState(params.has("filter") ? new Set<string>(params?.get("filter")?.split(",")) : new Set<string>());
@@ -59,10 +60,11 @@ export default function ContentList({content, title, tags, options}: {content: C
   const colIsTitle = options && options.columns?.length == 1 && !title;
 
   //re-apply filters and sort when any relevant settings change
-  useEffect(() => checkFilterSort(), [includeList, excludeList, logic, search, sortedCol, params])
+  useEffect(() => checkFilterSort(), [includeList, excludeList, logic, search, sortedCol])
 
   const checkFilterSort = () => {
-    window.history.replaceState(null, "", window.location.href.replace(/\?[^#]*/, "") + `${search ? `?search=${encodeURIComponent(search)}` : ""}`)
+    if (!(params.get(search) == search))
+      router.replace(`${path}${search.length > 0 ? `?search=${encodeURIComponent(search)}` : ""}`)
     const copy = cloneDeep(content), newList: ContentListData[] = [];
     copy.forEach((item) => addFilteredItem(item, newList));
     if (sortedCol.length > 0)

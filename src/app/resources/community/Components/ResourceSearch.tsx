@@ -1,11 +1,13 @@
 "use client";
 
 import { ResourceSort } from "@/app/Models/Resources.model";
-import { useSearchParams } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export default function ResourceSearch() {
+  const path = usePathname();
   const params = useSearchParams();
+  const router = useRouter();
   const [search, setSearch] = useState(params.get("search") ?? "");
   const [sort, setSort] = useState<ResourceSort>("Top");
 
@@ -13,7 +15,7 @@ export default function ResourceSearch() {
     const newParams = new URLSearchParams(params);
     newParams.set("search", search);
     newParams.set("sort", sort);
-    window.history.replaceState(null, "", window.location.href.replace(/\?[^#]*/, "") + `?${newParams}`);
+    router.replace(path + `?${newParams}`);
   }, [search, sort])
 
   return (
