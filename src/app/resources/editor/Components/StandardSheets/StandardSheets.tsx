@@ -15,7 +15,8 @@ export default function StandardSheets({data, updateField}: {data: Partial<Chara
       <StandardPage2 data={data} updateField={updateField}/>
       {data.class == "act" &&
         <>
-          <Divider className="w-full"/>
+        {
+          <Divider className="w-full"/>}
           <ActPage data={data} updateField={updateField}/>
         </>
       }

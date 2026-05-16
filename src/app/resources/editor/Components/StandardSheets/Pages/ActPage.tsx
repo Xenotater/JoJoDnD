@@ -19,12 +19,12 @@ export default function ActPage({data, updateField}: {data: Partial<CharacterDat
     const stats: Record<string, number>[] = [];
     Array.from({length: 4}).map((_, i) => {
       stats.push({
-        Pow: parseInt(data[`act${i+1}-str-score` as keyof CharacterData] ?? "0"),
-        Spd: parseInt(data[`act${i+1}-wis-score` as keyof CharacterData] ?? "0"),
-        Rng: parseInt(data[`act${i+1}-int-score` as keyof CharacterData] ?? "0"),
-        Dur: parseInt(data[`act${i+1}-con-score` as keyof CharacterData] ?? "0"),
-        Pre: parseInt(data[`act${i+1}-dex-score` as keyof CharacterData] ?? "0"),
-        Pot: parseInt(data[`act${i+1}-cha-score` as keyof CharacterData] ?? "0"),
+        Pow: parseInt(data[`act${i+1}-str-score` as keyof CharacterData] as string ?? "0"),
+        Spd: parseInt(data[`act${i+1}-wis-score` as keyof CharacterData] as string ?? "0"),
+        Rng: parseInt(data[`act${i+1}-int-score` as keyof CharacterData] as string ?? "0"),
+        Dur: parseInt(data[`act${i+1}-con-score` as keyof CharacterData] as string ?? "0"),
+        Pre: parseInt(data[`act${i+1}-dex-score` as keyof CharacterData] as string ?? "0"),
+        Pot: parseInt(data[`act${i+1}-cha-score` as keyof CharacterData] as string ?? "0"),
       });
     });
     setStats(stats);

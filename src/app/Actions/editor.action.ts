@@ -6,6 +6,7 @@ import {authOptions} from "../api/auth/[...nextauth]/route";
 import {Character, CharacterData, CharacterFolder, CharacterOrFolder} from "../Models/Characters.model";
 import {formToJson, jsonToForm} from "../Utilities/misc.utility";
 import {copyS3File, delS3File, getBucketURL, postS3File} from "../Utilities/aws.utility";
+import puppeteer from "puppeteer";
 
 export async function doGetCharacterData(id: number) {
   return await getWithPermission(id);
@@ -299,3 +300,44 @@ export async function doMoveFolder(id: number, currentFolder = 0, newPath = "", 
   return 400;
 }
 //TODO: log weirder errors, like 422 and 207 here or from the client
+
+export async function exportPdf(char: Character, locale = "en") {
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+  page.setUserAgent({userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36 WAIT_UNTIL=load"});
+
+  await page.goto("http://localhost:3000/resources/editor/pdf", {
+    waitUntil: 'networkidle0'
+  });
+
+  await page.evaluate((data, locale) => {
+    sessionStorage.setItem("charData", JSON.stringify(data));
+    document.cookie = `NEXT_LOCALE=${locale};`
+  }, char, locale);
+
+  await page.reload({waitUntil: "networkidle0"});
+
+  await page.evaluate(() => {
+    (document.querySelector(".contentWrapper") as HTMLElement).scrollTo(0, 10000);
+  });
+
+  await page.waitForFunction((data) => {
+    return data.img ? (!!((document.querySelector("[alt='Character Image']") as HTMLImageElement | undefined)?.complete)) : true;
+  }, {}, char);
+
+  await page.evaluate(() => {
+    (document.querySelector(".contentWrapper>div") as HTMLElement).style["maxWidth"] = "unset";
+    (document.querySelector(".contentWrapper") as HTMLElement).classList = "";
+    document.querySelectorAll("[class*='divider']").forEach(el => (el as HTMLElement).style.display = "none");
+    document.querySelector("header")!.style.display = "none";
+    document.querySelectorAll(":not(form *)").forEach(el => (el as HTMLElement).style.margin = "unset");
+  })
+  
+  const result = await page.pdf({
+    format: "letter"
+  });
+  
+  await browser.close();
+
+  return result;
+}
