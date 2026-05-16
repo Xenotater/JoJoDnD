@@ -13,13 +13,10 @@ export default function CharacterPdfPage() {
   
   useEffect(() => {
     const isPuppeteer = navigator.webdriver || 
-    /HeadlessChrome/.test(window.navigator.userAgent) ||
-    navigator.plugins.length === 0;
+    /HeadlessChrome/.test(window.navigator.userAgent);
 
-    console.log("isPuppeteer: " + isPuppeteer);
-
-    // if (!isPuppeteer)
-    //   notFound();
+    if (!isPuppeteer)
+      notFound();
 
     setClientChecked(true);
   }, []);
