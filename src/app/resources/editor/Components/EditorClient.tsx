@@ -8,15 +8,17 @@ import SheetForm from "./SheetForm";
 import {useCharacterManager} from "./CharacterManagement/CharacterManagementContext";
 import {Chart, RadialLinearScale, PointElement, LineElement, Tooltip, Filler} from "chart.js";
 import {useLocale, useTranslations} from "next-intl";
-import {doSaveCharacterData, doUploadCharacterImage, exportPdf} from "@/app/Actions/editor.action";
+import {doCaptureSheetImage, doCaptureSheetPDF, doSaveCharacterData, doUploadCharacterImage} from "@/app/Actions/editor.action";
 import {base64ToFile, fileToFormData} from "@/app/Utilities/misc.utility";
-import { useRef } from "react";
+import {useRef, useState} from "react";
+import Select from "@/app/Components/Layout/Forms/Controlled/Select";
 
 export default function EditorClient() {
   const manager = useCharacterManager();
   const t = useTranslations("Editor");
   const locale = useLocale();
   const downloadRef = useRef<HTMLAnchorElement>(null);
+  const [downloadType, setDownloadType] = useState<"pdf" | "image">("pdf");
 
   Chart.register(RadialLinearScale, PointElement, LineElement, Tooltip, Filler);
 
@@ -28,8 +30,8 @@ export default function EditorClient() {
     if (char.img2 && /^data:/.test(char.img2)) await doUploadCharacterImage(fileToFormData(base64ToFile(char.img2, `${char.name}_alt`)), newId, true);
   };
 
-  const doDownload = async () => {
-    const doc = await exportPdf(manager.loadedCharacter, locale);
+  const doDownloadPDF = async () => {
+    const doc = await doCaptureSheetPDF(manager.loadedCharacter, locale);
     const blob = new Blob([doc as Uint8Array<ArrayBuffer>], {type: "application/pdf"});
     const url = window.URL.createObjectURL(blob);
     if (downloadRef.current) {
@@ -38,13 +40,28 @@ export default function EditorClient() {
       link.download = `${manager.loadedCharacter.name}.pdf`;
       link.click();
     }
-    //TODO: consider offering other file format options.
+  };
+
+  const doDownloadImage = async () => {
+    const data = await doCaptureSheetImage(manager.loadedCharacter, locale);
+    const files = data.map((d) => Uint8Array.from(atob(d), (c) => c.charCodeAt(0)));
+    const blobs = files.map((f) => new Blob([f as Uint8Array<ArrayBuffer>], {type: "image/jpeg"}));
+    const urls = blobs.map((b) => window.URL.createObjectURL(b));
+    if (downloadRef.current) {
+      urls.forEach((url, i) => {
+        const link = downloadRef.current!;
+        link.href = url;
+        link.download = `${manager.loadedCharacter.name}_page${i + 1}.jpeg`;
+        link.click();
+        return;
+      });
+    }
   };
 
   return (
     <div className="w-full">
-      <div className="w-full flex justify-between flex-wrap xs:flex-nowrap gap-2 xs:gap-[1px]">
-        <div className="flex gap[1px] sm:gap-2 text-2xl w-full sm:max-w-[260px] justify-between shrink">
+      <div className="w-full flex justify-between flex-wrap sm:flex-nowrap gap-2">
+        <div className="flex gap-[2px] text-2xl w-full xs:max-w-[260px] h-[44px] justify-between shrink">
           <EditorMenu />
           <button className="flex gap-2 items-center bg-gray-300 grow max-w-[150px] text-3xl sm:text-2xl sm:grow-0 rounded border-2" onClick={handleSave}>
             <FaRegSave />
@@ -57,13 +74,22 @@ export default function EditorClient() {
             <MdRedo />
           </button>
         </div>
-        <button className="flex gap-2 items-center bg-gray-300 rounded border-2 py-1 text-3xl xs:text-2xl md:mr-4 w-full xs:w-auto justify-center" onClick={doDownload}>
-          <GrDocumentDownload />
-          {t("ui.download")}
-        </button>
+        <div className="flex flex-col gap-1 items-center md:mr-4 w-full sm:w-auto">
+          <button className="w-full flex gap-2 items-center bg-gray-300 rounded border-2 py-1 text-3xl xs:text-2xl justify-center" onClick={downloadType == "pdf" ? doDownloadPDF : doDownloadImage}>
+            <GrDocumentDownload />
+            {t("ui.download")}
+          </button>
+          <label className="flex gap-2">
+            File type:
+            <Select className="bg-white" value={downloadType} onChange={(e) => setDownloadType(e.target.value as "pdf" | "image")}>
+              <option value="pdf">PDF</option>
+              <option value="image">Images</option>
+            </Select>
+          </label>
+        </div>
       </div>
       <SheetForm />
-      <a ref={downloadRef} className="hidden"/>
+      <a ref={downloadRef} className="hidden" />
     </div>
   );
 }

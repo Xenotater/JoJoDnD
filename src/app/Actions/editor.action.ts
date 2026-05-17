@@ -301,15 +301,15 @@ export async function doMoveFolder(id: number, currentFolder = 0, newPath = "", 
 }
 //TODO: log weirder errors, like 422 and 207 here or from the client
 
-export async function exportPdf(char: Character, locale = "en") {
+export async function doCaptureSheetPDF(char: Character, locale = "en") {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
-  page.setUserAgent({userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36 WAIT_UNTIL=load"});
 
   await page.goto("http://localhost:3000/resources/editor/pdf", {
     waitUntil: 'networkidle0'
   });
 
+  //set char data and locale
   await page.evaluate((data, locale) => {
     sessionStorage.setItem("charData", JSON.stringify(data));
     document.cookie = `NEXT_LOCALE=${locale};`
@@ -317,6 +317,7 @@ export async function exportPdf(char: Character, locale = "en") {
 
   await page.reload({waitUntil: "networkidle0"});
 
+  //ensure lazy loaded images finish
   await page.evaluate(() => {
     (document.querySelector(".contentWrapper") as HTMLElement).scrollTo(0, 10000);
   });
@@ -325,6 +326,7 @@ export async function exportPdf(char: Character, locale = "en") {
     return data.img ? (!!((document.querySelector("[alt='Character Image']") as HTMLImageElement | undefined)?.complete)) : true;
   }, {}, char);
 
+  //hide everything that isn't the sheet pages and remove outer padding
   await page.evaluate(() => {
     (document.querySelector(".contentWrapper>div") as HTMLElement).style["maxWidth"] = "unset";
     (document.querySelector(".contentWrapper") as HTMLElement).classList = "";
@@ -340,4 +342,79 @@ export async function exportPdf(char: Character, locale = "en") {
   await browser.close();
 
   return result;
+}
+
+//TODO: this will need tweaked with other sheet styles later
+export async function doCaptureSheetImage(char: Character, locale = "en") {
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+  page.setViewport({width: (8.5 * 96), height: (11 * 96)});
+
+  await page.goto("http://localhost:3000/resources/editor/pdf", {
+    waitUntil: 'networkidle0'
+  });
+
+  //set char data and locale
+  await page.evaluate((data, locale) => {
+    sessionStorage.setItem("charData", JSON.stringify(data));
+    document.cookie = `NEXT_LOCALE=${locale};`
+  }, char, locale);
+
+  await page.reload({waitUntil: "networkidle0"});
+
+  //ensure lazy loaded images finish
+  await page.evaluate(() => {
+    (document.querySelector(".contentWrapper") as HTMLElement).scrollTo(0, 10000);
+  });
+
+  await page.waitForFunction((data) => {
+    return data.img ? (!!((document.querySelector("[alt='Character Image']") as HTMLImageElement | undefined)?.complete)) : true;
+  }, {}, char);
+
+  //hide everything that isn't the sheet pages and remove outer padding
+  await page.evaluate(() => {
+    (document.querySelector(".contentWrapper>div") as HTMLElement).style["maxWidth"] = "unset";
+    (document.querySelector(".contentWrapper") as HTMLElement).classList = "";
+    document.querySelectorAll("[class*='divider']").forEach(el => (el as HTMLElement).style.display = "none");
+    document.querySelector("header")!.style.display = "none";
+    document.querySelectorAll(":not(form *)").forEach(el => (el as HTMLElement).style.margin = "unset");
+  })
+
+  const result = [];
+  
+  //capture page 1
+  result.push(await page.screenshot({
+    type: "jpeg"
+  }));
+
+  //hide page 1 and capture page 2
+  await page.evaluate(() => {
+    (document.querySelector("[class*='w-[8.5in]'") as HTMLDivElement).remove();
+  });
+  result.push(await page.screenshot({
+    type: "jpeg"
+  }));
+
+  //hide page 2 and capture page 3
+  await page.evaluate(() => {
+    (document.querySelector("[class*='w-[8.5in]'") as HTMLDivElement).remove();
+  });
+  result.push(await page.screenshot({
+    type: "jpeg"
+  }));
+
+  if (char.data.class == "act") {
+    //hide act-specific page and capture final page
+    await page.evaluate(() => {
+      (document.querySelector("[class*='w-[8.5in]'") as HTMLDivElement).remove();
+    });
+    result.push(await page.screenshot({
+      type: "jpeg"
+    }));
+  }
+  
+  await browser.close();
+
+  //map to valid return type
+  return result.map(data => Buffer.from(data).toString("base64"));
 }
