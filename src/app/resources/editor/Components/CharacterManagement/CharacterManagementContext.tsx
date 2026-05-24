@@ -1,7 +1,7 @@
 "use client";
 
 import {createContext, useContext, useEffect, useState} from "react";
-import {Character, CharacterData, CharacterFolder, CharacterOrFolder, metaFlags} from "@/app/Models/Characters.model";
+import {Character, CharacterData, CharacterFolder, CharacterOrFolder, EditState, metaFlags} from "@/app/Models/Characters.model";
 import {useSession} from "next-auth/react";
 import LinkedList from "@/app/Utilities/list.utility";
 import { cloneDeep } from "lodash";
@@ -77,7 +77,7 @@ export default function CharacterManagementContextProvider({bucketUrl, children}
 
   const MAX_STEPS = 10; //TODO: reconsider this value
   const [step, setStep] = useState(0);
-  const [saveStates, setSaveStates] = useState(new LinkedList<Character>());
+  const [saveStates, setSaveStates] = useState(new LinkedList<EditState>());
 
   useEffect(() => {
     const storedChar = sessionStorage.getItem("charData");
@@ -96,8 +96,13 @@ export default function CharacterManagementContextProvider({bucketUrl, children}
     if (!force && JSON.stringify(char) == sessionStorage.getItem("charData"))
       return;
     const newStates = cloneDeep(saveStates);
+    const state: EditState = (Object.entries(char.data) as [keyof CharacterData, string | number][]).flatMap((field) => field[1] != loadedChar.data[field[0]] ? {field: field[0], prevState: loadedChar.data[field[0]], newState: field[1]} : []);
+    if (char.img != loadedChar.img)
+      state.push({field: "img", prevState: loadedChar.img ?? "", newState: char.img ?? ""});
+    if (char.img2 != loadedChar.img2)
+      state.push({field: "img2", prevState: loadedChar.img2 ?? "", newState: char.img2 ?? ""});
     sessionStorage.setItem("charData", JSON.stringify(char));
-    newStates.insertAt(char, 0);
+    newStates.insertAt(state, 0);
     if (step > 0) {
       for (let i = 0; i < step; i++)
         newStates.removeAt(newStates.len - 1);
@@ -109,6 +114,20 @@ export default function CharacterManagementContextProvider({bucketUrl, children}
     }
     setSaveStates(newStates);
   };
+
+  const updateCharFromState = (state: EditState, dir: "prev" | "new") => {
+    const newChar = cloneDeep(loadedChar);
+    state.forEach((change) => {
+      if (change.field == "img" || change.field == "img2") {
+        newChar[change.field] = dir == "new" ? change.newState as string : change.prevState as string;
+      }
+      else {
+        newChar.data = {...newChar.data, [change.field]: dir == "new" ? change.newState : change.prevState};
+      }
+    });
+    setLoadedCharacter(newChar);
+    updateSettingsFromMeta(newChar);
+  }
 
   const updateSettingsFromMeta = (char: Character) => {
     setSetting({...setting, 
@@ -138,17 +157,15 @@ export default function CharacterManagementContextProvider({bucketUrl, children}
         bucketUrl: bucketUrl,
         undo: () => {
           const newStates = cloneDeep(saveStates);
+          updateCharFromState(newStates.getAt(0)!, "prev");
           newStates.shiftRightBy(1);
-          setLoadedCharacter(newStates.getAt(0)!);
-          updateSettingsFromMeta(newStates.getAt(0)!);
           setSaveStates(newStates);
           setStep(step + 1);
         },
         redo: () => {
           const newStates = cloneDeep(saveStates);
           newStates.shiftLeftBy(1);
-          setLoadedCharacter(newStates.getAt(0)!);
-          updateSettingsFromMeta(newStates.getAt(0)!);
+          updateCharFromState(newStates.getAt(0)!, "new");
           setSaveStates(newStates);
           setStep(step - 1);
         },

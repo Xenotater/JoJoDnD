@@ -224,3 +224,9 @@ export const metaFlags = {
   autofillOff: 2,
   "5eSheet": 4,
 }
+
+export type EditState = {
+  field: keyof CharacterData | "img" | "img2";
+  prevState: string | number;
+  newState: string | number;
+}[];
