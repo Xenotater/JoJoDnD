@@ -6,6 +6,7 @@ import {useSession} from "next-auth/react";
 import LinkedList from "@/app/Utilities/list.utility";
 import { cloneDeep } from "lodash";
 import CharactersModal from "./CharactersModal";
+import doAutofill from "@/app/resources/editor/Components/CharacterManagement/Autofill.utility";
 
 export interface CharacterManager {
   currentItem: CharacterOrFolder | undefined;
@@ -83,7 +84,7 @@ export default function CharacterManagementContextProvider({bucketUrl, children}
     const storedChar = sessionStorage.getItem("charData");
     if (storedChar && storedChar != "undefined") {
       setLoadedCharacter(JSON.parse(storedChar));
-      saveChanges(JSON.parse(storedChar), true);
+      saveChanges(JSON.parse(storedChar), {force: true});
     }
   }, []);
 
@@ -92,8 +93,8 @@ export default function CharacterManagementContextProvider({bucketUrl, children}
   }, [step, saveStates]);
 
   //TODO: Consider saving a list of changes, rather than the whole form state
-  const saveChanges = (char: Character, force = false) => {
-    if (!force && JSON.stringify(char) == sessionStorage.getItem("charData"))
+  const saveChanges = (char: Character, options?: {force?: boolean, noAuto?: boolean}) => {
+    if (!options?.force && JSON.stringify(char) == sessionStorage.getItem("charData"))
       return;
     const newStates = cloneDeep(saveStates);
     const state: EditState = (Object.entries(char.data) as [keyof CharacterData, string | number][]).flatMap((field) => field[1] != loadedChar.data[field[0]] ? {field: field[0], prevState: loadedChar.data[field[0]], newState: field[1]} : []);
@@ -101,7 +102,6 @@ export default function CharacterManagementContextProvider({bucketUrl, children}
       state.push({field: "img", prevState: loadedChar.img ?? "", newState: char.img ?? ""});
     if (char.img2 != loadedChar.img2)
       state.push({field: "img2", prevState: loadedChar.img2 ?? "", newState: char.img2 ?? ""});
-    sessionStorage.setItem("charData", JSON.stringify(char));
     newStates.insertAt(state, 0);
     if (step > 0) {
       for (let i = 0; i < step; i++)
@@ -113,6 +113,9 @@ export default function CharacterManagementContextProvider({bucketUrl, children}
         newStates.removeAt(newStates.len - 1);
     }
     setSaveStates(newStates);
+    sessionStorage.setItem("charData", JSON.stringify(char));
+    if (!options?.noAuto && setting.autofill)
+      saveChanges(doAutofill(char, state), {noAuto: true})
   };
 
   const updateCharFromState = (state: EditState, dir: "prev" | "new") => {
@@ -179,14 +182,12 @@ export default function CharacterManagementContextProvider({bucketUrl, children}
           updateSettingsFromMeta(newCharacter);
         },
         save: (character: Character, createState = true) => {
-          console.log("loaded: " + character.data.meta)
           setLoadedCharacter(character);
           if (createState)
             saveChanges(character);
           updateSettingsFromMeta(character);
         },
         rename: (item: CharacterOrFolder) => {
-          console.log("rename")
           setCurrentItem(item);
           setManagementAction("Rename");
         },

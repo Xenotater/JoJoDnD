@@ -11,24 +11,20 @@ import {useEffect, useState} from "react";
 import {useCharacterManager} from "../../CharacterManagement/CharacterManagementContext";
 import { useTranslations } from "next-intl";
 import Textarea from "@/app/Components/Layout/Forms/Controlled/Textarea";
-import { useSession } from "next-auth/react";
 
 export default function StandardPage2({data, updateField}: {data: Partial<CharacterData>; updateField: (name: string, value: unknown) => void}) {
   const t = useTranslations("Editor");
   const manager = useCharacterManager();
-  const {data: session} = useSession();
   const [stats, setStats] = useState<Record<string, number>>({});
 
   useEffect(() => {
-    const suffix = manager.settings.modOnTop ? "score" : "mod";
-    
     setStats({
-      Power: parseInt(data[`Sstr-${suffix}`] ?? "0"),
-      Speed: parseInt(data[`Swis-${suffix}`] ?? "0"),
-      Range: parseInt(data[`Sint-${suffix}`] ?? "0"),
-      Durability: parseInt(data[`Scon-${suffix}`] ?? "0"),
-      Precision: parseInt(data[`Sdex-${suffix}`] ?? "0"),
-      Potential: parseInt(data[`Scha-${suffix}`] ?? "0"),
+      Power: parseInt(data[`Sstr-score`] ?? "0"),
+      Speed: parseInt(data[`Swis-score`] ?? "0"),
+      Range: parseInt(data[`Sint-score`] ?? "0"),
+      Durability: parseInt(data[`Scon-score`] ?? "0"),
+      Precision: parseInt(data[`Sdex-score`] ?? "0"),
+      Potential: parseInt(data[`Scha-score`] ?? "0"),
     });
   }, [data, manager.settings.modOnTop]);
 

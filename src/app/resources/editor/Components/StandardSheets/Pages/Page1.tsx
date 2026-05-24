@@ -12,11 +12,15 @@ import Textarea from "@/app/Components/Layout/Forms/Controlled/Textarea";
 import Select from "@/app/Components/Layout/Forms/Controlled/Select";
 import Input from "@/app/Components/Layout/Forms/Controlled/Input";
 import {useEffect, useState} from "react";
+import { useCharacterManager } from "../../CharacterManagement/CharacterManagementContext";
 
 export default function StandardPage1({data, updateField}: {data: Partial<CharacterData>; updateField: (name: string, value: unknown) => void}) {
+  const manager = useCharacterManager();
   const t = useTranslations("Editor");
   const characterClasses: Record<string, string> = {pow: "Power", rng: "Ranged", rmt: "Remote", abl: "Ability", enh: "Enhancement", rev: "Revenge", ind: "Independent", hive: "Hive", act: "Act", rip: "Ripple", spin: "Spin", art: "Artisan", ass: "Assassin", con: "Consul", heav: "Heavyweight", ran: "Ranger", sch: "Scholar", war: "Warrior", multi: "Other/Multiple"};
   const [otherClass, setOtherClass] = useState(false);
+  const topSuffix = manager.settings.modOnTop ? "mod" : "score";
+  const bottomSuffix = manager.settings.modOnTop ? "score" : "mod";
 
   useEffect(() => {
     setOtherClass(data.class == "multi");
@@ -112,52 +116,52 @@ export default function StandardPage1({data, updateField}: {data: Partial<Charac
           <ScalingInput className={styles.bigInput} fontmax={24} value={data.percep} onBlur={(e) => updateField("percep", e.target.value)} />
         </InputWrapper>
         <InputWrapper label={t("strength")} className="col-span-2 min-w-0">
-          <ScalingInput className={`${styles.bigInput} h-[50px] text-4xl`} fontmax={36} value={data["str-mod"]} onBlur={(e) => updateField("str-mod", e.target.value)} />
-          <ScalingInput className={`${styles.bigInput} border-t-0 h-[30px] text-base`} fontmax={24} value={data["str-score"]} onBlur={(e) => updateField("str-score", e.target.value)} />
+          <ScalingInput className={`${styles.bigInput} h-[50px] text-4xl`} fontmax={36} value={data[`str-${topSuffix}`]} onBlur={(e) => updateField(`str-${topSuffix}`, e.target.value)} />
+          <ScalingInput className={`${styles.bigInput} border-t-0 h-[30px] text-base`} fontmax={24} value={data[`str-${bottomSuffix}`]} onBlur={(e) => updateField(`str-${bottomSuffix}`, e.target.value)} />
         </InputWrapper>
         <InputWrapper label={t("dexterity")} className="col-span-2 min-w-0">
-          <ScalingInput className={`${styles.bigInput} h-[50px] text-4xl`} fontmax={36} value={data["dex-mod"]} onBlur={(e) => updateField("dex-mod", e.target.value)} />
-          <ScalingInput className={`${styles.bigInput} border-t-0 h-[30px] text-base`} fontmax={24} value={data["dex-score"]} onBlur={(e) => updateField("dex-score", e.target.value)} />
+          <ScalingInput className={`${styles.bigInput} h-[50px] text-4xl`} fontmax={36} value={data[`dex-${topSuffix}`]} onBlur={(e) => updateField(`dex-${topSuffix}`, e.target.value)} />
+          <ScalingInput className={`${styles.bigInput} border-t-0 h-[30px] text-base`} fontmax={24} value={data[`dex-${bottomSuffix}`]} onBlur={(e) => updateField(`dex-${bottomSuffix}`, e.target.value)} />
         </InputWrapper>
         <InputWrapper label={t("constitution")} className="col-span-2 min-w-0">
-          <ScalingInput className={`${styles.bigInput} h-[50px] text-4xl`} fontmax={36} value={data["con-mod"]} onBlur={(e) => updateField("con-mod", e.target.value)} />
-          <ScalingInput className={`${styles.bigInput} border-t-0 h-[30px] text-base`} fontmax={24} value={data["con-score"]} onBlur={(e) => updateField("con-score", e.target.value)} />
+          <ScalingInput className={`${styles.bigInput} h-[50px] text-4xl`} fontmax={36} value={data[`con-${topSuffix}`]} onBlur={(e) => updateField(`con-${topSuffix}`, e.target.value)} />
+          <ScalingInput className={`${styles.bigInput} border-t-0 h-[30px] text-base`} fontmax={24} value={data[`con-${bottomSuffix}`]} onBlur={(e) => updateField(`con-${bottomSuffix}`, e.target.value)} />
         </InputWrapper>
         <InputWrapper label={t("intelligence")} className="col-span-2 min-w-0">
-          <ScalingInput className={`${styles.bigInput} h-[50px] text-4xl`} fontmax={36} value={data["int-mod"]} onBlur={(e) => updateField("int-mod", e.target.value)} />
-          <ScalingInput className={`${styles.bigInput} border-t-0 h-[30px] text-base`} fontmax={24} value={data["int-score"]} onBlur={(e) => updateField("int-score", e.target.value)} />
+          <ScalingInput className={`${styles.bigInput} h-[50px] text-4xl`} fontmax={36} value={data[`int-${topSuffix}`]} onBlur={(e) => updateField(`int-${topSuffix}`, e.target.value)} />
+          <ScalingInput className={`${styles.bigInput} border-t-0 h-[30px] text-base`} fontmax={24} value={data[`int-${bottomSuffix}`]} onBlur={(e) => updateField(`int-${bottomSuffix}`, e.target.value)} />
         </InputWrapper>
         <InputWrapper label={t("wisdom")} className="col-span-2 min-w-0">
-          <ScalingInput className={`${styles.bigInput} h-[50px] text-4xl`} fontmax={36} value={data["wis-mod"]} onBlur={(e) => updateField("wis-mod", e.target.value)} />
-          <ScalingInput className={`${styles.bigInput} border-t-0 h-[30px] text-base`} fontmax={24} value={data["wis-score"]} onBlur={(e) => updateField("wis-score", e.target.value)} />
+          <ScalingInput className={`${styles.bigInput} h-[50px] text-4xl`} fontmax={36} value={data[`wis-${topSuffix}`]} onBlur={(e) => updateField(`wis-${topSuffix}`, e.target.value)} />
+          <ScalingInput className={`${styles.bigInput} border-t-0 h-[30px] text-base`} fontmax={24} value={data[`wis-${bottomSuffix}`]} onBlur={(e) => updateField(`wis-${bottomSuffix}`, e.target.value)} />
         </InputWrapper>
         <InputWrapper label={t("charisma")} className="col-span-2 min-w-0">
-          <ScalingInput className={`${styles.bigInput} h-[50px] text-4xl`} fontmax={36} value={data["cha-mod"]} onBlur={(e) => updateField("cha-mod", e.target.value)} />
-          <ScalingInput className={`${styles.bigInput} border-t-0 h-[30px] text-base`} fontmax={24} value={data["cha-score"]} onBlur={(e) => updateField("cha-score", e.target.value)} />
+          <ScalingInput className={`${styles.bigInput} h-[50px] text-4xl`} fontmax={36} value={data[`cha-${topSuffix}`]} onBlur={(e) => updateField(`cha-${topSuffix}`, e.target.value)} />
+          <ScalingInput className={`${styles.bigInput} border-t-0 h-[30px] text-base`} fontmax={24} value={data[`cha-${bottomSuffix}`]} onBlur={(e) => updateField(`cha-${bottomSuffix}`, e.target.value)} />
         </InputWrapper>
         <InputWrapper label={t("power")} className="col-span-2 min-w-0">
-          <ScalingInput className={`${styles.bigInput} h-[50px] text-4xl`} fontmax={36} value={data["Sstr-mod"]} onBlur={(e) => updateField("Sstr-mod", e.target.value)} />
-          <ScalingInput className={`${styles.bigInput} border-t-0 h-[30px] text-base`} fontmax={24} value={data["Sstr-score"]} onBlur={(e) => updateField("Sstr-score", e.target.value)} />
+          <ScalingInput className={`${styles.bigInput} h-[50px] text-4xl`} fontmax={36} value={data[`Sstr-${topSuffix}`]} onBlur={(e) => updateField(`Sstr-${topSuffix}`, e.target.value)} />
+          <ScalingInput className={`${styles.bigInput} border-t-0 h-[30px] text-base`} fontmax={24} value={data[`Sstr-${bottomSuffix}`]} onBlur={(e) => updateField(`Sstr-${bottomSuffix}`, e.target.value)} />
         </InputWrapper>
         <InputWrapper label={t("precision")} className="col-span-2 min-w-0">
-          <ScalingInput className={`${styles.bigInput} h-[50px] text-4xl`} fontmax={36} value={data["Sdex-mod"]} onBlur={(e) => updateField("Sdex-mod", e.target.value)} />
-          <ScalingInput className={`${styles.bigInput} border-t-0 h-[30px] text-base`} fontmax={24} value={data["Sdex-score"]} onBlur={(e) => updateField("Sdex-score", e.target.value)} />
+          <ScalingInput className={`${styles.bigInput} h-[50px] text-4xl`} fontmax={36} value={data[`Sdex-${topSuffix}`]} onBlur={(e) => updateField(`Sdex-${topSuffix}`, e.target.value)} />
+          <ScalingInput className={`${styles.bigInput} border-t-0 h-[30px] text-base`} fontmax={24} value={data[`Sdex-${bottomSuffix}`]} onBlur={(e) => updateField(`Sdex-${bottomSuffix}`, e.target.value)} />
         </InputWrapper>
         <InputWrapper label={t("durability")} className="col-span-2 min-w-0">
-          <ScalingInput className={`${styles.bigInput} h-[50px] text-4xl`} fontmax={36} value={data["Scon-mod"]} onBlur={(e) => updateField("Scon-mod", e.target.value)} />
-          <ScalingInput className={`${styles.bigInput} border-t-0 h-[30px] text-base`} fontmax={24} value={data["Scon-score"]} onBlur={(e) => updateField("Scon-score", e.target.value)} />
+          <ScalingInput className={`${styles.bigInput} h-[50px] text-4xl`} fontmax={36} value={data[`Scon-${topSuffix}`]} onBlur={(e) => updateField(`Scon-${topSuffix}`, e.target.value)} />
+          <ScalingInput className={`${styles.bigInput} border-t-0 h-[30px] text-base`} fontmax={24} value={data[`Scon-${bottomSuffix}`]} onBlur={(e) => updateField(`Scon-${bottomSuffix}`, e.target.value)} />
         </InputWrapper>
         <InputWrapper label={t("range")} className="col-span-2 min-w-0">
-          <ScalingInput className={`${styles.bigInput} h-[50px] text-4xl`} fontmax={36} value={data["Sint-mod"]} onBlur={(e) => updateField("Sint-mod", e.target.value)} />
-          <ScalingInput className={`${styles.bigInput} border-t-0 h-[30px] text-base`} fontmax={24} value={data["Sint-score"]} onBlur={(e) => updateField("Sint-score", e.target.value)} />
+          <ScalingInput className={`${styles.bigInput} h-[50px] text-4xl`} fontmax={36} value={data[`Sint-${topSuffix}`]} onBlur={(e) => updateField(`Sint-${topSuffix}`, e.target.value)} />
+          <ScalingInput className={`${styles.bigInput} border-t-0 h-[30px] text-base`} fontmax={24} value={data[`Sint-${bottomSuffix}`]} onBlur={(e) => updateField(`Sint-${bottomSuffix}`, e.target.value)} />
         </InputWrapper>
         <InputWrapper label={t("speed")} className="col-span-2 min-w-0">
-          <ScalingInput className={`${styles.bigInput} h-[50px] text-4xl`} fontmax={36} value={data["Swis-mod"]} onBlur={(e) => updateField("Swis-mod", e.target.value)} />
-          <ScalingInput className={`${styles.bigInput} border-t-0 h-[30px] text-base`} fontmax={24} value={data["Swis-score"]} onBlur={(e) => updateField("Swis-score", e.target.value)} />
+          <ScalingInput className={`${styles.bigInput} h-[50px] text-4xl`} fontmax={36} value={data[`Swis-${topSuffix}`]} onBlur={(e) => updateField(`Swis-${topSuffix}`, e.target.value)} />
+          <ScalingInput className={`${styles.bigInput} border-t-0 h-[30px] text-base`} fontmax={24} value={data[`Swis-${bottomSuffix}`]} onBlur={(e) => updateField(`Swis-${bottomSuffix}`, e.target.value)} />
         </InputWrapper>
         <InputWrapper label={t("standEnergy")} className="col-span-2 min-w-0">
-          <ScalingInput className={`${styles.bigInput} h-[50px] text-4xl`} fontmax={36} value={data["Scha-mod"]} onBlur={(e) => updateField("Scha-mod", e.target.value)} />
-          <ScalingInput className={`${styles.bigInput} border-t-0 h-[30px] text-base`} fontmax={24} value={data["Scha-score"]} onBlur={(e) => updateField("Scha-score", e.target.value)} />
+          <ScalingInput className={`${styles.bigInput} h-[50px] text-4xl`} fontmax={36} value={data[`Scha-${topSuffix}`]} onBlur={(e) => updateField(`Scha-${topSuffix}`, e.target.value)} />
+          <ScalingInput className={`${styles.bigInput} border-t-0 h-[30px] text-base`} fontmax={24} value={data[`Scha-${bottomSuffix}`]} onBlur={(e) => updateField(`Scha-${bottomSuffix}`, e.target.value)} />
         </InputWrapper>
         <div className="col-span-6 flex text-sm">
           <div className="w-[60%]">

@@ -8,9 +8,13 @@ import {BsFolderFill} from "react-icons/bs";
 import {useState} from "react";
 import { doGetCharacterData } from "@/app/Actions/editor.action";
 import CharacterManagementMenu from "./CharacterManagementMenu";
+import { useToastController } from "@/app/Components/Layout/Toasts/ToastControllerProvider";
+import { useTranslations } from "next-intl";
 
 export default function CharacterInfoCard({data, closeCallback, updateCallback}: {data: CharacterOrFolder, closeCallback: () => void, updateCallback: () => void}) {
   const manager = useCharacterManager();
+  const toasts = useToastController();
+  const t = useTranslations("Editor.ui");
   const {data: session} = useSession();
   const [imgSrc, setImgSrc] = useState(`${manager.bucketUrl}/Characters/${session?.user.name}_${data.id}.webp`);
   const isFolder = data.parent_id != undefined;
@@ -25,6 +29,7 @@ export default function CharacterInfoCard({data, closeCallback, updateCallback}:
       const newChar = await doGetCharacterData(data.id);
       if (newChar) {
         manager.save(newChar);
+        toasts.displayMessage(t("Character.loaded"), {type: "Success"});
         closeCallback();
       }
     }

@@ -12,9 +12,11 @@ import {doCaptureSheetImage, doCaptureSheetPDF, doSaveCharacterData, doUploadCha
 import {base64ToFile, fileToFormData} from "@/app/Utilities/misc.utility";
 import {useRef, useState} from "react";
 import Select from "@/app/Components/Layout/Forms/Controlled/Select";
+import { useToastController } from "@/app/Components/Layout/Toasts/ToastControllerProvider";
 
 export default function EditorClient() {
   const manager = useCharacterManager();
+  const toasts = useToastController();
   const t = useTranslations("Editor");
   const locale = useLocale();
   const downloadRef = useRef<HTMLAnchorElement>(null);
@@ -28,6 +30,11 @@ export default function EditorClient() {
     manager.save({...char, id: newId}, false);
     if (char.img && /^data:/.test(char.img)) await doUploadCharacterImage(fileToFormData(base64ToFile(char.img, `${char.name}`)), newId);
     if (char.img2 && /^data:/.test(char.img2)) await doUploadCharacterImage(fileToFormData(base64ToFile(char.img2, `${char.name}_alt`)), newId, true);
+    if (newId)
+      toasts.displayMessage(t("ui.Character.saved"), {type: "Success"});
+    else
+      
+        toasts.displayMessage(t("ui.error"), {type: "Success"});
   };
 
   const doDownloadPDF = async () => {

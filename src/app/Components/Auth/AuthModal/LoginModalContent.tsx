@@ -32,7 +32,7 @@ export default function LoginModalContent({contentSwitchCallback, closeCallback,
       }}>
         <div>
           <label htmlFor="user">Username</label><br/>
-          <input required id="user" name="username" type="text" onChange={() => setMessage("")}/>
+          <input required autoFocus id="user" name="username" type="text" onChange={() => setMessage("")}/>
         </div>
         <div>
           <label htmlFor="pass">Password</label><br/>
