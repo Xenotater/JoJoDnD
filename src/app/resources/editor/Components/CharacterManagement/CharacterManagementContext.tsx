@@ -18,7 +18,7 @@ export interface CharacterManager {
   redo: () => void;
   load: () => void;
   new: () => void;
-  save: (character: Character, createState?: boolean) => void;
+  save: (character: Character, createState?: boolean, autofill?: boolean) => void;
   rename: (item: CharacterOrFolder) => void;
   move: (item: CharacterOrFolder) => void;
   delete: (item: CharacterOrFolder) => void;
@@ -84,38 +84,51 @@ export default function CharacterManagementContextProvider({bucketUrl, children}
     const storedChar = sessionStorage.getItem("charData");
     if (storedChar && storedChar != "undefined") {
       setLoadedCharacter(JSON.parse(storedChar));
-      saveChanges(JSON.parse(storedChar), {force: true});
     }
   }, []);
 
   useEffect(() => {
-    setSetting({...setting, allowRedo: step > 0, allowUndo: step < MAX_STEPS && step < saveStates.len - 1})
+    updateSettingsFromMeta(loadedChar);
+  }, [loadedChar.data.meta]);
+
+  useEffect(() => {
+    setSetting({...setting, allowRedo: step > 0, allowUndo: step < MAX_STEPS && step < saveStates.len})
   }, [step, saveStates]);
 
-  //TODO: Consider saving a list of changes, rather than the whole form state
-  const saveChanges = (char: Character, options?: {force?: boolean, noAuto?: boolean}) => {
+  const saveChanges = (char: Character, options?: {force?: boolean, noState?: boolean, noAuto?: boolean}) => {
     if (!options?.force && JSON.stringify(char) == sessionStorage.getItem("charData"))
       return;
+
     const newStates = cloneDeep(saveStates);
     const state: EditState = (Object.entries(char.data) as [keyof CharacterData, string | number][]).flatMap((field) => field[1] != loadedChar.data[field[0]] ? {field: field[0], prevState: loadedChar.data[field[0]], newState: field[1]} : []);
-    if (char.img != loadedChar.img)
-      state.push({field: "img", prevState: loadedChar.img ?? "", newState: char.img ?? ""});
-    if (char.img2 != loadedChar.img2)
-      state.push({field: "img2", prevState: loadedChar.img2 ?? "", newState: char.img2 ?? ""});
-    newStates.insertAt(state, 0);
-    if (step > 0) {
-      for (let i = 0; i < step; i++)
-        newStates.removeAt(newStates.len - 1);
-      setStep(0);
-    }
-    else {
-      if (newStates.len > MAX_STEPS)
-        newStates.removeAt(newStates.len - 1);
-    }
-    setSaveStates(newStates);
-    sessionStorage.setItem("charData", JSON.stringify(char));
+
     if (!options?.noAuto && setting.autofill)
-      saveChanges(doAutofill(char, state), {noAuto: true})
+    {
+      saveChanges(doAutofill(char, state), {noAuto: true});
+      return;
+    }
+    
+    if (!options?.noState) {
+      if (char.img != loadedChar.img)
+        state.push({field: "img", prevState: loadedChar.img ?? "", newState: char.img ?? ""});
+      if (char.img2 != loadedChar.img2)
+        state.push({field: "img2", prevState: loadedChar.img2 ?? "", newState: char.img2 ?? ""});
+      newStates.insertAt(state, 0);
+      if (step > 0) {
+        for (let i = 0; i < step; i++)
+          newStates.removeAt(newStates.len - 1);
+        setStep(0);
+      }
+      else {
+        if (newStates.len > MAX_STEPS)
+          newStates.removeAt(newStates.len - 1);
+      }
+      setSaveStates(newStates);
+    }
+
+    sessionStorage.setItem("charData", JSON.stringify(char));
+    setLoadedCharacter(char);
+    updateSettingsFromMeta(char);
   };
 
   const updateCharFromState = (state: EditState, dir: "prev" | "new") => {
@@ -177,15 +190,10 @@ export default function CharacterManagementContextProvider({bucketUrl, children}
         },
         new: () => {
           const newCharacter = blankCharacter(session?.user.name ?? "");
-          setLoadedCharacter(newCharacter);
           saveChanges(newCharacter);
-          updateSettingsFromMeta(newCharacter);
         },
-        save: (character: Character, createState = true) => {
-          setLoadedCharacter(character);
-          if (createState)
-            saveChanges(character);
-          updateSettingsFromMeta(character);
+        save: (character: Character, createState = true, autofill = true) => {
+          saveChanges(character, {noState: !createState, noAuto: !autofill});
         },
         rename: (item: CharacterOrFolder) => {
           setCurrentItem(item);

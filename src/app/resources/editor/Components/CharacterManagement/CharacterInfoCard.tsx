@@ -28,7 +28,7 @@ export default function CharacterInfoCard({data, closeCallback, updateCallback}:
     else {
       const newChar = await doGetCharacterData(data.id);
       if (newChar) {
-        manager.save(newChar);
+        manager.save(newChar, true, false);
         toasts.displayMessage(t("Character.loaded"), {type: "Success"});
         closeCallback();
       }
