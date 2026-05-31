@@ -173,7 +173,7 @@ export default function ActPage({data, updateField}: {data: Partial<CharacterDat
         </div>
         <label className="col-span-4 flex gap-2 items-baseline">
         <span>{t("actBased")}</span>
-        <Select className="mt-2 px-2 border-2 appearance-none grow py-[2px]" value={data.act4Base} onBlur={(e) => updateField("act4Base", e.target.value)} >
+        <Select className="mt-2 px-2 border-2 appearance-none grow py-[2px]" value={data.act4Base ?? "act3"} onChange={(e) => updateField("act4Base", e.target.value)} >
           <option value="act1">{t("act1")}</option>
           <option value="act2">{t("act2")}</option>
           <option value="act3">{t("act3")}</option>

@@ -68,7 +68,7 @@ export default function StandardPage1({data, updateField}: {data: Partial<Charac
                 ))}
               </Select>
             )}
-            {data.class == "act" && <Input type="number" className="border-0 bg-white w-[30px] text-base absolute left-10 pl-0" defaultValue={1} min={1} max={4} value={data.selectedAct} onBlur={(e) => updateField("SelectedAct", e.target.value)} />}
+            {data.class == "act" && <Input type="number" className="border-0 bg-white w-[30px] text-base absolute left-10 pl-0" min={1} max={4} value={data.selectedAct ?? 1} onBlur={(e) => updateField("selectedAct", e.target.value)} />}
             <ScalingInput className="border-0 bg-white w-[50px] shrink-0 border-l-2 border-black h-full flex items-center justify-center" fontmax={24} value={data.level} onBlur={(e) => updateField("level", e.target.value)} />
           </div>
         </InputWrapper>

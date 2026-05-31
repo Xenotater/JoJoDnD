@@ -9,7 +9,10 @@ import {copyS3File, delS3File, getBucketURL, postS3File} from "../Utilities/aws.
 import puppeteer from "puppeteer";
 
 export async function doGetCharacterData(id: number) {
-  return await getWithPermission(id);
+  const char = await getWithPermission(id);
+  if (char)
+    char.data = await fixOldData(char.data);
+  return char;
 }
 
 async function getWithPermission(id: number) {
@@ -24,7 +27,7 @@ async function getCharacter(id: number) {
   const resp = await doDBQuery("SELECT id, username, name, data, folder_id, modified_ts FROM characters WHERE id = ? LIMIT 1", [`${id}`], false);
   if (resp.status == 200) {
     const char: {id: number; username: string; name: string; data: string; folder_id: number; modified_ts: Date} = (await resp.json())[0];
-    const data = await fixOldData(formToJson<CharacterData>(JSON.parse(char.data)));
+    const data = formToJson<CharacterData>(JSON.parse(char.data));
     const img = `${await getBucketURL()}/Characters/${char.username}_${char.id}.webp?v=${char.modified_ts}`;
     const img2 = `${await getBucketURL()}/Characters/${char.username}_${char.id}_alt.webp?v=${char.modified_ts}`;
     return {...char, img, img2, data} as Character;
@@ -33,7 +36,7 @@ async function getCharacter(id: number) {
 }
 
 async function fixOldData(data: CharacterData) {
-  const hasStatsFlipped = Object.entries(data).some(field => field[0].includes("-score") && field[1].includes("+"));
+  const hasStatsFlipped = data["str-score"].includes("+");
   if (hasStatsFlipped) {
     const stats = ["str", "dex", "con", "int", "wis", "cha", "Sstr", "Sdex", "Scon", "Sint", "Swis", "Scha"];
     stats.forEach(stat => {
