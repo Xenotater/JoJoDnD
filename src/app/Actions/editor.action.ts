@@ -36,8 +36,8 @@ async function getCharacter(id: number) {
 }
 
 async function fixOldData(data: CharacterData) {
-  const hasStatsFlipped = data["str-score"].includes("+");
-  if (hasStatsFlipped) {
+  //stats are flipped
+  if (data["str-score"].includes("+")) {
     const stats = ["str", "dex", "con", "int", "wis", "cha", "Sstr", "Sdex", "Scon", "Sint", "Swis", "Scha"];
     stats.forEach(stat => {
       const scoreKey = `${stat}-score` as keyof CharacterData;

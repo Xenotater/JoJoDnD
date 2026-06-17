@@ -11,39 +11,39 @@ export default function SkillsAndSavesBox({data, updateField}: {data: Partial<Ch
 
 
   return (
-    <div className="w-full h-full grid grid-cols-5">
-      <div>
+    <div className="w-full h-full flex">
+      <div className="w-[21%]">
         <p className="text-sm text-center">{t("saves")}</p>
         <div className="w-full h-[calc(100%-20px)] border-2">
           <div className="pt-0.5 text-sm">
             <label className="flex justify-between items-center px-0.5">
               <span className="w-[40%]">{t("str")}</span>
-              <Input type="checkbox" checked={data["str-save"] == "on"} onBlur={(e) => updateField("str-save", e.target.checked ? "on" : undefined)}/>
+              <ProficiencySelect name="ath" value={data["str-save"]} onChange={(e) => updateField("str-save", e.target.value)}/>
               <Input className="border-0 border-black border-b-1 bg-white w-[20px] h-[16px] p-0 text-center" value={data["str-bonus"]} onBlur={(e) => updateField("str-bonus", e.target.value)}/>
             </label>
             <label className="flex justify-between items-center px-0.5">
               <span className="w-[40%]">{t("dex")}</span>
-              <Input type="checkbox" checked={data["dex-save"] == "on"} onBlur={(e) => updateField("dex-save", e.target.checked ? "on" : undefined)}/>
+              <ProficiencySelect name="ath" value={data["dex-save"]} onChange={(e) => updateField("dex-save", e.target.value)}/>
               <Input className="border-0 border-black border-b-1 bg-white w-[20px] h-[16px] p-0 text-center" value={data["dex-bonus"]} onBlur={(e) => updateField("dex-bonus", e.target.value)}/>
             </label>
             <label className="flex justify-between items-center px-0.5">
               <span className="w-[40%]">{t("con")}</span>
-              <Input type="checkbox" checked={data["con-save"] == "on"} onBlur={(e) => updateField("con-save", e.target.checked ? "on" : undefined)}/>
+              <ProficiencySelect name="ath" value={data["con-save"]} onChange={(e) => updateField("con-save", e.target.value)}/>
               <Input className="border-0 border-black border-b-1 bg-white w-[20px] h-[16px] p-0 text-center" value={data["con-bonus"]} onBlur={(e) => updateField("con-bonus", e.target.value)}/>
             </label>
             <label className="flex justify-between items-center px-0.5">
               <span className="w-[40%]">{t("int")}</span>
-              <Input type="checkbox" checked={data["int-save"] == "on"} onBlur={(e) => updateField("int-save", e.target.checked ? "on" : undefined)}/>
+              <ProficiencySelect name="ath" value={data["int-save"]} onChange={(e) => updateField("int-save", e.target.value)}/>
               <Input className="border-0 border-black border-b-1 bg-white w-[20px] h-[16px] p-0 text-center" value={data["int-bonus"]} onBlur={(e) => updateField("int-bonus", e.target.value)}/>
             </label>
             <label className="flex justify-between items-center px-0.5">
               <span className="w-[40%]">{t("wis")}</span>
-              <Input type="checkbox" checked={data["wis-save"] == "on"} onBlur={(e) => updateField("wis-save", e.target.checked ? "on" : undefined)}/>
+              <ProficiencySelect name="ath" value={data["wis-save"]} onChange={(e) => updateField("wis-save", e.target.value)}/>
               <Input className="border-0 border-black border-b-1 bg-white w-[20px] h-[16px] p-0 text-center" value={data["wis-bonus"]} onBlur={(e) => updateField("wis-bonus", e.target.value)}/>
             </label>
             <label className="flex justify-between items-center px-0.5">
               <span className="w-[40%]">{t("cha")}</span>
-              <Input type="checkbox" checked={data["cha-save"] == "on"} onBlur={(e) => updateField("cha-save", e.target.checked ? "on" : undefined)}/>
+              <ProficiencySelect name="ath" value={data["cha-save"]} onChange={(e) => updateField("cha-save", e.target.value)}/>
               <Input className="border-0 border-black border-b-1 bg-white w-[20px] h-[16px] p-0 text-center" value={data["cha-bonus"]} onBlur={(e) => updateField("cha-bonus", e.target.value)}/>
             </label>
           </div>
@@ -55,7 +55,7 @@ export default function SkillsAndSavesBox({data, updateField}: {data: Partial<Ch
           </div>
         </div>
       </div>
-      <div className="col-span-4">
+      <div className="w-[79%]">
         <p className="text-sm text-center">
           {t("skills")}{" "}
           {!isNaN(bonusProfs) &&

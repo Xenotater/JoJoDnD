@@ -20,6 +20,7 @@ export default function StandardPage1({data, updateField}: {data: Partial<Charac
   const characterClasses: Record<string, string> = {pow: "Power", rng: "Ranged", rmt: "Remote", abl: "Ability", enh: "Enhancement", rev: "Revenge", ind: "Independent", hive: "Hive", act: "Act", rip: "Ripple", spin: "Spin", art: "Artisan", ass: "Assassin", con: "Consul", heav: "Heavyweight", ran: "Ranger", sch: "Scholar", war: "Warrior", multi: "Other/Multiple"};
   const [otherClass, setOtherClass] = useState(false);
   const [statSuffixes, setStatSuffixes] = useState<{top: "mod" | "score", bottom: "mod" | "score"}>({top: "mod", bottom: "score"})
+  const featsCount = parseInt(data.bonus ?? "0") + (data.race?.toLowerCase().includes("human") && !data.race?.toLowerCase().includes("rock") ? 1 : 0);
 
   useEffect(() => {
     setStatSuffixes(manager.settings.modOnTop ? {top: "mod", bottom: "score"} : {top: "score", bottom: "mod"});
@@ -172,7 +173,12 @@ export default function StandardPage1({data, updateField}: {data: Partial<Charac
             <Textarea className={`${styles.bigInput} h-[150px] text-xs text-left leading-3 p-1 resize-none`} value={data.classFeats} onBlur={(e) => updateField("classFeats", e.target.value)} />
           </div>
           <div className="w-[40%]">
-            <p className="text-center">{t("feats")}</p>
+            <p className="text-center">
+              {t("feats")}
+              {!isNaN(featsCount) &&
+                <span> (+{featsCount})</span>
+              }
+              </p>
             <Textarea className={`${styles.bigInput} h-[150px] border-l-0 text-xs text-left leading-3 p-1 resize-none`} value={data.otherFeats} onBlur={(e) => updateField("otherFeats", e.target.value)} />
           </div>
         </div>
