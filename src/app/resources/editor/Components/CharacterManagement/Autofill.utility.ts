@@ -171,7 +171,6 @@ function updateActScores(char: Character, stat: string, diff: number, act?: numb
     return;
   const typesContent = getClassData("Act-Type")!.other![0]!.content[1]; //TODO: getting this out of text content is gross but better than having it in two separate places, consider moving this list elsewhere
   const multMatches = [...typesContent.matchAll(/(?<=x)\d+/gm)].map(m => m[0]);
-  console.log(multMatches);
   [1,2,3,4].forEach(i => {
     if (!act || i == act) {
       const base = i == 4 ? parseInt(char.data.act4Base?.replace("act", "")) ?? "3" : i;
@@ -377,9 +376,6 @@ function updateSDC(char: Character) {
   const cha = parseInt(char.data["cha-mod"] ?? "0");
   const calc = countFeat(char, "calculating") > 0 ? 2 : 0;
   const stat = calc > 0 ? Math.max(int, wis, cha) : cha;
-  console.log(calc);
-  console.log(stat);
-  console.log(Math.max(int, wis, cha))
   updateDataField(char, "dc", 8 + prof + stat + calc);
 }
 

@@ -198,5 +198,17 @@
     "actAbility": "Ability-Focused",
     "actRemote": "Remote-Focused",
     "actBased": "Based on:"
+  },
+  "Misc": {
+    "DiceRoller": {
+      "prompt": "Enter Roll Notation Below:",
+      "pickerPrompt": "Add dice by clicking the icons above",
+      "clear": "Clear",
+      "throw": "Throw",
+      "Presets": {
+        "picker": "Picker",
+        "custom": "Custom"
+      }
+    }
   }
 }

@@ -3,7 +3,7 @@
 :root {
   --background: mediumslateblue;
   --foreground: mediumpurple;
-  --border: purple;
+  --border: #800080;
   --headerHeight: 100px;
   --fullContentHeight: calc(100vh - var(--headerHeight));
   --desktopBreakpoint: 1024;

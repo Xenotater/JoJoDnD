@@ -10,6 +10,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@3d-dice/dice-box": "^1.1.4",
+    "@3d-dice/dice-parser-interface": "^0.2.1",
+    "@3d-dice/dice-roller-parser": "^0.2.6",
+    "@3d-dice/dice-ui": "^0.5.2",
     "@aws-sdk/client-s3": "^3.932.0",
     "@tailwindcss/postcss": "^4.1.11",
     "chart.js": "^4.5.1",
@@ -38,6 +42,7 @@
     "@types/react-textfit": "^1.1.4",
     "eslint": "^9",
     "eslint-config-next": "15.3.5",
+    "patch-package": "^8.0.1",
     "typescript": "^5"
   },
   "overrides": {

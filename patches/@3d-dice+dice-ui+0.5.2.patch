@@ -1,0 +1,12 @@
+diff --git a/node_modules/@3d-dice/dice-ui/src/index.js b/node_modules/@3d-dice/dice-ui/src/index.js
+index e3a1ff6..1b819d7 100644
+--- a/node_modules/@3d-dice/dice-ui/src/index.js
++++ b/node_modules/@3d-dice/dice-ui/src/index.js
+@@ -2,5 +2,5 @@ export { default as DisplayResults } from './displayResults'
+ export { default as AdvancedRoller } from './advancedRoller'
+ export { default as BoxControls } from './boxControls'
+ export { default as DicePicker } from './dicePicker'
+-export { default as GenesysResults } from './GenesysResults'
++export { default as GenesysResults } from './genesysResults'
+ export { default as GenesysDicePicker } from './genesysDicePicker'
+\ No newline at end of file
