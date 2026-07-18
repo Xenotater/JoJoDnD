@@ -99,7 +99,7 @@ export default function RollerDrawer({callback, presets}: {callback?: (val: numb
   };
 
   return (
-    <div className={`fixed bottom-[-8px] left-0 w-[100vw] h-[33vh] min-h-[240px] flex justify-center ${drawerOpen ? "" : "translate-y-[calc(33vh-4px)]"} transition-transform`}>
+    <div className={`fixed top-[calc(66vh+14px)] left-0 w-[100vw] h-[33vh] min-h-[240px] flex justify-center ${drawerOpen ? "" : "translate-y-[calc(33vh-4px)]"} transition-transform`}>
       <div className="content absolute h-2 w-20 top-[-34px] left-[15vw] flex justify-center items-center text-4xl text-jj-purple-1 hover:text-jj-purple-4 hover:shadow-lg/66 cursor-pointer" onClick={() => setDrawerOpen(!drawerOpen)}>
         {drawerOpen ?
           <FaCaretDown/>

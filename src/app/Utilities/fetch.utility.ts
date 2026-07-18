@@ -1,5 +1,5 @@
 import { CacheLife, cacheLife } from "next/dist/server/use-cache/cache-life";
-import { logRequest, logResponse } from "./logging.utility";
+import { logError, logRequest, logResponse } from "./logging.utility";
 import { cacheTag } from "next/dist/server/use-cache/cache-tag";
 import { HTTP_METHOD } from "next/dist/server/web/http";
 
@@ -10,7 +10,13 @@ export async function doGetFetch(endpoint: string, body: string = ""): Promise<F
     cache: "no-cache",
   });
   logResponse(response);
-  return {body: await response.json(), status: response.status};
+  try {
+    return {body: await response.json(), status: response.status};
+  }
+  catch (e) {
+    logError(e?.message ?? e as string);
+    return {body: {}, status: 500};
+  }
 }
 
 export async function doGetFetchWithCache(endpoint: string, body: string = "", cacheOptions: FetchCacheOptions = defaultCacheOptions): Promise<FetchResponse> {
