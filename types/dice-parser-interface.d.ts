@@ -41,5 +41,6 @@ declare module "@3d-dice/dice-parser-interface" {
     constructor(options?: DicePickerOptions);
     parseNotation: (notation: string) => DieRoll[];
     parseFinalResults: (results: DieResult[]) => FinalResults;
+    parsedNotation?: {type: string};
   }
 }

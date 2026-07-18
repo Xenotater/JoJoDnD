@@ -46,7 +46,7 @@ export default memo(function Header() {
     <div id="siteHeader" className="z-999">
       <div className={`${styles.header} ${isCollapsed ? styles.collapsed : ""} fixed top-0 flex justify-between w-full h-(--headerHeight) z-999`}>
         <div className="flex items-center gap-2">
-          <Link href="/"><Image src="/images/logo/icon.webp" alt="icon" width={isDesktopWidth ? 216 : 144} height={isDesktopWidth ? 90 : 60}/></Link>
+          <Link href="/"><Image src="/images/logo/icon.webp" alt="icon" width={isDesktopWidth ? 216 : 144} height={isDesktopWidth ? 90 : 60} loading="eager"/></Link>
           {isDesktopWidth && !isCollapsed &&
             <DesktopHeaderList/>
           }

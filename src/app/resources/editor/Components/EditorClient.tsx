@@ -13,6 +13,7 @@ import {base64ToFile, fileToFormData} from "@/app/Utilities/misc.utility";
 import {useRef, useState} from "react";
 import Select from "@/app/Components/Layout/Forms/Controlled/Select";
 import { useToastController } from "@/app/Components/Layout/Toasts/ToastControllerProvider";
+import CharacterRoller from "./CharacterRoller";
 
 export default function EditorClient() {
   const manager = useCharacterManager();
@@ -97,6 +98,7 @@ export default function EditorClient() {
       </div>
       <SheetForm />
       <a ref={downloadRef} className="hidden" />
+      <CharacterRoller char={manager.loadedCharacter.data}/>
     </div>
   );
 }

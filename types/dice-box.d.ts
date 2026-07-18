@@ -8,7 +8,12 @@ declare module "@3d-dice/dice-box" {
     throwForce?: number,
     spinForce?: number,
     lightIntensity?: number,
-    scale: number,
+    scale?: number,
+    settleTimeout?: number,
+    offscreen?: boolean,
+    gravity?: number,
+    angularDamping?: number,
+    linearDamping?: number,
     onRollComplete?: (results: DiceResult[]) => void;
     onBeforeRoll?: (results: DiceResult[]) => void;
   }

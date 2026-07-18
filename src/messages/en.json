@@ -201,8 +201,8 @@
   },
   "Misc": {
     "DiceRoller": {
-      "prompt": "Enter Roll Notation Below:",
-      "pickerPrompt": "Add dice by clicking the icons above",
+      "prompt": "Enter Roll Notation:",
+      "pickerPrompt": "Select from the dice above",
       "clear": "Clear",
       "throw": "Throw",
       "Presets": {
