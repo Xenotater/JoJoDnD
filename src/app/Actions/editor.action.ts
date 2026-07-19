@@ -303,8 +303,6 @@ export async function doMoveFolder(id: number, currentFolder = 0, newPath = "", 
     return resp2.status;
   } else if (newPath) {
     const existingFolder = (await (await doDBQuery(`SELECT id FROM folders WHERE parent_id = ? AND name = ? LIMIT 1`, [`${currentFolder}`, newPath], false)).json()) as {id: number}[];
-    console.log("existing:");
-    console.log(existingFolder);
     if (existingFolder.length == 0) {
       const resp = await doDBQuery(`INSERT INTO folders (name, username, parent_id) VALUES (?, ?, ?)`, [newPath, folder.username, `${currentFolder}`], false);
       const newId = (await resp.json()).insertId;
@@ -351,6 +349,7 @@ export async function doCaptureSheetPDF(char: Character, locale = "en") {
     (document.querySelector(".contentWrapper>div") as HTMLElement).style["maxWidth"] = "unset";
     (document.querySelector(".contentWrapper") as HTMLElement).classList = "";
     document.querySelectorAll("[class*='divider']").forEach(el => (el as HTMLElement).style.display = "none");
+    document.querySelectorAll("[class*='hideMe']").forEach(el => (el as HTMLElement).style.display = "none");
     document.querySelector("header")!.style.display = "none";
     document.querySelectorAll(":not(form *)").forEach(el => (el as HTMLElement).style.margin = "unset");
   })
@@ -396,6 +395,7 @@ export async function doCaptureSheetImage(char: Character, locale = "en") {
     (document.querySelector(".contentWrapper>div") as HTMLElement).style["maxWidth"] = "unset";
     (document.querySelector(".contentWrapper") as HTMLElement).classList = "";
     document.querySelectorAll("[class*='divider']").forEach(el => (el as HTMLElement).style.display = "none");
+    document.querySelectorAll("[class*='hideMe']").forEach(el => (el as HTMLElement).style.display = "none");
     document.querySelector("header")!.style.display = "none";
     document.querySelectorAll(":not(form *)").forEach(el => (el as HTMLElement).style.margin = "unset");
   })

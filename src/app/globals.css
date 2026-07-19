@@ -162,7 +162,7 @@ body {
     box-shadow: 1px 1px 3px 1px black;
   }
 
-  form input:not([type="file"]), form textarea {
+  form input:not([type="file"]):not([type="search"]), form textarea {
     border: 2px solid purple;
     background-color: lavender;
     padding: 2px 8px;

@@ -137,8 +137,6 @@ export default function CharacterRoller ({char}: {char: CharacterData}) {
   const [presets, setPresets] = useState(getCharacterPresets());
 
   useEffect(() => {
-    console.log("char updated");
-    console.log(getCharacterPresets())
     setPresets(getCharacterPresets());
   }, [char])
 

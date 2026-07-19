@@ -26,7 +26,7 @@ export default function SheetForm() {
   };
   
   return (
-    <form className="w-full h-full m-2 mt-4 overflow-x-scroll hideScroll">
+    <form className="w-full h-full m-2 mt-4 overflow-x-scroll hideScroll" onSubmit={(e) => e.preventDefault()}>
       {style == "Standard" &&
         <StandardSheets data={data} updateField={updateField}/>
       }

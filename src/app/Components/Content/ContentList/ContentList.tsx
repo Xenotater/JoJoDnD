@@ -9,7 +9,7 @@ import ContentFilterModal from "./ContentFilterModal";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { toTitleCase } from "@/app/Utilities/misc.utility";
 import Tooltip from "../../Layout/Typography/Tooltip";
-import cloneDeep from "lodash/cloneDeep";
+import {cloneDeep} from "lodash";
 import { ContentTags } from "@/app/Models/Misc.model";
 
 export interface ContentListData {
@@ -21,6 +21,7 @@ export interface ContentListData {
   altLink?: string;
   tags?: string[];
   isFiltered?: boolean;
+  onClick?: () => void;
 }
 
 interface ContentListOptions {
@@ -40,13 +41,48 @@ interface ContentListOptions {
   sticky?: boolean;
 }
 
+//strip others and re-add to clone to avoid cloning JSX and triggering stack limit
+function safeDeepClone(content: ContentListData[]) {
+  const tempOthers: {name: string, other: (JSX.Element | string)[]}[] = [];
+
+  const copyOthers = (data: ContentListData[]) => {
+    data.forEach(c => {
+      if (c.other)
+        tempOthers.push({name: c.name, other: c.other});
+      if (c.subContent)
+        copyOthers(c.subContent);
+    });
+  }
+  copyOthers(content);
+  
+  const stripOthers = (data: ContentListData[]): ContentListData[] => {
+    return data.map(c => ({
+      ...c,
+      subContent: c.subContent ? stripOthers(c.subContent) : undefined,
+      other: undefined
+    } as ContentListData))
+  }
+  const clone = cloneDeep(stripOthers(content));
+
+  const insertOthers = (data: ContentListData[]): ContentListData[] => {
+    return data.map(c => ({
+      ...c,
+      subContent: c.subContent ? insertOthers(c.subContent) : undefined,
+      other: tempOthers.find(o => o.name === c.name)?.other
+    } as ContentListData))
+  }
+  const final = insertOthers(clone);
+
+  return final;
+}
+
 //TODO: split filter logic toggles per category, keyboard navigation
 export default function ContentList({content, title, tags, options}: {content: ContentListData[], title?: string, tags?: ContentTags[], options?: ContentListOptions}) {
   const path = usePathname();
   const params = useSearchParams();
   const router = useRouter();
   const listRef = useRef<HTMLDivElement>(null);
-  const [contentList, setContentList] = useState(cloneDeep(content));
+  const [contentList, setContentList] = useState(safeDeepClone(content));
   const [includeList, setIncludeList] = useState(params.has("filter") ? new Set<string>(params?.get("filter")?.split(",")) : new Set<string>());
   const [excludeList, setExcludeList] = useState(new Set<string>());
   const [logic, setLogic] = useState<["OR"|"AND", "OR"|"AND"]>(["OR", "OR"]);
@@ -65,7 +101,7 @@ export default function ContentList({content, title, tags, options}: {content: C
   const checkFilterSort = () => {
     if (!(params.get(search) == search))
       router.replace(`${path}${search.length > 0 ? `?search=${encodeURIComponent(search)}` : ""}`)
-    const copy = cloneDeep(content), newList: ContentListData[] = [];
+    const copy = safeDeepClone(content), newList: ContentListData[] = [];
     copy.forEach((item) => addFilteredItem(item, newList));
     if (sortedCol.length > 0)
       newList.sort((a, b) => itemSort(a, b));

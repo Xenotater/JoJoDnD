@@ -13,6 +13,7 @@ import Select from "@/app/Components/Layout/Forms/Controlled/Select";
 import Input from "@/app/Components/Layout/Forms/Controlled/Input";
 import {useEffect, useState} from "react";
 import { useCharacterManager } from "../../CharacterManagement/CharacterManagementContext";
+import ManageFeaturesModal from "../../FeatureManager/ManageFeaturesModal";
 
 export default function StandardPage1({data, updateField}: {data: Partial<CharacterData>; updateField: (name: string, value: unknown) => void}) {
   const manager = useCharacterManager();
@@ -167,7 +168,7 @@ export default function StandardPage1({data, updateField}: {data: Partial<Charac
           <ScalingInput className={`${styles.bigInput} h-[50px] text-4xl`} fontmax={36} value={data[`Scha-${statSuffixes.top}`]} onBlur={(e) => updateField(`Scha-${statSuffixes.top}`, e.target.value)} />
           <ScalingInput className={`${styles.bigInput} border-t-0 h-[30px] text-base`} fontmax={24} value={data[`Scha-${statSuffixes.bottom}`]} onBlur={(e) => updateField(`Scha-${statSuffixes.bottom}`, e.target.value)} />
         </InputWrapper>
-        <div className="col-span-6 flex text-sm">
+        <div className="col-span-6 flex text-sm relative">
           <div className="w-[60%]">
             <p className="text-center">{t("classFeats")}</p>
             <Textarea className={`${styles.bigInput} h-[150px] text-xs text-left leading-3 p-1 resize-none`} value={data.classFeats} onBlur={(e) => updateField("classFeats", e.target.value)} />
@@ -181,6 +182,7 @@ export default function StandardPage1({data, updateField}: {data: Partial<Charac
               </p>
             <Textarea className={`${styles.bigInput} h-[150px] border-l-0 text-xs text-left leading-3 p-1 resize-none`} value={data.otherFeats} onBlur={(e) => updateField("otherFeats", e.target.value)} />
           </div>
+          <ManageFeaturesModal className="absolute bottom-1 right-[calc(40%+4px)]" char={data}/>
         </div>
         <div className="col-span-6 row-span-2 flex text-sm">
           <div className="w-[60%]">
