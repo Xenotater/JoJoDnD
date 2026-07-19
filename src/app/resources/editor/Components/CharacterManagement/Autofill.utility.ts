@@ -102,8 +102,8 @@ export default function doAutofill(initChar: Character, changes: EditState) {
         break;
       case "classFeats":
       case "otherFeats":
-        const prev = (change.prevState as string).toLowerCase();
-        const next = (change.newState as string).toLowerCase();
+        const prev = (change.prevState as string)?.toLowerCase() ?? "";
+        const next = (change.newState as string)?.toLowerCase() ?? "";
         if (prev.includes("jack of all trades") || next.includes("jack of all trades")) {
           updateAllSaves(char);
           updateAllSkills(char);

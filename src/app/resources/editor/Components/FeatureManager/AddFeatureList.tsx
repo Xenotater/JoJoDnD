@@ -93,7 +93,6 @@ export default function AddFeatureList({includeAbilities, selectedFeatures, sele
 
   return (
     <div className="h-full w-full">
-      <BsArrowLeft className="absolute top-2 right-2 md:right-[66%] bg-jj-mpurple-1 cursor-pointer hover:bg-jj-mpurple-2 hover:shadow-md/66 z-1 border border-2 border-(--border) rounded-full p-1" size={32} onClick={backCallback} />
       <ContentList
         content={listContent}
         tags={tags}
@@ -106,8 +105,10 @@ export default function AddFeatureList({includeAbilities, selectedFeatures, sele
           width: "100%",
           filter: true,
           search: true,
+          sticky: false
         }}
       />
+      <BsArrowLeft className="absolute top-2 right-2 md:right-[66%] bg-jj-mpurple-1 cursor-pointer hover:bg-jj-mpurple-2 hover:shadow-md/66 border border-2 border-(--border) rounded-full p-1 z-100" size={32} onClick={backCallback} />
     </div>
   );
 }

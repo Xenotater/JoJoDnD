@@ -32,7 +32,7 @@ export default function Modal(props: ModalProps) {
   
   return (
     <>
-      <div className={`fixed top-0 left-0 h-full w-full z-100 pointer-events-none ${props.fullPage ? "flex justify-center items-center pt-(--headerHeight)" : ""} ${props.blur ? "bg-white/30" : ""} ${props.className}`}>
+      <div className={`fixed top-0 left-0 h-[calc(100%-var(--headerHeight))] w-full z-100 pointer-events-none ${props.fullPage ? "flex justify-center items-center mt-(--headerHeight)" : ""} ${props.blur ? "bg-white/30" : ""} ${props.className}`}>
         {props.fullPage && child}
       </div>
       {!props.fullPage && child}

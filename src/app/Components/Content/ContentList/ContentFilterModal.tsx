@@ -65,8 +65,8 @@ export default function ContentFilterModal(props: ContentFilterModalProps) {
   }
 
   return (
-    <Modal className="bg-[rgba(69,69,69,.25)]" closeCallback={props.closer} fullPage>
-      <div className="content flex flex-col justify-between min-h-[40vh] w-[90vw] lg:w-[65vw] max-h-[75vh] m-auto mt-[15vh] shadow-lg z-100">
+    <Modal className="bg-[rgba(69,69,69,.25)] z-101" closeCallback={props.closer} fullPage>
+      <div className="content flex flex-col justify-between min-h-[40vh] w-[90vw] lg:w-[65vw] max-h-[70vh] m-auto shadow-lg">
         <div>
           <div className="flex flex-col lg:flex-row items-center justify-between gap-2">
             <h4 className="text-2xl leading-6">Filters</h4>
