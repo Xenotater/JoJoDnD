@@ -10,7 +10,7 @@ import {BsArrowLeft} from "react-icons/bs";
 import {useState} from "react";
 import { ContentTags } from "@/app/Models/Misc.model";
 
-export default function AddFeatureList({includeAbilities, selectedFeatures, selectCallback, backCallback}: {includeAbilities: boolean; selectedFeatures: SimpleFeature[]; selectCallback: (item: SimpleFeature) => void; backCallback: () => void}) {
+export default function AddFeatureList({includeAbilities, selectedFeatures, filterString, selectCallback, backCallback}: {includeAbilities: boolean; selectedFeatures: SimpleFeature[]; filterString?: string, selectCallback: (item: SimpleFeature) => void; backCallback: () => void}) {
   const assembleAbilities = () => {
     const newAbilities: ContentListData[] = [];
     for (const ability of abilities) {
@@ -69,9 +69,6 @@ export default function AddFeatureList({includeAbilities, selectedFeatures, sele
 
   const [featsContent] = useState(assembleFeats());
 
-  // useEffect(() => {
-
-  // })
 
   const listContent = includeAbilities ? abilitiesContent.concat(featsContent) : featsContent;
   const tags = includeAbilities ? (() => {
@@ -105,7 +102,8 @@ export default function AddFeatureList({includeAbilities, selectedFeatures, sele
           width: "100%",
           filter: true,
           search: true,
-          sticky: false
+          sticky: false,
+          initialFilter: filterString
         }}
       />
       <BsArrowLeft className="absolute top-2 right-2 md:right-[66%] bg-jj-mpurple-1 cursor-pointer hover:bg-jj-mpurple-2 hover:shadow-md/66 border border-2 border-(--border) rounded-full p-1 z-100" size={32} onClick={backCallback} />

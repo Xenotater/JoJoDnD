@@ -23,62 +23,62 @@ export interface CharacterData {
   dc: string;
   won: string;
   lost: string;
-  'str-bonus': string;
-  'str-save': string;
-  'dex-bonus': string;
-  'dex-save': string;
-  'con-bonus': string;
-  'con-save': string;
-  'int-bonus': string;
-  'int-save': string;
-  'wis-bonus': string;
-  'wis-save': string;
-  'cha-bonus': string;
-  'cha-save': string;
+  "str-bonus": string;
+  "str-save": string;
+  "dex-bonus": string;
+  "dex-save": string;
+  "con-bonus": string;
+  "con-save": string;
+  "int-bonus": string;
+  "int-save": string;
+  "wis-bonus": string;
+  "wis-save": string;
+  "cha-bonus": string;
+  "cha-save": string;
   bonus: string;
   acro: string;
-  'acro-bonus': string;
+  "acro-bonus": string;
   ath: string;
-  'ath-bonus': string;
-  'ath-bonus2': string;
+  "ath-bonus": string;
+  "ath-bonus2": string;
   dec: string;
-  'dec-bonus': string;
+  "dec-bonus": string;
   ani: string;
-  'ani-bonus': string;
-  'ani-bonus2': string;
+  "ani-bonus": string;
+  "ani-bonus2": string;
   pers: string;
-  'pers-bonus': string;
+  "pers-bonus": string;
   sli: string;
-  'sli-bonus': string;
+  "sli-bonus": string;
   grit: string;
-  'grit-bonus': string;
+  "grit-bonus": string;
   intim: string;
-  'intim-bonus0': string;
-  'intim-bonus': string;
+  "intim-bonus0": string;
+  "intim-bonus": string;
   invest: string;
-  'invest-bonus': string;
+  "invest-bonus": string;
   his: string;
-  'his-bonus': string;
+  "his-bonus": string;
   medi: string;
-  'medi-bonus0': string;
-  'medi-bonus': string;
+  "medi-bonus0": string;
+  "medi-bonus": string;
   perc: string;
-  'perc-bonus': string;
+  "perc-bonus": string;
   perf: string;
-  'perf-bonus': string;
+  "perf-bonus": string;
   sci: string;
-  'sci-bonus': string;
+  "sci-bonus": string;
   steal: string;
-  'steal-bonus': string;
+  "steal-bonus": string;
   arc: string;
-  'arc-bonus': string;
-  'arc-bonus2': string;
+  "arc-bonus": string;
+  "arc-bonus2": string;
   surv: string;
-  'surv-bonus0': string;
-  'surv-bonus': string;
+  "surv-bonus0": string;
+  "surv-bonus": string;
   ins: string;
-  'ins-bonus': string;
-  'ins-bonus2': string;
+  "ins-bonus": string;
+  "ins-bonus2": string;
   ac: string;
   hdice: string;
   pspeed: string;
@@ -86,30 +86,30 @@ export interface CharacterData {
   sac: string;
   init: string;
   percep: string;
-  'str-mod': string;
-  'str-score': string;
-  'dex-mod': string;
-  'dex-score': string;
-  'con-mod': string;
-  'con-score': string;
-  'int-mod': string;
-  'int-score': string;
-  'wis-mod': string;
-  'wis-score': string;
-  'cha-mod': string;
-  'cha-score': string;
-  'Sstr-mod': string;
-  'Sstr-score': string;
-  'Sdex-mod': string;
-  'Sdex-score': string;
-  'Scon-mod': string;
-  'Scon-score': string;
-  'Sint-mod': string;
-  'Sint-score': string;
-  'Swis-mod': string;
-  'Swis-score': string;
-  'Scha-mod': string;
-  'Scha-score': string;
+  "str-mod": string;
+  "str-score": string;
+  "dex-mod": string;
+  "dex-score": string;
+  "con-mod": string;
+  "con-score": string;
+  "int-mod": string;
+  "int-score": string;
+  "wis-mod": string;
+  "wis-score": string;
+  "cha-mod": string;
+  "cha-score": string;
+  "Sstr-mod": string;
+  "Sstr-score": string;
+  "Sdex-mod": string;
+  "Sdex-score": string;
+  "Scon-mod": string;
+  "Scon-score": string;
+  "Sint-mod": string;
+  "Sint-score": string;
+  "Swis-mod": string;
+  "Swis-score": string;
+  "Scha-mod": string;
+  "Scha-score": string;
   classFeats: string;
   otherFeats: string;
   otherProfs: string;
@@ -131,60 +131,60 @@ export interface CharacterData {
   selectedAct: string;
   act1AbilityInfo: string;
   act1Type: string;
-  'act1-str-mod': string;
-  'act1-str-score': string;
-  'act1-dex-mod': string;
-  'act1-dex-score': string;
-  'act1-con-mod': string;
-  'act1-con-score': string;
-  'act1-int-mod': string;
-  'act1-int-score': string;
-  'act1-wis-mod': string;
-  'act1-wis-score': string;
-  'act1-cha-mod': string;
-  'act1-cha-score': string;
+  "act1-str-mod": string;
+  "act1-str-score": string;
+  "act1-dex-mod": string;
+  "act1-dex-score": string;
+  "act1-con-mod": string;
+  "act1-con-score": string;
+  "act1-int-mod": string;
+  "act1-int-score": string;
+  "act1-wis-mod": string;
+  "act1-wis-score": string;
+  "act1-cha-mod": string;
+  "act1-cha-score": string;
   act2AbilityInfo: string;
   act2Type: string;
-  'act2-str-mod': string;
-  'act2-str-score': string;
-  'act2-dex-mod': string;
-  'act2-dex-score': string;
-  'act2-con-mod': string;
-  'act2-con-score': string;
-  'act2-int-mod': string;
-  'act2-int-score': string;
-  'act2-wis-mod': string;
-  'act2-wis-score': string;
-  'act2-cha-mod': string;
-  'act2-cha-score': string;
+  "act2-str-mod": string;
+  "act2-str-score": string;
+  "act2-dex-mod": string;
+  "act2-dex-score": string;
+  "act2-con-mod": string;
+  "act2-con-score": string;
+  "act2-int-mod": string;
+  "act2-int-score": string;
+  "act2-wis-mod": string;
+  "act2-wis-score": string;
+  "act2-cha-mod": string;
+  "act2-cha-score": string;
   act3AbilityInfo: string;
   act3Type: string;
-  'act3-str-mod': string;
-  'act3-str-score': string;
-  'act3-dex-mod': string;
-  'act3-dex-score': string;
-  'act3-con-mod': string;
-  'act3-con-score': string;
-  'act3-int-mod': string;
-  'act3-int-score': string;
-  'act3-wis-mod': string;
-  'act3-wis-score': string;
-  'act3-cha-mod': string;
-  'act3-cha-score': string;
+  "act3-str-mod": string;
+  "act3-str-score": string;
+  "act3-dex-mod": string;
+  "act3-dex-score": string;
+  "act3-con-mod": string;
+  "act3-con-score": string;
+  "act3-int-mod": string;
+  "act3-int-score": string;
+  "act3-wis-mod": string;
+  "act3-wis-score": string;
+  "act3-cha-mod": string;
+  "act3-cha-score": string;
   act4AbilityInfo: string;
   act4Base: string;
-  'act4-str-mod': string;
-  'act4-str-score': string;
-  'act4-dex-mod': string;
-  'act4-dex-score': string;
-  'act4-con-mod': string;
-  'act4-con-score': string;
-  'act4-int-mod': string;
-  'act4-int-score': string;
-  'act4-wis-mod': string;
-  'act4-wis-score': string;
-  'act4-cha-mod': string;
-  'act4-cha-score': string;
+  "act4-str-mod": string;
+  "act4-str-score": string;
+  "act4-dex-mod": string;
+  "act4-dex-score": string;
+  "act4-con-mod": string;
+  "act4-con-score": string;
+  "act4-int-mod": string;
+  "act4-int-score": string;
+  "act4-wis-mod": string;
+  "act4-wis-score": string;
+  "act4-cha-mod": string;
+  "act4-cha-score": string;
   Fname: string;
   back: string;
   ideals: string;
@@ -223,10 +223,32 @@ export const metaFlags = {
   scoreOnTop: 1,
   autofillOff: 2,
   "5eSheet": 4,
-}
+};
 
 export type EditState = {
   field: keyof CharacterData | "img" | "img2";
   prevState: string | number;
   newState: string | number;
 }[];
+
+export const characterClassMap: Record<string, string> = {
+  pow: "Power",
+  rng: "Ranged",
+  rmt: "Remote",
+  abl: "Ability",
+  enh: "Enhancement",
+  rev: "Revenge",
+  ind: "Independent",
+  hive: "Hive",
+  act: "Act",
+  rip: "Ripple",
+  spin: "Spin",
+  art: "Artisan",
+  ass: "Assassin",
+  con: "Consul",
+  heav: "Heavyweight",
+  ran: "Ranger",
+  sch: "Scholar",
+  war: "Warrior",
+  multi: "Other/Multiple",
+};

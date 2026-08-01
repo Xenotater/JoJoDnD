@@ -1,13 +1,10 @@
 "use client";
 
 import GenericContentComponent from "@/app/Components/Content/GenericContentComponent";
-import Divider from "@/app/Components/Layout/Divider/Divider";
 import Modal from "@/app/Components/Layout/Modal/Modal";
-import ContentHeading from "@/app/Components/Layout/Typography/ContentHeading";
-import {CharacterData} from "@/app/Models/Characters.model";
+import {characterClassMap, CharacterData} from "@/app/Models/Characters.model";
 import {getAbilityData, getFeatData} from "@/app/Utilities/content.utility";
 import {useEffect, useState} from "react";
-import {BsPencilSquare} from "react-icons/bs";
 import {ImEyePlus} from "react-icons/im";
 import FeatureList from "./FeatureList";
 import AddFeatureList from "./AddFeatureList";
@@ -60,7 +57,9 @@ export default function ManageFeaturesModal({char, className}: {char: CharacterD
           <div className="content relative bg-(--background) w-[80vw] h-[70vh] max-h-[600px] max-w-[1200px] flex flex-col md:flex-row gap-4">
             {editing ? (
               <div className="basis-1/2 md:basis-1/3 overflow-hidden">
-                <AddFeatureList includeAbilities={editing == "class"} selectedFeatures={editing == "class" ? classContent.concat(featsContent) : featsContent} selectCallback={(item: SimpleFeature) => setSelected(item)} backCallback={() => setEditing("")} />
+                <AddFeatureList includeAbilities={editing == "class"} selectedFeatures={editing == "class" ? classContent.concat(featsContent) : featsContent}
+                    filterString={editing == "class" ? `${char.class ? characterClassMap[char.class] : ""}${char.class && char.race ? "," : ""}${char.race?.replace(/^([\w ]+\w).*$/, "$1") || ""}` : undefined}
+                    selectCallback={(item: SimpleFeature) => setSelected(item)} backCallback={() => setEditing("")} />
               </div>
             ) : (
               <div className="content p-2 basis-1/2 md:basis-1/3 flex flex-col overflow-scroll hideScroll">

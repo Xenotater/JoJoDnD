@@ -1,6 +1,6 @@
 "use client";
 
-import {CharacterData} from "@/app/Models/Characters.model";
+import {characterClassMap, CharacterData} from "@/app/Models/Characters.model";
 import Image from "next/image";
 import InputWrapper from "../Components/InputWrapper";
 
@@ -18,7 +18,6 @@ import ManageFeaturesModal from "../../FeatureManager/ManageFeaturesModal";
 export default function StandardPage1({data, updateField}: {data: Partial<CharacterData>; updateField: (name: string, value: unknown) => void}) {
   const manager = useCharacterManager();
   const t = useTranslations("Editor");
-  const characterClasses: Record<string, string> = {pow: "Power", rng: "Ranged", rmt: "Remote", abl: "Ability", enh: "Enhancement", rev: "Revenge", ind: "Independent", hive: "Hive", act: "Act", rip: "Ripple", spin: "Spin", art: "Artisan", ass: "Assassin", con: "Consul", heav: "Heavyweight", ran: "Ranger", sch: "Scholar", war: "Warrior", multi: "Other/Multiple"};
   const [otherClass, setOtherClass] = useState(false);
   const [statSuffixes, setStatSuffixes] = useState<{top: "mod" | "score", bottom: "mod" | "score"}>({top: "mod", bottom: "score"})
   const featsCount = parseInt(data.bonus ?? "0") + (data.race?.toLowerCase().includes("human") && !data.race?.toLowerCase().includes("rock") ? 1 : 0);
@@ -63,7 +62,7 @@ export default function StandardPage1({data, updateField}: {data: Partial<Charac
               />
             ) : (
               <Select className="w-full h-full outline-0 shadow-none shrink-1 appearance-none pl-2 text-base" value={data.class ?? "pow"} onChange={(e) => updateField("class", e.target.value)}>
-                {Object.entries(characterClasses).map((c) => (
+                {Object.entries(characterClassMap).map((c) => (
                   <option key={c[0]} value={c[0]}>
                     {t("classes." + c[1])}
                   </option>
