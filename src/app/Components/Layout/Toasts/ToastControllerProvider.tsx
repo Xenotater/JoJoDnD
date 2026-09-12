@@ -64,6 +64,7 @@ export default function ToastControllerProvider ({children}: {children: React.Re
   return (
     <ToastControllerContext value={{
       displayMessage: (message: string, options?: ToastOptions) => {
+        console.log("displaying: " + message);
         addToast(message, options);
       }
     }}>

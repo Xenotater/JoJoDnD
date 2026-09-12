@@ -3,7 +3,6 @@ import EditorClient from "./Components/EditorClient";
 import CharacterManagementContextProvider from "./Components/CharacterManagement/CharacterManagementContext";
 import { getBucketURL } from "@/app/Utilities/aws.utility";
 import { getTranslations } from "next-intl/server";
-import ToastControllerProvider from "@/app/Components/Layout/Toasts/ToastControllerProvider";
 
 export default async function CharacterEditorPage() {
   const t = await getTranslations("Editor");
@@ -15,11 +14,9 @@ export default async function CharacterEditorPage() {
         <PageTitle title={t("title")}/>
         <div className="content relative h-full">
           <div className="w-full flex flex-col md:flex-row gap-2 md:gap-4 mb-4 md:items-center">
-            <ToastControllerProvider>
-              <CharacterManagementContextProvider bucketUrl={bucketURL}>
-                <EditorClient/>
-              </CharacterManagementContextProvider>
-            </ToastControllerProvider>
+            <CharacterManagementContextProvider bucketUrl={bucketURL}>
+              <EditorClient/>
+            </CharacterManagementContextProvider>
           </div>
         </div>
       </div>

@@ -15,7 +15,7 @@ export interface SimpleFeature {
   type: "ability" | "feat";
 }
 
-export default function ManageFeaturesModal({char, className}: {char: CharacterData; className: string}) {
+export default function ManageFeaturesModal({char, className}: {char: CharacterData | Partial<CharacterData>; className: string}) {
   const [modalOpen, setModalOpen] = useState(false);
   const [editing, setEditing] = useState("");
   const [selected, setSelected] = useState<SimpleFeature | undefined>();

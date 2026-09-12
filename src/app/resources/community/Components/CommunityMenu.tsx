@@ -8,10 +8,12 @@ import { useState } from "react";
 import { BsBoxArrowInRight, BsFileEarmark, BsFilePlus, BsList, BsPerson } from "react-icons/bs";
 import { useResourceManager } from "./ResourceManagementContext";
 import { useAuth } from "@/app/Components/Auth/AuthContextProvider";
+import { useTranslations } from "next-intl";
 
 export default function CommunityMenu() {
   const auth = useAuth();
   const manager = useResourceManager();
+  const t = useTranslations("Community");
   const [menuOpen, setMenuOpen] = useState(false);
   const [animate, setAnimate] = useState(false);
 
@@ -39,20 +41,20 @@ export default function CommunityMenu() {
                 {auth.loggedIn ? 
                   <>
                     <Link href="/account" className="flex gap-2 text-white items-center hover:underline">
-                      <BsPerson size={20}/><span>Account</span>
+                      <BsPerson size={20}/><span>{t("account")}</span>
                     </Link>
                     <Divider className="border-white mb-2 mt-2"/>
                     <Link href="/resources/community/manage" onClick={() => toggleMenu(false)} className="flex gap-2 text-white items-center hover:underline">
-                      <BsFileEarmark size={20}/><span>Your Resources</span>
+                      <BsFileEarmark size={20}/><span>{t("yourResources")}</span>
                     </Link>
                     <Divider className="border-white mb-2 mt-2"/>
                     <Link href="" onClick={() => {setMenuOpen(false); manager.update()}} className="flex gap-2 text-white items-center hover:underline">
-                      <BsFilePlus size={20}/><span>Submit New Resource</span>
+                      <BsFilePlus size={20}/><span>{t("newResource")}</span>
                     </Link>
                   </>
                 : <>
                   <Link href="" onClick={() => {setMenuOpen(false); auth.promptAction("Log In")}} className="flex gap-4 whitespace-normal w-[200px] items-center text-white hover:underline cursor-pointer">
-                    <BsBoxArrowInRight size={28} className="shrink-0"/><span>Sign in to manage and submit resources</span>
+                    <BsBoxArrowInRight size={28} className="shrink-0"/><span>{t("authPrompt")}</span>
                   </Link>
                 </>  
               }

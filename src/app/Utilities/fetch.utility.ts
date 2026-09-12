@@ -8,13 +8,16 @@ export async function doGetFetch(endpoint: string, body: string = ""): Promise<F
   const response = await fetch(endpoint + body, {
     method: "GET",
     cache: "no-cache",
+    headers: {
+      "User-Agent": "jojodnd.com by Xenotater"
+    }
   });
   logResponse(response);
   try {
     return {body: await response.json(), status: response.status};
   }
   catch (e) {
-    logError(e?.message ?? e as string);
+    logError((e as {message: string})?.message ?? e as string);
     return {body: {}, status: 500};
   }
 }

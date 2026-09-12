@@ -6,9 +6,11 @@ import { CommunityResource } from "@/app/Models/Resources.model";
 import { useState } from "react";
 import { BsGearFill } from "react-icons/bs";
 import { useResourceManager } from "../ResourceManagementContext";
+import { useTranslations } from "next-intl";
 
 export default function ResourceManagementMenu({data}: {data: CommunityResource}) {
   const manager = useResourceManager();
+  const t = useTranslations("Community");
   const [open, setOpen] = useState(false);
 
   return (
@@ -21,23 +23,23 @@ export default function ResourceManagementMenu({data}: {data: CommunityResource}
       {open &&
         <Modal closeCallback={() => setOpen(false)}>
           <div className="absolute right-1 top-1 border-2 rounded-md bg-jj-mpurple-1 pt-1 pb-1 z-1">
-            <a onClick={() => manager.update(data)} className="cursor-pointer underline ml-2 mr-2 pr-4 hover:text-gray-800">Edit</a>
+            <a onClick={() => manager.update(data)} className="cursor-pointer underline ml-2 mr-2 pr-4 hover:text-gray-800">{t("edit")}</a>
             {data.status == "Approved" &&
               <>
                 <Divider className="mt-1 mb-1"/>
-                <a onClick={() => manager.toggleVisibility(data)} className="cursor-pointer underline ml-2 mr-2 hover:text-gray-800">Hide</a>
+                <a onClick={() => manager.toggleVisibility(data)} className="cursor-pointer underline ml-2 mr-2 hover:text-gray-800">{t("hide")}</a>
               </>
             }
             {data.status == "Hidden" &&
               <>
                 <Divider className="mt-1 mb-1"/>
-                <a onClick={() => manager.toggleVisibility(data)} className="cursor-pointer underline ml-2 mr-2 hover:text-gray-800">Show</a>
+                <a onClick={() => manager.toggleVisibility(data)} className="cursor-pointer underline ml-2 mr-2 hover:text-gray-800">{t("show")}</a>
               </>
             }
             {(data.status != "Approved") &&
               <>
                 <Divider className="mt-1 mb-1"/>
-                <a onClick={() => manager.delete(data)} className="cursor-pointer underline ml-2 mr-2 hover:text-gray-800">Delete</a>
+                <a onClick={() => manager.delete(data)} className="cursor-pointer underline ml-2 mr-2 hover:text-gray-800">{t("delete")}</a>
               </>
             }
           </div>

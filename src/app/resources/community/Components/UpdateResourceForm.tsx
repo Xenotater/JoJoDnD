@@ -11,6 +11,7 @@ import { doGetResourceFile, doGetResourceImage, doListResourceFiles, doSubmitNew
 import { CiWarning } from "react-icons/ci";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { fileToFormData } from "@/app/Utilities/misc.utility";
+import { useTranslations } from "next-intl";
 
 type ResourceType = "Link" | "File" | "HTML" | "Other";
 
@@ -42,6 +43,7 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
   const router = useRouter();
   const pathname = usePathname();
   const params = useSearchParams();
+  const t = useTranslations("Community.Submission");
 
   //TODO: analyze efficiency of this.. do we really need to fetch all files every time?
   const updateFiles = async () => {
@@ -136,9 +138,9 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
     }
     else {
       if (resp == 409)
-        setAlertMsg("There is already a resource with this name, please choose a different one.");
+        setAlertMsg(t("duplicateErr"));
       else
-        setAlertMsg("An error ocurred. Please try again or contact an administrator if the issue persists.");
+        setAlertMsg(t("error"));
     }
   }
 
@@ -148,7 +150,7 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
 
   const checkFileSize = (fileInput: HTMLInputElement, callback?: () => void) => {
     if ((fileInput.files?.length ?? 0) > maxFileCount) {
-        alert("Max number of uploads is " + maxFileCount);
+        alert(t("maxWarn") + " " + maxFileCount);
         fileInput.value = "";
     }
     for (const file of fileInput.files ?? []) {
@@ -179,66 +181,66 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
   return (
     <Modal fullPage closeCallback={() => setTimeout(closer, 1)}>
       <form className="content md:w-[75vw] max-h-[85vh] m-auto flex flex-col gap-4 shadow-lg/80 overflow-y-scroll hideScroll" onSubmit={(e) => {e.preventDefault(); handleSubmit()}}>
-        <ContentHeading className="text-center mb-0">{existingData ? "Edit Resource" : "Submit New Resource"}</ContentHeading>
+        <ContentHeading className="text-center mb-0">{existingData ? t("editTitle") : t("newTitle")}</ContentHeading>
         <div className="flex flex-col max-w-[360px]">
-          <label>Resource Name:</label>
+          <label>{t("resourceName")}:</label>
           <input maxLength={50} value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})} required/>
         </div>
         <div className="flex flex-col relative">
-          <label>Description:</label>
+          <label>{t("desc")}:</label>
           <textarea maxLength={descLimit} value={cleanDesc()} onChange={(e) => setFormData({...formData, description: e.target.value + " Created by " + credit + "."})} required className="resize-none field-sizing-content"/>
           <span className={`absolute bottom-1 right-2 ${cleanDesc().length >= descLimit ? "text-red-600" : ""}`}>{cleanDesc().length}/{descLimit}</span>
         </div>
         <div className="flex flex-col md:flex-row gap-4 items-center md:items-start">
           <div className="grow w-full flex flex-col gap-2">
             <div className="flex gap-2 items-center">
-              <label>Image:</label>
-              <b>{imageFile?.name ?? (existingData ? `${formData.name}.webp` : "No file chosen")}</b>
+              <label>{t("image")}:</label>
+              <b>{imageFile?.name ?? (existingData ? `${formData.name}.webp` : t("noFile"))}</b>
               <button className="p-1 pt-0 pb-0 h-min text-nowrap bg-gray-300" onClick={(e) => {
                 e.preventDefault();
                 openFileInput(0);
-              }}>Choose File</button>
+              }}>{t("chooseFile")}</button>
               <input type="file" accept="image/*" onChange={(e) => checkFileSize(e.target, () => previewImage(e.target))} required={!existingData} className="hidden"/>
             </div>
             <div className="flex flex-col md:flex-row gap-4">
               <div className="flex gap-2 items-center">
-                <label>Content Type:</label>
+                <label>{t("contentType")}:</label>
                 <select value={type} onChange={(e) => setType(e.target.value as "Link" | "File" | "HTML" | "Other")} className="border bg-white">
-                  <option>Link</option>
-                  <option>File</option>
-                  <option>HTML</option>
-                  <option>Other</option>
+                  <option value="Link">{t("link")}</option>
+                  <option value="File">{t("file")}</option>
+                  <option value="HTML">{t("html")}</option>
+                  <option value="Other">{t("other")}</option>
                 </select>
               </div>
             </div>
             <div className="flex flex-col">
-              <label>Content:</label>
+              <label>{t("content")}:</label>
               <div className="flex flex-col gap-2">
                 {Array.from({length: type == "Link" || type == "File" ? variantCount : 1}).map((_, i) => (
                   <div key={`variant-${i}`} className="flex flex-col lg:flex-row gap-1 lg:gap-2">
                     {variantCount > 1 && type != "HTML" && type != "Other" &&
                       <div className="flex flex-col md:flex-row md:items-center md:gap-2 grow-1">
-                        <span>Name:</span>
+                        <span>{t("name")}:</span>
                         <input value={formData.variants?.split("|")[i] ?? ""} onChange={(e) => setFormData(
                           {...formData, variants: formData.variants?.split("|").map((_, j) => j == i ? e.target.value : formData.variants?.split("|")[j]).join("|")})} required className="w-full"/>
                       </div>
                     }
                     {type == "Link" &&
                       <div className="flex flex-col md:flex-row md:items-center md:gap-2 grow-100">
-                        {variantCount > 1 && <span>Link: </span>}
+                        {variantCount > 1 && <span>{t("link")}: </span>}
                         <input value={formData.link.split("|")[i] ?? ""} onChange={(e) => setFormData(
                           {...formData, link: formData.link.split("|").map((_, j) => j == i ? e.target.value : formData.link.split("|")[j]).join("|")})} required className="w-full"/>
                       </div>
                     }
                     {type == "File" &&
                       <div className="flex gap-2 items-center">
-                        <label>File:</label>
+                        <label>{t("file")}:</label>
                         <div className="md:w-[225px] flex gap-2 items-center">
                           <b>{files.get(i)?.name ?? "No file chosen"}</b>
                           <button className="p-1 pt-0 pb-0 h-min text-nowrap bg-gray-300" onClick={(e) => {
                             e.preventDefault();
                             openFileInput(i+1);
-                          }}>Choose File</button>
+                          }}>{t("chooseFile")}</button>
                         </div>
                         <input type="file" onChange={(e) => checkFileSize(e.target, () => {
                           if (e.target.files) {
@@ -252,14 +254,14 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
                     {type == "HTML" &&
                       <div className="flex flex-col gap-1">
                         <div className="flex gap-2 items-center">
-                          <Tooltip label="Main Page:">The main landing page for your static app, often &quot;index.html&quot;. This page should pull in other required assets using relative URLs. Dynamic apps, php, or other more complicated frameworks are not supported.</Tooltip>
+                          <Tooltip label="Main Page:">{t("mainTooltip")}</Tooltip>
                           <div className="flex gap-2 items-center">
                             <div className="flex gap-2 items-center">
-                              <b>{files.get(-1)?.name ?? "No file chosen"}</b>
+                              <b>{files.get(-1)?.name ?? t("noFile")}</b>
                               <button className="p-1 pt-0 pb-0 h-min text-nowrap bg-gray-300" onClick={(e) => {
                                 e.preventDefault();
                                 openFileInput(i+1);
-                              }}>Choose File</button>
+                              }}>{t("chooseFile")}</button>
                             </div>
                             <input type="file" accept=".html" onChange={(e) => checkFileSize(e.target, () => {if (e.target.files) {
                               const newFiles = new Map(files);
@@ -269,7 +271,7 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
                           </div>
                         </div>
                         <div className="flex gap-2 items-center">
-                          <Tooltip label="Other Assets:">Other assets (images, scripts, style sheets, etc) required by your static app. These should be pulled in by your main page using relative URLs.</Tooltip>
+                          <Tooltip label="Other Assets:">{t("otherTooltip")}</Tooltip>
                           <div className="flex gap-2 items-center">
                             <div className="flex gap-2 items-center">
                               <b>{files.size > 2 ?
@@ -279,12 +281,12 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
                                     return `${f[1]?.name}${j < files.size - 2 ? ", " : ""}`
                                   }
                                 })
-                                : "No files chosen"}
+                                : t("noFile")}
                               </b>
                               <button className="p-1 pt-0 pb-0 h-min text-nowrap bg-gray-300" onClick={(e) => {
                                 e.preventDefault();
                                 openFileInput(i+2);
-                              }}>Choose Files</button>
+                              }}>{t("chooseFiles")}</button>
                             </div>
                             <input type="file" onChange={(e) => checkFileSize(e.target, () => {if (e.target.files) {
                               const newFiles = new Map();
@@ -299,7 +301,7 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
                     }
                     {type == "Other" && 
                       <div className="flex flex-col">
-                        <label>Please explain what the conent of your resource should be and we&apos;ll help get it working. Be sure to fill out the &quot;Contact&quot; field as well in case we have additional questions.</label>
+                        <label>{t("otherPrompt")}</label>
                         <textarea value={otherDetails} onChange={(e) => setOtherDetails(e.target.value)}></textarea>
                       </div>
                     }
@@ -308,9 +310,9 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
               </div>
               {type != "HTML" && type != "Other" &&
                 <span className="flex gap-1">
-                  <a onClick={() => {setVariantCount(variantCount + 1); setFormData({...formData, link: formData.link + "|", variants: formData.variants + "|"})}}>Add Variant</a>
+                  <a onClick={() => {setVariantCount(variantCount + 1); setFormData({...formData, link: formData.link + "|", variants: formData.variants + "|"})}}>{t("addVariant")}</a>
                   <Tooltip label="&#x1F6C8;" className="decoration-jj-mpurple-1 text-sm mr-2">
-                    Multiple versions of your resource can be offered to the user on click instead of direct navigation to one resource.
+                    {t("variantTooltip")}
                   </Tooltip>
                   {variantCount > 1 &&
                     <a onClick={() => {
@@ -319,26 +321,26 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
                       setFiles(newFiles);
                       setVariantCount(variantCount - 1);
                       setFormData({...formData, link: formData.link.replace(/\|[^\|]*$/, ""), variants: formData.variants?.replace(/\|[^\|]*$/, "")});
-                    }}>Delete Last</a>
+                    }}>{t("deleteLast")}</a>
                   }
                 </span>
               }
             </div>
             <div className="flex flex-col">
-              <label>Credit Name:</label>
+              <label>{t("creditName")}:</label>
               <input maxLength={50} value={credit} onChange={(e) => {setCredit(e.target.value); setFormData({...formData, description: cleanDesc() + " Created by " + e.target.value + "."})}}
                 className="max-w-[250px]" required
               />
             </div>
             <div className="flex flex-col">
-              <label>Contact (Email / Discord / Etc.):</label>
+              <label>{t("contact")}:</label>
               <input maxLength={255} value={formData.contact} onChange={(e) => setFormData({...formData, contact: e.target.value})}/>
             </div>
           </div>
           <div onClick={(e) => {
               if (type != "Link") {
                 e.preventDefault();
-                alert("Non-Link resource content may not be previewed prior to submission.");
+                alert(t("previewWarn"));
               }
               return;
           }}>
@@ -346,11 +348,11 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
           </div>
         </div>
         {existingData && existingData.status == "Approved" &&
-          <p className="text-red-900 flex gap-1 justify-center"><CiWarning/>Editing an existing resource will require reapproval before the changes become publically available.</p>
+          <p className="text-red-900 flex gap-1 justify-center"><CiWarning/>{t("editWarn")}</p>
         }
         <div className="flex gap-4 justify-center">
-          <button className="rounded-md text-2xl bg-gray-200" onClick={closer}>Cancel</button>
-          <button type="submit" className="text-2xl rounded-md bg-jj-purple-1 text-white">Submit</button>
+          <button className="rounded-md text-2xl bg-gray-200" onClick={closer}>{t("cancel")}</button>
+          <button type="submit" className="text-2xl rounded-md bg-jj-purple-1 text-white">{t("submit")}</button>
         </div>
         {alertMsg &&
           <p ref={alertRef} className="text-red-900 flex gap-1 justify-center animate-flash">{alertMsg}</p>

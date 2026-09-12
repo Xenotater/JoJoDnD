@@ -23,7 +23,7 @@ export function SocialEmbedBase(props: SocialEmbedBaseProps) {
 				<Image className="rounded-[50%]" src={props.icon} alt="social icon" width={65} height={65}/>
 				<div className="flex flex-col text-center m-auto">
 					<b className="text-[mediumpurple] text-2xl leading-6">{props.name}</b>
-					<span className="text-[darkgray] text-sm">{props.members} Members, {props.active} Online</span>
+					<span className="text-[darkgray] text-sm">{`${props.members} Members${props.active ? `, ${props.active} Online` : ""}`}</span>
 				</div>
 			</div>
 		</Link>

@@ -17,7 +17,7 @@ const nextConfig: NextConfig = {
       }
     ]
   },
-  allowedDevOrigins: ['192.168.0.3'],
+  allowedDevOrigins: ['192.168.0.10'],
   experimental: {
     useCache: true,
     serverActions: {

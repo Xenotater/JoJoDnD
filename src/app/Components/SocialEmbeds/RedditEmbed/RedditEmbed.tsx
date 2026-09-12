@@ -9,7 +9,7 @@ export default async function RedditEmbed() {
 
   return (
     <SocialEmbedBase
-      link={"https://discord.gg/nmgSjPW8xs"} name={redditInfo.data.display_name_prefixed}
+      link={"https://www.reddit.com/r/jojodnd"} name={redditInfo.data.display_name_prefixed}
       prompt="Join Our Subreddit!" logo={"/images/socials/reddit.webp"}
       members={redditInfo.data.subscribers} active={redditInfo.data.active_user_count}
       icon={redditInfo.data.community_icon.replace(/\?.*/, "")}
