@@ -15,6 +15,7 @@ import { ContentTags } from "@/app/Models/Misc.model";
 export interface ContentListData {
   name: string;
   other?: (JSX.Element | string)[];
+  sortVals?: unknown[];
   subContent?: ContentListData[];
   isExpanded?: boolean;
   isLink?: boolean;
@@ -116,11 +117,12 @@ export default function ContentList({content, title, tags, options}: {content: C
     if (index == 0)
       return sortFn(a.name, b.name) * dirMult;
     else{
-      return sortFn(getText(a.other!.at(index - 1)!), getText(b.other!.at(index - 1)!)) * dirMult;
+      return sortFn(a.sortVals?.at(index - 1) ?? getText(a.other!.at(index - 1)!), b.sortVals?.at(index - 1) ?? getText(b.other!.at(index - 1)!)) * dirMult;
   }}
 
   const getText = (item: string | JSX.Element) => {
-    return typeof item === "string" ? item : item.props.children;
+    console.log(item);
+    return typeof item === "string" ? item : item.props.children
   }
 
   const addFilteredItem = (item: ContentListData, list: ContentListData[], parent?: ContentListData) => {

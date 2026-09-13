@@ -22,6 +22,7 @@ export default function CommunityResourceList({bucketURL, user}: {bucketURL: str
   }
 
   const changePage = (page: number) => {
+    console.log("changing");
     if (page <= pages && page >= 1) {
       const newParams = new URLSearchParams(params.toString());
       newParams.set("page", `${page}`);
@@ -48,9 +49,11 @@ export default function CommunityResourceList({bucketURL, user}: {bucketURL: str
 }
 
   useEffect(() => {
+    console.log(params.toString());
     if (params.has("success"))
-      router.replace(`${pathname}?${params.toString().replace(/&success=true/, "")}`);
-    updateStates();
+      router.replace(`${pathname}?${params.toString().replace(/success[^&]*&?/, "")}`);
+    else
+      updateStates();
   }, [params]);
 
   return (

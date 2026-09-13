@@ -40,6 +40,13 @@
     "hide": "Hide",
     "show": "Show",
     "delete": "Delete",
+    "deleteTitle": "Delete Resource",
+    "deleteDesc": "Are your sure you want to delete <important>{name}</important>?",
+    "deleteWarn": "Deleted Resources CANNOT be recovered. If you're certain, type the name of the resource below and click \"Delete\".",
+    "deleted": "Resource deleted.",
+    "error": "Something went wrong. Please contact an administrator.",
+    "noMatch": "The name you entered does not match the resource.",
+    "cancel": "Cancel",
     "Statuses": {
       "pending": "Pending",
       "pendingedit": "Pending Edit",
@@ -82,9 +89,10 @@
       "duplicateErr": "There is already a resource with this name, please choose a different one.",
       "error": "An error ocurred. Please try again or contact an administrator if the issue persists.",
       "maxWarn": "Max number of uploads is",
-      "mainTooltip": "The main landing page for your static app, often &quot;index.html&quot;. This page should pull in other required assets using relative URLs. Dynamic apps, php, or other more complicated frameworks are not supported.",
+      "mainTooltip": "The main landing page for your static app, often \"index.html\". This page should pull in other required assets using relative URLs. Dynamic apps, php, or other more complicated frameworks are not supported.",
       "otherTooltip": "Other assets (images, scripts, style sheets, etc) required by your static app. These should be pulled in by your main page using relative URLs.",
-      "otherPrompt": "Please explain what the conent of your resource should be and we&apos;ll help get it working. Be sure to fill out the &quot;Contact&quot; field as well in case we have additional questions."
+      "otherPrompt": "Please explain what the conent of your resource should be and we&apos;ll help get it working. Be sure to fill out the \"Contact\" field as well in case we have additional questions.",
+      "submitted": "Resource submitted for review."
     }
   },
   "Editor": {

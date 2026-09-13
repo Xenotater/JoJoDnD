@@ -25,6 +25,7 @@ export default function WeaponsPage() {
         weapon.prereq,
         <HTMLInclusiveText key={`${weapon.name}-dmg`} text={weapon.dmg.replaceAll("/", "/<wbr>")}/>
       ],
+      sortVals: [weapon.attr.length, weapon.type, weapon.spec, weapon.stat, weapon.prereq, weapon.dmg],
       tags: weapon.tags,
       isLink: false
   }))

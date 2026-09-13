@@ -12,6 +12,7 @@ import { CiWarning } from "react-icons/ci";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { fileToFormData } from "@/app/Utilities/misc.utility";
 import { useTranslations } from "next-intl";
+import { useToastController } from "@/app/Components/Layout/Toasts/ToastControllerProvider";
 
 type ResourceType = "Link" | "File" | "HTML" | "Other";
 
@@ -43,6 +44,7 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
   const router = useRouter();
   const pathname = usePathname();
   const params = useSearchParams();
+  const toasts = useToastController();
   const t = useTranslations("Community.Submission");
 
   //TODO: analyze efficiency of this.. do we really need to fetch all files every time?
@@ -134,6 +136,7 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
       }
 
       router.replace(`${pathname}?${params.toString()}&success=true`)
+      toasts.displayMessage(t("submitted"), {type: "Success"})
       closer();
     }
     else {

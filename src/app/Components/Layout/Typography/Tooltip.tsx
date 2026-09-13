@@ -21,7 +21,7 @@ export default function Tooltip(props: {label: string, children: JSX.Element | s
             {props.label}
       </span>
       {tooltipOpen &&
-        <div className="fixed shadow-md border bg-yellow-200 p-2 top-(--yoffset) left-(--xoffset) max-w-[30vw] z-100" style={{"--xoffset": `${tooltipPos[0]}px`, "--yoffset": `${tooltipPos[1]}px`} as React.CSSProperties}>
+        <div className="fixed shadow-md border bg-yellow-200 p-2 top-(--yoffset) left-(--xoffset) max-w-[30vw] z-100 font-normal" style={{"--xoffset": `${tooltipPos[0]}px`, "--yoffset": `${tooltipPos[1]}px`} as React.CSSProperties}>
           {props.children}
         </div>
       }

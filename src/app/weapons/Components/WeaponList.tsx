@@ -15,17 +15,11 @@ export default function WeaponList({listContent, tags}: {listContent: ContentLis
       redirect(window.location.href.replaceAll(/(\?|#).*$/g, "") + "?search=" + hash);
   }, [params]);
 
-  const attributeSort = (a: JSX.Element[], b: JSX.Element[]) => {
-    // const attrA = a[0].props.children[0].props.label;      // is sorting by the first attribute alphabetically useful??
-    // const attrB = b[0].props.children[0].props.label;
-    return ((a.length < b.length) ? -1 : ((a.length > b.length) ? 1 : 0));
-  }
-
   const weaponPropSort = (a: string, b: string) => {
     if (a == "None" || a.includes("DC"))
-            a = "A";
+            a = "A" + a;
     if (b == "None" || b.includes("DC"))
-        b = "A";
+        b = "A" + b;
     return ((a < b) ? -1 : ((a > b) ? 1 : 0));
   }
 
@@ -63,7 +57,7 @@ export default function WeaponList({listContent, tags}: {listContent: ContentLis
       <div className="list-striped">
         <ContentList content={listContent} tags={tags} options={{height: "750px", width: "100%", scrollWidth: "1024px", borders: true, columns:[
         {name: "Name", width: "15%", tooltip: "The name of the weapon.", sort: true},
-        {name: "Attributes", width: "23%", tooltip: "The properties that the weapon has.", sort: true, sortFn: attributeSort as (a: unknown, b: unknown) => number},
+        {name: "Attributes", width: "23%", tooltip: "The properties that the weapon has."},
         {name: "Type", width: "10%", tooltip:"The type of weapon for the purpose of Proficiencies.", sort: true},
         {name: "Specialization", width: "15%", tooltip: "The type of weapon for the purpose of Specialization Feats.", sort: true, sortFn: weaponPropSort as (a: unknown, b: unknown) => number},
         {name: "Stat/DC", width: "10%", tooltip: "The attack stat or DC of the weapon. The attack stat is added to both Attack AND damage Rolls. If the weapon has a DC, a Dex Save must be rolled and have damage is taken on success.", sort: true, sortFn: weaponPropSort as (a: unknown, b: unknown) => number},
