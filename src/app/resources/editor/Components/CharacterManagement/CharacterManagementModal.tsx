@@ -3,7 +3,6 @@
 import Modal from "@/app/Components/Layout/Modal/Modal";
 import {CharacterOrFolder} from "@/app/Models/Characters.model";
 import {useState} from "react";
-import {useCharacterManager} from "./CharacterManagementContext";
 import {BsX} from "react-icons/bs";
 import Input from "@/app/Components/Layout/Forms/Controlled/Input";
 import { useTranslations } from "next-intl";
@@ -14,7 +13,6 @@ import { useToastController } from "@/app/Components/Layout/Toasts/ToastControll
 export default function CharacterManagementModal({data, action, closer}: {data: CharacterOrFolder; action: "Rename" | "Move" | "Delete", closer: (success: boolean) => void}) {
   const t = useTranslations("Editor.ui");
   const auth = useAuth();
-  const manager = useCharacterManager();
   const toasts = useToastController();
   const [val, setVal] = useState("");
   const [err, setErr] = useState("");
@@ -31,7 +29,7 @@ export default function CharacterManagementModal({data, action, closer}: {data: 
         toasts.displayMessage(t(isFolder ? "Folder.renamed" : "Character.renamed"), {type: "Success"});
         closer(true);
     }
-    else if (resp == 209) {
+    else if (resp == 409) {
       setErr(t("Folder.duplicateFound"));
     }
     else
@@ -49,7 +47,7 @@ export default function CharacterManagementModal({data, action, closer}: {data: 
         toasts.displayMessage(t(isFolder ? "Folder.moved" : "Character.moved"), {type: "Success"});
         closer(true);
     }
-    else if (resp == 209) {
+    else if (resp == 409) {
       setErr(t("Folder.duplicateFound"));
     }
     else

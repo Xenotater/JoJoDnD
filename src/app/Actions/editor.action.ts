@@ -254,7 +254,7 @@ export async function doRenameFolder(id: number, name: string) {
   if (id == 0) return 422;
   const folder = await getFolderWithPermission(id);
   if (!folder) return 401;
-  if (await checkForDuplicateFolder(folder.name, folder.parent_id)) return 209;
+  if (await checkForDuplicateFolder(folder.name, folder.parent_id)) return 409;
   const resp = await doDBQuery(`UPDATE folders SET name = ? WHERE id = ?`, [name, `${folder.id}`], false);
   return resp.status;
 }
@@ -310,7 +310,7 @@ export async function doMoveFolder(id: number, currentFolder = 0, newPath = "", 
       return resp2.status;
     } else {
       const existingId = existingFolder[0].id;
-      if (await checkForDuplicateFolder(folder.name, existingId)) return 209;
+      if (await checkForDuplicateFolder(folder.name, existingId)) return 409;
       const resp = await doDBQuery(`UPDATE folders SET parent_id = ? WHERE id = ?`, [`${existingId}`, `${folder.id}`], false);
       return resp.status;
     }

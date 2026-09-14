@@ -10,11 +10,12 @@ export async function doGetDiscordDetails() {
   return null;
 }
 
-export async function doGetRedditDetails() {
-  const endpoint = "https://www.reddit.com/r/jojodnd/about.json";
-  const response = await doGetFetchWithCache(endpoint);
-  if (response.status == 200)
-    return response.body as RedditDetails;
+export async function doGetRedditDetails(): Promise<RedditDetails | null> {
+  // TODO: Reddit has disabled public API access. Re-evaluate options in the future
+  // const endpoint = "https://www.reddit.com/r/jojodnd/about.json";
+  // const response = await doGetFetchWithCache(endpoint);
+  // if (response.status == 200)
+  //   return response.body as RedditDetails;
   return null;
 }
 

@@ -3,6 +3,7 @@ import { doDBQuery } from "@/app/Utilities/mysql.utility";
 import { createHash } from "crypto";
 import NextAuth, { NextAuthOptions, RequestInternal, User } from "next-auth"
 import CredentialsProvider from "next-auth/providers/credentials";
+import bcrypt from "bcryptjs";
 
 export const authOptions: NextAuthOptions = {
   providers: [
@@ -17,10 +18,20 @@ export const authOptions: NextAuthOptions = {
         if (resp.status === 200) {
           const data = (await resp.json())[0] as {id: number, username: string, email: string, password: string, role: string};
           if (data.id) {
-            const salt = data.password.slice(-4);
-            const hash = data.password.slice(0, -4);
-            if (hash === createHash("sha512").update(credentials?.password + salt).digest("hex"))
+            if (await bcrypt.compare(credentials?.password ?? "", data.password))
               return {id: data.id.toString(), name: data.username, email: data.email, role: data.role};
+
+            //try old format
+            const oldSalt = data.password.slice(-4);
+            const oldHash = data.password.slice(0, -4);
+            if (oldHash === createHash("sha512").update(credentials?.password + oldSalt).digest("hex")) {
+              //this is a less secure hash, update to new format
+              const newHash = await bcrypt.hash(credentials!.password, 10);
+              const updateResp = await doDBQuery("UPDATE users SET password = ? WHERE id = ? LIMIT 1", [newHash, data.id.toString()]);
+              if (!updateResp || updateResp.status != 200)
+                logError("Error updating password format for: " + credentials?.username);
+              return {id: data.id.toString(), name: data.username, email: data.email, role: data.role};
+            }
           }
         }
         return null;

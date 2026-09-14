@@ -12,17 +12,24 @@
     "Resources": "Resources"
   },
   "Auth": {
-    "logIn": "Log In",
+    "login": "Log In",
     "logout": "Log Out",
     "username": "Username",
+    "email": "Email",
     "password": "Password",
+    "confirm": "Confirm Password",
     "create": "Create Account",
-    "sign up": "Sign Up",
+    "signup": "Sign Up",
     "recovery": "Account Recovery",
     "loginSuccess": "Logged in as {user}.",
     "logoutSuccess": "You've been logged out.",
     "invalidCredentials": "Invalid Credentials.",
-    "error": "An error occurred."
+    "error": "An error occurred.",
+    "back": "Back",
+    "accountCreated": "Account created!",
+    "signupLoginFailed": "We couldn't log you in, please try again.",
+    "passwordMismatch": "Passwords do not match.",
+    "accountExists": "An account with that username or email already exists."
   },
   "Community": {
     "pageDesc": "These awesome resources were created by members of the JoJo D&D community!",

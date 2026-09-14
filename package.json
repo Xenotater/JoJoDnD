@@ -16,6 +16,7 @@
     "@3d-dice/dice-ui": "^0.5.2",
     "@aws-sdk/client-s3": "^3.932.0",
     "@tailwindcss/postcss": "^4.1.11",
+    "bcryptjs": "^3.0.3",
     "chart.js": "^4.5.1",
     "html-react-parser": "^5.2.7",
     "lodash": "^4.17.21",
@@ -35,6 +36,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@types/bcryptjs": "^2.4.6",
     "@types/lodash": "^4.17.20",
     "@types/node": "^20.19.7",
     "@types/react": "^19",

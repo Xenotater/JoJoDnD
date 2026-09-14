@@ -16,11 +16,13 @@ export default function LoginModalContent({contentSwitchCallback, closeCallback,
   const toasts = useToastController();
 
   return (
-    <div className="flex flex-col justify-center text-center my-2 mx-4 gap-4">
+    <div className="flex flex-col justify-center text-center my-2 mx-4 gap-4 md:w-[275px]">
       <ContentHeading as="h2" className="m-0">{t("login")}</ContentHeading>
-      <form className="flex flex-col justify-center gap-4" action={async (formData) => {
+      <form className="flex flex-col justify-center gap-4" onSubmit={async (e) => {
+        e.preventDefault();
         setMessage("");
         setLoading(true);
+        const formData = new FormData(e.currentTarget);
         const response = await signIn("credentials", {redirect: false, username: formData.get("username"), password: formData.get("password")});
         setLoading(false);
         if (response && response.ok) {
