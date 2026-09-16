@@ -29,7 +29,11 @@
     "accountCreated": "Account created!",
     "signupLoginFailed": "We couldn't log you in, please try again.",
     "passwordMismatch": "Passwords do not match.",
-    "accountExists": "An account with that username or email already exists."
+    "accountExists": "An account with that username or email already exists.",
+    "recoveryStartPrompt": "Enter your email below.",
+    "recoveryStartDesc": "If we have an account in our system that matches your info, we'll send you your username and a link to reset your password.",
+    "recoverySent": "Success, check your email.",
+    "submit": "Submit"
   },
   "Community": {
     "pageDesc": "These awesome resources were created by members of the JoJo D&D community!",

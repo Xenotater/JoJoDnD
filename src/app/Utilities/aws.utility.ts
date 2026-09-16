@@ -1,8 +1,10 @@
 import { CopyObjectCommand, DeleteObjectCommand, DeleteObjectsCommand, GetObjectCommand, ListObjectsV2Command, NoSuchKey, PutObjectCommand, S3Client, S3ServiceException } from "@aws-sdk/client-s3";
+import { SendEmailCommand, SendEmailCommandInput, SESClient, SESServiceException } from "@aws-sdk/client-ses";
 import { Readable } from "stream";
-import { logError, logRequest } from "./logging.utility";
+import { log, logError, logRequest } from "./logging.utility";
 
 const s3Client = new S3Client({region: "us-east-1"});
+const sesClient = new SESClient({region: "us-east-1"});
 
 export async function getBucketName() {
   return process.env.S3_BUCKET;
@@ -153,4 +155,39 @@ export async function moveFilesInFolder(oldPath: string, newPath: string) {
     else
       return null;
   }).catch(() => {return null;});
+}
+
+export async function sendEmail(system: string, recipient: string, subject: string, content: string) {
+  const params = {
+    Source: `JoJo D&D <no-reply@${system}.jojodnd.com>`,
+    Destination: {
+      ToAddresses: [recipient],
+    },
+    Message: {
+      Subject: {
+        Charset: "UTF-8",
+        Data: subject
+      },
+      Body: {
+        Html: {
+          Charset: "UTF-8",
+          Data: content
+        },
+        Text: {
+          Charset: "UTF-8",
+          Data: content.replace("<br/>", "\n\n").replace(/<[^>]*>/g, '')
+        }
+      }
+    }
+  } as SendEmailCommandInput;
+  
+  try {
+    log(`Sending email [${subject}] to ${recipient}`);
+    return await sesClient.send(new SendEmailCommand(params));
+  }
+  catch (e) {
+    if (e instanceof SESServiceException)
+      logError("Error communicating with SES: " + e.message);
+    return null;
+  }
 }

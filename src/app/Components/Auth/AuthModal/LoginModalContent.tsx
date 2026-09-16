@@ -57,7 +57,7 @@ export default function LoginModalContent({contentSwitchCallback, closeCallback,
         <a onClick={() => contentSwitchCallback("Recovery")}>{t("recovery")}</a>
       </div>
       {message &&
-        <span className={`${success ? "text-green-700" : "text-red-700"} animate-flash`}>{message}</span>
+        <span className={`${success ? "text-green-800" : "text-red-700"} animate-flash`}>{message}</span>
       }
     </div>
   );

@@ -5,6 +5,7 @@ import Modal from "../../Layout/Modal/Modal";
 import LoginModalContent from "./LoginModalContent";
 import { AuthAction } from "../AuthContextProvider";
 import SingupModalContent from "./SignupModalContent";
+import RecoveryModalContent from "./RecoveryModalContent";
 
 export default function AuthModalWrapper({initialAction, closeCallback, successCallback} : {initialAction: AuthAction, closeCallback: () => void, successCallback: () => void}) {
   const [currentFunction, setCurrentFunction] = useState<AuthAction>(initialAction);
@@ -15,6 +16,8 @@ export default function AuthModalWrapper({initialAction, closeCallback, successC
         return <LoginModalContent contentSwitchCallback={setCurrentFunction} closeCallback={closeCallback} successCallback={successCallback}/>
       case "Sign Up":
         return <SingupModalContent contentSwitchCallback={setCurrentFunction} closeCallback={closeCallback} successCallback={successCallback}/>
+      case "Recovery":
+        return <RecoveryModalContent contentSwitchCallback={setCurrentFunction}/>
       default:
         return <div className="h-full"><h2>Error</h2><p>Content not found. Please contact an administrator.</p></div>;
     }

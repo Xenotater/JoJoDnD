@@ -15,6 +15,7 @@
     "@3d-dice/dice-roller-parser": "^0.2.6",
     "@3d-dice/dice-ui": "^0.5.2",
     "@aws-sdk/client-s3": "^3.932.0",
+    "@aws-sdk/client-ses": "^3.1133.0",
     "@tailwindcss/postcss": "^4.1.11",
     "bcryptjs": "^3.0.3",
     "chart.js": "^4.5.1",

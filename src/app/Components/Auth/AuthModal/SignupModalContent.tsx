@@ -37,7 +37,7 @@ export default function SingupModalContent({contentSwitchCallback, closeCallback
             setTimeout(() => {closeCallback();}, 100);
           }
           else {
-            toasts.displayMessage(t("signupLoginFailed"), {type: "Error"});
+            toasts.displayMessage(t("signupLoginFailed"), {type: "Error", duration: 5000, canClose: true});
             contentSwitchCallback("Log In");
           }
         }
@@ -75,7 +75,7 @@ export default function SingupModalContent({contentSwitchCallback, closeCallback
         <a onClick={() => contentSwitchCallback("Log In")}>{t("back")}</a>
       </div>
       {message &&
-        <span className={`${success ? "text-green-700" : "text-red-700"} animate-flash`}>{message}</span>
+        <span className={`${success ? "text-green-800" : "text-red-700"} animate-flash`}>{message}</span>
       }
     </div>
   );
