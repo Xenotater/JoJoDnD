@@ -57,6 +57,39 @@ export async function doSendRecoveryEmail(email: string) {
   return 200; //return success regardless of whether an account existed or not
 }
 
-export async function doValidateRecoveryCode(code: string) {
-  
+export async function doValidateRecoveryCode(code: string): Promise<500 | 401 | string> {
+  //delete old codes before validating new ones
+  await doDBQuery("DELETE FROM recovery WHERE TIMESTAMPADD(HOUR, 1, created) < CURRENT_TIMESTAMP", [], false);
+
+  const resp = await doDBQuery("SELECT user, code FROM recovery", [], false)
+
+  if (resp?.status == 200) {
+    for (const entry of await resp.json() as [{user: string, code: string}]) {
+      if (await bcrypt.compare(code, entry.code))
+        return entry.user;
+    }
+
+    return 401;
+  }
+
+  return 500;
+}
+
+export async function doChangePassword(code: string, newPass: string) {
+  const userResp = await doValidateRecoveryCode(code);
+
+  if (typeof userResp == "string") {
+    const newHash = await bcrypt.hash(newPass, 10);
+    const changeResp = await doDBQuery("UPDATE users SET password = ? WHERE username = ? LIMIT 1", [newHash, userResp]);
+
+    if (changeResp?.status == 200) {
+      await doDBQuery("DELETE FROM recovery WHERE user = ?", [userResp], false);
+      return 200;
+    }
+    else {
+      return 500;
+    }
+  }
+
+  return userResp;
 }

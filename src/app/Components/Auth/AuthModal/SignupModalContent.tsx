@@ -24,6 +24,19 @@ export default function SingupModalContent({contentSwitchCallback, closeCallback
         setMessage("");
         setLoading(true);
         const formData = new FormData(e.currentTarget);
+
+        if (formData.get("password")?.toString() != formData.get("confirm")?.toString()) {
+          setMessage(t("passwordMismatch"));
+          setLoading(false);
+          return;
+        }
+
+        if (formData.entries().find(e => e[1] == "")) {
+          setMessage(t("fieldLengthErr"));
+          setLoading(false);
+          return;
+        }
+
         const response = await doCreateAccount(formData);
         setLoading(false);
         if (response == 201) {

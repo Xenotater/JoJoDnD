@@ -23,6 +23,13 @@ export default function LoginModalContent({contentSwitchCallback, closeCallback,
         setMessage("");
         setLoading(true);
         const formData = new FormData(e.currentTarget);
+
+        if (formData.entries().find(e => e[1] == "")) {
+          setMessage(t("fieldLengthErr"));
+          setLoading(false);
+          return;
+        }
+
         const response = await signIn("credentials", {redirect: false, username: formData.get("username"), password: formData.get("password")});
         setLoading(false);
         if (response && response.ok) {

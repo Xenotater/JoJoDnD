@@ -30,10 +30,22 @@
     "signupLoginFailed": "We couldn't log you in, please try again.",
     "passwordMismatch": "Passwords do not match.",
     "accountExists": "An account with that username or email already exists.",
-    "recoveryStartPrompt": "Enter your email below.",
-    "recoveryStartDesc": "If we have an account in our system that matches your info, we'll send you your username and a link to reset your password.",
-    "recoverySent": "Success, check your email.",
-    "submit": "Submit"
+    "fieldLengthErr": "Required fields may not be empty or longer than 255 characters.",
+      "account": "Account",
+    "Recovery": {
+      "startPrompt": "Enter your email below.",
+      "startDesc": "If we have an account in our system that matches your info, we'll send you your username and a link to reset your password.",
+      "sent": "Success, check your email.",
+      "submit": "Submit",
+      "noValid": "We couldn't validate your recovery link",
+      "invalid": "The link code was invalid or expired.",
+      "again": "Try Again",
+      "endPrompt": "Enter your new password and confirm it below.",
+      "endDesc": "Your password will be reset and you'll be able to go back to the editor and log in.",
+      "resetPassword": "Reset Password",
+      "success": "Reset Successful",
+      "successPrompt": "Your password has been reset. You can navigate to the account page to log in."
+    }
   },
   "Community": {
     "pageDesc": "These awesome resources were created by members of the JoJo D&D community!",
