@@ -31,7 +31,7 @@
     "passwordMismatch": "Passwords do not match.",
     "accountExists": "An account with that username or email already exists.",
     "fieldLengthErr": "Required fields may not be empty or longer than 255 characters.",
-      "account": "Account",
+    "account": "Account",
     "Recovery": {
       "startPrompt": "Enter your email below.",
       "startDesc": "If we have an account in our system that matches your info, we'll send you your username and a link to reset your password.",

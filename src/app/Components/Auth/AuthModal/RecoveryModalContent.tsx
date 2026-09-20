@@ -30,7 +30,7 @@ export default function RecoveryModalContent({contentSwitchCallback}: {contentSw
             setMessage(t("Recovery.sent"));
         }
         else
-          setMessage(t("error"));
+          setMessage(response == 400 ? t("fieldLengthErr") : t("error"));
       }}>
         <h4>{t("Recovery.startPrompt")}</h4>
         <p>{t("Recovery.startDesc")}</p>

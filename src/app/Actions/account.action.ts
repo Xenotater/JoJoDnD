@@ -28,6 +28,9 @@ export async function doCreateAccount(formData: FormData) {
 }
 
 export async function doSendRecoveryEmail(email: string) {
+  if (!email || email.length > 255)
+    return 400;
+
   const userResp = await doDBQuery("SELECT username FROM users WHERE LOWER(email) = ? LIMIT 1", [email.toLowerCase()], false);
 
   if (userResp?.status == 200) {
@@ -58,6 +61,9 @@ export async function doSendRecoveryEmail(email: string) {
 }
 
 export async function doValidateRecoveryCode(code: string): Promise<500 | 401 | string> {
+  if (!code)
+    return 401;
+
   //delete old codes before validating new ones
   await doDBQuery("DELETE FROM recovery WHERE TIMESTAMPADD(HOUR, 1, created) < CURRENT_TIMESTAMP", [], false);
 
@@ -76,6 +82,12 @@ export async function doValidateRecoveryCode(code: string): Promise<500 | 401 | 
 }
 
 export async function doChangePassword(code: string, newPass: string) {
+  if (!code)
+    return 401;
+
+  if (newPass.length <= 0 || newPass.length > 255)
+    return 400;
+
   const userResp = await doValidateRecoveryCode(code);
 
   if (typeof userResp == "string") {

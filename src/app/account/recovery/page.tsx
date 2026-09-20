@@ -63,7 +63,7 @@ export default function AccountRecoveryPage() {
       setReset(true);
     else {
       setValidated(false);
-      setMessage(resp == 401 ? t("Recovery.invalid") : t("error"));
+      setMessage(resp == 401 ? t("Recovery.invalid") : resp == 400 ? t("fieldLengthErr") : t("error"));
     }
 
     setLoading(false);
