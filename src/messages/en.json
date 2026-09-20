@@ -306,6 +306,33 @@
     "actRemote": "Remote-Focused",
     "actBased": "Based on:"
   },
+  "Resources": {
+    "pdfVersion": "PDF Version",
+    "pdfDesc1": "The PDF version of the system, for those who prefer a physical or offline format with everything in one place.",
+    "pdfDesc2": "If desired, you can also find older versions of the system {linkOpen}here{linkClose}",
+    "view": "View",
+    "download": "Download",
+    "sheets": "Character Sheets",
+    "sheetsDesc": "Print off one of our custom character sheets, or use our online character editor!",
+    "create": "Create your own",
+    "community": "Community Resources",
+    "communityDesc1": "Check out some of the awesome resources and homebrew made by members of our community!",
+    "communityDesc2": "You can also post your own resources to share with others.",
+    "patch": "Patch Notes",
+    "patchDesc": "We're constantly working to improve this system, taking suggestions and making updates every few months or so. Check here to keep up with the changes we make.",
+    "example": "Campaign Example",
+    "exampleDesc": "Check out our podcast \"Tabletop Travesty\" where we've played a campaign using an early version of this system named \"The Bystanders\":",
+    "contact": "Contact Us",
+    "name": "Name:",
+    "email": "Email: (optional)",
+    "subject": "Subject:",
+    "messagePrompt": "(Your Comment/Suggestion/Issue)",
+    "emailSent": "Email Sent!",
+    "submit": "Submit",
+    "error": "An error occurred.",
+    "fieldsEmpty": "Required fields may not be left empty.",
+    "contents": "Contents of {dir}:"
+  },
   "Misc": {
     "DiceRoller": {
       "prompt": "Enter Roll Notation:",

@@ -3,7 +3,7 @@
 import bcrypt from "bcryptjs";
 import { doDBQuery } from "../Utilities/mysql.utility";
 import { sendEmail } from "../Utilities/aws.utility";
-import { RecoveryEmailBody } from "../Components/Emails/RecoveryEmail";
+import RecoveryEmailBody from "../Components/Emails/RecoveryEmail";
 import { logError } from "../Utilities/logging.utility";
 
 export async function doCreateAccount(formData: FormData) {

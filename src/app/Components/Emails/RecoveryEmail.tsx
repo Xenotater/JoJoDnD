@@ -1,4 +1,4 @@
-export function RecoveryEmailBody({user, code}: {user: string, code: string}) {
+export default function RecoveryEmailBody({user, code}: {user: string, code: string}) {
   return (
     <div>
       <h2>{user}, reset your JoJoDnD.com password using the link below.</h2>
