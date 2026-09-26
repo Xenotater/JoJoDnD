@@ -54,11 +54,21 @@ export const authOptions: NextAuthOptions = {
       }
       return session
     },
-    async jwt({ token, user }) {
-      if (user) {
+    async jwt({ token, user, trigger }) {
+      if (trigger == "update" && token) {
+        const resp = await doDBQuery("SELECT username, email, role FROM users WHERE id = ? LIMIT 1", [token.id], false);
+        if (resp && resp.status == 200) {
+          const data = (await resp.json())[0];
+          token.name = data.username;
+          token.email = data.email;
+          token.role = data.role;
+        }
+      }
+      else if (user) {
         token.name = user.name;
         token.email = user.email;
         token.role = user.role;
+        token.id = user.id;
       }
       return token
     }

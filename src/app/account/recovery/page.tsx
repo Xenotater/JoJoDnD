@@ -57,7 +57,7 @@ export default function AccountRecoveryPage() {
       return;
     }
 
-    const resp = await doChangePassword(params.get("code") ?? "", pass);
+    const resp = await doChangePassword(pass, params.get("code") ?? "");
 
     if (resp == 200)
       setReset(true);

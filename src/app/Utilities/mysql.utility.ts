@@ -38,3 +38,39 @@ export async function doDBQuery(query: string, values: (string | null)[] = [], l
     }
   }
 }
+
+export async function doQueryBatch(queries: {query: string, values: (string | null)[]}[], log: boolean = true) {
+  const connection = await getDBConnection();
+  try {
+    const results: mysql.QueryResult[] = [];
+    
+    await connection.connect();
+    await connection.beginTransaction();
+
+    for (const query of queries) {
+      if (log)
+        logDBQuery(query.query, query.values);
+      const [result] = await connection.execute(query.query, query.values);
+      results.push(result);
+    }
+
+    connection.commit();
+    connection.end();
+
+    return NextResponse.json(results, {status: 200});
+  }
+  catch (err) {
+    connection.rollback();
+    connection.end();
+
+    const error = err as {errno: number, message: string}
+    logError("DB ERROR: " + error.message);
+    
+    switch(error.errno) {
+      case 1062:
+        return NextResponse.json({error: err}, {status: 409})
+      default:
+        return NextResponse.json({error: err}, {status: 500})
+    }
+  }
+}

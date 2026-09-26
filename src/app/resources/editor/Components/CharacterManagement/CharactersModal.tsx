@@ -76,7 +76,9 @@ export default function CharactersModal({closeCallback}: {closeCallback: () => v
             <CharacterFolderPath/>
           }
           {loading ? (
-            <LoadingSpinner />
+            <div className="h-[85%]">
+              <LoadingSpinner/>
+            </div>
           ) : (
             <div className="flex flex-wrap gap-4 2xl:gap-12 justify-center pb-6">
               {characters.map((c) => {

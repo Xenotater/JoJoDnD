@@ -1,10 +1,12 @@
 "use server"
 
 import bcrypt from "bcryptjs";
-import { doDBQuery } from "../Utilities/mysql.utility";
+import { doDBQuery, doQueryBatch } from "../Utilities/mysql.utility";
 import { sendEmail } from "../Utilities/aws.utility";
 import RecoveryEmailBody from "../Components/Emails/RecoveryEmail";
 import { logError } from "../Utilities/logging.utility";
+import { getServerSession } from "next-auth";
+import { log } from "console";
 
 export async function doCreateAccount(formData: FormData) {
   const user = formData.get("username")?.toString() ?? "";
@@ -17,7 +19,10 @@ export async function doCreateAccount(formData: FormData) {
 
   const duplicateCheck = await doDBQuery("SELECT id FROM users WHERE LOWER(username) = ? OR LOWER(email) = ? LIMIT 1", [user.toLowerCase(), email.toLowerCase()], false);
 
-  if (duplicateCheck?.status == 200 && (await duplicateCheck.json()).length > 0)
+  if (duplicateCheck?.status != 200)
+    return 500;
+
+  if ((await duplicateCheck.json()).length > 0)
     return 409;
 
   const hash = await bcrypt.hash(pass, 10);
@@ -81,14 +86,16 @@ export async function doValidateRecoveryCode(code: string): Promise<500 | 401 | 
   return 500;
 }
 
-export async function doChangePassword(code: string, newPass: string) {
-  if (!code)
+export async function doChangePassword(newPass: string, code?: string) {
+  const session = await getServerSession();
+  
+  if (!code && !session?.user.name)
     return 401;
 
   if (newPass.length <= 0 || newPass.length > 255)
     return 400;
 
-  const userResp = await doValidateRecoveryCode(code);
+  const userResp = code ? await doValidateRecoveryCode(code) : session?.user.name;
 
   if (typeof userResp == "string") {
     const newHash = await bcrypt.hash(newPass, 10);
@@ -104,4 +111,54 @@ export async function doChangePassword(code: string, newPass: string) {
   }
 
   return userResp;
+}
+
+export async function doChangeUsername(newUser: string) {
+  const session = await getServerSession();
+  
+  if (!session?.user.name)
+    return 401;
+
+  if (newUser.length <= 0 || newUser.length > 255)
+    return 400;
+  
+  const duplicateCheck = await doDBQuery("SELECT id FROM users WHERE LOWER(username) = ? LIMIT 1", [newUser.toLowerCase()], false);
+
+  if (duplicateCheck?.status != 200)
+    return 500;
+
+  if ((await duplicateCheck.json()).length > 0)
+    return 409;
+
+  const changeResp = await doQueryBatch([
+    {query: "UPDATE users SET username = ? WHERE username = ? LIMIT 1", values: [newUser, session.user.name]},
+    {query: "UPDATE characters SET username = ? WHERE username = ? LIMIT 1", values: [newUser, session.user.name]},
+    {query: "UPDATE folders SET username = ? WHERE username = ? LIMIT 1", values: [newUser, session.user.name]},
+    {query: "UPDATE resources SET username = ? WHERE username = ? LIMIT 1", values: [newUser, session.user.name]},
+    {query: "UPDATE votes SET username = ? WHERE username = ? LIMIT 1", values: [newUser, session.user.name]},
+  ]);
+
+  return changeResp.status == 200 ? 200 : 500;
+}
+
+export async function doChangeEmail(newEmail: string) {
+  const session = await getServerSession();
+  
+  if (!session?.user.name)
+    return 401;
+
+  if (newEmail.length <= 0 || newEmail.length > 255)
+    return 400;
+  
+  const duplicateCheck = await doDBQuery("SELECT id FROM users WHERE LOWER(username) = ? LIMIT 1", [newEmail.toLowerCase()], false);
+
+  if (duplicateCheck?.status != 200)
+    return 500;
+
+  if ((await duplicateCheck.json()).length > 0)
+    return 409;
+
+  const changeResp = await doDBQuery("UPDATE users SET email = ? WHERE username = ? LIMIT 1", [newEmail, session.user.name]);
+
+  return changeResp.status == 200 ? 200 : 500;
 }

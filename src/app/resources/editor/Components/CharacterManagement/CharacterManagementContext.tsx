@@ -217,7 +217,7 @@ export default function CharacterManagementContextProvider({bucketUrl, children}
         }}}
     >
       {loadOpen &&
-      <CharactersModal closeCallback={() => setLoadOpen(false)}/>
+        <CharactersModal closeCallback={() => setLoadOpen(false)}/>
       }
       {children}
     </CharacterManagementContext>

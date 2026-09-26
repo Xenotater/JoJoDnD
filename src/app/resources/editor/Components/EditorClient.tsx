@@ -10,10 +10,11 @@ import {Chart, RadialLinearScale, PointElement, LineElement, Tooltip, Filler} fr
 import {useLocale, useTranslations} from "next-intl";
 import {doCaptureSheetImage, doCaptureSheetPDF, doSaveCharacterData, doUploadCharacterImage} from "@/app/Actions/editor.action";
 import {base64ToFile, fileToFormData} from "@/app/Utilities/misc.utility";
-import {useRef, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 import Select from "@/app/Components/Layout/Forms/Controlled/Select";
 import { useToastController } from "@/app/Components/Layout/Toasts/ToastControllerProvider";
 import CharacterRoller from "./CharacterRoller";
+import { useSearchParams, usePathname, useRouter } from "next/navigation";
 
 export default function EditorClient() {
   const manager = useCharacterManager();
@@ -22,8 +23,20 @@ export default function EditorClient() {
   const locale = useLocale();
   const downloadRef = useRef<HTMLAnchorElement>(null);
   const [downloadType, setDownloadType] = useState<"pdf" | "image">("pdf");
+  const params = useSearchParams();
+  const pathname = usePathname();
+  const router = useRouter();
 
   Chart.register(RadialLinearScale, PointElement, LineElement, Tooltip, Filler);
+
+  useEffect(() => {
+    if (params.has("viewChars")) {
+      manager.load();
+      const newParams = new URLSearchParams(params.toString());
+      newParams.delete("viewChars");
+      router.replace(`${pathname}?${newParams.toString()}`)
+    }
+  }, [params])
 
   const handleSave = async () => {
     const char = manager.loadedCharacter;

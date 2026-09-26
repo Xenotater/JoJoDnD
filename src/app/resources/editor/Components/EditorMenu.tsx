@@ -13,7 +13,6 @@ import ToggleSwitch from "@/app/Components/Layout/ToggleSwitch/ToggleSwitch";
 import { Character, CharacterData } from "@/app/Models/Characters.model";
 import { useSession } from "next-auth/react";
 import { useTranslations } from "next-intl";
-import CharactersModal from "./CharacterManagement/CharactersModal";
 import { useAuth } from "@/app/Components/Auth/AuthContextProvider";
 import { formToJson, jsonToForm } from "@/app/Utilities/misc.utility";
 
@@ -23,7 +22,6 @@ export default function EditorMenu() {
   const manager = useCharacterManager();
   const [menuOpen, setMenuOpen] = useState(false);
   const [animate, setAnimate] = useState(false);
-  const [modalOpen, setModalOpen] = useState(false);
   const importRef = useRef<HTMLInputElement>(null);
   const exportRef = useRef<HTMLAnchorElement>(null);
   const t = useTranslations("Editor");
