@@ -121,7 +121,6 @@ export default function ContentList({content, title, tags, options}: {content: C
   }}
 
   const getText = (item: string | JSX.Element) => {
-    console.log(item);
     return typeof item === "string" ? item : item.props.children
   }
 

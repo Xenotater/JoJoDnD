@@ -10,7 +10,7 @@ import ResourceStatus from "./ResourceStatus";
 import ResourceManagementMenu from "./ResourceManagementMenu";
 import { useAuth } from "@/app/Components/Auth/AuthContextProvider";
 import { useSession } from "next-auth/react";
-import { doDownvoteResource, doUpvoteResource } from "@/app/Actions/community.action";
+import { doDownvoteResource, doGetImgExists, doUpvoteResource } from "@/app/Actions/community.action";
 
 export default function CommunityResourceCard({data, userUpvotes, bucketURL, image, preview}: {data: CommunityResource, userUpvotes?: number[], bucketURL?: string, image?: ReactNode, preview?: boolean}) {
   const [userUpvoted, setUserUpvoted] = useState(false);
@@ -20,11 +20,17 @@ export default function CommunityResourceCard({data, userUpvotes, bucketURL, ima
   const {data: session} = useSession();
   const belongsToUser = data.username == session?.user?.name;
   
+
+  const swapImgSrc = async () => {
+    const editExists = await doGetImgExists(imgSrcName + "-edit");
+    if (editExists)
+      setImgSrcName(imgSrcName + "-edit");
+  }
   
   useEffect(() => {
     setUserUpvoted(userUpvotes?.includes(data.id) ?? false);
     if (data.clones && !/-edit$/.test(imgSrcName))
-      setImgSrcName(imgSrcName + "-edit");
+      swapImgSrc();
   }, [data, userUpvotes])
 
   const upvoteResource = () => auth.authExecute(async () => {

@@ -5,12 +5,12 @@ import { getClassData } from "@/app/Utilities/content.utility";
 type DataField = keyof CharacterData;
 
 export default function doAutofill(initChar: Character, changes: EditState) {
-  console.log("running autofill...");
+  // console.log("running autofill...");
   const char = cloneDeep(initChar);
 
   for (const change of changes) {
-    console.log("checking:");
-    console.log(change);
+    // console.log("checking:");
+    // console.log(change);
 
     //score update logic, propagates to mods and stand stats
     if (change.field.includes("-score")) {
@@ -126,7 +126,7 @@ export default function doAutofill(initChar: Character, changes: EditState) {
 
 //update any field on the data to a new value
 function updateDataField(char: Character, field: DataField, value: unknown) {
-  console.log("setting " + field + " to: " + value);
+  // console.log("setting " + field + " to: " + value);
   char.data = {
     ...char.data,
     [field]: value

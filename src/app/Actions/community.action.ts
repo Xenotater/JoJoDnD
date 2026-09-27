@@ -13,11 +13,12 @@ export async function doGetResourcesPerPage() {
 }
 
 export async function doGetResources(page: number = 1, sort: ResourceSort = "Top", search = "", user = "") {
+  const session = await getServerSession();
   const sortMap = {"A-Z" : "name ASC", "Top": "upvotes DESC", "New": "id DESC"}
-  const resp = await doDBQuery(`SELECT id, name, description, link, variants, meta, upvotes, status, username, clones, modified_ts FROM resources WHERE status LIKE ? AND username LIKE ? AND name LIKE ? ORDER BY ${sortMap[sort]} LIMIT ? OFFSET ?`,
+  const resp = await doDBQuery(`SELECT id, name, description, link, variants, meta, upvotes, status, username, contact, clones, modified_ts FROM resources WHERE status LIKE ? AND username LIKE ? AND name LIKE ? ORDER BY ${sortMap[sort]} LIMIT ? OFFSET ?`,
     [user ? "%" : "approved", user || "%", `%${search}%`, resourcesPerPage.toString(), ((page - 1) * resourcesPerPage).toString()], false);
   if (resp.status == 200) {
-    return (await resp.json()) as CommunityResource[];
+    return (await resp.json()).map((r: {username: string, contact: string}) => ({...r, username: r.username == session?.user.name ? r.username : undefined, contact: r.username == session?.user.name ? r.contact : undefined})) as CommunityResource[];
   }
   return null;
 }
@@ -78,28 +79,26 @@ export async function doUpdateResource(id: number, newData: CommunityResource) {
     return 401;
   await clearFilesInFolder(`CommunityResources/Resources/${currentData.name.toLowerCase().replaceAll(" ", "-")}-edit`); //clear files before uploading new copies
   const isApprovedEdit = ["Approved", "Hidden"].includes(currentData.status ?? "");
-  const existingClone = await (await doDBQuery("SELECT id FROM resources WHERE clones = ?", [`${id}`])).json() as number[];
+  const existingClone = await (await doDBQuery("SELECT id FROM resources WHERE clones = ?", [`${id}`])).json() as {id: number}[];
   if (currentData.clones || existingClone.length > 0) {
-    const cloneId = currentData.clones ? currentData.id : existingClone[0];
-    const resp = await doDBQuery("UPDATE resources set username=?, name=?, description=?, link=?, variants=?, meta=?, contact=?, modified_ts=CURRENT_TIMESTAMP WHERE id = ?",
-      [currentData.username!, newData.name, newData.description, newData.link, newData.variants ?? null, newData.meta ?? null, newData.contact ?? null, `${cloneId}`]);
+    const cloneId = currentData.clones ? currentData.id : existingClone[0].id;
+    const resp = await doDBQuery("UPDATE resources set username=?, name=?, description=?, link=?, variants=?, meta=?, contact=?, status=?, modified_ts=CURRENT_TIMESTAMP WHERE id = ?",
+      [currentData.username!, newData.name, newData.description, newData.link, newData.variants ?? null, newData.meta ?? null, newData.contact ?? null, "Pending Edit", `${cloneId}`]);
     return resp.status;
   }
-  const resp = await doDBQuery("INSERT INTO resources (username, name, description, link, variants, meta, contact, clones, status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
-    [currentData.username!, newData.name, newData.description, newData.link, newData.variants ?? null, newData.meta ?? null, newData.contact ?? null,
-      `${isApprovedEdit ? id : null}`, isApprovedEdit ? "Pending Edit" : "Pending"]);
+  if (isApprovedEdit) {
+    const resp = await doDBQuery("INSERT INTO resources (username, name, description, link, variants, meta, contact, clones, status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+      [currentData.username!, newData.name, newData.description, newData.link, newData.variants ?? null, newData.meta ?? null, newData.contact ?? null,
+        `${id}`, "Pending Edit"]);
+    return resp.status;
+  }
+  const resp = await doDBQuery("UPDATE resources SET name=?, description=?, link=?, variants=?, meta=?, contact=?, clones=?, status=?, modified_ts=CURRENT_TIMESTAMP WHERE id = ?",
+    [newData.name, newData.description, newData.link, newData.variants ?? null, newData.meta ?? null, newData.contact ?? null,
+      `${currentData.clones}`, "Pending", `${currentData.id}`]);
   return resp.status;
 }
 
-export async function approveNewResource(id: number) {
-  const session = await getServerSession(authOptions);
-  if (!session?.user?.name || session.user.role != "admin")
-    return 401;
-  const resp = await doDBQuery("UPDATE resources SET status='Approved' WHERE id=?", [`${id}`]);
-  return resp.status;
-}
-
-export async function approveUpdatedResource(id: number) {
+export async function doDenyResource(id: number) {
   const session = await getServerSession(authOptions);
   if (!session?.user?.name || session.user.role != "admin")
     return 401;
@@ -107,6 +106,36 @@ export async function approveUpdatedResource(id: number) {
   const data = await getResource(`${id}`);
   if (!data)
     return 404;
+
+  const resp = await doDBQuery("UPDATE resources SET status='Denied' WHERE id=?", [`${id}`]);
+  return resp.status;
+}
+
+export async function doApproveResource(id: number) {
+  const session = await getServerSession(authOptions);
+  if (!session?.user?.name || session.user.role != "admin")
+    return 401;
+
+  const data = await getResource(`${id}`);
+  if (!data)
+    return 404;
+
+  if (data.clones)
+    return await approveUpdatedResource(data);
+
+  const resp = await doDBQuery("UPDATE resources SET status='Approved' WHERE id=?", [`${id}`]);
+  return resp.status;
+}
+
+async function approveUpdatedResource(data: CommunityResource) {
+  const session = await getServerSession(authOptions);
+  if (!session?.user?.name || session.user.role != "admin")
+    return 401;
+
+  if (!data)
+    return 404;
+  const id = data.id;
+
   const previous = await getResource(`${data.clones}`)
   if (!previous)
     return 404;
@@ -116,9 +145,12 @@ export async function approveUpdatedResource(id: number) {
   if (resp.status == 200) {
     await doDBQuery("DELETE FROM resources where id = ? LIMIT 1", [`${id}`]);
 
-    await delS3File(`CommunityResources/Images/${previous.name.toLowerCase().replaceAll(" ", "-")}.webp`);
+    const newImg = await doGetImgExists(`${data.name.toLowerCase().replaceAll(" ", "-")}-edit`);
+    if (newImg) {
+      await delS3File(`CommunityResources/Images/${previous.name.toLowerCase().replaceAll(" ", "-")}.webp`);
+      await moveS3File(`CommunityResources/Images/${data.name.toLowerCase().replaceAll(" ", "-")}-edit.webp`, `CommunityResources/Images/${data.name.toLowerCase().replaceAll(" ", "-")}.webp`);
+    }
     await clearFilesInFolder(`CommunityResources/Resources/${previous.name.toLowerCase().replaceAll(" ", "-")}`);
-    await moveS3File(`CommunityResources/Images/${data.name.toLowerCase().replaceAll(" ", "-")}-edit.webp`, `CommunityResources/Images/${data.name.toLowerCase().replaceAll(" ", "-")}.webp`);
     await moveFilesInFolder(`CommunityResources/Resources/${data.name.toLowerCase().replaceAll(" ", "-")}-edit`, `CommunityResources/Resources/${data.name.toLowerCase().replaceAll(" ", "-")}`);
   }
 }
@@ -214,4 +246,21 @@ async function getResource(nameOrId: string, clones?: number) {
   if (resp.status == 200)
     return (await resp.json())[0] as CommunityResource;
   return undefined;
+}
+
+export async function doGetPendingResources() {
+  const session = await getServerSession(authOptions);
+  if(!session?.user.name || !(session.user.role == "admin"))
+    return null;
+
+  const resp = await doDBQuery(`SELECT id, name, description, link, variants, meta, upvotes, status, username, contact, clones, insert_ts FROM resources WHERE status LIKE ?`, ["Pending%"], false);
+  if (resp.status == 200) {
+    return (await resp.json()).map((res: {insert_ts: string}) => ({...res, insert_ts: new Date(res.insert_ts)})) as CommunityResource[];
+  }
+
+  return null;
+}
+
+export async function doGetImgExists(name: string) {
+  return !!(await getS3File(`CommunityResources/Images/${name}.webp`));
 }

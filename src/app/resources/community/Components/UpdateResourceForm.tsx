@@ -121,17 +121,18 @@ export default function UpdateResourceForm({closer, existingData}: {closer: () =
 
     //update DB entry
     const resp = existingData ? await doUpdateResource(existingData.id, data) : await doSubmitNewResource(data);
+    const approvedEdit = ["Approved", "Hidden"].includes(existingData?.status ?? "") || !!existingData?.clones;
 
     if (resp == 200) {
       //upload image file
       if (imageFile) {
-        await doUploadImage(data.name, fileToFormData(imageFile), existingData?.id);
+        await doUploadImage(data.name, fileToFormData(imageFile), approvedEdit ? existingData?.id : undefined);
       }
 
       //upload other files
       if (type == "File" || type == "HTML") {
         files.forEach(async (f) => {
-          await doUploadFile(data.name, fileToFormData(f), f.name, existingData?.id);
+          await doUploadFile(data.name, fileToFormData(f), f.name, approvedEdit ? existingData?.id : undefined);
         });
       }
 

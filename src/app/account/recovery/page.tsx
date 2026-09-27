@@ -20,7 +20,6 @@ export default function AccountRecoveryPage() {
   const checkValid = async () => {
     setLoading(true);
     const resp = await doValidateRecoveryCode(params.get("code") ?? "");
-    console.log(resp);
     if (resp == 401) {
       setMessage(t("Recovery.invalid"));
       setValidated(false);
@@ -87,7 +86,6 @@ export default function AccountRecoveryPage() {
         <>
           {validated ?
             <form className="flex flex-col gap-2 items-center" onSubmit={(e) => {
-              console.log("submitting");
               e.preventDefault();
               handleReset(new FormData(e.currentTarget));
             }}>

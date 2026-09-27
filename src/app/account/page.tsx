@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import EditAccountModal, { EditAccountAction } from "./Components/EditAccountModal";
 import PageTitle from "../Components/Layout/Typography/PageTitle";
 import Link from "next/link";
-import { BsArrowRight, BsFileEarmark, BsPerson } from "react-icons/bs";
+import { BsArrowRight, BsFileEarmark, BsPerson, BsShieldLock } from "react-icons/bs";
 
 //TODO: Consider allowing account deletion
 export default function AccountPage() {
@@ -78,6 +78,9 @@ export default function AccountPage() {
               <h3>{t("content")}</h3>
               <Link href="/resources/editor?viewChars" className="button rounded bg-jj-purple-1 text-lg text-white flex items-center gap-2 mt-2 w-min"><BsPerson/> {t("characters")} <BsArrowRight/></Link>
               <Link href="/resources/community/manage" className="button rounded bg-jj-purple-1 text-lg text-white flex items-center gap-2 mt-2 w-min"><BsFileEarmark/> {t("resources")} <BsArrowRight/></Link>
+              {session.user.role == "admin" &&
+                <Link href="/resources/admin" className="button rounded bg-jj-purple-1 text-lg text-white flex items-center gap-2 mt-2 w-min whitespace-nowrap"><BsShieldLock/> Admin Console <BsArrowRight/></Link>
+              }
             </div>
           </div>
           {editAction &&
