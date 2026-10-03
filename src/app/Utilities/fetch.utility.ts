@@ -33,11 +33,12 @@ export async function doGetFetchWithCache(endpoint: string, body: string = "", c
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export async function doFetch(endpoint: string, method: HTTP_METHOD, body: any): Promise<FetchResponse> {
+export async function doFetch(endpoint: string, method: HTTP_METHOD, body: unknown, headers?: HeadersInit): Promise<FetchResponse> {
   logRequest(endpoint, method, body);
   const response = await fetch(endpoint, {
     method: method,
-    body: JSON.stringify(body)
+    body: JSON.stringify(body),
+    headers: headers
   });
   logResponse(response);
   return {body: await response.json(), status: response.status};

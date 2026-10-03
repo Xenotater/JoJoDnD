@@ -14,7 +14,7 @@ export async function getBucketURL() {
   return `https://${await getBucketName()}.s3.us-east-1.amazonaws.com`;
 }
 
-export async function getS3File(filePath: string) {
+export async function getS3File(filePath: string, logErr = true) {
   logRequest(await getBucketURL() + `/${filePath}`, "GET");
   try {
     return await s3Client.send(new GetObjectCommand({
@@ -23,9 +23,9 @@ export async function getS3File(filePath: string) {
     }));
   }
   catch (e) {
-    if (e instanceof NoSuchKey)
+    if (e instanceof NoSuchKey && logErr)
       logError("Object not found: " + filePath);
-    if (e instanceof S3ServiceException)
+    else if (e instanceof S3ServiceException && logErr)
       logError("Error communicating with S3: " + e.message);
     return null;
   }

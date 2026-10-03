@@ -16,6 +16,7 @@ export default function ContactForm() {
       <ContentHeading as="h2" className="text-center">{t("contact")}</ContentHeading>
       <form className="w-full flex flex-col gap-4 md:items-center" onSubmit={(e) => {
         e.preventDefault();
+        //TODO: also consider sending a discord webhook for this?
         doSendContactEmail(formData).then((resp) => {
           if (resp == 200)
             toasts.displayMessage(t("emailSent"), {type: "Success"});

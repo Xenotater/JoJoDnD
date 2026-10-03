@@ -5,6 +5,7 @@ import { CommunityResource, ResourceSort } from "../Models/Resources.model";
 import { doDBQuery } from "../Utilities/mysql.utility";
 import { clearFilesInFolder, delS3File, getBucketURL, getS3File, listFilesInFolder, moveFilesInFolder, moveS3File, postS3File } from "../Utilities/aws.utility";
 import { authOptions } from "../api/auth/[...nextauth]/route";
+import { DiscordComponent, DiscordWebhookPayload, sendDiscordWebhook } from "../Utilities/discord.utility";
 
 const resourcesPerPage = 12; //TODO: re-evaluate
 
@@ -69,6 +70,8 @@ export async function doSubmitNewResource(data: CommunityResource) {
     return 401;
   const resp = await doDBQuery("INSERT INTO resources (username, name, description, link, variants, contact) VALUES (?, ?, ?, ?, ?, ?)",
     [session.user.name, data.name, data.description, data.link, data.variants ? data.variants : null, data.contact ? data.contact : null]);
+  if (resp.status == 200)
+    sendApprovalRequest(data);
   return resp.status;
 }
 
@@ -84,17 +87,23 @@ export async function doUpdateResource(id: number, newData: CommunityResource) {
     const cloneId = currentData.clones ? currentData.id : existingClone[0].id;
     const resp = await doDBQuery("UPDATE resources set username=?, name=?, description=?, link=?, variants=?, meta=?, contact=?, status=?, modified_ts=CURRENT_TIMESTAMP WHERE id = ?",
       [currentData.username!, newData.name, newData.description, newData.link, newData.variants ?? null, newData.meta ?? null, newData.contact ?? null, "Pending Edit", `${cloneId}`]);
+    if (resp.status == 200)
+      sendApprovalRequest(newData, true);
     return resp.status;
   }
   if (isApprovedEdit) {
     const resp = await doDBQuery("INSERT INTO resources (username, name, description, link, variants, meta, contact, clones, status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
       [currentData.username!, newData.name, newData.description, newData.link, newData.variants ?? null, newData.meta ?? null, newData.contact ?? null,
         `${id}`, "Pending Edit"]);
+    if (resp.status == 200)
+      sendApprovalRequest(newData, true);
     return resp.status;
   }
   const resp = await doDBQuery("UPDATE resources SET name=?, description=?, link=?, variants=?, meta=?, contact=?, clones=?, status=?, modified_ts=CURRENT_TIMESTAMP WHERE id = ?",
     [newData.name, newData.description, newData.link, newData.variants ?? null, newData.meta ?? null, newData.contact ?? null,
       `${currentData.clones}`, "Pending", `${currentData.id}`]);
+  if (resp.status == 200)
+    sendApprovalRequest(newData, true);
   return resp.status;
 }
 
@@ -165,7 +174,7 @@ export async function doToggleResourceVisibility(id: number) {
 
 export async function doGetResourceImage(data: CommunityResource) {
   const bucketURL = await getBucketURL();
-  if (data.clones)
+  if (data.clones && await doGetImgExists(data.name + "-edit"))
     data.name += "-edit";
   return `${bucketURL}/CommunityResources/Images/${data.name.toLowerCase().replaceAll(" ", "-").replaceAll(/[^a-z0-9-_]/g, "")}.webp?v=${data.modified_ts}`;
 }
@@ -253,7 +262,7 @@ export async function doGetPendingResources() {
   if(!session?.user.name || !(session.user.role == "admin"))
     return null;
 
-  const resp = await doDBQuery(`SELECT id, name, description, link, variants, meta, upvotes, status, username, contact, clones, insert_ts FROM resources WHERE status LIKE ?`, ["Pending%"], false);
+  const resp = await doDBQuery(`SELECT * FROM resources WHERE status LIKE ?`, ["Pending%"], false);
   if (resp.status == 200) {
     return (await resp.json()).map((res: {insert_ts: string}) => ({...res, insert_ts: new Date(res.insert_ts)})) as CommunityResource[];
   }
@@ -262,5 +271,53 @@ export async function doGetPendingResources() {
 }
 
 export async function doGetImgExists(name: string) {
-  return !!(await getS3File(`CommunityResources/Images/${name}.webp`));
+  return !!(await getS3File(`CommunityResources/Images/${name}.webp`, false));
+}
+
+async function sendApprovalRequest(data: CommunityResource, isEdit = false) {
+  const payload: DiscordWebhookPayload = {
+    components: [
+      {
+        type: DiscordComponent.TEXT_DISPLAY,
+        content: `<@&796836765071573023> ${isEdit ? "An edited" : "A new"} Community Resource requires approval`
+      },
+      {
+        type: DiscordComponent.SECTION,
+        components: [
+          {
+            type: DiscordComponent.TEXT_DISPLAY,
+            content: `Resource Name: ${data.name}\nDescription: ${data.description}\nCreated by: ${data.username}\n${data.contact ? `Contact: ${data.contact}` : ""}`
+          }
+        ],
+        accessory: {
+          type: DiscordComponent.THUMBNAIL,
+          media: {
+            url: await doGetResourceImage(data)
+          }
+        }
+      },
+      {
+        type: DiscordComponent.SEPARATOR,
+        divider: true,
+        spacing: 1,
+      },
+      {
+        type: DiscordComponent.TEXT_DISPLAY,
+        content: "Please access the admin console to review and approve or deny this resource. Any images, files, or links need to be carefully checked for malicious or inappropriate content."
+      },
+      {
+        type: DiscordComponent.ACTION_ROW,
+        components: [
+          {
+            type: DiscordComponent.BUTTON,
+            style: 5,
+            label: "Admin Console",
+            url: `${process.env.NEXTAUTH_URL}/resources/admin`
+          }
+        ]
+      }
+    ]
+  };
+
+  return await sendDiscordWebhook(payload);
 }

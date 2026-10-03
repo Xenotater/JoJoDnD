@@ -7,6 +7,7 @@ import {Character, CharacterData, CharacterFolder, CharacterOrFolder} from "../M
 import {formToJson, jsonToForm} from "../Utilities/misc.utility";
 import {copyS3File, delS3File, getBucketURL, postS3File} from "../Utilities/aws.utility";
 import puppeteer from "puppeteer";
+import { DiscordComponent, DiscordWebhookPayload, sendDiscordWebhook } from "../Utilities/discord.utility";
 
 export async function doGetCharacterData(id: number) {
   const char = await getWithPermission(id);
@@ -117,7 +118,12 @@ export async function doUploadCharacterImage(fileData: FormData, id: number, isA
   const session = await getServerSession(authOptions);
   if (!session?.user?.name) return 401;
 
-  return await postS3File(fileData, `Characters/${session.user.name}_${id}${isAlt ? "_alt" : ""}.webp`);
+  const imgName = `${session.user.name}_${id}${isAlt ? "_alt" : ""}.webp`;
+  const resp = await postS3File(fileData, `Characters/${imgName}`);
+  if (resp) {
+    sendImageNotification(imgName);
+  }
+  return resp;
 }
 
 export async function doDuplicateCharacter(id: number, currentFolder = 0) {
@@ -437,4 +443,36 @@ export async function doCaptureSheetImage(char: Character, locale = "en") {
 
   //map to valid return type
   return result.map(data => Buffer.from(data).toString("base64"));
+}
+
+async function sendImageNotification(name: string) {
+  const payload: DiscordWebhookPayload = {
+    components: [
+      {
+        type: DiscordComponent.TEXT_DISPLAY,
+        content: `A new character image has been uploaded: **${name}**`
+      },
+      {
+        type: DiscordComponent.MEDIA_GALLERY,
+        items: [
+          {
+            media: {
+              url: `${await getBucketURL()}/Characters/${name}`
+            }
+          }
+        ]
+      },
+      {
+        type: DiscordComponent.SEPARATOR,
+        divider: true,
+        spacing: 1
+      },
+      {
+        type: DiscordComponent.TEXT_DISPLAY,
+        content: "If this image is inappropriate, please alert Xenotater so it can be removed."
+      }
+    ]
+  };
+
+  return await sendDiscordWebhook(payload);
 }

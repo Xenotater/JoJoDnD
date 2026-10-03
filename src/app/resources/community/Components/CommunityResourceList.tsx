@@ -39,7 +39,7 @@ export default function CommunityResourceList({bucketURL, user}: {bucketURL: str
       overwritePage = count;
     else if (page < 1)
       overwritePage = 1;
-    getResources(overwritePage, sort, search);
+    getResources(overwritePage, ["Top", "New", "A-Z"].includes(sort) ? sort : "Top", search);
     setCurrentPage(overwritePage);
     setPages(count);
     if (overwritePage != page)

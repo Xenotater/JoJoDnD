@@ -1,33 +1,53 @@
 "use client";
 
-import { CommunityResource } from "@/app/Models/Resources.model";
+import {CommunityResource} from "@/app/Models/Resources.model";
 import CommunityResourceCard from "../../community/Components/Card/CommunityResourceCard";
-import { doApproveResource, doDenyResource } from "@/app/Actions/community.action";
-import { useRouter } from "next/navigation";
+import {doApproveResource, doDenyResource} from "@/app/Actions/community.action";
+import {useRouter} from "next/navigation";
 
-export default function PendingResourceCard({data, bucketURL}: {data: CommunityResource, bucketURL: string}) {
+export default function PendingResourceCard({data, bucketURL}: {data: CommunityResource; bucketURL: string}) {
   const router = useRouter();
 
   return (
     <div className="flex flex-col gap-2 border rounded-md p-1 m-1 w-[500px]">
       <div className="flex gap-2">
-        <CommunityResourceCard data={data} bucketURL={bucketURL}/>
+        <CommunityResourceCard data={data} bucketURL={bucketURL} />
         <div className="flex flex-col gap-1">
           <span>User: {data.username}</span>
           <span>Contact: {data.contact}</span>
           <span>Date: {data.insert_ts?.toLocaleDateString()}</span>
           <span>Type: {data.meta}</span>
-          <span className="break-all">Links: {data.link}</span>
+          <p className="break-all">
+            Links:{" "}
+            {data.link.split("|").map((l, i) => (
+              <span key={i}>
+                <a target="_blank" href={data.clones ? l.replace(/(?<={bucketURL}\/CommunityResources\/Resources\/)([^\/]*)/, `$1-edit`).replace(/^{bucketURL}/, bucketURL) : l.replace(/^{bucketURL}/, bucketURL)}>
+                  {l.includes("bucketURL") ? l.replace(/^{bucketURL}.*\//, "") : l}
+                </a>
+                {i+1 < data.link.split("|").length ? " | " : ""}
+              </span>
+            ))}
+          </p>
         </div>
       </div>
       <div className="flex gap-2">
-        <button className="rounded-sm text-lg grow bg-red-500" onClick={() => {
-          doDenyResource(data.id).then(() => router.refresh());
-        }}>Deny</button>
-        <button className="rounded-sm text-lg grow bg-green-500" onClick={() => {
-          doApproveResource(data.id).then(() => router.refresh());
-        }}>Approve</button>
+        <button
+          className="rounded-sm text-lg grow bg-red-500"
+          onClick={() => {
+            doDenyResource(data.id).then(() => router.refresh());
+          }}
+        >
+          Deny
+        </button>
+        <button
+          className="rounded-sm text-lg grow bg-green-500"
+          onClick={() => {
+            doApproveResource(data.id).then(() => router.refresh());
+          }}
+        >
+          Approve
+        </button>
       </div>
     </div>
-  )
+  );
 }

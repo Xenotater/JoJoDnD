@@ -11,7 +11,7 @@ export default function ResourceSearch() {
   const router = useRouter();
   const t = useTranslations("Community");
   const [search, setSearch] = useState(params.get("search") ?? "");
-  const [sort, setSort] = useState<ResourceSort>("Top");
+  const [sort, setSort] = useState<ResourceSort>(params.get("sort") as ResourceSort ?? "Top");
 
   useEffect(() => {
     const newParams = new URLSearchParams(params);

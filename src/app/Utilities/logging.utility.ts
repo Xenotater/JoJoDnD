@@ -11,10 +11,10 @@ export async function logError(message: string) {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export async function logRequest(url: string, method: HTTP_METHOD, body?: any) {
+export async function logRequest(url: string, method: HTTP_METHOD, body?: unknown) {
   log(`<<<<< Outgoing ${method} Request To ${url}`);
   if (body)
-    log(`<<<<< Request Body: ${applyMasking(body)}`);
+    log(`<<<<< Request Body: ${applyMasking(typeof body == "string" ? body : JSON.stringify(body))}`);
 }
 
 export async function logResponse(response: Response) {
