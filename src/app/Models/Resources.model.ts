@@ -15,3 +15,15 @@ export interface CommunityResource {
 }
 
 export type ResourceSort = "A-Z" | "Top" | "New";
+
+export interface PatchNote {
+  version?: string;
+  title?: string;
+  date: Date;
+  notes: (string | NestedNote)[];
+}
+
+export interface NestedNote {
+  content: string;
+  notes?: (string | NestedNote)[];
+}

@@ -1,0 +1,1123 @@
+{
+  "patches": [
+    {
+      "version": "1.13.1",
+      "date": "2025-07-07",
+      "notes": [
+        {
+          "content": "Added a few things that were missing from the last update",
+          "notes": ["Particularly, rules for the Decay and Taunted Conditions"]
+        },
+        {
+          "content": "Clarified a number of small things",
+          "notes": ["Object Anchor for Anchored Stand's DR calc was simplified to avoid confusion in edge-cases, like interactions with Phenomenon Stand", "Cook's (Herbalist - Artisan) Artisan Charge Ability has a defined Range now", "Enhanced Custom Ability's Long Range option is specified to be double the Short Range", "The Flame attribute allows fire to be spread from an object hit by it", "Pillar Men and Undead get Darkvision"]
+        },
+        {
+          "content": "Ranged Attack and Melee Barrage were tweaked slightly, again",
+          "notes": [
+            {
+              "content": "Melee Barrage gains the Seige attribute, giving it slightly more situational versatility",
+              "notes": ["We considered buffing it further, but we're aiming to make sure it's useful but not always just straight up better than attacking normally"]
+            },
+            "Ranged Attack's Burst option's Range was overhauled. Instead of an absolutely massive 10/20m cone, it's now a 2/4m cone that can be created at any point within 10/20m"
+          ]
+        },
+        {
+          "content": "A few other Feats and Abilities were tweaked",
+          "notes": ["Feats: Anchored Immunity, Heavy Sleeper", "Abilities: The Unrelenting Fighting Style (Artisan, Heavyweight, Ranger, Warrior)"]
+        }
+      ]
+    },
+    {
+      "version": "1.13.0",
+      "title": "The Rules and Races Overhaul",
+      "date": "2025-06-03",
+      "notes": [
+        {
+          "content": "We've redefined all of the basic rules for the system!",
+          "notes": [
+            "Being based on 5e D&D was becoming a bit more confusing than it was worth, especially as it made it more difficult for those unfamiliar with D&D to get into this system. We decided to break away from that basis and strictly define how everything works down to the basics.",
+            "The rules section is now separated into 8 categories: Basics, Characters, The Turn, Damage & Conditions, Combat, Environment, and DM Tips. Each category explains the basic concepts within, from which dice to use to the types of actions you can take and more.",
+            "We've tried to explain everything, but there's a lot of mechanics in this game and something may have slipped through the cracks. Please let us know if you notice something missing or needing to be corrected!"
+          ]
+        },
+        {
+          "content": "The Races have been reorganized and expanded",
+          "notes": ["We've organized the races into Player and NPC Races. NPC Races aren't technically balanced for Players, but can still be played if your DM allows it.", "A number of new Races have been added: Cyborgs, Ghosts, Animals and Rock Animals, Living and Undead Chimera, Living Stands, and Plants"]
+        },
+        {
+          "content": "Several Classes were tweaked",
+          "notes": [
+            "Ranged-Type and Ability-Type have had their Attack Dice increased (1d6/2d6->1d8/2d6 and 1d4/1d6->1d6/1d8 respectively)",
+            "All Stand Types now have a linear progression option that doesn't scale with your Level",
+            "All Stand Types now get their Special Ability earlier, and Ability-Type gets Ultimate Ability earlier",
+            "All Non-Stand Classes get Equalizer at Level 1 now",
+            "Clarified and tweaked how Undead and Pillar Men take extra damage from The Ripple",
+            "Level-Up tables were updated slightly for: Ability, Artisan, Assassin, Consul, Enhancement, Heavyweight, Ranged, Ranger, Ripple, Scholar"
+          ]
+        },
+        {
+          "content": "Some new Abilities were added, largely for the new Races",
+          "notes": ["Bionic Enhancements, Bound Powers, Chimeric Nature, Chimera Pools, Intangible Form, Living Stand Nature, Mobile Haunt, Pillar Man's Physique, Poltergeist Powers, Puppeteer Powers, Revenant Powers, Rooted Defense, Sacrifice Bionics, Stand Pools, Stationary Haunt, Sunshield, Supernatural Roots, Chimeric Undeath"]
+        },
+        {
+          "content": "Ranged Attack and Melee Barrage were reworked... again",
+          "notes": ["They now allow you to choose how many Attacks to spend on them, rather than consuming your entire Action. Spending more Attacks results in more damage, but if you wish you can use some of your Attacks for something else (like Defensive Ability, etc)."]
+        },
+        {
+          "content": "Some new Feats were added",
+          "notes": ["Beastial Cunning: Gives more Intelligence/Charisma to Animals", "Familiar Synergy: Gives you a special combination move for you and your Familiar to use", "Rallying Cry: A support ability that lets you share HP and Temp HP with allies", "Stand Attacker: Strengthens Stand Melee Attacks", "Swift Recovery: Gives a pool of recoverable Hit Points", "Wrestler: Improves the ability to Grapple and Shove"]
+        },
+        {
+          "content": "Natural Talent and Perfected Craft were removed",
+          "notes": ["These Feats became redundant since all Proficiences now stack according to the redefined rules. Most instances of their gain have been replaced with Practical Experience or Jack of All Trades.", "For similar reasons, Spin Expertise and Spin Mastery were also removed, instead just replaced with a simple Proficiency gain on the Level-Up table"]
+        },
+        {
+          "content": "A number of Abilities and Feats were changed in some way",
+          "notes": [
+            "Changed Abilities: Ability Feature, Anchored Stand, Artisan Feature, Assassin Feature, Confident Provocation, Consul Feature, Detached Stand, Devastating Critical, Distant Defense, Scarlet Overdrive (now Elemental Overdrive), Engineer, Fleeting Invulnerability, Fortune Teller, Ghoulification, Greater Undead Senses, Greater Undead Health Threshold, Healing Ripple, Heavyweight Feature, Hit List, Improved Rejuvenation, Improved Specialty, Improved Survivalist, Instant Swap, Mysterious Disappearance, Natural Armor, Oblivious Facade, Perfected Specialty, Perfected Survivalist, Perfected Tremorsense, Preparing for Infinity, Primal Charm, Ranger Feature, Rejuvenation, Rippling Weapon, Scholar Feature, Self-Acclimation, Space Ripper Stingy Eyes, Speedy Movement, Stoneflesh, Supernatural Item, Survivalist, Undead Nature, Weapon Smith, Zombification",
+            "Changed Feats: Additional Sense, Adrenaline Rush, Berserker, Burst, Consistent Accuracy, Clever Disguise, Close-Range Deflection, Close-Range Mobility, Deadly Accuracy, Demolitionist, Energy Imbuement, Equalizer, Familiar Fighting Spirit, Feel No Pain, Focus, Fortune Teller, Stand Breaker (now Guard Breaker), Guardian's Wrath, Headhunter, Heart of Lies, Heart of Truth, Heavy Specialization, Heckler, Immediate Connection, Improvised Healing, Interpreter, Light Sleeper, Martial Arts, Massive Stand, Melee Focus, Melee Weapon Specialization, Object Stand, Piercer, Powerful Presence, Practical Experience, Professional Weapon Training, Quick on your Feet, Rifle Specialization, Shotgun Specialization, Sidearm Specialization, Simple Weapon Focus, Specialized Stand Senses, Suit Stand, Tavern Brawler, Thrown Weapon Specialization, Trained Combatant, Weapon Feat"
+          ]
+        },
+        {
+          "content": "Some passions had their Proficiencies tweaked",
+          "notes": ["Athlete, Leader, Student, Warrior"]
+        },
+        {
+          "content": "A few small miscellaneous changes",
+          "notes": ["Tiny Familiars have that take a Flying/Swimming Speed have 1m Walking Speed instead of 0m", "The Familiar Feats Extra Sense and Keen Senses were updated, and the Abilities Superior Skills and Superior Saves were renamed to Better Skills and Better Saves respectively", "Firearms can be un-jammed with an Attack"]
+        },
+        "Various other small grammar fixes, clarifications, and corrections"
+      ]
+    },
+    {
+      "version": "1.12.3",
+      "date": "2025-01-27",
+      "notes": [
+        {
+          "content": "A few important balance changes!",
+          "notes": ["Stands can use their Damage Reduction on damage from some physical Saving Throws now", "Charmed creatures can have a free Charisma Check made against them each Turn", "Familiar can't be killed unless their owner dies", "Melee Barrage was nerfed slightly, no longer able to use Stand stats for the DC", "Ranged Attack was rebalanced, also unable to use Stand stats for its burst mode's DC and dealing more damage with its focused mode"]
+        },
+        {
+          "content": "A number of small but important clarifications",
+          "notes": [
+            "The 'guide' that we recommend Custom Abilities follow (on the main Stands page) has been reworked quite a bit",
+            "There are defined rules for protecting someone else with your Stand on the main Stands page now",
+            "Energy Drain from certain Undead now has defined rules about a person who wasn't fully drained recovering from being drained.",
+            "Passive abilities are often indiscriminate AOEs",
+            "Hunker (the weapon attribute) only grants cover in one direction",
+            "Vampires ascending via the Completed Mask is now a Variant Rule, since there's no canon example of this"
+          ]
+        },
+        {
+          "content": "A new Ability was added for Non-Supernatural Classes: Signature Move",
+          "notes": ["This should give them a personally customized move to keep up with the supernatural classes in terms of their 'cool factor'"]
+        },
+        {
+          "content": "Several new Feats: Combination Ability, Equalizer, and Substand Expert",
+          "notes": [
+            "Combination Ability is for Multiclassers and Undead, allowing you to combine your classes' features in a unique skill",
+            {
+              "content": "Equalizer is a way to allow those without a Stand to have a better chance of fighting a Stand User, letting them apply pressure even with mundane weapons",
+              "notes": ["Anyone with a Supernatural Item (Non-Super Variant Rule) gains this, as does Remote and Revenge Type"]
+            },
+            "Substand expert lets you briefly use a Stand even while the other is summoned/active, similar to the use of Epitaph and King Crimson in canon"
+          ]
+        },
+        {
+          "content": "Suit Stand was completely reworked",
+          "notes": ["It now functions differently depending on your Stand Type, and Ranged Types ARE allowed to take it once again"]
+        },
+        {
+          "content": "A few small Class changes:",
+          "notes": [
+            "Non-Supernatural Classes get the new Signature Move Ability at Level 3",
+            "Hive had Swarm Attacks were further clarified, its DC changed and it can't be resisted with Stand stats, Attacking and Defending with half or less of your Instances was clarified",
+            "Remote and Revenge Types gain the new Equalizer Ability at Level 1",
+            "Ripple and Spin get their Custom Techniques at Level 3 instead of Level 5",
+            "Modular Spin gets two features at Levels 5 and 6, to keep up with the non-modular variant"
+          ]
+        },
+        {
+          "content": "A number of Abilities were tweaked, changed, or clarified in smaller ways, be sure to look over the following if your character uses them:",
+          "notes": ["Act 0, Artisan Fighting Style, Artisan's Resurgence, Confident Provocation, Heavyweight Fighting Style, Immense Power, Improved Immense Range, Melee Barrage, Natural Armor, Perfected Survivalist, Ranged Attack, Ranger Fighting Style, Ranger's Recovery, Ripple Feature, Special Ability, Stand Energy Recharge, Supernatural Item, Survivalist, Warrior Fighting Style, Zombification"]
+        },
+        {
+          "content": "A number of Feats were tweaked, changed, or clarified in smaller ways, be sure to look over the following if your character uses them:",
+          "notes": ["Additional Sense, Adrenaline Rush, Aura of Awareness, Brutality, Combat Medic, Commentator, Crusher, Elementalist, Extra Experience, Heckler, Feel No Pain, Heavy Sleeper, Object Stand, Perfected Craft, Piercer, Powerful Presence, Practical Experience, Sentient Stand, Slasher, Specialized Save, Suit Stand"]
+        },
+        {
+          "content": "Familiars now have an Extra Sense Feat",
+          "notes": ["This works similarly to Additional Sense, though slightly more limited"]
+        },
+        {
+          "content": "A number of other small fixes and clarifications",
+          "notes": ["Many of these were from the community's issue report channel in our discord, so thank you all and be sure to let us know if we missed anything!"]
+        }
+      ]
+    },
+    {
+      "version": "1.12.2.4",
+      "date": "2024-10-19",
+      "notes": [
+        {
+          "content": "New Act-Type page in the Editor",
+          "notes": [
+            "Act-Type Stands function very differently from others, having essentially 3-4 separate Stands with unique stats and Abilities. Because of this, they never worked very well within the Editor. To correct this, we've now added another page just for them.",
+            {
+              "content": "This new page contains space for all of your Act's stats and info in one place, and only shows up when \"Act\" is selected as your class.",
+              "notes": ["This does mean that it won't work for multiclassing. I may consider having the page show up when the \"Other/Multiclass\" option is selected, but for the time being I don't think that's necessary. We really don't recommend trying to multiclass or multitype with Act-Type anyway."]
+            },
+            "It should be noted that we removed support for Act 0 in the sheet, as they don't really have much stat-wise anyway and cease to exist when you get Act 1. We've also added support for Act 4. Because of this, your existing Act data may be shifted over by 1 after this update, but it will all still be there even if it's in the wrong place on the sheet.",
+            "This page will be added to the PDF version in its next update, and should be added within roll20 very soon and TTS at some point."
+          ]
+        },
+        {
+          "content": "A few more Editor tweaks",
+          "notes": ["The autofill toggle has been moved away from the page toggles to be more prominent, now being alongside the stat-flip toggle.", "Fixed a bug relating to searching within the load character menu."]
+        },
+        {
+          "content": "Fancied up the social buttons on the homepage",
+          "notes": ["They now look nicer and display our total and active members"]
+        }
+      ]
+    },
+    {
+      "version": "1.12.2.1",
+      "date": "2024-09-10",
+      "notes": [
+        {
+          "content": "Some small fixes that slipped past us in the recent update",
+          "notes": ["Extra Experience was reworded to not seem like a nerf, which wasn't the intent.", "Special Ability's passive rule has been updated to follow the new ruling for Custom Ability.", "These fixes didn't make it into the newest version of the PDF, but will be there next time we update it."]
+        },
+        {
+          "content": "Fixed an issue with sessions in the editor",
+          "notes": ["Sessions (your login state) weren't persisting as long as they were meant to. They now last 2 hours, rather than only 24 minutes.", "Additionally, when you try to save a character with an expired session the logout button changes back to the login button, so you can log back in without losing your changes."]
+        }
+      ]
+    },
+    {
+      "version": "1.12.2",
+      "date": "2024-09-09",
+      "notes": [
+        {
+          "content": "A number of rules changes and clarifications",
+          "notes": ["Damage Resistances/Immunities/Vulnerabilities don't stack", "Free Actions are... free", "Improvised Weapons were buffed and clarified", "The levels of Proficiency were explicitly defined", "The way Saves interact with DR was changed and clarified", "Unarmed Strikes have Open Hand, Light, and Fist attributes", "A few other small clarifications"]
+        },
+        {
+          "content": "A new weapon type was added: Improvised",
+          "notes": ["This was necessary as we've added explicitly defined examples of some specific Improvised Weapons that have their own attributes and damage values", "Also used for the sake of Tavern Brawler's Proficiency Bonus... bonus"]
+        },
+        {
+          "content": "A handful of weapons were added, and another handful were tweaked",
+          "notes": ["Improvised Weapons added: Brick / Big Rock, Container of Hot Liquid, Chain, Chair / Stool, Flashlight, Glass Bottle, Makeshift Flail, Pen / Screwdriver, and Stick", "The Molotov Cocktail is back", "Changed weapons: Bec de Corbin, Brass Knuckles, Gasoline Tank, Gauntlet, Hand Wraps, Musket Pistol, Pump-Action Shotgun, Spiked Gauntlet"]
+        },
+        {
+          "content": "A new weapon attribute: Fist",
+          "notes": ["This attribute boosts damage dealt up to your Unarmed Strikes damage if it would've been lower"]
+        },
+        {
+          "content": "Several new Feats were added",
+          "notes": ["Close-Range Deflection, Feel No Pain, Human Resolve, Phenomenon Stand"]
+        },
+        {
+          "content": "A number of Feats were tweaked",
+          "notes": [
+            "Aura of Awareness, Catlike Agility, Defensive Agility (previously Defensive Stance), Energy Imbuement, Enfeebler, Ever Vigilant, Exemplar, Extra Experience, Focus, Heckler, Immense Impact, Jack of All Trades, Level-Headed, Martial Arts, Menacing Aura, Perfected Craft, Piercer, Resilient, Resource Regeneration, Scarflesh, Sentient Stand, Sharp Mind, Simple Weapon Focus, Specialized Stand Senses, Suit Stand, Tactician, Tavern Brawler, Trained Combatant, Trapper (previously Trap Detection), Weapon Attribute Specialist"
+          ]
+        },
+        {
+          "content": "A number of Abilities were tweaked",
+          "notes": [
+            "Ability Feature, Anchored Stand, Artisan Fighting Style, Artisan's Resurgence, Bullish Brawn, Confident Provocation, Consul Feature, Consul Fighting Style, Custom Ability, Encouragement Dice, Enhanced Custom Ability, Harden Flesh, Heavyweight Feature, Immense Range, Improved Encouragement Dice, Instant Swap, Perfected Encouragement, Ranger Feature, Ranger Fighting Style, Ranger's Recovery, Rejuvenation, Remote Feature, Restraining Spin, Ripple Fighting Style, Ripple Possession, Scholar Feature, Scholar Fighting Style, Slippery, Spin Feature, Warrior Fighting Style, Undead Nature"
+          ]
+        },
+        {
+          "content": "Several Classes were tweaked",
+          "notes": [
+            "Ability-Type gets a choice between all the special \"Stand\" Feats (like Phenomenon, Object, Sentient, etc.)",
+            "All Non-Supernaturals get Supernatural Item at Level 1 now",
+            "Ripple and Spin get their 'Spiritual' Ability (that lets them see and damage Stands) at Level 1 now",
+            "Remote-Type, Consul, Heavyweight, Ranger, and Scholar get a few new options",
+            "Several aspects of Spin were clarified and some Abilities that were unlocked in later levels have been moved to earlier ones",
+            "Unarmed Strikes have Open Hand, Light, and Fist attributes",
+            "A clarification about User stats and direct hits was added to Independent-Type"
+          ]
+        },
+        "More small typo fixes and clarifications"
+      ]
+    },
+    {
+      "version": "1.12.1.7",
+      "date": "2024-08-22",
+      "notes": [
+        {
+          "content": "A few optimizations and tweaks to the editor",
+          "notes": [
+            {
+              "content": "In the load window, character images are now loaded separately from the other card info, which should greatly improve load times.",
+              "notes": ["While they're loading, you'll just see the default Jotaro-shadow image."]
+            },
+            {
+              "content": "Made the process of creating a new folder a bit more intuitive.",
+              "notes": [
+                "Previously, you could only create a folder by attempting to move a character into one that doesn't already exist. While this was fine and explained in the move dialog, it wasn't obvious.",
+                "Now, you're able to create a new empty folder by clicking the \"+\" button that was previously only used to create a new blank character. This button now has a small context menu that allows you to choose between creating a new character or folder.",
+                "Folders created this way are simply named \"New Folder\" by default (or New Folder 1, 2, 3, etc), but can be renamed of course."
+              ]
+            },
+            "Made a few other smaller optimizations and visual tweaks."
+          ]
+        },
+        "A few other small fixes."
+      ]
+    },
+    {
+      "version": "1.12.1.6",
+      "date": "2024-08-17",
+      "notes": [
+        {
+          "content": "Editor Folders!",
+          "notes": ["That's right, you can now organize your characters in the editor into distinct folders!", "Folders can be nested inside each other, moved, renamed, duplicated, and deleted just like characters.", "Moving, duplicating, or deleting a folder logically applies those operations to its contents as well.", "This *shouldn't* break any existing functionality, but it's a pretty big structural change so let me know if you encounter any issues."]
+        },
+        {
+          "content": "Slightly rephrased the Account Recovery page within the editor",
+          "notes": ["Some users have asked for a \"username recovery\" option. The password recovery feature sends you an email containing your username, but the phrasing didn't previously make that clear."]
+        },
+        "Created a place for the patch notes (hey that's this!) on the resources page",
+        {
+          "content": "Separated the Epic Feats from the other Feats",
+          "notes": ["There's now a toggle on the Feats page to view these special Feats."]
+        },
+        "Added some more old versions of the PDF document to /resources/Assets/PDF",
+        {
+          "content": "Added logic to check for an updated version of the website",
+          "notes": ["This should allow you to get the latest changes right away, rather than having to wait for your cache to expire or hard reload the page", "This may or may not work for this update since your cache might be missing the change that makes this possible, but it should work for every future update"]
+        }
+      ]
+    },
+    {
+      "version": "1.12.1.4",
+      "date": "2024-08-04",
+      "notes": [
+        {
+          "content": "A huge first step towards translating our module into more languages has been completed, as Mini has helped us translate the entire character sheet editor into Ukrainian!",
+          "notes": [
+            "For those interested, relevant pages will now have a small toggle in the upper-right (bottom-right of the menu on mobile) to change the language, with \"uk\" now being one of the options. When chosen, the page will reload and all text on the page should be translated to the chosen language.",
+            "This shouldn't break any functionality, or break any pages that don't yet have translations available, but it's been a pretty clunky learning process so please let me know if you encounter any problems. As a reminder, you may need to hard reload (ctrl+f5) or open in incognito to see the changes immediately.",
+            "We'll soon be working to translate more of the website into Ukrainian, and more languages will hopefully be on the way as well! I've heard from at least one person working on helping us translate to Russian for sure.",
+            "If you'd also wish to help translate our website, reach out to Xenotater!"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.12.1",
+      "date": "2024-07-16",
+      "notes": [
+        {
+          "content": "New Condition Definitions!",
+          "notes": ["We've reworked the Conditions in the module to more properly apply to the setting and game balance"]
+        },
+        {
+          "content": "Several new rules and rule tweaks",
+          "notes": ["Advantage/Disadvantage, Doubling/Halving, Flanking, Non-Lethal Strikes, Limited Resources, Weapon Proficiency stacking", "Also specified Stand summoning/dispelling must be within 2m and Unarmed Strikes get \"Open Hand\""]
+        },
+        {
+          "content": "Lots of new Feats",
+          "notes": ["Additional Sense, Aura of Awareness, Close-Range Mobility, Confident Support, Elementalist, Enfeebler, Extra Experience, Focus, Heckler, Overheal, Powerful Presence, Resource Regeneration, Sharp Mind, and Tactician"]
+        },
+        {
+          "content": "Several new Abilities",
+          "notes": ["Custom Bodily Ability, Distant Defense, Doubled Range, Flight"]
+        },
+        {
+          "content": "A few new weapons",
+          "notes": ["Hand Wraps, Meteor Hammers, and Tonfa"]
+        },
+        {
+          "content": "A number of Feats, Abilities, and weapons were changed slightly as well",
+          "notes": ["A complete list of these would be too long to write here, so be sure to check what you have!"]
+        },
+        {
+          "content": "A few tweaks and additions to weapon attributes",
+          "notes": ["The Conductive and Radius attributes were tweaked, and a new Limited Hand attribute was added"]
+        },
+        {
+          "content": "Some small changes to a few Classes",
+          "notes": ["Mostly options for the new Abilities and Feats", "Ability-Type gets Distant Defense and Resource Regeneration. Also Earth, Wind, and Fire was removed as an example to avoid confusion, replaced by Man in the Mirror.", "Act-Type gets Distant Defense and Resource Regeneration, and the Long-Range type gets some more starting options", "Hive-Type gets Resource Regeneration", "Ranged-Type gets Distant Defense and some more options at Level 1"]
+        },
+        {
+          "content": "Familiars got some general tweaks",
+          "notes": ["Specified their AC bonus applies to their Stands as well", "Additional Ability Score Increase at level 19", "More starting Proficiencies and a few tweaked options", "Some Features and Feats were tweaked slightly, check what you have!"]
+        }
+      ]
+    },
+    {
+      "version": "1.12.0.1",
+      "date": "2024-06-03",
+      "notes": [
+        {
+          "content": "Character Sheet changes",
+          "notes": ["The editor was updated to reflect the new character sheet", "This shouldn't cause any issues with existing characters and data, please let me know if you experience any!"]
+        },
+        "Fixed a few links and formatting issues"
+      ]
+    },
+    {
+      "version": "1.12.0",
+      "title": "The Modular Update",
+      "date": "2024-06-03",
+      "notes": [
+        {
+          "content": "The Modular Update!",
+          "notes": ["Every Class now has a variant level-up table that allows for more varied options when building your character", "This system is a Variant Rule, and it's up to the DM if it should be used"]
+        },
+        {
+          "content": "New Skills",
+          "notes": ["The 5e Skills system doesn't quite fit the settings commonly seen in JoJo's, so we've made some changes to most of the Skills to make them fit better.", "Descriptions of these Skills as well as a guide on how to convert from the 5e versions is in the Rules section", "The Character Sheet was updated to include these new Skills"]
+        },
+        {
+          "content": "Act-Type was reworked",
+          "notes": ["Even the non-modular version of the Class is more open and versatile now"]
+        },
+        {
+          "content": "Stand AC was buffed",
+          "notes": ["All 3 stats (Precision, Durability, Speed) are now used to calculate it"]
+        },
+        {
+          "content": "A number of new Feats were added",
+          "notes": ["Act Modification, Burst, Class Initiate, Dark Determination, Melee Focus, Object Stand, Piercer, Sentinel, Slasher, Specialized Stand Senses, Stand Breaker, Weapon Attribute Specialist"]
+        },
+        {
+          "content": "A number of new weapons were added",
+          "notes": ["Battle Axe, Blunderbuss, Bolt-Action Rifle, Carbine, Chakram, Fire Axe, Gauntlet, Lance, Machete, Musket, Musket Pistol, Scimitar, Shortsword, Spiked Gauntlet, Throwing Hammer, War Fan", "2 new weapon attributes were added as well, Bayonet and Open Hand"]
+        },
+        {
+          "content": "A number of Feats, Abilities, and weapons were changed slightly as well",
+          "notes": ["A complete list of these would be too long to write here, so be sure to check what you have!"]
+        },
+        {
+          "content": "Some Classes were updated slightly",
+          "notes": ["Assassin, Enhancement, Heavyweight, Hive, Independent, Power, Ripple, Spin, Ranger, Revenge, Warrior"]
+        },
+        "Passions grant bonus Skill Proficiencies based on your PB now",
+        {
+          "content": "Inspiration was tweaked slightly",
+          "notes": ["It now re-rolls the entire Check, rather than just providing Advantage"]
+        },
+        {
+          "content": "Various smaller fixes and clarifications",
+          "notes": ["Familiar Feats now reflect the changed Feat amounts of the last update", "Those with Berserker active still fail a Death Save when hit", "Several Feats and Abilities now provide canon examples of their use"]
+        }
+      ]
+    },
+    {
+      "version": "1.11.7.2",
+      "date": "2024-05-01",
+      "notes": [
+        {
+          "content": "Touched up the layout of the Weapons page",
+          "notes": ["The table is now scrollable, with the header pinned to the top as you scroll. This should make reading the full list easier.", "There's now a list of all the weapon attributes below the table, so you can look for a specific attribute rather than trying to find a weapon with it and hovering over it in the list. The tooltips in the list itself still work as well of course."]
+        }
+      ]
+    },
+    {
+      "version": "1.11.7",
+      "date": "2024-05-01",
+      "notes": [
+        {
+          "content": "Number of Feats is now equal to your Proficiency Bonus",
+          "notes": ["This means you'll get your next Feat sooner and overall will make it easier to keep track of."]
+        },
+        {
+          "content": "Berserker was nerfed slightly",
+          "notes": ["It now inflicts Disadvantage on all mental Saves, rather than just illusions."]
+        },
+        {
+          "content": "Some more small clarifications",
+          "notes": ["Energy imbuement grants Proficiency in the imbued item."]
+        }
+      ]
+    },
+    {
+      "version": "1.11.6",
+      "date": "2024-04-16",
+      "notes": [
+        {
+          "content": "New Undead Ability - Spider Climb",
+          "notes": ["Vampires and EPMs can now walk on sheer surfaces and ignore gravity while on them", "Basically a more balanced version of the flight they used to have"]
+        },
+        {
+          "content": "Some small additions and clarifications",
+          "notes": ["Updated our Patron list, huge thanks to our 3 supporters! If you want your name changed on the site/doc, please let me know.", "Immense Resistance has a minimum increase specified now"]
+        }
+      ]
+    },
+    {
+      "version": "1.11.5",
+      "date": "2024-04-10",
+      "notes": [
+        {
+          "content": "More Non-Supernatural Classes!",
+          "notes": ["In addition to those added in v1.11.0, we've added 3 more, the Artisan, Heavyweight, and Ranger!"]
+        },
+        {
+          "content": "Some existing Classes were tweaked",
+          "notes": ["Act 1's stat restritctions have been swapped, they now CAN increase their Speed, but can't increase Durability", "Assassins, Consuls, Scholars, and Warriors have had some early Abilities shifted slightly.", "A number of Classes have been given options for some of the newly added Feats and Abilities."]
+        },
+        {
+          "content": "A new Feat was added, Berserker",
+          "notes": ["This allows you to go into a rage under specific conditions, increasing your stats and giving your attacks and defenses some bonuses."]
+        },
+        {
+          "content": "Passions were given a fresh coat of paint",
+          "notes": ["This includes some small tweaks as well as a few new Passions, the Chef, Scientist, and Weightlifter!"]
+        },
+        {
+          "content": "A list of Tools has been added to the Rules page",
+          "notes": ["These have always existed for the most part, and a good number of them come from 5e, but we figured it'd be useful for us to specify how they may be used in our system."]
+        },
+        {
+          "content": "Some Abilities were tweaked",
+          "notes": ["Art of Distraction, Assassin Fighting Style, Damage Minimum, Encouragement Dice, Scholarly Combatant, Reckless Attack, Supernatural Item, Warrior Fighting Style"]
+        },
+        {
+          "content": "A number of new Weapons were added",
+          "notes": ["Bec de Corbin, Club, Greatclub, Hand Crossbow, Heavy Repeating Crossbow, Mace, Quarterstaff, Rapier, Repeating Crossbow, Throwing Dart, Whip"]
+        },
+        {
+          "content": "Additional clarifications and changes",
+          "notes": ["A description of how Light weapons and dual-wielding works has been added to the Rules page.", "The Completed Stone Mask can only be used on a Vampire or EPM at level 20+.", "Trained Combatant can be taken by Stand Users now."]
+        },
+        "A couple more small tweaks and fixes"
+      ]
+    },
+    {
+      "version": "1.11.1.1",
+      "date": "2024-03-15",
+      "notes": [
+        {
+          "content": "Added a note on the landing page about our Patreon",
+          "notes": ["There's also a space there to list our supporters, which will appear once there are names to show."]
+        },
+        {
+          "content": "Updated the Character Sheet Editor to support the changes to the second page",
+          "notes": ["This incldues a new image import, as well as an automatically created Stand Stat chart for Stand Users.", "The chart will only appear if any of the Stand related Scores are filled out.", "Although this does change the format and content of saved character data, I believe it shouldn't break anything. Existing characters should still load and import properly."]
+        },
+        "Greatly improved the load time for the list of characters in the Editor",
+        "Made a few backend formatting changes to some of the dynamically displayed data."
+      ]
+    },
+    {
+      "version": "1.11.1",
+      "date": "2024-03-15",
+      "notes": [
+        {
+          "content": "We have a Patreon!",
+          "notes": [
+            "Feel free to support us over there if you wish! We've put a ton of effort into this system and would greatly appreciate any support received.",
+            "Any funds will help us in our efforts to update the module and keep the website running. If we get enough support we may even be able to stop running ads on the site.",
+            "Donators will receive a couple small benefits and acknowledgements, mostly acknowledgement in the module and an exclusive discord role and channel to chat with us."
+          ]
+        },
+        {
+          "content": "The 2nd page of the Character Sheet has been reworked",
+          "notes": ["Before, it was exclusively for information relating to Undead Characters. It's now been both streamlined and generalized to apply to all extra Ability information.", "This includes a second image / drawing box for your Ability/Stand etc, space for a Stand Stat graph (which will be generated for you in the online editor), and plenty of space to note down how your Ability works."]
+        },
+        {
+          "content": "Ripple and Spin were tweaked slightly",
+          "notes": ["They now gain their Custom Technique at Level 5, gaining an \"Enhanced\" version at Level 11 instead.", "Additionally, Ripple Users get Slowed Aging and Ripple Possession far earlier, at Level 3 instead of Levels 15 and 12."]
+        },
+        {
+          "content": "Ranged types were tweaked slightly",
+          "notes": ["They now get Immense Resistance instead of Armored Stand."]
+        },
+        "A few other minor changes and clarifications"
+      ]
+    },
+    {
+      "version": "1.11.0",
+      "title": "The \"Smaller\" Update",
+      "date": "2024-02-18",
+      "notes": [
+        {
+          "content": "A clarifying rule was added about the maximum Level",
+          "notes": ["Its not necessarily 20, but allowing any character or enemy to go above that and how its handled will be at the DMs discretion", "More information about this and balancing will be added to the upcoming DM guide!"]
+        },
+        "Rock Human's Natural Armor was reworked",
+        "A Variant Rule for Act 4 was added",
+        {
+          "content": "Several other Abilities were tweaked or clarified:",
+          "notes": ["Blow for Blow, Rejuvenation, Spiritual Spin"]
+        },
+        {
+          "content": "A new Variant Rule option for DMs was added, Epic Feats!",
+          "notes": ["These are very strong Feats meant for particularly powerful characters", "Using these for characters, especially allowing Players to take them, is up to the DM"]
+        },
+        {
+          "content": "Several other Feats were tweaked or clarified:",
+          "notes": ["Calculating, Combat Medic, Consistent Accuracy, Demolitionist, Energy Imbuement, Exemplar, Level-Headed, Stand Specialization (now Anchored Immunity), Stroke of Luck"]
+        },
+        {
+          "content": "Some new Feats were also added:",
+          "notes": ["Defensive Stance (now a Feat rather than an Ability), Duelists Agility, Impeccable Agility, Massive Stand, Shield Proficiency, Uncontrollable Stand"]
+        },
+        {
+          "content": "Some Class Features were tweaked:",
+          "notes": ["Spin and Ripple now get their 'spiritual' Variant Rule Ability sooner", "Revenge Type gains the option of Rejuvenation at Level 7, rather than Catlike Agility"]
+        },
+        {
+          "content": "Non-Supernatural Classes were Overhauled, being buffed significantly to better keep up with other Classes to some extent",
+          "notes": ["The existing Classes were replaced by new ones, the Assassin, Consul, Scholar, and Warrior", "Each one gets their own fighting styles and some unique Class Features, and of particular note are the new Supernatural Items they can obtain as a Variant Rule", "Additionally, multiclassing into both a Non-Supernatural and Supernatural class is now possible"]
+        },
+        {
+          "content": "A number of Weapons were added/readded, along with some new attributes",
+          "notes": ["Items of note include the Atlatl and Dart, more basic 5e-style weapons, and shields"]
+        },
+        "All Fandom links have been replaced with links to the proper JoJo Wiki",
+        {
+          "content": "And of course, a number of typo fixes and clarifications",
+          "notes": ["Of note, a section was added to the main Stand rules page about their interactions with Skill Checks and Saving Throws"]
+        }
+      ]
+    },
+    {
+      "version": "1.10.1",
+      "date": "2023-11-09",
+      "notes": [
+        {
+          "content": "Information about the Human Race was added",
+          "notes": ["It was always our intention for Humans in this module to NOT be 5e Humans, since Feats, stat bonuses, and Proficiences come from other sources, but we didn't make that clear enough"]
+        },
+        {
+          "content": "Rock Humans were buffed slightly",
+          "notes": ["They now are guaranteed the Natural Armor Ability, which was previously an optional Feat", "It was also clarified that the temp hp from Natural Armor is granted at the start of each of the Rock Human's turns"]
+        },
+        "Revenge Types now get Melee Barrage as an optional Ability",
+        {
+          "content": "Unstoppable Willpower was tweaked",
+          "notes": ["This Feat now has a a lower minimum DC of 10, but can only be used an amount of times equal to your PB per Long Rest"]
+        },
+        "A few more small tweaks, fixes, and clarifications"
+      ]
+    },
+    {
+      "version": "1.10.0.2",
+      "date": "2023-10-07",
+      "notes": [
+        {
+          "content": "Fixed a number of editor layout issues in Safari for iOS users",
+          "notes": ["Safari has a number of compatability issues compared to other browsers and there might still be issues here and there, but I fixed several major ones."]
+        },
+        "Fixed a small edge-case logic error with the new act functionality in the editor",
+        {
+          "content": "Added a privacy policy to keep us GDPR compliant",
+          "notes": ["This is just for adsense in the EU. You can check it if you'd like, there's a link at the bottom of the home page, but it's mostly a bunch of legal speak.", "Overall, the only personal data we collect about you is your username, password, and email if you have an account in the editor, and your site usage and very general location through Google Analytics. We do nothing with this data other than track analytics, serve ads, and send password recovery emails."]
+        }
+      ]
+    },
+    {
+      "version": "1.10.0.1",
+      "date": "2023-10-05",
+      "notes": [
+        {
+          "content": "Made Act-Types work in the editor",
+          "notes": [
+            "When you select the 'act' class, a number will appear next to it representing each of the acts (0-3)",
+            "Depending on which is selected, the respective multipliers will be applied to the autofill logic",
+            "For existing act stands, they'll load up with their old scores in the act 0 layout. You'll have to manually move them to the correct act. The other layouts will he autofilled based on the user stats, you'll want to add the levelup points to these.",
+            "This *might* break some peoples stand scores if you had them in the wrong format or wrong boxes. Please let me know if unexpected behavior occurs."
+          ]
+        },
+        {
+          "content": "Made a small tweak to the new Melee Barrage rules",
+          "notes": ["It now consumes your Reaction as well", "This is to balance out how much we buffed it, allowing the high, multi-hit, DR ignoring damage but making it a risker play and preventing opportunity attacks / reaction abilites", "This Ability has been.. surprisingly difficult to balance. We'd rather not have to rework it again, but feel free to let us know if you have thoughts on the matter."]
+        }
+      ]
+    },
+    {
+      "version": "1.10.0",
+      "title": "The Here-And-There Rework",
+      "date": "2023-10-04",
+      "notes": [
+        {
+          "content": "Passions were given a fresh coat of paint",
+          "notes": ["Most Passions get more Proficiencies now, and some had their ABIs tweaked", "The Traveler Passion was removed, and a new Passion, Warrior, was added"]
+        },
+        {
+          "content": "Artifacts were revisited",
+          "notes": ["These hadn't been updated since we started putting things together several years ago, and a few tweaks were needed", "The largest changes are new variants of Conductive Clothing, the addition of Imperfect Ajas, and the way Requiem is obtained was changed slightly"]
+        },
+        {
+          "content": "Non-Supernatural Classes were buffed/tweaked slightly",
+          "notes": ["Overall just made them more consistent, ensuring they get something new every other level"]
+        },
+        {
+          "content": "A number of Class Features were updated, be sure to check all of yours!",
+          "notes": ["In particular, Melee Barrage was finally buffed (we nerfed it far too hard), Ranged Attack (Burst) deals half damage on success, and a number of Ripple Abilities were made less expensive", "Additionally, a new Ability, Nemesis, was added for Revenge-Types"]
+        },
+        {
+          "content": "Two new Feats were added, Sentient Stand and Shared Stand",
+          "notes": ["These were added to more accurately represent a few unique Stand types seen in canon"]
+        },
+        {
+          "content": "Clarified and tweaked Substands and Multi-Type Stands slightly",
+          "notes": ["Hit Dice now alternate per Level, rather than forcing you to take the first/lower Hit Die"]
+        },
+        {
+          "content": "A few general rules were tweaked",
+          "notes": ["Specified that Unarmed Strikes do not add Dex to damage, only to-hit", "Time/Space Abilities no longer always cost double SE, Ability cost may be tweaked at DM discretion for particularly powerful ones", "The average may be taken when rolling for Stand stat increases on Level-Up (5 + Level for most types, 8 + Level for Revenge)"]
+        },
+        "A number of small clarifications/typo fixes as usual"
+      ]
+    },
+    {
+      "version": "1.9.1",
+      "date": "2023-08-18",
+      "notes": [
+        {
+          "content": "The Hospitality Worker Passion was updated based on suggestions by Silver Foxy",
+          "notes": ["Be sure to leave your own suggestions in the #suggestions channel of our Discord, we read them all!"]
+        },
+        {
+          "content": "A limit of 10 has been placed on the maximum number of Attacks per round",
+          "notes": ["Even 10 is a lot, and would require a speed of 450. Anything more than that would be excessive and take far too long to roll for one turn."]
+        },
+        {
+          "content": "Melee Barrage was simplified",
+          "notes": ["Now limited to only 5 attacks, the number of which is HALF your Speed Modifier", "However, you get to add your Power Modifier once, AND the Damage Dice upgrades at level 11", "Partially a buff, partially a nerf. This change is intended to make Melee Barrages easier and take less time."]
+        },
+        {
+          "content": "Ranged Attack was buffed",
+          "notes": ["The number of Damage Dice are now doubled at Level 11, as well as the range like before"]
+        },
+        {
+          "content": "Assassin was buffed",
+          "notes": ["This was actually a mistake in the last update, it should've been d8s, rather than d6s"]
+        },
+        {
+          "content": "Whirlwind Attacker was buffed",
+          "notes": ["The forced Save option now MUST be a Dex Save, rather than allowing Precision to be used", "Additionally, half damage is taken on success"]
+        },
+        {
+          "content": "Fixed several small typos and errors",
+          "notes": ["Notably the Hive-Type table had Stand Pickpocketing in two places", "Also Improved Slippery was missing a limit, it can only be used twice per Short Rest"]
+        }
+      ]
+    },
+    {
+      "version": "1.9.0",
+      "title": "The High-Level Stand Overhaul",
+      "date": "2023-08-01",
+      "notes": [
+        {
+          "content": "The High-Level Stand Overhaul!",
+          "notes": [
+            "Stand Users now gain additional Class Features for Levels 15-20",
+            "This includes some new Abilities, and some were removed or changed for simplification.",
+            "Every Stand Type has been tweaked slightly, be sure to look over your level-up tables!",
+            "Some Stand Types have had tweaks to their stat multipliers (Ranged, Revenge, Hive, and Act). If you'd like to update these on an existing character, you'll need to know both the new and old multipliers. For this purpose, the previous version of the document can be found at <https://www.jojodnd.com/resources/Assets/PDFs/JoJo_D&D_v1.8.1.pdf>"
+          ]
+        },
+        {
+          "content": "Ripple and Spin have been given an additional ASI at Level 17",
+          "notes": ["This is to match the additional ASI added to Stand Users in this rework"]
+        },
+        {
+          "content": "The Assassin and Suit Stand Feats have been tweaked slightly",
+          "notes": ["Assassin now clarifies that it can be used on attacks and weapons with Ambush, and Advantage isn't required if an Ally is within melee of your target", "Suit Stand now also grants the Anchored Stand Ability"]
+        },
+        {
+          "content": "A new weapon was added, the Boomerang!",
+          "notes": ["It comes with a new weapon attribute which of course allows it to return to you after being thrown"]
+        },
+        "Menacing Aura was nerfed slightly, preventing it from being spammed",
+        {
+          "content": "The formatting of level-up tables was tweaked",
+          "notes": ["The delimiting comma was replaced by a pipe (|) to prevent confusion between automatic Features and choices"]
+        },
+        "A number of spelling/grammar fixes were also made"
+      ]
+    },
+    {
+      "version": "1.8.1.2",
+      "date": "2023-06-14",
+      "notes": ["Reworded the text on the Community Resources button to be more clear", "Removed any discord discriminators since they're mostly not a thing anymore", "Fixed some spelling errors within several feats"]
+    },
+    {
+      "version": "1.8.1.1",
+      "date": "2023-06-03",
+      "notes": ["Changed the image representing Non-Supernatural classes"]
+    },
+    {
+      "version": "1.8.1",
+      "date": "2023-06-03",
+      "notes": [
+        {
+          "content": "The Graceful Ripple Fighting Style was tweaked",
+          "notes": ["In addition to how it already functioned, you can now use Unarmed Dice with Simple Melee Weapons if desired."]
+        },
+        "Ranged Type Stands are given the option to take Immense Power at level 1",
+        {
+          "content": "Hive type Ability Scores are no longer dependant on the number of Instances",
+          "notes": ["This was a neat idea to make each individual Instance weaker on its own, but in practice it was far to clunky, requiring mental division moment-to-moment during gameplay."]
+        },
+        {
+          "content": "Fixed a link that was broken in the last update",
+          "notes": ["(PDF Version only)"]
+        }
+      ]
+    },
+    {
+      "version": "1.8.0.1",
+      "date": "2023-05-29",
+      "notes": [
+        {
+          "content": "Made older versions of the module available on the Resources page (PDF versions only)",
+          "notes": ["I'm not making a custom page layout for this so it's just the ugly raw html directory but they're there."]
+        },
+        "Fixed some typos and capitalization inconsistencies"
+      ]
+    },
+    {
+      "version": "1.8.0",
+      "title": "The Ripple & Spin Rework",
+      "date": "2023-05-29",
+      "notes": [
+        {
+          "content": "The Ripple & Spin Rework!",
+          "notes": ["The Ripple and Spin classes have both been overhauled, buffing them up to be more on-par with Stand Users.", "Be sure to look over all of your Class Features to see what's changed!", "Not happy with the changes and/or have suggestions? Let us know!"]
+        },
+        "Brought the document up to date with several smaller changes already present on the website",
+        "Clarified Undead Feeding rules, fixed a few references to removed/renamed content, fixed some typos, etc."
+      ]
+    },
+    {
+      "version": "1.7.0.2",
+      "date": "2023-04-12",
+      "notes": [
+        {
+          "content": "Clarified Undead Feeding rules",
+          "notes": ["Ghouls, Vampires, and EPMs can consume energy from a willing or incapacitated target, draining up to 2 energy as an Action (or 5 for EPMs)."]
+        },
+        "Fixed a few references to removed/renamed content"
+      ]
+    },
+    {
+      "version": "1.7.0.1",
+      "date": "2023-04-11",
+      "notes": [
+        {
+          "content": "Fixed even MORE capitalization and grammar issues and inconsistencies",
+          "notes": ["Most of these fixes won't make their way to the pdf doc unless by chance, I just don't feel like combing through that"]
+        },
+        "Updated the link to the pdf doc for v1.7.0",
+        "Tidied up a few things"
+      ]
+    },
+    {
+      "version": "1.7.0",
+      "title": "The Undead Rework",
+      "date": "2023-04-11",
+      "notes": [
+        {
+          "content": "The Undead Rework!",
+          "notes": ["Many things relating to the Undead races have been simplified or buffed.", "Racial features were simplified, level-ups are less restrictive and cost less energy, Ghouls get levels, and more!", "If you have an Undead character, be sure to check the Races page to see what's changed for you!"]
+        },
+        "In addition to the Undead races, Ultimate Beings, Pillar Men, and Abominations were also tweaked to differing degrees",
+        "The Headhunter Feat has also been tweaked",
+        {
+          "content": "Melee Barrage was tweaked slightly to take Undead creatures' increased damage dice into account",
+          "notes": ["40d8 damage from an EPM Stand User is just too much"]
+        }
+      ]
+    },
+    {
+      "version": "1.6.1.2",
+      "date": "2023-04-05",
+      "notes": [
+        {
+          "content": "Buffed the Suit Stand Feat, it now also raises Stand physical stat multipliers by 2",
+          "notes": ["For example, a Power-Type typically has x4, x3, x3 for Power, Precision, and Durability. The Suit Stand Feat would raise this to x6, x5, and x5 respectively."]
+        },
+        {
+          "content": "Tried to make the capitalization of certain more consistent across the site",
+          "notes": ["We're not perfect and don't have a proper 'editor', so if you notice any grammatical errors on the site or document please take note of them and let us know!"]
+        },
+        "Tweaked some confusing wording in a few places"
+      ]
+    },
+    {
+      "version": "1.6.1.1",
+      "date": "2023-03-29",
+      "notes": [
+        "Fixed a logic issue with the editor's autofill for Stand stat multiplication caused by the toggle added in v1.6.0.1",
+        {
+          "content": "Fixed an issue with sorting by Class on the Abilities page",
+          "notes": ["Fixed a subsequent issue with searching on the Abilities page caused by the above fix..."]
+        },
+        "Fixed a small visual issue with the editor on Firefox",
+        "Fixed an edge case spacing issue in the Weapons table"
+      ]
+    },
+    {
+      "version": "1.6.1",
+      "date": "2023-03-29",
+      "notes": [
+        {
+          "content": "A new Feat, Suit Stand, has been added.",
+          "notes": [
+            "This Feat is inspired by Stands such as White Album and Oasis. It restricts Range and makes the Stand physically tangible, but in exchange allows the Stand to become stronger in ways not typically possible for that Stand Type.",
+            "Let us know what cool Stands you come up with relating to this in the Stand-Ideas channel on our Discord server!",
+            "Since this is a minor update, a new version of the Doc won't be published with this yet, but the new Feat is visible live on the site."
+          ]
+        }
+      ]
+    },
+    {
+      "version": "1.6.0.2",
+      "date": "2023-03-05",
+      "notes": [
+        {
+          "content": "Made a number of compatability fixes for Safari users",
+          "notes": ["A number of tables with custom scrolling (passions, abilities, feats, familiars) were behaving unexpectedly on Safari", "I was unaware of this and unable to troubleshoot it since I do not own an Apple device, but the problems should be fixed now", "Please let me know if you notice any other issues while viewing our site on Safari (or use a better browser :p)"]
+        },
+        "Tweaked some wording with new Familiar content"
+      ]
+    },
+    {
+      "version": "1.6.0.1",
+      "date": "2023-03-04",
+      "notes": [
+        {
+          "content": "Added a password recovery feature to the editor",
+          "notes": ["In order to authenticate users for this, new users will need to provide their email during registration.", "Current users will be asked to enter their email upon logging in without one in our system, but this isn't mandatory."]
+        },
+        {
+          "content": "Added a toggle to the editor to flip which box the scores and modifiers go in",
+          "notes": ["This setting should be saved alongside your character, let me know if you notice any issues with it."]
+        }
+      ]
+    },
+    {
+      "version": "1.6.0",
+      "title": "The Familiar System",
+      "date": "2023-03-04",
+      "notes": [
+        {
+          "content": "New Familiar System!",
+          "notes": ["Partner up with your favorite animal companion and give them their own class and even a stand!", "Information about this system can be found on a new main nav page: <https://www.jojodnd.com/familiars>"]
+        },
+        {
+          "content": "Feats Rework",
+          "notes": ["A number of Feats have been reworked, buffing most of them and overall making things more interesting an better balanced.", "Some Feats were also renamed. Cleave is now Whirlwind Attacker, Evasive is now Specialized Save, and Hidden Assassin is now just Assassin.", "Natural Toughness and Toxin Resistance were removed.", "Be sure to check the Feats page to see if any of yours have been changed!"]
+        }
+      ]
+    },
+    {
+      "version": "1.5.1.2",
+      "date": "2023-02-17",
+      "notes": [
+        {
+          "content": "Fixed a massive security flaw in how php files were being handled.",
+          "notes": ["As far as we are aware, no user data was or could have been compromised."]
+        },
+        "Improved the performance of the character loader in the editor by adding pages to it rather than trying to pull all of the data at once"
+      ]
+    },
+    {
+      "version": "1.5.1.1",
+      "date": "2023-02-17",
+      "notes": [
+        {
+          "content": "Added a Community Resources page",
+          "notes": ["Feel free to reach out to me if you want your own work featured on the site!"]
+        },
+        "Made a few things more responsive"
+      ]
+    },
+    {
+      "version": "1.5.1",
+      "date": "2023-02-17",
+      "notes": [
+        "Added a new item to the rules section, Speed Duels",
+        {
+          "content": "Fixed a few typos and improved clarity in some areas",
+          "notes": ["The explanation for Multi-Type stands was outdated and has been corrected."]
+        }
+      ]
+    },
+    {
+      "version": "1.5.0",
+      "title": "The Weapon Rework",
+      "date": "2023-01-26",
+      "notes": [
+        {
+          "content": "The Weapons have be overhauled!",
+          "notes": [
+            "This includes the addition of new weapons, removal of redundant weapons, and the refactoring of all weapon attributes. Check your arsenal for changes!",
+            "A number of weapons that were in the old table weren't included in this overhaul. For the most part this is because they can be found in base 5e, so you can just use those.",
+            "Some of the other weapons were too complex or niche for our general list, but DMs are encouraged to homebrew interesting and unique weapons using the examples and attributes we've created.",
+            "Some additions may be made to the list at a later time to fill it out more if needed."
+          ]
+        },
+        {
+          "content": "Some Feats that were no longer needed or were replaced have been removed.",
+          "notes": ["This includes Simple Weapon Proficiency, Weapon Master, Pistol Proficiency, Rifle Proficiency, Heavy Weapon Specialist, Unarmed Proficiency, Thrown Weapon Proficiency, Automatic Weapon Proficiency, Martial Weapon Proficiency, Close Combat Specialist, Shield Master"]
+        },
+        {
+          "content": "Updated some class level up lists with the new feats",
+          "notes": ["The Non-Supernatural classes have been particularly affected by this. However, Remote, Ability, and Revenge type Stands have also been slightly affected."]
+        },
+        {
+          "content": "The PDF version of the module has finally been updated!",
+          "notes": ["We've made changes to the document to more closely reflect changes on the website, please let us know if anything seems to be missing in this regard.", "We've also done our best to make the formatting more consistent."]
+        },
+        {
+          "content": "Website tweaks",
+          "notes": ["Fixed some typos and clarified a few things", "Made a number of background changes to improve site performance", "Made some small changes to improve SEO"]
+        }
+      ]
+    },
+    {
+      "date": "2022-12-30",
+      "notes": ["Tweaked Scarflesh, Stoneflesh, and Catlike Agility", "Replaced the old description for summoning a Revenge Stand, which should've been removed in the last update", "Fixed a couple of typos"]
+    },
+    {
+      "title": "The Revenge-Type Rework",
+      "date": "2022-12-27",
+      "notes": [
+        {
+          "content": "Made massive changes to Revenge-Types, if you play a Revenge-Type, make sure you look over the Class features and Abilities so you know what's changed!",
+          "notes": ["Revenge Stands are no longer summoned through pure, flat damage. Instead, a new system called Grudge Points has been implemented.", "Replaced the Unconscious Control feature with Lasting Grudge", "Reworked Near-Death Escape and reworded Second Life", "Added an optional Feat for Revenge-Types, Guardian's Wrath", "Since these changes greatly affect how the class plays, some tweaks may be made to them in the near future as we work to properly balance things"]
+        },
+        "Added a new rule involving Stand Users and Surprise",
+        "Nerfed the Dagger slightly and added a new weapon (Clackers)",
+        {
+          "content": "Made changes to a number of Feats and added a several new ones",
+          "notes": ["Changed Feats include: Art of Distraction, Calculating, Immense Impact, Light Sleeper, Paranoia, Quick on your Feet", "New Feats include: Exemplar, Guerilla Fighter, Heavy Sleeper, Perfected Craft, Skirmisher"]
+        },
+        "Added a new Passion (Leader)",
+        {
+          "content": "Fixed some typos and made a few things more clear",
+          "notes": ["This includes an \"a.k.a.\" subtitle for each stand type"]
+        },
+        {
+          "content": "Refactored the code for the editor to make things more clean and clear",
+          "notes": ["This shouldn't affect user experience in any way"]
+        },
+        "Fixed an alignment issue when renaming a character",
+        "Fixed a niche issue where duplicating character info contianing `'`s would fail"
+      ]
+    },
+    {
+      "title": "The Hive-Type Rework",
+      "date": "2022-10-24",
+      "notes": [
+        {
+          "content": "Made massive changes to Hive Types, if you play a Hive Type, make sure you look over the Class Features and Abilities so you know what's changed!",
+          "notes": [
+            "Instance Levels were removed, you may now choose at Level 1 an amount between 2 and 500",
+            "All level up options that increased Instance Level now give other options (1, 4, 5, 7, 12, and 14).",
+            "Split Stand was clarified and changed slightly",
+            "Swarm Attack was completely revamped",
+            "Hive Types now gain 2d4 + Level each Level Up, rather than 1d4 + Level",
+            "Hive Types can now increase their Durability, there are no stat restrictions for this Type anymore",
+            "Special Ability now costs 2 SE as usual, rather than 3"
+          ]
+        },
+        {
+          "content": "Improved the security of how user passwords are stored",
+          "notes": ["This *shouldn't* affect your experience logging in as the change should be handled on the backend when you next log in", "If you happen to notice any issues with this, please let me know ASAP"]
+        },
+        "Fixed a rare issue where the anchor ad would appear at the top of the page instead of the bottom and break the navbar's placement",
+        "Renamed Embryo Implantation (Vampire Feature) to Primal Offspring and completely reworded it",
+        "Fixed an error in the editor that would preserve Saving Throw proficiencies between characters",
+        "Fixed a very obscure formatting issue on the editor",
+        "Fixed various small typos that caused broken links"
+      ]
+    },
+    {
+      "date": "2022-09-27",
+      "notes": ["Fixed wide images breaking the image box on character sheets", "Moved the editor's login button and made it much more obvious", "Improved button spacing for mobile and wider desktops", "Tidied up a few things on the main page and navbar"]
+    },
+    {
+      "date": "2022-09-23",
+      "notes": [
+        "Added ads to the site to support hosting costs, our goal is for these to be as non-intrusive as possible so please let us know if you have any issues with their placement/content.",
+        "Added a new mechanic relating to stand energy, 1 SE is now regained when you take the dodge action.",
+        "Added an 'other' option to the class box in the editor, for those multiclassing.",
+        "Fixed some math/logic errors when calculating stand stat changes.",
+        "Fixed some php handling in the editor and made some error messages more helpful.",
+        "Implemented some better security for character data that gets saved to the database.",
+        "Fixed character images stretching/squishing in the load menu and made a few other small visual tweaks.",
+        "Fixed a number of typos and grammatical errors on the main, rules, and passions pages. More to come soon, let us know if you spot any!"
+      ]
+    },
+    {
+      "date": "2022-09-06",
+      "notes": ["You can now create an account and save your characters on the website, rather than needing to import/export data or recreate it everytime. Your sheets are now accessible from anywhere!", "The import/export options still exist, for those who want to use them or for sharing your sheets with others.", "The overall layout and functionality of the editor has been improved."]
+    },
+    {
+      "date": "2022-08-29",
+      "notes": [
+        "Ranged Attack has been almost completely changed for balance and flavor purposes",
+        "Rules for Substands have been added to the Stands page",
+        "A new Feat inspired by Speedwagon has been added, The Commentator",
+        "Immense Impact was added to the Feats page on the site, it was previously missing",
+        "The Editor will now autofill stand scores when increasing/decreasing ability scores based on the multiplier for your stand type",
+        "One more change was just made to the Deadly Accuracy Feat as well, we didn't realize that our changes to Ranged Attack kinda broke it."
+      ]
+    },
+    {
+      "date": "2022-06-06",
+      "notes": ["Passions have been buffed slightly to give more proficiencies, check the website for more details."]
+    },
+    {
+      "date": "2022-02-11",
+      "notes": [
+        {
+          "content": "You can now import/export character data files in the editor, allowing you to edit the character later without having to start from scratch.",
+          "notes": ["This solution isn't the slickest, and at some point I'll probably implement some form of account-based server-side saving, but it'll do for now.", "This should help those of you who can't print out the PDF version, as you can essentially use the editor like an online character sheet."]
+        }
+      ]
+    },
+    {
+      "title": "The Editor",
+      "date": "2022-02-04",
+      "notes": [
+        {
+          "content": "It took less time than I expected honestly, there's now a Character Sheet Editor on the website! Check it out at: <https://www.jojodnd.com/resources/editor/>",
+          "notes": ["If you find any issues with the editor, please let me know and I'll fix it as soon as I can!"]
+        }
+      ]
+    },
+    {
+      "title": "Website Launch",
+      "date": "2022-01-30",
+      "notes": [
+        {
+          "content": "After 3 months of working on it, the official JoJo's Bizarre Tabletop Game website is live!",
+          "notes": ["This site aims to make the information on the module more easy to access and navigate. All the information is imported now, and several more features are planned including an editable character sheet, stat screen creator, popup info when hovering over links, and more!"]
+        }
+      ]
+    },
+    {
+      "version": "0.51",
+      "date": "2021-10-11",
+      "notes": ["The module document has been updated and polished after significant playtesting", "Work on the website has begun"]
+    },
+    {
+      "version": "0.03",
+      "date": "2020-07-05",
+      "notes": ["First \"complete\" version of the document complete."]
+    },
+    {
+      "version": "0",
+      "title": "The Beginning",
+      "date": "2019-12-07",
+      "notes": ["Work on the module first began"]
+    }
+  ]
+}

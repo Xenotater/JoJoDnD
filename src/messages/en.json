@@ -334,6 +334,7 @@
     "communityDesc2": "You can also post your own resources to share with others.",
     "patch": "Patch Notes",
     "patchDesc": "We're constantly working to improve this system, taking suggestions and making updates every few months or so. Check here to keep up with the changes we make.",
+    "patchDesc2": "Below is a list of patch notes for changes made to the website and module. It should be noted some smaller and less relevant changes are not listed. For those curious about every detailed change to the site, the source code and change history is available on <github>GitHub</github>.",
     "example": "Campaign Example",
     "exampleDesc": "Check out our podcast \"Tabletop Travesty\" where we've played a campaign using an early version of this system named \"The Bystanders\":",
     "contact": "Contact Us",

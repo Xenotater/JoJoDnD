@@ -7,6 +7,7 @@ import {abilities} from "@/../public/data/abilities.json";
 import {feats} from "@/../public/data/feats.json";
 import {weapons} from "@/../public/data/weapons.json";
 import {artifacts} from "@/../public/data/artifacts.json";
+import {patches} from "@/../public/data/patches.json";
 import { RulesTabData } from "../Models/Rules.model";
 import { PassionData } from "../Models/Passions.model";
 import { RaceData } from "../Models/Races.model";
@@ -16,6 +17,7 @@ import { FeatData } from "../Models/Feats.model";
 import { WeaponData } from "../Models/Weapons.model";
 import { ArtifactData } from "../Models/Artifacts.model";
 import { FamiliarClass, FamiliarFeat, FamiliarFeature, FamiliarInfo } from "../Models/Familiars.model";
+import { PatchNote } from "../Models/Resources.model";
 
 export type dataTypes = "Rules"
   | "Passions"
@@ -23,7 +25,12 @@ export type dataTypes = "Rules"
   | "Classes"
   | "Abilities"
   | "Feats"
-  | "Artifacts";
+  | "Artifacts"
+  | "Weapons"
+  | "Familiars"
+  | "Patches";
+
+//TODO: Get data dynamically taking the locale into account
 
 const getData = (type: dataTypes): unknown[] => {
   switch(type) {
@@ -109,4 +116,12 @@ export function getFamiliarData(item: string) {
   return categories.classes.find((c) => c.name.toLowerCase() == item.toLowerCase()) as FamiliarClass
   ?? categories.features.find((f) => f.name.toLowerCase() == item.toLowerCase()) as FamiliarFeature
   ?? categories.feats.find((f) => f.name.toLowerCase() == item.toLowerCase()) as FamiliarFeat;
+}
+
+export function getPatches() {
+  return patches.map((p) => ({
+      ...p,
+      date: new Date(p.date),
+      notes: p.notes,
+    } as PatchNote));
 }
