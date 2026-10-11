@@ -131,9 +131,9 @@ export default function EditorMenu() {
                   <option value="Standard">
                     {t("ui.standard")}
                   </option>
-                  <option value="5e">
+                  {/* <option value="5e">
                     {t("ui.5e")}
-                  </option>
+                  </option> */}
                 </select>
               </div>
             </div>
