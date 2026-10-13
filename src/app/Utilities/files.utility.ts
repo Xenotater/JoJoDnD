@@ -1,7 +1,7 @@
 import fs from "fs";
 import pathModule from "path";
 
-const listablePaths = ["public/static/resources"];
+const listablePaths = ["static/resources"];
 
 export async function getLatestFileName(path: string, comparison: "Time" | "Version" = "Time") {
   const files = await getAllFiles(path);
@@ -15,7 +15,7 @@ export async function getLatestFileName(path: string, comparison: "Time" | "Vers
 }
 
 export async function getAllFiles(path: string) {
-  const relativePath = pathModule.join(process.cwd(), path);
+  const relativePath = pathModule.join(process.cwd(), "public", path);
 
   if (!isListable)
     return [];

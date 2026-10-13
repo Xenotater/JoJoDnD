@@ -10,7 +10,7 @@ import ContactForm from "./Components/ContactForm";
 import { getTranslations } from "next-intl/server";
 
 export default async function ResourcesPage() {
-  const pdfPath = "/public/static/resources/PDFs";
+  const pdfPath = "/static/resources/PDFs";
   const pdfName = await getLatestFileName(pdfPath, "Version");
   const t = await getTranslations("Resources");
 
