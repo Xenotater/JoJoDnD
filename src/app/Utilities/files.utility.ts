@@ -1,4 +1,5 @@
 import fs from "fs";
+import pathModule from "path";
 
 const listablePaths = ["public/static/resources"];
 
@@ -14,12 +15,14 @@ export async function getLatestFileName(path: string, comparison: "Time" | "Vers
 }
 
 export async function getAllFiles(path: string) {
+  const relativePath = pathModule.join(process.cwd(), path);
+
   if (!isListable)
     return [];
 
-  const files = fs.readdirSync(path);
+  const files = fs.readdirSync(relativePath);
   return files.map(f => {
-    const fPath = `${path}/${f}`;
+    const fPath = `${relativePath}/${f}`;
     const stats = fs.statSync(fPath);
     return {name: f, time: stats.mtime};
   });
