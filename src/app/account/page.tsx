@@ -19,9 +19,12 @@ export default function AccountPage() {
   const [editAction, setEditAction] = useState<EditAccountAction | undefined>(undefined);
 
   useEffect(() => {
-    if (!loggedIn)
+    if (auth && !loggedIn)
       auth.promptAction("Log In");
-  }, []);
+    else {
+      auth.promptAction("None");
+    }
+  }, [auth, loggedIn]);
 
   return (
     <div>
