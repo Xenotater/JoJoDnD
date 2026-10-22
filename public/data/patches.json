@@ -1,6 +1,16 @@
 {
   "patches": [
     {
+      "version": "1.14.0",
+      "title": "The Class Overhaul",
+      "date": "2026-12-31",
+      "notes": [
+        {
+
+        }
+      ]
+    },
+    {
       "version": "1.13.1",
       "date": "2025-07-07",
       "notes": [

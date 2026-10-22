@@ -95,7 +95,7 @@ export default function ClassesContent({data}: {data: ClassData | undefined}) {
       {varData.extra &&
         varData.extra.map((e) => (
           <div key={`${varData.name}-${e.name}`} className="flex flex-col gap-2">
-            <p><b>{e.name}:</b> {e.desc}</p>
+            <p><b>{e.name}:</b> <HTMLInclusiveText key={`${varData.name}-${e.name}-desc`} as="span" text={e.desc}/></p>
             {e.content &&
               e.content.map((c, i) => (
                 <HTMLInclusiveText key={`${varData.name}-${e.name}-${i}`} as="div" className="max-w-[90%] m-auto" text={c}/>

@@ -1,202 +1,6 @@
 {
   "classes": [
     {
-      "name": "Ripple",
-      "nameExt": "/ Hamon",
-      "exampleOf": "Ripple Users",
-      "examples": ["Baron Zeppeli", "Jonathan Joestar", "Joseph Joestar", "Lisa Lisa"],
-      "links": ["Will_Anthonio_Zeppeli", "Jonathan_Joestar", "Joseph_Joestar", "Lisa_Lisa"],
-      "hDice": "1d10",
-      "dcName": "Ripple DC",
-      "dc": "8 + Con + Proficiency Bonus",
-      "desc": "The Ripple is an energy that travels through the blood and is powered by breathing. A sacred art, it can be used for both healing and destruction. It is extremely effective against Undead, and it can be used against corporeal objects to manipulate them. The Ripple works similarly to electricity, in that it is able to travel through liquids, metals, and most biomass incredibly well.",
-      "extra": [
-        {
-          "name": "Honed Body",
-          "desc": "Ripple Users' bodies are much better honed than the bodies of most Humans. Rather than a maximum of 20 in each Ability Score, Ripple users have a maximum of 24 for their Strength, Dexterity, and Constitution."
-        },
-        {
-          "name": "Ripple Conductors",
-          "desc": "Ripple energy conducts similarly to electricity, easiest through materials such as liquid, metal, and biomass, typically travelling through something in order to reach the ground. However, if the Ripple is put into an object with immense force, or if it is sustained, the energy will spread through it very easily. A Ripple Punch's full effect will be felt up to 2m away from the point of impact, or 1m for a non-conductor."
-        },
-        {
-          "name": "Ripple Points",
-          "desc": "Each Ripple User has an amount of Ripple Points equal to their Level in Ripple. If a Ripple User is able to comfortably breathe, they gain 1 Ripple Point at the top of Initiative. When unable to breathe, Ripple Users are not able to regain Ripple Points and lose one Point per Turn."
-        },
-        {
-          "name": "Undead's Bane",
-          "desc": "Any damage dealt by the Ripple is doubled against Undead, and <preview href='/races/Pillar Men'>Pillar Men</preview> take extra damage equal to their Level."
-        }
-      ],
-      "theme": "rgb(253, 255, 108)",
-      "levels": [
-        {
-          "other": ["Unarmed Strikes deal Radiant damage"],
-          "abilities": ["Healing Hands", "Spiritual Ripple (Variant Rule)", "Sunshield"],
-          "feats": ["Equalizer"]
-        },
-        {
-          "abilities": ["Healing Ripple", "Liquid Solidification", "Ripple Fighting Style", "Confident Provocation"],
-          "other": ["Increase Str, Dex, or Con Score by 1"]
-        },
-        {
-          "feats": ["Headhunter"],
-          "other": ["Ability Score Improvement"],
-          "abilities": ["Custom Ripple Technique", "Slowed Aging", "Ripple Possession"]
-        },
-        {
-          "abilities": ["Rippling Weapon"],
-          "feats": ["Martial Arts", "OR", "Simple Weapon Focus"],
-          "other": ["Increase Str, Dex, or Con Score by 1"]
-        },
-        {
-          "abilities": ["Ripple Regeneration", "Ripple Perception"],
-          "feats": ["Trained Combatant"]
-        },
-        {
-          "abilities": ["Ripple Pressure", "OR", "Sunlight Yellow Overdrive", "OR", "Zoom Punch"],
-          "other": ["Ability Score Improvement", "Increase Str, Dex, or Con Score by 1"]
-        },
-        {
-          "abilities": ["Toxin Expulsion"]
-        },
-        {
-          "abilities": ["Elemental Overdrive", "OR", "Sendo Overdrive"],
-          "other": ["Ability Score Improvement", "Increase Str, Dex, or Con Score by 1"]
-        },
-        {
-          "abilities": ["Conductor Shield"]
-        },
-        {
-          "other": ["Choose another Class Feature from Level 4, Level 6, or Level 8", "Ability Score Improvement", "Increase Str, Dex, or Con Score by 1"]
-        },
-        {
-          "abilities": ["Enhanced Custom Ripple Technique"],
-          "feats": ["Trained Combatant"]
-        },
-        {
-          "abilities": ["Recovery Breathing"],
-          "other": ["Increase Str, Dex, or Con Score by 1"]
-        },
-        {
-          "other": ["Ability Score Improvement"]
-        },
-        {
-          "other": ["Choose another Class Feature from Level 4, Level 6, or Level 8", "Increase Str, Dex, or Con Score by 1"]
-        },
-        {
-          "abilities": ["Deep Pass Overdrive"]
-        },
-        {
-          "feats": ["Trained Combatant"],
-          "other": ["Increase Str, Dex, or Con Score by 1"]
-        },
-        {
-          "abilities": ["Life Magnetism"],
-          "other": ["Ability Score Improvement"]
-        },
-        {
-          "other": ["Increase Str, Dex, or Con Score by 1"]
-        },
-        {
-          "abilities": ["Improved Ripple Perception"]
-        },
-        {
-          "abilities": ["Perfected Ripple"],
-          "other": ["Increase Str, Dex, or Con Score by 1"]
-        }
-      ],
-      "otherCols": [
-        {
-          "name": "Unarmed Dice",
-          "level": ["2d6", "2d6", "2d6", "2d6", "2d8", "2d8", "2d8", "2d8", "2d8", "2d10", "2d10", "2d10", "2d10", "2d10", "2d12", "2d12", "2d12", "2d12", "2d12", "2d12"]
-        }
-      ],
-      "variants": [
-        {
-          "nameExt": "(Modular)",
-          "levels": [
-            {
-              "abilities": ["Healing Hands", "Spiritual Ripple (Variant Rule)", "Sunshield"],
-              "feats": ["Equalizer"],
-              "other": ["Unarmed Strikes deal Radiant damage"]
-            },
-            {
-              "abilities": ["Healing Ripple", "Liquid Solidification", "Ripple Fighting Style", "Confident Provocation"],
-              "other": ["Increase Str, Dex, or Con Score by 1"]
-            },
-            {
-              "abilities": ["Custom Ripple Technique", "Slowed Aging", "Ripple Possession"],
-              "feats": ["Headhunter"],
-              "other": ["Ability Score Improvement"]
-            },
-            {
-              "abilities": ["Rippling Weapon", "Ripple Feature"],
-              "other": ["Increase Str, Dex, or Con Score by 1"]
-            },
-            {
-              "abilities": ["Ripple Regeneration", "Ripple Perception"],
-              "feats": ["Trained Combatant"]
-            },
-            {
-              "other": ["Ability Score Improvement", "Increase Str, Dex, or Con Score by 1"],
-              "abilities": ["Ripple Feature"]
-            },
-            {
-              "abilities": ["Ripple Feature"]
-            },
-            {
-              "other": ["Ability Score Improvement", "Increase Str, Dex, or Con Score by 1"],
-              "abilities": ["Ripple Feature"]
-            },
-            {
-              "abilities": ["Ripple Feature"]
-            },
-            {
-              "abilities": ["Ripple Feature"],
-              "other": ["Ability Score Improvement", "Increase Str, Dex, or Con Score by 1"]
-            },
-            {
-              "abilities": ["Ripple Feature"],
-              "feats": ["Trained Combatant"]
-            },
-            {
-              "abilities": ["Ripple Feature"],
-              "other": ["Increase Str, Dex, or Con Score by 1"]
-            },
-            {
-              "other": ["Ability Score Improvement"]
-            },
-            {
-              "abilities": ["Ripple Feature"],
-              "other": ["Increase Str, Dex, or Con Score by 1"]
-            },
-            {
-              "abilities": ["Deep Pass Overdrive"]
-            },
-            {
-              "other": ["Increase Str, Dex, or Con Score by 1"],
-              "feats": ["Trained Combatant"]
-            },
-            {
-              "abilities": ["Ripple Feature"],
-              "other": ["Ability Score Improvement"]
-            },
-            {
-              "other": ["Increase Str, Dex, or Con Score by 1"]
-            },
-            {
-              "abilities": ["Ripple Feature"]
-            },
-            {
-              "other": ["Increase Str, Dex, or Con Score by 1"],
-              "abilities": ["Perfected Ripple"]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "Stands",
       "desc": "Stands are one of, if not, the most iconic part of JoJo's Bizarre Adventure. Most PC's, NPCs, and enemies that you meet or create will most likely be Stand Users. A Stand is the physical manifestation of the soul's fighting spirit. If a person has a strong will to fight, and they are exposed to the right catalyst, they may manifest their Stand Ability in some form.",
       "other": [
@@ -234,16 +38,19 @@
         {
           "name": "Stand AC",
           "content": [
-            "<p id='StandAC'>Your Stand AC is equal to 10 plus your Durability, Precision, and Speed Modifiers. When your Stand is within 2 Meters of you your Stand can protect you from attacks using its AC. Like normal, if an Attack Roll is less than your AC it misses. However, if the Attack Roll is between your Stand AC and your own AC it hits your Stand instead, allowing you to apply your Stand's Damage Reduction. Additionally, if the damage type is Non-Stand, it simply bounces off of your Stand or phases through it. An Attack Roll higher than your Stand AC is a direct hit to the User.</p>",
-            "<p>You may use your Stand to protect someone other than yourself as well. Should you choose to do so, the target may benefit from your Stand's AC rather than you. They will still take damage on a Direct Hit, but if your Stand AC is hit you (or your Stand) will take the damage instead. Your Stand may also assist this other person with physical Checks and Saves. <b>While your Stand is protecting someone else, it is not protecting you.</b></p>",
-            "<p><small><b>Note: </b><i>Enhancement/Independant Stands are able to be affected by all damage types, rather than just Stand damage. Independent-Types also have both a regular AND Stand AC for the sake of Damage Reduction, despite not technically having a User.</i></small></p>"
+            "<p id='StandAC'>Your Stand AC is equal to 10 + your Durability, Precision, and Speed Modifiers.</p>",
+            "<p><b>Stand Protection:</b> When your Stand is within 2 meters of you or a target of your choice it may use its Stand AC to protect you or that target from Attacks. This gives the target a second AC, which creates three potential outcomes from the result of an Attack Roll:</p>",
+            "<ul class='list-disc'><li><u>Miss</u>: Like normal, if the result of an Attack Roll is less than the protected target's AC, the attack misses.</li><li><u>Stand Hit</u>: If the Attack Roll is between the protected target's AC and the Stand AC, it hits the Stand instead, allowing your Stand's Damage Reduction (DR) to apply, reducing the incoming damage. If your Stand is protecting a target other than yourself and its DR gets reduced to 0, YOU take the remaining damage instead of the target. If the incoming Attack is mundane, Non-Stand damage, it bounces off or phases through your Stand instead, dealing no damage.</li><li><u>Direct Hit</u>: If the Attack Roll is higher than the Stand AC, it hits the target directly and cannot apply Damage Reduction.</li></ul>",
+            "<p>Your Stand may only protect one target at a time, and you must choose before the end of your Turn whether it will protect you, another target, or itself. It is assumed your Stand is defending its User when within 2m unless otherwise specified.</p>",
+            "<p><b>Stand Self-Defense:</b> If your Stand is not protecting a target, it instead defends itself, which works in a similar way to protecting its User, allowing for Stand Hits when between the User and Stand AC or Direct Hits above Stand AC. However, Non-Stand damage can still not affect it in this scenario, even on a Direct Hit.</p>",
+            "<small><b>Note:</b> Stands with <preview href='/abilities/Anchored Stand'>Anchored Stand</preview> are still affected by Non-Stand damage. Additionally, <preview href='/classes/Remote-Type'>Remote</preview> Stands and those with <preview href='/abilities/Detached Stand'>Detached Stand</preview> have a separarate HP pool, taking overflow damage after DR themselves on Stand Hit, or even on Direct Hits while protecting themselves.</small>"
           ]
         },
         {
           "name": "Skill Checks and Saving Throws",
           "content": [
-            "<p>Your Stand may assist you with physical Skill Checks and Saving Throws, using Power, Precision, and Durability in place of Strength, Dexterity, and Constitution respectively. If your Stand is able to assist you with a physical Saving Throw, you may apply its Damage Reduction to any damage received regardless of whether you succeed or fail.</p>",
-            "<p>Stands do not have mental stats, and as such may not assist with Intelligence, Wisdom, or Charisma Checks and Saves. Independent-Types and Sentient Stands  Stands may use their own actual mental stats.</p>"
+            "<p>Your Stand may assist you or anyone the Stand is protecting while within 2 meters of the one being assisted. This works for any physical Skill Checks or Saving Throws, unless otherwise specified. This allows you to use Power instead of Strength, Precision instead of Dexterity, and Durability instead of Constitution. If the Check or Save is successful, you may use the Stand's DR (with excess damage going to the you if protecting someone), even if it's specified that you can't use the Stand Stat to assist the result. DR may not be applied on failure.</p>",
+            "<p>Stands, unless otherwise specified, do not have mental stats, and cannot assist you with Intelligence, Wisdom, or Charisma Checks or Saving Throws. <preview href='/classes/Independent-Type'>Independent</preview> or <preview href='/feats/Sentient Stand'>Sentient Stands</preview> can use their mental stats in place of yours if they are better, and they can use their DR if you succeed the Check/Save and still take damage.</p>"
           ]
         },
         {
@@ -1835,102 +1642,229 @@
       ]
     },
     {
-      "name": "Spin",
-      "exampleOf": "Spin Users",
-      "examples": ["Gyro Zeppeli", "Johnny Joestar"],
-      "links": ["Gyro_Zeppeli", "Johnny_Joestar"],
-      "desc": "Some objects, when rotated in comparison to the 9:16 ratio, may produce more energy than it takes to keep the object spinning. Some people have figured out how to properly harness this energy, using the vibrations produced for a variety of tasks. In theory, perfection of this ability could result in the power of Infinity.",
-      "hDice": "1d8",
-      "dcName": "Spin DC",
-      "dc": "8 + Dex + Proficiency Bonus",
-      "notes": ["All attacks made using Spheres imbued with the Spin deal Force damage and have the Concealed (+5) and Thrown attributes, unless otherwise stated."],
-      "extra": [
+      "name": "Sacred Arts",
+      "subTypes": [
         {
-          "name": "The Golden Ratio",
-          "desc": "A Spin User must have a natural (not artificial) reference of a 9:16 ratio in order to use the Spin. A 9:16 ratio is found somewhere in almost every uninjured creature, except Humans."
+          "name": "Ripple",
+          "nameExt": "/ Hamon",
+          "exampleOf": "Ripple Users",
+          "examples": ["Baron Zeppeli", "Jonathan Joestar", "Joseph Joestar", "Lisa Lisa"],
+          "links": ["Will_Anthonio_Zeppeli", "Jonathan_Joestar", "Joseph_Joestar", "Lisa_Lisa"],
+          "hDice": "1d10",
+          "dcName": "Ripple DC",
+          "dc": "8 + Con + Proficiency Bonus",
+          "desc": "The Ripple is an energy that travels through the blood and is powered by breathing. A sacred art, it can be used for both healing and destruction. It is extremely effective against Undead, and it can be used against corporeal objects to manipulate them. The Ripple works similarly to electricity, in that it is able to travel through liquids, metals, and most biomass incredibly well.",
+          "extra": [
+            {
+              "name": "Honed Body",
+              "desc": "Ripple Users' bodies are much better honed than the bodies of most Humans. Rather than a maximum of 20 in each Ability Score, Ripple users have a maximum of 24 for their Strength, Dexterity, and Constitution."
+            },
+            {
+              "name": "Ripple Conductors",
+              "desc": "Ripple energy conducts similarly to electricity, easiest through materials such as liquid, metal, and biomass, typically travelling through something in order to reach the ground. However, if the Ripple is put into an object with immense force, or if it is sustained, the energy will spread through it very easily. A Ripple Punch's full effect will be felt up to 2m away from the point of impact, or 1m for a non-conductor."
+            },
+            {
+              "name": "Ripple Points",
+              "desc": "Each Ripple User has an amount of Ripple Points equal to their Level in Ripple. If a Ripple User is able to comfortably breathe, they gain 1 Ripple Point at the top of Initiative. When unable to breathe, Ripple Users are not able to regain Ripple Points and lose one Point per Turn."
+            },
+            {
+              "name": "Undead's Bane",
+              "desc": "Any damage dealt by the Ripple is doubled against Undead, and <preview href='/races/Pillar Man'>Pillar Men</preview> take extra damage equal to their Level."
+            }
+          ],
+          "theme": "rgb(253, 255, 108)",
+          "levels": [
+            {
+              "other": ["Unarmed Strikes deal Radiant damage"],
+              "abilities": ["Healing Hands", "Spiritual Ripple (Variant Rule)", "Sunshield"],
+              "feats": ["Equalizer"]
+            },
+            {
+              "abilities": ["Healing Ripple", "Liquid Solidification", "Ripple Fighting Style", "Confident Provocation"],
+              "other": ["Increase Str, Dex, or Con Score by 1"]
+            },
+            {
+              "feats": ["Headhunter"],
+              "other": ["Ability Score Improvement"],
+              "abilities": ["Custom Ripple Technique", "Slowed Aging", "Ripple Possession"]
+            },
+            {
+              "abilities": ["Rippling Weapon"],
+              "feats": ["Martial Arts", "OR", "Simple Weapon Focus"],
+              "other": ["Increase Str, Dex, or Con Score by 1"]
+            },
+            {
+              "abilities": ["Ripple Regeneration", "Ripple Perception"],
+              "feats": ["Trained Combatant"]
+            },
+            {
+              "abilities": ["Ripple Pressure", "OR", "Sunlight Yellow Overdrive", "OR", "Zoom Punch"],
+              "other": ["Ability Score Improvement", "Increase Str, Dex, or Con Score by 1"]
+            },
+            {
+              "abilities": ["Toxin Expulsion"]
+            },
+            {
+              "abilities": ["Elemental Overdrive", "OR", "Sendo Overdrive"],
+              "other": ["Ability Score Improvement", "Increase Str, Dex, or Con Score by 1"]
+            },
+            {
+              "abilities": ["Conductor Shield"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 6, or Level 8", "Ability Score Improvement", "Increase Str, Dex, or Con Score by 1"]
+            },
+            {
+              "abilities": ["Enhanced Custom Ripple Technique"],
+              "feats": ["Trained Combatant"]
+            },
+            {
+              "abilities": ["Recovery Breathing"],
+              "other": ["Increase Str, Dex, or Con Score by 1"]
+            },
+            {
+              "other": ["Ability Score Improvement"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 6, or Level 8", "Increase Str, Dex, or Con Score by 1"]
+            },
+            {
+              "abilities": ["Deep Pass Overdrive"]
+            },
+            {
+              "feats": ["Trained Combatant"],
+              "other": ["Increase Str, Dex, or Con Score by 1"]
+            },
+            {
+              "abilities": ["Life Magnetism"],
+              "other": ["Ability Score Improvement"]
+            },
+            {
+              "other": ["Increase Str, Dex, or Con Score by 1"]
+            },
+            {
+              "abilities": ["Improved Ripple Perception"]
+            },
+            {
+              "abilities": ["Perfected Ripple"],
+              "other": ["Increase Str, Dex, or Con Score by 1"]
+            }
+          ],
+          "otherCols": [
+            {
+              "name": "Unarmed Dice",
+              "level": ["2d6", "2d6", "2d6", "2d6", "2d8", "2d8", "2d8", "2d8", "2d8", "2d10", "2d10", "2d10", "2d10", "2d10", "2d12", "2d12", "2d12", "2d12", "2d12", "2d12"]
+            }
+          ],
+          "variants": [
+            {
+              "nameExt": "(Modular)",
+              "levels": [
+                {
+                  "abilities": ["Healing Hands", "Spiritual Ripple (Variant Rule)", "Sunshield"],
+                  "feats": ["Equalizer"],
+                  "other": ["Unarmed Strikes deal Radiant damage"]
+                },
+                {
+                  "abilities": ["Healing Ripple", "Liquid Solidification", "Ripple Fighting Style", "Confident Provocation"],
+                  "other": ["Increase Str, Dex, or Con Score by 1"]
+                },
+                {
+                  "abilities": ["Custom Ripple Technique", "Slowed Aging", "Ripple Possession"],
+                  "feats": ["Headhunter"],
+                  "other": ["Ability Score Improvement"]
+                },
+                {
+                  "abilities": ["Rippling Weapon", "Ripple Feature"],
+                  "other": ["Increase Str, Dex, or Con Score by 1"]
+                },
+                {
+                  "abilities": ["Ripple Regeneration", "Ripple Perception"],
+                  "feats": ["Trained Combatant"]
+                },
+                {
+                  "other": ["Ability Score Improvement", "Increase Str, Dex, or Con Score by 1"],
+                  "abilities": ["Ripple Feature"]
+                },
+                {
+                  "abilities": ["Ripple Feature"]
+                },
+                {
+                  "other": ["Ability Score Improvement", "Increase Str, Dex, or Con Score by 1"],
+                  "abilities": ["Ripple Feature"]
+                },
+                {
+                  "abilities": ["Ripple Feature"]
+                },
+                {
+                  "abilities": ["Ripple Feature"],
+                  "other": ["Ability Score Improvement", "Increase Str, Dex, or Con Score by 1"]
+                },
+                {
+                  "abilities": ["Ripple Feature"],
+                  "feats": ["Trained Combatant"]
+                },
+                {
+                  "abilities": ["Ripple Feature"],
+                  "other": ["Increase Str, Dex, or Con Score by 1"]
+                },
+                {
+                  "other": ["Ability Score Improvement"]
+                },
+                {
+                  "abilities": ["Ripple Feature"],
+                  "other": ["Increase Str, Dex, or Con Score by 1"]
+                },
+                {
+                  "abilities": ["Deep Pass Overdrive"]
+                },
+                {
+                  "other": ["Increase Str, Dex, or Con Score by 1"],
+                  "feats": ["Trained Combatant"]
+                },
+                {
+                  "abilities": ["Ripple Feature"],
+                  "other": ["Ability Score Improvement"]
+                },
+                {
+                  "other": ["Increase Str, Dex, or Con Score by 1"]
+                },
+                {
+                  "abilities": ["Ripple Feature"]
+                },
+                {
+                  "other": ["Increase Str, Dex, or Con Score by 1"],
+                  "abilities": ["Perfected Ripple"]
+                }
+              ]
+            }
+          ]
         },
+
         {
-          "name": "Materials",
-          "desc": "The following materials may be used to form Spheres to use the Spin with. Objects that are not perfectly spherical may be Spun and thrown, but your Attack and Damage Rolls, as well as Range are all cut in half.",
-          "content": ["<table class='table-striped table-minor'><thead><tr><th>Material</th><th>Range</th><th>Damage</th><th>Effect</th></tr></thead><tbody><tr><td>Rubber</td><td>50/100m</td><td>xd4 + Dex Force</td><td>None</td></tr><tr><td>Polished Wood</td><td>40/80m</td><td>xd6 + Dex Force</td><td>None</td></tr><tr><td>Wood</td><td>40/80m</td><td>xd8 + Dex Force</td><td>The Wooden Sphere will splinter and shatter upon contact, causing splinters to fly off in all directions up to 5 meters from the point of the Sphere's impact. Those within 5 meters must make a Dex Save against your Spin DC (if targets are in the Long Range of this Sphere, they have Advantage on this Save), taking full damage on a failed Save or half as much on a success. When used, this Sphere destroys itself.</td></tr><tr><td>Stone</td><td>30/60m</td><td>xd8 + Dex Force</td><td>None</td></tr><tr><td>Steel</td><td>20/40m</td><td>xd10 + Dex Force</td><td>None</td></tr><tr><td>Ceramic</td><td>15/45m</td><td>xd12 + Dex Force</td><td>When you roll a 19 on an Attack Roll with this Sphere, it counts as a Critical Hit. When used, this Sphere destroys itself.</td></tr><tr><td>Diamond</td><td>10/20m</td><td>xd12 + Dex Force</td><td>None</td></tr><tr><td>Satellite Sphere</td><td>20/40m</td><td>-</td><td>Can only be used if you have the <preview href='/abilities/Satellite Spin'>Satellite Spin</preview> Ability. This Sphere takes a full Action to throw. The Satellite Sphere is a metal ball covered in many smaller, marble-sized metal balls. At a point in the air that you determine, or on contact, those within 5 meters must make a Wisdom Saving Throw against your spin DC (if targets are in the Long Range, they have Advantage on this Save). On failure, targets are given Disadvantage on all Strength and Dexterity Attack Rolls and Skill Checks, getting to repeat the Wisdom save at the end of their turn. The effect ends on a success, or after 1 minute passes.</td></tr></tbody></table>"]
-        }
-      ],
-      "theme": "rgb(103, 216, 58)",
-      "levels": [
-        {
-          "abilities": ["Forced Motion", "Spherical Spin", "Spiritual Spin (Variant Rule)"],
-          "feats": ["Equalizer"],
-          "other": ["Gain Proficiency in Attack Rolls using the Spin"]
-        },
-        {
-          "abilities": ["Sculpt Sphere", "Spin Fighting Style"]
-        },
-        {
-          "abilities": ["Custom Spin Technique", "Return to Sender"],
-          "feats": ["Deadly Accuracy"],
-          "other": ["Ability Score Improvement"]
-        },
-        {
-          "abilities": ["Medicinal Spin", "OR", "Muscle Contraction", "OR", "Satellite Spin", "OR", "Tendon Twister", "OR"],
-          "feats": ["Catlike Agility"]
-        },
-        {
-          "abilities": ["Harden Flesh", "Projectile Boost", "OR", "Sendo Spin"]
-        },
-        {
-          "abilities": ["Object Manipulation", "Wrist Memory"],
-          "other": ["Ability Score Improvement"]
-        },
-        {
-          "feats": ["Trained Combatant"],
-          "other": ["Gain Proficiency in Attack Rolls using the Spin again"]
-        },
-        {
-          "other": ["Choose another Class Feature from Level 4, or Level 5", "Ability Score Improvement"]
-        },
-        {
-          "abilities": ["Immense Friction", "OR", "Restraining Spin"]
-        },
-        {
-          "other": ["Choose another Class Feature from Level 4, Level 5,  or Level 9", "Ability Score Improvement"]
-        },
-        {
-          "abilities": ["Enhanced Custom Spin Technique"]
-        },
-        {
-          "other": ["Choose another Class Feature from Level 4, Level 5, or Level 9"]
-        },
-        {
-          "abilities": ["Preparing For Infinity"],
-          "other": ["Ability Score Improvement"]
-        },
-        {
-          "other": ["Gain Proficiency in Attack Rolls using the Spin again"]
-        },
-        {
-          "abilities": ["Create Mirage", "OR", "Expose Weakness"],
-          "feats": ["Trained Combatant"]
-        },
-        {
-          "other": ["Choose another Class Feature from Level 4, Level 5, Level 9, or Level 15"]
-        },
-        {
-          "abilities": ["Deflect Distance Attack", "OR", "Self-Compression"],
-          "other": ["Ability Score Improvement"]
-        },
-        {
-          "other": ["Choose another Class Feature from Level 4, Level 5, Level 9, Level 15, or Level 17"]
-        },
-        {
-          "other": ["Choose another Class Feature from Level 4, Level 5, Level 9, Level 15, or Level 17"]
-        },
-        {
-          "abilities": ["Perfected Spiral"]
-        }
-      ],
-      "variants": [
-        {
-          "nameExt": "(Modular)",
+          "name": "Spin",
+          "exampleOf": "Spin Users",
+          "examples": ["Gyro Zeppeli", "Johnny Joestar"],
+          "links": ["Gyro_Zeppeli", "Johnny_Joestar"],
+          "desc": "Some objects, when rotated in comparison to the 9:16 ratio, may produce more energy than it takes to keep the object spinning. Some people have figured out how to properly harness this energy, using the vibrations produced for a variety of tasks. In theory, perfection of this ability could result in the power of Infinity.",
+          "hDice": "1d8",
+          "dcName": "Spin DC",
+          "dc": "8 + Dex + Proficiency Bonus",
+          "notes": ["All attacks made using Spheres imbued with the Spin deal Force damage and have the Concealed (+5) and Thrown attributes, unless otherwise stated."],
+          "extra": [
+            {
+              "name": "The Golden Ratio",
+              "desc": "A Spin User must have a natural (not artificial) reference of a 9:16 ratio in order to use the Spin. A 9:16 ratio is found somewhere in almost every uninjured creature, except Humans."
+            },
+            {
+              "name": "Materials",
+              "desc": "The following materials may be used to form Spheres to use the Spin with. Objects that are not perfectly spherical may be Spun and thrown, but your Attack and Damage Rolls, as well as Range are all cut in half.",
+              "content": [
+                "<table class='table-striped table-minor'><thead><tr><th>Material</th><th>Range</th><th>Damage</th><th>Effect</th></tr></thead><tbody><tr><td>Rubber</td><td>50/100m</td><td>xd4 + Dex Force</td><td>None</td></tr><tr><td>Polished Wood</td><td>40/80m</td><td>xd6 + Dex Force</td><td>None</td></tr><tr><td>Wood</td><td>40/80m</td><td>xd8 + Dex Force</td><td>The Wooden Sphere will splinter and shatter upon contact, causing splinters to fly off in all directions up to 5 meters from the point of the Sphere's impact. Those within 5 meters must make a Dex Save against your Spin DC (if targets are in the Long Range of this Sphere, they have Advantage on this Save), taking full damage on a failed Save or half as much on a success. When used, this Sphere destroys itself.</td></tr><tr><td>Stone</td><td>30/60m</td><td>xd8 + Dex Force</td><td>None</td></tr><tr><td>Steel</td><td>20/40m</td><td>xd10 + Dex Force</td><td>None</td></tr><tr><td>Ceramic</td><td>15/45m</td><td>xd12 + Dex Force</td><td>When you roll a 19 on an Attack Roll with this Sphere, it counts as a Critical Hit. When used, this Sphere destroys itself.</td></tr><tr><td>Diamond</td><td>10/20m</td><td>xd12 + Dex Force</td><td>None</td></tr><tr><td>Satellite Sphere</td><td>20/40m</td><td>-</td><td>Can only be used if you have the <preview href='/abilities/Satellite Spin'>Satellite Spin</preview> Ability. This Sphere takes a full Action to throw. The Satellite Sphere is a metal ball covered in many smaller, marble-sized metal balls. At a point in the air that you determine, or on contact, those within 5 meters must make a Wisdom Saving Throw against your spin DC (if targets are in the Long Range, they have Advantage on this Save). On failure, targets are given Disadvantage on all Strength and Dexterity Attack Rolls and Skill Checks, getting to repeat the Wisdom save at the end of their turn. The effect ends on a success, or after 1 minute passes.</td></tr></tbody></table>"
+              ]
+            }
+          ],
+          "theme": "rgb(103, 216, 58)",
           "levels": [
             {
               "abilities": ["Forced Motion", "Spherical Spin", "Spiritual Spin (Variant Rule)"],
@@ -1941,74 +1875,151 @@
               "abilities": ["Sculpt Sphere", "Spin Fighting Style"]
             },
             {
-              "abilities": ["Custom Spin Technique", "Return to Sender", "Spin Feature"],
+              "abilities": ["Custom Spin Technique", "Return to Sender"],
+              "feats": ["Deadly Accuracy"],
               "other": ["Ability Score Improvement"]
             },
             {
-              "abilities": ["Spin Feature"]
+              "abilities": ["Medicinal Spin", "OR", "Muscle Contraction", "OR", "Satellite Spin", "OR", "Tendon Twister", "OR"],
+              "feats": ["Catlike Agility"]
             },
             {
-              "abilities": ["Spin Feature", "Spin Feature"]
+              "abilities": ["Harden Flesh", "Projectile Boost", "OR", "Sendo Spin"]
             },
             {
-              "other": ["Ability Score Improvement"],
-              "abilities": ["Spin Feature", "Spin Feature"]
+              "abilities": ["Object Manipulation", "Wrist Memory"],
+              "other": ["Ability Score Improvement"]
             },
             {
               "feats": ["Trained Combatant"],
               "other": ["Gain Proficiency in Attack Rolls using the Spin again"]
             },
             {
-              "abilities": ["Spin Feature"],
+              "other": ["Choose another Class Feature from Level 4, or Level 5", "Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Immense Friction", "OR", "Restraining Spin"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 5,  or Level 9", "Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Enhanced Custom Spin Technique"]
+            },
+            {
+              "other": ["Choose another Class Feature from Level 4, Level 5, or Level 9"]
+            },
+            {
+              "abilities": ["Preparing For Infinity"],
               "other": ["Ability Score Improvement"]
-            },
-            {
-              "abilities": ["Spin Feature"]
-            },
-            {
-              "abilities": ["Spin Feature"],
-              "other": ["Ability Score Improvement"]
-            },
-            {
-              "abilities": ["Spin Feature"]
-            },
-            {
-              "abilities": ["Spin Feature"]
-            },
-            {
-              "other": ["Ability Score Improvement"],
-              "abilities": ["Preparing For Infinity"]
             },
             {
               "other": ["Gain Proficiency in Attack Rolls using the Spin again"]
             },
             {
-              "abilities": ["Spin Feature"],
+              "abilities": ["Create Mirage", "OR", "Expose Weakness"],
               "feats": ["Trained Combatant"]
             },
             {
-              "abilities": ["Spin Feature"]
+              "other": ["Choose another Class Feature from Level 4, Level 5, Level 9, or Level 15"]
             },
             {
-              "abilities": ["Spin Feature"],
+              "abilities": ["Deflect Distance Attack", "OR", "Self-Compression"],
               "other": ["Ability Score Improvement"]
             },
             {
-              "abilities": ["Spin Feature"]
+              "other": ["Choose another Class Feature from Level 4, Level 5, Level 9, Level 15, or Level 17"]
             },
             {
-              "abilities": ["Spin Feature"]
+              "other": ["Choose another Class Feature from Level 4, Level 5, Level 9, Level 15, or Level 17"]
             },
             {
               "abilities": ["Perfected Spiral"]
             }
+          ],
+          "variants": [
+            {
+              "nameExt": "(Modular)",
+              "levels": [
+                {
+                  "abilities": ["Forced Motion", "Spherical Spin", "Spiritual Spin (Variant Rule)"],
+                  "feats": ["Equalizer"],
+                  "other": ["Gain Proficiency in Attack Rolls using the Spin"]
+                },
+                {
+                  "abilities": ["Sculpt Sphere", "Spin Fighting Style"]
+                },
+                {
+                  "abilities": ["Custom Spin Technique", "Return to Sender", "Spin Feature"],
+                  "other": ["Ability Score Improvement"]
+                },
+                {
+                  "abilities": ["Spin Feature"]
+                },
+                {
+                  "abilities": ["Spin Feature", "Spin Feature"]
+                },
+                {
+                  "other": ["Ability Score Improvement"],
+                  "abilities": ["Spin Feature", "Spin Feature"]
+                },
+                {
+                  "feats": ["Trained Combatant"],
+                  "other": ["Gain Proficiency in Attack Rolls using the Spin again"]
+                },
+                {
+                  "abilities": ["Spin Feature"],
+                  "other": ["Ability Score Improvement"]
+                },
+                {
+                  "abilities": ["Spin Feature"]
+                },
+                {
+                  "abilities": ["Spin Feature"],
+                  "other": ["Ability Score Improvement"]
+                },
+                {
+                  "abilities": ["Spin Feature"]
+                },
+                {
+                  "abilities": ["Spin Feature"]
+                },
+                {
+                  "other": ["Ability Score Improvement"],
+                  "abilities": ["Preparing For Infinity"]
+                },
+                {
+                  "other": ["Gain Proficiency in Attack Rolls using the Spin again"]
+                },
+                {
+                  "abilities": ["Spin Feature"],
+                  "feats": ["Trained Combatant"]
+                },
+                {
+                  "abilities": ["Spin Feature"]
+                },
+                {
+                  "abilities": ["Spin Feature"],
+                  "other": ["Ability Score Improvement"]
+                },
+                {
+                  "abilities": ["Spin Feature"]
+                },
+                {
+                  "abilities": ["Spin Feature"]
+                },
+                {
+                  "abilities": ["Perfected Spiral"]
+                }
+              ]
+            }
+          ],
+          "otherCols": [
+            {
+              "name": "Spin Dice",
+              "level": [1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 6]
+            }
           ]
-        }
-      ],
-      "otherCols": [
-        {
-          "name": "Spin Dice",
-          "level": [1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 6]
         }
       ]
     },
@@ -2175,7 +2186,7 @@
           "name": "Consul",
           "desc": "Consuls use their speech and unwavering confidence together to inspire themselves and allies. They can heal themselves and others, supporting allies and hindering enemies as well.",
           "hDice": "1d8",
-          "theme": "basic",
+          "theme": "gray",
           "levels": [
             {
               "abilities": ["Encouragement Dice", "Supernatural Item (Variant Rule)"],
@@ -2324,7 +2335,7 @@
           "name": "Scholar",
           "desc": "Scholars use their extensive knowledge as a reference in tense situations, using their intelligence in unorthodox but clever ways to achieve their goals.",
           "hDice": "1d6",
-          "theme": "basic",
+          "theme": "gray",
           "levels": [
             {
               "abilities": ["Scholarly Combatant", "Supernatural Item (Variant Rule)"],
@@ -2620,7 +2631,7 @@
         },
         {
           "name": "Artisan",
-          "theme": "basic",
+          "theme": "gray",
           "levels": [
             {
               "abilities": ["Artisan's Specialty", "Supernatural Item (Variant Rule)"],
@@ -2774,7 +2785,7 @@
         },
         {
           "name": "Heavyweight",
-          "theme": "basic",
+          "theme": "gray",
           "levels": [
             {
               "abilities": ["Bullish Brawn", "Supernatural Item (Variant Rule)"],
@@ -2920,7 +2931,7 @@
         },
         {
           "name": "Ranger",
-          "theme": "basic",
+          "theme": "gray",
           "levels": [
             {
               "abilities": ["Survivalist", "Supernatural Item (Variant Rule)"],

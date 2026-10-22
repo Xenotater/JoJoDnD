@@ -16,9 +16,9 @@ export default function RulesLayout({
 	return (
 		<div className="w-full">
 			<PageTitle title="Rules of the Game"/>
-			<div className="flex w-full flex-wrap min-h-[80%] content-start">
+			<div className="relative flex w-full flex-wrap min-h-[80%] content-start mt-[55px] sm:mt-0">
 				<RulesTabs/>
-				<div className={`${styles.rulesContentWrapper} content grow z-1 w-[85%] min-h-[70vh]`}>
+				<div className={`${styles.rulesContentWrapper} relative content grow z-1 w-[85%] min-h-[70vh]`}>
 					{children}
 				</div>
 			</div>

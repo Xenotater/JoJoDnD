@@ -39,8 +39,10 @@ export default function RulesTabs() {
         {tabList}
       </div>
       :
-      <div className="flex justify-between w-full max-w-[300px] h-[55px] ml-2 mr-2">
-        {tabList}
+      <div className="absolute w-full max-w-[95%] overflow-x-scroll hideScroll px-2 mt-[-55px]">
+        <div className="flex justify-between w-full max-w-[300px] gap-0.5">
+          {tabList}
+        </div>
       </div>
   );
 }

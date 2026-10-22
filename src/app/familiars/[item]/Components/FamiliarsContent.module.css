@@ -18,18 +18,18 @@
   background-repeat: no-repeat;
 }
 
-.infoContent div[class*="size-card"]:nth-child(1) {
+.infoContent div:nth-child(1) div[class*="size-card"]:nth-child(1) {
   background-image: url("/images/familiars/bug.webp");
 }
 
-.infoContent div[class*="size-card"]:nth-child(2) {
+.infoContent div:nth-child(1) div[class*="size-card"]:nth-child(2) {
   background-image: url("/images/familiars/rabbit.webp");
 }
 
-.infoContent div[class*="size-card"]:nth-child(3) {
+.infoContent div:nth-child(2) div[class*="size-card"]:nth-child(1) {
   background-image: url("/images/familiars/dog.webp");
 }
 
-.infoContent div[class*="size-card"]:nth-child(4) {
+.infoContent div:nth-child(2) div[class*="size-card"]:nth-child(2) {
   background-image: url("/images/familiars/horse.webp");
 }

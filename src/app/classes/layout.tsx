@@ -14,13 +14,15 @@ export default function RacesLayout({
   classes.forEach((c) => {
     listContent.push({
       name: c.name,
+      isLink: c.desc ? true : false,
       subContent: c.subTypes?.map((s) => ({
         name: s.name
       }))
     });
   });
   listContent.sort((a, b) => a.name == "Stands" ? -1 : b.name == "Stands" ? 1 : 0); //put Stands at top of list
-  listContent[0].isExpanded = true;
+  listContent[0].isExpanded = true; //Stands is expanded by default
+  listContent[1].isExpanded = true; //Sacred Arts is expanded by default
 
 
   return (

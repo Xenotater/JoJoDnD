@@ -2,7 +2,7 @@
   "tags": [
     {
       "category": "Source Class or Race",
-      "tags": ["Power", "Ranged", "Remote", "Ability", "Enhancement", "Revenge", "Independent", "Hive", "Act", "Ripple", "Spin", "Artisan", "Assassin", "Consul", "Heavyweight", "Ranger", "Scholar", "Warrior", "Human", "Rock Human", "Pillar Man", "Cyborg", "Ghost", "Animal", "Rock Animal", "Living Chimera", "Living Stand", "Plant", "Abomination", "Zombie", "Ghoul", "Vampire", "Enhanced Pillar Man", "Undead Chimera", "Ultimate Being", "Requiem", "Heaven", "Corpse Holder"]
+      "tags": ["Power", "Ranged", "Remote", "Ability", "Enhancement", "Revenge", "Independent", "Hive", "Act", "Ripple", "Spin", "Divination", "Artisan", "Assassin", "Consul", "Heavyweight", "Ranger", "Scholar", "Warrior", "Human", "Rock Human", "Pillar Man", "Cyborg", "Ghost", "Animal", "Rock Animal", "Living Chimera", "Living Stand", "Plant", "Abomination", "Zombie", "Ghoul", "Vampire", "Enhanced Pillar Man", "Undead Chimera", "Ultimate Being", "Requiem", "Heaven", "Corpse Holder"]
     },
     {
       "category": "Ability Type",
@@ -2290,6 +2290,55 @@
       ],
       "classes": ["UnChi"],
       "tags": ["Undead Chimera", "Passive", "Stat Change", "Other"]
+    },
+    {
+      "name": "Adapting Physicals",
+      "desc": [
+        "Once per Turn, you can switch your Power Modifier with your Precision, or Precision with Power."
+      ],
+      "classes": ["Pwr", "Rng"],
+      "tags": ["Power", "Ranged", "Active", "Buff"]
+    },
+    {
+      "name": "Agile Stand",
+      "desc": [
+        "You may add your Speed Modifier to your Stand Damage Reduction. This applies AFTER anything else that would increase your Stand DR (such as <preview href='/abilities/Armored Stand'>Armored Stand</preview> or <preview href='/abilities/Immense Resistance'>Immense Resistance</preview>)."
+      ],
+      "classes": ["Pwr", "Rng"],
+      "tags": ["Power", "Ranged", "Passive", "Defense"]
+    },
+    {
+      "name": "Always Prepared",
+      "desc": [
+        "As an Action, you may pull a reasonably sized item or trinket from a bag, a pocket, or somewhere else on your person. This item must be something you can reasonably carry with you, with the size of the item being restricted to the largest container you are carrying (pockets by default, but could be a backpack, duffel bag, etc). You can pull out any item that you would reasonably be able to just have, with illegal, difficult to acquire, or suspicious items taking 2 uses of this Ability instead of one.",
+        "You can have a maximum amount of these items “summoned” at once equal to your Int/Wis Modifier, with the item being changed if you pull out a new item or if an item is lost/destroyed/consumed. These items also cannot be exchanged for money or resources.",
+        "You have an amount of uses of this ability equal to your Intelligence or Wisdom Modifier (your choice) per Long Rest, regaining half of your total charges on a Short Rest.",
+        "The following are examples of items you could summon, but you are not limited to Items listed below.",
+        "<br>Example 1 Charge Items<ul class='list-disc'><li>A set of Tools</li><li>Ammunition for a Weapon</li><li>Ball Bearings</li><li>Batteries</li><li>Burner Phone</li><li>Disguise</li><li>Duct Tape</li><li>First Aid Kit</li><li>Flammable Oil</li><li>Flashlight (UV or otherwise)</li><li>Swiss Army Knife</li><li>Thermal Bag</li><li>User Manual for a Machine</li><ul>",
+        "<br>Example 2 Charge Items<ul class='list-disc'><li>A Weapon (if Ranged, gives enough ammo to reload once, if Thrown or with an ammo capacity less than 5, gives 10 ammo/throwables)</li><li>Bag of Human Blood</li><li>One Explosive</li><li>Vial of Acid</li></ul>"
+      ],
+      "classes": ["Art", "Rgr", "Sch"],
+      "tags": ["Artisan", "Ranger", "Scholar", "Active", "Utility", "Limited Uses"]
+    },
+    {
+      "name": "Animal Friend",
+      "desc": [
+        "You have a special connection with beasts, animals, and other natural non-Human creatures. Any non-sapient animals you encounter treat you as a natural part of their environment, not attacking you or your allies even if they would normally do so. If an animal feels threatened, they will give you and your party ample and repeated warnings instead of immediately attacking. For example, if you come too close to a mother bear's den where its cubs are sleeping, it is more likely to growl at you and gesture for you and your party to leave, instead of immediately attacking.", 
+        "You gain the ability to communicate with animals and beasts seamlessly. You gain a language simply called Beast as a shorthand. You can clearly and easily communicate with Beasts (which encompasses all animals) as though you were speaking to someone in your native language. When you treat Beasts with respect and kindness, they may be likely to do a favor for you or help you out. Simple favors do not require a Check for convincing, such as having a bird check out a clearing around 100 meters away from a safe distance. For more complicated matters, you may need to make a Care or Diplomacy Check, with the DC increasing based on how difficult/dangerous the favor may be. Finally, if you fail the Care/Diplomacy Check or simply do not wish to make it, you may offer something of value to the animal to either lower the DC considerably, or allow you to make the check to convince them again. For example, you could convince a magpie to make loud birdcalls outside of someone's bedroom to prevent them from getting good sleep, either making a DC 20 check or giving them a very shiny and nice rock in exchange.",
+        "Actions you take will result in your reputation in an area or for a species increasing. For example, if you are a respectful and frequent friend to crows in a location, other crows in the area may go out of your way to help you, even without you requesting it. If you help a bunch of animals escape traps or hazards created by pollution, the animals of the forest may return the favor by defending you in your time of need. If you help a pack of wild wolves by scaring off a group of poachers, they may keep watch for you when you sleep in the wilderness of that area."
+      ],
+      "classes": ["Con", "Rgr"],
+      "tags": ["Consul", "Ranger", "Passive", "Utility"]
+    },
+    {
+      "name": "Astral Projection",
+      "desc": [
+        "You enter a deep meditative state where your Soul leaves your body, able to explore and move without restriction. You can instantly move long distances by picturing the place you want to go to in your mind, so long as you have been there before. In your Astral Projection form, you are Immune to all damage, but cannot cause damage yourself. You are functionally an <preview href='/abilities/Intangible Form'>Intangible Ghost</preview> in this state, gaining a Fly Speed equal to your higher Movement Speed, but unable to physically interact with the world around you, unless you are less than your Wisdom Score in meters away from your body (you are still unable to cause damage with these interactions).",
+        "You are able to be seen and interacted with by Stand Users, other Divination users, etc. This Projection can be used for scouting, long-distance communication, or to harass someone by verbally assaulting or mocking them. Your Astral Projection can also teleport to a place familiar to you, a place you have witnessed (directly or indirectly), or back to your body in a matter of 15 seconds.",
+        "While in this state, you have the Incapacitated Condition and your body is treated as though you are sleeping. In addition, you can Astral Project while sleeping as part of a Long Rest (though this is risky, as you will not know if your body is under attack unless nearby). While your Projection cannot be damaged, your body can be."
+      ],
+      "classes": ["Div"],
+      "tags": ["Divination", "Active", "Utility"]
     }
   ]
 }
