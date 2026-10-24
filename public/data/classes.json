@@ -121,7 +121,7 @@
               "feats": ["Blended Fighting", "OR", "Martial Arts", "OR", "Veteran Sprinter"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4 or Level 5", "Ability Score Improvement"]
+              "other": ["Choose another Class Feature from a previous Level", "Ability Score Improvement"]
             },
             {
               "abilities": ["Stand Leap"]
@@ -147,7 +147,7 @@
               "other": ["Ability Score Improvement"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 9, or Level 12"],
+              "other": ["Choose another Class Feature from a previous Level"],
               "feats": ["Menacing Aura"]
             },
             {
@@ -164,7 +164,7 @@
               "abilities": ["Devastating Melee", "OR", "Rejuvenation"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 9, Level 12, Level 16, or Level 18"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "abilities": ["Blow for Blow"],
@@ -259,7 +259,7 @@
                   "abilities": ["Stand Leap"]
                 },
                 {
-                  "other": ["Choose another Class Feature from Level 2"]
+                  "other": ["Choose another Class Feature from a previous Level"]
                 },
                 {
                   "abilities": ["Special Ability"]
@@ -351,7 +351,7 @@
               "abilities": ["Silent Movement", "OR", "Speedy Movement"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, or Level 7", "Ability Score Improvement"]
+              "other": ["Choose another Class Feature from a previous Level", "Ability Score Improvement"]
             },
             {
               "abilities": ["Ambush Attacker", "OR", "Hot Pursuit"]
@@ -364,7 +364,7 @@
               "other": ["Attack Dice increases to 2d6", "<preview href='/abilities/Ranged Attack'>Ranged Attack</preview> dice and range are doubled"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, or Level 9"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "other": ["Ability Score Improvement"]
@@ -387,7 +387,7 @@
               "feats": ["Skirmisher"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 14, Level 16, or Level 18"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "abilities": ["Improved Slippery", "OR", "Perfected Tremorsense"],
@@ -534,7 +534,7 @@
               "other": ["Ability Score Improvement"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, or Level 12"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "other": ["<preview href='/artifacts/Stand Arrow#requiem'>The Requiem Quietly Plays</preview>"]
@@ -549,7 +549,7 @@
               "abilities": ["Remote Ambusher", "OR", "Superior Momentum"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 12, Level 16, or Level 18"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "abilities": ["Zealous Focus"],
@@ -680,14 +680,14 @@
               "other": ["Ability Score Improvement"]
             },
             {
-              "other": ["Choose another Class Feature from Level 2, Level 4, Level 5, or Level 7"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "other": ["Ability Score Improvement"],
               "abilities": ["Ultimate Stand Ability"]
             },
             {
-              "other": ["Choose another Class Feature from Level 2, Level 4, Level 5, or Level 7, Attack Dice increases to 1d6, <preview href='/abilities/Ranged Attack'>Ranged Attack</preview> dice and range are doubled"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "abilities": ["Enhanced Custom Ability"]
@@ -713,7 +713,7 @@
               "feats": ["Menacing Aura"]
             },
             {
-              "other": ["Choose another Class Feature from Level 2, Level 4, Level 5, Level 7, Level 14, Level 16, or Level 18"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "abilities": ["Second Nature"],
@@ -859,7 +859,7 @@
               "other": ["Ability Score Improvement"]
             },
             {
-              "other": ["Choose another Class Feature from Level 5, Level 7, Level 9, or Level 12"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "other": ["<preview href='/artifacts/Stand Arrow#requiem'>The Requiem Quietly Plays</preview>"]
@@ -874,7 +874,7 @@
               "feats": ["Guerilla Fighter", "OR", "Tanky"]
             },
             {
-              "other": ["Choose another Class Feature from Level 5, Level 7, Level 9, Level 12, Level 16, or Level 18"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "abilities": ["Condensed Material", "OR", "Fleeting Invulnerability"],
@@ -1031,7 +1031,7 @@
               "other": ["Ability Score Improvement"]
             },
             {
-              "other": ["Choose another Class Feature from Level 5, Level 7, or Level 12"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "other": ["<preview href='/artifacts/Stand Arrow#requiem'>The Requiem Quietly Plays</preview>"]
@@ -1047,7 +1047,7 @@
               "feats": ["Guardian's Wrath"]
             },
             {
-              "other": ["Choose another Class Feature from Level 5, Level 7, Level 12, Level 16, or Level 18"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "abilities": ["Hit List"],
@@ -1172,7 +1172,7 @@
               "other": ["Ability Score Improvement"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4 or Level 5"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "other": ["Ability Score Improvement"]
@@ -1194,7 +1194,7 @@
               "other": ["Ability Score Improvement"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 9, or Level 12"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "other": ["<preview href='/artifacts/Stand Arrow#requiem'>The Requiem Quietly Plays</preview>"]
@@ -1210,7 +1210,7 @@
               "feats": ["Defensive Agility"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 9, Level 12, Level 16, or Level 18"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "abilities": ["Fleeting Invulnerability", "OR", "Regenerative Surge"],
@@ -1363,7 +1363,7 @@
               "other": ["Swarm Attack Dice increases to 2dx"]
             },
             {
-              "other": ["Choose another Class Feature from Level 1, Level 4, Level 7, or Level 9"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "other": ["Ability Score Improvement"]
@@ -1386,7 +1386,7 @@
               "feats": ["Guerilla Fighter", "OR", "Skirmisher"]
             },
             {
-              "other": ["Choose another Class Feature from Level 1, Level 4, Level 7, Level 9, Level 14, Level 16, or Level 18"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "abilities": ["Great Recall"],
@@ -1546,7 +1546,7 @@
               "other": ["<preview href='/artifacts/Stand Arrow#requiem'>The Requiem Quietly Plays</preview>"]
             },
             {
-              "other": ["Choose another Class Feature from Level 5, Level 9, Level 12, or Level 14"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "other": ["Ability Score Improvement"]
@@ -1556,7 +1556,7 @@
               "feats": ["Calculating", "OR", "Defensive Agility"]
             },
             {
-              "other": ["Choose another Class Feature from Level 5, Level 9, Level 12, Level 14, or Level 18"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "abilities": ["Instant Swap", "OR", "Act 4 (Variant Rule)"],
@@ -1643,6 +1643,7 @@
     },
     {
       "name": "Sacred Arts",
+      "desc": "Sacred Arts are Techniques that help to understand or alter fate. These Sacred Arts allow mortals to take Fate's power into their own hands, warping the Flow of Destiny with their Mortal Will.",
       "subTypes": [
         {
           "name": "Ripple",
@@ -1712,7 +1713,7 @@
               "abilities": ["Conductor Shield"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 6, or Level 8", "Ability Score Improvement", "Increase Str, Dex, or Con Score by 1"]
+              "other": ["Choose another Class Feature from a previous Level", "Ability Score Improvement", "Increase Str, Dex, or Con Score by 1"]
             },
             {
               "abilities": ["Enhanced Custom Ripple Technique"],
@@ -1726,7 +1727,7 @@
               "other": ["Ability Score Improvement"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 6, or Level 8", "Increase Str, Dex, or Con Score by 1"]
+              "other": ["Choose another Class Feature from a previous Level", "Increase Str, Dex, or Con Score by 1"]
             },
             {
               "abilities": ["Deep Pass Overdrive"]
@@ -1840,7 +1841,6 @@
             }
           ]
         },
-
         {
           "name": "Spin",
           "exampleOf": "Spin Users",
@@ -1895,19 +1895,19 @@
               "other": ["Gain Proficiency in Attack Rolls using the Spin again"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, or Level 5", "Ability Score Improvement"]
+              "other": ["Choose another Class Feature from a previous Level", "Ability Score Improvement"]
             },
             {
               "abilities": ["Immense Friction", "OR", "Restraining Spin"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5,  or Level 9", "Ability Score Improvement"]
+              "other": ["Choose another Class Feature from a previous Level", "Ability Score Improvement"]
             },
             {
               "abilities": ["Enhanced Custom Spin Technique"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, or Level 9"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "abilities": ["Preparing For Infinity"],
@@ -1921,17 +1921,17 @@
               "feats": ["Trained Combatant"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 9, or Level 15"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "abilities": ["Deflect Distance Attack", "OR", "Self-Compression"],
               "other": ["Ability Score Improvement"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 9, Level 15, or Level 17"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 9, Level 15, or Level 17"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "abilities": ["Perfected Spiral"]
@@ -2020,6 +2020,84 @@
               "level": [1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 6]
             }
           ]
+        },
+        {
+          "name": "Divination",
+          "desc": "Those who employ the Art of Divination gain knowledge of Fate and its inner workings. This allows them to gain knowledge across Space and Time, gaining the upper hand by simply having more information to work with.",
+          "exampleOf": "Divination Users",
+          "hDice": "1d6",
+          "theme": "gray",
+          "levels": [
+            {
+              "abilities": ["Divination Basics", "Custom Divination Technique", "Insight", "Spiritual Divination (Variant Rule)"],
+              "feats": ["Equalizer", "Weapon Feat"]
+            },
+            {
+              "abilities": ["Divination Fighting Style"],
+              "other": ["<preview href='/abilities/Commune'>Commune</preview>", "OR", "<preview href='/abilities/Soul Read'>Soul Read</preview>", "OR", "<preview href='/feats/Familiar Bond'>Familiar Bond</preview>"]
+            },
+            {
+              "abilities": ["Disaster's Flow", "Fortune(ate)", "OR", "Scrying"],
+              "other": ["Ability Score Improvement"]
+            },
+            {
+              "abilities": ["Familiar Focus", "OR", "Medium", "OR", "Prophecy"],
+              "other": ["Choose another Class Feature from a previous Level"]
+            },
+            {
+              "abilities": ["Faster Rituals", "OR", "Thread Reader", "OR", "Weaken Spirit"]
+            },
+            {
+              "abilities": ["Astral Projection", "OR", "Vessel"],
+              "other": ["Ability Score Improvement"]
+            },
+            {
+              "other": ["Choose another Class Feature from a previous Level"]
+            },
+            {
+              "feats": ["Additional Sense", "OR", "Fortune Teller"]
+            },
+            {
+              "feats": ["Aura of Awareness"],
+              "other": ["Ability Score Improvement"]
+            },
+            {
+              "other": ["Choose another Class Feature from a previous Level"]
+            },
+            {
+              "feats": ["Calculating", "OR", "Ever Vigilant"]
+            },
+            {
+              "feats": ["Enfeebler", "OR", "Stroke of Luck"],
+              "other": ["Ability Score Improvement"]
+            },
+            {
+              "other": ["Choose another Class Feature from a previous Level"]
+            },
+            {
+              "feats": ["Confident Support", "OR", "Practical Experience"]
+            },
+            {
+              "feats": ["Commentator", "OR", "Focus"],
+              "other": ["Ability Score Improvement"]
+            },
+            {
+              "other": ["Choose another Class Feature from a previous Level"]
+            },
+            {
+              "feats": ["Agility Feat", "OR", "Sharp Mind"]
+            },
+            {
+              "feats": ["Elementalist", "OR", "Specialized Save"],
+              "other": ["Ability Score Improvement"]
+            },
+            {
+              "other": ["Choose another Class Feature from a previous Level"]
+            },
+            {
+              "abilities": ["Revelation"]
+            }
+          ]
         }
       ]
     },
@@ -2078,7 +2156,7 @@
               "feats": ["Headhunter", "OR", "Ever Vigilant"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, or Level 11"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "feats": ["Clever Disguise", "OR", "Light Sleeper"],
@@ -2091,14 +2169,14 @@
               "feats": ["Trained Combatant"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 13, or Level 14"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "feats": ["Brutality", "OR", "Menacing Aura"],
               "other": ["Ability Score Improvement"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 13, Level 14, or Level 17"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "feats": ["Consistent Accuracy", "OR", "Weapon Feat"]
@@ -2226,7 +2304,7 @@
               "feats": ["Headhunter", "OR", "Interpreter"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, or Level 11"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "feats": ["Light Sleeper", "OR", "Heavy Sleeper"],
@@ -2239,14 +2317,14 @@
               "feats": ["Trained Combatant"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, or Level 14"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "feats": ["Ever Vigilant", "OR", "Trapper"],
               "other": ["Ability Score Improvement"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 14, or Level 17"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "feats": ["Consistent Skills", "OR", "Motivated"]
@@ -2376,7 +2454,7 @@
               "feats": ["Focus", "OR", "Menacing Aura"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, or Level 11"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "feats": ["Familiar Bond", "OR", "Ever Vigilant"],
@@ -2389,14 +2467,14 @@
               "feats": ["Trained Combatant"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, or Level 13, or Level 14"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "feats": ["Additional Sense", "OR", "Practical Experience"],
               "other": ["Ability Score Improvement"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, or Level 13, Level 14, or Level 17"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "feats": ["Quick on your Feet", "OR", "Specialized Save"]
@@ -2537,7 +2615,7 @@
               "feats": ["Trained Combatant"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 11, Level 12, or Level 14"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "feats": ["Weapon Feat"],
@@ -2672,7 +2750,7 @@
               "feats": ["Headhunter", "OR", "Interpreter", "OR", "Trapper", "OR", "Ever Vigilant"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "other": ["Ability Score Improvement"],
@@ -2685,14 +2763,14 @@
               "feats": ["Trained Combatant"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, or Level 14"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "other": ["Ability Score Improvement"],
               "feats": ["Assassin", "OR", "Familiar Bond", "OR", "Resilient"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 14, or Level 17"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "feats": ["Aura of Awareness", "OR", "Motivated"]
@@ -2825,7 +2903,7 @@
               "feats": ["Adrenaline Rush", "OR", "Berserker"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, or  Level 11"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "other": ["Ability Score Improvement"],
@@ -2838,14 +2916,14 @@
               "feats": ["Trained Combatant"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 13, or Level 14"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "other": ["Ability Score Improvement"],
               "feats": ["Resilient", "OR", "Tanky"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 13, Level 14, or Level 17"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "feats": ["Jack of All Trades", "OR", "Practical Experience"]
@@ -2972,7 +3050,7 @@
               "feats": ["Interpreter", "OR", "Headhunter"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, or Level 9"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "other": ["Ability Score Improvement"],
@@ -2985,14 +3063,14 @@
               "feats": ["Trained Combatant"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 13, or Level 14"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "other": ["Ability Score Improvement"],
               "feats": ["Consistent Skills", "OR", "Jack of All Trades", "OR", "Tanky"]
             },
             {
-              "other": ["Choose another Class Feature from Level 4, Level 5, Level 7, Level 9, Level 11, Level 13, Level 14, or Level 17"]
+              "other": ["Choose another Class Feature from a previous Level"]
             },
             {
               "feats": ["Defensive Agility", "OR", "Duelist's Agility", "OR", "Resilient"]

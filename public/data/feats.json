@@ -2,7 +2,7 @@
   "tags": [
     {
       "category": "Feat Type",
-      "tags": ["Passive", "Active", "Limited Uses", "Has Prerequisite", "Multiple Options", "Stackable", "Weapon Feat", "Epic Feat"]
+      "tags": ["Passive", "Active", "Limited Uses", "Has Prerequisite", "Multiple Options", "Stackable", "Agility Feat", "Weapon Feat", "Epic Feat"]
     },
     {
       "category": "General Effect",
@@ -56,7 +56,8 @@
       "desc": "Your reflexes are faster than that of the average person.",
       "effects": ["Once per Short Rest, you may Dodge as a Bonus Action.", "Additionally, while Dodging through any means, you may either:<ul><li>When using the Advantage/Disadvantage option, you get 2x Advantage, and enemies get 2x Disadvantage.</li><li>When using the option that reduces damage, it is reduced by 3x instead of 2x.</li></ul>"],
       "prereq": "Dex 13+ or <preview href='/passions/Artist'>Artist</preview>",
-      "tags": ["Active", "Defense", "Limited Uses", "Has Prerequisite"]
+      "isSub": true,
+      "tags": ["Active", "Defense", "Limited Uses", "Has Prerequisite", "Agility Feat"]
     },
     {
       "name": "Clever Disguise",
@@ -568,6 +569,12 @@
       "subFeats": ["Demolitionist", "Heavy Specialization", "Martial Arts", "Melee Focus", "Melee Weapon Specialization", "Professional Weapon Training", "Rifle Specialization", "Shield Proficiency", "Shotgun Specialization", "Sidearm Specialization", "Simple Weapon Focus", "Stand Attacker", "Tavern Brawler", "Thrown Weapon Specialization", "Wrestler"]
     },
     {
+      "name": "Agility Feats",
+      "desc": "",
+      "effects": [],
+      "subFeats": ["Catlike Agility", "Defensive Agility", "Duelist's Agility", "Impeccable Agility"]
+    },
+    {
       "name": "Epic Feats",
       "desc": "",
       "effects": [],
@@ -649,21 +656,24 @@
       "desc": "You enter a more defensive stance, allowing you to redirect most of the energy from powerful blows, rather than focusing on avoiding damage.",
       "effects": ["Once per Short Rest, you may Dodge as a Bonus Action.", "When taking the Dodge Action through any means, you may choose both options instead of having to pick one. "],
       "prereq": "Dex 13+",
-      "tags": ["Active", "Defense", "Has Prerequisite", "Limited Uses"]
+      "isSub": true,
+      "tags": ["Active", "Defense", "Has Prerequisite", "Limited Uses", "Agility Feat"]
     },
     {
       "name": "Duelist's Agility",
       "desc": "Through training, you have mastered the art of offense through defense, allowing you to lash out at opponents whenever you are struck.",
       "effects": ["Once per Short Rest, you may Dodge as a Bonus Action.", "Additionally, when Dodging through any means, any time you take damage from an Attack or Saving Throw effect, you may make a single Attack for free targeting whoever damaged you."],
       "prereq": "Dex 13+",
-      "tags": ["Active", "Defense", "Offense", "Has Prerequisite", "Limited Uses"]
+      "isSub": true,
+      "tags": ["Active", "Defense", "Offense", "Has Prerequisite", "Limited Uses", "Agility Feat"]
     },
     {
       "name": "Impeccable Agility",
       "desc": "Your reflexes and awareness are polished, allowing you to avoid or absorb attacks with ease.",
       "effects": ["Once per Short Rest, you may Dodge as a Bonus Action.", "Additionally, while Dodging through any means, you gain an amount of AC equal to your Proficiency Bonus.", "If you are a <preview href='/classes/Stand User'>Stand User</preview>, you may instead choose to double your Stand AC."],
       "prereq": "Dex 13+",
-      "tags": ["Active", "Defense", "Has Prerequisite", "Limited Uses"]
+      "isSub": true,
+      "tags": ["Active", "Defense", "Has Prerequisite", "Limited Uses", "Agility Feat"]
     },
     {
       "name": "Massive Stand",
@@ -1139,6 +1149,12 @@
       "prereq": "Proficiency in Athletics Checks",
       "tags": ["Active", "Offense", "Debuff", "Defense", "Has Prerequisite", "Weapon Feat"],
       "isSub": true
+    },
+    {
+      "name": "Agility Feat",
+      "subFeats": [
+        
+      ]
     }
   ]
 }
