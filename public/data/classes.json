@@ -2026,7 +2026,7 @@
           "desc": "Those who employ the Art of Divination gain knowledge of Fate and its inner workings. This allows them to gain knowledge across Space and Time, gaining the upper hand by simply having more information to work with.",
           "exampleOf": "Divination Users",
           "hDice": "1d6",
-          "theme": "gray",
+          "theme": "rgb(205, 146, 174)",
           "levels": [
             {
               "abilities": ["Divination Basics", "Custom Divination Technique", "Insight", "Spiritual Divination (Variant Rule)"],
