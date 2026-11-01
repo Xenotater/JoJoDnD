@@ -37,6 +37,7 @@ export default function AbilitiesContent({data}: {data: AbilityData | undefined}
     ["Act", <PreviewLink key="Act" href="/classes/Act-Type">Act-Type Stands</PreviewLink>],
     ["Rip", <PreviewLink key="Rip" href="/classes/Ripple">Ripple Users</PreviewLink>],
     ["Spin", <PreviewLink key="Spin" href="/classes/Spin">Spin Users</PreviewLink>],
+    ["Div", <PreviewLink key="Spin" href="/classes/Divination">Divination Users</PreviewLink>],
     ["Art", <PreviewLink key="Art" href="/classes/Artisan">Artisans</PreviewLink>],
     ["Ass", <PreviewLink key="Ass" href="/classes/Assassin">Assassins</PreviewLink>],
     ["Con", <PreviewLink key="Con" href="/classes/Consul">Consuls</PreviewLink>],
@@ -54,7 +55,7 @@ export default function AbilitiesContent({data}: {data: AbilityData | undefined}
     <div className="w-full h-full flex flex-col justify-between gap-2">
       <div>
         <ContentHeading className="underline">{data.name}</ContentHeading>
-        {data.desc.map((d, i) => (<HTMLInclusiveText as="div" text={d} key={`${data.name}-desc-${i}`}/>))}
+        {data.desc.map((d, i) => (<HTMLInclusiveText className="mb-2" as="div" text={d} key={`${data.name}-desc-${i}`}/>))}
       </div>
       <div>
         <ContentHeading as="h3">Given To</ContentHeading>

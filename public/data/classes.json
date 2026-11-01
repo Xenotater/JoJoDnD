@@ -342,7 +342,7 @@
               "abilities": ["Immense Power", "OR", "Ranged Attack"]
             },
             {
-              "other": ["<preview href='/feats/Deadly Accuracy'>Deadly Accuracy</preview> OR <preview href='/abilities/Melee Barrage'>Melee Barrage</preview>", "<preview href='/abilities/Oblivious Facade'>Oblivious Facade</preview> OR <preview href='/feats/Clever Disguise'>Clever Disguise</preview>"]
+              "other": ["<preview href='/feats/Deadly Accuracy'>Deadly Accuracy</preview> OR <preview href='/abilities/Melee Barrage'>Melee Barrage</preview>", "<preview href='/feats/Oblivious Facade'>Oblivious Facade</preview> OR <preview href='/feats/Clever Disguise'>Clever Disguise</preview>"]
             },
             {
               "other": ["Ability Score Improvement"]
@@ -1163,7 +1163,7 @@
             {
               "abilities": ["Melee Barrage", "OR", "Ranged Attack", "OR"],
               "feats": ["Energy Imbuement"],
-              "other": ["<preview href='/abilities/Oblivious Facade'>Oblivious Facade</preview> OR <preview href='/feats/Clever Disguise'>Clever Disguise</preview>"]
+              "other": ["<preview href='/feats/Oblivious Facade'>Oblivious Facade</preview> OR <preview href='/feats/Clever Disguise'>Clever Disguise</preview>"]
             },
             {
               "abilities": ["Armored Stand", "OR", "Self-Repair"]
