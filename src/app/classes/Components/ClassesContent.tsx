@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 export default function ClassesContent({data}: {data: ClassData | undefined}) {
   const [variant, setVariant] = useState("Standard");
   const [varData, setVarData] = useState(data);
+  const useAlt = ["Sacred Arts"].includes(data?.name ?? "") && Math.floor(Math.random() * 100) == 0;
 
   useEffect(() => {
     if (!data)
@@ -43,7 +44,7 @@ export default function ClassesContent({data}: {data: ClassData | undefined}) {
         }
       </div>
       <div className="text-center">
-        <FancyImage type="border" className="m-auto mt-0 mb-2 max-w-[80%] max-h-[40vh] w-auto" src={`/images/classes/${varData.name.replaceAll(" ", "_")}.webp`} alt={varData.name}/>
+        <FancyImage type="border" className="m-auto mt-0 mb-2 max-w-[80%] max-h-[40vh] w-auto" src={`/images/classes/${varData.name.replaceAll(" ", "_")}${useAlt ? "_alt" : ""}.webp`} alt={varData.name}/>
         {varData.examples &&
           <p>
             <small><b>Examples of {varData.exampleOf}:</b>{" "}

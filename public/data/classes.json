@@ -1643,7 +1643,7 @@
     },
     {
       "name": "Sacred Arts",
-      "desc": "Sacred Arts are Techniques that help to understand or alter fate. These Sacred Arts allow mortals to take Fate's power into their own hands, warping the Flow of Destiny with their Mortal Will.",
+      "desc": "Sacred Arts are techniques that help to understand or alter fate. These Sacred Arts allow mortals to take Fate's power into their own hands, warping the flow of destiny with their mortal will.",
       "subTypes": [
         {
           "name": "Ripple",
@@ -1854,7 +1854,7 @@
           "extra": [
             {
               "name": "The Golden Ratio",
-              "desc": "A Spin User must have a natural (not artificial) reference of a 9:16 ratio in order to use the Spin. A 9:16 ratio is found somewhere in almost every uninjured creature, except Humans."
+              "desc": "A Spin User must have a natural (not artificial) reference of a 9:16 ratio in order to use the Spin. A 9:16 ratio is found somewhere in almost every uninjured creature."
             },
             {
               "name": "Materials",
