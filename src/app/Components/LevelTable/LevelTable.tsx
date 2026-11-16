@@ -54,21 +54,21 @@ export default function LevelTable(props: LevelTableProps) {
                 <td key={`before-item-${i}-${j}`}>{level.beforeEx ? level.beforeEx[j] : ""}</td>
               ))}
               <td>
-                {level.features.feats?.map((f, j) => (
-                  <span key={`feat-${i}-${j}`}>
-                    {f != "OR" ? <PreviewLink href={`/feats/${encodeURIComponent(f.replace(/ \(.*\)$/, "")).replace(/([A-z]+)%20Feat/, "$1%20Feats?filter=$1%20Feat")}`}>{f.replace(/ \(.*\)$/, "")}</PreviewLink> : "OR"}
-                    {f.match(/ \(.*\)$/)}
-                    {(j + 1 < level.features.feats!.length || level.features.abilities || level.features.other) &&
-                      (f != "OR" && level.features.feats![j+1] != "OR" ? " | " : " ")
-                    }
-                  </span>
-                ))}
                 {level.features.abilities?.map((f, j) => (
                   <span key={`ability-${i}-${j}`}>
                     {f != "OR" ? <PreviewLink href={`/abilities/${encodeURIComponent(f.replace(/ \(.*\)$/, ""))}`}>{f.replace(/ \(.*\)$/, "")}</PreviewLink> : "OR"}
                     {f.match(/ \(.*\)$/)}
-                    {(j + 1 < level.features.abilities!.length || level.features.other) &&
+                    {(j + 1 < level.features.abilities!.length || level.features.feats || level.features.other) &&
                       (f != "OR" && level.features.abilities![j+1] != "OR" ? " | " : " ")
+                    }
+                  </span>
+                ))}
+                {level.features.feats?.map((f, j) => (
+                  <span key={`feat-${i}-${j}`}>
+                    {f != "OR" ? <PreviewLink href={`/feats/${encodeURIComponent(f.replace(/ \(.*\)$/, "")).replace(/([A-z]+)%20Feat/, "$1%20Feats?filter=$1%20Feat")}`}>{f.replace(/ \(.*\)$/, "")}</PreviewLink> : "OR"}
+                    {f.match(/ \(.*\)$/)}
+                    {(j + 1 < level.features.feats!.length || level.features.other) &&
+                      (f != "OR" && level.features.feats![j+1] != "OR" ? " | " : " ")
                     }
                   </span>
                 ))}

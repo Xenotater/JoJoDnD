@@ -86,7 +86,7 @@ export default function ClassesContent({data}: {data: ClassData | undefined}) {
       }
       <div>
         <ContentHeading as="h3">Description</ContentHeading>
-        <p>{varData.desc}</p>
+        <HTMLInclusiveText as="p" text={varData.desc}/>
       </div>
       {varData.notes &&
         varData.notes.map((n, i) => (

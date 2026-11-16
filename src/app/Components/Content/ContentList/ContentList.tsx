@@ -41,6 +41,7 @@ interface ContentListOptions {
   borders?: boolean;
   sticky?: boolean;
   initialFilter?: string;
+  initialExclude?: string;
 }
 
 //strip others and re-add to clone to avoid cloning JSX and triggering stack limit
@@ -86,7 +87,7 @@ export default function ContentList({content, title, tags, options}: {content: C
   const listRef = useRef<HTMLDivElement>(null);
   const [contentList, setContentList] = useState(safeDeepClone(content));
   const [includeList, setIncludeList] = useState(options?.initialFilter || params.has("filter") ? new Set<string>(decodeURIComponent((options?.initialFilter || params.get("filter")!)).split(",")) : new Set<string>());
-  const [excludeList, setExcludeList] = useState(new Set<string>());
+  const [excludeList, setExcludeList] = useState(options?.initialExclude || params.has("exclude") ? new Set<string>(decodeURIComponent((options?.initialExclude || params.get("exclude")!)).split(",")) : new Set<string>());
   const [logic, setLogic] = useState<["OR"|"AND", "OR"|"AND"]>(["OR", "OR"]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [search, setSearch] = useState(decodeURIComponent(params?.get("search") || ""));

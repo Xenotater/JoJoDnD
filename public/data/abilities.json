@@ -24,31 +24,31 @@
     },
     {
       "name": "Anchored Stand",
-      "classes": ["Enh", "Ind"],
+      "classes": ["Enh", "Ind", "Mod"],
       "desc": [
         "Your Stand is physically attached and anchored to a physical object. As such, your Stand may be damaged by physical means, as well as Stands. However, regardless of if your Stand takes physical or Stand damage, you still apply the same Damage Reduction to it.",
         "Also, both you and your Stand gain Vulnerability (double damage) and Resistance (half damage) to one damage type of your choice, as well as the Stand counterparts to those damage types.",
         "You may choose between the following subtypes of Anchored Stand:<ul class='list-disc'><li><u>Material-Anchor</u>: Examples: Geb, High Priestess, Justice<ul><li>You have the ability to bind your Stand to a specific type of material, examples including; wood, fog, metal, stone, water, or fire. Once you determine this material, you cannot change it.</li><li>Your Stand is able to change its anchor, so long as the new anchor is composed of the same material, and as long as it is within two meters of the material it was previously inhabiting. You may change the anchor of your Stand as an Action, and when you do so you may also take the Hide Action for free. You are able to summon or unsummon your Stand if it's within two meters of the User (if they have one). </li><li>Your Stand's Melee Attacks may use physical or non-physical damage, so long as the type makes sense for the material. For example, a Stand anchored to snow could choose to deal Bludgeoning or Cold damage each time they deal damage with a Melee Attack.</li><li>You may choose to change an existing Resistance to an Immunity, to gain Resistance in two non-physical damage types, or Resistance in one physical damage type.</li></ul></li><li><u>Object-Anchor</u>: Examples: Wheel of Fortune, Strength, Surface, Superfly<ul><li>You have the ability to bind your Stand to a specific kind of object, such as a car, a sword, a radio tower, or a hat. Once you determine the specific object, you cannot change it.</li><li>While your Stand is bound to an object, it still has the ability to move and function on its own. Your Stand is able to change its anchor as an action so long as you are within two meters of it. You are able to summon or unsummon your Stand if it's within two meters of the User (if they have one).</li><li>Your Stand's Damage Reduction is increased considerably. <preview href='/abilities/Immense Resistance'>Immense Resistance</preview> instead functions like <preview href='/abilities/Armored Stand'>Armored Stand</preview> (doubling your Stand Damage Reduction). Armored Stand instead triples your Stand Damage Reduction.</li><li>You gain <preview href='/abilities/Feat of Power'>Feat of Power</preview>. If you already have Feat of Power, the amount you can lift and throw using it is doubled and you only take 1 damage for every two meters traveled.</li></ul></li><li><u>Self-Anchor</u>: Examples: Love Deluxe, Metallica, Stone Free, Oh! Lonesome Me, Dr. Wu.<ul><li>Your Stand is uniquely inseparable from you, meaning that you yourself are made of your Stand.</li><li>Your Unarmed Strikes can deal damage to Stands, and the Damage Die is raised to be equal to that of your Stand Attack Dice. In addition, you can always use your Stand stats for Strength, Dexterity, and Constitution Checks, Saves, and Attack Rolls, even if something would normally specify that you can't use your Stand stats. You still have User and Stand AC, and you must use your User (not Stand) stats for your User AC.</li><li>You may use your Stand's Movement Speed in place of your regular Movement Speed, but cannot use both in one Turn.</li><li>Your Range no longer determines how far your Stand can travel from you. Instead, it is a measure of how far you can extend your Stand, which is a part of yourself that must stay attached to your body somehow, either through separating parts of yourself or stretching out from you like an appendage. You may extend up to twice your normal Range, but pushing past your Range results in taking damage. When you start your turn beyond your normal Range, or exit the threshold of your normal Range, you take an amount of Force damage equal to your Level, which cannot be reduced or negated in any way. If you have a Stand that stretches out from you, the Range Modifier determines how far in meters your Stand can stretch in a single direction.</li><li>You cannot change where your Stand is anchored, it will always be anchored to your body. In addition, it is always summoned, unless you are unconscious.</li></ul></li></ul>"
       ],
-      "tags": ["Enhancement", "Independent", "Passive", "Active", "Multiple Options", "Stat Change", "Other"]
+      "tags": ["Enhancement", "Independent", "Act", "Passive", "Active", "Multiple Options", "Stat Change", "Other"]
     },
     {
       "name": "Armored Stand",
-      "classes": ["Pwr", "Enh", "Rev", "Ind", "Hive", "Act"],
+      "classes": ["Pwr", "Rng", "Rmt", "Enh", "Rev", "Ind", "Hive", "Act", "Mod"],
       "desc": [
         "The amount of damage that your Stand can reduce per round is doubled.",
         "<preview href='/abilities/Immense Resistance'>Immense Resistance</preview> still applies if you have it, but applies after this increase."
       ],
-      "tags": ["Power", "Enhancement", "Revenge", "Independent", "Hive", "Act", "Passive", "Defense", "Stat Change"]
+      "tags": ["Power", "Ranged", "Remote", "Enhancement", "Revenge", "Independent", "Hive", "Act", "Passive", "Defense", "Stat Change"]
     },
     {
       "name": "Superior Control",
-      "classes": ["Enh"],
+      "classes": ["Enh", "Mod"],
       "desc": [
         "You have enough control and experience using an anchored Stand that you are able to have the object or material perform tasks they normally wouldn't be able to. As a Bonus Action, you may perform the following:",
         "<ul class='list-disc'><li>Your Stand squeezes tightly, allowing it to comfortably fit through a space as if they were a creature one Size Category smaller than the Stand is. You may stay squeezed in a place like this so long as you keep spending your Bonus Action to use this effect.</li><li>Your Stand gains a method of locomotion it may not normally have, gaining a Climbing Speed or Swimming Speed equal to half of the Stand's Movement Speed.</li></ul>"
       ],
-      "tags": ["Enhancement", "Active", "Utility"]
+      "tags": ["Enhancement", "Act", "Active", "Utility"]
     },
     {
       "name": "Custom Ability",
@@ -65,7 +65,7 @@
     },
     {
       "name": "Detached Senses",
-      "classes": ["Pwr", "Rng", "Rmt", "Abl", "Enh", "Rev", "Hive", "Act"],
+      "classes": ["Pwr", "Rng", "Rmt", "Abl", "Enh", "Rev", "Hive", "Act", "Mod"],
       "desc": [
         "You are able to experience and process sensory information using your Stand. Your Stand may See, Hear, Taste, Touch, and Smell the same way that you do. Furthermore, you may sense through your body and your Stand at the same time.",
         "For Hive-Type Stand Users, you may sense through an amount of Instances equal to your Intelligence Score."
@@ -83,35 +83,35 @@
     },
     {
       "name": "General Anchors",
-      "classes": ["Enh"],
+      "classes": ["Enh", "Mod"],
       "desc": [
         "<b>Prerequisite: <preview href='/abilities/Anchored Stand'>Anchored Stand</preview> (Material-Anchor or Object-Anchor)</b>",
         "As an Enhancement-Type Stand User you've taken your Ability to the next level. Rather than having to anchor onto something very specific, you may now anchor onto anything that's similar to your original anchor.",
         "For example, <a href='https://jojowiki.com/Wheel_of_Fortune' target='_blank'>Wheel of Fortune</a> would be able to anchor onto anything with wheels instead of a specific car, or <a href='https://jojowiki.com/Strength' target='_blank'>Strength</a> would be able to anchor onto anything that floats in water instead of a specific boat."
       ],
-      "tags": ["Enhancement", "Passive", "Has Prerequisite", "Other"]
+      "tags": ["Enhancement", "Act", "Passive", "Has Prerequisite", "Other"]
     },
     {
       "name": "Hot Pursuit",
-      "classes": ["Rng", "Hive", "Act"],
+      "classes": ["Rng", "Mod"],
       "desc": [
         "When an opponent moves outside of your Stand's Melee Range, you may spend your Reaction to move up to half your Stand's Movement Speed to bring you closer to your target."
       ],
-      "tags": ["Ranged", "Hive", "Act", "Active", "Utility"]
+      "tags": ["Ranged", "Act", "Active", "Utility"]
     },
     {
       "name": "Immense Power",
-      "classes": ["Rmt", "Act"],
+      "classes": ["Rmt"],
       "desc": [
         "Your Stand is versatile, but was limited by its strength before now.",
         "Multiply your Stand's Power by 2. Any points gained to your Stand's Power from now on are also multiplied by 2.",
         "This may double the Power of Stand Types that get it even if they normally aren't able to increase their Power, but it still does not allow them to put further points into it."
       ],
-      "tags": ["Remote", "Act", "Passive", "Stat Change"]
+      "tags": ["Remote", "Passive", "Stat Change"]
     },
     {
       "name": "Immense Range",
-      "classes": ["Rng", "Rmt", "Enh", "Rev", "Hive", "Act"],
+      "classes": ["Rng", "Rmt", "Enh", "Rev", "Hive", "Mod"],
       "desc": [
         "Your Stand is powerful, but was limited by how far it could be away from you before now.",
         "Multiply your Stand's Range by 10. Any points gained to your Stand's Range from now on are also multiplied by 10.",
@@ -121,7 +121,7 @@
     },
     {
       "name": "Immense Resistance",
-      "classes": ["Enh", "Ind", "Hive", "Rng", "Act"],
+      "classes": ["Rng", "Rmt", "Enh", "Ind", "Hive", "Mod"],
       "desc": [
         "Your Stand is incredibly resilient, a reflection of your willpower and experience.",
         "Your Stand's Damage Reduction increases by double your Constitution Modifier, with a minimum increase of 2.",
@@ -132,7 +132,7 @@
     },
     {
       "name": "Improved Awareness",
-      "classes": ["Rng", "Hive", "Act"],
+      "classes": ["Rng", "Hive", "Mod"],
       "desc": [
         "<b>Prerequisite: <preview href='/abilities/Detached Senses'>Detached Senses</preview></b>",
         "You can use your Stand's Ability to make Perception Checks (including Passive Perception) even when it is not summoned.",
@@ -142,13 +142,13 @@
     },
     {
       "name": "Improved Immense Range",
-      "classes": ["Rmt", "Hive", "Act"],
+      "classes": ["Rmt", "Hive"],
       "desc": [
         "<b>Prerequisite: <preview href='/abilities/Immense Range'>Immense Range</preview></b>",
         "Your Stand's Range and any points that go into your Stand's Range Score are multiplied by an additional x10.",
         "This effect is multiplicative, meaning if you already had a x10 multiplier this Ability would give you a x100 multiplier, etc."
       ],
-      "tags": ["Remote", "Hive", "Act", "Has Prerequisite", "Upgrade", "Passive", "Stat Change"]
+      "tags": ["Remote", "Hive", "Has Prerequisite", "Upgrade", "Passive", "Stat Change"]
     },
     {
       "name": "Improved Slippery",
@@ -160,7 +160,7 @@
     },
     {
       "name": "Juggernaut",
-      "classes": ["Rmt", "Enh", "Ind", "Act"],
+      "classes": ["Rmt", "Enh", "Ind", "Mod"],
       "desc": [
         "Your Stand's Movement Speed cannot be reduced to less than half, including through Conditions such as Frightened or Grappled."
       ],
@@ -188,21 +188,21 @@
     },
     {
       "name": "Remote Ambusher",
-      "classes": ["Rmt", "Act"],
+      "classes": ["Rmt"],
       "desc": [
         "Rather than pursuing a target directly, the Stand will take a longer path if it means a possibility of a surprise attack.",
         "In addition, Melee Attacks with your Stand gain the Ambush property, meaning that they always inflict a Critical hit when attacking a Surprised target."
       ],
-      "tags": ["Remote", "Act", "Passive", "Offense"]
+      "tags": ["Remote", "Passive", "Offense"]
     },
     {
       "name": "Second Life",
-      "classes": ["Rev"],
+      "classes": ["Rev", "Mod"],
       "desc": [
         "This Ability Activates when you and your Stand die. Your body remains lifeless for between 1 minute and 24 hours. At some point within this timeframe, your Stand reawakens as a <preview href='/races/Living Stand'>Living Stand</preview>, complete with your mental capacity and memories.",
         "You retain all of your Experience Points, but all of your Health, <preview href='/feats'>Feats</preview>, Proficiencies and Abilities are reset. This effectively means you may make a new character with your previous memories and as many Levels in a Stand Type of your choice as you had in Revenge-Type."
       ],
-      "tags": ["Revenge", "Passive", "Defense"]
+      "tags": ["Revenge", "Act", "Passive", "Defense"]
     },
     {
       "name": "Self-Repair",
@@ -227,7 +227,7 @@
     },
     {
       "name": "Silent Movement",
-      "classes": ["Rng", "Hive", "Act"],
+      "classes": ["Rng", "Hive", "Mod"],
       "desc": [
         "Through experience you've gained better control of your Stand, allowing you to move your Stand extremely carefully to ensure that the only way that your Stand may be detected is when it is seen.",
         "You have Advantage on both Sneak and Finesse Checks made with your Stand."
@@ -236,13 +236,13 @@
     },
     {
       "name": "Slippery",
-      "classes": ["Rng", "Abl", "Ind", "Act"],
+      "classes": ["Rng", "Abl", "Ind", "Hive", "Act"],
       "desc": [
         "Your Stand has the ability to defend you and let you escape from very dangerous situations with relative ease.",
         "When your Stand is within 2 meters of you, you may Disengage or Hide as a Bonus Action.",
         "If your Stand is more than 2 meters away from you, it may still Disengage or Hide as a Bonus Action, but you may not."
       ],
-      "tags": ["Ranged", "Ability", "Independent", "Act", "Active", "Defense"]
+      "tags": ["Ranged", "Ability", "Independent", "Hive", "Act", "Active", "Defense"]
     },
     {
       "name": "Special Ability",
@@ -258,38 +258,30 @@
     },
     {
       "name": "Superior Momentum",
-      "classes": ["Rmt", "Act"],
+      "classes": ["Rmt"],
       "desc": [
         "Your Stand has Advantage on all Power, Precision, and Durability Saving Throws."
       ],
-      "tags": ["Remote", "Act", "Passive", "Stat Change"]
+      "tags": ["Remote", "Passive", "Stat Change"]
     },
     {
       "name": "Speedy Movement",
-      "classes": ["Rng", "Act"],
+      "classes": ["Rng", "Hive", "Mod"],
       "desc": [
         "Through experience you've built up the Movement Speed of your Stand. At any time, as a Reaction, you may call your Stand back to you, allowing it to come back and defend you or perform any action requiring your Stand to be near you, up to its Movement Speed. If it returns within 2m of you, you can have your Stand protect you as normal.",
         "This also means that your AC may be increased to your Stand's AC if it is able to return to you. However, if it passes through the melee of a Stand or creature that can sense it while returning to you, the Stand or creature may make an Opportunity Attack against your Stand."
       ],
-      "tags": ["Ranged", "Act", "Active", "Utility"]
+      "tags": ["Ranged", "Hive", "Act", "Active", "Utility"]
     },
     {
       "name": "Split Stand",
-      "classes": ["Hive"],
+      "classes": ["Hive", "Mod"],
       "desc": [
         "As a Hive-Type Stand User, your Stand functions very differently than a typical Stand. Rather than a Stand being an extension of your will to fight, each Instance of your Stand is like a separate organism that simply must follow your orders. You may have anywhere between 2 and 500 Instances, though once chosen this number must remain constant.",
         "Each Instance may act independently of the others or the Stand User. If one Instance is totally destroyed, that fraction of the User's Health is taken away. For example, if you have 12 Instances of your Stand and one gets destroyed you'll take damage equal to your maximum health divided by 12. The inverse is true as well, losing 1/12th of your health would cause one of your 12 Instances to be destroyed.",
         "If every Instance of your Stand is destroyed, you fall unconscious. If your health is restored, so are your Stand Instances. Even when you fall unconscious, one instance will remain. Only when you die is that Instance destroyed."
       ],
-      "tags": ["Hive", "Passive", "Other"]
-    },
-    {
-      "name": "Stand Pickpocketing",
-      "classes": ["Rng", "Hive", "Act"],
-      "desc": [
-        "Through trial and error you've gained the ability to slip objects from the grasp of other people using your Stand, and to move with extreme precision. From now on, you have Advantage when making Finesse Checks using your Stand."
-      ],
-      "tags": ["Ranged", "Hive", "Act", "Passive", "Utility"]
+      "tags": ["Hive", "Act", "Passive", "Other"]
     },
     {
       "name": "Ultimate Stand Ability",
@@ -310,21 +302,21 @@
     },
     {
       "name": "Lasting Grudge",
-      "classes": ["Rev"],
+      "classes": ["Rev", "Mod"],
       "desc": [
         "Rather than lasting for an amount of Turns equal to your Level in Revenge-Type (minimum of 2), your Grudge Points last for an amount of minutes equal to your Level in Revenge-Type (minimum of 2).",
         "Additionally, when you spend 5 Points to summon your Stand in its entirety, rather than lasting for an amount of Turns equal to your Level in Revenge-Type (minimum of 2), it lasts for a number of minutes equal to your Level in Revenge-Type (minimum of 2)."
       ],
-      "tags": ["Revenge", "Passive", "Other"]
+      "tags": ["Revenge", "Act", "Passive", "Other"]
     },
     {
       "name": "Block Projectile",
-      "classes": ["Pwr", "Act"],
+      "classes": ["Pwr"],
       "desc": [
         "When you or your Stand is hit with a projectile, as long as your Stand is hit or you are within 2 meters of it, you may attempt to block it. As a Reaction you may reduce the damage of the oncoming projectile by an amount equal to the roll of your Stand's Attack Die plus your Precision and Speed Modifiers.",
         "If you completely negate the damage of a projectile, any leftover points may be used to block any additional projectiles fired at you until you run out of reduction points or your next Turn begins."
       ],
-      "tags": ["Power", "Act", "Active", "Defense"]
+      "tags": ["Power", "Active", "Defense"]
     },
     {
       "name": "Blow for Blow",
@@ -339,12 +331,12 @@
     },
     {
       "name": "Camouflage",
-      "classes": ["Enh", "Ind"],
+      "classes": ["Enh", "Ind", "Mod"],
       "desc": [
         "As an Action you may perfectly disguise your Stand, making it difficult for others to tell where or what your Stand is (for example, <a href='https://jojowiki.com/High_Priestess' target='_blank'>High Priestess</a> disguising as a metal object, or <a href='https://jojowiki.com/Wheel_of_Fortune' target='_blank'>Wheel of Fortune</a> shifting to look like a normal car).",
         "This disguise allows your Stand to perform surprise attacks if opponents do not take note. Anyone attempting to determine what your Stand is disguised as has Disadvantage on the roll, as long as your Stand does not move."
       ],
-      "tags": ["Enhancement", "Independent", "Active", "Utility"]
+      "tags": ["Enhancement", "Independent", "Act", "Active", "Utility"]
     },
     {
       "name": "Condensed Material",
@@ -366,16 +358,16 @@
     },
     {
       "name": "Defensive Wave",
-      "classes": ["Hive"],
+      "classes": ["Hive", "Mod"],
       "desc": [
         "Once per Turn, as an Attack, you may give yourself a buff that remains active until the start of your next Turn. Your Stand is a bunch of little instances that can hold themselves together in order to form a shield in order to protect their User.",
         "When this Shield is active, you gain an additional amount of damage reduction and Stand AC equal to your Durability modifier. "
       ],
-      "tags": ["Hive", "Active", "Defense"]
+      "tags": ["Hive", "Act", "Active", "Defense"]
     },
     {
       "name": "Devastating Critical",
-      "classes": ["Pwr", "Rev", "Act"],
+      "classes": ["Pwr", "Rev", "Mod"],
       "desc": [
         "When you roll a Critical hit on a Stand Attack, after the damage has been doubled, you may add your Stand's damage Modifier (usually Power) again."
       ],
@@ -383,7 +375,7 @@
     },
     {
       "name": "Devastating Melee",
-      "classes": ["Pwr", "Rev", "Act"],
+      "classes": ["Pwr", "Rev", "Mod"],
       "desc": [
         "If you would have two conditions that would give you Advantage on a Melee Attack at the same time you may instead roll 3 dice and take the highest of the three."
       ],
@@ -422,12 +414,12 @@
     },
     {
       "name": "Focused Hatred",
-      "classes": ["Rev"],
+      "classes": ["Rev", "Mod"],
       "desc": [
         "You may use your Bonus Action to spend 1 Grudge Point and mark a hostile creature as a target that has drawn your attention and rage. Until the end of the combat encounter, or until you stop interacting with them, you deal a Critical hit against them on an 18, 19, or 20 roll of a d20, rather than just a 20.",
         "You may only have this Ability active on one person at a time, but are able to switch your target as a Bonus Action at the cost of another Grudge Point."
       ],
-      "tags": ["Revenge", "Active", "Offense"]
+      "tags": ["Revenge", "Act", "Active", "Offense"]
     },
     {
       "name": "Great Recall",
@@ -457,15 +449,15 @@
     },
     {
       "name": "Lethal Strike",
-      "classes": ["Pwr", "Act"],
+      "classes": ["Pwr"],
       "desc": [
         "When you attack an unsuspecting enemy outside of combat, the first time you hit them you may force them to make a Constitution (not Durability) Saving Throw against a DC of 8 + your Strength Modifier + your PB. If they fail the Save, you deal double damage against them."
       ],
-      "tags": ["Power", "Act", "Passive", "Offense"]
+      "tags": ["Power", "Passive", "Offense"]
     },
     {
       "name": "Melee Barrage",
-      "classes": ["Pwr", "Rng", "Rev", "Ind", "Act"],
+      "classes": ["Pwr", "Rng", "Rev", "Ind", "Act", "Mod"],
       "desc": [
         "With a flurry of punches, you create a 2m cone of damage, forcing targets to make a physical (Strength, Dexterity, Consitution, NOT using Stand stats) Saving Throw with a DC of 8 + PB + Strength or Dexterity Modifier. Those who fail the Save take full damage, those who succeed take half. It deals the same kind of damage your Stand Attacks deal. These blows are considered to have the Siege <preview href='/weapons#attributes'>attribute</preview>, dealing double damage to objects and structures, which also automatically fail the Save.",
         "You may use this Ability once per Turn, spending Attacks to deal more damage with a minimum of 1. Each Attack used allows you to roll an additional Attack Die. Your Power Modifier is added once at the end, even if multiple Attacks are used."
@@ -512,22 +504,22 @@
     },
     {
       "name": "Reckless Attack",
-      "classes": ["Rev"],
+      "classes": ["Rev", "Mod"],
       "desc": [
         "As a Free Action, you may choose to gain Advantage on all Attack Rolls until your next Turn, but all enemies gain Advantage on any Attack Rolls against you as well.",
         "If enemies already have Advantage to attack you, they roll 3d20 and take the highest roll. "
       ],
-      "tags": ["Revenge", "Active", "Offense"]
+      "tags": ["Revenge", "Act", "Active", "Offense"]
     },
     {
       "name": "Rejuvenation",
-      "classes": ["Pwr", "Rev", "Hvy", "War"],
+      "classes": ["Pwr", "Rev", "Mod", "Hvy", "War"],
       "desc": [
         "You may heal an amount of HP equal to 1d12 + your Level + your Constitution Modifier once per Turn.",
         "Alternatively, if you fail a physical Saving Throw or Contested physical Check targeting you, you may use this Ability to gain a bonus to the Saving Throw's result equal to 1d12 + your Constitution Modifier, potentially turning a failed Save into a success. If you fail the Save anyways, you keep the use of this Ability but still lose your Reaction.",
         "You have an amount of uses of this Ability equal to your Constitution Modifier per Long Rest, regaining half of your total uses (rounded UP) on a Short Rest."
       ],
-      "tags": ["Power", "Revenge", "Heavyweight", "Warrior", "Active", "Limited Uses", "Heal", "Defense"]
+      "tags": ["Power", "Revenge", "Act", "Heavyweight", "Warrior", "Active", "Limited Uses", "Heal", "Defense"]
     },
     {
       "name": "Regenerative Surge",
@@ -557,22 +549,22 @@
     },
     {
       "name": "Siege Combat",
-      "classes": ["Pwr", "Enh", "Act"],
+      "classes": ["Pwr", "Enh"],
       "desc": [
         "Attacks with your Stand deal double damage to objects and structures.",
         "If you have <preview href='/abilities/Melee Barrage'>Melee Barrage</preview>, damage is tripled against objects and structures instead."
       ],
-      "tags": ["Power", "Enhancement", "Act", "Passive", "Utility"]
+      "tags": ["Power", "Enhancement", "Passive", "Utility"]
     },
     {
       "name": "Speedy Switch",
-      "classes": ["Enh"],
+      "classes": ["Enh", "Mod"],
       "desc": [
         "<b>Prerequisite: Material-Anchor</b>",
         "As a Reaction you may switch between anchors for your Enhancement Stand very quickly, meaning that if someone attempts to hit you and you activate this ability, the first hit misses automatically. However, if your Stand moves outside of someone's melee, they can still take an Attack of Opportunity.",
         "You may use this Ability once per combat encounter."
       ],
-      "tags": ["Enhancement", "Has Prerequisite", "Active", "Limited Uses", "Utility"]
+      "tags": ["Enhancement", "Act", "Has Prerequisite", "Active", "Limited Uses", "Utility"]
     },
     {
       "name": "Stand Energy Recharge",
@@ -594,7 +586,7 @@
     },
     {
       "name": "Stand Marking",
-      "classes": ["Rmt", "Enh", "Rev", "Hive", "Act"],
+      "classes": ["Rmt", "Enh", "Rev", "Hive", "Mod"],
       "desc": [
         "As an Action you may \"Mark\" a specific object or person with your Stand, so long as the target is within your Stand's Range and activates a specific, predetermined trigger at some point.",
         "When a person or object is \"Marked\" your Stand automatically follows them, affecting them with their Ability. This effect continues until you recall your Stand back to you, you are killed, or the object/person that is Marked is destroyed/killed.",
@@ -604,27 +596,27 @@
     },
     {
       "name": "Subtle Assistance",
-      "classes": ["Abl", "Act"],
+      "classes": ["Abl"],
       "desc": [
         "You may use your Stand's Ability in a very clever and subtle way to help you with tasks both in combat and everyday life. If you fail a Skill Check, you may use your Reaction to reroll the Skill Check, but you must take the new result. You may use this Ability an amount of times equal to your PB per long rest. Your Stand does not have to be summoned to use this."
       ],
-      "tags": ["Ability", "Act", "Active", "Limited Uses", "Utility"]
+      "tags": ["Ability", "Active", "Limited Uses", "Utility"]
     },
     {
       "name": "Superior Grudge",
-      "classes": ["Rev"],
+      "classes": ["Rev", "Mod"],
       "desc": [
         "Rather than having a maximum of 5 Grudge Points, you now have a maximum of 7, and if you would begin combat with 0 Grudge Points you instead start with 1 Grudge Point."
       ],
-      "tags": ["Revenge", "Passive", "Other"]
+      "tags": ["Revenge", "Act", "Passive", "Other"]
     },
     {
       "name": "Surrounding Swarm",
-      "classes": ["Hive"],
+      "classes": ["Hive", "Mod"],
       "desc": [
         "If all Instances of your Stand are attacking a target and there are a roughly equal amount of Instances on each side of a target, they have Disadvantage on the Saving Throw against Swarm Attack. "
       ],
-      "tags": ["Hive", "Passive", "Offense"]
+      "tags": ["Hive", "Act", "Passive", "Offense"]
     },
     {
       "name": "Healing Ripple",
@@ -1431,12 +1423,12 @@
     },
     {
       "name": "Nemesis",
-      "classes": ["Rev"],
+      "classes": ["Rev", "Mod"],
       "desc": [
         "You may choose one person to become your Nemesis. Whenever you encounter that person, you instantly gain 3 Grudge Points, which are held onto until you stop interacting with them, or until combat with your Nemesis ends and they have not been used.",
         "This Ability is replaced by <preview href='/abilities/Hit List'>Hit List</preview> at Level 20."
       ],
-      "tags": ["Revenge", "Passive", "Other"]
+      "tags": ["Revenge", "Act", "Passive", "Other"]
     },
     {
       "name": "Act 4",
@@ -1523,9 +1515,9 @@
       "name": "Improved Fighting Style",
       "classes": ["War"],
       "desc": [
-        "You gain an additional Fighting Style from the Artisan, Assassin, Consul, Heavyweight, Ranger, Scholar, or Warrior <a href='/abilities?search=Fighting%20Style'>Fighting Styles</a>."
+        "You gain an additional Fighting Style from the Artisan, Assassin, Consul, Heavyweight, Ranger, Scholar, or Warrior <a href='/abilities/Warrior Fighting Style?search=Fighting%20Style&filter=Assassin,Artisan,Consul,Heavyweight,Ranger,Scholar,Warrior&exclude=Upgrade'>Fighting Styles</a>."
       ],
-      "tags": ["Warrior", "Active", "Varies", "Multiple Options"]
+      "tags": ["Warrior", "Active", "Varies", "Upgrade", "Multiple Options"]
     },
     {
       "name": "Paragon of Knowledge",
@@ -1658,8 +1650,8 @@
       "desc": [
         "Once per Turn, as a Free Action, you may encourage enemies to attack you by giving their Attack Rolls against you Advantage until the start of your next Turn. However, when you do this, you may use two Reactions instead of one on your Turn."
       ],
-      "classes": ["Rip", "Pwr", "Rev", "Enh", "Ind", "Act", "Hvy", "War"],
-      "tags": ["Ripple", "Power", "Revenge", "Enhancement", "Independent", "Act", "Heavyweight", "Warrior", "Active", "Buff"]
+      "classes": ["Rip", "Pwr", "Rev", "Enh", "Ind", "Mod", "Hvy", "War", "Con"],
+      "tags": ["Ripple", "Power", "Revenge", "Enhancement", "Independent", "Act", "Heavyweight", "Warrior", "Consul", "Active", "Buff"]
     },
     {
       "name": "Heavyweight Fighting Style",
@@ -1762,11 +1754,12 @@
       "name": "Artisan's Specialty",
       "desc": [
         "You gain Proficiency in the use of a tool set, as well as additional abilities. Some of the abilities use Artisan Charges, and you get more Charges the higher Level you are. You regain all lost Charges on a long rest. You may choose between one of the following options:",
-        "<ul class='list-disc'><li><preview href='/abilities/Chemist'>Chemist</preview></li><li><preview href='/abilities/Engineer'>Engineer</preview></li><li><preview href='/abilities/Herbalist'>Herbalist</preview></li><li><preview href='/abilities/Weapon Smith'>Weapon Smith</preview></li></ul>"
+        "<ul class='list-disc'><li><preview href='/abilities/Chemist'>Chemist</preview></li><li><preview href='/abilities/Engineer'>Engineer</preview></li><li><preview href='/abilities/Herbalist'>Herbalist</preview></li><li><preview href='/abilities/Weapon Smith'>Weapon Smith</preview></li></ul>",
+        "You may take this Ability multiple times if you wish, able to choose an additional Specialty or Specialty subclass."
       ],
       "classes": ["Art"],
       "subAbilities": ["Chemist", "Engineer", "Herbalist", "Weapon Smith"],
-      "tags": ["Artisan", "Parent Feature", "Multiple Options"],
+      "tags": ["Artisan", "Parent Feature", "Multiple Options", "Stackable"],
       "expanded": true
     },
     {
@@ -1820,15 +1813,6 @@
       "tags": ["Vampire", "Enhanced Pillar Man", "Passive", "Utility"]
     },
     {
-      "name": "Act 0",
-      "desc": [
-        "Act 0 Stands do not have an Ability, nor any real capacity to move, attack, dodge, or evade. If they can even be summoned at all, they manifest as a large egg. Once you gain the ability to use Act 1, this Act ceases to exist.",
-        "When necessary, you may treat your Act 0 Stand as having a x1 Ability Score Multiplier for Range and Durability and a x0 in the other Scores."
-      ],
-      "classes": ["Act"],
-      "tags": ["Act", "Passive", "Stat Change", "Other"]
-    },
-    {
       "name": "Act 1",
       "desc": [
         "Act 1 Stands are relatively weak starting out. In order for you to gain an Act 1 Stand, you must go through an event that is considered hopeless or desperate.",
@@ -1871,7 +1855,7 @@
         "<b>Prerequisite: <preview href='/feats/Act Modification'>Act Modification</preview></b>",
         "When you gain this Ability for the first time, you must choose one of the following modification types.",
         "Every time you gain this Ability, choose one of the features under your chosen modification type.",
-        "<ul class='list-disc'><li><u>Anchor-Based</u>: All Acts gain <preview href='/abilities/Anchored Stand'>Anchored Stand</preview>.<ul><li>Your Hit Dice increase by 1 size (d8s become d10s etc.) and you retroactively gain 1 Hit Point per Level you currently have. You also gain <preview href='/abilities/Confident Provocation'>Confident Provocation</preview> if you didn't have it already. You may not take this option if your Hit Dice are already d12s.</li><li>Your Stands' Damage Reduction increases. All Acts gain <preview href='/abilities/Immense Resistance'>Immense Resistance</preview>. If one of your Acts already had Immense Resistance, it instead gains <preview href='/abilities/Armored Stand'>Armored Stand</preview>.</li><li>Gain one of the following for all Acts: <preview href='/abilities/Camouflage'>Camouflage</preview>, <preview href='/abilities/Juggernaut'>Juggernaut</preview>, or <preview href='/abilities/Superior Control'>Superior Control</preview>. (Level 6+)</li><li>Gain one of the following for all Acts: <preview href='/abilities/General Anchors'>General Anchors</preview> or <preview href='/abilities/Speedy Switch'>Speedy Switch</preview>. (Level 11+)</li><li>Gain either the <a class='/feats/?focus=Anchored_Immunity'>Anchored Immunity</a> or <a class='/feats/?focus=Resilient'>Resilient</a> Feat. (Level 16+)</li></ul><li><u>Grudge-Based</u>: Your Stand uses the Grudge Point system from <preview href='/classes/Revenge-Type'>Revenge-Type</preview>. Once you meet the Grudge requirement to summon your Stand, you may switch Acts as normal. When you Level-Up in Act-Type, you roll an additional d4 for Stand stat points (3d4 + Level), and may roll a d4 per Level to gain points retroactively when you choose this modification. Finally, all Acts gain <preview href='/abilities/Stand Marking'>Stand Marking</preview> and <preview href='/abilities/Detached Senses'>Detached Senses</preview>.<ul><li>Your Hit Dice increase by 1 size (d8s become d10s etc.) and you retroactively gain 1 Hit Point per Level you currently have. You also gain <preview href='/abilities/Confident Provocation'>Confident Provocation</preview> if you didn't have it already. You may not take this option if your Hit Dice are already d12s.</li><li>Your offensive capabilities increase. All Acts gain <preview href='/abilities/Reckless Attack'>Reckless Attack</preview>, as well as one of the following: <preview href='/abilities/Melee Barrage'>Melee Barrage</preview>, <a class='/feats/?focus=Menacing_Aura'>Menacing Aura</a>, or <a class='/feats/?focus=Weapon_Feat'>Weapon Feat</a>.</li><li>Gain one of the following for all Acts: <preview href='/abilities/Armored Stand'>Armored Stand</preview> (only for Acts that do not have a Durability restriction), <a class='/feats/?focus=Berserker'>Berserker</a>, <preview href='/abilities/Focused Hatred'>Focused Hatred</preview>, <preview href='/abilities/Nemesis'>Nemesis</preview>, or <preview href='/abilities/Rejuvenation'>Rejuvenation</preview>. (Level 6+)</li><li>Gain one of the following for all Acts: <preview href='/abilities/Lasting Grudge'>Lasting Grudge</preview> or <preview href='/abilities/Second Life'>Second Life</preview>. (Level 11+)</li><li>Gain one of the following for all Acts: <preview href='/abilities/Devastating Critical'>Devastating Critical</preview>, <preview href='/abilities/Devastating Melee'>Devastating Melee</preview>, <preview href='/feats/Guardian%27s Wrath'>Guardian's Wrath</preview>, or <preview href='/abilities/Superior Grudge'>Superior Grudge</preview>. (Level 16+)</li></ul></li><li><u>Hive-Based</u>: All Acts gain <preview href='/abilities/Split Stand'>Split Stand</preview> and gain the ability to use Swarm Attacks from <preview href='/classes/Hive-Type'>Hive-Type</preview>.<ul><li>Your reconnaissance abilities increase. All Acts gain <preview href='/abilities/Detached Senses'>Detached Senses</preview>, as well as either <preview href='/abilities/Hot Pursuit'>Hot Pursuit</preview> or <preview href='/abilities/Stand Marking'>Stand Marking</preview>.</li><li>Your combat abilities increase. All Acts gain <preview href='/abilities/Immense Resistance'>Immense Resistance</preview> and <preview href='/abilities/Surrounding Swarm'>Surrounding Swarm</preview>.</li><li>Gain one of the following for all Acts: <preview href='/abilities/Armored Stand'>Armored Stand</preview> (only for Acts that do not have a Durability restriction), <preview href='/abilities/Immense Range'>Immense Range</preview> (only for Acts that do not have a Range restriction), <preview href='/abilities/Defensive Wave'>Defensive Wave</preview>, or <preview href='/abilities/Mobile Wave'>Mobile Wave</preview>. (Level 6+)</li><li>Gain one of the following for all Acts: <preview href='/abilities/Silent Movement'>Silent Movement</preview> or <preview href='/abilities/Speedy Movement'>Speedy Movement</preview>. (Level 11+)</li><li>Gain one of the following for all Acts: <a class='/feats/?focus=Enhanced_Stand_Senses'>Enhanced Stand Senses</a>, <a class='/feats/?focus=Improved_Awareness'>Improved Awareness</a>, <a class='/feats/?focus=Skirmisher'>Skirmisher</a>, or <preview href='/abilities/Immense Range'>Immense Range</preview> (only for Acts that do not have a Range restriction). (Level 16+)</li></ul></li></ul>"
+        "<ul class='list-disc'><li><u>Anchor-Based</u>: All Acts gain <preview href='/abilities/Anchored Stand'>Anchored Stand</preview>.<ul><li>Your Hit Dice increase by 1 size (d8s become d10s etc.) and you retroactively gain 1 Hit Point per Level you currently have. You also gain <preview href='/abilities/Confident Provocation'>Confident Provocation</preview>. You may not take this option if your Hit Dice are already d12s.</li><li>Your Stands' Damage Reduction increases. All Acts gain <preview href='/abilities/Immense Resistance'>Immense Resistance</preview>.</li><li>Gain one of the following for all Acts: <preview href='/abilities/Camouflage'>Camouflage</preview>, <preview href='/abilities/Juggernaut'>Juggernaut</preview>, or <preview href='/abilities/Superior Control'>Superior Control</preview>. (Level 6+)</li><li>Gain one of the following for all Acts: <preview href='/abilities/General Anchors'>General Anchors</preview> or <preview href='/abilities/Speedy Switch'>Speedy Switch</preview>. (Level 11+)</li><li>Gain either the <preview href='/feats/Anchored Immunity'>Anchored Immunity</preview> or <preview href='/feats/Resilient'>Resilient</preview> Feat. (Level 16+)</li></ul><li><u>Grudge-Based</u>: Your Stand uses the Grudge Point system from <preview href='/classes/Revenge-Type'>Revenge-Type</preview>. Once you meet the Grudge requirement to summon your Stand, you may switch Acts as normal. When you Level-Up in Act-Type, you roll an additional d4 for Stand stat points (3d4 + Level), and may roll a d4 per Level to gain points retroactively when you choose this modification. Finally, all Acts gain <preview href='/abilities/Stand Marking'>Stand Marking</preview> and <preview href='/abilities/Detached Senses'>Detached Senses</preview>.<ul><li>Your Hit Dice increase by 1 size (d8s become d10s etc.) and you retroactively gain 1 Hit Point per Level you currently have. You also gain <preview href='/abilities/Confident Provocation'>Confident Provocation</preview>. You may not take this option if your Hit Dice are already d12s.</li><li>Your offensive capabilities increase. All Acts gain <preview href='/abilities/Reckless Attack'>Reckless Attack</preview>, as well as one of the following: <preview href='/abilities/Melee Barrage'>Melee Barrage</preview>, <preview href='/feats/Menacing Aura'>Menacing Aura</preview>, or <preview href='/feats/Weapon Feat'>Weapon Feat</preview>.</li><li>Gain one of the following for all Acts: <preview href='/abilities/Armored Stand'>Armored Stand</preview> (only for Acts that do not have a Durability restriction), <preview href='/feats/Berserker'>Berserker</preview>, <preview href='/abilities/Focused Hatred'>Focused Hatred</preview>, <preview href='/abilities/Nemesis'>Nemesis</preview>, or <preview href='/abilities/Rejuvenation'>Rejuvenation</preview>. (Level 6+)</li><li>Gain one of the following for all Acts: <preview href='/abilities/Lasting Grudge'>Lasting Grudge</preview> or <preview href='/abilities/Second Life'>Second Life</preview>. (Level 11+)</li><li>Gain one of the following for all Acts: <preview href='/abilities/Devastating Critical'>Devastating Critical</preview>, <preview href='/abilities/Devastating Melee'>Devastating Melee</preview>, <preview href='/feats/Guardian%27s Wrath'>Guardian's Wrath</preview> (ignoring the prerequisite), or <preview href='/abilities/Superior Grudge'>Superior Grudge</preview>. (Level 16+)</li></ul></li><li><u>Hive-Based</u>: All Acts gain <preview href='/abilities/Split Stand'>Split Stand</preview> and gain the ability to use Swarm Attacks from <preview href='/classes/Hive-Type'>Hive-Type</preview>.<ul><li>Your reconnaissance abilities increase. All Acts gain <preview href='/abilities/Detached Senses'>Detached Senses</preview>, as well as either <preview href='/abilities/Hot Pursuit'>Hot Pursuit</preview> or <preview href='/abilities/Stand Marking'>Stand Marking</preview>.</li><li>Your combat abilities increase. All Acts gain <preview href='/abilities/Immense Resistance'>Immense Resistance</preview> and <preview href='/abilities/Surrounding Swarm'>Surrounding Swarm</preview>.</li><li>Gain one of the following for all Acts: <preview href='/abilities/Armored Stand'>Armored Stand</preview> (only for Acts that do not have a Durability restriction), <preview href='/abilities/Immense Range'>Immense Range</preview> (only for Acts that do not have a Range restriction), <preview href='/abilities/Defensive Wave'>Defensive Wave</preview>, or <preview href='/abilities/Mobile Wave'>Mobile Wave</preview>. (Level 6+)</li><li>Gain one of the following for all Acts: <preview href='/abilities/Silent Movement'>Silent Movement</preview> or <preview href='/abilities/Speedy Movement'>Speedy Movement</preview>. (Level 11+)</li><li>Gain one of the following for all Acts: <preview href='/feats/Enhanced Stand Senses'>Enhanced Stand Senses</preview>, <preview href='/abilities/Improved Awareness'>Improved Awareness</preview>, <preview href='/feats/Skirmisher'>Skirmisher</preview>, or <preview href='/abilities/Immense Range'>Immense Range</preview> (only for Acts that do not have a Range restriction). (Level 16+)</li></ul></li></ul>"
       ],
       "classes": ["Act"],
       "tags": ["Act", "Passive", "Varies", "Multiple Options", "Stackable", "Has Prerequisite"]
@@ -1959,7 +1943,7 @@
     {
       "name": "Artisan Feature",
       "desc": [
-        "You may choose a Feature from the following list:<ul class='list-disc'><li><preview href='/feats/Weapon Feats?filter=Weapon Feat'>Weapon Feat</preview></li><li><preview href='/abilities/Artisan%27s Specialty'>Artisan's Specialty</preview> (Level 3+)</li><li><preview href='/abilities/Always Prepared'>Always Prepared</preview> (Level 4+)</li><li><preview href='/abilities/Fast Hands'>Fast Hands</preview> (Level 4+)</li><li><preview href='/abilities/Just Got Lost'>Just Got Lost</preview> (Level 5+)</li><li><preview href='/abilities/Labwork'>Labwork</preview> (Level 5+)</li><li><preview href='/abilities/Flexible Body'>Flexible Body</preview> (Level 6+)</li><li><preview href='/abilities/Flexible Mind'>Flexible Mind</preview> (Level 6+)</li><li><preview href='/abilities/Well Educated'>Well Educated</preview> (Level 6+)</li><li><preview href='/feats/Consistent Skills'>Consistent Skills</preview> (Level 8+)</li><li><preview href='/feats/Extra Experience'>Extra Experience</preview> (Level 8+)</li><li><preview href='/feats/Jack of All Trades'>Jack of All Trades</preview> (Level 8+)</li><li><preview href='/feats/Quick on your Feet'>Quick on your Feet</preview> (Level 9+)</li><li><preview href='/feats/Resilient'>Resilient</preview> (Level 9+)</li><li><preview href='/feats/Scarflesh'>Scarflesh</preview> (Level 9+)</li><li><preview href='/feats/Commentator'>Commentator</preview> (Level 11+)</li><li><preview href='/feats/Focus'>Focus</preview> (Level 11+)</li><li><preview href='/feats/Sharp Mind'>Sharp Mind</preview> (Level 11+)</li><li><preview href='/feats/Adrenaline Rush'>Adrenaline Rush</preview> (Level 12+)</li><li><preview href='/feats/Agility Feats?filter=Agility Feat'>Agility Feat</preview> (Level 12+)</li><li><preview href='/feats/Swift Recovery'>Swift Recovery</preview> (Level 12+)</li><li><preview href='/feats/Heavy Sleeper'>Heavy Sleeper</preview> (Level 14+)</li><li><preview href='/feats/Light Sleeper'>Light Sleeper</preview> (Level 14+)</li><li><preview href='/feats/Damage Type Feats?filter=Damage Type Feat'>Damage Type Feat</preview> (Level 15+)</li><li><preview href='/feats/Pacifist'>Pacifist</preview> (Level 15+)</li><li><preview href='/feats/Additional Sense'>Additional Sense</preview> (Level 17+)</li><li><preview href='/feats/Level-Headed'>Level-Headed</preview> (Level 17+)</li><li><preview href='/feats/Smite'>Smite</preview> (Level 17+)</li><li><preview href='/feats/Hyperspecialization'>Hyperspecialization</preview> (Level 18+)</li><li><preview href='/feats/Practical Experience'>Practical Experience</preview> (Level 18+)</li></ul>"
+        "You may choose a Feature from the following list:<ul class='list-disc'><li><preview href='/feats/Weapon Feats?filter=Weapon Feat'>Weapon Feat</preview></li><li><preview href='/abilities/Artisan%27s Specialty'>Artisan's Specialty</preview> (Level 3+)</li><li><preview href='/abilities/Improved Specialty'>Improved Specialty</preview> (Level 3+)</li><li><preview href='/abilities/Always Prepared'>Always Prepared</preview> (Level 4+)</li><li><preview href='/abilities/Fast Hands'>Fast Hands</preview> (Level 4+)</li><li><preview href='/abilities/Just Got Lost'>Just Got Lost</preview> (Level 5+)</li><li><preview href='/abilities/Labwork'>Labwork</preview> (Level 5+)</li><li><preview href='/abilities/Flexible Body'>Flexible Body</preview> (Level 6+)</li><li><preview href='/abilities/Flexible Mind'>Flexible Mind</preview> (Level 6+)</li><li><preview href='/abilities/Well Educated'>Well Educated</preview> (Level 6+)</li><li><preview href='/feats/Consistent Skills'>Consistent Skills</preview> (Level 8+)</li><li><preview href='/feats/Extra Experience'>Extra Experience</preview> (Level 8+)</li><li><preview href='/feats/Jack of All Trades'>Jack of All Trades</preview> (Level 8+)</li><li><preview href='/feats/Quick on your Feet'>Quick on your Feet</preview> (Level 9+)</li><li><preview href='/feats/Resilient'>Resilient</preview> (Level 9+)</li><li><preview href='/feats/Scarflesh'>Scarflesh</preview> (Level 9+)</li><li><preview href='/feats/Commentator'>Commentator</preview> (Level 11+)</li><li><preview href='/feats/Focus'>Focus</preview> (Level 11+)</li><li><preview href='/feats/Sharp Mind'>Sharp Mind</preview> (Level 11+)</li><li><preview href='/feats/Adrenaline Rush'>Adrenaline Rush</preview> (Level 12+)</li><li><preview href='/feats/Agility Feats?filter=Agility Feat'>Agility Feat</preview> (Level 12+)</li><li><preview href='/feats/Swift Recovery'>Swift Recovery</preview> (Level 12+)</li><li><preview href='/feats/Heavy Sleeper'>Heavy Sleeper</preview> (Level 14+)</li><li><preview href='/feats/Light Sleeper'>Light Sleeper</preview> (Level 14+)</li><li><preview href='/feats/Damage Type Feats?filter=Damage Type Feat'>Damage Type Feat</preview> (Level 15+)</li><li><preview href='/feats/Pacifist'>Pacifist</preview> (Level 15+)</li><li><preview href='/feats/Additional Sense'>Additional Sense</preview> (Level 17+)</li><li><preview href='/feats/Level-Headed'>Level-Headed</preview> (Level 17+)</li><li><preview href='/feats/Smite'>Smite</preview> (Level 17+)</li><li><preview href='/feats/Hyperspecialization'>Hyperspecialization</preview> (Level 18+)</li><li><preview href='/feats/Practical Experience'>Practical Experience</preview> (Level 18+)</li></ul>"
       ],
       "classes": ["Art"],
       "tags": ["Artisan", "Parent Feature", "Multiple Options", "Stackable"]
@@ -2033,8 +2017,8 @@
       "desc": [
         "Your Stand's Range Score is doubled, as are any points you put into it later on."
       ],
-      "classes": ["Rng", "Act"],
-      "tags": ["Ranged", "Act", "Passive", "Stat Change"]
+      "classes": ["Rng", "Rmt", "Enh", "Hive", "Act"],
+      "tags": ["Ranged", "Remote", "Enhancement", "Hive", "Act", "Passive", "Stat Change"]
     },
     {
       "name": "Flight",
@@ -2243,16 +2227,16 @@
       "desc": [
         "Once per Turn, you can switch your Power Modifier with your Precision, or Precision with Power."
       ],
-      "classes": ["Pwr", "Rng"],
-      "tags": ["Power", "Ranged", "Active", "Buff"]
+      "classes": ["Pwr", "Rng", "Act"],
+      "tags": ["Power", "Ranged", "Act", "Active", "Buff"]
     },
     {
       "name": "Agile Stand",
       "desc": [
         "You may add your Speed Modifier to your Stand Damage Reduction. This applies AFTER anything else that would increase your Stand DR (such as <preview href='/abilities/Armored Stand'>Armored Stand</preview> or <preview href='/abilities/Immense Resistance'>Immense Resistance</preview>)."
       ],
-      "classes": ["Pwr", "Rng"],
-      "tags": ["Power", "Ranged", "Passive", "Defense"]
+      "classes": ["Pwr", "Rng", "Act"],
+      "tags": ["Power", "Ranged", "Act", "Passive", "Defense"]
     },
     {
       "name": "Always Prepared",
@@ -2745,7 +2729,7 @@
         "Whenever you use Jump In, your range is 2 + your Charisma Modifier in meters, rather than just 2 Meters.",
         "In addition, you gain Teamwork at the end of each Long Rest."
       ],
-      "classes": ["Consul"],
+      "classes": ["Con"],
       "tags": ["Consul", "Buff", "Passive"]
     },
     {

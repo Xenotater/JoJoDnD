@@ -35,6 +35,7 @@ export default function AbilitiesContent({data}: {data: AbilityData | undefined}
     ["Ind", <PreviewLink key="Ind" href="/classes/Independent-Type">Independent-Type Stands</PreviewLink>],
     ["Hive", <PreviewLink key="Hive" href="/classes/Hive-Type">Hive-Type Stands</PreviewLink>],
     ["Act", <PreviewLink key="Act" href="/classes/Act-Type">Act-Type Stands</PreviewLink>],
+    ["Mod", <PreviewLink key="Mod" href="/abilties/Act Modifier">Modified Act-Type Stands</PreviewLink>],
     ["Rip", <PreviewLink key="Rip" href="/classes/Ripple">Ripple Users</PreviewLink>],
     ["Spin", <PreviewLink key="Spin" href="/classes/Spin">Spin Users</PreviewLink>],
     ["Div", <PreviewLink key="Spin" href="/classes/Divination">Divination Users</PreviewLink>],
