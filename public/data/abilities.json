@@ -561,7 +561,7 @@
       "classes": ["Enh", "Mod"],
       "desc": [
         "<b>Prerequisite: Material-Anchor</b>",
-        "As a Reaction you may switch between anchors for your Enhancement Stand very quickly, meaning that if someone attempts to hit you and you activate this ability, the first hit misses automatically. However, if your Stand moves outside of someone's melee, they can still take an Attack of Opportunity.",
+        "As a Reaction you may switch between anchors for your Enhancement Stand very quickly, meaning that if someone attempts to hit you and you activate this Ability, the first hit misses automatically. However, if your Stand moves outside of someone's melee, they can still take an Attack of Opportunity.",
         "You may use this Ability once per combat encounter."
       ],
       "tags": ["Enhancement", "Act", "Has Prerequisite", "Active", "Limited Uses", "Utility"]
@@ -987,7 +987,7 @@
       "classes": ["Spin"],
       "desc": [
         "As an Action you may compress a part of your body using the Spin in order to better hide or fit through places that you could not normally. For the purposes of hiding and moving you count as a creature one Size Category less than your normal Size.",
-        "This lasts until the end of your next Turn, unless you continue to use this ability as an Action each Turn.",
+        "This lasts until the end of your next Turn, unless you continue to use this Ability as an Action each Turn.",
         "While in this state, your Movement Speed is reduced by half."
       ],
       "tags": ["Spin", "Active", "Utility"]
@@ -1082,7 +1082,7 @@
         "The only part of the Undead body needed for Vampiric survival is the brain. If you find yourself in an incredibly desperate situation, you may perform this Ability to save yourself.",
         "As an Attack you may use your Secondary Muscular System (from <preview href='/abilities/Controlled Veins'>Controlled Veins</preview>) to remove your Head and Secondary Muscular System from the rest of you.",
         "Your Head and Secondary Muscular System are now all you are. You may slowly regenerate your own body, but it takes 3d4 days to do so, as well as 5 Energy for each kilogram of flesh regenerated.",
-        "You still have to consume energy at the standard rate, but you may now do this with your Secondary Muscular System, and you may use your <a href='/abilities/?focus=Lifesteal&search=lifesteal'>Lifesteal</a> ability as normal."
+        "You still have to consume energy at the standard rate, but you may now do this with your Secondary Muscular System, and you may use your <a href='/abilities/?focus=Lifesteal&search=lifesteal'>Lifesteal</a> Ability as normal."
       ],
       "tags": ["Vampire", "Enhanced Pillar Man", "Active", "Defense"]
     },
@@ -1614,7 +1614,7 @@
       "name": "Enhanced Custom Spin Technique",
       "desc": [
         "Talk to your DM to determine how to make your technique more useful/powerful, or choose from one of the following ways:",
-        "<ul class='list-disc'><li>The amount of dice rolled for damage increases</li><li>The move may be used at Long Range without penalty</li><li>The range is doubled</li><li>The amount of space affected by your ability doubles</li></ul>",
+        "<ul class='list-disc'><li>The amount of dice rolled for damage increases</li><li>The move may be used at Long Range without penalty</li><li>The range is doubled</li><li>The amount of space affected by your Ability doubles</li></ul>",
         "Make sure to check with your DM, as they will want to know how the move has been changed. It's important to check because such a change may be significant, and they need to let you know if it seems game-breaking, or something that will change how they plan based on your character."
       ],
       "classes": ["Spin"],
@@ -1734,7 +1734,7 @@
       "name": "Ranger's Recovery",
       "desc": [
         "When you take a Short or Long Rest you gain an amount of Temporary Hit Points equal to your Wisdom Modifier + Level in Ranger. This Temp HP lasts until you take a Long Rest and stacks with other forms of Temp HP, but not itself.",
-        "As an Attack or Bonus Action, you may gain Temp HP from the above effect, as well as 1d8 + your Constitution Modifier in regained HP. You can use this ability without spending any Hit Dice an amount of times equal to your Wisdom Modifier per Long Rest. If you use it any more times, it costs 1 Hit Dice to do so. If you have Hit Dice that are larger than a d8 through multiclassing, the regained HP is that + your Constitution Modifier instead."
+        "As an Attack or Bonus Action, you may gain Temp HP from the above effect, as well as 1d8 + your Constitution Modifier in regained HP. You can use this Ability without spending any Hit Dice an amount of times equal to your Wisdom Modifier per Long Rest. If you use it any more times, it costs 1 Hit Dice to do so. If you have Hit Dice that are larger than a d8 through multiclassing, the regained HP is that + your Constitution Modifier instead."
       ],
       "classes": ["Rgr"],
       "tags": ["Ranger", "Passive", "Active", "Buff", "Heal", "Limited Uses"]
@@ -2141,10 +2141,10 @@
     {
       "name": "Revenant Powers",
       "desc": [
-        "You were killed in an unjust way, and through some form of supernatural healing ability, you were brought back into your body, even if it's no longer technically living. Now, you are on a ticking clock, motivated to achieve one last goal before passing on to the next world.",
+        "You were killed in an unjust way, and through some form of supernatural healing Ability, you were brought back into your body, even if it's no longer technically living. Now, you are on a ticking clock, motivated to achieve one last goal before passing on to the next world.",
         "Despite continuing your physical existence in a way, you no longer require food, sleep, or air in order to persist. In addition, you completely lose the ability to feel any pain. When you take damage, you may choose to reduce that damage to 0. However, doing so breaks a single part of your body. For each body part you choose to break, it loses its function, and you gain a single level of Body Fatigue.",
         "You may choose from the following effects when you gain a level of Body Fatigue. You cannot pick the same option twice. If you have all four options and then gain another level of Body Fatigue, you must start making Death Saves. Failing 3 Death Saves without being Stabilized results in permanent death.<ul class='list-disc'><li>Cannot regain HP (can still gain Temp HP)</li><li>Movement Speed halved</li><li>You lose the ability to use sensory organs, instead gaining 10/20 meters of <preview href='/feats/Additional Sense'>Soulsense</preview>. You can still communicate with people so long as they are within your Soulsense's Long Range.</li><li>Your Maximum HP is cut in half</li></ul>",
-        "Body Fatigue can be removed entirely by someone with a supernatural healing ability repairing your body. Alternatively, someone can make a Medicine Check on you over a Short or Long Rest, removing a level of Body Fatigue for each multiple of 5 in the result (a result of 12 would remove 2 levels etc)."
+        "Body Fatigue can be removed entirely by someone with a supernatural healing Ability repairing your body. Alternatively, someone can make a Medicine Check on you over a Short or Long Rest, removing a level of Body Fatigue for each multiple of 5 in the result (a result of 12 would remove 2 levels etc)."
       ],
       "classes": ["Gho"],
       "tags": ["Ghost", "Passive", "Defense"]
@@ -2243,7 +2243,7 @@
       "desc": [
         "As an Action, you may pull a reasonably sized item or trinket from a bag, a pocket, or somewhere else on your person. This item must be something you can reasonably carry with you, with the size of the item being restricted to the largest container you are carrying (pockets by default, but could be a backpack, duffel bag, etc). You can pull out any item that you would reasonably be able to just have, with illegal, difficult to acquire, or suspicious items taking 2 uses of this Ability instead of one.",
         "You can have a maximum amount of these items “summoned” at once equal to your Int/Wis Modifier, with the item being changed if you pull out a new item or if an item is lost/destroyed/consumed. These items also cannot be exchanged for money or resources.",
-        "You have an amount of uses of this ability equal to your Intelligence or Wisdom Modifier (your choice) per Long Rest, regaining half of your total charges on a Short Rest.",
+        "You have an amount of uses of this Ability equal to your Intelligence or Wisdom Modifier (your choice) per Long Rest, regaining half of your total charges on a Short Rest.",
         "The following are examples of items you could summon, but you are not limited to Items listed below.",
         "<br>Example 1 Charge Items<ul class='list-disc'><li>A set of Tools</li><li>Ammunition for a Weapon</li><li>Ball Bearings</li><li>Batteries</li><li>Burner Phone</li><li>Disguise</li><li>Duct Tape</li><li>First Aid Kit</li><li>Flammable Oil</li><li>Flashlight (UV or otherwise)</li><li>Swiss Army Knife</li><li>Thermal Bag</li><li>User Manual for a Machine</li><ul>",
         "<br>Example 2 Charge Items<ul class='list-disc'><li>A Weapon (if Ranged, gives enough ammo to reload once, if Thrown or with an ammo capacity less than 5, gives 10 ammo/throwables)</li><li>Bag of Human Blood</li><li>One Explosive</li><li>Vial of Acid</li></ul>"
@@ -2335,7 +2335,7 @@
       "name": "Disaster's Flow",
       "desc": [
         "You're able to foresee the force of disaster, giving you exact knowledge of when and where a misfortune will strike. These can range from minor inconveniences, to life-changing events.",
-        "When a creature you have at least 2 Components from within 10m rolls a Natural 1 on a d20, you may choose to pocket it as a Free Action. This lets them to attempt the d20 roll again, and allows you to use the Natural 1 at a later time, with a maximum Storage of 1 Natural 1. You can spend this saved Natural 1 in one of two ways, regaining it back when you “steal” another Natural 1:<ul class='list-disc'><li>As a Reaction, before someone rolls a d20 roll (or before you know the result of it), you can replace that with a 1 (you still must have at least 2 Components on them and be within 10m).</li><li>As an Action, you create a technically possible but improbable event that brings disaster to the target (must have 2 Components and be within 10m). These events give you plausible deniability, as it's entirely possible that it's just bad luck, and a series of coincidences. The following are examples of what you can use this ability for (but are not restricted to these choices):<ul><li>If you are fighting in a forest where there are dead limbs hanging from a nearby tree, a gust of wind may put just enough stress on it to come crashing down, forcing them to make a Dexterity Save, taking a Dangerous amount of damage (seen in the <preview href='/rules/Environment'>Environment</preview> section of the rules), or half on a successful Save.</li><li>You make them trip on their own feet, falling Prone on a failed Save.</li><li>You could make it suddenly start raining if there is a cloud overhead.</li><li>You could have a vehicle your target is driving have its brakes give out.</li></ul></li></ul>"
+        "When a creature you have at least 2 Components from within 10m rolls a Natural 1 on a d20, you may choose to pocket it as a Free Action. This lets them to attempt the d20 roll again, and allows you to use the Natural 1 at a later time, with a maximum Storage of 1 Natural 1. You can spend this saved Natural 1 in one of two ways, regaining it back when you “steal” another Natural 1:<ul class='list-disc'><li>As a Reaction, before someone rolls a d20 roll (or before you know the result of it), you can replace that with a 1 (you still must have at least 2 Components on them and be within 10m).</li><li>As an Action, you create a technically possible but improbable event that brings disaster to the target (must have 2 Components and be within 10m). These events give you plausible deniability, as it's entirely possible that it's just bad luck, and a series of coincidences. The following are examples of what you can use this Ability for (but are not restricted to these choices):<ul><li>If you are fighting in a forest where there are dead limbs hanging from a nearby tree, a gust of wind may put just enough stress on it to come crashing down, forcing them to make a Dexterity Save, taking a Dangerous amount of damage (seen in the <preview href='/rules/Environment'>Environment</preview> section of the rules), or half on a successful Save.</li><li>You make them trip on their own feet, falling Prone on a failed Save.</li><li>You could make it suddenly start raining if there is a cloud overhead.</li><li>You could have a vehicle your target is driving have its brakes give out.</li></ul></li></ul>"
       ],
       "classes": ["Div"],
       "tags": ["Divination", "Buff", "Debuff", "Active"]
@@ -2633,6 +2633,7 @@
       "name": "Ripple Basics",
       "desc": [
         "You gain the ability to channel the <preview href='/classes/Ripple'>Ripple</preview>. The Ripple allows the wielder to access the fullest potential of the power of the sun within their body through breathing forms, practice, and discipline. Such power has the ability to heal wounds, destroy undead, and change certain properties of conductable substances and living beings.",
+        "Ripple Users' bodies are much better honed than the bodies of most Humans. Rather than a maximum of 20 in each Ability Score, Ripple users have a maximum of 24 for their Strength, Dexterity, and Constitution.",
         "You gain an amount of Ripple Points (RP) equal to your Level in Ripple. If a Ripple User can comfortably breathe, they gain 1 Ripple Point at the top of Initiative each Round. When unable to breathe, rather than regaining 1 RP at top of Initiative, they lose 1 RP instead.",
         "Your Unarmed Strikes become Radiant, and their damage increases to match the Unarmed Dice column of the \"Leveling Up\" table.",
         "So long as you have at least 1 RP, you may control the surface tension of water using the Ripple, creating a kind of skin around a liquid or allowing you to walk on water.",

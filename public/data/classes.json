@@ -1741,12 +1741,7 @@
           "dcName": "Ripple DC",
           "dc": "8 + Con + Proficiency Bonus",
           "desc": "The Ripple is an energy that travels through the blood and is powered by breathing. A sacred art, it can be used for both healing and destruction. It is extremely effective against Undead, and it can be used against corporeal objects to manipulate them. The Ripple works similarly to electricity, in that it is able to travel through liquids, metals, and most biomass incredibly well.",
-          "extra": [
-            {
-              "name": "Honed Body",
-              "desc": "Ripple Users' bodies are much better honed than the bodies of most Humans. Rather than a maximum of 20 in each Ability Score, Ripple users have a maximum of 24 for their Strength, Dexterity, and Constitution. Additionally, they gain a bonus increase to one of their physical Ability Scores every other Level."
-            }
-          ],
+          "notes": ["When receiving a \"Phys. Bonus\" on Level-Up, you gain that bonus to one of your physical (Str, Dex, Con) Ability Scores"],
           "theme": "rgb(253, 255, 108)",
           "levels": [
             {
@@ -2740,6 +2735,7 @@
         {
           "name": "Warrior",
           "desc": "Warriors specialize in battling and the effective use of weaponry. They hit hard, can hold their own in melee, and know their weapons better than anyone.",
+          "notes": ["When receiving a \"Stat Bonus\" on Level-Up, you gain that bonus to one of your Ability Scores alongside your typical Ability Score Improvement"],
           "hDice": "1d10",
           "theme": "basic",
           "levels": [

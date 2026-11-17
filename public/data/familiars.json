@@ -618,7 +618,7 @@
       },
       {
         "name": "Superior Agility",
-        "desc": ["In addition to the effects of <preview href='/familiars/Agility'>Agility</preview>, your Familiar gains the ability to choose to pass any Saving Throw that would reduce their Movement Speed or restrict their mobility, as well as any Strength (Athletics) or Dexterity (Acrobatics) Checks to avoid the Grappled or Restrained Conditions. You may use this ability once per Short Rest."],
+        "desc": ["In addition to the effects of <preview href='/familiars/Agility'>Agility</preview>, your Familiar gains the ability to choose to pass any Saving Throw that would reduce their Movement Speed or restrict their mobility, as well as any Strength (Athletics) or Dexterity (Acrobatics) Checks to avoid the Grappled or Restrained Conditions. You may use this Ability once per Short Rest."],
         "classes": ["Nimble"]
       },
       {
