@@ -358,7 +358,7 @@
               "subheading": "Level-Up Checklist",
               "details": [],
               "other": [
-                "<ol class='list-decimal'><li>If Multiclassing, choose which <a href='/classes'>Class</a> to gain a Level in.</li><li>Gain 1 Hit Die and roll it to increase Hit Points.</li><li>If a <preview href='/classes/Stands'>Stand User</preview>, increase Stand Ability Scores.</li><li>Check if your PB increases at this Level.</li><li>Check if any of your <a href='/abilities'>Abilities</a> and <a href='/feats'>Feats</a> scale in some way with your Level.</li><li>Gain new Abilities or Feats from the Level-Up table for your Class.</li></ol>"
+                "<ol class='list-decimal'><li>If Multiclassing, choose which <a href='/classes'>Class</a> to gain a Level in.</li><li>Gain 1 Hit Die and add it's maximum roll value + Constitution Modifier to your Maximum Hit Points</li><li>If a <preview href='/classes/Stands'>Stand User</preview>, increase Stand Ability Scores.</li><li>Check if your PB increases at this Level.</li><li>Check if any of your <a href='/abilities'>Abilities</a> and <a href='/feats'>Feats</a> scale in some way with your Level.</li><li>Gain new Abilities or Feats from the Level-Up table for your Class.</li></ol>"
               ]
             },
             {
@@ -369,14 +369,32 @@
               "compactDetails": [
                 "The symbol \"|\" is used to visually separate gained features. You'll gain both things separated by the pipe symbol.",
                 "The word \"OR\" is used to indicate that you'll have to pick between two or more features to gain. If you have an option to take branching features and do not meet the prerequisite for any of them, you may gain another Class Feature from a previous level instead. ",
-                "The phrase \"Choose another Class Feature from Level...\" allows you to choose another Feature that you didn't take at a previous Level that had an \"OR\" choice. If the Feature specifies that it can be taken multiple times, you may take one you've taken before.",
+                "The phrase \"Gain another Class Feature from a previous Level\" allows you to choose another Feature that you didn't take at a previous Level that had an \"OR\" choice. If the Feature specifies that it can be taken multiple times, you may take one you've taken before.",
                 "The phrase \"Variant Rule\" indicates that a Feature can only be gained with permission from your Dungeon Master. Variant Rules tend to push the bounds of what is canon for gameplay purposes, and your DM may decide if they do or don't want to use them."
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Class Variants",
+          "items": [
+            {
+              "subheading": "Standard Classes",
+              "details": [
+                "Standard Classes are considered the default option for Classes for Player Characters. It guarantees certain important options, while still providing variance and flexibility. It is meant to serve as a medium between the customization of Modular and the simplicity of Abridged Classes, allowing one to choose between several features of a build without giving an overwhelming amount of choices.",
+                "That being said, Standard may not always be the best fit. If someone is new to the system or is a DM looking to make Non-Player Characters, Abridged may be better suited for them, as it is far simpler and serves as a good introduction to the system without being overwhelming. In the same vein, if playing with an experienced group, a DM may ask before Character Creation if all Player Characters would prefer to use Modular, which provides more complexity during character creation, but also more control over the build a character wants to run."
               ]
             },
             {
               "subheading": "Modular Classes",
               "details": [
                 "Your Dungeon Master may desire to use Modular characters, rather than using the normal Level-Up tables. Modular characters still gain Class Features when Levelling-Up, but will often instead gain the \"{Classname} Feature\" <a href='/abilities?search=feature'>Ability</a>. This special Ability allows you to choose from any of the Features associated with a Class, so long as you meet any listed prerequisites. If the Feature specifies that it can be taken multiple times, you may take one you've taken before."
+              ]
+            },
+            {
+              "subheading": "Abridged Classes",
+              "details": [
+                "Abridged Classes are simpler versions of the Standard or Modular Classes. These are recommended for Dungeon Masters to use when making Non-Player Characters, or for a first-time player to the system, allowing them to focus on roleplay and creativity without getting too bogged down by mechanics. To further simplify things, there are <preview href='/feats/Abridged Feats?filter=Abridged Feat'>Abridged Feats</preview>, which give a list of simple and easy to use Feats and a summary of their function."
               ]
             }
           ]
@@ -446,7 +464,7 @@
               "compactDetails": [
                 "<b>Attack:</b> Allows you to make a single Attack Roll against a target, rolling damage if it hits them. Whether or not an Attack Roll hits is determined by the target's Armor Class, which is explained in the <preview href='/rules/Combat'>Combat</preview> section.",
                 "<b>Grapple/Shove:</b> When in Melee Range of a target, you may make an Athletics (Str/Pow) Check, forcing the target to Contest using either Athletics (Str/Pow) or Acrobatics (Dex/Pre), their preference. If the target fails the Contest, they suffer the effects of your Grapple or Shove. A Shove can either push the target back 1 meter or knock them Prone. A Grapple requires one of your hands to hold the target and inflicts them with the Grappled Condition. You cannot Grapple or Shove a creature that is more than one Size Category larger than you. Size Categories are explained more in the <preview href='/rules/Characters#Size'>Characters</preview> section. Prone and Grappled are explained more in the <preview href='/rules/Damage & Conditions'>Damage & Conditions</preview> section.",
-                "<b>Speed Duel:</b> When attempting to take a non-weapon object off of someone, or do something else faster than someone like reaching a location first, or even just to measure awareness and reaction time between two people, you may initiate a Speed Duel, which takes the form of a Contested Athletics (Wis/Spd) check. The winner is considered 'faster', keeping in mind that the initiator loses a tie.",
+                "<b>Speed Duel:</b> When attempting to obviously take an object from another creature, leave a single creature’s Melee Range without invoking an Opportunity Attack, or do something else faster than someone like reaching a location first, you may initiate a Speed Duel against that creature. A Speed Duel is a Contested Athletics (Wisdom or Speed) Roll. The winner is considered faster, able to either successfully perform the action, or prevent it from being taken, whichever they would prefer. The winner is considered 'faster', able to either successfully perform the action, or prevent it from being taken, whichever they would prefer. The initiator of the Duel loses in the case of a tie.",
                 "<b>Taunt:</b> When within 10 meters of a target whom you can communicate with, you may initiate a Grit (NOT Dur) or Presence Check against them, which can be Contested by either of those Skills as well, at their preference. If the target fails the Contest, they become Taunted towards you, forcing them to try and target you with a negative effect or damage. The effects of Taunted are explained more in the <preview href='/rules/Damage & Conditions'>Damage & Conditions</preview> section.",
                 "<b>Extra Bonus Action:</b> You may expend half of your total Attacks (rounded up) to gain an additional Bonus Action for this Turn. You may also spend all of your Attacks (even if you only have 1) to gain an additional 2 Bonus Actions. If you use this to make Attack Rolls during this extra Bonus Action, you may not make more rolls than the number of Attacks you spent to gain that Bonus Action."
               ]
@@ -589,7 +607,7 @@
                 "<b>Strength Saves</b> are typically made in response to effects that involve pushing, pulling, or standing your ground. Examples of things that may require a Strength Save include a ceiling collapsing on you, <a href='https://www.jojowiki.com/Bastet'>Bastet</a>, <a href='https://www.jojowiki.com/The Hand'>The Hand</a>, <a href='https://www.jojowiki.com/Echoes#ACT3:_3_Freeze'>Echoes Act 3</a>, and <a href='https://www.jojowiki.com/Awaking_III_Leaves'>Awaking III Leaves</a>.",
                 "<b>Dexterity Saves</b> are typically made in response to effects that involve dodging and area of effect attacks. Examples of things that may require a Dexterity Save include a rain of arrows, an explosion, <a href='https://www.jojowiki.com/Sheer_Heart_Attack'>Sheer Heart Attack</a>, <a href='https://www.jojowiki.com/Planet_Waves'>Planet Waves</a>, and <a href='https://www.jojowiki.com/Boku_no_Rhythm_wo_Kiitekure'>Boku no Rhythm wo Kiitekure</a>.",
                 "<b>Constitution Saves</b> are typically made in response to effects that involve withstanding something. Examples of things that may require a Constitution Save include poison or disease, exposure to the elements, exhaustion, <a href='https://www.jojowiki.com/Sun'>The Sun</a>, <a href='https://www.jojowiki.com/Purple_Haze'>Purple Haze</a>, <a href='https://www.jojowiki.com/White_Album'>White Album</a>, and <a href='https://www.jojowiki.com/Scary_Monsters'>Scary Monsters</a>.",
-                "<b>Intelligence Saves</b> are typically made in response to effects that involve memory and perception. Examples of things that may require an Intelligence Save include memory manipulation, illusions, <a href=\"https://www.jojowiki.com/Heaven's_Door\">Heaven's Door</a>, <a href='https://www.jojowiki.com/Jail_House_Rock'>Jail House Rock</a>, <a href='https://www.jojowiki.com/California_King_Bed'>California King Bed</a>, and <a href='https://www.jojowiki.com/Paper_Moon_King'>Paper Moon King</a>.",
+                "<b>Intelligence Saves</b> are typically made in response to effects that involve trying to figure out and mitigate things that alter memory or perception. Examples of things that may require an Intelligence Save include memory manipulation, illusions, <a href=\"https://www.jojowiki.com/Heaven's_Door\">Heaven's Door</a>, <a href='https://www.jojowiki.com/Jail_House_Rock'>Jail House Rock</a>, <a href='https://www.jojowiki.com/California_King_Bed'>California King Bed</a>, and <a href='https://www.jojowiki.com/Paper_Moon_King'>Paper Moon King</a>.",
                 "<b>Wisdom Saves</b> are typically made in response to effects that involve willpower and control. Examples of things that may require a Wisdom Save include Fright, Charm, <a href='https://www.jojowiki.com/The_Lock'>The Lock</a>, <a href='https://www.jojowiki.com/Echoes#ACT1:_Sound_Generation'>Echoes Act 1</a>, <a href='https://www.jojowiki.com/Enigma'>Enigma</a>, and <a href='https://www.jojowiki.com/Survivor'>Survivor</a>.",
                 "<b>Charisma Saves</b> are typically made in response to effects that involve one's sense of self. Examples of things that may require a Charisma Save include Possession, <a href='https://www.jojowiki.com/Anubis'>Anubis</a>, <a href='https://www.jojowiki.com/Osiris'>Osiris</a>, <a href='https://www.jojowiki.com/Atum'>Atum</a>, and <a href='https://www.jojowiki.com/Civil_War'>Civil War</a>."
               ]

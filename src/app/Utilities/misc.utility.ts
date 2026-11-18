@@ -57,3 +57,21 @@ export function fileToFormData(file: File) {
   fileData.append("file", file);
   return fileData;
 }
+
+export function diceParse(s: string) {
+    const dice = s.split(/(?<= [A-z]+) \+ /);
+    let max = 0, avg = 0;
+    for (let i=0; i<dice.length; i++) {
+        const val = dice[i].match(/^\d+d\d+/);
+        let add = parseInt(dice[i].match(/(?<=^\d+d\d+ ?\+ ?)[0-9]+/)?.toString() ?? "");
+        if (!add)
+            add = 0;
+        if (val != null) {
+            const num = parseInt(val[0].substring(0, val[0].indexOf('d')));
+            const die = parseInt(val[0].substring(val[0].indexOf('d') + 1));
+            avg += num * ((die/2) + 0.5) + add;
+            max += num * die + add;
+        }
+    }
+    return {max: max, avg: avg};
+}

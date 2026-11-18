@@ -6,6 +6,7 @@ import ContentHeading from "@/app/Components/Layout/Typography/ContentHeading";
 import { ClassData } from "@/app/Models/Classes.model";
 import LevelTable from "@/app/Components/LevelTable/LevelTable";
 import { useEffect, useState } from "react";
+import { diceParse } from "@/app/Utilities/misc.utility";
 
 export default function ClassesContent({data}: {data: ClassData | undefined}) {
   const [variant, setVariant] = useState("Standard");
@@ -68,10 +69,10 @@ export default function ClassesContent({data}: {data: ClassData | undefined}) {
         <div className="flex flex-wrap gap-2 max-w-[65%] m-auto justify-center text-center">
           <div className="flex flex-wrap grow gap-2 justify-center">
             {varData.hDice &&
-              <span className="min-w-[35%]"><b>Hit Dice:</b> {varData.hDice}</span>
-            }
-            {varData.dc &&
-              <span className="min-w-[55%]"><b>{varData.dcName ?? "DC"}:</b> {varData.dc}</span>
+              <>
+                <span className="min-w-[35%]"><b>Hit Dice:</b> {varData.hDice}</span>
+                <span className="min-w-[35%]"><b>Max Hp Increase:</b> {diceParse(varData.hDice).max} + Con</span>
+              </>
             }
           </div>
           <div className="flex flex-wrap grow gap-2 justify-center">
@@ -80,6 +81,11 @@ export default function ClassesContent({data}: {data: ClassData | undefined}) {
                 <span className="min-w-[35%]"><b>Attack Dice:</b> {varData.aDice[0]}</span>
                 <span className="min-w-[55%]"><b>Attack Dice past Level 11:</b> {varData.aDice[1]}</span>
               </>
+            }
+          </div>
+          <div className="flex flex-wrap grow gap-2 justify-center">
+            {varData.dc &&
+              <span className="min-w-[55%]"><b>{varData.dcName ?? "DC"}:</b> {varData.dc}</span>
             }
           </div>
         </div>

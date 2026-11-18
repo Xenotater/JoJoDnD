@@ -2,7 +2,7 @@
   "tags": [
     {
       "category": "Feat Type",
-      "tags": ["Passive", "Active", "Limited Uses", "Has Prerequisite", "Multiple Options", "Stackable", "Stand Feat", "Agility Feat", "Damage Type Feat", "Weapon Feat", "Epic Feat"]
+      "tags": ["Passive", "Active", "Limited Uses", "Has Prerequisite", "Multiple Options", "Stackable", "Stand Feat", "Agility Feat", "Damage Type Feat", "Weapon Feat", "Epic Feat", "Abridged Feat"]
     },
     {
       "category": "General Effect",
@@ -111,8 +111,11 @@
     },
     {
       "name": "Deadly Accuracy",
-      "desc": "Your aim is steady and true, and you know exactly where to fire to maximize damage.",
-      "effects": ["When making an Attack with a Ranged or Thrown weapon (or <preview href='/abilities/Ranged Attack'>Ranged Attack</preview>) you may choose to use a full Action to attack. If you choose to do this, you can add your Attack Roll's Bonus twice.", "Upon a successful Hit, you may roll double the Damage Dice and also roll them all twice and take the higher result.", "This Feat may be activated even when you use the ability that gives you Advantage on a Sniper Rifle."],
+      "desc": "You can massively increase your accuracy and effectiveness by taking a second to completely focus on aiming.",
+      "effects": [
+        "Before making an Attack with a Ranged or Thrown Weapon, you may Brace as though using a Bulky Weapon. Bracing takes a Bonus Action, and you remain Braced until you Move. If using a Bulky Weapon, the Bracing required to use it also works for the requirements of this Feat.",
+        "While Braced, you gain the following benefits when using Ranged or Thrown Attacks:<ul><li>If you miss an Attack Roll, you may reroll it once with Disadvantage</li><li>You may add your Proficiency in the weapon to its damage (For example, if you had a +3 PB and Expertise in a Bolt-Action Rifle, any damage dealt by a Bolt-Action Rifle while Braced would be increased by 6).</li></ul>"
+      ],
       "prereq": "Dex 13+",
       "tags": ["Active", "Offense", "Has Prerequisite"]
     },
@@ -581,75 +584,92 @@
       "name": "Epic Feats",
       "desc": "",
       "effects": [],
-      "subFeats": ["Extreme Motivation", "Health Sponge", "Immovable Object", "Legendary Recovery", "Skill Master", "Superhuman Ability", "Terrifying Aura", "Uncanny Reflexes", "Unstoppable Force", "Warrior's Zeal"],
+      "subFeats": ["Extreme Motivation", "Immovable Object", "Legendary Recovery", "Skill Master", "Superhuman Ability", "Terrifying Aura", "Uncanny Reflexes", "Unstoppable Force", "Warrior's Zeal"],
       "expanded": false
     },
     {
       "name": "Extreme Motivation",
-      "effects": ["You may choose to succeed on an amount of Saving Throws equal to your Proficiency Bonus, taking an amount of Necrotic damage equal to the Level of the character who caused the Save instead.", "The damage from this may not be reduced or avoided in any way."],
+      "effects": ["When you fail a Saving Throw, you may instead choose to succeed an amount of times equal to your Proficiency Bonus per Long Rest.", "When you choose to succeed a Saving Throw, the next d20 roll you make has an amount of Disadvantage equal to half the Proficiency Bonus of the one who forced you to make the Saving Throw. You cannot choose to succeed a Saving Throw that has this penalty."],
       "prereq": "Allowed by your DM",
       "tags": ["Passive", "Defense", "Has Prerequisite", "Epic Feat"],
       "isSub": true
     },
     {
-      "name": "Health Sponge",
-      "effects": ["Your Hit Points increase by an amount equal to three times your Level."],
-      "prereq": "Allowed by your DM",
-      "tags": ["Passive", "Stat Change", "Has Prerequisite", "Epic Feat"],
-      "isSub": true
-    },
-    {
       "name": "Immovable Object",
-      "effects": ["You gain Proficiency in two additional Saving Throws.", "You also gain Advantage against any Ability or effect that would move you against your will or know you Prone, such as a Stand Ability or someone trying to Grapple or Shove you."],
+      "effects": ["You gain Proficiency in all physical Saving Throws (Strength, Dexterity, Constitution).", "An amount of times equal to your Strength Modifier per Long Rest, you may prevent yourself from being moved against your will."],
       "prereq": "Allowed by your DM",
       "tags": ["Passive", "Stat Change", "Defense", "Has Prerequisite", "Epic Feat"],
       "isSub": true
     },
     {
       "name": "Legendary Recovery",
-      "effects": ["You regain 3 Ripple Points at the start of your Turn if you are able to comfortably breathe, rather than just regaining 1."],
+      "effects": ["Twice per Short or Long Rest, by spending an Attack, Bonus Action, AND Movement, you may regain an amount of Hit Points equal to 2x your Level, and reduce the next instance of Damage you take by half."],
       "prereq": "<preview href='/classes/Ripple'>Ripple</preview>, Allowed by your DM",
-      "tags": ["Passive", "Other", "Has Prerequisite", "Epic Feat"],
+      "tags": ["Passive", "Defense", "HEal", "Has Prerequisite", "Epic Feat"],
       "isSub": true
     },
     {
       "name": "Skill Master",
-      "effects": ["You may gain Mastery (three time Proficiency Bonus) in a Skill that you have Proficiency or Expertise in, and you gain Expertise in up to two Skills that you have Proficiency in."],
+      "effects": ["You gain 2x Proficiency in Two Skills of your choice.", "Your base d20 result for these Skills cannot be lower than 15."],
       "prereq": "Allowed by your DM",
       "tags": ["Passive", "Stat Change", "Has Prerequisite", "Epic Feat"],
       "isSub": true
     },
     {
       "name": "Superhuman Ability",
-      "effects": ["One of your Ability Scores increases by 4 up to a maximum of 24."],
+      "effects": ["Choose one of the following:<ul><li>Two Ability Scores have their maximums and values increased by 2.</li><li>One Ability Score has its maximum and value increased by 6.</li></ul>"],
       "prereq": "Allowed by your DM",
       "tags": ["Passive", "Stat Change", "Has Prerequisite", "Epic Feat"],
       "isSub": true
     },
     {
       "name": "Terrifying Aura",
-      "effects": ["Anyone within 20m of you who can see or hear you must make a Wisdom Saving Throw against a DC of 8 + your Proficiency Bonus + your Charisma Modifier. If they fail the Save, they become Frightened of you for one minute, or until they succeed the Save, which they may remake at the end of each of their Turns.", "Those who succeed the Saving Throw or have been under the effect within the last 24 hours become immune to the effect for the next 24 hours."],
+      "effects": [
+        "Your very presence causes a primal fear in all creatures who know your presence. You can perform the following options on any creature that can see or hear you that can gain the Frightened Condition. Any effects use a DC of 8 + your Proficiency + your Charisma Modifier.<ul><li>Mystique: You may spend an Action to force the creature to make a Charisma Saving Throw. If they fail, they gain the Charmed Condition. If they fail the Save by 5 or more, they cannot disobey a direct command from you while Charmed unless it would directly harm them. They are able to repeat the Save at the end of each of their Turns, removing the effect on a success, or it is automatically removed after 1 minute.</li><li>Terrorize: You may spend an Attack to force the creature to make a Wisdom Saving Throw with Disadvantage. If they fail, they gain the Frightened Condition. They can repeat the Save (still with Disadvantage) at the end of each Turn, removing the effect on a success, or it is automatically removed after 1 minute of not being able to see or hear you. Once someone has succeeded against the Save, they are immune to being Frightened by you in this way for 10 minutes.</li><li>Voice of Authority: You gain a bonus to all Charisma rolls against affected creatures equal to your Charisma Modifier.</li></ul>"
+      ],
       "prereq": "Allowed by your DM",
       "tags": ["Passive", "Debuff", "Has Prerequisite", "Epic Feat"],
       "isSub": true
     },
     {
       "name": "Warrior's Zeal",
-      "effects": ["You gain Proficiency in the use of all weapons and Expertise in up to three of your choice", "Additionally, you deal an additional amount of damage equal to your Proficiency Bonus with any weapon."],
+      "effects": [
+        "You gain Proficiency in the use of all weapons, and gain Proficiency again in any two Specializations of your choice.",
+        "When making a Melee Attack, you may perform a Grapple, Shove, or Speed Duel as a Free Action once per Turn, so long as you have a free hand.",
+        "When making a Ranged or Thrown Attack, any Attacks made within Short Range are made with Advantage, and you do not get Disadvantage from attacking at Long Range.",
+        "When Attacking with an Explosive, your precise placement allows you to deal 2x Damage to objects and structures."
+      ],
       "prereq": "Allowed by your DM",
       "tags": ["Passive", "Stat Change", "Offense", "Has Prerequisite", "Epic Feat"],
       "isSub": true
     },
     {
       "name": "Uncanny Reflexes",
-      "effects": ["You may halve any damage taken due to failing a Dexterity Saving Throw. If you succeed a Dexterity Saving Throw that would have dealt damage on success, it does not.", "Additionally, you may spend your Reaction to halve the damage of any Attack directed at you from a foe you can see."],
+      "effects": ["You gain an Additional Reaction each Turn.", "When you take Damage from any source, you may use a Reaction to only take half."],
+      "prereq": "Allowed by your DM",
+      "tags": ["Passive", "Defense", "Has Prerequisite", "Epic Feat"],
+      "isSub": true
+    },
+    {
+      "name": "Bane of Infrastructure",
+      "effects": ["You deal triple damage to objects and structures.", "If forced to make a roll to react to a destroyed object or structure (such as a collapsing roof or falling tree), you automatically succeed."],
+      "prereq": "Allowed by your DM",
+      "tags": ["Passive", "Defense", "Has Prerequisite", "Epic Feat"],
+      "isSub": true
+    },
+    {
+      "name": "Hyperadaptive",
+      "effects": ["When you take damage, you take a quarter damage from that damage Type. When damaged with a different damage type, the adaptation automatically changes to the damage type most recently taken."],
       "prereq": "Allowed by your DM",
       "tags": ["Passive", "Defense", "Has Prerequisite", "Epic Feat"],
       "isSub": true
     },
     {
       "name": "Unstoppable Force",
-      "effects": ["You deal triple damage to all objects and structures", "Additionally, when attacking a target, you may also choose to target a part of the environment within 1m of the target to cause damage to it as well."],
+      "effects": [
+        "You may move through objects or people as part of your Movement Action. Moving through creatures requires a Contested Athletics (Strength) Check, with you pushing them aside if you win, and them stopping you if you lose, preventing you from moving through their space. You trigger Opportunity Attacks as normal. Objects and structures not worn or carried fail the Contest automatically, allowing you to destroy them as you move.",
+        "Your Movement Speed may not be reduced in any way."
+      ],
       "prereq": "Allowed by your DM",
       "tags": ["Passive", "Utility", "Has Prerequisite", "Epic Feat"],
       "isSub": true
@@ -932,7 +952,7 @@
         "Those who have Vulnerability to your chosen element have Disadvantage on the Saving Throws, those who have Resistances have Advantage on the Saves, and those who have Immunity are immune to the effects entirely.",
         "You have an amount of uses of this Feat equal to twice your Proficiency Bonus per Long Rest.",
         "You regain an amount of uses equal to your Proficiency Bonus on a Short Rest.",
-        "You may take this Feat multiple times if desired, gaining an additional amount of uses equal to your Proficiency Bonus, an additional amount of recharge on Short Rest equal to half your PB, and the ability to specialize in an additional number of damage types equal to your PB."
+        "You may take this Feat multiple times if desired, gaining an additional amount of uses equal to your Proficiency Bonus per Long Rest, as well as an additional amount of regained uses equal to half your Proficiency Bonus on Short Rest. You also gain the ability to use Elementalist on an additional amount of damage types equal to half your Proficiency Bonus."
       ],
       "tags": ["Active", "Offense", "Varies", "Stackable", "Multiple Options", "Limited Uses", "Damage Type Feat"],
       "isSub": true
@@ -1164,9 +1184,7 @@
       "name": "Aura of Clarity",
       "prereq": "Cha 13+ or <preview href='/passions/Leader'>Leader</preview>",
       "desc": "You possess and inspire mental fortitude, keeping yourself and your allies sane and focused.",
-      "effects": [
-        "You and all allies who can see or hear you within 5 meters gain a bonus to mental Saving Throws (Intelligence, Wisdom, and Charisma) and Contested Skill checks to avoid the Charmed, Frightened, and Taunted Conditions equal to your Charisma Modifier (minimum of 1)."
-      ],
+      "effects": ["You and all allies who can see or hear you within 5 meters gain a bonus to mental Saving Throws (Intelligence, Wisdom, and Charisma) and Contested Skill checks to avoid the Charmed, Frightened, and Taunted Conditions equal to your Charisma Modifier (minimum of 1)."],
       "tags": ["Passive", "Defense", "Buff", "Has Prerequisite"]
     },
     {
@@ -1184,10 +1202,7 @@
     {
       "name": "Hyperspecialization",
       "desc": "You are so specialized in this ability that you are a paragon in your field. Even other experts may turn to you for guidance.",
-      "effects": [
-        "When you have Mastery in something, you can take this Feat to add your Proficiency Bonus an additional time to that thing (notated as PBx4, PBx5, etc).",
-        "You can use this Feat to gain levels past Mastery, but must take it additional times to do so for each level."
-      ],
+      "effects": ["When you have Mastery in something, you can take this Feat to add your Proficiency Bonus an additional time to that thing (notated as PBx4, PBx5, etc).", "You can use this Feat to gain levels past Mastery, but must take it additional times to do so for each level."],
       "tags": ["Passive", "Stat Change", "Stackable"]
     },
     {
@@ -1214,19 +1229,23 @@
       "name": "Oblivious Facade",
       "prereq": "<preview href='/classes/Stands'>Stand User</preview>",
       "desc": "You've attempted to hide the fact that you're a Stand User numerous times before. You know what works, and what doesn't.",
-      "effects": [
-        "You gain Proficiency in the Bluff Skill and Advantage on Bluff Checks to pass yourself off as a Non-Stand User."
-      ],
+      "effects": ["You gain Proficiency in the Bluff Skill and Advantage on Bluff Checks to pass yourself off as a Non-Stand User."],
       "tags": ["Passive", "Utility"]
     },
     {
       "name": "Dabbler",
       "desc": "You have learned from a variety of sources, pulling inspiration from many places, and allowing you to perform techniques that others would not expect from you.",
-      "effects": [
-        "You gain a Class Feature from another Class. You can choose any Feature so long as the Level is obtained at is your current total Level or lower. You cannot choose to gain a Level 20 Feature this way.",
-        "You may take this Feat multiple times if desired, gaining an additional Feature from any Class each time."
-      ],
+      "effects": ["You gain a Class Feature from another Class. You can choose any Feature so long as the Level is obtained at is your current total Level or lower. You cannot choose to gain a Level 20 Feature this way.", "You may take this Feat multiple times if desired, gaining an additional Feature from any Class each time."],
       "tags": ["Passive", "Stat Change", "Stackable"]
+    },
+    {
+      "name": "Abridged Feats",
+      "desc": "A Category of Feats recommended (but not required) for those using Abridged Classes",
+      "effects": [
+        "<u>Passive Feats</u><ul><li><preview href='/feats/Blended Fighting'>Blended Fighting</preview> (Allows User to attack alongside Stand as Bonus Action)</li><li><preview href='/feats/Calculating'>Calculating</preview> (Increases DCs, making Saving Throws more difficult for opponents)</li><li><preview href='/feats/Energy Imbuement'>Energy Imbuement</preview> (Incorporates a Weapon or object into Stand)</li><li><preview href='/feats/Enhanced Stand Senses'>Enhanced Stand Senses</preview> (Enhances sensory abilities when Stand is sensing)</li><li><preview href='/feats/Equalizer'>Equalizer</preview> (Allows for targeting of Users protected by Stands using mundane weapons)</li><li><preview href='/feats/Ever Vigilant'>Ever Vigilant</preview> (Increases Initiative for self and nearby allies)</li><li><preview href='/feats/Extra Experience'>Extra Experience</preview> (Gives +1 to Proficiency Bonus, with all benefits except extra Feat)</li><li><preview href='/feats/Headhunter'>Headhunter</preview> (Gives Bonuses to attacking the Head of Undead, their weak spot)</li><li><preview href='/feats/Jack of All Trades'>Jack of All Trades</preview> (Gives Half Proficiency in everything not Proficient in)</li><li><preview href='/feats/Practical Experience'>Practical Experience</preview> (Gives additional Proficiencies in Skills, Tools, Instruments, or Languages)</li><li><preview href='/feats/Professional Weapon Training'>Professional Weapon Training</preview> (Gives Proficiency in use of all Weapons except Explosives)</li><li><preview href='/feats/Quick on your Feet'>Quick on your Feet</preview> (Gives Proficiency in Saving Throws)</li><li><preview href='/feats/Resilient'>Resilient</preview> (Gives Resistances to certain types of damage)</li><li><preview href='/feats/Simple Weapon Focus'>Simple Weapon Focus</preview> (Gives Proficiency in Simple Weapons, more damage for Simple Melee, more accuracy for Simple Ranged)</li><li><preview href='/feats/Specialized Save'>Specialized Save</preview> (Decreases damage from two types of Saving Throws)</li><li><preview href='/feats/Superhuman'>Superhuman</preview> (Increases Ability Score and Ability Score Maximum by 2)</li><li><preview href='/feats/Tanky'>Tanky</preview> (Increases HP by 2 per level, and gives <preview href='/abilities/Confident Provocation'>Confident Provocation</preview> if not already had)</li><li><preview href='/feats/Trained Combatant'>Trained Combatant</preview> (Gives additional Attack per Action and +2 to Speed Duels)</li></ul>",
+        "<u>Active Feats</u> (Limited Uses to be Managed)<ul><li><preview href='/feats/Human Resolve'>Human Resolve</preview> (Allows to reroll a d20 roll with a bonus once per Short or Long Rest, as Reaction)</li><li><preview href='/feats/Motivated'>Motivated</preview> (Allows to force a success on a failed Saving Throw, half Proficiency Bonus uses per Long Rest)</li><li><preview href='/feats/Stroke of Luck'>Stroke of Luck</preview> (Turns 1s on d20 rolls into 20s, Proficiency Bonus uses per Long Rest)</li><li><preview href='/feats/Swift Recovery'>Swift Recovery</preview> (Gives a pool of healing equal to Level x Constitution Modifier, used as Attack, refills on Short or Long Rest)</li></ul>"
+      ],
+      "tags": ["Abridged Feat"]
     }
   ]
 }

@@ -1019,7 +1019,7 @@
             {
               "name": "Grudge Points",
               "content": [
-                "<p>A Revenge-Type Stand User has a maximum of 5 total Grudge Points, and starts with 0.</p><p>A Single Grudge Point may be gained either of the following ways:</p>",
+                "<p id='Grudge_Points'>A Revenge-Type Stand User has a maximum of 5 total Grudge Points, and starts with 0.</p><p>A Single Grudge Point may be gained either of the following ways:</p>",
                 "<ul class='list-disc'><li>You see someone who has previously wronged you, and you consider to be an enemy.</li><li>You or an ally within 2m are injured, targeted by an attack or negative effect, or slighted in some other way (taking direct damage, receiving a warning shot, someone's actions frustrate or anger you considerably, etc)</li></ul>",
                 "<p>You may spend Grudge Points in the following ways:</p>",
                 "<ul class='list-disc'><li>1 Point: You may use the Attack Action on your Turn, summon your Stand to assist you with a single Skill Check, use your Stand Ability once, or summon it to take hits and assist you with Saving Throws, until the start of your next Turn.</li><li>2 Points: You may summon your Stand in its entirety for one Turn.</li><li>3 Points: You may summon your Stand in its entirety for an amount of minutes equal to your Level in Revenge-Type (minimum of 2).</li></ul>",
