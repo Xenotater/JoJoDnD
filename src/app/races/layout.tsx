@@ -33,8 +33,8 @@ export default function RacesLayout({
       <PageTitle title="Races"/>
       <div className="content text-center mb-4">
         <h4 className="mb-1"><b><u>Keep in Mind</u></b></h4>
-        <p>Most characters in the world of JoJo&apos;s are Human, but more exotic Races can occasionally be found.</p>
-        <p>Races under the &quot;NPC Races&quot; label aren&apos;t balanced for players, generally being much weaker or stronger than the Player Races, but can still technically be played by players at the DM&apos;s discretion.</p>
+        <p>Most characters in the world of JoJo&apos;s are Human, but more unusual or unconventional Races may also appear.</p>
+        <p>Races under the &quot;NPC Races&quot; label aren&apos;t balanced for players, generally being much weaker or stronger than the Player Races. Certain NPC Races may still be used by Player Characters if permitted by the DM, but this is not recommended.</p>
       </div>
       <div className="flex flex-wrap md:flex-nowrap gap-4">
         <div className="shrink-0 w-full md:w-auto">

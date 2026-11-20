@@ -12,4 +12,5 @@ export interface WeaponData {
 export interface WeaponAttribute {
   desc: string;
   tooltip?: string;
+  alttip?: string;
 }

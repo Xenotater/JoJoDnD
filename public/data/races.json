@@ -284,7 +284,7 @@
       "examples": ["Ultimate Cars"],
       "links": ["Kars#Ultimate_Thing,_lit."],
       "desc": "Thousands of years ago, a genius named Cars created the <preview href='/artifacts/Stone Mask'>Stone Mask</preview> as a way to overcome the sunlight. However, he was missing something and ended up creating Undeath instead. If one is to find a <preview href='/artifacts/Red Stone of Aja'>Perfect Aja</preview> and slot it into the mask, a <preview href='/artifacts/Completed Stone Mask'>Completed Stone Mask</preview> is created. If the Completed Stone mask is donned and the front of it is wet with blood while UV light is channeled through the Aja, it will trigger the creation of the Ultimate Being. The Perfect Aja remains intact, but the mask itself crumbles after the transformation. The Ultimate Being is the perfect evolution of life itself, and there are very few who could possibly hope to stand against one.",
-      "changes": "When becoming an Ultimate Being, the <preview href='/abilities/Undead Nature'>Undead Nature</preview> feature and anything else relating to Undeath is lost. Additionally, your Hit Points are doubled or become 200, whichever is higher.",
+      "changes": "When becoming an Ultimate Being, the <preview href='/abilities/Undead Nature'>Undead Nature</preview> feature is lost, but you do not lose any other Abilities, Feats, or Ability Score Changes gained from being Undead. Additionally, your Hit Points are tripled or become 300, whichever is higher.",
       "feats": ["Immortality", "Lifeweaver"],
       "playing": "Your Creature type is Monstrosity and your Size Category is variable since you are able to change it at will.",
       "isPlayerRace": false
@@ -373,8 +373,8 @@
       "desc": "Through the power of <preview href='/classes/Stands'>Stands</preview>, you exist as a being both composed of the tangible and the fighting spirit that makes up a Stand. Whether given life or through having outlived your Stand User, you now wander, finding your own purpose in life.",
       "examples": ["Stray Cat", "Notorious B.I.G"],
       "links": ["Stray_Cat", "Notorious_B.I.G"],
-      "feats": ["Living Stand Nature", "Stand Pools"],
-      "playing": "Your Creature type is Stand and an additional type of your choice.",
+      "feats": ["Living Stand Nature", "Stand Pools", "Anchored Stand"],
+      "playing": "Your Creature type is Stand and an additional type of your choice. Your Stand has a Range of 0 which cannot be increase, as the Stand and User are the same being, and you can therefore move more freely like any other creature. Your Stand AC works as normal, but your Stand is always Protecting yourself. Your Stand Type cannot be Remote or Revenge.",
       "isPlayerRace": true
     },
     {

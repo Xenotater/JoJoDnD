@@ -83,10 +83,10 @@
             {
               "subheading": "Proficiency Bonus and Levels of Proficiency",
               "details": [
-                "Proficiency Bonus (PB) scales with your total Level and provides a flat bonus (alongside the associated Ability Modifier) to any Attack, Skill Check, or Saving Throw rolls that you're Proficient in. Proficiency has 3 defined levels, Proficiency, Expertise, and Mastery, with each level adding the bonus for an additional time. Going past Mastery is NOT possible, if something would give you Proficiency and you already have Mastery, you can instead take Proficiency in a different Skill/etc.",
+                "Proficiency Bonus (PB) scales with your total Level and provides a flat bonus (alongside the associated Ability Modifier) to any Attack, Skill Check, or Saving Throw rolls that you're Proficient in. Proficiency has 3 defined levels, Proficiency, Expertise, and Mastery, with each level adding the bonus for an additional time. The maximum level of Proficiency is Mastery (PBx3), unless you have a Feature that specifies otherwise (such as the <preview href='/feats/Hyperspecialization'>Hyperspecialization</preview> Feat). Going past Mastery is NOT possible, if something would give you Proficiency and you already have Mastery, you can instead take Proficiency in a different Skill/etc.",
                 "Any time you gain Proficiency in something you're already Proficient in to some degree, your Level of Proficiency increases (Proficiency to Expertise, Expertise to Mastery).",
-                "You gain Proficiencies from your <a href='/passions'>Passion</a> or certain <a href='/feats'>Feats</a>, and you also gain an amount equal to your Intelligence Modifier (minimum 0). When gaining Proficiencies from your Passion or Int Mod, the options include: 1 Skill Proficiency, 2 sets of tools, 3 instruments, or 3 languages.",
-                "You may choose to spend two Proficiencies gained from your Passion or Int Mod to become Proficient in a <a href='/weapons'>weapon</a> Type or Specialization, allowing you to add your PB to Attack Rolls made with that kind of weapon. This is explained more in the <preview href='/rules/Combat'>Combat</preview> section.",
+                "You gain Proficiencies from your <a href='/passions'>Passion</a> or certain <a href='/feats'>Feats</a>. When gaining Additional Proficiencies from your Passion, the options for each additional Proficiency include: 1 Skill Proficiency, 2 sets of tools, 3 instruments, or 3 languages.",
+                "You may choose to spend two Proficiencies gained from your Passion to become Proficient in a <a href='/weapons'>weapon</a> Type or Specialization, allowing you to add your PB to Attack Rolls made with that kind of weapon. This is explained more in the <preview href='/rules/Combat'>Combat</preview> section.",
                 "Tool, language, and instrument Proficiencies are less likely to directly benefit rolls you make, but still note that you are capable of using those things correctly and effectively."
               ]
             }
@@ -328,22 +328,22 @@
               ],
               "other": [
                 "Characters should be built roughly in this order:",
-                "<ol class='list-decimal'><li>Roll and assign Stats using your DM's preferred method</li><li>Choose your character's <a href='/passions'>Passion</a> and Proficiencies (including Proficiencies from your Intelligence Modifier)</li><li>Note the Features of your character's <a href='/races'>Race</a></li><li>Choose a number of <a href='/feats'>Feats</a> equal to your character's Proficiency Bonus</li><li>Choose which Class(es) your character will be playing and note the Features gained from it at your starting Level</li><li>Determine your characters Hit Points, Armor Class, and other smaller stats based on your previous choices</li><li>Talk to your DM regarding your Starting Equipment, the setting, and your character's backstory</li><li>If your character is a <preview href='/classes/Stands'>Stand User</preview>, determine your Stand's stats as well and figure out how you want its Ability to function</li></ol>"
+                "<ol class='list-decimal'><li>Roll and assign Stats using your DM's preferred method</li><li>Choose your character's <a href='/passions'>Passion</a> and Proficiencies</li><li>Note the Features of your character's <a href='/races'>Race</a></li><li>Choose a number of <a href='/feats'>Feats</a> equal to your character's Proficiency Bonus</li><li>Choose which Class(es) your character will be playing and note the Features gained from it at your starting Level</li><li>Determine your characters Hit Points, Armor Class, and other smaller stats based on your previous choices</li><li>Talk to your DM regarding your Starting Equipment, the setting, and your character's backstory</li><li>If your character is a <preview href='/classes/Stands'>Stand User</preview>, determine your Stand's stats as well and figure out how you want its Ability to function</li></ol>"
               ]
             }
           ]
         },
         {
-          "heading": "Levelling-Up",
+          "heading": "Leveling-Up",
           "items": [
             {
-              "subheading": "Milestone Levelling",
+              "subheading": "Milestone Leveling",
               "details": [
                 "The simplest way to handle Levels is to have players Level-Up when they reach specific points (milestones) in the story of the campaign. Players still earn rewards like items, money, favors, status, etc., from doing extra quests and defeating enemies, but more quests and combat won't necessarily allow them to Level-Up faster. This will generally encourage players to make consistent progress in the campaign story."
               ]
             },
             {
-              "subheading": "Experience Levelling",
+              "subheading": "Experience Leveling",
               "details": [
                 "Experience (Exp) is a point value that determines when a character can Level-Up, rather than relying on reaching story milestones. Experience can be gained from several sources, including as a reward for completing quests or objectives, or defeating an enemy.",
                 "It is important to be careful with Experience gain, as having it too readily available may result in players going on unnecessary side-quests to, for example, kill every rat in the city, just for Experience, or generally become higher Level than they're meant to be for combat balance. It may be advised for the Dungeon Master to set a Level cap, allowing players to gain more Exp but not Levelling-Up until they hit a requisite milestone, finding a happy medium between the two methods of Levelling.",

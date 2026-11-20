@@ -2,6 +2,7 @@ export interface ClassData {
   name: string;
   nameExt?: string;
   aka?: string;
+  keywords?: string[];
   desc: string;
   exampleOf?: string;
   examples?: string[];

@@ -66,7 +66,7 @@ export default function PassionsContent({data}: {data: PassionData | undefined})
         <p><b><u>Saving Throws:</u></b> {data.saves}</p>
         <p><b><u>Ability Score Increase:</u></b> {data.ability ? data.ability : parseASI()}</p>
         <p><b><u>{data.custom.name}:</u></b> {`${data.custom.desc} Alternatively, you may choose to forgo one of these Proficiencies to instead gain ${data.alt}`}</p>
-        <p><b><u>Additional Proficiencies:</u></b> {`You gain an additional amount of Proficiencies of your choice equal to your Proficiency Bonus.`}</p>
+        <p><b><u>Additional Proficiencies:</u></b> {`You gain an additional amount of Proficiencies of your choice equal to 1 + your Proficiency Bonus + your Intelligence Modifier (minimum of 0 for Int Mod).`}</p>
         </div>
       </div>
     </div>

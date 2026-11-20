@@ -46,6 +46,13 @@ export default function ClassesContent({data}: {data: ClassData | undefined}) {
       </div>
       <div className="text-center">
         <FancyImage type="border" className="m-auto mt-0 mb-2 max-w-[80%] max-h-[40vh] w-auto" src={`/images/classes/${varData.name.replaceAll(" ", "_")}${useAlt ? "_alt" : ""}.webp`} alt={varData.name}/>
+        {varData.keywords && 
+          <h4>
+            {varData.keywords.map((k, i) => (
+              <b key={k}>{`${k}${i + 1 < varData.keywords!.length ? ", " : ""}`}</b>
+            ))}
+          </h4>
+        }
         {varData.examples &&
           <p>
             <small><b>Examples of {varData.exampleOf}:</b>{" "}

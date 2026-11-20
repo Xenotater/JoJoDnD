@@ -7,7 +7,8 @@ import Input from "@/app/Components/Layout/Forms/Controlled/Input";
 
 export default function SkillsAndSavesBox({data, updateField}: {data: Partial<CharacterData>; updateField: (name: string, value: unknown) => void}) {
   const t = useTranslations("Editor");
-  const bonusProfs = 3 + parseInt(data.bonus ?? "0") + parseInt(data["int-mod"]?.replace(/[+-]/, "") ?? "0");
+  const intMod = parseInt(data["int-mod"]?.replace(/[+]/, "") ?? "0")
+  const bonusProfs = 3 + parseInt(data.bonus ?? "0") + (!isNaN(intMod) && intMod > 0 ? intMod : 0);
 
 
   return (

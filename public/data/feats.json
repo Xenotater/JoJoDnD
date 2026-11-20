@@ -396,9 +396,10 @@
       "prereq": "Others affected by this Feat must not have a Stand of their own and must also take this Feat.",
       "desc": "Your Stand is uniquely able to be shared amongst several people with whom you share an extremely close bond, be it familial, friendly, or romantic. Examples of this include: <a href='https://jojowiki.com/Ratt'>Ratt</a>, <a href='https://jojowiki.com/TATOO_YOU!'>Tattoo You!</a>, <a href='https://jojowiki.com/Scary_Monsters'>Scary Monsters</a>, <a href='https://jojowiki.com/Cat_Size'>Cat Size</a>.",
       "effects": [
-        "Several people are able to use your Stand's Ability at once. However, your Stand gets a multiplier reduction of 2 for its physical stats, to a minimum of x1. For example, a Power-Type which would typically have a x4, x3, and x3 for its physical stats would only get x2, x1, and x1 to Power, Precision, and Durability respectively.",
-        "Everyone affected by this Feat becomes a Stand User equal in Level, Stand-stats, and Ability to you. They may still have their own stats, Proficiencies, and Feats that differ from yours however.",
-        "Your Stand may be shared with a maximum number of people equal to twice your Proficiency Bonus."
+        "Several creatures are able to gain the same Stand that you have, able to each use it as their own Stand. However, your (and their) Stand(s) gets a multiplier reduction of 2 for its physical stats, to a minimum of x1. For example, a Power-Type which would typically have a x4, x3, and x3 for its physical stats would only get x2, x1, and x1 to Power, Precision, and Durability respectively.",
+        "All creatures affected by this Feat become a Stand User of the same Type and Level as you. They may still have their own Ability Scores (both for User and Stand), Proficiencies, and Feats that differ from you. If you gain a Level in Stand User, all others affected also gain that Level in Stand User.",
+        "In order to share your Stand, you must perform a ritual with those you wish to share it with. The ritual is performed over a Short or Long Rest, can be done to any number of creatures not exceeding the maximum, and all who are newly gaining the Shared Stand must be within 10 meters of you. Once gained, it lasts until you or one of the creatures with your Shared Stands spends a Short or Long Rest to remove the Shared Stand, making them no longer a Stand User. If someone you have shared the Stand with dies, they no longer have the Stand, and you may replace that slot with someone else. If you die, the creature who has had the Shared Stand the longest becomes the new 'original' User of the Stand, being forced to swap a feat out with Shared Stand (if there is a tie for duration,  the new User is chosen at random).",
+        "Your Stand may be shared with a maximum number of creatures equal to double your Proficiency Bonus."
       ],
       "tags": ["Passive", "Stat Change", "Utility", "Other", "Has Prerequisite", "Stand Feat"],
       "isSub": true
@@ -756,7 +757,7 @@
       "name": "Burst",
       "desc": "You may push yourself beyond your limits, at a cost.",
       "effects": [
-        "Once per Short or Long Rest you may gain one of the following benefits:<ul><li>Whenever you take the Attack Action, you may make an additional amount of Attacks equal to half of your Proficiency Bonus.</li><li>You gain an additional Bonus Action and Reaction this Turn.</li><li>You may Dash, Disengage, or Dodge as a single Attack or Bonus Action.</li><li>Your Movement Speed is doubled.</li></ul>",
+        "Once per Short or Long Rest on your Turn, you may gain one of the following benefits until the start of your next Turn:<ul><li>Whenever you take the Attack Action, you may make an additional amount of Attacks equal to half of your Proficiency Bonus.</li><li>You gain an additional Bonus Action and Reaction this Turn.</li><li>You may Dash, Disengage, or Dodge as a single Attack or Bonus Action.</li><li>Your Movement Speed is doubled.</li></ul>",
         "When you use this Ability, you take an amount of Necrotic damage equal to your Level that cannot be reduced or negated. This damage cannot drop you below 1 HP."
       ],
       "tags": ["Active", "Offense", "Debuff", "Utility", "Other"]

@@ -14,9 +14,11 @@ export default function WeaponsPage() {
     name: weapon.name,
       other: [
         <span key={`${weapon.name}-attr`} className="flex flex-wrap">{weapon.attr.map((attr, i) => {
-          const attrData = attributes[attr.replace(/ \(.*\)/, "") as keyof typeof attributes] as WeaponAttribute;
+          const attrName = attr.replace(/ \(.*\)/, "");
+          const attrData = attributes[attrName as keyof typeof attributes] as WeaponAttribute;
           const replacers = attr.replaceAll(/(^.* \(|\)$)/g, "").split("/");
-          const tooltip = <Tooltip key={`${weapon.name}-attr-${i}-tooltip`} label={attr}>{attrData.tooltip ? attrData.tooltip.replace("{X}", replacers[0] ?? "").replace("{Y}", replacers[1] ?? "") : attrData.desc}</Tooltip>;
+          const useAlt = ["Ranged", "Throwable"].includes(attrName) && replacers[0] === replacers[1];
+          const tooltip = <Tooltip key={`${weapon.name}-attr-${i}-tooltip`} label={attr}>{attrData.tooltip ? ((useAlt && attrData.alttip) ? attrData.alttip : attrData.tooltip).replace("{X}", replacers[0] ?? "").replace("{Y}", replacers[1] ?? "") : attrData.desc}</Tooltip>;
         return <span key={`${weapon.name}-attr-${i}`}>{tooltip}{i + 1 < weapon.attr.length && <span key={`${weapon.name}-attr-${i}-separator`}>,&nbsp;</span>}</span>;
         })}</span>,
         weapon.type,

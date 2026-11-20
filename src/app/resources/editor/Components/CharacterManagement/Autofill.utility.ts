@@ -126,6 +126,9 @@ export default function doAutofill(initChar: Character, changes: EditState) {
 
 //update any field on the data to a new value
 function updateDataField(char: Character, field: DataField, value: unknown) {
+  if (typeof value === "number" && isNaN(value))
+    return; //don't actually put "NaN" in the form data
+
   // console.log("setting " + field + " to: " + value);
   char.data = {
     ...char.data,

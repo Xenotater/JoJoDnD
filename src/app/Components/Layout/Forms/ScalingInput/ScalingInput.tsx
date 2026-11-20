@@ -57,7 +57,7 @@ export default function ScalingInput(props: {className?: string, fontmin?: numbe
       <Input {...props} ref={inputRef} className={`${props.className} ${editing || hovering ? "" : styles.hidden}`}/>
       <div ref={textRef} tabIndex={0} className={`${props.className} ${editing || hovering ? styles.hidden : ""}`}>
         {!(editing || hovering) && 
-          <Textfit className={styles.inherit} max={props.fontmax} min={props.fontmin}>{props.value}</Textfit>
+          <Textfit className={styles.inherit} max={props.fontmax} min={props.fontmin}>{props.value?.toString() ?? ""}</Textfit>
         }
       </div>
     </>

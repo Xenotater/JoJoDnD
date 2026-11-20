@@ -97,7 +97,8 @@
           "exampleOf": "Power Stands",
           "examples": ["Star Platinum", "Crazy Diamond", "Gold Experience", "Oasis"],
           "links": ["Star_Platinum", "Crazy_Diamond", "Gold_Experience", "Oasis"],
-          "desc": "Power-Type Stands are considered to be some of the most dangerous and powerful due to their all around physical ability. They're also the most common. Most opponents have no chance facing off against a Power-Type Stand User when within their Range, but they do have a weakness in their extremely Short Range.",
+          "keywords": ["Close-Combat", "Fast", "Hard-Hitting"],
+          "desc": "Power-Type Stands are extremely fast and powerful, but lack range, having a maximum distance of 2 Meters from their User. This makes the Stand extremely dangerous, but means the User has to get quite close in order to inflict devastating damage, risking themselves in the process.",
           "hDice": "1d12",
           "dcName": "Stand DC",
           "dc": "8 + Cha + Proficiency Bonus",
@@ -327,7 +328,8 @@
           "exampleOf": "Ranged Stands",
           "examples": ["Hierophant Green", "Aerosmith", "Moody Blues", "Whitesnake"],
           "links": ["Hierophant_Green", "Aerosmith", "Moody_Blues", "Whitesnake"],
-          "desc": "Ranged-Type Stands are fantastic all around. While not as strong or tough as Power types, Ranged Stands are able to use their versatility and flexibility to their advantage, often being able to effectively fight in almost any situation. A Stand type with no great strengths, but no great weaknesses either.",
+          "keywords": ["Long-Range", "Scouting", "Versatile"],
+          "desc": "Ranged-Type Stands are by far the most versatile. They have long ranges, are capable scouts, and have a few tricks to get them out of sticky situations. Their main weakness is their lack of specialization, which can get them into trouble if fighting a more specialized foe.",
           "hDice": "1d8",
           "dcName": "Stand DC",
           "dc": "8 + Cha + Proficiency Bonus",
@@ -496,7 +498,8 @@
           "exampleOf": "Remote Stands",
           "examples": ["Highway Star", "Black Sabbath", "Goo Goo Dolls", "Manhattan Transfer"],
           "links": ["Highway_Star", "Black_Sabbath", "Goo_Goo_Dolls", "Manhattan_Transfer"],
-          "desc": "Remote-Type Stands are immensely powerful. Their Abilities and strength can often not be ignored. However, the Users of these Stands often cannot control them, with their Stands instead automatically following a simple task. For example, attack the closest Human until its breathing stops for 5 seconds, prevent anybody from entering a building, use your Ability on anyone who opens a door, attack anyone who steps into a shadow, etc. These Stands, while often powerful indeed, have very easily exploitable weaknesses due to the simple nature of how they function.",
+          "keywords": ["Long-Range", "Tricky", "Unrelenting Pursuit"],
+          "desc": "Remote-Type Stands are the most powerful in ideal circumstances, being far stronger than other Stands pound-for-pound. However, Remote-Type Stands cannot be controlled directly, instead being automatically activated when a certain trigger occurs. These Stands are likely the strongest, but their simple function and extremely long range means their Users are often left vulnerable.",
           "hDice": "1d6",
           "dcName": "Stand DC",
           "dc": "8 + Cha + Proficiency Bonus",
@@ -668,7 +671,8 @@
           "exampleOf": "Ability Stands",
           "examples": ["Hermit Purple", "White Album", "Man in the Mirror"],
           "links": ["Hermit_Purple", "White_Album", "Man_in_the_Mirror"],
-          "desc": "Many Stands are able to physically manifest themselves clearly and powerfully, but most Ability-Type Stands do not function in the same way. Some Ability Stands are not visible or tangible unless specifically made so by their User. While these Stands have very little in the way of physical power, their masterful use of their Abilities are able to make them more than handy in the fight. ",
+          "keywords": ["Specialized", "Tricky", "Utility"],
+          "desc": " Ability-Type Stands focus on the Abilities of their Stands, able to perform amazing and powerful feats, but lacking in almost all physical ability. These Stands are by far the most tricky, but most foes can easily overpower you.",
           "hDice": "1d6",
           "dcName": "Stand DC",
           "dc": "8 + Cha + Proficiency Bonus",
@@ -840,7 +844,8 @@
           "exampleOf": "Enhancement Stands",
           "examples": ["High Priestess", "Strength", "Wheel of Fortune", "The Fool", "Love Deluxe"],
           "links": ["High_Priestess", "Strength", "Wheel_of_Fortune", "The_Fool", "Love_Deluxe"],
-          "desc": "Many Stands are able to physically manifest themselves or their abilities in a vacuum. However, there are some Stands that are able to forgo many of the normal Stand rules and make a normal, everyday object into something much more terrifying. While these Stands have incredible power, they also possess properties and limitations unique to them, and them alone. ",
+          "keywords": ["Durable", "Long-Range", "Unstoppable"],
+          "desc": "Enhancement-Type Stands are bound to tangible objects from their environment, making them powerful, durable, and with a long range, but making the presence of the supernatural obvious to those unable to see Stands, as well as able to be damaged by mundane means. They are often unsubtle and blunt, and while not every task needs a hammer, sometimes a hammer is the most useful tool for the job.",
           "notes": ["Enhancement-Type Stands are powerful, but all damage types are able to harm them, not just Stand damage types."],
           "hDice": "1d10",
           "dcName": "Stand DC",
@@ -1009,7 +1014,8 @@
           "exampleOf": "Revenge Stands",
           "examples": ["Ebony Devil", "Stray Cat", "Notorious B.I.G.", "Civil War"],
           "links": ["Ebony_Devil", "Stray_Cat", "Notorious_B.I.G", "Civil_War"],
-          "desc": "Some Stands have immense power but are unable to properly function unless their User feels a certain way. Through feelings of hatred, pain, or loss, certain Stands may manifest properly, showing their true form and relentlessly attacking those who wronged their Users.",
+          "keywords": ["Durable", "Hard-Hitting", "Self-Buff"],
+          "desc": "Revenge-Type Stands manifest from the grudges of their Users, empowered by the wrongs committed by others around them. This makes them difficult to summon initially, but once summoned, they are a devastating force lacking in many weaknesses aside from the damage the User has already sustained.",
           "notes": ["You cannot activate a Revenge-Type Stand by yourself. Instead, you must gain enough Grudge Points to be able to activate your Stand. An explanation of the Grudge system can be found below."],
           "hDice": "1d12",
           "dcName": "Stand DC",
@@ -1192,7 +1198,8 @@
           "exampleOf": "Independent Stands",
           "examples": ["Anubis", "Superfly", "Foo Fighters"],
           "links": ["Anubis", "Superfly", "Foo_Fighters"],
-          "desc": "Independent-Type Stands are quite interesting, and are one of the more rare Stand Types in JoJo's Bizarre Adventure. These Stands are odd because they do not actually have a User, instead in control of themselves. They have the same sort of attributes that regular Stands do and must follow most of the same rules. However, the Stand is still made up of physical matter, and thus is similar to an Enhancement type Stand in that they can be damaged physically by Non-Stand damage types.",
+          "keywords": ["Durable", "Infinite Range", "Versatile"],
+          "desc": "Independent-Types are Stands that either are their users, or operate independently of them, bound to a physical object. This means the Stand has infinite range, is extremely durable, but can be damaged by mundane means. If the User and Stand are separate, this means they can both work together, but the User is more vulnerable to attack. If the User is the Stand itself, it means the Stand doesn't have to worry about protecting its User and can focus on achieving its goals.",
           "notes": [
             "Some Independent Stands did in fact have a User at some point, or might even still have a User. They are not linked together though, as damaging the Stand does no harm to the User and vice versa. However, if a person does or did have an Independent-Type Stand they are still able to sense Stands and Ghosts, just like a normal Stand User would. Independent Stands with a User still roll Initiative and take their Turn separately.",
             "Even if there is no User, Independent Stands still have the 6 regular Ability Scores for the sake of determining other stats and mental Checks/Saves. They can also still be hit 'directly' whether they do or don't have a separate User."
@@ -1366,7 +1373,8 @@
           "exampleOf": "Hive Stands",
           "examples": ["Bad Company", "Harvest", "Sex Pistols"],
           "links": ["Bad_Company", "Harvest", "Sex_Pistols"],
-          "desc": "It is said that Stands reflect their Users. Hive-Type Stand Users are those that idolize the idea of individuals working as a team. Their Stands are formed of many much smaller Sub-Stands, each one with only a fragment of the power of a full Stand. These smaller parts may act in tandem or each one separately. Because of this, Hive Stands have around the same strength as a normal Stand, but they all have great range.",
+          "keywords": ["Hard-Hitting", "Multi-Task", "Long-Range"],
+          "desc": "Hive-Type Stands are made up of many smaller Sub-Stands all working together. This means that while a Hive Stand is able to accomplish many different goals at once, they are only at full strength if all together in one place, which makes them vulnerable. They are also capable of deadly swarm attacks, which are extremely difficult to avoid.",
           "notes": [
             "Keep an eye on your health. The amount of Instances available for you to use is determined by the percentage of health you are at. If you are at 50% Health, you only have 50% of your Hive Stand available for use. When defending with half of your current (not total) Instances or less you still get your full Stand AC but may only use half of your Stand's Damage Reduction. When you are at 0 Hit Points, you may still have 1 Stand Instance that functions, but it is recalled, and cannot act in any way. Your amount of Stand Instances only drops to 0 when you die.",
             "Your attacks may take the form of regular Stand Melee Attacks, or Swarm Attacks (defined below). When attacking normally, you have Disadvantage if using less than half of your current (not total) Instances."
@@ -1550,7 +1558,8 @@
           "exampleOf": "Act Stands",
           "examples": ["Echoes", "Tusk"],
           "links": ["Echoes", "Tusk"],
-          "desc": "It is said that Stands are a physical manifestation of one's fighting spirit. However, there are some that are exposed to a <preview href='/artifacts/Stand Arrow'>Stand-Granting item</preview> that do not possess a proper fighting spirit, but develop a Stand regardless due to  some (often benevolent) outside force. These Stand Users will grow and develop alongside their Stand. Despite starting out extremely weak, they eventually become some of the strongest, scariest, and most versatile Stand Users. They are forced to evolve their Stand once they have developed as a person, experienced combat several times, and when they are in a situation that puts them in despair.",
+          "keywords": ["Adaptable", "Tricky", "Versatile"],
+          "desc": "A Stand User who gains their Stand under unusual circumstances, unable to fully utilize its power upon first obtaining it. They gain their Stand's first form, and later on, gain other forms that can be switched between. Each of these forms imitates another type of Stand, but lacks much of its specialized abilities in exchange for the versatility of being able to switch between them.",
           "notes": [
             "You may switch between your Acts as a Bonus Action once you have obtained them, all except for the Act 0 Stand. In order to evolve your Stand, you must have unlocked the next Act, and you must go through an event that your DM considers to be hopeless or desperate.",
             "When switching to an Act with a higher Stand Energy Modifier, your Stand Energy must remain at the lower value. For example, if your Act 2 Stand has 6 SE and you switch to Act 1 with a maximum of 10, your available Stand Energy remains at 6."
@@ -1740,7 +1749,8 @@
           "hDice": "1d10",
           "dcName": "Ripple DC",
           "dc": "8 + Con + Proficiency Bonus",
-          "desc": "The Ripple is an energy that travels through the blood and is powered by breathing. A sacred art, it can be used for both healing and destruction. It is extremely effective against Undead, and it can be used against corporeal objects to manipulate them. The Ripple works similarly to electricity, in that it is able to travel through liquids, metals, and most biomass incredibly well.",
+          "keywords": ["Healer", "Powerhouse", "Undead Annihilator"],
+          "desc": "Users of the Sacred Art of The Ripple are able to harness Hamon Energy, the energy of life itself. So long as they can breathe, users of The Ripple can use Hamon to heal, harm, annihilate Undead, and empower their physical abilities.",
           "notes": ["When receiving a \"Phys. Bonus\" on Level-Up, you gain that bonus to one of your physical (Str, Dex, Con) Ability Scores"],
           "theme": "rgb(253, 255, 108)",
           "levels": [
@@ -1910,7 +1920,8 @@
           "exampleOf": "Spin Users",
           "examples": ["Gyro Zeppeli", "Johnny Joestar"],
           "links": ["Gyro_Zeppeli", "Johnny_Joestar"],
-          "desc": "Some objects, when rotated in comparison to the 9:16 ratio, may produce more energy than it takes to keep the object spinning. Some people have figured out how to properly harness this energy, using the vibrations produced for a variety of tasks. In theory, perfection of this ability could result in the power of Infinity.",
+          "keywords": ["Buff/Debuff", "Tricky", "Versatile"],
+          "desc": "Spin is a Sacred Art that utilizes the Golden Ratio, the natural flow of energy within the universe to create more energy than is used. While using The Golden Ratio as a reference Spin Users may throw a sphere with a very specific technique to produce a variety of strange and miraculous effects.",
           "hDice": "1d8",
           "dcName": "Spin DC",
           "dc": "8 + Dex + Proficiency Bonus",
@@ -2091,7 +2102,8 @@
         },
         {
           "name": "Divination",
-          "desc": "Those who employ the Art of Divination gain knowledge of Fate and its inner workings. This allows them to gain knowledge across Space and Time, gaining the upper hand by simply having more information to work with.",
+          "keywords": ["Buff/Debuff", "Information", "Utility"],
+          "desc": "Divination is an ancient tradition, the Sacred Art of reading Fate's workings across time and space. Users of Divination are able to obtain information that cannot be gained otherwise, and can tip the flow of Fate in their favor by using said information.",
           "exampleOf": "Divination Users",
           "hDice": "1d6",
           "theme": "rgb(205, 146, 174)",
@@ -2263,7 +2275,8 @@
       "subTypes": [
         {
           "name": "Assassin",
-          "desc": "Assassins utilize the element of surprise to strike from the shadows, able to hit opponents precisely where it hurts the most. They have ways of avoiding damage through dodging, and are generally pretty tricky.",
+          "keywords": ["Hard-Hitting", "Stealth", "Tricky"],
+          "desc": "Assassins debilitate or kill their targets with precise, deadly strikes. While capable combatants, they tend to be at a disadvantage in a straight-up fight. Therefore, they have to rely on stealth, planning, and fighting dirty to get the upper hand.",
           "hDice": "1d8",
           "theme": "gray",
           "levels": [
@@ -2418,7 +2431,8 @@
         },
         {
           "name": "Consul",
-          "desc": "Consuls use their speech and unwavering confidence together to inspire themselves and allies. They can heal themselves and others, supporting allies and hindering enemies as well.",
+          "keywords": ["Buff/Debuff", "Force of Personality", "Healer"],
+          "desc": "Consuls use their charisma and wit to inspire, pushing themselves and their allies to their limits and beyond. They are also masters of social situations, able to manipulate people with great skill and subtlety.",
           "hDice": "1d8",
           "theme": "gray",
           "levels": [
@@ -2580,7 +2594,8 @@
         },
         {
           "name": "Scholar",
-          "desc": "Scholars use their extensive knowledge as a reference in tense situations, using their intelligence in unorthodox but clever ways to achieve their goals.",
+          "keywords": ["Information", "Support", "Utility"],
+          "desc": "Scholars use their great knowledge and experience to perform a variety of tasks with great speed and focus. Scholars are masterminds who learn extremely quickly and can help others by providing them with valuable information and assistance. They have few techniques or tricks to help them in combat, but more than make up for it with their utility and information-gathering abilities.",
           "hDice": "1d6",
           "theme": "gray",
           "levels": [
@@ -2734,7 +2749,8 @@
         },
         {
           "name": "Warrior",
-          "desc": "Warriors specialize in battling and the effective use of weaponry. They hit hard, can hold their own in melee, and know their weapons better than anyone.",
+          "keywords": ["Durable", "Hard-Hitting", "Powerhouse"],
+          "desc": "Warriors are those who have studied combat, focusing on technique and repetition to be equally disciplined and deadly. Warriors, while incredibly reliable and effective in combat, tend to lack much usefulness outside of tense situations or the battlefield.",
           "notes": ["When receiving a \"Stat Bonus\" on Level-Up, you gain that bonus to one of your Ability Scores alongside your typical Ability Score Improvement"],
           "hDice": "1d10",
           "theme": "basic",
@@ -2898,6 +2914,9 @@
         {
           "name": "Artisan",
           "theme": "gray",
+          "hDice": "1d6",
+          "keywords": ["Specialized", "Tricky", "Utility"],
+          "desc": "Artisans are masters of a specific craft who have figured out how to utilize the skills of their trade in unconventional but effective ways. Artisans are extremely specialized, and their builds are heavily determined by their skill set.",
           "levels": [
             {
               "abilities": ["Artisan's Specialty", "Supernatural Item (Variant Rule)"],
@@ -3046,8 +3065,6 @@
               ]
             }
           ],
-          "hDice": "1d6",
-          "desc": "Artisans use their expertise in specific subjects and their use of tools to perform a variety of incredible deeds.",
           "otherCols": [
             {
               "name": "Artisan Charges",
@@ -3058,6 +3075,9 @@
         {
           "name": "Heavyweight",
           "theme": "gray",
+          "hDice": "1d12",
+          "keywords": ["Close-Combat", "Durable", "Powerhouse"],
+          "desc": "Heavyweights use their bulky physiques in tandem with techniques that put their opponent's force against themselves. They can shrug off injuries, ignore negative conditions, and are unparalleled in sheer physical might.",
           "levels": [
             {
               "abilities": ["Bullish Brawn", "Supernatural Item (Variant Rule)"],
@@ -3208,17 +3228,18 @@
                 }
               ]
             }
-          ],
-          "desc": "Heavyweights are built to fight on the front lines, taking powerful blows with ease, excelling in melee combat, wrestling, and using large weapons. ",
-          "hDice": "1d12"
+          ]
         },
         {
           "name": "Ranger",
           "theme": "gray",
+          "keywords": ["Scouting", "Stealth", "Support"],
+          "desc": "Rangers are masters of stealth and the wilds. They allow themselves and allies to navigate hardship and environments through various tricks they had to learn the hard way. Rangers are capable scouts, assassins, and guides, but need support from an ally, whether party member or animal companion, to truly shine.",
+          "hDice": "1d8",
           "levels": [
             {
               "abilities": ["Survivalist", "Supernatural Item (Variant Rule)"],
-              "feats": ["Equalizer", "Weapon Feat"]
+              "feats": ["Equalizer", "Weapon Feat", "OR", "Familiar Bond"]
             },
             {
               "abilities": ["Ranger Fighting Style", "Ranger's Recovery", "Signature Move"]
@@ -3246,7 +3267,7 @@
               "feats": ["Trained Combatant", "Ever Vigilant", "OR", "Resilient", "OR", "Trapper"]
             },
             {
-              "feats": ["Aura of Awareness", "OR", "Additional Sense", "OR", "Familiar Bond"],
+              "feats": ["Aura of Awareness", "OR", "Additional Sense"],
               "other": ["Ability Score Improvement"]
             },
             {
@@ -3363,9 +3384,7 @@
                 }
               ]
             }
-          ],
-          "desc": "Rangers are people of the wild at heart, familiar with nature, and alert to any disruptions within it. They work as navigators, survivalists, and they recover very quickly.",
-          "hDice": "1d8"
+          ]
         }
       ]
     }
